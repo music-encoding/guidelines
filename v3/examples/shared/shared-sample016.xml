@@ -1,0 +1,12 @@
+
+
+<!-- Example of a @label containing whitespace: -->
+<mdiv xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" label="Allegro moderato"> … </mdiv>
+
+<!-- Example of a processable @n attribute: -->
+
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="42">
+   
+   <!--…-->
+   
+</measure>

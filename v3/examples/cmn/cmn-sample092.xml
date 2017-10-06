@@ -1,0 +1,30 @@
+
+<staffDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3" xml:id="cmn_staffDef1">
+   
+   <layerDef n="1" xml:id="cmn_layerDef1"></layerDef>
+   
+</staffDef>
+
+<!-- later in the file: -->
+
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" def="#cmn_staffDef1">
+   
+   <layer def="#cmn_layerDef1">
+      
+      <!-- layer content -->
+      
+   </layer>
+   
+</staff>
+
+<!-- OR: -->
+
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3">
+   
+   <layer n="1">
+      
+      <!-- layer content -->
+      
+   </layer>
+   
+</staff>

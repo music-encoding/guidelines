@@ -1,0 +1,16 @@
+
+<chord xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <note pname="c"></note>
+   
+   <note pname="e"></note>
+   
+   <note pname="g"></note>
+   
+   <add>
+      
+      <note accid="f" pname="b"></note>
+      
+   </add>
+   
+</chord>

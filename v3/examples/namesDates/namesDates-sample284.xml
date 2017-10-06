@@ -1,0 +1,8 @@
+
+
+<!-- Frankfurt am Main -->
+<geogName xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" authURI="www.getty.edu/research/tools/vocabularies/tgn" authority="TGN" dbkey="7005293">Frankfurt</geogName>
+
+<!-- Frankfurt an der Oder -->
+
+<geogName xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" authURI="www.getty.edu/research/tools/vocabularies/tgn" authority="TGN" dbkey="7005972">Frankfurt</geogName>

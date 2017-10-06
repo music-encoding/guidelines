@@ -1,0 +1,14 @@
+
+<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <fb>
+      
+      <f>6</f>
+      
+      <f>4+</f>
+      
+      <f>♮3</f>
+      
+   </fb>
+   
+</harm>

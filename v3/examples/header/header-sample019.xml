@@ -1,0 +1,48 @@
+
+<fileDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <titleStmt>
+      
+      <title>
+         <!-- title of the resource -->
+      </title>
+      
+   </titleStmt>
+   
+   <editionStmt>
+      
+      <!-- information about the edition of the resource -->
+      
+   </editionStmt>
+   
+   <extent>
+      <!-- description of the size of the resource -->
+   </extent>
+   
+   <pubStmt>
+      
+      <!-- information about the publication and distribution of the resource -->
+      
+   </pubStmt>
+   
+   <seriesStmt>
+      
+      <!-- information about any series to which the resource belongs -->
+      
+   </seriesStmt>
+   
+   <notesStmt>
+      
+      <annot>
+         <!-- notes on other aspects of the resource -->
+      </annot>
+      
+   </notesStmt>
+   
+   <sourceDesc>
+      
+      <!-- information about the source(s) from which the resource was derived -->
+      
+   </sourceDesc>
+   
+</fileDesc>

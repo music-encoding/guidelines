@@ -1,0 +1,20 @@
+
+<workDesc xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <work>
+      
+      <titleStmt>
+         
+         <title>Das Rheingold</title>
+         
+      </titleStmt>
+      
+      <relationList>
+         
+         <relation rel="isPartOf" target="ring.xml"></relation>
+         
+      </relationList>
+      
+   </work>
+   
+</workDesc>

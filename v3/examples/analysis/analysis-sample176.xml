@@ -1,0 +1,20 @@
+
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <staff n="1">
+      
+      <layer>
+         
+         <note dur="4" oct="4" pname="c" psolfa="do"></note>
+         
+         <note dur="4" oct="4" pname="d" psolfa="re"></note>
+         
+         <note dur="4" oct="4" pname="e" psolfa="mi"></note>
+         
+         <note dur="4" oct="4" pname="f" psolfa="fa"></note>
+         
+      </layer>
+      
+   </staff>
+   
+</measure>

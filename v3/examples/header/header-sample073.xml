@@ -1,0 +1,18 @@
+
+<classification xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <classCode authURI="http://www.loc.gov" authority="Library of Congress" xml:id="header.LCSH1"></classCode>
+   
+   <classCode authURI="http://www.loc.gov/aba/cataloging/classification/lcco/lcco_m.pdf" authority="Library of Congress" xml:id="header.LoC_lcco1"></classCode>
+   
+   <termList>
+      
+      <term classcode="#header.LCSH1">Guitar music (Rock)</term>
+      
+      <term classcode="#header.LCSH1">Rock music 1971-1980.</term>
+      
+      <term classcode="#header.LoC_lcco1">M1630.18.Z26 O6 2011</term>
+      
+   </termList>
+   
+</classification>

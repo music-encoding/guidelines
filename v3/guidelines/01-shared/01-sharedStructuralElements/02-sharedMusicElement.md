@@ -1,0 +1,73 @@
+---
+sectionid: sharedMusicElement
+title: Music Element
+---
+
+
+<h3 id="sharedMusicElement">
+   <span class="headingNumber">1.1.2</span>
+   <span class="head">Music Element</span>
+</h3>
+MEI texts may be regarded either as unitary; that is, forming an organic whole, or
+as
+composite; that is, consisting of several components which are in some important sense
+independent of each other. The distinction is not always entirely obvious. For example,
+a
+collection of songs might be regarded as a single item in some circumstances, or as
+a number
+of distinct items in others. In such borderline cases, the encoder must choose whether
+to
+treat the text as unitary or composite; each option may have advantages and
+disadvantages.
+
+Whether unitary or composite, the musical text is marked with the 
+<a class="link_odd_elementSpec" href="/v3/elements/music">music</a> tag and may contain front matter, a body, and back matter. In unitary texts,
+the body is tagged using the 
+<a class="link_odd_elementSpec" href="/v3/elements/body">body</a> element; in composite texts,
+however, where the textual body consists of a series of subordinate musical texts
+or other
+groups, it is tagged with the 
+<a class="link_odd_elementSpec" href="/v3/elements/group">group</a> element. The overall structure of
+any musical text, unitary or composite, is thus defined by the following elements:
+
+
+
+<span class="specList">
+   
+   <span class="specDesc"></span>
+   
+   <span class="specDesc"></span>
+   
+   <span class="specDesc"></span>
+   
+   <span class="specDesc"></span>
+   
+</span>
+
+
+Critical editions and collections of works often contain extensive text, such as a
+title
+page, table of contents, an introductory essay, commentary, biographical sketch, index,
+etc.
+These textual items may appear in either the front or back elements. The front and
+back
+elements, available only when the MEI.text module is activated, are described more
+fully in
+chapter 
+<span class="ptr"></span>.
+
+The overall structure of a single musical text is:
+
+
+{% include _plainExample.html example="./v3/examples/shared/shared-sample000.xml" valid="true" %}
+
+The top-level structure of a composite musical text made up of two unitary musical
+texts
+is:
+
+
+{% include _plainExample.html example="./v3/examples/shared/shared-sample001.xml" valid="true" %}
+
+
+
+
