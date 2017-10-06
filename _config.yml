@@ -9,6 +9,8 @@ twitter_username: music-encoding
 # Build settings
 markdown: kramdown
 
+exclude: [tools]
+
 gems:
   - jekyll-redirect-from
 
@@ -77,23 +79,21 @@ menu:
       label: 'Archive'
       url: '/archive'
        
-sidemenu:  
-    - id: conference
-      label: 'Support'
-      url: '/mec/2018/'   
+sidebar:  
+    - id: s1
       content: 
-          - id: venue
-            label: 'Venue'
-            url: 'venue.html'
-          - id: call
-            label: 'Call for papers'
-            url: 'call.html'
-          - id: program
-            label: 'Program'
-            url: 'program.html'
-          - id: registration
-            label: 'Registration'
-            url: 'registration.html'
-          - id: accommodations
-            label: 'Accommodations'
-            url: 'accommodations.html'
+          - id: guidelines
+            label: 'Guidelines'
+            url: 'guidelines'
+          - id: elements
+            label: 'Elements'
+            url: 'elements'
+          - id: attributes
+            label: 'Attributes'
+            url: 'attributes'
+          - id: modelclasses
+            label: 'Model Classes'
+            url: 'model-classes'
+          - id: datatypes
+            label: 'Data Types'
+            url: 'data-types'

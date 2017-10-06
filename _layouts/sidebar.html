@@ -6,11 +6,11 @@ layout: default
         {{ content }}
     </div>
     <div class="column col-4">
-        {% for m in site.sidemenu %}
-            {% if page.sidemenu == m.id %}
-                {% for s in m.content %}
+        {% for sb in site.sidebar %}
+            {% if page.sidebar == sb.id %}
+                {% for s in sb.content %}
                 <span>
-                    <a href="{{m.url}}{{s.url}}">{{s.label}}</a>
+                    <a href="../{{s.url}}">{{s.label}}</a>
                 </span>
                 {% endfor %}
             {% endif %}

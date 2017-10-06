@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: sidebar
+sidebar: s1
 title: "What is MEI?"
 ---
 # What is MEI?
