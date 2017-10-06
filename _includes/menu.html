@@ -1,4 +1,9 @@
-{% for entry in site.menu %}
+<span class="btn bg-primary meiVersionBtn">Current (MEI 3.0.0)</span>
+<span class="btn bg-secondary meiVersionBtn">MEI 2.1.1</span>
+<span class="btn bg-secondary meiVersionBtn">MEI 2.0.0</span>
+<span class="btn bg-warning meiVersionBtn">Development Version</span>
+
+<!--{% for entry in site.menu %}
     <span class="dropdown dropdownCustomMenuToggle">
         {% unless entry.submenu %}
             <a href="{{m.url}}" class="btn btn-link" tabindex="{{ forloop.index0}}">
@@ -23,7 +28,7 @@
     </span>
 
 {% endfor %}
-
+-->
 <script type="text/javascript">
     /*var items = document.querySelectorAll('.dropdownCustomMenuToggle');
     console.log(items);
