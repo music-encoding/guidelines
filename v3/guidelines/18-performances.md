@@ -1,25 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Performances"
-sectionid: "performances"
+title: "Shared Elements, Models, and Attributes"
+version: "guidelines-v3"
 ---
-
-<span class="div">
-   
-   <h1 id="performances">
-      <span class="headingNumber">18</span>
-      <span class="head">Performances</span>
-   </h1>
-   This chapter describes the ‘performance’ module, which can be used for
-   organizing audio and video files of performances of a musical work. The elements provided
-   allow
-   the encoder to group different recordings of the same performance, identify temporal
-   segments
-   within the recordings, and encode simple alignments with a music text.
-   
-   
-   
-   
-   
-</span>
+{% include content.html version=page.version dir="/18-performances" %}

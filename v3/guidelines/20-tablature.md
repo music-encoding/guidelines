@@ -1,18 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Tablature Notation"
-sectionid: "tablature"
+title: "Shared Elements, Models, and Attributes"
+version: "guidelines-v3"
 ---
-
-<span class="div">
-   
-   <h1 id="tablature">
-      <span class="headingNumber">20</span>
-      <span class="head">Tablature Notation</span>
-   </h1>
-   This chapter describes the attribute classes that are part of the MEI.tablature module.
-   
-   
-   
-</span>
+{% include content.html version=page.version dir="/20-tablature" %}

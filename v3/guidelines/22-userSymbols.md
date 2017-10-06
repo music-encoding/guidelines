@@ -1,25 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "User-defined Symbols"
-sectionid: "userSymbols"
+title: "Shared Elements, Models, and Attributes"
+version: "guidelines-v3"
 ---
-
-<span class="div">
-   
-   <h1 id="userSymbols">
-      <span class="headingNumber">22</span>
-      <span class="head">User-defined Symbols</span>
-   </h1>
-   This chapter describes the elements, model classes, and attribute classes that are
-   part of the
-   MEI.usersymbols module.
-   
-   
-   
-   
-   
-   
-   
-   
-</span>
+{% include content.html version=page.version dir="/22-userSymbols" %}
