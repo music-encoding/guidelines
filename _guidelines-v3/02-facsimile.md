@@ -1,5 +1,5 @@
 ---
-id: facsimile
+sectionid: facsimile
 title: "Facsimile"
 ---
 

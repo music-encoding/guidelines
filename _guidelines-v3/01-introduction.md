@@ -1,5 +1,5 @@
 ---
-id: introduction
+sectionid: introduction
 title: "Introduction to MEI"
 ---
 

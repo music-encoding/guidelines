@@ -1,18 +1,16 @@
 {% assign c = site.collections | where: "label", include.version | first %}
 {% for doc in c.docs %}
-  {% if doc.relative_path contains include.dir %}
-
   {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
   {% assign levels = doc.relative_path | split: '/' %}
-  {% assign h = levels.size %}
+  {% if levels.size < 5 %}
   {% assign levels = levels | shift %}
-
-  <h{{ h }}>
-      {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %}
-      {{ doc.title }}
-  </h{{ h }}>
-
-  {{ doc.content }}
+  
+  <p>   
+      <a href="{{ doc.sectionid | downcase | url_encode }}.html">
+          {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
+      </a>
+  </p>
   
   {% endif %}
+      
 {% endfor %}

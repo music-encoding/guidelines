@@ -17,6 +17,8 @@ gems:
 collections:
   guidelines-v3:
     output: false
+  guidelines-dev:
+    output: false
 
 menu:
     - id: about

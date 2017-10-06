@@ -1,5 +1,5 @@
 ---
-id: mensural
+sectionid: mensural
 title: "Mensural"
 ---
 
