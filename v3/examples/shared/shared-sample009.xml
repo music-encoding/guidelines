@@ -1,0 +1,34 @@
+
+<music xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <body>
+      
+      <mdiv>
+         
+         <score>
+            
+            <section>
+               
+               <expansion plist="#shared.A #shared.B #shared.A"></expansion>
+               
+               <section xml:id="shared.A">
+                  
+                  <!-- "A" section -->
+                  
+               </section>
+               
+               <section xml:id="shared.B">
+                  
+                  <!-- "B" section -->
+                  
+               </section>
+               
+            </section>
+            
+         </score>
+         
+      </mdiv>
+      
+   </body>
+   
+</music>

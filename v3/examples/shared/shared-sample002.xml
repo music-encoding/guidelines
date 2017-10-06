@@ -1,0 +1,18 @@
+
+<music xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <group>
+      
+      <music>
+         <!-- song 1 -->
+      </music>
+      
+      <music>
+         <!-- song 2 -->
+      </music>
+      
+      <!-- additional songs here -->
+      
+   </group>
+   
+</music>

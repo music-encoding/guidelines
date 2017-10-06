@@ -1,0 +1,8 @@
+
+<respStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <resp>Machine-readable transcription by: </resp>
+   
+   <persName enddate="1940-11-06" startdate="1860-01-01">John Doe</persName>
+   
+</respStmt>

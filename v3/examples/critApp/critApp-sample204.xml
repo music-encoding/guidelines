@@ -1,0 +1,26 @@
+
+<section xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <measure></measure>
+   
+   <measure></measure>
+   
+   <app>
+      
+      <rdg source="#critApp.source1"></rdg>
+      
+      <rdg source="#critApp.source2">
+         
+         <!-- source 2 has 2 measures not found in source 1 -->
+         
+         <measure></measure>
+         
+         <measure></measure>
+         
+      </rdg>
+      
+   </app>
+   
+   <measure></measure>
+   
+</section>

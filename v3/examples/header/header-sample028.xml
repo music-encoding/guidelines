@@ -1,0 +1,14 @@
+
+<titleStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <title>Symphony No. 5 in C Minor : an electronic transcription</title>
+   
+   <respStmt>
+      
+      <persName role="composer">Ludwig van Beethoven</persName>
+      
+      <persName role="editor">Johannes Jones</persName>
+      
+   </respStmt>
+   
+</titleStmt>

@@ -1,5 +1,6 @@
 ---
-layout: redirect
-sitemap: false
-redirect_to: /v3/guidelines
+layout: default
+title: "What is MEI?"
 ---
+# MEI - guidelines ?
+

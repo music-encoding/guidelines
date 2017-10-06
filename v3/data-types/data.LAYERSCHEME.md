@@ -1,0 +1,142 @@
+---
+layout: sidebar
+sidebar: s1
+title: "data.LAYERSCHEME"
+
+---
+
+<div class="macroSpec">
+   <h3 id="data.LAYERSCHEME">data.LAYERSCHEME</h3>
+   <table class="wovenodd">
+      <tr>
+         <td colspan="2" class="wovenodd-col2">
+            <span class="label">data.LAYERSCHEME</span> Indicates how stems should be drawn when more than one layer is present and stem
+            directions are not indicated on the notes/chords themselves. '1' indicates that there
+            is
+            only a single layer on a staff. '2o' means there are two layers with opposing stems.
+            '2f'
+            indicates two 'free' layers; that is, opposing stems will be drawn unless one of the
+            layers
+            has 'space'. In that case, stem direction in the remaining layer will be determined
+            as if
+            there were only one layer. '3o' and '3f' are analogous to '2o' and '2f' with three
+            layers
+            allowed.
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Module</span>
+         </td>
+         <td class="wovenodd-col2">MEI</td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Used by</span>
+         </td>
+         <td class="wovenodd-col2">
+            <div class="parent">
+               <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a> (@layerscheme)
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Allowed values</span>
+         </td>
+         <td class="wovenodd-col2">
+            <dl>
+               <dt>1</dt>
+               <dd>Single layer.</dd>
+               <dt>2o</dt>
+               <dd>Two layers with opposing stems.</dd>
+               <dt>2f</dt>
+               <dd>Two layers with 'floating' stems.</dd>
+               <dt>3o</dt>
+               <dd></dd>
+               <dt>3f</dt>
+               <dd></dd>
+            </dl>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Declaration</span>
+         </td>
+         <td class="wovenodd-col2">
+            <div xml:space="preserve" class="pre">
+               <div class="indent1">
+                  <span data-indentation="1" class="element">&lt;content&gt;</span>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;valList 
+                        <span class="attribute">type=</span>
+                        <span class="attributevalue">"closed"</span>&gt;
+                     </span>
+                     
+                     <div class="indent3">
+                        <span data-indentation="3" class="element">&lt;valItem 
+                           <span class="attribute">ident=</span>
+                           <span class="attributevalue">"1"</span>&gt;
+                        </span>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;desc&gt;</span>Single layer.
+                           <span data-indentation="4" class="element">&lt;/desc&gt;</span>
+                        </div>
+                        
+                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
+                     </div>
+                     
+                     <div class="indent3">
+                        <span data-indentation="3" class="element">&lt;valItem 
+                           <span class="attribute">ident=</span>
+                           <span class="attributevalue">"2o"</span>&gt;
+                        </span>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;desc&gt;</span>Two layers with opposing stems.
+                           <span data-indentation="4" class="element">&lt;/desc&gt;</span>
+                        </div>
+                        
+                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
+                     </div>
+                     
+                     <div class="indent3">
+                        <span data-indentation="3" class="element">&lt;valItem 
+                           <span class="attribute">ident=</span>
+                           <span class="attributevalue">"2f"</span>&gt;
+                        </span>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;desc&gt;</span>Two layers with 'floating' stems.
+                           <span data-indentation="4" class="element">&lt;/desc&gt;</span>
+                        </div>
+                        
+                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
+                     </div>
+                     
+                     <div class="indent3">
+                        <span data-indentation="3" class="element">&lt;valItem 
+                           <span class="attribute">ident=</span>
+                           <span class="attributevalue">"3o"</span>/&gt;
+                        </span>
+                     </div>
+                     
+                     <div class="indent3">
+                        <span data-indentation="3" class="element">&lt;valItem 
+                           <span class="attribute">ident=</span>
+                           <span class="attributevalue">"3f"</span>/&gt;
+                        </span>
+                     </div>
+                     
+                     <span data-indentation="2" class="element">&lt;/valList&gt;</span>
+                  </div>
+                  
+                  <span data-indentation="1" class="element">&lt;/content&gt;</span>
+               </div>
+            </div>
+         </td>
+      </tr>
+   </table>
+</div>

@@ -1,0 +1,8 @@
+
+<editionStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <edition n="Draft2">Second draft, substantially extended, revised, and
+      corrected.
+   </edition>
+   
+</editionStmt>

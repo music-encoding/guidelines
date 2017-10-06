@@ -1,0 +1,14 @@
+
+<layer xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   
+   <note pname="f"></note>
+   
+   <note pname="a"></note>
+   
+   <handShift medium="blue ink"></handShift>
+   
+   <note pname="c"></note>
+   
+   <note pname="e"></note>
+   
+</layer>

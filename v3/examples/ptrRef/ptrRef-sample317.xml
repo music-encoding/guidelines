@@ -1,0 +1,6 @@
+
+<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" mimetype="application/pdf" target="my.pdf"></ptr>
+
+<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" mimetype="text/xml" target="my.xml"></ptr>
+
+<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" mimetype="image/png" target="my.png"></ptr>
