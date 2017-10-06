@@ -1,6 +1,5 @@
 ---
-layout: default
-title: "What is MEI?"
+layout: redirected
+sitemap: false
+redirect_to: /3
 ---
-# MEI - guidelines ?
-
