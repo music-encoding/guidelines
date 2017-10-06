@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Mensural"
+title: "Mensural Notation"
 version: "guidelines-v3"
 ---
-{% include content.html version=page.version dir="/03-mensural" %}
+{% include content.html version=page.version dir="/05-mensural" %}

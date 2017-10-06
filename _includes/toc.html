@@ -2,7 +2,7 @@
 {% for doc in c.docs %}
   {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
   {% assign levels = doc.relative_path | split: '/' %}
-  {% if levels.size < 5 %}
+  {% if levels.size < 3 %}
   {% assign levels = levels | shift %}
   
   <p>   
