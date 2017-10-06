@@ -1,5 +1,5 @@
 ---
-layout: redirected
+layout: redirect
 sitemap: false
-redirect_to: /3
+redirect_to: /v3/guidelines
 ---

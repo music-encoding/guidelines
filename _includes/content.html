@@ -1,0 +1,17 @@
+{% for doc in site.guidelines-v3 %}
+  {% if doc.relative_path contains include.dir %}
+
+  {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
+  {% assign levels = doc.relative_path | split: '/' %}
+  {% assign h = levels.size %}
+  {% assign levels = levels | shift %}
+
+  <h{{ h }}>
+      {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %}
+      {{ doc.title }}
+  </h{{ h }}>
+
+  {{ doc.content }}
+  
+  {% endif %}
+{% endfor %}

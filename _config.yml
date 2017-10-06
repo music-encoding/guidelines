@@ -13,6 +13,10 @@ exclude: [tools]
 
 gems:
   - jekyll-redirect-from
+  
+collections:
+  guidelines-v3:
+    output: false
 
 menu:
     - id: about
