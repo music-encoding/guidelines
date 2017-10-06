@@ -1,9 +1,23 @@
-<span class="btn bg-primary meiVersionBtn">Current (MEI 3.0.0)</span>
-<span class="btn bg-secondary meiVersionBtn">MEI 2.1.1</span>
-<span class="btn bg-secondary meiVersionBtn">MEI 2.0.0</span>
-<span class="btn bg-warning meiVersionBtn">Development Version</span>
+<span class="dropdown dropdownCustomMenuToggle">
+    <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">Current (MEI 3.0.0) <i class="icon icon-caret"></i></a>
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="#" class="btn btn-link text-left">Current (MEI 3.0.0)</a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="btn btn-link text-left">MEI 2.1.1</a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="btn btn-link text-left">MEI 2.0.0</a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="btn btn-link text-left">Development Version</a>
+        </li>
+    </ul>
+</span>
 
-<!--{% for entry in site.menu %}
+<!--
+{% for entry in site.menu %}
     <span class="dropdown dropdownCustomMenuToggle">
         {% unless entry.submenu %}
             <a href="{{m.url}}" class="btn btn-link" tabindex="{{ forloop.index0}}">
