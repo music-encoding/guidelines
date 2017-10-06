@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="columns">
+    <div class="column col-8">
+        {{ content }}
+    </div>
+    <div class="column col-4">
+        {% for m in site.sidemenu %}
+            {% if page.sidemenu == m.id %}
+                {% for s in m.content %}
+                <span>
+                    <a href="{{m.url}}{{s.url}}">{{s.label}}</a>
+                </span>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

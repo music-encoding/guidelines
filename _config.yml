@@ -1,0 +1,99 @@
+# Site settings
+title: MEI Guidelines
+email: info@music-encoding.org
+baseurl: "" 
+url: "http://guidelines.music-encoding.org"
+style_baseurl: "https://music-encoding.github.io"
+twitter_username: music-encoding
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-redirect-from
+
+menu:
+    - id: about
+      label: 'About'
+      url: '/about'
+    - id: community
+      label: 'Community'
+      url: '/community'
+      submenu:
+          - id: projects
+            label: 'Projects / Users'
+            url: '/projects-users.html'
+          - id: news
+            label: 'News / Events'
+            url: '/news-events.html'
+          - id: mailinglist
+            label: 'Mailing List'
+            url: '/mailing-list.html'
+          - id: interestgroups
+            label: 'Interest Groups'
+            url: '/interest-groups.html'
+          - id: technicalteams
+            label: 'Technical Team'
+            url: '/technical-team.html'
+          - id: meiboard
+            label: 'MEI Board'
+            url: '/mei-board.html'
+          - id: meibylaws
+            label: 'MEI By-laws'
+            url: '/mei-by-laws.html'
+    - id: conference
+      label: 'Conference'
+      url: '/mec'
+      submenu:
+          - id: upcoming
+            label: 'Upcoming Conference'
+            url: '/2018'
+          - id: previous
+            label: 'Past Conferences'
+            url: '/past.html'
+          - id: hosting
+            label: 'Hosting Guidelines'
+            url: '/hosting-guidelines.html'
+    - id: resources
+      label: 'Resources'
+      url: '/resources'
+      submenu:
+          - id: introduction
+            label: 'Introduction'
+            url: '/introduction.html'
+          - id: repositories
+            label: 'Repositories'
+            url: '/repositories.html'
+          - id: tools
+            label: 'Tools'
+            url: '/tools.html'
+          - id: bibliography
+            label: 'Bibliography'
+            url: '/bibliography.html'
+    - id: documentation
+      label: 'Documentation'
+      url: 'http://music-encoding.org/documentation/3.0.0/chapters/'
+    - id: archive
+      label: 'Archive'
+      url: '/archive'
+       
+sidemenu:  
+    - id: conference
+      label: 'Support'
+      url: '/mec/2018/'   
+      content: 
+          - id: venue
+            label: 'Venue'
+            url: 'venue.html'
+          - id: call
+            label: 'Call for papers'
+            url: 'call.html'
+          - id: program
+            label: 'Program'
+            url: 'program.html'
+          - id: registration
+            label: 'Registration'
+            url: 'registration.html'
+          - id: accommodations
+            label: 'Accommodations'
+            url: 'accommodations.html'
