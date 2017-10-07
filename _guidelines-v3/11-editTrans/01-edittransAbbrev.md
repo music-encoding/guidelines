@@ -7,11 +7,11 @@ title: "Abbreviations"
 
 MEI offers methods for marking abbreviations in prose, as in the following example:
 
-{% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample207.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample207.xml" valid="true" %}
 
 or abbreviations in the music itself, as in the following example:
 
-{% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample208.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample208.xml" valid="true" %}
 
 
 
@@ -21,8 +21,8 @@ typology. Sample values include:
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -63,27 +63,20 @@ typology. Sample values include:
    </tbody>
 </table>
 
-This tag is the mirror image of the 
-<a class="link_odd_elementSpec" href="/v3/elements/expan">expan</a> tag (not to be confused with
-the 
-<a class="link_odd_elementSpec" href="/v3/elements/expansion">expansion</a> element described in 
-<a class="link_ptr" title="Content of Musical Divisions" href="/v3/guidelines/shared#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>).
-Both 
-<a class="link_odd_elementSpec" href="/v3/elements/abbr">abbr</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/expan">expan</a> allow the encoder to
-transcribe an abbreviation and its expansion. In the case of 
-<a class="link_odd_elementSpec" href="/v3/elements/abbr">abbr</a>, the
+This tag is the mirror image of the [expan](/v3/elements/expan.html){:.link_odd_elementSpec} tag (not to be confused with
+the [expansion](/v3/elements/expansion.html){:.link_odd_elementSpec} element described in 
+<a class="link_ptr" title="Content of Musical Divisions" href="/v3/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>).
+Both [abbr](/v3/elements/abbr.html){:.link_odd_elementSpec} and [expan](/v3/elements/expan.html){:.link_odd_elementSpec} allow the encoder to
+transcribe an abbreviation and its expansion. In the case of [abbr](/v3/elements/abbr.html){:.link_odd_elementSpec}, the
 original is transcribed as the content of the element and the expansion as an attribute
 value,
-while 
-<a class="link_odd_elementSpec" href="/v3/elements/expan">expan</a> reverses this. The choice between the two is up to the user.
+while [expan](/v3/elements/expan.html){:.link_odd_elementSpec} reverses this. The choice between the two is up to the user.
 For example:
 
-{% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample209.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample209.xml" valid="false" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/abbr">abbr</a> tag is not required; if appropriate, the encoder may
+The [abbr](/v3/elements/abbr.html){:.link_odd_elementSpec} tag is not required; if appropriate, the encoder may
 transcribe abbreviations in the source text silently, without tagging them. If abbreviations
 are not transcribed directly but expanded silently, then the MEI header should indicate
 this
@@ -96,13 +89,10 @@ abbreviation.
 When the content of the **@abbr** or **@expan** attributes requires additional
 markup, an attribute cannot be used. In this case, the abbreviated and expanded forms
 must be
-presented within elements. Furthermore, as alternatives to each other, the 
-<a class="link_odd_elementSpec" href="/v3/elements/abbr">abbr</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/expan">expan</a> elements must be wrapped by the 
-<a class="link_odd_elementSpec" href="/v3/elements/choice">choice</a> element, as described above. The previous example, where the 'o:' in 'pno:' is
+presented within elements. Furthermore, as alternatives to each other, the [abbr](/v3/elements/abbr.html){:.link_odd_elementSpec} and [expan](/v3/elements/expan.html){:.link_odd_elementSpec} elements must be wrapped by the [choice](/v3/elements/choice.html){:.link_odd_elementSpec} element, as described above. The previous example, where the 'o:' in 'pno:' is
 written as superscript, would be encoded as:
 
-{% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample210.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample210.xml" valid="true" %}
 
 
 

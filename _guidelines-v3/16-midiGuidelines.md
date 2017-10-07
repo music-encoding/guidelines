@@ -15,8 +15,8 @@ sectionid: "midiGuidelines"
    been
    translated from MIDI to MEI. The MIDI model in MEI is similar to that of Mup, and
    the user is
-   directed to the 
-   <a class="link_ref" href="http://www.arkkra.com/doc/uguide.ps">Mup User Guide</a> for
+   directed to the [Mup User Guide](http://www.arkkra.com/doc/uguide.ps){:.link_ref}
+   for
    further reading.
    
    The MIDI module defines certain generally-accepted MIDI units that may be used outside

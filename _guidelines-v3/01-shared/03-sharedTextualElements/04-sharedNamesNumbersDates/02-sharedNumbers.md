@@ -5,13 +5,13 @@ title: "Numbers"
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/num">num</a> element may be used to identify any numeric information in
+The [num](/v3/elements/num.html){:.link_odd_elementSpec} element may be used to identify any numeric information in
 a text. The **@unit** may be used to specify the unit of measurement.
 
 
 
-{% include _specDesc.html key="num" atts="" %}
-{% include _specDesc.html key="num" atts="unit" %}
+{% include specDesc.html key="num" atts="" %}
+{% include specDesc.html key="num" atts="unit" %}
 
 
 

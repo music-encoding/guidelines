@@ -12,9 +12,9 @@ repertoires.
 
 
 
-{% include _specDesc.html key="accid" atts="" %}
-{% include _specDesc.html key="artic" atts="" %}
-{% include _specDesc.html key="dot" atts="" %}
+{% include specDesc.html key="accid" atts="" %}
+{% include specDesc.html key="artic" atts="" %}
+{% include specDesc.html key="dot" atts="" %}
 
 
 

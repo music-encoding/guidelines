@@ -28,17 +28,16 @@ elements are provided for this purpose:
 
 
 
-{% include _specDesc.html key="beatRpt" atts="" %}
-{% include _specDesc.html key="halfmRpt" atts="" %}
-{% include _specDesc.html key="mRpt" atts="" %}
-{% include _specDesc.html key="mRpt2" atts="" %}
-{% include _specDesc.html key="multiRpt" atts="" %}
+{% include specDesc.html key="beatRpt" atts="" %}
+{% include specDesc.html key="halfmRpt" atts="" %}
+{% include specDesc.html key="mRpt" atts="" %}
+{% include specDesc.html key="mRpt2" atts="" %}
+{% include specDesc.html key="multiRpt" atts="" %}
 
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/beatRpt">beatRpt</a> element is used to represent a single repeated beat.
+The [beatRpt](/v3/elements/beatRpt.html){:.link_odd_elementSpec} element is used to represent a single repeated beat.
 Its visual rendition can be recorded using the **@rend** attribute. This attribute
 indicates the number of slashes required to render the appropriate repeat symbol,
 which,
@@ -56,36 +55,28 @@ mixed duration values, the symbol is always rendered as 2 slashes and 2 dots.
 In addition to its indication of a repeated beat, the beatRpt element is sometimes
 used
 in popular music notation, especially in guitar or percussion parts, to indicate a
-repeated rhythmic pattern. The 
-<a class="link_odd_elementSpec" href="/v3/elements/beatRpt">beatRpt</a> element can be used, but when
+repeated rhythmic pattern. The [beatRpt](/v3/elements/beatRpt.html){:.link_odd_elementSpec} element can be used, but when
 these parts require durations longer or shorter than a beat, note elements with
 appropriately-shaped note heads should be employed instead.
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/mRpt">mRpt</a> element is available for repetition of an entire measure.
-Like 
-<a class="link_odd_elementSpec" href="/v3/elements/mRest">mRest</a>, it must be the sole child of 
-<a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a>, no other events should be used. The **@n** attribute of 
-<a class="link_odd_elementSpec" href="/v3/elements/mRpt">mRpt</a> should not be used to record the number displayed above the
+The [mRpt](/v3/elements/mRpt.html){:.link_odd_elementSpec} element is available for repetition of an entire measure.
+Like [mRest](/v3/elements/mRest.html){:.link_odd_elementSpec}, it must be the sole child of [layer](/v3/elements/layer.html){:.link_odd_elementSpec}, no other events should be used. The **@n** attribute of [mRpt](/v3/elements/mRpt.html){:.link_odd_elementSpec} should not be used to record the number displayed above the
 measure in the figure below. Instead, the numbering of repetitions of the written-out
-measure can be enabled using the **@multi.number** attribute available on the 
-<a class="link_odd_elementSpec" href="/v3/elements/scoreDef">scoreDef</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/staffDef">staffDef</a> elements.
+measure can be enabled using the **@multi.number** attribute available on the [scoreDef](/v3/elements/scoreDef.html){:.link_odd_elementSpec} and [staffDef](/v3/elements/staffDef.html){:.link_odd_elementSpec} elements.
 
 
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample152.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample152.xml" valid="false" %}
 
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/halfmRpt">halfmRpt</a> element represents the incorrect, but frequently
+The [halfmRpt](/v3/elements/halfmRpt.html){:.link_odd_elementSpec} element represents the incorrect, but frequently
 found, use of the measure repeat (or similar) sign to indicate repetition of half
 of a
 measure. This practice mostly occurs in hand-written notation and usually involves
@@ -100,17 +91,14 @@ importance. The following example from the beginning of Beethoven's
    <img src="../../../../guidelines/3.0.0/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample153.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample153.xml" valid="false" %}
 
 
 As seen in the example above, it is possible to continuously repeat half measures,
 even
 across barlines.
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/mRpt2">mRpt2</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/multiRpt">multiRpt</a> elements (like the 
-<a class="link_odd_elementSpec" href="/v3/elements/multiRest">multiRest</a> element) never occur in scores, only in performer parts,
+The [mRpt2](/v3/elements/mRpt2.html){:.link_odd_elementSpec} and [multiRpt](/v3/elements/multiRpt.html){:.link_odd_elementSpec} elements (like the [multiRest](/v3/elements/multiRest.html){:.link_odd_elementSpec} element) never occur in scores, only in performer parts,
 where it is often necessary to abbreviate the notation due to page size limitations.
 
 
@@ -124,23 +112,20 @@ where it is often necessary to abbreviate the notation due to page size limitati
    <figcaption class="figure-caption">Figure 18. Multi-measure repetition</figcaption>
 </figure>
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/mRpt2">mRpt2</a> element represents repetition of a 2-measure fragment,
-while 
-<a class="link_odd_elementSpec" href="/v3/elements/multiRpt">multiRpt</a> is for repetition of fragments longer than two
+The [mRpt2](/v3/elements/mRpt2.html){:.link_odd_elementSpec} element represents repetition of a 2-measure fragment,
+while [multiRpt](/v3/elements/multiRpt.html){:.link_odd_elementSpec} is for repetition of fragments longer than two
 measures. In modern publishing practice, repeats of more than two measures are written
 out
 using repeat signs. This element is provided, however, for handling non-standard practices
-often found in manuscripts. The **@num** attribute on 
-<a class="link_odd_elementSpec" href="/v3/elements/multiRpt">multiRpt</a>
+often found in manuscripts. The **@num** attribute on [multiRpt](/v3/elements/multiRpt.html){:.link_odd_elementSpec}
 records the number of preceding measures to be repeated.
 
 All elements described above allow for association of the sign with a symbol in a
 digital
 facsimile (via the **@facs** attribute) and with a user-defined symbol (using
 **@altsym**). See 
-<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles">12 Facsimiles</a> and 
-<a class="link_ptr" title="User-defined Symbols" href="/v3/guidelines/userSymbols">22 User-defined Symbols</a> for
+<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles.html">12 Facsimiles</a> and 
+<a class="link_ptr" title="User-defined Symbols" href="/v3/guidelines/userSymbols.html">22 User-defined Symbols</a> for
 further details. In addition, the **@expand** attribute is available on the
 foregoing elements to inform a rendering process whether to use the repeat symbol
 or the

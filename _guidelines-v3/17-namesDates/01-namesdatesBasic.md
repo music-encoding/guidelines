@@ -9,33 +9,25 @@ The basic elements for capturing names and dates are defined in the shared modul
 
 
 
-{% include _specDesc.html key="name" atts="" %}
-{% include _specDesc.html key="date" atts="" %}
+{% include specDesc.html key="name" atts="" %}
+{% include specDesc.html key="date" atts="" %}
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/name">name</a> element contains the name of an entity that is difficult to
-tag more specifically as a 
-<a class="link_odd_elementSpec" href="/v3/elements/corpName">corpName</a>, 
-<a class="link_odd_elementSpec" href="/v3/elements/geogName">geogName</a>, 
-<a class="link_odd_elementSpec" href="/v3/elements/persName">persName</a>, or 
-<a class="link_odd_elementSpec" href="/v3/elements/title">title</a>. In section 
-<a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/v3/guidelines/shared#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the 
-<a class="link_odd_elementSpec" href="/v3/elements/name">name</a> element
+The [name](/v3/elements/name.html){:.link_odd_elementSpec} element contains the name of an entity that is difficult to
+tag more specifically as a [corpName](/v3/elements/corpName.html){:.link_odd_elementSpec}, [geogName](/v3/elements/geogName.html){:.link_odd_elementSpec}, [persName](/v3/elements/persName.html){:.link_odd_elementSpec}, or [title](/v3/elements/title.html){:.link_odd_elementSpec}. In section <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/v3/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the [name](/v3/elements/name.html){:.link_odd_elementSpec} element
 may be used in place of the more specific elements when it is not known what kind
 of name is
 being described or when a high degree of precision is not necessary. For example,
-the 
-<a class="link_odd_elementSpec" href="/v3/elements/name">name</a> element might be used when it is not clear whether the name "Bach"
-refers to a person or a geographic feature. When name parts are needed, use 
-<a class="link_odd_elementSpec" href="/v3/elements/name">name</a> sub-elements. The recommended values for the **@type** attribute are:
+the [name](/v3/elements/name.html){:.link_odd_elementSpec} element might be used when it is not clear whether the name "Bach"
+refers to a person or a geographic feature. When name parts are needed, use [name](/v3/elements/name.html){:.link_odd_elementSpec} sub-elements. The recommended values for the **@type** attribute are:
 
 
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -57,8 +49,7 @@ refers to a person or a geographic feature. When name parts are needed, use
       </tr>
    </tbody>
 </table>
-The date sub-element is available within 
-<a class="link_odd_elementSpec" href="/v3/elements/name">name</a> in order to record any
+The date sub-element is available within [name](/v3/elements/name.html){:.link_odd_elementSpec} in order to record any
 dates associated with the name, for example, creation and dissolution in the case
 of a
 corporate entity or place or birth and death dates in the case of an individual. The
@@ -66,59 +57,70 @@ name of
 the list from which a controlled value is taken, such as the Library of Congress Name
 Authority File (LCNAF), may be recorded using the authority attribute.
 
-Examples of the use of the 
-<a class="link_odd_elementSpec" href="/v3/elements/name">name</a> element:
+Examples of the use of the [name](/v3/elements/name.html){:.link_odd_elementSpec} element:
 
-{% include _plainExample.html example="./v3/examples/namesDates/namesDates-sample276.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample276.xml" valid="false" %}
 
-The element 
-<a class="link_odd_elementSpec" href="/v3/elements/date">date</a> contains a date in any format, including a date range.
+The element [date](/v3/elements/date.html){:.link_odd_elementSpec} contains a date in any format, including a date range.
 A date range may be expressed as textual content or, when intervening punctuation
 is present,
 as a combination of date sub-elements and text.
 
-{% include _plainExample.html example="./v3/examples/namesDates/namesDates-sample277.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample277.xml" valid="false" %}
 
-To be more specific about the date, the attributes in the 
-<a class="link_odd" href="/v3/attribute-classes/att.datable">att.datable</a> class can be used:
+To be more specific about the date, the attributes in the [att.datable](/v3/attribute-classes/att.datable.html){:.link_odd} class can be used:
 
 
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td>**@startdate**</td>
+         <td>
+            <span class="att">startdate</span>
+         </td>
          <td> - contains the starting point of a date range in standard ISO form</td>
       </tr>
       <tr>
-         <td>**@enddate**</td>
+         <td>
+            <span class="att">enddate</span>
+         </td>
          <td> - contains the end point of a date range in standard ISO form</td>
       </tr>
       <tr>
-         <td>**@notbefore**</td>
+         <td>
+            <span class="att">notbefore</span>
+         </td>
          <td> - contains a lower boundary for an uncertain date</td>
       </tr>
       <tr>
-         <td>**@notafter**</td>
+         <td>
+            <span class="att">notafter</span>
+         </td>
          <td> - contains an upper boundary for an uncertain date</td>
       </tr>
       <tr>
-         <td>**@isodate**</td>
+         <td>
+            <span class="att">isodate</span>
+         </td>
          <td> - gives the value of a textual date in standard ISO form</td>
       </tr>
       <tr>
-         <td>**@calendar**</td>
+         <td>
+            <span class="att">calendar</span>
+         </td>
          <td> - indicates the system or calendar to which a date belongs, for example, Gregorian,
             Julian, Roman, Mosaic, Revolutionary, Islamic, etc.
          </td>
       </tr>
       <tr>
-         <td>**@cert**</td>
+         <td>
+            <span class="att">cert</span>
+         </td>
          <td> - signifies the degree of certainty or precision associated with a feature (high,
             medium, low, unknown)
          </td>
@@ -128,5 +130,5 @@ To be more specific about the date, the attributes in the
 In the following example, the ambiguous date text "5/3/05" is resolved using the
 **@isodate** attribute:
 
-{% include _plainExample.html example="./v3/examples/namesDates/namesDates-sample278.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample278.xml" valid="false" %}
 

@@ -5,8 +5,7 @@ title: "Note and Rest Values"
 
 
 
-When the mensural module is included, **@dur** on <a class="link_odd_elementSpec" href="/v3/elements/note">note</a>, 
-<a class="link_odd_elementSpec" href="/v3/elements/rest">rest</a>, and other elements can take the following values:
+When the mensural module is included, **@dur** on [note](/v3/elements/note.html){:.link_odd_elementSpec}, [rest](/v3/elements/rest.html){:.link_odd_elementSpec}, and other elements can take the following values:
 
 
 - maxima

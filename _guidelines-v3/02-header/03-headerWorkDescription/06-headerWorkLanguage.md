@@ -5,21 +5,18 @@ title: "Language Usage"
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/langUsage">langUsage</a> element is used within the 
-<a class="link_odd_elementSpec" href="/v3/elements/workDesc">workDesc</a> element to describe the languages, sublanguages, dialects, etc. represented
-within a work. It contains one or more 
-<a class="link_odd_elementSpec" href="/v3/elements/language">language</a> elements, each of
+The [langUsage](/v3/elements/langUsage.html){:.link_odd_elementSpec} element is used within the [workDesc](/v3/elements/workDesc.html){:.link_odd_elementSpec} element to describe the languages, sublanguages, dialects, etc. represented
+within a work. It contains one or more [language](/v3/elements/language.html){:.link_odd_elementSpec} elements, each of
 which provides information about a single language.
 
 
 
-{% include _specDesc.html key="langUsage" atts="" %}
-{% include _specDesc.html key="language" atts="" %}
+{% include specDesc.html key="langUsage" atts="" %}
+{% include specDesc.html key="language" atts="" %}
 
 
 
-A 
-<a class="link_odd_elementSpec" href="/v3/elements/language">language</a> element may be supplied for each different language used
+A [language](/v3/elements/language.html){:.link_odd_elementSpec} element may be supplied for each different language used
 in a document. If used, its **@xml:id** attribute should specify an appropriate
 language identifier. This is particularly important if extended language identifiers
 have
@@ -27,5 +24,5 @@ been used as the value of @xml:lang attributes elsewhere in the document.
 
 Here is an example of the use of this element:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample054.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/header/header-sample054.xml" valid="false" %}
 

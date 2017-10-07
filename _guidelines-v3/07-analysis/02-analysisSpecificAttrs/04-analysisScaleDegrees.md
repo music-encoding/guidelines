@@ -7,7 +7,7 @@ title: "Scale Degrees"
 
 
 
-{% include _specDesc.html key="att.harmonicfunction" atts="deg" %}
+{% include specDesc.html key="att.harmonicfunction" atts="deg" %}
 
 
 
@@ -30,5 +30,5 @@ minus (-) signs, signifying raised or lowered scale degree, respectively. The ac
 amount
 of chromatic alteration is not indicated.
 
-{% include _plainExample.html example="./v3/examples/analysis/analysis-sample174.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/analysis/analysis-sample174.xml" valid="false" %}
 

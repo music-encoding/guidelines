@@ -7,13 +7,12 @@ title: "Arpeggio and Glissando"
 
 In CMN, the notes of a chord are sometimes performed successively rather than
 simultaneously. This behavior, called arpeggiation, is normally indicated
-using a wavy line preceding the chord. MEI offers the <a class="link_odd_elementSpec" href="/v3/elements/arpeg">arpeg</a> element
-to describe arpeggios. This element is a member of the 
-<a class="link_odd" href="/v3/model-classes/model.controleventLike">model.controleventLike</a> class and, like other members of this class, uses the
+using a wavy line preceding the chord. MEI offers the [arpeg](/v3/elements/arpeg.html){:.link_odd_elementSpec} element
+to describe arpeggios. This element is a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class and, like other members of this class, uses the
 **@staff**, **@layer** and **@tstamp** or the **@startid** and
 **@endid** attributes to connect it to the affected chord.
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample136.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample136.xml" valid="true" %}
 
 
 The usual direction for the performance of an arpeggio is from lowest note to highest,
@@ -43,7 +42,7 @@ its direction to distinguish it from the upward arpeggio; therefore, the presenc
 of the
 arrowhead can be implied.
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample137.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample137.xml" valid="false" %}
 
 
 A third, and somewhat counter-intuitive, value for **@order**, "nonarp", indicates
@@ -59,8 +58,7 @@ indicated.
 
 For arpeggios that involve chords spanning multiple staves as a continuous arpeggio
 (instead of two separate arpeggios), the **@plist** attribute may be used to point
-to all affected 
-<a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a> elements' **@xml:id** attributes.
+to all affected [chord](/v3/elements/chord.html){:.link_odd_elementSpec} elements' **@xml:id** attributes.
 
 
 
@@ -70,14 +68,11 @@ chord, a glissando denotes a situation where the pitch
 this slide produces distinct intermediate pitches (as on the piano) or not (as on
 the
 trombone), though the latter is sometimes referred to as portamento. The
-visual appearance of a glissando, which MEI encodes as 
-<a class="link_odd_elementSpec" href="/v3/elements/gliss">gliss</a>, is
+visual appearance of a glissando, which MEI encodes as [gliss](/v3/elements/gliss.html){:.link_odd_elementSpec}, is
 normally a line connecting the two most distant notes in the glissando.
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/gliss">gliss</a> element is a member of the 
-<a class="link_odd" href="/v3/model-classes/model.controleventLike">model.controleventLike</a> class and therefore, like other control events, it
+The [gliss](/v3/elements/gliss.html){:.link_odd_elementSpec} element is a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class and therefore, like other control events, it
 occurs inside a measure after the staves and uses its **@staff**, **@layer**,
 **@tstamp**, **@tstamp2**, **@startid** and **@endid**
 attributes to connect it to the affected notes or chords. It is a semantic error not

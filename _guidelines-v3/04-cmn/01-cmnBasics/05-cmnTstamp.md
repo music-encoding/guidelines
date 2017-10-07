@@ -10,10 +10,8 @@ as
 notes and slurs. The most common and most musician-friendly approach to this is through
 the
 use of a combination of the attributes **@tstamp** and **@dur**, which are made
-available by the attribute classes <a class="link_odd" href="/v3/attribute-classes/att.timestamp.musical">att.timestamp.musical</a>
-(inherited by 
-<a class="link_odd" href="/v3/attribute-classes/att.controlevent">att.controlevent</a>) and 
-<a class="link_odd" href="/v3/attribute-classes/att.duration.musical">att.duration.musical</a>, both from the shared module.
+available by the attribute classes [att.timestamp.musical](/v3/attribute-classes/att.timestamp.musical.html){:.link_odd}
+(inherited by [att.controlevent](/v3/attribute-classes/att.controlevent.html){:.link_odd}) and [att.duration.musical](/v3/attribute-classes/att.duration.musical.html){:.link_odd}, both from the shared module.
 
 The timestamp (**@tstamp**) of a musical event is calculated in relation
 to the meter of the current measure and resembles the so-called ‘beat’.
@@ -32,11 +30,9 @@ This allows the capture of all graphical positions starting from the left barlin
 ending with the right barline of the measure ('5', in the case of 4/4 time).
 
 For expressing durations, MEI offers the **@dur** attribute. This attribute is
-described in section 
-<a class="link_ptr" title="Basic Usage of Notes in CMN" href="/v3/guidelines/cmn#cmnNotesBasic">4.1.4.1.1 Basic Usage of Notes in CMN</a>.
+described in section <a class="link_ptr" title="Basic Usage of Notes in CMN" href="/v3/guidelines/cmn.html#cmnNotesBasic">4.1.4.1.1 Basic Usage of Notes in CMN</a>.
 
-For ‘spanning’ elements like slurs, which are members of the 
-<a class="link_odd" href="/v3/model-classes/model.controleventLike">model.controleventLike</a> class, it is often more intuitive to record
+For ‘spanning’ elements like slurs, which are members of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class, it is often more intuitive to record
 two timestamps – one for the onset of the event and one for its termination. Because
 the
 termination of the event may be in a succeeding measure, the second timestamp

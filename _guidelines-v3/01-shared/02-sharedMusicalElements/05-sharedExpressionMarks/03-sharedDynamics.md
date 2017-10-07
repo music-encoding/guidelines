@@ -14,7 +14,7 @@ specified through dynamic marks.
 
 
 
-{% include _specDesc.html key="dynam" atts="" %}
+{% include specDesc.html key="dynam" atts="" %}
 
 
 

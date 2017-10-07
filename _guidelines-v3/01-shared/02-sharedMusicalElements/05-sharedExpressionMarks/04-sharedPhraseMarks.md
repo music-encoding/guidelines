@@ -11,8 +11,8 @@ work that represent a unified melodic idea, analogous to a phrase in literature.
 
 
 
-{% include _specDesc.html key="phrase" atts="" %}
-{% include _specDesc.html key="slur" atts="" %}
+{% include specDesc.html key="phrase" atts="" %}
+{% include specDesc.html key="slur" atts="" %}
 
 
 
@@ -27,7 +27,6 @@ slur also indicates that the affected notes should be played in a
 
 Even so, it is common for both of these concepts to be referred to generically as
 "slurs". Therefore, unless one is encoding music from a repertoire in which this
-distinction is important, the <a class="link_odd_elementSpec" href="/v3/elements/slur">slur</a> element should be preferred over
-
-<a class="link_odd_elementSpec" href="/v3/elements/phrase">phrase</a>.
+distinction is important, the [slur](/v3/elements/slur.html){:.link_odd_elementSpec} element should be preferred over
+[phrase](/v3/elements/phrase.html){:.link_odd_elementSpec}.
 

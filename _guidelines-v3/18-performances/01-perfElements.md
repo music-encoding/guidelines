@@ -10,36 +10,29 @@ The following elements are available to encode information about a recorded perf
 
 
 
-{% include _specDesc.html key="performance" atts="" %}
-{% include _specDesc.html key="recording" atts="" %}
-{% include _specDesc.html key="avFile" atts="" %}
-{% include _specDesc.html key="clip" atts="" %}
-{% include _specDesc.html key="when" atts="" %}
+{% include specDesc.html key="performance" atts="" %}
+{% include specDesc.html key="recording" atts="" %}
+{% include specDesc.html key="avFile" atts="" %}
+{% include specDesc.html key="clip" atts="" %}
+{% include specDesc.html key="when" atts="" %}
 
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/performance">performance</a> element begins a subtree of the 
-<a class="link_odd_elementSpec" href="/v3/elements/music">music</a> element and appears alongside with, or instead of, 
-<a class="link_odd_elementSpec" href="/v3/elements/body">body</a>
+The [performance](/v3/elements/performance.html){:.link_odd_elementSpec} element begins a subtree of the [music](/v3/elements/music.html){:.link_odd_elementSpec} element and appears alongside with, or instead of, [body](/v3/elements/body.html){:.link_odd_elementSpec}
+(described in <a class="link_ptr" title="Music Element" href="/v3/guidelines/shared.html#sharedMusicElement">1.1.2 Music Element</a> and [facsimile](/v3/elements/facsimile.html){:.link_odd_elementSpec}
 (described in 
-<a class="link_ptr" title="Music Element" href="/v3/guidelines/shared#sharedMusicElement">1.1.2 Music Element</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/facsimile">facsimile</a>
-(described in 
-<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles">12 Facsimiles</a>). A 
-<a class="link_odd_elementSpec" href="/v3/elements/performance">performance</a> element
+<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles.html">12 Facsimiles</a>). A [performance](/v3/elements/performance.html){:.link_odd_elementSpec} element
 represents one recorded performance event. As a performance may be recorded in multiple
-formats or by different personnel or or using different equipment, the 
-<a class="link_odd_elementSpec" href="/v3/elements/performance">performance</a> element may group one or more recordings of the event.
+formats or by different personnel or or using different equipment, the [performance](/v3/elements/performance.html){:.link_odd_elementSpec} element may group one or more recordings of the event.
 
 
 The **@decls** attribute can be used to point to performance medium metadata for the
 performed work. See 
-<a class="link_ptr" title="Performance Medium" href="/v3/guidelines/header#headerWorkMedium">2.3.7 Performance Medium</a> for more details.
+<a class="link_ptr" title="Performance Medium" href="/v3/guidelines/header.html#headerWorkMedium">2.3.7 Performance Medium</a> for more details.
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/recording">recording</a> element identifies a single recording event taking place
+The [recording](/v3/elements/recording.html){:.link_odd_elementSpec} element identifies a single recording event taking place
 within an absolute temporal space. The class att.mediabounds contains attributes that
 can be
 used to define this space:
@@ -47,25 +40,22 @@ used to define this space:
 
 
 
-{% include _specDesc.html key="att.mediabounds" atts="begin end betype" %}
+{% include specDesc.html key="att.mediabounds" atts="begin end betype" %}
 
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/avFile">avFile</a> element identifies an external file associated with a
-recording act. In the simplest case, the recording element will contain one 
-<a class="link_odd_elementSpec" href="/v3/elements/avFile">avFile</a> element identifying a file that represents it. The **@target** attribute
+The [avFile](/v3/elements/avFile.html){:.link_odd_elementSpec} element identifies an external file associated with a
+recording act. In the simplest case, the recording element will contain one [avFile](/v3/elements/avFile.html){:.link_odd_elementSpec} element identifying a file that represents it. The **@target** attribute
 contains the URI of the digital media file. Use of the **@mimetype** attribute is
-recommended for the 
-<a class="link_odd_elementSpec" href="/v3/elements/avFile">avFile</a> element. Its value should be a valid MIME
+recommended for the [avFile](/v3/elements/avFile.html){:.link_odd_elementSpec} element. Its value should be a valid MIME
 media type defined by the Internet Engineering Task Force in RFC 2046. It is also
 recommended
 that all avFile elements have a recording or clip parent which bears the **@begin**,
 **@end**, and **@betype** attributes.
 
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample297.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample297.xml" valid="true" %}
 
 
 Sometimes, multiple digital files are created in order to provide greater flexibility
@@ -76,16 +66,15 @@ each with a different mimetype. Keep in mind, however, that each file still repr
 the
 complete temporal extent of the recording act in spite of the change of file format:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample298.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample298.xml" valid="true" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/clip">clip</a> element identifies a temporal segment of a recording act. In
+The [clip](/v3/elements/clip.html){:.link_odd_elementSpec} element identifies a temporal segment of a recording act. In
 the following example, the clip begins two minutes into the timeframe of the recording
 and
 ends 20 seconds later:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample299.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample299.xml" valid="true" %}
 
 
 Beyond these relatively simple uses, complex situations may occur that require equally
@@ -95,20 +84,19 @@ files. Because they have differing durations, the media files must be the result
 separate
 recording acts, even if these recording acts took place at the same time:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample300.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample300.xml" valid="true" %}
 
 
 A single performance may also be represented by multiple, *sequential* digital
 files, as when a complete work is recorded in several so-called ‘takes’. In
 this case, the files may be considered to be parts of a single recording act, the
 extent of
-which is the combined extent of the individual clips. For example, a series of 
-<a class="link_odd_elementSpec" href="/v3/elements/clip">clip</a> elements may be used to identify each movement of a piece and give
+which is the combined extent of the individual clips. For example, a series of [clip](/v3/elements/clip.html){:.link_odd_elementSpec} elements may be used to identify each movement of a piece and give
 start and end times for the movements in relation to the overall temporal space of
 the
 complete work:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample301.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample301.xml" valid="true" %}
 
 
 Similar markup is also applicable when a single file representing the entirety of
@@ -116,15 +104,13 @@ a recording
 act is broken into segments later, as is often done for practical storage and distribution
 reasons. The file from which the clips are derived is indicated using an avFile element:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample302.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample302.xml" valid="true" %}
 
 
-A 
-<a class="link_odd_elementSpec" href="/v3/elements/clip">clip</a> may be used to define any region of interest, such as a cadenza
-or a modulation, a song verse, etc. The following example shows the use of 
-<a class="link_odd_elementSpec" href="/v3/elements/clip">clip</a> and its attributes to identify significant sections of a recording:
+A [clip](/v3/elements/clip.html){:.link_odd_elementSpec} may be used to define any region of interest, such as a cadenza
+or a modulation, a song verse, etc. The following example shows the use of [clip](/v3/elements/clip.html){:.link_odd_elementSpec} and its attributes to identify significant sections of a recording:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample303.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample303.xml" valid="true" %}
 
 
 The preceding example also demonstrates that media files are not required in order
@@ -140,18 +126,17 @@ in
 the MEI file, the **@startid** attribute can be used to indicate the first element in
 the sequence of events to which the recording corresponds:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample304.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample304.xml" valid="false" %}
 
 
-Clips can also be aligned with components of the musical text encoded in the 
-<a class="link_odd_elementSpec" href="/v3/elements/body">body</a>. The **@startid** attribute can be used to specify the starting element in
+Clips can also be aligned with components of the musical text encoded in the [body](/v3/elements/body.html){:.link_odd_elementSpec}. The **@startid** attribute can be used to specify the starting element in
 the sequence of events to which the clip corresponds. The following example shows
 the use of
 of clip elements to identify the exposition of the first movement from Beethoven's
 piano
 sonata Op. 14, no. 2 and its concluding ‘codetta’.
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample305.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample305.xml" valid="false" %}
 
 
 Please note that the begin and end times of clips may overlap. In the preceding example,
@@ -162,7 +147,7 @@ ending points may also be used to provide additional performance context for a s
 or
 because there is uncertainty with regard to precise values for these points.
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample306.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample306.xml" valid="true" %}
 
 
 A bibliographic description of a recording or metadata explaining how clip boundaries
@@ -170,18 +155,16 @@ were
 determined may be associated with the recording and clip elements via the **@decls**
 attribute:
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample307.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample307.xml" valid="true" %}
 
 Associations between a feature of the encoding, such as a note, dynamic mark, or annotation,
-and a time point, may be created using 
-<a class="link_odd_elementSpec" href="/v3/elements/when">when</a> elements and **@when**
+and a time point, may be created using [when](/v3/elements/when.html){:.link_odd_elementSpec} elements and **@when**
 attributes.
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/when">when</a> element identifies a particular point in time during the
+The [when](/v3/elements/when.html){:.link_odd_elementSpec} element identifies a particular point in time during the
 playback of a media file, such as an audio recording.
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample308.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample308.xml" valid="true" %}
 
 Time points may be identified in absolute terms as above; that is, in hours, minutes,
 and
@@ -191,13 +174,13 @@ example, the time point of interest happens 48 frames after the occurrence of th
 point
 labelled as "t1".
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample309.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample309.xml" valid="true" %}
 
 Having identified a point of interest, another feature of the encoding may be associated
 with
 this point using its **@when** attribute: 
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample310.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample310.xml" valid="true" %}
 
 One use of the association created between the annotation and the time point is to
 display
@@ -210,7 +193,7 @@ the opposite direction; that is, from a time point to other features of the mark
 For
 example, 
 
-{% include _plainExample.html example="./v3/examples/performances/performances-sample311.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/performances/performances-sample311.xml" valid="true" %}
 
 indicates that the entities identified in **@data** all occur at the same instant.
 

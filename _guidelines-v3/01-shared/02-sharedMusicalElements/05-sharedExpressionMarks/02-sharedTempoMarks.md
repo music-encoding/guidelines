@@ -11,7 +11,7 @@ continuous tempo markings may be encoded using this element.
 
 
 
-{% include _specDesc.html key="tempo" atts="" %}
+{% include specDesc.html key="tempo" atts="" %}
 
 
 

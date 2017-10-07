@@ -8,8 +8,8 @@ title: "Photographic and Motion Video Formats"
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>

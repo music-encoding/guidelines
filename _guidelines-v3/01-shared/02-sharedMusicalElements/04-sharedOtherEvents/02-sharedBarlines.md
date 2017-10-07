@@ -10,8 +10,8 @@ events.
 
 
 
-{% include _specDesc.html key="barLine" atts="" %}
-{% include _specDesc.html key="custos" atts="" %}
+{% include specDesc.html key="barLine" atts="" %}
+{% include specDesc.html key="custos" atts="" %}
 
 
 

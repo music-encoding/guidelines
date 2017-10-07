@@ -9,15 +9,12 @@ In CMN scores, there is often a large number of natural language instructions. S
 of them
 concern the loudness and the speed of the performance, in which case MEI offers the
 elements
-<a class="link_odd_elementSpec" href="/v3/elements/dynam">dynam</a> (described at 
-<a class="link_ptr" title="Dynamics in CMN" href="/v3/guidelines/cmn#cmnDynam">4.2.3 Dynamics in CMN</a>) and 
-<a class="link_odd_elementSpec" href="/v3/elements/tempo">tempo</a>. In other cases, however, they provide other instructions for the performer.
+[dynam](/v3/elements/dynam.html){:.link_odd_elementSpec} (described at <a class="link_ptr" title="Dynamics in CMN" href="/v3/guidelines/cmn.html#cmnDynam">4.2.3 Dynamics in CMN</a>) and [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec}. In other cases, however, they provide other instructions for the performer.
 Instead of providing separate elements for all possible types of such directions,
 MEI offers
-the generic 
-<a class="link_odd_elementSpec" href="/v3/elements/dir">dir</a> element. Although this element is not CMN specific (it
+the generic [dir](/v3/elements/dir.html){:.link_odd_elementSpec} element. Although this element is not CMN specific (it
 is defined in 
-<a class="link_ptr" title="Shared Elements, Models, and Attributes" href="/v3/guidelines/shared">1 Shared Elements, Models, and Attributes</a>), it is especially important in this repertoire.
+<a class="link_ptr" title="Shared Elements, Models, and Attributes" href="/v3/guidelines/shared.html">1 Shared Elements, Models, and Attributes</a>), it is especially important in this repertoire.
 
 A tempo or character indication is often provided above the topmost staff of the first
 measure of a score, movement, or section. This indication, such as "Allegro moderato"
@@ -25,24 +22,16 @@ or
 "Andante maestoso", may be regarded as a label. Though it is possible to label the
 movement,
 etc. using a **@label** attribute attached to the enclosing structural entity (that
-is, on 
-<a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> or 
-<a class="link_odd_elementSpec" href="/v3/elements/section">section</a>), it is often required to
+is, on [mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} or [section](/v3/elements/section.html){:.link_odd_elementSpec}), it is often required to
 capture the exact position, spelling, or other features of the label as found in the
 underlying source material. In these cases, an element is necessary.
 
 Labels which address the tempo at which the music should be performed should be encoded
-using the 
-<a class="link_odd_elementSpec" href="/v3/elements/tempo">tempo</a> element, which is a specialized form of 
-<a class="link_odd_elementSpec" href="/v3/elements/dir">dir</a>. 
-<a class="link_odd_elementSpec" href="/v3/elements/tempo">tempo</a> is a member of the 
-<a class="link_odd" href="/v3/model-classes/model.controleventLike">model.controleventLike</a> class and as such occurs as a child of 
-<a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>, following all 
-<a class="link_odd_elementSpec" href="/v3/elements/staff">staff</a> children. Its **@staff**,
+using the [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec} element, which is a specialized form of [dir](/v3/elements/dir.html){:.link_odd_elementSpec}. [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec} is a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class and as such occurs as a child of [measure](/v3/elements/measure.html){:.link_odd_elementSpec}, following all [staff](/v3/elements/staff.html){:.link_odd_elementSpec} children. Its **@staff**,
 **@layer** and **@tstamp** attributes are used to ensure correct semantic
 positioning, and **@place** indicates a visual position with respect to the staff.
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample149.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample149.xml" valid="true" %}
 
 
 Rehearsal marks are another specialized kind of directive. Consisting of
@@ -50,13 +39,11 @@ letters, numbers, or a combination of both, rehearsal marks are used in scores a
 corresponding performer parts to identify convenient points to restart rehearsal after
 breaks or interruptions. For this reason, they are often visually emphasized by placing
 them
-within a square or circle. In MEI, they are encoded using the 
-<a class="link_odd_elementSpec" href="/v3/elements/reh">reh</a>
+within a square or circle. In MEI, they are encoded using the [reh](/v3/elements/reh.html){:.link_odd_elementSpec}
 element, which holds the textual content of the rehearsal mark. The visual rendition
 of the
-rehearsal mark, including the surrounding shape, may be captured using the 
-<a class="link_odd_elementSpec" href="/v3/elements/rend">rend</a> element described in chapter 
-<a class="link_ptr" title="Text Rendition" href="/v3/guidelines/shared#sharedTextRendition">1.3.2 Text Rendition</a>.
+rehearsal mark, including the surrounding shape, may be captured using the [rend](/v3/elements/rend.html){:.link_odd_elementSpec} element described in chapter 
+<a class="link_ptr" title="Text Rendition" href="/v3/guidelines/shared.html#sharedTextRendition">1.3.2 Text Rendition</a>.
 
 The following detail from an edition of Hector Berlioz' *Symphonie
 Fantastique* shows a typical example:
@@ -66,7 +53,7 @@ Fantastique* shows a typical example:
    <img src="../../../../guidelines/3.0.0/Images/modules/cmn/reh_berlioz.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample150.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample150.xml" valid="true" %}
 
 
 The following example demonstrates how rehearsal marks often apply to more than one
@@ -74,6 +61,6 @@ staff.
 In this instance, the rehearsal mark is placed above staff 1 and below staves 7 and
 11.
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample151.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample151.xml" valid="true" %}
 
 

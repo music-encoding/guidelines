@@ -8,23 +8,21 @@ title: "Indications of Harmony in the Music Text"
 With regard to indications of harmony, MEI attempts to strike a balance between very
 precise (interpreted) and very loose (uninterpreted) markup needs. Therefore, various
 kinds
-of harmonic labels are accommodated by the <a class="link_odd_elementSpec" href="/v3/elements/harm">harm</a> element. While some
-are more 
-<span class="q">structured</span> than others, in the final analyis they all function as
+of harmonic labels are accommodated by the [harm](/v3/elements/harm.html){:.link_odd_elementSpec} element. While some
+are more <span class="q">structured</span> than others, in the final analyis they all function as
 *labels*. Therefore, MEI provides only a single element for the capture of
 harmonic indications of all kinds:
 
 
 
-{% include _specDesc.html key="harm" atts="extender rendgrid" %}
+{% include specDesc.html key="harm" atts="extender rendgrid" %}
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/harm">harm</a> element can be used to capture chord labels that consist
+The [harm](/v3/elements/harm.html){:.link_odd_elementSpec} element can be used to capture chord labels that consist
 entirely of text:
 
-{% include _plainExample.html example="./v3/examples/harmony/harmony-sample249.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/harmony/harmony-sample249.xml" valid="false" %}
 
 or labels that are chord tablature grids:
 
@@ -33,7 +31,7 @@ or labels that are chord tablature grids:
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/A7_5th.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 39. Chord grid without label</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/harmony/harmony-sample250.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/harmony/harmony-sample250.xml" valid="true" %}
 
 or labels that mix these styles:
 
@@ -42,11 +40,10 @@ or labels that mix these styles:
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/A7_1st.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 40. Chord grid with label</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/harmony/harmony-sample251.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/harmony/harmony-sample251.xml" valid="true" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/harm">harm</a> element must define a point of attachment using one of the
+The [harm](/v3/elements/harm.html){:.link_odd_elementSpec} element must define a point of attachment using one of the
 following attributes: **@startid**, **@tstamp**, **@tstamp.ges** or
 **@tstamp.real**. The most commonly-used of these are **@startid** and
 **@tstamp**.
@@ -57,8 +54,7 @@ for the end point of the harmony.
 
 Precise placement of the harmonic label can be controlled through the use of attributes
 in
-the 
-<a class="link_odd" href="/v3/attribute-classes/att.harm.vis">att.harm.vis</a> attribute class.
+the [att.harm.vis](/v3/attribute-classes/att.harm.vis.html){:.link_odd} attribute class.
 
 
 

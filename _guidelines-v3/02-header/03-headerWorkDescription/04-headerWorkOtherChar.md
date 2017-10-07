@@ -6,11 +6,11 @@ title: "Other Identifying Characteristics"
 
 
 Additional information that aids the identification of the work may be encoded using
-<a class="link_odd_elementSpec" href="/v3/elements/otherChar">otherChar</a>.
+[otherChar](/v3/elements/otherChar.html){:.link_odd_elementSpec}.
 
 
 
-{% include _specDesc.html key="otherChar" atts="" %}
+{% include specDesc.html key="otherChar" atts="" %}
 
 
 

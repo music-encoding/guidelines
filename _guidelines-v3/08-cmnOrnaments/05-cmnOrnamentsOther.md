@@ -6,14 +6,13 @@ title: "Other Ornaments"
 
 
 CMN ornaments that are not mordents, trills, or turns can be encoded with a generic
-<a class="link_odd_elementSpec" href="/v3/elements/ornam">ornam</a>.
+[ornam](/v3/elements/ornam.html){:.link_odd_elementSpec}.
 
 This element allows the encoder to represent ornaments as textual strings (e.g. with
 a
 Unicode symbol) or with a user defined symbol. Chromatic auxiliaries can be represented
 with
-**@accidlower** and **@accidupper**. The 
-<a class="link_odd_elementSpec" href="/v3/elements/ornam">ornam</a> element can
+**@accidlower** and **@accidupper**. The [ornam](/v3/elements/ornam.html){:.link_odd_elementSpec} element can
 also be a control element. That is, it can be linked via its attributes to other events.
 The
 starting point of the directive may be indicated by either a tstamp, tstamp.ges, tstamp.real
@@ -23,7 +22,6 @@ or endid attribute. It is a semantic error not to specify a starting point attri
 
 For example, Johann Sebastian Bach used non-standard ornaments in the *Klavierbüchlein
 für Wilhelm Friedemann Bach*:
-
 
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive"></img>
@@ -35,8 +33,8 @@ The ornament for
 <span class="q">(5) doppelt-cadence</span> could be encoded in the following way, by
 adopting the Unicode code-points defined by the SMuFL standard:
 
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" %}
 
 A resolution, or expansion of the ornament can be provided as discussed in 
-<a class="link_ptr" title="Special Cases" href="/v3/guidelines/cmnOrnaments#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below.
+<a class="link_ptr" title="Special Cases" href="/v3/guidelines/cmnOrnaments.html#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below.
 

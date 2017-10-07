@@ -7,13 +7,13 @@ title: "Trills"
 
 Trills are a type of ornament that consists of a rapid alternation of a note with
 one a
-semitone or tone above. A trill is encoded with the <a class="link_odd_elementSpec" href="/v3/elements/trill">trill</a> element and
+semitone or tone above. A trill is encoded with the [trill](/v3/elements/trill.html){:.link_odd_elementSpec} element and
 its attributes:
 
 
 
-{% include _specDesc.html key="trill" atts="" %}
-{% include _specDesc.html key="att.ornamentaccid" atts="accidlower accidupper" %}
+{% include specDesc.html key="trill" atts="" %}
+{% include specDesc.html key="att.ornamentaccid" atts="accidlower accidupper" %}
 
 
 
@@ -27,12 +27,11 @@ trill.
 
 The following example demonstrates the encoding of simple trills:
 
-
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 27. Example of simple trills.</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample184.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample184.xml" valid="true" %}
 
 
 It has been specified earlier that it is a semantic error not to encode a starting
@@ -47,7 +46,7 @@ use of a wavy line extender as shown in this example:
    <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 28. Example of trills followed by wavy lines.</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample185.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample185.xml" valid="false" %}
 
 
 Chromatic alterations of auxiliary notes are occasionally expressed on the staff using
@@ -62,7 +61,7 @@ processes.
    <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 29. Example alterations expressed on the staff.</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample186.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample186.xml" valid="true" %}
 
 
 Some trills may be introduced by a turn or followed by an inverted turn leading to
@@ -71,9 +70,7 @@ note (see
 <span class="bibl">Le garzantine, Musica 2003, p. 911</span>). In such cases, the trill is
 encoded as in previous examples and associated with the principal note. Starting or
 concluding
-turns are notated on the staff (in 
-<a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a>) as 
-<a class="link_ref" title="Grace Notes" href="/v3/guidelines/cmn#cmnNotesGrace">grace notes</a>.
+turns are notated on the staff (in [layer](/v3/elements/layer.html){:.link_odd_elementSpec}) as [grace notes](/v3/guidelines/cmn.html#cmnNotesGrace "Grace Notes"){:.link_ref}.
 
 
 The following example, from a keyboard sonata by Joseph Haydn, shows a trill with
@@ -85,7 +82,7 @@ grace notes:
    <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 30. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample187.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample187.xml" valid="true" %}
 
 
 

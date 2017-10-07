@@ -10,9 +10,9 @@ The module described in this chapter makes available the following components:
 
 
 
-{% include _specDesc.html key="ineume" atts="" %}
-{% include _specDesc.html key="syllable" atts="" %}
-{% include _specDesc.html key="uneume" atts="" %}
+{% include specDesc.html key="ineume" atts="" %}
+{% include specDesc.html key="syllable" atts="" %}
+{% include specDesc.html key="uneume" atts="" %}
 
 
 

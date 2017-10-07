@@ -11,11 +11,11 @@ selecting texts, or parts of text, for inclusion in the resource.
 
 
 
-{% include _specDesc.html key="samplingDecl" atts="" %}
+{% include specDesc.html key="samplingDecl" atts="" %}
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/samplingDecl">samplingDecl</a> element should include information about such
+The [samplingDecl](/v3/elements/samplingDecl.html){:.link_odd_elementSpec} element should include information about such
 matters as:
 
 
@@ -26,21 +26,20 @@ matters as:
 
 but is not restricted to these.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample051.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample051.xml" valid="true" %}
 
 It may also include a simple description of any parts of the source text included
 or
 excluded:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample052.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample052.xml" valid="true" %}
 
-{% include _plainExample.html example="./v3/examples/header/header-sample053.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample053.xml" valid="true" %}
 
 A sampling declaration which applies to more than one text or division of a text need
 not
 be repeated in the header of each such text. Instead, the **@decls** attribute of each
 text (or subdivision of the text) to which the sampling declaration applies may be
 used to
-supply a cross-reference to it, as further described in section 
-<a class="link_ptr" title="Associating Metadata and Data" href="/v3/guidelines/header#headerAssociatingMetadataAndData">2.1.7.1 Associating Metadata and Data</a>.
+supply a cross-reference to it, as further described in section <a class="link_ptr" title="Associating Metadata and Data" href="/v3/guidelines/header.html#headerAssociatingMetadataAndData">2.1.7.1 Associating Metadata and Data</a>.
 

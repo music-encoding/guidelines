@@ -25,7 +25,7 @@ which in
 this example is top to bottom: first the turn, then the mordent.
 
 
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample196.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample196.xml" valid="true" %}
 
 
 

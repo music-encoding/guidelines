@@ -6,10 +6,9 @@ title: "Ligatures"
 
 
 
-Ligatures can be encoded using the <a class="link_odd_elementSpec" href="/v3/elements/ligature">ligature</a> element. The
+Ligatures can be encoded using the [ligature](/v3/elements/ligature.html){:.link_odd_elementSpec} element. The
 **@form** attribute is available for specifying if the ligature is recta or
 obliqua.
-
 
 
 <figure class="figure">
@@ -17,12 +16,11 @@ obliqua.
    <figcaption class="figure-caption">Figure 19. Recta and obliqua ligatures</figcaption>
 </figure>
 
-{% include _plainExample.html example="./v3/examples/mensural/mensural-sample156.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/mensural/mensural-sample156.xml" valid="false" %}
 
 
 In cases where the ligature contains both recta and obliqua notes, the **@lig**
-attribute of the 
-<a class="link_odd_elementSpec" href="/v3/elements/note">note</a> element can be used to specify the form of the
+attribute of the [note](/v3/elements/note.html){:.link_odd_elementSpec} element can be used to specify the form of the
 ligature at the note level.
 
 
@@ -32,7 +30,7 @@ ligature at the note level.
    <figcaption class="figure-caption">Figure 20. Ligature with more than two notes with recta and obliqua</figcaption>
 </figure>
 
-{% include _plainExample.html example="./v3/examples/mensural/mensural-sample157.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/mensural/mensural-sample157.xml" valid="true" %}
 
 
 

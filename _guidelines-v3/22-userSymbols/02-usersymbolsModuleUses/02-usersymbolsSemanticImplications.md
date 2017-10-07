@@ -11,18 +11,11 @@ lines on a purely graphical level, without implying a specific logical meaning. 
 possible,
 however, more meaningful elements should be used. This means for example, "a tempo"
 or "da
-capo" should in general not be put inside <a class="link_odd_elementSpec" href="/v3/elements/anchoredText">anchoredText</a>. Instead, 
-<a class="link_odd_elementSpec" href="/v3/elements/tempo">tempo</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/dir">dir</a> should be used. Likewise, slurs and
-ties should be encoded using their respective elements, not using 
-<a class="link_odd_elementSpec" href="/v3/elements/curve">curve</a>, and for glissandi, 
-<a class="link_odd_elementSpec" href="/v3/elements/gliss">gliss</a> should be used instead of 
-<a class="link_odd_elementSpec" href="/v3/elements/line">line</a>.
+capo" should in general not be put inside [anchoredText](/v3/elements/anchoredText.html){:.link_odd_elementSpec}. Instead, [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec} and [dir](/v3/elements/dir.html){:.link_odd_elementSpec} should be used. Likewise, slurs and
+ties should be encoded using their respective elements, not using [curve](/v3/elements/curve.html){:.link_odd_elementSpec}, and for glissandi, [gliss](/v3/elements/gliss.html){:.link_odd_elementSpec} should be used instead of [line](/v3/elements/line.html){:.link_odd_elementSpec}.
 
-An example usage for 
-<a class="link_odd_elementSpec" href="/v3/elements/line">line</a> is the visualization of voice leading,
+An example usage for [line](/v3/elements/line.html){:.link_odd_elementSpec} is the visualization of voice leading,
 which is not covered by a specific MEI element.
-
 
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/mignon.png" class="img-responsive"></img>
@@ -32,7 +25,7 @@ which is not covered by a specific MEI element.
    </figcaption>
 </figure>
 
-<figure class="figure">{% include _plainExample.html example="./v3/examples/userSymbols/userSymbols-sample347.xml" valid="true" %}
+<figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample347.xml" valid="true" %}
    
    <figcaption class="figure-caption">Listing 3. Encoding of the Schumann example</figcaption>
 </figure>

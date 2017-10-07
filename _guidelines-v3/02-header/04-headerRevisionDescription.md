@@ -5,7 +5,7 @@ title: "Revision Description"
 
 
 
-The final sub-element of the MEI header, the <a class="link_odd_elementSpec" href="/v3/elements/revisionDesc">revisionDesc</a> element,
+The final sub-element of the MEI header, the [revisionDesc](/v3/elements/revisionDesc.html){:.link_odd_elementSpec} element,
 provides a detailed change log in which each change made to a text may be recorded.
 Its use is
 optional but highly recommended. It provides essential information for the administration
@@ -23,8 +23,8 @@ corresponding entries being made in the change log.
 
 
 
-{% include _specDesc.html key="revisionDesc" atts="" %}
-{% include _specDesc.html key="change" atts="" %}
+{% include specDesc.html key="revisionDesc" atts="" %}
+{% include specDesc.html key="change" atts="" %}
 
 
 
@@ -38,25 +38,21 @@ course). At the very least, an entry should be supplied indicating the date of c
 of the
 header.
 
-The log consists of a list of 
-<a class="link_odd_elementSpec" href="/v3/elements/change">change</a> elements, each of which contains a
+The log consists of a list of [change](/v3/elements/change.html){:.link_odd_elementSpec} elements, each of which contains a
 detailed description of the changes made. If a number is to be associated with one
 or more
 changes (for example, a revision number), the **@n** attribute may be used to indicate
 it. The person responsible for the change and the date of the change may be indicated
 by the
-
-<a class="link_odd_elementSpec" href="/v3/elements/respStmt">respStmt</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/date">date</a> elements. The description of
-the change itself is contained within the 
-<a class="link_odd_elementSpec" href="/v3/elements/changeDesc">changeDesc</a> element, which can
+[respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec} and [date](/v3/elements/date.html){:.link_odd_elementSpec} elements. The description of
+the change itself is contained within the [changeDesc](/v3/elements/changeDesc.html){:.link_odd_elementSpec} element, which can
 hold one or more paragraphs.
 
 It is recommended to give changes in reverse chronological order, most recent first.
 
 For example:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample075.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample075.xml" valid="true" %}
 
 A slightly shorter form for recording changes is also available when a the date of
 the change
@@ -66,5 +62,5 @@ responsible for the change, encoded elsewhere in the header, can be referred to 
 one or more
 URIs given in the **@resp** attribute. For example:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample076.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample076.xml" valid="true" %}
 

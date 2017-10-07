@@ -7,10 +7,10 @@ title: "Bibliographic Evidence"
 
 
 
-{% include _specDesc.html key="biblList" atts="" %}
+{% include specDesc.html key="biblList" atts="" %}
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/biblList">biblList</a> element allows citation of bibliographic evidence
+The [biblList](/v3/elements/biblList.html){:.link_odd_elementSpec} element allows citation of bibliographic evidence
 supporting assertions made within other sub-components of the work description.
 

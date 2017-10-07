@@ -10,7 +10,7 @@ document between libraries, archives, collections, projects, and individuals.
 
 The structure of an independent header is exactly the same as that of an header attached
 to
-a document. This means that an <a class="link_odd_elementSpec" href="/v3/elements/meiHead">meiHead</a> can be extracted from an MEI
+a document. This means that an [meiHead](/v3/elements/meiHead.html){:.link_odd_elementSpec} can be extracted from an MEI
 document and sent to a receiving institution with little or no change.
 
 
@@ -42,12 +42,10 @@ a
 formal series of specialized elements, wherever possible and appropriate the specialized
 elements should be preferred to unstructured prose. Second, with respect to corpora,
 information about each of the texts within a corpus should be included in the overall
-corpus-level 
-<a class="link_odd_elementSpec" href="/v3/elements/meiHead">meiHead</a>. That is, source information, editorial
+corpus-level [meiHead](/v3/elements/meiHead.html){:.link_odd_elementSpec}. That is, source information, editorial
 practices, encoding descriptions, and the like should be included in the relevant
 sections
-of the corpus 
-<a class="link_odd_elementSpec" href="/v3/elements/meiHead">meiHead</a>, with pointers to them from the headers of the
+of the corpus [meiHead](/v3/elements/meiHead.html){:.link_odd_elementSpec}, with pointers to them from the headers of the
 individual texts included in the corpus. There are three reasons for this recommendation:
 first, the corpus-level header will contain the full array of bibliographic and
 documentary information for each of the texts in a corpus, and thus be of great benefit

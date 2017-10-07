@@ -5,12 +5,11 @@ title: "Edition Statement"
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/editionStmt">editionStmt</a> element is the second component of the 
-<a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element. It is optional but recommended when applicable.
+The [editionStmt](/v3/elements/editionStmt.html){:.link_odd_elementSpec} element is the second component of the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element. It is optional but recommended when applicable.
 
 
 
-{% include _specDesc.html key="editionStmt" atts="" %}
+{% include specDesc.html key="editionStmt" atts="" %}
 
 
 
@@ -18,8 +17,8 @@ It contains elements for identifying the edition and those responsible for it:
 
 
 
-{% include _specDesc.html key="edition" atts="" %}
-{% include _specDesc.html key="respStmt" atts="" %}
+{% include specDesc.html key="edition" atts="" %}
+{% include specDesc.html key="respStmt" atts="" %}
 
 
 
@@ -30,8 +29,7 @@ body or bodies does not normally constitute a change of edition, while a change 
 the
 master copy does.
 
-For electronic texts, the notion of a 
-<span class="mentioned">master copy</span> is not entirely
+For electronic texts, the notion of a <span class="mentioned">master copy</span> is not entirely
 appropriate, since they are far more easily copied and modified than printed ones;
 nonetheless, the term edition may be used for a particular state of a machine-readable
 text
@@ -76,7 +74,7 @@ Note that all changes in a file, whether or not they are regarded as constitutin
 a new
 edition or simply a revision, should be independently noted in the revision description
 section of the file header (see section 
-<a class="link_ptr" title="Revision Description" href="/v3/guidelines/header#headerRevisionDescription">2.4 Revision Description</a>).
+<a class="link_ptr" title="Revision Description" href="/v3/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a>).
 
 The edition element should contain phrases describing the edition or version, including
 the
@@ -84,13 +82,11 @@ word 'edition', 'version', or an equivalent term, together with a number or date
 or terms
 indicating difference from other editions such as 'new edition', 'revised edition',
 etc. Any
-dates that occur within the edition statement should be marked with the 
-<a class="link_odd_elementSpec" href="/v3/elements/date">date</a> element. The **@n** attribute of the edition element may be used as
+dates that occur within the edition statement should be marked with the [date](/v3/elements/date.html){:.link_odd_elementSpec} element. The **@n** attribute of the edition element may be used as
 elsewhere to supply any formal identification (such as a version number) for the
 edition.
 
-One or more 
-<a class="link_odd_elementSpec" href="/v3/elements/respStmt">respStmt</a> elements may also be used to supply statements
+One or more [respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec} elements may also be used to supply statements
 of responsibility for the edition in question. These may refer to individuals or corporate
 bodies and can indicate functions such as that of a reviser, or can name the person
 or body
@@ -99,7 +95,7 @@ edition.
 
 Some examples follow:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample029.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample029.xml" valid="true" %}
 
-{% include _plainExample.html example="./v3/examples/header/header-sample030.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample030.xml" valid="true" %}
 

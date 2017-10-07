@@ -7,8 +7,7 @@ title: "Links"
 
 An element is a ‘link’ when it has an attribute whose value is a reference
 to the ID of one or more other elements. The links discussed in this chapter are the
-<a class="link_odd_elementSpec" href="/v3/elements/ptr">ptr</a> and the 
-<a class="link_odd_elementSpec" href="/v3/elements/ref">ref</a> elements. These elements indicate an
+[ptr](/v3/elements/ptr.html){:.link_odd_elementSpec} and the [ref](/v3/elements/ref.html){:.link_odd_elementSpec} elements. These elements indicate an
 association between themselves (or one of their ancestors) and one or more other entities,
 either inside the same document or elsewhere. An association between two elements
 in the same
@@ -16,15 +15,13 @@ document is said to be an ‘internal’ link, while an association that
 involves an entity outside the current document is called an ‘external’
 link. However, either element can be used for either purpose.
 
-The two elements share a set of common attributes that are inherited from the 
-<a class="link_odd" href="/v3/attribute-classes/att.pointing">att.pointing</a> class:
-
+The two elements share a set of common attributes that are inherited from the [att.pointing](/v3/attribute-classes/att.pointing.html){:.link_odd} class:
 
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -64,12 +61,11 @@ The two elements share a set of common attributes that are inherited from the
 
 The **@target** attribute specifies the destination of a pointer or reference using a
 method standardized by the W3C consortium, known as the XPointer mechanism. The XPointer
-framework is described at 
-<a class="link_ref" href="http://www.w3.org/TR/xptr-framework/">http://www.w3.org/TR/xptr-framework/</a>. This mechanism permits a range of complexity,
+framework is described at [http://www.w3.org/TR/xptr-framework/](http://www.w3.org/TR/xptr-framework/){:.link_ref}. This mechanism permits a range of complexity,
 from the very simple (a reference to the value of the target element's **@xml:id**
 attribute) to the more complex usage of a full URI with embedded XPointers:
 
-{% include _plainExample.html example="./v3/examples/ptrRef/ptrRef-sample312.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample312.xml" valid="false" %}
 
 
 The **@targettype** attribute allows the target resource to be characterized using any
@@ -81,7 +77,7 @@ formatted differently, e.g., the bibliographic citation may result in special ty
 while
 the pointer to the audio file may be used to embed an audio player:
 
-{% include _plainExample.html example="./v3/examples/ptrRef/ptrRef-sample313.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample313.xml" valid="false" %}
 
 
 The **@xlink:actuate** and **@xlink:show** attributes are used in conjunction to
@@ -95,8 +91,8 @@ The following values are allowed for the **@xlink:actuate** attribute:
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -139,8 +135,8 @@ values are permitted:
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -180,7 +176,7 @@ The following example illustrates a pointer that results in the automatic creati
 of a new
 window with the content of the target loaded in it:
 
-{% include _plainExample.html example="./v3/examples/ptrRef/ptrRef-sample314.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample314.xml" valid="true" %}
 
 
 The **@xlink:title** and **@xlink:role** attributes describe the meaning of
@@ -192,44 +188,39 @@ available to applications used by visually impaired users, or to create a table 
 links, or
 to present help text that appears when a user's mouse hovers over the link.
 
-{% include _plainExample.html example="./v3/examples/ptrRef/ptrRef-sample315.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample315.xml" valid="true" %}
 
 
 The attribute**@ xlink:role** serves a similar function to that of
 **@xlink:title**. Whereas the value of **@xlink:title** may be any string, the
 value of **@xlink:role** must be an absolute URI reference as defined in IETF RFC 3986,
-available at 
-<a class="link_ref" href="http://tools.ietf.org/html/rfc3986">http://tools.ietf.org/html/rfc3986</a>. The URI reference identifies a resource that
+available at [http://tools.ietf.org/html/rfc3986](http://tools.ietf.org/html/rfc3986){:.link_ref}. The URI reference identifies a resource that
 describes the intended property. When no value is supplied, no particular role value
 is to be
 inferred.
 
-{% include _plainExample.html example="./v3/examples/ptrRef/ptrRef-sample316.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample316.xml" valid="false" %}
 
 In the preceding example, the value of the **@xlink:role** attribute may be used to
 re-write the value of **@xlink:title**, depending on the target resource role.
 
 
-In addition to the attributes in the 
-<a class="link_odd" href="/v3/attribute-classes/att.pointing">att.pointing</a> class, the
-**@mimetype** attribute is also available on 
-<a class="link_odd_elementSpec" href="/v3/elements/ptr">ptr</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/ref">ref</a>. The function of the **@mimetype** attribute is similar to that
+In addition to the attributes in the [att.pointing](/v3/attribute-classes/att.pointing.html){:.link_odd} class, the
+**@mimetype** attribute is also available on [ptr](/v3/elements/ptr.html){:.link_odd_elementSpec} and [ref](/v3/elements/ref.html){:.link_odd_elementSpec}. The function of the **@mimetype** attribute is similar to that
 of **@targettype** in that they both allow classification of the destination. Unlike
 **@targettype**, however, **@mimetype** explicitly defines the destination type
 using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail
 Extension) type defined by the Internet Engineering Task Force in RFC 2046, available
-at 
-<a class="link_ref" href="http://www.ietf.org/rfc/rfc2046.txt">http://www.ietf.org/rfc/rfc2046.txt</a>. The
+at [http://www.ietf.org/rfc/rfc2046.txt](http://www.ietf.org/rfc/rfc2046.txt){:.link_ref}. The
 following are all valid mimetype values:
 
-{% include _plainExample.html example="./v3/examples/ptrRef/ptrRef-sample317.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample317.xml" valid="false" %}
 
 The **@mimetype** attribute is particularly useful for documenting the nature of the
 destination when the value of **@target** does not provide a filename extension or when
 the destination is a non-standard file type:
 
-{% include _plainExample.html example="./v3/examples/ptrRef/ptrRef-sample318.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample318.xml" valid="false" %}
 
 
 

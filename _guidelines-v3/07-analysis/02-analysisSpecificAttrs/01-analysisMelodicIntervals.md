@@ -17,7 +17,7 @@ please see the "The Directory of Tunes and Musical Themes" by Denys Parsons (200
 The next
 example shows interval relationships indicated by the Parsons Code:
 
-{% include _plainExample.html example="./v3/examples/analysis/analysis-sample169.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/analysis/analysis-sample169.xml" valid="true" %}
 
 Alternatively, diatonic interval quality and size may be indicated by a letter signifying
 the interval quality (A= augmented, d= diminished, M = major, m = minor, P = perfect)
@@ -25,11 +25,11 @@ followed by a number indicating the size of the interval. The interval direction
 be
 encoded using a leading plus (+) or minus (-) sign:
 
-{% include _plainExample.html example="./v3/examples/analysis/analysis-sample170.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/analysis/analysis-sample170.xml" valid="true" %}
 
 As a third option, signed integers may be used to record the difference in half steps
 between the previous pitch and the current one. Decimal values accommodate the description
 of microtonal intervals:
 
-{% include _plainExample.html example="./v3/examples/analysis/analysis-sample171.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/analysis/analysis-sample171.xml" valid="true" %}
 
