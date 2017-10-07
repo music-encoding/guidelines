@@ -5,7 +5,10 @@
         </div>
     </div>
     <div class="tile-content">
-        <div class="tile-title">{{ include.key | prepend:'./desc/' | append:'.md' }}</div>
+        <div class="tile-title">
+            {% assign file = include.version | append:'/desc/' | append:include.key | append:'.txt' %}
+            {% include {{ file }} %}
+        </div>
         
         <div class="tile-subtitle text-gray">{{ include.key | prepend:'./desc/' | append:'.md' }}</div>
     </div>
