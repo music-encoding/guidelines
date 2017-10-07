@@ -1,8 +1,0 @@
----
-desc: "data.NOTEHEADMODIFIER"
-type: "macroSpec"
-version: "v3"
----
-
-Captures any notehead "modifiers"; that is, symbols added to the notehead, such as
-slashes, lines, text, and enclosures, etc.

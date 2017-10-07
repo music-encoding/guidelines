@@ -1,9 +1,0 @@
----
-desc: "custos"
-type: "elementSpec"
-version: "v3"
----
-
-Symbol placed at the end of a line of music to indicate the first note of the next
-line.
-Sometimes called a "direct".

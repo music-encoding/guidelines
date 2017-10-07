@@ -1,8 +1,0 @@
----
-desc: "persName"
-type: "elementSpec"
-version: "v3"
----
-
-(personal name) – Designation for an individual, including any or all of that
-individual's forenames, surnames, honorific titles, and added names.

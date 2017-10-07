@@ -1,8 +1,0 @@
----
-desc: "mei"
-type: "elementSpec"
-version: "v3"
----
-
-Contains a single MEI-conformant document, consisting of an MEI header and a musical
-text, either in isolation or as part of an meiCorpus element.

@@ -1,9 +1,0 @@
----
-desc: "useRestrict"
-type: "elementSpec"
-version: "v3"
----
-
-(usage restrictions) – Container for information about the conditions that affect
-use of
-a bibliographic item after access has been granted.

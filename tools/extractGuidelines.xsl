@@ -175,14 +175,8 @@
         <!-- extract desc -->
         
         <xsl:for-each select=".//tei:elementSpec | .//tei:classSpec | .//tei:macroSpec">
-            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.md'" as="xs:string"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes">---
-            desc: "<xsl:value-of select="@ident"/>"
-            type: "<xsl:value-of select="local-name()"/>"
-            version: "<xsl:value-of select="$plain.version"/>"
-            ---
-            
-            <xsl:value-of select="./tei:desc/text()"/>
+            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/>
             </xsl:result-document>
         </xsl:for-each>
         

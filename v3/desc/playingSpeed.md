@@ -1,8 +1,0 @@
----
-desc: "playingSpeed"
-type: "elementSpec"
-version: "v3"
----
-
-Playing speed for a sound recording is the speed at which the carrier must be operated
-to produce the sound intended (e.g., 33 1/3 rpm, 19 cm/s, etc.).

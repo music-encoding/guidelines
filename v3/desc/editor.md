@@ -1,8 +1,0 @@
----
-desc: "editor"
-type: "elementSpec"
-version: "v3"
----
-
-The name of the individual(s), institution(s) or organization(s) acting in an editorial
-capacity.

@@ -1,8 +1,0 @@
----
-desc: "fTrem"
-type: "elementSpec"
-version: "v3"
----
-
-(fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
-between a note and a chord) that are (usually) farther apart than a major second.

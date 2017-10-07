@@ -1,8 +1,0 @@
----
-desc: "space"
-type: "elementSpec"
-version: "v3"
----
-
-A placeholder used to fill an incomplete measure, layer, etc. most often so that the
-combined duration of the events equals the number of beats in the measure.

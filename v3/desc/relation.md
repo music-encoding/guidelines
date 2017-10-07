@@ -1,8 +1,0 @@
----
-desc: "relation"
-type: "elementSpec"
-version: "v3"
----
-
-A relation element describes the relationship between its parent and the object
-referenced by the relation element's target attribute.

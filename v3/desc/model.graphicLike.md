@@ -1,8 +1,0 @@
----
-desc: "model.graphicLike"
-type: "classSpec"
-version: "v3"
----
-
-Groups elements that indicate the location of an inline graphic, illustration, or
-figure.

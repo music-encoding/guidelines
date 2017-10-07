@@ -1,8 +1,0 @@
----
-desc: "model.editorialDeclPart"
-type: "classSpec"
-version: "v3"
----
-
-Groups elements that may appear as part of a description of the editorial process
-applied to the encoding of notation.

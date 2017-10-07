@@ -1,8 +1,0 @@
----
-desc: "model.respLikePart"
-type: "classSpec"
-version: "v3"
----
-
-Groups elements that delineate particular responsibilities as opposed to the respStmt
-element that provides for generic statements of responsibility.

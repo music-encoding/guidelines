@@ -1,8 +1,0 @@
----
-desc: "turn"
-type: "elementSpec"
-version: "v3"
----
-
-An ornament consisting of four notes — the upper neighbor of the written note, the
-written note, the lower neighbor, and the written note.

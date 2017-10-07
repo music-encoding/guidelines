@@ -1,0 +1,1 @@
+Symbol that may begin/end a line.
