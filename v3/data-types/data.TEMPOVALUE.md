@@ -24,7 +24,7 @@ title: "data.TEMPOVALUE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmtempo</a> (@mm)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmtempo</a> (@mm)
             </div>
          </td>
       </tr>

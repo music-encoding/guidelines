@@ -25,8 +25,8 @@ title: "att.classcodeident"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/term.html">term</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/termList.html">termList</a> (direct members of att.classcodeident)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/term.html">term</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/termList.html">termList</a> (direct members of att.classcodeident)
                </div>
             </div>
          </td>

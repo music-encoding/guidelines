@@ -25,21 +25,21 @@ title: "att.width"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/barLine.html">barLine</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/barLine.html">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barLine.vis.html">att.barLine.vis</a>)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barLine.vis.html">att.barLine.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.dimensions.html">att.dimensions</a>)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.dimensions.html">att.dimensions</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.measure.vis.html">att.measure.vis</a>)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.measure.vis.html">att.measure.vis</a>)
                   </span>
                </div>
             </div>

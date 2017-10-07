@@ -24,7 +24,7 @@ title: "macro.musicPart"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a>
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a>
             </div>
          </td>
       </tr>

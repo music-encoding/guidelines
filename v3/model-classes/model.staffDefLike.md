@@ -25,15 +25,15 @@ title: "model.staffDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffGrp.html">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/syllable.html">syllable</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffGrp.html">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/syllable.html">syllable</a>
                </div>
             </div>
          </td>
@@ -45,7 +45,7 @@ title: "model.staffDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a> (direct member of model.staffDefLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a> (direct member of model.staffDefLike)
                </div>
             </div>
          </td>
@@ -63,7 +63,7 @@ title: "model.staffDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -72,7 +72,7 @@ title: "model.staffDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -81,7 +81,7 @@ title: "model.staffDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -90,7 +90,7 @@ title: "model.staffDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>"
                         </span>/&gt;
                      </span>
                   </div>

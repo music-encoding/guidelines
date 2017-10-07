@@ -25,7 +25,7 @@ title: "att.part.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/part.html">part</a> (direct member of att.part.vis)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/part.html">part</a> (direct member of att.part.vis)
                </div>
             </div>
          </td>

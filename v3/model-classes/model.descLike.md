@@ -33,7 +33,7 @@ title: "model.descLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/desc.html">desc</a> (direct member of model.descLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/desc.html">desc</a> (direct member of model.descLike)
                </div>
             </div>
          </td>

@@ -25,7 +25,7 @@ title: "att.parts.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a> (direct member of att.parts.log)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a> (direct member of att.parts.log)
                </div>
             </div>
          </td>

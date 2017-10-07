@@ -31,7 +31,7 @@ title: "att.chord.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a> (direct member of att.chord.vis)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a> (direct member of att.chord.vis)
                </div>
             </div>
          </td>
@@ -55,7 +55,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altsym</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altsym</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -64,7 +64,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -73,7 +73,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.enclosingchars.html">att.enclosingchars</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.enclosingchars.html">att.enclosingchars</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -82,7 +82,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extsym</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extsym</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -91,7 +91,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.relativesize.html">att.relativesize</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.relativesize.html">att.relativesize</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -100,7 +100,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -109,7 +109,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -118,7 +118,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visibility.html">att.visibility</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visibility.html">att.visibility</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -127,7 +127,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualoffset.ho</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualoffset.ho</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -136,7 +136,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.to.html">att.visualoffset.to</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.to.html">att.visualoffset.to</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -145,7 +145,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -154,7 +154,7 @@ title: "att.chord.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.chord.vis.cmn.html">att.chord.vis.cmn</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.chord.vis.cmn.html">att.chord.vis.cmn</a>"
                         </span>/&gt;
                      </span>
                   </div>

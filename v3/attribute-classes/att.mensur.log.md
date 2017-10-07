@@ -25,8 +25,8 @@ title: "att.mensur.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a> (direct members of att.mensur.log)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a> (direct members of att.mensur.log)
                </div>
             </div>
          </td>
@@ -50,7 +50,7 @@ title: "att.mensur.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.ratio.html">att.duration.ratio</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.ratio.html">att.duration.ratio</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -59,7 +59,7 @@ title: "att.mensur.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashcount</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashcount</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -68,7 +68,7 @@ title: "att.mensur.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.shared.html">att.mensural.shared</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.shared.html">att.mensural.shared</a>"
                         </span>/&gt;
                      </span>
                   </div>

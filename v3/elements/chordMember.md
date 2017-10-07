@@ -55,7 +55,7 @@ title: "chordMember"
                   <div class="specChild">
                      <span class="specChildModule">MEI.harmony</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordDef.html">chordDef</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordDef.html">chordDef</a>
                      </span>
                   </div>
                </div>
@@ -87,7 +87,7 @@ title: "chordMember"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -96,7 +96,7 @@ title: "chordMember"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -105,7 +105,7 @@ title: "chordMember"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -114,7 +114,7 @@ title: "chordMember"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -123,7 +123,7 @@ title: "chordMember"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitched.html">att.pitched</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitched.html">att.pitched</a>"
                            </span>/&gt;
                         </span>
                      </div>

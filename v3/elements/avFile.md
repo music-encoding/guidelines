@@ -55,8 +55,8 @@ title: "avFile"
                   <div class="specChild">
                      <span class="specChildModule">MEI.performance</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clip.html">clip</a> 
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/recording.html">recording</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/clip.html">clip</a> 
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/recording.html">recording</a>
                      </span>
                   </div>
                </div>
@@ -72,7 +72,7 @@ title: "avFile"
                <div class="specChild">
                   <span class="specChildModule">MEI.performance</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clip.html">clip</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/clip.html">clip</a>
                   </span>
                </div>
             </div>
@@ -92,7 +92,7 @@ title: "avFile"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -101,7 +101,7 @@ title: "avFile"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -110,7 +110,7 @@ title: "avFile"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -119,7 +119,7 @@ title: "avFile"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.internetmedia.html">att.internetmedia</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.internetmedia.html">att.internetmedia</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -128,7 +128,7 @@ title: "avFile"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -137,7 +137,7 @@ title: "avFile"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -146,7 +146,7 @@ title: "avFile"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -183,7 +183,7 @@ title: "avFile"
          </td>
          <td class="wovenodd-col2">
             <p>This element is analogous to the 
-               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a> element in the figtable
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a> element in the figtable
                module.
             </p>
          </td>

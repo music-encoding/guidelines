@@ -25,7 +25,7 @@ title: "att.clefGrp.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clefGrp.html">clefGrp</a> (direct member of att.clefGrp.vis)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/clefGrp.html">clefGrp</a> (direct member of att.clefGrp.vis)
                </div>
             </div>
          </td>

@@ -25,12 +25,12 @@ title: "model.lgLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/incipText.html">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a>
                </div>
             </div>
          </td>
@@ -42,7 +42,7 @@ title: "model.lgLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a> (direct member of model.lgLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a> (direct member of model.lgLike)
                </div>
             </div>
          </td>
@@ -60,7 +60,7 @@ title: "model.lgLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -69,7 +69,7 @@ title: "model.lgLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

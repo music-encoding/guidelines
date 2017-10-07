@@ -25,7 +25,7 @@ title: "att.layerDef.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> (direct member of att.layerDef.vis)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> (direct member of att.layerDef.vis)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.layerDef.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.labels.addl.html">att.labels.addl</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.labels.addl.html">att.labels.addl</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -58,7 +58,7 @@ title: "att.layerDef.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beaming.vis.html">att.beaming.vis</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beaming.vis.html">att.beaming.vis</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -67,7 +67,7 @@ title: "att.layerDef.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.textstyle.html">att.textstyle</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.textstyle.html">att.textstyle</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -76,7 +76,7 @@ title: "att.layerDef.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visibility.html">att.visibility</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visibility.html">att.visibility</a>"
                         </span>/&gt;
                      </span>
                   </div>

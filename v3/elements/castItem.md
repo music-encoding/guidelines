@@ -58,8 +58,8 @@ title: "castItem"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/castGrp.html">castGrp</a> 
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/castList.html">castList</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castGrp.html">castGrp</a> 
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castList.html">castList</a>
                      </span>
                   </div>
                </div>
@@ -79,15 +79,15 @@ title: "castItem"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/perfRes.html">perfRes</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfRes.html">perfRes</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/actor.html">actor</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/role.html">role</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/roleDesc.html">roleDesc</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/actor.html">actor</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/role.html">role</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/roleDesc.html">roleDesc</a>
                   </span>
                </div>
             </div>
@@ -107,7 +107,7 @@ title: "castItem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -116,7 +116,7 @@ title: "castItem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -125,7 +125,7 @@ title: "castItem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -134,7 +134,7 @@ title: "castItem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a>"
                            </span>/&gt;
                         </span>
                      </div>

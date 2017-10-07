@@ -25,7 +25,7 @@ title: "att.section.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a> (direct member of att.section.log)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a> (direct member of att.section.log)
                </div>
             </div>
          </td>

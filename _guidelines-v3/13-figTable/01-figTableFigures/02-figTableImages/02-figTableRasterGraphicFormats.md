@@ -36,7 +36,7 @@ version: "v3"
             at
             all. Also, TIFF files may be monochrome, greyscale, or polychromatic. All such options
             should be specified in prose at the end of the 
-            <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>
+            <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>
             section of the MEI header for any document including TIFF images. TIFF is owned by
             Aldus
             Corporation. Documentation on TIFF is available from the owner at Craigcook Castle,

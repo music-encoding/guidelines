@@ -24,7 +24,7 @@ title: "data.SLASH"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashcount</a> (@slash)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashcount</a> (@slash)
             </div>
          </td>
       </tr>

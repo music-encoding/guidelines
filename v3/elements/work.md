@@ -47,7 +47,7 @@ title: "work"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.workLike,html">model.workLike</a>
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.workLike,html">model.workLike</a>
             </div>
          </td>
       </tr>
@@ -61,14 +61,14 @@ title: "work"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a> 
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a> 
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a>
                      </span>
                   </div>
                </div>
@@ -84,39 +84,39 @@ title: "work"
                <div class="specChild">
                   <span class="specChildModule">MEI.frbr</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expressionList.html">expressionList</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/relationList.html">relationList</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expressionList.html">expressionList</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationList.html">relationList</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/audience.html">audience</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/classification.html">classification</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/context.html">context</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/extMeta.html">extMeta</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/history.html">history</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/key.html">key</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/langUsage.html">langUsage</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meter.html">meter</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html">notesStmt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/otherChar.html">otherChar</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/perfDuration.html">perfDuration</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/perfMedium.html">perfMedium</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html">titleStmt</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/audience.html">audience</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classification.html">classification</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/context.html">context</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extMeta.html">extMeta</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/history.html">history</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/key.html">key</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/langUsage.html">langUsage</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meter.html">meter</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html">notesStmt</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/otherChar.html">otherChar</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfDuration.html">perfDuration</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfMedium.html">perfMedium</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html">titleStmt</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/biblList.html">biblList</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/creation.html">creation</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/biblList.html">biblList</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/creation.html">creation</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a>
                   </span>
                </div>
             </div>
@@ -136,7 +136,7 @@ title: "work"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -145,7 +145,7 @@ title: "work"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -154,7 +154,7 @@ title: "work"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -163,7 +163,7 @@ title: "work"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.workLike.html">model.workLike</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.workLike.html">model.workLike</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -470,7 +470,7 @@ title: "work"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/perfDuration.html">perfDuration</a> element captures the 
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfDuration.html">perfDuration</a> element captures the 
                <em class="mentioned">intended
                   duration
                </em> of the work.

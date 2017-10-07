@@ -47,7 +47,7 @@ title: "encodingDesc"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.headerPart,html">model.headerPart</a>
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headerPart,html">model.headerPart</a>
             </div>
          </td>
       </tr>
@@ -61,9 +61,9 @@ title: "encodingDesc"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a> 
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meiHead.html">meiHead</a> 
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a> 
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meiHead.html">meiHead</a> 
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a>
                      </span>
                   </div>
                </div>
@@ -79,10 +79,10 @@ title: "encodingDesc"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/appInfo.html">appInfo</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/projectDesc.html">projectDesc</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/appInfo.html">appInfo</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/projectDesc.html">projectDesc</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>
                   </span>
                </div>
             </div>
@@ -102,7 +102,7 @@ title: "encodingDesc"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -111,7 +111,7 @@ title: "encodingDesc"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -120,7 +120,7 @@ title: "encodingDesc"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.headerPart.html">model.headerPart</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headerPart.html">model.headerPart</a>"
                            </span>/&gt;
                         </span>
                      </div>

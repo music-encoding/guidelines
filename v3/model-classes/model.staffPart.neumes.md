@@ -25,7 +25,7 @@ title: "model.staffPart.neumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>
                </div>
             </div>
          </td>
@@ -51,7 +51,7 @@ title: "model.staffPart.neumes"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>"
                         </span>/&gt;
                      </span>
                   </div>

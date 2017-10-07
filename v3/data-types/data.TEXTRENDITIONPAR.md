@@ -24,7 +24,7 @@ title: "data.TEXTRENDITIONPAR"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/data-types/data.TEXTRENDITION.html">data.TEXTRENDITION</a>
+               <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.TEXTRENDITION.html">data.TEXTRENDITION</a>
             </div>
          </td>
       </tr>

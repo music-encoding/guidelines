@@ -27,11 +27,11 @@ title: "model.respLikePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.respLike.html">model.respLike</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.respLike.html">model.respLike</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/byline.html">byline</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/byline.html">byline</a>
                </div>
             </div>
          </td>
@@ -43,14 +43,14 @@ title: "model.respLikePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/arranger.html">arranger</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/author.html">author</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/composer.html">composer</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editor.html">editor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/funder.html">funder</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/librettist.html">librettist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lyricist.html">lyricist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/sponsor.html">sponsor</a> (direct members of model.respLikePart)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/arranger.html">arranger</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/author.html">author</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/composer.html">composer</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editor.html">editor</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/funder.html">funder</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/librettist.html">librettist</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lyricist.html">lyricist</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sponsor.html">sponsor</a> (direct members of model.respLikePart)
                </div>
             </div>
          </td>
@@ -68,7 +68,7 @@ title: "model.respLikePart"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.respLike.html">model.respLike</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.respLike.html">model.respLike</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -77,7 +77,7 @@ title: "model.respLikePart"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>"
                         </span>/&gt;
                      </span>
                   </div>

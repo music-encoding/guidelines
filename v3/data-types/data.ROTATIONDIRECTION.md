@@ -24,7 +24,7 @@ title: "data.ROTATIONDIRECTION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/data-types/data.ROTATION.html">data.ROTATION</a>
+               <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ROTATION.html">data.ROTATION</a>
             </div>
          </td>
       </tr>

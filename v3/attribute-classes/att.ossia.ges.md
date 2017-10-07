@@ -25,7 +25,7 @@ title: "att.ossia.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of att.ossia.ges)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of att.ossia.ges)
                </div>
             </div>
          </td>

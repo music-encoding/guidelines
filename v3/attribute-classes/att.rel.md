@@ -25,7 +25,7 @@ title: "att.rel"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/relation.html">relation</a> (direct member of att.rel)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relation.html">relation</a> (direct member of att.rel)
                </div>
             </div>
          </td>

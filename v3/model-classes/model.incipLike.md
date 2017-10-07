@@ -25,7 +25,7 @@ title: "model.incipLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.workIdent.html">model.workIdent</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.workIdent.html">model.workIdent</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.incipLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a> (direct member of model.incipLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a> (direct member of model.incipLike)
                </div>
             </div>
          </td>
@@ -55,7 +55,7 @@ title: "model.incipLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.workIdent.html">model.workIdent</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.workIdent.html">model.workIdent</a>"
                         </span>/&gt;
                      </span>
                   </div>

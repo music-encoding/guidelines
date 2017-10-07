@@ -25,7 +25,7 @@ title: "model.nameLike.label"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
             </div>
          </td>
@@ -37,8 +37,8 @@ title: "model.nameLike.label"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/periodName.html">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/styleName.html">styleName</a> (direct members of model.nameLike.label)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/periodName.html">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/styleName.html">styleName</a> (direct members of model.nameLike.label)
                </div>
             </div>
          </td>
@@ -56,7 +56,7 @@ title: "model.nameLike.label"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
                         </span>/&gt;
                      </span>
                   </div>

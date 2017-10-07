@@ -30,7 +30,7 @@ groups examples of music according to similarities between them." (Source: "Styl
 Grove
 Music Online, accessed: April 27, 2012) 
 
-The name of a musical style can be marked by the [styleName](/{{ site.baseurl }}/{{ page.version }}/elements/styleName.html){:.link_odd_elementSpec} element,
+The name of a musical style can be marked by the [styleName]({{ site.baseurl }}/{{ page.version }}/elements/styleName.html){:.link_odd_elementSpec} element,
 for example:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample294.xml" valid="true" %}
@@ -39,7 +39,7 @@ It may be, e.g., used for recording a style name within a title:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample295.xml" valid="true" %}
 
-or to record a style of a certain epoch by using the [styleName](/{{ site.baseurl }}/{{ page.version }}/elements/styleName.html){:.link_odd_elementSpec}
+or to record a style of a certain epoch by using the [styleName]({{ site.baseurl }}/{{ page.version }}/elements/styleName.html){:.link_odd_elementSpec}
 sub-element:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample296.xml" valid="true" %}
@@ -59,6 +59,6 @@ external database.
 
 Musical forms and genres must be distinguished from musical style. Form and genre
 are
-typically indicated using the [classification](/{{ site.baseurl }}/{{ page.version }}/elements/classification.html){:.link_odd_elementSpec} element, described in
-chapter <a class="link_ptr" title="Classification" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkClass">2.3.12 Classification</a>.
+typically indicated using the [classification]({{ site.baseurl }}/{{ page.version }}/elements/classification.html){:.link_odd_elementSpec} element, described in
+chapter <a class="link_ptr" title="Classification" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkClass">2.3.12 Classification</a>.
 

@@ -25,8 +25,8 @@ title: "model.ossiaLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.measurePart.html">model.measurePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.measurePart.html">model.measurePart</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>
                </div>
             </div>
          </td>
@@ -38,7 +38,7 @@ title: "model.ossiaLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of model.ossiaLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of model.ossiaLike)
                </div>
             </div>
          </td>
@@ -56,7 +56,7 @@ title: "model.ossiaLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.measurePart.html">model.measurePart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.measurePart.html">model.measurePart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -65,7 +65,7 @@ title: "model.ossiaLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>"
                         </span>/&gt;
                      </span>
                   </div>

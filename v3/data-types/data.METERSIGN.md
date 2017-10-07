@@ -24,8 +24,8 @@ title: "data.METERSIGN"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterSig.log.html">att.meterSig.log</a> (@sym), 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterSigDefault.vis.html">att.meterSigDefault.vis</a> (@meter.sym)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterSig.log.html">att.meterSig.log</a> (@sym), 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterSigDefault.vis.html">att.meterSigDefault.vis</a> (@meter.sym)
             </div>
          </td>
       </tr>

@@ -24,7 +24,7 @@ title: "macro.anyXML"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/extMeta.html">extMeta</a>
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extMeta.html">extMeta</a>
             </div>
          </td>
       </tr>

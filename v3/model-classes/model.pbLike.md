@@ -25,9 +25,9 @@ title: "model.pbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.html">model.textphraseLike</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.html">model.textphraseLike</a>
                </div>
             </div>
          </td>
@@ -39,7 +39,7 @@ title: "model.pbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> (direct member of model.pbLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> (direct member of model.pbLike)
                </div>
             </div>
          </td>
@@ -57,7 +57,7 @@ title: "model.pbLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -66,7 +66,7 @@ title: "model.pbLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -75,7 +75,7 @@ title: "model.pbLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.html">model.textphraseLike</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.html">model.textphraseLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

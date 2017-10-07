@@ -25,7 +25,7 @@ title: "model.symbolTableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.symbolTableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/symbolTable.html">symbolTable</a> (direct member of model.symbolTableLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbolTable.html">symbolTable</a> (direct member of model.symbolTableLike)
                </div>
             </div>
          </td>

@@ -24,7 +24,7 @@ title: "data.PITCHCLASS"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitchclass.html">att.pitchclass</a> (@pclass)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitchclass.html">att.pitchclass</a> (@pclass)
             </div>
          </td>
       </tr>

@@ -9,7 +9,7 @@ version: "v3"
 
 Symbols and abbreviations for trills have changed and evolved considerably throughout
 history. Strategies to clarify the encoding and interpretation of ornaments have been
-discussed in section <a class="link_ptr" title="Overriding Default Resolutions" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/cmnOrnaments.html#cmnOrnamentsOverride">8.1.1 Overriding Default Resolutions</a> above. However, in order to aid
+discussed in section <a class="link_ptr" title="Overriding Default Resolutions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmnOrnaments.html#cmnOrnamentsOverride">8.1.1 Overriding Default Resolutions</a> above. However, in order to aid
 the encoder in making educated choices in the encoding of non-standard trills, this
 section
 shows two examples diverging from modern standard use.
@@ -37,7 +37,7 @@ explicitly encoded, as the following example demonstrates:
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample189.xml" valid="true" %}
 
 
-However, when it is necessary to support multiple outputs, use of the [choice](/{{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element and appropriate sub-elements is recommended. In this case, the [orig](/{{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} and [reg](/{{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} elements can be used to represent the
+However, when it is necessary to support multiple outputs, use of the [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element and appropriate sub-elements is recommended. In this case, the [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} and [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} elements can be used to represent the
 original source and a regularization provided by the editor, respectively:
 
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample190.xml" valid="true" %}
@@ -52,7 +52,7 @@ Wilhelm Friedemann Bach* (1720), shows a trill (
 symbol associated with a mordent in modern practice. Nonetheless, J.S. Bach's suggested
 resolution should be encoded with a variant of the procedure presented above.
 
-In the example below, the child elements of [choice](/{{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec}; that is, [orig](/{{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} and [reg](/{{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec}, represent non-exclusive options;
+In the example below, the child elements of [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec}; that is, [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} and [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec}, represent non-exclusive options;
 that is, both may be processed by applications that aim to support both visual and
 aural
 renditions.
@@ -74,8 +74,8 @@ to the existence of the trill marking, as in the following example:
 
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample192.xml" valid="true" %}
 
-The [orig](/{{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} element contains the single-note-with-trill transcription of
-the original text, while the [reg](/{{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} element represents the
+The [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} element contains the single-note-with-trill transcription of
+the original text, while the [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} element represents the
 realization-without-trill version.
 
 This approach facilitates substitution of the realization of the trill for the original

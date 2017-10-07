@@ -24,7 +24,7 @@ title: "data.PAGE.PANELS"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pages.html">att.pages</a> (@page.panels)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pages.html">att.pages</a> (@page.panels)
             </div>
          </td>
       </tr>

@@ -8,7 +8,7 @@ version: "v3"
 
 An element is a ‘link’ when it has an attribute whose value is a reference
 to the ID of one or more other elements. The links discussed in this chapter are the
-[ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} and the [ref](/{{ site.baseurl }}/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec} elements. These elements indicate an
+[ptr]({{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} and the [ref]({{ site.baseurl }}/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec} elements. These elements indicate an
 association between themselves (or one of their ancestors) and one or more other entities,
 either inside the same document or elsewhere. An association between two elements
 in the same
@@ -16,7 +16,7 @@ document is said to be an ‘internal’ link, while an association that
 involves an entity outside the current document is called an ‘external’
 link. However, either element can be used for either purpose.
 
-The two elements share a set of common attributes that are inherited from the [att.pointing](/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html){:.link_odd} class:
+The two elements share a set of common attributes that are inherited from the [att.pointing]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html){:.link_odd} class:
 
 <table class="table table-striped table-hover">
    <thead>
@@ -206,8 +206,8 @@ In the preceding example, the value of the **@xlink:role** attribute may be used
 re-write the value of **@xlink:title**, depending on the target resource role.
 
 
-In addition to the attributes in the [att.pointing](/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html){:.link_odd} class, the
-**@mimetype** attribute is also available on [ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} and [ref](/{{ site.baseurl }}/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec}. The function of the **@mimetype** attribute is similar to that
+In addition to the attributes in the [att.pointing]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html){:.link_odd} class, the
+**@mimetype** attribute is also available on [ptr]({{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} and [ref]({{ site.baseurl }}/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec}. The function of the **@mimetype** attribute is similar to that
 of **@targettype** in that they both allow classification of the destination. Unlike
 **@targettype**, however, **@mimetype** explicitly defines the destination type
 using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail

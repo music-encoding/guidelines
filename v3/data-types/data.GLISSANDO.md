@@ -24,7 +24,7 @@ title: "data.GLISSANDO"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.cmn.html">att.note.ges.cmn</a> (@gliss)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.cmn.html">att.note.ges.cmn</a> (@gliss)
             </div>
          </td>
       </tr>

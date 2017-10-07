@@ -25,7 +25,7 @@ title: "att.ending.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> (direct member of att.ending.vis)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> (direct member of att.ending.vis)
                </div>
             </div>
          </td>

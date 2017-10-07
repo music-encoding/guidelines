@@ -33,8 +33,8 @@ title: "model.headerPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a> (direct members of model.headerPart)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a> (direct members of model.headerPart)
                </div>
             </div>
          </td>

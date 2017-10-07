@@ -22,7 +22,7 @@ The element can be used, e.g., to label geographical names in titles:
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample282.xml" valid="false" %}
 
 
-Geographic name sub-parts may be encoded in [geogName](/{{ site.baseurl }}/{{ page.version }}/elements/geogName.html){:.link_odd_elementSpec} sub-elements.
+Geographic name sub-parts may be encoded in [geogName]({{ site.baseurl }}/{{ page.version }}/elements/geogName.html){:.link_odd_elementSpec} sub-elements.
 For example:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample283.xml" valid="true" %}
@@ -72,7 +72,7 @@ is meant can be achieved by referring to the ID of the TGN entry:
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample284.xml" valid="false" %}
 
 
-The names of places given within addresses can be marked with [geogName](/{{ site.baseurl }}/{{ page.version }}/elements/geogName.html){:.link_odd_elementSpec} elements, for example:
+The names of places given within addresses can be marked with [geogName]({{ site.baseurl }}/{{ page.version }}/elements/geogName.html){:.link_odd_elementSpec} elements, for example:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample285.xml" valid="false" %}
 

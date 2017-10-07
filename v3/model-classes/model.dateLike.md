@@ -25,14 +25,14 @@ title: "model.dateLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.pubStmtPart.html">model.pubStmtPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.pubStmtPart.html">model.pubStmtPart</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/change.html">change</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/change.html">change</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a>
                </div>
             </div>
          </td>
@@ -44,7 +44,7 @@ title: "model.dateLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a> (direct member of model.dateLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a> (direct member of model.dateLike)
                </div>
             </div>
          </td>
@@ -62,7 +62,7 @@ title: "model.dateLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -71,7 +71,7 @@ title: "model.dateLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.pubStmtPart.html">model.pubStmtPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.pubStmtPart.html">model.pubStmtPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -80,7 +80,7 @@ title: "model.dateLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -89,7 +89,7 @@ title: "model.dateLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>"
                         </span>/&gt;
                      </span>
                   </div>

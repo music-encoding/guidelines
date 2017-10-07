@@ -43,7 +43,7 @@ title: "keyAccid"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.keyAccidLike,html">model.keyAccidLike</a>
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.keyAccidLike,html">model.keyAccidLike</a>
             </div>
          </td>
       </tr>
@@ -57,8 +57,8 @@ title: "keyAccid"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/keyAccid.html">keyAccid</a> 
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/keySig.html">keySig</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/keyAccid.html">keyAccid</a> 
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/keySig.html">keySig</a>
                      </span>
                   </div>
                </div>
@@ -90,7 +90,7 @@ title: "keyAccid"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -99,7 +99,7 @@ title: "keyAccid"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -108,7 +108,7 @@ title: "keyAccid"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.anl.html">att.keyAccid.anl</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.anl.html">att.keyAccid.anl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -117,7 +117,7 @@ title: "keyAccid"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.ges.html">att.keyAccid.ges</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.ges.html">att.keyAccid.ges</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -126,7 +126,7 @@ title: "keyAccid"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.log.html">att.keyAccid.log</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.log.html">att.keyAccid.log</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -135,7 +135,7 @@ title: "keyAccid"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.vis.html">att.keyAccid.vis</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keyAccid.vis.html">att.keyAccid.vis</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -144,7 +144,7 @@ title: "keyAccid"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.keyAccidLike.html">model.keyAccidLike</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.keyAccidLike.html">model.keyAccidLike</a>"
                            </span>/&gt;
                         </span>
                      </div>

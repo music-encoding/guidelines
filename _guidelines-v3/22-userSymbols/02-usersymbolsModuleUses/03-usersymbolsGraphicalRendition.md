@@ -8,8 +8,8 @@ version: "v3"
 
 Usersymbols can define the rendition of different elements in two ways. Some elements,
 for
-example [dir](/{{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} and [tempo](/{{ site.baseurl }}/{{ page.version }}/elements/tempo.html){:.link_odd_elementSpec}, can have user symbol
-elements as content. In the following example, the content of [dir](/{{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} is
+example [dir]({{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} and [tempo]({{ site.baseurl }}/{{ page.version }}/elements/tempo.html){:.link_odd_elementSpec}, can have user symbol
+elements as content. In the following example, the content of [dir]({{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} is
 used to provide pictograms of percussion instruments.
 
 <figure class="figure">

@@ -25,7 +25,7 @@ title: "att.breath.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/breath.html">breath</a> (direct member of att.breath.ges)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/breath.html">breath</a> (direct member of att.breath.ges)
                </div>
             </div>
          </td>

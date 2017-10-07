@@ -25,7 +25,7 @@ title: "att.mRpt.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mRpt.html">mRpt</a> (direct member of att.mRpt.log)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mRpt.html">mRpt</a> (direct member of att.mRpt.log)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.mRpt.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.event.html">att.event</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.event.html">att.event</a>"
                         </span>/&gt;
                      </span>
                   </div>

@@ -28,7 +28,7 @@ title: "data.CERTAINTY"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.evidence.html">att.evidence</a> (@cert)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.evidence.html">att.evidence</a> (@cert)
             </div>
          </td>
       </tr>

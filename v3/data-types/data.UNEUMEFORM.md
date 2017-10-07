@@ -24,7 +24,7 @@ title: "data.UNEUMEFORM"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.uneume.log.html">att.uneume.log</a> (@form)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.uneume.log.html">att.uneume.log</a> (@form)
             </div>
          </td>
       </tr>

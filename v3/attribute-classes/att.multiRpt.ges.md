@@ -25,7 +25,7 @@ title: "att.multiRpt.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/multiRpt.html">multiRpt</a> (direct member of att.multiRpt.ges)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/multiRpt.html">multiRpt</a> (direct member of att.multiRpt.ges)
                </div>
             </div>
          </td>

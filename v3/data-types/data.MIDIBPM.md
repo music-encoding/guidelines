@@ -27,7 +27,7 @@ title: "data.MIDIBPM"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.miditempo.html">att.miditempo</a> (@midi.bpm)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.miditempo.html">att.miditempo</a> (@midi.bpm)
             </div>
          </td>
       </tr>

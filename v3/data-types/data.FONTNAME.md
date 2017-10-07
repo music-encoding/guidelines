@@ -26,9 +26,9 @@ title: "data.FONTNAME"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricstyle</a> (@lyric.name), 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.textstyle.html">att.textstyle</a> (@text.name), 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a> (@fontname)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricstyle</a> (@lyric.name), 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.textstyle.html">att.textstyle</a> (@text.name), 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a> (@fontname)
             </div>
          </td>
       </tr>

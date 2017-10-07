@@ -25,7 +25,7 @@ title: "att.pad.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pad.html">pad</a> (direct member of att.pad.vis)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pad.html">pad</a> (direct member of att.pad.vis)
                </div>
             </div>
          </td>

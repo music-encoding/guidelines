@@ -64,20 +64,20 @@ typology. Sample values include:
    </tbody>
 </table>
 
-This tag is the mirror image of the [expan](/{{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} tag (not to be confused with
-the [expansion](/{{ site.baseurl }}/{{ page.version }}/elements/expansion.html){:.link_odd_elementSpec} element described in 
-<a class="link_ptr" title="Content of Musical Divisions" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>).
-Both [abbr](/{{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan](/{{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} allow the encoder to
-transcribe an abbreviation and its expansion. In the case of [abbr](/{{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec}, the
+This tag is the mirror image of the [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} tag (not to be confused with
+the [expansion]({{ site.baseurl }}/{{ page.version }}/elements/expansion.html){:.link_odd_elementSpec} element described in 
+<a class="link_ptr" title="Content of Musical Divisions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>).
+Both [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} allow the encoder to
+transcribe an abbreviation and its expansion. In the case of [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec}, the
 original is transcribed as the content of the element and the expansion as an attribute
 value,
-while [expan](/{{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} reverses this. The choice between the two is up to the user.
+while [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} reverses this. The choice between the two is up to the user.
 For example:
 
 {% include plainExample.html example="./v3/examples/editTrans/editTrans-sample209.xml" valid="false" %}
 
 
-The [abbr](/{{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} tag is not required; if appropriate, the encoder may
+The [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} tag is not required; if appropriate, the encoder may
 transcribe abbreviations in the source text silently, without tagging them. If abbreviations
 are not transcribed directly but expanded silently, then the MEI header should indicate
 this
@@ -90,7 +90,7 @@ abbreviation.
 When the content of the **@abbr** or **@expan** attributes requires additional
 markup, an attribute cannot be used. In this case, the abbreviated and expanded forms
 must be
-presented within elements. Furthermore, as alternatives to each other, the [abbr](/{{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan](/{{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} elements must be wrapped by the [choice](/{{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element, as described above. The previous example, where the 'o:' in 'pno:' is
+presented within elements. Furthermore, as alternatives to each other, the [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} elements must be wrapped by the [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element, as described above. The previous example, where the 'o:' in 'pno:' is
 written as superscript, would be encoded as:
 
 {% include plainExample.html example="./v3/examples/editTrans/editTrans-sample210.xml" valid="true" %}

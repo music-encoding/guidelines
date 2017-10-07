@@ -24,8 +24,8 @@ title: "data.MIDICHANNEL"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a> (@midi.channel), 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chan.html">chan</a>/@num
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a> (@midi.channel), 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chan.html">chan</a>/@num
             </div>
          </td>
       </tr>

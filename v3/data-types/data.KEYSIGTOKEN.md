@@ -27,8 +27,8 @@ title: "data.KEYSIGTOKEN"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keySig.log.html">att.keySig.log</a> (@sig.mixed), 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a> (@key.sig.mixed)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keySig.log.html">att.keySig.log</a> (@sig.mixed), 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a> (@key.sig.mixed)
             </div>
          </td>
       </tr>

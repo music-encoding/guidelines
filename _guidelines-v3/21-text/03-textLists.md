@@ -17,15 +17,15 @@ When a text contains lists, they can be encoded with the following elements:
 
 
 
-The [list](/{{ site.baseurl }}/{{ page.version }}/elements/list.html){:.link_odd_elementSpec} element can identify any kind of list; the **@form**
+The [list]({{ site.baseurl }}/{{ page.version }}/elements/list.html){:.link_odd_elementSpec} element can identify any kind of list; the **@form**
 attribute can be used to specify whether the list is ordered, unordered etc. Each
 item in the
-list is encoded with the [li](/{{ site.baseurl }}/{{ page.version }}/elements/li.html){:.link_odd_elementSpec} element. The **@n** can be used to
+list is encoded with the [li]({{ site.baseurl }}/{{ page.version }}/elements/li.html){:.link_odd_elementSpec} element. The **@n** can be used to
 record a label for a list item, as in the following example:
 
 {% include plainExample.html example="./v3/examples/text/text-sample333.xml" valid="true" %}
 
-Occasionally, lists have headers or titles, which can be encoded with [head](/{{ site.baseurl }}/{{ page.version }}/elements/head.html){:.link_odd_elementSpec}:
+Occasionally, lists have headers or titles, which can be encoded with [head]({{ site.baseurl }}/{{ page.version }}/elements/head.html){:.link_odd_elementSpec}:
 
 {% include plainExample.html example="./v3/examples/text/text-sample334.xml" valid="true" %}
 

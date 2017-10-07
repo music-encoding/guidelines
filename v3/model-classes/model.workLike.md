@@ -25,7 +25,7 @@ title: "model.workLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.workLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a> (direct member of model.workLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a> (direct member of model.workLike)
                </div>
             </div>
          </td>

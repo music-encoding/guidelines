@@ -25,11 +25,11 @@ title: "model.nameLike.geogName"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a>
                </div>
             </div>
          </td>
@@ -41,7 +41,7 @@ title: "model.nameLike.geogName"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/geogName.html">geogName</a> (direct member of model.nameLike.geogName)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/geogName.html">geogName</a> (direct member of model.nameLike.geogName)
                </div>
             </div>
          </td>
@@ -59,7 +59,7 @@ title: "model.nameLike.geogName"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -68,7 +68,7 @@ title: "model.nameLike.geogName"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>"
                         </span>/&gt;
                      </span>
                   </div>

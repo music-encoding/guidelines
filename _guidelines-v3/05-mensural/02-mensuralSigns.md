@@ -9,9 +9,9 @@ version: "v3"
 
 Using the mensural module, mensuration signs can be indicated with the attributes
 available
-on the [scoreDef](/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} and [staffDef](/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} elements. Mensuration
-signs encoded using attributes on [scoreDef](/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} are regarded as default
-values which may be overridden by values attached to individual [staffDef](/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}
+on the [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} and [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} elements. Mensuration
+signs encoded using attributes on [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} are regarded as default
+values which may be overridden by values attached to individual [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}
 elements.
 
 
@@ -32,7 +32,7 @@ indicating the presence of a dot.
 
 
 
-[mensur](/{{ site.baseurl }}/{{ page.version }}/elements/mensur.html){:.link_odd_elementSpec} elements can also be used instead of [staffDef](/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} and its attributes.
+[mensur]({{ site.baseurl }}/{{ page.version }}/elements/mensur.html){:.link_odd_elementSpec} elements can also be used instead of [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} and its attributes.
 
 
 

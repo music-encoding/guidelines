@@ -27,7 +27,7 @@ title: "att.verse.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/verse.html">verse</a> (direct member of att.verse.log)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/verse.html">verse</a> (direct member of att.verse.log)
                </div>
             </div>
          </td>

@@ -25,7 +25,7 @@ title: "model.figbassLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.figbassLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fb.html">fb</a> (direct member of model.figbassLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fb.html">fb</a> (direct member of model.figbassLike)
                </div>
             </div>
          </td>

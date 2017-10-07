@@ -15,5 +15,5 @@ version: "v3"
 
 The intended audience for the work and additional information about context for the
 work
-that is not captured in more specific elements elsewhere, such as [history](/{{ site.baseurl }}/{{ page.version }}/elements/history.html){:.link_odd_elementSpec} and its sub-components, may be recorded in the [audience](/{{ site.baseurl }}/{{ page.version }}/elements/audience.html){:.link_odd_elementSpec} and [context](/{{ site.baseurl }}/{{ page.version }}/elements/context.html){:.link_odd_elementSpec} elements.
+that is not captured in more specific elements elsewhere, such as [history]({{ site.baseurl }}/{{ page.version }}/elements/history.html){:.link_odd_elementSpec} and its sub-components, may be recorded in the [audience]({{ site.baseurl }}/{{ page.version }}/elements/audience.html){:.link_odd_elementSpec} and [context]({{ site.baseurl }}/{{ page.version }}/elements/context.html){:.link_odd_elementSpec} elements.
 

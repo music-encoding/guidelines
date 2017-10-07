@@ -10,7 +10,7 @@ Conventions vary as to which elements are grouped as back matter and which as fr
 For
 example, some books place the table of contents at the front, and others at the back.
 For this
-reason, the content models of the [front](/{{ site.baseurl }}/{{ page.version }}/elements/front.html){:.link_odd_elementSpec} and [back](/{{ site.baseurl }}/{{ page.version }}/elements/back.html){:.link_odd_elementSpec}
+reason, the content models of the [front]({{ site.baseurl }}/{{ page.version }}/elements/front.html){:.link_odd_elementSpec} and [back]({{ site.baseurl }}/{{ page.version }}/elements/back.html){:.link_odd_elementSpec}
 elements are identical.
 
 The following suggested values may be used for the **@type** attribute on all division

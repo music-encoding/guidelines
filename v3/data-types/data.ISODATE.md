@@ -24,7 +24,7 @@ title: "data.ISODATE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a> (@enddate)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a> (@enddate)
             </div>
          </td>
       </tr>

@@ -27,7 +27,7 @@ title: "model.staffPart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>
                </div>
             </div>
          </td>
@@ -39,29 +39,29 @@ title: "model.staffPart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/scoreDef.html">scoreDef</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/syllable.html">syllable</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/scoreDef.html">scoreDef</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/syllable.html">syllable</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scoreDefLike.html">model.scoreDefLike</a>)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scoreDefLike.html">model.scoreDefLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/measure.html">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/staffDef.html">staffDef</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/staffGrp.html">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/syllable.html">syllable</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/measure.html">measure</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/staffDef.html">staffDef</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/staffGrp.html">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/syllable.html">syllable</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefLike.html">model.staffDefLike</a>)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefLike.html">model.staffDefLike</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensural.html">model.staffPart.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensural.html">model.staffPart.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.neumes.html">model.staffPart.neumes</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.neumes.html">model.staffPart.neumes</a> (no elements directly inheriting from this class)
                   </span>
                </div>
             </div>
@@ -80,7 +80,7 @@ title: "model.staffPart.mensuralAndNeumes"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>"
                         </span>/&gt;
                      </span>
                   </div>

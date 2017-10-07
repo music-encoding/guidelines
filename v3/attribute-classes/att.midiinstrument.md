@@ -25,7 +25,7 @@ title: "att.midiinstrument"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/instrDef.html">instrDef</a> (direct member of att.midiinstrument)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/instrDef.html">instrDef</a> (direct member of att.midiinstrument)
                </div>
             </div>
          </td>

@@ -21,7 +21,7 @@ from the same model.
 
 The bibliographic description of an electronic musical text should be supplied by
 the
-mandatory [fileDesc](/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element:
+mandatory [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element:
 
 
 
@@ -29,10 +29,10 @@ mandatory [fileDesc](/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.ht
 
 
 
-The [fileDesc](/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element contains two mandatory and six optional elements,
+The [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element contains two mandatory and six optional elements,
 each of which is described in more detail below. These elements are listed below in
 the order
-in which they must occur within the [fileDesc](/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element.
+in which they must occur within the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element.
 
 
 

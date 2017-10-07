@@ -33,7 +33,7 @@ title: "data.ORNAM.cmn"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ornam.html">att.ornam</a> (@ornam)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ornam.html">att.ornam</a> (@ornam)
             </div>
          </td>
       </tr>

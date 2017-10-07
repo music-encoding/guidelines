@@ -24,7 +24,7 @@ title: "data.COLORVALUES"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/data-types/data.COLOR.html">data.COLOR</a>
+               <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.COLOR.html">data.COLOR</a>
             </div>
          </td>
       </tr>

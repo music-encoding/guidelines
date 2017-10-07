@@ -7,7 +7,7 @@ version: "v3"
 
 
 Annotations are one of the most versatile features of MEI. They are provided using
-the [annot](/{{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} element.
+the [annot]({{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} element.
 
 
 
@@ -23,7 +23,7 @@ of textual features that might occur within an annotation, it may lead to markup
 cannot
 be effectively processed mechanistically.
 
-In all cases, [annot](/{{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} provides a comment upon a feature of the
+In all cases, [annot]({{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} provides a comment upon a feature of the
 encoding, but never contains textual transcription. Depending on its context, an annotation
 will deal with either its parent element, or, more usually, with the element(s) specified
 in

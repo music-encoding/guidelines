@@ -24,10 +24,10 @@ sets.
 Every MEI-conformant text not embedded in another XML carrier that provides for capturing
 metadata, such as TEI or METS, must carry a set of descriptions, prefixed to it and
 encoded as
-described in this chapter. This set is known as the MEI header, tagged [meiHead](/{{ site.baseurl }}/{{ page.version }}/elements/meiHead.html){:.link_odd_elementSpec}, and has five major parts:
+described in this chapter. This set is known as the MEI header, tagged [meiHead]({{ site.baseurl }}/{{ page.version }}/elements/meiHead.html){:.link_odd_elementSpec}, and has five major parts:
 
-1. one or more alternative identifiers, tagged with [altId](/{{ site.baseurl }}/{{ page.version }}/elements/altId.html){:.link_odd_elementSpec}, each of
-which provides an identifying name or number associated with the file.2. a file description, tagged [fileDesc](/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec}, containing a full
+1. one or more alternative identifiers, tagged with [altId]({{ site.baseurl }}/{{ page.version }}/elements/altId.html){:.link_odd_elementSpec}, each of
+which provides an identifying name or number associated with the file.2. a file description, tagged [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec}, containing a full
 bibliographic description of the computer file itself, from which a user of the text
 could
 derive a proper bibliographic citation, or which a librarian or archivist could use
@@ -39,7 +39,7 @@ operating system files. The file description also includes information about the
 or
 sources from which the electronic document was derived. The MEI elements used to encode
 the
-file description are described in section <a class="link_ptr" title="File Description" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerFileDescription">2.1 File Description</a> below.3. an encoding description, tagged [encodingDesc](/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html){:.link_odd_elementSpec}, which
+file description are described in section <a class="link_ptr" title="File Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerFileDescription">2.1 File Description</a> below.3. an encoding description, tagged [encodingDesc]({{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html){:.link_odd_elementSpec}, which
 describes the relationship between an electronic text and its source or sources. It
 allows for
 detailed description of whether (or how) the text was normalized during transcription,
@@ -49,7 +49,7 @@ applied,
 and similar matters. The MEI elements used to encode the encoding description are
 described in
 section 
-<a class="link_ptr" title="Encoding Description" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerEncodingDescription">2.2 Encoding Description</a> below.4. a work description, tagged [workDesc](/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec}, containing
+<a class="link_ptr" title="Encoding Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerEncodingDescription">2.2 Encoding Description</a> below.4. a work description, tagged [workDesc]({{ site.baseurl }}/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec}, containing
 classification and contextual information about the work, such as its subject matter,
 the
 situation in which it was produced, the individuals described by or participating
@@ -63,12 +63,12 @@ text type or origin. The work description may however be of use in any form of a
 text
 processing. The MEI elements used to encode the work description are described in
 section 
-<a class="link_ptr" title="Work Description" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below.5. a revision history, tagged [revisionDesc](/{{ site.baseurl }}/{{ page.version }}/elements/revisionDesc.html){:.link_odd_elementSpec}, which allows
+<a class="link_ptr" title="Work Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below.5. a revision history, tagged [revisionDesc]({{ site.baseurl }}/{{ page.version }}/elements/revisionDesc.html){:.link_odd_elementSpec}, which allows
 the encoder to provide a history of changes made during the development of the electronic
 text. The revision history is important for version control and for resolving
 questions about the history of a file. The MEI elements used to encode the revision
 description are described in section 
-<a class="link_ptr" title="Revision Description" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a> below.
+<a class="link_ptr" title="Revision Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a> below.
 
 
 

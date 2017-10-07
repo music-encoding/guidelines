@@ -6,8 +6,8 @@ version: "v3"
 
 
 
-The [mSpace](/{{ site.baseurl }}/{{ page.version }}/elements/mSpace.html){:.link_odd_elementSpec} (<span class="expan">measure space</span>) element is closely
-related to the [space](/{{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} and [mRest](/{{ site.baseurl }}/{{ page.version }}/elements/mRest.html){:.link_odd_elementSpec} elements. It
+The [mSpace]({{ site.baseurl }}/{{ page.version }}/elements/mSpace.html){:.link_odd_elementSpec} (<span class="expan">measure space</span>) element is closely
+related to the [space]({{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} and [mRest]({{ site.baseurl }}/{{ page.version }}/elements/mRest.html){:.link_odd_elementSpec} elements. It
 is used to explicitly indicate that a layer has no content but that no information
 is
 missing from the encoding.

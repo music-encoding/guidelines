@@ -24,8 +24,8 @@ title: "data.BETYPE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mediabounds.html">att.mediabounds</a> (@betype), 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/when.html">when</a>/@abstype
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mediabounds.html">att.mediabounds</a> (@betype), 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/when.html">when</a>/@abstype
             </div>
          </td>
       </tr>

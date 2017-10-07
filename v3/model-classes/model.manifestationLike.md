@@ -25,7 +25,7 @@ title: "model.manifestationLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.manifestationLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> (direct member of model.manifestationLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> (direct member of model.manifestationLike)
                </div>
             </div>
          </td>

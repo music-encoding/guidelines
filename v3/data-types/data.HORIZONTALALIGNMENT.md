@@ -24,11 +24,11 @@ title: "data.HORIZONTALALIGNMENT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.horizontalalign.html">att.horizontalalign</a> (@halign), 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pgFoot.html">pgFoot</a>/@halign, 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pgFoot2.html">pgFoot2</a>/@halign, 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pgHead.html">pgHead</a>/@halign, 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pgHead2.html">pgHead2</a>/@halign
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.horizontalalign.html">att.horizontalalign</a> (@halign), 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgFoot.html">pgFoot</a>/@halign, 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgFoot2.html">pgFoot2</a>/@halign, 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgHead.html">pgHead</a>/@halign, 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgHead2.html">pgHead2</a>/@halign
             </div>
          </td>
       </tr>

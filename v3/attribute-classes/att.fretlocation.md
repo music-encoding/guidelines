@@ -25,8 +25,8 @@ title: "att.fretlocation"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/barre.html">barre</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a> (direct members of att.fretlocation)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/barre.html">barre</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a> (direct members of att.fretlocation)
                </div>
             </div>
          </td>

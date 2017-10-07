@@ -25,7 +25,7 @@ title: "att.beam.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/beam.html">beam</a> (direct member of att.beam.ges)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/beam.html">beam</a> (direct member of att.beam.ges)
                </div>
             </div>
          </td>

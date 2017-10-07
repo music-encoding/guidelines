@@ -18,7 +18,7 @@ depending on the purpose of the analysis. These Guidelines recommend that encode
 employ
 commonly accepted analytical practices, such as "functional analysis" or "Schenkerian
 analysis",
-and document their use in the [encodingDesc](/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html){:.link_odd_elementSpec} described in section <a class="link_ptr" title="Encoding Description" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerEncodingDescription">2.2 Encoding Description</a>. For general information on musical analysis, please
+and document their use in the [encodingDesc]({{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html){:.link_odd_elementSpec} described in section <a class="link_ptr" title="Encoding Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerEncodingDescription">2.2 Encoding Description</a>. For general information on musical analysis, please
 consult Grove Music Online, "[Analysis](http://www.oxfordmusiconline.com/subscriber/article/grove/music/41862pg1#S41862.1){:.link_ref}".
 
 

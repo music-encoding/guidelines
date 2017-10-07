@@ -55,7 +55,7 @@ title: "chordDef"
                   <div class="specChild">
                      <span class="specChildModule">MEI.harmony</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordTable.html">chordTable</a>
+                        <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordTable.html">chordTable</a>
                      </span>
                   </div>
                </div>
@@ -71,8 +71,8 @@ title: "chordDef"
                <div class="specChild">
                   <span class="specChildModule">MEI.harmony</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/barre.html">barre</a> 
-                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a>
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/barre.html">barre</a> 
+                     <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a>
                   </span>
                </div>
             </div>
@@ -92,7 +92,7 @@ title: "chordDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -145,13 +145,13 @@ title: "chordDef"
          <td class="wovenodd-col2">
             <p>An 
                <span class="att">xml:id</span> attribute, while not required by the schema, is needed so that 
-               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a> elements can reference a particular chord definition. The
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a> elements can reference a particular chord definition. The
                
                <span class="att">pos</span> (position) attribute is provided in order to create displayable chord
                tablature grids. 
-               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a> sub-elements record the individual
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a> sub-elements record the individual
                pitches of the chord. 
-               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/barre.html">barre</a> sub-elements may be used when a single
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/barre.html">barre</a> sub-elements may be used when a single
                finger is used to stop multiple strings.
             </p>
          </td>

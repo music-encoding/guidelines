@@ -25,7 +25,7 @@ title: "model.harmLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.harmony.html">model.controleventLike.harmony</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.harmony.html">model.controleventLike.harmony</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.harmLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a> (direct member of model.harmLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a> (direct member of model.harmLike)
                </div>
             </div>
          </td>
@@ -55,7 +55,7 @@ title: "model.harmLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.harmony.html">model.controleventLike.harmony</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.harmony.html">model.controleventLike.harmony</a>"
                         </span>/&gt;
                      </span>
                   </div>

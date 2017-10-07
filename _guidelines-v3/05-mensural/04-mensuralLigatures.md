@@ -7,7 +7,7 @@ version: "v3"
 
 
 
-Ligatures can be encoded using the [ligature](/{{ site.baseurl }}/{{ page.version }}/elements/ligature.html){:.link_odd_elementSpec} element. The
+Ligatures can be encoded using the [ligature]({{ site.baseurl }}/{{ page.version }}/elements/ligature.html){:.link_odd_elementSpec} element. The
 **@form** attribute is available for specifying if the ligature is recta or
 obliqua.
 
@@ -21,7 +21,7 @@ obliqua.
 
 
 In cases where the ligature contains both recta and obliqua notes, the **@lig**
-attribute of the [note](/{{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} element can be used to specify the form of the
+attribute of the [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} element can be used to specify the form of the
 ligature at the note level.
 
 

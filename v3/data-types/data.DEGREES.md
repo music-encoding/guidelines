@@ -26,8 +26,8 @@ title: "data.DEGREES"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/data-types/data.ROTATION.html">data.ROTATION</a>, 
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a>/@rotation
+               <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ROTATION.html">data.ROTATION</a>, 
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a>/@rotation
             </div>
          </td>
       </tr>

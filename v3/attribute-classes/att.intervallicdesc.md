@@ -45,7 +45,7 @@ title: "att.intervallicdesc"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -54,7 +54,7 @@ title: "att.intervallicdesc"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalmelodic.html">att.intervalmelodic</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalmelodic.html">att.intervalmelodic</a>"
                         </span>/&gt;
                      </span>
                   </div>

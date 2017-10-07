@@ -8,7 +8,7 @@ version: "v3"
 
 An indication that a passage should be performed one or more octaves above or below
 its
-written pitch is represented by the [octave](/{{ site.baseurl }}/{{ page.version }}/elements/octave.html){:.link_odd_elementSpec} element.
+written pitch is represented by the [octave]({{ site.baseurl }}/{{ page.version }}/elements/octave.html){:.link_odd_elementSpec} element.
 
 <figure class="figure">
    <img src="../../../../guidelines/v3/Images/ExampleImages/octave-a-20100510.png" class="img-responsive"></img>

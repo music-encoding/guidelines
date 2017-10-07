@@ -27,7 +27,7 @@ title: "data.BEND.AMOUNT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bend.ges.html">att.bend.ges</a> (@amount)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bend.ges.html">att.bend.ges</a> (@amount)
             </div>
          </td>
       </tr>

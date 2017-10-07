@@ -40,7 +40,7 @@ title: "data.MEASUREBEATOFFSET"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.origin.timestamp.musical.html">att.origin.timestamp.musical</a> (@origin.tstamp)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.origin.timestamp.musical.html">att.origin.timestamp.musical</a> (@origin.tstamp)
             </div>
          </td>
       </tr>

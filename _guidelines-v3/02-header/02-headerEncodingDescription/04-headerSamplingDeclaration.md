@@ -16,7 +16,7 @@ selecting texts, or parts of text, for inclusion in the resource.
 
 
 
-The [samplingDecl](/{{ site.baseurl }}/{{ page.version }}/elements/samplingDecl.html){:.link_odd_elementSpec} element should include information about such
+The [samplingDecl]({{ site.baseurl }}/{{ page.version }}/elements/samplingDecl.html){:.link_odd_elementSpec} element should include information about such
 matters as:
 
 
@@ -42,5 +42,5 @@ not
 be repeated in the header of each such text. Instead, the **@decls** attribute of each
 text (or subdivision of the text) to which the sampling declaration applies may be
 used to
-supply a cross-reference to it, as further described in section <a class="link_ptr" title="Associating Metadata and Data" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerAssociatingMetadataAndData">2.1.7.1 Associating Metadata and Data</a>.
+supply a cross-reference to it, as further described in section <a class="link_ptr" title="Associating Metadata and Data" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerAssociatingMetadataAndData">2.1.7.1 Associating Metadata and Data</a>.
 

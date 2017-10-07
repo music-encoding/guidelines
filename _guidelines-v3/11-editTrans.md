@@ -22,7 +22,7 @@ The scope of the elements described herein is therefore the description of featu
 relating to
 the genesis, later revision and editorial interpretation of a text. Mechanisms for
 describing
-multiple sources are described in chapter <a class="link_ptr" title="Critical Apparatus" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
+multiple sources are described in chapter <a class="link_ptr" title="Critical Apparatus" href="{{ site.baseurl }}/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
 
 The elements described in this chapter may be contained by a wide range of other MEI
 elements
@@ -41,7 +41,7 @@ which the
 encoder wishes to associate with the intervention. Because these requirements are
 common to many
 of the elements discussed in this section, they are provided by an attribute class,
-[att.edit](/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.edit.html){:.link_odd}, to which these elements subscribe. Any of the elements
+[att.edit]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.edit.html){:.link_odd}, to which these elements subscribe. Any of the elements
 discussed here thus may potentially carry the following optional attributes:
 
 
@@ -59,7 +59,7 @@ indicate that their content represents an editorial intervention (or, in some ca
 the lack of
 intervention) of a specific kind. Sometimes, pairs or other meaningful groupings of
 such
-elements can be recorded, then wrapped within the special purpose [choice](/{{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec}
+elements can be recorded, then wrapped within the special purpose [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec}
 element:
 
 
@@ -76,8 +76,8 @@ dynamically switch between the Urtext ‘view’ of the text and one or more
 ‘views’ of the text after the application of the encoded editorial
 interventions.
 
-Elements which can be combined in this way constitute the [model.choicePart](/{{ site.baseurl }}/{{ page.version }}/model-classes/model.choicePart.html){:.link_odd} class. The default members of this class are [sic](/{{ site.baseurl }}/{{ page.version }}/elements/sic.html){:.link_odd_elementSpec}, [corr](/{{ site.baseurl }}/{{ page.version }}/elements/corr.html){:.link_odd_elementSpec}, [reg](/{{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec}, [orig](/{{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec},
-[unclear](/{{ site.baseurl }}/{{ page.version }}/elements/unclear.html){:.link_odd_elementSpec}, [add](/{{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec}, and [del](/{{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec}; their
+Elements which can be combined in this way constitute the [model.choicePart]({{ site.baseurl }}/{{ page.version }}/model-classes/model.choicePart.html){:.link_odd} class. The default members of this class are [sic]({{ site.baseurl }}/{{ page.version }}/elements/sic.html){:.link_odd_elementSpec}, [corr]({{ site.baseurl }}/{{ page.version }}/elements/corr.html){:.link_odd_elementSpec}, [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec}, [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec},
+[unclear]({{ site.baseurl }}/{{ page.version }}/elements/unclear.html){:.link_odd_elementSpec}, [add]({{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec}, and [del]({{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec}; their
 functions and usage are described in greater detail below.
 
 Three categories of editorial intervention are discussed by the remainder of this

@@ -30,7 +30,7 @@ title: "data.FRET"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a> (@fret)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a> (@fret)
             </div>
          </td>
       </tr>

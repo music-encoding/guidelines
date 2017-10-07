@@ -19,7 +19,7 @@ HTML.
 
 
 
-In MEI, a [p](/{{ site.baseurl }}/{{ page.version }}/elements/p.html){:.link_odd_elementSpec} is used in many different situations, including
-transcriptional use within a [titlePage](/{{ site.baseurl }}/{{ page.version }}/elements/titlePage.html){:.link_odd_elementSpec} or descriptive purposes as in a
-[changeDesc](/{{ site.baseurl }}/{{ page.version }}/elements/changeDesc.html){:.link_odd_elementSpec}.
+In MEI, a [p]({{ site.baseurl }}/{{ page.version }}/elements/p.html){:.link_odd_elementSpec} is used in many different situations, including
+transcriptional use within a [titlePage]({{ site.baseurl }}/{{ page.version }}/elements/titlePage.html){:.link_odd_elementSpec} or descriptive purposes as in a
+[changeDesc]({{ site.baseurl }}/{{ page.version }}/elements/changeDesc.html){:.link_odd_elementSpec}.
 

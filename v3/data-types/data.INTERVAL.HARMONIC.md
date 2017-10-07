@@ -24,7 +24,7 @@ title: "data.INTERVAL.HARMONIC"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a> (@inth)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a> (@inth)
             </div>
          </td>
       </tr>

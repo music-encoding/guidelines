@@ -24,7 +24,7 @@ title: "data.STRINGNUMBER"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.tablature.html">att.note.ges.tablature</a> (@tab.string)
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.tablature.html">att.note.ges.tablature</a> (@tab.string)
             </div>
          </td>
       </tr>

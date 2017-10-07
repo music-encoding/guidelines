@@ -20,7 +20,7 @@ provides the following elements for this purpose.
 
 Each of the four FRBR entity equivalents – the work, expression, source, and item
 elements –
-allows a list of such relationship descriptions as its last child element. [relationList](/{{ site.baseurl }}/{{ page.version }}/elements/relationList.html){:.link_odd_elementSpec} provides a container for individual [relation](/{{ site.baseurl }}/{{ page.version }}/elements/relation.html){:.link_odd_elementSpec}
+allows a list of such relationship descriptions as its last child element. [relationList]({{ site.baseurl }}/{{ page.version }}/elements/relationList.html){:.link_odd_elementSpec} provides a container for individual [relation]({{ site.baseurl }}/{{ page.version }}/elements/relation.html){:.link_odd_elementSpec}
 elements. The nature of the relationship must be specified by the **@rel** attribute and
 the target of the relationship must be identified by the **@target** attribute.
 
@@ -74,18 +74,18 @@ of an expression.
 
 {% include plainExample.html example="./v3/examples/FRBR/FRBR-sample085.xml" valid="true" %}
 
-Within the [componentGrp](/{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html){:.link_odd_elementSpec} element, the order of child elements implicitly
+Within the [componentGrp]({{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html){:.link_odd_elementSpec} element, the order of child elements implicitly
 describes a hasSuccessor/isSuccessorOf relationship between components, i.e. it defines
 a
-certain sequence such as the movements of a work. In other cases, [relation](/{{ site.baseurl }}/{{ page.version }}/elements/relation.html){:.link_odd_elementSpec} elements may be needed to explicitly encode relationships not otherwise
+certain sequence such as the movements of a work. In other cases, [relation]({{ site.baseurl }}/{{ page.version }}/elements/relation.html){:.link_odd_elementSpec} elements may be needed to explicitly encode relationships not otherwise
 defined by encoding order or hierarchy. For instance, the hasReproduction/isReproductionOf
 relationship may be used to indicate that one source is a reprint of another.
 
 {% include plainExample.html example="./v3/examples/FRBR/FRBR-sample086.xml" valid="true" %}
 
-Moreover, the use of [componentGrp](/{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html){:.link_odd_elementSpec} implicitly defines a hasPart/isPartOf
+Moreover, the use of [componentGrp]({{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html){:.link_odd_elementSpec} implicitly defines a hasPart/isPartOf
 relationship between the componentGrp element’s parent and its child elements. Using
-the [relationList](/{{ site.baseurl }}/{{ page.version }}/elements/relationList.html){:.link_odd_elementSpec} and relation elements to define their relationship, the four
+the [relationList]({{ site.baseurl }}/{{ page.version }}/elements/relationList.html){:.link_odd_elementSpec} and relation elements to define their relationship, the four
 component works in the "Der Ring des Nibelungen" example above could alternatively
 be encoded
 as sibling work elements to the "Ring" work element.

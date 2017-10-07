@@ -9,7 +9,7 @@ version: "v3"
 The **@pclass** attribute can be used to encode information about the pitch class to
 which a note belongs. The attribute's value must be an integer less than or equal
 to 11. It
-is only allowed on the [note](/{{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} element. The **@pclass** attribute
+is only allowed on the [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} element. The **@pclass** attribute
 comes from "musical set theory" elaborated first by Howard Hanson and Allen Forte
 as a new
 method for organizing tones. It provides a concept for categorizing musical objects

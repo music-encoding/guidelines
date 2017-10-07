@@ -25,7 +25,7 @@ title: "att.staff.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staff.html">staff</a> (direct member of att.staff.log)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staff.html">staff</a> (direct member of att.staff.log)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.staff.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterconformance.html">att.meterconformance</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterconformance.html">att.meterconformance</a>"
                         </span>/&gt;
                      </span>
                   </div>

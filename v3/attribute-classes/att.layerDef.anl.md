@@ -25,7 +25,7 @@ title: "att.layerDef.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> (direct member of att.layerDef.anl)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> (direct member of att.layerDef.anl)
                </div>
             </div>
          </td>

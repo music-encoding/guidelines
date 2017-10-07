@@ -25,7 +25,7 @@ title: "att.pad.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pad.html">pad</a> (direct member of att.pad.anl)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pad.html">pad</a> (direct member of att.pad.anl)
                </div>
             </div>
          </td>

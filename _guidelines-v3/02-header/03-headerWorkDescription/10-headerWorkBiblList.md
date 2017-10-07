@@ -12,6 +12,6 @@ version: "v3"
 
 
 
-The [biblList](/{{ site.baseurl }}/{{ page.version }}/elements/biblList.html){:.link_odd_elementSpec} element allows citation of bibliographic evidence
+The [biblList]({{ site.baseurl }}/{{ page.version }}/elements/biblList.html){:.link_odd_elementSpec} element allows citation of bibliographic evidence
 supporting assertions made within other sub-components of the work description.
 

@@ -28,7 +28,7 @@ title: "model.controleventLike.harmony"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>
                </div>
             </div>
          </td>
@@ -40,9 +40,9 @@ title: "model.controleventLike.harmony"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/harm.html">harm</a>
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/harm.html">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.harmLike.html">model.harmLike</a>)
+                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.harmLike.html">model.harmLike</a>)
                   </span>
                </div>
             </div>
@@ -61,7 +61,7 @@ title: "model.controleventLike.harmony"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

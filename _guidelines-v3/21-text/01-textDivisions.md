@@ -7,7 +7,7 @@ version: "v3"
 
 
 Text can be organized in different parts, for example in chapters or sections. The
-[div](/{{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element is used to encode such structural divisions.
+[div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element is used to encode such structural divisions.
 
 
 
@@ -22,16 +22,16 @@ in multiple sections (e.g. a preface, a critical report, performance instruction
 etc. for
 which see the following sections); each of these sections should be identified by
 a different
-[div](/{{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element. Text might also occur in between music sections (see <a class="link_ptr" title="Content of Musical Divisions" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few
+[div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element. Text might also occur in between music sections (see <a class="link_ptr" title="Content of Musical Divisions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few
 pieces might be preceded or followed by poetry. Such text should be encoded with the
-[div](/{{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, as demonstrated in the following example:
+[div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, as demonstrated in the following example:
 
 {% include plainExample.html example="./v3/examples/text/text-sample328.xml" valid="true" %}
 
 
 Textual divisions may have titles or other forms of introductory material, which are
 encoded
-with the [head](/{{ site.baseurl }}/{{ page.version }}/elements/head.html){:.link_odd_elementSpec} element.
+with the [head]({{ site.baseurl }}/{{ page.version }}/elements/head.html){:.link_odd_elementSpec} element.
 
 
 
@@ -47,7 +47,7 @@ languages, each with a different heading:
 
 {% include plainExample.html example="./v3/examples/text/text-sample329.xml" valid="false" %}
 
-Having said that [div](/{{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} identifies any structural organization of text, it
+Having said that [div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} identifies any structural organization of text, it
 is often helpful to distinguish the typology of division. The attributes **@type** and
 **@subtype** can be used for this purpose. It is required that **@type** be
 present when **@subtype** is used, though their values can be freely set by the

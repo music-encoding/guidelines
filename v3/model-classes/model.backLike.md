@@ -25,7 +25,7 @@ title: "model.backLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.musicPart.html">model.musicPart</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.musicPart.html">model.musicPart</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.backLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a> (direct member of model.backLike)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a> (direct member of model.backLike)
                </div>
             </div>
          </td>
@@ -55,7 +55,7 @@ title: "model.backLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.musicPart.html">model.musicPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.musicPart.html">model.musicPart</a>"
                         </span>/&gt;
                      </span>
                   </div>

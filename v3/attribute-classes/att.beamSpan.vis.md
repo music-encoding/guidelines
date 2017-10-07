@@ -25,7 +25,7 @@ title: "att.beamSpan.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html">beamSpan</a> (direct member of att.beamSpan.vis)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html">beamSpan</a> (direct member of att.beamSpan.vis)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.beamSpan.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beam.vis.html">att.beam.vis</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beam.vis.html">att.beam.vis</a>"
                         </span>/&gt;
                      </span>
                   </div>

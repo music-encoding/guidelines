@@ -27,7 +27,7 @@ title: "model.staffDefPart.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefPart.html">model.staffDefPart</a>
+                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefPart.html">model.staffDefPart</a>
                </div>
             </div>
          </td>
@@ -39,8 +39,8 @@ title: "model.staffDefPart.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/proport.html">proport</a> (direct members of model.staffDefPart.mensural)
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/proport.html">proport</a> (direct members of model.staffDefPart.mensural)
                </div>
             </div>
          </td>
@@ -58,7 +58,7 @@ title: "model.staffDefPart.mensural"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefPart.html">model.staffDefPart</a>"
+                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefPart.html">model.staffDefPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
