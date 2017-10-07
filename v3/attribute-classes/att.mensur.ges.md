@@ -25,7 +25,7 @@ title: "att.mensur.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a> (direct member of att.mensur.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a> (direct member of att.mensur.ges)
                </div>
             </div>
          </td>

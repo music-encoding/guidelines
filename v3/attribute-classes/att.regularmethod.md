@@ -25,8 +25,8 @@ title: "att.regularmethod"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a> (direct members of att.regularmethod)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/normalization.html">normalization</a> (direct members of att.regularmethod)
                </div>
             </div>
          </td>

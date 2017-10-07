@@ -25,7 +25,7 @@ title: "att.pb.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a> (direct member of att.pb.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> (direct member of att.pb.ges)
                </div>
             </div>
          </td>

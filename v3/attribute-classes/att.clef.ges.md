@@ -25,7 +25,7 @@ title: "att.clef.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clef.html">clef</a> (direct member of att.clef.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clef.html">clef</a> (direct member of att.clef.ges)
                </div>
             </div>
          </td>

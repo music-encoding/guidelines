@@ -7,7 +7,7 @@ version: "v3"
 
 
 The CMN module adds two optional attributes, **@grace** and
-**@grace.time**, to [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}.
+**@grace.time**, to [note](/{{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord](/{{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}.
 The presence of the **@grace** attribute indicates a grace note.
 
 <figure class="figure">
@@ -45,5 +45,5 @@ preceding note (when **@grace**='unacc') or the following note (when
 
 More information about grace notes in the context of other CMN ornaments is available
 in chapter 
-<a class="link_ptr" title="Common Music Notation Ornaments" href="/{{ page.version }}/guidelines/cmnOrnaments.html">8 Common Music Notation Ornaments</a>.
+<a class="link_ptr" title="Common Music Notation Ornaments" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/cmnOrnaments.html">8 Common Music Notation Ornaments</a>.
 

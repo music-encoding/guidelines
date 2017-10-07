@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-The [workDesc](/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec} element is the third major subdivision of the MEI Header.
+The [workDesc](/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec} element is the third major subdivision of the MEI Header.
 It is an optional element, the purpose of which is to enable the recording of information
 characterizing various descriptive aspects of the abstract work.
 
@@ -16,7 +16,7 @@ characterizing various descriptive aspects of the abstract work.
 
 
 
-Within [workDesc](/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec}, the [work](/{{ page.version }}/elements/work.html){:.link_odd_elementSpec} element is used to hold
+Within [workDesc](/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec}, the [work](/{{ site.baseurl }}/{{ page.version }}/elements/work.html){:.link_odd_elementSpec} element is used to hold
 information for each resource being described.
 
 
@@ -25,7 +25,7 @@ information for each resource being described.
 
 
 
-All the components of [work](/{{ page.version }}/elements/work.html){:.link_odd_elementSpec} are optional, but they must occur in the
+All the components of [work](/{{ site.baseurl }}/{{ page.version }}/elements/work.html){:.link_odd_elementSpec} are optional, but they must occur in the
 following order:
 
 1. identifier2. titleStmt3. incip4. key5. mensuration6. meter7. tempo8. otherChar9. history10. langUsage11. perfMedium12. audience13. contents14. context15. biblList16. notesStmt17. classification

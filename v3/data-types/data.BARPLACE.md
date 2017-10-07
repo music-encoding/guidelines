@@ -26,7 +26,7 @@ title: "data.BARPLACE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.barplacement.html">att.barplacement</a> (@barplace)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barplacement.html">att.barplacement</a> (@barplace)
             </div>
          </td>
       </tr>

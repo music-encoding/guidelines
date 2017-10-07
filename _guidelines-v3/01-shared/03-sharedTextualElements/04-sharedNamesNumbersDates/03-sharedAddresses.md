@@ -6,8 +6,8 @@ version: "v3"
 
 
 
-Addresses may be encoded using the [address](/{{ page.version }}/elements/address.html){:.link_odd_elementSpec} element, which itself
-may hold an arbitrary number of [addrLine](/{{ page.version }}/elements/addrLine.html){:.link_odd_elementSpec} elements.
+Addresses may be encoded using the [address](/{{ site.baseurl }}/{{ page.version }}/elements/address.html){:.link_odd_elementSpec} element, which itself
+may hold an arbitrary number of [addrLine](/{{ site.baseurl }}/{{ page.version }}/elements/addrLine.html){:.link_odd_elementSpec} elements.
 
 
 
@@ -16,7 +16,7 @@ may hold an arbitrary number of [addrLine](/{{ page.version }}/elements/addrLine
 
 
 
-It is important to note that the [address](/{{ page.version }}/elements/address.html){:.link_odd_elementSpec} element does not hold a
+It is important to note that the [address](/{{ site.baseurl }}/{{ page.version }}/elements/address.html){:.link_odd_elementSpec} element does not hold a
 reference to the person or organization whose address is specified. This must be provided
 in a separate element, as in the following example:
 

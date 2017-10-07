@@ -25,8 +25,8 @@ title: "model.mdivLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/body.html">body</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mdiv.html">mdiv</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a>
                </div>
             </div>
          </td>
@@ -38,7 +38,7 @@ title: "model.mdivLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mdiv.html">mdiv</a> (direct member of model.mdivLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a> (direct member of model.mdivLike)
                </div>
             </div>
          </td>

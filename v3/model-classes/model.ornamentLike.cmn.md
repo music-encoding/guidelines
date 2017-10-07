@@ -25,7 +25,7 @@ title: "model.ornamentLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.controleventLike.cmn.html">model.controleventLike.cmn</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.cmn.html">model.controleventLike.cmn</a>
                </div>
             </div>
          </td>
@@ -37,9 +37,9 @@ title: "model.ornamentLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mordent.html">mordent</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trill.html">trill</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/turn.html">turn</a> (direct members of model.ornamentLike.cmn)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mordent.html">mordent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/trill.html">trill</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/turn.html">turn</a> (direct members of model.ornamentLike.cmn)
                </div>
             </div>
          </td>
@@ -57,7 +57,7 @@ title: "model.ornamentLike.cmn"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.controleventLike.cmn">model.controleventLike.cmn</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.cmn.html">model.controleventLike.cmn</a>"
                         </span>/&gt;
                      </span>
                   </div>

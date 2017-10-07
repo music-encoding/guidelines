@@ -25,7 +25,7 @@ title: "att.grpSym.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/grpSym.html">grpSym</a> (direct member of att.grpSym.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/grpSym.html">grpSym</a> (direct member of att.grpSym.ges)
                </div>
             </div>
          </td>

@@ -25,27 +25,27 @@ title: "att.datapointing"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/availability.html">availability</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classification.html">classification</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clip.html">clip</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expression.html">expression</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/item.html">item</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/langUsage.html">langUsage</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/recording.html">recording</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relatedItem.html">relatedItem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/source.html">source</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stdVals.html">stdVals</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/surface.html">surface</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/when.html">when</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/work.html">work</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/zone.html">zone</a> (direct members of att.datapointing)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/classification.html">classification</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clip.html">clip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expression.html">expression</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/item.html">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/langUsage.html">langUsage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/normalization.html">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/recording.html">recording</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html">relatedItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/stdVals.html">stdVals</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/surface.html">surface</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/when.html">when</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/zone.html">zone</a> (direct members of att.datapointing)
                </div>
             </div>
          </td>

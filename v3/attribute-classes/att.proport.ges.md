@@ -25,7 +25,7 @@ title: "att.proport.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/proport.html">proport</a> (direct member of att.proport.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/proport.html">proport</a> (direct member of att.proport.ges)
                </div>
             </div>
          </td>

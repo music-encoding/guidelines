@@ -27,7 +27,7 @@ title: "model.scorePart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>
                </div>
             </div>
          </td>
@@ -53,7 +53,7 @@ title: "model.scorePart.mensuralAndNeumes"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.scorePart">model.scorePart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>"
                         </span>/&gt;
                      </span>
                   </div>

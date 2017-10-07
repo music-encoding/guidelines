@@ -25,12 +25,12 @@ title: "att.horizontalalign"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rend.html">rend</a> (direct member of att.horizontalalign)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a> (direct member of att.horizontalalign)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syl.html">syl</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/syl.html">syl</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.syl.vis.html">att.syl.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.syl.vis.html">att.syl.vis</a>)
                   </span>
                </div>
             </div>

@@ -43,7 +43,7 @@ title: "layerDef"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.layerDefLike,html">model.layerDefLike</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerDefLike,html">model.layerDefLike</a>
             </div>
          </td>
       </tr>
@@ -57,8 +57,8 @@ title: "layerDef"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a>
                      </span>
                   </div>
                </div>
@@ -74,13 +74,13 @@ title: "layerDef"
                <div class="specChild">
                   <span class="specChildModule">MEI.midi</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/instrDef.html">instrDef</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/instrDef.html">instrDef</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/label.html">label</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/label.html">label</a>
                   </span>
                </div>
             </div>
@@ -100,7 +100,7 @@ title: "layerDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.commonPart">att.commonPart</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -109,7 +109,7 @@ title: "layerDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -118,7 +118,7 @@ title: "layerDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.layerDef.log">att.layerDef.log</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerDef.log.html">att.layerDef.log</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -127,7 +127,7 @@ title: "layerDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.layerDef.vis">att.layerDef.vis</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerDef.vis.html">att.layerDef.vis</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -136,7 +136,7 @@ title: "layerDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.layerDef.ges">att.layerDef.ges</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerDef.ges.html">att.layerDef.ges</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -145,7 +145,7 @@ title: "layerDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.layerDef.anl">att.layerDef.anl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerDef.anl.html">att.layerDef.anl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -154,7 +154,7 @@ title: "layerDef"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.layerDefLike">model.layerDefLike</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerDefLike.html">model.layerDefLike</a>"
                            </span>/&gt;
                         </span>
                      </div>

@@ -24,7 +24,7 @@ title: "data.DURATION.cmn"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tremmeasured.html">att.tremmeasured</a> (@measperf)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tremmeasured.html">att.tremmeasured</a> (@measperf)
             </div>
          </td>
       </tr>

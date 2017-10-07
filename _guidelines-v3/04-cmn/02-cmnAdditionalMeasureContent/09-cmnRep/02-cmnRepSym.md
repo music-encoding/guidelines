@@ -38,7 +38,7 @@ elements are provided for this purpose:
 
 
 
-The [beatRpt](/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec} element is used to represent a single repeated beat.
+The [beatRpt](/{{ site.baseurl }}/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec} element is used to represent a single repeated beat.
 Its visual rendition can be recorded using the **@rend** attribute. This attribute
 indicates the number of slashes required to render the appropriate repeat symbol,
 which,
@@ -56,16 +56,16 @@ mixed duration values, the symbol is always rendered as 2 slashes and 2 dots.
 In addition to its indication of a repeated beat, the beatRpt element is sometimes
 used
 in popular music notation, especially in guitar or percussion parts, to indicate a
-repeated rhythmic pattern. The [beatRpt](/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec} element can be used, but when
+repeated rhythmic pattern. The [beatRpt](/{{ site.baseurl }}/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec} element can be used, but when
 these parts require durations longer or shorter than a beat, note elements with
 appropriately-shaped note heads should be employed instead.
 
 
 
-The [mRpt](/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec} element is available for repetition of an entire measure.
-Like [mRest](/{{ page.version }}/elements/mRest.html){:.link_odd_elementSpec}, it must be the sole child of [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}, no other events should be used. The **@n** attribute of [mRpt](/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec} should not be used to record the number displayed above the
+The [mRpt](/{{ site.baseurl }}/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec} element is available for repetition of an entire measure.
+Like [mRest](/{{ site.baseurl }}/{{ page.version }}/elements/mRest.html){:.link_odd_elementSpec}, it must be the sole child of [layer](/{{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}, no other events should be used. The **@n** attribute of [mRpt](/{{ site.baseurl }}/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec} should not be used to record the number displayed above the
 measure in the figure below. Instead, the numbering of repetitions of the written-out
-measure can be enabled using the **@multi.number** attribute available on the [scoreDef](/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} and [staffDef](/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} elements.
+measure can be enabled using the **@multi.number** attribute available on the [scoreDef](/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} and [staffDef](/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} elements.
 
 
 <figure class="figure">
@@ -77,7 +77,7 @@ measure can be enabled using the **@multi.number** attribute available on the [s
 
 
 
-The [halfmRpt](/{{ page.version }}/elements/halfmRpt.html){:.link_odd_elementSpec} element represents the incorrect, but frequently
+The [halfmRpt](/{{ site.baseurl }}/{{ page.version }}/elements/halfmRpt.html){:.link_odd_elementSpec} element represents the incorrect, but frequently
 found, use of the measure repeat (or similar) sign to indicate repetition of half
 of a
 measure. This practice mostly occurs in hand-written notation and usually involves
@@ -99,7 +99,7 @@ As seen in the example above, it is possible to continuously repeat half measure
 even
 across barlines.
 
-The [mRpt2](/{{ page.version }}/elements/mRpt2.html){:.link_odd_elementSpec} and [multiRpt](/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec} elements (like the [multiRest](/{{ page.version }}/elements/multiRest.html){:.link_odd_elementSpec} element) never occur in scores, only in performer parts,
+The [mRpt2](/{{ site.baseurl }}/{{ page.version }}/elements/mRpt2.html){:.link_odd_elementSpec} and [multiRpt](/{{ site.baseurl }}/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec} elements (like the [multiRest](/{{ site.baseurl }}/{{ page.version }}/elements/multiRest.html){:.link_odd_elementSpec} element) never occur in scores, only in performer parts,
 where it is often necessary to abbreviate the notation due to page size limitations.
 
 
@@ -113,20 +113,20 @@ where it is often necessary to abbreviate the notation due to page size limitati
    <figcaption class="figure-caption">Figure 18. Multi-measure repetition</figcaption>
 </figure>
 
-The [mRpt2](/{{ page.version }}/elements/mRpt2.html){:.link_odd_elementSpec} element represents repetition of a 2-measure fragment,
-while [multiRpt](/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec} is for repetition of fragments longer than two
+The [mRpt2](/{{ site.baseurl }}/{{ page.version }}/elements/mRpt2.html){:.link_odd_elementSpec} element represents repetition of a 2-measure fragment,
+while [multiRpt](/{{ site.baseurl }}/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec} is for repetition of fragments longer than two
 measures. In modern publishing practice, repeats of more than two measures are written
 out
 using repeat signs. This element is provided, however, for handling non-standard practices
-often found in manuscripts. The **@num** attribute on [multiRpt](/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec}
+often found in manuscripts. The **@num** attribute on [multiRpt](/{{ site.baseurl }}/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec}
 records the number of preceding measures to be repeated.
 
 All elements described above allow for association of the sign with a symbol in a
 digital
 facsimile (via the **@facs** attribute) and with a user-defined symbol (using
 **@altsym**). See 
-<a class="link_ptr" title="Facsimiles" href="/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a> and 
-<a class="link_ptr" title="User-defined Symbols" href="/{{ page.version }}/guidelines/userSymbols.html">22 User-defined Symbols</a> for
+<a class="link_ptr" title="Facsimiles" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a> and 
+<a class="link_ptr" title="User-defined Symbols" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/userSymbols.html">22 User-defined Symbols</a> for
 further details. In addition, the **@expand** attribute is available on the
 foregoing elements to inform a rendering process whether to use the repeat symbol
 or the

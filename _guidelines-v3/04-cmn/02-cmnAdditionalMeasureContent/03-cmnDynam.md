@@ -13,16 +13,16 @@ in
 human language, possibly in an abbreviated form. An example is the word <span class="hi">piano</span>, indicating a quiet volume, often abbreviated as
 
 <span class="hi">p</span>. In MEI, verbal instructions like this are encoded
-using the [dynam](/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} element from the Shared module (see chapter 
-<a class="link_ptr" title="Shared Elements, Models, and Attributes" href="/{{ page.version }}/guidelines/shared.html">1 Shared Elements, Models, and Attributes</a>):
+using the [dynam](/{{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} element from the Shared module (see chapter 
+<a class="link_ptr" title="Shared Elements, Models, and Attributes" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html">1 Shared Elements, Models, and Attributes</a>):
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample123.xml" valid="true" %}
 
 
-By convention, [dynam](/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} elements, like [slur](/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec} and
-other elements belonging to the [model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class,
-are encoded at the end of the [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} to which they belong. This
-requires [dynam](/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} to be assigned to a certain [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}
+By convention, [dynam](/{{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} elements, like [slur](/{{ site.baseurl }}/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec} and
+other elements belonging to the [model.controleventLike](/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class,
+are encoded at the end of the [measure](/{{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} to which they belong. This
+requires [dynam](/{{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} to be assigned to a certain [staff](/{{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}
 using the **@staff** attribute, whose value refers to the target element's
 **@n** attribute. In the absence of other information, all layers within the staff
 are assumed to have the same dynamic marking.
@@ -54,7 +54,7 @@ Dynamics must also be associated with a particular time point in a measure, usin
 the
 **@tstamp**, or with a particular event, using the **@startid** attribute.
 Linking a control event with measures and events is discussed in section 
-<a class="link_ptr" title="Timestamps and Durations" href="/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>:
+<a class="link_ptr" title="Timestamps and Durations" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>:
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample128.xml" valid="true" %}
 
@@ -80,7 +80,7 @@ often task or processor dependent.
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample130.xml" valid="false" %}
 
 
-All musical elements affected by the [dynam](/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} may be explicitly
+All musical elements affected by the [dynam](/{{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} may be explicitly
 specified using the **@plist** attribute, which contains **@xml:id** attribute
 value references:
 
@@ -96,8 +96,8 @@ though they are duplicated by **@startid** and **@endid** attributes.
 In addition to verbal instructions, Common Music Notation uses graphical symbols to
 indicate ‘continuous’ dynamics. These crescendo and
 decrescendo (or diminuendo) symbols are encoded in MEI using the
-[hairpin](/{{ page.version }}/elements/hairpin.html){:.link_odd_elementSpec} element. It also is a member of the [model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class, which means it too is used just before the close of
-a [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} element, following the encoding of all staves. The required
+[hairpin](/{{ site.baseurl }}/{{ page.version }}/elements/hairpin.html){:.link_odd_elementSpec} element. It also is a member of the [model.controleventLike](/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class, which means it too is used just before the close of
+a [measure](/{{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} element, following the encoding of all staves. The required
 attribute **@form** specifies the direction of the symbol by taking one of two
 possible values: *cres* (growing louder) or *dim* (getting
 softer).
@@ -106,7 +106,7 @@ softer).
 
 
 Marking the logical extent of hairpins is possible using the same attributes as for
-[dynam](/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec}. The following example shows a hairpin that begins on the second
+[dynam](/{{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec}. The following example shows a hairpin that begins on the second
 half of beat 2 (in the current measure) and ends on beat 1 (of the following measure).
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample133.xml" valid="true" %}

@@ -25,7 +25,7 @@ title: "att.annot.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a> (direct member of att.annot.vis)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a> (direct member of att.annot.vis)
                </div>
             </div>
          </td>

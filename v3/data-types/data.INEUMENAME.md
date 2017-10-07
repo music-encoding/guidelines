@@ -24,7 +24,7 @@ title: "data.INEUMENAME"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ineume.log.html">att.ineume.log</a> (@name)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ineume.log.html">att.ineume.log</a> (@name)
             </div>
          </td>
       </tr>

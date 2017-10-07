@@ -27,7 +27,7 @@ title: "model.pubStmtPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pubStmt.html">pubStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html">pubStmt</a>
                </div>
             </div>
          </td>
@@ -39,38 +39,38 @@ title: "model.pubStmtPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/availability.html">availability</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/distributor.html">distributor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/publisher.html">publisher</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pubPlace.html">pubPlace</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/respStmt.html">respStmt</a> (direct members of model.pubStmtPart)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/distributor.html">distributor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/publisher.html">publisher</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pubPlace.html">pubPlace</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/respStmt.html">respStmt</a> (direct members of model.pubStmtPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/address.html">address</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/address.html">address</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/eventList.html">eventList</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.addressLike.html">model.addressLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.addressLike.html">model.addressLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/change.html">change</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/date.html">date</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/change.html">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/date.html">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/eventList.html">eventList</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.dateLike.html">model.dateLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.dateLike.html">model.dateLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/expression.html">expression</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/identifier.html">identifier</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/item.html">item</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/physLoc.html">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/series.html">series</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/seriesStmt.html">seriesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/source.html">source</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/work.html">work</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/expression.html">expression</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/identifier.html">identifier</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/item.html">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/physLoc.html">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/series.html">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/seriesStmt.html">seriesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/source.html">source</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/work.html">work</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.identifierLike.html">model.identifierLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.identifierLike.html">model.identifierLike</a>)
                   </span>
                </div>
             </div>

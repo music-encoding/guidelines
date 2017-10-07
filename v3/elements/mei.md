@@ -57,7 +57,7 @@ title: "mei"
                   <div class="specChild">
                      <span class="specChildModule">MEI.corpus</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a>
                      </span>
                   </div>
                </div>
@@ -73,13 +73,13 @@ title: "mei"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiHead.html">meiHead</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meiHead.html">meiHead</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/music.html">music</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a>
                   </span>
                </div>
             </div>
@@ -99,7 +99,7 @@ title: "mei"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.meiversion">att.meiversion</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meiversion.html">att.meiversion</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -108,7 +108,7 @@ title: "mei"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.id">att.id</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -148,7 +148,7 @@ title: "mei"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/mei">mei</a> element defines an instance of a document encoded with the
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a> element defines an instance of a document encoded with the
                MEI schema. It is the document element for a single document containing a header and
                data.
                The name of this element should not be changed by any customization in order to assure

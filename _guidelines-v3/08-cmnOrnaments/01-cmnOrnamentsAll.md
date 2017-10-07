@@ -6,8 +6,8 @@ version: "v3"
 
 
 
-When encoding CMN, ornaments should be encoded within a [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec},
-following the [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} elements, and connected to events on the staff via
+When encoding CMN, ornaments should be encoded within a [measure](/{{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec},
+following the [staff](/{{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} elements, and connected to events on the staff via
 attributes. The **@startid** attribute is used to refer to the **@xml:id** of the
 starting note. Additionally, if the ornament involves more than one events on the
 staff, the
@@ -22,7 +22,7 @@ Alternatively, the relationship of an ornament to a note can be expressed in ter
 of beats
 with the attribute **@tstamp**. If the ornament involves more than one event on the
 staff, the **@tstamp2** attribute can be used to indicate the ending time stamp, as is
-explained in section <a class="link_ptr" title="Timestamps and Durations" href="/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>. These methods may also be utilized
+explained in section <a class="link_ptr" title="Timestamps and Durations" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>. These methods may also be utilized
 simultaneously.
 
 

@@ -53,14 +53,14 @@ MUSIC NATURAL SIGN character.
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample254.xml" valid="true" %}
 
 
-Encoding order of the component [f](/{{ page.version }}/elements/f.html){:.link_odd_elementSpec} elements is significant as is the
+Encoding order of the component [f](/{{ site.baseurl }}/{{ page.version }}/elements/f.html){:.link_odd_elementSpec} elements is significant as is the
 encoding order of the characters within each component. In the preceding example,
 the
 entire figured bass sign is encoded from top to bottom, in other words, just as the
 figure
 appears on the page. In the following examples, the encoding order of the characters
 in
-[f](/{{ page.version }}/elements/f.html){:.link_odd_elementSpec} explicitly locates the accidentals:
+[f](/{{ site.baseurl }}/{{ page.version }}/elements/f.html){:.link_odd_elementSpec} explicitly locates the accidentals:
 
 
 <figure class="figure">
@@ -153,7 +153,7 @@ after-beat.
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample261.xml" valid="false" %}
 
 
-The primary goal of [fb](/{{ page.version }}/elements/fb.html){:.link_odd_elementSpec} is not the capture all the visual
+The primary goal of [fb](/{{ site.baseurl }}/{{ page.version }}/elements/fb.html){:.link_odd_elementSpec} is not the capture all the visual
 idiosyncracies that can be found in printed and manuscript scores throughout the
 centuries, but to provide a more-or-less standardized label. The markup below, or
 any

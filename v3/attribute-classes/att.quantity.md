@@ -25,9 +25,9 @@ title: "att.quantity"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/depth.html">depth</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/height.html">height</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/width.html">width</a> (direct members of att.quantity)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/depth.html">depth</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/height.html">height</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/width.html">width</a> (direct members of att.quantity)
                </div>
             </div>
          </td>

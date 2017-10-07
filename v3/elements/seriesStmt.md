@@ -57,9 +57,9 @@ title: "seriesStmt"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fileDesc.html">fileDesc</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/seriesStmt.html">seriesStmt</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/source.html">source</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html">fileDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html">seriesStmt</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a>
                      </span>
                   </div>
                </div>
@@ -75,18 +75,18 @@ title: "seriesStmt"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contents.html">contents</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/seriesStmt.html">seriesStmt</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html">seriesStmt</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblScope.html">biblScope</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editor.html">editor</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/identifier.html">identifier</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/respStmt.html">respStmt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/title.html">title</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/biblScope.html">biblScope</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editor.html">editor</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/respStmt.html">respStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a>
                   </span>
                </div>
             </div>
@@ -106,7 +106,7 @@ title: "seriesStmt"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -115,7 +115,7 @@ title: "seriesStmt"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.bibl">att.bibl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -230,14 +230,14 @@ title: "seriesStmt"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/title">title</a> sub-element records the series title, the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/respStmt">respStmt</a> element records the person or group responsible for the
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a> sub-element records the series title, the 
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/respStmt.html">respStmt</a> element records the person or group responsible for the
                series, and the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/identifier">identifier</a> element contains a series identifier. The
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a> element contains a series identifier. The
                
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/contents">contents</a> element should be used when it is necessary to enumerate
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a> element should be used when it is necessary to enumerate
                the content of the series, but not describe each component. The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/seriesStmt">seriesStmt</a> element is provided within seriesStmt for the description of a
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html">seriesStmt</a> element is provided within seriesStmt for the description of a
                sub-series.This element is modelled on an element in the Text Encoding Initiative
                (TEI)
                standard.

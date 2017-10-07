@@ -33,7 +33,7 @@ piece:
 
 An encoder may choose to preserve this original clef, but flag it as nonstandard from
 the
-perspective of current practice by using the [orig](/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} element with no
+perspective of current practice by using the [orig](/{{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} element with no
 attributes specified, as follows:
 
 {% include plainExample.html example="./v3/examples/editTrans/editTrans-sample218.xml" valid="true" %}
@@ -41,7 +41,7 @@ attributes specified, as follows:
 
 Alternatively, the encoder may indicate that the clef has been modernized into a G-clef
 by
-using the [reg](/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} element with no attributes specified, as follows:
+using the [reg](/{{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} element with no attributes specified, as follows:
 
 {% include plainExample.html example="./v3/examples/editTrans/editTrans-sample219.xml" valid="true" %}
 

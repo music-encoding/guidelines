@@ -24,7 +24,7 @@ title: "data.STEMDIRECTION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a> (@stem.dir)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a> (@stem.dir)
             </div>
          </td>
       </tr>

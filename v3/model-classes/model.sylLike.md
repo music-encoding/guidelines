@@ -25,12 +25,12 @@ title: "model.sylLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.syllablePart.html">model.syllablePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.rdgPart.critapp.html">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.syllablePart.html">model.syllablePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.rdgPart.critapp.html">model.rdgPart.critapp</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/verse.html">verse</a>
                </div>
             </div>
          </td>
@@ -42,7 +42,7 @@ title: "model.sylLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syl.html">syl</a> (direct member of model.sylLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/syl.html">syl</a> (direct member of model.sylLike)
                </div>
             </div>
          </td>
@@ -60,7 +60,7 @@ title: "model.sylLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.syllablePart">model.syllablePart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.syllablePart.html">model.syllablePart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -69,7 +69,7 @@ title: "model.sylLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.rdgPart.critapp">model.rdgPart.critapp</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.rdgPart.critapp.html">model.rdgPart.critapp</a>"
                         </span>/&gt;
                      </span>
                   </div>

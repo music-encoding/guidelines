@@ -24,11 +24,11 @@ title: "data.PLACE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.dis.place), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermatapresent</a> (@fermata), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.numberplacement.html">att.numberplacement</a> (@num.place), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a> (@dis.place), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tuplet.vis.html">att.tuplet.vis</a> (@bracket.place)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.dis.place), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermatapresent</a> (@fermata), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.numberplacement.html">att.numberplacement</a> (@num.place), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a> (@dis.place), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tuplet.vis.html">att.tuplet.vis</a> (@bracket.place)
             </div>
          </td>
       </tr>

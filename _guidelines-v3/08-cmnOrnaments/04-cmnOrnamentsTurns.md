@@ -11,7 +11,7 @@ the
 principal note, the principal note, the lower neighbor, and the principal note again.
 
 
-The presence of a turn is encoded with the [turn](/{{ page.version }}/elements/turn.html){:.link_odd_elementSpec} element and its
+The presence of a turn is encoded with the [turn](/{{ site.baseurl }}/{{ page.version }}/elements/turn.html){:.link_odd_elementSpec} element and its
 attributes:
 
 

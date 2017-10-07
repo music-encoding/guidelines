@@ -29,7 +29,7 @@ title: "att.measure.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a> (direct member of att.measure.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a> (direct member of att.measure.ges)
                </div>
             </div>
          </td>
@@ -53,7 +53,7 @@ title: "att.measure.ges"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.timestamp.performed">att.timestamp.performed</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a>"
                         </span>/&gt;
                      </span>
                   </div>

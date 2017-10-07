@@ -12,16 +12,16 @@ of the score that have already been written elsewhere. Typical exampleS for this
 symbols
 that indicate repetition of the preceding measure or beat. In MEI, these symbols can
 be
-encoded using the [mRpt](/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec} and [beatRpt](/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec} elements
+encoded using the [mRpt](/{{ site.baseurl }}/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec} and [beatRpt](/{{ site.baseurl }}/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec} elements
 respectively. Often, similar graphical symbols (often one or two slashes, "//") are
 used to
 mean that the current staff should have the same or similar content as another staff.
 
 *colla parte* directives have a less strictly-defined scope than the
-‘Rpt elements’ ([beatRpt](/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec}, [halfmRpt](/{{ page.version }}/elements/halfmRpt.html){:.link_odd_elementSpec}, [mRpt](/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec}, [mRpt2](/{{ page.version }}/elements/mRpt2.html){:.link_odd_elementSpec}, [multiRpt](/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec}). That is, rather than specifying the repetition of content of a particular
+‘Rpt elements’ ([beatRpt](/{{ site.baseurl }}/{{ page.version }}/elements/beatRpt.html){:.link_odd_elementSpec}, [halfmRpt](/{{ site.baseurl }}/{{ page.version }}/elements/halfmRpt.html){:.link_odd_elementSpec}, [mRpt](/{{ site.baseurl }}/{{ page.version }}/elements/mRpt.html){:.link_odd_elementSpec}, [mRpt2](/{{ site.baseurl }}/{{ page.version }}/elements/mRpt2.html){:.link_odd_elementSpec}, [multiRpt](/{{ site.baseurl }}/{{ page.version }}/elements/multiRpt.html){:.link_odd_elementSpec}). That is, rather than specifying the repetition of content of a particular
 duration, like a measure or beat, *colla parte* instructions can refer to
 material of any length. In order to encode such scribal shorthand, MEI offers the
-[cpMark](/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} element, which allows filling of blank spaces in the score with
+[cpMark](/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} element, which allows filling of blank spaces in the score with
 horizontally and/or vertically distant material.
 
 
@@ -30,7 +30,7 @@ horizontally and/or vertically distant material.
 
 
 
-Like any other ‘controlEvent’, [cpMark](/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} is placed in
+Like any other ‘controlEvent’, [cpMark](/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} is placed in
 the score using the **@staff** and **@tstamp** attributes. The end point of the
 mark itself, when necessary, may be indicated using the **@tstamp2** attribute. The
 source material, which is intended to be inserted in the space indicated by the copy
@@ -54,12 +54,12 @@ be provided when necessary. When neither **@origin.staff** nor
 </figure>
 In the example above, there are no less than three different copy instructions, which
 need
-to be encoded with four [cpMark](/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} elements. First, Weber inserts
+to be encoded with four [cpMark](/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} elements. First, Weber inserts
 characters from "a" to "f" in red ink to identify filled measures. Then, he repeats
 the same
 characters in *empty* measures, which indicates that the content from the
 *filled* measures should be copied here. While one could try to encode this
-with just one [cpMark](/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} element, it is both clearer and easier to process
+with just one [cpMark](/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} element, it is both clearer and easier to process
 when using two elements.
 
 The second and third shorthand indications are written in the second violin (lower
@@ -69,7 +69,7 @@ His
 next shorthand ("in 8va") additionally instructs the copyist to double the written
 material
 in another octave. This information can be captured using the **@dis** and
-**@dis.place** attributes on [cpMark](/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec}.
+**@dis.place** attributes on [cpMark](/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec}.
 
 {% include plainExample.html example="./v3/examples/editTrans/editTrans-sample211.xml" valid="true" %}
 
@@ -80,15 +80,15 @@ in another octave. This information can be captured using the **@dis** and
 </figure>
 Text used as a copy mark, like the letters in the Weber example, may be encoded as
 content
-of the [cpMark](/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} element. In the case of non-text marks, the
+of the [cpMark](/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec} element. In the case of non-text marks, the
 **@altsym**, **@extsym** and **@facs** attributes may be used to refer
 to a graphical surrogate.
 
 Depending on the purpose of the encoding, the omitted parts in the score may be filled
 with
-[space](/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} and [mSpace](/{{ page.version }}/elements/mSpace.html){:.link_odd_elementSpec} elements of appropriate
-duration or silently overwritten with the content that the [cpMark](/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec}
-identifies. Also, these two options may be combined through the use a [choice](/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element whose [abbr](/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan](/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec}
+[space](/{{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} and [mSpace](/{{ site.baseurl }}/{{ page.version }}/elements/mSpace.html){:.link_odd_elementSpec} elements of appropriate
+duration or silently overwritten with the content that the [cpMark](/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec}
+identifies. Also, these two options may be combined through the use a [choice](/{{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element whose [abbr](/{{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan](/{{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec}
 children explicitly encode a transcription of the original ‘gap’ (in
 abbr) and the result of the insertion of the indicated material (in expan).
 

@@ -7,7 +7,7 @@ version: "v3"
 
 
 By ‘lyric syllable’, these guidelines mean a word or portion of a word
-that is to be performed vocally. Each syllable is encoded with the [syl](/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec}
+that is to be performed vocally. Each syllable is encoded with the [syl](/{{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec}
 element, with which it is also possible to specify the position of the syllable in
 a word, the
 type of connectors between syllables, alignment adjustments, and the formatting for
@@ -110,9 +110,9 @@ the last
 note to be sung with the syllable.
 
 
-The use of [syl](/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} described in this section is common to CMN and other
+The use of [syl](/{{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} described in this section is common to CMN and other
 notation systems, such as mensural notation. Other uses specific to certain types
 of notation
 and repertoires are addressed in other chapters. See for example 
-<a class="link_ptr" title="Neume Notation" href="/{{ page.version }}/guidelines/neumes.html">6 Neume Notation</a>.
+<a class="link_ptr" title="Neume Notation" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/neumes.html">6 Neume Notation</a>.
 

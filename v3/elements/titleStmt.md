@@ -55,21 +55,21 @@ title: "titleStmt"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expression.html">expression</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expression.html">expression</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fileDesc.html">fileDesc</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/source.html">source</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/work.html">work</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html">fileDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/titlePage.html">titlePage</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/titlePage.html">titlePage</a>
                      </span>
                   </div>
                </div>
@@ -85,16 +85,16 @@ title: "titleStmt"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/arranger.html">arranger</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/author.html">author</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/composer.html">composer</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editor.html">editor</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/funder.html">funder</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/librettist.html">librettist</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lyricist.html">lyricist</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/respStmt.html">respStmt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sponsor.html">sponsor</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/title.html">title</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/arranger.html">arranger</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/author.html">author</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/composer.html">composer</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editor.html">editor</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/funder.html">funder</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/librettist.html">librettist</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lyricist.html">lyricist</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/respStmt.html">respStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/sponsor.html">sponsor</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a>
                   </span>
                </div>
             </div>
@@ -114,7 +114,7 @@ title: "titleStmt"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.bibl">att.bibl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -123,7 +123,7 @@ title: "titleStmt"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>

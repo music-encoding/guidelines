@@ -28,7 +28,7 @@ those sections of the file.
 
 
 
-Each [application](/{{ page.version }}/elements/application.html){:.link_odd_elementSpec} element identifies the current state of one software
+Each [application](/{{ site.baseurl }}/{{ page.version }}/elements/application.html){:.link_odd_elementSpec} element identifies the current state of one software
 application with regard to the current file. This element is a member of the att.datable
 class, which provides a variety of attributes for associating this state with a date
 and
@@ -36,13 +36,13 @@ time, or a temporal range. The **@xml:id** and **@version** attributes should be
 used to uniquely identify the application and its major version number (for example,
 'Music
 Markup Tool 1.5'). It is not intended that a software application should add a new
-[application](/{{ page.version }}/elements/application.html){:.link_odd_elementSpec} element each time it touches the file.
+[application](/{{ site.baseurl }}/{{ page.version }}/elements/application.html){:.link_odd_elementSpec} element each time it touches the file.
 
 The following example shows how these elements might be used to record the fact that
 version 1.5 of an application called ‘Music Markup Tool’ has an interest in two parts
 of a
 document. The parts concerned are accessible at the URLs given as targets of the two
-[ptr](/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} elements. When used on [application](/{{ page.version }}/elements/application.html){:.link_odd_elementSpec}, the
+[ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} elements. When used on [application](/{{ site.baseurl }}/{{ page.version }}/elements/application.html){:.link_odd_elementSpec}, the
 **@date** attribute specifies when the application was employed, in this case June
 6, 2011. Version information for the application should be placed in **@version**.
 

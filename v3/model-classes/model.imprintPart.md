@@ -25,8 +25,8 @@ title: "model.imprintPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bibl.html">bibl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/imprint.html">imprint</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/imprint.html">imprint</a>
                </div>
             </div>
          </td>
@@ -38,9 +38,9 @@ title: "model.imprintPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/distributor.html">distributor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/publisher.html">publisher</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pubPlace.html">pubPlace</a> (direct members of model.imprintPart)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/distributor.html">distributor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/publisher.html">publisher</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pubPlace.html">pubPlace</a> (direct members of model.imprintPart)
                </div>
             </div>
          </td>

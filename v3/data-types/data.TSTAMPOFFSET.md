@@ -27,8 +27,8 @@ title: "data.TSTAMPOFFSET"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visualoffset.to.html">att.visualoffset.to</a> (@to), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visualoffset2.to.html">att.visualoffset2.to</a> (@startto)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.to.html">att.visualoffset.to</a> (@to), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.to.html">att.visualoffset2.to</a> (@startto)
             </div>
          </td>
       </tr>

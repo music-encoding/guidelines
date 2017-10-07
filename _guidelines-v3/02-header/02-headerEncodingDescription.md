@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-The [encodingDesc](/{{ page.version }}/elements/encodingDesc.html){:.link_odd_elementSpec} element is the second major subdivision of the MEI
+The [encodingDesc](/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html){:.link_odd_elementSpec} element is the second major subdivision of the MEI
 header. It specifies the methods and editorial principles which governed the transcription
 or
 encoding of the source material. Though not formally required, its use is highly

@@ -25,7 +25,7 @@ title: "att.ossia.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of att.ossia.vis)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of att.ossia.vis)
                </div>
             </div>
          </td>

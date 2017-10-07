@@ -27,7 +27,7 @@ title: "model.editorialDeclPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>
                </div>
             </div>
          </td>
@@ -39,11 +39,11 @@ title: "model.editorialDeclPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stdVals.html">stdVals</a> (direct members of model.editorialDeclPart)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/normalization.html">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/stdVals.html">stdVals</a> (direct members of model.editorialDeclPart)
                </div>
             </div>
          </td>

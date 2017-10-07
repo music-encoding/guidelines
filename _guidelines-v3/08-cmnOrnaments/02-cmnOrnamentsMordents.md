@@ -8,7 +8,7 @@ version: "v3"
 
 A mordent is an ornament that involves an auxiliary note a step above or below the
 principal
-note. The presence of a mordent is encoded with the [mordent](/{{ page.version }}/elements/mordent.html){:.link_odd_elementSpec} element and
+note. The presence of a mordent is encoded with the [mordent](/{{ site.baseurl }}/{{ page.version }}/elements/mordent.html){:.link_odd_elementSpec} element and
 its attributes:
 
 

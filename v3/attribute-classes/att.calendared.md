@@ -25,8 +25,8 @@ title: "att.calendared"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/date.html">date</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/event.html">event</a> (direct members of att.calendared)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a> (direct members of att.calendared)
                </div>
             </div>
          </td>

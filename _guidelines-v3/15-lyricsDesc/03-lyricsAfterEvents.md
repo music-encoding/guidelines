@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-Vocally performed text may also be encoded separately from the notes with the [lyrics](/{{ page.version }}/elements/lyrics.html){:.link_odd_elementSpec} element. These are the main components:
+Vocally performed text may also be encoded separately from the notes with the [lyrics](/{{ site.baseurl }}/{{ page.version }}/elements/lyrics.html){:.link_odd_elementSpec} element. These are the main components:
 
 
 
@@ -23,7 +23,7 @@ The
 that staff, the **@layer** attribute may be used to indicate the layer from which the
 rhythm should be taken. If there is any divergence between the rhythm of the vocally
 performed
-text and the notes, the **@rhythm** attribute on [verse](/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec} may be used
+text and the notes, the **@rhythm** attribute on [verse](/{{ site.baseurl }}/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec} may be used
 to specify the text's rhythm.
 
 
@@ -37,7 +37,7 @@ this encoding method:
 {% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
 
 
-In this encoding style, a [syl](/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} element with its **@con** attribute
+In this encoding style, a [syl](/{{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} element with its **@con** attribute
 set to 't' and the following syllable are presumed to be associated with a single
 note. In the
 following example, the first two syllables occur on the first note and the third syllable

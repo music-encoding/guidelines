@@ -25,7 +25,7 @@ title: "model.partLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/parts.html">parts</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.partLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a> (direct member of model.partLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/part.html">part</a> (direct member of model.partLike)
                </div>
             </div>
          </td>

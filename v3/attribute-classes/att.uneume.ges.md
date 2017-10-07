@@ -25,7 +25,7 @@ title: "att.uneume.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/uneume.html">uneume</a> (direct member of att.uneume.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/uneume.html">uneume</a> (direct member of att.uneume.ges)
                </div>
             </div>
          </td>

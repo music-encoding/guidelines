@@ -25,7 +25,7 @@ title: "att.pedal.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pedal.html">pedal</a> (direct member of att.pedal.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pedal.html">pedal</a> (direct member of att.pedal.ges)
                </div>
             </div>
          </td>

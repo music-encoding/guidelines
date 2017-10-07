@@ -6,10 +6,10 @@ version: "v3"
 
 
 
-The [symbolDef](/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} element uses SVG markup or the aforementioned graphic
+The [symbolDef](/{{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} element uses SVG markup or the aforementioned graphic
 primitives to describe a symbol. A symbol definition may also use symbols defined
 by other
-[symbolDef](/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} elements by employing the [symbol](/{{ page.version }}/elements/symbol.html){:.link_odd_elementSpec}
+[symbolDef](/{{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} elements by employing the [symbol](/{{ site.baseurl }}/{{ page.version }}/elements/symbol.html){:.link_odd_elementSpec}
 element.
 
 <figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample345.xml" valid="true" %}

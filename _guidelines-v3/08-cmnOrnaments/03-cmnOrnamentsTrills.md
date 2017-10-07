@@ -8,7 +8,7 @@ version: "v3"
 
 Trills are a type of ornament that consists of a rapid alternation of a note with
 one a
-semitone or tone above. A trill is encoded with the [trill](/{{ page.version }}/elements/trill.html){:.link_odd_elementSpec} element and
+semitone or tone above. A trill is encoded with the [trill](/{{ site.baseurl }}/{{ page.version }}/elements/trill.html){:.link_odd_elementSpec} element and
 its attributes:
 
 
@@ -71,7 +71,7 @@ note (see
 <span class="bibl">Le garzantine, Musica 2003, p. 911</span>). In such cases, the trill is
 encoded as in previous examples and associated with the principal note. Starting or
 concluding
-turns are notated on the staff (in [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}) as [grace notes](/{{ page.version }}/guidelines/cmn.html#cmnNotesGrace "Grace Notes"){:.link_ref}.
+turns are notated on the staff (in [layer](/{{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}) as [grace notes](/{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnNotesGrace "Grace Notes"){:.link_ref}.
 
 
 The following example, from a keyboard sonata by Joseph Haydn, shows a trill with

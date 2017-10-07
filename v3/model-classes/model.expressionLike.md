@@ -25,8 +25,8 @@ title: "model.expressionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/componentGrp.html">componentGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expressionList.html">expressionList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expressionList.html">expressionList</a>
                </div>
             </div>
          </td>
@@ -38,7 +38,7 @@ title: "model.expressionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expression.html">expression</a> (direct member of model.expressionLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expression.html">expression</a> (direct member of model.expressionLike)
                </div>
             </div>
          </td>

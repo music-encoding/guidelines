@@ -43,7 +43,7 @@ title: "mdiv"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.mdivLike,html">model.mdivLike</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.mdivLike,html">model.mdivLike</a>
             </div>
          </td>
       </tr>
@@ -57,8 +57,8 @@ title: "mdiv"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/body.html">body</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mdiv.html">mdiv</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a>
                      </span>
                   </div>
                </div>
@@ -74,9 +74,9 @@ title: "mdiv"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mdiv.html">mdiv</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/parts.html">parts</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/score.html">score</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/score.html">score</a>
                   </span>
                </div>
             </div>
@@ -96,7 +96,7 @@ title: "mdiv"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -105,7 +105,7 @@ title: "mdiv"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -114,7 +114,7 @@ title: "mdiv"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.facsimile">att.facsimile</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -123,7 +123,7 @@ title: "mdiv"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.typed">att.typed</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -132,7 +132,7 @@ title: "mdiv"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.mdivLike">model.mdivLike</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.mdivLike.html">model.mdivLike</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -211,23 +211,23 @@ title: "mdiv"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> element may contain one or both of 2 possible views of the
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a> element may contain one or both of 2 possible views of the
                music. The score view is the traditional full and open score while the parts view
                contains
                each performer's view of the score; that is, his part. These 2 views are necessary
                because
                it is not always possible or desirable to generate one from the other. The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a> and 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/parts">parts</a> elements are placed here and not
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/score.html">score</a> and 
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a> elements are placed here and not
                directly within the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/body">body</a> element because score and part
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a> element because score and part
                characteristics may change from 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> to 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a>.
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a> to 
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a>.
                For example, the 2nd movement of a symphony may require different performing forces
                (and
                therefore different score and part layout) than the other movements. The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> element may be recursively nested in order to represent music which exhibits
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a> element may be recursively nested in order to represent music which exhibits
                this kind of structure. For example, an opera is normally divided into acts, which
                are in
                turn divided into scenes.

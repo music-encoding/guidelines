@@ -25,13 +25,13 @@ title: "att.midinumber"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cc.html">cc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chanPr.html">chanPr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOff.html">noteOff</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOn.html">noteOn</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/port.html">port</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/prog.html">prog</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/vel.html">vel</a> (direct members of att.midinumber)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/cc.html">cc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chanPr.html">chanPr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/noteOff.html">noteOff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/noteOn.html">noteOn</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/port.html">port</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/prog.html">prog</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/vel.html">vel</a> (direct members of att.midinumber)
                </div>
             </div>
          </td>

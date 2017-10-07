@@ -33,7 +33,7 @@ title: "model.startLike.corpus"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a> (direct member of model.startLike.corpus)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a> (direct member of model.startLike.corpus)
                </div>
             </div>
          </td>

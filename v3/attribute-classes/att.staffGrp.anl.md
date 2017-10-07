@@ -25,7 +25,7 @@ title: "att.staffGrp.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffGrp.html">staffGrp</a> (direct member of att.staffGrp.anl)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffGrp.html">staffGrp</a> (direct member of att.staffGrp.anl)
                </div>
             </div>
          </td>

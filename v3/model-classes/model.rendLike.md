@@ -25,12 +25,12 @@ title: "model.rendLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/altId.html">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classCode.html">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reh.html">reh</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/altId.html">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/classCode.html">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/reh.html">reh</a>
                </div>
             </div>
          </td>
@@ -42,8 +42,8 @@ title: "model.rendLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rend.html">rend</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stack.html">stack</a> (direct members of model.rendLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/stack.html">stack</a> (direct members of model.rendLike)
                </div>
             </div>
          </td>
@@ -61,7 +61,7 @@ title: "model.rendLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.textphraseLike.limited">model.textphraseLike.limited</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
                         </span>/&gt;
                      </span>
                   </div>

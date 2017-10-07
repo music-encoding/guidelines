@@ -25,12 +25,12 @@ title: "att.internetmedia"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/avFile.html">avFile</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/graphic.html">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipCode.html">incipCode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipText.html">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ptr.html">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ref.html">ref</a> (direct members of att.internetmedia)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/avFile.html">avFile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/incipCode.html">incipCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ref.html">ref</a> (direct members of att.internetmedia)
                </div>
             </div>
          </td>

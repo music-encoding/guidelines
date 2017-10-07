@@ -25,7 +25,7 @@ title: "att.verse.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a> (direct member of att.verse.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/verse.html">verse</a> (direct member of att.verse.ges)
                </div>
             </div>
          </td>

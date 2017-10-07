@@ -26,7 +26,7 @@ title: "data.MELODICFUNCTION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.melodicfunction.html">att.melodicfunction</a> (@mfunc)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.melodicfunction.html">att.melodicfunction</a> (@mfunc)
             </div>
          </td>
       </tr>

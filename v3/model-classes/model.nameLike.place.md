@@ -25,7 +25,7 @@ title: "model.nameLike.place"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>
                </div>
             </div>
          </td>
@@ -37,17 +37,17 @@ title: "model.nameLike.place"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/geogName.html">geogName</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/geogName.html">geogName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.geogName.html">model.nameLike.geogName</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.geogName.html">model.nameLike.geogName</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/physLoc.html">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/repository.html">repository</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/physLoc.html">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/repository.html">repository</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.repositoryLike.html">model.repositoryLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.repositoryLike.html">model.repositoryLike</a>)
                   </span>
                </div>
             </div>
@@ -66,7 +66,7 @@ title: "model.nameLike.place"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.nameLike">model.nameLike</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

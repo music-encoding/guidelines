@@ -25,7 +25,7 @@ title: "att.mordent.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mordent.html">mordent</a> (direct member of att.mordent.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mordent.html">mordent</a> (direct member of att.mordent.ges)
                </div>
             </div>
          </td>

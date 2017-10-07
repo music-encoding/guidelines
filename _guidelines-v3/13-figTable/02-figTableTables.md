@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-The element [table](/{{ page.version }}/elements/table.html){:.link_odd_elementSpec} contains text displayed in tabular form, i.e., in
+The element [table](/{{ site.baseurl }}/{{ page.version }}/elements/table.html){:.link_odd_elementSpec} contains text displayed in tabular form, i.e., in
 rows and columns. A table is the least ‘graphic’ of the elements discussed
 in this chapter. Almost any text structure can be presented as a series of rows and
 columns:
@@ -19,7 +19,7 @@ information about the contents of the table, for example to identify one cell as
 a
 name and another as containig a date, though the two methods may be combined. 
 
-The [table](/{{ page.version }}/elements/table.html){:.link_odd_elementSpec} element may appear both within other components (such as
+The [table](/{{ site.baseurl }}/{{ page.version }}/elements/table.html){:.link_odd_elementSpec} element may appear both within other components (such as
 paragraphs), or between them, provided that the module defined in this chapter has
 been
 enabled. It is to a large extent arbitrary whether a table should be regarded as a

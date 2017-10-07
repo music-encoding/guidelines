@@ -20,7 +20,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:output indent="yes" method="xhtml"/>
-    <xsl:param name="version" select="'{{ page.version }}'" as="xs:string"/>
+    <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:variable name="plain.version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
     <xd:doc scope="component">
         <xd:desc>
@@ -854,7 +854,7 @@
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
         <xsl:choose>
             <xsl:when test="$text = $elements/@ident">
-                <a class="link_odd_elementSpec" href="/{$version}/{$text}"><xsl:value-of select="$text"/></a>
+                <a class="link_odd_elementSpec" href="/{$version}/elements/{$text}.html"><xsl:value-of select="$text"/></a>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:message select="'WARNING: Unable to retrieve definition of element ' || $text || '. No link created. Please check spelling…'"/>
@@ -883,7 +883,21 @@
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
         <xsl:choose>
             <xsl:when test="$text = //tei:classSpec/@ident">
-                <a class="link_odd" href="/{$version}/{$text}"><xsl:value-of select="$text"/></a>
+                <xsl:variable name="link">
+                    <xsl:choose>
+                        <xsl:when test="starts-with($text,'model.')">
+                            <xsl:call-template name="linkToModel">
+                                <xsl:with-param name="model" select="$text"/>
+                            </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:call-template name="linkToAttribute">
+                                <xsl:with-param name="att" select="$text"/>
+                            </xsl:call-template>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <a class="link_odd" href="{$link}"><xsl:value-of select="$text"/></a>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:message terminate="no" select="'ERROR: Unable to identify class ' || $text || ' from tei:ident element. No link created.'"/>
@@ -1074,7 +1088,7 @@
                 
                 <xsl:variable name="base.id" select="if($tocInfo/@level = '1') then($tocInfo/@xml:id) else($tocInfo/preceding-sibling::*[@level = '1'][1]/@xml:id)" as="xs:string"/>
                 
-                <a class="link_ptr" title="{$tocInfo/@head}" href="/{$version}/{$base.id || (if(not($tocInfo/@level = '1')) then('#' || $chapter.id) else())}"><xsl:value-of select="$tocInfo/@number || ' ' || $tocInfo/@head"/></a>        
+                <a class="link_ptr" title="{$tocInfo/@head}" href="/{$version}/guidelines/{$base.id || (if(not($tocInfo/@level = '1')) then('#' || $chapter.id) else())}"><xsl:value-of select="$tocInfo/@number || ' ' || $tocInfo/@head"/></a>        
                     
             </xsl:otherwise>
         </xsl:choose>
@@ -1110,7 +1124,7 @@
                         <xsl:variable name="head" select="string($chapter/tei:head[1]/text())" as="xs:string"/>
                         <xsl:variable name="base.id" select="$chapter/ancestor-or-self::tei:div[@type = 'div1']/@xml:id" as="xs:string"/>
                         
-                        <a class="link_ref" title="{$head}" href="/{$version}/{$base.id || (if($base.id = $chapter.id) then() else('#' || $chapter.id))}"><xsl:apply-templates select="node()" mode="#current"/></a>
+                        <a class="link_ref" title="{$head}" href="/{$version}/guidelines/{$base.id || (if($base.id = $chapter.id) then() else('#' || $chapter.id))}"><xsl:apply-templates select="node()" mode="#current"/></a>
                         
                     </xsl:when>
                     <xsl:otherwise>
@@ -2138,7 +2152,10 @@
     <xsl:template match="@*" mode="preserveSpace" priority="1"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="name()"/>=</span><span class="attributevalue">"<xsl:value-of select="string(.)"/>"</span></xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
-    <xsl:template match="tei:memberOf/@key" mode="preserveSpace" priority="2"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="/{string(.)}"><xsl:value-of select="string(.)"/></a>"</span></xsl:template>
+    <xsl:template match="tei:memberOf/@key" mode="preserveSpace" priority="2"><xsl:choose><xsl:when test="starts-with(string(.),'att.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="/{$version}/attribute-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></xsl:when>
+            <xsl:when test="starts-with(string(.),'model.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="/{$version}/model-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></xsl:when>
+            <xsl:otherwise><xsl:message terminate="yes" select="'Dunno how to resolve memberOf reference ' || ."/></xsl:otherwise>
+        </xsl:choose></xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
     <xsl:template match="tei:macroRef/@key" mode="preserveSpace" priority="2"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="/{string(.)}"><xsl:value-of select="string(.)"/></a>"</span></xsl:template>

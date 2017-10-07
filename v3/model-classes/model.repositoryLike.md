@@ -25,10 +25,10 @@ title: "model.repositoryLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physLoc.html">physLoc</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/physLoc.html">physLoc</a>
                </div>
             </div>
          </td>
@@ -40,7 +40,7 @@ title: "model.repositoryLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/repository.html">repository</a> (direct member of model.repositoryLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/repository.html">repository</a> (direct member of model.repositoryLike)
                </div>
             </div>
          </td>
@@ -58,7 +58,7 @@ title: "model.repositoryLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.nameLike.place">model.nameLike.place</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>"
                         </span>/&gt;
                      </span>
                   </div>

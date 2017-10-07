@@ -24,7 +24,7 @@ title: "data.FONTSIZENUMERIC"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data-types/data.FONTSIZE.html">data.FONTSIZE</a>
+               <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTSIZE.html">data.FONTSIZE</a>
             </div>
          </td>
       </tr>

@@ -28,8 +28,8 @@ title: "data.ARTICULATION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.articulation.html">att.articulation</a> (@artic), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.articulation.performed.html">att.articulation.performed</a> (@artic.ges)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.articulation.html">att.articulation</a> (@artic), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.articulation.performed.html">att.articulation.performed</a> (@artic.ges)
             </div>
          </td>
       </tr>
