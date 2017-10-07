@@ -1,31 +1,23 @@
 ---
 sectionid: analysisHarmonicIntervals
-title: Harmonic Intervals
+title: "Harmonic Intervals"
 ---
 
 
-<h3 id="analysisHarmonicIntervals">
-   <span class="headingNumber">7.2.3</span>
-   <span class="head">Harmonic Intervals</span>
-</h3>
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+
+{% include _specDesc.html key="att.intervalharmonic" atts="inth" %}
+
 
 
 In contrast with **@intm**, which characterizes melodic (sequential) intervals, the
 **@inth** attribute is used to encode the harmonic interval between the current note
 and other pitches occurring at the same moment in time. The notes of interest may
 or may not
-be marked as a 
-<a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a>. In the markup below, for example, the values of
+be marked as a <a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a>. In the markup below, for example, the values of
 **@inth** capture the harmonic intervals between notes distributed across multiple
 staves and layers.
-
 
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample173.xml" valid="true" %}
 

@@ -1,0 +1,8 @@
+---
+desc: "att.graced"
+type: "classSpec"
+---
+
+Attributes that mark a note or chord as a "grace", how it should "steal" time, and
+how
+much time should be allotted to the grace note/chord.

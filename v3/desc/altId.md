@@ -1,0 +1,9 @@
+---
+desc: "altId"
+type: "elementSpec"
+---
+
+(alternative identifier) – May contain a bibliographic identifier that does not fit
+within the meiHead element's id attribute, for example because the identifier does
+not fit
+the definition of an XML id or because multiple identifiers are needed.

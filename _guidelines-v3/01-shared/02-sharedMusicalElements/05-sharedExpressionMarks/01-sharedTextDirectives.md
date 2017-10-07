@@ -1,16 +1,12 @@
 ---
 sectionid: sharedTextDirectives
-title: Text Directives
+title: "Text Directives"
 ---
 
 
-<h4 id="sharedTextDirectives">
-   <span class="headingNumber">1.2.5.1</span>
-   <span class="head">Text Directives</span>
-</h4>
+
 All of the following elements can be considered text directives; however, MEI uses
 the
-
 <a class="link_odd_elementSpec" href="/v3/elements/dir">dir</a> element specifically for words, abbreviations, numbers, or
 symbols specifying or suggesting the manner of performance that are not encoded elsewhere
 using the more specific elements of 
@@ -19,11 +15,8 @@ using the more specific elements of
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="dir" atts="" %}
+
 
 
 Examples of directives include text strings such as 'affettuoso', fingering numbers,
@@ -40,4 +33,3 @@ starting
 point attribute.
 
 
-<!-- TODO: Logical vs. visual end point of control events should be covered somewhere. -->

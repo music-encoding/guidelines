@@ -1,18 +1,14 @@
 ---
 sectionid: harmonyMusicText
-title: Indications of Harmony in the Music Text
+title: "Indications of Harmony in the Music Text"
 ---
 
 
-<h3 id="harmonyMusicText">
-   <span class="headingNumber">14.2.3</span>
-   <span class="head">Indications of Harmony in the Music Text</span>
-</h3>
+
 With regard to indications of harmony, MEI attempts to strike a balance between very
 precise (interpreted) and very loose (uninterpreted) markup needs. Therefore, various
 kinds
-of harmonic labels are accommodated by the 
-<a class="link_odd_elementSpec" href="/v3/elements/harm">harm</a> element. While some
+of harmonic labels are accommodated by the <a class="link_odd_elementSpec" href="/v3/elements/harm">harm</a> element. While some
 are more 
 <span class="q">structured</span> than others, in the final analyis they all function as
 *labels*. Therefore, MEI provides only a single element for the capture of
@@ -20,17 +16,13 @@ harmonic indications of all kinds:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="harm" atts="extender rendgrid" %}
+
 
 
 The 
 <a class="link_odd_elementSpec" href="/v3/elements/harm">harm</a> element can be used to capture chord labels that consist
 entirely of text:
-
 
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample249.xml" valid="false" %}
 
@@ -41,7 +33,6 @@ or labels that are chord tablature grids:
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/A7_5th.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 39. Chord grid without label</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample250.xml" valid="true" %}
 
 or labels that mix these styles:
@@ -51,7 +42,6 @@ or labels that mix these styles:
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/A7_1st.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 40. Chord grid with label</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample251.xml" valid="true" %}
 
 

@@ -1,13 +1,10 @@
 ---
 sectionid: headerMinimalRecommendedHeader
-title: Minimal and Recommended Header Information
+title: "Minimal and Recommended Header Information"
 ---
 
 
-<h2 id="headerMinimalRecommendedHeader">
-   <span class="headingNumber">2.5</span>
-   <span class="head">Minimal and Recommended Header Information</span>
-</h2>
+
 The MEI header allows for the provision of a very large amount of information concerning
 the
 text itself, its source, its encodings, and revisions of it, as well as a wealth of
@@ -45,11 +42,9 @@ Supplying only the level of encoding required, the MEI header of a single text w
 look like
 the following example:
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample077.xml" valid="true" %}
 
-The only mandatory component of the MEI Header is the 
-<a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element.
+The only mandatory component of the MEI Header is the <a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element.
 Within this element, 
 <a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/pubStmt">pubStmt</a> are
@@ -84,7 +79,6 @@ We now present the same example header, expanded to include additionally recomme
 information, adequate for most bibliographic purposes, in particular to allow for
 the creation
 of an AACR2-conformant bibliographic record.
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample078.xml" valid="true" %}
 

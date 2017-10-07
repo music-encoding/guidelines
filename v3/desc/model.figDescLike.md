@@ -1,0 +1,8 @@
+---
+desc: "model.figDescLike"
+type: "classSpec"
+---
+
+Groups elements that provide a brief prose description of the appearance or content
+of a
+graphic figure.

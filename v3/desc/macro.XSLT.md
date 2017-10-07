@@ -1,0 +1,7 @@
+---
+desc: "macro.XSLT"
+type: "macroSpec"
+---
+
+Permits any element from the XSLT namespace. Allowing XSLT in &lt;incipit&gt; makes it
+possible to generate the incipit from the notational content of the MEI file.

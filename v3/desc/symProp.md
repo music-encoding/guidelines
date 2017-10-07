@@ -1,0 +1,7 @@
+---
+desc: "symProp"
+type: "elementSpec"
+---
+
+(symbol property) – Provides a name and value for some property of the parent
+symbol.

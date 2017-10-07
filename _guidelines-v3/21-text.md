@@ -7,10 +7,6 @@ sectionid: "text"
 
 <span class="div">
    
-   <h1 id="text">
-      <span class="headingNumber">21</span>
-      <span class="head">Text in MEI</span>
-   </h1>
    This chapter describes methods for encoding textual content with MEI. Textual information
    on
    scores has several different uses, although some text is closer to music notation
@@ -19,8 +15,8 @@ sectionid: "text"
    functionality
    of the notated music and are, therefore, described in other chapters (see for example
    
-   <span class="ptr"></span> and 
-   <span class="ptr"></span>). This chapter, on the other
+   <a class="link_ptr" title="Vocal Text" href="/v3/guidelines/lyricsDesc">15 Vocal Text</a> and 
+   <a class="link_ptr" title="Text Directives" href="/v3/guidelines/shared#sharedTextDirectives">1.2.5.1 Text Directives</a>). This chapter, on the other
    hand, focuses on the text that accompanies the score, i.e., paratext (prefatory material,
    title
    pages, back matter, appendices, etc.), titles, prose, poetry, etc.

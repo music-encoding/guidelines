@@ -1,0 +1,9 @@
+---
+desc: "pubStmt"
+type: "elementSpec"
+---
+
+(publication statement) – Container for information regarding the publication or
+distribution of a bibliographic item, including the publisher's name and address,
+the date
+of publication, and other relevant details.

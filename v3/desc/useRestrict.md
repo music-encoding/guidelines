@@ -1,0 +1,8 @@
+---
+desc: "useRestrict"
+type: "elementSpec"
+---
+
+(usage restrictions) – Container for information about the conditions that affect
+use of
+a bibliographic item after access has been granted.

@@ -1,15 +1,11 @@
 ---
 sectionid: cmnOrnamentsOther
-title: Other Ornaments
+title: "Other Ornaments"
 ---
 
 
-<h2 id="cmnOrnamentsOther">
-   <span class="headingNumber">8.5</span>
-   <span class="head">Other Ornaments</span>
-</h2>
-CMN ornaments that are not mordents, trills, or turns can be encoded with a generic
 
+CMN ornaments that are not mordents, trills, or turns can be encoded with a generic
 <a class="link_odd_elementSpec" href="/v3/elements/ornam">ornam</a>.
 
 This element allows the encoder to represent ornaments as textual strings (e.g. with
@@ -39,9 +35,8 @@ The ornament for
 <span class="q">(5) doppelt-cadence</span> could be encoded in the following way, by
 adopting the Unicode code-points defined by the SMuFL standard:
 
-
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" %}
 
 A resolution, or expansion of the ornament can be provided as discussed in 
-<span class="ptr"></span> below.
+<a class="link_ptr" title="Special Cases" href="/v3/guidelines/cmnOrnaments#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below.
 

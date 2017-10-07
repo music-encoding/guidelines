@@ -1,0 +1,10 @@
+---
+desc: "quote"
+type: "elementSpec"
+---
+
+(block quote) – A formatting element that designates an extended quotation; that is,
+a
+passage attributed to a source external to the text and normally set off from the
+text by
+spacing or other typographic distinction.

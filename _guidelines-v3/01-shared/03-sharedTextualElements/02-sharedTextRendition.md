@@ -1,17 +1,12 @@
 ---
 sectionid: sharedTextRendition
-title: Text Rendition
+title: "Text Rendition"
 ---
 
 
-<h3 id="sharedTextRendition">
-   <span class="headingNumber">1.3.2</span>
-   <span class="head">Text Rendition</span>
-</h3>
+
 Sometimes, it is desirable to capture the typographical qualities of a word or phrase
-without assigning it a special meaning. For this purpose, MEI offers the 
-<a class="link_odd_elementSpec" href="/v3/elements/rend">rend</a> element, similar to TEI's 
-<span class="foreign">hi</span> element. Using CSS-like values,
+without assigning it a special meaning. For this purpose, MEI offers the <a class="link_odd_elementSpec" href="/v3/elements/rend">rend</a> element, similar to TEI's *hi* element. Using CSS-like values,
 its **@rend** attribute can be used to specify many typographic features, such as font
 style, font variants, and relative font size and weight. In addition, text decoration,
 direction, and enclosing ‘boxes’ may be captured. While **@rend**
@@ -23,12 +18,8 @@ rendition information.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="rend" atts="" %}
+{% include _specDesc.html key="rend" atts="rend altrend fontname fontsize fontstyle fontweight" %}
+
 
 

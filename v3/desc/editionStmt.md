@@ -1,0 +1,8 @@
+---
+desc: "editionStmt"
+type: "elementSpec"
+---
+
+(edition statement) – Container for meta-data pertaining to a particular edition of
+the
+material being described.

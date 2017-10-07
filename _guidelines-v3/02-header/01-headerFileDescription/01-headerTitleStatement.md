@@ -1,24 +1,17 @@
 ---
 sectionid: headerTitleStatement
-title: Title Statement
+title: "Title Statement"
 ---
 
 
-<h3 id="headerTitleStatement">
-   <span class="headingNumber">2.1.1</span>
-   <span class="head">Title Statement</span>
-</h3>
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> element is the first component of the 
+
+The <a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> element is the first component of the 
 <a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element, and is mandatory:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="titleStmt" atts="" %}
+
 
 
 The title statement contains the title given to the electronic work, together with
@@ -28,29 +21,17 @@ compiler, or other parties responsible for it:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="title" atts="" %}
+{% include _specDesc.html key="arranger" atts="" %}
+{% include _specDesc.html key="author" atts="" %}
+{% include _specDesc.html key="composer" atts="" %}
+{% include _specDesc.html key="editor" atts="" %}
+{% include _specDesc.html key="funder" atts="" %}
+{% include _specDesc.html key="librettist" atts="" %}
+{% include _specDesc.html key="lyricist" atts="" %}
+{% include _specDesc.html key="sponsor" atts="" %}
+{% include _specDesc.html key="respStmt" atts="" %}
+
 
 
 The 
@@ -66,7 +47,6 @@ digital
 edition’. This will distinguish the electronic work from the source text in citations
 and in
 catalogs, which contain descriptions of both types of material.
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample020.xml" valid="true" %}
 
@@ -87,7 +67,6 @@ any
 parallel titles, may be enclosed within a single 
 <a class="link_odd_elementSpec" href="/v3/elements/title">title</a> element, as in
 the following example:
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample021.xml" valid="true" %}
 
@@ -125,7 +104,6 @@ are given
 special prominence. MEI accommodates this approach by providing responsibility-role
 elements. For example:
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample022.xml" valid="true" %}
 
 Secondary intellectual responsibility in this case is encoded using 
@@ -140,7 +118,6 @@ will usually be the fullest form of the name, including first names. No specific
 recommendations are made at this time as to appropriate content for 
 <a class="link_odd_elementSpec" href="/v3/elements/resp">resp</a>. However, it should make clear the nature of the responsibility.
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample023.xml" valid="true" %}
 
 This method of encoding facilitates exchange of bibliographic data with library catalogs
@@ -148,7 +125,7 @@ and bibliographic databases as well as applications whose handling of bibliograp
 data is
 restricted to traditional responsibility roles. Additional information regarding these
 responsibility-role elements can be found in chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Bibliographic Citations and References" href="/v3/guidelines/shared#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>.
 
 When the MEI.namesdates module is enabled, two additional elements are also permitted
 within 
@@ -156,13 +133,9 @@ within
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="corpName" atts="" %}
+{% include _specDesc.html key="persName" atts="" %}
+
 
 
 These elements allow for more precise identification of the entity associated with
@@ -171,11 +144,10 @@ than is permitted by the simpler
 <a class="link_odd_elementSpec" href="/v3/elements/name">name</a> element. The following example
 shows how a precise date range can be associated with a personal or corporate name.
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample024.xml" valid="true" %}
 
 For additional information about corporate and personal names, see chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Names and Dates" href="/v3/guidelines/namesDates">17 Names and Dates</a>.
 
 In addition to, or instead of the 
 <a class="link_odd_elementSpec" href="/v3/elements/resp">resp</a> element, the **@role**
@@ -188,17 +160,15 @@ responsibility statements, use of the **@role** attribute provides the possibili
 recording a controlled value independently of the textual content of 
 <a class="link_odd_elementSpec" href="/v3/elements/resp">resp</a>.
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample025.xml" valid="true" %}
 
 Values from the MARC relator code list (
-<span class="ref">http://www.loc.gov/marc/relators/relacode.html</span>) or term list (
-<span class="ref">http://www.loc.gov/marc/relators/relaterm.html</span>) are recommended for
+<a class="link_ref" href="http://www.loc.gov/marc/relators/relacode.html">http://www.loc.gov/marc/relators/relacode.html</a>) or term list (
+<a class="link_ref" href="http://www.loc.gov/marc/relators/relaterm.html">http://www.loc.gov/marc/relators/relaterm.html</a>) are recommended for
 **@role**, where applicable.
 
 Where it is necessary to group responsibilities and names, multiple responsibility
 statements may be used. For example:
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample026.xml" valid="true" %}
 
@@ -209,13 +179,11 @@ demonstrates how a responsibility statement may be transcribed using interleaved
 <a class="link_odd_elementSpec" href="/v3/elements/resp">resp</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/persName">persName</a> elements:
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample027.xml" valid="true" %}
 
 However, eliminating explanatory text and relying on standardized values for
 **@role**, as in the following example, allows data creation and processing tools of
 the greatest simplicity.
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample028.xml" valid="true" %}
 

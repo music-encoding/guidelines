@@ -1,29 +1,19 @@
 ---
 sectionid: cmnDefs
-title: Defining Score Parameters for CMN
+title: "Defining Score Parameters for CMN"
 ---
 
 
-<h3 id="cmnDefs">
-   <span class="headingNumber">4.1.2</span>
-   <span class="head">Defining Score Parameters for CMN</span>
-</h3>
-When encoding a score in CMN, MEI relies on the following elements from the 
-<span class="ref">Shared</span> module:
+
+When encoding a score in CMN, MEI relies on the following elements from the <a class="link_ref" title="Shared Elements, Models, and Attributes" href="/v3/guidelines/shared">Shared</a> module:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="scoreDef" atts="" %}
+{% include _specDesc.html key="staffGrp" atts="" %}
+{% include _specDesc.html key="staffDef" atts="" %}
+{% include _specDesc.html key="layerDef" atts="" %}
+
 
 
 A 
@@ -32,19 +22,13 @@ score, e.g., key and meter. The most important attributes for this purpose are:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="att.meterSigDefault.log" atts="meter.count meter.unit" %}
+{% include _specDesc.html key="att.meterSigDefault.vis" atts="meter.sym" %}
+{% include _specDesc.html key="att.keySigDefault.log" atts="key.pname key.accid key.mode key.sig" %}
+
 
 
 The following example describes a score in common time with 3 flats:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample093.xml" valid="true" %}
 
@@ -55,11 +39,10 @@ text and music:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="scoreDef" atts="page.width page.height page.leftmar page.topmar             page.rightmar page.botmar
+system.leftmar system.topmar system.rightmar             text.name text.fam text.size
+music.name music.size lyric.name lyric.fam             lyric.size" %}
+
 
 
 There are other attributes that allow the specification of many further details of
@@ -119,16 +102,12 @@ attributes are important for
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="att.cleffing.log" atts="clef.line clef.shape clef.dis clef.dis.place" %}
+
 
 
 
 A staff with a tenor clef is encoded as in the following example:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample094.xml" valid="true" %}
 
@@ -143,7 +122,6 @@ semitones to calculate sounded pitch from written pitch. The piccolo and E♭ cl
 staves
 in the example below utilize these attributes:
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample095.xml" valid="true" %}
 
 
@@ -153,23 +131,14 @@ a clef or a key signature added in a different hand. These elements include:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="clef" atts="" %}
+{% include _specDesc.html key="clefGrp" atts="" %}
+{% include _specDesc.html key="keySig" atts="" %}
+{% include _specDesc.html key="keyAccid" atts="" %}
+{% include _specDesc.html key="label" atts="" %}
+{% include _specDesc.html key="meterSig" atts="" %}
+{% include _specDesc.html key="meterSigGrp" atts="" %}
+
 
 
 
@@ -187,8 +156,8 @@ different information or a
 In this context, it is also possible to combine them with the elements described in
 chapters
 
-<span class="ptr"></span> and 
-<span class="ptr"></span> of these Guidelines.
+<a class="link_ptr" title="Critical Apparatus" href="/v3/guidelines/critApp">10 Critical Apparatus</a> and 
+<a class="link_ptr" title="Editorial Markup" href="/v3/guidelines/editTrans">11 Editorial Markup</a> of these Guidelines.
 
 Such flexibility as this may require close inspection of an encoding to retrieve the
 correct definitions for a given staff. As a general rule, the closest preceding and
@@ -219,4 +188,3 @@ to measure as well as across staves, MEI uses the more neutral term
 ‘layer’.
 
 
-<!-- TODO: Address voice-leading here -->

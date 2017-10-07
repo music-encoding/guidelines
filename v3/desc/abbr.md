@@ -1,0 +1,7 @@
+---
+desc: "abbr"
+type: "elementSpec"
+---
+
+(abbreviation) – A generic element for 1) a shortened form of a word, including an
+acronym or 2) a shorthand notation.

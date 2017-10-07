@@ -1,17 +1,13 @@
 ---
 sectionid: sharedDivisionsBody
-title: Divisions of the Body
+title: "Divisions of the Body"
 ---
 
 
-<h4 id="sharedDivisionsBody">
-   <span class="headingNumber">1.1.2.2</span>
-   <span class="head">Divisions of the Body</span>
-</h4>
+
 This section describes sub-division of the body of a musical text. Front and back
 matter
-are described in chapter 
-<span class="ptr"></span>.
+are described in chapter <a class="link_ptr" title="Text in MEI" href="/v3/guidelines/text">21 Text in MEI</a>.
 
 The body of a unitary musical text may contain one or more discrete, linear segments.
 The
@@ -35,13 +31,9 @@ classify it according to a two-tier hierarchy.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="mdiv" atts="" %}
+{% include _specDesc.html key="mdiv" atts="type subtype" %}
+
 
 
 To accommodate "divisions within divisions", an 
@@ -52,21 +44,16 @@ For example, the encoding of a multi-movement work, such as a symphony, frequent
 have
 the following structure:
 
-
 {% include _plainExample.html example="./v3/examples/shared/shared-sample004.xml" valid="true" %}
 
 while dramatic works, such as Verdi's opera, *Il Trovatore*, often exhibit a
 more deeply-nested structure:
 
-
 {% include _plainExample.html example="./v3/examples/shared/shared-sample005.xml" valid="true" %}
 
 Conventionally, in performance the musical structures represented by 
-<a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> elements are separated by pauses; however, 
-<span class="foreign">attacca</span>,
-
-<span class="foreign">attacca subito</span>, 
-<span class="foreign">seque</span>, or similar terms are
+<a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> elements are separated by pauses; however, *attacca*,
+*attacca subito*, *seque*, or similar terms are
 sometimes used at the end of an 
 <a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> to indicate that the next 
 <a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> should begin immediately after the conclusion of the current one.
@@ -75,6 +62,5 @@ using
 
 <a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> elements.
 
-<!-- TODO: Do we need a processable way to encode attaca? -->
 
 

@@ -1,0 +1,9 @@
+---
+desc: "respStmt"
+type: "elementSpec"
+---
+
+(responsibility statement) – Names one or more individuals, groups, or in rare cases,
+mechanical processes, responsible for creation or realization of the intellectual
+or
+artistic content.

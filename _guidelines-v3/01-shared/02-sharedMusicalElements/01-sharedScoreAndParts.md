@@ -1,53 +1,34 @@
 ---
 sectionid: sharedScoreAndParts
-title: Score and Parts
+title: "Score and Parts"
 ---
 
 
-<h3 id="sharedScoreAndParts">
-   <span class="headingNumber">1.2.1</span>
-   <span class="head">Score and Parts</span>
-</h3>
+
 The following elements are provided for the capture of scores and parts:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="score" atts="" %}
+{% include _specDesc.html key="parts" atts="" %}
+{% include _specDesc.html key="part" atts="" %}
+{% include _specDesc.html key="scoreDef" atts="" %}
+{% include _specDesc.html key="staffDef" atts="" %}
+{% include _specDesc.html key="layerDef" atts="" %}
+{% include _specDesc.html key="staffGrp" atts="" %}
+{% include _specDesc.html key="grpSym" atts="" %}
+{% include _specDesc.html key="label" atts="" %}
+{% include _specDesc.html key="clef" atts="" %}
+{% include _specDesc.html key="clefGrp" atts="" %}
+{% include _specDesc.html key="keySig" atts="" %}
+{% include _specDesc.html key="keyAccid" atts="" %}
+
 
 
  The character of elements specifying one or more score or staff parameters, such
 as meter
 and key signature, clefs, etc., is that of a milestone; that is, they affect all subsequent
-material until a following redefinition. A 
-<a class="link_odd_elementSpec" href="/v3/elements/scoreDef">scoreDef</a> element, which may
+material until a following redefinition. A <a class="link_odd_elementSpec" href="/v3/elements/scoreDef">scoreDef</a> element, which may
 affect more than just one staff, is allowed only within 
 <a class="link_odd_elementSpec" href="/v3/elements/score">score</a>, 
 <a class="link_odd_elementSpec" href="/v3/elements/part">part</a> and 
@@ -66,5 +47,5 @@ of the
 source material. For details on their use in Common Western Notation, please refer
 to
 chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Defining Score Parameters for CMN" href="/v3/guidelines/cmn#cmnDefs">4.1.2 Defining Score Parameters for CMN</a>.
 

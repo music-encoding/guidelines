@@ -1,43 +1,32 @@
 ---
 sectionid: perfElements
-title: Overview
+title: "Overview"
 ---
 
 
-<h2 id="perfElements">
-   <span class="headingNumber">18.1</span>
-   <span class="head">Overview</span>
-</h2>
+
 The following elements are available to encode information about a recorded performance:
 
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="performance" atts="" %}
+{% include _specDesc.html key="recording" atts="" %}
+{% include _specDesc.html key="avFile" atts="" %}
+{% include _specDesc.html key="clip" atts="" %}
+{% include _specDesc.html key="when" atts="" %}
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/performance">performance</a> element begins a subtree of the 
+
+The <a class="link_odd_elementSpec" href="/v3/elements/performance">performance</a> element begins a subtree of the 
 <a class="link_odd_elementSpec" href="/v3/elements/music">music</a> element and appears alongside with, or instead of, 
 <a class="link_odd_elementSpec" href="/v3/elements/body">body</a>
 (described in 
-<span class="ptr"></span> and 
+<a class="link_ptr" title="Music Element" href="/v3/guidelines/shared#sharedMusicElement">1.1.2 Music Element</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/facsimile">facsimile</a>
 (described in 
-<span class="ptr"></span>). A 
+<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles">12 Facsimiles</a>). A 
 <a class="link_odd_elementSpec" href="/v3/elements/performance">performance</a> element
 represents one recorded performance event. As a performance may be recorded in multiple
 formats or by different personnel or or using different equipment, the 
@@ -46,7 +35,7 @@ formats or by different personnel or or using different equipment, the
 
 The **@decls** attribute can be used to point to performance medium metadata for the
 performed work. See 
-<span class="ptr"></span> for more details.
+<a class="link_ptr" title="Performance Medium" href="/v3/guidelines/header#headerWorkMedium">2.3.7 Performance Medium</a> for more details.
 
 
 The 
@@ -58,11 +47,8 @@ used to define this space:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="att.mediabounds" atts="begin end betype" %}
+
 
 
 
@@ -79,7 +65,6 @@ that all avFile elements have a recording or clip parent which bears the **@begi
 **@end**, and **@betype** attributes.
 
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample297.xml" valid="true" %}
 
 
@@ -91,7 +76,6 @@ each with a different mimetype. Keep in mind, however, that each file still repr
 the
 complete temporal extent of the recording act in spite of the change of file format:
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample298.xml" valid="true" %}
 
 
@@ -100,7 +84,6 @@ The
 the following example, the clip begins two minutes into the timeframe of the recording
 and
 ends 20 seconds later:
-
 
 {% include _plainExample.html example="./v3/examples/performances/performances-sample299.xml" valid="true" %}
 
@@ -111,7 +94,6 @@ media
 files. Because they have differing durations, the media files must be the result of
 separate
 recording acts, even if these recording acts took place at the same time:
-
 
 {% include _plainExample.html example="./v3/examples/performances/performances-sample300.xml" valid="true" %}
 
@@ -126,7 +108,6 @@ start and end times for the movements in relation to the overall temporal space 
 the
 complete work:
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample301.xml" valid="true" %}
 
 
@@ -135,7 +116,6 @@ a recording
 act is broken into segments later, as is often done for practical storage and distribution
 reasons. The file from which the clips are derived is indicated using an avFile element:
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample302.xml" valid="true" %}
 
 
@@ -143,7 +123,6 @@ A
 <a class="link_odd_elementSpec" href="/v3/elements/clip">clip</a> may be used to define any region of interest, such as a cadenza
 or a modulation, a song verse, etc. The following example shows the use of 
 <a class="link_odd_elementSpec" href="/v3/elements/clip">clip</a> and its attributes to identify significant sections of a recording:
-
 
 {% include _plainExample.html example="./v3/examples/performances/performances-sample303.xml" valid="true" %}
 
@@ -161,7 +140,6 @@ in
 the MEI file, the **@startid** attribute can be used to indicate the first element in
 the sequence of events to which the recording corresponds:
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample304.xml" valid="false" %}
 
 
@@ -172,7 +150,6 @@ the use of
 of clip elements to identify the exposition of the first movement from Beethoven's
 piano
 sonata Op. 14, no. 2 and its concluding ‘codetta’.
-
 
 {% include _plainExample.html example="./v3/examples/performances/performances-sample305.xml" valid="false" %}
 
@@ -185,7 +162,6 @@ ending points may also be used to provide additional performance context for a s
 or
 because there is uncertainty with regard to precise values for these points.
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample306.xml" valid="true" %}
 
 
@@ -193,7 +169,6 @@ A bibliographic description of a recording or metadata explaining how clip bound
 were
 determined may be associated with the recording and clip elements via the **@decls**
 attribute:
-
 
 {% include _plainExample.html example="./v3/examples/performances/performances-sample307.xml" valid="true" %}
 
@@ -206,7 +181,6 @@ The
 <a class="link_odd_elementSpec" href="/v3/elements/when">when</a> element identifies a particular point in time during the
 playback of a media file, such as an audio recording.
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample308.xml" valid="true" %}
 
 Time points may be identified in absolute terms as above; that is, in hours, minutes,
@@ -217,13 +191,11 @@ example, the time point of interest happens 48 frames after the occurrence of th
 point
 labelled as "t1".
 
-
 {% include _plainExample.html example="./v3/examples/performances/performances-sample309.xml" valid="true" %}
 
 Having identified a point of interest, another feature of the encoding may be associated
 with
 this point using its **@when** attribute: 
-
 
 {% include _plainExample.html example="./v3/examples/performances/performances-sample310.xml" valid="true" %}
 
@@ -237,7 +209,6 @@ in
 the opposite direction; that is, from a time point to other features of the markup.
 For
 example, 
-
 
 {% include _plainExample.html example="./v3/examples/performances/performances-sample311.xml" valid="true" %}
 

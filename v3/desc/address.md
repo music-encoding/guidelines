@@ -1,0 +1,7 @@
+---
+desc: "address"
+type: "elementSpec"
+---
+
+Contains a postal address, for example of a publisher, an organization, or an
+individual.

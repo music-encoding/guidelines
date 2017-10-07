@@ -1,34 +1,25 @@
 ---
 sectionid: FRBRrelations
-title: FRBR Relationships
+title: "FRBR Relationships"
 ---
 
 
-<h2 id="FRBRrelations">
-   <span class="headingNumber">3.3</span>
-   <span class="head">FRBR Relationships</span>
-</h2>
+
 FRBR defines a number of terms that describe how the basic entities relate to each
 other. MEI
 provides the following elements for this purpose.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="relationList" atts="" %}
+{% include _specDesc.html key="relation" atts="" %}
+{% include _specDesc.html key="relation" atts="rel" %}
+
 
 
 Each of the four FRBR entity equivalents – the work, expression, source, and item
 elements –
-allows a list of such relationship descriptions as its last child element. 
-<a class="link_odd_elementSpec" href="/v3/elements/relationList">relationList</a> provides a container for individual 
+allows a list of such relationship descriptions as its last child element. <a class="link_odd_elementSpec" href="/v3/elements/relationList">relationList</a> provides a container for individual 
 <a class="link_odd_elementSpec" href="/v3/elements/relation">relation</a>
 elements. The nature of the relationship must be specified by the **@rel** attribute and
 the target of the relationship must be identified by the **@target** attribute.
@@ -38,45 +29,25 @@ using pairs
 of oppositely-directed relation descriptors. The following FRBR relations are allowed
 in MEI
 as values of the relation element’s @rel attribute (shown in pairs for clarity): 
-<span class="list">
-   
-   <span class="item">hasSuccessor / isSuccessorOf</span>
-   
-   <span class="item">hasSupplement / isSupplementOf</span>
-   
-   <span class="item">hasComplement / isComplementOf</span>
-   
-   <span class="item">hasSummarization / isSummarizationOf</span>
-   
-   <span class="item">hasAdaptation / isAdaptationOf</span>
-   
-   <span class="item">hasTransformation / isTransformationOf</span>
-   
-   <span class="item">hasImitation / isImitationOf</span>
-   
-   <span class="item">hasPart / isPartOf</span>
-   
-   <span class="item">hasReproduction / isReproductionOf</span>
-   
-   <span class="item">hasAbridgement / isAbridgementOf</span>
-   
-   <span class="item">hasRevision / isRevisionOf</span>
-   
-   <span class="item">hasTranslation / isTranslationOf</span>
-   
-   <span class="item">hasArrangement / isArrangementOf</span>
-   
-   <span class="item">hasAlternate / isAlternateOf</span>
-   
-   <span class="item">hasReconfiguration / isReconfigurationOf</span>
-   
-   <span class="item">hasRealization / isRealizationOf</span>
-   
-   <span class="item">hasEmbodiment / isEmbodimentOf</span>
-   
-   <span class="item">hasExemplar / isExemplarOf</span>
-   
-</span>
+- hasSuccessor / isSuccessorOf
+- hasSupplement / isSupplementOf
+- hasComplement / isComplementOf
+- hasSummarization / isSummarizationOf
+- hasAdaptation / isAdaptationOf
+- hasTransformation / isTransformationOf
+- hasImitation / isImitationOf
+- hasPart / isPartOf
+- hasReproduction / isReproductionOf
+- hasAbridgement / isAbridgementOf
+- hasRevision / isRevisionOf
+- hasTranslation / isTranslationOf
+- hasArrangement / isArrangementOf
+- hasAlternate / isAlternateOf
+- hasReconfiguration / isReconfigurationOf
+- hasRealization / isRealizationOf
+- hasEmbodiment / isEmbodimentOf
+- hasExemplar / isExemplarOf
+
 
 
 Some of these relationships are already implicitly expressed by the MEI structural
@@ -101,7 +72,6 @@ declare these relations explicitly. In FRBR terms, a manifestation / source is a
 embodiment
 of an expression.
 
-
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample085.xml" valid="true" %}
 
 Within the 
@@ -112,7 +82,6 @@ certain sequence such as the movements of a work. In other cases,
 <a class="link_odd_elementSpec" href="/v3/elements/relation">relation</a> elements may be needed to explicitly encode relationships not otherwise
 defined by encoding order or hierarchy. For instance, the hasReproduction/isReproductionOf
 relationship may be used to indicate that one source is a reprint of another.
-
 
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample086.xml" valid="true" %}
 
@@ -125,7 +94,6 @@ component works in the "Der Ring des Nibelungen" example above could alternative
 be encoded
 as sibling work elements to the "Ring" work element.
 
-
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample087.xml" valid="true" %}
 
 Relations may also be used to point to external resources. For instance, each of the
@@ -135,11 +103,9 @@ pointing to them.
 
 In the file "ring.xml":
 
-
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample088.xml" valid="true" %}
 
 In the file "rheingold.xml":
-
 
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample089.xml" valid="true" %}
 

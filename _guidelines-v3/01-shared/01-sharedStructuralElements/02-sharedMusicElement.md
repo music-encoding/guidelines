@@ -1,13 +1,10 @@
 ---
 sectionid: sharedMusicElement
-title: Music Element
+title: "Music Element"
 ---
 
 
-<h3 id="sharedMusicElement">
-   <span class="headingNumber">1.1.2</span>
-   <span class="head">Music Element</span>
-</h3>
+
 MEI texts may be regarded either as unitary; that is, forming an organic whole, or
 as
 composite; that is, consisting of several components which are in some important sense
@@ -20,8 +17,7 @@ to
 treat the text as unitary or composite; each option may have advantages and
 disadvantages.
 
-Whether unitary or composite, the musical text is marked with the 
-<a class="link_odd_elementSpec" href="/v3/elements/music">music</a> tag and may contain front matter, a body, and back matter. In unitary texts,
+Whether unitary or composite, the musical text is marked with the <a class="link_odd_elementSpec" href="/v3/elements/music">music</a> tag and may contain front matter, a body, and back matter. In unitary texts,
 the body is tagged using the 
 <a class="link_odd_elementSpec" href="/v3/elements/body">body</a> element; in composite texts,
 however, where the textual body consists of a series of subordinate musical texts
@@ -32,17 +28,11 @@ any musical text, unitary or composite, is thus defined by the following element
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="front" atts="" %}
+{% include _specDesc.html key="body" atts="" %}
+{% include _specDesc.html key="group" atts="" %}
+{% include _specDesc.html key="back" atts="" %}
+
 
 
 Critical editions and collections of works often contain extensive text, such as a
@@ -54,17 +44,15 @@ back
 elements, available only when the MEI.text module is activated, are described more
 fully in
 chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Text in MEI" href="/v3/guidelines/text">21 Text in MEI</a>.
 
 The overall structure of a single musical text is:
-
 
 {% include _plainExample.html example="./v3/examples/shared/shared-sample000.xml" valid="true" %}
 
 The top-level structure of a composite musical text made up of two unitary musical
 texts
 is:
-
 
 {% include _plainExample.html example="./v3/examples/shared/shared-sample001.xml" valid="true" %}
 

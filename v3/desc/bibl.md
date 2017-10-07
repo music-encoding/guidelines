@@ -1,0 +1,7 @@
+---
+desc: "bibl"
+type: "elementSpec"
+---
+
+(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+which the sub-components may or may not be explicitly marked.

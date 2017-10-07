@@ -1,0 +1,7 @@
+---
+desc: "td"
+type: "elementSpec"
+---
+
+(table data) – Designates a table cell that contains data as opposed to a cell that
+contains column or row heading information.

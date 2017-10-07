@@ -1,33 +1,21 @@
 ---
 sectionid: harmonyElements
-title: Elements
+title: "Elements"
 ---
 
 
-<h3 id="harmonyElements">
-   <span class="headingNumber">14.1.1</span>
-   <span class="head">Elements</span>
-</h3>
+
 The following elements are provided by the harmony module:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="barre" atts="" %}
+{% include _specDesc.html key="chordDef" atts="" %}
+{% include _specDesc.html key="chordMember" atts="" %}
+{% include _specDesc.html key="chordTable" atts="" %}
+{% include _specDesc.html key="f" atts="" %}
+{% include _specDesc.html key="fb" atts="" %}
+{% include _specDesc.html key="harm" atts="" %}
+
 
 

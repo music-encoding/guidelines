@@ -1,25 +1,18 @@
 ---
 sectionid: headerPhysicalDescription
-title: Physical Description of the File
+title: "Physical Description of the File"
 ---
 
 
-<h3 id="headerPhysicalDescription">
-   <span class="headingNumber">2.1.3</span>
-   <span class="head">Physical Description of the File</span>
-</h3>
+
 The third component of the fileDesc is a description of the physical qualities of
 the file.
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/extent">extent</a> element is provided for this purpose.
+The <a class="link_odd_elementSpec" href="/v3/elements/extent">extent</a> element is provided for this purpose.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="extent" atts="" %}
+
 
 
 The 
@@ -60,44 +53,27 @@ possible; the element
 size or approximate size of the computer file in one of the following ways:
 
 
-<span class="list">
-   
-   <span class="item">in bytes of a specified length (e.g. ‘4000 bytes’)</span>
-   
-   <span class="item">as falling within a range of values, for example: 
-      <span class="list">
-         
-         <span class="item">less than 1 Mb</span>
-         
-         <span class="item">between 1 Mb and 5 Mb</span>
-         
-         <span class="item">between 6 Mb and 10 Mb</span>
-         
-         <span class="item">over 10 Mb</span>
-         
-      </span>
-      
-   </span>
-   
-   <span class="item">in terms of any convenient logical units (for example, words or sentences, citations,
-      paragraphs)
-   </span>
-   
-   <span class="item">in terms of any convenient physical units (for example, compact discs, removable hard
-      drives, DVDs)
-   </span>
-   
-</span>
+- in bytes of a specified length (e.g. ‘4000 bytes’)
+- as falling within a range of values, for example: 
+- less than 1 Mb
+- between 1 Mb and 5 Mb
+- between 6 Mb and 10 Mb
+- over 10 Mb
+
+
+- in terms of any convenient logical units (for example, words or sentences, citations,
+paragraphs)
+- in terms of any convenient physical units (for example, compact discs, removable hard
+drives, DVDs)
+
 The use of standard abbreviations for units of quantity is recommended where applicable,
 here as elsewhere (see 
-<span class="ref">http://physics.nist.gov/cuu/Units/binary.html</span>).
-
+<a class="link_ref" href="http://physics.nist.gov/cuu/Units/binary.html">http://physics.nist.gov/cuu/Units/binary.html</a>).
 
 {% include _plainExample.html example="./v3/examples/header/header-sample031.xml" valid="false" %}
 
 For ease of processability, the use of the **@unit** attribute is recommended, as in
 the following example:
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample032.xml" valid="true" %}
 

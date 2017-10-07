@@ -1,0 +1,7 @@
+---
+desc: "data.COLOR"
+type: "macroSpec"
+---
+
+A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal
+AARRGGBB, 3) CSS RGB, 4) CSS RGBA, 5) HSL, 6) HSLA, or 7) HTML 4.01 color name.

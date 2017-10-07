@@ -7,10 +7,6 @@ sectionid: "cmnOrnaments"
 
 <span class="div">
    
-   <h1 id="cmnOrnaments">
-      <span class="headingNumber">8</span>
-      <span class="head">Common Music Notation Ornaments</span>
-   </h1>
    This module includes elements and attributes for the encoding of ornaments typical
    of
    ‘Common Music Notation’ (CMN). Ornaments are formulae of

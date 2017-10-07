@@ -1,29 +1,18 @@
 ---
 sectionid: usersymbolsElements
-title: Elements
+title: "Elements"
 ---
 
 
-<h3 id="usersymbolsElements">
-   <span class="headingNumber">22.1.1</span>
-   <span class="head">Elements</span>
-</h3>
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+
+{% include _specDesc.html key="anchoredText" atts="" %}
+{% include _specDesc.html key="curve" atts="" %}
+{% include _specDesc.html key="line" atts="" %}
+{% include _specDesc.html key="symbol" atts="" %}
+{% include _specDesc.html key="symbolDef" atts="" %}
+{% include _specDesc.html key="symbolTable" atts="" %}
+
 
 

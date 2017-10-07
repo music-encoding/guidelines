@@ -1,0 +1,7 @@
+---
+desc: "multiRest"
+type: "elementSpec"
+---
+
+(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
+found in performer parts.

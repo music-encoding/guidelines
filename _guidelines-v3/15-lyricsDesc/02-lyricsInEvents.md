@@ -1,17 +1,13 @@
 ---
 sectionid: lyricsInEvents
-title: Vocally Performed Text Encoded Within Notes
+title: "Vocally Performed Text Encoded Within Notes"
 ---
 
 
-<h2 id="lyricsInEvents">
-   <span class="headingNumber">15.2</span>
-   <span class="head">Vocally Performed Text Encoded Within Notes</span>
-</h2>
+
 Each lyric syllable can be encoded directly within an associated note, either by using
 the
-**@syl** attribute on 
-<a class="link_odd_elementSpec" href="/v3/elements/note">note</a> or the 
+**@syl** attribute on <a class="link_odd_elementSpec" href="/v3/elements/note">note</a> or the 
 <a class="link_odd_elementSpec" href="/v3/elements/verse">verse</a>
 element.
 
@@ -28,7 +24,6 @@ The following example from Handel's *Messiah* (HWV 56) shows the use of
    <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample263.xml" valid="true" %}
 
 
@@ -41,19 +36,14 @@ specific about connectors, etc., the use of
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="verse" atts="" %}
+{% include _specDesc.html key="verse" atts="rhythm" %}
+
 
 
 
 The following example from Handel's *Messiah* (HWV 56) shows the use of 
 <a class="link_odd_elementSpec" href="/v3/elements/verse">verse</a>:
-
 
 {% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample264.xml" valid="true" %}
 
@@ -75,7 +65,6 @@ syllables within the same
 <a class="link_odd_elementSpec" href="/v3/elements/syl">syl</a>
 element's **@con** attribute value to 't':
 
-
 {% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample265.xml" valid="true" %}
 
 
@@ -91,7 +80,6 @@ of the
    <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample266.xml" valid="false" %}
 
 
@@ -105,5 +93,4 @@ Finally, the **@rhythm** attribute can be used to specify a rhythm for the sylla
 that differs from that of the notes on the staff.
 
 
-<!-- TODO: NEED EXAMPLE HERE -->
 

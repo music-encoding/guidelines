@@ -1,13 +1,10 @@
 ---
 sectionid: cmnRepSym
-title: Measure-Level Repetition Symbols
+title: "Measure-Level Repetition Symbols"
 ---
 
 
-<h4 id="cmnRepSym">
-   <span class="headingNumber">4.2.9.2</span>
-   <span class="head">Measure-Level Repetition Symbols</span>
-</h4>
+
 In addition to repetition at the section level, CMN includes a number of different
 symbols for measure-level repetitions. Many of these symbols are found in manuscripts
 and
@@ -20,7 +17,6 @@ upper left and lower right, much like a percent sign. The illustration below con
 the
 most common signs:
 
-
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/beatrpt-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 14. Beat repeat signs</figcaption>
@@ -32,19 +28,12 @@ elements are provided for this purpose:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="beatRpt" atts="" %}
+{% include _specDesc.html key="halfmRpt" atts="" %}
+{% include _specDesc.html key="mRpt" atts="" %}
+{% include _specDesc.html key="mRpt2" atts="" %}
+{% include _specDesc.html key="multiRpt" atts="" %}
+
 
 
 
@@ -73,10 +62,6 @@ these parts require durations longer or shorter than a beat, note elements with
 appropriately-shaped note heads should be employed instead.
 
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-          <!-\- NEED EXAMPLE HERE! -\->
-        </egXML>-->
 
 The 
 <a class="link_odd_elementSpec" href="/v3/elements/mRpt">mRpt</a> element is available for repetition of an entire measure.
@@ -94,17 +79,10 @@ measure can be enabled using the **@multi.number** attribute available on the
    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample152.xml" valid="false" %}
 
 
 
-<!-- TODO: Re: the halfmRpt, I have a kind of bad feeling. It seems arbitrary to have that, instead of a generic
-          rptSnippet or so. I know that you invented it for my Waldstein example (or was it one of the others?), but it seems
-          wrong. I'd prefer to specify the snippet to be repeated by a tstamp and dur combination, maybe also with a reference 
-          to a measure in there. That would definitely be much more helpful than halfmRpt. Should we put this on the table and
-          offer to deprecate halfmRpt? I know we have to keep it for now, but…
-        -->
 
 The 
 <a class="link_odd_elementSpec" href="/v3/elements/halfmRpt">halfmRpt</a> element represents the incorrect, but frequently
@@ -122,7 +100,6 @@ importance. The following example from the beginning of Beethoven's
    <img src="../../../../guidelines/3.0.0/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample153.xml" valid="false" %}
 
 
@@ -162,8 +139,8 @@ All elements described above allow for association of the sign with a symbol in 
 digital
 facsimile (via the **@facs** attribute) and with a user-defined symbol (using
 **@altsym**). See 
-<span class="ptr"></span> and 
-<span class="ptr"></span> for
+<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles">12 Facsimiles</a> and 
+<a class="link_ptr" title="User-defined Symbols" href="/v3/guidelines/userSymbols">22 User-defined Symbols</a> for
 further details. In addition, the **@expand** attribute is available on the
 foregoing elements to inform a rendering process whether to use the repeat symbol
 or the

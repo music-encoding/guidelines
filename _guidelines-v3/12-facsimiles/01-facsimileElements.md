@@ -1,33 +1,23 @@
 ---
 sectionid: facsimileElements
-title: Elements of the Facsimile Module
+title: "Elements of the Facsimile Module"
 ---
 
 
-<h2 id="facsimileElements">
-   <span class="headingNumber">12.1</span>
-   <span class="head">Elements of the Facsimile Module</span>
-</h2>
+
 This module makes available the following elements for encoding facsimiles:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="facsimile" atts="" %}
+{% include _specDesc.html key="surface" atts="" %}
+{% include _specDesc.html key="zone" atts="" %}
 
 
-These element are used to add a separate subtree to MEI, starting with the 
-<a class="link_odd_elementSpec" href="/v3/elements/facsimile">facsimile</a> element inside 
+
+These element are used to add a separate subtree to MEI, starting with the <a class="link_odd_elementSpec" href="/v3/elements/facsimile">facsimile</a> element inside 
 <a class="link_odd_elementSpec" href="/v3/elements/music">music</a>, as seen in the following
 example:
-
 
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample230.xml" valid="false" %}
 
@@ -37,12 +27,11 @@ It is possible to have more than one
 location. This is especially useful when multiple sources are encoded in the same
 file using
 the mechanisms described in chapter 
-<span class="ptr"></span> of these Guidelines. In this
+<a class="link_ptr" title="Editorial Markup" href="/v3/guidelines/editTrans">11 Editorial Markup</a> of these Guidelines. In this
 case, the **@decls** (declarations) attribute of 
 <a class="link_odd_elementSpec" href="/v3/elements/facsimile">facsimile</a> may be
 used to refer to a source defined in the document's header, as seen in the following
 example:
-
 
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample231.xml" valid="false" %}
 
@@ -59,7 +48,6 @@ surface may be recorded in abstract terms in the **@ulx**, **@uly**,
 <a class="link_odd_elementSpec" href="/v3/elements/surface">surface</a> has a **@startid** attribute that accommodates pointing to the first
 object appearing on this particular writing surface.
 
-
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample232.xml" valid="true" %}
 
 
@@ -74,7 +62,6 @@ surface image. In spite of changes in resolution or format, all images must cont
 the same
 content, i.e., the entire writing surface.
 
-
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample233.xml" valid="true" %}
 
 
@@ -84,25 +71,12 @@ representation of the surface. The
 <a class="link_odd_elementSpec" href="/v3/elements/zone">zone</a> element fulfills this
 purpose:
 
-
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample234.xml" valid="true" %}
 
 
 
-<!--<p>The preceding example also illustrates how <gi scheme="MEI">zone</gi> can be used directly within
-        <gi scheme="MEI">surface</gi> to draw attention to areas within a writing surface for which there is no
-      corresponding graphic image file.</p>-->
 
 
-<!--<p>In the following example, the surface is defined as rectange that is 3000 units wide and 2000
-      units tall. The graphic that represents the surface, however, is only 2995 units wide and 1995
-      units tall; that is, the graphic has been <soCalled>cropped</soCalled> with respect to the
-      writing surface.</p>
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<surface ulx="0" uly="0" lrx="3000" lry="2000">
-  <graphic target="image1.jpg" width="2995" height="1995" unit="px"/>
-</surface>
-    </egXML>-->
 
 The coordinates of each zone *define a space relative to the coordinate space of its
 parent surface*. Note that this is not necessarily the same coordinate space defined
@@ -120,7 +94,6 @@ single surface. In the following example, two different images representing the 
 surface
 are provided alongside specification of two zones of interest within the surface:
 
-
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample235.xml" valid="true" %}
 
 
@@ -137,7 +110,6 @@ content tree of the MEI file, such as a
 <a class="link_odd_elementSpec" href="/v3/elements/note">note</a>, 
 <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>, etc.
 
-
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample236.xml" valid="false" %}
 
 
@@ -147,13 +119,12 @@ subtree using its **@facs** attribute, which is made available by the
 <a class="link_odd" href="/v3/attribute-classes/att.facsimile">att.facsimile</a> attribute class. The last example could therefore be
 encoded with pointers in the other direction:
 
-
 {% include _plainExample.html example="./v3/examples/facsimiles/facsimiles-sample237.xml" valid="false" %}
 
 
 The 
 <a class="link_odd_elementSpec" href="/v3/elements/pb">pb</a> element defined in the 
-<span class="ref">shared module</span>
+<a class="link_ref" title="Shared Elements, Models, and Attributes" href="/v3/guidelines/shared">shared module</a>
 makes special use of the **@facs** attribute, in that it does not point to a 
 <a class="link_odd_elementSpec" href="/v3/elements/zone">zone</a>, but a 
 <a class="link_odd_elementSpec" href="/v3/elements/surface">surface</a> element instead. A 

@@ -1,13 +1,10 @@
 ---
 sectionid: headerFileDescription
-title: File Description
+title: "File Description"
 ---
 
 
-<h2 id="headerFileDescription">
-   <span class="headingNumber">2.1</span>
-   <span class="head">File Description</span>
-</h2>
+
 The structure of the bibliographic description of a machine-readable or digital musical
 text
 resembles that of a book, an article, or other kinds of textual objects. The file
@@ -23,16 +20,12 @@ from the same model.
 
 The bibliographic description of an electronic musical text should be supplied by
 the
-mandatory 
-<a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element:
+mandatory <a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="fileDesc" atts="" %}
+
 
 
 The 
@@ -44,27 +37,17 @@ in which they must occur within the
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="titleStmt" atts="" %}
+{% include _specDesc.html key="editionStmt" atts="" %}
+{% include _specDesc.html key="extent" atts="" %}
+{% include _specDesc.html key="pubStmt" atts="" %}
+{% include _specDesc.html key="seriesStmt" atts="" %}
+{% include _specDesc.html key="notesStmt" atts="" %}
+{% include _specDesc.html key="sourceDesc" atts="" %}
+
 
 
 A complete file description will resemble the following example:
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample019.xml" valid="false" %}
 

@@ -1,26 +1,20 @@
 ---
 sectionid: edittransOmission
-title: Omissions, Unclear Readings, Damage, and Supplied Readings
+title: "Omissions, Unclear Readings, Damage, and Supplied Readings"
 ---
 
 
-<h3 id="edittransOmission">
-   <span class="headingNumber">11.4.1</span>
-   <span class="head">Omissions, Unclear Readings, Damage, and Supplied Readings</span>
-</h3>
+
 Encoders may choose to omit parts of the source for reasons ranging from illegibility,
 (making transcription difficult or impossible), to editorial policy, e.g., systematic
 exclusion of poetry or prose from an encoding. The full details of the policy decisions
-concerned should be documented in the MEI header (see section 
-<span class="ptr"></span>). Each place in the text at which omission has taken
+concerned should be documented in the MEI header (see section <a class="link_ptr" title="Encoding Description" href="/v3/guidelines/header#headerEncodingDescription">2.2 Encoding Description</a>). Each place in the text at which omission has taken
 place should be marked with a 
 <a class="link_odd_elementSpec" href="/v3/elements/gap">gap</a> element, optionally with further
 information about the reason for the omission, its extent, and the person or agency
 responsible for it, as in the following examples:
 
-
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample221.xml" valid="true" %}
-
 
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample222.xml" valid="true" %}
 
@@ -28,8 +22,7 @@ responsible for it, as in the following examples:
 Note that the extent of the gap may be marked precisely using attributes **@unit**
 and **@quantity**, or more descriptively using the **@extent** attribute.
 
-Unlike TEI, MEI does not offer a 
-<span class="foreign">desc</span> element for further description of
+Unlike TEI, MEI does not offer a *desc* element for further description of
 the reason for a gap. Instead, an 
 <a class="link_odd_elementSpec" href="/v3/elements/annot">annot</a> may refer to the gap via its
 **@startid**, **@endid**, or **@plist** attributes and provide
@@ -43,7 +36,6 @@ reasons, as for example when transcribing a illegible source. Its **@reason** an
 <a class="link_odd_elementSpec" href="/v3/elements/gap">gap</a> element, to
 indicate the cause of uncertainty and the person responsible for the conjectured
 reading.
-
 
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample223.xml" valid="true" %}
 
@@ -91,7 +83,6 @@ combination with
 <a class="link_odd_elementSpec" href="/v3/elements/gap">gap</a> within 
 <a class="link_odd_elementSpec" href="/v3/elements/subst">subst</a>:
 
-
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample224.xml" valid="true" %}
 
 
@@ -107,7 +98,3 @@ header. The **@cert** attribute signifies the degree of certainty ascribed to th
 supplied material.
 
 
-<!-- TODO:
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<!-\- NEED EXAMPLE HERE! -\->
-      </egXML>-->

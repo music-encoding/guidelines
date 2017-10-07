@@ -1,0 +1,8 @@
+---
+desc: "street"
+type: "elementSpec"
+---
+
+full street address including any name or number identifying a building as well as
+the
+name of the street or route on which it is located.

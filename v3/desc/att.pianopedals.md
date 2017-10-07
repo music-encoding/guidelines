@@ -1,0 +1,7 @@
+---
+desc: "att.pianopedals"
+type: "classSpec"
+---
+
+Used by scoreDef and staffDef to provide default description of piano pedal
+rendition.

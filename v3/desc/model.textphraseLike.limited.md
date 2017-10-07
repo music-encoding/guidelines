@@ -1,0 +1,8 @@
+---
+desc: "model.textphraseLike.limited"
+type: "classSpec"
+---
+
+Groups textual elements that occur as part of the representation of the score, as
+opposed to the textual matter which accompanies it. This class is equivalent to the
+model.textphraseLike class without the pb element.

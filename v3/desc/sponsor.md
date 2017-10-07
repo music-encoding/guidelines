@@ -1,0 +1,9 @@
+---
+desc: "sponsor"
+type: "elementSpec"
+---
+
+Names of sponsoring individuals, organizations or institutions. Sponsors give their
+intellectual authority to a project; they are to be distinguished from funders, who
+provide
+the funding but do not necessarily take intellectual responsibility.

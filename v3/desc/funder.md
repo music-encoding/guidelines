@@ -1,0 +1,8 @@
+---
+desc: "funder"
+type: "elementSpec"
+---
+
+Names of individuals, institutions, or organizations responsible for funding. Funders
+provide financial support for a project; they are distinct from sponsors, who provide
+intellectual support and authority.

@@ -1,13 +1,10 @@
 ---
 sectionid: headerWorkCast
-title: Cast Lists
+title: "Cast Lists"
 ---
 
 
-<h4 id="headerWorkCast">
-   <span class="headingNumber">2.3.7.1</span>
-   <span class="head">Cast Lists</span>
-</h4>
+
 A cast list is a specialized form of list, conventionally found at the start or end
 of a
 dramatic work, usually listing all the speaking/singing and non-speaking/singing roles
@@ -17,22 +14,16 @@ Attires’) or the name of an actor or actress (‘Old Lady Squeamish. Mrs Rutte
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="castList" atts="" %}
+{% include _specDesc.html key="castItem" atts="" %}
+{% include _specDesc.html key="castGrp" atts="" %}
+
 
 
 Cast lists often function as identifying metadata and for this reason are permitted
 within the description of a work.
 
-Because the format and internal structure of cast lists are unpredictable, a 
-<a class="link_odd_elementSpec" href="/v3/elements/castList">castList</a> may contain any combination of 
+Because the format and internal structure of cast lists are unpredictable, a <a class="link_odd_elementSpec" href="/v3/elements/castList">castList</a> may contain any combination of 
 <a class="link_odd_elementSpec" href="/v3/elements/castItem">castItem</a>
 and 
 <a class="link_odd_elementSpec" href="/v3/elements/castGrp">castGrp</a> elements.
@@ -43,15 +34,10 @@ following elements:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="role" atts="" %}
+{% include _specDesc.html key="roleDesc" atts="" %}
+{% include _specDesc.html key="perfRes" atts="" %}
+
 
 
 In the following example, 
@@ -62,12 +48,10 @@ character and
 <a class="link_odd_elementSpec" href="/v3/elements/perfRes">perfRes</a> element is used to describe the voice range of the
 role.
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample055.xml" valid="true" %}
 
 The vocal qualities and associated roles for Beethoven's opera *Fidelio* may
 be encoded as:
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample056.xml" valid="true" %}
 
@@ -76,11 +60,8 @@ The
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="actor" atts="" %}
+
 
 
 However, this element is unlikely to be useful in the context of a work description.
@@ -99,7 +80,3 @@ may contain any combination of
 <a class="link_odd_elementSpec" href="/v3/elements/roleDesc">roleDesc</a> elements.
 
 
-<!-- TODO:
-<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve" >
-        <!-\- NEED EXAMPLE HERE! -\->
-</egXML>-->

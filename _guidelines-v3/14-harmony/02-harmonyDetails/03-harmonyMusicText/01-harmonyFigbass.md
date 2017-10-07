@@ -1,13 +1,10 @@
 ---
 sectionid: harmonyFigbass
-title: Figured Bass
+title: "Figured Bass"
 ---
 
 
-<h4 id="harmonyFigbass">
-   <span class="headingNumber">14.2.3.1</span>
-   <span class="head">Figured Bass</span>
-</h4>
+
 Figured bass is a specialized form of harmonic indication. In order to support the
 capture of the semantics of figured bass, and not just its visual representation,
 MEI
@@ -15,13 +12,9 @@ provides the following elements:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="fb" atts="" %}
+{% include _specDesc.html key="f" atts="extender" %}
+
 
 
 
@@ -30,12 +23,10 @@ This is probably how an OMR program or other naive encoder might deal with the m
 of
 figured bass:
 
-
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass01.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 41. Figured bass</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample252.xml" valid="true" %}
 
 
@@ -43,7 +34,6 @@ However, this kind of approach fails to recognize that a figured bass is being u
 and
 not some other system of harmonic indications. To capture this knowledge, the preceding
 example can also be marked more explicitly with:
-
 
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample253.xml" valid="true" %}
 
@@ -59,7 +49,6 @@ MUSIC NATURAL SIGN character.
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass02.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 42. Figured bass with accidental</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample254.xml" valid="true" %}
 
 
@@ -79,7 +68,6 @@ in
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass03.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 43. Figured bass with chromatically altered figure</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample255.xml" valid="true" %}
 
 
@@ -88,7 +76,6 @@ in
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass04.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 44. Figured bass with chromatically altered figures</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample256.xml" valid="true" %}
 
 
@@ -105,7 +92,6 @@ the preceding character. The usual convention for slashes; that is,
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass05.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 45. Figured bass with chromatically altered figure</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample257.xml" valid="true" %}
 
 
@@ -123,7 +109,6 @@ example 6 can be represented by the Unicode COMBINING INVERTED BREVE.
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass06.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 46. Figured bass with alternative sign</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample258.xml" valid="false" %}
 
 
@@ -141,7 +126,6 @@ is also consistent with other existing figured bass encoding schemes.
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass07.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 47. Figured bass repetition </figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample259.xml" valid="true" %}
 
 
@@ -157,7 +141,6 @@ the following example the dashes on beat 4 and 4.5 are treated as repetition sig
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass09.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 48. Extenders and repetition</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample260.xml" valid="false" %}
 
 
@@ -167,7 +150,6 @@ For
 example, it is difficult to ascertain what harmony should be sounding on beat 4 and
 its
 after-beat.
-
 
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample261.xml" valid="false" %}
 
@@ -187,6 +169,5 @@ the symbol as it occurs in the encoding source material.
    <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass10.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 49. Figured bass with alternative sign</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/harmony/harmony-sample262.xml" valid="false" %}
 

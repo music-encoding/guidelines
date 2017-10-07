@@ -1,13 +1,10 @@
 ---
 sectionid: corpusCombiningHeaders
-title: Combining Corpus and Text Headers
+title: "Combining Corpus and Text Headers"
 ---
 
 
-<h2 id="corpusCombiningHeaders">
-   <span class="headingNumber">9.2</span>
-   <span class="head">Combining Corpus and Text Headers</span>
-</h2>
+
 An MEI-conformant document may have more than one header only in the case of a TEI
 corpus,
 which must have a header in its own right, as well as the obligatory header for each
@@ -20,15 +17,14 @@ supplements the specification for that text alone. If any element is specified i
 both corpus
 and text headers, the corpus header element is over-ridden for that text alone.
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> for a corpus text is understood to be prefixed by the 
+The <a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> for a corpus text is understood to be prefixed by the 
 <a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> given in the corpus header. All other optional elements of the
 
 <a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> should be omitted from an individual corpus text header
 unless they differ from those specified in the corpus header. All other header elements
 behave
 identically, in the manner documented in chapter 
-<span class="ptr"></span>. This makes it
+<a class="link_ptr" title="The MEI Header" href="/v3/guidelines/header">2 The MEI Header</a>. This makes it
 possible to state information which is common to the whole of the corpus in the corpus
 header,
 while still allowing for individual texts to vary from this common metadata.
@@ -38,7 +34,6 @@ texts,
 the first and last of which share the same encoding description. The second one has
 its own
 encoding description.
-
 
 {% include _plainExample.html example="./v3/examples/corpus/corpus-sample198.xml" valid="true" %}
 

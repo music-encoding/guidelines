@@ -1,13 +1,10 @@
 ---
 sectionid: headerIndependentHeader
-title: Independent Headers
+title: "Independent Headers"
 ---
 
 
-<h2 id="headerIndependentHeader">
-   <span class="headingNumber">2.6</span>
-   <span class="head">Independent Headers</span>
-</h2>
+
 Many libraries, repositories, research sites and related institutions collect bibliographic
 and documentary information about machine readable music documents without necessarily
 collecting the music documents themselves. Such institutions may thus want access

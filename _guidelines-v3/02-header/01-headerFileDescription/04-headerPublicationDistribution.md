@@ -1,24 +1,17 @@
 ---
 sectionid: headerPublicationDistribution
-title: Publication, Distribution, etc.
+title: "Publication, Distribution, etc."
 ---
 
 
-<h3 id="headerPublicationDistribution">
-   <span class="headingNumber">2.1.4</span>
-   <span class="head">Publication, Distribution, etc.</span>
-</h3>
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/pubStmt">pubStmt</a> element is the fourth component of the 
+
+The <a class="link_odd_elementSpec" href="/v3/elements/pubStmt">pubStmt</a> element is the fourth component of the 
 <a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element and is mandatory.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="pubStmt" atts="" %}
+
 
 
 It may contain either a single 
@@ -30,25 +23,15 @@ used to provide details regarding the file's publication and distribution:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="address" atts="" %}
+{% include _specDesc.html key="availability" atts="" %}
+{% include _specDesc.html key="date" atts="" %}
+{% include _specDesc.html key="distributor" atts="" %}
+{% include _specDesc.html key="identifier" atts="" %}
+{% include _specDesc.html key="publisher" atts="" %}
+{% include _specDesc.html key="pubPlace" atts="" %}
+{% include _specDesc.html key="respStmt" atts="" %}
+
 
 
 The publisher is the person or institution by whose authority a given edition of the
@@ -65,24 +48,15 @@ information regarding access to the MEI file.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="accessRestrict" atts="" %}
+{% include _specDesc.html key="distributor" atts="" %}
+{% include _specDesc.html key="price" atts="" %}
+{% include _specDesc.html key="useRestrict" atts="" %}
+{% include _specDesc.html key="sysReq" atts="" %}
 
 
 
 {% include _plainExample.html example="./v3/examples/header/header-sample033.xml" valid="true" %}
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample034.xml" valid="true" %}
 
@@ -94,7 +68,6 @@ Here, as in the description of intellectual responsibility described above, the
 regarding publication and distribution when uniformity is desired regardless of the
 role of
 participants in the publication process:
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample035.xml" valid="true" %}
 

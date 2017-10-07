@@ -1,20 +1,14 @@
 ---
 sectionid: namesdatesStyleNames
-title: Style Names
+title: "Style Names"
 ---
 
 
-<h3 id="namesdatesStyleNames">
-   <span class="headingNumber">17.2.5</span>
-   <span class="head">Style Names</span>
-</h3>
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+
+{% include _specDesc.html key="styleName" atts="" %}
+
 
 
 Music can be divided into different styles, genres, and forms. The term style
@@ -34,24 +28,19 @@ he or she
 groups examples of music according to similarities between them." (Source: "Style",
 Grove
 Music Online, accessed: April 27, 2012) 
-<!--ToDo: add link to sub-chapter-->
 
-The name of a musical style can be marked by the 
-<a class="link_odd_elementSpec" href="/v3/elements/styleName">styleName</a> element,
+The name of a musical style can be marked by the <a class="link_odd_elementSpec" href="/v3/elements/styleName">styleName</a> element,
 for example:
-
 
 {% include _plainExample.html example="./v3/examples/namesDates/namesDates-sample294.xml" valid="true" %}
 
 It may be, e.g., used for recording a style name within a title:
-
 
 {% include _plainExample.html example="./v3/examples/namesDates/namesDates-sample295.xml" valid="true" %}
 
 or to record a style of a certain epoch by using the 
 <a class="link_odd_elementSpec" href="/v3/elements/styleName">styleName</a>
 sub-element:
-
 
 {% include _plainExample.html example="./v3/examples/namesDates/namesDates-sample296.xml" valid="true" %}
 
@@ -61,24 +50,17 @@ In this
 case the following attributes are particularly relevant:
 
 
-<span class="list">
-   
-   <span class="item">**@authority**: records the list from which a controlled value is taken,</span>
-   
-   <span class="item">**@authURI** (authority URI): indicates the web-accessible location of the
-      controlled vocabulary from which the value is taken,
-   </span>
-   
-   <span class="item">**@dbkey** (database key): holds a value which serves as a primary key in an
-      external database.
-   </span>
-   
-</span>
+- **@authority**: records the list from which a controlled value is taken,
+- **@authURI** (authority URI): indicates the web-accessible location of the
+controlled vocabulary from which the value is taken,
+- **@dbkey** (database key): holds a value which serves as a primary key in an
+external database.
+
 
 Musical forms and genres must be distinguished from musical style. Form and genre
 are
 typically indicated using the 
 <a class="link_odd_elementSpec" href="/v3/elements/classification">classification</a> element, described in
 chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Classification" href="/v3/guidelines/header#headerWorkClass">2.3.12 Classification</a>.
 

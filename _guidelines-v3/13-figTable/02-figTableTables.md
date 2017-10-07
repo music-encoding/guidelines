@@ -1,15 +1,11 @@
 ---
 sectionid: figTableTables
-title: Tables
+title: "Tables"
 ---
 
 
-<h2 id="figTableTables">
-   <span class="headingNumber">13.2</span>
-   <span class="head">Tables</span>
-</h2>
-The element 
-<a class="link_odd_elementSpec" href="/v3/elements/table">table</a> contains text displayed in tabular form, i.e., in
+
+The element <a class="link_odd_elementSpec" href="/v3/elements/table">table</a> contains text displayed in tabular form, i.e., in
 rows and columns. A table is the least ‘graphic’ of the elements discussed
 in this chapter. Almost any text structure can be presented as a series of rows and
 columns:

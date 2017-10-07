@@ -1,15 +1,11 @@
 ---
 sectionid: critAppInDefs
-title: Variants in Score Definitions
+title: "Variants in Score Definitions"
 ---
 
 
-<h2 id="critAppInDefs">
-   <span class="headingNumber">10.3</span>
-   <span class="head">Variants in Score Definitions</span>
-</h2>
-In addition to its use for differentiation of the musical content of multiple sources,
 
+In addition to its use for differentiation of the musical content of multiple sources,
 <a class="link_odd_elementSpec" href="/v3/elements/app">app</a> may also be utilized to describe the layout of different scores, even
 when the musical content itself remains the same. An example of this is two sources
 that have
@@ -32,8 +28,6 @@ value.
 
 
 
-<!-- PR: Even though it's technically possble, the following makes me uncomfortable. I think
-      this is good reason to put some effort into the layout module. -->
 When using the first of these two approaches, it is possible to point dynamically
 to the
 correct staff definition for a given source. The following example demonstrates how
@@ -44,7 +38,6 @@ order. No further
 <a class="link_odd_elementSpec" href="/v3/elements/app">app</a> element is necessary within the 
 <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a> to describe the alternative score order of the sources.
 
-
 {% include _plainExample.html example="./v3/examples/critApp/critApp-sample205.xml" valid="true" %}
 
 
@@ -54,21 +47,12 @@ when unique values for **@n** on
 staves.
 
 
-<!-- TODO:
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<!-\- NEED EXAMPLE HERE! -\->
-    </egXML>-->
 
 
-<!-- The following paragraph needs more explanation and an example. -->
 This mechanism may also be used to describe not only differing page orientations,
 formats and
 margins, but also clefs and keys.
 
 
-<!-- TODO:
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<!-\- NEED EXAMPLE HERE! -\->
-    </egXML>-->
 
 

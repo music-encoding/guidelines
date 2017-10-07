@@ -1,13 +1,10 @@
 ---
 sectionid: neumesNotation
-title: Neume Notation
+title: "Neume Notation"
 ---
 
 
-<h2 id="neumesNotation">
-   <span class="headingNumber">6.3</span>
-   <span class="head">Neume Notation</span>
-</h2>
+
  Most neume notation is used to set music to an existing text. The syllable is the
 fundamental unit of structure, with the neumes themselves serving as a means of "sonifying"
 the text. A syllable may be expressed via one or more neumes, with the particular
@@ -28,7 +25,6 @@ joined
 ascending notes. Table 1 shows most of the named neume shapes. Neume groups of more
 than four
 notes are simply called "compound" neumes.
-
 
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/modules/neumes/parrish_neumes.png" class="img-responsive"></img>

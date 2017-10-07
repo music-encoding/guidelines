@@ -7,10 +7,6 @@ sectionid: "facsimiles"
 
 <span class="div">
    
-   <h1 id="facsimiles">
-      <span class="headingNumber">12</span>
-      <span class="head">Facsimiles</span>
-   </h1>
    Most often, MEI is used for the preparation of a digital musical text based on an
    existing
    music document, or with the intention of rendering the encoded notation into a document

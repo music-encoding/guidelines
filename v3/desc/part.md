@@ -1,0 +1,7 @@
+---
+desc: "part"
+type: "elementSpec"
+---
+
+An alternative visual rendition of the score from the point of view of a particular
+performer (or group of performers).

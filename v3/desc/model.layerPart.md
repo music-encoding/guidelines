@@ -1,0 +1,6 @@
+---
+desc: "model.layerPart"
+type: "classSpec"
+---
+
+Groups notated events that may appear at the layer level in all repertoires.

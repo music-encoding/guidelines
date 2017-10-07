@@ -1,26 +1,18 @@
 ---
 sectionid: sharedNumbers
-title: Numbers
+title: "Numbers"
 ---
 
 
-<h4 id="sharedNumbers">
-   <span class="headingNumber">1.3.4.2</span>
-   <span class="head">Numbers</span>
-</h4>
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/num">num</a> element may be used to identify any numeric information in
+
+The <a class="link_odd_elementSpec" href="/v3/elements/num">num</a> element may be used to identify any numeric information in
 a text. The **@unit** may be used to specify the unit of measurement.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="num" atts="" %}
+{% include _specDesc.html key="num" atts="unit" %}
+
 
 
 This element is useful when it is necessary to provide specific information about

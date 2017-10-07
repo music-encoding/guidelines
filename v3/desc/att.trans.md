@@ -1,0 +1,7 @@
+---
+desc: "att.trans"
+type: "classSpec"
+---
+
+Attributes for elements encoding authorial or scribal intervention when transcribing
+manuscript or similar sources.

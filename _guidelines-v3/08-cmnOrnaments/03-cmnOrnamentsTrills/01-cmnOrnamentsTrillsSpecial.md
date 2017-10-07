@@ -1,18 +1,14 @@
 ---
 sectionid: cmnOrnamentsTrillsSpecial
-title: Special Cases
+title: "Special Cases"
 ---
 
 
-<h3 id="cmnOrnamentsTrillsSpecial">
-   <span class="headingNumber">8.3.1</span>
-   <span class="head">Special Cases</span>
-</h3>
+
 
 Symbols and abbreviations for trills have changed and evolved considerably throughout
 history. Strategies to clarify the encoding and interpretation of ornaments have been
-discussed in section 
-<span class="ptr"></span> above. However, in order to aid
+discussed in section <a class="link_ptr" title="Overriding Default Resolutions" href="/v3/guidelines/cmnOrnaments#cmnOrnamentsOverride">8.1.1 Overriding Default Resolutions</a> above. However, in order to aid
 the encoder in making educated choices in the encoding of non-standard trills, this
 section
 shows two examples diverging from modern standard use.
@@ -31,13 +27,11 @@ The encoding of this kind of trill may vary depending on the purpose of the enco
 For
 representation of the source, a single trill is sufficient:
 
-
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample188.xml" valid="true" %}
 
 
 To support analytical and aural rendering applications, however, each trill may be
 explicitly encoded, as the following example demonstrates:
-
 
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample189.xml" valid="true" %}
 
@@ -47,7 +41,6 @@ However, when it is necessary to support multiple outputs, use of the
 <a class="link_odd_elementSpec" href="/v3/elements/orig">orig</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/reg">reg</a> elements can be used to represent the
 original source and a regularization provided by the editor, respectively:
-
 
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample190.xml" valid="true" %}
 
@@ -76,7 +69,6 @@ renditions.
       Bach* (1720)
    </figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample191.xml" valid="true" %}
 
 
@@ -84,7 +76,6 @@ Depending on the purpose of the encoding, it may be more convenient to encode th
 regularized text within the stream of events, along with a corresponding choice with
 regard
 to the existence of the trill marking, as in the following example:
-
 
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample192.xml" valid="true" %}
 

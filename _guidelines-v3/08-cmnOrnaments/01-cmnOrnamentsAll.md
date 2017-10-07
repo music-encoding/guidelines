@@ -1,15 +1,11 @@
 ---
 sectionid: cmnOrnamentsAll
-title: Encoding Common To All Ornaments
+title: "Encoding Common To All Ornaments"
 ---
 
 
-<h2 id="cmnOrnamentsAll">
-   <span class="headingNumber">8.1</span>
-   <span class="head">Encoding Common To All Ornaments</span>
-</h2>
-When encoding CMN, ornaments should be encoded within a 
-<a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>,
+
+When encoding CMN, ornaments should be encoded within a <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>,
 following the 
 <a class="link_odd_elementSpec" href="/v3/elements/staff">staff</a> elements, and connected to events on the staff via
 attributes. The **@startid** attribute is used to refer to the **@xml:id** of the
@@ -20,7 +16,6 @@ staff, the
 The following example demonstrates the encoding of an inverted mordent over a middle
 C:
 
-
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample179.xml" valid="true" %}
 
 Alternatively, the relationship of an ornament to a note can be expressed in terms
@@ -28,7 +23,7 @@ of beats
 with the attribute **@tstamp**. If the ornament involves more than one event on the
 staff, the **@tstamp2** attribute can be used to indicate the ending time stamp, as is
 explained in section 
-<span class="ptr"></span>. These methods may also be utilized
+<a class="link_ptr" title="Timestamps and Durations" href="/v3/guidelines/cmn#cmnTstamp">4.1.5 Timestamps and Durations</a>. These methods may also be utilized
 simultaneously.
 
 
@@ -36,7 +31,6 @@ The following example shows the use of **@tstamp** for an ornament. Assuming tha
 following measure is in 2/2, the ornament (in this case, a mordent) is related to
 the note on
 the second beat.
-
 
 {% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample180.xml" valid="true" %}
 

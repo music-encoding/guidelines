@@ -1,29 +1,21 @@
 ---
 sectionid: analysisMetricalConformance
-title: Metrical Conformance
+title: "Metrical Conformance"
 ---
 
 
-<h2 id="analysisMetricalConformance">
-   <span class="headingNumber">7.3</span>
-   <span class="head">Metrical Conformance</span>
-</h2>
+
 It is often helpful to record whether a given staff, layer, or measure obeys the meter
 established for it. The following attributes are provided for this purpose:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="att.meterconformance" atts="metcon" %}
+{% include _specDesc.html key="att.meterconformance.bar" atts="metcon" %}
 
 
-When used on 
-<a class="link_odd_elementSpec" href="/v3/elements/staff">staff</a> or 
+
+When used on <a class="link_odd_elementSpec" href="/v3/elements/staff">staff</a> or 
 <a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a> elements, the
 **@metcon** attribute can be used to indicate if the duration of the contained events
 is equal to ("c"), less than ("i"), or greater than ("o") that predicted by the time
@@ -46,9 +38,7 @@ on the
 value of **@metcon** on the measure level can usually be computed based on the values of
 its layer and staff sub-elements.
 
-
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample177.xml" valid="true" %}
-
 
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample178.xml" valid="true" %}
 

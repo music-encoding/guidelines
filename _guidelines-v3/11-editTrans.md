@@ -7,10 +7,6 @@ sectionid: "editTrans"
 
 <span class="div">
    
-   <h1 id="editTrans">
-      <span class="headingNumber">11</span>
-      <span class="head">Editorial Markup</span>
-   </h1>
    It is often necessary to render an account of any changes made to a musical text during
    its
    creation (and any subsequent editing) and to accommodate editorial comment necessitated
@@ -26,7 +22,7 @@ sectionid: "editTrans"
    the genesis, later revision and editorial interpretation of a text. Mechanisms for
    describing
    multiple sources are described in chapter 
-   <span class="ptr"></span> of these Guidelines.
+   <a class="link_ptr" title="Critical Apparatus" href="/v3/guidelines/critApp">10 Critical Apparatus</a> of these Guidelines.
    
    The elements described in this chapter may be contained by a wide range of other MEI
    elements
@@ -51,18 +47,13 @@ sectionid: "editTrans"
    
    
    
-   <span class="specList">
-      
-      <span class="specDesc"></span>
-      
-      <span class="specDesc"></span>
-      
-   </span>
+   {% include _specDesc.html key="att.edit" atts="cert" %}
+   {% include _specDesc.html key="att.responsibility" atts="resp" %}
    
    
    
    
-   <!-- PR: OK, so what are the 2 ways?!  You say there are 2, but only describe 1. :) -->
+   
    Many of the elements discussed here can be used in two ways. Their primary purpose
    is to
    indicate that their content represents an editorial intervention (or, in some cases,
@@ -75,11 +66,8 @@ sectionid: "editTrans"
    
    
    
-   <span class="specList">
-      
-      <span class="specDesc"></span>
-      
-   </span>
+   {% include _specDesc.html key="choice" atts="" %}
+   
    
    
    Wrapping elements this way enables the encoder to represent, for example, a text in
@@ -106,17 +94,11 @@ sectionid: "editTrans"
    chapter:
    
    
-   <span class="list">
-      
-      <span class="item">indication or correction of apparent errors;</span>
-      
-      <span class="item">indication of regularization of variant, irregular, non-standard, or eccentric forms;
-         and
-      </span>
-      
-      <span class="item">editorial additions, suppressions, and omissions.</span>
-      
-   </span>
+   - indication or correction of apparent errors;
+   - indication of regularization of variant, irregular, non-standard, or eccentric forms;
+   and
+   - editorial additions, suppressions, and omissions.
+   
    
    
    

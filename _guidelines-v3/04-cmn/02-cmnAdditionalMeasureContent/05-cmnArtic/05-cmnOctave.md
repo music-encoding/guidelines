@@ -1,17 +1,13 @@
 ---
 sectionid: cmnOctave
-title: Octave Shift
+title: "Octave Shift"
 ---
 
 
-<h4 id="cmnOctave">
-   <span class="headingNumber">4.2.5.5</span>
-   <span class="head">Octave Shift</span>
-</h4>
+
 An indication that a passage should be performed one or more octaves above or below
 its
-written pitch is represented by the 
-<a class="link_odd_elementSpec" href="/v3/elements/octave">octave</a> element.
+written pitch is represented by the <a class="link_odd_elementSpec" href="/v3/elements/octave">octave</a> element.
 
 
 <figure class="figure">

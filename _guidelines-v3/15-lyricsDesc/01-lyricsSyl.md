@@ -1,16 +1,12 @@
 ---
 sectionid: lyricsSyl
-title: Lyric Syllables
+title: "Lyric Syllables"
 ---
 
 
-<h2 id="lyricsSyl">
-   <span class="headingNumber">15.1</span>
-   <span class="head">Lyric Syllables</span>
-</h2>
+
 By ‘lyric syllable’, these guidelines mean a word or portion of a word
-that is to be performed vocally. Each syllable is encoded with the 
-<a class="link_odd_elementSpec" href="/v3/elements/syl">syl</a>
+that is to be performed vocally. Each syllable is encoded with the <a class="link_odd_elementSpec" href="/v3/elements/syl">syl</a>
 element, with which it is also possible to specify the position of the syllable in
 a word, the
 type of connectors between syllables, alignment adjustments, and the formatting for
@@ -19,13 +15,9 @@ syllable. These are the key components:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="syl" atts="" %}
+{% include _specDesc.html key="syl" atts="worpos con halign" %}
+
 
 
 
@@ -33,27 +25,32 @@ The attribute **@wordpos** is used to specify the position of the marked-up lyri
 syllable in a word. It allows the following values:
 
 
-<span class="list">
-   
-   <span class="label">i</span>
-   
-   <span class="item"> - Indicates that the current syllable's position is *i*nitial; that is, at
-      the beginning of a word;
-   </span>
-   
-   <span class="label">m</span>
-   
-   <span class="item"> - Indicates that the current syllable is in the *m*iddle of a word;</span>
-   
-   <span class="label">t</span>
-   
-   <span class="item"> - Indicates that the syllable's position is *t*erminal; that is, at the end
-      of a word.
-   </span>
-   
-   <!-- TODO: Need a value to indicate the syllable is the entire word? -->
-   
-</span>
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>name</th>
+         <th>genre</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>i</td>
+         <td> - Indicates that the current syllable's position is *i*nitial; that is, at
+            the beginning of a word;
+         </td>
+      </tr>
+      <tr>
+         <td>m</td>
+         <td> - Indicates that the current syllable is in the *m*iddle of a word;</td>
+      </tr>
+      <tr>
+         <td>t</td>
+         <td> - Indicates that the syllable's position is *t*erminal; that is, at the end
+            of a word.
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 When a syllable is at the beginning or in the middle of a word (in which case it will
 have
@@ -64,29 +61,36 @@ syllable. This is expressed with the **@con** attribute, which takes the followi
 values:
 
 
-<span class="list">
-   
-   <span class="label">s</span>
-   
-   <span class="item"> - A *s*pace is used as a connector between syllables;</span>
-   
-   <span class="label">d</span>
-   
-   <span class="item"> - A *d*ash is used as a connector between syllables;</span>
-   
-   <span class="label">u</span>
-   
-   <span class="item"> - An *u*nderscore sign (indicating prologation of the syllable) is used as a
-      connector between syllables;
-   </span>
-   
-   <span class="label">t</span>
-   
-   <span class="item"> - A *t*ilde is used to indicate elision with the following syllable. This is
-      typically rendered as a small curved line between the syllables.
-   </span>
-   
-</span>
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>name</th>
+         <th>genre</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>s</td>
+         <td> - A *s*pace is used as a connector between syllables;</td>
+      </tr>
+      <tr>
+         <td>d</td>
+         <td> - A *d*ash is used as a connector between syllables;</td>
+      </tr>
+      <tr>
+         <td>u</td>
+         <td> - An *u*nderscore sign (indicating prologation of the syllable) is used as a
+            connector between syllables;
+         </td>
+      </tr>
+      <tr>
+         <td>t</td>
+         <td> - A *t*ilde is used to indicate elision with the following syllable. This is
+            typically rendered as a small curved line between the syllables.
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Occasionally, a word or a final syllable needs to be extended across multiple notes.
 In this
@@ -101,5 +105,5 @@ The use of
 notation systems, such as mensural notation. Other uses specific to certain types
 of notation
 and repertoires are addressed in other chapters. See for example 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Neume Notation" href="/v3/guidelines/neumes">6 Neume Notation</a>.
 

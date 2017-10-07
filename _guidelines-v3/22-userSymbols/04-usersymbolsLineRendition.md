@@ -1,27 +1,18 @@
 ---
 sectionid: usersymbolsLineRendition
-title: Line Rendition
+title: "Line Rendition"
 ---
 
 
-<h2 id="usersymbolsLineRendition">
-   <span class="headingNumber">22.4</span>
-   <span class="head">Line Rendition</span>
-</h2>
+
 The **@form** attribute of lines may take the following values:
 
 
-<span class="list">
-   
-   <span class="item">dashed</span>
-   
-   <span class="item">dotted</span>
-   
-   <span class="item">solid</span>
-   
-   <span class="item">wavy</span>
-   
-</span>
+- dashed
+- dotted
+- solid
+- wavy
+
 These attribute values are only qualitative. Actual dash length and dot and dash spacing
 are
 implementation dependent.
@@ -29,15 +20,10 @@ implementation dependent.
 The **@width** attribute may take the following values:
 
 
-<span class="list">
-   
-   <span class="item">narrow</span>
-   
-   <span class="item">medium</span>
-   
-   <span class="item">wide</span>
-   
-</span>
+- narrow
+- medium
+- wide
+
 These values are also qualitative, however, they are also relative. That is, 'narrow'
 is the
 default value, 'medium' is twice as wide as 'narrow', and 'wide' is twice as wide

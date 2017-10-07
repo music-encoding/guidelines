@@ -1,15 +1,11 @@
 ---
 sectionid: mensuralData
-title: Music Data Organization
+title: "Music Data Organization"
 ---
 
 
-<h2 id="mensuralData">
-   <span class="headingNumber">5.5</span>
-   <span class="head">Music Data Organization</span>
-</h2>
-The data organization based on 
-<a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a> elements that usually prevails
+
+The data organization based on <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a> elements that usually prevails
 in MEI is not appropriate for mensural notation because most music until 1600 was
 written in a
 non-measured manner. Even though it is not defined by the mensural module, a more
@@ -24,7 +20,6 @@ the
 <a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a> elements remains unchanged.
 
 
-
 {% include _plainExample.html example="./v3/examples/mensural/mensural-sample158.xml" valid="true" %}
 
 
@@ -37,5 +32,4 @@ when
 measures are not coincident in all the staves of a score.
 
 
-<!-- TODO: an example.  Mozart perhaps? -->
 

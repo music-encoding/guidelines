@@ -1,28 +1,21 @@
 ---
 sectionid: sharedOrnaments
-title: Ornaments
+title: "Ornaments"
 ---
 
 
-<h4 id="sharedOrnaments">
-   <span class="headingNumber">1.2.5.5</span>
-   <span class="head">Ornaments</span>
-</h4>
+
 Ornaments are formulae of embellishment that can be realized by adding supplementary
 notes to one or more notes of the melody.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="ornam" atts="" %}
+
 
 
 MEI provides a generic element for encoding an ornament symbol that is not a mordent,
-turn, or trill. For those common CMN ornaments, please refer to 
-<span class="ptr"></span>.
+turn, or trill. For those common CMN ornaments, please refer to <a class="link_ptr" title="Common Music Notation Ornaments" href="/v3/guidelines/cmnOrnaments">8 Common Music Notation Ornaments</a>.
 
 Ornaments can be represented as textual strings (e.g. with a Unicode symbol) or with
 a

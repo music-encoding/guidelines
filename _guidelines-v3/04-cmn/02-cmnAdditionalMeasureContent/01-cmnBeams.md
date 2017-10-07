@@ -1,34 +1,25 @@
 ---
 sectionid: cmnBeams
-title: Beams
+title: "Beams"
 ---
 
 
-<h3 id="cmnBeams">
-   <span class="headingNumber">4.2.1</span>
-   <span class="head">Beams</span>
-</h3>
+
 A very common feature of music from the CMN repertoire is the beaming of eighth or
 shorter
 notes. MEI provides two elements for the explicit encoding of features joined by beams.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="beam" atts="" %}
+{% include _specDesc.html key="beamSpan" atts="" %}
 
 
 
-Use of the 
-<a class="link_odd_elementSpec" href="/v3/elements/beam">beam</a> element is straightforward. The beamed notes, rests,
+
+Use of the <a class="link_odd_elementSpec" href="/v3/elements/beam">beam</a> element is straightforward. The beamed notes, rests,
 or chords are simply enclosed by the 
 <a class="link_odd_elementSpec" href="/v3/elements/beam">beam</a> element:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample104.xml" valid="true" %}
 
@@ -38,7 +29,6 @@ Whereas in music notation every note value shorter than an eighth adds another b
 element is used, no matter the durations of the contained notes. The visual rendition
 of a
 set of beamed notes is presumed to be handled by rendering processes.
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample105.xml" valid="true" %}
 
@@ -57,7 +47,6 @@ example:
    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 6. Primary and secondary beams</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample106.xml" valid="true" %}
 
 
@@ -69,32 +58,38 @@ The encoding of such a beam is accomplished using the **@rend** attribute of the
 beam, which allows the following values:
 
 
-<span class="list">
-   
-   <span class="label">acc</span>
-   
-   <span class="item"> - The secondary beams start in their usual position and gradually converge until
-      they
-      meet with the primary beam on the last note (or, the first eighth note under the beam).
-      
-   </span>
-   
-   <span class="label">rit</span>
-   
-   <span class="item"> - The secondary beams gradually diverge until they reach their regular distance.
-      
-   </span>
-   
-   <span class="label">mixed</span>
-   
-   <span class="item"> - The secondary beams diverge and converge arbitrarily.</span>
-   
-   <span class="label">norm</span>
-   
-   <span class="item"> - The beam is rendered as usual (default). </span>
-   
-</span>
-
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>name</th>
+         <th>genre</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>acc</td>
+         <td> - The secondary beams start in their usual position and gradually converge until
+            they
+            meet with the primary beam on the last note (or, the first eighth note under the beam).
+            
+         </td>
+      </tr>
+      <tr>
+         <td>rit</td>
+         <td> - The secondary beams gradually diverge until they reach their regular distance.
+            
+         </td>
+      </tr>
+      <tr>
+         <td>mixed</td>
+         <td> - The secondary beams diverge and converge arbitrarily.</td>
+      </tr>
+      <tr>
+         <td>norm</td>
+         <td> - The beam is rendered as usual (default). </td>
+      </tr>
+   </tbody>
+</table>
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample107.xml" valid="true" %}
 
 The duration of notes, rests, or chords under a beam which carries the **@rend**
@@ -113,14 +108,12 @@ this may be encoded thusly:
    <figcaption class="figure-caption">Figure 7. Accelerando beams</figcaption>
 </figure>
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample108.xml" valid="true" %}
 
 
 
 
 
-<!-- TODO: Cross-staff beaming using @beam.with -->
 
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/beam-c-20100510.png" class="img-responsive"></img>
@@ -137,7 +130,6 @@ notes under the beam carry a **@staff** attribute value that contradicts the
 their ancestor 
 <a class="link_odd_elementSpec" href="/v3/elements/staff">staff</a>.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample109.xml" valid="true" %}
 
 Alternatively, a staff-by-staff methodology may be employed in which the notes are
@@ -153,7 +145,6 @@ the
 time used by the first two notes of the beam must be represented on staff number 1
 and the
 time taken by the last two notes of the beam must be filled on staff number 2.
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample110.xml" valid="true" %}
 
@@ -174,7 +165,6 @@ of the beam using **@startid** and **@endid** attributes. This configuration
 allows beams to cross measure boundaries. The following example demonstrates a typical
 example of such hierarchy-crossing beams:
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample111.xml" valid="true" %}
 
 
@@ -189,22 +179,29 @@ on
 <a class="link_odd_elementSpec" href="/v3/elements/layerDef">layerDef</a>:
 
 
-<span class="list">
-   
-   <span class="label">**@beam.group**</span>
-   
-   <span class="item"> - Provides an example of how automated beaming (including secondary beams) is to
-      be
-      performed.
-   </span>
-   
-   <span class="label">**@beam.rests**</span>
-   
-   <span class="item"> - Indicates whether automatically-drawn beams should include rests shorter than a
-      quarter note duration.
-   </span>
-   
-</span>
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>name</th>
+         <th>genre</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>**@beam.group**</td>
+         <td> - Provides an example of how automated beaming (including secondary beams) is to
+            be
+            performed.
+         </td>
+      </tr>
+      <tr>
+         <td>**@beam.rests**</td>
+         <td> - Indicates whether automatically-drawn beams should include rests shorter than a
+            quarter note duration.
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The **@beam.group** attribute can be used to set a default beaming pattern to be used
 when no beaming is indicated at the layer level. It must contain a comma-separated

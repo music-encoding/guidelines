@@ -1,19 +1,11 @@
 ---
 sectionid: cmnTrem
-title: Tremolandi
+title: "Tremolandi"
 ---
 
 
-<h4 id="cmnTrem">
-   <span class="headingNumber">4.2.5.3</span>
-   <span class="head">Tremolandi</span>
-</h4>
 
-<!-- TODO: In german terminology, a tremolo often indicates an unmeasured series of notes (play as
-          fast as you can). What we call "Faulenzer" (lazy one) is measured, though. Basically, the rendition of both
-          is the same, but we distinguish between measured and unmeasured, not between identical and differing
-          pitches. Is this something we should discuss on MEI-L?
-        -->
+
 CMN has two slightly different concepts which are both called tremolo. The
 first is a rapid repetition of a single pitch or chord, whereas the second is a rapid
 alternation between two different notes or chords. In addition, either species of
@@ -24,8 +16,7 @@ as
 notes with distinct rhythmic values. On the other hand, in an unmeasured tremolo no
 specific number of alternations is intended.
 
-For the repetition of a single note or chord, MEI offers the 
-<a class="link_odd_elementSpec" href="/v3/elements/bTrem">bTrem</a>
+For the repetition of a single note or chord, MEI offers the <a class="link_odd_elementSpec" href="/v3/elements/bTrem">bTrem</a>
 (bowed tremolo) element, which is a member of the 
 <a class="link_odd" href="/v3/model-classes/model.eventLike">model.eventLike</a> class, meaning it is encoded following the normal course of
 musical events within a 
@@ -38,7 +29,6 @@ musical events within a
    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 11. Bowed tremolandi</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample138.xml" valid="true" %}
 
 
@@ -52,7 +42,6 @@ on the note may disagree with the number of slashes that should be present accor
 to
 the **@measperf** attribute, especially in music manuscripts.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample139.xml" valid="true" %}
 
 
@@ -61,12 +50,10 @@ The
 of repetitions of a single note or chord. This kind of markup may be the result of
 an
 optical music recognition process in which complete semantics cannot be determined
-
-<span class="foreign">a priori</span>. When used this way, the **@num** attribute on 
+*a priori*. When used this way, the **@num** attribute on 
 <a class="link_odd_elementSpec" href="/v3/elements/bTrem">bTrem</a> can record a number to be rendered along with the pseudo-tuplet.
 In spite of this capability, the 
 <a class="link_odd_elementSpec" href="/v3/elements/tuplet">tuplet</a> element is preferred.
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample140.xml" valid="true" %}
 
@@ -85,8 +72,6 @@ indicates the exact note values in an aural rendition of a measured tremolo, i.e
 value indicated by the **@measperf** attribute, especially in manuscript
 sources.
 
-
-<!-- Naive encoder may capture as a beam! -->
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample141.xml" valid="true" %}
 

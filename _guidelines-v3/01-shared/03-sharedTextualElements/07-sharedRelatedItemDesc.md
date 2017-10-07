@@ -1,23 +1,18 @@
 ---
 sectionid: sharedRelatedItemDesc
-title: Related Items
+title: "Related Items"
 ---
 
 
-<h3 id="sharedRelatedItemDesc">
-   <span class="headingNumber">1.3.7</span>
-   <span class="head">Related Items</span>
-</h3>
+
 In some situations it is necessary to provide references from one bibliographic item
 to
-another. For these situations, MEI offers the 
-<a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> element. A
+another. For these situations, MEI offers the <a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> element. A
 
 <a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> may be used inside of 
 <a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a>, and
 may either point to a different entity using its **@target** attribute, or may hold
 the related item as child. 
-
 
 {% include _plainExample.html example="./v3/examples/shared/shared-sample013.xml" valid="true" %}
 
@@ -33,11 +28,8 @@ provides information about the ‘container’ where the outer
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="relatedItem" atts="rel" %}
+
 
 
  In these relations, the subject is always the relatedItem, and the object is always
@@ -52,6 +44,6 @@ Following MODS, both values of "preceding" and "succeeding" indicate a temporal 
 
  It is important not to confuse 
 <a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> with the concepts of 
-<span class="ref">FRBR</span>; see 
-<span class="ptr"></span>. 
+<a class="link_ref" title="Functional Requirements for Bibliographic Records (FRBR)" href="/v3/guidelines/FRBR">FRBR</a>; see 
+<a class="link_ptr" title="RelatedItem vs. FRBR" href="/v3/guidelines/header#headerRelatedItemVsFRBR">2.7 RelatedItem vs. FRBR</a>. 
 

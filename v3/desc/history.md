@@ -1,0 +1,9 @@
+---
+desc: "history"
+type: "elementSpec"
+---
+
+Provides a container for information about the history of a resource. To facilitate
+efficient data interchange, basic information about the circumstances surrounding
+the
+creation of bibliographic resources should be recorded within the creation element.

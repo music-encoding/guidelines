@@ -1,26 +1,19 @@
 ---
 sectionid: corpusModuleOverview
-title: Corpus Module Overview
+title: "Corpus Module Overview"
 ---
 
 
-<h2 id="corpusModuleOverview">
-   <span class="headingNumber">9.1</span>
-   <span class="head">Corpus Module Overview</span>
-</h2>
+
 The meiCorpus module defines a single element:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="meiCorpus" atts="" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/meiCorpus">meiCorpus</a> element is intended for the encoding of corpora, though
+
+The <a class="link_odd_elementSpec" href="/v3/elements/meiCorpus">meiCorpus</a> element is intended for the encoding of corpora, though
 it may also be useful in encoding any collection of disparate materials. The individual
 samples in the corpus are encoded as separate 
 <a class="link_odd_elementSpec" href="/v3/elements/mei">mei</a> elements, and the
@@ -35,7 +28,6 @@ corpus-level
 encoding practices common to multiple samples may be described. The overall structure
 of an
 MEI-conformant corpus is thus:
-
 
 {% include _plainExample.html example="./v3/examples/corpus/corpus-sample197.xml" valid="true" %}
 
@@ -64,14 +56,14 @@ If it is essential to reflect the organization of a corpus into sub-components, 
 the
 members of the corpus should be encoded as composite texts instead, using the 
 <a class="link_odd_elementSpec" href="/v3/elements/group">group</a> element described section 
-<span class="ptr"></span>. The mechanisms
+<a class="link_ptr" title="Music Element" href="/v3/guidelines/shared#sharedMusicElement">1.1.2 Music Element</a>. The mechanisms
 for corpus characterization described in this chapter, however, are designed to reduce
 the
 need to do this. Useful groupings of components may easily be expressed using the
 classification and identification elements described in section 
-<span class="ptr"></span>, and those for associating declarations with corpus components described in section
+<a class="link_ptr" title="Classification" href="/v3/guidelines/header#headerWorkClass">2.3.12 Classification</a>, and those for associating declarations with corpus components described in section
 
-<span class="ptr"></span>. These mechanisms also allow several different
+<a class="link_ptr" title="Associating Metadata and Data" href="/v3/guidelines/header#headerAssociatingMetadataAndData">2.1.7.1 Associating Metadata and Data</a>. These mechanisms also allow several different
 methods of text grouping to co-exist, each to be used as needed at different times.
 This helps
 minimize the danger of cross-classification and mis-classification of samples, and
@@ -86,8 +78,6 @@ using the
 same module, then no problem arises. If however they require different modules, then
 the
 various modules must all be included in the schema. 
-<!--This process is described in more detail in chapter <ptr target="#"/>.-->
 
-<!-- TODO: Add pointer to chapter on customization -->
 
 

@@ -1,0 +1,7 @@
+---
+desc: "rend"
+type: "elementSpec"
+---
+
+(render) – A formatting element indicating special visual rendering, e.g., bold or
+italicized, of a text word or phrase.

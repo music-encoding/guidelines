@@ -7,15 +7,11 @@ sectionid: "namesDates"
 
 <span class="div">
    
-   <h1 id="namesDates">
-      <span class="headingNumber">17</span>
-      <span class="head">Names and Dates</span>
-   </h1>
    This chapter describes the MEI module used for the encoding of names (names of persons
    or
    corporations/organizations) or descriptive phrases for styles, periods or geographical
    indications. In section 
-   <span class="ptr"></span> it was noted that the elements
+   <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/v3/guidelines/shared#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the elements
    provided in the core module allow an encoder to specify that a given text segment
    is a proper
    noun. The elements provided by the present module allow the encoder to supply a detailed
@@ -48,35 +44,5 @@ sectionid: "namesDates"
    
    
    
-   <!--<div type="div2" xml:id="namesdatesOverview">
-    <head>Overview of the NamesDates module</head>
-    <div type="div3" xml:id="namesdatesElements">
-      <p>The namesDates module provides the following elements:</p>
-      <p>
-        <specList>
-          <specDesc key="corpName"/>
-          <specDesc key="geogName"/>
-          <specDesc key="persName"/>
-          <specDesc key="periodName"/>
-          <specDesc key="styleName"/>
-        </specList>
-      </p>
-    </div>
-    <div type="div3" xml:id="namesdatesAttributeClasses">
-      <head>Attribute Classes</head>
-      <p>No attribute classes are defined in this module.</p>
-    </div>
-    <div type="div3" xml:id="namesdatesModelClasses">
-      <head>Model Classes</head>
-      <p>
-        <specList>
-          <specDesc key="model.nameLike.agent"/>
-          <specDesc key="model.nameLike.geogName"/>
-          <specDesc key="model.nameLike.place"/>
-          <specDesc key="model.nameLike.label"/>
-        </specList>
-      </p>
-    </div>
-  </div>-->
    
 </span>

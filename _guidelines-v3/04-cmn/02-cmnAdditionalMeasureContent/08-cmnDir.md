@@ -1,27 +1,23 @@
 ---
 sectionid: cmnDir
-title: Directions and Rehearsal marks
+title: "Directions and Rehearsal marks"
 ---
 
 
-<h3 id="cmnDir">
-   <span class="headingNumber">4.2.8</span>
-   <span class="head">Directions and Rehearsal marks</span>
-</h3>
+
 In CMN scores, there is often a large number of natural language instructions. Some
 of them
 concern the loudness and the speed of the performance, in which case MEI offers the
 elements
-
 <a class="link_odd_elementSpec" href="/v3/elements/dynam">dynam</a> (described at 
-<span class="ptr"></span>) and 
+<a class="link_ptr" title="Dynamics in CMN" href="/v3/guidelines/cmn#cmnDynam">4.2.3 Dynamics in CMN</a>) and 
 <a class="link_odd_elementSpec" href="/v3/elements/tempo">tempo</a>. In other cases, however, they provide other instructions for the performer.
 Instead of providing separate elements for all possible types of such directions,
 MEI offers
 the generic 
 <a class="link_odd_elementSpec" href="/v3/elements/dir">dir</a> element. Although this element is not CMN specific (it
 is defined in 
-<span class="ptr"></span>), it is especially important in this repertoire.
+<a class="link_ptr" title="Shared Elements, Models, and Attributes" href="/v3/guidelines/shared">1 Shared Elements, Models, and Attributes</a>), it is especially important in this repertoire.
 
 A tempo or character indication is often provided above the topmost staff of the first
 measure of a score, movement, or section. This indication, such as "Allegro moderato"
@@ -46,7 +42,6 @@ using the
 **@layer** and **@tstamp** attributes are used to ensure correct semantic
 positioning, and **@place** indicates a visual position with respect to the staff.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample149.xml" valid="true" %}
 
 
@@ -61,7 +56,7 @@ element, which holds the textual content of the rehearsal mark. The visual rendi
 of the
 rehearsal mark, including the surrounding shape, may be captured using the 
 <a class="link_odd_elementSpec" href="/v3/elements/rend">rend</a> element described in chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Text Rendition" href="/v3/guidelines/shared#sharedTextRendition">1.3.2 Text Rendition</a>.
 
 The following detail from an edition of Hector Berlioz' *Symphonie
 Fantastique* shows a typical example:
@@ -71,7 +66,6 @@ Fantastique* shows a typical example:
    <img src="../../../../guidelines/3.0.0/Images/modules/cmn/reh_berlioz.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample150.xml" valid="true" %}
 
 
@@ -79,7 +73,6 @@ The following example demonstrates how rehearsal marks often apply to more than 
 staff.
 In this instance, the rehearsal mark is placed above staff 1 and below staves 7 and
 11.
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample151.xml" valid="true" %}
 

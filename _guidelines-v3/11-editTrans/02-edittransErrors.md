@@ -1,13 +1,10 @@
 ---
 sectionid: edittransErrors
-title: Apparent Errors
+title: "Apparent Errors"
 ---
 
 
-<h2 id="edittransErrors">
-   <span class="headingNumber">11.2</span>
-   <span class="head">Apparent Errors</span>
-</h2>
+
 When the source material to be encoded is manifestly faulty, an encoder or transcriber
 may
 elect simply to correct it without comment, although for scholarly purposes it will
@@ -20,13 +17,9 @@ way as make it easy for software to present either the original or the correctio
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="sic" atts="" %}
+{% include _specDesc.html key="corr" atts="" %}
+
 
 
 The following examples show alternative treatment of the same material. The text to
@@ -37,22 +30,18 @@ half note.
 
 An encoder may choose to silently correct the engraver's error:
 
-
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample212.xml" valid="true" %}
 
 
 or the correction may be made explicit:
-
 
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample213.xml" valid="true" %}
 
 
 Alternatively, the encoder may simply record the typographic error without correcting
 it,
-either without comment or with a 
-<a class="link_odd_elementSpec" href="/v3/elements/sic">sic</a> element to indicate the error is
+either without comment or with a <a class="link_odd_elementSpec" href="/v3/elements/sic">sic</a> element to indicate the error is
 not a transcription error in the encoding:
-
 
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample214.xml" valid="true" %}
 
@@ -67,7 +56,6 @@ used, wrapped in a
 <a class="link_odd_elementSpec" href="/v3/elements/sic">sic</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/corr">corr</a> elements is not significant:
 
-
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample215.xml" valid="true" %}
 
 
@@ -75,14 +63,13 @@ An indication of the person or agency responsible for the emendation can be prov
 as
 follows:
 
-
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample216.xml" valid="false" %}
 
 
 Here the **@resp** attribute has been used to indicate responsibility for the
 correction. Its value (*#editTrans.JK*) is an example of the pointer
 values discussed in section 
-<span class="ptr"></span>. In this case, the **@resp**
+<a class="link_ptr" title="Pointers and References" href="/v3/guidelines/ptrRef">19 Pointers and References</a>. In this case, the **@resp**
 attribute points to a 
 <a class="link_odd_elementSpec" href="/v3/elements/name">name</a> element within the metadata header, but any
 element might be indicated in this way, if the correction has been taken from some
@@ -94,7 +81,6 @@ source. The **@resp** attribute is available for all elements which are members 
 indicate the degree of editorial confidence in a particular correction, as in the
 following
 example:
-
 
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample217.xml" valid="true" %}
 
@@ -111,7 +97,7 @@ additions and deletions, the elements
 should be used. For additional information on the use of 
 <a class="link_odd_elementSpec" href="/v3/elements/add">add</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/del">del</a>, see section 
-<span class="ptr"></span> below. Where the
+<a class="link_ptr" title="Additions and Deletions" href="/v3/guidelines/editTrans#edittransAddDel">11.4.2 Additions and Deletions</a> below. Where the
 correction takes the form of an addition of material not present in the original because
 of
 physical damage or illegibility, the 

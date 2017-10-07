@@ -1,25 +1,17 @@
 ---
 sectionid: lyricsAfterEvents
-title: Vocally Performed Text Encoded Separately
+title: "Vocally Performed Text Encoded Separately"
 ---
 
 
-<h2 id="lyricsAfterEvents">
-   <span class="headingNumber">15.3</span>
-   <span class="head">Vocally Performed Text Encoded Separately</span>
-</h2>
-Vocally performed text may also be encoded separately from the notes with the 
-<a class="link_odd_elementSpec" href="/v3/elements/lyrics">lyrics</a> element. These are the main components:
+
+Vocally performed text may also be encoded separately from the notes with the <a class="link_odd_elementSpec" href="/v3/elements/lyrics">lyrics</a> element. These are the main components:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="lyrics" atts="" %}
+{% include _specDesc.html key="lyrics" atts="staff layer" %}
+
 
 
 Since this element is separated from the encoding of the notes, it must be associated
@@ -43,7 +35,6 @@ this encoding method:
    <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_lyric.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 52. Weber, Der Freischütz</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
 
 
@@ -53,7 +44,6 @@ set to 't' and the following syllable are presumed to be associated with a singl
 note. In the
 following example, the first two syllables occur on the first note and the third syllable
 occurs on the second note.
-
 
 {% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample268.xml" valid="false" %}
 

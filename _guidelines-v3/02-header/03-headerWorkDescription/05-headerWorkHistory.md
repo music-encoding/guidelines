@@ -1,32 +1,22 @@
 ---
 sectionid: headerWorkHistory
-title: Work History
+title: "Work History"
 ---
 
 
-<h3 id="headerWorkHistory">
-   <span class="headingNumber">2.3.5</span>
-   <span class="head">Work History</span>
-</h3>
+
 The following elements are provided to capture the history of a musical work:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="creation" atts="" %}
+{% include _specDesc.html key="history" atts="" %}
+{% include _specDesc.html key="eventList" atts="" %}
+{% include _specDesc.html key="event" atts="" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/creation">creation</a> element is intended to contain a brief,
+
+The <a class="link_odd_elementSpec" href="/v3/elements/creation">creation</a> element is intended to contain a brief,
 machine-processable statement of the circumstances of the work's creation. Its content
 is
 limited to text and the 

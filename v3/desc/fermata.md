@@ -1,0 +1,10 @@
+---
+desc: "fermata"
+type: "elementSpec"
+---
+
+An indication placed over a note or rest to indicate that it should be held longer
+than
+its written value. May also occur over a bar line to indicate the end of a phrase
+or
+section. Sometimes called a 'hold' or 'pause'.

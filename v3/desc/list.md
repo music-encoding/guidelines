@@ -1,0 +1,7 @@
+---
+desc: "list"
+type: "elementSpec"
+---
+
+A formatting element that contains a series of items separated from one another and
+arranged in a linear, often vertical, sequence.

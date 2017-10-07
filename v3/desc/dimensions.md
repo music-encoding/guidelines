@@ -1,0 +1,7 @@
+---
+desc: "dimensions"
+type: "elementSpec"
+---
+
+Information about the physical size of a bibliographic source; usually includes
+numerical data.

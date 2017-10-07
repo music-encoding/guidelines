@@ -1,22 +1,17 @@
 ---
 sectionid: cmnArpegGliss
-title: Arpeggio and Glissando
+title: "Arpeggio and Glissando"
 ---
 
 
-<h4 id="cmnArpegGliss">
-   <span class="headingNumber">4.2.5.1</span>
-   <span class="head">Arpeggio and Glissando</span>
-</h4>
+
 In CMN, the notes of a chord are sometimes performed successively rather than
 simultaneously. This behavior, called arpeggiation, is normally indicated
-using a wavy line preceding the chord. MEI offers the 
-<a class="link_odd_elementSpec" href="/v3/elements/arpeg">arpeg</a> element
+using a wavy line preceding the chord. MEI offers the <a class="link_odd_elementSpec" href="/v3/elements/arpeg">arpeg</a> element
 to describe arpeggios. This element is a member of the 
 <a class="link_odd" href="/v3/model-classes/model.controleventLike">model.controleventLike</a> class and, like other members of this class, uses the
 **@staff**, **@layer** and **@tstamp** or the **@startid** and
 **@endid** attributes to connect it to the affected chord.
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample136.xml" valid="true" %}
 
@@ -48,7 +43,6 @@ its direction to distinguish it from the upward arpeggio; therefore, the presenc
 of the
 arrowhead can be implied.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample137.xml" valid="false" %}
 
 
@@ -62,10 +56,6 @@ the usual method of performing chords and deviation from the norm must be explic
 indicated.
 
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-          <!-\- NEED EXAMPLE HERE! -\->
-        </egXML>-->
 
 For arpeggios that involve chords spanning multiple staves as a continuous arpeggio
 (instead of two separate arpeggios), the **@plist** attribute may be used to point
@@ -73,11 +63,6 @@ to all affected
 <a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a> elements' **@xml:id** attributes.
 
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-          <!-\- NEED EXAMPLE HERE! -\->
-          <!-\- TODO: Example from Rachmaninoff c#min sonata -\->
-        </egXML>-->
 
 Whereas an arpeggio ‘staggers’ the onset times of the notes of a
 chord, a glissando denotes a situation where the pitch

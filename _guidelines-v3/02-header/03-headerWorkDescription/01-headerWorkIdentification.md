@@ -1,30 +1,22 @@
 ---
 sectionid: headerWorkIdentification
-title: Work Identification
+title: "Work Identification"
 ---
 
 
-<h3 id="headerWorkIdentification">
-   <span class="headingNumber">2.3.1</span>
-   <span class="head">Work Identification</span>
-</h3>
+
 The following elements provide minimal identifying information for the intellectual
 work:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="identifier" atts="" %}
+{% include _specDesc.html key="titleStmt" atts="" %}
+
 
 
 The identifier and title values recorded here may or may not be the same as those
 assigned
-to published versions of the work. Fuller details regarding the use of 
-<a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> are available in section 
-<span class="ptr"></span>.
+to published versions of the work. Fuller details regarding the use of <a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> are available in section 
+<a class="link_ptr" title="Title Statement" href="/v3/guidelines/header#headerTitleStatement">2.1.1 Title Statement</a>.
 

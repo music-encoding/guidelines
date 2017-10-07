@@ -1,0 +1,7 @@
+---
+desc: "settlement"
+type: "elementSpec"
+---
+
+Contains the name of a settlement such as a city, town, or village identified as a
+single geo-political or administrative unit.

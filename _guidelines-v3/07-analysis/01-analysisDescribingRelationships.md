@@ -1,13 +1,10 @@
 ---
 sectionid: analysisDescribingRelationships
-title: General Relationships Between Elements
+title: "General Relationships Between Elements"
 ---
 
 
-<h2 id="analysisDescribingRelationships">
-   <span class="headingNumber">7.1</span>
-   <span class="head">General Relationships Between Elements</span>
-</h2>
+
 The relationships between event elements, such as note, chord, and rest, are the basic
 material of musical analysis; the attributes described below ensure a closed network
 of these
@@ -17,16 +14,12 @@ the context of a formal analysis, for instance, the attributes presented here ca
 be useful in
 the capture information about the structure of a musical work.
 
-The analysis module offers several attributes in the 
-<a class="link_odd" href="/v3/attribute-classes/att.common.anl">att.common.anl</a> class for the description of basic relationships:
+The analysis module offers several attributes in the <a class="link_odd" href="/v3/attribute-classes/att.common.anl">att.common.anl</a> class for the description of basic relationships:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="att.common.anl" atts="copyof corresp next prev sameas synch" %}
+
 
 
 The 
@@ -35,11 +28,8 @@ temporal relationships:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="att.alignment" atts="when" %}
+
 
 
 These attributes accommodate the encoding of linkages between the element carrying
@@ -68,7 +58,6 @@ usually refers to an element in the current document. The following example demo
 use
 of the **@copyof** attribute:
 
-
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample162.xml" valid="false" %}
 
 In this example. the 
@@ -91,12 +80,10 @@ attribute.
    <img src="../../../../guidelines/3.0.0/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample163.xml" valid="true" %}
 
 This example can be reduced further by using **@copyof** inside the initial tuplet to
 represent the repeated chords:
-
 
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample164.xml" valid="true" %}
 
@@ -112,7 +99,6 @@ the sharing of one note head between two voices in the first full measure of a c
    <img src="../../../../guidelines/3.0.0/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample165.xml" valid="true" %}
 
 While **@copyof** and **@sameas** have defined semantics, the **@corresp**
@@ -120,7 +106,6 @@ may be used to create user-defined relationships between elements. The example b
 demonstrates the encoding of a relationship between #note3 and the fermata, even though
 the
 fermata is not placed directly above the note.
-
 
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample166.xml" valid="true" %}
 
@@ -144,7 +129,6 @@ occurs after the pointing element in time, but before it in encoding order:
    <img src="../../../../guidelines/3.0.0/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample167.xml" valid="false" %}
 
 This attribute may also be useful to clarify a sequence of entites which occurs across
@@ -152,7 +136,6 @@ some
 form of interruption, in this case, notes before and after a system or page break
 where there
 is no custos or direct in the source:
-
 
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample168.xml" valid="true" %}
 
@@ -166,26 +149,12 @@ order
 differs from the order in which entities occur in time.
 
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<!-\- NEED EXAMPLE HERE -\->
-        </egXML>-->
 
-<!--<p>It is also useful for eliminating confusion when the source has obvious timing errors. In
-            the following fictitious example,</p>-->
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<!-\- NEED EXAMPLE HERE -\->
-        </egXML>-->
 The **@when** attribute may be used to indicate the point of occurrence of the feature
 bearing this attribute along a time line. Its value must be the ID of a 
 <a class="link_odd_elementSpec" href="/v3/elements/when">when</a> element. For more detailed information regarding the use of **@when**,
 please see 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Performances" href="/v3/guidelines/performances">18 Performances</a>.
 
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<!-\- NEED EXAMPLE HERE -\->
-        </egXML>-->

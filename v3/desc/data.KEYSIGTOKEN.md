@@ -1,0 +1,8 @@
+---
+desc: "data.KEYSIGTOKEN"
+type: "macroSpec"
+---
+
+A token describing the pitch name, inflection, and octave number of an altered pitch
+in
+a key signature.

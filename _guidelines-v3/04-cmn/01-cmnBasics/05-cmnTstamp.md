@@ -1,20 +1,16 @@
 ---
 sectionid: cmnTstamp
-title: Timestamps and Durations
+title: "Timestamps and Durations"
 ---
 
 
-<h3 id="cmnTstamp">
-   <span class="headingNumber">4.1.5</span>
-   <span class="head">Timestamps and Durations</span>
-</h3>
+
 MEI offers multiple ways of defining onsets and offsets of timed musical events such
 as
 notes and slurs. The most common and most musician-friendly approach to this is through
 the
 use of a combination of the attributes **@tstamp** and **@dur**, which are made
-available by the attribute classes 
-<a class="link_odd" href="/v3/attribute-classes/att.timestamp.musical">att.timestamp.musical</a>
+available by the attribute classes <a class="link_odd" href="/v3/attribute-classes/att.timestamp.musical">att.timestamp.musical</a>
 (inherited by 
 <a class="link_odd" href="/v3/attribute-classes/att.controlevent">att.controlevent</a>) and 
 <a class="link_odd" href="/v3/attribute-classes/att.duration.musical">att.duration.musical</a>, both from the shared module.
@@ -37,7 +33,7 @@ ending with the right barline of the measure ('5', in the case of 4/4 time).
 
 For expressing durations, MEI offers the **@dur** attribute. This attribute is
 described in section 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Basic Usage of Notes in CMN" href="/v3/guidelines/cmn#cmnNotesBasic">4.1.4.1.1 Basic Usage of Notes in CMN</a>.
 
 For ‘spanning’ elements like slurs, which are members of the 
 <a class="link_odd" href="/v3/model-classes/model.controleventLike">model.controleventLike</a> class, it is often more intuitive to record

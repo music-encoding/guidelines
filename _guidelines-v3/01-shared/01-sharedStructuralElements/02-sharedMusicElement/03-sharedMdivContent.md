@@ -1,26 +1,18 @@
 ---
 sectionid: sharedMdivContent
-title: Content of Musical Divisions
+title: "Content of Musical Divisions"
 ---
 
 
-<h4 id="sharedMdivContent">
-   <span class="headingNumber">1.1.2.3</span>
-   <span class="head">Content of Musical Divisions</span>
-</h4>
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> element may contain one or both of two possible views:
+
+The <a class="link_odd_elementSpec" href="/v3/elements/mdiv">mdiv</a> element may contain one or both of two possible views:
 score and parts.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="score" atts="" %}
+{% include _specDesc.html key="parts" atts="" %}
+
 
 
 The 
@@ -32,7 +24,6 @@ The explicit encoding of these two ‘views’ is necessary because it is
 not always possible or desirable to automatically derive one view from the other.
 In
 addition, separating scores and parts can eliminate a great deal of markup complexity.
-
 
 {% include _plainExample.html example="./v3/examples/shared/shared-sample006.xml" valid="true" %}
 
@@ -51,11 +42,8 @@ performer is represented by the
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="part" atts="" %}
+
 
 
 A 
@@ -78,7 +66,6 @@ attribute, available on all the members of the
 class. The 
 <a class="link_odd_elementSpec" href="/v3/elements/staffGrp">staffGrp</a> element handles grouping of staves in the score
 context.
-
 
 {% include _plainExample.html example="./v3/examples/shared/shared-sample007.xml" valid="true" %}
 
@@ -103,11 +90,8 @@ linear segments called "sections".
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="section" atts="" %}
+
 
 
 
@@ -129,18 +113,14 @@ recursively nested.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="ending" atts="" %}
+
 
 
 The most common (non-analytical, non-editorial) use of 
 <a class="link_odd_elementSpec" href="/v3/elements/section">section</a> and
 
 <a class="link_odd_elementSpec" href="/v3/elements/ending">ending</a> elements is illustrated below:
-
 
 {% include _plainExample.html example="./v3/examples/shared/shared-sample008.xml" valid="true" %}
 
@@ -154,15 +134,15 @@ measure-by-measure, with
 sub-elements within each 
 <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>. Further discussion of CMN notation
 is continued in chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Common Music Notation" href="/v3/guidelines/cmn">4 Common Music Notation</a>.
 
 However, staff-by-staff organization is more appropriate for music without measures
 and
 is provided when either the MEI.mensural or MEI.neumes module is employed. Coverage
 of
 mensural notation is provided in chapter 
-<span class="ptr"></span>, while 
-<span class="ptr"></span> describes neumatic notation.
+<a class="link_ptr" title="Mensural Notation" href="/v3/guidelines/mensural">5 Mensural Notation</a>, while 
+<a class="link_ptr" title="Neume Notation" href="/v3/guidelines/neumes">6 Neume Notation</a> describes neumatic notation.
 
 It must be noted that, when both the MEI.cmn and MEI.mensural modules are available,
 it
@@ -173,10 +153,6 @@ that is, staff-by-staff organization may be used and the ends of measures marked
 <a class="link_odd_elementSpec" href="/v3/elements/barLine">barLine</a> elements.
 
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-          <!-\- NEED EXAMPLE HERE! -\->
-        </egXML>-->
 In certain circumstances, this approach may be preferable for reproduction of the
 visual
 layout of the music. However, the simultaneous use of the 
@@ -192,11 +168,8 @@ D.S. directives, the following element may be used to define the performance ord
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="expansion" atts="" %}
+
 
 
 In the following example, 
@@ -215,7 +188,6 @@ labelled 'B', followed by the 'A' section again. This mechanism must be specifie
 independently of any textual directives, such as "Da capo" or "D.S. al Fine", that
 may be
 present in the document.
-
 
 {% include _plainExample.html example="./v3/examples/shared/shared-sample009.xml" valid="true" %}
 

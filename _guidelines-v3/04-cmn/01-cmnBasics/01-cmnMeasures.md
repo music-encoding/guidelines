@@ -1,15 +1,11 @@
 ---
 sectionid: cmnMeasures
-title: The Role of the Measure Element
+title: "The Role of the Measure Element"
 ---
 
 
-<h3 id="cmnMeasures">
-   <span class="headingNumber">4.1.1</span>
-   <span class="head">The Role of the Measure Element</span>
-</h3>
-Arguably, the most important element of the CMN module is the 
-<a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>
+
+Arguably, the most important element of the CMN module is the <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>
 element. It is used as a structural unit inside 
 <a class="link_odd_elementSpec" href="/v3/elements/section">section</a> elements and
 acts as a container for ‘events’ from the 
@@ -20,7 +16,6 @@ acts as a container for ‘events’ from the
 The following example demonstrates the use of the 
 <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>
 element:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample090.xml" valid="true" %}
 
@@ -44,7 +39,6 @@ closest preceding
 <a class="link_odd_elementSpec" href="/v3/elements/layerDef">layerDef</a> with the
 same value in its **@n** attribute.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample091.xml" valid="true" %}
 
 
@@ -57,7 +51,6 @@ the order of the
 <a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a> elements in the file does not have to reflect
 their original order in the document, so they also possess **@n** and **@def**
 attributes for association with the appropriate layer definition.
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample092.xml" valid="false" %}
 

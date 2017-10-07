@@ -1,29 +1,19 @@
 ---
 sectionid: harmonyModelClasses
-title: Model Classes
+title: "Model Classes"
 ---
 
 
-<h3 id="harmonyModelClasses">
-   <span class="headingNumber">14.1.3</span>
-   <span class="head">Model Classes</span>
-</h3>
+
 The following model classes are enabled by the harmony module:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="model.chordTableLike" atts="" %}
+{% include _specDesc.html key="model.controleventLike.harmony" atts="" %}
+{% include _specDesc.html key="model.figbassLike" atts="" %}
+{% include _specDesc.html key="model.fLike" atts="" %}
+{% include _specDesc.html key="model.harmLike" atts="" %}
+
 
 

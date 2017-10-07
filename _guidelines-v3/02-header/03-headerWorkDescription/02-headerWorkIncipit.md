@@ -1,20 +1,14 @@
 ---
 sectionid: headerWorkIncipit
-title: Incipits
+title: "Incipits"
 ---
 
 
-<h3 id="headerWorkIncipit">
-   <span class="headingNumber">2.3.2</span>
-   <span class="head">Incipits</span>
-</h3>
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+
+{% include _specDesc.html key="incip" atts="" %}
+
 
 
 The first few notes and/or words of a piece of music are often used for identification
@@ -28,23 +22,15 @@ The following elements are provided for the inclusion of incipits:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="incip" atts="" %}
+{% include _specDesc.html key="incipCode" atts="" %}
+{% include _specDesc.html key="incipText" atts="" %}
+{% include _specDesc.html key="score" atts="" %}
+{% include _specDesc.html key="graphic" atts="" %}
 
 
-The elements 
-<a class="link_odd_elementSpec" href="/v3/elements/incipCode">incipCode</a> and 
+
+The elements <a class="link_odd_elementSpec" href="/v3/elements/incipCode">incipCode</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/incipText">incipText</a> are
 available for the inclusion of coded incipits of music notation and textual incipits,
 respectively. The 
@@ -60,10 +46,6 @@ in
 example, for indexing of the text without having to extract it from the coded incipit.
 
 
-<!-- TODO:
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve" >
-<!-\- NEED EXAMPLE HERE! -\->
-        </egXML>-->
 Both 
 <a class="link_odd_elementSpec" href="/v3/elements/incipCode">incipCode</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/incipText">incipText</a> allow reference to
@@ -72,24 +54,12 @@ internet media type of the external file via the **@mimetype** attribute. It is 
 semantic error not to include one of these attributes.
 
 
-<!-- TODO:
-       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve" >
-<!-\- NEED EXAMPLE HERE! -\->
-      </egXML>-->
 An MEI-encoded incipit may be captured in the 
 <a class="link_odd_elementSpec" href="/v3/elements/score">score</a> element.
 
 
-<!-- TODO:
-<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve" >
-        <!-\- NEED EXAMPLE HERE! -\->
-</egXML>-->
 In addition, 
 <a class="link_odd_elementSpec" href="/v3/elements/graphic">graphic</a> may be used to include an image of an
 incipit.
 
 
-<!-- TODO:
-<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve" >
-        <!-\- NEED EXAMPLE HERE! -\->
-</egXML>-->

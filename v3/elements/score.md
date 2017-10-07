@@ -1,0 +1,476 @@
+---
+layout: sidebar
+sidebar: s1
+title: "score"
+
+---
+
+<div class="elementSpec">
+   <h3 id="score">&lt;score&gt;</h3>
+   <table class="wovenodd">
+      <tr>
+         <td colspan="2" class="wovenodd-col2">
+            <span class="label">&lt;score&gt;</span> Full score view of the musical content.
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Module</span>
+         </td>
+         <td class="wovenodd-col2">MEI.shared</td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Attributes</span>
+         </td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef">
+               <span class="attribute">@copyof</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
+               Value conforms to 
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@corresp</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Used to point to other elements that correspond to this one in a generic
+                  fashion.
+               </span>
+               One or more values from
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@decls</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Identifies one or more metadata elements within the header, which are understood to
+                  apply to the element bearing this attribute and its content.
+               </span>
+               One or more values from
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@label</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
+               Value of datatype 
+               <span style="font-weight: 500;">string</span>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@n</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Provides a number-like designation for an element.</span>
+               Value conforms to 
+               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.common">att.common</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@next</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
+               One or more values from
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@prev</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
+               One or more values from
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@sameas</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Points to an element that is the same as the current element but is not a literal
+                  copy of the current element.
+               </span>
+               One or more values from
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@subtype</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Provide any sub-classification for the element, additional to that given by its type
+                  attribute.
+               </span>
+               Value of datatype 
+               <span style="font-weight: 500;">NMTOKEN</span>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@synch</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
+               One or more values from
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@type</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Characterizes the element in some sense, using any convenient classification scheme
+                  or typology.
+               </span>
+               Value of datatype 
+               <span style="font-weight: 500;">NMTOKEN</span>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@when</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
+                  be the ID of a 
+                  <a class="link_odd_elementSpec" href="/v3/when">when</a> element elsewhere in the document.
+               </span>
+               Value conforms to 
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.alignment">att.alignment</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@xml:base</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
+                  references into absolute URI references.
+               </span>
+               Value conforms to 
+               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+               </span>
+            </div>
+            <div class="attributeDef">
+               <span class="attribute">@xml:id</span>
+               <span class="attributeUsage">(optional)</span>
+               <span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
+                  and other resources. Each id attribute within a document must have a unique
+                  value.
+               </span>
+               Value of datatype 
+               <span style="font-weight: 500;">ID</span>.
+               
+               <span class="attributeClasses">
+                  <a class="link_odd" href="/v3/att.id">att.id</a>
+               </span>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Member of</span>
+         </td>
+         <td class="wovenodd-col2">
+            <div class="parent">
+               <a class="link_odd_classSpec" href="/v3/model.scoreLike">model.scoreLike</a>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Contained by</span>
+         </td>
+         <td class="wovenodd-col2">
+            <div class="parent">
+               <div class="specChildren">
+                  <div class="specChild">
+                     <span class="specChildModule">MEI.shared</span>
+                     <span class="specChildElements">
+                        <a class="link_odd_elementSpec" href="/v3/incip">incip</a> 
+                        <a class="link_odd_elementSpec" href="/v3/mdiv">mdiv</a> 
+                        <a class="link_odd_elementSpec" href="/v3/score">score</a>
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">May contain</span>
+         </td>
+         <td class="wovenodd-col2">
+            <div class="specChildren">
+               <div class="specChild">
+                  <span class="specChildModule">MEI.critapp</span>
+                  <span class="specChildElements">
+                     <a class="link_odd_elementSpec" href="/v3/app">app</a>
+                  </span>
+               </div>
+               <div class="specChild">
+                  <span class="specChildModule">MEI.edittrans</span>
+                  <span class="specChildElements">
+                     <a class="link_odd_elementSpec" href="/v3/add">add</a> 
+                     <a class="link_odd_elementSpec" href="/v3/choice">choice</a> 
+                     <a class="link_odd_elementSpec" href="/v3/corr">corr</a> 
+                     <a class="link_odd_elementSpec" href="/v3/damage">damage</a> 
+                     <a class="link_odd_elementSpec" href="/v3/del">del</a> 
+                     <a class="link_odd_elementSpec" href="/v3/gap">gap</a> 
+                     <a class="link_odd_elementSpec" href="/v3/handShift">handShift</a> 
+                     <a class="link_odd_elementSpec" href="/v3/orig">orig</a> 
+                     <a class="link_odd_elementSpec" href="/v3/reg">reg</a> 
+                     <a class="link_odd_elementSpec" href="/v3/restore">restore</a> 
+                     <a class="link_odd_elementSpec" href="/v3/sic">sic</a> 
+                     <a class="link_odd_elementSpec" href="/v3/subst">subst</a> 
+                     <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a> 
+                     <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  </span>
+               </div>
+               <div class="specChild">
+                  <span class="specChildModule">MEI.shared</span>
+                  <span class="specChildElements">
+                     <a class="link_odd_elementSpec" href="/v3/annot">annot</a> 
+                     <a class="link_odd_elementSpec" href="/v3/div">div</a> 
+                     <a class="link_odd_elementSpec" href="/v3/ending">ending</a> 
+                     <a class="link_odd_elementSpec" href="/v3/pb">pb</a> 
+                     <a class="link_odd_elementSpec" href="/v3/sb">sb</a> 
+                     <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a> 
+                     <a class="link_odd_elementSpec" href="/v3/section">section</a> 
+                     <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  </span>
+               </div>
+               <div class="specChild">
+                  <span class="specChildModule">MEI.usersymbols</span>
+                  <span class="specChildElements">
+                     <a class="link_odd_elementSpec" href="/v3/anchoredText">anchoredText</a> 
+                     <a class="link_odd_elementSpec" href="/v3/curve">curve</a> 
+                     <a class="link_odd_elementSpec" href="/v3/line">line</a>
+                  </span>
+               </div>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Declaration</span>
+         </td>
+         <td class="wovenodd-col2">
+            <div xml:space="preserve" class="pre">
+               <div class="indent1">
+                  <span data-indentation="1" class="element">&lt;classes&gt;</span>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/att.common">att.common</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/att.score.log">att.score.log</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/att.score.vis">att.score.vis</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/att.score.ges">att.score.ges</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/att.score.anl">att.score.anl</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/att.typed">att.typed</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;memberOf 
+                        <span class="attribute">key=</span>
+                        <span class="attributevalue">"
+                           <a class="link_odd" href="/model.scoreLike">model.scoreLike</a>"
+                        </span>/&gt;
+                     </span>
+                  </div>
+                  
+                  <span data-indentation="1" class="element">&lt;/classes&gt;</span>
+               </div>
+               <div class="indent1">
+                  <span data-indentation="1" class="element">&lt;content&gt;</span>
+                  
+                  <div class="indent2">
+                     <span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                     
+                     <div class="indent3">
+                        <span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.appLike">model.appLike</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.divLike">model.divLike</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.milestoneLike.music">model.milestoneLike.music</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.annotLike">model.annotLike</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.graphicprimitiveLike">model.graphicprimitiveLike</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.editLike">model.editLike</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.transcriptionLike">model.transcriptionLike</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <div class="indent4">
+                           <span data-indentation="4" class="element">&lt;rng:ref 
+                              <span class="attribute">name=</span>
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="/model.scorePart">model.scorePart</a>"
+                              </span>/&gt;
+                           </span>
+                        </div>
+                        
+                        <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span>
+                     </div>
+                     
+                     <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span>
+                  </div>
+                  
+                  <span data-indentation="1" class="element">&lt;/content&gt;</span>
+               </div>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1">
+            <span class="label" lang="en">Remarks</span>
+         </td>
+         <td class="wovenodd-col2">
+            <p>Since the 
+               <a class="link_odd_elementSpec" href="/v3/measure">measure</a> element is optional, a score may consist entirely
+               of pagebreaks, each of which points to a page image. 
+               <a class="link_odd_elementSpec" href="/v3/div">div</a> elements
+               are allowed preceding and following sections of music data in order to accommodate
+               blocks
+               of explanatory text.
+            </p>
+         </td>
+      </tr>
+   </table>
+</div>

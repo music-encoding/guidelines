@@ -1,0 +1,8 @@
+---
+desc: "district"
+type: "elementSpec"
+---
+
+Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+or
+other administrative or geographic unit.

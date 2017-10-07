@@ -1,0 +1,9 @@
+---
+desc: "physDesc"
+type: "elementSpec"
+---
+
+(physical description) – Container for information about the appearance, construction,
+or handling of physical materials, such as their dimension, quantity, color, style,
+and
+technique of creation.

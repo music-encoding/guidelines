@@ -1,0 +1,8 @@
+---
+desc: "revisionDesc"
+type: "elementSpec"
+---
+
+(revision description) – Container for information about alterations that have been
+made
+to an MEI file.

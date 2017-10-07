@@ -1,18 +1,14 @@
 ---
 sectionid: cmnBend
-title: Bend
+title: "Bend"
 ---
 
 
-<h4 id="cmnBend">
-   <span class="headingNumber">4.2.5.2</span>
-   <span class="head">Bend</span>
-</h4>
+
 A bend is a variation in pitch (often microtonal) upwards or downwards during the
 course
 of a note. Typically, the performer attacks the note at ‘true’ pitch,
-changes the intonation, then returns to true pitch. The 
-<a class="link_odd_elementSpec" href="/v3/elements/bend">bend</a> element
+changes the intonation, then returns to true pitch. The <a class="link_odd_elementSpec" href="/v3/elements/bend">bend</a> element
 can also be used for so-called scoop, plop, falloff, and doit performance effects.
 It
 should 

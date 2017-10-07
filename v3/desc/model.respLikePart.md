@@ -1,0 +1,7 @@
+---
+desc: "model.respLikePart"
+type: "classSpec"
+---
+
+Groups elements that delineate particular responsibilities as opposed to the respStmt
+element that provides for generic statements of responsibility.

@@ -7,10 +7,6 @@ sectionid: "corpus"
 
 <span class="div">
    
-   <h1 id="corpus">
-      <span class="headingNumber">9</span>
-      <span class="head">Musical Corpora</span>
-   </h1>
    The term corpus may refer to any collection of musical data, although it is often
    reserved for collections which have been organized or collected with a particular
    end in view,

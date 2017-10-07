@@ -1,0 +1,9 @@
+---
+desc: "extent"
+type: "elementSpec"
+---
+
+Used to express size in terms other than physical dimensions, such as number of pages,
+number of records in file, number of bytes, performance duration for music, audio
+recordings
+and visual projections, etc.

@@ -1,26 +1,18 @@
 ---
 sectionid: textDivisions
-title: Organizing Text into Divisions
+title: "Organizing Text into Divisions"
 ---
 
 
-<h2 id="textDivisions">
-   <span class="headingNumber">21.1</span>
-   <span class="head">Organizing Text into Divisions</span>
-</h2>
-Text can be organized in different parts, for example in chapters or sections. The
 
+Text can be organized in different parts, for example in chapters or sections. The
 <a class="link_odd_elementSpec" href="/v3/elements/div">div</a> element is used to encode such structural divisions.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="div" atts="" %}
+{% include _specDesc.html key="div" atts="type subtype" %}
+
 
 
 For example, printed scores, before the actual notation, can have text that can be
@@ -31,11 +23,10 @@ which see the following sections); each of these sections should be identified b
 a different
 
 <a class="link_odd_elementSpec" href="/v3/elements/div">div</a> element. Text might also occur in between music sections (see 
-<span class="ptr"></span>), for example in a collection of romantic piano works, a few
+<a class="link_ptr" title="Content of Musical Divisions" href="/v3/guidelines/shared#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few
 pieces might be preceded or followed by poetry. Such text should be encoded with the
 
 <a class="link_odd_elementSpec" href="/v3/elements/div">div</a> element, as demonstrated in the following example:
-
 
 {% include _plainExample.html example="./v3/examples/text/text-sample328.xml" valid="true" %}
 
@@ -48,17 +39,13 @@ with the
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="head" atts="" %}
+
 
 
 
 The following example shows the encoding of a preface translated into three different
 languages, each with a different heading:
-
 
 
 {% include _plainExample.html example="./v3/examples/text/text-sample329.xml" valid="false" %}
@@ -73,7 +60,6 @@ encoder.
 
 The following example shows the use of **@type** to indicate three prefaces in English,
 German and Italian are columns on the same page.
-
 
 {% include _plainExample.html example="./v3/examples/text/text-sample330.xml" valid="false" %}
 

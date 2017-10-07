@@ -7,10 +7,6 @@ sectionid: "performances"
 
 <span class="div">
    
-   <h1 id="performances">
-      <span class="headingNumber">18</span>
-      <span class="head">Performances</span>
-   </h1>
    This chapter describes the ‘performance’ module, which can be used for
    organizing audio and video files of performances of a musical work. The elements provided
    allow

@@ -8,14 +8,19 @@ layout: default
     <div class="column col-4">
         {% for sb in site.sidebar %}
             {% if page.sidebar == sb.id %}
+        
                 {% for s in sb.content %}
-                <span>
-                    <a href="../{{s.url}}">{{s.label}}</a>
-                </span>
+                
+                    {% if forloop.first %} <ul class="nav"> {% endif %}
+                    <li class="nav-item">
+                        <a href="../{{s.url}}">{{s.label}}</a>
+                    </li>
+                        
+                    {% if forloop.last %} </ul> {% endif %}
                 {% endfor %}
             {% endif %}
         {% endfor %}
-        <hr/>
+        <div class="divider"></div>
         {% include toc.html %}
         
     </div>

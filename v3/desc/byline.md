@@ -1,0 +1,7 @@
+---
+desc: "byline"
+type: "elementSpec"
+---
+
+Contains the primary statement of responsibility given for a work on its title
+page.

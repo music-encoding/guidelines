@@ -1,13 +1,10 @@
 ---
 sectionid: usersymbolsCurveShape
-title: Curve Shape
+title: "Curve Shape"
 ---
 
 
-<h3 id="usersymbolsCurveShape">
-   <span class="headingNumber">22.3.4</span>
-   <span class="head">Curve Shape</span>
-</h3>
+
 If neither a **@bezier** nor **@bulge** attribute is present, the renderer
 determines a suitable shape. However, if **@curvedir** is present, the curve must
 respect the curvature direction specified there.
@@ -22,15 +19,12 @@ curve with two inner control points. The coordinates are given by a space separa
 list,
 first x and y offsets for the first control point, then x and y offsets for the second
 one.
-The x and y offsets are given in staff units (or inside the context of 
-<a class="link_odd_elementSpec" href="/v3/elements/symbolDef">symbolDef</a> in abstract units). The offsets for the first inner control point are
+The x and y offsets are given in staff units (or inside the context of <a class="link_odd_elementSpec" href="/v3/elements/symbolDef">symbolDef</a> in abstract units). The offsets for the first inner control point are
 relative to the start point, the ones for the second inner control point are relative
 to the
 end point.
 
 
-<!--<p>{PROBLEM: Samples converted from MusicXML seem to use MusicXML tenth, which doesn't make
-        sense in the context of MEI.}</p>-->
 The **@bulge** attribute allows specification of the curve shape by a number of
 interpolation points. The interpolation points are given by their distance from the
 line

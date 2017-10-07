@@ -1,0 +1,10 @@
+---
+desc: "classCode"
+type: "elementSpec"
+---
+
+(classification code) – Holds a citation to the source of controlled-vocabulary terms
+used in the &lt;termList&gt; element; for example, Library of Congress Subject Headings
+(LCSH), Library of Congress Classification (LCC), Library of Congress Name Authority
+File
+(LCNAF), or other thesaurus or ontology.

@@ -1,0 +1,7 @@
+---
+desc: "data.MIDIMSPB"
+type: "macroSpec"
+---
+
+Tempo expressed as microseconds per "beat", where "beat" is always defined as a quarter
+note, *not the numerator of the time signature or the metronomic indication*.

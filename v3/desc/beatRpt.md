@@ -1,0 +1,7 @@
+---
+desc: "beatRpt"
+type: "elementSpec"
+---
+
+(beat repeat) – An indication that material on a preceding beat should be
+repeated.

@@ -1,0 +1,7 @@
+---
+desc: "pgDesc"
+type: "elementSpec"
+---
+
+(page description) – Contains a brief prose description of the appearance or description
+of the content of a physical page.

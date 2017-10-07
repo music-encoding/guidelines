@@ -1,0 +1,7 @@
+---
+desc: "postBox"
+type: "elementSpec"
+---
+
+(postal box or post office box) contains a number or other identifier for some postal
+delivery point other than a street address.

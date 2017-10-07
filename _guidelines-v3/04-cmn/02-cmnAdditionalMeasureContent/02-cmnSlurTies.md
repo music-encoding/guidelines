@@ -1,20 +1,16 @@
 ---
 sectionid: cmnSlurTies
-title: Ties, Slurs and Phrase Marks
+title: "Ties, Slurs and Phrase Marks"
 ---
 
 
-<h3 id="cmnSlurTies">
-   <span class="headingNumber">4.2.2</span>
-   <span class="head">Ties, Slurs and Phrase Marks</span>
-</h3>
+
 One of the most specific features of CMN is the use of ‘curved lines’
 which connect notes. These lines are used to indicate various musical features, depending
 on
 their context.
 
-A tie is a curved line connecting 
-<span class="hi">two</span> notes of the 
+A tie is a curved line connecting <span class="hi">two</span> notes of the 
 <span class="hi">same pitch</span>. The purpose of a tie is to join the durations of both notes,
 so that the first note sounds for the combined duration. In other words, there is
 only one
@@ -27,28 +23,34 @@ found on
 <a class="link_odd_elementSpec" href="/v3/elements/note">note</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a>.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample112.xml" valid="false" %}
 
 
 This attribute allows three values:
 
 
-<span class="list">
-   
-   <span class="label">i (initial)</span>
-   
-   <span class="item"> - Marks the start of a tie</span>
-   
-   <span class="label">m (medial)</span>
-   
-   <span class="item"> - Marks a participant in a tie other than the first or last</span>
-   
-   <span class="label">t (terminal)</span>
-   
-   <span class="item"> - Marks the end of a tie</span>
-   
-</span>
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>name</th>
+         <th>genre</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>i (initial)</td>
+         <td> - Marks the start of a tie</td>
+      </tr>
+      <tr>
+         <td>m (medial)</td>
+         <td> - Marks a participant in a tie other than the first or last</td>
+      </tr>
+      <tr>
+         <td>t (terminal)</td>
+         <td> - Marks the end of a tie</td>
+      </tr>
+   </tbody>
+</table>
 
 The scope of the **@tie** attribute is the musical 
 <a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a>; that
@@ -62,7 +64,6 @@ The tie-terminating event may lie in the following measure.
    <img src="../../../../guidelines/3.0.0/Images/modules/cmn/finger-300.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 9. Ties across barlines</figcaption>
 </figure>
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample113.xml" valid="true" %}
 
 
@@ -70,12 +71,10 @@ When **@tie** is used on chords, it functions as a shorthand indication for mult
 tie markings; that is, a separate tie is drawn for every pitch in the chord that remains
 unchanged in the succeeding chord.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample114.xml" valid="true" %}
 
 
 This is equivalent to the following, more verbose version:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample115.xml" valid="true" %}
 
@@ -101,7 +100,6 @@ The
 *i*, *m* or *t* are followed by a single digit in the
 range 1 to 6, as in the following example:
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample116.xml" valid="true" %}
 
 
@@ -119,15 +117,12 @@ the preceding note and by the one that it starts. The third note is affected by 
 slur
 that begins on note one and by the one that starts on note two.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample117.xml" valid="true" %}
 
 
 
-<!--  Perhaps this should only be permitted when the analysis module is enabled. Hmmm ... -->
 To support analytical operations, **@slur** may take on more than one value. For
 example, the example above may be more explicitly encoded as:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample118.xml" valid="true" %}
 
@@ -143,7 +138,6 @@ performance, while the longer slur functions as a phrase mark.
 While ties are not normally allowed to cross layers or staves, slurs may. The following
 example demonstrates how cross-staff slurs may be encoded using the **@slur**
 attribute:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample119.xml" valid="true" %}
 
@@ -164,26 +158,23 @@ cases, using an attribute is not an adequate solution. Therefore, MEI offers ded
 <a class="link_odd_elementSpec" href="/v3/elements/tie">tie</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/slur">slur</a> elements. A third element, 
 <a class="link_odd_elementSpec" href="/v3/elements/phrase">phrase</a>, is used to identify a unified melodic idea (in German:
-
-<span class="foreign">Phrasierungsbogen</span>), whereas the 
+*Phrasierungsbogen*), whereas the 
 <a class="link_odd_elementSpec" href="/v3/elements/slur">slur</a> element is
-used as a generic element for all curved lines (in German: 
-<span class="foreign">Bogensetzung</span>)
+used as a generic element for all curved lines (in German: *Bogensetzung*)
 except ties. All three elements have nearly identical models.
 
 Another reason for using elements instead of attributes for ties, slurs, and phrase
 marks
 is that only elements may be combined with the functionality provided in chapters
 
-<span class="ptr"></span> and 
-<span class="ptr"></span> of these Guidelines.
+<a class="link_ptr" title="Editorial Markup" href="/v3/guidelines/editTrans">11 Editorial Markup</a> and 
+<a class="link_ptr" title="Critical Apparatus" href="/v3/guidelines/critApp">10 Critical Apparatus</a> of these Guidelines.
 
 Although these elements are allowed within a 
 <a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a> to accommodate
 unmeasured notation, by convention in CMN they are normally placed inside 
 <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>, after the encoding of staves, alongside other so-called ‘control
 events’.
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample120.xml" valid="true" %}
 
@@ -193,15 +184,13 @@ Obviously, to be complete the slur in the above example needs to be
 assignment’ can be indicated for the example above using the **@staff**
 and **@layer** attributes like so:
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample121.xml" valid="true" %}
 
 
 For the ‘horizontal assignment’, the encoder may choose between two
 different mechanisms. The first uses two timestamp attributes as described in section
 
-<span class="ptr"></span>. The start and end points of the slur may be indicated thusly:
-
+<a class="link_ptr" title="Timestamps and Durations" href="/v3/guidelines/cmn#cmnTstamp">4.1.5 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample122.xml" valid="true" %}
 
@@ -215,13 +204,8 @@ particular event, the **@startid** and **@endid** attributes may be used
 instead. Here, the **@xml:id**s of the first and last note of the slur are referenced.
 This mechanism also allows the crossing of layers and staves.
 
-<!--, as in the following example:-->
 
 
-<!-- TODO:
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-        <!-\- TODO: Snippet from Webern, also as graphic -\->
-      </egXML>-->
 
 For human readability, it is recommended to encode 
 <a class="link_odd_elementSpec" href="/v3/elements/slur">slur</a>, 
@@ -251,5 +235,5 @@ If the encoder wishes to draw attention to the appearance of a slur or tie in a 
 source, the **@facs** attribute may be used instead of (or in addition to) the curve
 description attributes to point to a graphic image or a zone within an image (see
 
-<span class="ptr"></span>).
+<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles">12 Facsimiles</a>).
 

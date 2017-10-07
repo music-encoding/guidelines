@@ -1,13 +1,10 @@
 ---
 sectionid: mensuralRules
-title: Actual Duration with Alterations and Imperfections
+title: "Actual Duration with Alterations and Imperfections"
 ---
 
 
-<h3 id="mensuralRules">
-   <span class="headingNumber">5.1.1</span>
-   <span class="head">Actual Duration with Alterations and Imperfections</span>
-</h3>
+
 In ternary divisions, the dichotomy between the duration sign of the notes and their
 actual
 duration requires specific attention. The rules of mensural notation can require the
@@ -28,7 +25,6 @@ duration of each note is given as a proportion of a whole note using the **@num*
 **@numbase**:
 
 
-
 {% include _plainExample.html example="./v3/examples/mensural/mensural-sample154.xml" valid="false" %}
 
 
@@ -36,7 +32,6 @@ The following example illustrates an imperfection (the two *longae*) in
 *modus minor perfectus* and *tempus perfectum* with the same
 *longa*-*brevis*-*brevis*-*longa* sequence but
 with an additional *punctus divisionis* between the two *breves*:
-
 
 
 {% include _plainExample.html example="./v3/examples/mensural/mensural-sample155.xml" valid="false" %}

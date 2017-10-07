@@ -1,26 +1,19 @@
 ---
 sectionid: sharedTitlePages
-title: Transcription of Titlepages
+title: "Transcription of Titlepages"
 ---
 
 
-<h3 id="sharedTitlePages">
-   <span class="headingNumber">1.3.3</span>
-   <span class="head">Transcription of Titlepages</span>
-</h3>
+
 A specialized element is furnished for the capture of titlepage information.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="titlePage" atts="" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/titlePage">titlePage</a> element, modelled after a similar element in Encoded
+
+The <a class="link_odd_elementSpec" href="/v3/elements/titlePage">titlePage</a> element, modelled after a similar element in Encoded
 Archival Description (EAD), may occur within the textual matter preceding or following
 the
 musical content of the encoding. Since a diplomatic transcription of the titlepage

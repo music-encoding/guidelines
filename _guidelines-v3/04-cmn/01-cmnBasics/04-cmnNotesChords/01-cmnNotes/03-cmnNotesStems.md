@@ -1,63 +1,62 @@
 ---
 sectionid: cmnNotesStems
-title: Stem Modifications
+title: "Stem Modifications"
 ---
 
 
-<h5 id="cmnNotesStems">
-   <span class="headingNumber">4.1.4.1.3</span>
-   <span class="head">Stem Modifications</span>
-</h5>
+
 The **@stem.mod** attribute accommodates various stem modifiers found in the CMN
 repertoire. These symbols are placed on a note or chord's stem and generally indicate
 different types of tremolo and Sprechstimme. The following values are
 allowed:
 
-
-<span class="list">
-   
-   <span class="label">1slash</span>
-   
-   <span class="item"> - 1 slash through stem</span>
-   
-   <span class="label">2slash</span>
-   
-   <span class="item"> - 2 slashes through stem</span>
-   
-   <span class="label">3slash</span>
-   
-   <span class="item"> - 3 slashes through stem</span>
-   
-   <span class="label">4slash</span>
-   
-   <span class="item"> - 4 slashes through stem</span>
-   
-   <span class="label">5slash</span>
-   
-   <span class="item"> - 5 slashes through stem</span>
-   
-   <span class="label">6slash</span>
-   
-   <span class="item"> - 6 slashes through stem</span>
-   
-   <span class="label">sprech</span>
-   
-   <span class="item"> - X placed on stem</span>
-   
-   <span class="label">z</span>
-   
-   <span class="item"> - Z placed on stem</span>
-   
-</span>
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>name</th>
+         <th>genre</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>1slash</td>
+         <td> - 1 slash through stem</td>
+      </tr>
+      <tr>
+         <td>2slash</td>
+         <td> - 2 slashes through stem</td>
+      </tr>
+      <tr>
+         <td>3slash</td>
+         <td> - 3 slashes through stem</td>
+      </tr>
+      <tr>
+         <td>4slash</td>
+         <td> - 4 slashes through stem</td>
+      </tr>
+      <tr>
+         <td>5slash</td>
+         <td> - 5 slashes through stem</td>
+      </tr>
+      <tr>
+         <td>6slash</td>
+         <td> - 6 slashes through stem</td>
+      </tr>
+      <tr>
+         <td>sprech</td>
+         <td> - X placed on stem</td>
+      </tr>
+      <tr>
+         <td>z</td>
+         <td> - Z placed on stem</td>
+      </tr>
+   </tbody>
+</table>
 The **@stem.mod** attibute is normally used in accordance with practices
 described in section 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Tremolandi" href="/v3/guidelines/cmn#cmnTrem">4.2.5.3 Tremolandi</a>.
 
 
-<!-- TODO:
-          <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-            <!-\- NEED EXAMPLE HERE! -\->
-          </egXML>-->
 
 The CMN module makes the 
 <a class="link_odd" href="/v3/attribute-classes/att.stems.cmn">att.stems.cmn</a> attribute class
@@ -75,7 +74,6 @@ The following code demonstrates one method of encoding the first chord in the la
 measure in the image above. The **@stem.with** attribute must occur on all the
 notes or chords attached to the cross-staff stem.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample099.xml" valid="false" %}
 
 Alternatively, the encoder may choose to treat the notes in the lower staff as
@@ -84,8 +82,7 @@ logically belonging to the top staff and to ‘displace’ them using the
 <a class="link_odd_elementSpec" href="/v3/elements/note">note</a>. Some use cases, however, may
 require filling the time that those notes would normally occupy using the 
 <a class="link_odd_elementSpec" href="/v3/elements/space">space</a> element described in section 
-<span class="ptr"></span>. Using this mechanism, the example above could also be encoded like so:
-
+<a class="link_ptr" title="Event Spacing" href="/v3/guidelines/shared#sharedNoteSpacing">1.2.4.5 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample100.xml" valid="false" %}
 

@@ -1,0 +1,7 @@
+---
+desc: "roleName"
+type: "elementSpec"
+---
+
+(role name) – Contains a name component which indicates that the referent has a
+particular role or position in society, such as an official title or rank.

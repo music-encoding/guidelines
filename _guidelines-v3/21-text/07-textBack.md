@@ -1,19 +1,15 @@
 ---
 sectionid: textBack
-title: Back Matter
+title: "Back Matter"
 ---
 
 
-<h2 id="textBack">
-   <span class="headingNumber">21.7</span>
-   <span class="head">Back Matter</span>
-</h2>
+
 Conventions vary as to which elements are grouped as back matter and which as front.
 For
 example, some books place the table of contents at the front, and others at the back.
 For this
-reason, the content models of the 
-<a class="link_odd_elementSpec" href="/v3/elements/front">front</a> and 
+reason, the content models of the <a class="link_odd_elementSpec" href="/v3/elements/front">front</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/back">back</a>
 elements are identical.
 
@@ -22,42 +18,48 @@ elements, in order to distinguish various kinds of divisions characteristic of b
 matter:
 
 
-<span class="list">
-   
-   <span class="label">'appendix' – </span>
-   
-   <span class="item">An ancillary self-contained section of a work, often providing additional but in some
-      sense extra-canonical text.
-   </span>
-   
-   <span class="label">'glossary' – </span>
-   
-   <span class="item">A list of terms associated with definition texts (‘glosses’).</span>
-   
-   <span class="label">'notes' – </span>
-   
-   <span class="item">A section in which textual notes are gathered together.</span>
-   
-   <span class="label">'bibliography' – </span>
-   
-   <span class="item">A list of bibliographic citations.</span>
-   
-   <span class="label">'index' – </span>
-   
-   <span class="item">Any form of index to the work.</span>
-   
-   <span class="label">'colophon' – </span>
-   
-   <span class="item">A statement appearing at the end of a book describing the conditions of its physical
-      production.
-   </span>
-   
-</span>
+<table class="table table-striped table-hover">
+   <thead>
+      <tr>
+         <th>name</th>
+         <th>genre</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>'appendix' – </td>
+         <td>An ancillary self-contained section of a work, often providing additional but in some
+            sense extra-canonical text.
+         </td>
+      </tr>
+      <tr>
+         <td>'glossary' – </td>
+         <td>A list of terms associated with definition texts (‘glosses’).</td>
+      </tr>
+      <tr>
+         <td>'notes' – </td>
+         <td>A section in which textual notes are gathered together.</td>
+      </tr>
+      <tr>
+         <td>'bibliography' – </td>
+         <td>A list of bibliographic citations.</td>
+      </tr>
+      <tr>
+         <td>'index' – </td>
+         <td>Any form of index to the work.</td>
+      </tr>
+      <tr>
+         <td>'colophon' – </td>
+         <td>A statement appearing at the end of a book describing the conditions of its physical
+            production.
+         </td>
+      </tr>
+   </tbody>
+</table>
 No additional elements are proposed for the encoding of back matter at present. Some
 characteristic examples follow; first, an index (for the case in which a printed index
 is of
 sufficient interest to merit transcription):
-
 
 {% include _plainExample.html example="./v3/examples/text/text-sample342.xml" valid="true" %}
 
@@ -69,11 +71,9 @@ links. For example, assuming that the encoding of page 77 of the original source
 like
 this:
 
-
 {% include _plainExample.html example="./v3/examples/text/text-sample343.xml" valid="true" %}
 
 then the last item above might be encoded more usefully in the following form:
-
 
 {% include _plainExample.html example="./v3/examples/text/text-sample344.xml" valid="true" %}
 

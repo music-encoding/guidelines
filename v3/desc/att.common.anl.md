@@ -1,0 +1,7 @@
+---
+desc: "att.common.anl"
+type: "classSpec"
+---
+
+Common analytical attributes. When the MEI.performance module is used, the when
+attribute is also a member of this attribute class.

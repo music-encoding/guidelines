@@ -1,0 +1,9 @@
+---
+desc: "projectDesc"
+type: "elementSpec"
+---
+
+(project description) – Project-level meta-data describing the aim or purpose for
+which
+the electronic file was encoded, funding agencies, etc. together with any other relevant
+information concerning the process by which it was assembled or collected.

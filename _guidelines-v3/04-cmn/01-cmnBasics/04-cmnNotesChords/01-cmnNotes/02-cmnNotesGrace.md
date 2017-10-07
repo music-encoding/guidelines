@@ -1,16 +1,12 @@
 ---
 sectionid: cmnNotesGrace
-title: Grace Notes
+title: "Grace Notes"
 ---
 
 
-<h5 id="cmnNotesGrace">
-   <span class="headingNumber">4.1.4.1.2</span>
-   <span class="head">Grace Notes</span>
-</h5>
+
 The CMN module adds two optional attributes, **@grace** and
-**@grace.time**, to 
-<a class="link_odd_elementSpec" href="/v3/elements/note">note</a> and 
+**@grace.time**, to <a class="link_odd_elementSpec" href="/v3/elements/note">note</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a>.
 The presence of the **@grace** attribute indicates a grace note.
 
@@ -20,7 +16,6 @@ The presence of the **@grace** attribute indicates a grace note.
    <figcaption class="figure-caption">Figure 2. Grace notes</figcaption>
 </figure>
 The encoding of the left-most example would look like this:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample098.xml" valid="true" %}
 
@@ -51,5 +46,5 @@ preceding note (when **@grace**='unacc') or the following note (when
 
 More information about grace notes in the context of other CMN ornaments is available
 in chapter 
-<span class="ptr"></span>.
+<a class="link_ptr" title="Common Music Notation Ornaments" href="/v3/guidelines/cmnOrnaments">8 Common Music Notation Ornaments</a>.
 

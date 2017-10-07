@@ -1,37 +1,26 @@
 ---
 sectionid: headerEditionstmt
-title: Edition Statement
+title: "Edition Statement"
 ---
 
 
-<h3 id="headerEditionstmt">
-   <span class="headingNumber">2.1.2</span>
-   <span class="head">Edition Statement</span>
-</h3>
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/editionStmt">editionStmt</a> element is the second component of the 
+
+The <a class="link_odd_elementSpec" href="/v3/elements/editionStmt">editionStmt</a> element is the second component of the 
 <a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element. It is optional but recommended when applicable.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="editionStmt" atts="" %}
+
 
 
 It contains elements for identifying the edition and those responsible for it:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="edition" atts="" %}
+{% include _specDesc.html key="respStmt" atts="" %}
+
 
 
 For printed texts, the term ‘edition’ applies to the set of all the
@@ -87,7 +76,7 @@ Note that all changes in a file, whether or not they are regarded as constitutin
 a new
 edition or simply a revision, should be independently noted in the revision description
 section of the file header (see section 
-<span class="ptr"></span>).
+<a class="link_ptr" title="Revision Description" href="/v3/guidelines/header#headerRevisionDescription">2.4 Revision Description</a>).
 
 The edition element should contain phrases describing the edition or version, including
 the
@@ -110,9 +99,7 @@ edition.
 
 Some examples follow:
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample029.xml" valid="true" %}
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample030.xml" valid="true" %}
 

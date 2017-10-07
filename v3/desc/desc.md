@@ -1,0 +1,8 @@
+---
+desc: "desc"
+type: "elementSpec"
+---
+
+(description) – Container for text that briefly describes the feature to which it
+is
+attached, including its intended usage, purpose, or application as appropriate.

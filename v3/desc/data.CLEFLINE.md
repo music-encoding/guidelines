@@ -1,0 +1,8 @@
+---
+desc: "data.CLEFLINE"
+type: "macroSpec"
+---
+
+Clef line attribute values. The value must be in the range between 1 and the number
+of
+lines on the staff. The numbering of lines starts with the lowest line of the staff.

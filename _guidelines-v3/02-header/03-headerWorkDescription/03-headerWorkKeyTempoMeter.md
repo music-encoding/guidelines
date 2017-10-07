@@ -1,34 +1,24 @@
 ---
 sectionid: headerWorkKeyTempoMeter
-title: Key, Tempo, and Meter
+title: "Key, Tempo, and Meter"
 ---
 
 
-<h3 id="headerWorkKeyTempoMeter">
-   <span class="headingNumber">2.3.3</span>
-   <span class="head">Key, Tempo, and Meter</span>
-</h3>
+
 The attributes key, tempo, and meter are often helpful for identifying a musical work
 when
 it does not have a distinctive title.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="key" atts="" %}
+{% include _specDesc.html key="mensuration" atts="" %}
+{% include _specDesc.html key="meter" atts="" %}
+{% include _specDesc.html key="tempo" atts="" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/key">key</a> element is used exclusively within bibliographic
+
+The <a class="link_odd_elementSpec" href="/v3/elements/key">key</a> element is used exclusively within bibliographic
 descriptions. Do not confuse this element with 
 <a class="link_odd_elementSpec" href="/v3/elements/keySig">keySig</a>, which is used
 within the body of an MEI file to record this data for musical notation. Likewise,

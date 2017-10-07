@@ -1,13 +1,10 @@
 ---
 sectionid: cmnTuplets
-title: Tuplets
+title: "Tuplets"
 ---
 
 
-<h3 id="cmnTuplets">
-   <span class="headingNumber">4.2.4</span>
-   <span class="head">Tuplets</span>
-</h3>
+
 Tuplets indicate a localized change of meter; that is, a given duration in the regular
 meter is divided between a group of notes with irregular (according to the current
 meter)
@@ -27,12 +24,10 @@ The duration of the entire tuplet may be encoded using the usual ‘power of
 2’ values, e.g., 1, 2, 4, etc., in the **@dur** attribute, and the
 **@dots** attribute, if necessary.
 
-
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample134.xml" valid="true" %}
 
 
 
-<!-- TODO: Cover omission of numbase and/or dur. -->
 
 Tuplets are often highlighted using brackets above or below the affected notes. The
 presence and position of these brackets can be encoded using the **@bracket.place**
@@ -48,12 +43,8 @@ number (the value of **@num**) or a ratio (comprised of **@num** and
 the general presence of such a number. 
 
 
-<!--<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-        <!-\- NEED EXAMPLE HERE! -\->
-      </egXML>-->
 
-In addition to 
-<a class="link_odd_elementSpec" href="/v3/elements/note">note</a> elements, 
+In addition to <a class="link_odd_elementSpec" href="/v3/elements/note">note</a> elements, 
 <a class="link_odd_elementSpec" href="/v3/elements/tuplet">tuplet</a> may
 contain other elements, such as 
 <a class="link_odd_elementSpec" href="/v3/elements/rest">rest</a> or 
@@ -63,13 +54,8 @@ the
 <a class="link_odd_elementSpec" href="/v3/elements/beam">beam</a> element is allowed so that custom beaming may be indicated, e.g., a
 septuplet may be divided into a group of three plus a group of four
 notes.
-<!--, as described in Read, p. 187-215.-->
 
 
-<!-- TODO:
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-        <!-\- NEED EXAMPLE HERE! -\->
-      </egXML>-->
 
 The 
 <a class="link_odd_elementSpec" href="/v3/elements/tuplet">tuplet</a> element may also be used for repetition of the same pitch;
@@ -98,7 +84,6 @@ tuplet using **@startid** and **@endid** attributes. This configuration allows
 tuplets to cross measure boundaries. The following example demonstrates a typical
 example of
 such hierarchy-crossing tuplets:
-
 
 {% include _plainExample.html example="./v3/examples/cmn/cmn-sample135.xml" valid="true" %}
 

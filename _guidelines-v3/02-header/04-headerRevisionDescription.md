@@ -1,15 +1,11 @@
 ---
 sectionid: headerRevisionDescription
-title: Revision Description
+title: "Revision Description"
 ---
 
 
-<h2 id="headerRevisionDescription">
-   <span class="headingNumber">2.4</span>
-   <span class="head">Revision Description</span>
-</h2>
-The final sub-element of the MEI header, the 
-<a class="link_odd_elementSpec" href="/v3/elements/revisionDesc">revisionDesc</a> element,
+
+The final sub-element of the MEI header, the <a class="link_odd_elementSpec" href="/v3/elements/revisionDesc">revisionDesc</a> element,
 provides a detailed change log in which each change made to a text may be recorded.
 Its use is
 optional but highly recommended. It provides essential information for the administration
@@ -27,13 +23,9 @@ corresponding entries being made in the change log.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="revisionDesc" atts="" %}
+{% include _specDesc.html key="change" atts="" %}
+
 
 
 
@@ -64,7 +56,6 @@ It is recommended to give changes in reverse chronological order, most recent fi
 
 For example:
 
-
 {% include _plainExample.html example="./v3/examples/header/header-sample075.xml" valid="true" %}
 
 A slightly shorter form for recording changes is also available when a the date of
@@ -74,7 +65,6 @@ agent(s)
 responsible for the change, encoded elsewhere in the header, can be referred to by
 one or more
 URIs given in the **@resp** attribute. For example:
-
 
 {% include _plainExample.html example="./v3/examples/header/header-sample076.xml" valid="true" %}
 

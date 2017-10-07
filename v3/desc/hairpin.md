@@ -1,0 +1,8 @@
+---
+desc: "hairpin"
+type: "elementSpec"
+---
+
+Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
+&lt;
+and &gt;.

@@ -1,20 +1,14 @@
 ---
 sectionid: analysisScaleDegrees
-title: Scale Degrees
+title: "Scale Degrees"
 ---
 
 
-<h3 id="analysisScaleDegrees">
-   <span class="headingNumber">7.2.4</span>
-   <span class="head">Scale Degrees</span>
-</h3>
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+
+{% include _specDesc.html key="att.harmonicfunction" atts="deg" %}
+
 
 
 The **@deg** attribute can be used to represent key-dependent scale-degree
@@ -35,7 +29,6 @@ Chromatic alteration of the scale degree can be represented using a trailing plu
 minus (-) signs, signifying raised or lowered scale degree, respectively. The actual
 amount
 of chromatic alteration is not indicated.
-
 
 {% include _plainExample.html example="./v3/examples/analysis/analysis-sample174.xml" valid="false" %}
 

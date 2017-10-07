@@ -1,31 +1,24 @@
 ---
 sectionid: critAppInContent
-title: Variants in Musical Content
+title: "Variants in Musical Content"
 ---
 
 
-<h2 id="critAppInContent">
-   <span class="headingNumber">10.2</span>
-   <span class="head">Variants in Musical Content</span>
-</h2>
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/app">app</a> element may be used to accommodate textual variation at nearly
+
+The <a class="link_odd_elementSpec" href="/v3/elements/app">app</a> element may be used to accommodate textual variation at nearly
 any point in a musical text. For example, it may be used to indicate minor differences
 such as
 stem directions:
-
 
 {% include _plainExample.html example="./v3/examples/critApp/critApp-sample203.xml" valid="true" %}
 
 
 or to indicate more significant differences, such as the insertion of extra measures:
 
-
 {% include _plainExample.html example="./v3/examples/critApp/critApp-sample204.xml" valid="true" %}
 
 
 
-<!-- Here we might add several other examples -->
 
 However, the flexibility in the location of 
 <a class="link_odd_elementSpec" href="/v3/elements/app">app</a> places a burden on the
@@ -39,9 +32,4 @@ parent
 <a class="link_odd_elementSpec" href="/v3/elements/app">app</a>.
 
 
-<!-- TODO:
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
-<!-\- NEED EXAMPLE HERE! -\->
-<!-\- Provide a whacked-out example of the abuse of app -\->
-    </egXML>-->
 

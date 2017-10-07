@@ -1,36 +1,30 @@
 ---
 sectionid: edittranscpMark
-title:  Instructions
+title: " Instructions"
 ---
 
 
-<h3 id="edittranscpMark">
-   <span class="headingNumber">11.1.1</span>
-   <span class="head"> Instructions</span>
-</h3>
+
 Many musical scores make use of various kinds of shorthand notation which omit some
 parts
 of the score that have already been written elsewhere. Typical exampleS for this are
 symbols
 that indicate repetition of the preceding measure or beat. In MEI, these symbols can
 be
-encoded using the 
-<a class="link_odd_elementSpec" href="/v3/elements/mRpt">mRpt</a> and 
+encoded using the <a class="link_odd_elementSpec" href="/v3/elements/mRpt">mRpt</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/beatRpt">beatRpt</a> elements
 respectively. Often, similar graphical symbols (often one or two slashes, "//") are
 used to
 mean that the current staff should have the same or similar content as another staff.
 
-
-<span class="foreign">colla parte</span> directives have a less strictly-defined scope than the
+*colla parte* directives have a less strictly-defined scope than the
 ‘Rpt elements’ (
 <a class="link_odd_elementSpec" href="/v3/elements/beatRpt">beatRpt</a>, 
 <a class="link_odd_elementSpec" href="/v3/elements/halfmRpt">halfmRpt</a>, 
 <a class="link_odd_elementSpec" href="/v3/elements/mRpt">mRpt</a>, 
 <a class="link_odd_elementSpec" href="/v3/elements/mRpt2">mRpt2</a>, 
 <a class="link_odd_elementSpec" href="/v3/elements/multiRpt">multiRpt</a>). That is, rather than specifying the repetition of content of a particular
-duration, like a measure or beat, 
-<span class="foreign">colla parte</span> instructions can refer to
+duration, like a measure or beat, *colla parte* instructions can refer to
 material of any length. In order to encode such scribal shorthand, MEI offers the
 
 <a class="link_odd_elementSpec" href="/v3/elements/cpMark">cpMark</a> element, which allows filling of blank spaces in the score with
@@ -38,11 +32,8 @@ horizontally and/or vertically distant material.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="cpMark" atts="" %}
+
 
 
 Like any other ‘controlEvent’, 
@@ -90,7 +81,6 @@ material
 in another octave. This information can be captured using the **@dis** and
 **@dis.place** attributes on 
 <a class="link_odd_elementSpec" href="/v3/elements/cpMark">cpMark</a>.
-
 
 {% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample211.xml" valid="true" %}
 

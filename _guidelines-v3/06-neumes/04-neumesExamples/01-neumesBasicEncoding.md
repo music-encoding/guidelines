@@ -1,20 +1,16 @@
 ---
 sectionid: neumesBasicEncoding
-title: Basic Encoding
+title: "Basic Encoding"
 ---
 
 
-<h3 id="neumesBasicEncoding">
-   <span class="headingNumber">6.4.1</span>
-   <span class="head">Basic Encoding</span>
-</h3>
+
 The example illustrates the most basic encoding of neume notation. Encoded here is
 the
 opening of Hildegarde's "O Splendidissima Gemma" with the text "O splendidissima".
 Information about the staff has been omitted for brevity, but it was originally encoded
 on a
 5-line staff with two clefs, a "C" and a "F" on lines 5 and 3, respectively.
-
 
 {% include _plainExample.html example="./v3/examples/neumes/neumes-sample159.xml" valid="true" %}
 

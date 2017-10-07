@@ -7,10 +7,6 @@ sectionid: "analysis"
 
 <span class="div">
    
-   <h1 id="analysis">
-      <span class="headingNumber">7</span>
-      <span class="head">Analytical Information</span>
-   </h1>
    This chapter describes the use of attributes that capture data which may be useful
    for
    analytical purposes. The analysis module provides attributes that record relationships
@@ -23,9 +19,9 @@ sectionid: "analysis"
    analysis",
    and document their use in the 
    <a class="link_odd_elementSpec" href="/v3/elements/encodingDesc">encodingDesc</a> described in section 
-   <span class="ptr"></span>. For general information on musical analysis, please
+   <a class="link_ptr" title="Encoding Description" href="/v3/guidelines/header#headerEncodingDescription">2.2 Encoding Description</a>. For general information on musical analysis, please
    consult Grove Music Online, "
-   <span class="ref">Analysis</span>".
+   <a class="link_ref" href="http://www.oxfordmusiconline.com/subscriber/article/grove/music/41862pg1#S41862.1">Analysis</a>".
    
    
    

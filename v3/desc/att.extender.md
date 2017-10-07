@@ -1,0 +1,8 @@
+---
+desc: "att.extender"
+type: "classSpec"
+---
+
+Attributes that describe extension symbols, typically lines. Members of this class
+are
+also typically members of the att.linerend class.

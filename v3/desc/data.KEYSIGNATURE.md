@@ -1,0 +1,12 @@
+---
+desc: "data.KEYSIGNATURE"
+type: "macroSpec"
+---
+
+Key signature may be indicated by a value showing where the key is in the circle of
+fifths. Mixed key signatures, e.g. those consisting of a mixture of flats and sharps,
+and
+key signatures with unorthodox placement of the accidentals (Read, p. 143) must be
+indicated
+by setting the key.sig attribute to 'mixed' and providing explicit key signature information
+in the key.sig.mixed attribute.

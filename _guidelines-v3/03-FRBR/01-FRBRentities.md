@@ -1,33 +1,23 @@
 ---
 sectionid: FRBRentities
-title: FRBR Entities in MEI
+title: "FRBR Entities in MEI"
 ---
 
 
-<h2 id="FRBRentities">
-   <span class="headingNumber">3.1</span>
-   <span class="head">FRBR Entities in MEI</span>
-</h2>
+
 When the FRBR module is available, MEI offers four elements corresponding to the FRBR
 entities:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="work" atts="" %}
+{% include _specDesc.html key="expression" atts="" %}
+{% include _specDesc.html key="source" atts="" %}
+{% include _specDesc.html key="item" atts="" %}
 
 
-The names of the MEI entities generally follow those of FRBR: the 
-<a class="link_odd_elementSpec" href="/v3/elements/work">work</a>
+
+The names of the MEI entities generally follow those of FRBR: the <a class="link_odd_elementSpec" href="/v3/elements/work">work</a>
 element is a container for description at the FRBR "work" level, 
 <a class="link_odd_elementSpec" href="/v3/elements/expression">expression</a> is for description at the FRBR "expression" level, and 
 <a class="link_odd_elementSpec" href="/v3/elements/item">item</a> holds FRBR "item" level description. The 
@@ -44,11 +34,8 @@ elements:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="expressionList" atts="" %}
+
 
 
 As 
@@ -66,13 +53,9 @@ description of specific versions of a work:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="extent" atts="" %}
+{% include _specDesc.html key="scoreFormat" atts="" %}
+
 
 
 Since expressions, like works, are abstractions, their titles are often nebulous.
@@ -85,7 +68,6 @@ no title is provided for an expression, distinguishing characteristics must be p
 in
 other elements, such as 
 <a class="link_odd_elementSpec" href="/v3/elements/perfMedium">perfMedium</a>, as in the following example:
-
 
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample079.xml" valid="true" %}
 
@@ -100,19 +82,14 @@ descriptive title to the expression, as illustrated below. The carrier of the ma
 is
 often a good source of this kind of descriptive text.
 
-
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample080.xml" valid="true" %}
-
 
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample081.xml" valid="true" %}
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="itemList" atts="" %}
+
 
 
 The itemList element provides functionality similar to that of expressionList; that
@@ -124,7 +101,6 @@ like
 <a class="link_odd_elementSpec" href="/v3/elements/expression">expression</a> sub-components, 
 <a class="link_odd_elementSpec" href="/v3/elements/itemList">itemList</a> may only contain 
 <a class="link_odd_elementSpec" href="/v3/elements/item">item</a> elements.
-
 
 {% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample082.xml" valid="true" %}
 

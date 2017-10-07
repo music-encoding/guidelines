@@ -1,24 +1,17 @@
 ---
 sectionid: sharedAnnotations
-title: Annotations
+title: "Annotations"
 ---
 
 
-<h3 id="sharedAnnotations">
-   <span class="headingNumber">1.3.5</span>
-   <span class="head">Annotations</span>
-</h3>
+
 Annotations are one of the most versatile features of MEI. They are provided using
-the 
-<a class="link_odd_elementSpec" href="/v3/elements/annot">annot</a> element.
+the <a class="link_odd_elementSpec" href="/v3/elements/annot">annot</a> element.
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="annot" atts="" %}
+
 
 
 This element may be contained by a wide range of other elements and may contain a
@@ -38,8 +31,6 @@ its **@plist** attribute. This attribute uses URI references to link to one or m
 other elements using their **@xml:id** attribute values, as in the following
 example:
 
-
 {% include _plainExample.html example="./v3/examples/shared/shared-sample011.xml" valid="true" %}
 
 
-<!-- TODO: further description required… -->

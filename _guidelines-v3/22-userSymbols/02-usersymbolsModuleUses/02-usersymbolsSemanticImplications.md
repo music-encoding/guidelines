@@ -1,21 +1,17 @@
 ---
 sectionid: usersymbolsSemanticImplications
-title: Elements Without Semantic Implications
+title: "Elements Without Semantic Implications"
 ---
 
 
-<h3 id="usersymbolsSemanticImplications">
-   <span class="headingNumber">22.2.2</span>
-   <span class="head">Elements Without Semantic Implications</span>
-</h3>
+
 The graphics primitives and symbols can be used directly in the music to describe
 text and
 lines on a purely graphical level, without implying a specific logical meaning. If
 possible,
 however, more meaningful elements should be used. This means for example, "a tempo"
 or "da
-capo" should in general not be put inside 
-<a class="link_odd_elementSpec" href="/v3/elements/anchoredText">anchoredText</a>. Instead, 
+capo" should in general not be put inside <a class="link_odd_elementSpec" href="/v3/elements/anchoredText">anchoredText</a>. Instead, 
 <a class="link_odd_elementSpec" href="/v3/elements/tempo">tempo</a> and 
 <a class="link_odd_elementSpec" href="/v3/elements/dir">dir</a> should be used. Likewise, slurs and
 ties should be encoded using their respective elements, not using 
@@ -36,8 +32,7 @@ which is not covered by a specific MEI element.
    </figcaption>
 </figure>
 
-<figure class="figure">
-   {% include _plainExample.html example="./v3/examples/userSymbols/userSymbols-sample347.xml" valid="true" %}
+<figure class="figure">{% include _plainExample.html example="./v3/examples/userSymbols/userSymbols-sample347.xml" valid="true" %}
    
    <figcaption class="figure-caption">Listing 3. Encoding of the Schumann example</figcaption>
 </figure>

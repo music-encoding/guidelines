@@ -1,0 +1,8 @@
+---
+desc: "bloc"
+type: "elementSpec"
+---
+
+Contains the name of a geo-political unit consisting of two or more nation states
+or
+countries.

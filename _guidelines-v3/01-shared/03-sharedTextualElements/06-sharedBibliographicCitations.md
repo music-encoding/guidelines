@@ -1,108 +1,63 @@
 ---
 sectionid: sharedBibliographicCitations
-title: Bibliographic Citations and References
+title: "Bibliographic Citations and References"
 ---
 
 
-<h3 id="sharedBibliographicCitations">
-   <span class="headingNumber">1.3.6</span>
-   <span class="head">Bibliographic Citations and References</span>
-</h3>
+
 The following element is used in the encoding of bibliographic citations and
 references:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="bibl" atts="" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a> element may contain a mix of text and more specific
+
+The <a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a> element may contain a mix of text and more specific
 elements, including the following:
 
 
 
-<span class="specList">
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-   <span class="specDesc"></span>
-   
-</span>
+{% include _specDesc.html key="arranger" atts="" %}
+{% include _specDesc.html key="author" atts="" %}
+{% include _specDesc.html key="composer" atts="" %}
+{% include _specDesc.html key="librettist" atts="" %}
+{% include _specDesc.html key="lyricist" atts="" %}
+{% include _specDesc.html key="funder" atts="" %}
+{% include _specDesc.html key="sponsor" atts="" %}
+{% include _specDesc.html key="respStmt" atts="" %}
+{% include _specDesc.html key="title" atts="" %}
+{% include _specDesc.html key="edition" atts="" %}
+{% include _specDesc.html key="editor" atts="" %}
+{% include _specDesc.html key="series" atts="" %}
+{% include _specDesc.html key="imprint" atts="" %}
+{% include _specDesc.html key="pubPlace" atts="" %}
+{% include _specDesc.html key="publisher" atts="" %}
+{% include _specDesc.html key="distributor" atts="" %}
+{% include _specDesc.html key="biblScope" atts="" %}
+{% include _specDesc.html key="extent" atts="" %}
+{% include _specDesc.html key="date" atts="" %}
+{% include _specDesc.html key="identifier" atts="" %}
+{% include _specDesc.html key="annot" atts="" %}
+{% include _specDesc.html key="creation" atts="" %}
+{% include _specDesc.html key="genre" atts="" %}
+{% include _specDesc.html key="recipient" atts="" %}
+{% include _specDesc.html key="textLang" atts="" %}
+{% include _specDesc.html key="repository" atts="" %}
+{% include _specDesc.html key="physLoc" atts="" %}
+{% include _specDesc.html key="relatedItem" atts="" %}
+
 
 
 These elements fall into the following categories: 
-<span class="list">
-   
-   <span class="item">identification of the bibliographic entity and those responsible for its
-      intellectual content
-   </span>
-   
-   <span class="item">publication and distribution data for the bibliographic entity</span>
-   
-   <span class="item">description of the physical characteristics of the item</span>
-   
-   <span class="item">annotation of the bibliographic citation and additional details regarding the item's
-      intellectual content
-   </span>
-   
-</span>
+- identification of the bibliographic entity and those responsible for its
+intellectual content
+- publication and distribution data for the bibliographic entity
+- description of the physical characteristics of the item
+- annotation of the bibliographic citation and additional details regarding the item's
+intellectual content
+
 
 
 The elements 
@@ -192,12 +147,11 @@ as a hypertext reference to an external electronic resource. In addition, other 
 bibliographic items may be described or referenced using the 
 <a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> element.
 
-
 {% include _plainExample.html example="./v3/examples/shared/shared-sample012.xml" valid="true" %}
 
 Please consult 
-<span class="ptr"></span> and 
-<span class="ptr"></span> for
+<a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/v3/guidelines/shared#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and 
+<a class="link_ptr" title="Names and Dates" href="/v3/guidelines/namesDates">17 Names and Dates</a> for
 more information about recording the names and dates frequently found in bibliographic
 citations.
 

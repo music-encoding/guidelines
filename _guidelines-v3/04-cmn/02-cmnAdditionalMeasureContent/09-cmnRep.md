@@ -1,13 +1,10 @@
 ---
 sectionid: cmnRep
-title: Repetition in CMN
+title: "Repetition in CMN"
 ---
 
 
-<h3 id="cmnRep">
-   <span class="headingNumber">4.2.9</span>
-   <span class="head">Repetition in CMN</span>
-</h3>
+
 Repetition is a characteristic feature of music. Many musical forms rely on repetition
 (sometimes with modification) of distinct sections of the music. Repetition in this
 sense

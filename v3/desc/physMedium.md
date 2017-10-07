@@ -1,0 +1,8 @@
+---
+desc: "physMedium"
+type: "elementSpec"
+---
+
+(physical medium) – Records the physical materials used in the source, such as ink
+and
+paper.

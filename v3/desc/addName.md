@@ -1,0 +1,7 @@
+---
+desc: "addName"
+type: "elementSpec"
+---
+
+(additional name) – Contains an additional name component, such as a nickname, epithet,
+or alias, or any other descriptive phrase used within a personal name.

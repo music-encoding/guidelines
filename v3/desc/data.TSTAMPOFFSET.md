@@ -1,0 +1,8 @@
+---
+desc: "data.TSTAMPOFFSET"
+type: "macroSpec"
+---
+
+A positive or negative offset from the value given in the tstamp attribute in terms
+of
+musical time, i.e., beats[.fractional beat part].

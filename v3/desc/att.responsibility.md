@@ -1,0 +1,7 @@
+---
+desc: "att.responsibility"
+type: "classSpec"
+---
+
+Attributes capturing information regarding responsibility for some aspect of the text's
+creation, transcription, editing, or encoding.
