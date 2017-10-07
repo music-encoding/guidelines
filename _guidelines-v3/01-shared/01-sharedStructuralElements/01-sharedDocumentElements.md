@@ -21,7 +21,7 @@ an MEI document:
 
 
 A typical MEI document contains an [mei](/{{ page.version }}/elements/mei.html){:.link_odd_elementSpec} element, which in turn
-contains metadata, represented by an [meiHead](/{{ page.version }}/elements/meiHead.html){:.link_odd_elementSpec} element, and the musical
+contains metadata, represented by an [meiHead]({{ site.baseurl }}/{{ page.version }}/elements/meiHead.html){:.link_odd_elementSpec} element, and the musical
 text itself, represented by a [music](/{{ page.version }}/elements/music.html){:.link_odd_elementSpec} element. The [meiHead](/{{ page.version }}/elements/meiHead.html){:.link_odd_elementSpec} element, formally declared in the MEI.header module, is described in chapter
 <a class="link_ptr" title="The MEI Header" href="/{{ page.version }}/guidelines/header.html">2 The MEI Header</a>.
 

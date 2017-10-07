@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 title: "Guidelines"
-version: "guidelines-v3"
+version: "v3"
 ---
 <h1>Guidelines</h1>
 

@@ -26,16 +26,16 @@ sidebar:
       content: 
           - id: guidelines
             label: 'Guidelines'
-            url: 'guidelines'
+            url: 'guidelines/'
           - id: elements
             label: 'Elements'
-            url: 'elements'
+            url: 'elements.html'
           - id: attributeclasses
             label: 'Attribute Classes'
-            url: 'attribute-classes'
+            url: 'attribute-classes.html'
           - id: modelclasses
             label: 'Model Classes'
-            url: 'model-classes'
+            url: 'model-classes.html'
           - id: datatypes
             label: 'Data Types'
-            url: 'data-types'
+            url: 'data-types.html'
