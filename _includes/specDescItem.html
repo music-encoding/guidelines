@@ -17,6 +17,6 @@
             {% if include.att %}
                 {% assign file = include.version | append:'/desc/' | append:include.att | append:'.txt' %}
             {% endif %}
-            {{ include {{ file | replace: ':', '---' }} }}</div>
+            {% include {{ file | replace: ':', '---' }} %}</div>
     </div>
 </div>
