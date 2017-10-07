@@ -1,6 +1,7 @@
 ---
 desc: "att.chord.vis"
 type: "classSpec"
+version: "v3"
 ---
 
 Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.frontPart"
 
 ---
@@ -26,11 +27,11 @@ title: "model.frontPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.physDescPart">model.physDescPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.physDescPart">model.physDescPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/back">back</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/front">front</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/front">front</a>
                </div>
             </div>
          </td>
@@ -42,7 +43,7 @@ title: "model.frontPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a> (direct member of model.frontPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a> (direct member of model.frontPart)
                </div>
             </div>
          </td>

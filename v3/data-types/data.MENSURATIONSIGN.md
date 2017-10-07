@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MENSURATIONSIGN"
 
 ---
@@ -25,8 +26,8 @@ title: "data.MENSURATIONSIGN"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.mensur.log">att.mensur.log</a> (@sign), 
-               <a class="link_odd_classSpec" href="/v3/att.mensural.log">att.mensural.log</a> (@mensur.sign)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a> (@sign), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a> (@mensur.sign)
             </div>
          </td>
       </tr>

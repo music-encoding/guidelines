@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "Musical Instrument Digital Interface (MIDI)"
 sectionid: "midiGuidelines"
 ---

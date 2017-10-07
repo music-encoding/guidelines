@@ -1,6 +1,7 @@
 ---
 desc: "fermata"
 type: "elementSpec"
+version: "v3"
 ---
 
 An indication placed over a note or rest to indicate that it should be held longer

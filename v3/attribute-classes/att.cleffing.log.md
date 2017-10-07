@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.cleffing.log"
 
 ---
@@ -27,15 +28,15 @@ title: "att.cleffing.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -51,10 +52,10 @@ title: "att.cleffing.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of octave displacement to be applied to the clef.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,10 +63,10 @@ title: "att.cleffing.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the direction of octave displacement to be applied to the clef.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -77,10 +78,10 @@ title: "att.cleffing.log"
                   the lowest line of the staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFLINE">data.CLEFLINE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFLINE">data.CLEFLINE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -88,10 +89,10 @@ title: "att.cleffing.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Encodes a value for the clef symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFSHAPE">data.CLEFSHAPE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFSHAPE">data.CLEFSHAPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
          </td>

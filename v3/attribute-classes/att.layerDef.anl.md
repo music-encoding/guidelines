@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layerDef.anl"
 
 ---
@@ -26,7 +27,7 @@ title: "att.layerDef.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a> (direct member of att.layerDef.anl)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a> (direct member of att.layerDef.anl)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.section.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.section.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a> (direct member of att.section.vis)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/section">section</a> (direct member of att.section.vis)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.section.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates that staves begin again with this section.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.section.vis">att.section.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.section.vis">att.section.vis</a>
                </span>
             </div>
          </td>

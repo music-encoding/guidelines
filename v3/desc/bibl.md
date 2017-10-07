@@ -1,6 +1,7 @@
 ---
 desc: "bibl"
 type: "elementSpec"
+version: "v3"
 ---
 
 (bibliographic reference) – Provides a loosely-structured bibliographic citation in

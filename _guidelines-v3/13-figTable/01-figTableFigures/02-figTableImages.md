@@ -1,11 +1,12 @@
 ---
 sectionid: figTableImages
 title: "Images"
+version: "v3"
 ---
 
 
 
-The [graphic](/v3/elements/graphic.html){:.link_odd_elementSpec} element indicates the location of an inline graphic,
+The [graphic](/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec} element indicates the location of an inline graphic,
 illustration, or figure. As noted above, there exists a wide variety of different
 graphics
 formats, and the following list is in no way exhaustive. Moreover, inclusion of any

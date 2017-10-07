@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tempo.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.tempo.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a> (direct member of att.tempo.ges)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a> (direct member of att.tempo.ges)
                </div>
             </div>
          </td>
@@ -44,10 +45,10 @@ title: "att.tempo.ges"
                   indication*.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIBPM">data.MIDIBPM</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIBPM">data.MIDIBPM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.miditempo">att.miditempo</a>
+                  <a class="link_odd" href="/{{ v3}}/att.miditempo">att.miditempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,10 +60,10 @@ title: "att.tempo.ges"
                   microseconds.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIMSPB">data.MIDIMSPB</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIMSPB">data.MIDIMSPB</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.miditempo">att.miditempo</a>
+                  <a class="link_odd" href="/{{ v3}}/att.miditempo">att.miditempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -76,10 +77,10 @@ title: "att.tempo.ges"
                   the time signature or the metronomic indication*.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TEMPOVALUE">data.TEMPOVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.TEMPOVALUE">data.TEMPOVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mmtempo">att.mmtempo</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mmtempo">att.mmtempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -87,10 +88,10 @@ title: "att.tempo.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the number of augmentation dots required by a dotted metronome unit.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.AUGMENTDOT">data.AUGMENTDOT</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.AUGMENTDOT">data.AUGMENTDOT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mmtempo">att.mmtempo</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mmtempo">att.mmtempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -98,10 +99,10 @@ title: "att.tempo.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures the metronomic unit.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION">data.DURATION</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION">data.DURATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mmtempo">att.mmtempo</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mmtempo">att.mmtempo</a>
                </span>
             </div>
          </td>

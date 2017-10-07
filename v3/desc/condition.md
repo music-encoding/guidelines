@@ -1,6 +1,7 @@
 ---
 desc: "condition"
 type: "elementSpec"
+version: "v3"
 ---
 
 The physical condition of an item, particularly any variances between the physical

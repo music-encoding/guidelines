@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.respLikePart"
 
 ---
@@ -27,11 +28,11 @@ title: "model.respLikePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.respLike">model.respLike</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.titlePagePart">model.titlePagePart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.respLike">model.respLike</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.titlePagePart">model.titlePagePart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/byline">byline</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/byline">byline</a>
                </div>
             </div>
          </td>
@@ -43,14 +44,14 @@ title: "model.respLikePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/arranger">arranger</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/author">author</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/composer">composer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editor">editor</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/funder">funder</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/librettist">librettist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lyricist">lyricist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sponsor">sponsor</a> (direct members of model.respLikePart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/arranger">arranger</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/author">author</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/composer">composer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editor">editor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/funder">funder</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/librettist">librettist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyricist">lyricist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sponsor">sponsor</a> (direct members of model.respLikePart)
                </div>
             </div>
          </td>

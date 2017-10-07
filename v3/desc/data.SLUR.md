@@ -1,6 +1,7 @@
 ---
 desc: "data.SLUR"
 type: "macroSpec"
+version: "v3"
 ---
 
 i=initial, m=medial, t=terminal. Number is used to match endpoints of the slur when

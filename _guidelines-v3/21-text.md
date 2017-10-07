@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "Text in MEI"
 sectionid: "text"
 ---
@@ -15,8 +16,8 @@ sectionid: "text"
    functionality
    of the notated music and are, therefore, described in other chapters (see for example
    
-   <a class="link_ptr" title="Vocal Text" href="/v3/guidelines/lyricsDesc.html">15 Vocal Text</a> and 
-   <a class="link_ptr" title="Text Directives" href="/v3/guidelines/shared.html#sharedTextDirectives">1.2.5.1 Text Directives</a>). This chapter, on the other
+   <a class="link_ptr" title="Vocal Text" href="/{{ page.version }}/guidelines/lyricsDesc.html">15 Vocal Text</a> and 
+   <a class="link_ptr" title="Text Directives" href="/{{ page.version }}/guidelines/shared.html#sharedTextDirectives">1.2.5.1 Text Directives</a>). This chapter, on the other
    hand, focuses on the text that accompanies the score, i.e., paratext (prefatory material,
    title
    pages, back matter, appendices, etc.), titles, prose, poetry, etc.

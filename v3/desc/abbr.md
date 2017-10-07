@@ -1,6 +1,7 @@
 ---
 desc: "abbr"
 type: "elementSpec"
+version: "v3"
 ---
 
 (abbreviation) – A generic element for 1) a shortened form of a word, including an

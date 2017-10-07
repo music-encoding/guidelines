@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.eventLike"
 
 ---
@@ -26,27 +27,27 @@ title: "model.eventLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.layerPart">model.layerPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.syllablePart">model.syllablePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.rdgPart.critapp">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.layerPart">model.layerPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.syllablePart">model.syllablePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.rdgPart.critapp">model.rdgPart.critapp</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ineume">ineume</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                </div>
             </div>
          </td>
@@ -58,48 +59,48 @@ title: "model.eventLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/clefGrp">clefGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/custos">custos</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pad">pad</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/space">space</a> (direct members of model.eventLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clefGrp">clefGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pad">pad</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a> (direct members of model.eventLike)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/beatRpt">beatRpt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/halfmRpt">halfmRpt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beatRpt">beatRpt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bTrem">bTrem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fTrem">fTrem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/halfmRpt">halfmRpt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.eventLike.cmn">model.eventLike.cmn</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike.cmn">model.eventLike.cmn</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ligature">ligature</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/proport">proport</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/proport">proport</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.eventLike.mensural">model.eventLike.mensural</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike.mensural">model.eventLike.mensural</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.keySigLike">model.keySigLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.keySigLike">model.keySigLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meterSig">meterSig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meterSigGrp">meterSigGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSig">meterSig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSigGrp">meterSigGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.meterSigLike">model.meterSigLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.meterSigLike">model.meterSigLike</a>)
                   </span>
                </div>
             </div>

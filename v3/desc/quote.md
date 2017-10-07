@@ -1,6 +1,7 @@
 ---
 desc: "quote"
 type: "elementSpec"
+version: "v3"
 ---
 
 (block quote) – A formatting element that designates an extended quotation; that is,

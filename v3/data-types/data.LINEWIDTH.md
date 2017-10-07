@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.LINEWIDTH"
 
 ---
@@ -25,11 +26,11 @@ title: "data.LINEWIDTH"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.curverend">att.curverend</a> (@lwidth), 
-               <a class="link_odd_classSpec" href="/v3/att.line.vis">att.line.vis</a> (@width), 
-               <a class="link_odd_classSpec" href="/v3/att.linerend.base">att.linerend.base</a> (@lwidth), 
-               <a class="link_odd_classSpec" href="/v3/att.slurrend">att.slurrend</a> (@slur.lwidth), 
-               <a class="link_odd_classSpec" href="/v3/att.tierend">att.tierend</a> (@tie.lwidth)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.curverend">att.curverend</a> (@lwidth), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.line.vis">att.line.vis</a> (@width), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.linerend.base">att.linerend.base</a> (@lwidth), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.slurrend">att.slurrend</a> (@slur.lwidth), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.tierend">att.tierend</a> (@tie.lwidth)
             </div>
          </td>
       </tr>

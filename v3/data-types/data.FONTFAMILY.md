@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.FONTFAMILY"
 
 ---
@@ -26,9 +27,9 @@ title: "data.FONTFAMILY"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.lyricstyle">att.lyricstyle</a> (@lyric.fam), 
-               <a class="link_odd_classSpec" href="/v3/att.textstyle">att.textstyle</a> (@text.fam), 
-               <a class="link_odd_classSpec" href="/v3/att.typography">att.typography</a> (@fontfam)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a> (@lyric.fam), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.textstyle">att.textstyle</a> (@text.fam), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.typography">att.typography</a> (@fontfam)
             </div>
          </td>
       </tr>

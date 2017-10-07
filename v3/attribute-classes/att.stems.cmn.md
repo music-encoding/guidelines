@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.stems.cmn"
 
 ---
@@ -28,19 +29,19 @@ title: "att.stems.cmn"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.stems">att.stems</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.stems">att.stems</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.chord.vis">att.chord.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.vis">att.note.vis</a>)
                   </span>
                </div>
             </div>
@@ -59,10 +60,10 @@ title: "att.stems.cmn"
                   below.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OTHERSTAFF">data.OTHERSTAFF</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.OTHERSTAFF">data.OTHERSTAFF</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems.cmn">att.stems.cmn</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems.cmn">att.stems.cmn</a>
                </span>
             </div>
          </td>

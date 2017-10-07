@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layerDef.log.cmn"
 
 ---
@@ -26,9 +27,9 @@ title: "att.layerDef.log.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.log">att.layerDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.layerDef.log">att.layerDef.log</a>)
                   </span>
                </div>
             </div>
@@ -49,7 +50,7 @@ title: "att.layerDef.log.cmn"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,10 +60,10 @@ title: "att.layerDef.log.cmn"
                   quarter note duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
          </td>

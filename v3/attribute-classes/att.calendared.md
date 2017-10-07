@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.calendared"
 
 ---
@@ -26,8 +27,8 @@ title: "att.calendared"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a> (direct members of att.calendared)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a> (direct members of att.calendared)
                </div>
             </div>
          </td>
@@ -47,7 +48,7 @@ title: "att.calendared"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.calendared">att.calendared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.calendared">att.calendared</a>
                </span>
             </div>
          </td>

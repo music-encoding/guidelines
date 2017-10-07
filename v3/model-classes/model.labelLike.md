@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.labelLike"
 
 ---
@@ -26,15 +27,15 @@ title: "model.labelLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/grpSym">grpSym</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handList">handList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/list">list</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/termList">termList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/contents">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/grpSym">grpSym</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/handList">handList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/list">list</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/termList">termList</a>
                </div>
             </div>
          </td>
@@ -46,7 +47,7 @@ title: "model.labelLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/label">label</a> (direct member of model.labelLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/label">label</a> (direct member of model.labelLike)
                </div>
             </div>
          </td>

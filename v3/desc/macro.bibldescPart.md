@@ -1,6 +1,7 @@
 ---
 desc: "macro.bibldescPart"
 type: "macroSpec"
+version: "v3"
 ---
 
 Groups manifestation- and item-specific elements that may appear as part of a

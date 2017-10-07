@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.LINESTARTENDSYMBOL"
 
 ---
@@ -25,8 +26,8 @@ title: "data.LINESTARTENDSYMBOL"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.line.vis">att.line.vis</a> (@endsym), 
-               <a class="link_odd_classSpec" href="/v3/att.linerend">att.linerend</a> (@lendsym)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.line.vis">att.line.vis</a> (@endsym), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.linerend">att.linerend</a> (@lendsym)
             </div>
          </td>
       </tr>

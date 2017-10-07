@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.expandable"
 
 ---
@@ -28,33 +29,33 @@ title: "att.expandable"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beatRpt">beatRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beatRpt">beatRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beatRpt.vis">att.beatRpt.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beatRpt.vis">att.beatRpt.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/halfmRpt">halfmRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/halfmRpt">halfmRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.halfmRpt.vis">att.halfmRpt.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.halfmRpt.vis">att.halfmRpt.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRpt">mRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRpt">mRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRpt.vis">att.mRpt.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRpt.vis">att.mRpt.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRpt2">mRpt2</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRpt2">mRpt2</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRpt2.vis">att.mRpt2.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRpt2.vis">att.mRpt2.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRpt">multiRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/multiRpt">multiRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRpt.vis">att.multiRpt.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.multiRpt.vis">att.multiRpt.vis</a>)
                   </span>
                </div>
             </div>
@@ -74,10 +75,10 @@ title: "att.expandable"
                   symbol.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.expandable">att.expandable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.expandable">att.expandable</a>
                </span>
             </div>
          </td>

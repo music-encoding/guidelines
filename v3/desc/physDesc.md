@@ -1,6 +1,7 @@
 ---
 desc: "physDesc"
 type: "elementSpec"
+version: "v3"
 ---
 
 (physical description) – Container for information about the appearance, construction,

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "Editorial Markup"
 sectionid: "editTrans"
 ---
@@ -22,7 +23,7 @@ sectionid: "editTrans"
    the genesis, later revision and editorial interpretation of a text. Mechanisms for
    describing
    multiple sources are described in chapter 
-   <a class="link_ptr" title="Critical Apparatus" href="/v3/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
+   <a class="link_ptr" title="Critical Apparatus" href="/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
    
    The elements described in this chapter may be contained by a wide range of other MEI
    elements
@@ -41,8 +42,8 @@ sectionid: "editTrans"
    encoder wishes to associate with the intervention. Because these requirements are
    common to many
    of the elements discussed in this section, they are provided by an attribute class,
-   [att.edit](/v3/attribute-classes/att.edit.html){:.link_odd}, to which these elements
-   subscribe. Any of the elements
+   [att.edit](/{{ page.version }}/attribute-classes/att.edit.html){:.link_odd}, to which
+   these elements subscribe. Any of the elements
    discussed here thus may potentially carry the following optional attributes:
    
    
@@ -60,7 +61,8 @@ sectionid: "editTrans"
    the lack of
    intervention) of a specific kind. Sometimes, pairs or other meaningful groupings of
    such
-   elements can be recorded, then wrapped within the special purpose [choice](/v3/elements/choice.html){:.link_odd_elementSpec}
+   elements can be recorded, then wrapped within the special purpose [choice](/{{ page.version
+   }}/elements/choice.html){:.link_odd_elementSpec}
    element:
    
    
@@ -77,12 +79,15 @@ sectionid: "editTrans"
    ‘views’ of the text after the application of the encoded editorial
    interventions.
    
-   Elements which can be combined in this way constitute the [model.choicePart](/v3/model-classes/model.choicePart.html){:.link_odd}
-   class. The default members of this class are [sic](/v3/elements/sic.html){:.link_odd_elementSpec},
-   [corr](/v3/elements/corr.html){:.link_odd_elementSpec}, [reg](/v3/elements/reg.html){:.link_odd_elementSpec},
-   [orig](/v3/elements/orig.html){:.link_odd_elementSpec},
-   [unclear](/v3/elements/unclear.html){:.link_odd_elementSpec}, [add](/v3/elements/add.html){:.link_odd_elementSpec},
-   and [del](/v3/elements/del.html){:.link_odd_elementSpec}; their
+   Elements which can be combined in this way constitute the [model.choicePart](/{{ page.version
+   }}/model-classes/model.choicePart.html){:.link_odd} class. The default members of
+   this class are [sic](/{{ page.version }}/elements/sic.html){:.link_odd_elementSpec},
+   [corr](/{{ page.version }}/elements/corr.html){:.link_odd_elementSpec}, [reg](/{{
+   page.version }}/elements/reg.html){:.link_odd_elementSpec}, [orig](/{{ page.version
+   }}/elements/orig.html){:.link_odd_elementSpec},
+   [unclear](/{{ page.version }}/elements/unclear.html){:.link_odd_elementSpec}, [add](/{{
+   page.version }}/elements/add.html){:.link_odd_elementSpec}, and [del](/{{ page.version
+   }}/elements/del.html){:.link_odd_elementSpec}; their
    functions and usage are described in greater detail below.
    
    Three categories of editorial intervention are discussed by the remainder of this

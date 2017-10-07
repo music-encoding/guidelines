@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.SIZE"
 
 ---
@@ -25,8 +26,8 @@ title: "data.SIZE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.mensural.vis">att.mensural.vis</a> (@mensur.size), 
-               <a class="link_odd_classSpec" href="/v3/att.relativesize">att.relativesize</a> (@size)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a> (@mensur.size), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.relativesize">att.relativesize</a> (@size)
             </div>
          </td>
       </tr>

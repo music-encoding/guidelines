@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.nameLike.agent"
 
 ---
@@ -26,11 +27,11 @@ title: "model.nameLike.agent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventPart">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.nameLike">model.nameLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventPart">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike">model.nameLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
                </div>
             </div>
          </td>
@@ -42,8 +43,8 @@ title: "model.nameLike.agent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a> (direct members of model.nameLike.agent)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a> (direct members of model.nameLike.agent)
                </div>
             </div>
          </td>

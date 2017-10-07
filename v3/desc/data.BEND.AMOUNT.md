@@ -1,6 +1,7 @@
 ---
 desc: "data.BEND.AMOUNT"
 type: "macroSpec"
+version: "v3"
 ---
 
 Either an integer value, a decimal value, or a token. Fractional values are limited

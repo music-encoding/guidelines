@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "Names and Dates"
 sectionid: "namesDates"
 ---
@@ -11,7 +12,7 @@ sectionid: "namesDates"
    or
    corporations/organizations) or descriptive phrases for styles, periods or geographical
    indications. In section 
-   <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/v3/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the elements
+   <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/{{ page.version }}/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the elements
    provided in the core module allow an encoder to specify that a given text segment
    is a proper
    noun. The elements provided by the present module allow the encoder to supply a detailed
@@ -19,15 +20,17 @@ sectionid: "namesDates"
    and
    organizations, and between stylistic, periodical or geographical indications.
    
-   The chapter begins by discussing the elements provided for the encoding of names ([name](/v3/elements/name.html){:.link_odd_elementSpec})
-   and dates ([date](/v3/elements/date.html){:.link_odd_elementSpec}) in general and
-   finishes by
-   addressing more specific elements for corporate names ([corpName](/v3/elements/corpName.html){:.link_odd_elementSpec}),
-   geographic names ([geogName](/v3/elements/geogName.html){:.link_odd_elementSpec}),
-   period names ([periodName](/v3/elements/periodName.html){:.link_odd_elementSpec}),
-   personal names ([persName](/v3/elements/persName.html){:.link_odd_elementSpec}) and
-   style names ([styleName](/v3/elements/styleName.html){:.link_odd_elementSpec}). In
-   general it is recommended to use standardized forms of proper
+   The chapter begins by discussing the elements provided for the encoding of names ([name](/{{
+   page.version }}/elements/name.html){:.link_odd_elementSpec}) and dates ([date](/{{
+   page.version }}/elements/date.html){:.link_odd_elementSpec}) in general and finishes
+   by
+   addressing more specific elements for corporate names ([corpName](/{{ page.version
+   }}/elements/corpName.html){:.link_odd_elementSpec}),
+   geographic names ([geogName](/{{ page.version }}/elements/geogName.html){:.link_odd_elementSpec}),
+   period names ([periodName](/{{ page.version }}/elements/periodName.html){:.link_odd_elementSpec}),
+   personal names ([persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec})
+   and style names ([styleName](/{{ page.version }}/elements/styleName.html){:.link_odd_elementSpec}).
+   In general it is recommended to use standardized forms of proper
    nouns and to record the names and web-accessible locations of the controlled vocabularies
    used.
    There are several commonly-referenced authority files, especially for geographical,

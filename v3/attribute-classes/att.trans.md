@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.trans"
 
 ---
@@ -27,13 +28,13 @@ title: "att.trans"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/subst">subst</a> (direct members of att.trans)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/del">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/subst">subst</a> (direct members of att.trans)
                </div>
             </div>
          </td>
@@ -50,10 +51,10 @@ title: "att.trans"
                   &lt;hand&gt; element declared in the header.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.handident">att.handident</a>
+                  <a class="link_odd" href="/{{ v3}}/att.handident">att.handident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -66,7 +67,7 @@ title: "att.trans"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.sequence">att.sequence</a>
+                  <a class="link_odd" href="/{{ v3}}/att.sequence">att.sequence</a>
                </span>
             </div>
          </td>

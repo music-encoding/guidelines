@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.ACCIDENTAL.EXPLICIT"
 
 ---
@@ -25,8 +26,8 @@ title: "data.ACCIDENTAL.EXPLICIT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.accidental">att.accidental</a> (@accid), 
-               <a class="link_odd_classSpec" href="/v3/att.ornamentaccid">att.ornamentaccid</a> (@accidupper)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.accidental">att.accidental</a> (@accid), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.ornamentaccid">att.ornamentaccid</a> (@accidupper)
             </div>
          </td>
       </tr>
@@ -429,7 +430,7 @@ title: "data.ACCIDENTAL.EXPLICIT"
          <td class="wovenodd-col2">
             <p>
                
-               <img src="../../../../guidelines/3.0.0/Images/ExampleImages/accid-20100510.png" class="graphic"></img>
+               <img src="../../../../guidelines/v3/Images/ExampleImages/accid-20100510.png" class="graphic"></img>
                
             </p>
          </td>

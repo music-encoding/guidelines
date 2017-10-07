@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.chord.ges.cmn"
 
 ---
@@ -26,9 +27,9 @@ title: "att.chord.ges.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.ges">att.chord.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.ges">att.chord.ges</a>)
                   </span>
                </div>
             </div>
@@ -46,10 +47,10 @@ title: "att.chord.ges.cmn"
                   records from which other note/chord it should "steal" time.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.GRACE">data.GRACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.GRACE">data.GRACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.graced">att.graced</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.graced">att.graced</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,10 +58,10 @@ title: "att.chord.ges.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of time to be "stolen" from a non-grace note/chord.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PERCENT">data.PERCENT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PERCENT">data.PERCENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.graced">att.graced</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.graced">att.graced</a>
                </span>
             </div>
          </td>

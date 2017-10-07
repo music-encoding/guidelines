@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.fTrem.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.fTrem.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a> (direct member of att.fTrem.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fTrem">fTrem</a> (direct member of att.fTrem.vis)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.fTrem.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the number of slashes present.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SLASH">data.SLASH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SLASH">data.SLASH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slashcount">att.slashcount</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slashcount">att.slashcount</a>
                </span>
             </div>
          </td>

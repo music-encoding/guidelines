@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.syllableLike"
 
 ---
@@ -26,8 +27,8 @@ title: "model.syllableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.layerPart.neumes">model.layerPart.neumes</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.rdgPart.critapp">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.layerPart.neumes">model.layerPart.neumes</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.rdgPart.critapp">model.rdgPart.critapp</a>
                </div>
             </div>
          </td>
@@ -39,7 +40,7 @@ title: "model.syllableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a> (direct member of model.syllableLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a> (direct member of model.syllableLike)
                </div>
             </div>
          </td>

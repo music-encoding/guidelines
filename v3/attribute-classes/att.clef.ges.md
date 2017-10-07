@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.clef.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.clef.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a> (direct member of att.clef.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a> (direct member of att.clef.ges)
                </div>
             </div>
          </td>

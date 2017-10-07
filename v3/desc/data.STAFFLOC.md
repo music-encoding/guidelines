@@ -1,6 +1,7 @@
 ---
 desc: "data.STAFFLOC"
 type: "macroSpec"
+version: "v3"
 ---
 
 Staff location. The value '0' indicates the bottom line of the current staff; positive

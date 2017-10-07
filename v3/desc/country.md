@@ -1,6 +1,7 @@
 ---
 desc: "country"
 type: "elementSpec"
+version: "v3"
 ---
 
 Contains the name of a geo-political unit, such as a nation, country, colony, or

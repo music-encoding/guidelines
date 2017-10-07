@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.figDescLike"
 
 ---
@@ -28,8 +29,8 @@ title: "model.figDescLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/surface">surface</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/zone">zone</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a>
                </div>
             </div>
          </td>
@@ -41,7 +42,7 @@ title: "model.figDescLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/figDesc">figDesc</a> (direct member of model.figDescLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/figDesc">figDesc</a> (direct member of model.figDescLike)
                </div>
             </div>
          </td>

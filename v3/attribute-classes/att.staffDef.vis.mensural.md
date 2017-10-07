@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffDef.vis.mensural"
 
 ---
@@ -26,9 +27,9 @@ title: "att.staffDef.vis.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -46,10 +47,10 @@ title: "att.staffDef.vis.mensural"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -61,7 +62,7 @@ title: "att.staffDef.vis.mensural"
                <span style="font-weight: 500;">horizontal</span>" ,  "
                <span style="font-weight: 500;">vertical</span>" 
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -69,10 +70,10 @@ title: "att.staffDef.vis.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the staff location of the mensuration sign.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,10 +81,10 @@ title: "att.staffDef.vis.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the rotation or reflection of the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ORIENTATION">data.ORIENTATION</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.ORIENTATION">data.ORIENTATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -91,10 +92,10 @@ title: "att.staffDef.vis.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the relative size of the mensuration sign.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SIZE">data.SIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.SIZE">data.SIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 desc: "fileChar"
 type: "elementSpec"
+version: "v3"
 ---
 
 (file characteristics) – Standards or schemes used to encode the file (e.g., ASCII,

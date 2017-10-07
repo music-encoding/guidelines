@@ -1,6 +1,7 @@
 ---
 desc: "pgDesc"
 type: "elementSpec"
+version: "v3"
 ---
 
 (page description) – Contains a brief prose description of the appearance or description

@@ -1,6 +1,7 @@
 ---
 desc: "att.controlevent"
 type: "classSpec"
+version: "v3"
 ---
 
 Attributes shared by events which rely on other events for their existence. For example,

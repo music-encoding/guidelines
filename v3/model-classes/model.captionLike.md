@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.captionLike"
 
 ---
@@ -28,8 +29,8 @@ title: "model.captionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fig">fig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/table">table</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fig">fig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/table">table</a>
                </div>
             </div>
          </td>
@@ -41,7 +42,7 @@ title: "model.captionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/caption">caption</a> (direct member of model.captionLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/caption">caption</a> (direct member of model.captionLike)
                </div>
             </div>
          </td>

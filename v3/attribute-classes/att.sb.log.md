@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.sb.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.sb.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/sb">sb</a> (direct member of att.sb.log)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/sb">sb</a> (direct member of att.sb.log)
                </div>
             </div>
          </td>

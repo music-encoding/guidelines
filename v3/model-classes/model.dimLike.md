@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.dimLike"
 
 ---
@@ -28,7 +29,7 @@ title: "model.dimLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dimensions">dimensions</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dimensions">dimensions</a>
                </div>
             </div>
          </td>
@@ -40,9 +41,9 @@ title: "model.dimLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/depth">depth</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/height">height</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/width">width</a> (direct members of model.dimLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/depth">depth</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/height">height</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/width">width</a> (direct members of model.dimLike)
                </div>
             </div>
          </td>

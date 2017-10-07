@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.TEMPOVALUE"
 
 ---
@@ -25,7 +26,7 @@ title: "data.TEMPOVALUE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.mmtempo">att.mmtempo</a> (@mm)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a> (@mm)
             </div>
          </td>
       </tr>

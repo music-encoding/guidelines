@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.descLike"
 
 ---
@@ -34,7 +35,7 @@ title: "model.descLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/desc">desc</a> (direct member of model.descLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/desc">desc</a> (direct member of model.descLike)
                </div>
             </div>
          </td>

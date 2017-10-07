@@ -1,6 +1,7 @@
 ---
 desc: "reh"
 type: "elementSpec"
+version: "v3"
 ---
 
 (rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating

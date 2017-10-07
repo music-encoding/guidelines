@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffDef.ges.tablature"
 
 ---
@@ -26,9 +27,9 @@ title: "att.staffDef.ges.tablature"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.ges">att.staffDef.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.ges">att.staffDef.ges</a>)
                   </span>
                </div>
             </div>
@@ -49,7 +50,7 @@ title: "att.staffDef.ges.tablature"
                <span style="font-weight: 500;">[a-g][0-9](s|f|ss|x|ff|xs|sx|ts|tf|n|nf|ns|su|sd|fu|fd|nu|nd|1qf|3qf|1qs|3qs)?([a-g][0-9](s|f|ss|x|ff|xs|sx|ts|tf|n|nf|ns|su|sd|fu|fd|nu|nd|1qf|3qf|1qs|3qs)?)*</span>".
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffDef.ges.tablature">att.staffDef.ges.tablature</a>
+                  <a class="link_odd" href="/{{ v3}}/att.staffDef.ges.tablature">att.staffDef.ges.tablature</a>
                </span>
             </div>
          </td>

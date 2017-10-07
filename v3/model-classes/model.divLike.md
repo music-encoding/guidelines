@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.divLike"
 
 ---
@@ -26,20 +27,20 @@ title: "model.divLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/back">back</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/div">div</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/front">front</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/history">history</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ending">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/front">front</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/history">history</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
                </div>
             </div>
          </td>
@@ -51,7 +52,7 @@ title: "model.divLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/div">div</a> (direct member of model.divLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a> (direct member of model.divLike)
                </div>
             </div>
          </td>

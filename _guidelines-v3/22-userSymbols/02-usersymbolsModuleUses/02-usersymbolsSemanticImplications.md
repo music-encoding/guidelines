@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsSemanticImplications
 title: "Elements Without Semantic Implications"
+version: "v3"
 ---
 
 
@@ -11,14 +12,14 @@ lines on a purely graphical level, without implying a specific logical meaning. 
 possible,
 however, more meaningful elements should be used. This means for example, "a tempo"
 or "da
-capo" should in general not be put inside [anchoredText](/v3/elements/anchoredText.html){:.link_odd_elementSpec}. Instead, [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec} and [dir](/v3/elements/dir.html){:.link_odd_elementSpec} should be used. Likewise, slurs and
-ties should be encoded using their respective elements, not using [curve](/v3/elements/curve.html){:.link_odd_elementSpec}, and for glissandi, [gliss](/v3/elements/gliss.html){:.link_odd_elementSpec} should be used instead of [line](/v3/elements/line.html){:.link_odd_elementSpec}.
+capo" should in general not be put inside [anchoredText](/{{ page.version }}/elements/anchoredText.html){:.link_odd_elementSpec}. Instead, [tempo](/{{ page.version }}/elements/tempo.html){:.link_odd_elementSpec} and [dir](/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} should be used. Likewise, slurs and
+ties should be encoded using their respective elements, not using [curve](/{{ page.version }}/elements/curve.html){:.link_odd_elementSpec}, and for glissandi, [gliss](/{{ page.version }}/elements/gliss.html){:.link_odd_elementSpec} should be used instead of [line](/{{ page.version }}/elements/line.html){:.link_odd_elementSpec}.
 
-An example usage for [line](/v3/elements/line.html){:.link_odd_elementSpec} is the visualization of voice leading,
+An example usage for [line](/{{ page.version }}/elements/line.html){:.link_odd_elementSpec} is the visualization of voice leading,
 which is not covered by a specific MEI element.
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/mignon.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/usersymbols/mignon.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 55. Voice leading visualization as found in an Edition Peters print of *Album für
       die Jugend* by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
       is 10478.)

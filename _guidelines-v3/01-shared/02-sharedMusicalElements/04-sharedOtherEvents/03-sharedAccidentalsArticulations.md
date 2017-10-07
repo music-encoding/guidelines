@@ -1,6 +1,7 @@
 ---
 sectionid: sharedAccidentalsArticulations
 title: "Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs"
+version: "v3"
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 desc: "fTrem"
 type: "elementSpec"
+version: "v3"
 ---
 
 (fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps

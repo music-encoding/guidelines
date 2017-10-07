@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.stems"
 
 ---
@@ -27,15 +28,15 @@ title: "att.stems"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.chord.vis">att.chord.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.vis">att.note.vis</a>)
                   </span>
                </div>
             </div>
@@ -51,10 +52,10 @@ title: "att.stems"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the direction of a stem.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STEMDIRECTION">data.STEMDIRECTION</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.STEMDIRECTION">data.STEMDIRECTION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems">att.stems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems">att.stems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,10 +63,10 @@ title: "att.stems"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Encodes the stem length.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems">att.stems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems">att.stems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,10 +76,10 @@ title: "att.stems"
                   or Sprechstimme indicators.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STEMMODIFIER">data.STEMMODIFIER</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.STEMMODIFIER">data.STEMMODIFIER</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems">att.stems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems">att.stems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -86,10 +87,10 @@ title: "att.stems"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the position of the stem in relation to the note head(s).</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STEMPOSITION">data.STEMPOSITION</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.STEMPOSITION">data.STEMPOSITION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems">att.stems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems">att.stems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -100,10 +101,10 @@ title: "att.stems"
                   below.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OTHERSTAFF">data.OTHERSTAFF</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.OTHERSTAFF">data.OTHERSTAFF</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems.cmn">att.stems.cmn</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems.cmn">att.stems.cmn</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -114,7 +115,7 @@ title: "att.stems"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems">att.stems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems">att.stems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -125,7 +126,7 @@ title: "att.stems"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems">att.stems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.stems">att.stems</a>
                </span>
             </div>
          </td>

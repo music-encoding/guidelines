@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.notationtype"
 
 ---
@@ -26,9 +27,9 @@ title: "att.notationtype"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -49,7 +50,7 @@ title: "att.notationtype"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.notationtype">att.notationtype</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.notationtype">att.notationtype</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,10 +60,10 @@ title: "att.notationtype"
                   bearing this attribute.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.NOTATIONTYPE">data.NOTATIONTYPE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.NOTATIONTYPE">data.NOTATIONTYPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.notationtype">att.notationtype</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.notationtype">att.notationtype</a>
                </span>
             </div>
          </td>

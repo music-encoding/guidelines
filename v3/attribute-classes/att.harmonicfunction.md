@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.harmonicfunction"
 
 ---
@@ -26,15 +27,15 @@ title: "att.harmonicfunction"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.anl">att.note.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.anl">att.note.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.uneume.anl">att.uneume.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.uneume.anl">att.uneume.anl</a>)
                   </span>
                </div>
             </div>
@@ -55,10 +56,10 @@ title: "att.harmonicfunction"
                   alteration. The amount of chromatic alternation is not indicated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SCALEDEGREE">data.SCALEDEGREE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SCALEDEGREE">data.SCALEDEGREE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.harmonicfunction">att.harmonicfunction</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.harmonicfunction">att.harmonicfunction</a>
                </span>
             </div>
          </td>

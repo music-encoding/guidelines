@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.editorialDeclPart"
 
 ---
@@ -27,7 +28,7 @@ title: "model.editorialDeclPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a>
                </div>
             </div>
          </td>
@@ -39,11 +40,11 @@ title: "model.editorialDeclPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/interpretation">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/normalization">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/segmentation">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/stdVals">stdVals</a> (direct members of model.editorialDeclPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/correction">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/interpretation">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/normalization">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/segmentation">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/stdVals">stdVals</a> (direct members of model.editorialDeclPart)
                </div>
             </div>
          </td>

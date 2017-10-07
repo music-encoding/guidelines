@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.systems"
 
 ---
@@ -26,9 +27,9 @@ title: "att.systems"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -48,10 +49,10 @@ title: "att.systems"
                   grouping symbol.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -61,10 +62,10 @@ title: "att.systems"
                   page.leftmar.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -74,10 +75,10 @@ title: "att.systems"
                   page.rightmar.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -87,10 +88,10 @@ title: "att.systems"
                   only.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
                </span>
             </div>
          </td>

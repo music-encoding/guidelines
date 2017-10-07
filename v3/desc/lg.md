@@ -1,6 +1,7 @@
 ---
 desc: "lg"
 type: "elementSpec"
+version: "v3"
 ---
 
 (line group) – May be used for any section of text that is organized as a group of

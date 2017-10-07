@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.FONTSIZE"
 
 ---
@@ -25,10 +26,10 @@ title: "data.FONTSIZE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.lyricstyle">att.lyricstyle</a> (@lyric.size), 
-               <a class="link_odd_classSpec" href="/v3/att.notationstyle">att.notationstyle</a> (@music.size), 
-               <a class="link_odd_classSpec" href="/v3/att.textstyle">att.textstyle</a> (@text.size), 
-               <a class="link_odd_classSpec" href="/v3/att.typography">att.typography</a> (@fontsize)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a> (@lyric.size), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.notationstyle">att.notationstyle</a> (@music.size), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.textstyle">att.textstyle</a> (@text.size), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.typography">att.typography</a> (@fontsize)
             </div>
          </td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.milestoneLike.music"
 
 ---
@@ -26,16 +27,16 @@ title: "model.milestoneLike.music"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ending">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
                </div>
             </div>
          </td>
@@ -47,12 +48,12 @@ title: "model.milestoneLike.music"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/sb">sb</a> (direct member of model.milestoneLike.music)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sb">sb</a> (direct member of model.milestoneLike.music)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pb">pb</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pb">pb</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.pbLike">model.pbLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.pbLike">model.pbLike</a>)
                   </span>
                </div>
             </div>

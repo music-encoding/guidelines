@@ -1,6 +1,7 @@
 ---
 desc: "samplingDecl"
 type: "elementSpec"
+version: "v3"
 ---
 
 (sampling declaration) – Contains a prose description of the rationale and methods

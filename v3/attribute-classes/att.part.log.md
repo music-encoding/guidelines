@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.part.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.part.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a> (direct member of att.part.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a> (direct member of att.part.log)
                </div>
             </div>
          </td>

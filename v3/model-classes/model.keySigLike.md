@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.keySigLike"
 
 ---
@@ -26,11 +27,11 @@ title: "model.keySigLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventLike">model.eventLike</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.staffDefPart">model.staffDefPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike">model.eventLike</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffDefPart">model.staffDefPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                </div>
             </div>
          </td>
@@ -42,7 +43,7 @@ title: "model.keySigLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a> (direct member of model.keySigLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a> (direct member of model.keySigLike)
                </div>
             </div>
          </td>

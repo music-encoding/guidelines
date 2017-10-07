@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MODE"
 
 ---
@@ -25,8 +26,8 @@ title: "data.MODE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.keySig.log">att.keySig.log</a> (@mode), 
-               <a class="link_odd_classSpec" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a> (@key.mode)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a> (@mode), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a> (@key.mode)
             </div>
          </td>
       </tr>

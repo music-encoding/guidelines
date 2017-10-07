@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.clefGrp.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.clefGrp.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clefGrp">clefGrp</a> (direct member of att.clefGrp.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clefGrp">clefGrp</a> (direct member of att.clefGrp.vis)
                </div>
             </div>
          </td>

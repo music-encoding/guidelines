@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MEASUREMENTREL"
 
 ---
@@ -29,14 +30,14 @@ title: "data.MEASUREMENTREL"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.distances">att.distances</a> (@dynam.dist), 
-               <a class="link_odd_classSpec" href="/v3/att.lyricstyle">att.lyricstyle</a> (@lyric.align), 
-               <a class="link_odd_classSpec" href="/v3/att.spacing">att.spacing</a> (@spacing.staff), 
-               <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a> (@spacing), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset.ho">att.visualoffset.ho</a> (@ho), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset.vo">att.visualoffset.vo</a> (@vo), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset2.ho">att.visualoffset2.ho</a> (@startho), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset2.vo">att.visualoffset2.vo</a> (@startvo)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.distances">att.distances</a> (@dynam.dist), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a> (@lyric.align), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.spacing">att.spacing</a> (@spacing.staff), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a> (@spacing), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.visualoffset.ho">att.visualoffset.ho</a> (@ho), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.visualoffset.vo">att.visualoffset.vo</a> (@vo), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.visualoffset2.ho">att.visualoffset2.ho</a> (@startho), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.visualoffset2.vo">att.visualoffset2.vo</a> (@startvo)
             </div>
          </td>
       </tr>

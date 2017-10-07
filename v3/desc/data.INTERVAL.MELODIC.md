@@ -1,6 +1,7 @@
 ---
 desc: "data.INTERVAL.MELODIC"
 type: "macroSpec"
+version: "v3"
 ---
 
 A token indicating direction of the interval but not its precise value, an indication

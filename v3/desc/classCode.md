@@ -1,6 +1,7 @@
 ---
 desc: "classCode"
 type: "elementSpec"
+version: "v3"
 ---
 
 (classification code) – Holds a citation to the source of controlled-vocabulary terms

@@ -1,6 +1,7 @@
 ---
 sectionid: figTableVectorGraphicFormats
 title: "Vector Graphic Formats"
+version: "v3"
 ---
 
 

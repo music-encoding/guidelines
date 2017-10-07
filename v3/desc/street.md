@@ -1,6 +1,7 @@
 ---
 desc: "street"
 type: "elementSpec"
+version: "v3"
 ---
 
 full street address including any name or number identifying a building as well as

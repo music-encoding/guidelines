@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "div"
 
 ---
@@ -32,10 +33,10 @@ title: "div"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +46,10 @@ title: "div"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,7 +60,7 @@ title: "div"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "div"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,7 +84,7 @@ title: "div"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/div">div</a>
+                  <a class="link_odd" href="/{{ page.version }}/div">div</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -98,7 +99,7 @@ title: "div"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -150,7 +151,7 @@ title: "div"
                   explains the content, purpose, or origin of the text.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/div">div</a>
+                  <a class="link_odd" href="/{{ page.version }}/div">div</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -160,10 +161,10 @@ title: "div"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -177,7 +178,7 @@ title: "div"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -193,7 +194,7 @@ title: "div"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -204,7 +205,7 @@ title: "div"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.divLike">model.divLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.divLike">model.divLike</a>
             </div>
          </td>
       </tr>
@@ -218,45 +219,45 @@ title: "div"
                   <div class="specChild">
                      <span class="specChildModule">MEI.cmn</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/lem">lem</a> 
-                        <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/history">history</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/history">history</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.neumes</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/div">div</a> 
-                        <a class="link_odd_elementSpec" href="/v3/ending">ending</a> 
-                        <a class="link_odd_elementSpec" href="/v3/layer">layer</a> 
-                        <a class="link_odd_elementSpec" href="/v3/part">part</a> 
-                        <a class="link_odd_elementSpec" href="/v3/score">score</a> 
-                        <a class="link_odd_elementSpec" href="/v3/section">section</a> 
-                        <a class="link_odd_elementSpec" href="/v3/staff">staff</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ending">ending</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.text</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/back">back</a> 
-                        <a class="link_odd_elementSpec" href="/v3/front">front</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/front">front</a>
                      </span>
                   </div>
                </div>
@@ -272,28 +273,28 @@ title: "div"
                <div class="specChild">
                   <span class="specChildModule">MEI.figtable</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/table">table</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/table">table</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a> 
-                     <a class="link_odd_elementSpec" href="/v3/castList">castList</a> 
-                     <a class="link_odd_elementSpec" href="/v3/div">div</a> 
-                     <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a> 
-                     <a class="link_odd_elementSpec" href="/v3/head">head</a> 
-                     <a class="link_odd_elementSpec" href="/v3/lb">lb</a> 
-                     <a class="link_odd_elementSpec" href="/v3/p">p</a> 
-                     <a class="link_odd_elementSpec" href="/v3/pb">pb</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/castList">castList</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/head">head</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/lb">lb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/p">p</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/pb">pb</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.text</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/lg">lg</a> 
-                     <a class="link_odd_elementSpec" href="/v3/list">list</a> 
-                     <a class="link_odd_elementSpec" href="/v3/quote">quote</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/lg">lg</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/list">list</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/quote">quote</a>
                   </span>
                </div>
             </div>
@@ -444,8 +445,8 @@ title: "div"
          </td>
          <td class="wovenodd-col2">
             <p>Often, the 
-               <a class="link_odd_elementSpec" href="/v3/head">head</a> sub-element identifies the 
-               <a class="link_odd_elementSpec" href="/v3/div">div</a>'s purpose. This element is modelled on an element in the Text Encoding
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/head">head</a> sub-element identifies the 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a>'s purpose. This element is modelled on an element in the Text Encoding
                Initiative (TEI) standard.
             </p>
          </td>

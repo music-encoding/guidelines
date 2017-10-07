@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pad.anl"
 
 ---
@@ -26,7 +27,7 @@ title: "att.pad.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pad">pad</a> (direct member of att.pad.anl)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pad">pad</a> (direct member of att.pad.anl)
                </div>
             </div>
          </td>

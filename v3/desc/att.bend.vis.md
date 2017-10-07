@@ -1,6 +1,7 @@
 ---
 desc: "att.bend.vis"
 type: "classSpec"
+version: "v3"
 ---
 
 Visual domain attributes. If the bulge or bezier attributes are present, the bend

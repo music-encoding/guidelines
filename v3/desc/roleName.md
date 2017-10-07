@@ -1,6 +1,7 @@
 ---
 desc: "roleName"
 type: "elementSpec"
+version: "v3"
 ---
 
 (role name) – Contains a name component which indicates that the referent has a

@@ -1,6 +1,7 @@
 ---
 desc: "subst"
 type: "elementSpec"
+version: "v3"
 ---
 
 (substitution) – Groups transcriptional elements when the combination is to be regarded

@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsLineRendition
 title: "Line Rendition"
+version: "v3"
 ---
 
 

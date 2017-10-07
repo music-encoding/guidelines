@@ -1,6 +1,7 @@
 ---
 desc: "data.CERTAINTY"
 type: "macroSpec"
+version: "v3"
 ---
 
 Values for certainty attribute. Certainty may be expressed by one of the values 'high',

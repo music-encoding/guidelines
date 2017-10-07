@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "instrDef"
 
 ---
@@ -32,7 +33,7 @@ title: "instrDef"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -40,10 +41,10 @@ title: "instrDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records a MIDI channel value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDICHANNEL">data.MIDICHANNEL</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDICHANNEL">data.MIDICHANNEL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -53,10 +54,10 @@ title: "instrDef"
                   duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PERCENT">data.PERCENT</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PERCENT">data.PERCENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,10 +65,10 @@ title: "instrDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a General MIDI label for the MIDI instrument.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDINAMES">data.MIDINAMES</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDINAMES">data.MIDINAMES</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ v3}}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,10 +76,10 @@ title: "instrDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the MIDI instrument number.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ v3}}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -88,10 +89,10 @@ title: "instrDef"
                   127 pans right, and 64 pans to the center.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ v3}}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -99,10 +100,10 @@ title: "instrDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the MIDI port value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -113,7 +114,7 @@ title: "instrDef"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -121,10 +122,10 @@ title: "instrDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the instrument's volume.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ v3}}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -132,10 +133,10 @@ title: "instrDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -145,10 +146,10 @@ title: "instrDef"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -162,7 +163,7 @@ title: "instrDef"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -173,7 +174,7 @@ title: "instrDef"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.instrDefLike">model.instrDefLike</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.instrDefLike">model.instrDefLike</a>
             </div>
          </td>
       </tr>
@@ -187,16 +188,16 @@ title: "instrDef"
                   <div class="specChild">
                      <span class="specChildModule">MEI.midi</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/instrDef">instrDef</a> 
-                        <a class="link_odd_elementSpec" href="/v3/instrGrp">instrGrp</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/instrDef">instrDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/instrGrp">instrGrp</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a> 
-                        <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a> 
-                        <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/layerDef">layerDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/staffGrp">staffGrp</a>
                      </span>
                   </div>
                </div>

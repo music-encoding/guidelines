@@ -1,6 +1,7 @@
 ---
 desc: "postBox"
 type: "elementSpec"
+version: "v3"
 ---
 
 (postal box or post office box) contains a number or other identifier for some postal

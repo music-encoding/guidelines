@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.score.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.score.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a> (direct member of att.score.vis)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/score">score</a> (direct member of att.score.vis)
                </div>
             </div>
          </td>

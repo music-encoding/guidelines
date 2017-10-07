@@ -1,6 +1,7 @@
 ---
 sectionid: headerIndependentHeader
 title: "Independent Headers"
+version: "v3"
 ---
 
 

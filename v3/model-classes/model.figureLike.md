@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.figureLike"
 
 ---
@@ -27,10 +28,10 @@ title: "model.figureLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a>
                </div>
             </div>
          </td>
@@ -42,7 +43,7 @@ title: "model.figureLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fig">fig</a> (direct member of model.figureLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fig">fig</a> (direct member of model.figureLike)
                </div>
             </div>
          </td>

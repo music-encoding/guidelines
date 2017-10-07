@@ -1,6 +1,7 @@
 ---
 desc: "persName"
 type: "elementSpec"
+version: "v3"
 ---
 
 (personal name) – Designation for an individual, including any or all of that

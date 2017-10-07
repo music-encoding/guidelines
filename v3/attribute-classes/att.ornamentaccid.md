@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.ornamentaccid"
 
 ---
@@ -26,27 +27,27 @@ title: "att.ornamentaccid"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mordent">mordent</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mordent">mordent</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mordent.log">att.mordent.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mordent.log">att.mordent.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ornam">ornam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ornam">ornam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.ornam.log">att.ornam.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ornam.log">att.ornam.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/trill">trill</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trill">trill</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trill.log">att.trill.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.trill.log">att.trill.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/turn">turn</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/turn">turn</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.turn.log">att.turn.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.turn.log">att.turn.log</a>)
                   </span>
                </div>
             </div>
@@ -62,10 +63,10 @@ title: "att.ornamentaccid"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the written accidental associated with a lower neighboring note.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.ornamentaccid">att.ornamentaccid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.ornamentaccid">att.ornamentaccid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -73,10 +74,10 @@ title: "att.ornamentaccid"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the written accidental associated with an upper neighboring note.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.ornamentaccid">att.ornamentaccid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.ornamentaccid">att.ornamentaccid</a>
                </span>
             </div>
          </td>

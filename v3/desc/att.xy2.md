@@ -1,6 +1,7 @@
 ---
 desc: "att.xy2"
 type: "classSpec"
+version: "v3"
 ---
 
 Output coordinate attributes. Some elements may need 2 coordinate pairs to record

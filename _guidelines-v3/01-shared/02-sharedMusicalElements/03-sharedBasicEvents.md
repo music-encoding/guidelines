@@ -1,6 +1,7 @@
 ---
 sectionid: sharedBasicEvents
 title: "Basic Music Events"
+version: "v3"
 ---
 
 
@@ -17,7 +18,7 @@ The basic features of music notation are represented by the following elements:
 
 The characteristics of stems on notes and chords are indicated by means of attributes
 found
-in the [att.stems](/v3/attribute-classes/att.stems.html){:.link_odd} class.
+in the [att.stems](/{{ page.version }}/attribute-classes/att.stems.html){:.link_odd} class.
 
 
 

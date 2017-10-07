@@ -1,6 +1,7 @@
 ---
 sectionid: cmnNotesStems
 title: "Stem Modifications"
+version: "v3"
 ---
 
 
@@ -54,17 +55,17 @@ allowed:
 </table>
 The **@stem.mod** attibute is normally used in accordance with practices
 described in section 
-<a class="link_ptr" title="Tremolandi" href="/v3/guidelines/cmn.html#cmnTrem">4.2.5.3 Tremolandi</a>.
+<a class="link_ptr" title="Tremolandi" href="/{{ page.version }}/guidelines/cmn.html#cmnTrem">4.2.5.3 Tremolandi</a>.
 
 
 
-The CMN module makes the [att.stems.cmn](/v3/attribute-classes/att.stems.cmn.html){:.link_odd} attribute class
-available, which adds the optional **@stem.with** attribute to [note](/v3/elements/note.html){:.link_odd_elementSpec} and [chord](/v3/elements/chord.html){:.link_odd_elementSpec}. The attribute **@stem.with** allows
+The CMN module makes the [att.stems.cmn](/{{ page.version }}/attribute-classes/att.stems.cmn.html){:.link_odd} attribute class
+available, which adds the optional **@stem.with** attribute to [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}. The attribute **@stem.with** allows
 for the indication of a stem that joins notes on adjacent staves.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmn/xchord-300.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmn/xchord-300.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 3. Cross-staff chord</figcaption>
 </figure>
 The following code demonstrates one method of encoding the first chord in the last
@@ -75,9 +76,9 @@ notes or chords attached to the cross-staff stem.
 
 Alternatively, the encoder may choose to treat the notes in the lower staff as
 logically belonging to the top staff and to ‘displace’ them using the
-**@staff** attribute on [note](/v3/elements/note.html){:.link_odd_elementSpec}. Some use cases, however, may
-require filling the time that those notes would normally occupy using the [space](/v3/elements/space.html){:.link_odd_elementSpec} element described in section 
-<a class="link_ptr" title="Event Spacing" href="/v3/guidelines/shared.html#sharedNoteSpacing">1.2.4.5 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:
+**@staff** attribute on [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}. Some use cases, however, may
+require filling the time that those notes would normally occupy using the [space](/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} element described in section 
+<a class="link_ptr" title="Event Spacing" href="/{{ page.version }}/guidelines/shared.html#sharedNoteSpacing">1.2.4.5 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample100.xml" valid="false" %}
 

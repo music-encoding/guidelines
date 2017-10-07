@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.NOTEHEADMODIFIER.list"
 
 ---
@@ -25,7 +26,7 @@ title: "data.NOTEHEADMODIFIER.list"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.NOTEHEADMODIFIER">data.NOTEHEADMODIFIER</a>
+               <a class="link_odd" href="/{{ page.version }}/data.NOTEHEADMODIFIER">data.NOTEHEADMODIFIER</a>
             </div>
          </td>
       </tr>

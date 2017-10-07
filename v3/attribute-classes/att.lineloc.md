@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.lineloc"
 
 ---
@@ -26,9 +27,9 @@ title: "att.lineloc"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.clef.log">att.clef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.clef.log">att.clef.log</a>)
                   </span>
                </div>
             </div>
@@ -48,10 +49,10 @@ title: "att.lineloc"
                   lowest line of the staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFLINE">data.CLEFLINE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFLINE">data.CLEFLINE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lineloc">att.lineloc</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lineloc">att.lineloc</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 desc: "clip"
 type: "elementSpec"
+version: "v3"
 ---
 
 Defines a time segment of interest within a recording or within a digital audio or

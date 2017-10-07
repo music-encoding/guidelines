@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "appInfo"
 
 ---
@@ -34,7 +35,7 @@ title: "appInfo"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -42,10 +43,10 @@ title: "appInfo"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +56,10 @@ title: "appInfo"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -72,7 +73,7 @@ title: "appInfo"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -83,7 +84,7 @@ title: "appInfo"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.encodingPart">model.encodingPart</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.encodingPart">model.encodingPart</a>
             </div>
          </td>
       </tr>
@@ -97,11 +98,11 @@ title: "appInfo"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/appInfo">appInfo</a> 
-                        <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a> 
-                        <a class="link_odd_elementSpec" href="/v3/encodingDesc">encodingDesc</a> 
-                        <a class="link_odd_elementSpec" href="/v3/projectDesc">projectDesc</a> 
-                        <a class="link_odd_elementSpec" href="/v3/samplingDecl">samplingDecl</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/appInfo">appInfo</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/encodingDesc">encodingDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/projectDesc">projectDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/samplingDecl">samplingDecl</a>
                      </span>
                   </div>
                </div>
@@ -117,13 +118,13 @@ title: "appInfo"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/application">application</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/application">application</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/head">head</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/head">head</a>
                   </span>
                </div>
             </div>

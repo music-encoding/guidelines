@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.cutout"
 
 ---
@@ -27,15 +28,15 @@ title: "att.cutout"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRest">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.vis">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRest.vis">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mSpace">mSpace</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mSpace">mSpace</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mSpace.vis">att.mSpace.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mSpace.vis">att.mSpace.vis</a>)
                   </span>
                </div>
             </div>
@@ -55,7 +56,7 @@ title: "att.cutout"
                <span style="font-weight: 500;">cutout</span>" 
                <i>(The staff lines should not be drawn.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cutout">att.cutout</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cutout">att.cutout</a>
                </span>
             </div>
          </td>

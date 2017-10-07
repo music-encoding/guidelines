@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "meter"
 
 ---
@@ -35,7 +36,7 @@ title: "meter"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -53,7 +54,7 @@ title: "meter"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.meterSig.log">att.meterSig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,7 +65,7 @@ title: "meter"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -72,10 +73,10 @@ title: "meter"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,10 +86,10 @@ title: "meter"
                   'C' for common time or 'C' with a slash for cut time.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.METERSIGN">data.METERSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.METERSIGN">data.METERSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.meterSig.log">att.meterSig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,7 +104,7 @@ title: "meter"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -116,7 +117,7 @@ title: "meter"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.meterSig.log">att.meterSig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -126,10 +127,10 @@ title: "meter"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -143,7 +144,7 @@ title: "meter"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -159,7 +160,7 @@ title: "meter"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -170,7 +171,7 @@ title: "meter"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.workIdent">model.workIdent</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.workIdent">model.workIdent</a>
             </div>
          </td>
       </tr>
@@ -184,23 +185,23 @@ title: "meter"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/expression">expression</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/expression">expression</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/key">key</a> 
-                        <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a> 
-                        <a class="link_odd_elementSpec" href="/v3/meter">meter</a> 
-                        <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/key">key</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/mensuration">mensuration</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/meter">meter</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/work">work</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/incip">incip</a> 
-                        <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/incip">incip</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a>
                      </span>
                   </div>
                </div>
@@ -295,9 +296,9 @@ title: "meter"
          <td class="wovenodd-col2">
             <p>This element is used exclusively within bibliographic descriptions. Do not confuse
                
-               <a class="link_odd_elementSpec" href="/v3/meter">meter</a> with the 
-               <a class="link_odd_elementSpec" href="/v3/meterSig">meterSig</a> or 
-               <a class="link_odd_elementSpec" href="/v3/meterSigGrp">meterSigGrp</a> or attributes used by staffDef and scoreDef to record this data within
+               <a class="link_odd_elementSpec" href="/{{ v3}}/meter">meter</a> with the 
+               <a class="link_odd_elementSpec" href="/{{ v3}}/meterSig">meterSig</a> or 
+               <a class="link_odd_elementSpec" href="/{{ v3}}/meterSigGrp">meterSigGrp</a> or attributes used by staffDef and scoreDef to record this data within
                the body of an MEI file.
             </p>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.startLike.header"
 
 ---
@@ -34,7 +35,7 @@ title: "model.startLike.header"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meiHead">meiHead</a> (direct member of model.startLike.header)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meiHead">meiHead</a> (direct member of model.startLike.header)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.BEAT"
 
 ---
@@ -30,7 +31,7 @@ title: "data.BEAT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.timestamp.musical">att.timestamp.musical</a> (@tstamp)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a> (@tstamp)
             </div>
          </td>
       </tr>

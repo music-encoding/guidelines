@@ -1,6 +1,7 @@
 ---
 desc: "data.OCTAVE.DIS"
 type: "macroSpec"
+version: "v3"
 ---
 
 The amount of octave displacement; that is, '8' (as in '8va' for 1 octave), '15' (for

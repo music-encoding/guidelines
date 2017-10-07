@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.ISOTIME"
 
 ---
@@ -26,7 +27,7 @@ title: "data.ISOTIME"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.timestamp.performed">att.timestamp.performed</a> (@tstamp.real)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a> (@tstamp.real)
             </div>
          </td>
       </tr>

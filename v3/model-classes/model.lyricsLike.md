@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.lyricsLike"
 
 ---
@@ -26,24 +27,24 @@ title: "model.lyricsLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.measurePart">model.measurePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.layerPart.mensural">model.layerPart.mensural</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.syllablePart">model.syllablePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.rdgPart.critapp">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.measurePart">model.measurePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.layerPart.mensural">model.layerPart.mensural</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.syllablePart">model.syllablePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.rdgPart.critapp">model.rdgPart.critapp</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>
                </div>
             </div>
          </td>
@@ -55,7 +56,7 @@ title: "model.lyricsLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lyrics">lyrics</a> (direct member of model.lyricsLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyrics">lyrics</a> (direct member of model.lyricsLike)
                </div>
             </div>
          </td>

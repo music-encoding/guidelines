@@ -1,6 +1,7 @@
 ---
 desc: "sponsor"
 type: "elementSpec"
+version: "v3"
 ---
 
 Names of sponsoring individuals, organizations or institutions. Sponsors give their

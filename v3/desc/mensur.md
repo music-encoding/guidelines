@@ -1,6 +1,7 @@
 ---
 desc: "mensur"
 type: "elementSpec"
+version: "v3"
 ---
 
 (mensuration) – Collects information about the metrical relationship between a note

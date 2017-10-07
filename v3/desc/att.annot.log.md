@@ -1,6 +1,7 @@
 ---
 desc: "att.annot.log"
 type: "classSpec"
+version: "v3"
 ---
 
 Logical domain attributes for annot. Values for the type attribute can be taken from

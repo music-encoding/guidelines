@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterSig.log"
 
 ---
@@ -26,8 +27,8 @@ title: "att.meterSig.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meter">meter</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meterSig">meterSig</a> (direct members of att.meterSig.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meter">meter</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSig">meterSig</a> (direct members of att.meterSig.log)
                </div>
             </div>
          </td>
@@ -52,7 +53,7 @@ title: "att.meterSig.log"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSig.log">att.meterSig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,10 +63,10 @@ title: "att.meterSig.log"
                   'C' for common time or 'C' with a slash for cut time.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.METERSIGN">data.METERSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.METERSIGN">data.METERSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSig.log">att.meterSig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,7 +79,7 @@ title: "att.meterSig.log"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSig.log">att.meterSig.log</a>
                </span>
             </div>
          </td>

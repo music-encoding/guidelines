@@ -1,6 +1,7 @@
 ---
 desc: "playingSpeed"
 type: "elementSpec"
+version: "v3"
 ---
 
 Playing speed for a sound recording is the speed at which the carrier must be operated

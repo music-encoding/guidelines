@@ -1,6 +1,7 @@
 ---
 desc: "model.textphraseLike.limited"
 type: "classSpec"
+version: "v3"
 ---
 
 Groups textual elements that occur as part of the representation of the score, as

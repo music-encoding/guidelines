@@ -1,6 +1,7 @@
 ---
 desc: "pubStmt"
 type: "elementSpec"
+version: "v3"
 ---
 
 (publication statement) – Container for information regarding the publication or

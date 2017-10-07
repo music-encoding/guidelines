@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.addressPart"
 
 ---
@@ -26,10 +27,10 @@ title: "model.addressPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/address">address</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/address">address</a>
                </div>
             </div>
          </td>
@@ -41,19 +42,19 @@ title: "model.addressPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/postBox">postBox</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/postCode">postCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/street">street</a> (direct members of model.addressPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/postBox">postBox</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/postCode">postCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/street">street</a> (direct members of model.addressPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bloc">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/country">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/district">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogFeat">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/region">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/settlement">settlement</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.geogNamePart">model.geogNamePart</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.geogNamePart">model.geogNamePart</a>)
                   </span>
                </div>
             </div>

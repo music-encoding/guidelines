@@ -1,6 +1,7 @@
 ---
 desc: "data.COLOR"
 type: "macroSpec"
+version: "v3"
 ---
 
 A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal

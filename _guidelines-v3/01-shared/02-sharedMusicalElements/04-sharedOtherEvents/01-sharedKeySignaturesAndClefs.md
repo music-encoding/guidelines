@@ -1,6 +1,7 @@
 ---
 sectionid: sharedKeySignaturesAndClefs
 title: "Key Signatures and Clefs"
+version: "v3"
 ---
 
 

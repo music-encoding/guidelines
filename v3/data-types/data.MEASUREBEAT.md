@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MEASUREBEAT"
 
 ---
@@ -39,8 +40,8 @@ title: "data.MEASUREBEAT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a> (@origin.tstamp2), 
-               <a class="link_odd_classSpec" href="/v3/att.timestamp2.musical">att.timestamp2.musical</a> (@tstamp2)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.origin.timestamp.musical">att.origin.timestamp.musical</a> (@origin.tstamp2), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.timestamp2.musical">att.timestamp2.musical</a> (@tstamp2)
             </div>
          </td>
       </tr>

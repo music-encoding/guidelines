@@ -1,6 +1,7 @@
 ---
 desc: "projectDesc"
 type: "elementSpec"
+version: "v3"
 ---
 
 (project description) – Project-level meta-data describing the aim or purpose for

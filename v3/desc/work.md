@@ -1,6 +1,7 @@
 ---
 desc: "work"
 type: "elementSpec"
+version: "v3"
 ---
 
 Provides a detailed description of a work, specifically its history, language use,

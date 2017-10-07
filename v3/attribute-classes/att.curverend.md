@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.curverend"
 
 ---
@@ -26,35 +27,35 @@ title: "att.curverend"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/curve">curve</a> (direct member of att.curverend)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/curve">curve</a> (direct member of att.curverend)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bend">bend</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bend">bend</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bend.vis">att.bend.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.bend.vis">att.bend.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.phrase.vis.cmn">att.phrase.vis.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.vis.cmn">att.phrase.vis.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/phrase">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.phrase.vis">att.phrase.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.vis">att.phrase.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/slur">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.slur.vis">att.slur.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.slur.vis">att.slur.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tie">tie</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tie">tie</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tie.vis">att.tie.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tie.vis">att.tie.vis</a>)
                   </span>
                </div>
             </div>
@@ -70,10 +71,10 @@ title: "att.curverend"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the line style of a curve.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.curverend">att.curverend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.curverend">att.curverend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,10 +82,10 @@ title: "att.curverend"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Width of a curved line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.curverend">att.curverend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.curverend">att.curverend</a>
                </span>
             </div>
          </td>

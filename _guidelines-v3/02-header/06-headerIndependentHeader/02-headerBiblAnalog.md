@@ -1,6 +1,7 @@
 ---
 sectionid: headerBiblAnalog
 title: "Header Elements and their Relationship to Other Bibliographic Standards"
+version: "v3"
 ---
 
 

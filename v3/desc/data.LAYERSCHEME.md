@@ -1,6 +1,7 @@
 ---
 desc: "data.LAYERSCHEME"
 type: "macroSpec"
+version: "v3"
 ---
 
 Indicates how stems should be drawn when more than one layer is present and stem

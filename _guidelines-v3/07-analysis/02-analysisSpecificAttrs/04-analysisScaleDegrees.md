@@ -1,6 +1,7 @@
 ---
 sectionid: analysisScaleDegrees
 title: "Scale Degrees"
+version: "v3"
 ---
 
 

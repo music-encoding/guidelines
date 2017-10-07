@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pitched"
 
 ---
@@ -26,24 +27,24 @@ title: "att.pitched"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> (direct member of att.pitched)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chordMember">chordMember</a> (direct member of att.pitched)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/custos">custos</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/custos">custos</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.custos.log">att.custos.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.custos.log">att.custos.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keyAccid">keyAccid</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/keyAccid">keyAccid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.keyAccid.log">att.keyAccid.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.keyAccid.log">att.keyAccid.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.log">att.note.log</a>)
                   </span>
                </div>
             </div>
@@ -59,10 +60,10 @@ title: "att.pitched"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures written octave information.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octave">att.octave</a>
+                  <a class="link_odd" href="/{{ v3}}/att.octave">att.octave</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,10 +71,10 @@ title: "att.pitched"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pitch">att.pitch</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pitch">att.pitch</a>
                </span>
             </div>
          </td>

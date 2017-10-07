@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.titlePagePart"
 
 ---
@@ -26,7 +27,7 @@ title: "model.titlePagePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a>
                </div>
             </div>
          </td>
@@ -38,39 +39,39 @@ title: "model.titlePagePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/byline">byline</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/imprint">imprint</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a> (direct members of model.titlePagePart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/byline">byline</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/imprint">imprint</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a> (direct members of model.titlePagePart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/change">change</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/change">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.dateLike">model.dateLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.dateLike">model.dateLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/arranger">arranger</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/author">author</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/byline">byline</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/composer">composer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editor">editor</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/funder">funder</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/librettist">librettist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lyricist">lyricist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sponsor">sponsor</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/arranger">arranger</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/author">author</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/byline">byline</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/composer">composer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editor">editor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/funder">funder</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/librettist">librettist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyricist">lyricist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sponsor">sponsor</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.respLikePart">model.respLikePart</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.respLikePart">model.respLikePart</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/seriesStmt">seriesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/title">title</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/titleStmt">titleStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/seriesStmt">seriesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/title">title</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titleStmt">titleStmt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.titleLike">model.titleLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.titleLike">model.titleLike</a>)
                   </span>
                </div>
             </div>

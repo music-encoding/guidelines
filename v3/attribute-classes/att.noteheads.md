@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.noteheads"
 
 ---
@@ -26,9 +27,9 @@ title: "att.noteheads"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.vis">att.note.vis</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.noteheads"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures the overall color of a notehead.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.noteheads">att.noteheads</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +56,10 @@ title: "att.noteheads"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes how/if the notehead is filled.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FILL">data.FILL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FILL">data.FILL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.noteheads">att.noteheads</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -68,10 +69,10 @@ title: "att.noteheads"
                   color.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.noteheads">att.noteheads</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -79,10 +80,10 @@ title: "att.noteheads"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records any additional symbols applied to the notehead.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.NOTEHEADMODIFIER">data.NOTEHEADMODIFIER</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.NOTEHEADMODIFIER">data.NOTEHEADMODIFIER</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.noteheads">att.noteheads</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -93,10 +94,10 @@ title: "att.noteheads"
                   rotation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ROTATION">data.ROTATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ROTATION">data.ROTATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.noteheads">att.noteheads</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -104,10 +105,10 @@ title: "att.noteheads"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to override the head shape normally used for the given duration.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.HEADSHAPE">data.HEADSHAPE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.HEADSHAPE">data.HEADSHAPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.noteheads">att.noteheads</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -117,10 +118,10 @@ title: "att.noteheads"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.noteheads">att.noteheads</a>
                </span>
             </div>
          </td>

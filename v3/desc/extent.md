@@ -1,6 +1,7 @@
 ---
 desc: "extent"
 type: "elementSpec"
+version: "v3"
 ---
 
 Used to express size in terms other than physical dimensions, such as number of pages,

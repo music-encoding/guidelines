@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.melodicfunction"
 
 ---
@@ -26,15 +27,15 @@ title: "att.melodicfunction"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.anl">att.note.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.anl">att.note.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.uneume.anl">att.uneume.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.uneume.anl">att.uneume.anl</a>)
                   </span>
                </div>
             </div>
@@ -50,10 +51,10 @@ title: "att.melodicfunction"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes melodic function using Humdrum **embel syntax.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MELODICFUNCTION">data.MELODICFUNCTION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MELODICFUNCTION">data.MELODICFUNCTION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.melodicfunction">att.melodicfunction</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.melodicfunction">att.melodicfunction</a>
                </span>
             </div>
          </td>

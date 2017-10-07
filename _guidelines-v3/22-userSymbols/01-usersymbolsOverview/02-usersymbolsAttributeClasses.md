@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsAttributeClasses
 title: "Attribute Classes"
+version: "v3"
 ---
 
 

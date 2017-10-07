@@ -1,6 +1,7 @@
 ---
 sectionid: cmnHarp
 title: "Harp Pedals"
+version: "v3"
 ---
 
 
@@ -13,12 +14,12 @@ using
 letter pitches (in the order of the pedals from left to right) or in a diagrammatic
 fashion, such as the form invented by Carlos Salzedo.
 
-In MEI, harp pedal settings are encoded using the [harpPedal](/v3/elements/harpPedal.html){:.link_odd_elementSpec}
-element. It is a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class
-and is therefore placed within [measure](/v3/elements/measure.html){:.link_odd_elementSpec}, following all [staff](/v3/elements/staff.html){:.link_odd_elementSpec} children. The **@staff** and **@layer** attributes
-may be used to assign it to a certain [staff](/v3/elements/staff.html){:.link_odd_elementSpec} or [layer](/v3/elements/layer.html){:.link_odd_elementSpec}. Either a **@tstamp** or **@startid** attribute must be used to
-indicate the placement within the measure (see <a class="link_ptr" title="Timestamps and Durations" href="/v3/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a> and 
-<a class="link_ptr" title="Pointers and References" href="/v3/guidelines/ptrRef.html">19 Pointers and References</a> for further details about those linking mechanisms).
+In MEI, harp pedal settings are encoded using the [harpPedal](/{{ page.version }}/elements/harpPedal.html){:.link_odd_elementSpec}
+element. It is a member of the [model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class
+and is therefore placed within [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, following all [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} children. The **@staff** and **@layer** attributes
+may be used to assign it to a certain [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} or [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}. Either a **@tstamp** or **@startid** attribute must be used to
+indicate the placement within the measure (see <a class="link_ptr" title="Timestamps and Durations" href="/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a> and 
+<a class="link_ptr" title="Pointers and References" href="/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a> for further details about those linking mechanisms).
 
 The musical intention of the element is described using the **@c**, **@d**,
 **@e**, **@f**, **@g**, **@a** and **@b** attributes,

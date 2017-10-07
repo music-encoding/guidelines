@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.ornamentLike.cmn"
 
 ---
@@ -26,7 +27,7 @@ title: "model.ornamentLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.controleventLike.cmn">model.controleventLike.cmn</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.controleventLike.cmn">model.controleventLike.cmn</a>
                </div>
             </div>
          </td>
@@ -38,9 +39,9 @@ title: "model.ornamentLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mordent">mordent</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/trill">trill</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/turn">turn</a> (direct members of model.ornamentLike.cmn)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mordent">mordent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trill">trill</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/turn">turn</a> (direct members of model.ornamentLike.cmn)
                </div>
             </div>
          </td>

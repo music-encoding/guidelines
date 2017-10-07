@@ -1,6 +1,7 @@
 ---
 sectionid: headerFileDescription
 title: "File Description"
+version: "v3"
 ---
 
 
@@ -20,7 +21,7 @@ from the same model.
 
 The bibliographic description of an electronic musical text should be supplied by
 the
-mandatory [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element:
+mandatory [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element:
 
 
 
@@ -28,10 +29,10 @@ mandatory [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element
 
 
 
-The [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element contains two mandatory and six optional elements,
+The [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element contains two mandatory and six optional elements,
 each of which is described in more detail below. These elements are listed below in
 the order
-in which they must occur within the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element.
+in which they must occur within the [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element.
 
 
 

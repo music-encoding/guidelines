@@ -1,6 +1,7 @@
 ---
 desc: "data.FILL"
 type: "macroSpec"
+version: "v3"
 ---
 
 Describes how a graphical object, such as a note head, should be filled. The relative

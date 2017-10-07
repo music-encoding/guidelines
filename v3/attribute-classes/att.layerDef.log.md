@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layerDef.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.layerDef.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a> (direct member of att.layerDef.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a> (direct member of att.layerDef.log)
                </div>
             </div>
          </td>
@@ -46,7 +47,7 @@ title: "att.layerDef.log"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.layerDef.log"
                   quarter note duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -69,10 +70,10 @@ title: "att.layerDef.log"
                   etc. in a measure does not have a duration specified.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION">data.DURATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION">data.DURATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,7 +86,7 @@ title: "att.layerDef.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -98,7 +99,7 @@ title: "att.layerDef.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -108,10 +109,10 @@ title: "att.layerDef.log"
                   etc. in a measure does not have an octave value specified.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedefault">att.octavedefault</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedefault">att.octavedefault</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -124,7 +125,7 @@ title: "att.layerDef.log"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.transposition">att.transposition</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.transposition">att.transposition</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -137,7 +138,7 @@ title: "att.layerDef.log"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.transposition">att.transposition</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.transposition">att.transposition</a>
                </span>
             </div>
          </td>

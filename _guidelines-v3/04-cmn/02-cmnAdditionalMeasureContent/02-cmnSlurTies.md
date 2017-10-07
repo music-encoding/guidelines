@@ -1,6 +1,7 @@
 ---
 sectionid: cmnSlurTies
 title: "Ties, Slurs and Phrase Marks"
+version: "v3"
 ---
 
 
@@ -19,7 +20,7 @@ onset for both notes.
 In MEI, ties can be encoded in different ways, depending on the level of detail that
 the
 encoder wants to preserve. The simplest solution is to use the **@tie** attribute
-found on [note](/v3/elements/note.html){:.link_odd_elementSpec} and [chord](/v3/elements/chord.html){:.link_odd_elementSpec}.
+found on [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}.
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample112.xml" valid="false" %}
 
@@ -50,7 +51,7 @@ This attribute allows three values:
    </tbody>
 </table>
 
-The scope of the **@tie** attribute is the musical [layer](/v3/elements/layer.html){:.link_odd_elementSpec}; that
+The scope of the **@tie** attribute is the musical [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}; that
 is, a tie started in one layer may only be ended by a subsequent musical event with
 a
 **@tie** attribute with an *m* or *t* value in the same layer.
@@ -58,7 +59,7 @@ The tie-terminating event may lie in the following measure.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmn/finger-300.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmn/finger-300.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 9. Ties across barlines</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample113.xml" valid="true" %}
@@ -85,11 +86,11 @@ breath, while a single bow is indicated for string instruments.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/ExampleImages/slur-300-20100514.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/ExampleImages/slur-300-20100514.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 10. Slurs</figcaption>
 </figure>
 
-In MEI, slurs may be encoded in a similar way to ties: [note](/v3/elements/note.html){:.link_odd_elementSpec} and [chord](/v3/elements/chord.html){:.link_odd_elementSpec} bear a **@slur** attribute that allows the commencement or
+In MEI, slurs may be encoded in a similar way to ties: [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} bear a **@slur** attribute that allows the commencement or
 ending of a slur at this element. The allowed values, however, are slightly different:
 The
 *i*, *m* or *t* are followed by a single digit in the
@@ -149,8 +150,8 @@ sufficient to describe both curved lines resulting from the split.
 Sometimes, however, one of these two symbols is missing in the document, or the encoder
 wants to provide additional (often visual) information about the slur or tie. In these
 cases, using an attribute is not an adequate solution. Therefore, MEI offers dedicated
-[tie](/v3/elements/tie.html){:.link_odd_elementSpec} and [slur](/v3/elements/slur.html){:.link_odd_elementSpec} elements. A third element, [phrase](/v3/elements/phrase.html){:.link_odd_elementSpec}, is used to identify a unified melodic idea (in German:
-*Phrasierungsbogen*), whereas the [slur](/v3/elements/slur.html){:.link_odd_elementSpec} element is
+[tie](/{{ page.version }}/elements/tie.html){:.link_odd_elementSpec} and [slur](/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec} elements. A third element, [phrase](/{{ page.version }}/elements/phrase.html){:.link_odd_elementSpec}, is used to identify a unified melodic idea (in German:
+*Phrasierungsbogen*), whereas the [slur](/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec} element is
 used as a generic element for all curved lines (in German: *Bogensetzung*)
 except ties. All three elements have nearly identical models.
 
@@ -158,11 +159,11 @@ Another reason for using elements instead of attributes for ties, slurs, and phr
 marks
 is that only elements may be combined with the functionality provided in chapters
 
-<a class="link_ptr" title="Editorial Markup" href="/v3/guidelines/editTrans.html">11 Editorial Markup</a> and 
-<a class="link_ptr" title="Critical Apparatus" href="/v3/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
+<a class="link_ptr" title="Editorial Markup" href="/{{ page.version }}/guidelines/editTrans.html">11 Editorial Markup</a> and 
+<a class="link_ptr" title="Critical Apparatus" href="/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
 
-Although these elements are allowed within a [layer](/v3/elements/layer.html){:.link_odd_elementSpec} to accommodate
-unmeasured notation, by convention in CMN they are normally placed inside [measure](/v3/elements/measure.html){:.link_odd_elementSpec}, after the encoding of staves, alongside other so-called ‘control
+Although these elements are allowed within a [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec} to accommodate
+unmeasured notation, by convention in CMN they are normally placed inside [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, after the encoding of staves, alongside other so-called ‘control
 events’.
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample120.xml" valid="true" %}
@@ -179,7 +180,7 @@ and **@layer** attributes like so:
 For the ‘horizontal assignment’, the encoder may choose between two
 different mechanisms. The first uses two timestamp attributes as described in section
 
-<a class="link_ptr" title="Timestamps and Durations" href="/v3/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:
+<a class="link_ptr" title="Timestamps and Durations" href="/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample122.xml" valid="true" %}
 
@@ -196,16 +197,16 @@ This mechanism also allows the crossing of layers and staves.
 
 
 
-For human readability, it is recommended to encode [slur](/v3/elements/slur.html){:.link_odd_elementSpec}, [tie](/v3/elements/tie.html){:.link_odd_elementSpec} and [phrase](/v3/elements/phrase.html){:.link_odd_elementSpec} features in the [measure](/v3/elements/measure.html){:.link_odd_elementSpec} where they begin; that is, in the measure that holds the element referenced
+For human readability, it is recommended to encode [slur](/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec}, [tie](/{{ page.version }}/elements/tie.html){:.link_odd_elementSpec} and [phrase](/{{ page.version }}/elements/phrase.html){:.link_odd_elementSpec} features in the [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} where they begin; that is, in the measure that holds the element referenced
 by **@startid**. On the other hand, for machine processability, it may be desirable to
-place [slur](/v3/elements/slur.html){:.link_odd_elementSpec}, [tie](/v3/elements/tie.html){:.link_odd_elementSpec}, and [phrase](/v3/elements/phrase.html){:.link_odd_elementSpec} elements in the measure *where they end* or even in the *last
+place [slur](/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec}, [tie](/{{ page.version }}/elements/tie.html){:.link_odd_elementSpec}, and [phrase](/{{ page.version }}/elements/phrase.html){:.link_odd_elementSpec} elements in the measure *where they end* or even in the *last
 measure* regardless of their beginning and ending points in the music. This last
 option makes all references contained within these elements ‘back
 references’. Back references are necessary when using processing software that
 treats the encoded file as a stream; that is, programs that process the file without
 creating an in-memory representation of its contents.
 
-When using the [tie](/v3/elements/tie.html){:.link_odd_elementSpec}, [slur](/v3/elements/slur.html){:.link_odd_elementSpec} or [phrase](/v3/elements/phrase.html){:.link_odd_elementSpec} elements, the curvature of the line may be described using the
+When using the [tie](/{{ page.version }}/elements/tie.html){:.link_odd_elementSpec}, [slur](/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec} or [phrase](/{{ page.version }}/elements/phrase.html){:.link_odd_elementSpec} elements, the curvature of the line may be described using the
 **@curvedir**, **@bulge** and **@bezier** attributes. Whereas the first
 attribute allows only specification of the slur's vertical placement, the others give
 increasingly more precise control of the curve.
@@ -214,5 +215,5 @@ If the encoder wishes to draw attention to the appearance of a slur or tie in a 
 source, the **@facs** attribute may be used instead of (or in addition to) the curve
 description attributes to point to a graphic image or a zone within an image (see
 
-<a class="link_ptr" title="Facsimiles" href="/v3/guidelines/facsimiles.html">12 Facsimiles</a>).
+<a class="link_ptr" title="Facsimiles" href="/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a>).
 

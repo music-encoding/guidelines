@@ -1,6 +1,7 @@
 ---
 desc: "data.MIDIMSPB"
 type: "macroSpec"
+version: "v3"
 ---
 
 Tempo expressed as microseconds per "beat", where "beat" is always defined as a quarter

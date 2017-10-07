@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterSigDefault.log"
 
 ---
@@ -27,15 +28,15 @@ title: "att.meterSigDefault.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -61,7 +62,7 @@ title: "att.meterSigDefault.log"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSigDefault.log">att.meterSigDefault.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.log">att.meterSigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -74,7 +75,7 @@ title: "att.meterSigDefault.log"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSigDefault.log">att.meterSigDefault.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.log">att.meterSigDefault.log</a>
                </span>
             </div>
          </td>

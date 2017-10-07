@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.notationstyle"
 
 ---
@@ -26,9 +27,9 @@ title: "att.notationstyle"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.notationstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default music font name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MUSICFONT">data.MUSICFONT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MUSICFONT">data.MUSICFONT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.notationstyle">att.notationstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.notationstyle">att.notationstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +56,10 @@ title: "att.notationstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default music font size.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.notationstyle">att.notationstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.notationstyle">att.notationstyle</a>
                </span>
             </div>
          </td>

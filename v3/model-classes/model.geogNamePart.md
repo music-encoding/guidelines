@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.geogNamePart"
 
 ---
@@ -26,7 +27,7 @@ title: "model.geogNamePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.addressPart">model.addressPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.addressPart">model.addressPart</a>
                </div>
             </div>
          </td>
@@ -38,12 +39,12 @@ title: "model.geogNamePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a> (direct members of model.geogNamePart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bloc">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/country">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/district">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogFeat">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/region">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/settlement">settlement</a> (direct members of model.geogNamePart)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.controleventLike.harmony"
 
 ---
@@ -28,7 +29,7 @@ title: "model.controleventLike.harmony"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.controleventLike">model.controleventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.controleventLike">model.controleventLike</a>
                </div>
             </div>
          </td>
@@ -40,9 +41,9 @@ title: "model.controleventLike.harmony"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harm">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.harmLike">model.harmLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.harmLike">model.harmLike</a>)
                   </span>
                </div>
             </div>

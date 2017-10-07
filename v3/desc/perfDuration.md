@@ -1,6 +1,7 @@
 ---
 desc: "perfDuration"
 type: "elementSpec"
+version: "v3"
 ---
 
 (performance duration) – Used to express the duration of performance of printed or

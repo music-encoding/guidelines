@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.keyAccid.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.keyAccid.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keyAccid">keyAccid</a> (direct member of att.keyAccid.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a> (direct member of att.keyAccid.ges)
                </div>
             </div>
          </td>

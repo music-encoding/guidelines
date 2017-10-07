@@ -1,6 +1,7 @@
 ---
 desc: "space"
 type: "elementSpec"
+version: "v3"
 ---
 
 A placeholder used to fill an incomplete measure, layer, etc. most often so that the

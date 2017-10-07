@@ -1,6 +1,7 @@
 ---
 sectionid: cmnOssia
 title: "Ossia"
+version: "v3"
 ---
 
 
@@ -19,8 +20,8 @@ Most often an ossia is rendered above the main staff on a reduced-size staff. So
 however, the alternate material occurs on the same staff as the primary text, but
 in a
 separate layer. In this case, the alternative material is usually rendered in small-sized
-notation on the normal-sized staff. For both situations, MEI offers the [ossia](/v3/elements/ossia.html){:.link_odd_elementSpec} element, which may be nested either inside [measure](/v3/elements/measure.html){:.link_odd_elementSpec} to
-reflect an ossia on a separate staff, or inside [staff](/v3/elements/staff.html){:.link_odd_elementSpec} to reflect an
+notation on the normal-sized staff. For both situations, MEI offers the [ossia](/{{ page.version }}/elements/ossia.html){:.link_odd_elementSpec} element, which may be nested either inside [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} to
+reflect an ossia on a separate staff, or inside [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} to reflect an
 inline ossia in a separate layer. The following example demonstrates an ossia on a
 separate
 staff:
@@ -28,8 +29,8 @@ staff:
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample147.xml" valid="true" %}
 
 
-The example above demonstrates that only one of the two [staff](/v3/elements/staff.html){:.link_odd_elementSpec}
-elements within [ossia](/v3/elements/ossia.html){:.link_odd_elementSpec} has an **@n** attribute. This mechanism
+The example above demonstrates that only one of the two [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}
+elements within [ossia](/{{ page.version }}/elements/ossia.html){:.link_odd_elementSpec} has an **@n** attribute. This mechanism
 allows one to distinguish between the "regular" and the "alternative" content: The
 one
 bearing the **@n** attribute goes in line with the preceding measure's staff, the
@@ -39,9 +40,9 @@ comes
 last. In combination with the presence of the **@n** attribute, this allows the
 capture of multiple simultaneous ossia staves.
 
-All staves within [ossia](/v3/elements/ossia.html){:.link_odd_elementSpec}, even the alternative ones without a direct
-reference, obey the definitions of the associated [staffDef](/v3/elements/staffDef.html){:.link_odd_elementSpec}, which can
-be derived from the value of the **@n** attribute. Alternatively, a separate [staffDef](/v3/elements/staffDef.html){:.link_odd_elementSpec} may be given at the beginning of the contained [layer](/v3/elements/layer.html){:.link_odd_elementSpec} element(s).
+All staves within [ossia](/{{ page.version }}/elements/ossia.html){:.link_odd_elementSpec}, even the alternative ones without a direct
+reference, obey the definitions of the associated [staffDef](/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}, which can
+be derived from the value of the **@n** attribute. Alternatively, a separate [staffDef](/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} may be given at the beginning of the contained [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec} element(s).
 
 In case of an inline ossia, the whole setup of elements moves down one step in the
 hierarchy, as seen in the following example:

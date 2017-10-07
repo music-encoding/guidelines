@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.duration.performed"
 
 ---
@@ -27,171 +28,171 @@ title: "att.duration.performed"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/annot">annot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.annot.ges">att.annot.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.annot.ges">att.annot.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beamSpan">beamSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beamSpan">beamSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beamSpan.ges">att.beamSpan.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beamSpan.ges">att.beamSpan.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.ges">att.chord.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.ges">att.chord.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.ges">att.cpMark.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.cpMark.ges">att.cpMark.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dir">dir</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dir">dir</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dir.ges">att.dir.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dir.ges">att.dir.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dynam">dynam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dynam">dynam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dynam.ges">att.dynam.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dynam.ges">att.dynam.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/f">f</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/f">f</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.f.ges">att.f.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.f.ges">att.f.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fermata">fermata</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fermata">fermata</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fermata.ges">att.fermata.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fermata.ges">att.fermata.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fing">fing</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fing">fing</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fing.ges">att.fing.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fing.ges">att.fing.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fingGrp">fingGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingGrp">fingGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fingGrp.ges">att.fingGrp.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fingGrp.ges">att.fingGrp.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/gliss">gliss</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/gliss">gliss</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.gliss.ges">att.gliss.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.gliss.ges">att.gliss.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/hairpin">hairpin</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hairpin">hairpin</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.hairpin.ges">att.hairpin.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.hairpin.ges">att.hairpin.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harm">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harm.ges">att.harm.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.harm.ges">att.harm.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harpPedal">harpPedal</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harpPedal">harpPedal</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harpPedal.ges">att.harpPedal.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.harpPedal.ges">att.harpPedal.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/line">line</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/line">line</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.line.ges">att.line.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.line.ges">att.line.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRest">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.ges">att.mRest.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRest.ges">att.mRest.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mSpace">mSpace</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mSpace">mSpace</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mSpace.ges">att.mSpace.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mSpace.ges">att.mSpace.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/multiRest">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRest.ges">att.multiRest.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.multiRest.ges">att.multiRest.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/octave">octave</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/octave">octave</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.octave.ges">att.octave.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.octave.ges">att.octave.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ornam">ornam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ornam">ornam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.ornam.ges">att.ornam.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ornam.ges">att.ornam.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/phrase">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.phrase.ges">att.phrase.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.ges">att.phrase.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.ges">att.rest.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.rest.ges">att.rest.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/slur">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.slur.ges">att.slur.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.slur.ges">att.slur.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/space">space</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.space.ges">att.space.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.space.ges">att.space.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/trill">trill</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trill">trill</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trill.ges">att.trill.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.trill.ges">att.trill.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tuplet.ges">att.tuplet.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tuplet.ges">att.tuplet.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tupletSpan">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tupletSpan.ges">att.tupletSpan.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tupletSpan.ges">att.tupletSpan.ges</a>)
                   </span>
                </div>
             </div>
@@ -211,10 +212,10 @@ title: "att.duration.performed"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.performed">att.duration.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.performed">att.duration.performed</a>
                </span>
             </div>
          </td>

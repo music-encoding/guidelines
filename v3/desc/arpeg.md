@@ -1,6 +1,7 @@
 ---
 desc: "arpeg"
 type: "elementSpec"
+version: "v3"
 ---
 
 (arpeggiation) – Indicates that the notes of a chord are to be performed successively

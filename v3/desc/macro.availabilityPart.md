@@ -1,6 +1,7 @@
 ---
 desc: "macro.availabilityPart"
 type: "macroSpec"
+version: "v3"
 ---
 
 Groups elements that may appear as part of a description of the availability of and

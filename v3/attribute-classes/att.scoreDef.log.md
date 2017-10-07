@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.scoreDef.log"
 
 ---
@@ -28,7 +29,7 @@ title: "att.scoreDef.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a> (direct member of att.scoreDef.log)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a> (direct member of att.scoreDef.log)
                </div>
             </div>
          </td>
@@ -48,7 +49,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,10 +59,10 @@ title: "att.scoreDef.log"
                   quarter note duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -69,10 +70,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of octave displacement to be applied to the clef.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,10 +81,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the direction of octave displacement to be applied to the clef.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -95,10 +96,10 @@ title: "att.scoreDef.log"
                   the lowest line of the staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFLINE">data.CLEFLINE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.CLEFLINE">data.CLEFLINE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -106,10 +107,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Encodes a value for the clef symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFSHAPE">data.CLEFSHAPE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.CLEFSHAPE">data.CLEFSHAPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.cleffing.log">att.cleffing.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -119,10 +120,10 @@ title: "att.scoreDef.log"
                   etc. in a measure does not have a duration specified.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION">data.DURATION</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION">data.DURATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -132,10 +133,10 @@ title: "att.scoreDef.log"
                   equals 'c' and key.accid equals 's', then a tonic of C# is indicated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -143,10 +144,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates major, minor, or other tonality.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODE">data.MODE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODE">data.MODE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -154,10 +155,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the pitch name of the tonic key, e.g. 'c' for the key of C.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -165,10 +166,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates where the key lies in the circle of fifths.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.KEYSIGNATURE">data.KEYSIGNATURE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.KEYSIGNATURE">data.KEYSIGNATURE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -185,10 +186,10 @@ title: "att.scoreDef.log"
                   indicate what key accidentals should be rendered and where they should be placed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -196,10 +197,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines if a dot is to be added to the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -207,10 +208,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">The base symbol in the mensuration sign/time signature of mensural notation.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -223,7 +224,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -241,7 +242,7 @@ title: "att.scoreDef.log"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSigDefault.log">att.meterSigDefault.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.meterSigDefault.log">att.meterSigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -254,7 +255,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSigDefault.log">att.meterSigDefault.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.meterSigDefault.log">att.meterSigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -262,10 +263,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the maxima-long relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMAIOR">data.MODUSMAIOR</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -273,10 +274,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the long-breve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMINOR">data.MODUSMINOR</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMINOR">data.MODUSMINOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -289,7 +290,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -302,7 +303,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -312,10 +313,10 @@ title: "att.scoreDef.log"
                   etc. in a measure does not have an octave value specified.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedefault">att.octavedefault</a>
+                  <a class="link_odd" href="/{{ v3}}/att.octavedefault">att.octavedefault</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -323,10 +324,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the semibreve-minim relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PROLATIO">data.PROLATIO</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PROLATIO">data.PROLATIO</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -339,7 +340,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -352,7 +353,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -360,10 +361,10 @@ title: "att.scoreDef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the breve-semibreve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TEMPUS">data.TEMPUS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.TEMPUS">data.TEMPUS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -376,7 +377,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.transposition">att.transposition</a>
+                  <a class="link_odd" href="/{{ v3}}/att.transposition">att.transposition</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -389,7 +390,7 @@ title: "att.scoreDef.log"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.transposition">att.transposition</a>
+                  <a class="link_odd" href="/{{ v3}}/att.transposition">att.transposition</a>
                </span>
             </div>
          </td>

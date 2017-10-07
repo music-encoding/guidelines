@@ -1,6 +1,7 @@
 ---
 sectionid: sharedOrnaments
 title: "Ornaments"
+version: "v3"
 ---
 
 
@@ -15,7 +16,7 @@ notes to one or more notes of the melody.
 
 
 MEI provides a generic element for encoding an ornament symbol that is not a mordent,
-turn, or trill. For those common CMN ornaments, please refer to <a class="link_ptr" title="Common Music Notation Ornaments" href="/v3/guidelines/cmnOrnaments.html">8 Common Music Notation Ornaments</a>.
+turn, or trill. For those common CMN ornaments, please refer to <a class="link_ptr" title="Common Music Notation Ornaments" href="/{{ page.version }}/guidelines/cmnOrnaments.html">8 Common Music Notation Ornaments</a>.
 
 Ornaments can be represented as textual strings (e.g. with a Unicode symbol) or with
 a

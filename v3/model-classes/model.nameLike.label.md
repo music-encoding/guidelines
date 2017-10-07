@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.nameLike.label"
 
 ---
@@ -26,7 +27,7 @@ title: "model.nameLike.label"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
             </div>
          </td>
@@ -38,8 +39,8 @@ title: "model.nameLike.label"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a> (direct members of model.nameLike.label)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/periodName">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/styleName">styleName</a> (direct members of model.nameLike.label)
                </div>
             </div>
          </td>

@@ -1,15 +1,16 @@
 ---
 sectionid: sharedTextDirectives
 title: "Text Directives"
+version: "v3"
 ---
 
 
 
 All of the following elements can be considered text directives; however, MEI uses
 the
-[dir](/v3/elements/dir.html){:.link_odd_elementSpec} element specifically for words, abbreviations, numbers, or
+[dir](/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} element specifically for words, abbreviations, numbers, or
 symbols specifying or suggesting the manner of performance that are not encoded elsewhere
-using the more specific elements of [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec} and [dynam](/v3/elements/dynam.html){:.link_odd_elementSpec}.
+using the more specific elements of [tempo](/{{ page.version }}/elements/tempo.html){:.link_odd_elementSpec} and [dynam](/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec}.
 
 
 

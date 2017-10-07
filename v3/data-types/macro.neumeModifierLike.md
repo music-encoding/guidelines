@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "macro.neumeModifierLike"
 
 ---
@@ -25,8 +26,8 @@ title: "macro.neumeModifierLike"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/ineume">ineume</a>, 
-               <a class="link_odd_classSpec" href="/v3/uneume">uneume</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/ineume">ineume</a>, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/uneume">uneume</a>
             </div>
          </td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.OTHERSTAFF"
 
 ---
@@ -26,8 +27,8 @@ title: "data.OTHERSTAFF"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.beamedwith">att.beamedwith</a> (@beam.with), 
-               <a class="link_odd_classSpec" href="/v3/att.stems.cmn">att.stems.cmn</a> (@stem.with)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.beamedwith">att.beamedwith</a> (@beam.with), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.stems.cmn">att.stems.cmn</a> (@stem.with)
             </div>
          </td>
       </tr>

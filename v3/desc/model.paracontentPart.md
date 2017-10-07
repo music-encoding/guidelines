@@ -1,6 +1,7 @@
 ---
 desc: "model.paracontentPart"
 type: "classSpec"
+version: "v3"
 ---
 
 Groups elements which may appear as part of the paragraph content model. A paragraph

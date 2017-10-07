@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.regularmethod"
 
 ---
@@ -26,8 +27,8 @@ title: "att.regularmethod"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/normalization">normalization</a> (direct members of att.regularmethod)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/correction">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/normalization">normalization</a> (direct members of att.regularmethod)
                </div>
             </div>
          </td>
@@ -48,7 +49,7 @@ title: "att.regularmethod"
                <span style="font-weight: 500;">tags</span>" 
                <i>(Corrections and normalizations indicated using elements.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.regularmethod">att.regularmethod</a>
+                  <a class="link_odd" href="/{{ v3}}/att.regularmethod">att.regularmethod</a>
                </span>
             </div>
          </td>

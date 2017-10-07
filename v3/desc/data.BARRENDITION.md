@@ -1,6 +1,7 @@
 ---
 desc: "data.BARRENDITION"
 type: "macroSpec"
+version: "v3"
 ---
 
 Renderings of bar lines. Some values correspond to the Western Musical Symbols portion

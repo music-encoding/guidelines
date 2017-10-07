@@ -1,6 +1,7 @@
 ---
 desc: "data.CLEFLINE"
 type: "macroSpec"
+version: "v3"
 ---
 
 Clef line attribute values. The value must be in the range between 1 and the number

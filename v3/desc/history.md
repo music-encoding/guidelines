@@ -1,6 +1,7 @@
 ---
 desc: "history"
 type: "elementSpec"
+version: "v3"
 ---
 
 Provides a container for information about the history of a resource. To facilitate

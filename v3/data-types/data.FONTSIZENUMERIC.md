@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.FONTSIZENUMERIC"
 
 ---
@@ -25,7 +26,7 @@ title: "data.FONTSIZENUMERIC"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.FONTSIZE">data.FONTSIZE</a>
+               <a class="link_odd" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>
             </div>
          </td>
       </tr>

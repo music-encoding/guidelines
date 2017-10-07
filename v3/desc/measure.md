@@ -1,6 +1,7 @@
 ---
 desc: "measure"
 type: "elementSpec"
+version: "v3"
 ---
 
 Unit of musical time consisting of a fixed number of note-values of a given type,

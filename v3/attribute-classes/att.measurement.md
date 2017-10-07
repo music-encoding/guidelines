@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.measurement"
 
 ---
@@ -26,26 +27,26 @@ title: "att.measurement"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblScope">biblScope</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/depth">depth</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/dimensions">dimensions</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/extent">extent</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/gap">gap</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/height">height</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/num">num</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/width">width</a> (direct members of att.measurement)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/biblScope">biblScope</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/depth">depth</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dimensions">dimensions</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/gap">gap</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/height">height</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/num">num</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/width">width</a> (direct members of att.measurement)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.barLine.vis">att.barLine.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.barLine.vis">att.barLine.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.measure.vis">att.measure.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.measure.vis">att.measure.vis</a>)
                   </span>
                </div>
             </div>
@@ -89,7 +90,7 @@ title: "att.measurement"
                <span style="font-weight: 500;">vu</span>" 
                <i>(MEI virtual unit.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measurement">att.measurement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.measurement">att.measurement</a>
                </span>
             </div>
          </td>

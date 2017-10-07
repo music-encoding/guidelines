@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.DURATION.additive"
 
 ---
@@ -30,7 +31,7 @@ title: "data.DURATION.additive"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.duration.additive">att.duration.additive</a> (@dur)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.duration.additive">att.duration.additive</a> (@dur)
             </div>
          </td>
       </tr>

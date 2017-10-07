@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.TUPLET"
 
 ---
@@ -25,7 +26,7 @@ title: "data.TUPLET"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.tupletpresent">att.tupletpresent</a> (@tuplet)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.tupletpresent">att.tupletpresent</a> (@tuplet)
             </div>
          </td>
       </tr>

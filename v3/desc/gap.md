@@ -1,6 +1,7 @@
 ---
 desc: "gap"
 type: "elementSpec"
+version: "v3"
 ---
 
 Indicates a point where material has been omitted in a transcription, whether as part

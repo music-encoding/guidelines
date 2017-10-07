@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.canonical"
 
 ---
@@ -28,33 +29,33 @@ title: "att.canonical"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/perfRes">perfRes</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfResList">perfResList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/resp">resp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/title">title</a> (direct members of att.canonical)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfRes">perfRes</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfResList">perfResList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/resp">resp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/title">title</a> (direct members of att.canonical)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/addName">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bloc">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/country">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/district">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/famName">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/foreName">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genName">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogFeat">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/nameLink">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/periodName">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/region">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/roleName">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/settlement">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/styleName">styleName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.name">att.name</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.name">att.name</a>)
                   </span>
                </div>
             </div>
@@ -75,7 +76,7 @@ title: "att.canonical"
                <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.canonical">att.canonical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.canonical">att.canonical</a>
                </span>
             </div>
          </td>

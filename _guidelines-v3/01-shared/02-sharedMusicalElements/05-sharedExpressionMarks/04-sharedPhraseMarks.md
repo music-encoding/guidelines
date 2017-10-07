@@ -1,6 +1,7 @@
 ---
 sectionid: sharedPhraseMarks
 title: "Phrase Marks"
+version: "v3"
 ---
 
 
@@ -27,6 +28,6 @@ slur also indicates that the affected notes should be played in a
 
 Even so, it is common for both of these concepts to be referred to generically as
 "slurs". Therefore, unless one is encoding music from a repertoire in which this
-distinction is important, the [slur](/v3/elements/slur.html){:.link_odd_elementSpec} element should be preferred over
-[phrase](/v3/elements/phrase.html){:.link_odd_elementSpec}.
+distinction is important, the [slur](/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec} element should be preferred over
+[phrase](/{{ page.version }}/elements/phrase.html){:.link_odd_elementSpec}.
 

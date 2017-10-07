@@ -1,6 +1,7 @@
 ---
 desc: "specRepro"
 type: "elementSpec"
+version: "v3"
 ---
 
 (special reproduction characteristic) – The equalization system, noise reduction system,

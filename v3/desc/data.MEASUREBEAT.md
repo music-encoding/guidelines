@@ -1,6 +1,7 @@
 ---
 desc: "data.MEASUREBEAT"
 type: "macroSpec"
+version: "v3"
 ---
 
 A count of measures plus a beat location, i.e., [0-9]+m *\+ *[0-9]+(\.?[0-9]*)?. The

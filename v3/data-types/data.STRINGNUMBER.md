@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.STRINGNUMBER"
 
 ---
@@ -25,7 +26,7 @@ title: "data.STRINGNUMBER"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.note.ges.tablature">att.note.ges.tablature</a> (@tab.string)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges.tablature">att.note.ges.tablature</a> (@tab.string)
             </div>
          </td>
       </tr>

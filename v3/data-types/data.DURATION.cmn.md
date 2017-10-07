@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.DURATION.cmn"
 
 ---
@@ -25,7 +26,7 @@ title: "data.DURATION.cmn"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.tremmeasured">att.tremmeasured</a> (@measperf)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.tremmeasured">att.tremmeasured</a> (@measperf)
             </div>
          </td>
       </tr>

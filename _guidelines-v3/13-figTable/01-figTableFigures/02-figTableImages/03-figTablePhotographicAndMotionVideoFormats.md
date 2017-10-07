@@ -1,6 +1,7 @@
 ---
 sectionid: figTablePhotographicAndMotionVideoFormats
 title: "Photographic and Motion Video Formats"
+version: "v3"
 ---
 
 

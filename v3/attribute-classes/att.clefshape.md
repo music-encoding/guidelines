@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.clefshape"
 
 ---
@@ -26,9 +27,9 @@ title: "att.clefshape"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.clef.log">att.clef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.clef.log">att.clef.log</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.clefshape"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes a clef's shape.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFSHAPE">data.CLEFSHAPE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFSHAPE">data.CLEFSHAPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.clefshape">att.clefshape</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.clefshape">att.clefshape</a>
                </span>
             </div>
          </td>

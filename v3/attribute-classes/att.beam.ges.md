@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beam.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.beam.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a> (direct member of att.beam.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> (direct member of att.beam.ges)
                </div>
             </div>
          </td>

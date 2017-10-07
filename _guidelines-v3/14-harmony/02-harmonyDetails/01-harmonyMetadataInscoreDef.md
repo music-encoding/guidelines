@@ -1,6 +1,7 @@
 ---
 sectionid: harmonyMetadataInscoreDef
 title: "Interpreted Chord Data in scoreDef"
+version: "v3"
 ---
 
 
@@ -31,20 +32,20 @@ The following elements enable the creation and re-use of interpreted chord data:
 
 
 
-The [chordTable](/v3/elements/chordTable.html){:.link_odd_elementSpec} element is a container for a set of chord definitions,
-while the [chordDef](/v3/elements/chordDef.html){:.link_odd_elementSpec} element defines a single chord. Chord definitions
+The [chordTable](/{{ page.version }}/elements/chordTable.html){:.link_odd_elementSpec} element is a container for a set of chord definitions,
+while the [chordDef](/{{ page.version }}/elements/chordDef.html){:.link_odd_elementSpec} element defines a single chord. Chord definitions
 may be created *a priori* or as the result of analysis of the pitch content
 of the music at hand, for instance, by examination of the notes occurring on the downbeat
 of
 each measure. In this way, the chord definitions serve as a record of the analysis.
 
-Even though it is not required by the schema, an **@xml:id** attribute on [chordDef](/v3/elements/chordDef.html){:.link_odd_elementSpec} is necessary to permit the creation of associations between
+Even though it is not required by the schema, an **@xml:id** attribute on [chordDef](/{{ page.version }}/elements/chordDef.html){:.link_odd_elementSpec} is necessary to permit the creation of associations between
 harmonic indications in the musical text with the chord defined here. The **@xml:id**
 attribute provides a unique identifier for the chord definition that can be referenced
 by
-the [harm](/v3/elements/harm.html){:.link_odd_elementSpec} element's **@chordref** attribute.
+the [harm](/{{ page.version }}/elements/harm.html){:.link_odd_elementSpec} element's **@chordref** attribute.
 
-Individual pitches of a chord are encoded using [chordMember](/v3/elements/chordMember.html){:.link_odd_elementSpec}. The
+Individual pitches of a chord are encoded using [chordMember](/{{ page.version }}/elements/chordMember.html){:.link_odd_elementSpec}. The
 **@inth** attribute provides the means for indicating the number of half steps of
 the chord note above the bass note.
 

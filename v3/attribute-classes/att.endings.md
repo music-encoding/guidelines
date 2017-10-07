@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.endings"
 
 ---
@@ -26,9 +27,9 @@ title: "att.endings"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -52,7 +53,7 @@ title: "att.endings"
                <span style="font-weight: 500;">grouped</span>" 
                <i>(Endings rendered above staff groups.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.endings">att.endings</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.endings">att.endings</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffgroupingsym"
 
 ---
@@ -26,15 +27,15 @@ title: "att.staffgroupingsym"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/grpSym">grpSym</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/grpSym">grpSym</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.grpSym.log">att.grpSym.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.grpSym.log">att.grpSym.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffGrp">staffGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffGrp.vis">att.staffGrp.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffGrp.vis">att.staffGrp.vis</a>)
                   </span>
                </div>
             </div>
@@ -64,7 +65,7 @@ title: "att.staffgroupingsym"
                <span style="font-weight: 500;">none</span>" 
                <i>(Grouping symbol missing.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffgroupingsym">att.staffgroupingsym</a>
+                  <a class="link_odd" href="/{{ v3}}/att.staffgroupingsym">att.staffgroupingsym</a>
                </span>
             </div>
          </td>

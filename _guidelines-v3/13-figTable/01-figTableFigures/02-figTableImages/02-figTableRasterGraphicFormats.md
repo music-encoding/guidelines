@@ -1,6 +1,7 @@
 ---
 sectionid: figTableRasterGraphicFormats
 title: "Raster Graphic Formats"
+version: "v3"
 ---
 
 
@@ -35,7 +36,7 @@ title: "Raster Graphic Formats"
             at
             all. Also, TIFF files may be monochrome, greyscale, or polychromatic. All such options
             should be specified in prose at the end of the 
-            <a class="link_odd_elementSpec" href="/v3/encodingDesc">encodingDesc</a>
+            <a class="link_odd_elementSpec" href="/{{ page.version }}/encodingDesc">encodingDesc</a>
             section of the MEI header for any document including TIFF images. TIFF is owned by
             Aldus
             Corporation. Documentation on TIFF is available from the owner at Craigcook Castle,

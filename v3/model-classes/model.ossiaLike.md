@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.ossiaLike"
 
 ---
@@ -26,8 +27,8 @@ title: "model.ossiaLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.measurePart">model.measurePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.staffPart">model.staffPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.measurePart">model.measurePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart">model.staffPart</a>
                </div>
             </div>
          </td>
@@ -39,7 +40,7 @@ title: "model.ossiaLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ossia">ossia</a> (direct member of model.ossiaLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ossia">ossia</a> (direct member of model.ossiaLike)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 desc: "group"
 type: "elementSpec"
+version: "v3"
 ---
 
 Contains a composite musical text, grouping together a sequence of distinct musical

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.ARTICULATION"
 
 ---
@@ -28,8 +29,8 @@ title: "data.ARTICULATION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.articulation">att.articulation</a> (@artic), 
-               <a class="link_odd_classSpec" href="/v3/att.articulation.performed">att.articulation.performed</a> (@artic.ges)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.articulation">att.articulation</a> (@artic), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.articulation.performed">att.articulation.performed</a> (@artic.ges)
             </div>
          </td>
       </tr>

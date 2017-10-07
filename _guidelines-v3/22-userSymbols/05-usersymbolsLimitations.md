@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsLimitations
 title: "Limitations"
+version: "v3"
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 desc: "att.scoreDef.log.mensural"
 type: "classSpec"
+version: "v3"
 ---
 
 Logical domain attributes for a score in the mensural repertoire. The values set in

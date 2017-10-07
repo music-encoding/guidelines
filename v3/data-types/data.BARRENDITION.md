@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.BARRENDITION"
 
 ---
@@ -26,8 +27,8 @@ title: "data.BARRENDITION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.barLine.log">att.barLine.log</a> (@form), 
-               <a class="link_odd_classSpec" href="/v3/att.measure.log">att.measure.log</a> (@left)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.barLine.log">att.barLine.log</a> (@form), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.measure.log">att.measure.log</a> (@left)
             </div>
          </td>
       </tr>

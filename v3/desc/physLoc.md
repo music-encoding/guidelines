@@ -1,6 +1,7 @@
 ---
 desc: "physLoc"
 type: "elementSpec"
+version: "v3"
 ---
 
 (physical location) – Groups information about the current physical location of a

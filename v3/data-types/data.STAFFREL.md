@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.STAFFREL"
 
 ---
@@ -25,7 +26,7 @@ title: "data.STAFFREL"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.placement">att.placement</a> (@place)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.placement">att.placement</a> (@place)
             </div>
          </td>
       </tr>

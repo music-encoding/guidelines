@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.octavedisplacement"
 
 ---
@@ -26,21 +27,21 @@ title: "att.octavedisplacement"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.clef.log">att.clef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.clef.log">att.clef.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.log">att.cpMark.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.cpMark.log">att.cpMark.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/octave">octave</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/octave">octave</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.octave.log">att.octave.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.octave.log">att.octave.log</a>)
                   </span>
                </div>
             </div>
@@ -56,10 +57,10 @@ title: "att.octavedisplacement"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of octave displacement.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedisplacement">att.octavedisplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.octavedisplacement"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the direction of octave displacement.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedisplacement">att.octavedisplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
                </span>
             </div>
          </td>

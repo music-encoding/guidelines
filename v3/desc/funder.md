@@ -1,6 +1,7 @@
 ---
 desc: "funder"
 type: "elementSpec"
+version: "v3"
 ---
 
 Names of individuals, institutions, or organizations responsible for funding. Funders

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "avFile"
 
 ---
@@ -35,7 +36,7 @@ title: "avFile"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +46,10 @@ title: "avFile"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,10 +59,10 @@ title: "avFile"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -72,7 +73,7 @@ title: "avFile"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -87,7 +88,7 @@ title: "avFile"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.internetmedia">att.internetmedia</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.internetmedia">att.internetmedia</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -95,10 +96,10 @@ title: "avFile"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,7 +112,7 @@ title: "avFile"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -121,10 +122,10 @@ title: "avFile"
                   participants in a relationship; that is, the entities pointed "to".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -138,7 +139,7 @@ title: "avFile"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -151,7 +152,7 @@ title: "avFile"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -169,7 +170,7 @@ title: "avFile"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than allowed by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -179,10 +180,10 @@ title: "avFile"
                   attribute must be a URI.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -202,7 +203,7 @@ title: "avFile"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than permitted by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -212,10 +213,10 @@ title: "avFile"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -229,7 +230,7 @@ title: "avFile"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -252,8 +253,8 @@ title: "avFile"
                   <div class="specChild">
                      <span class="specChildModule">MEI.performance</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/clip">clip</a> 
-                        <a class="link_odd_elementSpec" href="/v3/recording">recording</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/clip">clip</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/recording">recording</a>
                      </span>
                   </div>
                </div>
@@ -269,7 +270,7 @@ title: "avFile"
                <div class="specChild">
                   <span class="specChildModule">MEI.performance</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/clip">clip</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/clip">clip</a>
                   </span>
                </div>
             </div>
@@ -378,7 +379,7 @@ title: "avFile"
          </td>
          <td class="wovenodd-col2">
             <p>This element is analogous to the 
-               <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a> element in the figtable
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a> element in the figtable
                module.
             </p>
          </td>

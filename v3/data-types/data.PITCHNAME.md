@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.PITCHNAME"
 
 ---
@@ -26,10 +27,10 @@ title: "data.PITCHNAME"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a> (@key.pname), 
-               <a class="link_odd_classSpec" href="/v3/att.pitch">att.pitch</a> (@pname), 
-               <a class="link_odd_classSpec" href="/v3/att.scoreDef.ges">att.scoreDef.ges</a> (@tune.pname), 
-               <a class="link_odd_classSpec" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a> (@ploc)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a> (@key.pname), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.pitch">att.pitch</a> (@pname), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a> (@tune.pname), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a> (@ploc)
             </div>
          </td>
       </tr>

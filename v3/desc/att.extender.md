@@ -1,6 +1,7 @@
 ---
 desc: "att.extender"
 type: "classSpec"
+version: "v3"
 ---
 
 Attributes that describe extension symbols, typically lines. Members of this class

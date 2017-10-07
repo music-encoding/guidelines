@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MODUSMINOR"
 
 ---
@@ -25,7 +26,7 @@ title: "data.MODUSMINOR"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.mensural.shared">att.mensural.shared</a> (@modusminor)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a> (@modusminor)
             </div>
          </td>
       </tr>

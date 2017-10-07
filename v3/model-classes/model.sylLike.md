@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.sylLike"
 
 ---
@@ -26,12 +27,12 @@ title: "model.sylLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.syllablePart">model.syllablePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.rdgPart.critapp">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.syllablePart">model.syllablePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.rdgPart.critapp">model.rdgPart.critapp</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/verse">verse</a>
                </div>
             </div>
          </td>
@@ -43,7 +44,7 @@ title: "model.sylLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/syl">syl</a> (direct member of model.sylLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syl">syl</a> (direct member of model.sylLike)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tuplet.vis"
 
 ---
@@ -26,12 +27,12 @@ title: "att.tuplet.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a> (direct member of att.tuplet.vis)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tuplet">tuplet</a> (direct member of att.tuplet.vis)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tupletSpan">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tupletSpan.vis">att.tupletSpan.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tupletSpan.vis">att.tupletSpan.vis</a>)
                   </span>
                </div>
             </div>
@@ -49,10 +50,10 @@ title: "att.tuplet.vis"
                   heads.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tuplet.vis">att.tuplet.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tuplet.vis">att.tuplet.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -60,10 +61,10 @@ title: "att.tuplet.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">States whether a bracket should be rendered with a tuplet.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tuplet.vis">att.tuplet.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tuplet.vis">att.tuplet.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -73,10 +74,10 @@ title: "att.tuplet.vis"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ v3}}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,10 +85,10 @@ title: "att.tuplet.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines if the tuplet duration is visible.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tuplet.vis">att.tuplet.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tuplet.vis">att.tuplet.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -101,7 +102,7 @@ title: "att.tuplet.vis"
                <span style="font-weight: 500;">ratio</span>" 
                <i>(Both the num and numbase attributes are displayed, e.g., '7:4'.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tuplet.vis">att.tuplet.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tuplet.vis">att.tuplet.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -109,10 +110,10 @@ title: "att.tuplet.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">States where the tuplet number will be placed in relation to the note heads.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numberplacement">att.numberplacement</a>
+                  <a class="link_odd" href="/{{ v3}}/att.numberplacement">att.numberplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -120,10 +121,10 @@ title: "att.tuplet.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines if the tuplet number is visible.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numberplacement">att.numberplacement</a>
+                  <a class="link_odd" href="/{{ v3}}/att.numberplacement">att.numberplacement</a>
                </span>
             </div>
          </td>

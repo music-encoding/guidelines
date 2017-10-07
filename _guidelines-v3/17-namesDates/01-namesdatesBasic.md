@@ -1,6 +1,7 @@
 ---
 sectionid: namesdatesBasic
 title: "Basic Elements for Names and Dates"
+version: "v3"
 ---
 
 
@@ -14,13 +15,13 @@ The basic elements for capturing names and dates are defined in the shared modul
 
 
 
-The [name](/v3/elements/name.html){:.link_odd_elementSpec} element contains the name of an entity that is difficult to
-tag more specifically as a [corpName](/v3/elements/corpName.html){:.link_odd_elementSpec}, [geogName](/v3/elements/geogName.html){:.link_odd_elementSpec}, [persName](/v3/elements/persName.html){:.link_odd_elementSpec}, or [title](/v3/elements/title.html){:.link_odd_elementSpec}. In section <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/v3/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the [name](/v3/elements/name.html){:.link_odd_elementSpec} element
+The [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element contains the name of an entity that is difficult to
+tag more specifically as a [corpName](/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec}, [geogName](/{{ page.version }}/elements/geogName.html){:.link_odd_elementSpec}, [persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec}, or [title](/{{ page.version }}/elements/title.html){:.link_odd_elementSpec}. In section <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/{{ page.version }}/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element
 may be used in place of the more specific elements when it is not known what kind
 of name is
 being described or when a high degree of precision is not necessary. For example,
-the [name](/v3/elements/name.html){:.link_odd_elementSpec} element might be used when it is not clear whether the name "Bach"
-refers to a person or a geographic feature. When name parts are needed, use [name](/v3/elements/name.html){:.link_odd_elementSpec} sub-elements. The recommended values for the **@type** attribute are:
+the [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element might be used when it is not clear whether the name "Bach"
+refers to a person or a geographic feature. When name parts are needed, use [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} sub-elements. The recommended values for the **@type** attribute are:
 
 
 <table class="table table-striped table-hover">
@@ -49,7 +50,7 @@ refers to a person or a geographic feature. When name parts are needed, use [nam
       </tr>
    </tbody>
 </table>
-The date sub-element is available within [name](/v3/elements/name.html){:.link_odd_elementSpec} in order to record any
+The date sub-element is available within [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} in order to record any
 dates associated with the name, for example, creation and dissolution in the case
 of a
 corporate entity or place or birth and death dates in the case of an individual. The
@@ -57,18 +58,18 @@ name of
 the list from which a controlled value is taken, such as the Library of Congress Name
 Authority File (LCNAF), may be recorded using the authority attribute.
 
-Examples of the use of the [name](/v3/elements/name.html){:.link_odd_elementSpec} element:
+Examples of the use of the [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample276.xml" valid="false" %}
 
-The element [date](/v3/elements/date.html){:.link_odd_elementSpec} contains a date in any format, including a date range.
+The element [date](/{{ page.version }}/elements/date.html){:.link_odd_elementSpec} contains a date in any format, including a date range.
 A date range may be expressed as textual content or, when intervening punctuation
 is present,
 as a combination of date sub-elements and text.
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample277.xml" valid="false" %}
 
-To be more specific about the date, the attributes in the [att.datable](/v3/attribute-classes/att.datable.html){:.link_odd} class can be used:
+To be more specific about the date, the attributes in the [att.datable](/{{ page.version }}/attribute-classes/att.datable.html){:.link_odd} class can be used:
 
 
 <table class="table table-striped table-hover">

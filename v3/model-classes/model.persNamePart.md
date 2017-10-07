@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.persNamePart"
 
 ---
@@ -26,7 +27,7 @@ title: "model.persNamePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>
                </div>
             </div>
          </td>
@@ -38,12 +39,12 @@ title: "model.persNamePart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a> (direct members of model.persNamePart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/addName">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/famName">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/foreName">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genName">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/nameLink">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/roleName">roleName</a> (direct members of model.persNamePart)
                </div>
             </div>
          </td>

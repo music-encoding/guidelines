@@ -1,6 +1,7 @@
 ---
 desc: "macro.XSLT"
 type: "macroSpec"
+version: "v3"
 ---
 
 Permits any element from the XSLT namespace. Allowing XSLT in &lt;incipit&gt; makes it

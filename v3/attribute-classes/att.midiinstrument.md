@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.midiinstrument"
 
 ---
@@ -26,7 +27,7 @@ title: "att.midiinstrument"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/instrDef">instrDef</a> (direct member of att.midiinstrument)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/instrDef">instrDef</a> (direct member of att.midiinstrument)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.midiinstrument"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a General MIDI label for the MIDI instrument.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDINAMES">data.MIDINAMES</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDINAMES">data.MIDINAMES</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -52,10 +53,10 @@ title: "att.midiinstrument"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the MIDI instrument number.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "att.midiinstrument"
                   127 pans right, and 64 pans to the center.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -76,10 +77,10 @@ title: "att.midiinstrument"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the instrument's volume.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midiinstrument">att.midiinstrument</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midiinstrument">att.midiinstrument</a>
                </span>
             </div>
          </td>

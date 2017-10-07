@@ -1,6 +1,7 @@
 ---
 desc: "att.common.anl"
 type: "classSpec"
+version: "v3"
 ---
 
 Common analytical attributes. When the MEI.performance module is used, the when

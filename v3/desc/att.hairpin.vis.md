@@ -1,6 +1,7 @@
 ---
 desc: "att.hairpin.vis"
 type: "classSpec"
+version: "v3"
 ---
 
 Visual domain attributes. The startho and startvo attributes record the horizontal

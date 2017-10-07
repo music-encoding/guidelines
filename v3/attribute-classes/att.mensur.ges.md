@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mensur.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.mensur.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a> (direct member of att.mensur.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a> (direct member of att.mensur.ges)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 desc: "data.KEYSIGNATURE"
 type: "macroSpec"
+version: "v3"
 ---
 
 Key signature may be indicated by a value showing where the key is in the circle of

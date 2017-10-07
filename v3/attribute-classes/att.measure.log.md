@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.measure.log"
 
 ---
@@ -37,7 +38,7 @@ title: "att.measure.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a> (direct member of att.measure.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a> (direct member of att.measure.log)
                </div>
             </div>
          </td>
@@ -57,10 +58,10 @@ title: "att.measure.log"
                   right barline but not the left.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterconformance.bar">att.meterconformance.bar</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,10 +72,10 @@ title: "att.measure.log"
                   safely ignored.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARRENDITION">data.BARRENDITION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BARRENDITION">data.BARRENDITION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measure.log">att.measure.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.measure.log">att.measure.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,10 +85,10 @@ title: "att.measure.log"
                   meter.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterconformance.bar">att.meterconformance.bar</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -95,10 +96,10 @@ title: "att.measure.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the function of the right bar line and is structurally important.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARRENDITION">data.BARRENDITION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BARRENDITION">data.BARRENDITION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measure.log">att.measure.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.measure.log">att.measure.log</a>
                </span>
             </div>
          </td>

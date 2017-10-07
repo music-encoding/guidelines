@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.OCTAVE"
 
 ---
@@ -26,10 +27,10 @@ title: "data.OCTAVE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a> (@oct.ges), 
-               <a class="link_odd_classSpec" href="/v3/att.octave">att.octave</a> (@oct), 
-               <a class="link_odd_classSpec" href="/v3/att.octavedefault">att.octavedefault</a> (@octave.default), 
-               <a class="link_odd_classSpec" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a> (@oloc)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a> (@oct.ges), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.octave">att.octave</a> (@oct), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.octavedefault">att.octavedefault</a> (@octave.default), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a> (@oloc)
             </div>
          </td>
       </tr>

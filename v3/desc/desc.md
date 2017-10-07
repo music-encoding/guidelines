@@ -1,6 +1,7 @@
 ---
 desc: "desc"
 type: "elementSpec"
+version: "v3"
 ---
 
 (description) – Container for text that briefly describes the feature to which it

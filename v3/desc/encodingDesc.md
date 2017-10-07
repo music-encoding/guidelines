@@ -1,6 +1,7 @@
 ---
 desc: "encodingDesc"
 type: "elementSpec"
+version: "v3"
 ---
 
 (encoding description) – Documents the relationship between an electronic file and

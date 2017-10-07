@@ -1,6 +1,7 @@
 ---
 desc: "att.verse.log"
 type: "classSpec"
+version: "v3"
 ---
 
 Logical domain attributes. The n attribute should be used for verse numbers. Numbers

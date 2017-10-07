@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.syl.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.syl.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/syl">syl</a> (direct member of att.syl.log)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/syl">syl</a> (direct member of att.syl.log)
                </div>
             </div>
          </td>
@@ -61,7 +62,7 @@ title: "att.syl.log"
                <span style="font-weight: 500;">b</span>" 
                <i>(Breve [curved line below] (syllable elision).)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.syl.log">att.syl.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.syl.log">att.syl.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -77,7 +78,7 @@ title: "att.syl.log"
                <span style="font-weight: 500;">t</span>" 
                <i>((terminal) last syllable.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.syl.log">att.syl.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.syl.log">att.syl.log</a>
                </span>
             </div>
          </td>

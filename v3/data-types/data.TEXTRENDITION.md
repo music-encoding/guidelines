@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.TEXTRENDITION"
 
 ---
@@ -25,8 +26,8 @@ title: "data.TEXTRENDITION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/del">del</a>/@rend, 
-               <a class="link_odd_classSpec" href="/v3/rend">rend</a>/@rend
+               <a class="link_odd_classSpec" href="/{{ page.version }}/del">del</a>/@rend, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/rend">rend</a>/@rend
             </div>
          </td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.barLine.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.barLine.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a> (direct member of att.barLine.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a> (direct member of att.barLine.ges)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.barLine.ges"
                   beats[.fractional_beat_part].
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BEAT">data.BEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.musical">att.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
                </span>
             </div>
          </td>

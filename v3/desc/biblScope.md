@@ -1,6 +1,7 @@
 ---
 desc: "biblScope"
 type: "elementSpec"
+version: "v3"
 ---
 
 (scope of citation) – Defines the scope of a bibliographic reference, for example

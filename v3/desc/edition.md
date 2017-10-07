@@ -1,6 +1,7 @@
 ---
 desc: "edition"
 type: "elementSpec"
+version: "v3"
 ---
 
 (edition designation) – A word or text phrase that indicates a difference in either

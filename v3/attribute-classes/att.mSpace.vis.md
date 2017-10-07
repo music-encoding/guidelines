@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mSpace.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.mSpace.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mSpace">mSpace</a> (direct member of att.mSpace.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mSpace">mSpace</a> (direct member of att.mSpace.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.mSpace.vis"
                   &lt;symbolDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.altsym">att.altsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.altsym">att.altsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,7 +59,7 @@ title: "att.mSpace.vis"
                <span style="font-weight: 500;">cutout</span>" 
                <i>(The staff lines should not be drawn.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cutout">att.cutout</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cutout">att.cutout</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -68,10 +69,10 @@ title: "att.mSpace.vis"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visibility">att.visibility</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,7 +86,7 @@ title: "att.mSpace.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -99,7 +100,7 @@ title: "att.mSpace.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
          </td>

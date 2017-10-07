@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.midi.event"
 
 ---
@@ -26,20 +27,20 @@ title: "att.midi.event"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cc">cc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/chan">chan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/chanPr">chanPr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/cue">cue</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/hex">hex</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/marker">marker</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/metaText">metaText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/noteOff">noteOff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/noteOn">noteOn</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/port">port</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/prog">prog</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/seqNum">seqNum</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/trkName">trkName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/vel">vel</a> (direct members of att.midi.event)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cc">cc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chan">chan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chanPr">chanPr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cue">cue</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hex">hex</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/marker">marker</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/metaText">metaText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOff">noteOff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOn">noteOn</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/port">port</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/prog">prog</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/seqNum">seqNum</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trkName">trkName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/vel">vel</a> (direct members of att.midi.event)
                </div>
             </div>
          </td>
@@ -57,7 +58,7 @@ title: "att.midi.event"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.layerident">att.layerident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.layerident">att.layerident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,7 +71,7 @@ title: "att.midi.event"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffident">att.staffident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffident">att.staffident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,10 +81,10 @@ title: "att.midi.event"
                   beats[.fractional_beat_part].
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BEAT">data.BEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.musical">att.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
                </span>
             </div>
          </td>

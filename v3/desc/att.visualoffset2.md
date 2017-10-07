@@ -1,6 +1,7 @@
 ---
 desc: "att.visualoffset2"
 type: "classSpec"
+version: "v3"
 ---
 
 Visual offset attributes. Some items may have their location recorded in terms of

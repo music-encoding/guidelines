@@ -1,6 +1,7 @@
 ---
 desc: "att.measure.log"
 type: "classSpec"
+version: "v3"
 ---
 
 Logical domain attributes. The n attribute contains a name or number associated with

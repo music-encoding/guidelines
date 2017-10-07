@@ -1,6 +1,7 @@
 ---
 desc: "creation"
 type: "elementSpec"
+version: "v3"
 ---
 
 Non-bibliographic details of the creation of an intellectual entity, in narrative

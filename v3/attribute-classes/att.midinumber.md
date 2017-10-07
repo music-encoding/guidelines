@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.midinumber"
 
 ---
@@ -26,13 +27,13 @@ title: "att.midinumber"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cc">cc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/chanPr">chanPr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/noteOff">noteOff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/noteOn">noteOn</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/port">port</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/prog">prog</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/vel">vel</a> (direct members of att.midinumber)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cc">cc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chanPr">chanPr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOff">noteOff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOn">noteOn</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/port">port</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/prog">prog</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/vel">vel</a> (direct members of att.midinumber)
                </div>
             </div>
          </td>
@@ -47,10 +48,10 @@ title: "att.midinumber"
                <span class="attributeUsage">(required)</span>
                <span class="attributeDesc">MIDI number in the range set by data.MIDIVALUE.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midinumber">att.midinumber</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midinumber">att.midinumber</a>
                </span>
             </div>
          </td>

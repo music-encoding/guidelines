@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.bend.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.bend.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bend">bend</a> (direct member of att.bend.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bend">bend</a> (direct member of att.bend.ges)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.bend.ges"
                   (or an integer plus a fraction) along with the bend symbol.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BEND.AMOUNT">data.BEND.AMOUNT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEND.AMOUNT">data.BEND.AMOUNT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bend.ges">att.bend.ges</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bend.ges">att.bend.ges</a>
                </span>
             </div>
          </td>

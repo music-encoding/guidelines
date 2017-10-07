@@ -1,6 +1,7 @@
 ---
 desc: "genName"
 type: "elementSpec"
+version: "v3"
 ---
 
 (generational name component) – Contains a name component used to distinguish otherwise

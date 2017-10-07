@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layerDef.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.layerDef.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a> (direct member of att.layerDef.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a> (direct member of att.layerDef.vis)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.layerDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Color of beams, including those associated with tuplets.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -60,7 +61,7 @@ title: "att.layerDef.vis"
                <span style="font-weight: 500;">norm</span>" 
                <i>(Beam lines are equally-spaced over the entire length of the beam.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,7 +72,7 @@ title: "att.layerDef.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,7 +85,7 @@ title: "att.layerDef.vis"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.labels.addl">att.labels.addl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.labels.addl">att.labels.addl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +95,10 @@ title: "att.layerDef.vis"
                   this information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -107,10 +108,10 @@ title: "att.layerDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -120,10 +121,10 @@ title: "att.layerDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -133,10 +134,10 @@ title: "att.layerDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -146,10 +147,10 @@ title: "att.layerDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -159,10 +160,10 @@ title: "att.layerDef.vis"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visibility">att.visibility</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.DURATION.gestural"
 
 ---
@@ -25,9 +26,9 @@ title: "data.DURATION.gestural"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.beatRpt.log">att.beatRpt.log</a> (@beatDef), 
-               <a class="link_odd_classSpec" href="/v3/att.duration.performed">att.duration.performed</a> (@dur.ges), 
-               <a class="link_odd_classSpec" href="/v3/att.timestamp.performed">att.timestamp.performed</a> (@tstamp.ges)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.beatRpt.log">att.beatRpt.log</a> (@beatDef), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.duration.performed">att.duration.performed</a> (@dur.ges), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a> (@tstamp.ges)
             </div>
          </td>
       </tr>

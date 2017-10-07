@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "application"
 
 ---
@@ -30,10 +31,10 @@ title: "application"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the end point of a date range in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -41,10 +42,10 @@ title: "application"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides the value of a textual date in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,7 +56,7 @@ title: "application"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -63,10 +64,10 @@ title: "application"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -74,10 +75,10 @@ title: "application"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains an upper boundary for an uncertain date in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,10 +86,10 @@ title: "application"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,10 +97,10 @@ title: "application"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the starting point of a date range in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -112,7 +113,7 @@ title: "application"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -125,7 +126,7 @@ title: "application"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -138,7 +139,7 @@ title: "application"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/application">application</a>
+                  <a class="link_odd" href="/{{ page.version }}/application">application</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -148,10 +149,10 @@ title: "application"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -165,7 +166,7 @@ title: "application"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -188,7 +189,7 @@ title: "application"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/appInfo">appInfo</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/appInfo">appInfo</a>
                      </span>
                   </div>
                </div>
@@ -204,15 +205,15 @@ title: "application"
                <div class="specChild">
                   <span class="specChildModule">MEI.ptrref</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a> 
-                     <a class="link_odd_elementSpec" href="/v3/ref">ref</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/ptr">ptr</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/ref">ref</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/name">name</a> 
-                     <a class="link_odd_elementSpec" href="/v3/p">p</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/p">p</a>
                   </span>
                </div>
             </div>

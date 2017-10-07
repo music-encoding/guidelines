@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffGrp.anl"
 
 ---
@@ -26,7 +27,7 @@ title: "att.staffGrp.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a> (direct member of att.staffGrp.anl)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffGrp">staffGrp</a> (direct member of att.staffGrp.anl)
                </div>
             </div>
          </td>

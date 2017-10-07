@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.ORIENTATION"
 
 ---
@@ -25,8 +26,8 @@ title: "data.ORIENTATION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.mensur.vis">att.mensur.vis</a> (@orient), 
-               <a class="link_odd_classSpec" href="/v3/att.mensural.vis">att.mensural.vis</a> (@mensur.orient)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensur.vis">att.mensur.vis</a> (@orient), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a> (@mensur.orient)
             </div>
          </td>
       </tr>

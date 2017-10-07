@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.internetmedia"
 
 ---
@@ -26,12 +27,12 @@ title: "att.internetmedia"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/avFile">avFile</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipCode">incipCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ref">ref</a> (direct members of att.internetmedia)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/avFile">avFile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incipCode">incipCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incipText">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ptr">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ref">ref</a> (direct members of att.internetmedia)
                </div>
             </div>
          </td>
@@ -53,7 +54,7 @@ title: "att.internetmedia"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.internetmedia">att.internetmedia</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.internetmedia">att.internetmedia</a>
                </span>
             </div>
          </td>

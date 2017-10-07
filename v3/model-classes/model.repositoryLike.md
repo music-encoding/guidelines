@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.repositoryLike"
 
 ---
@@ -26,10 +27,10 @@ title: "model.repositoryLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.nameLike.place">model.nameLike.place</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.place">model.nameLike.place</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physLoc">physLoc</a>
                </div>
             </div>
          </td>
@@ -41,7 +42,7 @@ title: "model.repositoryLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a> (direct member of model.repositoryLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a> (direct member of model.repositoryLike)
                </div>
             </div>
          </td>

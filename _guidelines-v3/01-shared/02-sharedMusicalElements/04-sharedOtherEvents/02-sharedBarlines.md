@@ -1,6 +1,7 @@
 ---
 sectionid: sharedBarlines
 title: "Bar Lines and Custos Signs"
+version: "v3"
 ---
 
 

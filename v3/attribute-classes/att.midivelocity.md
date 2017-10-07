@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.midivelocity"
 
 ---
@@ -26,9 +27,9 @@ title: "att.midivelocity"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.midivelocity"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">MIDI Note-on/off velocity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midivelocity">att.midivelocity</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midivelocity">att.midivelocity</a>
                </span>
             </div>
          </td>

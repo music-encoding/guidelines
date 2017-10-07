@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.graphicLike"
 
 ---
@@ -27,10 +28,10 @@ title: "model.graphicLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fig">fig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incip">incip</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/surface">surface</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/zone">zone</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fig">fig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a>
                </div>
             </div>
          </td>
@@ -42,7 +43,7 @@ title: "model.graphicLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a> (direct member of model.graphicLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a> (direct member of model.graphicLike)
                </div>
             </div>
          </td>

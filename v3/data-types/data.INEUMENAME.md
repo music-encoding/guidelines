@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.INEUMENAME"
 
 ---
@@ -25,7 +26,7 @@ title: "data.INEUMENAME"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.ineume.log">att.ineume.log</a> (@name)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.ineume.log">att.ineume.log</a> (@name)
             </div>
          </td>
       </tr>

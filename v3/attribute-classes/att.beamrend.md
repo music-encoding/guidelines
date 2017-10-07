@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beamrend"
 
 ---
@@ -26,15 +27,15 @@ title: "att.beamrend"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beam.vis">att.beam.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beam.vis">att.beam.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beamSpan">beamSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beamSpan">beamSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beamSpan.vis">att.beamSpan.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beamSpan.vis">att.beamSpan.vis</a>)
                   </span>
                </div>
             </div>
@@ -66,7 +67,7 @@ title: "att.beamrend"
                   the beam.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamrend">att.beamrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamrend">att.beamrend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -77,7 +78,7 @@ title: "att.beamrend"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamrend">att.beamrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamrend">att.beamrend</a>
                </span>
             </div>
          </td>

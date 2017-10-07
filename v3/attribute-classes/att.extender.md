@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.extender"
 
 ---
@@ -28,45 +29,45 @@ title: "att.extender"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dir">dir</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dir">dir</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dir.vis">att.dir.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dir.vis">att.dir.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/f">f</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/f">f</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.f.vis">att.f.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.f.vis">att.f.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fing">fing</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fing">fing</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fing.vis">att.fing.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fing.vis">att.fing.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fingGrp">fingGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingGrp">fingGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fingGrp.vis">att.fingGrp.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fingGrp.vis">att.fingGrp.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harm">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harm.vis">att.harm.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.harm.vis">att.harm.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/octave">octave</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/octave">octave</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.octave.vis">att.octave.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.octave.vis">att.octave.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/trill">trill</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trill">trill</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trill.vis">att.trill.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.trill.vis">att.trill.vis</a>)
                   </span>
                </div>
             </div>
@@ -82,10 +83,10 @@ title: "att.extender"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the presence of an extension symbol, typically a line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extender">att.extender</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extender">att.extender</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -93,10 +94,10 @@ title: "att.extender"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Symbol rendered at end of line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -104,10 +105,10 @@ title: "att.extender"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the relative size of the line-end symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -115,10 +116,10 @@ title: "att.extender"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the line style of a line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend.base">att.linerend.base</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend.base">att.linerend.base</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -126,10 +127,10 @@ title: "att.extender"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Symbol rendered at start of line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -137,10 +138,10 @@ title: "att.extender"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the relative size of the line-start symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -148,10 +149,10 @@ title: "att.extender"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Width of a line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend.base">att.linerend.base</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend.base">att.linerend.base</a>
                </span>
             </div>
          </td>

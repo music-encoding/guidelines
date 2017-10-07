@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.scalable"
 
 ---
@@ -26,12 +27,12 @@ title: "att.scalable"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/symbol">symbol</a> (direct member of att.scalable)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/symbol">symbol</a> (direct member of att.scalable)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -49,10 +50,10 @@ title: "att.scalable"
                   size.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PERCENT">data.PERCENT</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PERCENT">data.PERCENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.scalable">att.scalable</a>
+                  <a class="link_odd" href="/{{ v3}}/att.scalable">att.scalable</a>
                </span>
             </div>
          </td>

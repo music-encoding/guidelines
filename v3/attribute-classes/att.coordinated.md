@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.coordinated"
 
 ---
@@ -27,9 +28,9 @@ title: "att.coordinated"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/surface">surface</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/symbolDef">symbolDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/zone">zone</a> (direct members of att.coordinated)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/symbolDef">symbolDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a> (direct members of att.coordinated)
                </div>
             </div>
          </td>
@@ -47,7 +48,7 @@ title: "att.coordinated"
                <span style="font-weight: 500;">nonNegativeInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.coordinated">att.coordinated</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,7 +59,7 @@ title: "att.coordinated"
                <span style="font-weight: 500;">nonNegativeInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.coordinated">att.coordinated</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -69,7 +70,7 @@ title: "att.coordinated"
                <span style="font-weight: 500;">nonNegativeInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.coordinated">att.coordinated</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,7 +81,7 @@ title: "att.coordinated"
                <span style="font-weight: 500;">nonNegativeInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.coordinated">att.coordinated</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.titleLike"
 
 ---
@@ -26,13 +27,13 @@ title: "model.titleLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.titlePagePart">model.titlePagePart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.titlePagePart">model.titlePagePart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/seriesStmt">seriesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/titleStmt">titleStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/seriesStmt">seriesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titleStmt">titleStmt</a>
                </div>
             </div>
          </td>
@@ -44,7 +45,7 @@ title: "model.titleLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/title">title</a> (direct member of model.titleLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/title">title</a> (direct member of model.titleLike)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 desc: "att.pedal.vis"
 type: "classSpec"
+version: "v3"
 ---
 
 Visual domain attributes. The place attribute captures the placement of the pedal

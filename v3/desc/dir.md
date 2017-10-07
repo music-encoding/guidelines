@@ -1,6 +1,7 @@
 ---
 desc: "dir"
 type: "elementSpec"
+version: "v3"
 ---
 
 (directive) – An instruction expressed as a combination of text and symbols — such

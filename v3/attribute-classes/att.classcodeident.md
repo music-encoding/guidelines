@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.classcodeident"
 
 ---
@@ -26,8 +27,8 @@ title: "att.classcodeident"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/term">term</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/termList">termList</a> (direct members of att.classcodeident)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/term">term</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/termList">termList</a> (direct members of att.classcodeident)
                </div>
             </div>
          </td>
@@ -46,10 +47,10 @@ title: "att.classcodeident"
                   the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.classcodeident">att.classcodeident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.classcodeident">att.classcodeident</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.milestoneLike.text"
 
 ---
@@ -26,10 +27,10 @@ title: "model.milestoneLike.text"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/back">back</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/div">div</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/front">front</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/front">front</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a>
                </div>
             </div>
          </td>
@@ -41,19 +42,19 @@ title: "model.milestoneLike.text"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/altId">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/classCode">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lb">lb</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reh">reh</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/altId">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classCode">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lb">lb</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reh">reh</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/verse">verse</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.lbLike">model.lbLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.lbLike">model.lbLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pb">pb</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pb">pb</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.pbLike">model.pbLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.pbLike">model.pbLike</a>)
                   </span>
                </div>
             </div>

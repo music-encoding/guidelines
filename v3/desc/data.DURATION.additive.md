@@ -1,6 +1,7 @@
 ---
 desc: "data.DURATION.additive"
 type: "macroSpec"
+version: "v3"
 ---
 
 Records duration using optionally dotted, relative durational values provided by the

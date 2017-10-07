@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tabular"
 
 ---
@@ -26,8 +27,8 @@ title: "att.tabular"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/td">td</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/th">th</a> (direct members of att.tabular)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/td">td</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/th">th</a> (direct members of att.tabular)
                </div>
             </div>
          </td>
@@ -45,7 +46,7 @@ title: "att.tabular"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tabular">att.tabular</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tabular">att.tabular</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,7 +57,7 @@ title: "att.tabular"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tabular">att.tabular</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tabular">att.tabular</a>
                </span>
             </div>
          </td>

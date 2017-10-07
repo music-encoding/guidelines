@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffGrp.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.staffGrp.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a> (direct member of att.staffGrp.vis)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffGrp">staffGrp</a> (direct member of att.staffGrp.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.staffGrp.vis"
                   drawn across the lines of each staff (false).
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffGrp.vis">att.staffGrp.vis</a>
+                  <a class="link_odd" href="/{{ v3}}/att.staffGrp.vis">att.staffGrp.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,7 +60,7 @@ title: "att.staffGrp.vis"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.labels.addl">att.labels.addl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.labels.addl">att.labels.addl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,7 +82,7 @@ title: "att.staffGrp.vis"
                <span style="font-weight: 500;">none</span>" 
                <i>(Grouping symbol missing.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffgroupingsym">att.staffgroupingsym</a>
+                  <a class="link_odd" href="/{{ v3}}/att.staffgroupingsym">att.staffgroupingsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -91,10 +92,10 @@ title: "att.staffGrp.vis"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ v3}}/att.visibility">att.visibility</a>
                </span>
             </div>
          </td>

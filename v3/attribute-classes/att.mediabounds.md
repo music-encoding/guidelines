@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mediabounds"
 
 ---
@@ -26,8 +27,8 @@ title: "att.mediabounds"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clip">clip</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/recording">recording</a> (direct members of att.mediabounds)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clip">clip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/recording">recording</a> (direct members of att.mediabounds)
                </div>
             </div>
          </td>
@@ -46,7 +47,7 @@ title: "att.mediabounds"
                Value is plain text.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mediabounds">att.mediabounds</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.mediabounds"
                   only be interpreted meaningfully in conjunction with this attribute.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BETYPE">data.BETYPE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BETYPE">data.BETYPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mediabounds">att.mediabounds</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -72,7 +73,7 @@ title: "att.mediabounds"
                Value is plain text.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mediabounds">att.mediabounds</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
                </span>
             </div>
          </td>

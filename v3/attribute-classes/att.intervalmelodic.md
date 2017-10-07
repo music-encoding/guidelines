@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.intervalmelodic"
 
 ---
@@ -27,19 +28,19 @@ title: "att.intervalmelodic"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.intervallicdesc">att.intervallicdesc</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.intervallicdesc">att.intervallicdesc</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.anl">att.note.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.anl">att.note.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.uneume.anl">att.uneume.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.uneume.anl">att.uneume.anl</a>)
                   </span>
                </div>
             </div>
@@ -58,10 +59,10 @@ title: "att.intervalmelodic"
                   and size, or a precise numeric value in half steps.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.INTERVAL.MELODIC">data.INTERVAL.MELODIC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INTERVAL.MELODIC">data.INTERVAL.MELODIC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.intervalmelodic">att.intervalmelodic</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.intervalmelodic">att.intervalmelodic</a>
                </span>
             </div>
          </td>

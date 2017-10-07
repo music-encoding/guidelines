@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.DEGREES"
 
 ---
@@ -27,8 +28,8 @@ title: "data.DEGREES"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.ROTATION">data.ROTATION</a>, 
-               <a class="link_odd_classSpec" href="/v3/rend">rend</a>/@rotation
+               <a class="link_odd" href="/{{ page.version }}/data.ROTATION">data.ROTATION</a>, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/rend">rend</a>/@rotation
             </div>
          </td>
       </tr>

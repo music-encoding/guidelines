@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.instrDefLike"
 
 ---
@@ -26,10 +27,10 @@ title: "model.instrDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/instrGrp">instrGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/instrGrp">instrGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>
                </div>
             </div>
          </td>
@@ -41,7 +42,7 @@ title: "model.instrDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/instrDef">instrDef</a> (direct member of model.instrDefLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/instrDef">instrDef</a> (direct member of model.instrDefLike)
                </div>
             </div>
          </td>

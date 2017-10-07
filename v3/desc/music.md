@@ -1,6 +1,7 @@
 ---
 desc: "music"
 type: "elementSpec"
+version: "v3"
 ---
 
 Contains a single musical text of any kind, whether unitary or composite, for example,

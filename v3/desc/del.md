@@ -1,6 +1,7 @@
 ---
 desc: "del"
 type: "elementSpec"
+version: "v3"
 ---
 
 (deletion) – Contains information deleted, marked as deleted, or otherwise indicated

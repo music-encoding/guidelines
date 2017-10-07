@@ -1,6 +1,7 @@
 ---
 desc: "att.chord.log"
 type: "classSpec"
+version: "v3"
 ---
 
 Logical domain attributes for chord. The artic, dots, and dur attributes encode the

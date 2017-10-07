@@ -1,6 +1,7 @@
 ---
 desc: "att.xy"
 type: "classSpec"
+version: "v3"
 ---
 
 Output coordinate attributes. Some elements may have their exact rendered *output*

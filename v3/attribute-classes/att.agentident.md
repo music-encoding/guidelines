@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.agentident"
 
 ---
@@ -26,9 +27,9 @@ title: "att.agentident"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a> (direct members of att.agentident)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a> (direct members of att.agentident)
                </div>
             </div>
          </td>
@@ -48,7 +49,7 @@ title: "att.agentident"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.agentident">att.agentident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.agentident">att.agentident</a>
                </span>
             </div>
          </td>

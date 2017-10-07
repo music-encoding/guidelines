@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "front"
 
 ---
@@ -32,10 +33,10 @@ title: "front"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ v3}}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +46,10 @@ title: "front"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ v3}}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,7 +60,7 @@ title: "front"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "front"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,7 +86,7 @@ title: "front"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -95,10 +96,10 @@ title: "front"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -112,7 +113,7 @@ title: "front"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -128,7 +129,7 @@ title: "front"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -139,7 +140,7 @@ title: "front"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.frontLike">model.frontLike</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.frontLike">model.frontLike</a>
             </div>
          </td>
       </tr>
@@ -153,7 +154,7 @@ title: "front"
                   <div class="specChild">
                      <span class="specChildModule">MEI.text</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/front">front</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/front">front</a>
                      </span>
                   </div>
                </div>
@@ -169,10 +170,10 @@ title: "front"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/div">div</a> 
-                     <a class="link_odd_elementSpec" href="/v3/lb">lb</a> 
-                     <a class="link_odd_elementSpec" href="/v3/pb">pb</a> 
-                     <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/div">div</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/lb">lb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/pb">pb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/titlePage">titlePage</a>
                   </span>
                </div>
             </div>
@@ -288,15 +289,15 @@ title: "front"
          <td class="wovenodd-col2">
             <p>
                
-               <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a> may be used to transcribe the item's title page. Other
+               <a class="link_odd_elementSpec" href="/{{ v3}}/titlePage">titlePage</a> may be used to transcribe the item's title page. Other
                front matter structures, such as a preface, dedication, or table of contents, may
                be
                encoded as textual divisions; that is, as 
-               <a class="link_odd_elementSpec" href="/v3/div">div</a> elements, with an
+               <a class="link_odd_elementSpec" href="/{{ v3}}/div">div</a> elements, with an
                optional 
-               <a class="link_odd_elementSpec" href="/v3/head">head</a> sub-element describing the nature of the division. The
+               <a class="link_odd_elementSpec" href="/{{ v3}}/head">head</a> sub-element describing the nature of the division. The
                
-               <a class="link_odd_elementSpec" href="/v3/pb">pb</a> element is allowed here in order to accommodate page images,
+               <a class="link_odd_elementSpec" href="/{{ v3}}/pb">pb</a> element is allowed here in order to accommodate page images,
                e.g. cover, endpapers, etc. before and after the actual textual matter.This element
                is modelled on elements in the Text Encoding Initiative (TEI) and Encoded
                Archival Description (EAD) standards.

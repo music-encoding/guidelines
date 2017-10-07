@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterSigGrp.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.meterSigGrp.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meterSigGrp">meterSigGrp</a> (direct member of att.meterSigGrp.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSigGrp">meterSigGrp</a> (direct member of att.meterSigGrp.log)
                </div>
             </div>
          </td>
@@ -52,7 +53,7 @@ title: "att.meterSigGrp.log"
                   2/4+1/8.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSigGrp.log">att.meterSigGrp.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSigGrp.log">att.meterSigGrp.log</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 desc: "data.ORNAM.cmn"
 type: "macroSpec"
+version: "v3"
 ---
 
 CMN ornam attribute values: A = appogiatura (upper neighbor); a = acciaccatura (lower

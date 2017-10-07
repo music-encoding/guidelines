@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.fretlocation"
 
 ---
@@ -26,8 +27,8 @@ title: "att.fretlocation"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barre">barre</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> (direct members of att.fretlocation)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/barre">barre</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a> (direct members of att.fretlocation)
                </div>
             </div>
          </td>
@@ -42,10 +43,10 @@ title: "att.fretlocation"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the location at which a string should be stopped against a fret.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FRET">data.FRET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FRET">data.FRET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.fretlocation">att.fretlocation</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.fretlocation">att.fretlocation</a>
                </span>
             </div>
          </td>

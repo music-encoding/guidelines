@@ -1,6 +1,7 @@
 ---
 sectionid: namesdatesPeriodNames
 title: "Time Period Names"
+version: "v3"
 ---
 
 
@@ -11,7 +12,7 @@ title: "Time Period Names"
 
 
 
-The [periodName](/v3/elements/periodName.html){:.link_odd_elementSpec} element is for names which describe a particular
+The [periodName](/{{ page.version }}/elements/periodName.html){:.link_odd_elementSpec} element is for names which describe a particular
 period of time, for example, those which characterize obvious similarities in style,
 such as
 ‘Baroque’ or ‘3rd Style Period’:
@@ -19,7 +20,7 @@ such as
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample286.xml" valid="true" %}
 
 
-The date sub-element is available within [periodName](/v3/elements/periodName.html){:.link_odd_elementSpec} in order to
+The date sub-element is available within [periodName](/{{ page.version }}/elements/periodName.html){:.link_odd_elementSpec} in order to
 record any dates associated with the name that should be captured in the text, for
 example,
 start and end dates of the named period:

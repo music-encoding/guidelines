@@ -1,6 +1,7 @@
 ---
 desc: "fingerprint"
 type: "elementSpec"
+version: "v3"
 ---
 
 Contains a string that uniquely identifies an item, such as those constructed by

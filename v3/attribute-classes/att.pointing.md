@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pointing"
 
 ---
@@ -26,25 +27,25 @@ title: "att.pointing"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/avFile">avFile</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bibl">bibl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipCode">incipCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/item">item</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pb">pb</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ref">ref</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relatedItem">relatedItem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relation">relation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/source">source</a> (direct members of att.pointing)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/avFile">avFile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/barLine">barLine</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/bibl">bibl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/contents">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/ending">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/graphic">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/incipCode">incipCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/incipText">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/item">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/pb">pb</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/ptr">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rdg">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/ref">ref</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/relatedItem">relatedItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/relation">relation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/section">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/source">source</a> (direct members of att.pointing)
                </div>
             </div>
          </td>
@@ -61,10 +62,10 @@ title: "att.pointing"
                   participants in a relationship; that is, the entities pointed "to".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,7 +79,7 @@ title: "att.pointing"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,7 +97,7 @@ title: "att.pointing"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than allowed by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -106,10 +107,10 @@ title: "att.pointing"
                   attribute must be a URI.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -129,7 +130,7 @@ title: "att.pointing"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than permitted by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
          </td>

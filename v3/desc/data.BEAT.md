@@ -1,6 +1,7 @@
 ---
 desc: "data.BEAT"
 type: "macroSpec"
+version: "v3"
 ---
 
 A beat location, i.e., [0-9]+(\.?[0-9]*)? The value must fall between 0 and the

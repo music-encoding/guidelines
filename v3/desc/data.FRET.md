@@ -1,6 +1,7 @@
 ---
 desc: "data.FRET"
 type: "macroSpec"
+version: "v3"
 ---
 
 In a guitar chord diagram, the fret where the finger should be placed. Since guitar

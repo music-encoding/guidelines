@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.ossia.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.ossia.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ossia">ossia</a> (direct member of att.ossia.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ossia">ossia</a> (direct member of att.ossia.vis)
                </div>
             </div>
          </td>

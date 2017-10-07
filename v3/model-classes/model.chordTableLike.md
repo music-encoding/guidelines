@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.chordTableLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.chordTableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.chordTableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chordTable">chordTable</a> (direct member of model.chordTableLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chordTable">chordTable</a> (direct member of model.chordTableLike)
                </div>
             </div>
          </td>

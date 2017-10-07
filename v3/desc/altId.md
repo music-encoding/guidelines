@@ -1,6 +1,7 @@
 ---
 desc: "altId"
 type: "elementSpec"
+version: "v3"
 ---
 
 (alternative identifier) – May contain a bibliographic identifier that does not fit

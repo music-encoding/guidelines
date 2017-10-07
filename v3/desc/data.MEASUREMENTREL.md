@@ -1,6 +1,7 @@
 ---
 desc: "data.MEASUREMENTREL"
 type: "macroSpec"
+version: "v3"
 ---
 
 Measurement expressed in real-world (e.g., centimeters, millimeters, inches, points,

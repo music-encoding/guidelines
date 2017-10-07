@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.BETYPE"
 
 ---
@@ -25,8 +26,8 @@ title: "data.BETYPE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.mediabounds">att.mediabounds</a> (@betype), 
-               <a class="link_odd_classSpec" href="/v3/when">when</a>/@abstype
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a> (@betype), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/when">when</a>/@abstype
             </div>
          </td>
       </tr>

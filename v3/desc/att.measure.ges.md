@@ -1,6 +1,7 @@
 ---
 desc: "att.measure.ges"
 type: "classSpec"
+version: "v3"
 ---
 
 Gestural domain attributes. The tstamp.ges and tstamp.real attributes encode the onset

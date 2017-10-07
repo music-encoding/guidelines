@@ -1,6 +1,7 @@
 ---
 desc: "staff"
 type: "elementSpec"
+version: "v3"
 ---
 
 A group of equidistant horizontal lines on which notes are placed in order to represent

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.TEXTRENDITIONLIST"
 
 ---
@@ -25,7 +26,7 @@ title: "data.TEXTRENDITIONLIST"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.TEXTRENDITION">data.TEXTRENDITION</a>
+               <a class="link_odd" href="/{{ page.version }}/data.TEXTRENDITION">data.TEXTRENDITION</a>
             </div>
          </td>
       </tr>

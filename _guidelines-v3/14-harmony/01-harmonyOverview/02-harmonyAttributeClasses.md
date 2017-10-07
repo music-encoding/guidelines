@@ -1,6 +1,7 @@
 ---
 sectionid: harmonyAttributeClasses
 title: "Attribute Classes"
+version: "v3"
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "music"
 
 ---
@@ -32,10 +33,10 @@ title: "music"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ v3}}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -46,7 +47,7 @@ title: "music"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,7 +59,7 @@ title: "music"
                <span style="font-weight: 500;">3.0.0</span>" 
                <i>(This version of MEI.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meiversion">att.meiversion</a>
+                  <a class="link_odd" href="/{{ v3}}/att.meiversion">att.meiversion</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -66,10 +67,10 @@ title: "music"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -79,10 +80,10 @@ title: "music"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,7 +97,7 @@ title: "music"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -119,8 +120,8 @@ title: "music"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/group">group</a> 
-                        <a class="link_odd_elementSpec" href="/v3/mei">mei</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/group">group</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/mei">mei</a>
                      </span>
                   </div>
                </div>
@@ -136,20 +137,20 @@ title: "music"
                <div class="specChild">
                   <span class="specChildModule">MEI.facsimile</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/facsimile">facsimile</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/facsimile">facsimile</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.performance</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/performance">performance</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/performance">performance</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/body">body</a> 
-                     <a class="link_odd_elementSpec" href="/v3/group">group</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/body">body</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/group">group</a>
                   </span>
                </div>
             </div>

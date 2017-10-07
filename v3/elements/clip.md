@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "clip"
 
 ---
@@ -35,7 +36,7 @@ title: "clip"
                Value is plain text.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mediabounds">att.mediabounds</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +46,10 @@ title: "clip"
                   only be interpreted meaningfully in conjunction with this attribute.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BETYPE">data.BETYPE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BETYPE">data.BETYPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mediabounds">att.mediabounds</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "clip"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datapointing">att.datapointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datapointing">att.datapointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -69,10 +70,10 @@ title: "clip"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,7 +86,7 @@ title: "clip"
                Value is plain text.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mediabounds">att.mediabounds</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,7 +97,7 @@ title: "clip"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -104,10 +105,10 @@ title: "clip"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -117,10 +118,10 @@ title: "clip"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startid">att.startid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startid">att.startid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -130,10 +131,10 @@ title: "clip"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -147,7 +148,7 @@ title: "clip"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -170,8 +171,8 @@ title: "clip"
                   <div class="specChild">
                      <span class="specChildModule">MEI.performance</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/avFile">avFile</a> 
-                        <a class="link_odd_elementSpec" href="/v3/recording">recording</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/avFile">avFile</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/recording">recording</a>
                      </span>
                   </div>
                </div>
@@ -187,8 +188,8 @@ title: "clip"
                <div class="specChild">
                   <span class="specChildModule">MEI.performance</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/avFile">avFile</a> 
-                     <a class="link_odd_elementSpec" href="/v3/when">when</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/avFile">avFile</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/when">when</a>
                   </span>
                </div>
             </div>
@@ -294,7 +295,7 @@ title: "clip"
          </td>
          <td class="wovenodd-col2">
             <p>This element is analogous to the 
-               <a class="link_odd_elementSpec" href="/v3/zone">zone</a> element in the facsimile
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a> element in the facsimile
                module.
             </p>
          </td>

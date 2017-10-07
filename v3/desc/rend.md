@@ -1,6 +1,7 @@
 ---
 desc: "rend"
 type: "elementSpec"
+version: "v3"
 ---
 
 (render) – A formatting element indicating special visual rendering, e.g., bold or

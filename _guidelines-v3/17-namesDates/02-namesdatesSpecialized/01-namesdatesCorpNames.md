@@ -1,6 +1,7 @@
 ---
 sectionid: namesdatesCorpNames
 title: "Corporate Names"
+version: "v3"
 ---
 
 
@@ -21,7 +22,7 @@ agency. Organization names typically include some type of indicator or pattern o
 words that
 help identify them as non-personal names.
 
-The [corpName](/v3/elements/corpName.html){:.link_odd_elementSpec} element is frequently used within the [header](/v3/guidelines/header.html "The MEI Header"){:.link_ref} of an MEI document. It is typically found in the [respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec} element:
+The [corpName](/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec} element is frequently used within the [header](/{{ page.version }}/guidelines/header.html "The MEI Header"){:.link_ref} of an MEI document. It is typically found in the [respStmt](/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample279.xml" valid="true" %}
 
@@ -34,7 +35,7 @@ corporation is responsible for a certain event in the history of a musical work:
 
 When it is necessary to provide structure for a name, the separate parts of the name
 may be
-encoded in [corpName](/v3/elements/corpName.html){:.link_odd_elementSpec} sub-elements, for example:
+encoded in [corpName](/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec} sub-elements, for example:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample281.xml" valid="true" %}
 

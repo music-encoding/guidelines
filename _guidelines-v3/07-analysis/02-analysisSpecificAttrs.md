@@ -1,6 +1,7 @@
 ---
 sectionid: analysisSpecificAttrs
 title: "Event-Specific Analytical Information"
+version: "v3"
 ---
 
 

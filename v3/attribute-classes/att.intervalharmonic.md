@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.intervalharmonic"
 
 ---
@@ -26,17 +27,17 @@ title: "att.intervalharmonic"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> (direct member of att.intervalharmonic)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a> (direct member of att.intervalharmonic)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harm">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harm.anl">att.harm.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.harm.anl">att.harm.anl</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.intervallicdesc">att.intervallicdesc</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.intervallicdesc">att.intervallicdesc</a> (no elements directly inheriting from this class)
                   </span>
                </div>
             </div>
@@ -52,10 +53,10 @@ title: "att.intervalharmonic"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Encodes the harmonic interval between pitches occurring at the same time.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.intervalharmonic">att.intervalharmonic</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.intervalharmonic">att.intervalharmonic</a>
                </span>
             </div>
          </td>

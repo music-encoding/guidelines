@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.spacing"
 
 ---
@@ -26,9 +27,9 @@ title: "att.spacing"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -47,7 +48,7 @@ title: "att.spacing"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,7 +59,7 @@ title: "att.spacing"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -69,10 +70,10 @@ title: "att.spacing"
                   below.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,10 +85,10 @@ title: "att.spacing"
                   that is, the minimum and maximum values are equal.
                </span>
                One or two values from 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>, separated by a space.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>, separated by a space.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
                </span>
             </div>
          </td>

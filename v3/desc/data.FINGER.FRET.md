@@ -1,6 +1,7 @@
 ---
 desc: "data.FINGER.FRET"
 type: "macroSpec"
+version: "v3"
 ---
 
 In a guitar chord diagram, a label indicating which finger, if any, should be used

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.STEMDIRECTION.extended"
 
 ---
@@ -25,7 +26,7 @@ title: "data.STEMDIRECTION.extended"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.STEMDIRECTION">data.STEMDIRECTION</a>
+               <a class="link_odd" href="/{{ page.version }}/data.STEMDIRECTION">data.STEMDIRECTION</a>
             </div>
          </td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "macro.anyXML"
 
 ---
@@ -25,7 +26,7 @@ title: "macro.anyXML"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/extMeta">extMeta</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/extMeta">extMeta</a>
             </div>
          </td>
       </tr>

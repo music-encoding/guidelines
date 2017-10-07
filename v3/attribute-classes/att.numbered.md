@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.numbered"
 
 ---
@@ -26,21 +27,21 @@ title: "att.numbered"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bTrem">bTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bTrem.log">att.bTrem.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.bTrem.log">att.bTrem.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/multiRest">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRest.log">att.multiRest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.multiRest.log">att.multiRest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRpt">multiRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/multiRpt">multiRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRpt.log">att.multiRpt.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.multiRpt.log">att.multiRpt.log</a>)
                   </span>
                </div>
             </div>
@@ -59,7 +60,7 @@ title: "att.numbered"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numbered">att.numbered</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.numbered">att.numbered</a>
                </span>
             </div>
          </td>

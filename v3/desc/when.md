@@ -1,6 +1,7 @@
 ---
 desc: "when"
 type: "elementSpec"
+version: "v3"
 ---
 
 Indicates a point in time either absolutely (using the absolute attribute), or relative

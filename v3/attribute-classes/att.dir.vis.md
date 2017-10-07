@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.dir.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.dir.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dir">dir</a> (direct member of att.dir.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dir">dir</a> (direct member of att.dir.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.dir.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.ho">att.visualoffset2.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.ho">att.visualoffset2.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.dir.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.to">att.visualoffset2.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.to">att.visualoffset2.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.dir.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the presence of an extension symbol, typically a line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extender">att.extender</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extender">att.extender</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,10 +82,10 @@ title: "att.dir.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.ho">att.visualoffset.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.ho">att.visualoffset.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,10 +93,10 @@ title: "att.dir.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Symbol rendered at end of line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,10 +104,10 @@ title: "att.dir.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the relative size of the line-end symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -114,10 +115,10 @@ title: "att.dir.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the line style of a line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend.base">att.linerend.base</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend.base">att.linerend.base</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -125,10 +126,10 @@ title: "att.dir.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Symbol rendered at start of line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -136,10 +137,10 @@ title: "att.dir.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the relative size of the line-start symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend">att.linerend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend">att.linerend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -147,10 +148,10 @@ title: "att.dir.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Width of a line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.linerend.base">att.linerend.base</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.linerend.base">att.linerend.base</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -160,10 +161,10 @@ title: "att.dir.vis"
                   associated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFREL">data.STAFFREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFREL">data.STAFFREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.placement">att.placement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.placement">att.placement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -173,10 +174,10 @@ title: "att.dir.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.ho">att.visualoffset2.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.ho">att.visualoffset2.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -186,10 +187,10 @@ title: "att.dir.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.to">att.visualoffset2.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.to">att.visualoffset2.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -199,10 +200,10 @@ title: "att.dir.vis"
                   in terms of musical time; that is, beats.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.to">att.visualoffset.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.to">att.visualoffset.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -213,10 +214,10 @@ title: "att.dir.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.vo">att.visualoffset.vo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.vo">att.visualoffset.vo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -230,7 +231,7 @@ title: "att.dir.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -244,7 +245,7 @@ title: "att.dir.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
          </td>

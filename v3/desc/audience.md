@@ -1,6 +1,7 @@
 ---
 desc: "audience"
 type: "elementSpec"
+version: "v3"
 ---
 
 Defines the class of user for which the work is intended, as defined by age group

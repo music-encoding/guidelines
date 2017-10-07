@@ -1,6 +1,7 @@
 ---
 desc: "att.scoreDef.ges"
 type: "classSpec"
+version: "v3"
 ---
 
 Gestural domain attributes for scoreDef. The values set in these attributes act as
