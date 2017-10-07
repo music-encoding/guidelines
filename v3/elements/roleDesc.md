@@ -10,9 +10,7 @@ title: "roleDesc"
    <h3 id="roleDesc">&lt;roleDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;roleDesc&gt;</span> (role description) – Describes a character's role in a drama.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (role description) – Describes a character's role in a drama.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

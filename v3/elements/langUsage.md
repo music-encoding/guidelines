@@ -10,8 +10,7 @@ title: "langUsage"
    <h3 id="langUsage">&lt;langUsage&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;langUsage&gt;</span> (language usage) – Groups elements describing the languages, sub-languages, dialects,
+         <td colspan="2" class="wovenodd-col2"> (language usage) – Groups elements describing the languages, sub-languages, dialects,
             etc., represented within the encoded resource.
          </td>
       </tr>

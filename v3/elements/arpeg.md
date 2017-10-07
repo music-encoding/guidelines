@@ -10,8 +10,7 @@ title: "arpeg"
    <h3 id="arpeg">&lt;arpeg&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;arpeg&gt;</span> (arpeggiation) – Indicates that the notes of a chord are to be performed successively
+         <td colspan="2" class="wovenodd-col2"> (arpeggiation) – Indicates that the notes of a chord are to be performed successively
             rather than simultaneously, usually from lowest to highest. Sometimes called a
             "roll".
          </td>

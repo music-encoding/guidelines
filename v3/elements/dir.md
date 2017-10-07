@@ -10,8 +10,7 @@ title: "dir"
    <h3 id="dir">&lt;dir&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;dir&gt;</span> (directive) – An instruction expressed as a combination of text and symbols — such
+         <td colspan="2" class="wovenodd-col2"> (directive) – An instruction expressed as a combination of text and symbols — such
             as
             segno and coda symbols, fermatas over a bar line, etc., typically above, below, or
             between

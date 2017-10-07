@@ -10,8 +10,7 @@ title: "ref"
    <h3 id="ref">&lt;ref&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;ref&gt;</span> (reference) – Defines a reference to another location that may contain text and
+         <td colspan="2" class="wovenodd-col2"> (reference) – Defines a reference to another location that may contain text and
             sub-elements to describe the destination.
          </td>
       </tr>

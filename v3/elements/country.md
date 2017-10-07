@@ -10,8 +10,7 @@ title: "country"
    <h3 id="country">&lt;country&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;country&gt;</span> Contains the name of a geo-political unit, such as a nation, country, colony, or
+         <td colspan="2" class="wovenodd-col2"> Contains the name of a geo-political unit, such as a nation, country, colony, or
             commonwealth, larger than or administratively superior to a region and smaller than
             a
             bloc.

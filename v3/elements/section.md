@@ -10,9 +10,7 @@ title: "section"
    <h3 id="section">&lt;section&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;section&gt;</span> Segment of music data.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Segment of music data.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,9 +10,7 @@ title: "layerDef"
    <h3 id="layerDef">&lt;layerDef&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;layerDef&gt;</span> (layer definition) – Container for layer meta-information.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (layer definition) – Container for layer meta-information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,9 +10,7 @@ title: "barre"
    <h3 id="barre">&lt;barre&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;barre&gt;</span> An indication of fingering in a chord tablature grid.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> An indication of fingering in a chord tablature grid.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

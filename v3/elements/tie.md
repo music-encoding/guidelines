@@ -10,8 +10,7 @@ title: "tie"
    <h3 id="tie">&lt;tie&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;tie&gt;</span> An indication that two notes of the same pitch form a single note with their combined
+         <td colspan="2" class="wovenodd-col2"> An indication that two notes of the same pitch form a single note with their combined
             rhythmic values.
          </td>
       </tr>

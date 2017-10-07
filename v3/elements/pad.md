@@ -10,9 +10,7 @@ title: "pad"
    <h3 id="pad">&lt;pad&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pad&gt;</span> (padding) – An indication of extra visual space between notational elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (padding) – An indication of extra visual space between notational elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

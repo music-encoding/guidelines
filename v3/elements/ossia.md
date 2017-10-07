@@ -10,9 +10,7 @@ title: "ossia"
    <h3 id="ossia">&lt;ossia&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;ossia&gt;</span> An alternate notational version .
-         </td>
+         <td colspan="2" class="wovenodd-col2"> An alternate notational version .</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

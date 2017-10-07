@@ -10,8 +10,7 @@ title: "mensur"
    <h3 id="mensur">&lt;mensur&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mensur&gt;</span> (mensuration) – Collects information about the metrical relationship between a note
+         <td colspan="2" class="wovenodd-col2"> (mensuration) – Collects information about the metrical relationship between a note
             value and the next smaller value; that is, either triple or duple.
          </td>
       </tr>

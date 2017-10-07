@@ -10,9 +10,7 @@ title: "dynam"
    <h3 id="dynam">&lt;dynam&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;dynam&gt;</span> (dynamic) – Indication of the volume of a note, phrase, or section of music.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (dynamic) – Indication of the volume of a note, phrase, or section of music.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

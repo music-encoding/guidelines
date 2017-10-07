@@ -10,9 +10,7 @@ title: "num"
    <h3 id="num">&lt;num&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;num&gt;</span> (number) – Numeric information in any form.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (number) – Numeric information in any form.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

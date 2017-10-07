@@ -10,8 +10,7 @@ title: "measure"
    <h3 id="measure">&lt;measure&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;measure&gt;</span> Unit of musical time consisting of a fixed number of note-values of a given type,
+         <td colspan="2" class="wovenodd-col2"> Unit of musical time consisting of a fixed number of note-values of a given type,
             as
             determined by the prevailing meter, and delimited in musical notation by bar lines.
          </td>

@@ -10,8 +10,7 @@ title: "barLine"
    <h3 id="barLine">&lt;barLine&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;barLine&gt;</span> Vertical line drawn through one or more staves that divides musical notation into
+         <td colspan="2" class="wovenodd-col2"> Vertical line drawn through one or more staves that divides musical notation into
             metrical units.
          </td>
       </tr>

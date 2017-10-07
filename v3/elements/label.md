@@ -10,9 +10,7 @@ title: "label"
    <h3 id="label">&lt;label&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;label&gt;</span> A container for text that identifies the feature to which it is attached.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> A container for text that identifies the feature to which it is attached.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

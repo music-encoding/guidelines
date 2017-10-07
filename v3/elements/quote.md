@@ -10,8 +10,7 @@ title: "quote"
    <h3 id="quote">&lt;quote&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;quote&gt;</span> (block quote) – A formatting element that designates an extended quotation; that
+         <td colspan="2" class="wovenodd-col2"> (block quote) – A formatting element that designates an extended quotation; that
             is, a
             passage attributed to a source external to the text and normally set off from the
             text by

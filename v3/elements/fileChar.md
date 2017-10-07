@@ -10,8 +10,7 @@ title: "fileChar"
    <h3 id="fileChar">&lt;fileChar&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fileChar&gt;</span> (file characteristics) – Standards or schemes used to encode the file (e.g., ASCII,
+         <td colspan="2" class="wovenodd-col2"> (file characteristics) – Standards or schemes used to encode the file (e.g., ASCII,
             SGML, etc.), physical characteristics of the file (e.g., recording density, parity,
             blocking, etc.), and other characteristics that have a bearing on how the file can
             be

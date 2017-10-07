@@ -10,8 +10,7 @@ title: "symName"
    <h3 id="symName">&lt;symName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;symName&gt;</span> (symbol name) – Contains the name of a symbol, expressed following Unicode
+         <td colspan="2" class="wovenodd-col2"> (symbol name) – Contains the name of a symbol, expressed following Unicode
             conventions.
          </td>
       </tr>

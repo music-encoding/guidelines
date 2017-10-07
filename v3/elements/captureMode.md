@@ -10,8 +10,7 @@ title: "captureMode"
    <h3 id="captureMode">&lt;captureMode&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;captureMode&gt;</span> (capture mode) – The means used to record notation, sound, or images in the production
+         <td colspan="2" class="wovenodd-col2"> (capture mode) – The means used to record notation, sound, or images in the production
             of a source/manifestation (e.g., analogue, acoustic, electric, digital, optical
             etc.).
          </td>

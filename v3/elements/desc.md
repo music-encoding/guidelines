@@ -10,8 +10,7 @@ title: "desc"
    <h3 id="desc">&lt;desc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;desc&gt;</span> (description) – Container for text that briefly describes the feature to which it
+         <td colspan="2" class="wovenodd-col2"> (description) – Container for text that briefly describes the feature to which it
             is
             attached, including its intended usage, purpose, or application as appropriate.
          </td>

@@ -10,9 +10,7 @@ title: "supplied"
    <h3 id="supplied">&lt;supplied&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;supplied&gt;</span> Contains material supplied by the transcriber or editor for any reason.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains material supplied by the transcriber or editor for any reason.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

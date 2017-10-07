@@ -10,9 +10,7 @@ title: "changeDesc"
    <h3 id="changeDesc">&lt;changeDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;changeDesc&gt;</span> (change description) – Description of a revision of the MEI file.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (change description) – Description of a revision of the MEI file.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

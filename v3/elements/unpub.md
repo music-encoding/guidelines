@@ -10,8 +10,7 @@ title: "unpub"
    <h3 id="unpub">&lt;unpub&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;unpub&gt;</span> (unpublished) – Used to explicitly indicate that a bibliographic resource is
+         <td colspan="2" class="wovenodd-col2"> (unpublished) – Used to explicitly indicate that a bibliographic resource is
             unpublished.
          </td>
       </tr>

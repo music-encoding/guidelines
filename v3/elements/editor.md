@@ -10,8 +10,7 @@ title: "editor"
    <h3 id="editor">&lt;editor&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;editor&gt;</span> The name of the individual(s), institution(s) or organization(s) acting in an editorial
+         <td colspan="2" class="wovenodd-col2"> The name of the individual(s), institution(s) or organization(s) acting in an editorial
             capacity.
          </td>
       </tr>

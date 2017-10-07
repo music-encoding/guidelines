@@ -10,8 +10,7 @@ title: "pubStmt"
    <h3 id="pubStmt">&lt;pubStmt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pubStmt&gt;</span> (publication statement) – Container for information regarding the publication or
+         <td colspan="2" class="wovenodd-col2"> (publication statement) – Container for information regarding the publication or
             distribution of a bibliographic item, including the publisher's name and address,
             the date
             of publication, and other relevant details.

@@ -10,9 +10,7 @@ title: "symbol"
    <h3 id="symbol">&lt;symbol&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;symbol&gt;</span> A reference to a previously defined symbol.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> A reference to a previously defined symbol.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

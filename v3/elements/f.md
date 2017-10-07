@@ -10,9 +10,7 @@ title: "f"
    <h3 id="f">&lt;f&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;f&gt;</span> (figure) – Single element of a figured bass indication.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (figure) – Single element of a figured bass indication.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

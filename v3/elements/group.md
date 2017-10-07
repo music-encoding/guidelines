@@ -10,8 +10,7 @@ title: "group"
    <h3 id="group">&lt;group&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;group&gt;</span> Contains a composite musical text, grouping together a sequence of distinct musical
+         <td colspan="2" class="wovenodd-col2"> Contains a composite musical text, grouping together a sequence of distinct musical
             texts (or groups of such musical texts) which are regarded as a unit for some purpose,
             for
             example, the collected works of a composer.

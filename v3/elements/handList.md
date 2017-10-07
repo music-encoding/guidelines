@@ -10,9 +10,7 @@ title: "handList"
    <h3 id="handList">&lt;handList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;handList&gt;</span> Container for one or more hand elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Container for one or more hand elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

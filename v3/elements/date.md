@@ -10,9 +10,7 @@ title: "date"
    <h3 id="date">&lt;date&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;date&gt;</span> A string identifying a point in time or the time period between two such points.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> A string identifying a point in time or the time period between two such points.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

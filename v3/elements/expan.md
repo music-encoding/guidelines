@@ -10,9 +10,7 @@ title: "expan"
    <h3 id="expan">&lt;expan&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;expan&gt;</span> (expansion) – Contains the expansion of an abbreviation.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (expansion) – Contains the expansion of an abbreviation.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

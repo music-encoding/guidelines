@@ -10,8 +10,7 @@ title: "segmentation"
    <h3 id="segmentation">&lt;segmentation&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;segmentation&gt;</span> Describes the principles according to which the musical text has been segmented,
+         <td colspan="2" class="wovenodd-col2"> Describes the principles according to which the musical text has been segmented,
             for
             example into movements, sections, etc.
          </td>

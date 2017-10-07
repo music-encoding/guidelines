@@ -10,9 +10,7 @@ title: "incipCode"
    <h3 id="incipCode">&lt;incipCode&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;incipCode&gt;</span> Incipit coded in a non-XML, plain text format, such as Plaine &amp; Easie Code.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Incipit coded in a non-XML, plain text format, such as Plaine &amp; Easie Code.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

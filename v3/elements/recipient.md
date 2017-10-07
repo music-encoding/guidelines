@@ -10,8 +10,7 @@ title: "recipient"
    <h3 id="recipient">&lt;recipient&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;recipient&gt;</span> The name of the individual(s), institution(s) or organization(s) receiving
+         <td colspan="2" class="wovenodd-col2"> The name of the individual(s), institution(s) or organization(s) receiving
             correspondence.
          </td>
       </tr>

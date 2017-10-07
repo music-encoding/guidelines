@@ -10,8 +10,7 @@ title: "author"
    <h3 id="author">&lt;author&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;author&gt;</span> The name of the creator of the intellectual content of a non-musical, literary
+         <td colspan="2" class="wovenodd-col2"> The name of the creator of the intellectual content of a non-musical, literary
             work.
          </td>
       </tr>

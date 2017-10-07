@@ -10,8 +10,7 @@ title: "back"
    <h3 id="back">&lt;back&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;back&gt;</span> (back matter) – Contains any appendixes, advertisements, indexes, etc. following
+         <td colspan="2" class="wovenodd-col2"> (back matter) – Contains any appendixes, advertisements, indexes, etc. following
             the
             main body of a musical text.
          </td>

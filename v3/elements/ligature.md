@@ -10,9 +10,7 @@ title: "ligature"
    <h3 id="ligature">&lt;ligature&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;ligature&gt;</span> A mensural notation symbol that combines two or more notes into a single sign.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> A mensural notation symbol that combines two or more notes into a single sign.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

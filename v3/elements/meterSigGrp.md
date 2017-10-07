@@ -10,8 +10,7 @@ title: "meterSigGrp"
    <h3 id="meterSigGrp">&lt;meterSigGrp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;meterSigGrp&gt;</span> (meter signature group) – Used to capture alternating, interchanging, and mixed meter
+         <td colspan="2" class="wovenodd-col2"> (meter signature group) – Used to capture alternating, interchanging, and mixed meter
             signatures.
          </td>
       </tr>

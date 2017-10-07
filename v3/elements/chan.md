@@ -10,9 +10,7 @@ title: "chan"
    <h3 id="chan">&lt;chan&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;chan&gt;</span> (channel) – MIDI channel assignment.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (channel) – MIDI channel assignment.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

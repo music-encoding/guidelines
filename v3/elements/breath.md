@@ -10,8 +10,7 @@ title: "breath"
    <h3 id="breath">&lt;breath&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;breath&gt;</span> (breath mark) – A indication of a point at which the performer on an instrument
+         <td colspan="2" class="wovenodd-col2"> (breath mark) – A indication of a point at which the performer on an instrument
             requiring breath (including the voice) may breathe.
          </td>
       </tr>

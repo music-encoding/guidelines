@@ -10,8 +10,7 @@ title: "corpName"
    <h3 id="corpName">&lt;corpName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;corpName&gt;</span> (corporate name) – Identifies an organization or group of people that acts as a single
+         <td colspan="2" class="wovenodd-col2"> (corporate name) – Identifies an organization or group of people that acts as a single
             entity.
          </td>
       </tr>

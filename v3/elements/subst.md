@@ -10,8 +10,7 @@ title: "subst"
    <h3 id="subst">&lt;subst&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;subst&gt;</span> (substitution) – Groups transcriptional elements when the combination is to be regarded
+         <td colspan="2" class="wovenodd-col2"> (substitution) – Groups transcriptional elements when the combination is to be regarded
             as a single intervention in the text.
          </td>
       </tr>

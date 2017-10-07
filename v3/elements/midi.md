@@ -10,8 +10,7 @@ title: "midi"
    <h3 id="midi">&lt;midi&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;midi&gt;</span> Container for elements that contain information useful when generating MIDI
+         <td colspan="2" class="wovenodd-col2"> Container for elements that contain information useful when generating MIDI
             output.
          </td>
       </tr>

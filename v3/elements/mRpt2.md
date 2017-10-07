@@ -10,8 +10,7 @@ title: "mRpt2"
    <h3 id="mRpt2">&lt;mRpt2&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mRpt2&gt;</span> (2-measure repeat) – An indication that the previous two measures should be
+         <td colspan="2" class="wovenodd-col2"> (2-measure repeat) – An indication that the previous two measures should be
             repeated.
          </td>
       </tr>

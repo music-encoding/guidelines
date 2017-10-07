@@ -10,8 +10,7 @@ title: "castGrp"
    <h3 id="castGrp">&lt;castGrp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;castGrp&gt;</span> (cast group) – Groups one or more individual castItem elements within a cast
+         <td colspan="2" class="wovenodd-col2"> (cast group) – Groups one or more individual castItem elements within a cast
             list.
          </td>
       </tr>

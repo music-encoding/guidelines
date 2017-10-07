@@ -10,9 +10,7 @@ title: "addrLine"
    <h3 id="addrLine">&lt;addrLine&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;addrLine&gt;</span> (address line) – Single line of a postal address.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (address line) – Single line of a postal address.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

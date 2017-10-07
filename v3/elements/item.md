@@ -10,9 +10,7 @@ title: "item"
    <h3 id="item">&lt;item&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;item&gt;</span> Single instance or exemplar of a source/manifestation.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Single instance or exemplar of a source/manifestation.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

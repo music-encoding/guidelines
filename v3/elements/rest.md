@@ -10,9 +10,7 @@ title: "rest"
    <h3 id="rest">&lt;rest&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;rest&gt;</span> A non-sounding event found in the source being transcribed.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> A non-sounding event found in the source being transcribed.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

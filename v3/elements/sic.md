@@ -10,9 +10,7 @@ title: "sic"
    <h3 id="sic">&lt;sic&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;sic&gt;</span> Contains apparently incorrect or inaccurate material.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains apparently incorrect or inaccurate material.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

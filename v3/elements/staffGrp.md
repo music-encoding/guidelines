@@ -10,9 +10,7 @@ title: "staffGrp"
    <h3 id="staffGrp">&lt;staffGrp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;staffGrp&gt;</span> (staff group) – A group of bracketed or braced staves.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (staff group) – A group of bracketed or braced staves.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,8 +10,7 @@ title: "bloc"
    <h3 id="bloc">&lt;bloc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;bloc&gt;</span> Contains the name of a geo-political unit consisting of two or more nation states
+         <td colspan="2" class="wovenodd-col2"> Contains the name of a geo-political unit consisting of two or more nation states
             or
             countries.
          </td>

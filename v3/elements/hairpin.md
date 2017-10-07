@@ -10,8 +10,7 @@ title: "hairpin"
    <h3 id="hairpin">&lt;hairpin&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;hairpin&gt;</span> Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
+         <td colspan="2" class="wovenodd-col2"> Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
             &lt;
             and &gt;.
          </td>

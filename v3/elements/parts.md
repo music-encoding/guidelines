@@ -10,9 +10,7 @@ title: "parts"
    <h3 id="parts">&lt;parts&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;parts&gt;</span> Provides a container for performers' parts.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Provides a container for performers' parts.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

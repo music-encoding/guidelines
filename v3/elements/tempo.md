@@ -10,8 +10,7 @@ title: "tempo"
    <h3 id="tempo">&lt;tempo&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;tempo&gt;</span> Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+         <td colspan="2" class="wovenodd-col2"> Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
             "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").
          </td>
       </tr>

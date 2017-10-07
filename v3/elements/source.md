@@ -10,8 +10,7 @@ title: "source"
    <h3 id="source">&lt;source&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;source&gt;</span> A bibliographic description of a source used in the creation of the electronic
+         <td colspan="2" class="wovenodd-col2"> A bibliographic description of a source used in the creation of the electronic
             file.
          </td>
       </tr>

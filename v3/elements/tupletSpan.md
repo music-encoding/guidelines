@@ -10,8 +10,7 @@ title: "tupletSpan"
    <h3 id="tupletSpan">&lt;tupletSpan&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;tupletSpan&gt;</span> (tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
+         <td colspan="2" class="wovenodd-col2"> (tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
             that extend across bar lines.
          </td>
       </tr>

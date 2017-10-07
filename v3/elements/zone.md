@@ -10,9 +10,7 @@ title: "zone"
    <h3 id="zone">&lt;zone&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;zone&gt;</span> Defines an area of interest within a surface or graphic file.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Defines an area of interest within a surface or graphic file.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

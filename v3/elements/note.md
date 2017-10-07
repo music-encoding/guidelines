@@ -10,8 +10,7 @@ title: "note"
    <h3 id="note">&lt;note&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;note&gt;</span> A single pitched event. 
+         <td colspan="2" class="wovenodd-col2"> A single pitched event. 
             
          </td>
       </tr>

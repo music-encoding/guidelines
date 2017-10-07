@@ -10,9 +10,7 @@ title: "pgFoot2"
    <h3 id="pgFoot2">&lt;pgFoot2&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pgFoot2&gt;</span> (page footer 2) – A running footer on the pages following the first.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (page footer 2) – A running footer on the pages following the first.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

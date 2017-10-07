@@ -10,9 +10,7 @@ title: "trkName"
    <h3 id="trkName">&lt;trkName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;trkName&gt;</span> (track name) – MIDI track/sequence name.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (track name) – MIDI track/sequence name.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

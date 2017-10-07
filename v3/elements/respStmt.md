@@ -10,8 +10,7 @@ title: "respStmt"
    <h3 id="respStmt">&lt;respStmt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;respStmt&gt;</span> (responsibility statement) – Names one or more individuals, groups, or in rare cases,
+         <td colspan="2" class="wovenodd-col2"> (responsibility statement) – Names one or more individuals, groups, or in rare cases,
             mechanical processes, responsible for creation or realization of the intellectual
             or
             artistic content.

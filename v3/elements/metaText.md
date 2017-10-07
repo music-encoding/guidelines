@@ -10,9 +10,7 @@ title: "metaText"
    <h3 id="metaText">&lt;metaText&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;metaText&gt;</span> MIDI text meta-event.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> MIDI text meta-event.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

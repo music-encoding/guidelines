@@ -10,9 +10,7 @@ title: "recording"
    <h3 id="recording">&lt;recording&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;recording&gt;</span> A recorded performance.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> A recorded performance.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

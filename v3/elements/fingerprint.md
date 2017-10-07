@@ -10,8 +10,7 @@ title: "fingerprint"
    <h3 id="fingerprint">&lt;fingerprint&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fingerprint&gt;</span> Contains a string that uniquely identifies an item, such as those constructed by
+         <td colspan="2" class="wovenodd-col2"> Contains a string that uniquely identifies an item, such as those constructed by
             combining groups of characters transcribed from specified pages of a printed item
             or a
             file's checksum.

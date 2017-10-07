@@ -10,8 +10,7 @@ title: "meiHead"
    <h3 id="meiHead">&lt;meiHead&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;meiHead&gt;</span> (MEI header) – Supplies the descriptive and declarative metadata prefixed to every
+         <td colspan="2" class="wovenodd-col2"> (MEI header) – Supplies the descriptive and declarative metadata prefixed to every
             MEI-conformant text.
          </td>
       </tr>

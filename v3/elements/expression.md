@@ -10,9 +10,7 @@ title: "expression"
    <h3 id="expression">&lt;expression&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;expression&gt;</span> Intellectual or artistic realization of a work.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Intellectual or artistic realization of a work.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

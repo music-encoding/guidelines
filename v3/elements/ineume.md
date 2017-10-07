@@ -10,8 +10,7 @@ title: "ineume"
    <h3 id="ineume">&lt;ineume&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;ineume&gt;</span> (interrupted neume) – A graphically interrupted neume; that is, a neume which is
+         <td colspan="2" class="wovenodd-col2"> (interrupted neume) – A graphically interrupted neume; that is, a neume which is
             logically a single entity but is written using multiple signs.
          </td>
       </tr>

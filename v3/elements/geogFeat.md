@@ -10,8 +10,7 @@ title: "geogFeat"
    <h3 id="geogFeat">&lt;geogFeat&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;geogFeat&gt;</span> (geographical feature name) – Contains a common noun identifying a geographical
+         <td colspan="2" class="wovenodd-col2"> (geographical feature name) – Contains a common noun identifying a geographical
             feature.
          </td>
       </tr>

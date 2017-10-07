@@ -10,9 +10,7 @@ title: "instrGrp"
    <h3 id="instrGrp">&lt;instrGrp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;instrGrp&gt;</span> (instrument group) – Collects MIDI instrument definitions.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (instrument group) – Collects MIDI instrument definitions.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

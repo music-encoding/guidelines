@@ -10,8 +10,7 @@ title: "grpSym"
    <h3 id="grpSym">&lt;grpSym&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;grpSym&gt;</span> (group symbol) – A brace or bracket used to group two or more staves of a score or
+         <td colspan="2" class="wovenodd-col2"> (group symbol) – A brace or bracket used to group two or more staves of a score or
             part.
          </td>
       </tr>

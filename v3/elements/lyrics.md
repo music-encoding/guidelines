@@ -10,9 +10,7 @@ title: "lyrics"
    <h3 id="lyrics">&lt;lyrics&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;lyrics&gt;</span> Vocally performed 'text' of a musical composition, such as a song or opera.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Vocally performed 'text' of a musical composition, such as a song or opera.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

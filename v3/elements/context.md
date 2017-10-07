@@ -10,8 +10,7 @@ title: "context"
    <h3 id="context">&lt;context&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;context&gt;</span> The historical, social, intellectual, artistic, or other context within which the
+         <td colspan="2" class="wovenodd-col2"> The historical, social, intellectual, artistic, or other context within which the
             work
             was originally conceived (e.g., the 17th century restoration of the monarchy in England,
             the

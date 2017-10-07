@@ -10,8 +10,7 @@ title: "bibl"
    <h3 id="bibl">&lt;bibl&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;bibl&gt;</span> (bibliographic reference) – Provides a loosely-structured bibliographic citation
+         <td colspan="2" class="wovenodd-col2"> (bibliographic reference) – Provides a loosely-structured bibliographic citation
             in
             which the sub-components may or may not be explicitly marked.
          </td>

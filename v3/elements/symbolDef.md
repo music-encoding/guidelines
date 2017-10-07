@@ -10,9 +10,7 @@ title: "symbolDef"
    <h3 id="symbolDef">&lt;symbolDef&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;symbolDef&gt;</span> (symbol definition) – Declaration of an individual symbol in a symbolTable.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (symbol definition) – Declaration of an individual symbol in a symbolTable.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,9 +10,7 @@ title: "price"
    <h3 id="price">&lt;price&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;price&gt;</span> The cost of access to a bibliographic item.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> The cost of access to a bibliographic item.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

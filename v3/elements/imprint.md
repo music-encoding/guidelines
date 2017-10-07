@@ -10,9 +10,7 @@ title: "imprint"
    <h3 id="imprint">&lt;imprint&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;imprint&gt;</span> Information relating to the publication or distribution of a bibliographic item.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Information relating to the publication or distribution of a bibliographic item.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

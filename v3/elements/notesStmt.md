@@ -10,8 +10,7 @@ title: "notesStmt"
    <h3 id="notesStmt">&lt;notesStmt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;notesStmt&gt;</span> (notes statement)– Collects any notes providing information about a text additional
+         <td colspan="2" class="wovenodd-col2"> (notes statement)– Collects any notes providing information about a text additional
             to
             that recorded in other parts of the bibliographic description.
          </td>

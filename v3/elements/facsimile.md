@@ -10,8 +10,7 @@ title: "facsimile"
    <h3 id="facsimile">&lt;facsimile&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;facsimile&gt;</span> Contains a representation of some written source in the form of a set of images rather
+         <td colspan="2" class="wovenodd-col2"> Contains a representation of some written source in the form of a set of images rather
             than as transcribed or encoded text.
          </td>
       </tr>

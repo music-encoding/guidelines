@@ -10,9 +10,7 @@ title: "clefGrp"
    <h3 id="clefGrp">&lt;clefGrp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;clefGrp&gt;</span> (clef group) – A set of simultaneously-occurring clefs.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (clef group) – A set of simultaneously-occurring clefs.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

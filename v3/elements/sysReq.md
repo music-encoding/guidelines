@@ -10,9 +10,7 @@ title: "sysReq"
    <h3 id="sysReq">&lt;sysReq&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;sysReq&gt;</span> (system requirements) – System requirements for using the electronic item.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (system requirements) – System requirements for using the electronic item.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

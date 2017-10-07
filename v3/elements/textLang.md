@@ -10,8 +10,7 @@ title: "textLang"
    <h3 id="textLang">&lt;textLang&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;textLang&gt;</span> (text language) – Identifies the languages and writing systems within the work described
+         <td colspan="2" class="wovenodd-col2"> (text language) – Identifies the languages and writing systems within the work described
             by a bibliographic description, not the language of the description.
          </td>
       </tr>

@@ -10,8 +10,7 @@ title: "lb"
    <h3 id="lb">&lt;lb&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;lb&gt;</span> (line break) – An empty formatting element that forces text to begin on a new
+         <td colspan="2" class="wovenodd-col2"> (line break) – An empty formatting element that forces text to begin on a new
             line.
          </td>
       </tr>

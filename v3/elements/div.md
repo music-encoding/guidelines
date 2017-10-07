@@ -10,8 +10,7 @@ title: "div"
    <h3 id="div">&lt;div&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;div&gt;</span> (division) – Major structural division of text, such as a preface, chapter or
+         <td colspan="2" class="wovenodd-col2"> (division) – Major structural division of text, such as a preface, chapter or
             section.
          </td>
       </tr>

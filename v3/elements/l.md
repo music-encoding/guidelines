@@ -10,9 +10,7 @@ title: "l"
    <h3 id="l">&lt;l&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;l&gt;</span> (line of text) – Contains a single line of text within a line group.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (line of text) – Contains a single line of text within a line group.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

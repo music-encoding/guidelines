@@ -10,9 +10,7 @@ title: "ornam"
    <h3 id="ornam">&lt;ornam&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;ornam&gt;</span> An element indicating an ornament that is not a mordent, turn, or trill. 
-         </td>
+         <td colspan="2" class="wovenodd-col2"> An element indicating an ornament that is not a mordent, turn, or trill. </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

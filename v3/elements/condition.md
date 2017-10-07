@@ -10,8 +10,7 @@ title: "condition"
    <h3 id="condition">&lt;condition&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;condition&gt;</span> The physical condition of an item, particularly any variances between the physical
+         <td colspan="2" class="wovenodd-col2"> The physical condition of an item, particularly any variances between the physical
             make-up of the item and that of other copies of the same item (e.g., missing pages
             or
             plates, brittleness, faded images, etc.).

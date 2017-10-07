@@ -10,8 +10,7 @@ title: "gliss"
    <h3 id="gliss">&lt;gliss&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;gliss&gt;</span> (glissando) – A continuous or sliding movement from one pitch to another, usually
+         <td colspan="2" class="wovenodd-col2"> (glissando) – A continuous or sliding movement from one pitch to another, usually
             indicated by a straight or wavy line.
          </td>
       </tr>

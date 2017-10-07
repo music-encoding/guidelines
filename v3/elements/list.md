@@ -10,8 +10,7 @@ title: "list"
    <h3 id="list">&lt;list&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;list&gt;</span> A formatting element that contains a series of items separated from one another and
+         <td colspan="2" class="wovenodd-col2"> A formatting element that contains a series of items separated from one another and
             arranged in a linear, often vertical, sequence.
          </td>
       </tr>

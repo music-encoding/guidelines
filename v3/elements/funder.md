@@ -10,8 +10,7 @@ title: "funder"
    <h3 id="funder">&lt;funder&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;funder&gt;</span> Names of individuals, institutions, or organizations responsible for funding. Funders
+         <td colspan="2" class="wovenodd-col2"> Names of individuals, institutions, or organizations responsible for funding. Funders
             provide financial support for a project; they are distinct from sponsors, who provide
             intellectual support and authority.
          </td>

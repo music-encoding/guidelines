@@ -10,8 +10,7 @@ title: "beatRpt"
    <h3 id="beatRpt">&lt;beatRpt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;beatRpt&gt;</span> (beat repeat) – An indication that material on a preceding beat should be
+         <td colspan="2" class="wovenodd-col2"> (beat repeat) – An indication that material on a preceding beat should be
             repeated.
          </td>
       </tr>

@@ -10,9 +10,7 @@ title: "keySig"
    <h3 id="keySig">&lt;keySig&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;keySig&gt;</span> (key signature) – Written key signature.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (key signature) – Written key signature.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

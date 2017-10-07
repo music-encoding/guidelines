@@ -10,9 +10,7 @@ title: "syl"
    <h3 id="syl">&lt;syl&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;syl&gt;</span> (syllable) – Individual lyric syllable.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (syllable) – Individual lyric syllable.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

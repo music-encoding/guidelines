@@ -10,9 +10,7 @@ title: "actor"
    <h3 id="actor">&lt;actor&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;actor&gt;</span> Name of an actor appearing within a cast list.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Name of an actor appearing within a cast list.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

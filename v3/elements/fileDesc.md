@@ -10,9 +10,7 @@ title: "fileDesc"
    <h3 id="fileDesc">&lt;fileDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fileDesc&gt;</span> (file description) – Contains a full bibliographic description of the MEI file.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (file description) – Contains a full bibliographic description of the MEI file.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

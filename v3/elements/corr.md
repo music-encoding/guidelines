@@ -10,9 +10,7 @@ title: "corr"
    <h3 id="corr">&lt;corr&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;corr&gt;</span> (correction) – Contains the correct form of an apparent erroneous passage.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (correction) – Contains the correct form of an apparent erroneous passage.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

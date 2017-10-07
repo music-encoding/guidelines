@@ -10,8 +10,7 @@ title: "beamSpan"
    <h3 id="beamSpan">&lt;beamSpan&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;beamSpan&gt;</span> (beam span) – Alternative element for explicitly encoding beams, particularly those
+         <td colspan="2" class="wovenodd-col2"> (beam span) – Alternative element for explicitly encoding beams, particularly those
             which extend across bar lines.
          </td>
       </tr>

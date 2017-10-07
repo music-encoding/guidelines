@@ -10,9 +10,7 @@ title: "classification"
    <h3 id="classification">&lt;classification&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;classification&gt;</span> Groups information which describes the nature or topic of an entity.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Groups information which describes the nature or topic of an entity.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,8 +10,7 @@ title: "reh"
    <h3 id="reh">&lt;reh&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;reh&gt;</span> (rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating
+         <td colspan="2" class="wovenodd-col2"> (rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating
             a convenient point from which to resume rehearsal after a break.
          </td>
       </tr>

@@ -10,9 +10,7 @@ title: "chordTable"
    <h3 id="chordTable">&lt;chordTable&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;chordTable&gt;</span> Chord/tablature look-up table.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Chord/tablature look-up table.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

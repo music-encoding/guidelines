@@ -10,9 +10,7 @@ title: "mRpt"
    <h3 id="mRpt">&lt;mRpt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mRpt&gt;</span> (measure repeat) – An indication that the previous measure should be repeated.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (measure repeat) – An indication that the previous measure should be repeated.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

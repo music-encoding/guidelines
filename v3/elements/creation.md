@@ -10,8 +10,7 @@ title: "creation"
    <h3 id="creation">&lt;creation&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;creation&gt;</span> Non-bibliographic details of the creation of an intellectual entity, in narrative
+         <td colspan="2" class="wovenodd-col2"> Non-bibliographic details of the creation of an intellectual entity, in narrative
             form,
             such as the date, place, and circumstances of its composition. More detailed information
             may

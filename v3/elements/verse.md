@@ -10,9 +10,7 @@ title: "verse"
    <h3 id="verse">&lt;verse&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;verse&gt;</span> Lyric verse.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Lyric verse.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

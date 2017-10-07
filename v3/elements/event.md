@@ -10,9 +10,7 @@ title: "event"
    <h3 id="event">&lt;event&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;event&gt;</span> Contains a free-text event description.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains a free-text event description.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

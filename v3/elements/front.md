@@ -10,8 +10,7 @@ title: "front"
    <h3 id="front">&lt;front&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;front&gt;</span> (front matter) – Bundles prefatory text found before the start of the musical
+         <td colspan="2" class="wovenodd-col2"> (front matter) – Bundles prefatory text found before the start of the musical
             text.
          </td>
       </tr>

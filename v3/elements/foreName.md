@@ -10,9 +10,7 @@ title: "foreName"
    <h3 id="foreName">&lt;foreName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;foreName&gt;</span> Contains a forename, given or baptismal name.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains a forename, given or baptismal name.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

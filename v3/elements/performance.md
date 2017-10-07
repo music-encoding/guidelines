@@ -10,9 +10,7 @@ title: "performance"
    <h3 id="performance">&lt;performance&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;performance&gt;</span> A presentation of one or more musical works.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> A presentation of one or more musical works.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

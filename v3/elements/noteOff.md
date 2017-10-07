@@ -10,9 +10,7 @@ title: "noteOff"
    <h3 id="noteOff">&lt;noteOff&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;noteOff&gt;</span> MIDI note-off event.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> MIDI note-off event.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

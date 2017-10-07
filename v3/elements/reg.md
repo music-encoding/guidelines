@@ -10,8 +10,7 @@ title: "reg"
    <h3 id="reg">&lt;reg&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;reg&gt;</span> (regularization) – Contains material which has been regularized or normalized in
+         <td colspan="2" class="wovenodd-col2"> (regularization) – Contains material which has been regularized or normalized in
             some
             sense.
          </td>

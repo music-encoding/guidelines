@@ -10,8 +10,7 @@ title: "anchoredText"
    <h3 id="anchoredText">&lt;anchoredText&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;anchoredText&gt;</span> Container for text that is fixed to a particular page location, regardless of changes
+         <td colspan="2" class="wovenodd-col2"> Container for text that is fixed to a particular page location, regardless of changes
             made to the layout of the measures around it.
          </td>
       </tr>

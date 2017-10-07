@@ -10,9 +10,7 @@ title: "extMeta"
    <h3 id="extMeta">&lt;extMeta&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;extMeta&gt;</span> (extended metadata) – Provides a container element for non-MEI metadata formats.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (extended metadata) – Provides a container element for non-MEI metadata formats.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

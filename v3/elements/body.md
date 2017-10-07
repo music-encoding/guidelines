@@ -10,9 +10,7 @@ title: "body"
    <h3 id="body">&lt;body&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;body&gt;</span> Contains the whole of a single musical text, excluding any front or back matter.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains the whole of a single musical text, excluding any front or back matter.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

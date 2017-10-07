@@ -10,9 +10,7 @@ title: "titleStmt"
    <h3 id="titleStmt">&lt;titleStmt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;titleStmt&gt;</span> (title statement) – Container for title and responsibility meta-data.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (title statement) – Container for title and responsibility meta-data.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

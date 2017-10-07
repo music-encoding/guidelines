@@ -10,9 +10,7 @@ title: "height"
    <h3 id="height">&lt;height&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;height&gt;</span> Description of the vertical size of an object.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Description of the vertical size of an object.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

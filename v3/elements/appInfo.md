@@ -10,8 +10,7 @@ title: "appInfo"
    <h3 id="appInfo">&lt;appInfo&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;appInfo&gt;</span> (application information) – Groups information about applications which have acted
+         <td colspan="2" class="wovenodd-col2"> (application information) – Groups information about applications which have acted
             upon
             the MEI file.
          </td>

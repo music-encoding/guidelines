@@ -10,9 +10,7 @@ title: "dot"
    <h3 id="dot">&lt;dot&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;dot&gt;</span> Dot of augmentation or division.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Dot of augmentation or division.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

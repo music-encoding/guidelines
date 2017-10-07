@@ -10,8 +10,7 @@ title: "periodName"
    <h3 id="periodName">&lt;periodName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;periodName&gt;</span> (period name) – A label that describes a period of time, such as 'Baroque' or '3rd
+         <td colspan="2" class="wovenodd-col2"> (period name) – A label that describes a period of time, such as 'Baroque' or '3rd
             Style
             period'.
          </td>

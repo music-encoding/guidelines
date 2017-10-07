@@ -10,8 +10,7 @@ title: "trackConfig"
    <h3 id="trackConfig">&lt;trackConfig&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;trackConfig&gt;</span> (track configuration) – Number of physical/input tracks on a sound medium (e.g.,
+         <td colspan="2" class="wovenodd-col2"> (track configuration) – Number of physical/input tracks on a sound medium (e.g.,
             eight
             track, twelve track).
          </td>

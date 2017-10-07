@@ -10,8 +10,7 @@ title: "edition"
    <h3 id="edition">&lt;edition&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;edition&gt;</span> (edition designation) – A word or text phrase that indicates a difference in either
+         <td colspan="2" class="wovenodd-col2"> (edition designation) – A word or text phrase that indicates a difference in either
             content or form between the item being described and a related item previously issued
             by the
             same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously

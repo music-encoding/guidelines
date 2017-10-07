@@ -10,8 +10,7 @@ title: "seriesStmt"
    <h3 id="seriesStmt">&lt;seriesStmt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;seriesStmt&gt;</span> (series statement) – Groups information about the series, if any, to which a publication
+         <td colspan="2" class="wovenodd-col2"> (series statement) – Groups information about the series, if any, to which a publication
             belongs.
          </td>
       </tr>

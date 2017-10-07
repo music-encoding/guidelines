@@ -10,9 +10,7 @@ title: "language"
    <h3 id="language">&lt;language&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;language&gt;</span> Description of a language used in the document.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Description of a language used in the document.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

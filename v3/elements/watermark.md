@@ -10,9 +10,7 @@ title: "watermark"
    <h3 id="watermark">&lt;watermark&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;watermark&gt;</span> Contains a description of a watermark or similar device.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains a description of a watermark or similar device.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

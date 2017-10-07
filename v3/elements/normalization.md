@@ -10,8 +10,7 @@ title: "normalization"
    <h3 id="normalization">&lt;normalization&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;normalization&gt;</span> Indicates the extent of normalization or regularization of the original source carried
+         <td colspan="2" class="wovenodd-col2"> Indicates the extent of normalization or regularization of the original source carried
             out in converting it to electronic form.
          </td>
       </tr>

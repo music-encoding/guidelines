@@ -10,8 +10,7 @@ title: "meiCorpus"
    <h3 id="meiCorpus">&lt;meiCorpus&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;meiCorpus&gt;</span> (MEI corpus) – A group of related MEI documents, consisting of a header for the group,
+         <td colspan="2" class="wovenodd-col2"> (MEI corpus) – A group of related MEI documents, consisting of a header for the group,
             and one or more &lt;mei&gt; elements, each with its own complete header.
          </td>
       </tr>

@@ -10,8 +10,7 @@ title: "addName"
    <h3 id="addName">&lt;addName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;addName&gt;</span> (additional name) – Contains an additional name component, such as a nickname, epithet,
+         <td colspan="2" class="wovenodd-col2"> (additional name) – Contains an additional name component, such as a nickname, epithet,
             or alias, or any other descriptive phrase used within a personal name.
          </td>
       </tr>

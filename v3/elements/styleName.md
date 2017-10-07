@@ -10,8 +10,7 @@ title: "styleName"
    <h3 id="styleName">&lt;styleName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;styleName&gt;</span> (style name) – A label for a characteristic style of writing or performance, such
+         <td colspan="2" class="wovenodd-col2"> (style name) – A label for a characteristic style of writing or performance, such
             as
             'bebop' or 'rock-n-roll'.
          </td>

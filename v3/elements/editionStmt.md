@@ -10,8 +10,7 @@ title: "editionStmt"
    <h3 id="editionStmt">&lt;editionStmt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;editionStmt&gt;</span> (edition statement) – Container for meta-data pertaining to a particular edition
+         <td colspan="2" class="wovenodd-col2"> (edition statement) – Container for meta-data pertaining to a particular edition
             of the
             material being described.
          </td>

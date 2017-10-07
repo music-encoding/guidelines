@@ -10,8 +10,7 @@ title: "dimensions"
    <h3 id="dimensions">&lt;dimensions&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;dimensions&gt;</span> Information about the physical size of a bibliographic source; usually includes
+         <td colspan="2" class="wovenodd-col2"> Information about the physical size of a bibliographic source; usually includes
             numerical data.
          </td>
       </tr>

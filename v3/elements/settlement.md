@@ -10,8 +10,7 @@ title: "settlement"
    <h3 id="settlement">&lt;settlement&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;settlement&gt;</span> Contains the name of a settlement such as a city, town, or village identified as
+         <td colspan="2" class="wovenodd-col2"> Contains the name of a settlement such as a city, town, or village identified as
             a
             single geo-political or administrative unit.
          </td>

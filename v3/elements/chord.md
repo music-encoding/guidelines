@@ -10,8 +10,7 @@ title: "chord"
    <h3 id="chord">&lt;chord&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;chord&gt;</span> A simultaneous sounding of two or more notes in the same layer *with the same
+         <td colspan="2" class="wovenodd-col2"> A simultaneous sounding of two or more notes in the same layer *with the same
             duration*.
          </td>
       </tr>

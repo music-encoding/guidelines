@@ -10,9 +10,7 @@ title: "p"
    <h3 id="p">&lt;p&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;p&gt;</span> (paragraph) – One or more text phrases that form a logical prose passage.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (paragraph) – One or more text phrases that form a logical prose passage.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

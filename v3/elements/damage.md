@@ -10,9 +10,7 @@ title: "damage"
    <h3 id="damage">&lt;damage&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;damage&gt;</span> Contains an area of damage to the physical medium.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains an area of damage to the physical medium.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

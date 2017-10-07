@@ -10,8 +10,7 @@ title: "geogName"
    <h3 id="geogName">&lt;geogName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;geogName&gt;</span> (geographic name) – The proper noun designation for a place, natural feature, or
+         <td colspan="2" class="wovenodd-col2"> (geographic name) – The proper noun designation for a place, natural feature, or
             political jurisdiction.
          </td>
       </tr>

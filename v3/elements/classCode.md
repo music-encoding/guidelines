@@ -10,8 +10,7 @@ title: "classCode"
    <h3 id="classCode">&lt;classCode&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;classCode&gt;</span> (classification code) – Holds a citation to the source of controlled-vocabulary terms
+         <td colspan="2" class="wovenodd-col2"> (classification code) – Holds a citation to the source of controlled-vocabulary terms
             used in the &lt;termList&gt; element; for example, Library of Congress Subject Headings
             (LCSH), Library of Congress Classification (LCC), Library of Congress Name Authority
             File

@@ -10,9 +10,7 @@ title: "contents"
    <h3 id="contents">&lt;contents&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;contents&gt;</span> Description of the material contained within a resource.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Description of the material contained within a resource.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

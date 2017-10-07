@@ -10,9 +10,7 @@ title: "publisher"
    <h3 id="publisher">&lt;publisher&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;publisher&gt;</span> Name of the organization responsible for the publication of a bibliographic item.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Name of the organization responsible for the publication of a bibliographic item.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

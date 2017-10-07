@@ -10,8 +10,7 @@ title: "treatHist"
    <h3 id="treatHist">&lt;treatHist&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;treatHist&gt;</span> (treatment history) – A record of the treatment the item has undergone (e.g.,
+         <td colspan="2" class="wovenodd-col2"> (treatment history) – A record of the treatment the item has undergone (e.g.,
             de-acidification, restoration, etc.).
          </td>
       </tr>

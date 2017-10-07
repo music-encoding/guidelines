@@ -10,8 +10,7 @@ title: "abbr"
    <h3 id="abbr">&lt;abbr&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;abbr&gt;</span> (abbreviation) – A generic element for 1) a shortened form of a word, including an
+         <td colspan="2" class="wovenodd-col2"> (abbreviation) – A generic element for 1) a shortened form of a word, including an
             acronym or 2) a shorthand notation.
          </td>
       </tr>

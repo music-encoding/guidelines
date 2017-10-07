@@ -10,9 +10,7 @@ title: "phrase"
    <h3 id="phrase">&lt;phrase&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;phrase&gt;</span> Indication of 1) a "unified melodic idea" or 2) performance technique.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Indication of 1) a "unified melodic idea" or 2) performance technique.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

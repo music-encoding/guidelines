@@ -10,8 +10,7 @@ title: "syllable"
    <h3 id="syllable">&lt;syllable&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;syllable&gt;</span> Neume notation can be thought of as "neumed text". Therefore, the syllable element
+         <td colspan="2" class="wovenodd-col2"> Neume notation can be thought of as "neumed text". Therefore, the syllable element
             provides high-level organization in this repertoire.
          </td>
       </tr>

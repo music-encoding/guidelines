@@ -10,8 +10,7 @@ title: "byline"
    <h3 id="byline">&lt;byline&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;byline&gt;</span> Contains the primary statement of responsibility given for a work on its title
+         <td colspan="2" class="wovenodd-col2"> Contains the primary statement of responsibility given for a work on its title
             page.
          </td>
       </tr>

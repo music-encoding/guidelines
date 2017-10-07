@@ -10,8 +10,7 @@ title: "postCode"
    <h3 id="postCode">&lt;postCode&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;postCode&gt;</span> (postal code) contains a numerical or alphanumeric code used as part of a postal
+         <td colspan="2" class="wovenodd-col2"> (postal code) contains a numerical or alphanumeric code used as part of a postal
             address
             to simplify sorting or delivery of mail.
          </td>

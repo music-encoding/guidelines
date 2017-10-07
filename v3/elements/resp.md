@@ -10,9 +10,7 @@ title: "resp"
    <h3 id="resp">&lt;resp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;resp&gt;</span> (responsibility) – A phrase describing the nature of intellectual responsibility.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (responsibility) – A phrase describing the nature of intellectual responsibility.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
