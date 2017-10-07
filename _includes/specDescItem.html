@@ -9,10 +9,14 @@
             {% if include.att %}
                 @{{ include.att }}
             {% else %}  
-                {{ include.key }}
+                {{ include.elem }}
             {% endif %}
         </div>
-        <div class="tile-subtitle text-gray">{% assign file = include.version | append:'/desc/' | append:include.key | append:'.txt' %}
+        <div class="tile-subtitle text-gray">
+            {% assign file = include.version | append:'/desc/' | append:include.elem %}
+            {% if include.att %}
+                {% assign file = include.version | append:'/desc/' | append:include.att %}
+            {% endif %}
             {% include {{ file }} %}</div>
     </div>
 </div>
