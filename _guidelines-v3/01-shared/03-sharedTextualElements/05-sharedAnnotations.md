@@ -11,7 +11,7 @@ the [annot](/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} ele
 
 
 
-{% include specDesc.html key="annot" atts="" %}
+{% include specDesc.html version=page.version key="annot" atts="" %}
 
 
 

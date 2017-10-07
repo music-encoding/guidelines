@@ -16,8 +16,8 @@ syllable. These are the key components:
 
 
 
-{% include specDesc.html key="syl" atts="" %}
-{% include specDesc.html key="syl" atts="worpos con halign" %}
+{% include specDesc.html version=page.version key="syl" atts="" %}
+{% include specDesc.html version=page.version key="syl" atts="worpos con halign" %}
 
 
 

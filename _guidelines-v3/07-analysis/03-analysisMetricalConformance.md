@@ -11,8 +11,8 @@ established for it. The following attributes are provided for this purpose:
 
 
 
-{% include specDesc.html key="att.meterconformance" atts="metcon" %}
-{% include specDesc.html key="att.meterconformance.bar" atts="metcon" %}
+{% include specDesc.html version=page.version key="att.meterconformance" atts="metcon" %}
+{% include specDesc.html version=page.version key="att.meterconformance.bar" atts="metcon" %}
 
 
 

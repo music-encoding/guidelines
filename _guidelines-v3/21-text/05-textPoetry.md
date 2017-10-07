@@ -15,9 +15,9 @@ marking up poetry:
 
 
 
-{% include specDesc.html key="lg" atts="" %}
-{% include specDesc.html key="head" atts="" %}
-{% include specDesc.html key="l" atts="" %}
+{% include specDesc.html version=page.version key="lg" atts="" %}
+{% include specDesc.html version=page.version key="head" atts="" %}
+{% include specDesc.html version=page.version key="l" atts="" %}
 
 
 

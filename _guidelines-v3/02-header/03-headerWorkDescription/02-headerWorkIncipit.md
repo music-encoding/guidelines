@@ -8,7 +8,7 @@ version: "v3"
 
 
 
-{% include specDesc.html key="incip" atts="" %}
+{% include specDesc.html version=page.version key="incip" atts="" %}
 
 
 
@@ -23,11 +23,11 @@ The following elements are provided for the inclusion of incipits:
 
 
 
-{% include specDesc.html key="incip" atts="" %}
-{% include specDesc.html key="incipCode" atts="" %}
-{% include specDesc.html key="incipText" atts="" %}
-{% include specDesc.html key="score" atts="" %}
-{% include specDesc.html key="graphic" atts="" %}
+{% include specDesc.html version=page.version key="incip" atts="" %}
+{% include specDesc.html version=page.version key="incipCode" atts="" %}
+{% include specDesc.html version=page.version key="incipText" atts="" %}
+{% include specDesc.html version=page.version key="score" atts="" %}
+{% include specDesc.html version=page.version key="graphic" atts="" %}
 
 
 

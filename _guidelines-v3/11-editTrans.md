@@ -48,8 +48,9 @@ sectionid: "editTrans"
    
    
    
-   {% include specDesc.html key="att.edit" atts="cert" %}
-   {% include specDesc.html key="att.responsibility" atts="resp" %}
+   {% include specDesc.html version=page.version key="att.edit" atts="cert" %}
+   {% include specDesc.html version=page.version key="att.responsibility" atts="resp"
+   %}
    
    
    
@@ -67,7 +68,7 @@ sectionid: "editTrans"
    
    
    
-   {% include specDesc.html key="choice" atts="" %}
+   {% include specDesc.html version=page.version key="choice" atts="" %}
    
    
    

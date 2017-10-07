@@ -11,8 +11,8 @@ Text can be organized in different parts, for example in chapters or sections. T
 
 
 
-{% include specDesc.html key="div" atts="" %}
-{% include specDesc.html key="div" atts="type subtype" %}
+{% include specDesc.html version=page.version key="div" atts="" %}
+{% include specDesc.html version=page.version key="div" atts="type subtype" %}
 
 
 
@@ -36,7 +36,7 @@ with the [head](/{{ page.version }}/elements/head.html){:.link_odd_elementSpec} 
 
 
 
-{% include specDesc.html key="head" atts="" %}
+{% include specDesc.html version=page.version key="head" atts="" %}
 
 
 

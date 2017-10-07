@@ -10,7 +10,7 @@ The meiCorpus module defines a single element:
 
 
 
-{% include specDesc.html key="meiCorpus" atts="" %}
+{% include specDesc.html version=page.version key="meiCorpus" atts="" %}
 
 
 

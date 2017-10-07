@@ -18,8 +18,8 @@ created in electronic form.
 
 
 
-{% include specDesc.html key="sourceDesc" atts="" %}
-{% include specDesc.html key="source" atts="" %}
+{% include specDesc.html version=page.version key="sourceDesc" atts="" %}
+{% include specDesc.html version=page.version key="source" atts="" %}
 
 
 
@@ -29,19 +29,19 @@ occur.
 
 
 
-{% include specDesc.html key="identifier" atts="" %}
-{% include specDesc.html key="titleStmt" atts="" %}
-{% include specDesc.html key="editionStmt" atts="" %}
-{% include specDesc.html key="pubStmt" atts="" %}
-{% include specDesc.html key="physDesc" atts="" %}
-{% include specDesc.html key="physLoc" atts="" %}
-{% include specDesc.html key="seriesStmt" atts="" %}
-{% include specDesc.html key="history" atts="" %}
-{% include specDesc.html key="langUsage" atts="" %}
-{% include specDesc.html key="contents" atts="" %}
-{% include specDesc.html key="biblList" atts="" %}
-{% include specDesc.html key="notesStmt" atts="" %}
-{% include specDesc.html key="classification" atts="" %}
+{% include specDesc.html version=page.version key="identifier" atts="" %}
+{% include specDesc.html version=page.version key="titleStmt" atts="" %}
+{% include specDesc.html version=page.version key="editionStmt" atts="" %}
+{% include specDesc.html version=page.version key="pubStmt" atts="" %}
+{% include specDesc.html version=page.version key="physDesc" atts="" %}
+{% include specDesc.html version=page.version key="physLoc" atts="" %}
+{% include specDesc.html version=page.version key="seriesStmt" atts="" %}
+{% include specDesc.html version=page.version key="history" atts="" %}
+{% include specDesc.html version=page.version key="langUsage" atts="" %}
+{% include specDesc.html version=page.version key="contents" atts="" %}
+{% include specDesc.html version=page.version key="biblList" atts="" %}
+{% include specDesc.html version=page.version key="notesStmt" atts="" %}
+{% include specDesc.html version=page.version key="classification" atts="" %}
 
 
 
@@ -53,9 +53,9 @@ Bibliographic Records) can be found at <a class="link_ptr" title="Functional Req
 
 
 
-{% include specDesc.html key="itemList" atts="" %}
-{% include specDesc.html key="componentGrp" atts="" %}
-{% include specDesc.html key="relationList" atts="" %}
+{% include specDesc.html version=page.version key="itemList" atts="" %}
+{% include specDesc.html version=page.version key="componentGrp" atts="" %}
+{% include specDesc.html version=page.version key="relationList" atts="" %}
 
 
 

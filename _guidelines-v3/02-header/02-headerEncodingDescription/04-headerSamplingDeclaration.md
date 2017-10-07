@@ -12,7 +12,7 @@ selecting texts, or parts of text, for inclusion in the resource.
 
 
 
-{% include specDesc.html key="samplingDecl" atts="" %}
+{% include specDesc.html version=page.version key="samplingDecl" atts="" %}
 
 
 

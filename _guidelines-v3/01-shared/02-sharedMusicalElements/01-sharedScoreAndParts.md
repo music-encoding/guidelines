@@ -10,19 +10,19 @@ The following elements are provided for the capture of scores and parts:
 
 
 
-{% include specDesc.html key="score" atts="" %}
-{% include specDesc.html key="parts" atts="" %}
-{% include specDesc.html key="part" atts="" %}
-{% include specDesc.html key="scoreDef" atts="" %}
-{% include specDesc.html key="staffDef" atts="" %}
-{% include specDesc.html key="layerDef" atts="" %}
-{% include specDesc.html key="staffGrp" atts="" %}
-{% include specDesc.html key="grpSym" atts="" %}
-{% include specDesc.html key="label" atts="" %}
-{% include specDesc.html key="clef" atts="" %}
-{% include specDesc.html key="clefGrp" atts="" %}
-{% include specDesc.html key="keySig" atts="" %}
-{% include specDesc.html key="keyAccid" atts="" %}
+{% include specDesc.html version=page.version key="score" atts="" %}
+{% include specDesc.html version=page.version key="parts" atts="" %}
+{% include specDesc.html version=page.version key="part" atts="" %}
+{% include specDesc.html version=page.version key="scoreDef" atts="" %}
+{% include specDesc.html version=page.version key="staffDef" atts="" %}
+{% include specDesc.html version=page.version key="layerDef" atts="" %}
+{% include specDesc.html version=page.version key="staffGrp" atts="" %}
+{% include specDesc.html version=page.version key="grpSym" atts="" %}
+{% include specDesc.html version=page.version key="label" atts="" %}
+{% include specDesc.html version=page.version key="clef" atts="" %}
+{% include specDesc.html version=page.version key="clefGrp" atts="" %}
+{% include specDesc.html version=page.version key="keySig" atts="" %}
+{% include specDesc.html version=page.version key="keyAccid" atts="" %}
 
 
 

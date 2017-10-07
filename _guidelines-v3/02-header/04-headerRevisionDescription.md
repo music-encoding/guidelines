@@ -24,8 +24,8 @@ corresponding entries being made in the change log.
 
 
 
-{% include specDesc.html key="revisionDesc" atts="" %}
-{% include specDesc.html key="change" atts="" %}
+{% include specDesc.html version=page.version key="revisionDesc" atts="" %}
+{% include specDesc.html version=page.version key="change" atts="" %}
 
 
 

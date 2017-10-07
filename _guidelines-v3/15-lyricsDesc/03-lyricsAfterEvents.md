@@ -10,8 +10,8 @@ Vocally performed text may also be encoded separately from the notes with the [l
 
 
 
-{% include specDesc.html key="lyrics" atts="" %}
-{% include specDesc.html key="lyrics" atts="staff layer" %}
+{% include specDesc.html version=page.version key="lyrics" atts="" %}
+{% include specDesc.html version=page.version key="lyrics" atts="staff layer" %}
 
 
 

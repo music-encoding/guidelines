@@ -10,10 +10,10 @@ The following elements are provided to capture the history of a musical work:
 
 
 
-{% include specDesc.html key="creation" atts="" %}
-{% include specDesc.html key="history" atts="" %}
-{% include specDesc.html key="eventList" atts="" %}
-{% include specDesc.html key="event" atts="" %}
+{% include specDesc.html version=page.version key="creation" atts="" %}
+{% include specDesc.html version=page.version key="history" atts="" %}
+{% include specDesc.html version=page.version key="eventList" atts="" %}
+{% include specDesc.html version=page.version key="event" atts="" %}
 
 
 

@@ -11,9 +11,9 @@ forces:
 
 
 
-{% include specDesc.html key="perfMedium" atts="" %}
-{% include specDesc.html key="perfResList" atts="" %}
-{% include specDesc.html key="castList" atts="" %}
+{% include specDesc.html version=page.version key="perfMedium" atts="" %}
+{% include specDesc.html version=page.version key="perfResList" atts="" %}
+{% include specDesc.html version=page.version key="castList" atts="" %}
 
 
 

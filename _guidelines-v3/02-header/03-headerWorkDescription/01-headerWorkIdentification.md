@@ -11,8 +11,8 @@ work:
 
 
 
-{% include specDesc.html key="identifier" atts="" %}
-{% include specDesc.html key="titleStmt" atts="" %}
+{% include specDesc.html version=page.version key="identifier" atts="" %}
+{% include specDesc.html version=page.version key="titleStmt" atts="" %}
 
 
 

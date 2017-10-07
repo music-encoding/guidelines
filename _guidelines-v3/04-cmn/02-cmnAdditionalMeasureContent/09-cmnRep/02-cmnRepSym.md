@@ -29,11 +29,11 @@ elements are provided for this purpose:
 
 
 
-{% include specDesc.html key="beatRpt" atts="" %}
-{% include specDesc.html key="halfmRpt" atts="" %}
-{% include specDesc.html key="mRpt" atts="" %}
-{% include specDesc.html key="mRpt2" atts="" %}
-{% include specDesc.html key="multiRpt" atts="" %}
+{% include specDesc.html version=page.version key="beatRpt" atts="" %}
+{% include specDesc.html version=page.version key="halfmRpt" atts="" %}
+{% include specDesc.html version=page.version key="mRpt" atts="" %}
+{% include specDesc.html version=page.version key="mRpt2" atts="" %}
+{% include specDesc.html version=page.version key="multiRpt" atts="" %}
 
 
 

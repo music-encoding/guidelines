@@ -8,7 +8,7 @@ version: "v3"
 
 
 
-{% include specDesc.html key="projectDesc" atts="" %}
+{% include specDesc.html version=page.version key="projectDesc" atts="" %}
 
 
 

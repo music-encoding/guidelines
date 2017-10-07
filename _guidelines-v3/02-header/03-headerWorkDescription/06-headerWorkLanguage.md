@@ -12,8 +12,8 @@ which provides information about a single language.
 
 
 
-{% include specDesc.html key="langUsage" atts="" %}
-{% include specDesc.html key="language" atts="" %}
+{% include specDesc.html version=page.version key="langUsage" atts="" %}
+{% include specDesc.html version=page.version key="language" atts="" %}
 
 
 

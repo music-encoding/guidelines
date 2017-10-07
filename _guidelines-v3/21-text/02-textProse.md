@@ -16,7 +16,7 @@ A paragraph is encoded with the [p](/{{ page.version }}/elements/p.html){:.link_
 
 
 
-{% include specDesc.html key="p" atts="" %}
+{% include specDesc.html version=page.version key="p" atts="" %}
 
 
 

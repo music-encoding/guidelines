@@ -10,7 +10,7 @@ The [seriesStmt](/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elemen
 
 
 
-{% include specDesc.html key="seriesStmt" atts="" %}
+{% include specDesc.html version=page.version key="seriesStmt" atts="" %}
 
 
 
@@ -32,12 +32,12 @@ specific elements:
 
 
 
-{% include specDesc.html key="title" atts="" %}
-{% include specDesc.html key="editor" atts="" %}
-{% include specDesc.html key="respStmt" atts="" %}
-{% include specDesc.html key="identifier" atts="" %}
-{% include specDesc.html key="contents" atts="" %}
-{% include specDesc.html key="seriesStmt" atts="" %}
+{% include specDesc.html version=page.version key="title" atts="" %}
+{% include specDesc.html version=page.version key="editor" atts="" %}
+{% include specDesc.html version=page.version key="respStmt" atts="" %}
+{% include specDesc.html version=page.version key="identifier" atts="" %}
+{% include specDesc.html version=page.version key="contents" atts="" %}
+{% include specDesc.html version=page.version key="seriesStmt" atts="" %}
 
 
 

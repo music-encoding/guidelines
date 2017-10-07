@@ -12,10 +12,10 @@ treated as events.
 
 
 
-{% include specDesc.html key="keySig" atts="" %}
-{% include specDesc.html key="keyAccid" atts="" %}
-{% include specDesc.html key="clef" atts="" %}
-{% include specDesc.html key="clefGrp" atts="" %}
+{% include specDesc.html version=page.version key="keySig" atts="" %}
+{% include specDesc.html version=page.version key="keyAccid" atts="" %}
+{% include specDesc.html version=page.version key="clef" atts="" %}
+{% include specDesc.html version=page.version key="clefGrp" atts="" %}
 
 
 

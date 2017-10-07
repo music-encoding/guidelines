@@ -10,10 +10,10 @@ When a text contains lists, they can be encoded with the following elements:
 
 
 
-{% include specDesc.html key="list" atts="" %}
-{% include specDesc.html key="list" atts="type subtype" %}
-{% include specDesc.html key="head" atts="" %}
-{% include specDesc.html key="item" atts="" %}
+{% include specDesc.html version=page.version key="list" atts="" %}
+{% include specDesc.html version=page.version key="list" atts="type subtype" %}
+{% include specDesc.html version=page.version key="head" atts="" %}
+{% include specDesc.html version=page.version key="item" atts="" %}
 
 
 

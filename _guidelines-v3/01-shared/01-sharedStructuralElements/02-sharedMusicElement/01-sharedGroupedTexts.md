@@ -16,7 +16,7 @@ corpora, covered more fully in chapter <a class="link_ptr" title="Musical Corpor
 
 
 
-{% include specDesc.html key="group" atts="" %}
+{% include specDesc.html version=page.version key="group" atts="" %}
 
 
 

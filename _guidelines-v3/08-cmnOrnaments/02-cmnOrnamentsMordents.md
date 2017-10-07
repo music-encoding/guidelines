@@ -14,9 +14,9 @@ its attributes:
 
 
 
-{% include specDesc.html key="mordent" atts="" %}
-{% include specDesc.html key="mordent" atts="form long" %}
-{% include specDesc.html key="att.ornamentaccid" atts="accidlower accidupper" %}
+{% include specDesc.html version=page.version key="mordent" atts="" %}
+{% include specDesc.html version=page.version key="mordent" atts="form long" %}
+{% include specDesc.html version=page.version key="att.ornamentaccid" atts="accidlower accidupper" %}
 
 
 

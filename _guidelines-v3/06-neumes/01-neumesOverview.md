@@ -11,9 +11,9 @@ The module described in this chapter makes available the following components:
 
 
 
-{% include specDesc.html key="ineume" atts="" %}
-{% include specDesc.html key="syllable" atts="" %}
-{% include specDesc.html key="uneume" atts="" %}
+{% include specDesc.html version=page.version key="ineume" atts="" %}
+{% include specDesc.html version=page.version key="syllable" atts="" %}
+{% include specDesc.html version=page.version key="uneume" atts="" %}
 
 
 

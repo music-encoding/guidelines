@@ -19,7 +19,7 @@ The analysis module offers several attributes in the [att.common.anl](/{{ page.v
 
 
 
-{% include specDesc.html key="att.common.anl" atts="copyof corresp next prev sameas synch" %}
+{% include specDesc.html version=page.version key="att.common.anl" atts="copyof corresp next prev sameas synch" %}
 
 
 
@@ -28,7 +28,7 @@ temporal relationships:
 
 
 
-{% include specDesc.html key="att.alignment" atts="when" %}
+{% include specDesc.html version=page.version key="att.alignment" atts="when" %}
 
 
 

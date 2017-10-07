@@ -10,7 +10,7 @@ The [titleStmt](/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementS
 
 
 
-{% include specDesc.html key="titleStmt" atts="" %}
+{% include specDesc.html version=page.version key="titleStmt" atts="" %}
 
 
 
@@ -21,16 +21,16 @@ compiler, or other parties responsible for it:
 
 
 
-{% include specDesc.html key="title" atts="" %}
-{% include specDesc.html key="arranger" atts="" %}
-{% include specDesc.html key="author" atts="" %}
-{% include specDesc.html key="composer" atts="" %}
-{% include specDesc.html key="editor" atts="" %}
-{% include specDesc.html key="funder" atts="" %}
-{% include specDesc.html key="librettist" atts="" %}
-{% include specDesc.html key="lyricist" atts="" %}
-{% include specDesc.html key="sponsor" atts="" %}
-{% include specDesc.html key="respStmt" atts="" %}
+{% include specDesc.html version=page.version key="title" atts="" %}
+{% include specDesc.html version=page.version key="arranger" atts="" %}
+{% include specDesc.html version=page.version key="author" atts="" %}
+{% include specDesc.html version=page.version key="composer" atts="" %}
+{% include specDesc.html version=page.version key="editor" atts="" %}
+{% include specDesc.html version=page.version key="funder" atts="" %}
+{% include specDesc.html version=page.version key="librettist" atts="" %}
+{% include specDesc.html version=page.version key="lyricist" atts="" %}
+{% include specDesc.html version=page.version key="sponsor" atts="" %}
+{% include specDesc.html version=page.version key="respStmt" atts="" %}
 
 
 
@@ -124,8 +124,8 @@ within [respStmt](/{{ page.version }}/elements/respStmt.html){:.link_odd_element
 
 
 
-{% include specDesc.html key="corpName" atts="" %}
-{% include specDesc.html key="persName" atts="" %}
+{% include specDesc.html version=page.version key="corpName" atts="" %}
+{% include specDesc.html version=page.version key="persName" atts="" %}
 
 
 

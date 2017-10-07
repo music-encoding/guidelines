@@ -10,10 +10,10 @@ When encoding a score in CMN, MEI relies on the following elements from the [Sha
 
 
 
-{% include specDesc.html key="scoreDef" atts="" %}
-{% include specDesc.html key="staffGrp" atts="" %}
-{% include specDesc.html key="staffDef" atts="" %}
-{% include specDesc.html key="layerDef" atts="" %}
+{% include specDesc.html version=page.version key="scoreDef" atts="" %}
+{% include specDesc.html version=page.version key="staffGrp" atts="" %}
+{% include specDesc.html version=page.version key="staffDef" atts="" %}
+{% include specDesc.html version=page.version key="layerDef" atts="" %}
 
 
 
@@ -22,9 +22,9 @@ score, e.g., key and meter. The most important attributes for this purpose are:
 
 
 
-{% include specDesc.html key="att.meterSigDefault.log" atts="meter.count meter.unit" %}
-{% include specDesc.html key="att.meterSigDefault.vis" atts="meter.sym" %}
-{% include specDesc.html key="att.keySigDefault.log" atts="key.pname key.accid key.mode key.sig" %}
+{% include specDesc.html version=page.version key="att.meterSigDefault.log" atts="meter.count meter.unit" %}
+{% include specDesc.html version=page.version key="att.meterSigDefault.vis" atts="meter.sym" %}
+{% include specDesc.html version=page.version key="att.keySigDefault.log" atts="key.pname key.accid key.mode key.sig" %}
 
 
 
@@ -39,7 +39,7 @@ text and music:
 
 
 
-{% include specDesc.html key="scoreDef" atts="page.width page.height page.leftmar page.topmar             page.rightmar page.botmar
+{% include specDesc.html version=page.version key="scoreDef" atts="page.width page.height page.leftmar page.topmar             page.rightmar page.botmar
 system.leftmar system.topmar system.rightmar             text.name text.fam text.size
 music.name music.size lyric.name lyric.fam             lyric.size" %}
 
@@ -80,7 +80,7 @@ attributes are important for [staffDef](/{{ page.version }}/elements/staffDef.ht
 
 
 
-{% include specDesc.html key="att.cleffing.log" atts="clef.line clef.shape clef.dis clef.dis.place" %}
+{% include specDesc.html version=page.version key="att.cleffing.log" atts="clef.line clef.shape clef.dis clef.dis.place" %}
 
 
 
@@ -107,13 +107,13 @@ a clef or a key signature added in a different hand. These elements include:
 
 
 
-{% include specDesc.html key="clef" atts="" %}
-{% include specDesc.html key="clefGrp" atts="" %}
-{% include specDesc.html key="keySig" atts="" %}
-{% include specDesc.html key="keyAccid" atts="" %}
-{% include specDesc.html key="label" atts="" %}
-{% include specDesc.html key="meterSig" atts="" %}
-{% include specDesc.html key="meterSigGrp" atts="" %}
+{% include specDesc.html version=page.version key="clef" atts="" %}
+{% include specDesc.html version=page.version key="clefGrp" atts="" %}
+{% include specDesc.html version=page.version key="keySig" atts="" %}
+{% include specDesc.html version=page.version key="keyAccid" atts="" %}
+{% include specDesc.html version=page.version key="label" atts="" %}
+{% include specDesc.html version=page.version key="meterSig" atts="" %}
+{% include specDesc.html version=page.version key="meterSigGrp" atts="" %}
 
 
 

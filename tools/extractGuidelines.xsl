@@ -989,7 +989,7 @@
     
     <xsl:template match="tei:specList" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/></xsl:template>
     
-    <xsl:template match="tei:specDesc" mode="markdown">{% include specDesc.html key="<xsl:value-of select="@key"/>" atts="<xsl:value-of select="@atts"/>" %}</xsl:template>
+    <xsl:template match="tei:specDesc" mode="markdown">{% include specDesc.html version=page.version key="<xsl:value-of select="@key"/>" atts="<xsl:value-of select="@atts"/>" %}</xsl:template>
     
     <xsl:template match="tei:ptr">
         

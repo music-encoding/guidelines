@@ -11,8 +11,8 @@ may hold an arbitrary number of [addrLine](/{{ page.version }}/elements/addrLine
 
 
 
-{% include specDesc.html key="address" atts="" %}
-{% include specDesc.html key="addrLine" atts="" %}
+{% include specDesc.html version=page.version key="address" atts="" %}
+{% include specDesc.html version=page.version key="addrLine" atts="" %}
 
 
 

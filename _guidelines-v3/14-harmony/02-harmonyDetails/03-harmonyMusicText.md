@@ -16,7 +16,7 @@ harmonic indications of all kinds:
 
 
 
-{% include specDesc.html key="harm" atts="extender rendgrid" %}
+{% include specDesc.html version=page.version key="harm" atts="extender rendgrid" %}
 
 
 

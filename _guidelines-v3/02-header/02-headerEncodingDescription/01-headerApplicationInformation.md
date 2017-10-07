@@ -23,8 +23,8 @@ those sections of the file.
 
 
 
-{% include specDesc.html key="application" atts="" %}
-{% include specDesc.html key="application" atts="version" %}
+{% include specDesc.html version=page.version key="application" atts="" %}
+{% include specDesc.html version=page.version key="application" atts="version" %}
 
 
 

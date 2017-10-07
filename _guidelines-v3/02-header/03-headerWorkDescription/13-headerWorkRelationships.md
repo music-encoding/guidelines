@@ -15,9 +15,9 @@ it:
 
 
 
-{% include specDesc.html key="expressionList" atts="" %}
-{% include specDesc.html key="componentGrp" atts="" %}
-{% include specDesc.html key="relationList" atts="" %}
+{% include specDesc.html version=page.version key="expressionList" atts="" %}
+{% include specDesc.html version=page.version key="componentGrp" atts="" %}
+{% include specDesc.html version=page.version key="relationList" atts="" %}
 
 
 

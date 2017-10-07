@@ -17,8 +17,8 @@ attributes:
 
 
 
-{% include specDesc.html key="turn" atts="form delayed" %}
-{% include specDesc.html key="att.ornamentaccid" atts="accidlower accidupper" %}
+{% include specDesc.html version=page.version key="turn" atts="form delayed" %}
+{% include specDesc.html version=page.version key="att.ornamentaccid" atts="accidlower accidupper" %}
 
 
 

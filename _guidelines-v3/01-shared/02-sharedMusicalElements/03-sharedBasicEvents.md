@@ -10,9 +10,9 @@ The basic features of music notation are represented by the following elements:
 
 
 
-{% include specDesc.html key="note" atts="" %}
-{% include specDesc.html key="chord" atts="" %}
-{% include specDesc.html key="rest" atts="" %}
+{% include specDesc.html version=page.version key="note" atts="" %}
+{% include specDesc.html version=page.version key="chord" atts="" %}
+{% include specDesc.html version=page.version key="rest" atts="" %}
 
 
 
@@ -22,7 +22,7 @@ in the [att.stems](/{{ page.version }}/attribute-classes/att.stems.html){:.link_
 
 
 
-{% include specDesc.html key="att.stems" atts="stem.dir stem.len stem.mod stem.pos stem.x stem.y" %}
+{% include specDesc.html version=page.version key="att.stems" atts="stem.dir stem.len stem.mod stem.pos stem.x stem.y" %}
 
 
 

@@ -10,7 +10,7 @@ The [editionStmt](/{{ page.version }}/elements/editionStmt.html){:.link_odd_elem
 
 
 
-{% include specDesc.html key="editionStmt" atts="" %}
+{% include specDesc.html version=page.version key="editionStmt" atts="" %}
 
 
 
@@ -18,8 +18,8 @@ It contains elements for identifying the edition and those responsible for it:
 
 
 
-{% include specDesc.html key="edition" atts="" %}
-{% include specDesc.html key="respStmt" atts="" %}
+{% include specDesc.html version=page.version key="edition" atts="" %}
+{% include specDesc.html version=page.version key="respStmt" atts="" %}
 
 
 

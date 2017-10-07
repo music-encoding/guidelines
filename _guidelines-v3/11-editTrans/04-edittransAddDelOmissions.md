@@ -14,11 +14,11 @@ described in this chapter, they allow for a wide range of editorial practices:
 
 
 
-{% include specDesc.html key="gap" atts="" %}
-{% include specDesc.html key="unclear" atts="" %}
-{% include specDesc.html key="att.reasonident" atts="reason" %}
-{% include specDesc.html key="add" atts="" %}
-{% include specDesc.html key="del" atts="" %}
+{% include specDesc.html version=page.version key="gap" atts="" %}
+{% include specDesc.html version=page.version key="unclear" atts="" %}
+{% include specDesc.html version=page.version key="att.reasonident" atts="reason" %}
+{% include specDesc.html version=page.version key="add" atts="" %}
+{% include specDesc.html version=page.version key="del" atts="" %}
 
 
 

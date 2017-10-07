@@ -14,7 +14,7 @@ using the more specific elements of [tempo](/{{ page.version }}/elements/tempo.h
 
 
 
-{% include specDesc.html key="dir" atts="" %}
+{% include specDesc.html version=page.version key="dir" atts="" %}
 
 
 

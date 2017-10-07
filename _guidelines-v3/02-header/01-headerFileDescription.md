@@ -25,7 +25,7 @@ mandatory [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elem
 
 
 
-{% include specDesc.html key="fileDesc" atts="" %}
+{% include specDesc.html version=page.version key="fileDesc" atts="" %}
 
 
 
@@ -36,13 +36,13 @@ in which they must occur within the [fileDesc](/{{ page.version }}/elements/file
 
 
 
-{% include specDesc.html key="titleStmt" atts="" %}
-{% include specDesc.html key="editionStmt" atts="" %}
-{% include specDesc.html key="extent" atts="" %}
-{% include specDesc.html key="pubStmt" atts="" %}
-{% include specDesc.html key="seriesStmt" atts="" %}
-{% include specDesc.html key="notesStmt" atts="" %}
-{% include specDesc.html key="sourceDesc" atts="" %}
+{% include specDesc.html version=page.version key="titleStmt" atts="" %}
+{% include specDesc.html version=page.version key="editionStmt" atts="" %}
+{% include specDesc.html version=page.version key="extent" atts="" %}
+{% include specDesc.html version=page.version key="pubStmt" atts="" %}
+{% include specDesc.html version=page.version key="seriesStmt" atts="" %}
+{% include specDesc.html version=page.version key="notesStmt" atts="" %}
+{% include specDesc.html version=page.version key="sourceDesc" atts="" %}
 
 
 

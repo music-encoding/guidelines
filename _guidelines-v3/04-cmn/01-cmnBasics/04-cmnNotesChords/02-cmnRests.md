@@ -12,9 +12,9 @@ special forms of rest:
 
 
 
-{% include specDesc.html key="mRest" atts="" %}
-{% include specDesc.html key="multiRest" atts="" %}
-{% include specDesc.html key="mSpace" atts="" %}
+{% include specDesc.html version=page.version key="mRest" atts="" %}
+{% include specDesc.html version=page.version key="multiRest" atts="" %}
+{% include specDesc.html version=page.version key="mSpace" atts="" %}
 
 
 

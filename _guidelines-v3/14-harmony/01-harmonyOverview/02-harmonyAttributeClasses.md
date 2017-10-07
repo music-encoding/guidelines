@@ -10,11 +10,11 @@ The harmony module contains the following attribute classes:
 
 
 
-{% include specDesc.html key="att.fretlocation" atts="" %}
-{% include specDesc.html key="att.harm.anl" atts="" %}
-{% include specDesc.html key="att.harm.ges" atts="" %}
-{% include specDesc.html key="att.harm.log" atts="" %}
-{% include specDesc.html key="att.harm.vis" atts="" %}
+{% include specDesc.html version=page.version key="att.fretlocation" atts="" %}
+{% include specDesc.html version=page.version key="att.harm.anl" atts="" %}
+{% include specDesc.html version=page.version key="att.harm.ges" atts="" %}
+{% include specDesc.html version=page.version key="att.harm.log" atts="" %}
+{% include specDesc.html version=page.version key="att.harm.vis" atts="" %}
 
 
 

@@ -13,7 +13,7 @@ identify, label, and access elements in MEI-encoded files.
 
 
 
-{% include specDesc.html key="att.common" atts="xml:id label n xml:base" %}
+{% include specDesc.html version=page.version key="att.common" atts="xml:id label n xml:base" %}
 
 
 

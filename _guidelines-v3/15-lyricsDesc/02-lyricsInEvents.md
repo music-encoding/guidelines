@@ -33,8 +33,8 @@ specific about connectors, etc., the use of [verse](/{{ page.version }}/elements
 
 
 
-{% include specDesc.html key="verse" atts="" %}
-{% include specDesc.html key="verse" atts="rhythm" %}
+{% include specDesc.html version=page.version key="verse" atts="" %}
+{% include specDesc.html version=page.version key="verse" atts="rhythm" %}
 
 
 

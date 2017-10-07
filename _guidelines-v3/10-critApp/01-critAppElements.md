@@ -10,9 +10,9 @@ The following elements are defined in the critApp Module:
 
 
 
-{% include specDesc.html key="app" atts="" %}
-{% include specDesc.html key="lem" atts="" %}
-{% include specDesc.html key="rdg" atts="" %}
+{% include specDesc.html version=page.version key="app" atts="" %}
+{% include specDesc.html version=page.version key="lem" atts="" %}
+{% include specDesc.html version=page.version key="rdg" atts="" %}
 
 
 

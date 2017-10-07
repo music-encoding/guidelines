@@ -26,7 +26,7 @@ horizontally and/or vertically distant material.
 
 
 
-{% include specDesc.html key="cpMark" atts="" %}
+{% include specDesc.html version=page.version key="cpMark" atts="" %}
 
 
 

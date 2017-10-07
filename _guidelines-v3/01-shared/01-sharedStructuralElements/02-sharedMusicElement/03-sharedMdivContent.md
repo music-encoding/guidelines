@@ -11,8 +11,8 @@ score and parts.
 
 
 
-{% include specDesc.html key="score" atts="" %}
-{% include specDesc.html key="parts" atts="" %}
+{% include specDesc.html version=page.version key="score" atts="" %}
+{% include specDesc.html version=page.version key="parts" atts="" %}
 
 
 
@@ -37,7 +37,7 @@ performer is represented by the [part](/{{ page.version }}/elements/part.html){:
 
 
 
-{% include specDesc.html key="part" atts="" %}
+{% include specDesc.html version=page.version key="part" atts="" %}
 
 
 
@@ -73,7 +73,7 @@ linear segments called "sections".
 
 
 
-{% include specDesc.html key="section" atts="" %}
+{% include specDesc.html version=page.version key="section" atts="" %}
 
 
 
@@ -90,7 +90,7 @@ recursively nested.
 
 
 
-{% include specDesc.html key="ending" atts="" %}
+{% include specDesc.html version=page.version key="ending" atts="" %}
 
 
 
@@ -134,7 +134,7 @@ D.S. directives, the following element may be used to define the performance ord
 
 
 
-{% include specDesc.html key="expansion" atts="" %}
+{% include specDesc.html version=page.version key="expansion" atts="" %}
 
 
 

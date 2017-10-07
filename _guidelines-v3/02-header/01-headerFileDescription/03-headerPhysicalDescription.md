@@ -12,7 +12,7 @@ The [extent](/{{ page.version }}/elements/extent.html){:.link_odd_elementSpec} e
 
 
 
-{% include specDesc.html key="extent" atts="" %}
+{% include specDesc.html version=page.version key="extent" atts="" %}
 
 
 

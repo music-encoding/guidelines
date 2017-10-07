@@ -10,7 +10,7 @@ A specialized element is furnished for the capture of titlepage information.
 
 
 
-{% include specDesc.html key="titlePage" atts="" %}
+{% include specDesc.html version=page.version key="titlePage" atts="" %}
 
 
 

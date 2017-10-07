@@ -11,8 +11,8 @@ events.
 
 
 
-{% include specDesc.html key="barLine" atts="" %}
-{% include specDesc.html key="custos" atts="" %}
+{% include specDesc.html version=page.version key="barLine" atts="" %}
+{% include specDesc.html version=page.version key="custos" atts="" %}
 
 
 

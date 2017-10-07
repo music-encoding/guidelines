@@ -11,7 +11,7 @@ references:
 
 
 
-{% include specDesc.html key="bibl" atts="" %}
+{% include specDesc.html version=page.version key="bibl" atts="" %}
 
 
 
@@ -20,34 +20,34 @@ elements, including the following:
 
 
 
-{% include specDesc.html key="arranger" atts="" %}
-{% include specDesc.html key="author" atts="" %}
-{% include specDesc.html key="composer" atts="" %}
-{% include specDesc.html key="librettist" atts="" %}
-{% include specDesc.html key="lyricist" atts="" %}
-{% include specDesc.html key="funder" atts="" %}
-{% include specDesc.html key="sponsor" atts="" %}
-{% include specDesc.html key="respStmt" atts="" %}
-{% include specDesc.html key="title" atts="" %}
-{% include specDesc.html key="edition" atts="" %}
-{% include specDesc.html key="editor" atts="" %}
-{% include specDesc.html key="series" atts="" %}
-{% include specDesc.html key="imprint" atts="" %}
-{% include specDesc.html key="pubPlace" atts="" %}
-{% include specDesc.html key="publisher" atts="" %}
-{% include specDesc.html key="distributor" atts="" %}
-{% include specDesc.html key="biblScope" atts="" %}
-{% include specDesc.html key="extent" atts="" %}
-{% include specDesc.html key="date" atts="" %}
-{% include specDesc.html key="identifier" atts="" %}
-{% include specDesc.html key="annot" atts="" %}
-{% include specDesc.html key="creation" atts="" %}
-{% include specDesc.html key="genre" atts="" %}
-{% include specDesc.html key="recipient" atts="" %}
-{% include specDesc.html key="textLang" atts="" %}
-{% include specDesc.html key="repository" atts="" %}
-{% include specDesc.html key="physLoc" atts="" %}
-{% include specDesc.html key="relatedItem" atts="" %}
+{% include specDesc.html version=page.version key="arranger" atts="" %}
+{% include specDesc.html version=page.version key="author" atts="" %}
+{% include specDesc.html version=page.version key="composer" atts="" %}
+{% include specDesc.html version=page.version key="librettist" atts="" %}
+{% include specDesc.html version=page.version key="lyricist" atts="" %}
+{% include specDesc.html version=page.version key="funder" atts="" %}
+{% include specDesc.html version=page.version key="sponsor" atts="" %}
+{% include specDesc.html version=page.version key="respStmt" atts="" %}
+{% include specDesc.html version=page.version key="title" atts="" %}
+{% include specDesc.html version=page.version key="edition" atts="" %}
+{% include specDesc.html version=page.version key="editor" atts="" %}
+{% include specDesc.html version=page.version key="series" atts="" %}
+{% include specDesc.html version=page.version key="imprint" atts="" %}
+{% include specDesc.html version=page.version key="pubPlace" atts="" %}
+{% include specDesc.html version=page.version key="publisher" atts="" %}
+{% include specDesc.html version=page.version key="distributor" atts="" %}
+{% include specDesc.html version=page.version key="biblScope" atts="" %}
+{% include specDesc.html version=page.version key="extent" atts="" %}
+{% include specDesc.html version=page.version key="date" atts="" %}
+{% include specDesc.html version=page.version key="identifier" atts="" %}
+{% include specDesc.html version=page.version key="annot" atts="" %}
+{% include specDesc.html version=page.version key="creation" atts="" %}
+{% include specDesc.html version=page.version key="genre" atts="" %}
+{% include specDesc.html version=page.version key="recipient" atts="" %}
+{% include specDesc.html version=page.version key="textLang" atts="" %}
+{% include specDesc.html version=page.version key="repository" atts="" %}
+{% include specDesc.html version=page.version key="physLoc" atts="" %}
+{% include specDesc.html version=page.version key="relatedItem" atts="" %}
 
 
 

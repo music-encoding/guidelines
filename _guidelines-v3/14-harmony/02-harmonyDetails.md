@@ -10,7 +10,7 @@ On the most basic level, chords in the musical text can be encoded using the [ch
 
 
 
-{% include specDesc.html key="chord" atts="" %}
+{% include specDesc.html version=page.version key="chord" atts="" %}
 
 
 

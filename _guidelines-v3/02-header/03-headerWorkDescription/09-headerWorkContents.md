@@ -8,8 +8,8 @@ version: "v3"
 
 
 
-{% include specDesc.html key="contents" atts="" %}
-{% include specDesc.html key="contentItem" atts="" %}
+{% include specDesc.html version=page.version key="contents" atts="" %}
+{% include specDesc.html version=page.version key="contentItem" atts="" %}
 
 
 

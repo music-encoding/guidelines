@@ -12,8 +12,8 @@ work that represent a unified melodic idea, analogous to a phrase in literature.
 
 
 
-{% include specDesc.html key="phrase" atts="" %}
-{% include specDesc.html key="slur" atts="" %}
+{% include specDesc.html version=page.version key="phrase" atts="" %}
+{% include specDesc.html version=page.version key="slur" atts="" %}
 
 
 

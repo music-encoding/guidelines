@@ -14,7 +14,7 @@ typographically distinct from the surrounding text; i.e., surrounded by so-calle
 
 
 
-{% include specDesc.html key="quote" atts="" %}
+{% include specDesc.html version=page.version key="quote" atts="" %}
 
 
 

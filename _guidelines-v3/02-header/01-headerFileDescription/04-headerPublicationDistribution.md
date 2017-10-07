@@ -10,7 +10,7 @@ The [pubStmt](/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}
 
 
 
-{% include specDesc.html key="pubStmt" atts="" %}
+{% include specDesc.html version=page.version key="pubStmt" atts="" %}
 
 
 
@@ -21,14 +21,14 @@ used to provide details regarding the file's publication and distribution:
 
 
 
-{% include specDesc.html key="address" atts="" %}
-{% include specDesc.html key="availability" atts="" %}
-{% include specDesc.html key="date" atts="" %}
-{% include specDesc.html key="distributor" atts="" %}
-{% include specDesc.html key="identifier" atts="" %}
-{% include specDesc.html key="publisher" atts="" %}
-{% include specDesc.html key="pubPlace" atts="" %}
-{% include specDesc.html key="respStmt" atts="" %}
+{% include specDesc.html version=page.version key="address" atts="" %}
+{% include specDesc.html version=page.version key="availability" atts="" %}
+{% include specDesc.html version=page.version key="date" atts="" %}
+{% include specDesc.html version=page.version key="distributor" atts="" %}
+{% include specDesc.html version=page.version key="identifier" atts="" %}
+{% include specDesc.html version=page.version key="publisher" atts="" %}
+{% include specDesc.html version=page.version key="pubPlace" atts="" %}
+{% include specDesc.html version=page.version key="respStmt" atts="" %}
 
 
 
@@ -44,11 +44,11 @@ information regarding access to the MEI file.
 
 
 
-{% include specDesc.html key="accessRestrict" atts="" %}
-{% include specDesc.html key="distributor" atts="" %}
-{% include specDesc.html key="price" atts="" %}
-{% include specDesc.html key="useRestrict" atts="" %}
-{% include specDesc.html key="sysReq" atts="" %}
+{% include specDesc.html version=page.version key="accessRestrict" atts="" %}
+{% include specDesc.html version=page.version key="distributor" atts="" %}
+{% include specDesc.html version=page.version key="price" atts="" %}
+{% include specDesc.html version=page.version key="useRestrict" atts="" %}
+{% include specDesc.html version=page.version key="sysReq" atts="" %}
 
 
 
