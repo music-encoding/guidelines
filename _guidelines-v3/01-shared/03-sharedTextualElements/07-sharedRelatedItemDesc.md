@@ -25,7 +25,6 @@ provides information about the ‘container’ where the outer [bibl](/{{ page.v
 
 
 
-
  In these relations, the subject is always the relatedItem, and the object is always
 the
 parent of the relatedItem. Thus, a value of **@rel**="preceding" indicates that the

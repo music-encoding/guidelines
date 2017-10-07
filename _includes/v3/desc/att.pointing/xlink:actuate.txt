@@ -1,1 +1,0 @@
-Defines whether a link occurs automatically or must be requested by the user.

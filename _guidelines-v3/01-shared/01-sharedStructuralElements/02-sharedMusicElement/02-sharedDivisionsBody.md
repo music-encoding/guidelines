@@ -36,7 +36,6 @@ classify it according to a two-tier hierarchy.
 
 
 
-
 To accommodate "divisions within divisions", an [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} element may
 contain additional [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} sub-elements nested to any level required.
 For example, the encoding of a multi-movement work, such as a symphony, frequently

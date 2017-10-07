@@ -24,14 +24,12 @@ att.common.anl/sameas att.common.anl/synch" %}
 
 
 
-
 The [att.alignment](/{{ page.version }}/attribute-classes/att.alignment.html){:.link_odd} class also contains an attribute for describing
 temporal relationships:
 
 
 
 {% include specDesc.html version=page.version elem="att.alignment" atts="att.alignment/when" %}
-
 
 
 

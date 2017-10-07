@@ -16,7 +16,6 @@ such as notes, chords, rests, etc.:
 
 
 
-
 In this context, the term ‘space’ is used to mean whitespace that is
 required to meaningfully align multiple voices in a multi-voice texture. In DARMS
 these

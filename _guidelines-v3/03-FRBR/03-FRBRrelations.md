@@ -18,7 +18,6 @@ provides the following elements for this purpose.
 
 
 
-
 Each of the four FRBR entity equivalents – the work, expression, source, and item
 elements –
 allows a list of such relationship descriptions as its last child element. [relationList](/{{ page.version }}/elements/relationList.html){:.link_odd_elementSpec} provides a container for individual [relation](/{{ page.version }}/elements/relation.html){:.link_odd_elementSpec}

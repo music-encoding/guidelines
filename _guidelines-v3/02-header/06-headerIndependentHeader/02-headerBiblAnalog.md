@@ -18,7 +18,6 @@ purpose, the following attribute is provided on most meiHead elements:
 
 
 
-
 The encoding system to which fields are mapped must be specified in **@analog**. When
 possible, subfields as well as fields should be specified, e.g., subfields within
 MARC

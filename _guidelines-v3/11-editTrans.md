@@ -50,10 +50,8 @@ sectionid: "editTrans"
    
    {% include specDesc.html version=page.version elem="att.edit" atts="att.evidence/cert"
    %}
-   
    {% include specDesc.html version=page.version elem="att.responsibility" atts="att.responsibility/resp"
    %}
-   
    
    
    

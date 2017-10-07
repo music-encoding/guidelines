@@ -13,8 +13,9 @@ identify, label, and access elements in MEI-encoded files.
 
 
 
-{% include specDesc.html version=page.version elem="att.common" atts="att.id/xml:id att.commonPart/label att.common/n att.commonPart/xml:base" %}
-
+{% include specDesc.html version=page.version elem="att.common" atts="att.common/n" %}
+{% include specDesc.html version=page.version elem="att.id" atts="att.id/xml---id" %}
+{% include specDesc.html version=page.version elem="att.commonPart" atts="att.commonPart/xml---base att.commonPart/label" %}
 
 
 

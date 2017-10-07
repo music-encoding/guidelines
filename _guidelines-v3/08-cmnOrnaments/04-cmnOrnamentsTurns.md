@@ -18,9 +18,7 @@ attributes:
 
 
 {% include specDesc.html version=page.version elem="turn" atts="att.turn.log/form att.turn.log/delayed" %}
-
 {% include specDesc.html version=page.version elem="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
-
 
 
 

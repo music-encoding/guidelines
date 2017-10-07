@@ -39,7 +39,6 @@ specific about connectors, etc., the use of [verse](/{{ page.version }}/elements
 
 
 
-
 The following example from Handel's *Messiah* (HWV 56) shows the use of [verse](/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec}:
 
 {% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample264.xml" valid="true" %}

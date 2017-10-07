@@ -46,7 +46,6 @@ used to define this space:
 
 
 
-
 The [avFile](/{{ page.version }}/elements/avFile.html){:.link_odd_elementSpec} element identifies an external file associated with a
 recording act. In the simplest case, the recording element will contain one [avFile](/{{ page.version }}/elements/avFile.html){:.link_odd_elementSpec} element identifying a file that represents it. The **@target** attribute
 contains the URI of the digital media file. Use of the **@mimetype** attribute is
