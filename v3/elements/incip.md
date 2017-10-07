@@ -36,7 +36,7 @@ title: "incip"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -47,7 +47,7 @@ title: "incip"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +55,10 @@ title: "incip"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,7 +71,7 @@ title: "incip"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,7 +84,7 @@ title: "incip"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +94,10 @@ title: "incip"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,7 +111,7 @@ title: "incip"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -122,7 +122,7 @@ title: "incip"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.incipLike">model.incipLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.incipLike">model.incipLike</a>
             </div>
          </td>
       </tr>
@@ -136,23 +136,23 @@ title: "incip"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/expression">expression</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/key">key</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/mensuration">mensuration</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/meter">meter</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/work">work</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/key">key</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/meter">meter</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/incip">incip</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a>
                      </span>
                   </div>
                </div>
@@ -168,31 +168,31 @@ title: "incip"
                <div class="specChild">
                   <span class="specChildModule">MEI.figtable</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/graphic">graphic</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/incipCode">incipCode</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/incipText">incipText</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/key">key</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/mensuration">mensuration</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/meter">meter</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/perfRes">perfRes</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/perfResList">perfResList</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/incipCode">incipCode</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/incipText">incipText</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/key">key</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/meter">meter</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/perfRes">perfRes</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/perfResList">perfResList</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/annot">annot</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/clef">clef</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/clefGrp">clefGrp</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/head">head</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/role">role</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/score">score</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/annot">annot</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/clefGrp">clefGrp</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/head">head</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/role">role</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a>
                   </span>
                </div>
             </div>
@@ -475,13 +475,13 @@ title: "incip"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/incipText">incipText</a> element may be used to capture a text incipit, while
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/incipText">incipText</a> element may be used to capture a text incipit, while
                
-               <a class="link_odd_elementSpec" href="/{{ v3}}/score">score</a> is available to provide an MEI-encoded musical incipit.
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a> is available to provide an MEI-encoded musical incipit.
                Images of an incipit may be referenced using the 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/graphic">graphic</a> element. An
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a> element. An
                incipit encoded in a text format other than MEI may be placed in the 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/incipCode">incipCode</a> element.
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/incipCode">incipCode</a> element.
             </p>
          </td>
       </tr>

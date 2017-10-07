@@ -1,0 +1,1 @@
+Contains a reference to a &lt;chordDef&gt; element elsewhere in the document.

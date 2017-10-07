@@ -41,7 +41,7 @@ title: "att.regularized"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.regularized">att.regularized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.regularized">att.regularized</a>
                </span>
             </div>
          </td>

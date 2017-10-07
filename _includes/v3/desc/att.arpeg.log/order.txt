@@ -1,0 +1,1 @@
+Describes the direction in which an arpeggio is to be performed.

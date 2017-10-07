@@ -1,0 +1,6 @@
+Used to describe tempo in terms of beats (often the meter signature denominator) per
+minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
+or
+midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
+of
+the time signature or the metronomic indication*.

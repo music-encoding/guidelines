@@ -14,7 +14,8 @@ provides the following elements:
 
 
 {% include specDesc.html version=page.version key="fb" atts="" %}
-{% include specDesc.html version=page.version key="f" atts="extender" %}
+{% include specDesc.html version=page.version key="f" atts="att.extender/extender.txt" %}
+
 
 
 

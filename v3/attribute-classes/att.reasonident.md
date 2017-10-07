@@ -27,9 +27,9 @@ title: "att.reasonident"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/gap">gap</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/unclear">unclear</a> (direct members of att.reasonident)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/gap">gap</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a> (direct members of att.reasonident)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.reasonident"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.reasonident">att.reasonident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.reasonident">att.reasonident</a>
                </span>
             </div>
          </td>

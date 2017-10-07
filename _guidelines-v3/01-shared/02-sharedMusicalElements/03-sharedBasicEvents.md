@@ -22,7 +22,9 @@ in the [att.stems](/{{ page.version }}/attribute-classes/att.stems.html){:.link_
 
 
 
-{% include specDesc.html version=page.version key="att.stems" atts="stem.dir stem.len stem.mod stem.pos stem.x stem.y" %}
+{% include specDesc.html version=page.version key="att.stems" atts="att.stems/stem.dir att.stems/stem.len att.stems/stem.mod att.stems/stem.pos att.stems/stem.x
+att.stems/stem.y" %}
+
 
 
 

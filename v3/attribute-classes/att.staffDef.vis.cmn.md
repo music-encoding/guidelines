@@ -27,9 +27,9 @@ title: "att.staffDef.vis.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -45,10 +45,10 @@ title: "att.staffDef.vis.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Color of beams, including those associated with tuplets.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,7 +64,7 @@ title: "att.staffDef.vis.cmn"
                <span style="font-weight: 500;">norm</span>" 
                <i>(Beam lines are equally-spaced over the entire length of the beam.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,7 +75,7 @@ title: "att.staffDef.vis.cmn"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -97,7 +97,7 @@ title: "att.staffDef.vis.cmn"
                   with "Ped." only.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pianopedals">att.pianopedals</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pianopedals">att.pianopedals</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -113,7 +113,7 @@ title: "att.staffDef.vis.cmn"
                <span style="font-weight: 500;">none</span>" 
                <i>(No enclosing shape.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.rehearsal">att.rehearsal</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.rehearsal">att.rehearsal</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -121,10 +121,10 @@ title: "att.staffDef.vis.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.slurrend">att.slurrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slurrend">att.slurrend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -132,10 +132,10 @@ title: "att.staffDef.vis.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.slurrend">att.slurrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slurrend">att.slurrend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -143,10 +143,10 @@ title: "att.staffDef.vis.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.tierend">att.tierend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tierend">att.tierend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -154,10 +154,10 @@ title: "att.staffDef.vis.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.tierend">att.tierend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tierend">att.tierend</a>
                </span>
             </div>
          </td>

@@ -27,9 +27,9 @@ title: "att.pitchclass"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.anl">att.note.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.anl">att.note.anl</a>)
                   </span>
                </div>
             </div>
@@ -45,10 +45,10 @@ title: "att.pitchclass"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds pitch class information.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PITCHCLASS">data.PITCHCLASS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHCLASS">data.PITCHCLASS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pitchclass">att.pitchclass</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pitchclass">att.pitchclass</a>
                </span>
             </div>
          </td>

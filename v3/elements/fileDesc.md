@@ -36,7 +36,7 @@ title: "fileDesc"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -47,7 +47,7 @@ title: "fileDesc"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +55,10 @@ title: "fileDesc"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -68,10 +68,10 @@ title: "fileDesc"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,7 +85,7 @@ title: "fileDesc"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -108,7 +108,7 @@ title: "fileDesc"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/meiHead">meiHead</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/meiHead">meiHead</a>
                      </span>
                   </div>
                </div>
@@ -124,18 +124,18 @@ title: "fileDesc"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/editionStmt">editionStmt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/notesStmt">notesStmt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/pubStmt">pubStmt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/seriesStmt">seriesStmt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/sourceDesc">sourceDesc</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/titleStmt">titleStmt</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/editionStmt">editionStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/notesStmt">notesStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/pubStmt">pubStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/seriesStmt">seriesStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/sourceDesc">sourceDesc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/titleStmt">titleStmt</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/extent">extent</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a>
                   </span>
                </div>
             </div>

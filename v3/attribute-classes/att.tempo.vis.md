@@ -27,7 +27,7 @@ title: "att.tempo.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a> (direct member of att.tempo.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a> (direct member of att.tempo.vis)
                </div>
             </div>
          </td>
@@ -44,10 +44,10 @@ title: "att.tempo.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.ho">att.visualoffset2.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.ho">att.visualoffset2.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,10 +57,10 @@ title: "att.tempo.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.to">att.visualoffset2.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.to">att.visualoffset2.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,10 +71,10 @@ title: "att.tempo.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.ho">att.visualoffset.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.ho">att.visualoffset.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,10 +84,10 @@ title: "att.tempo.vis"
                   associated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.STAFFREL">data.STAFFREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFREL">data.STAFFREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.placement">att.placement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.placement">att.placement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -97,10 +97,10 @@ title: "att.tempo.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.ho">att.visualoffset2.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.ho">att.visualoffset2.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -110,10 +110,10 @@ title: "att.tempo.vis"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.to">att.visualoffset2.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.to">att.visualoffset2.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -123,10 +123,10 @@ title: "att.tempo.vis"
                   in terms of musical time; that is, beats.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.to">att.visualoffset.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.to">att.visualoffset.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -137,10 +137,10 @@ title: "att.tempo.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.vo">att.visualoffset.vo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.vo">att.visualoffset.vo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -154,7 +154,7 @@ title: "att.tempo.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -168,7 +168,7 @@ title: "att.tempo.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
          </td>

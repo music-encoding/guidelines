@@ -1,0 +1,9 @@
+Mixed key signatures, e.g. those consisting of a mixture of flats and sharps (Read,
+p. 143, ex. 9-39), and key signatures with unorthodox placement of the accidentals
+(Read, p. 141) must be indicated by setting the key.sig attribute to 'mixed' and
+providing explicit key signature information in the key.sig.mixed attribute or in
+the
+&lt;keySig&gt; element. It is intended that key.sig.mixed contain a series of tokens
+with each token containing pitch name, accidental, and octave, such as 'a4 c5s e5f'
+that
+indicate what key accidentals should be rendered and where they should be placed.

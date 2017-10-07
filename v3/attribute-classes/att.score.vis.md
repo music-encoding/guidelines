@@ -27,7 +27,7 @@ title: "att.score.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/score">score</a> (direct member of att.score.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a> (direct member of att.score.vis)
                </div>
             </div>
          </td>

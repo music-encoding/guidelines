@@ -27,21 +27,21 @@ title: "att.syltext"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.log">att.chord.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.log">att.note.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.uneume.log">att.uneume.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.uneume.log">att.uneume.log</a>)
                   </span>
                </div>
             </div>
@@ -60,7 +60,7 @@ title: "att.syltext"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.syltext">att.syltext</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.syltext">att.syltext</a>
                </span>
             </div>
          </td>

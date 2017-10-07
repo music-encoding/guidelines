@@ -27,7 +27,7 @@ title: "att.section.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/section">section</a> (direct member of att.section.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a> (direct member of att.section.ges)
                </div>
             </div>
          </td>

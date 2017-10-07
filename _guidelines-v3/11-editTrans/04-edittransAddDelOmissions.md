@@ -16,7 +16,8 @@ described in this chapter, they allow for a wide range of editorial practices:
 
 {% include specDesc.html version=page.version key="gap" atts="" %}
 {% include specDesc.html version=page.version key="unclear" atts="" %}
-{% include specDesc.html version=page.version key="att.reasonident" atts="reason" %}
+{% include specDesc.html version=page.version key="att.reasonident" atts="att.reasonident/reason" %}
+
 {% include specDesc.html version=page.version key="add" atts="" %}
 {% include specDesc.html version=page.version key="del" atts="" %}
 

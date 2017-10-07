@@ -1,0 +1,2 @@
+Points to an element that is the same as the current element but is not a literal
+copy of the current element.

@@ -12,7 +12,8 @@ such as notes, chords, rests, etc.:
 
 
 {% include specDesc.html version=page.version key="space" atts="" %}
-{% include specDesc.html version=page.version key="pad" atts="num" %}
+{% include specDesc.html version=page.version key="pad" atts="att.pad.log/num.txt" %}
+
 
 
 

@@ -30,10 +30,10 @@ title: "layerDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Color of beams, including those associated with tuplets.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -46,7 +46,7 @@ title: "layerDef"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,7 +62,7 @@ title: "layerDef"
                <span style="font-weight: 500;">norm</span>" 
                <i>(Beam lines are equally-spaced over the entire length of the beam.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -72,10 +72,10 @@ title: "layerDef"
                   quarter note duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -86,7 +86,7 @@ title: "layerDef"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,10 +96,10 @@ title: "layerDef"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -109,10 +109,10 @@ title: "layerDef"
                   etc. in a measure does not have a duration specified.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION">data.DURATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION">data.DURATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -122,10 +122,10 @@ title: "layerDef"
                   of an &lt;instrDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.instrumentident">att.instrumentident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.instrumentident">att.instrumentident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -136,7 +136,7 @@ title: "layerDef"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -149,7 +149,7 @@ title: "layerDef"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.labels.addl">att.labels.addl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.labels.addl">att.labels.addl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -160,7 +160,7 @@ title: "layerDef"
                <span style="font-weight: 500;">nonNegativeInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/layerDef">layerDef</a>
+                  <a class="link_odd" href="/{{ page.version }}/layerDef">layerDef</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -173,7 +173,7 @@ title: "layerDef"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -186,7 +186,7 @@ title: "layerDef"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.default">att.duration.default</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.default">att.duration.default</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -196,10 +196,10 @@ title: "layerDef"
                   etc. in a measure does not have an octave value specified.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.octavedefault">att.octavedefault</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedefault">att.octavedefault</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -209,10 +209,10 @@ title: "layerDef"
                   this information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -222,10 +222,10 @@ title: "layerDef"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -235,10 +235,10 @@ title: "layerDef"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -248,10 +248,10 @@ title: "layerDef"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -261,10 +261,10 @@ title: "layerDef"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -277,7 +277,7 @@ title: "layerDef"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.transposition">att.transposition</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.transposition">att.transposition</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -290,7 +290,7 @@ title: "layerDef"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.transposition">att.transposition</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.transposition">att.transposition</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -300,10 +300,10 @@ title: "layerDef"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visibility">att.visibility</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -313,10 +313,10 @@ title: "layerDef"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -330,7 +330,7 @@ title: "layerDef"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -341,7 +341,7 @@ title: "layerDef"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.layerDefLike">model.layerDefLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.layerDefLike">model.layerDefLike</a>
             </div>
          </td>
       </tr>
@@ -355,8 +355,8 @@ title: "layerDef"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/layerDef">layerDef</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                      </span>
                   </div>
                </div>
@@ -372,13 +372,13 @@ title: "layerDef"
                <div class="specChild">
                   <span class="specChildModule">MEI.midi</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/instrDef">instrDef</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/instrDef">instrDef</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/label">label</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/label">label</a>
                   </span>
                </div>
             </div>

@@ -11,7 +11,8 @@ When a text contains lists, they can be encoded with the following elements:
 
 
 {% include specDesc.html version=page.version key="list" atts="" %}
-{% include specDesc.html version=page.version key="list" atts="type subtype" %}
+{% include specDesc.html version=page.version key="list" atts="list/type /subtype.txt" %}
+
 {% include specDesc.html version=page.version key="head" atts="" %}
 {% include specDesc.html version=page.version key="item" atts="" %}
 

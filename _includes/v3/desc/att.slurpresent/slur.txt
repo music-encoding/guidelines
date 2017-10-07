@@ -1,0 +1,2 @@
+Indicates that this element participates in a slur. If visual information about the
+slur needs to be recorded, then a &lt;slur&gt; element should be employed.

@@ -27,7 +27,7 @@ title: "att.scoreDef.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a> (direct member of att.scoreDef.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a> (direct member of att.scoreDef.vis)
                </div>
             </div>
          </td>
@@ -42,10 +42,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the location of a bar line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BARPLACE">data.BARPLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BARPLACE">data.BARPLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -53,10 +53,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Color of beams, including those associated with tuplets.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -72,7 +72,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">norm</span>" 
                <i>(Beam lines are equally-spaced over the entire length of the beam.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,7 +83,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beaming.vis">att.beaming.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -91,10 +91,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the color of the clef.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.cleffing.vis">att.cleffing.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cleffing.vis">att.cleffing.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -102,10 +102,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines whether the clef is to be displayed.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.cleffing.vis">att.cleffing.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.cleffing.vis">att.cleffing.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -113,10 +113,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the default distance from the staff for dynamic marks.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.distances">att.distances</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.distances">att.distances</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -132,7 +132,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">grouped</span>" 
                <i>(Endings rendered above staff groups.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.endings">att.endings</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.endings">att.endings</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -140,10 +140,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines whether to display guitar chord grids.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -153,10 +153,10 @@ title: "att.scoreDef.vis"
                   chord grids or functional labels.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.distances">att.distances</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.distances">att.distances</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -164,10 +164,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates whether the key signature should be displayed.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.keySigDefault.vis">att.keySigDefault.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.vis">att.keySigDefault.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -177,10 +177,10 @@ title: "att.scoreDef.vis"
                   change.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.keySigDefault.vis">att.keySigDefault.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.vis">att.keySigDefault.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -188,10 +188,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the alignment of lyric syllables associated with a note or chord.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -199,10 +199,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the font family default value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -210,10 +210,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the font name default value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -221,10 +221,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default font size value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -232,10 +232,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default font style value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -243,10 +243,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default font weight value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -256,10 +256,10 @@ title: "att.scoreDef.vis"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -271,7 +271,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">horizontal</span>" ,  "
                <span style="font-weight: 500;">vertical</span>" 
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -279,10 +279,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the staff location of the mensuration sign.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -290,10 +290,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the rotation or reflection of the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.ORIENTATION">data.ORIENTATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ORIENTATION">data.ORIENTATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -301,10 +301,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the relative size of the mensuration sign.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.SIZE">data.SIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SIZE">data.SIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.vis">att.mensural.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -322,7 +322,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">invis</span>" 
                <i>(Meter signature not rendered.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -332,10 +332,10 @@ title: "att.scoreDef.vis"
                   signature changes.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -345,10 +345,10 @@ title: "att.scoreDef.vis"
                   'C' for common time or 'C' with a slash for cut time.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.METERSIGN">data.METERSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.METERSIGN">data.METERSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -356,10 +356,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates whether measure numbers should be displayed.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.measurenumbers">att.measurenumbers</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.measurenumbers">att.measurenumbers</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -369,10 +369,10 @@ title: "att.scoreDef.vis"
                   (mRest) and whole measure repeats (mRpt) in parts should be rendered.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.multinummeasures">att.multinummeasures</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.multinummeasures">att.multinummeasures</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -380,10 +380,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default music font name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MUSICFONT">data.MUSICFONT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MUSICFONT">data.MUSICFONT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.notationstyle">att.notationstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.notationstyle">att.notationstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -391,10 +391,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default music font size.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.notationstyle">att.notationstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.notationstyle">att.notationstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -405,10 +405,10 @@ title: "att.scoreDef.vis"
                   stems-down notes below the line.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.onelinestaff">att.onelinestaff</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.onelinestaff">att.onelinestaff</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -418,10 +418,10 @@ title: "att.scoreDef.vis"
                   value is 'true', empty staves are displayed.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.optimization">att.optimization</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.optimization">att.optimization</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -429,10 +429,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the bottom of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -442,10 +442,10 @@ title: "att.scoreDef.vis"
                   steps.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -453,10 +453,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the left side of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -466,10 +466,10 @@ title: "att.scoreDef.vis"
                   page.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PAGE.PANELS">data.PAGE.PANELS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PAGE.PANELS">data.PAGE.PANELS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -477,10 +477,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the right side of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -488,10 +488,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates how the page should be scaled when rendered.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PGSCALE">data.PGSCALE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PGSCALE">data.PGSCALE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -499,10 +499,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the top of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -512,10 +512,10 @@ title: "att.scoreDef.vis"
                   steps.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -537,7 +537,7 @@ title: "att.scoreDef.vis"
                   with "Ped." only.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pianopedals">att.pianopedals</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pianopedals">att.pianopedals</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -553,7 +553,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">none</span>" 
                <i>(No enclosing shape.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.rehearsal">att.rehearsal</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.rehearsal">att.rehearsal</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -561,10 +561,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.slurrend">att.slurrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slurrend">att.slurrend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -572,10 +572,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.slurrend">att.slurrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slurrend">att.slurrend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -586,7 +586,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.spacing">att.spacing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -597,7 +597,7 @@ title: "att.scoreDef.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.spacing">att.spacing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -608,10 +608,10 @@ title: "att.scoreDef.vis"
                   below.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.spacing">att.spacing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -623,10 +623,10 @@ title: "att.scoreDef.vis"
                   that is, the minimum and maximum values are equal.
                </span>
                One or two values from 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>, separated by a space.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>, separated by a space.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.spacing">att.spacing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.spacing">att.spacing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -638,10 +638,10 @@ title: "att.scoreDef.vis"
                   grouping symbol.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -651,10 +651,10 @@ title: "att.scoreDef.vis"
                   page.leftmar.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -664,10 +664,10 @@ title: "att.scoreDef.vis"
                   page.rightmar.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -677,10 +677,10 @@ title: "att.scoreDef.vis"
                   only.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.systems">att.systems</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -696,10 +696,10 @@ title: "att.scoreDef.vis"
                   the top line of a 5-line staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -707,10 +707,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines how far from the staff to render text elements.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.distances">att.distances</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.distances">att.distances</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -720,10 +720,10 @@ title: "att.scoreDef.vis"
                   this information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -733,10 +733,10 @@ title: "att.scoreDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -746,10 +746,10 @@ title: "att.scoreDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -759,10 +759,10 @@ title: "att.scoreDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -772,10 +772,10 @@ title: "att.scoreDef.vis"
                   information is not provided on the individual elements.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.textstyle">att.textstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.textstyle">att.textstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -783,10 +783,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.tierend">att.tierend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tierend">att.tierend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -794,10 +794,10 @@ title: "att.scoreDef.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.tierend">att.tierend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tierend">att.tierend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -815,7 +815,7 @@ title: "att.scoreDef.vis"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.scoreDef.vis">att.scoreDef.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>
                </span>
             </div>
          </td>

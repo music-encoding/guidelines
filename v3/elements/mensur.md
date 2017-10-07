@@ -33,10 +33,10 @@ title: "mensur"
                   &lt;symbolDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.altsym">att.altsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.altsym">att.altsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -46,10 +46,10 @@ title: "mensur"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,10 +57,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,10 +70,10 @@ title: "mensur"
                   fashion.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,10 +81,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Specifies whether a dot is to be added to the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensur.log">att.mensur.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +94,10 @@ title: "mensur"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -105,10 +105,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the name of a font-family.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -116,10 +116,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the name of a font.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -130,10 +130,10 @@ title: "mensur"
                   size, e.g., "125%". 
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -141,10 +141,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the style of a font, i.e, italic, oblique, or normal.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -152,10 +152,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to indicate bold type.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -167,7 +167,7 @@ title: "mensur"
                <span style="font-weight: 500;">horizontal</span>" ,  "
                <span style="font-weight: 500;">vertical</span>" 
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensur.vis">att.mensur.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensur.vis">att.mensur.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -178,7 +178,7 @@ title: "mensur"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.extsym">att.extsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -194,7 +194,7 @@ title: "mensur"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.extsym">att.extsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -205,7 +205,7 @@ title: "mensur"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -213,10 +213,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the staff location of the feature.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.staffloc">att.staffloc</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffloc">att.staffloc</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -224,10 +224,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the maxima-long relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -235,10 +235,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the long-breve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMINOR">data.MODUSMINOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMINOR">data.MODUSMINOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -246,10 +246,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -257,10 +257,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -273,7 +273,7 @@ title: "mensur"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -286,7 +286,7 @@ title: "mensur"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -294,10 +294,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the rotation or reflection of the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.ORIENTATION">data.ORIENTATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ORIENTATION">data.ORIENTATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensur.vis">att.mensur.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensur.vis">att.mensur.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -305,10 +305,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -316,10 +316,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the semibreve-minim relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PROLATIO">data.PROLATIO</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PROLATIO">data.PROLATIO</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -329,10 +329,10 @@ title: "mensur"
                   copy of the current element.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -340,10 +340,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">The base symbol in the mensuration sign/time signature of mensural notation.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensur.log">att.mensur.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -351,10 +351,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the relative size of a feature.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.SIZE">data.SIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SIZE">data.SIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.relativesize">att.relativesize</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.relativesize">att.relativesize</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -362,10 +362,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the number of slashes present.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.SLASH">data.SLASH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SLASH">data.SLASH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.slashcount">att.slashcount</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slashcount">att.slashcount</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -373,10 +373,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -384,10 +384,10 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the breve-semibreve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TEMPUS">data.TEMPUS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPUS">data.TEMPUS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -395,13 +395,13 @@ title: "mensur"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
                   be the ID of a 
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/when">when</a> element elsewhere in the document.
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/when">when</a> element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.alignment">att.alignment</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.alignment">att.alignment</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -411,10 +411,10 @@ title: "mensur"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -428,7 +428,7 @@ title: "mensur"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -439,8 +439,8 @@ title: "mensur"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.eventLike.mensural">model.eventLike.mensural</a> 
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.staffDefPart.mensural">model.staffDefPart.mensural</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike.mensural">model.eventLike.mensural</a> 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffDefPart.mensural">model.staffDefPart.mensural</a>
             </div>
          </td>
       </tr>
@@ -454,64 +454,64 @@ title: "mensur"
                   <div class="specChild">
                      <span class="specChildModule">MEI.cmn</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/beam">beam</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/tuplet">tuplet</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/lem">lem</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/rdg">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.edittrans</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/abbr">abbr</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/add">add</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/corr">corr</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/damage">damage</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/del">del</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/expan">expan</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/orig">orig</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/reg">reg</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/restore">restore</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/sic">sic</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/supplied">supplied</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/unclear">unclear</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.mensural</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/ligature">ligature</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/mensur">mensur</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/proport">proport</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/proport">proport</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.neumes</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/ineume">ineume</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/syllable">syllable</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/uneume">uneume</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/barLine">barLine</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/clef">clef</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/clefGrp">clefGrp</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/custos">custos</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/layer">layer</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/pad">pad</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/space">space</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/clefGrp">clefGrp</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pad">pad</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                      </span>
                   </div>
                </div>
@@ -630,7 +630,7 @@ title: "mensur"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/mensur">mensur</a> element is provided for the encoding of mensural
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a> element is provided for the encoding of mensural
                notation. The 
                <span class="att">slash</span> attribute indicates the number lines added to the
                mensuration sign. For example, one slash is added for what we now call 'alla breve'.

@@ -27,7 +27,7 @@ title: "att.uneume.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/uneume">uneume</a> (direct member of att.uneume.anl)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a> (direct member of att.uneume.anl)
                </div>
             </div>
          </td>
@@ -42,10 +42,10 @@ title: "att.uneume.anl"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +55,10 @@ title: "att.uneume.anl"
                   fashion.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,10 +71,10 @@ title: "att.uneume.anl"
                   alteration. The amount of chromatic alternation is not indicated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.SCALEDEGREE">data.SCALEDEGREE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SCALEDEGREE">data.SCALEDEGREE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.harmonicfunction">att.harmonicfunction</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.harmonicfunction">att.harmonicfunction</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,10 +85,10 @@ title: "att.uneume.anl"
                   and size, or a precise numeric value in half steps.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.INTERVAL.MELODIC">data.INTERVAL.MELODIC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INTERVAL.MELODIC">data.INTERVAL.MELODIC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.intervalmelodic">att.intervalmelodic</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.intervalmelodic">att.intervalmelodic</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,10 +96,10 @@ title: "att.uneume.anl"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes melodic function using Humdrum **embel syntax.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MELODICFUNCTION">data.MELODICFUNCTION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MELODICFUNCTION">data.MELODICFUNCTION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.melodicfunction">att.melodicfunction</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.melodicfunction">att.melodicfunction</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -107,10 +107,10 @@ title: "att.uneume.anl"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -118,10 +118,10 @@ title: "att.uneume.anl"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -135,7 +135,7 @@ title: "att.uneume.anl"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.solfa">att.solfa</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.solfa">att.solfa</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -145,10 +145,10 @@ title: "att.uneume.anl"
                   copy of the current element.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -156,10 +156,10 @@ title: "att.uneume.anl"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -167,13 +167,13 @@ title: "att.uneume.anl"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
                   be the ID of a 
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/when">when</a> element elsewhere in the document.
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/when">when</a> element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.alignment">att.alignment</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.alignment">att.alignment</a>
                </span>
             </div>
          </td>

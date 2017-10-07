@@ -20,7 +20,9 @@ rendition information.
 
 
 {% include specDesc.html version=page.version key="rend" atts="" %}
-{% include specDesc.html version=page.version key="rend" atts="rend altrend fontname fontsize fontstyle fontweight" %}
+{% include specDesc.html version=page.version key="rend" atts="rend/rend rend/altrend att.typography/fontname.txt att.typography/fontsize.txt att.typography/fontstyle.txt
+att.typography/fontweight.txt" %}
+
 
 
 

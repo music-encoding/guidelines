@@ -27,15 +27,15 @@ title: "att.tremmeasured"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/bTrem">bTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bTrem">bTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.bTrem.ges">att.bTrem.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.bTrem.ges">att.bTrem.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/fTrem">fTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fTrem">fTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.fTrem.ges">att.fTrem.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fTrem.ges">att.fTrem.ges</a>)
                   </span>
                </div>
             </div>
@@ -51,10 +51,10 @@ title: "att.tremmeasured"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">The performed duration of an individual note in a measured tremolo.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION.cmn">data.DURATION.cmn</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.cmn">data.DURATION.cmn</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.tremmeasured">att.tremmeasured</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tremmeasured">att.tremmeasured</a>
                </span>
             </div>
          </td>

@@ -1,0 +1,6 @@
+Captures the colors of the staff lines. The value is structured; that is, it should
+have the same number of space-separated RGB values as the number of lines indicated
+by
+the lines attribute. A line can be made invisible by assigning it the same RGB value
+as
+the background, usually white.

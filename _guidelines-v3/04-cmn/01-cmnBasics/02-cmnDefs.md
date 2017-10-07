@@ -22,9 +22,13 @@ score, e.g., key and meter. The most important attributes for this purpose are:
 
 
 
-{% include specDesc.html version=page.version key="att.meterSigDefault.log" atts="meter.count meter.unit" %}
-{% include specDesc.html version=page.version key="att.meterSigDefault.vis" atts="meter.sym" %}
-{% include specDesc.html version=page.version key="att.keySigDefault.log" atts="key.pname key.accid key.mode key.sig" %}
+{% include specDesc.html version=page.version key="att.meterSigDefault.log" atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %}
+
+{% include specDesc.html version=page.version key="att.meterSigDefault.vis" atts="att.meterSigDefault.vis/meter.sym" %}
+
+{% include specDesc.html version=page.version key="att.keySigDefault.log" atts="att.keySigDefault.log/key.pname att.keySigDefault.log/key.accid att.keySigDefault.log/key.mode
+att.keySigDefault.log/key.sig" %}
+
 
 
 
@@ -39,9 +43,15 @@ text and music:
 
 
 
-{% include specDesc.html version=page.version key="scoreDef" atts="page.width page.height page.leftmar page.topmar             page.rightmar page.botmar
-system.leftmar system.topmar system.rightmar             text.name text.fam text.size
-music.name music.size lyric.name lyric.fam             lyric.size" %}
+{% include specDesc.html version=page.version key="scoreDef" atts="att.pages/page.width.txt att.pages/page.height.txt att.pages/page.leftmar.txt att.pages/page.topmar.txt
+/.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt att.pages/page.rightmar.txt
+att.pages/page.botmar.txt att.systems/system.leftmar.txt att.systems/system.topmar.txt
+att.systems/system.rightmar.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt
+/.txt /.txt /.txt att.textstyle/text.name.txt att.textstyle/text.fam.txt att.textstyle/text.size.txt
+att.notationstyle/music.name.txt att.notationstyle/music.size.txt att.lyricstyle/lyric.name.txt
+att.lyricstyle/lyric.fam.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt
+/.txt /.txt /.txt att.lyricstyle/lyric.size.txt" %}
+
 
 
 
@@ -80,7 +90,8 @@ attributes are important for [staffDef](/{{ page.version }}/elements/staffDef.ht
 
 
 
-{% include specDesc.html version=page.version key="att.cleffing.log" atts="clef.line clef.shape clef.dis clef.dis.place" %}
+{% include specDesc.html version=page.version key="att.cleffing.log" atts="att.cleffing.log/clef.line att.cleffing.log/clef.shape att.cleffing.log/clef.dis att.cleffing.log/clef.dis.place" %}
+
 
 
 

@@ -1,0 +1,1 @@
+Points to elements that are synchronous with the current element.

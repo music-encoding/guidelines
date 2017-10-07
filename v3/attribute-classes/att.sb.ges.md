@@ -27,7 +27,7 @@ title: "att.sb.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/sb">sb</a> (direct member of att.sb.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sb">sb</a> (direct member of att.sb.ges)
                </div>
             </div>
          </td>

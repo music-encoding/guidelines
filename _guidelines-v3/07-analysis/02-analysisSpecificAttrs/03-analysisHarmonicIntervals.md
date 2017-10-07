@@ -8,7 +8,8 @@ version: "v3"
 
 
 
-{% include specDesc.html version=page.version key="att.intervalharmonic" atts="inth" %}
+{% include specDesc.html version=page.version key="att.intervalharmonic" atts="att.intervalharmonic/inth" %}
+
 
 
 

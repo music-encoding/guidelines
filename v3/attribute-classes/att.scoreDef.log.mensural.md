@@ -30,9 +30,9 @@ title: "att.scoreDef.log.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log">att.scoreDef.log</a>)
                   </span>
                </div>
             </div>
@@ -48,10 +48,10 @@ title: "att.scoreDef.log.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines if a dot is to be added to the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,10 +59,10 @@ title: "att.scoreDef.log.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">The base symbol in the mensuration sign/time signature of mensural notation.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,7 +75,7 @@ title: "att.scoreDef.log.mensural"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,10 +83,10 @@ title: "att.scoreDef.log.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the maxima-long relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +94,10 @@ title: "att.scoreDef.log.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the long-breve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMINOR">data.MODUSMINOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMINOR">data.MODUSMINOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -105,10 +105,10 @@ title: "att.scoreDef.log.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the semibreve-minim relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PROLATIO">data.PROLATIO</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PROLATIO">data.PROLATIO</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -121,7 +121,7 @@ title: "att.scoreDef.log.mensural"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -134,7 +134,7 @@ title: "att.scoreDef.log.mensural"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.log">att.mensural.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -142,10 +142,10 @@ title: "att.scoreDef.log.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the breve-semibreve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TEMPUS">data.TEMPUS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPUS">data.TEMPUS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
          </td>

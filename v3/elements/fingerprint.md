@@ -39,7 +39,7 @@ title: "fingerprint"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -49,10 +49,10 @@ title: "fingerprint"
                   taken.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.authorized">att.authorized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,7 +65,7 @@ title: "fingerprint"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.authorized">att.authorized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -76,7 +76,7 @@ title: "fingerprint"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,10 +84,10 @@ title: "fingerprint"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -97,10 +97,10 @@ title: "fingerprint"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -114,7 +114,7 @@ title: "fingerprint"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -125,7 +125,7 @@ title: "fingerprint"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.physDescPart">model.physDescPart</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.physDescPart">model.physDescPart</a>
             </div>
          </td>
       </tr>
@@ -139,33 +139,33 @@ title: "fingerprint"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/captureMode">captureMode</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/carrierForm">carrierForm</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/condition">condition</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/dimensions">dimensions</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/exhibHist">exhibHist</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/fileChar">fileChar</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/fingerprint">fingerprint</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/handList">handList</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/inscription">inscription</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/perfDuration">perfDuration</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/physDesc">physDesc</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/physMedium">physMedium</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/plateNum">plateNum</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/playingSpeed">playingSpeed</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/scoreFormat">scoreFormat</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/soundChan">soundChan</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/specRepro">specRepro</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/trackConfig">trackConfig</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/treatHist">treatHist</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/treatSched">treatSched</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/watermark">watermark</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/captureMode">captureMode</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/carrierForm">carrierForm</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/condition">condition</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/dimensions">dimensions</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/exhibHist">exhibHist</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/fileChar">fileChar</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/fingerprint">fingerprint</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/handList">handList</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/inscription">inscription</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/perfDuration">perfDuration</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/physDesc">physDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/physMedium">physMedium</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/plateNum">plateNum</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/playingSpeed">playingSpeed</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreFormat">scoreFormat</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/soundChan">soundChan</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/specRepro">specRepro</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/trackConfig">trackConfig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/treatHist">treatHist</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/treatSched">treatSched</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/watermark">watermark</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/extent">extent</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a>
                      </span>
                   </div>
                </div>

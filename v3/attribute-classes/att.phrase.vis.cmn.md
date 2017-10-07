@@ -27,9 +27,9 @@ title: "att.phrase.vis.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/phrase">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.phrase.vis">att.phrase.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.vis">att.phrase.vis</a>)
                   </span>
                </div>
             </div>
@@ -51,7 +51,7 @@ title: "att.phrase.vis.cmn"
                <span style="font-weight: 500;">decimal</span> sub-values.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.curvature">att.curvature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.curvature">att.curvature</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -68,7 +68,7 @@ title: "att.phrase.vis.cmn"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.curvature">att.curvature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.curvature">att.curvature</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,7 +84,7 @@ title: "att.phrase.vis.cmn"
                <span style="font-weight: 500;">mixed</span>" 
                <i>(A "meandering" curve, both above and below the items it pertains to.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.curvature">att.curvature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.curvature">att.curvature</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,10 +92,10 @@ title: "att.phrase.vis.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the line style of a curve.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.curverend">att.curverend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.curverend">att.curverend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,10 +103,10 @@ title: "att.phrase.vis.cmn"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Width of a curved line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.curverend">att.curverend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.curverend">att.curverend</a>
                </span>
             </div>
          </td>

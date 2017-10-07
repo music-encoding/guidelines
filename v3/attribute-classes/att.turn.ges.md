@@ -27,7 +27,7 @@ title: "att.turn.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/turn">turn</a> (direct member of att.turn.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/turn">turn</a> (direct member of att.turn.ges)
                </div>
             </div>
          </td>

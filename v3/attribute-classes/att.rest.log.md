@@ -27,7 +27,7 @@ title: "att.rest.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a> (direct member of att.rest.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a> (direct member of att.rest.log)
                </div>
             </div>
          </td>
@@ -42,10 +42,10 @@ title: "att.rest.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates that this event is "under a beam".</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BEAM">data.BEAM</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAM">data.BEAM</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.beamed">att.beamed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamed">att.beamed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -53,10 +53,10 @@ title: "att.rest.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the number of augmentation dots required by a dotted duration.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.AUGMENTDOT">data.AUGMENTDOT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.AUGMENTDOT">data.AUGMENTDOT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.augmentdots">att.augmentdots</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.augmentdots">att.augmentdots</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -66,10 +66,10 @@ title: "att.rest.log"
                   the data.DURATION datatype.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION">data.DURATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION">data.DURATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.musical">att.duration.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.musical">att.duration.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,10 +80,10 @@ title: "att.rest.log"
                   instead.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.fermatapresent">att.fermatapresent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.fermatapresent">att.fermatapresent</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,7 +94,7 @@ title: "att.rest.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.layerident">att.layerident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.layerident">att.layerident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -107,7 +107,7 @@ title: "att.rest.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.staffident">att.staffident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffident">att.staffident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -117,10 +117,10 @@ title: "att.rest.log"
                   beats[.fractional_beat_part].
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BEAT">data.BEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.timestamp.musical">att.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -131,10 +131,10 @@ title: "att.rest.log"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -142,10 +142,10 @@ title: "att.rest.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to record the onset time in terms of ISO time.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.ISOTIME">data.ISOTIME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISOTIME">data.ISOTIME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -156,10 +156,10 @@ title: "att.rest.log"
                   employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TUPLET">data.TUPLET</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TUPLET">data.TUPLET</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.tupletpresent">att.tupletpresent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tupletpresent">att.tupletpresent</a>
                </span>
             </div>
          </td>

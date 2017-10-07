@@ -13,7 +13,8 @@ an MEI document:
 
 
 {% include specDesc.html version=page.version key="mei" atts="" %}
-{% include specDesc.html version=page.version key="mei" atts="meiversion" %}
+{% include specDesc.html version=page.version key="mei" atts="att.meiversion/meiversion.txt" %}
+
 {% include specDesc.html version=page.version key="meiCorpus" atts="" %}
 {% include specDesc.html version=page.version key="meiHead" atts="" %}
 {% include specDesc.html version=page.version key="music" atts="" %}

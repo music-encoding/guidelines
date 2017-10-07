@@ -29,24 +29,24 @@ title: "att.pianopedals"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis.cmn">att.staffDef.vis.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis.cmn">att.staffDef.vis.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -76,7 +76,7 @@ title: "att.pianopedals"
                   with "Ped." only.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pianopedals">att.pianopedals</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pianopedals">att.pianopedals</a>
                </span>
             </div>
          </td>

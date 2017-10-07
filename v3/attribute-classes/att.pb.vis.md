@@ -27,7 +27,7 @@ title: "att.pb.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/pb">pb</a> (direct member of att.pb.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pb">pb</a> (direct member of att.pb.vis)
                </div>
             </div>
          </td>
@@ -48,7 +48,7 @@ title: "att.pb.vis"
                <span style="font-weight: 500;">verso</span>" ,  "
                <span style="font-weight: 500;">recto</span>" 
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pb.vis">att.pb.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pb.vis">att.pb.vis</a>
                </span>
             </div>
          </td>
