@@ -6,8 +6,9 @@
   {% assign levels = doc.relative_path | split: '/' %}
   {% assign h = levels.size %}
   {% assign levels = levels | shift %}
+  {% assign id = doc.sectionid %}
 
-  <h{{ h }}>
+  <h{{ h }} id="{{ id }}">
       {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %}
       {{ doc.title }}
   </h{{ h }}>
