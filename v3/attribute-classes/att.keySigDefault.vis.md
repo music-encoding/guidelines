@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.keySigDefault.vis"
 
 ---
@@ -27,15 +28,15 @@ title: "att.keySigDefault.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -51,10 +52,10 @@ title: "att.keySigDefault.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates whether the key signature should be displayed.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.vis">att.keySigDefault.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.vis">att.keySigDefault.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,10 +65,10 @@ title: "att.keySigDefault.vis"
                   change.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.vis">att.keySigDefault.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.vis">att.keySigDefault.vis</a>
                </span>
             </div>
          </td>

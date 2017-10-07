@@ -1,7 +1,0 @@
----
-desc: "author"
-type: "elementSpec"
----
-
-The name of the creator of the intellectual content of a non-musical, literary
-work.

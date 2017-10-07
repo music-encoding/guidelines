@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.NOTEHEADMODIFIER"
 
 ---
@@ -26,7 +27,7 @@ title: "data.NOTEHEADMODIFIER"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.noteheads">att.noteheads</a> (@head.mod)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.noteheads">att.noteheads</a> (@head.mod)
             </div>
          </td>
       </tr>

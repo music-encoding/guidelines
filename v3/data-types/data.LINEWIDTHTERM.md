@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.LINEWIDTHTERM"
 
 ---
@@ -25,7 +26,7 @@ title: "data.LINEWIDTHTERM"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>
+               <a class="link_odd" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>
             </div>
          </td>
       </tr>

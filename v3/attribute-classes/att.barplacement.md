@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.barplacement"
 
 ---
@@ -26,21 +27,21 @@ title: "att.barplacement"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.barLine.vis">att.barLine.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.barLine.vis">att.barLine.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.measure.vis">att.measure.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.measure.vis">att.measure.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -56,10 +57,10 @@ title: "att.barplacement"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the location of a bar line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARPLACE">data.BARPLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BARPLACE">data.BARPLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,10 +76,10 @@ title: "att.barplacement"
                   the top line of a 5-line staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
          </td>

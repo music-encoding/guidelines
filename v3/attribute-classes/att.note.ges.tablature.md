@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.note.ges.tablature"
 
 ---
@@ -26,9 +27,9 @@ title: "att.note.ges.tablature"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.note.ges.tablature"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the fret at which a string should be stopped.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FRETNUMBER">data.FRETNUMBER</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FRETNUMBER">data.FRETNUMBER</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges.tablature">att.note.ges.tablature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges.tablature">att.note.ges.tablature</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +56,10 @@ title: "att.note.ges.tablature"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records which string is to be played.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STRINGNUMBER">data.STRINGNUMBER</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STRINGNUMBER">data.STRINGNUMBER</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges.tablature">att.note.ges.tablature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges.tablature">att.note.ges.tablature</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.timestamp.musical"
 
 ---
@@ -27,340 +28,340 @@ title: "att.timestamp.musical"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/annot">annot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.annot.log">att.annot.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.annot.log">att.annot.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/barLine">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.barLine.ges">att.barLine.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.barLine.ges">att.barLine.ges</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.controlevent">att.controlevent</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.controlevent">att.controlevent</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/accid">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.log">att.accid.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.accid.log">att.accid.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/arpeg">arpeg</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/arpeg">arpeg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.arpeg.log">att.arpeg.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.arpeg.log">att.arpeg.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/artic">artic</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/artic">artic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.artic.log">att.artic.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.artic.log">att.artic.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beamSpan">beamSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/beamSpan">beamSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beamSpan.log">att.beamSpan.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.beamSpan.log">att.beamSpan.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bend">bend</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/bend">bend</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bend.log">att.bend.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.bend.log">att.bend.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/breath">breath</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/breath">breath</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.breath.log">att.breath.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.breath.log">att.breath.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/cpMark">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.log">att.cpMark.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.cpMark.log">att.cpMark.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dir">dir</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/dir">dir</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dir.log">att.dir.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dir.log">att.dir.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dot">dot</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/dot">dot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dot.log">att.dot.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dot.log">att.dot.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dynam">dynam</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/dynam">dynam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dynam.log">att.dynam.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dynam.log">att.dynam.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/f">f</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/f">f</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.f.log">att.f.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.f.log">att.f.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fermata">fermata</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/fermata">fermata</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fermata.log">att.fermata.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.fermata.log">att.fermata.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fing">fing</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/fing">fing</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fing.log">att.fing.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.fing.log">att.fing.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fingGrp">fingGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/fingGrp">fingGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fingGrp.log">att.fingGrp.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.fingGrp.log">att.fingGrp.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/gliss">gliss</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/gliss">gliss</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.gliss.log">att.gliss.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.gliss.log">att.gliss.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/hairpin">hairpin</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/hairpin">hairpin</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.hairpin.log">att.hairpin.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.hairpin.log">att.hairpin.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/harm">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harm.log">att.harm.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.harm.log">att.harm.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harpPedal">harpPedal</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/harpPedal">harpPedal</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harpPedal.log">att.harpPedal.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.harpPedal.log">att.harpPedal.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/line">line</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/line">line</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.line.log">att.line.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.line.log">att.line.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mordent">mordent</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mordent">mordent</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mordent.log">att.mordent.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mordent.log">att.mordent.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/octave">octave</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/octave">octave</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.octave.log">att.octave.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.octave.log">att.octave.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ornam">ornam</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/ornam">ornam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.ornam.log">att.ornam.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.ornam.log">att.ornam.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pedal">pedal</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/pedal">pedal</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.pedal.log">att.pedal.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.pedal.log">att.pedal.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/phrase">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.phrase.log">att.phrase.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.phrase.log">att.phrase.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/slur">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.slur.log">att.slur.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.slur.log">att.slur.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tempo.log">att.tempo.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tempo.log">att.tempo.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tie">tie</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tie">tie</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tie.log">att.tie.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tie.log">att.tie.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/trill">trill</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/trill">trill</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trill.log">att.trill.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.trill.log">att.trill.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tupletSpan">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tupletSpan.log">att.tupletSpan.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tupletSpan.log">att.tupletSpan.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/turn">turn</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/turn">turn</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.turn.log">att.turn.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.turn.log">att.turn.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/clefGrp">clefGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/clef">clef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/clefGrp">clefGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.event">att.event</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.event">att.event</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/beam">beam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beam.log">att.beam.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.beam.log">att.beam.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beatRpt">beatRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/beatRpt">beatRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beatRpt.log">att.beatRpt.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.beatRpt.log">att.beatRpt.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/bTrem">bTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bTrem.log">att.bTrem.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.bTrem.log">att.bTrem.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.chord.log">att.chord.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/fTrem">fTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fTrem.log">att.fTrem.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.fTrem.log">att.fTrem.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/halfmRpt">halfmRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/halfmRpt">halfmRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.halfmRpt.log">att.halfmRpt.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.halfmRpt.log">att.halfmRpt.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mRest">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.log">att.mRest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mRest.log">att.mRest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRpt">mRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mRpt">mRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRpt.log">att.mRpt.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mRpt.log">att.mRpt.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRpt2">mRpt2</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mRpt2">mRpt2</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRpt2.log">att.mRpt2.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mRpt2.log">att.mRpt2.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mSpace">mSpace</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mSpace">mSpace</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mSpace.log">att.mSpace.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mSpace.log">att.mSpace.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/multiRest">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRest.log">att.multiRest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.multiRest.log">att.multiRest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRpt">multiRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/multiRpt">multiRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRpt.log">att.multiRpt.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.multiRpt.log">att.multiRpt.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.log">att.note.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pad">pad</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/pad">pad</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.pad.log">att.pad.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.pad.log">att.pad.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.log">att.rest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.rest.log">att.rest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/space">space</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/space">space</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.space.log">att.space.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.space.log">att.space.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tuplet">tuplet</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tuplet.log">att.tuplet.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tuplet.log">att.tuplet.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/uneume">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.uneume.log">att.uneume.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.uneume.log">att.uneume.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cc">cc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/chan">chan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/chanPr">chanPr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/cue">cue</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/hex">hex</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/marker">marker</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/metaText">metaText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/noteOff">noteOff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/noteOn">noteOn</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/port">port</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/prog">prog</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/seqNum">seqNum</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/trkName">trkName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/vel">vel</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/cc">cc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chan">chan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chanPr">chanPr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/cue">cue</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/hex">hex</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/marker">marker</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/metaText">metaText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/noteOff">noteOff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/noteOn">noteOn</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/port">port</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/prog">prog</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/seqNum">seqNum</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/trkName">trkName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/vel">vel</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.midi.event">att.midi.event</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.midi.event">att.midi.event</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/reh">reh</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/reh">reh</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.reh.log">att.reh.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.reh.log">att.reh.log</a>)
                   </span>
                </div>
             </div>
@@ -378,10 +379,10 @@ title: "att.timestamp.musical"
                   beats[.fractional_beat_part].
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BEAT">data.BEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BEAT">data.BEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.musical">att.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ v3}}/att.timestamp.musical">att.timestamp.musical</a>
                </span>
             </div>
          </td>

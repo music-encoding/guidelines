@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.HORIZONTALALIGNMENT"
 
 ---
@@ -25,11 +26,11 @@ title: "data.HORIZONTALALIGNMENT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.horizontalalign">att.horizontalalign</a> (@halign), 
-               <a class="link_odd_classSpec" href="/v3/pgFoot">pgFoot</a>/@halign, 
-               <a class="link_odd_classSpec" href="/v3/pgFoot2">pgFoot2</a>/@halign, 
-               <a class="link_odd_classSpec" href="/v3/pgHead">pgHead</a>/@halign, 
-               <a class="link_odd_classSpec" href="/v3/pgHead2">pgHead2</a>/@halign
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.horizontalalign">att.horizontalalign</a> (@halign), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/pgFoot">pgFoot</a>/@halign, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/pgFoot2">pgFoot2</a>/@halign, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/pgHead">pgHead</a>/@halign, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/pgHead2">pgHead2</a>/@halign
             </div>
          </td>
       </tr>

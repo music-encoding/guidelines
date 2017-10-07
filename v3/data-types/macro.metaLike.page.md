@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "macro.metaLike.page"
 
 ---
@@ -25,7 +26,7 @@ title: "macro.metaLike.page"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/pb">pb</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/pb">pb</a>
             </div>
          </td>
       </tr>

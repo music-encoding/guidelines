@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beamSpan.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.beamSpan.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beamSpan">beamSpan</a> (direct member of att.beamSpan.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beamSpan">beamSpan</a> (direct member of att.beamSpan.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.beamSpan.vis"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,7 +71,7 @@ title: "att.beamSpan.vis"
                   the beam.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamrend">att.beamrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamrend">att.beamrend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,7 +82,7 @@ title: "att.beamSpan.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamrend">att.beamrend</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamrend">att.beamrend</a>
                </span>
             </div>
          </td>

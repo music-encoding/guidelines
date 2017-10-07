@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.accid.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.accid.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a> (direct member of att.accid.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accid">accid</a> (direct member of att.accid.ges)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.accid.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the performed pitch inflection.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental.performed">att.accidental.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.accidental.performed">att.accidental.performed</a>
                </span>
             </div>
          </td>

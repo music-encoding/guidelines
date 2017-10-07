@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "eventList"
 
 ---
@@ -35,7 +36,7 @@ title: "eventList"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +46,10 @@ title: "eventList"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,7 +60,7 @@ title: "eventList"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "eventList"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,7 +84,7 @@ title: "eventList"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,7 +97,7 @@ title: "eventList"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -106,10 +107,10 @@ title: "eventList"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -123,7 +124,7 @@ title: "eventList"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -134,7 +135,7 @@ title: "eventList"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.listLike">model.listLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.listLike">model.listLike</a>
             </div>
          </td>
       </tr>
@@ -148,42 +149,42 @@ title: "eventList"
                   <div class="specChild">
                      <span class="specChildModule">MEI.figtable</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/figDesc">figDesc</a> 
-                        <a class="link_odd_elementSpec" href="/v3/td">td</a> 
-                        <a class="link_odd_elementSpec" href="/v3/th">th</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/figDesc">figDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/td">td</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/th">th</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/history">history</a> 
-                        <a class="link_odd_elementSpec" href="/v3/provenance">provenance</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/history">history</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/provenance">provenance</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/annot">annot</a> 
-                        <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a> 
-                        <a class="link_odd_elementSpec" href="/v3/castList">castList</a> 
-                        <a class="link_odd_elementSpec" href="/v3/div">div</a> 
-                        <a class="link_odd_elementSpec" href="/v3/event">event</a> 
-                        <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a> 
-                        <a class="link_odd_elementSpec" href="/v3/p">p</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pgDesc">pgDesc</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pgFoot">pgFoot</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pgFoot2">pgFoot2</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pgHead">pgHead</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pgHead2">pgHead2</a> 
-                        <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/annot">annot</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/castList">castList</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/p">p</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pgDesc">pgDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pgFoot">pgFoot</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pgFoot2">pgFoot2</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pgHead">pgHead</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pgHead2">pgHead2</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.text</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/li">li</a> 
-                        <a class="link_odd_elementSpec" href="/v3/list">list</a> 
-                        <a class="link_odd_elementSpec" href="/v3/quote">quote</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/li">li</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/list">list</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/quote">quote</a>
                      </span>
                   </div>
                </div>
@@ -199,21 +200,21 @@ title: "eventList"
                <div class="specChild">
                   <span class="specChildModule">MEI.namesdates</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/persName">persName</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/address">address</a> 
-                     <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a> 
-                     <a class="link_odd_elementSpec" href="/v3/date">date</a> 
-                     <a class="link_odd_elementSpec" href="/v3/event">event</a> 
-                     <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a> 
-                     <a class="link_odd_elementSpec" href="/v3/head">head</a> 
-                     <a class="link_odd_elementSpec" href="/v3/name">name</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/address">address</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/head">head</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a>
                   </span>
                </div>
             </div>
@@ -426,18 +427,18 @@ title: "eventList"
          </td>
          <td class="wovenodd-col2">
             <p>An 
-               <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a> contains 
-               <a class="link_odd_elementSpec" href="/v3/event">event</a> elements that
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a> contains 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a> elements that
                capture a brief description of the associated event, including dates and locations
                where
                the event took place. An 
-               <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a> describes events associated with
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a> describes events associated with
                a work when it appears in the 
-               <a class="link_odd_elementSpec" href="/v3/workDesc">workDesc</a> element or events associated
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/workDesc">workDesc</a> element or events associated
                with the custodial history of a given copy of a source for the encoding when it appears
                within the 
-               <a class="link_odd_elementSpec" href="/v3/source">source</a> or 
-               <a class="link_odd_elementSpec" href="/v3/relatedItem">relatedItem</a> elements. The
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/source">source</a> or 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/relatedItem">relatedItem</a> elements. The
                
                <span class="att">type</span> attribute may be used to distinguish between event lists with different
                functions, such as a list of events in the compositional process and a list of performance

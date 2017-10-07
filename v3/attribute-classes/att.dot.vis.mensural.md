@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.dot.vis.mensural"
 
 ---
@@ -26,9 +27,9 @@ title: "att.dot.vis.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dot">dot</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dot">dot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dot.vis">att.dot.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dot.vis">att.dot.vis</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.dot.vis.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records staff location in terms of written octave.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +56,10 @@ title: "att.dot.vis.mensural"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures staff location in terms of written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.nameLike.geogName"
 
 ---
@@ -26,11 +27,11 @@ title: "model.nameLike.geogName"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventPart">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.nameLike.place">model.nameLike.place</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventPart">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.place">model.nameLike.place</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
                </div>
             </div>
          </td>
@@ -42,7 +43,7 @@ title: "model.nameLike.geogName"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a> (direct member of model.nameLike.geogName)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a> (direct member of model.nameLike.geogName)
                </div>
             </div>
          </td>

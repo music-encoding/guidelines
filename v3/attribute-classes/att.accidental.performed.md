@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.accidental.performed"
 
 ---
@@ -26,18 +27,18 @@ title: "att.accidental.performed"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> (direct member of att.accidental.performed)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a> (direct member of att.accidental.performed)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accid">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.ges">att.accid.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.accid.ges">att.accid.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -53,10 +54,10 @@ title: "att.accidental.performed"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the performed pitch inflection.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental.performed">att.accidental.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.accidental.performed">att.accidental.performed</a>
                </span>
             </div>
          </td>

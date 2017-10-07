@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.PLACE"
 
 ---
@@ -25,11 +26,11 @@ title: "data.PLACE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.cleffing.log">att.cleffing.log</a> (@clef.dis.place), 
-               <a class="link_odd_classSpec" href="/v3/att.fermatapresent">att.fermatapresent</a> (@fermata), 
-               <a class="link_odd_classSpec" href="/v3/att.numberplacement">att.numberplacement</a> (@num.place), 
-               <a class="link_odd_classSpec" href="/v3/att.octavedisplacement">att.octavedisplacement</a> (@dis.place), 
-               <a class="link_odd_classSpec" href="/v3/att.tuplet.vis">att.tuplet.vis</a> (@bracket.place)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a> (@clef.dis.place), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.fermatapresent">att.fermatapresent</a> (@fermata), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.numberplacement">att.numberplacement</a> (@num.place), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a> (@dis.place), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.tuplet.vis">att.tuplet.vis</a> (@bracket.place)
             </div>
          </td>
       </tr>

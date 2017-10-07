@@ -1,6 +1,7 @@
 ---
 sectionid: cmnOrnamentsMultiple
 title: "Ornaments in Combinations"
+version: "v3"
 ---
 
 
@@ -15,7 +16,7 @@ inverted
 mordent:
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_multi_orn.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_multi_orn.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 36. Example of multiple ornaments. From C.P.E. Bach's sonata W.62/1.</figcaption>
 </figure>
 When encoding the example above, both ornaments will be positioned above the same

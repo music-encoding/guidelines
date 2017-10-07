@@ -1,6 +1,7 @@
 ---
 sectionid: cmnNotesBasic
 title: "Basic Usage of Notes in CMN"
+version: "v3"
 ---
 
 
@@ -20,7 +21,7 @@ Because these attributes may not be required in all situations (such as **@dur**
 for the notes of a chord), processing software should anticipate retrieving the
 information that would have been provided by missing attributes from a preceding note
 or
-[chord](/v3/elements/chord.html){:.link_odd_elementSpec} parent in the same [layer](/v3/elements/layer.html){:.link_odd_elementSpec}. Only
+[chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} parent in the same [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}. Only
 information from **@pname**, **@oct** and **@dur** attributes can be
 gathered in this fashion. No other attributes can be treated this way.
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.verseLike"
 
 ---
@@ -26,15 +27,15 @@ title: "model.verseLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.syllablePart">model.syllablePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.rdgPart.critapp">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.syllablePart">model.syllablePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.rdgPart.critapp">model.rdgPart.critapp</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ineume">ineume</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lyrics">lyrics</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyrics">lyrics</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                </div>
             </div>
          </td>
@@ -46,7 +47,7 @@ title: "model.verseLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a> (direct member of model.verseLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/verse">verse</a> (direct member of model.verseLike)
                </div>
             </div>
          </td>

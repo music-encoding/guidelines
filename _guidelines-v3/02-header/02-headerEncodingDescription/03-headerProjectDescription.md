@@ -1,17 +1,18 @@
 ---
 sectionid: headerProjectDescription
 title: "Project Description"
+version: "v3"
 ---
 
 
 
 
 
-{% include specDesc.html key="projectDesc" atts="" %}
+{% include specDesc.html version=page.version key="projectDesc" atts="" %}
 
 
 
-The [projectDesc](/v3/elements/projectDesc.html){:.link_odd_elementSpec} element may be used to describe, in prose, the
+The [projectDesc](/{{ page.version }}/elements/projectDesc.html){:.link_odd_elementSpec} element may be used to describe, in prose, the
 purpose for which a digital resource was created, together with any other relevant
 information concerning the process by which it was assembled or collected. This is
 of

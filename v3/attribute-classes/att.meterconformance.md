@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterconformance"
 
 ---
@@ -27,15 +28,15 @@ title: "att.meterconformance"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layer.log">att.layer.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.layer.log">att.layer.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staff.log">att.staff.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staff.log">att.staff.log</a>)
                   </span>
                </div>
             </div>
@@ -61,7 +62,7 @@ title: "att.meterconformance"
                <span style="font-weight: 500;">o</span>" 
                <i>(Overfull; i.e., too many beats.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance">att.meterconformance</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterconformance">att.meterconformance</a>
                </span>
             </div>
          </td>

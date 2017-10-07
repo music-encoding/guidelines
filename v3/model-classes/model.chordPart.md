@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.chordPart"
 
 ---
@@ -26,7 +27,7 @@ title: "model.chordPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                </div>
             </div>
          </td>
@@ -38,8 +39,8 @@ title: "model.chordPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/artic">artic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a> (direct members of model.chordPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/artic">artic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a> (direct members of model.chordPart)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 sectionid: textFrontBack
 title: "Paratext"
+version: "v3"
 ---
 
 

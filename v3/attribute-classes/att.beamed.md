@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beamed"
 
 ---
@@ -27,46 +28,46 @@ title: "att.beamed"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log.cmn">att.chord.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.log.cmn">att.chord.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.log">att.chord.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.note.log.cmn">att.note.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.log.cmn">att.note.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.log">att.note.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.rest.log.cmn">att.rest.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.rest.log.cmn">att.rest.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.log">att.rest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.rest.log">att.rest.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.space.log.cmn">att.space.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.space.log.cmn">att.space.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/space">space</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.space.log">att.space.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.space.log">att.space.log</a>)
                   </span>
                </div>
             </div>
@@ -82,10 +83,10 @@ title: "att.beamed"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates that this event is "under a beam".</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.BEAM">data.BEAM</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAM">data.BEAM</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamed">att.beamed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamed">att.beamed</a>
                </span>
             </div>
          </td>

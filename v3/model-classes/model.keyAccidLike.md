@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.keyAccidLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.keyAccidLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.keyAccidLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keyAccid">keyAccid</a> (direct member of model.keyAccidLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a> (direct member of model.keyAccidLike)
                </div>
             </div>
          </td>

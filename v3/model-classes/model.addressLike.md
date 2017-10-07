@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.addressLike"
 
 ---
@@ -26,12 +27,12 @@ title: "model.addressLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.pubStmtPart">model.pubStmtPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.eventPart">model.eventPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.pubStmtPart">model.pubStmtPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventPart">model.eventPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
                </div>
             </div>
          </td>
@@ -43,7 +44,7 @@ title: "model.addressLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/address">address</a> (direct member of model.addressLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/address">address</a> (direct member of model.addressLike)
                </div>
             </div>
          </td>

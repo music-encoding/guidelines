@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.biblLike"
 
 ---
@@ -26,11 +27,11 @@ title: "model.biblLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relatedItem">relatedItem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/relatedItem">relatedItem</a>
                </div>
             </div>
          </td>
@@ -42,7 +43,7 @@ title: "model.biblLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bibl">bibl</a> (direct member of model.biblLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bibl">bibl</a> (direct member of model.biblLike)
                </div>
             </div>
          </td>

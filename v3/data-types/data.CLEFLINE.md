@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.CLEFLINE"
 
 ---
@@ -27,8 +28,8 @@ title: "data.CLEFLINE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.cleffing.log">att.cleffing.log</a> (@clef.line), 
-               <a class="link_odd_classSpec" href="/v3/att.lineloc">att.lineloc</a> (@line)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a> (@clef.line), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.lineloc">att.lineloc</a> (@line)
             </div>
          </td>
       </tr>

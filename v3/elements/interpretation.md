@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "interpretation"
 
 ---
@@ -36,7 +37,7 @@ title: "interpretation"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -44,10 +45,10 @@ title: "interpretation"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datapointing">att.datapointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.datapointing">att.datapointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,7 +59,7 @@ title: "interpretation"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -66,10 +67,10 @@ title: "interpretation"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,7 +85,7 @@ title: "interpretation"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +95,10 @@ title: "interpretation"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,7 +112,7 @@ title: "interpretation"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -127,7 +128,7 @@ title: "interpretation"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -138,7 +139,7 @@ title: "interpretation"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.editorialDeclPart">model.editorialDeclPart</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.editorialDeclPart">model.editorialDeclPart</a>
             </div>
          </td>
       </tr>
@@ -152,12 +153,12 @@ title: "interpretation"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/correction">correction</a> 
-                        <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a> 
-                        <a class="link_odd_elementSpec" href="/v3/interpretation">interpretation</a> 
-                        <a class="link_odd_elementSpec" href="/v3/normalization">normalization</a> 
-                        <a class="link_odd_elementSpec" href="/v3/segmentation">segmentation</a> 
-                        <a class="link_odd_elementSpec" href="/v3/stdVals">stdVals</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/correction">correction</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/editorialDecl">editorialDecl</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/interpretation">interpretation</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/normalization">normalization</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/segmentation">segmentation</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/stdVals">stdVals</a>
                      </span>
                   </div>
                </div>
@@ -173,7 +174,7 @@ title: "interpretation"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/p">p</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/p">p</a>
                   </span>
                </div>
             </div>

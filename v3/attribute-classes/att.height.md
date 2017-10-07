@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.height"
 
 ---
@@ -26,9 +27,9 @@ title: "att.height"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dimensions">att.dimensions</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dimensions">att.dimensions</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.height"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Measurement of the vertical dimension of an entity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.height">att.height</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.height">att.height</a>
                </span>
             </div>
          </td>

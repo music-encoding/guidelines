@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsUnits
 title: "Units"
+version: "v3"
 ---
 
 
@@ -10,7 +11,7 @@ of the
 output coordinate system. Units of the output coordinate system can be translated
 to
 physical real world distances by means of the **@vu.height** and **@page.scale**
-of a [scoreDef](/v3/elements/scoreDef.html){:.link_odd_elementSpec} element. Real world units are multiplied by the value of
+of a [scoreDef](/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} element. Real world units are multiplied by the value of
 **@page.scale** to get the corresponding value in output coordinate units.
 
 If an element is scaled using the **@scale** attribute, the actual size of the units

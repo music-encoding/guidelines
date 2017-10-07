@@ -1,9 +1,0 @@
----
-desc: "att.annot.log"
-type: "classSpec"
----
-
-Logical domain attributes for annot. Values for the type attribute can be taken from
-any
-convenient typology of annotation suitable to the work in hand; e.g. annotation, gloss,
-citation, digression, preliminary, temporary, etc.

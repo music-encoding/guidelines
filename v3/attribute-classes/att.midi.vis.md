@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.midi.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.midi.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/midi">midi</a> (direct member of att.midi.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/midi">midi</a> (direct member of att.midi.vis)
                </div>
             </div>
          </td>

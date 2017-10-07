@@ -1,7 +1,0 @@
----
-desc: "segmentation"
-type: "elementSpec"
----
-
-Describes the principles according to which the musical text has been segmented, for
-example into movements, sections, etc.

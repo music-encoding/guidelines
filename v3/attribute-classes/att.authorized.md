@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.authorized"
 
 ---
@@ -26,50 +27,50 @@ title: "att.authorized"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/audience">audience</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/captureMode">captureMode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/carrierForm">carrierForm</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/classCode">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/context">context</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fingerprint">fingerprint</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genre">genre</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/identifier">identifier</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/language">language</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfMedium">perfMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfRes">perfRes</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfResList">perfResList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/physMedium">physMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/resp">resp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/scoreFormat">scoreFormat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/soundChan">soundChan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/specRepro">specRepro</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/symbol">symbol</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/title">title</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/trackConfig">trackConfig</a> (direct members of att.authorized)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/audience">audience</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/captureMode">captureMode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/carrierForm">carrierForm</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classCode">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/context">context</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingerprint">fingerprint</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genre">genre</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/identifier">identifier</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/language">language</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfMedium">perfMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfRes">perfRes</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfResList">perfResList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physMedium">physMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/resp">resp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreFormat">scoreFormat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/soundChan">soundChan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/specRepro">specRepro</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/symbol">symbol</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/title">title</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trackConfig">trackConfig</a> (direct members of att.authorized)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/addName">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bloc">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/country">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/district">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/famName">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/foreName">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genName">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogFeat">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/nameLink">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/periodName">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/region">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/roleName">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/settlement">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/styleName">styleName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.name">att.name</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.name">att.name</a>)
                   </span>
                </div>
             </div>
@@ -87,10 +88,10 @@ title: "att.authorized"
                   taken.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.authorized">att.authorized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,7 +104,7 @@ title: "att.authorized"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.authorized">att.authorized</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.fTrem.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.fTrem.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a> (direct member of att.fTrem.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fTrem">fTrem</a> (direct member of att.fTrem.ges)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.fTrem.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">The performed duration of an individual note in a measured tremolo.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.cmn">data.DURATION.cmn</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.cmn">data.DURATION.cmn</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tremmeasured">att.tremmeasured</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tremmeasured">att.tremmeasured</a>
                </span>
             </div>
          </td>

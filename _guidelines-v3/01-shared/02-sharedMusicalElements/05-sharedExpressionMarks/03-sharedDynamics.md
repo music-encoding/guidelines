@@ -1,6 +1,7 @@
 ---
 sectionid: sharedDynamics
 title: "Dynamics"
+version: "v3"
 ---
 
 
@@ -14,7 +15,7 @@ specified through dynamic marks.
 
 
 
-{% include specDesc.html key="dynam" atts="" %}
+{% include specDesc.html version=page.version key="dynam" atts="" %}
 
 
 

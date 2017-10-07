@@ -1,16 +1,17 @@
 ---
 sectionid: headerWorkOtherChar
 title: "Other Identifying Characteristics"
+version: "v3"
 ---
 
 
 
 Additional information that aids the identification of the work may be encoded using
-[otherChar](/v3/elements/otherChar.html){:.link_odd_elementSpec}.
+[otherChar](/{{ page.version }}/elements/otherChar.html){:.link_odd_elementSpec}.
 
 
 
-{% include specDesc.html key="otherChar" atts="" %}
+{% include specDesc.html version=page.version key="otherChar" atts="" %}
 
 
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.rest.vis.mensural"
 
 ---
@@ -26,9 +27,9 @@ title: "att.rest.vis.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.vis">att.rest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.rest.vis">att.rest.vis</a>)
                   </span>
                </div>
             </div>
@@ -47,7 +48,7 @@ title: "att.rest.vis.mensural"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.rest.vis.mensural">att.rest.vis.mensural</a>
+                  <a class="link_odd" href="/{{ v3}}/att.rest.vis.mensural">att.rest.vis.mensural</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.meterSigLike"
 
 ---
@@ -26,11 +27,11 @@ title: "model.meterSigLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventLike">model.eventLike</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.staffDefPart">model.staffDefPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike">model.eventLike</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffDefPart">model.staffDefPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                </div>
             </div>
          </td>
@@ -42,8 +43,8 @@ title: "model.meterSigLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meterSig">meterSig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meterSigGrp">meterSigGrp</a> (direct members of model.meterSigLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSig">meterSig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSigGrp">meterSigGrp</a> (direct members of model.meterSigLike)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.PERCENT"
 
 ---
@@ -25,11 +26,11 @@ title: "data.PERCENT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.FONTSIZE">data.FONTSIZE</a>, 
-               <a class="link_odd_classSpec" href="/v3/att.channelized">att.channelized</a> (@midi.duty), 
-               <a class="link_odd_classSpec" href="/v3/att.curvature">att.curvature</a> (@bulge), 
-               <a class="link_odd_classSpec" href="/v3/att.graced">att.graced</a> (@grace.time), 
-               <a class="link_odd_classSpec" href="/v3/att.scalable">att.scalable</a> (@scale)
+               <a class="link_odd" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.channelized">att.channelized</a> (@midi.duty), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.curvature">att.curvature</a> (@bulge), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.graced">att.graced</a> (@grace.time), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.scalable">att.scalable</a> (@scale)
             </div>
          </td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staff.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.staff.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a> (direct member of att.staff.vis)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staff">staff</a> (direct member of att.staff.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.staff.vis"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ v3}}/att.visibility">att.visibility</a>
                </span>
             </div>
          </td>

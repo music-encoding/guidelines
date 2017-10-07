@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.sectionPart.neumes"
 
 ---
@@ -26,7 +27,7 @@ title: "model.sectionPart.neumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.sectionPart.mensuralAndNeumes">model.sectionPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.sectionPart.mensuralAndNeumes">model.sectionPart.mensuralAndNeumes</a>
                </div>
             </div>
          </td>

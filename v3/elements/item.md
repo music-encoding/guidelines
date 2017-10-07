@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "item"
 
 ---
@@ -35,7 +36,7 @@ title: "item"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -43,10 +44,10 @@ title: "item"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datapointing">att.datapointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.datapointing">att.datapointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,7 +71,7 @@ title: "item"
                   element(s) specified in plist or target attribute.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.targeteval">att.targeteval</a>
+                  <a class="link_odd" href="/{{ v3}}/att.targeteval">att.targeteval</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,7 +82,7 @@ title: "item"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -89,10 +90,10 @@ title: "item"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -102,10 +103,10 @@ title: "item"
                   participants in a relationship; that is, the entities pointed "to".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -119,7 +120,7 @@ title: "item"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -137,7 +138,7 @@ title: "item"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than allowed by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -147,10 +148,10 @@ title: "item"
                   attribute must be a URI.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -170,7 +171,7 @@ title: "item"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than permitted by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -180,10 +181,10 @@ title: "item"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -197,7 +198,7 @@ title: "item"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -208,7 +209,7 @@ title: "item"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.itemLike">model.itemLike</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.itemLike">model.itemLike</a>
             </div>
          </td>
       </tr>
@@ -222,9 +223,9 @@ title: "item"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/componentGrp">componentGrp</a> 
-                        <a class="link_odd_elementSpec" href="/v3/item">item</a> 
-                        <a class="link_odd_elementSpec" href="/v3/itemList">itemList</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/componentGrp">componentGrp</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/item">item</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/itemList">itemList</a>
                      </span>
                   </div>
                </div>
@@ -240,26 +241,26 @@ title: "item"
                <div class="specChild">
                   <span class="specChildModule">MEI.frbr</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/componentGrp">componentGrp</a> 
-                     <a class="link_odd_elementSpec" href="/v3/relationList">relationList</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/componentGrp">componentGrp</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/relationList">relationList</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/availability">availability</a> 
-                     <a class="link_odd_elementSpec" href="/v3/classification">classification</a> 
-                     <a class="link_odd_elementSpec" href="/v3/extMeta">extMeta</a> 
-                     <a class="link_odd_elementSpec" href="/v3/history">history</a> 
-                     <a class="link_odd_elementSpec" href="/v3/notesStmt">notesStmt</a> 
-                     <a class="link_odd_elementSpec" href="/v3/physDesc">physDesc</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/availability">availability</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/classification">classification</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/extMeta">extMeta</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/history">history</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/notesStmt">notesStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/physDesc">physDesc</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/identifier">identifier</a> 
-                     <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/identifier">identifier</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/physLoc">physLoc</a>
                   </span>
                </div>
             </div>

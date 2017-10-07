@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.STEMMODIFIER"
 
 ---
@@ -25,7 +26,7 @@ title: "data.STEMMODIFIER"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.stems">att.stems</a> (@stem.mod)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.stems">att.stems</a> (@stem.mod)
             </div>
          </td>
       </tr>

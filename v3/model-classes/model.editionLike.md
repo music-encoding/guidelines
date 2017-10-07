@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.editionLike"
 
 ---
@@ -26,10 +27,10 @@ title: "model.editionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.biblPart">model.biblPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.biblPart">model.biblPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/editionStmt">editionStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editionStmt">editionStmt</a>
                </div>
             </div>
          </td>
@@ -41,7 +42,7 @@ title: "model.editionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/edition">edition</a> (direct member of model.editionLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/edition">edition</a> (direct member of model.editionLike)
                </div>
             </div>
          </td>

@@ -1,11 +1,12 @@
 ---
 sectionid: headerEditorialPrinciples
 title: "Declaration of Editorial Principles"
+version: "v3"
 ---
 
 
 
-The [editorialDecl](/v3/elements/editorialDecl.html){:.link_odd_elementSpec} element is used to provide details of the editorial
+The [editorialDecl](/{{ page.version }}/elements/editorialDecl.html){:.link_odd_elementSpec} element is used to provide details of the editorial
 practices applied during the encoding of a musical text.
 
 It may contain a prose description only, or one or more of a set of specialized elements;
@@ -64,7 +65,7 @@ below.
             
             <p>Was the text corrected during or after data capture? If so, were corrections made
                silently or are they marked using the tags described in chapter 
-               <a class="link_ptr" title="Editorial Markup" href="/v3/editTrans">11 Editorial Markup</a>? What principles have been adopted with respect to omissions, truncations, dubious
+               <a class="link_ptr" title="Editorial Markup" href="/{{ page.version }}/editTrans">11 Editorial Markup</a>? What principles have been adopted with respect to omissions, truncations, dubious
                corrections, alternate readings, false starts, repetitions, etc.?
             </p>
          </td>
@@ -110,11 +111,11 @@ below.
                spellings, etc.? If so, were normalizations performed silently or are they marked
                using
                the tags described in chapter 
-               <a class="link_ptr" title="Editorial Markup" href="/v3/editTrans">11 Editorial Markup</a> ? What authority was used for
+               <a class="link_ptr" title="Editorial Markup" href="/{{ page.version }}/editTrans">11 Editorial Markup</a> ? What authority was used for
                the regularization? Also, what principles were used when normalizing numbers to provide
                the standard values for the 
                <span class="att">value</span> attribute described in section 
-               <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/v3/shared#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and what format is used for them?
+               <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="/{{ page.version }}/shared#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and what format is used for them?
             </p>
             
          </td>

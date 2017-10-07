@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layer.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.layer.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a> (direct member of att.layer.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a> (direct member of att.layer.log)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.layer.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a mechanism for linking the layer to a layerDef element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.layer.log">att.layer.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.layer.log">att.layer.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,7 +63,7 @@ title: "att.layer.log"
                <span style="font-weight: 500;">o</span>" 
                <i>(Overfull; i.e., too many beats.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance">att.meterconformance</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterconformance">att.meterconformance</a>
                </span>
             </div>
          </td>

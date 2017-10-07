@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.grpSym.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.grpSym.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/grpSym">grpSym</a> (direct member of att.grpSym.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/grpSym">grpSym</a> (direct member of att.grpSym.log)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.grpSym.log"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startendid">att.startendid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startendid">att.startendid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,7 +58,7 @@ title: "att.grpSym.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.grpSym.log">att.grpSym.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.grpSym.log">att.grpSym.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.grpSym.log"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startid">att.startid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startid">att.startid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,7 +93,7 @@ title: "att.grpSym.log"
                <span style="font-weight: 500;">none</span>" 
                <i>(Grouping symbol missing.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffgroupingsym">att.staffgroupingsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffgroupingsym">att.staffgroupingsym</a>
                </span>
             </div>
          </td>

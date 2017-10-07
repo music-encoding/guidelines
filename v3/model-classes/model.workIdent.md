@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.workIdent"
 
 ---
@@ -26,8 +27,8 @@ title: "model.workIdent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/expression">expression</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a>
                </div>
             </div>
          </td>
@@ -39,15 +40,15 @@ title: "model.workIdent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/key">key</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meter">meter</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a> (direct members of model.workIdent)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/key">key</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meter">meter</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a> (direct members of model.workIdent)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/incip">incip</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.incipLike">model.incipLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.incipLike">model.incipLike</a>)
                   </span>
                </div>
             </div>

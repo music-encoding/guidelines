@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.nameLike.place"
 
 ---
@@ -26,7 +27,7 @@ title: "model.nameLike.place"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.nameLike">model.nameLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike">model.nameLike</a>
                </div>
             </div>
          </td>
@@ -38,17 +39,17 @@ title: "model.nameLike.place"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.nameLike.geogName">model.nameLike.geogName</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.geogName">model.nameLike.geogName</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physLoc">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.repositoryLike">model.repositoryLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.repositoryLike">model.repositoryLike</a>)
                   </span>
                </div>
             </div>

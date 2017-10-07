@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.arpeg.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.arpeg.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/arpeg">arpeg</a> (direct member of att.arpeg.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/arpeg">arpeg</a> (direct member of att.arpeg.ges)
                </div>
             </div>
          </td>

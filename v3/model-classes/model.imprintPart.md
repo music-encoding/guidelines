@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.imprintPart"
 
 ---
@@ -26,8 +27,8 @@ title: "model.imprintPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bibl">bibl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/imprint">imprint</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bibl">bibl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/imprint">imprint</a>
                </div>
             </div>
          </td>
@@ -39,9 +40,9 @@ title: "model.imprintPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/distributor">distributor</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/publisher">publisher</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pubPlace">pubPlace</a> (direct members of model.imprintPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/distributor">distributor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/publisher">publisher</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pubPlace">pubPlace</a> (direct members of model.imprintPart)
                </div>
             </div>
          </td>

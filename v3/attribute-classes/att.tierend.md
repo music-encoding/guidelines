@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tierend"
 
 ---
@@ -27,24 +28,24 @@ title: "att.tierend"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis.cmn">att.staffDef.vis.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis.cmn">att.staffDef.vis.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -60,10 +61,10 @@ title: "att.tierend"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEFORM">data.LINEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEFORM">data.LINEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tierend">att.tierend</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tierend">att.tierend</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,10 +72,10 @@ title: "att.tierend"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc"></span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.LINEWIDTH">data.LINEWIDTH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tierend">att.tierend</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tierend">att.tierend</a>
                </span>
             </div>
          </td>

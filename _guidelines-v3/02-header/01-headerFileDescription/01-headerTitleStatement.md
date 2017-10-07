@@ -1,15 +1,16 @@
 ---
 sectionid: headerTitleStatement
 title: "Title Statement"
+version: "v3"
 ---
 
 
 
-The [titleStmt](/v3/elements/titleStmt.html){:.link_odd_elementSpec} element is the first component of the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element, and is mandatory:
+The [titleStmt](/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec} element is the first component of the [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element, and is mandatory:
 
 
 
-{% include specDesc.html key="titleStmt" atts="" %}
+{% include specDesc.html version=page.version key="titleStmt" atts="" %}
 
 
 
@@ -20,20 +21,20 @@ compiler, or other parties responsible for it:
 
 
 
-{% include specDesc.html key="title" atts="" %}
-{% include specDesc.html key="arranger" atts="" %}
-{% include specDesc.html key="author" atts="" %}
-{% include specDesc.html key="composer" atts="" %}
-{% include specDesc.html key="editor" atts="" %}
-{% include specDesc.html key="funder" atts="" %}
-{% include specDesc.html key="librettist" atts="" %}
-{% include specDesc.html key="lyricist" atts="" %}
-{% include specDesc.html key="sponsor" atts="" %}
-{% include specDesc.html key="respStmt" atts="" %}
+{% include specDesc.html version=page.version key="title" atts="" %}
+{% include specDesc.html version=page.version key="arranger" atts="" %}
+{% include specDesc.html version=page.version key="author" atts="" %}
+{% include specDesc.html version=page.version key="composer" atts="" %}
+{% include specDesc.html version=page.version key="editor" atts="" %}
+{% include specDesc.html version=page.version key="funder" atts="" %}
+{% include specDesc.html version=page.version key="librettist" atts="" %}
+{% include specDesc.html version=page.version key="lyricist" atts="" %}
+{% include specDesc.html version=page.version key="sponsor" atts="" %}
+{% include specDesc.html version=page.version key="respStmt" atts="" %}
 
 
 
-The [title](/v3/elements/title.html){:.link_odd_elementSpec} element contains the chief name of the electronic work. Its
+The [title](/{{ page.version }}/elements/title.html){:.link_odd_elementSpec} element contains the chief name of the electronic work. Its
 content takes the form considered appropriate by its creator. The element may be repeated,
 if the work has more than one title (perhaps in different languages). Where the electronic
 work is derived from an existing source text, it is strongly recommended that the
@@ -62,7 +63,7 @@ processing them according to their type; where such specialized processing is no
 necessary,
 there is no need for such analysis, and the entire title, including subtitles and
 any
-parallel titles, may be enclosed within a single [title](/v3/elements/title.html){:.link_odd_elementSpec} element, as in
+parallel titles, may be enclosed within a single [title](/{{ page.version }}/elements/title.html){:.link_odd_elementSpec} element, as in
 the following example:
 
 {% include plainExample.html example="./v3/examples/header/header-sample021.xml" valid="true" %}
@@ -103,12 +104,12 @@ elements. For example:
 
 {% include plainExample.html example="./v3/examples/header/header-sample022.xml" valid="true" %}
 
-Secondary intellectual responsibility in this case is encoded using [respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec}. The [respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec} element has two subcomponents: a [name](/v3/elements/name.html){:.link_odd_elementSpec} element identifying a responsible individual or organization, and a
-[resp](/v3/elements/resp.html){:.link_odd_elementSpec} element indicating the nature of the responsibility. All names
+Secondary intellectual responsibility in this case is encoded using [respStmt](/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec}. The [respStmt](/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element has two subcomponents: a [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element identifying a responsible individual or organization, and a
+[resp](/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} element indicating the nature of the responsibility. All names
 should be stated in the form in which the persons or bodies wish to be publicly cited.
 This
 will usually be the fullest form of the name, including first names. No specific
-recommendations are made at this time as to appropriate content for [resp](/v3/elements/resp.html){:.link_odd_elementSpec}. However, it should make clear the nature of the responsibility.
+recommendations are made at this time as to appropriate content for [resp](/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec}. However, it should make clear the nature of the responsibility.
 
 {% include plainExample.html example="./v3/examples/header/header-sample023.xml" valid="true" %}
 
@@ -116,32 +117,32 @@ This method of encoding facilitates exchange of bibliographic data with library 
 and bibliographic databases as well as applications whose handling of bibliographic
 data is
 restricted to traditional responsibility roles. Additional information regarding these
-responsibility-role elements can be found in chapter <a class="link_ptr" title="Bibliographic Citations and References" href="/v3/guidelines/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>.
+responsibility-role elements can be found in chapter <a class="link_ptr" title="Bibliographic Citations and References" href="/{{ page.version }}/guidelines/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>.
 
 When the MEI.namesdates module is enabled, two additional elements are also permitted
-within [respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec}:
+within [respStmt](/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec}:
 
 
 
-{% include specDesc.html key="corpName" atts="" %}
-{% include specDesc.html key="persName" atts="" %}
+{% include specDesc.html version=page.version key="corpName" atts="" %}
+{% include specDesc.html version=page.version key="persName" atts="" %}
 
 
 
 These elements allow for more precise identification of the entity associated with
 the name
-than is permitted by the simpler [name](/v3/elements/name.html){:.link_odd_elementSpec} element. The following example
+than is permitted by the simpler [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element. The following example
 shows how a precise date range can be associated with a personal or corporate name.
 
 {% include plainExample.html example="./v3/examples/header/header-sample024.xml" valid="true" %}
 
 For additional information about corporate and personal names, see chapter 
-<a class="link_ptr" title="Names and Dates" href="/v3/guidelines/namesDates.html">17 Names and Dates</a>.
+<a class="link_ptr" title="Names and Dates" href="/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a>.
 
-In addition to, or instead of the [resp](/v3/elements/resp.html){:.link_odd_elementSpec} element, the **@role**
-attribute on [name](/v3/elements/name.html){:.link_odd_elementSpec}, [persName](/v3/elements/persName.html){:.link_odd_elementSpec}, and [corpName](/v3/elements/corpName.html){:.link_odd_elementSpec} may be used to capture the nature of responsibility. While [resp](/v3/elements/resp.html){:.link_odd_elementSpec} accommodates capturing the wide variety of text that may occur in
+In addition to, or instead of the [resp](/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} element, the **@role**
+attribute on [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec}, [persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec}, and [corpName](/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec} may be used to capture the nature of responsibility. While [resp](/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} accommodates capturing the wide variety of text that may occur in
 responsibility statements, use of the **@role** attribute provides the possibility of
-recording a controlled value independently of the textual content of [resp](/v3/elements/resp.html){:.link_odd_elementSpec}.
+recording a controlled value independently of the textual content of [resp](/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec}.
 
 {% include plainExample.html example="./v3/examples/header/header-sample025.xml" valid="true" %}
 
@@ -156,7 +157,7 @@ statements may be used. For example:
 It is often desirable to mix primary and secondary intellectual responsibility information.
 Treating all intellectual roles the same way can allow literal transcription of existing
 responsibility statements and simplify programmatic processing. The following example
-demonstrates how a responsibility statement may be transcribed using interleaved [resp](/v3/elements/resp.html){:.link_odd_elementSpec} and [persName](/v3/elements/persName.html){:.link_odd_elementSpec} elements:
+demonstrates how a responsibility statement may be transcribed using interleaved [resp](/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} and [persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} elements:
 
 {% include plainExample.html example="./v3/examples/header/header-sample027.xml" valid="true" %}
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.headLike"
 
 ---
@@ -26,33 +27,33 @@ title: "model.headLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/appInfo">appInfo</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/castList">castList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/classification">classification</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/componentGrp">componentGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/div">div</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expressionList">expressionList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handList">handList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/history">history</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incip">incip</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/itemList">itemList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/langUsage">langUsage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lg">lg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/list">list</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/notesStmt">notesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfMedium">perfMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfResList">perfResList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relationList">relationList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/samplingDecl">samplingDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sourceDesc">sourceDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/termList">termList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/annot">annot</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/appInfo">appInfo</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/castList">castList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classification">classification</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/componentGrp">componentGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/contents">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expressionList">expressionList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/handList">handList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/history">history</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/itemList">itemList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/langUsage">langUsage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lg">lg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/list">list</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/notesStmt">notesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfMedium">perfMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfResList">perfResList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/projectDesc">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/relationList">relationList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/samplingDecl">samplingDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sourceDesc">sourceDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/termList">termList</a>
                </div>
             </div>
          </td>
@@ -64,7 +65,7 @@ title: "model.headLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/head">head</a> (direct member of model.headLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/head">head</a> (direct member of model.headLike)
                </div>
             </div>
          </td>

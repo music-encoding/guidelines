@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.grpSym.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.grpSym.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/grpSym">grpSym</a> (direct member of att.grpSym.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/grpSym">grpSym</a> (direct member of att.grpSym.ges)
                </div>
             </div>
          </td>

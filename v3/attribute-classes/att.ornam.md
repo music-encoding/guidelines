@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.ornam"
 
 ---
@@ -27,24 +28,24 @@ title: "att.ornam"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log.cmn">att.chord.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.log.cmn">att.chord.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.log">att.chord.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.note.log.cmn">att.note.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.log.cmn">att.note.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.log">att.note.log</a>)
                   </span>
                </div>
             </div>
@@ -63,10 +64,10 @@ title: "att.ornam"
                   trill, or turn) should be employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.ORNAM.cmn">data.ORNAM.cmn</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ORNAM.cmn">data.ORNAM.cmn</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.ornam">att.ornam</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.ornam">att.ornam</a>
                </span>
             </div>
          </td>

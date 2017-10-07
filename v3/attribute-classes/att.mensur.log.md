@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mensur.log"
 
 ---
@@ -26,8 +27,8 @@ title: "att.mensur.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a> (direct members of att.mensur.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a> (direct members of att.mensur.log)
                </div>
             </div>
          </td>
@@ -42,10 +43,10 @@ title: "att.mensur.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Specifies whether a dot is to be added to the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensur.log">att.mensur.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -53,10 +54,10 @@ title: "att.mensur.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the maxima-long relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMAIOR">data.MODUSMAIOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,10 +65,10 @@ title: "att.mensur.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the long-breve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMINOR">data.MODUSMINOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMINOR">data.MODUSMINOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,7 +81,7 @@ title: "att.mensur.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -93,7 +94,7 @@ title: "att.mensur.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -101,10 +102,10 @@ title: "att.mensur.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the semibreve-minim relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PROLATIO">data.PROLATIO</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PROLATIO">data.PROLATIO</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -112,10 +113,10 @@ title: "att.mensur.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">The base symbol in the mensuration sign/time signature of mensural notation.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensur.log">att.mensur.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -123,10 +124,10 @@ title: "att.mensur.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the number of slashes present.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SLASH">data.SLASH</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SLASH">data.SLASH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slashcount">att.slashcount</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slashcount">att.slashcount</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -134,10 +135,10 @@ title: "att.mensur.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the breve-semibreve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TEMPUS">data.TEMPUS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPUS">data.TEMPUS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
          </td>

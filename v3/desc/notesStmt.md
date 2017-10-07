@@ -1,8 +1,0 @@
----
-desc: "notesStmt"
-type: "elementSpec"
----
-
-(notes statement)– Collects any notes providing information about a text additional
-to
-that recorded in other parts of the bibliographic description.

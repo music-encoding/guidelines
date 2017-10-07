@@ -1,6 +1,7 @@
 ---
 sectionid: headerWorkCast
 title: "Cast Lists"
+version: "v3"
 ---
 
 
@@ -14,32 +15,32 @@ Attires’) or the name of an actor or actress (‘Old Lady Squeamish. Mrs Rutte
 
 
 
-{% include specDesc.html key="castList" atts="" %}
-{% include specDesc.html key="castItem" atts="" %}
-{% include specDesc.html key="castGrp" atts="" %}
+{% include specDesc.html version=page.version key="castList" atts="" %}
+{% include specDesc.html version=page.version key="castItem" atts="" %}
+{% include specDesc.html version=page.version key="castGrp" atts="" %}
 
 
 
 Cast lists often function as identifying metadata and for this reason are permitted
 within the description of a work.
 
-Because the format and internal structure of cast lists are unpredictable, a [castList](/v3/elements/castList.html){:.link_odd_elementSpec} may contain any combination of [castItem](/v3/elements/castItem.html){:.link_odd_elementSpec}
-and [castGrp](/v3/elements/castGrp.html){:.link_odd_elementSpec} elements.
+Because the format and internal structure of cast lists are unpredictable, a [castList](/{{ page.version }}/elements/castList.html){:.link_odd_elementSpec} may contain any combination of [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec}
+and [castGrp](/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec} elements.
 
-A [castItem](/v3/elements/castItem.html){:.link_odd_elementSpec} element may contain any mixture of text and the
+A [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec} element may contain any mixture of text and the
 following elements:
 
 
 
-{% include specDesc.html key="role" atts="" %}
-{% include specDesc.html key="roleDesc" atts="" %}
-{% include specDesc.html key="perfRes" atts="" %}
+{% include specDesc.html version=page.version key="role" atts="" %}
+{% include specDesc.html version=page.version key="roleDesc" atts="" %}
+{% include specDesc.html version=page.version key="perfRes" atts="" %}
 
 
 
-In the following example, [role](/v3/elements/role.html){:.link_odd_elementSpec} provides the name of the dramatic
-character and [roleDesc](/v3/elements/roleDesc.html){:.link_odd_elementSpec} contains a brief description of the role. The
-[perfRes](/v3/elements/perfRes.html){:.link_odd_elementSpec} element is used to describe the voice range of the
+In the following example, [role](/{{ page.version }}/elements/role.html){:.link_odd_elementSpec} provides the name of the dramatic
+character and [roleDesc](/{{ page.version }}/elements/roleDesc.html){:.link_odd_elementSpec} contains a brief description of the role. The
+[perfRes](/{{ page.version }}/elements/perfRes.html){:.link_odd_elementSpec} element is used to describe the voice range of the
 role.
 
 {% include plainExample.html example="./v3/examples/header/header-sample055.xml" valid="true" %}
@@ -49,11 +50,11 @@ be encoded as:
 
 {% include plainExample.html example="./v3/examples/header/header-sample056.xml" valid="true" %}
 
-The [castItem](/v3/elements/castItem.html){:.link_odd_elementSpec} element may also contain:
+The [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec} element may also contain:
 
 
 
-{% include specDesc.html key="actor" atts="" %}
+{% include specDesc.html version=page.version key="actor" atts="" %}
 
 
 
@@ -64,7 +65,7 @@ and is
 only performable by a single person or group, as for certain "performance art" works.
 
 It is common to find some roles presented in groups or sublists. Roles are also often
-grouped together by their function. To accommodate these situations, the [castGrp](/v3/elements/castGrp.html){:.link_odd_elementSpec} element is provided as a component of [castList](/v3/elements/castList.html){:.link_odd_elementSpec}. It
-may contain any combination of [castItem](/v3/elements/castItem.html){:.link_odd_elementSpec}, [castGrp](/v3/elements/castGrp.html){:.link_odd_elementSpec}, and [roleDesc](/v3/elements/roleDesc.html){:.link_odd_elementSpec} elements.
+grouped together by their function. To accommodate these situations, the [castGrp](/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec} element is provided as a component of [castList](/{{ page.version }}/elements/castList.html){:.link_odd_elementSpec}. It
+may contain any combination of [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec}, [castGrp](/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec}, and [roleDesc](/{{ page.version }}/elements/roleDesc.html){:.link_odd_elementSpec} elements.
 
 

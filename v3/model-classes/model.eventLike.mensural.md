@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.eventLike.mensural"
 
 ---
@@ -26,7 +27,7 @@ title: "model.eventLike.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventLike">model.eventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike">model.eventLike</a>
                </div>
             </div>
          </td>
@@ -38,9 +39,9 @@ title: "model.eventLike.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ligature">ligature</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/proport">proport</a> (direct members of model.eventLike.mensural)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/proport">proport</a> (direct members of model.eventLike.mensural)
                </div>
             </div>
          </td>

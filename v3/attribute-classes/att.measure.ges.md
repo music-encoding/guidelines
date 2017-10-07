@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.measure.ges"
 
 ---
@@ -30,7 +31,7 @@ title: "att.measure.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a> (direct member of att.measure.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a> (direct member of att.measure.ges)
                </div>
             </div>
          </td>
@@ -48,10 +49,10 @@ title: "att.measure.ges"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,10 +60,10 @@ title: "att.measure.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to record the onset time in terms of ISO time.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISOTIME">data.ISOTIME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISOTIME">data.ISOTIME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
          </td>

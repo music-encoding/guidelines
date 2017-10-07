@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.chord.vis.cmn"
 
 ---
@@ -33,9 +34,9 @@ title: "att.chord.vis.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.vis">att.chord.vis</a>)
                   </span>
                </div>
             </div>
@@ -58,7 +59,7 @@ title: "att.chord.vis.cmn"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamsecondary">att.beamsecondary</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamsecondary">att.beamsecondary</a>
                </span>
             </div>
          </td>

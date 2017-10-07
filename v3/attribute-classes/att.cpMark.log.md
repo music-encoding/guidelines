@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.cpMark.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.cpMark.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a> (direct member of att.cpMark.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a> (direct member of att.cpMark.log)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.cpMark.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of octave displacement.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedisplacement">att.octavedisplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -52,10 +53,10 @@ title: "att.cpMark.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the direction of octave displacement.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedisplacement">att.octavedisplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "att.cpMark.log"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startendid">att.startendid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startendid">att.startendid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,7 +93,7 @@ title: "att.cpMark.log"
                   element(s) specified in plist or target attribute.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.targeteval">att.targeteval</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.targeteval">att.targeteval</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,7 +104,7 @@ title: "att.cpMark.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.layerident">att.layerident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.layerident">att.layerident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,10 +112,10 @@ title: "att.cpMark.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">indicates the final element in a sequence of events.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.startendid">att.origin.startendid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.startendid">att.origin.startendid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -125,7 +126,7 @@ title: "att.cpMark.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.layerident">att.origin.layerident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.layerident">att.origin.layerident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -138,7 +139,7 @@ title: "att.cpMark.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.staffident">att.origin.staffident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.staffident">att.origin.staffident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -146,10 +147,10 @@ title: "att.cpMark.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">indicates the first element in a sequence of events.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.startendid">att.origin.startendid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.startendid">att.origin.startendid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -159,10 +160,10 @@ title: "att.cpMark.log"
                   (potentially negative) count of measures plus a beat location.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREBEATOFFSET">data.MEASUREBEATOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREBEATOFFSET">data.MEASUREBEATOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -174,10 +175,10 @@ title: "att.cpMark.log"
                   @origin.tstamp.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREBEAT">data.MEASUREBEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREBEAT">data.MEASUREBEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -189,10 +190,10 @@ title: "att.cpMark.log"
                   pointed "from".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.plist">att.plist</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.plist">att.plist</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -205,7 +206,7 @@ title: "att.cpMark.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffident">att.staffident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffident">att.staffident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -215,10 +216,10 @@ title: "att.cpMark.log"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startid">att.startid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startid">att.startid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -228,10 +229,10 @@ title: "att.cpMark.log"
                   beats[.fractional_beat_part].
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BEAT">data.BEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.musical">att.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -242,10 +243,10 @@ title: "att.cpMark.log"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -253,10 +254,10 @@ title: "att.cpMark.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to record the onset time in terms of ISO time.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISOTIME">data.ISOTIME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISOTIME">data.ISOTIME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -266,10 +267,10 @@ title: "att.cpMark.log"
                   measures plus a beat location.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREBEAT">data.MEASUREBEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREBEAT">data.MEASUREBEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp2.musical">att.timestamp2.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp2.musical">att.timestamp2.musical</a>
                </span>
             </div>
          </td>

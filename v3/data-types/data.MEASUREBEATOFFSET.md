@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MEASUREBEATOFFSET"
 
 ---
@@ -40,7 +41,7 @@ title: "data.MEASUREBEATOFFSET"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a> (@origin.tstamp)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.origin.timestamp.musical">att.origin.timestamp.musical</a> (@origin.tstamp)
             </div>
          </td>
       </tr>

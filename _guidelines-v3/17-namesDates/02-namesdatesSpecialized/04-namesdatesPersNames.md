@@ -1,24 +1,25 @@
 ---
 sectionid: namesdatesPersNames
 title: "Personal Names"
+version: "v3"
 ---
 
 
 
 
 
-{% include specDesc.html key="persName" atts="" %}
+{% include specDesc.html version=page.version key="persName" atts="" %}
 
 
 
 
-Personal names within an MEI document may simply be marked with the [persName](/v3/elements/persName.html){:.link_odd_elementSpec} element containing a proper noun or proper noun phrase referring to an
+Personal names within an MEI document may simply be marked with the [persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element containing a proper noun or proper noun phrase referring to an
 individual. Personal names, however, often consist of several components, like forenames
 and
 surnames, but also other components, such as inherited or life-time titles of nobility,
 honorific or academic prefixes, military ranks or traditional descriptive phrases.
 These
-components may be marked using [name](/v3/elements/name.html){:.link_odd_elementSpec} sub-elements, the function of
+components may be marked using [name](/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} sub-elements, the function of
 which may be indicated using the **@type** attribute. In this case, **@type**
 attribute may take the following values:
 
@@ -70,7 +71,7 @@ attribute may take the following values:
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample289.xml" valid="false" %}
 
 
-The [persName](/v3/elements/persName.html){:.link_odd_elementSpec} element is often enclosed in the [respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec} element which may occur within [titleStmt](/v3/elements/titleStmt.html){:.link_odd_elementSpec}, [pubStmt](/v3/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt](/v3/elements/seriesStmt.html){:.link_odd_elementSpec} and [change](/v3/elements/change.html){:.link_odd_elementSpec}. This usage of the [persName](/v3/elements/persName.html){:.link_odd_elementSpec} element typical looks like
+The [persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element is often enclosed in the [respStmt](/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element which may occur within [titleStmt](/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec}, [pubStmt](/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt](/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec} and [change](/{{ page.version }}/elements/change.html){:.link_odd_elementSpec}. This usage of the [persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element typical looks like
 this:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample290.xml" valid="false" %}
@@ -80,7 +81,7 @@ other
 persons involved in the genesis of a musical work, such as librettists, lyricists,
 arrangers, editors, transcribers, printers, publishers, etc. The special roles of
 these
-persons may be marked using the **@role** attribute on [persName](/v3/elements/persName.html){:.link_odd_elementSpec}.
+persons may be marked using the **@role** attribute on [persName](/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec}.
 For example:
 
 {% include plainExample.html example="./v3/examples/namesDates/namesDates-sample291.xml" valid="true" %}

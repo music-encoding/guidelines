@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.quantity"
 
 ---
@@ -26,9 +27,9 @@ title: "att.quantity"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/depth">depth</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/height">height</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/width">width</a> (direct members of att.quantity)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/depth">depth</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/height">height</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/width">width</a> (direct members of att.quantity)
                </div>
             </div>
          </td>
@@ -50,7 +51,7 @@ title: "att.quantity"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.quantity">att.quantity</a>
+                  <a class="link_odd" href="/{{ v3}}/att.quantity">att.quantity</a>
                </span>
             </div>
          </td>

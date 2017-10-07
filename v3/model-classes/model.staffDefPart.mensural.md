@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.staffDefPart.mensural"
 
 ---
@@ -27,7 +28,7 @@ title: "model.staffDefPart.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.staffDefPart">model.staffDefPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffDefPart">model.staffDefPart</a>
                </div>
             </div>
          </td>
@@ -39,8 +40,8 @@ title: "model.staffDefPart.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/proport">proport</a> (direct members of model.staffDefPart.mensural)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/proport">proport</a> (direct members of model.staffDefPart.mensural)
                </div>
             </div>
          </td>

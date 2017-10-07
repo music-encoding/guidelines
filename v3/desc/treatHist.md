@@ -1,7 +1,0 @@
----
-desc: "treatHist"
-type: "elementSpec"
----
-
-(treatment history) – A record of the treatment the item has undergone (e.g.,
-de-acidification, restoration, etc.).

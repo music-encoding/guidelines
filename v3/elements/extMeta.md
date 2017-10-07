@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "extMeta"
 
 ---
@@ -32,7 +33,7 @@ title: "extMeta"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -40,10 +41,10 @@ title: "extMeta"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -53,10 +54,10 @@ title: "extMeta"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,7 +71,7 @@ title: "extMeta"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,7 +93,7 @@ title: "extMeta"
                   might have meaning.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.whitespace">att.whitespace</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.whitespace">att.whitespace</a>
                </span>
             </div>
          </td>
@@ -115,16 +116,16 @@ title: "extMeta"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/expression">expression</a> 
-                        <a class="link_odd_elementSpec" href="/v3/item">item</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/item">item</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/meiHead">meiHead</a> 
-                        <a class="link_odd_elementSpec" href="/v3/source">source</a> 
-                        <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/meiHead">meiHead</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/source">source</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a>
                      </span>
                   </div>
                </div>

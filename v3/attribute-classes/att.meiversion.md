@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meiversion"
 
 ---
@@ -26,10 +27,10 @@ title: "att.meiversion"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mei">mei</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meiCorpus">meiCorpus</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meiHead">meiHead</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/music">music</a> (direct members of att.meiversion)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mei">mei</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meiCorpus">meiCorpus</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meiHead">meiHead</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/music">music</a> (direct members of att.meiversion)
                </div>
             </div>
          </td>
@@ -48,7 +49,7 @@ title: "att.meiversion"
                <span style="font-weight: 500;">3.0.0</span>" 
                <i>(This version of MEI.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meiversion">att.meiversion</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meiversion">att.meiversion</a>
                </span>
             </div>
          </td>

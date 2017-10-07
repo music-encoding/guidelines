@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.locrefLike"
 
 ---
@@ -26,12 +27,12 @@ title: "model.locrefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/application">application</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgDesc">pgDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/application">application</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pgDesc">pgDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a>
                </div>
             </div>
          </td>
@@ -43,8 +44,8 @@ title: "model.locrefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ref">ref</a> (direct members of model.locrefLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ptr">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ref">ref</a> (direct members of model.locrefLike)
                </div>
             </div>
          </td>

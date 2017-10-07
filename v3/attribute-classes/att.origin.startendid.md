@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.origin.startendid"
 
 ---
@@ -28,9 +29,9 @@ title: "att.origin.startendid"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.log">att.cpMark.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.cpMark.log">att.cpMark.log</a>)
                   </span>
                </div>
             </div>
@@ -46,10 +47,10 @@ title: "att.origin.startendid"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">indicates the final element in a sequence of events.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.startendid">att.origin.startendid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.startendid">att.origin.startendid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,10 +58,10 @@ title: "att.origin.startendid"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">indicates the first element in a sequence of events.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.startendid">att.origin.startendid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.startendid">att.origin.startendid</a>
                </span>
             </div>
          </td>

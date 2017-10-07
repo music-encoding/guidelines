@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.labels.addl"
 
 ---
@@ -27,21 +28,21 @@ title: "att.labels.addl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.vis">att.layerDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.layerDef.vis">att.layerDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffGrp.vis">att.staffGrp.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffGrp.vis">att.staffGrp.vis</a>)
                   </span>
                </div>
             </div>
@@ -62,7 +63,7 @@ title: "att.labels.addl"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.labels.addl">att.labels.addl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.labels.addl">att.labels.addl</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.encodingPart"
 
 ---
@@ -35,10 +36,10 @@ title: "model.encodingPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/appInfo">appInfo</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/samplingDecl">samplingDecl</a> (direct members of model.encodingPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/appInfo">appInfo</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/projectDesc">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/samplingDecl">samplingDecl</a> (direct members of model.encodingPart)
                </div>
             </div>
          </td>

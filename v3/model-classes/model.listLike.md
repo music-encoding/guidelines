@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.listLike"
 
 ---
@@ -26,8 +27,8 @@ title: "model.listLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.paracontentPart">model.paracontentPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.textcomponentLike">model.textcomponentLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.paracontentPart">model.paracontentPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textcomponentLike">model.textcomponentLike</a>
                </div>
             </div>
          </td>
@@ -39,10 +40,10 @@ title: "model.listLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/castList">castList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/list">list</a> (direct members of model.listLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/castList">castList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/list">list</a> (direct members of model.listLike)
                </div>
             </div>
          </td>

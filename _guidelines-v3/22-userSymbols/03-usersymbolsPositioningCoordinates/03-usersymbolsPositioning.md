@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsPositioning
 title: "Positioning"
+version: "v3"
 ---
 
 
@@ -20,7 +21,7 @@ If relative start coordinates (**@ho**/**@vo** or
 **@startho**/**@startvo**) are used, the origin of the coordinate system to be
 used for the start point is the first one found by the following search schema:
 
-1. If **@startid** is present, the origin of the referenced element;2. If the element is inside running text (e.g. inside [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec}), the
+1. If **@startid** is present, the origin of the referenced element;2. If the element is inside running text (e.g. inside [tempo](/{{ page.version }}/elements/tempo.html){:.link_odd_elementSpec}), the
 end of the preceding text or element;3. Otherwise, the origin of the containing element.
 
 The start point is offset from this origin by the value of the start coordinates
@@ -34,16 +35,16 @@ over **@startid**.
 Examples of origins are:
 
 
-- [staff](/v3/elements/staff.html){:.link_odd_elementSpec} and [layer](/v3/elements/layer.html){:.link_odd_elementSpec}: The horizontal origin is
+- [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} and [layer](/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}: The horizontal origin is
 the starting point of the measure, the vertical one is the bottom staff line;
-- [note](/v3/elements/note.html){:.link_odd_elementSpec}: The horizontal origin is the left end of the notehead, the
+- [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}: The horizontal origin is the left end of the notehead, the
 vertical one the center of the notehead;
-- [clef](/v3/elements/clef.html){:.link_odd_elementSpec}: The horizontal origin is the left end of the clef, the
-vertical one the line specified by [clef](/v3/elements/clef.html){:.link_odd_elementSpec}/**@line** (or
+- [clef](/{{ page.version }}/elements/clef.html){:.link_odd_elementSpec}: The horizontal origin is the left end of the clef, the
+vertical one the line specified by [clef](/{{ page.version }}/elements/clef.html){:.link_odd_elementSpec}/**@line** (or
 **@clef.line**);
 - For elements containing text: The left end of the baseline;
-- [symbolDef](/v3/elements/symbolDef.html){:.link_odd_elementSpec}: As symbol definitions aren't rendered directly, their
-coordinate system and origin are considered virtual. When they are referenced by [symbol](/v3/elements/symbol.html){:.link_odd_elementSpec} or **@altsym**, the origin of the context, i.e. the
+- [symbolDef](/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec}: As symbol definitions aren't rendered directly, their
+coordinate system and origin are considered virtual. When they are referenced by [symbol](/{{ page.version }}/elements/symbol.html){:.link_odd_elementSpec} or **@altsym**, the origin of the context, i.e. the
 referencing symbol, is used.
 
 If neither absolute nor relative coordinates are specified, determining visually suitable

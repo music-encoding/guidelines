@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.dynam.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.dynam.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dynam">dynam</a> (direct member of att.dynam.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dynam">dynam</a> (direct member of att.dynam.ges)
                </div>
             </div>
          </td>
@@ -45,10 +46,10 @@ title: "att.dynam.ges"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.performed">att.duration.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.performed">att.duration.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.dynam.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">MIDI number.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midivalue">att.midivalue</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midivalue">att.midivalue</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.dynam.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">MIDI number.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midivalue2">att.midivalue2</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midivalue2">att.midivalue2</a>
                </span>
             </div>
          </td>

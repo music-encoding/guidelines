@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.rendLike"
 
 ---
@@ -26,12 +27,12 @@ title: "model.rendLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/altId">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/classCode">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reh">reh</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/altId">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classCode">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reh">reh</a>
                </div>
             </div>
          </td>
@@ -43,8 +44,8 @@ title: "model.rendLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rend">rend</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/stack">stack</a> (direct members of model.rendLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rend">rend</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/stack">stack</a> (direct members of model.rendLike)
                </div>
             </div>
          </td>

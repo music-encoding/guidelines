@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.keySig.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.keySig.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a> (direct member of att.keySig.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a> (direct member of att.keySig.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.keySig.vis"
                   change.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySig.vis">att.keySig.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySig.vis">att.keySig.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.keySig.vis"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visibility">att.visibility</a>
                </span>
             </div>
          </td>

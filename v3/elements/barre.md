@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "barre"
 
 ---
@@ -31,10 +32,10 @@ title: "barre"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startendid">att.startendid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startendid">att.startendid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -42,10 +43,10 @@ title: "barre"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the location at which a string should be stopped against a fret.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FRET">data.FRET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FRET">data.FRET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.fretlocation">att.fretlocation</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.fretlocation">att.fretlocation</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,7 +57,7 @@ title: "barre"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,10 +65,10 @@ title: "barre"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -77,10 +78,10 @@ title: "barre"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startid">att.startid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startid">att.startid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -90,10 +91,10 @@ title: "barre"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -107,7 +108,7 @@ title: "barre"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -130,7 +131,7 @@ title: "barre"
                   <div class="specChild">
                      <span class="specChildModule">MEI.harmony</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/chordDef">chordDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/chordDef">chordDef</a>
                      </span>
                   </div>
                </div>
@@ -206,7 +207,7 @@ title: "barre"
             <p>The 
                <span class="att">startid</span> and 
                <span class="att">endid</span> attributes are used to indicate the 
-               <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> elements on which the barre starts and finishes
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a> elements on which the barre starts and finishes
                respectively. The fret at which the barre should be created is recorded by the
                
                <span class="att">fret</span> attribute.

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.medium"
 
 ---
@@ -26,8 +27,8 @@ title: "att.medium"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/hand">hand</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handShift">handShift</a> (direct members of att.medium)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hand">hand</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/handShift">handShift</a> (direct members of att.medium)
                </div>
             </div>
          </td>
@@ -45,7 +46,7 @@ title: "att.medium"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.medium">att.medium</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.medium">att.medium</a>
                </span>
             </div>
          </td>

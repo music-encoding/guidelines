@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.custos.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.custos.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/custos">custos</a> (direct member of att.custos.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a> (direct member of att.custos.log)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.custos.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures written octave information.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octave">att.octave</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octave">att.octave</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -52,10 +53,10 @@ title: "att.custos.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pitch">att.pitch</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pitch">att.pitch</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "att.custos.log"
                   appears.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.custos.log">att.custos.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.custos.log">att.custos.log</a>
                </span>
             </div>
          </td>

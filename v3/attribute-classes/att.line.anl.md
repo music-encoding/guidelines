@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.line.anl"
 
 ---
@@ -26,7 +27,7 @@ title: "att.line.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/line">line</a> (direct member of att.line.anl)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/line">line</a> (direct member of att.line.anl)
                </div>
             </div>
          </td>

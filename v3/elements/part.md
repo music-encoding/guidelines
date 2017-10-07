@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "part"
 
 ---
@@ -30,10 +31,10 @@ title: "part"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -43,10 +44,10 @@ title: "part"
                   fashion.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "part"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ v3}}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,7 +71,7 @@ title: "part"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,10 +79,10 @@ title: "part"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -89,10 +90,10 @@ title: "part"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -100,10 +101,10 @@ title: "part"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -113,10 +114,10 @@ title: "part"
                   copy of the current element.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -129,7 +130,7 @@ title: "part"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -137,10 +138,10 @@ title: "part"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -153,7 +154,7 @@ title: "part"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -161,13 +162,13 @@ title: "part"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
                   be the ID of a 
-                  <a class="link_odd_elementSpec" href="/v3/when">when</a> element elsewhere in the document.
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/when">when</a> element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.alignment">att.alignment</a>
+                  <a class="link_odd" href="/{{ v3}}/att.alignment">att.alignment</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -177,10 +178,10 @@ title: "part"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -194,7 +195,7 @@ title: "part"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -205,7 +206,7 @@ title: "part"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.partLike">model.partLike</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.partLike">model.partLike</a>
             </div>
          </td>
       </tr>
@@ -219,8 +220,8 @@ title: "part"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/part">part</a> 
-                        <a class="link_odd_elementSpec" href="/v3/parts">parts</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/part">part</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/parts">parts</a>
                      </span>
                   </div>
                </div>
@@ -236,47 +237,47 @@ title: "part"
                <div class="specChild">
                   <span class="specChildModule">MEI.critapp</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/app">app</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/app">app</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.edittrans</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/add">add</a> 
-                     <a class="link_odd_elementSpec" href="/v3/choice">choice</a> 
-                     <a class="link_odd_elementSpec" href="/v3/corr">corr</a> 
-                     <a class="link_odd_elementSpec" href="/v3/damage">damage</a> 
-                     <a class="link_odd_elementSpec" href="/v3/del">del</a> 
-                     <a class="link_odd_elementSpec" href="/v3/gap">gap</a> 
-                     <a class="link_odd_elementSpec" href="/v3/handShift">handShift</a> 
-                     <a class="link_odd_elementSpec" href="/v3/orig">orig</a> 
-                     <a class="link_odd_elementSpec" href="/v3/reg">reg</a> 
-                     <a class="link_odd_elementSpec" href="/v3/restore">restore</a> 
-                     <a class="link_odd_elementSpec" href="/v3/sic">sic</a> 
-                     <a class="link_odd_elementSpec" href="/v3/subst">subst</a> 
-                     <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a> 
-                     <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/add">add</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/choice">choice</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/corr">corr</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/damage">damage</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/del">del</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/gap">gap</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/handShift">handShift</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/orig">orig</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/reg">reg</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/restore">restore</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/sic">sic</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/subst">subst</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/supplied">supplied</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/unclear">unclear</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/annot">annot</a> 
-                     <a class="link_odd_elementSpec" href="/v3/div">div</a> 
-                     <a class="link_odd_elementSpec" href="/v3/ending">ending</a> 
-                     <a class="link_odd_elementSpec" href="/v3/pb">pb</a> 
-                     <a class="link_odd_elementSpec" href="/v3/sb">sb</a> 
-                     <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a> 
-                     <a class="link_odd_elementSpec" href="/v3/section">section</a> 
-                     <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/annot">annot</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/div">div</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/ending">ending</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/pb">pb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/sb">sb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/section">section</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.usersymbols</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/anchoredText">anchoredText</a> 
-                     <a class="link_odd_elementSpec" href="/v3/curve">curve</a> 
-                     <a class="link_odd_elementSpec" href="/v3/line">line</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/anchoredText">anchoredText</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/curve">curve</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/line">line</a>
                   </span>
                </div>
             </div>
@@ -464,10 +465,10 @@ title: "part"
          <td class="wovenodd-col2">
             <p>
                
-               <a class="link_odd_elementSpec" href="/v3/part">part</a> elements are not used in MEI to indicate voice leading.
+               <a class="link_odd_elementSpec" href="/{{ v3}}/part">part</a> elements are not used in MEI to indicate voice leading.
                
                <span class="att">next</span> attributes on event elements should be used for this purpose. 
-               <a class="link_odd_elementSpec" href="/v3/part">part</a> elements are useful for encoding individual parts when there is
+               <a class="link_odd_elementSpec" href="/{{ v3}}/part">part</a> elements are useful for encoding individual parts when there is
                no score, such as early music part books, when the music has non-aligning bar lines,
                when
                different layout, such as page turns, are needed for the score and parts, or for

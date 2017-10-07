@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.DURATION.mensural"
 
 ---
@@ -25,7 +26,7 @@ title: "data.DURATION.mensural"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>
+               <a class="link_odd" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>
             </div>
          </td>
       </tr>

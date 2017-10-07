@@ -1,6 +1,7 @@
 ---
 sectionid: harmonyOverview
 title: "Overview of the Harmony Module"
+version: "v3"
 ---
 
 

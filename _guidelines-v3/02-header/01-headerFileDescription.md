@@ -1,6 +1,7 @@
 ---
 sectionid: headerFileDescription
 title: "File Description"
+version: "v3"
 ---
 
 
@@ -20,28 +21,28 @@ from the same model.
 
 The bibliographic description of an electronic musical text should be supplied by
 the
-mandatory [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element:
+mandatory [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element:
 
 
 
-{% include specDesc.html key="fileDesc" atts="" %}
+{% include specDesc.html version=page.version key="fileDesc" atts="" %}
 
 
 
-The [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element contains two mandatory and six optional elements,
+The [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element contains two mandatory and six optional elements,
 each of which is described in more detail below. These elements are listed below in
 the order
-in which they must occur within the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element.
+in which they must occur within the [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element.
 
 
 
-{% include specDesc.html key="titleStmt" atts="" %}
-{% include specDesc.html key="editionStmt" atts="" %}
-{% include specDesc.html key="extent" atts="" %}
-{% include specDesc.html key="pubStmt" atts="" %}
-{% include specDesc.html key="seriesStmt" atts="" %}
-{% include specDesc.html key="notesStmt" atts="" %}
-{% include specDesc.html key="sourceDesc" atts="" %}
+{% include specDesc.html version=page.version key="titleStmt" atts="" %}
+{% include specDesc.html version=page.version key="editionStmt" atts="" %}
+{% include specDesc.html version=page.version key="extent" atts="" %}
+{% include specDesc.html version=page.version key="pubStmt" atts="" %}
+{% include specDesc.html version=page.version key="seriesStmt" atts="" %}
+{% include specDesc.html version=page.version key="notesStmt" atts="" %}
+{% include specDesc.html version=page.version key="sourceDesc" atts="" %}
 
 
 

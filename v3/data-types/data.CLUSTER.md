@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.CLUSTER"
 
 ---
@@ -25,7 +26,7 @@ title: "data.CLUSTER"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a> (@cluster)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.vis">att.chord.vis</a> (@cluster)
             </div>
          </td>
       </tr>

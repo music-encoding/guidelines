@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffloc.pitched"
 
 ---
@@ -27,42 +28,42 @@ title: "att.staffloc.pitched"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.accid.vis.mensural">att.accid.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.accid.vis.mensural">att.accid.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/accid">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.vis">att.accid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.accid.vis">att.accid.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.dot.vis.mensural">att.dot.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dot.vis.mensural">att.dot.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dot">dot</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/dot">dot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dot.vis">att.dot.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dot.vis">att.dot.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mRest">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.vis">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mRest.vis">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/multiRest">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRest.vis">att.multiRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.multiRest.vis">att.multiRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.vis">att.rest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.rest.vis">att.rest.vis</a>)
                   </span>
                </div>
             </div>
@@ -78,10 +79,10 @@ title: "att.staffloc.pitched"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records staff location in terms of written octave.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
+                  <a class="link_odd" href="/{{ v3}}/att.staffloc.pitched">att.staffloc.pitched</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -89,10 +90,10 @@ title: "att.staffloc.pitched"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures staff location in terms of written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
+                  <a class="link_odd" href="/{{ v3}}/att.staffloc.pitched">att.staffloc.pitched</a>
                </span>
             </div>
          </td>

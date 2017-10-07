@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.backLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.backLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.musicPart">model.musicPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.musicPart">model.musicPart</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.backLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/back">back</a> (direct member of model.backLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a> (direct member of model.backLike)
                </div>
             </div>
          </td>

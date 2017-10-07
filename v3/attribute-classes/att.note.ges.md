@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.note.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.note.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a> (direct member of att.note.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a> (direct member of att.note.ges)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the performed pitch inflection.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental.performed">att.accidental.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.accidental.performed">att.accidental.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -52,10 +53,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records performed articulation that differs from the written value.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.articulation.performed">att.articulation.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.articulation.performed">att.articulation.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.note.ges"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.performed">att.duration.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.performed">att.duration.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,10 +79,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates that this element participates in a glissando.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.GLISSANDO">data.GLISSANDO</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.GLISSANDO">data.GLISSANDO</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges.cmn">att.note.ges.cmn</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges.cmn">att.note.ges.cmn</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -91,10 +92,10 @@ title: "att.note.ges"
                   records from which other note/chord it should "steal" time.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.GRACE">data.GRACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.GRACE">data.GRACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.graced">att.graced</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.graced">att.graced</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -102,10 +103,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of time to be "stolen" from a non-grace note/chord.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PERCENT">data.PERCENT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PERCENT">data.PERCENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.graced">att.graced</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.graced">att.graced</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -115,10 +116,10 @@ title: "att.note.ges"
                   of an &lt;instrDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.instrumentident">att.instrumentident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.instrumentident">att.instrumentident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -131,7 +132,7 @@ title: "att.note.ges"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -144,7 +145,7 @@ title: "att.note.ges"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -152,10 +153,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records performed octave information that differs from the written value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges">att.note.ges</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges">att.note.ges</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -163,10 +164,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a performed pitch name that differs from the written value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME.GES">data.PITCHNAME.GES</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME.GES">data.PITCHNAME.GES</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges">att.note.ges</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges">att.note.ges</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -174,10 +175,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds a pitch-to-number mapping, a base-40 or MIDI note number, for example.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNUMBER">data.PITCHNUMBER</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNUMBER">data.PITCHNUMBER</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges">att.note.ges</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges">att.note.ges</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -185,10 +186,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the fret at which a string should be stopped.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FRETNUMBER">data.FRETNUMBER</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FRETNUMBER">data.FRETNUMBER</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges.tablature">att.note.ges.tablature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges.tablature">att.note.ges.tablature</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -196,10 +197,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records which string is to be played.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STRINGNUMBER">data.STRINGNUMBER</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STRINGNUMBER">data.STRINGNUMBER</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.ges.tablature">att.note.ges.tablature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.ges.tablature">att.note.ges.tablature</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -207,10 +208,10 @@ title: "att.note.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">MIDI Note-on/off velocity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midivelocity">att.midivelocity</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.midivelocity">att.midivelocity</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.partsLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.partsLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mdiv">mdiv</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.partsLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/parts">parts</a> (direct member of model.partsLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/parts">parts</a> (direct member of model.partsLike)
                </div>
             </div>
          </td>

@@ -1,0 +1,1 @@
+Attributes indicating the attachment of a fermata to the feature.

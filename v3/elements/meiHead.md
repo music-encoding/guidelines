@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "meiHead"
 
 ---
@@ -36,7 +37,7 @@ title: "meiHead"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -47,7 +48,7 @@ title: "meiHead"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,7 +60,7 @@ title: "meiHead"
                <span style="font-weight: 500;">3.0.0</span>" 
                <i>(This version of MEI.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meiversion">att.meiversion</a>
+                  <a class="link_odd" href="/{{ v3}}/att.meiversion">att.meiversion</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "meiHead"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,7 +86,7 @@ title: "meiHead"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -101,7 +102,7 @@ title: "meiHead"
                <span style="font-weight: 500;">corpus</span>" 
                <i>(Header is attached to a corpus.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/meiHead">meiHead</a>
+                  <a class="link_odd" href="/{{ v3}}/meiHead">meiHead</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,10 +112,10 @@ title: "meiHead"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -128,7 +129,7 @@ title: "meiHead"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -144,7 +145,7 @@ title: "meiHead"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -155,7 +156,7 @@ title: "meiHead"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.startLike.header">model.startLike.header</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.startLike.header">model.startLike.header</a>
             </div>
          </td>
       </tr>
@@ -169,19 +170,19 @@ title: "meiHead"
                   <div class="specChild">
                      <span class="specChildModule">MEI.corpus</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/meiCorpus">meiCorpus</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/meiCorpus">meiCorpus</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/meiHead">meiHead</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/meiHead">meiHead</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/mei">mei</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/mei">mei</a>
                      </span>
                   </div>
                </div>
@@ -197,12 +198,12 @@ title: "meiHead"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/altId">altId</a> 
-                     <a class="link_odd_elementSpec" href="/v3/encodingDesc">encodingDesc</a> 
-                     <a class="link_odd_elementSpec" href="/v3/extMeta">extMeta</a> 
-                     <a class="link_odd_elementSpec" href="/v3/fileDesc">fileDesc</a> 
-                     <a class="link_odd_elementSpec" href="/v3/revisionDesc">revisionDesc</a> 
-                     <a class="link_odd_elementSpec" href="/v3/workDesc">workDesc</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/altId">altId</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/encodingDesc">encodingDesc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/extMeta">extMeta</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/fileDesc">fileDesc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/revisionDesc">revisionDesc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/workDesc">workDesc</a>
                   </span>
                </div>
             </div>
@@ -368,11 +369,11 @@ title: "meiHead"
                information is often essential in a machine-readable environment. Five sub-elements
                must
                be encoded in the following order: 
-               <a class="link_odd_elementSpec" href="/v3/altId">altId</a>(optional), 
-               <a class="link_odd_elementSpec" href="/v3/fileDesc">fileDesc</a>(required), 
-               <a class="link_odd_elementSpec" href="/v3/encodingDesc">encodingDesc</a>(optional), 
-               <a class="link_odd_elementSpec" href="/v3/workDesc">workDesc</a>(optional), and 
-               <a class="link_odd_elementSpec" href="/v3/revisionDesc">revisionDesc</a>(optional). These
+               <a class="link_odd_elementSpec" href="/{{ v3}}/altId">altId</a>(optional), 
+               <a class="link_odd_elementSpec" href="/{{ v3}}/fileDesc">fileDesc</a>(required), 
+               <a class="link_odd_elementSpec" href="/{{ v3}}/encodingDesc">encodingDesc</a>(optional), 
+               <a class="link_odd_elementSpec" href="/{{ v3}}/workDesc">workDesc</a>(optional), and 
+               <a class="link_odd_elementSpec" href="/{{ v3}}/revisionDesc">revisionDesc</a>(optional). These
                elements and their sub-elements provide: a unique identifier for the MEI file,
                bibliographic information about the MEI file and its sources, information about the
                encoding process, information about the creation of the work being encoded, and statements

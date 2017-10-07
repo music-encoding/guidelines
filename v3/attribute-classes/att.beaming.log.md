@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beaming.log"
 
 ---
@@ -29,35 +30,35 @@ title: "att.beaming.log"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.log.cmn">att.layerDef.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.layerDef.log.cmn">att.layerDef.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.log">att.layerDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.layerDef.log">att.layerDef.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log.cmn">att.scoreDef.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log.cmn">att.scoreDef.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log.cmn">att.staffDef.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log.cmn">att.staffDef.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -78,7 +79,7 @@ title: "att.beaming.log"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -88,10 +89,10 @@ title: "att.beaming.log"
                   quarter note duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beaming.log">att.beaming.log</a>
                </span>
             </div>
          </td>
@@ -196,8 +197,8 @@ title: "att.beaming.log"
                '(4,4),(4,4)' will result in a primary beam covering all the notes and secondary beams
                for
                each group of 4 notes. This beaming "directive" can be overridden by using 
-               <a class="link_odd_elementSpec" href="/v3/beam">beam</a> elements. If neither 
-               <a class="link_odd_elementSpec" href="/v3/beam">beam</a> elements or the
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> elements. If neither 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> elements or the
                
                <span class="att">beam.group</span> attribute is used, then no beaming is rendered. Beaming can be
                explicitly 'turned off' by setting 

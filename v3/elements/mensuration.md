@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "mensuration"
 
 ---
@@ -35,7 +36,7 @@ title: "mensuration"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -43,10 +44,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Specifies whether a dot is to be added to the base symbol.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensur.log">att.mensur.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensur.log">att.mensur.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,7 +58,7 @@ title: "mensuration"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the maxima-long relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMAIOR">data.MODUSMAIOR</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -76,10 +77,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the long-breve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMINOR">data.MODUSMINOR</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODUSMINOR">data.MODUSMINOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -87,10 +88,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,7 +104,7 @@ title: "mensuration"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -116,7 +117,7 @@ title: "mensuration"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -124,10 +125,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the semibreve-minim relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PROLATIO">data.PROLATIO</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.PROLATIO">data.PROLATIO</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -135,10 +136,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">The base symbol in the mensuration sign/time signature of mensural notation.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensur.log">att.mensur.log</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensur.log">att.mensur.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -146,10 +147,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the number of slashes present.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SLASH">data.SLASH</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.SLASH">data.SLASH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slashcount">att.slashcount</a>
+                  <a class="link_odd" href="/{{ v3}}/att.slashcount">att.slashcount</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -157,10 +158,10 @@ title: "mensuration"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the breve-semibreve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TEMPUS">data.TEMPUS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.TEMPUS">data.TEMPUS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ v3}}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -175,7 +176,7 @@ title: "mensuration"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -185,10 +186,10 @@ title: "mensuration"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -202,7 +203,7 @@ title: "mensuration"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -218,7 +219,7 @@ title: "mensuration"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -229,7 +230,7 @@ title: "mensuration"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.workIdent">model.workIdent</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.workIdent">model.workIdent</a>
             </div>
          </td>
       </tr>
@@ -243,23 +244,23 @@ title: "mensuration"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/expression">expression</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/expression">expression</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/key">key</a> 
-                        <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a> 
-                        <a class="link_odd_elementSpec" href="/v3/meter">meter</a> 
-                        <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/key">key</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/mensuration">mensuration</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/meter">meter</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/work">work</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/incip">incip</a> 
-                        <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/incip">incip</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a>
                      </span>
                   </div>
                </div>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.keySigDefault.log"
 
 ---
@@ -27,15 +28,15 @@ title: "att.keySigDefault.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -53,10 +54,10 @@ title: "att.keySigDefault.log"
                   equals 'c' and key.accid equals 's', then a tonic of C# is indicated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,10 +65,10 @@ title: "att.keySigDefault.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates major, minor, or other tonality.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODE">data.MODE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODE">data.MODE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,10 +76,10 @@ title: "att.keySigDefault.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the pitch name of the tonic key, e.g. 'c' for the key of C.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -86,10 +87,10 @@ title: "att.keySigDefault.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates where the key lies in the circle of fifths.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.KEYSIGNATURE">data.KEYSIGNATURE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.KEYSIGNATURE">data.KEYSIGNATURE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -106,10 +107,10 @@ title: "att.keySigDefault.log"
                   indicate what key accidentals should be rendered and where they should be placed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
                </span>
             </div>
          </td>

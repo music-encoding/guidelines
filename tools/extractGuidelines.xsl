@@ -20,8 +20,8 @@
         </xd:desc>
     </xd:doc>
     <xsl:output indent="yes" method="xhtml"/>
-    <xsl:param name="version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
-    
+    <xsl:param name="version" select="'{{ page.version }}'" as="xs:string"/>
+    <xsl:variable name="plain.version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
     <xd:doc scope="component">
         <xd:desc>
             <xd:p>
@@ -44,7 +44,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:param name="image.prefix" as="xs:string">
-        <xsl:value-of select="'../../../../guidelines/3.0.0/'"/>
+        <xsl:value-of select="'../../../../guidelines/' || $plain.version || '/'"/>
     </xsl:param>
     
     <xsl:param name="imprint.date" select="substring(string(current-date()),1,4)" as="xs:string"/>
@@ -68,7 +68,7 @@
         <!-- fill in further MEI version, for which this xsl has been adjusted -->
     </xsl:variable>
     
-    <xsl:variable name="outPutFolder" select="'./' || $version || '/'" as="xs:string"/>
+    <xsl:variable name="outPutFolder" select="'./' || $plain.version || '/'" as="xs:string"/>
     
     <xsl:variable name="mei.source" select="/" as="node()"/>
     
@@ -175,13 +175,8 @@
         <!-- extract desc -->
         
         <xsl:for-each select=".//tei:elementSpec | .//tei:classSpec | .//tei:macroSpec">
-            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.md'" as="xs:string"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes">---
-            desc: "<xsl:value-of select="@ident"/>"
-            type: "<xsl:value-of select="local-name()"/>"
-            ---
-            
-            <xsl:value-of select="./tei:desc/text()"/>
+            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/>
             </xsl:result-document>
         </xsl:for-each>
         
@@ -250,6 +245,7 @@
             layout: sidebar
             sidebar: s1
             title: "Guidelines"
+            version: "<xsl:value-of select="$plain.version"/>"
             <xsl:call-template name="generateCategoryOverview">
                 <xsl:with-param name="items" select="$chapterLinks" as="node()*"/>
                 <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
@@ -266,6 +262,7 @@
             layout: sidebar
             sidebar: s1
             title: "Elements"
+            version: "<xsl:value-of select="$plain.version"/>"
             ---
             <xsl:call-template name="generateCategoryOverview">
                 <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
@@ -283,6 +280,7 @@
             layout: sidebar
             sidebar: s1
             title: "Model Classes"
+            version: "<xsl:value-of select="$plain.version"/>"
             ---
             <xsl:call-template name="generateCategoryOverview">
                 <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
@@ -300,6 +298,7 @@
             layout: sidebar
             sidebar: s1
             title: "Attribute Classes"
+            version: "<xsl:value-of select="$plain.version"/>"
             ---
             <xsl:call-template name="generateCategoryOverview">
                 <xsl:with-param name="items" select="$attLinks" as="node()*"/>
@@ -317,6 +316,7 @@
             layout: sidebar
             sidebar: s1
             title: "Data Types"
+            version: "<xsl:value-of select="$plain.version"/>"
             ---
             <xsl:call-template name="generateCategoryOverview">
                 <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
@@ -474,6 +474,7 @@
             <xsl:result-document href="{$outPutFolder || $folderName || '/' || $chapterPrefix || $name}.md" omit-xml-declaration="true">---
                 layout: sidebar
                 sidebar: s1
+                version: "<xsl:value-of select="$plain.version"/>"
                 title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/>"
                 <xsl:if test="$mode = 'chapters'">sectionid: "<xsl:value-of select="$name"/>"</xsl:if>
                 ---
@@ -588,6 +589,7 @@
         <xsl:result-document href="{$path}" omit-xml-declaration="yes">---
             sectionid: <xsl:value-of select="$chapter/@xml:id"/>
             title: "<xsl:value-of select="$chapterNumElem/@head"/>"
+            version: "<xsl:value-of select="$plain.version"/>"
             ---
             
             <xsl:apply-templates select="node()" mode="markdown"/>
@@ -987,7 +989,7 @@
     
     <xsl:template match="tei:specList" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/></xsl:template>
     
-    <xsl:template match="tei:specDesc" mode="markdown">{% include specDesc.html key="<xsl:value-of select="@key"/>" atts="<xsl:value-of select="@atts"/>" %}</xsl:template>
+    <xsl:template match="tei:specDesc" mode="markdown">{% include specDesc.html version=page.version key="<xsl:value-of select="@key"/>" atts="<xsl:value-of select="@atts"/>" %}</xsl:template>
     
     <xsl:template match="tei:ptr">
         

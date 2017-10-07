@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.incipLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.incipLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.workIdent">model.workIdent</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.workIdent">model.workIdent</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.incipLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/incip">incip</a> (direct member of model.incipLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a> (direct member of model.incipLike)
                </div>
             </div>
          </td>

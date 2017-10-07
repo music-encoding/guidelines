@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.enclosingchars"
 
 ---
@@ -27,45 +28,45 @@ title: "att.enclosingchars"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accid">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.vis">att.accid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.accid.vis">att.accid.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/artic">artic</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/artic">artic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.artic.vis">att.artic.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.artic.vis">att.artic.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.vis">att.chord.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.vis">att.cpMark.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.cpMark.vis">att.cpMark.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keyAccid">keyAccid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.keyAccid.vis">att.keyAccid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keyAccid.vis">att.keyAccid.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.vis">att.note.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.vis">att.rest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.rest.vis">att.rest.vis</a>)
                   </span>
                </div>
             </div>
@@ -84,10 +85,10 @@ title: "att.enclosingchars"
                   accidentals enclosed in parentheses, see Read, p. 131, ex. 9-14.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ENCLOSURE">data.ENCLOSURE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ENCLOSURE">data.ENCLOSURE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.enclosingchars">att.enclosingchars</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.enclosingchars">att.enclosingchars</a>
                </span>
             </div>
          </td>

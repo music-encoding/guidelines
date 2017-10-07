@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.ACCIDENTAL.IMPLICIT"
 
 ---
@@ -25,8 +26,8 @@ title: "data.ACCIDENTAL.IMPLICIT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.accidental.performed">att.accidental.performed</a> (@accid.ges), 
-               <a class="link_odd_classSpec" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a> (@key.accid)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.accidental.performed">att.accidental.performed</a> (@accid.ges), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a> (@key.accid)
             </div>
          </td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.ligature.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.ligature.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ligature">ligature</a> (direct member of att.ligature.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a> (direct member of att.ligature.log)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.ligature.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides an indication of the function of the ligature.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.LIGATUREFORM">data.LIGATUREFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.LIGATUREFORM">data.LIGATUREFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.ligature.log">att.ligature.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.ligature.log">att.ligature.log</a>
                </span>
             </div>
          </td>

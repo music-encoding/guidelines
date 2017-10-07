@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.lbLike"
 
 ---
@@ -26,14 +27,14 @@ title: "model.lbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.milestoneLike.text">model.milestoneLike.text</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.milestoneLike.text">model.milestoneLike.text</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/altId">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/classCode">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reh">reh</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/altId">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classCode">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reh">reh</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/verse">verse</a>
                </div>
             </div>
          </td>
@@ -45,7 +46,7 @@ title: "model.lbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lb">lb</a> (direct member of model.lbLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lb">lb</a> (direct member of model.lbLike)
                </div>
             </div>
          </td>

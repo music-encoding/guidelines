@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.NMTOKEN"
 
 ---
@@ -26,7 +27,7 @@ title: "data.NMTOKEN"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.HEADSHAPE">data.HEADSHAPE</a>
+               <a class="link_odd" href="/{{ page.version }}/data.HEADSHAPE">data.HEADSHAPE</a>
             </div>
          </td>
       </tr>

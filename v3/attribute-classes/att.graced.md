@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.graced"
 
 ---
@@ -29,24 +30,24 @@ title: "att.graced"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.chord.ges.cmn">att.chord.ges.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.ges.cmn">att.chord.ges.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.ges">att.chord.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.ges">att.chord.ges</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges.cmn">att.note.ges.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges.cmn">att.note.ges.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -64,10 +65,10 @@ title: "att.graced"
                   records from which other note/chord it should "steal" time.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.GRACE">data.GRACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.GRACE">data.GRACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.graced">att.graced</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.graced">att.graced</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,10 +76,10 @@ title: "att.graced"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of time to be "stolen" from a non-grace note/chord.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PERCENT">data.PERCENT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PERCENT">data.PERCENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.graced">att.graced</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.graced">att.graced</a>
                </span>
             </div>
          </td>

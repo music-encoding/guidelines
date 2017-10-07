@@ -1,6 +1,7 @@
 ---
 sectionid: headerBiblAnalog
 title: "Header Elements and their Relationship to Other Bibliographic Standards"
+version: "v3"
 ---
 
 
@@ -13,7 +14,7 @@ purpose, the following attribute is provided on most meiHead elements:
 
 
 
-{% include specDesc.html key="att.bibl" atts="analog" %}
+{% include specDesc.html version=page.version key="att.bibl" atts="analog" %}
 
 
 

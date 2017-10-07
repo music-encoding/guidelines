@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.layerDefLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.layerDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.layerDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a> (direct member of model.layerDefLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a> (direct member of model.layerDefLike)
                </div>
             </div>
          </td>

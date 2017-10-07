@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tuplet.ges"
 
 ---
@@ -26,12 +27,12 @@ title: "att.tuplet.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a> (direct member of att.tuplet.ges)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tuplet">tuplet</a> (direct member of att.tuplet.ges)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tupletSpan">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tupletSpan.ges">att.tupletSpan.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tupletSpan.ges">att.tupletSpan.ges</a>)
                   </span>
                </div>
             </div>
@@ -51,10 +52,10 @@ title: "att.tuplet.ges"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.performed">att.duration.performed</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.performed">att.duration.performed</a>
                </span>
             </div>
          </td>

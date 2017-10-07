@@ -1,8 +1,0 @@
----
-desc: "measure"
-type: "elementSpec"
----
-
-Unit of musical time consisting of a fixed number of note-values of a given type,
-as
-determined by the prevailing meter, and delimited in musical notation by bar lines.

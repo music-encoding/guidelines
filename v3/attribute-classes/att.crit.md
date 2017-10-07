@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.crit"
 
 ---
@@ -26,8 +27,8 @@ title: "att.crit"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a> (direct members of att.crit)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a> (direct members of att.crit)
                </div>
             </div>
          </td>
@@ -47,7 +48,7 @@ title: "att.crit"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.crit">att.crit</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.crit">att.crit</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,10 +58,10 @@ title: "att.crit"
                   &lt;hand&gt; element declared in the header.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.handident">att.handident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.handident">att.handident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,10 +72,10 @@ title: "att.crit"
                   identifiers declared in the document header.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.responsibility">att.responsibility</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.responsibility">att.responsibility</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -87,7 +88,7 @@ title: "att.crit"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.sequence">att.sequence</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.sequence">att.sequence</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -98,10 +99,10 @@ title: "att.crit"
                   located in the document header.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.source">att.source</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.source">att.source</a>
                </span>
             </div>
          </td>

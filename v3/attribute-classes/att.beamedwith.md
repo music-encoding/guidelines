@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beamedwith"
 
 ---
@@ -26,27 +27,27 @@ title: "att.beamedwith"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beam.log">att.beam.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beam.log">att.beam.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beamSpan">beamSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beamSpan">beamSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beamSpan.log">att.beamSpan.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beamSpan.log">att.beamSpan.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tuplet.log">att.tuplet.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tuplet.log">att.tuplet.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tupletSpan">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tupletSpan.log">att.tupletSpan.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tupletSpan.log">att.tupletSpan.log</a>)
                   </span>
                </div>
             </div>
@@ -64,10 +65,10 @@ title: "att.beamedwith"
                   staff the beam is connected to; that is, the staff above or the staff below.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OTHERSTAFF">data.OTHERSTAFF</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OTHERSTAFF">data.OTHERSTAFF</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamedwith">att.beamedwith</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamedwith">att.beamedwith</a>
                </span>
             </div>
          </td>

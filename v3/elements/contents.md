@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "contents"
 
 ---
@@ -35,7 +36,7 @@ title: "contents"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -46,7 +47,7 @@ title: "contents"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,10 +55,10 @@ title: "contents"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "contents"
                   participants in a relationship; that is, the entities pointed "to".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,7 +85,7 @@ title: "contents"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -102,7 +103,7 @@ title: "contents"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than allowed by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -112,10 +113,10 @@ title: "contents"
                   attribute must be a URI.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -135,7 +136,7 @@ title: "contents"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than permitted by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -145,10 +146,10 @@ title: "contents"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -162,7 +163,7 @@ title: "contents"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -185,15 +186,15 @@ title: "contents"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/expression">expression</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/seriesStmt">seriesStmt</a> 
-                        <a class="link_odd_elementSpec" href="/v3/source">source</a> 
-                        <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/seriesStmt">seriesStmt</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/source">source</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a>
                      </span>
                   </div>
                </div>
@@ -209,15 +210,15 @@ title: "contents"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/contentItem">contentItem</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/contentItem">contentItem</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/head">head</a> 
-                     <a class="link_odd_elementSpec" href="/v3/label">label</a> 
-                     <a class="link_odd_elementSpec" href="/v3/p">p</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/head">head</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/label">label</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/p">p</a>
                   </span>
                </div>
             </div>

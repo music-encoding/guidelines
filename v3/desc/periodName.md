@@ -1,8 +1,0 @@
----
-desc: "periodName"
-type: "elementSpec"
----
-
-(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
-Style
-period'.

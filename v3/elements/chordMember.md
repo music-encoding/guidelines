@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "chordMember"
 
 ---
@@ -29,10 +30,10 @@ title: "chordMember"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the performed pitch inflection.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental.performed">att.accidental.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.accidental.performed">att.accidental.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +46,10 @@ title: "chordMember"
                   respectively.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FINGER.FRET">data.FINGER.FRET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FINGER.FRET">data.FINGER.FRET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/chordMember">chordMember</a>
+                  <a class="link_odd" href="/{{ page.version }}/chordMember">chordMember</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "chordMember"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the location at which a string should be stopped against a fret.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FRET">data.FRET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FRET">data.FRET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.fretlocation">att.fretlocation</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.fretlocation">att.fretlocation</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "chordMember"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Encodes the harmonic interval between pitches occurring at the same time.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.intervalharmonic">att.intervalharmonic</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.intervalharmonic">att.intervalharmonic</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,7 +82,7 @@ title: "chordMember"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -89,10 +90,10 @@ title: "chordMember"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -100,10 +101,10 @@ title: "chordMember"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures written octave information.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octave">att.octave</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octave">att.octave</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,10 +112,10 @@ title: "chordMember"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pitch">att.pitch</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pitch">att.pitch</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -124,10 +125,10 @@ title: "chordMember"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -141,7 +142,7 @@ title: "chordMember"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -164,7 +165,7 @@ title: "chordMember"
                   <div class="specChild">
                      <span class="specChildModule">MEI.harmony</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/chordDef">chordDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/chordDef">chordDef</a>
                      </span>
                   </div>
                </div>

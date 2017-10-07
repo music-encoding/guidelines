@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.staffGrpLike"
 
 ---
@@ -26,11 +27,11 @@ title: "model.staffGrpLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
                </div>
             </div>
          </td>
@@ -42,7 +43,7 @@ title: "model.staffGrpLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a> (direct member of model.staffGrpLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a> (direct member of model.staffGrpLike)
                </div>
             </div>
          </td>

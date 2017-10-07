@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.bTrem.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.bTrem.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a> (direct member of att.bTrem.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bTrem">bTrem</a> (direct member of att.bTrem.vis)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.bTrem.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">States where the tuplet number will be placed in relation to the note heads.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numberplacement">att.numberplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.numberplacement">att.numberplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -52,10 +53,10 @@ title: "att.bTrem.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Determines if the tuplet number is visible.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numberplacement">att.numberplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.numberplacement">att.numberplacement</a>
                </span>
             </div>
          </td>

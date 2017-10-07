@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.nameLike"
 
 ---
@@ -26,11 +27,11 @@ title: "model.nameLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/creation">creation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/respStmt">respStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/creation">creation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/respStmt">respStmt</a>
                </div>
             </div>
          </td>
@@ -42,33 +43,33 @@ title: "model.nameLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a> (direct member of model.nameLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a> (direct member of model.nameLike)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.nameLike.agent">model.nameLike.agent</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.agent">model.nameLike.agent</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/model.nameLike.place">model.nameLike.place</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.place">model.nameLike.place</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.nameLike.geogName">model.nameLike.geogName</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.geogName">model.nameLike.geogName</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physLoc">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.repositoryLike">model.repositoryLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.repositoryLike">model.repositoryLike</a>)
                   </span>
                </div>
             </div>

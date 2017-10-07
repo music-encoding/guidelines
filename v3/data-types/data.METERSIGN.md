@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.METERSIGN"
 
 ---
@@ -25,8 +26,8 @@ title: "data.METERSIGN"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.meterSig.log">att.meterSig.log</a> (@sym), 
-               <a class="link_odd_classSpec" href="/v3/att.meterSigDefault.vis">att.meterSigDefault.vis</a> (@meter.sym)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.meterSig.log">att.meterSig.log</a> (@sym), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.meterSigDefault.vis">att.meterSigDefault.vis</a> (@meter.sym)
             </div>
          </td>
       </tr>

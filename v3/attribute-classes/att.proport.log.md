@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.proport.log"
 
 ---
@@ -28,7 +29,7 @@ title: "att.proport.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/proport">proport</a> (direct member of att.proport.log)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/proport">proport</a> (direct member of att.proport.log)
                </div>
             </div>
          </td>
@@ -48,7 +49,7 @@ title: "att.proport.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -61,7 +62,7 @@ title: "att.proport.log"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
          </td>

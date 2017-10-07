@@ -1,6 +1,7 @@
 ---
 sectionid: sharedTempoMarks
 title: "Tempo"
+version: "v3"
 ---
 
 
@@ -11,7 +12,7 @@ continuous tempo markings may be encoded using this element.
 
 
 
-{% include specDesc.html key="tempo" atts="" %}
+{% include specDesc.html version=page.version key="tempo" atts="" %}
 
 
 

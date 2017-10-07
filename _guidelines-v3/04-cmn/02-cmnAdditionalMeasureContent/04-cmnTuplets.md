@@ -1,6 +1,7 @@
 ---
 sectionid: cmnTuplets
 title: "Tuplets"
+version: "v3"
 ---
 
 
@@ -44,16 +45,16 @@ the general presence of such a number.
 
 
 
-In addition to [note](/v3/elements/note.html){:.link_odd_elementSpec} elements, [tuplet](/v3/elements/tuplet.html){:.link_odd_elementSpec} may
-contain other elements, such as [rest](/v3/elements/rest.html){:.link_odd_elementSpec} or [space](/v3/elements/space.html){:.link_odd_elementSpec},
+In addition to [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} elements, [tuplet](/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} may
+contain other elements, such as [rest](/{{ page.version }}/elements/rest.html){:.link_odd_elementSpec} or [space](/{{ page.version }}/elements/space.html){:.link_odd_elementSpec},
 to match the content of a source document or an intended rendering. In particular,
-the [beam](/v3/elements/beam.html){:.link_odd_elementSpec} element is allowed so that custom beaming may be indicated, e.g., a
+the [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element is allowed so that custom beaming may be indicated, e.g., a
 septuplet may be divided into a group of three plus a group of four
 notes.
 
 
 
-The [tuplet](/v3/elements/tuplet.html){:.link_odd_elementSpec} element may also be used for repetition of the same pitch;
+The [tuplet](/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} element may also be used for repetition of the same pitch;
 that is, a single note or chord may be the only content of the tuplet. In some cases,
 optical music recognition software may treat these instances as bowed tremolandi due
 to the
@@ -65,8 +66,8 @@ In some situations, a tuplet is made up of events in different measures. As this
 the
 issue of non-concurrent hierarchies, it is not possible to encode such situations
 with the
-[tuplet](/v3/elements/tuplet.html){:.link_odd_elementSpec} element described above. Therefore, MEI offers the [tupletSpan](/v3/elements/tupletSpan.html){:.link_odd_elementSpec} element, which is member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class. It is nested inside of [measure](/v3/elements/measure.html){:.link_odd_elementSpec}, following all the measure's [staff](/v3/elements/staff.html){:.link_odd_elementSpec} children. It uses
-the same attributes as [tuplet](/v3/elements/tuplet.html){:.link_odd_elementSpec} to describe tuplets, but instead of
+[tuplet](/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} element described above. Therefore, MEI offers the [tupletSpan](/{{ page.version }}/elements/tupletSpan.html){:.link_odd_elementSpec} element, which is member of the [model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class. It is nested inside of [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, following all the measure's [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} children. It uses
+the same attributes as [tuplet](/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} to describe tuplets, but instead of
 nesting all affected notes inside itself, it references the **@xml:id** values of all
 affected notes in its **@plist** attribute and the initial and terminal notes of the
 tuplet using **@startid** and **@endid** attributes. This configuration allows

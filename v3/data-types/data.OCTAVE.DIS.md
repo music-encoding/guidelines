@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.OCTAVE.DIS"
 
 ---
@@ -27,8 +28,8 @@ title: "data.OCTAVE.DIS"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.cleffing.log">att.cleffing.log</a> (@clef.dis), 
-               <a class="link_odd_classSpec" href="/v3/att.octavedisplacement">att.octavedisplacement</a> (@dis)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a> (@clef.dis), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a> (@dis)
             </div>
          </td>
       </tr>

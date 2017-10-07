@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "creation"
 
 ---
@@ -39,7 +40,7 @@ title: "creation"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -49,10 +50,10 @@ title: "creation"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -63,7 +64,7 @@ title: "creation"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,10 +72,10 @@ title: "creation"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -89,7 +90,7 @@ title: "creation"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -99,10 +100,10 @@ title: "creation"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -116,7 +117,7 @@ title: "creation"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -132,7 +133,7 @@ title: "creation"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -143,7 +144,7 @@ title: "creation"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.biblPart">model.biblPart</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.biblPart">model.biblPart</a>
             </div>
          </td>
       </tr>
@@ -157,30 +158,30 @@ title: "creation"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/expression">expression</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/perfDuration">perfDuration</a> 
-                        <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/perfDuration">perfDuration</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/bibl">bibl</a> 
-                        <a class="link_odd_elementSpec" href="/v3/biblScope">biblScope</a> 
-                        <a class="link_odd_elementSpec" href="/v3/creation">creation</a> 
-                        <a class="link_odd_elementSpec" href="/v3/extent">extent</a> 
-                        <a class="link_odd_elementSpec" href="/v3/genre">genre</a> 
-                        <a class="link_odd_elementSpec" href="/v3/imprint">imprint</a> 
-                        <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a> 
-                        <a class="link_odd_elementSpec" href="/v3/recipient">recipient</a> 
-                        <a class="link_odd_elementSpec" href="/v3/relatedItem">relatedItem</a> 
-                        <a class="link_odd_elementSpec" href="/v3/series">series</a> 
-                        <a class="link_odd_elementSpec" href="/v3/textLang">textLang</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/bibl">bibl</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/biblScope">biblScope</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/creation">creation</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/genre">genre</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/imprint">imprint</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/physLoc">physLoc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/recipient">recipient</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/relatedItem">relatedItem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/textLang">textLang</a>
                      </span>
                   </div>
                </div>
@@ -200,17 +201,17 @@ title: "creation"
                <div class="specChild">
                   <span class="specChildModule">MEI.namesdates</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/persName">persName</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/date">date</a> 
-                     <a class="link_odd_elementSpec" href="/v3/name">name</a> 
-                     <a class="link_odd_elementSpec" href="/v3/repository">repository</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>
                   </span>
                </div>
             </div>

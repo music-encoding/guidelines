@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.staffDefLike"
 
 ---
@@ -26,15 +27,15 @@ title: "model.staffDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.scorePart">model.scorePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.sectionPart">model.sectionPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.staffPart.mensuralAndNeumes">model.staffPart.mensuralAndNeumes</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.layerPart.mensuralAndNeumes">model.layerPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.scorePart">model.scorePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.sectionPart">model.sectionPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart.mensuralAndNeumes">model.staffPart.mensuralAndNeumes</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.layerPart.mensuralAndNeumes">model.layerPart.mensuralAndNeumes</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
                </div>
             </div>
          </td>
@@ -46,7 +47,7 @@ title: "model.staffDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a> (direct member of model.staffDefLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a> (direct member of model.staffDefLike)
                </div>
             </div>
          </td>

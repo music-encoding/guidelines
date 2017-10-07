@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "barLine"
 
 ---
@@ -30,10 +31,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the location of a bar line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARPLACE">data.BARPLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BARPLACE">data.BARPLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -43,10 +44,10 @@ title: "barLine"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,10 +60,10 @@ title: "barLine"
                   right barline but not the left.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterconformance.bar">att.meterconformance.bar</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,10 +71,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,10 +84,10 @@ title: "barLine"
                   fashion.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -110,7 +111,7 @@ title: "barLine"
                   element(s) specified in plist or target attribute.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.targeteval">att.targeteval</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.targeteval">att.targeteval</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -120,10 +121,10 @@ title: "barLine"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -131,10 +132,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the appearance and usually the function of the bar line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARRENDITION">data.BARRENDITION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BARRENDITION">data.BARRENDITION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.barLine.log">att.barLine.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barLine.log">att.barLine.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -145,7 +146,7 @@ title: "barLine"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -155,10 +156,10 @@ title: "barLine"
                   meter.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.meterconformance.bar">att.meterconformance.bar</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -166,10 +167,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -177,10 +178,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -188,10 +189,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -201,10 +202,10 @@ title: "barLine"
                   copy of the current element.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -212,10 +213,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -231,10 +232,10 @@ title: "barLine"
                   the top line of a 5-line staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -244,10 +245,10 @@ title: "barLine"
                   participants in a relationship; that is, the entities pointed "to".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -261,7 +262,7 @@ title: "barLine"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -271,10 +272,10 @@ title: "barLine"
                   beats[.fractional_beat_part].
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BEAT">data.BEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.musical">att.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -310,7 +311,7 @@ title: "barLine"
                <span style="font-weight: 500;">vu</span>" 
                <i>(MEI virtual unit.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measurement">att.measurement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.measurement">att.measurement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -318,13 +319,13 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
                   be the ID of a 
-                  <a class="link_odd_elementSpec" href="/v3/when">when</a> element elsewhere in the document.
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/when">when</a> element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.alignment">att.alignment</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.alignment">att.alignment</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -332,10 +333,10 @@ title: "barLine"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Measurement of the horizontal dimension of an entity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.width">att.width</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.width">att.width</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -353,7 +354,7 @@ title: "barLine"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than allowed by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -363,10 +364,10 @@ title: "barLine"
                   attribute must be a URI.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -386,7 +387,7 @@ title: "barLine"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than permitted by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -396,10 +397,10 @@ title: "barLine"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -413,7 +414,7 @@ title: "barLine"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -424,7 +425,7 @@ title: "barLine"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.eventLike">model.eventLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike">model.eventLike</a>
             </div>
          </td>
       </tr>
@@ -438,61 +439,61 @@ title: "barLine"
                   <div class="specChild">
                      <span class="specChildModule">MEI.cmn</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/beam">beam</a> 
-                        <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/lem">lem</a> 
-                        <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.edittrans</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a> 
-                        <a class="link_odd_elementSpec" href="/v3/add">add</a> 
-                        <a class="link_odd_elementSpec" href="/v3/corr">corr</a> 
-                        <a class="link_odd_elementSpec" href="/v3/damage">damage</a> 
-                        <a class="link_odd_elementSpec" href="/v3/del">del</a> 
-                        <a class="link_odd_elementSpec" href="/v3/expan">expan</a> 
-                        <a class="link_odd_elementSpec" href="/v3/orig">orig</a> 
-                        <a class="link_odd_elementSpec" href="/v3/reg">reg</a> 
-                        <a class="link_odd_elementSpec" href="/v3/restore">restore</a> 
-                        <a class="link_odd_elementSpec" href="/v3/sic">sic</a> 
-                        <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a> 
-                        <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.mensural</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/ligature">ligature</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.neumes</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/ineume">ineume</a> 
-                        <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a> 
-                        <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a> 
-                        <a class="link_odd_elementSpec" href="/v3/chord">chord</a> 
-                        <a class="link_odd_elementSpec" href="/v3/clef">clef</a> 
-                        <a class="link_odd_elementSpec" href="/v3/clefGrp">clefGrp</a> 
-                        <a class="link_odd_elementSpec" href="/v3/custos">custos</a> 
-                        <a class="link_odd_elementSpec" href="/v3/layer">layer</a> 
-                        <a class="link_odd_elementSpec" href="/v3/note">note</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pad">pad</a> 
-                        <a class="link_odd_elementSpec" href="/v3/rest">rest</a> 
-                        <a class="link_odd_elementSpec" href="/v3/space">space</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/clefGrp">clefGrp</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pad">pad</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a>
                      </span>
                   </div>
                </div>
@@ -621,10 +622,10 @@ title: "barLine"
          <td class="wovenodd-col2">
             <p>This element is provided for repertoires, such as mensural notation, that lack measures.
                Because the 
-               <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a> element's attributes, from which the logical and
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a> element's attributes, from which the logical and
                visual characteristics of the bar line can be discerned, largely duplicate those of
                measure, the use of barLine is not necessary within 
-               <a class="link_odd_elementSpec" href="/v3/measure">measure</a> elements
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a> elements
                in CMN.
             </p>
          </td>

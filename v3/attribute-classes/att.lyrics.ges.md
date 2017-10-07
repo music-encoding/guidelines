@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.lyrics.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.lyrics.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lyrics">lyrics</a> (direct member of att.lyrics.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyrics">lyrics</a> (direct member of att.lyrics.ges)
                </div>
             </div>
          </td>

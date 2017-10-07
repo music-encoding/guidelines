@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.channelized"
 
 ---
@@ -26,12 +27,12 @@ title: "att.channelized"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/instrDef">instrDef</a> (direct member of att.channelized)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/instrDef">instrDef</a> (direct member of att.channelized)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.ges">att.scoreDef.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a>)
                   </span>
                </div>
             </div>
@@ -47,10 +48,10 @@ title: "att.channelized"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records a MIDI channel value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDICHANNEL">data.MIDICHANNEL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDICHANNEL">data.MIDICHANNEL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -60,10 +61,10 @@ title: "att.channelized"
                   duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PERCENT">data.PERCENT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PERCENT">data.PERCENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -71,10 +72,10 @@ title: "att.channelized"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the MIDI port value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,7 +86,7 @@ title: "att.channelized"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
          </td>

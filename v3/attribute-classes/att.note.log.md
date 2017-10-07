@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.note.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.note.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a> (direct member of att.note.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a> (direct member of att.note.log)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.note.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures a written accidental.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental">att.accidental</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.accidental">att.accidental</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.note.log"
                   fingerings should be encoded using the &lt;fingering&gt; element.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.articulation">att.articulation</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.articulation">att.articulation</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.note.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates that this event is "under a beam".</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.BEAM">data.BEAM</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAM">data.BEAM</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamed">att.beamed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamed">att.beamed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,10 +79,10 @@ title: "att.note.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the number of augmentation dots required by a dotted duration.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.AUGMENTDOT">data.AUGMENTDOT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.AUGMENTDOT">data.AUGMENTDOT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.augmentdots">att.augmentdots</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.augmentdots">att.augmentdots</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -91,10 +92,10 @@ title: "att.note.log"
                   the data.DURATION datatype.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION">data.DURATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION">data.DURATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.musical">att.duration.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.musical">att.duration.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -105,10 +106,10 @@ title: "att.note.log"
                   instead.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.fermatapresent">att.fermatapresent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.fermatapresent">att.fermatapresent</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -119,7 +120,7 @@ title: "att.note.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.layerident">att.layerident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.layerident">att.layerident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -131,7 +132,7 @@ title: "att.note.log"
                <span style="font-weight: 500;">recta</span>" ,  "
                <span style="font-weight: 500;">obliqua</span>" 
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.note.log.mensural">att.note.log.mensural</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.note.log.mensural">att.note.log.mensural</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -139,10 +140,10 @@ title: "att.note.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the attachment of an l.v. (laissez vibrer) sign to this element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lvpresent">att.lvpresent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lvpresent">att.lvpresent</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -150,10 +151,10 @@ title: "att.note.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures written octave information.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octave">att.octave</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octave">att.octave</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -164,10 +165,10 @@ title: "att.note.log"
                   trill, or turn) should be employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.ORNAM.cmn">data.ORNAM.cmn</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ORNAM.cmn">data.ORNAM.cmn</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.ornam">att.ornam</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.ornam">att.ornam</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -175,10 +176,10 @@ title: "att.note.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pitch">att.pitch</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pitch">att.pitch</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -188,10 +189,10 @@ title: "att.note.log"
                   slur needs to be recorded, then a &lt;slur&gt; element should be employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.SLUR">data.SLUR</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SLUR">data.SLUR</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slurpresent">att.slurpresent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.slurpresent">att.slurpresent</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -204,7 +205,7 @@ title: "att.note.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffident">att.staffident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffident">att.staffident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -215,7 +216,7 @@ title: "att.note.log"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.syltext">att.syltext</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.syltext">att.syltext</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -225,10 +226,10 @@ title: "att.note.log"
                   tie needs to be recorded, then a &lt;tie&gt; element should be employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.TIE">data.TIE</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TIE">data.TIE</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tiepresent">att.tiepresent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tiepresent">att.tiepresent</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -238,10 +239,10 @@ title: "att.note.log"
                   beats[.fractional_beat_part].
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BEAT">data.BEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.musical">att.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -252,10 +253,10 @@ title: "att.note.log"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -263,10 +264,10 @@ title: "att.note.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to record the onset time in terms of ISO time.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISOTIME">data.ISOTIME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISOTIME">data.ISOTIME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timestamp.performed">att.timestamp.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -277,10 +278,10 @@ title: "att.note.log"
                   employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.TUPLET">data.TUPLET</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TUPLET">data.TUPLET</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tupletpresent">att.tupletpresent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.tupletpresent">att.tupletpresent</a>
                </span>
             </div>
          </td>

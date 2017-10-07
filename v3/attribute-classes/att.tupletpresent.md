@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tupletpresent"
 
 ---
@@ -26,27 +27,27 @@ title: "att.tupletpresent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.chord.log">att.chord.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.log">att.note.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.log">att.rest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.rest.log">att.rest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/space">space</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/space">space</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.space.log">att.space.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.space.log">att.space.log</a>)
                   </span>
                </div>
             </div>
@@ -65,10 +66,10 @@ title: "att.tupletpresent"
                   employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.TUPLET">data.TUPLET</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.TUPLET">data.TUPLET</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tupletpresent">att.tupletpresent</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tupletpresent">att.tupletpresent</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 sectionid: sharedMusicElement
 title: "Music Element"
+version: "v3"
 ---
 
 
@@ -17,19 +18,19 @@ to
 treat the text as unitary or composite; each option may have advantages and
 disadvantages.
 
-Whether unitary or composite, the musical text is marked with the [music](/v3/elements/music.html){:.link_odd_elementSpec} tag and may contain front matter, a body, and back matter. In unitary texts,
-the body is tagged using the [body](/v3/elements/body.html){:.link_odd_elementSpec} element; in composite texts,
+Whether unitary or composite, the musical text is marked with the [music](/{{ page.version }}/elements/music.html){:.link_odd_elementSpec} tag and may contain front matter, a body, and back matter. In unitary texts,
+the body is tagged using the [body](/{{ page.version }}/elements/body.html){:.link_odd_elementSpec} element; in composite texts,
 however, where the textual body consists of a series of subordinate musical texts
 or other
-groups, it is tagged with the [group](/v3/elements/group.html){:.link_odd_elementSpec} element. The overall structure of
+groups, it is tagged with the [group](/{{ page.version }}/elements/group.html){:.link_odd_elementSpec} element. The overall structure of
 any musical text, unitary or composite, is thus defined by the following elements:
 
 
 
-{% include specDesc.html key="front" atts="" %}
-{% include specDesc.html key="body" atts="" %}
-{% include specDesc.html key="group" atts="" %}
-{% include specDesc.html key="back" atts="" %}
+{% include specDesc.html version=page.version key="front" atts="" %}
+{% include specDesc.html version=page.version key="body" atts="" %}
+{% include specDesc.html version=page.version key="group" atts="" %}
+{% include specDesc.html version=page.version key="back" atts="" %}
 
 
 
@@ -41,7 +42,7 @@ These textual items may appear in either the front or back elements. The front a
 back
 elements, available only when the MEI.text module is activated, are described more
 fully in
-chapter <a class="link_ptr" title="Text in MEI" href="/v3/guidelines/text.html">21 Text in MEI</a>.
+chapter <a class="link_ptr" title="Text in MEI" href="/{{ page.version }}/guidelines/text.html">21 Text in MEI</a>.
 
 The overall structure of a single musical text is:
 

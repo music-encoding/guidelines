@@ -1,8 +1,0 @@
----
-desc: "castItem"
-type: "elementSpec"
----
-
-Contains a single entry within a cast list, describing either a single role or a list
-of
-non-speaking roles.

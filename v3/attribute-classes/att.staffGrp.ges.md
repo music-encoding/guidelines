@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffGrp.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.staffGrp.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a> (direct member of att.staffGrp.ges)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffGrp">staffGrp</a> (direct member of att.staffGrp.ges)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.staffGrp.ges"
                   of an &lt;instrDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.instrumentident">att.instrumentident</a>
+                  <a class="link_odd" href="/{{ v3}}/att.instrumentident">att.instrumentident</a>
                </span>
             </div>
          </td>

@@ -1,13 +1,14 @@
 ---
 sectionid: lyricsInEvents
 title: "Vocally Performed Text Encoded Within Notes"
+version: "v3"
 ---
 
 
 
 Each lyric syllable can be encoded directly within an associated note, either by using
 the
-**@syl** attribute on [note](/v3/elements/note.html){:.link_odd_elementSpec} or the [verse](/v3/elements/verse.html){:.link_odd_elementSpec}
+**@syl** attribute on [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} or the [verse](/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec}
 element.
 
 Using the **@syl** attribute on notes is the simplest way of encoding vocally performed
@@ -19,7 +20,7 @@ The following example from Handel's *Messiah* (HWV 56) shows the use of
 **@syl**:
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample263.xml" valid="true" %}
@@ -27,18 +28,18 @@ The following example from Handel's *Messiah* (HWV 56) shows the use of
 
 When there are multiple lines of vocally performed text, or the encoder wishes to
 be more
-specific about connectors, etc., the use of [verse](/v3/elements/verse.html){:.link_odd_elementSpec} and [syl](/v3/elements/syl.html){:.link_odd_elementSpec} is recommended.
+specific about connectors, etc., the use of [verse](/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec} and [syl](/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} is recommended.
 
 
 
 
-{% include specDesc.html key="verse" atts="" %}
-{% include specDesc.html key="verse" atts="rhythm" %}
+{% include specDesc.html version=page.version key="verse" atts="" %}
+{% include specDesc.html version=page.version key="verse" atts="rhythm" %}
 
 
 
 
-The following example from Handel's *Messiah* (HWV 56) shows the use of [verse](/v3/elements/verse.html){:.link_odd_elementSpec}:
+The following example from Handel's *Messiah* (HWV 56) shows the use of [verse](/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec}:
 
 {% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample264.xml" valid="true" %}
 
@@ -55,13 +56,13 @@ the vocal text from Mozart's *Don Giovanni* sung by Don Giovanni in Finale II,
 <span class="q">il</span> and between 
 <span class="q">core</span> and 
 <span class="q">in</span>. An elision can be indicated by placing both
-syllables within the same [note](/v3/elements/note.html){:.link_odd_elementSpec} and setting the [syl](/v3/elements/syl.html){:.link_odd_elementSpec}
+syllables within the same [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and setting the [syl](/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec}
 element's **@con** attribute value to 't':
 
 {% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample265.xml" valid="true" %}
 
 
-When there is more than one line of text, more than one [verse](/v3/elements/verse.html){:.link_odd_elementSpec} element
+When there is more than one line of text, more than one [verse](/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec} element
 can be used. The following example from a piano reduction of Wagner's *Rheingold*
 has two lines of text, with an English translation on the second line. Note the use
 of the
@@ -69,13 +70,13 @@ of the
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample266.xml" valid="false" %}
 
 
-Optionally, it is possible to include an [lb](/v3/elements/lb.html){:.link_odd_elementSpec} element within [verse](/v3/elements/verse.html){:.link_odd_elementSpec} to explicitly encode line and line group endings. This is
+Optionally, it is possible to include an [lb](/{{ page.version }}/elements/lb.html){:.link_odd_elementSpec} element within [verse](/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec} to explicitly encode line and line group endings. This is
 specifically meant to facilitate karaoke applications.
 
 

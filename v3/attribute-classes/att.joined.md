@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.joined"
 
 ---
@@ -28,21 +29,21 @@ title: "att.joined"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.measure.anl">att.measure.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.measure.anl">att.measure.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/phrase">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.phrase.anl">att.phrase.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.anl">att.phrase.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/slur">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.slur.anl">att.slur.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.slur.anl">att.slur.anl</a>)
                   </span>
                </div>
             </div>
@@ -64,10 +65,10 @@ title: "att.joined"
                   attribute.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.joined">att.joined</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.joined">att.joined</a>
                </span>
             </div>
          </td>

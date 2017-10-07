@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "change"
 
 ---
@@ -35,7 +36,7 @@ title: "change"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -43,10 +44,10 @@ title: "change"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the end point of a date range in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,10 +55,10 @@ title: "change"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides the value of a textual date in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -68,7 +69,7 @@ title: "change"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -76,10 +77,10 @@ title: "change"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -87,10 +88,10 @@ title: "change"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains an upper boundary for an uncertain date in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -98,10 +99,10 @@ title: "change"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -112,10 +113,10 @@ title: "change"
                   identifiers declared in the document header.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.responsibility">att.responsibility</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.responsibility">att.responsibility</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -123,10 +124,10 @@ title: "change"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the starting point of a date range in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -139,7 +140,7 @@ title: "change"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -152,7 +153,7 @@ title: "change"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -162,10 +163,10 @@ title: "change"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -179,7 +180,7 @@ title: "change"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -202,7 +203,7 @@ title: "change"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/revisionDesc">revisionDesc</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/revisionDesc">revisionDesc</a>
                      </span>
                   </div>
                </div>
@@ -218,14 +219,14 @@ title: "change"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/changeDesc">changeDesc</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/changeDesc">changeDesc</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/date">date</a> 
-                     <a class="link_odd_elementSpec" href="/v3/respStmt">respStmt</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/respStmt">respStmt</a>
                   </span>
                </div>
             </div>
@@ -344,11 +345,11 @@ title: "change"
                minor typographical errors. It is recommended that revisions should be entered in
                reverse
                chronological order, with the most recent 
-               <a class="link_odd_elementSpec" href="/v3/change">change</a> first. The
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/change">change</a> first. The
                
                <span class="att">resp</span> attribute contains a pointer to an element containing info about the
                person/entity responsible for change. The 
-               <a class="link_odd_elementSpec" href="/v3/edition">edition</a> element can be
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/edition">edition</a> element can be
                used to designate an MEI encoding that has been so substantively changed that it
                constitutes a new version that supersedes earlier versions.This element is modelled
                on an element in the Encoded Archival Description (EAD)

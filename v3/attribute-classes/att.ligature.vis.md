@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.ligature.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.ligature.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ligature">ligature</a> (direct member of att.ligature.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a> (direct member of att.ligature.vis)
                </div>
             </div>
          </td>

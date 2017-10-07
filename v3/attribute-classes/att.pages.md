@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pages"
 
 ---
@@ -26,9 +27,9 @@ title: "att.pages"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -44,10 +45,10 @@ title: "att.pages"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the bottom of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,10 +58,10 @@ title: "att.pages"
                   steps.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -68,10 +69,10 @@ title: "att.pages"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the left side of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,10 +82,10 @@ title: "att.pages"
                   page.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PAGE.PANELS">data.PAGE.PANELS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PAGE.PANELS">data.PAGE.PANELS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,10 +93,10 @@ title: "att.pages"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the right side of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,10 +104,10 @@ title: "att.pages"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates how the page should be scaled when rendered.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PGSCALE">data.PGSCALE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PGSCALE">data.PGSCALE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -114,10 +115,10 @@ title: "att.pages"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the amount of whitespace at the top of a page.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -127,10 +128,10 @@ title: "att.pages"
                   steps.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pages">att.pages</a>
                </span>
             </div>
          </td>

@@ -1,14 +1,15 @@
 ---
 sectionid: usersymbolsReusableSymbols
 title: "Defining Reusable Symbols"
+version: "v3"
 ---
 
 
 
-The [symbolDef](/v3/elements/symbolDef.html){:.link_odd_elementSpec} element uses SVG markup or the aforementioned graphic
+The [symbolDef](/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} element uses SVG markup or the aforementioned graphic
 primitives to describe a symbol. A symbol definition may also use symbols defined
 by other
-[symbolDef](/v3/elements/symbolDef.html){:.link_odd_elementSpec} elements by employing the [symbol](/v3/elements/symbol.html){:.link_odd_elementSpec}
+[symbolDef](/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} elements by employing the [symbol](/{{ page.version }}/elements/symbol.html){:.link_odd_elementSpec}
 element.
 
 <figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample345.xml" valid="true" %}
@@ -17,7 +18,7 @@ element.
 </figure>
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/triangle.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/usersymbols/triangle.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 53. Rendition of the triangle defined above</figcaption>
 </figure>
 
@@ -27,6 +28,6 @@ element.
 </figure>
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/triangleWithStick.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/usersymbols/triangleWithStick.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 54. Rendition of the composite triangle symbol</figcaption>
 </figure>

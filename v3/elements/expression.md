@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "expression"
 
 ---
@@ -35,7 +36,7 @@ title: "expression"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -43,10 +44,10 @@ title: "expression"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datapointing">att.datapointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datapointing">att.datapointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,7 +58,7 @@ title: "expression"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "expression"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,10 +79,10 @@ title: "expression"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -95,7 +96,7 @@ title: "expression"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -106,7 +107,7 @@ title: "expression"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.expressionLike">model.expressionLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.expressionLike">model.expressionLike</a>
             </div>
          </td>
       </tr>
@@ -120,9 +121,9 @@ title: "expression"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/componentGrp">componentGrp</a> 
-                        <a class="link_odd_elementSpec" href="/v3/expression">expression</a> 
-                        <a class="link_odd_elementSpec" href="/v3/expressionList">expressionList</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/componentGrp">componentGrp</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expressionList">expressionList</a>
                      </span>
                   </div>
                </div>
@@ -138,39 +139,39 @@ title: "expression"
                <div class="specChild">
                   <span class="specChildModule">MEI.frbr</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/componentGrp">componentGrp</a> 
-                     <a class="link_odd_elementSpec" href="/v3/relationList">relationList</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/componentGrp">componentGrp</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/relationList">relationList</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/classification">classification</a> 
-                     <a class="link_odd_elementSpec" href="/v3/contents">contents</a> 
-                     <a class="link_odd_elementSpec" href="/v3/context">context</a> 
-                     <a class="link_odd_elementSpec" href="/v3/extMeta">extMeta</a> 
-                     <a class="link_odd_elementSpec" href="/v3/history">history</a> 
-                     <a class="link_odd_elementSpec" href="/v3/key">key</a> 
-                     <a class="link_odd_elementSpec" href="/v3/langUsage">langUsage</a> 
-                     <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a> 
-                     <a class="link_odd_elementSpec" href="/v3/meter">meter</a> 
-                     <a class="link_odd_elementSpec" href="/v3/notesStmt">notesStmt</a> 
-                     <a class="link_odd_elementSpec" href="/v3/otherChar">otherChar</a> 
-                     <a class="link_odd_elementSpec" href="/v3/perfDuration">perfDuration</a> 
-                     <a class="link_odd_elementSpec" href="/v3/perfMedium">perfMedium</a> 
-                     <a class="link_odd_elementSpec" href="/v3/scoreFormat">scoreFormat</a> 
-                     <a class="link_odd_elementSpec" href="/v3/titleStmt">titleStmt</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/classification">classification</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/contents">contents</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/context">context</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/extMeta">extMeta</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/history">history</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/key">key</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/langUsage">langUsage</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/meter">meter</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/notesStmt">notesStmt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/otherChar">otherChar</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/perfDuration">perfDuration</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/perfMedium">perfMedium</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreFormat">scoreFormat</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/titleStmt">titleStmt</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a> 
-                     <a class="link_odd_elementSpec" href="/v3/creation">creation</a> 
-                     <a class="link_odd_elementSpec" href="/v3/extent">extent</a> 
-                     <a class="link_odd_elementSpec" href="/v3/identifier">identifier</a> 
-                     <a class="link_odd_elementSpec" href="/v3/incip">incip</a> 
-                     <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/creation">creation</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/identifier">identifier</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a>
                   </span>
                </div>
             </div>
@@ -522,11 +523,11 @@ title: "expression"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/v3/perfDuration">perfDuration</a> element captures the 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/perfDuration">perfDuration</a> element captures the 
                <em class="mentioned">intended
                   duration
                </em> of the expression, while 
-               <a class="link_odd_elementSpec" href="/v3/extent">extent</a> records scope of
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a> records scope of
                the expression in other terms, such as number of pages, measures, etc.
             </p>
          </td>

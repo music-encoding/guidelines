@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.name"
 
 ---
@@ -26,25 +27,25 @@ title: "att.name"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a> (direct members of att.name)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/addName">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bloc">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/country">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/district">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/famName">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/foreName">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genName">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogFeat">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/nameLink">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/periodName">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/region">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/roleName">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/settlement">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/styleName">styleName</a> (direct members of att.name)
                </div>
             </div>
          </td>
@@ -61,10 +62,10 @@ title: "att.name"
                   taken.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.authorized">att.authorized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -77,7 +78,7 @@ title: "att.name"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.authorized">att.authorized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -90,7 +91,7 @@ title: "att.name"
                <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.canonical">att.canonical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.canonical">att.canonical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -98,10 +99,10 @@ title: "att.name"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the end point of a date range in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -109,10 +110,10 @@ title: "att.name"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides the value of a textual date in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -125,7 +126,7 @@ title: "att.name"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.filing">att.filing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.filing">att.filing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -133,10 +134,10 @@ title: "att.name"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains an upper boundary for an uncertain date in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -144,10 +145,10 @@ title: "att.name"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -157,10 +158,10 @@ title: "att.name"
                   document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.name">att.name</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.name">att.name</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -173,7 +174,7 @@ title: "att.name"
                Value is plain text.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.name">att.name</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.name">att.name</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -181,10 +182,10 @@ title: "att.name"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the starting point of a date range in standard ISO form.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
                </span>
             </div>
          </td>

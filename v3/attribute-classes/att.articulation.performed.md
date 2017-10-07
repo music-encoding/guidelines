@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.articulation.performed"
 
 ---
@@ -26,21 +27,21 @@ title: "att.articulation.performed"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/artic">artic</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/artic">artic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.artic.ges">att.artic.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.artic.ges">att.artic.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.ges">att.chord.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.ges">att.chord.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -56,10 +57,10 @@ title: "att.articulation.performed"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records performed articulation that differs from the written value.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.articulation.performed">att.articulation.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.articulation.performed">att.articulation.performed</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "lyrics"
 
 ---
@@ -29,10 +30,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -42,10 +43,10 @@ title: "lyrics"
                   fashion.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -55,10 +56,10 @@ title: "lyrics"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ v3}}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -66,10 +67,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the name of a font-family.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -77,10 +78,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the name of a font.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -91,10 +92,10 @@ title: "lyrics"
                   size, e.g., "125%". 
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -102,10 +103,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the style of a font, i.e, italic, oblique, or normal.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -113,10 +114,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to indicate bold type.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -127,7 +128,7 @@ title: "lyrics"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -138,7 +139,7 @@ title: "lyrics"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.layerident">att.layerident</a>
+                  <a class="link_odd" href="/{{ v3}}/att.layerident">att.layerident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -146,10 +147,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -157,10 +158,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -170,10 +171,10 @@ title: "lyrics"
                   associated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFREL">data.STAFFREL</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.STAFFREL">data.STAFFREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.placement">att.placement</a>
+                  <a class="link_odd" href="/{{ v3}}/att.placement">att.placement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -181,10 +182,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -194,10 +195,10 @@ title: "lyrics"
                   copy of the current element.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -210,7 +211,7 @@ title: "lyrics"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffident">att.staffident</a>
+                  <a class="link_odd" href="/{{ v3}}/att.staffident">att.staffident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -218,10 +219,10 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -236,7 +237,7 @@ title: "lyrics"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -244,13 +245,13 @@ title: "lyrics"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
                   be the ID of a 
-                  <a class="link_odd_elementSpec" href="/v3/when">when</a> element elsewhere in the document.
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/when">when</a> element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.alignment">att.alignment</a>
+                  <a class="link_odd" href="/{{ v3}}/att.alignment">att.alignment</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -260,10 +261,10 @@ title: "lyrics"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -277,7 +278,7 @@ title: "lyrics"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -293,7 +294,7 @@ title: "lyrics"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -304,7 +305,7 @@ title: "lyrics"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.lyricsLike">model.lyricsLike</a>
+               <a class="link_odd_classSpec" href="/{{ v3}}/model.lyricsLike">model.lyricsLike</a>
             </div>
          </td>
       </tr>
@@ -318,55 +319,55 @@ title: "lyrics"
                   <div class="specChild">
                      <span class="specChildModule">MEI.cmn</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/measure">measure</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/lem">lem</a> 
-                        <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/lem">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/rdg">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.edittrans</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a> 
-                        <a class="link_odd_elementSpec" href="/v3/add">add</a> 
-                        <a class="link_odd_elementSpec" href="/v3/corr">corr</a> 
-                        <a class="link_odd_elementSpec" href="/v3/damage">damage</a> 
-                        <a class="link_odd_elementSpec" href="/v3/del">del</a> 
-                        <a class="link_odd_elementSpec" href="/v3/expan">expan</a> 
-                        <a class="link_odd_elementSpec" href="/v3/orig">orig</a> 
-                        <a class="link_odd_elementSpec" href="/v3/reg">reg</a> 
-                        <a class="link_odd_elementSpec" href="/v3/restore">restore</a> 
-                        <a class="link_odd_elementSpec" href="/v3/sic">sic</a> 
-                        <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a> 
-                        <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/abbr">abbr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/add">add</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/corr">corr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/damage">damage</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/del">del</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/expan">expan</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/orig">orig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/reg">reg</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/restore">restore</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/sic">sic</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/supplied">supplied</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/unclear">unclear</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.lyrics</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/lyrics">lyrics</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/lyrics">lyrics</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.mensural</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/ligature">ligature</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/ligature">ligature</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.neumes</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/syllable">syllable</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/layer">layer</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/layer">layer</a>
                      </span>
                   </div>
                </div>
@@ -382,7 +383,7 @@ title: "lyrics"
                <div class="specChild">
                   <span class="specChildModule">MEI.lyrics</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/verse">verse</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/verse">verse</a>
                   </span>
                </div>
             </div>
@@ -508,7 +509,7 @@ title: "lyrics"
                the
                rhythm of the lyrics may be recorded in the 
                <span class="att">rhythm</span> attribute of the parent 
-               <a class="link_odd_elementSpec" href="/v3/verse">verse</a> element.
+               <a class="link_odd_elementSpec" href="/{{ v3}}/verse">verse</a> element.
             </p>
          </td>
       </tr>

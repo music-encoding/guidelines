@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.proport.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.proport.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/proport">proport</a> (direct member of att.proport.ges)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/proport">proport</a> (direct member of att.proport.ges)
                </div>
             </div>
          </td>

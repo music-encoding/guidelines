@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.visualoffset2.ho"
 
 ---
@@ -26,93 +27,93 @@ title: "att.visualoffset2.ho"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dir">dir</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/dir">dir</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dir.vis">att.dir.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dir.vis">att.dir.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dynam">dynam</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/dynam">dynam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dynam.vis">att.dynam.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dynam.vis">att.dynam.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/harm">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harm.vis">att.harm.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.harm.vis">att.harm.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/octave">octave</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/octave">octave</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.octave.vis">att.octave.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.octave.vis">att.octave.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ornam">ornam</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/ornam">ornam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.ornam.vis">att.ornam.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.ornam.vis">att.ornam.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tempo">tempo</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tempo.vis">att.tempo.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tempo.vis">att.tempo.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/trill">trill</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/trill">trill</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trill.vis">att.trill.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.trill.vis">att.trill.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/curve">curve</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/curve">curve</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.visualoffset2">att.visualoffset2</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.visualoffset2">att.visualoffset2</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bend">bend</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/bend">bend</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bend.vis">att.bend.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.bend.vis">att.bend.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/gliss">gliss</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/gliss">gliss</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.gliss.vis">att.gliss.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.gliss.vis">att.gliss.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/hairpin">hairpin</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/hairpin">hairpin</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.hairpin.vis">att.hairpin.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.hairpin.vis">att.hairpin.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/line">line</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/line">line</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.line.vis">att.line.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.line.vis">att.line.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/phrase">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.phrase.vis">att.phrase.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.phrase.vis">att.phrase.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/slur">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.slur.vis">att.slur.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.slur.vis">att.slur.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tie">tie</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/tie">tie</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tie.vis">att.tie.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tie.vis">att.tie.vis</a>)
                   </span>
                </div>
             </div>
@@ -130,10 +131,10 @@ title: "att.visualoffset2.ho"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.ho">att.visualoffset2.ho</a>
+                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.ho">att.visualoffset2.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -143,10 +144,10 @@ title: "att.visualoffset2.ho"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.ho">att.visualoffset2.ho</a>
+                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.ho">att.visualoffset2.ho</a>
                </span>
             </div>
          </td>

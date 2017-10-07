@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "chordDef"
 
 ---
@@ -32,7 +33,7 @@ title: "chordDef"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -40,10 +41,10 @@ title: "chordDef"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,7 +55,7 @@ title: "chordDef"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/chordDef">chordDef</a>
+                  <a class="link_odd" href="/{{ page.version }}/chordDef">chordDef</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -64,10 +65,10 @@ title: "chordDef"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,7 +82,7 @@ title: "chordDef"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -104,7 +105,7 @@ title: "chordDef"
                   <div class="specChild">
                      <span class="specChildModule">MEI.harmony</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/chordTable">chordTable</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/chordTable">chordTable</a>
                      </span>
                   </div>
                </div>
@@ -120,8 +121,8 @@ title: "chordDef"
                <div class="specChild">
                   <span class="specChildModule">MEI.harmony</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/barre">barre</a> 
-                     <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/barre">barre</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a>
                   </span>
                </div>
             </div>
@@ -192,13 +193,13 @@ title: "chordDef"
          <td class="wovenodd-col2">
             <p>An 
                <span class="att">xml:id</span> attribute, while not required by the schema, is needed so that 
-               <a class="link_odd_elementSpec" href="/v3/harm">harm</a> elements can reference a particular chord definition. The
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/harm">harm</a> elements can reference a particular chord definition. The
                
                <span class="att">pos</span> (position) attribute is provided in order to create displayable chord
                tablature grids. 
-               <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> sub-elements record the individual
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a> sub-elements record the individual
                pitches of the chord. 
-               <a class="link_odd_elementSpec" href="/v3/barre">barre</a> sub-elements may be used when a single
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/barre">barre</a> sub-elements may be used when a single
                finger is used to stop multiple strings.
             </p>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mensural.shared"
 
 ---
@@ -26,37 +27,37 @@ title: "att.mensural.shared"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mensur.log">att.mensur.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.mensural.log">att.mensural.log</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log.mensural">att.scoreDef.log.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log.mensural">att.scoreDef.log.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log.mensural">att.staffDef.log.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log.mensural">att.staffDef.log.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -72,10 +73,10 @@ title: "att.mensural.shared"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the maxima-long relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMAIOR">data.MODUSMAIOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,10 +84,10 @@ title: "att.mensural.shared"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the long-breve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MODUSMINOR">data.MODUSMINOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMINOR">data.MODUSMINOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +95,10 @@ title: "att.mensural.shared"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the semibreve-minim relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PROLATIO">data.PROLATIO</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PROLATIO">data.PROLATIO</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -105,10 +106,10 @@ title: "att.mensural.shared"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the breve-semibreve relationship.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TEMPUS">data.TEMPUS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPUS">data.TEMPUS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.mensural.shared">att.mensural.shared</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
                </span>
             </div>
          </td>

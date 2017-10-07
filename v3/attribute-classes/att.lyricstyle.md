@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.lyricstyle"
 
 ---
@@ -26,15 +27,15 @@ title: "att.lyricstyle"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -50,10 +51,10 @@ title: "att.lyricstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes the alignment of lyric syllables associated with a note or chord.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -61,10 +62,10 @@ title: "att.lyricstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the font family default value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -72,10 +73,10 @@ title: "att.lyricstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the font name default value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,10 +84,10 @@ title: "att.lyricstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default font size value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +95,10 @@ title: "att.lyricstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default font style value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -105,10 +106,10 @@ title: "att.lyricstyle"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the default font weight value for lyrics.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lyricstyle">att.lyricstyle</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
                </span>
             </div>
          </td>

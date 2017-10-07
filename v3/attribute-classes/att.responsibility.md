@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.responsibility"
 
 ---
@@ -28,56 +29,56 @@ title: "att.responsibility"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/change">change</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/hand">hand</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mapping">mapping</a> (direct members of att.responsibility)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/annot">annot</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/change">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/hand">hand</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mapping">mapping</a> (direct members of att.responsibility)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rdg">rdg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.crit">att.crit</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.crit">att.crit</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/gap">gap</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handShift">handShift</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfRes">perfRes</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfResList">perfResList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relation">relation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/subst">subst</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/addName">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/bloc">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/corpName">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/country">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/date">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/district">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/event">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/famName">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/foreName">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/gap">gap</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/genName">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/geogFeat">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/geogName">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/handShift">handShift</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/name">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/nameLink">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/orig">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/perfRes">perfRes</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/perfResList">perfResList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/periodName">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/persName">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/reg">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/region">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/relation">relation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/roleName">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/settlement">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/styleName">styleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/subst">subst</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/unclear">unclear</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.edit">att.edit</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.edit">att.edit</a>)
                   </span>
                </div>
             </div>
@@ -96,10 +97,10 @@ title: "att.responsibility"
                   identifiers declared in the document header.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.responsibility">att.responsibility</a>
+                  <a class="link_odd" href="/{{ v3}}/att.responsibility">att.responsibility</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.physDescPart"
 
 ---
@@ -27,7 +28,7 @@ title: "model.physDescPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/physDesc">physDesc</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physDesc">physDesc</a>
                </div>
             </div>
          </td>
@@ -39,34 +40,34 @@ title: "model.physDescPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/captureMode">captureMode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/carrierForm">carrierForm</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/condition">condition</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/dimensions">dimensions</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/exhibHist">exhibHist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/extent">extent</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fileChar">fileChar</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fingerprint">fingerprint</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handList">handList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/inscription">inscription</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfDuration">perfDuration</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/physMedium">physMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/plateNum">plateNum</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/playingSpeed">playingSpeed</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/scoreFormat">scoreFormat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/soundChan">soundChan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/specRepro">specRepro</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/trackConfig">trackConfig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/treatHist">treatHist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/treatSched">treatSched</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/watermark">watermark</a> (direct members of model.physDescPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/captureMode">captureMode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/carrierForm">carrierForm</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/condition">condition</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dimensions">dimensions</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/exhibHist">exhibHist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fileChar">fileChar</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingerprint">fingerprint</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/handList">handList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/inscription">inscription</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfDuration">perfDuration</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physMedium">physMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/plateNum">plateNum</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/playingSpeed">playingSpeed</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreFormat">scoreFormat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/soundChan">soundChan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/specRepro">specRepro</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trackConfig">trackConfig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/treatHist">treatHist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/treatSched">treatSched</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/watermark">watermark</a> (direct members of model.physDescPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/back">back</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/front">front</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/front">front</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.frontPart">model.frontPart</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.frontPart">model.frontPart</a>)
                   </span>
                </div>
             </div>

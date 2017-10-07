@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.extent"
 
 ---
@@ -26,8 +27,8 @@ title: "att.extent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/gap">gap</a> (direct members of att.extent)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/gap">gap</a> (direct members of att.extent)
                </div>
             </div>
          </td>
@@ -45,7 +46,7 @@ title: "att.extent"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extent">att.extent</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extent">att.extent</a>
                </span>
             </div>
          </td>

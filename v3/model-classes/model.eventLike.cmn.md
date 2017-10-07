@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.eventLike.cmn"
 
 ---
@@ -26,7 +27,7 @@ title: "model.eventLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventLike">model.eventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike">model.eventLike</a>
                </div>
             </div>
          </td>
@@ -38,12 +39,12 @@ title: "model.eventLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/beatRpt">beatRpt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/halfmRpt">halfmRpt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a> (direct members of model.eventLike.cmn)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beatRpt">beatRpt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bTrem">bTrem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fTrem">fTrem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/halfmRpt">halfmRpt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a> (direct members of model.eventLike.cmn)
                </div>
             </div>
          </td>

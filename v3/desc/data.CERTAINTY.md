@@ -1,9 +1,0 @@
----
-desc: "data.CERTAINTY"
-type: "macroSpec"
----
-
-Values for certainty attribute. Certainty may be expressed by one of the values 'high',
-'medium', or 'low'. The value 'unknown' should be used in cases where the encoder
-does not
-wish to assert an opinion.

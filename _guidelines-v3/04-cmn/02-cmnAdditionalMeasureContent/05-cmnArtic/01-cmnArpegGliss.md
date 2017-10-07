@@ -1,14 +1,15 @@
 ---
 sectionid: cmnArpegGliss
 title: "Arpeggio and Glissando"
+version: "v3"
 ---
 
 
 
 In CMN, the notes of a chord are sometimes performed successively rather than
 simultaneously. This behavior, called arpeggiation, is normally indicated
-using a wavy line preceding the chord. MEI offers the [arpeg](/v3/elements/arpeg.html){:.link_odd_elementSpec} element
-to describe arpeggios. This element is a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class and, like other members of this class, uses the
+using a wavy line preceding the chord. MEI offers the [arpeg](/{{ page.version }}/elements/arpeg.html){:.link_odd_elementSpec} element
+to describe arpeggios. This element is a member of the [model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class and, like other members of this class, uses the
 **@staff**, **@layer** and **@tstamp** or the **@startid** and
 **@endid** attributes to connect it to the affected chord.
 
@@ -58,7 +59,7 @@ indicated.
 
 For arpeggios that involve chords spanning multiple staves as a continuous arpeggio
 (instead of two separate arpeggios), the **@plist** attribute may be used to point
-to all affected [chord](/v3/elements/chord.html){:.link_odd_elementSpec} elements' **@xml:id** attributes.
+to all affected [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} elements' **@xml:id** attributes.
 
 
 
@@ -68,11 +69,11 @@ chord, a glissando denotes a situation where the pitch
 this slide produces distinct intermediate pitches (as on the piano) or not (as on
 the
 trombone), though the latter is sometimes referred to as portamento. The
-visual appearance of a glissando, which MEI encodes as [gliss](/v3/elements/gliss.html){:.link_odd_elementSpec}, is
+visual appearance of a glissando, which MEI encodes as [gliss](/{{ page.version }}/elements/gliss.html){:.link_odd_elementSpec}, is
 normally a line connecting the two most distant notes in the glissando.
 
 
-The [gliss](/v3/elements/gliss.html){:.link_odd_elementSpec} element is a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class and therefore, like other control events, it
+The [gliss](/{{ page.version }}/elements/gliss.html){:.link_odd_elementSpec} element is a member of the [model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class and therefore, like other control events, it
 occurs inside a measure after the staves and uses its **@staff**, **@layer**,
 **@tstamp**, **@tstamp2**, **@startid** and **@endid**
 attributes to connect it to the affected notes or chords. It is a semantic error not

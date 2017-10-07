@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.lyrics.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.lyrics.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lyrics">lyrics</a> (direct member of att.lyrics.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyrics">lyrics</a> (direct member of att.lyrics.log)
                </div>
             </div>
          </td>
@@ -44,7 +45,7 @@ title: "att.lyrics.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.layerident">att.layerident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.layerident">att.layerident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,7 +58,7 @@ title: "att.lyrics.log"
                <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffident">att.staffident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffident">att.staffident</a>
                </span>
             </div>
          </td>

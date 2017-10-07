@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.annotLike"
 
 ---
@@ -26,23 +27,23 @@ title: "model.annotLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/notesStmt">notesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfMedium">perfMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgDesc">pgDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/symbolDef">symbolDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ending">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/notesStmt">notesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfMedium">perfMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pgDesc">pgDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/symbolDef">symbolDef</a>
                </div>
             </div>
          </td>
@@ -54,7 +55,7 @@ title: "model.annotLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a> (direct member of model.annotLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/annot">annot</a> (direct member of model.annotLike)
                </div>
             </div>
          </td>

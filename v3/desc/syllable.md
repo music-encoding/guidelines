@@ -1,7 +1,0 @@
----
-desc: "syllable"
-type: "elementSpec"
----
-
-Neume notation can be thought of as "neumed text". Therefore, the syllable element
-provides high-level organization in this repertoire.

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.rdg.ges"
 
 ---
@@ -26,8 +27,8 @@ title: "att.rdg.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a> (direct members of att.rdg.ges)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rdg">rdg</a> (direct members of att.rdg.ges)
                </div>
             </div>
          </td>

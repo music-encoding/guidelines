@@ -1,7 +1,0 @@
----
-desc: "grpSym"
-type: "elementSpec"
----
-
-(group symbol) – A brace or bracket used to group two or more staves of a score or
-part.

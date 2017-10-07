@@ -1,7 +1,0 @@
----
-desc: "distributor"
-type: "elementSpec"
----
-
-Person or agency, other than a publisher, from which access (including electronic
-access) to a bibliographic entity may be obtained.

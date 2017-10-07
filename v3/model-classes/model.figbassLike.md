@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.figbassLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.figbassLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harm">harm</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.figbassLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fb">fb</a> (direct member of model.figbassLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fb">fb</a> (direct member of model.figbassLike)
                </div>
             </div>
          </td>

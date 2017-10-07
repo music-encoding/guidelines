@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.sectionPart.cmn"
 
 ---
@@ -26,7 +27,7 @@ title: "model.sectionPart.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.sectionPart">model.sectionPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.sectionPart">model.sectionPart</a>
                </div>
             </div>
          </td>
@@ -38,21 +39,21 @@ title: "model.sectionPart.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.measureLike">model.measureLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.measureLike">model.measureLike</a>)
                   </span>
                </div>
             </div>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.origin.timestamp.musical"
 
 ---
@@ -26,9 +27,9 @@ title: "att.origin.timestamp.musical"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.log">att.cpMark.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.cpMark.log">att.cpMark.log</a>)
                   </span>
                </div>
             </div>
@@ -46,10 +47,10 @@ title: "att.origin.timestamp.musical"
                   (potentially negative) count of measures plus a beat location.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREBEATOFFSET">data.MEASUREBEATOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREBEATOFFSET">data.MEASUREBEATOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -61,10 +62,10 @@ title: "att.origin.timestamp.musical"
                   @origin.tstamp.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREBEAT">data.MEASUREBEAT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREBEAT">data.MEASUREBEAT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
                </span>
             </div>
          </td>

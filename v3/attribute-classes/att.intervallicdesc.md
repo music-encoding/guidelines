@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.intervallicdesc"
 
 ---
@@ -37,10 +38,10 @@ title: "att.intervallicdesc"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Encodes the harmonic interval between pitches occurring at the same time.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.intervalharmonic">att.intervalharmonic</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.intervalharmonic">att.intervalharmonic</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -51,10 +52,10 @@ title: "att.intervallicdesc"
                   and size, or a precise numeric value in half steps.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.INTERVAL.MELODIC">data.INTERVAL.MELODIC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INTERVAL.MELODIC">data.INTERVAL.MELODIC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.intervalmelodic">att.intervalmelodic</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.intervalmelodic">att.intervalmelodic</a>
                </span>
             </div>
          </td>

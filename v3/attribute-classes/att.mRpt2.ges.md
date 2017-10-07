@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mRpt2.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.mRpt2.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRpt2">mRpt2</a> (direct member of att.mRpt2.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRpt2">mRpt2</a> (direct member of att.mRpt2.ges)
                </div>
             </div>
          </td>

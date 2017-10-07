@@ -1,7 +1,0 @@
----
-desc: "figDesc"
-type: "elementSpec"
----
-
-(figure description) – Contains a brief prose description of the appearance or content
-of a graphic figure, for use when documenting an image without displaying it.

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.horizontalalign"
 
 ---
@@ -26,12 +27,12 @@ title: "att.horizontalalign"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rend">rend</a> (direct member of att.horizontalalign)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rend">rend</a> (direct member of att.horizontalalign)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/syl">syl</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syl">syl</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.syl.vis">att.syl.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.syl.vis">att.syl.vis</a>)
                   </span>
                </div>
             </div>
@@ -47,10 +48,10 @@ title: "att.horizontalalign"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records horizontal alignment.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.HORIZONTALALIGNMENT">data.HORIZONTALALIGNMENT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.HORIZONTALALIGNMENT">data.HORIZONTALALIGNMENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.horizontalalign">att.horizontalalign</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.horizontalalign">att.horizontalalign</a>
                </span>
             </div>
          </td>

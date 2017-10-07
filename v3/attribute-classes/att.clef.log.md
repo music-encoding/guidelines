@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.clef.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.clef.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a> (direct member of att.clef.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a> (direct member of att.clef.log)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.clef.log"
                   pitches.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.clef.log">att.clef.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.clef.log">att.clef.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,10 +55,10 @@ title: "att.clef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the amount of octave displacement.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedisplacement">att.octavedisplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "att.clef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the direction of octave displacement.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octavedisplacement">att.octavedisplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,10 +81,10 @@ title: "att.clef.log"
                   lowest line of the staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFLINE">data.CLEFLINE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFLINE">data.CLEFLINE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lineloc">att.lineloc</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.lineloc">att.lineloc</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -91,10 +92,10 @@ title: "att.clef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures written octave information.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.octave">att.octave</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.octave">att.octave</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -102,10 +103,10 @@ title: "att.clef.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Describes a clef's shape.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFSHAPE">data.CLEFSHAPE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFSHAPE">data.CLEFSHAPE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.clefshape">att.clefshape</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.clefshape">att.clefshape</a>
                </span>
             </div>
          </td>

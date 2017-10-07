@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.editorialLike"
 
 ---
@@ -26,8 +27,8 @@ title: "model.editorialLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.choicePart">model.choicePart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.choicePart">model.choicePart</a>
                </div>
             </div>
          </td>
@@ -39,8 +40,8 @@ title: "model.editorialLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a> (direct members of model.editorialLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a> (direct members of model.editorialLike)
                </div>
             </div>
          </td>

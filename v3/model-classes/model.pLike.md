@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.pLike"
 
 ---
@@ -26,24 +27,24 @@ title: "model.pLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textcomponentLike">model.textcomponentLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textcomponentLike">model.textcomponentLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/application">application</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/changeDesc">changeDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/interpretation">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/normalization">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/physDesc">physDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/samplingDecl">samplingDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/segmentation">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/stdVals">stdVals</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/application">application</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/changeDesc">changeDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/contents">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/correction">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incipText">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/interpretation">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/normalization">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physDesc">physDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/projectDesc">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/samplingDecl">samplingDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/segmentation">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/stdVals">stdVals</a>
                </div>
             </div>
          </td>
@@ -55,7 +56,7 @@ title: "model.pLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/p">p</a> (direct member of model.pLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/p">p</a> (direct member of model.pLike)
                </div>
             </div>
          </td>

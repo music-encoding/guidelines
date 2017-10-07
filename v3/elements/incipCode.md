@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "incipCode"
 
 ---
@@ -35,7 +36,7 @@ title: "incipCode"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -51,7 +52,7 @@ title: "incipCode"
                <span style="font-weight: 500;">parsons</span>" 
                <i>(Parsons code.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/incipCode">incipCode</a>
+                  <a class="link_odd" href="/{{ v3}}/incipCode">incipCode</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,7 +63,7 @@ title: "incipCode"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -77,7 +78,7 @@ title: "incipCode"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.internetmedia">att.internetmedia</a>
+                  <a class="link_odd" href="/{{ v3}}/att.internetmedia">att.internetmedia</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -85,10 +86,10 @@ title: "incipCode"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -98,10 +99,10 @@ title: "incipCode"
                   participants in a relationship; that is, the entities pointed "to".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -115,7 +116,7 @@ title: "incipCode"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -133,7 +134,7 @@ title: "incipCode"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than allowed by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -143,10 +144,10 @@ title: "incipCode"
                   attribute must be a URI.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -166,7 +167,7 @@ title: "incipCode"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than permitted by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -176,10 +177,10 @@ title: "incipCode"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -193,7 +194,7 @@ title: "incipCode"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -215,7 +216,7 @@ title: "incipCode"
                   might have meaning.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.whitespace">att.whitespace</a>
+                  <a class="link_odd" href="/{{ v3}}/att.whitespace">att.whitespace</a>
                </span>
             </div>
          </td>
@@ -238,7 +239,7 @@ title: "incipCode"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/incip">incip</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/incip">incip</a>
                      </span>
                   </div>
                </div>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MIDICHANNEL"
 
 ---
@@ -25,8 +26,8 @@ title: "data.MIDICHANNEL"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.channelized">att.channelized</a> (@midi.channel), 
-               <a class="link_odd_classSpec" href="/v3/chan">chan</a>/@num
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.channelized">att.channelized</a> (@midi.channel), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/chan">chan</a>/@num
             </div>
          </td>
       </tr>

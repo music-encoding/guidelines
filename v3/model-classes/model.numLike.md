@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.numLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.numLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.measurementLike">model.measurementLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.measurementLike">model.measurementLike</a>
                </div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "model.numLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/num">num</a> (direct member of model.numLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/num">num</a> (direct member of model.numLike)
                </div>
             </div>
          </td>

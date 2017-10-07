@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "availability"
 
 ---
@@ -36,7 +37,7 @@ title: "availability"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -44,10 +45,10 @@ title: "availability"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datapointing">att.datapointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.datapointing">att.datapointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -58,7 +59,7 @@ title: "availability"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -66,10 +67,10 @@ title: "availability"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -79,10 +80,10 @@ title: "availability"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,7 +97,7 @@ title: "availability"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -107,7 +108,7 @@ title: "availability"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.pubStmtPart">model.pubStmtPart</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.pubStmtPart">model.pubStmtPart</a>
             </div>
          </td>
       </tr>
@@ -121,23 +122,23 @@ title: "availability"
                   <div class="specChild">
                      <span class="specChildModule">MEI.frbr</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/item">item</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/item">item</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/availability">availability</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pubStmt">pubStmt</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/availability">availability</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pubStmt">pubStmt</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/distributor">distributor</a> 
-                        <a class="link_odd_elementSpec" href="/v3/publisher">publisher</a> 
-                        <a class="link_odd_elementSpec" href="/v3/pubPlace">pubPlace</a> 
-                        <a class="link_odd_elementSpec" href="/v3/respStmt">respStmt</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/distributor">distributor</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/publisher">publisher</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pubPlace">pubPlace</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/respStmt">respStmt</a>
                      </span>
                   </div>
                </div>
@@ -153,16 +154,16 @@ title: "availability"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/accessRestrict">accessRestrict</a> 
-                     <a class="link_odd_elementSpec" href="/v3/price">price</a> 
-                     <a class="link_odd_elementSpec" href="/v3/sysReq">sysReq</a> 
-                     <a class="link_odd_elementSpec" href="/v3/useRestrict">useRestrict</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/accessRestrict">accessRestrict</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/price">price</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/sysReq">sysReq</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/useRestrict">useRestrict</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/distributor">distributor</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/distributor">distributor</a>
                   </span>
                </div>
             </div>
@@ -238,8 +239,8 @@ title: "availability"
          </td>
          <td class="wovenodd-col2">
             <p>When used within the 
-               <a class="link_odd_elementSpec" href="/v3/fileDesc">fileDesc</a> element, 
-               <a class="link_odd_elementSpec" href="/v3/availability">availability</a> indicates access to the MEI-encoded document itself.This element is modelled on elements
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/fileDesc">fileDesc</a> element, 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/availability">availability</a> indicates access to the MEI-encoded document itself.This element is modelled on elements
                in the Text Encoding Initiative (TEI) and Encoded
                Archival Description (EAD) standards.
             </p>

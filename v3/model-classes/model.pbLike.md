@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.pbLike"
 
 ---
@@ -26,9 +27,9 @@ title: "model.pbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.milestoneLike.music">model.milestoneLike.music</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.milestoneLike.text">model.milestoneLike.text</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike">model.textphraseLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.milestoneLike.music">model.milestoneLike.music</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.milestoneLike.text">model.milestoneLike.text</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike">model.textphraseLike</a>
                </div>
             </div>
          </td>
@@ -40,7 +41,7 @@ title: "model.pbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pb">pb</a> (direct member of model.pbLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pb">pb</a> (direct member of model.pbLike)
                </div>
             </div>
          </td>

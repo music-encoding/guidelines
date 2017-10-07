@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.lgLike"
 
 ---
@@ -26,12 +27,12 @@ title: "model.lgLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.paracontentPart">model.paracontentPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.textcomponentLike">model.textcomponentLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.paracontentPart">model.paracontentPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textcomponentLike">model.textcomponentLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lg">lg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incipText">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lg">lg</a>
                </div>
             </div>
          </td>
@@ -43,7 +44,7 @@ title: "model.lgLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lg">lg</a> (direct member of model.lgLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lg">lg</a> (direct member of model.lgLike)
                </div>
             </div>
          </td>

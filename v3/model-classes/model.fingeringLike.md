@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.fingeringLike"
 
 ---
@@ -27,10 +28,10 @@ title: "model.fingeringLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.controleventLike">model.controleventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.controleventLike">model.controleventLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fingGrp">fingGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingGrp">fingGrp</a>
                </div>
             </div>
          </td>
@@ -42,8 +43,8 @@ title: "model.fingeringLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fing">fing</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fingGrp">fingGrp</a> (direct members of model.fingeringLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fing">fing</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingGrp">fingGrp</a> (direct members of model.fingeringLike)
                </div>
             </div>
          </td>

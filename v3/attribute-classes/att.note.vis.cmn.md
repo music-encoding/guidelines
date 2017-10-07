@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.note.vis.cmn"
 
 ---
@@ -26,9 +27,9 @@ title: "att.note.vis.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.vis">att.note.vis</a>)
                   </span>
                </div>
             </div>
@@ -51,7 +52,7 @@ title: "att.note.vis.cmn"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamsecondary">att.beamsecondary</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.beamsecondary">att.beamsecondary</a>
                </span>
             </div>
          </td>

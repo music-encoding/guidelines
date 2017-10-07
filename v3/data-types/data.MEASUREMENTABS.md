@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MEASUREMENTABS"
 
 ---
@@ -29,13 +30,13 @@ title: "data.MEASUREMENTABS"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>, 
-               <a class="link_odd_classSpec" href="/v3/att.hairpin.vis">att.hairpin.vis</a> (@opening), 
-               <a class="link_odd_classSpec" href="/v3/att.height">att.height</a> (@height), 
-               <a class="link_odd_classSpec" href="/v3/att.pages">att.pages</a> (@page.height), 
-               <a class="link_odd_classSpec" href="/v3/att.stems">att.stems</a> (@stem.len), 
-               <a class="link_odd_classSpec" href="/v3/att.systems">att.systems</a> (@system.leftmar), 
-               <a class="link_odd_classSpec" href="/v3/att.width">att.width</a> (@width)
+               <a class="link_odd" href="/{{ page.version }}/data.LINEWIDTH">data.LINEWIDTH</a>, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.hairpin.vis">att.hairpin.vis</a> (@opening), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.height">att.height</a> (@height), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.pages">att.pages</a> (@page.height), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.stems">att.stems</a> (@stem.len), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.systems">att.systems</a> (@system.leftmar), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.width">att.width</a> (@width)
             </div>
          </td>
       </tr>

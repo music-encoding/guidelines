@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.slur.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.slur.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/slur">slur</a> (direct member of att.slur.ges)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/slur">slur</a> (direct member of att.slur.ges)
                </div>
             </div>
          </td>
@@ -45,10 +46,10 @@ title: "att.slur.ges"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.performed">att.duration.performed</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.performed">att.duration.performed</a>
                </span>
             </div>
          </td>

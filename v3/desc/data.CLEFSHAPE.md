@@ -1,7 +1,0 @@
----
-desc: "data.CLEFSHAPE"
-type: "macroSpec"
----
-
-Clef shape attribute values (Read, p.53-56). Some values correspond to the Unicode
-Standard.

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.PGSCALE"
 
 ---
@@ -25,7 +26,7 @@ title: "data.PGSCALE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.pages">att.pages</a> (@page.scale)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.pages">att.pages</a> (@page.scale)
             </div>
          </td>
       </tr>

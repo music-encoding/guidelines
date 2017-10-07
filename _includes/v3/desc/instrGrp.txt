@@ -1,0 +1,1 @@
+(instrument group) – Collects MIDI instrument definitions.

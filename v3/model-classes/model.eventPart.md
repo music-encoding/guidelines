@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.eventPart"
 
 ---
@@ -26,7 +27,7 @@ title: "model.eventPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a>
                </div>
             </div>
          </td>
@@ -38,37 +39,37 @@ title: "model.eventPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/desc">desc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a> (direct members of model.eventPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/desc">desc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a> (direct members of model.eventPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/address">address</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/address">address</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.addressLike">model.addressLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.addressLike">model.addressLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/change">change</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/change">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.dateLike">model.dateLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.dateLike">model.dateLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.nameLike.agent">model.nameLike.agent</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.agent">model.nameLike.agent</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.nameLike.geogName">model.nameLike.geogName</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.geogName">model.nameLike.geogName</a>)
                   </span>
                </div>
             </div>

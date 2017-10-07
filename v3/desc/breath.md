@@ -1,7 +1,0 @@
----
-desc: "breath"
-type: "elementSpec"
----
-
-(breath mark) – A indication of a point at which the performer on an instrument
-requiring breath (including the voice) may breathe.

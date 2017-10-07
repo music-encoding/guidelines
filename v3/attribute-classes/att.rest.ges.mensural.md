@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.rest.ges.mensural"
 
 ---
@@ -26,9 +27,9 @@ title: "att.rest.ges.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.ges">att.rest.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.rest.ges">att.rest.ges</a>)
                   </span>
                </div>
             </div>
@@ -49,7 +50,7 @@ title: "att.rest.ges.mensural"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,7 +63,7 @@ title: "att.rest.ges.mensural"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
          </td>

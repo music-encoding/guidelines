@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.scorePart.mensuralAndNeumes"
 
 ---
@@ -27,7 +28,7 @@ title: "model.scorePart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.scorePart">model.scorePart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.scorePart">model.scorePart</a>
                </div>
             </div>
          </td>

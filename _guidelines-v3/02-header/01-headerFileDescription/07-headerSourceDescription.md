@@ -1,12 +1,13 @@
 ---
 sectionid: headerSourceDescription
 title: "Source Description"
+version: "v3"
 ---
 
 
 
-The [sourceDesc](/v3/elements/sourceDesc.html){:.link_odd_elementSpec} element is the seventh and final component of the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element. In MEI, [sourceDesc](/v3/elements/sourceDesc.html){:.link_odd_elementSpec} is a grouping
-element containing one or more [source](/v3/elements/source.html){:.link_odd_elementSpec} elements, each of which records
+The [sourceDesc](/{{ page.version }}/elements/sourceDesc.html){:.link_odd_elementSpec} element is the seventh and final component of the [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element. In MEI, [sourceDesc](/{{ page.version }}/elements/sourceDesc.html){:.link_odd_elementSpec} is a grouping
+element containing one or more [source](/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} elements, each of which records
 details of a source from which the computer file is derived. This might be a printed
 text or
 manuscript, another computer file, an audio or video recording, or a combination of
@@ -17,30 +18,30 @@ created in electronic form.
 
 
 
-{% include specDesc.html key="sourceDesc" atts="" %}
-{% include specDesc.html key="source" atts="" %}
+{% include specDesc.html version=page.version key="sourceDesc" atts="" %}
+{% include specDesc.html version=page.version key="source" atts="" %}
 
 
 
-The content model of the [source](/v3/elements/source.html){:.link_odd_elementSpec} element is similar to that of the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} and [work](/v3/elements/work.html){:.link_odd_elementSpec} elements. The list below
-reflects the order in which the optional components of [source](/v3/elements/source.html){:.link_odd_elementSpec} must
+The content model of the [source](/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} element is similar to that of the [fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} and [work](/{{ page.version }}/elements/work.html){:.link_odd_elementSpec} elements. The list below
+reflects the order in which the optional components of [source](/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} must
 occur.
 
 
 
-{% include specDesc.html key="identifier" atts="" %}
-{% include specDesc.html key="titleStmt" atts="" %}
-{% include specDesc.html key="editionStmt" atts="" %}
-{% include specDesc.html key="pubStmt" atts="" %}
-{% include specDesc.html key="physDesc" atts="" %}
-{% include specDesc.html key="physLoc" atts="" %}
-{% include specDesc.html key="seriesStmt" atts="" %}
-{% include specDesc.html key="history" atts="" %}
-{% include specDesc.html key="langUsage" atts="" %}
-{% include specDesc.html key="contents" atts="" %}
-{% include specDesc.html key="biblList" atts="" %}
-{% include specDesc.html key="notesStmt" atts="" %}
-{% include specDesc.html key="classification" atts="" %}
+{% include specDesc.html version=page.version key="identifier" atts="" %}
+{% include specDesc.html version=page.version key="titleStmt" atts="" %}
+{% include specDesc.html version=page.version key="editionStmt" atts="" %}
+{% include specDesc.html version=page.version key="pubStmt" atts="" %}
+{% include specDesc.html version=page.version key="physDesc" atts="" %}
+{% include specDesc.html version=page.version key="physLoc" atts="" %}
+{% include specDesc.html version=page.version key="seriesStmt" atts="" %}
+{% include specDesc.html version=page.version key="history" atts="" %}
+{% include specDesc.html version=page.version key="langUsage" atts="" %}
+{% include specDesc.html version=page.version key="contents" atts="" %}
+{% include specDesc.html version=page.version key="biblList" atts="" %}
+{% include specDesc.html version=page.version key="notesStmt" atts="" %}
+{% include specDesc.html version=page.version key="classification" atts="" %}
 
 
 
@@ -48,17 +49,17 @@ When the MEI.frbr module is available, the following elements may also appear af
 the
 classification element. Additional information regarding FRBR (Functional Requirements
 for
-Bibliographic Records) can be found at <a class="link_ptr" title="Functional Requirements for Bibliographic Records (FRBR)" href="/v3/guidelines/FRBR.html">3 Functional Requirements for Bibliographic Records (FRBR)</a>.
+Bibliographic Records) can be found at <a class="link_ptr" title="Functional Requirements for Bibliographic Records (FRBR)" href="/{{ page.version }}/guidelines/FRBR.html">3 Functional Requirements for Bibliographic Records (FRBR)</a>.
 
 
 
-{% include specDesc.html key="itemList" atts="" %}
-{% include specDesc.html key="componentGrp" atts="" %}
-{% include specDesc.html key="relationList" atts="" %}
+{% include specDesc.html version=page.version key="itemList" atts="" %}
+{% include specDesc.html version=page.version key="componentGrp" atts="" %}
+{% include specDesc.html version=page.version key="relationList" atts="" %}
 
 
 
-In the simplest case, the [source](/v3/elements/source.html){:.link_odd_elementSpec} element may contain nothing more
+In the simplest case, the [source](/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} element may contain nothing more
 than a notes statement giving a simple prose description or a brief note stating that
 the
 document has no physical source:
@@ -78,20 +79,20 @@ better machine-processing:
 
 A description of more precise capture of dates and date ranges is provided in chapter
 
-<a class="link_ptr" title="Names and Dates" href="/v3/guidelines/namesDates.html">17 Names and Dates</a>.
+<a class="link_ptr" title="Names and Dates" href="/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a>.
 
-The [identifier](/v3/elements/identifier.html){:.link_odd_elementSpec} element is provided within [source](/v3/elements/source.html){:.link_odd_elementSpec} in order to accommodate identifying strings which cannot be captured by the
+The [identifier](/{{ page.version }}/elements/identifier.html){:.link_odd_elementSpec} element is provided within [source](/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} in order to accommodate identifying strings which cannot be captured by the
 **@xml:id** attribute, such as numbers or strings requiring XML markup.
 
-The [titleStmt](/v3/elements/titleStmt.html){:.link_odd_elementSpec}, [editionStmt](/v3/elements/editionStmt.html){:.link_odd_elementSpec}, [pubStmt](/v3/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt](/v3/elements/seriesStmt.html){:.link_odd_elementSpec}, and [notesStmt](/v3/elements/notesStmt.html){:.link_odd_elementSpec}
+The [titleStmt](/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec}, [editionStmt](/{{ page.version }}/elements/editionStmt.html){:.link_odd_elementSpec}, [pubStmt](/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt](/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec}, and [notesStmt](/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec}
 elements function in exactly the same way as described in section 
-<a class="link_ptr" title="File Description" href="/v3/guidelines/header.html#headerFileDescription">2.1 File Description</a> above and 
-<a class="link_ptr" title="Work Description" href="/v3/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below
+<a class="link_ptr" title="File Description" href="/{{ page.version }}/guidelines/header.html#headerFileDescription">2.1 File Description</a> above and 
+<a class="link_ptr" title="Work Description" href="/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below
 and will not be covered again here.
 
-If a source of the file is an unpublished manuscript, it is recommended that the [unpub](/v3/elements/unpub.html){:.link_odd_elementSpec} element be used as the only content of the source's [pubStmt](/v3/elements/pubStmt.html){:.link_odd_elementSpec} element. Other identifying information for the manuscript may be
-collected in the [notesStmt](/v3/elements/notesStmt.html){:.link_odd_elementSpec} element, as described in section 
-<a class="link_ptr" title="Notes Statement" href="/v3/guidelines/header.html#headerNotesStatement">2.1.6 Notes Statement</a>.
+If a source of the file is an unpublished manuscript, it is recommended that the [unpub](/{{ page.version }}/elements/unpub.html){:.link_odd_elementSpec} element be used as the only content of the source's [pubStmt](/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} element. Other identifying information for the manuscript may be
+collected in the [notesStmt](/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec} element, as described in section 
+<a class="link_ptr" title="Notes Statement" href="/{{ page.version }}/guidelines/header.html#headerNotesStatement">2.1.6 Notes Statement</a>.
 
 {% include plainExample.html example="./v3/examples/header/header-sample047.xml" valid="true" %}
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.sequence"
 
 ---
@@ -26,22 +27,22 @@ title: "att.sequence"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/rdg">rdg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.crit">att.crit</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.crit">att.crit</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/subst">subst</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/del">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/subst">subst</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trans">att.trans</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.trans">att.trans</a>)
                   </span>
                </div>
             </div>
@@ -62,7 +63,7 @@ title: "att.sequence"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.sequence">att.sequence</a>
+                  <a class="link_odd" href="/{{ v3}}/att.sequence">att.sequence</a>
                </span>
             </div>
          </td>

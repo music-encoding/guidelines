@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.sectionPart.mensuralAndNeumes"
 
 ---
@@ -26,7 +27,7 @@ title: "model.sectionPart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.sectionPart">model.sectionPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.sectionPart">model.sectionPart</a>
                </div>
             </div>
          </td>
@@ -39,31 +40,31 @@ title: "model.sectionPart.mensuralAndNeumes"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/model.sectionPart.mensural">model.sectionPart.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.sectionPart.mensural">model.sectionPart.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/model.sectionPart.neumes">model.sectionPart.neumes</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.sectionPart.neumes">model.sectionPart.neumes</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ossia">ossia</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ossia">ossia</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.staffLike">model.staffLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffLike">model.staffLike</a>)
                   </span>
                </div>
             </div>

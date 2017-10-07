@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.headerPart"
 
 ---
@@ -34,8 +35,8 @@ title: "model.headerPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/encodingDesc">encodingDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/workDesc">workDesc</a> (direct members of model.headerPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/encodingDesc">encodingDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/workDesc">workDesc</a> (direct members of model.headerPart)
                </div>
             </div>
          </td>

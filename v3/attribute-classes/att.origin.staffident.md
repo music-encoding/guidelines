@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.origin.staffident"
 
 ---
@@ -26,9 +27,9 @@ title: "att.origin.staffident"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.log">att.cpMark.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.cpMark.log">att.cpMark.log</a>)
                   </span>
                </div>
             </div>
@@ -49,7 +50,7 @@ title: "att.origin.staffident"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.staffident">att.origin.staffident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.origin.staffident">att.origin.staffident</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.resourceLike"
 
 ---
@@ -26,7 +27,7 @@ title: "model.resourceLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/music">music</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/music">music</a>
                </div>
             </div>
          </td>
@@ -38,8 +39,8 @@ title: "model.resourceLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/facsimile">facsimile</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/performance">performance</a> (direct members of model.resourceLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/facsimile">facsimile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/performance">performance</a> (direct members of model.resourceLike)
                </div>
             </div>
          </td>

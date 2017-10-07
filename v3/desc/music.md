@@ -1,7 +1,0 @@
----
-desc: "music"
-type: "elementSpec"
----
-
-Contains a single musical text of any kind, whether unitary or composite, for example,
-an etude, opera, song cycle, symphony, or anthology of piano solos.

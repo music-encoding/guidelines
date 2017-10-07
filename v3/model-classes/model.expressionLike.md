@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.expressionLike"
 
 ---
@@ -26,8 +27,8 @@ title: "model.expressionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/componentGrp">componentGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expressionList">expressionList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/componentGrp">componentGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expressionList">expressionList</a>
                </div>
             </div>
          </td>
@@ -39,7 +40,7 @@ title: "model.expressionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/expression">expression</a> (direct member of model.expressionLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a> (direct member of model.expressionLike)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterSigGrp.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.meterSigGrp.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meterSigGrp">meterSigGrp</a> (direct member of att.meterSigGrp.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSigGrp">meterSigGrp</a> (direct member of att.meterSigGrp.ges)
                </div>
             </div>
          </td>

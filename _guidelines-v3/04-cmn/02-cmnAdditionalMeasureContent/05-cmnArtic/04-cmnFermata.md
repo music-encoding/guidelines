@@ -1,6 +1,7 @@
 ---
 sectionid: cmnFermata
 title: "Fermata"
+version: "v3"
 ---
 
 
@@ -12,15 +13,15 @@ may stand above or below the staff it affects. If this symbol is used, its
 or rest under it should be held longer than its written duration would normally require.
 Sometimes, a fermata occurs over a barline to indicate the end of a phrase or section.
 
-In MEI, fermatas may be encoded using an attribute on [note](/v3/elements/note.html){:.link_odd_elementSpec}, [chord](/v3/elements/chord.html){:.link_odd_elementSpec} or [rest](/v3/elements/rest.html){:.link_odd_elementSpec}. This attribute allows placement
+In MEI, fermatas may be encoded using an attribute on [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}, [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} or [rest](/{{ page.version }}/elements/rest.html){:.link_odd_elementSpec}. This attribute allows placement
 of a fermata above or below the element to which it's attached.
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample142.xml" valid="true" %}
 
 However, if there is further information about the fermata that should be addressed
 in
-the encoding, MEI offers the [fermata](/v3/elements/fermata.html){:.link_odd_elementSpec} element. This element, which is
-a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class and therefore
+the encoding, MEI offers the [fermata](/{{ page.version }}/elements/fermata.html){:.link_odd_elementSpec} element. This element, which is
+a member of the [model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class and therefore
 requires the use of such attributes as **@staff**, **@layer**,
 **@tstamp** and **@startid**, allows specification of the orientation of the
 fermata using its **@form** attribute. In addition, the **@shape** attribute

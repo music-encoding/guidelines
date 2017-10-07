@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.keySig.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.keySig.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a> (direct member of att.keySig.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a> (direct member of att.keySig.ges)
                </div>
             </div>
          </td>

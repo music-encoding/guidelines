@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.barLine.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.barLine.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a> (direct member of att.barLine.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a> (direct member of att.barLine.vis)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.barLine.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the location of a bar line.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARPLACE">data.BARPLACE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BARPLACE">data.BARPLACE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,10 +55,10 @@ title: "att.barLine.vis"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -73,10 +74,10 @@ title: "att.barLine.vis"
                   the top line of a 5-line staff.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.barplacement">att.barplacement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.barplacement">att.barplacement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -112,7 +113,7 @@ title: "att.barLine.vis"
                <span style="font-weight: 500;">vu</span>" 
                <i>(MEI virtual unit.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measurement">att.measurement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.measurement">att.measurement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -120,10 +121,10 @@ title: "att.barLine.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Measurement of the horizontal dimension of an entity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.width">att.width</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.width">att.width</a>
                </span>
             </div>
          </td>

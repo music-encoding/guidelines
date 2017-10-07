@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.declaring"
 
 ---
@@ -27,32 +28,32 @@ title: "att.declaring"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/avFile">avFile</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/back">back</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/body">body</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/clip">clip</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/div">div</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/facsimile">facsimile</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/front">front</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/group">group</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lg">lg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mdiv">mdiv</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/music">music</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/p">p</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/parts">parts</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/performance">performance</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/recording">recording</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/surface">surface</a> (direct members of att.declaring)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/avFile">avFile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/body">body</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clip">clip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/facsimile">facsimile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/front">front</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/group">group</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layerDef">layerDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lg">lg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/music">music</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/p">p</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/parts">parts</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/performance">performance</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/recording">recording</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a> (direct members of att.declaring)
                </div>
             </div>
          </td>
@@ -69,10 +70,10 @@ title: "att.declaring"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
          </td>

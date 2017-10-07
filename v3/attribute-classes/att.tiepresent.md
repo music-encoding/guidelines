@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tiepresent"
 
 ---
@@ -26,15 +27,15 @@ title: "att.tiepresent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.chord.log">att.chord.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.log">att.note.log</a>)
                   </span>
                </div>
             </div>
@@ -52,10 +53,10 @@ title: "att.tiepresent"
                   tie needs to be recorded, then a &lt;tie&gt; element should be employed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.TIE">data.TIE</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.TIE">data.TIE</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tiepresent">att.tiepresent</a>
+                  <a class="link_odd" href="/{{ v3}}/att.tiepresent">att.tiepresent</a>
                </span>
             </div>
          </td>

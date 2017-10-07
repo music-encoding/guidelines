@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.accidental"
 
 ---
@@ -26,28 +27,28 @@ title: "att.accidental"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accid">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.log">att.accid.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.accid.log">att.accid.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keyAccid">keyAccid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.keyAccid.log">att.keyAccid.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keyAccid.log">att.keyAccid.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/key">key</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/key">key</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.keySig.log">att.keySig.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.log">att.note.log</a>)
                   </span>
                </div>
             </div>
@@ -63,10 +64,10 @@ title: "att.accidental"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures a written accidental.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental">att.accidental</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.accidental">att.accidental</a>
                </span>
             </div>
          </td>

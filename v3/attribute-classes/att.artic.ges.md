@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.artic.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.artic.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/artic">artic</a> (direct member of att.artic.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/artic">artic</a> (direct member of att.artic.ges)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.artic.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records performed articulation that differs from the written value.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.articulation.performed">att.articulation.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.articulation.performed">att.articulation.performed</a>
                </span>
             </div>
          </td>

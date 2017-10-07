@@ -1,6 +1,7 @@
 ---
 sectionid: corpusCombiningHeaders
 title: "Combining Corpus and Text Headers"
+version: "v3"
 ---
 
 
@@ -17,11 +18,11 @@ supplements the specification for that text alone. If any element is specified i
 both corpus
 and text headers, the corpus header element is over-ridden for that text alone.
 
-The [titleStmt](/v3/elements/titleStmt.html){:.link_odd_elementSpec} for a corpus text is understood to be prefixed by the [titleStmt](/v3/elements/titleStmt.html){:.link_odd_elementSpec} given in the corpus header. All other optional elements of the
-[fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} should be omitted from an individual corpus text header
+The [titleStmt](/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec} for a corpus text is understood to be prefixed by the [titleStmt](/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec} given in the corpus header. All other optional elements of the
+[fileDesc](/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} should be omitted from an individual corpus text header
 unless they differ from those specified in the corpus header. All other header elements
 behave
-identically, in the manner documented in chapter <a class="link_ptr" title="The MEI Header" href="/v3/guidelines/header.html">2 The MEI Header</a>. This makes it
+identically, in the manner documented in chapter <a class="link_ptr" title="The MEI Header" href="/{{ page.version }}/guidelines/header.html">2 The MEI Header</a>. This makes it
 possible to state information which is common to the whole of the corpus in the corpus
 header,
 while still allowing for individual texts to vary from this common metadata.

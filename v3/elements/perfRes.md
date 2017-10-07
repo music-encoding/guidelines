@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "perfRes"
 
 ---
@@ -36,7 +37,7 @@ title: "perfRes"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.bibl">att.bibl</a>
+                  <a class="link_odd" href="/{{ v3}}/att.bibl">att.bibl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -46,10 +47,10 @@ title: "perfRes"
                   taken.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ v3}}/att.authorized">att.authorized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,7 +63,7 @@ title: "perfRes"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
+                  <a class="link_odd" href="/{{ v3}}/att.authorized">att.authorized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,10 +71,10 @@ title: "perfRes"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Signifies the degree of certainty or precision associated with a feature.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CERTAINTY">data.CERTAINTY</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.CERTAINTY">data.CERTAINTY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.evidence">att.evidence</a>
+                  <a class="link_odd" href="/{{ v3}}/att.evidence">att.evidence</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -86,7 +87,7 @@ title: "perfRes"
                <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.canonical">att.canonical</a>
+                  <a class="link_odd" href="/{{ v3}}/att.canonical">att.canonical</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -97,7 +98,7 @@ title: "perfRes"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/perfRes">perfRes</a>
+                  <a class="link_odd" href="/{{ v3}}/perfRes">perfRes</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,7 +112,7 @@ title: "perfRes"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.evidence">att.evidence</a>
+                  <a class="link_odd" href="/{{ v3}}/att.evidence">att.evidence</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -122,7 +123,7 @@ title: "perfRes"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -130,10 +131,10 @@ title: "perfRes"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -144,10 +145,10 @@ title: "perfRes"
                   identifiers declared in the document header.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.responsibility">att.responsibility</a>
+                  <a class="link_odd" href="/{{ v3}}/att.responsibility">att.responsibility</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -157,10 +158,10 @@ title: "perfRes"
                   solo instrument which is not accompanied.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/perfRes">perfRes</a>
+                  <a class="link_odd" href="/{{ v3}}/perfRes">perfRes</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -171,10 +172,10 @@ title: "perfRes"
                   located in the document header.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.source">att.source</a>
+                  <a class="link_odd" href="/{{ v3}}/att.source">att.source</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -189,7 +190,7 @@ title: "perfRes"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -199,10 +200,10 @@ title: "perfRes"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -216,7 +217,7 @@ title: "perfRes"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -232,7 +233,7 @@ title: "perfRes"
                <span style="font-weight: 500;">language</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
+                  <a class="link_odd" href="/{{ v3}}/att.lang">att.lang</a>
                </span>
             </div>
          </td>
@@ -255,15 +256,15 @@ title: "perfRes"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/perfRes">perfRes</a> 
-                        <a class="link_odd_elementSpec" href="/v3/perfResList">perfResList</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/perfRes">perfRes</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/perfResList">perfResList</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/castItem">castItem</a> 
-                        <a class="link_odd_elementSpec" href="/v3/incip">incip</a>
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/castItem">castItem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ v3}}/incip">incip</a>
                      </span>
                   </div>
                </div>
@@ -283,7 +284,7 @@ title: "perfRes"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/perfRes">perfRes</a>
+                     <a class="link_odd_elementSpec" href="/{{ v3}}/perfRes">perfRes</a>
                   </span>
                </div>
             </div>

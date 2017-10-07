@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.dot.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.dot.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dot">dot</a> (direct member of att.dot.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dot">dot</a> (direct member of att.dot.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.dot.vis"
                   &lt;symbolDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.altsym">att.altsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.altsym">att.altsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.dot.vis"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.dot.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the name of a font-family.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,10 +79,10 @@ title: "att.dot.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the name of a font.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,10 +93,10 @@ title: "att.dot.vis"
                   size, e.g., "125%". 
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,10 +104,10 @@ title: "att.dot.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the style of a font, i.e, italic, oblique, or normal.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -114,10 +115,10 @@ title: "att.dot.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to indicate bold type.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -128,7 +129,7 @@ title: "att.dot.vis"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extsym">att.extsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -144,7 +145,7 @@ title: "att.dot.vis"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extsym">att.extsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -155,10 +156,10 @@ title: "att.dot.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.ho">att.visualoffset.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.ho">att.visualoffset.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -166,10 +167,10 @@ title: "att.dot.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the staff location of the feature.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc">att.staffloc</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffloc">att.staffloc</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -177,10 +178,10 @@ title: "att.dot.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records staff location in terms of written octave.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -188,10 +189,10 @@ title: "att.dot.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures staff location in terms of written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -202,10 +203,10 @@ title: "att.dot.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.vo">att.visualoffset.vo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.vo">att.visualoffset.vo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -219,7 +220,7 @@ title: "att.dot.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -233,7 +234,7 @@ title: "att.dot.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
          </td>

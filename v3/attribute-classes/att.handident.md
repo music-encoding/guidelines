@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.handident"
 
 ---
@@ -26,27 +27,27 @@ title: "att.handident"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/gap">gap</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a> (direct members of att.handident)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/gap">gap</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a> (direct members of att.handident)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.crit">att.crit</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.crit">att.crit</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/subst">subst</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/subst">subst</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trans">att.trans</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.trans">att.trans</a>)
                   </span>
                </div>
             </div>
@@ -64,10 +65,10 @@ title: "att.handident"
                   &lt;hand&gt; element declared in the header.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.handident">att.handident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.handident">att.handident</a>
                </span>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.KEYSIGTOKEN"
 
 ---
@@ -27,8 +28,8 @@ title: "data.KEYSIGTOKEN"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.keySig.log">att.keySig.log</a> (@sig.mixed), 
-               <a class="link_odd_classSpec" href="/v3/att.keySigDefault.log">att.keySigDefault.log</a> (@key.sig.mixed)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a> (@sig.mixed), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a> (@key.sig.mixed)
             </div>
          </td>
       </tr>

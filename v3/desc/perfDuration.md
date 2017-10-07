@@ -1,7 +1,0 @@
----
-desc: "perfDuration"
-type: "elementSpec"
----
-
-(performance duration) – Used to express the duration of performance of printed or
-manuscript music or the playing time for a sound recording, videorecording, etc.

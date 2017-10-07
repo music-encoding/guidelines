@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.ORNAM.cmn"
 
 ---
@@ -33,7 +34,7 @@ title: "data.ORNAM.cmn"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.ornam">att.ornam</a> (@ornam)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.ornam">att.ornam</a> (@ornam)
             </div>
          </td>
       </tr>

@@ -1,7 +1,0 @@
----
-desc: "mapping"
-type: "elementSpec"
----
-
-One or more characters which are related to the parent symbol in some respect, as
-specified by the type attribute.

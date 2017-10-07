@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "facsimile"
 
 ---
@@ -32,10 +33,10 @@ title: "facsimile"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -46,7 +47,7 @@ title: "facsimile"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,10 +55,10 @@ title: "facsimile"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "facsimile"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,7 +85,7 @@ title: "facsimile"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -95,7 +96,7 @@ title: "facsimile"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.resourceLike">model.resourceLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.resourceLike">model.resourceLike</a>
             </div>
          </td>
       </tr>
@@ -109,19 +110,19 @@ title: "facsimile"
                   <div class="specChild">
                      <span class="specChildModule">MEI.facsimile</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/facsimile">facsimile</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/facsimile">facsimile</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.performance</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/performance">performance</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/performance">performance</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/music">music</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/music">music</a>
                      </span>
                   </div>
                </div>
@@ -137,7 +138,7 @@ title: "facsimile"
                <div class="specChild">
                   <span class="specChildModule">MEI.facsimile</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/surface">surface</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a>
                   </span>
                </div>
             </div>

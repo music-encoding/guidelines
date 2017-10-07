@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.miditempo"
 
 ---
@@ -26,15 +27,15 @@ title: "att.miditempo"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.ges">att.scoreDef.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tempo.ges">att.tempo.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tempo.ges">att.tempo.ges</a>)
                   </span>
                </div>
             </div>
@@ -53,10 +54,10 @@ title: "att.miditempo"
                   indication*.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIBPM">data.MIDIBPM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIBPM">data.MIDIBPM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.miditempo">att.miditempo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -68,10 +69,10 @@ title: "att.miditempo"
                   microseconds.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIMSPB">data.MIDIMSPB</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIMSPB">data.MIDIMSPB</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.miditempo">att.miditempo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
                </span>
             </div>
          </td>

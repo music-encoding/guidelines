@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.COLOR"
 
 ---
@@ -26,12 +27,12 @@ title: "data.COLOR"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.beaming.vis">att.beaming.vis</a> (@beam.color), 
-               <a class="link_odd_classSpec" href="/v3/att.cleffing.vis">att.cleffing.vis</a> (@clef.color), 
-               <a class="link_odd_classSpec" href="/v3/att.color">att.color</a> (@color), 
-               <a class="link_odd_classSpec" href="/v3/att.mensural.vis">att.mensural.vis</a> (@mensur.color), 
-               <a class="link_odd_classSpec" href="/v3/att.noteheads">att.noteheads</a> (@head.color), 
-               <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a> (@lines.color)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a> (@beam.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.vis">att.cleffing.vis</a> (@clef.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.color">att.color</a> (@color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a> (@mensur.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.noteheads">att.noteheads</a> (@head.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a> (@lines.color)
             </div>
          </td>
       </tr>

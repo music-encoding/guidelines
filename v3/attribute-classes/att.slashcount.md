@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.slashcount"
 
 ---
@@ -26,16 +27,16 @@ title: "att.slashcount"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/fTrem">fTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fTrem.vis">att.fTrem.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.fTrem.vis">att.fTrem.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mensur">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mensuration">mensuration</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mensur.log">att.mensur.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mensur.log">att.mensur.log</a>)
                   </span>
                </div>
             </div>
@@ -51,10 +52,10 @@ title: "att.slashcount"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the number of slashes present.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SLASH">data.SLASH</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.SLASH">data.SLASH</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slashcount">att.slashcount</a>
+                  <a class="link_odd" href="/{{ v3}}/att.slashcount">att.slashcount</a>
                </span>
             </div>
          </td>

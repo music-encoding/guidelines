@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.PITCHNAME.GES"
 
 ---
@@ -27,7 +28,7 @@ title: "data.PITCHNAME.GES"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a> (@pname.ges)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a> (@pname.ges)
             </div>
          </td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.ineume.log"
 
 ---
@@ -26,7 +27,7 @@ title: "att.ineume.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ineume">ineume</a> (direct member of att.ineume.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a> (direct member of att.ineume.log)
                </div>
             </div>
          </td>
@@ -41,10 +42,10 @@ title: "att.ineume.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a subclass or functional label for the neume.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.INEUMEFORM">data.INEUMEFORM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INEUMEFORM">data.INEUMEFORM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.ineume.log">att.ineume.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.ineume.log">att.ineume.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -52,10 +53,10 @@ title: "att.ineume.log"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the name of the neume.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.INEUMENAME">data.INEUMENAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.INEUMENAME">data.INEUMENAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.ineume.log">att.ineume.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.ineume.log">att.ineume.log</a>
                </span>
             </div>
          </td>

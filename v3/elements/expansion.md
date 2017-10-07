@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "expansion"
 
 ---
@@ -46,7 +47,7 @@ title: "expansion"
                   element(s) specified in plist or target attribute.)
                </i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.targeteval">att.targeteval</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.targeteval">att.targeteval</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -57,7 +58,7 @@ title: "expansion"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "expansion"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -80,10 +81,10 @@ title: "expansion"
                   pointed "from".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.plist">att.plist</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.plist">att.plist</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +95,10 @@ title: "expansion"
                   located in the document header.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.source">att.source</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.source">att.source</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -110,7 +111,7 @@ title: "expansion"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -123,7 +124,7 @@ title: "expansion"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -133,10 +134,10 @@ title: "expansion"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -150,7 +151,7 @@ title: "expansion"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -173,15 +174,15 @@ title: "expansion"
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/lem">lem</a> 
-                        <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/ending">ending</a> 
-                        <a class="link_odd_elementSpec" href="/v3/section">section</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ending">ending</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>
                      </span>
                   </div>
                </div>
@@ -274,11 +275,11 @@ title: "expansion"
          <td class="wovenodd-col2">
             <p>The 
                <span class="att">plist</span> attribute contains an ordered list of identifiers of descendant 
-               <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-               <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-               <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, or
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>, 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/ending">ending</a>, 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, or
                
-               <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a> elements. For example, the sequence "#A #End1 #A #End2"
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a> elements. For example, the sequence "#A #End1 #A #End2"
                indicates that the section labelled 'A' comes first, then the ending labelled 'End1',
                followed by the 'A' section again, and finally the ending labelled 'End2'.
             </p>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.startLike.corpus"
 
 ---
@@ -34,7 +35,7 @@ title: "model.startLike.corpus"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meiCorpus">meiCorpus</a> (direct member of model.startLike.corpus)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meiCorpus">meiCorpus</a> (direct member of model.startLike.corpus)
                </div>
             </div>
          </td>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.visibility"
 
 ---
@@ -26,69 +27,69 @@ title: "att.visibility"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.chord.vis">att.chord.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/keySig">keySig</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.keySig.vis">att.keySig.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.keySig.vis">att.keySig.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/layer">layer</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layer.vis">att.layer.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.layer.vis">att.layer.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/layerDef">layerDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.vis">att.layerDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.layerDef.vis">att.layerDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mRest">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.vis">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mRest.vis">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mSpace">mSpace</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/mSpace">mSpace</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mSpace.vis">att.mSpace.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mSpace.vis">att.mSpace.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.vis">att.note.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staff">staff</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staff.vis">att.staff.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staff.vis">att.staff.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.vis">att.staffDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffGrp">staffGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffGrp.vis">att.staffGrp.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffGrp.vis">att.staffGrp.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/uneume">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.uneume.vis">att.uneume.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.uneume.vis">att.uneume.vis</a>)
                   </span>
                </div>
             </div>
@@ -106,10 +107,10 @@ title: "att.visibility"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ v3}}/att.visibility">att.visibility</a>
                </span>
             </div>
          </td>

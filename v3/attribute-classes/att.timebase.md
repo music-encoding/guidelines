@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.timebase"
 
 ---
@@ -26,15 +27,15 @@ title: "att.timebase"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.ges">att.scoreDef.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.scoreDef.ges">att.scoreDef.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.ges">att.staffDef.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.staffDef.ges">att.staffDef.ges</a>)
                   </span>
                </div>
             </div>
@@ -56,7 +57,7 @@ title: "att.timebase"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.timebase">att.timebase</a>
+                  <a class="link_odd" href="/{{ v3}}/att.timebase">att.timebase</a>
                </span>
             </div>
          </td>

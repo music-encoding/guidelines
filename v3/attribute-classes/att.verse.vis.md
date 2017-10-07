@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.verse.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.verse.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a> (direct member of att.verse.vis)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/verse">verse</a> (direct member of att.verse.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.verse.vis"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ v3}}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,10 +55,10 @@ title: "att.verse.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the name of a font-family.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -65,10 +66,10 @@ title: "att.verse.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the name of a font.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -79,10 +80,10 @@ title: "att.verse.vis"
                   size, e.g., "125%". 
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -90,10 +91,10 @@ title: "att.verse.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the style of a font, i.e, italic, oblique, or normal.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -101,10 +102,10 @@ title: "att.verse.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to indicate bold type.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ v3}}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -114,10 +115,10 @@ title: "att.verse.vis"
                   in terms of musical time; that is, beats.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.to">att.visualoffset.to</a>
+                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.to">att.visualoffset.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -128,10 +129,10 @@ title: "att.verse.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.vo">att.visualoffset.vo</a>
+                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.vo">att.visualoffset.vo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -145,7 +146,7 @@ title: "att.verse.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ v3}}/att.xy">att.xy</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -159,7 +160,7 @@ title: "att.verse.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ v3}}/att.xy">att.xy</a>
                </span>
             </div>
          </td>

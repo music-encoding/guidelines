@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsOverview
 title: "Overview of the User Symbols Module"
+version: "v3"
 ---
 
 

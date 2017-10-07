@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.width"
 
 ---
@@ -26,21 +27,21 @@ title: "att.width"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/barLine">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.barLine.vis">att.barLine.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.barLine.vis">att.barLine.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/graphic">graphic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dimensions">att.dimensions</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dimensions">att.dimensions</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/measure">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.measure.vis">att.measure.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ v3}}/att.measure.vis">att.measure.vis</a>)
                   </span>
                </div>
             </div>
@@ -56,10 +57,10 @@ title: "att.width"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Measurement of the horizontal dimension of an entity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.width">att.width</a>
+                  <a class="link_odd" href="/{{ v3}}/att.width">att.width</a>
                </span>
             </div>
          </td>

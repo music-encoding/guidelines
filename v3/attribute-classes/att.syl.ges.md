@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.syl.ges"
 
 ---
@@ -26,7 +27,7 @@ title: "att.syl.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/syl">syl</a> (direct member of att.syl.ges)
+                  <a class="link_odd_elementSpec" href="/{{ v3}}/syl">syl</a> (direct member of att.syl.ges)
                </div>
             </div>
          </td>

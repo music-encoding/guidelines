@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.staffPart.mensuralAndNeumes"
 
 ---
@@ -27,7 +28,7 @@ title: "model.staffPart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.staffPart">model.staffPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart">model.staffPart</a>
                </div>
             </div>
          </td>
@@ -39,29 +40,29 @@ title: "model.staffPart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.scoreDefLike">model.scoreDefLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.scoreDefLike">model.scoreDefLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.staffDefLike">model.staffDefLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffDefLike">model.staffDefLike</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/model.staffPart.mensural">model.staffPart.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart.mensural">model.staffPart.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/model.staffPart.neumes">model.staffPart.neumes</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart.neumes">model.staffPart.neumes</a> (no elements directly inheriting from this class)
                   </span>
                </div>
             </div>

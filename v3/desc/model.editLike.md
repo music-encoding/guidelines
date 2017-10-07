@@ -1,8 +1,0 @@
----
-desc: "model.editLike"
-type: "classSpec"
----
-
-Groups elements for editorial interventions that may be useful both in transcribing
-and
-in authoring.

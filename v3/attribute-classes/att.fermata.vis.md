@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.fermata.vis"
 
 ---
@@ -26,7 +27,7 @@ title: "att.fermata.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fermata">fermata</a> (direct member of att.fermata.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fermata">fermata</a> (direct member of att.fermata.vis)
                </div>
             </div>
          </td>
@@ -43,10 +44,10 @@ title: "att.fermata.vis"
                   &lt;symbolDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.altsym">att.altsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.altsym">att.altsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +57,10 @@ title: "att.fermata.vis"
                   'color' as used in pre-CMN notation.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.color">att.color</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.color">att.color</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +68,10 @@ title: "att.fermata.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains the name of a font-family.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -78,10 +79,10 @@ title: "att.fermata.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the name of a font.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -92,10 +93,10 @@ title: "att.fermata.vis"
                   size, e.g., "125%". 
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -103,10 +104,10 @@ title: "att.fermata.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the style of a font, i.e, italic, oblique, or normal.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -114,10 +115,10 @@ title: "att.fermata.vis"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to indicate bold type.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -133,7 +134,7 @@ title: "att.fermata.vis"
                <span style="font-weight: 500;">norm</span>" 
                <i>(Upright; i.e., curve or bracket above the dot.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.fermata.vis">att.fermata.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.fermata.vis">att.fermata.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -144,7 +145,7 @@ title: "att.fermata.vis"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extsym">att.extsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -160,7 +161,7 @@ title: "att.fermata.vis"
                </span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extsym">att.extsym</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -171,10 +172,10 @@ title: "att.fermata.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.ho">att.visualoffset.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.ho">att.visualoffset.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -184,10 +185,10 @@ title: "att.fermata.vis"
                   associated.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFREL">data.STAFFREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFREL">data.STAFFREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.placement">att.placement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.placement">att.placement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -205,7 +206,7 @@ title: "att.fermata.vis"
                <span style="font-weight: 500;">angular</span>" 
                <i>(A triangle above or below the dot.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.fermata.vis">att.fermata.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.fermata.vis">att.fermata.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -215,10 +216,10 @@ title: "att.fermata.vis"
                   in terms of musical time; that is, beats.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.to">att.visualoffset.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.to">att.visualoffset.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -229,10 +230,10 @@ title: "att.fermata.vis"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset.vo">att.visualoffset.vo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.vo">att.visualoffset.vo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -246,7 +247,7 @@ title: "att.fermata.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -260,7 +261,7 @@ title: "att.fermata.vis"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.xy">att.xy</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
                </span>
             </div>
          </td>

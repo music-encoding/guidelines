@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.identifierLike"
 
 ---
@@ -26,17 +27,17 @@ title: "model.identifierLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.pubStmtPart">model.pubStmtPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.pubStmtPart">model.pubStmtPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/expression">expression</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/item">item</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/seriesStmt">seriesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/source">source</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/item">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physLoc">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/seriesStmt">seriesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/source">source</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a>
                </div>
             </div>
          </td>
@@ -48,7 +49,7 @@ title: "model.identifierLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/identifier">identifier</a> (direct member of model.identifierLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/identifier">identifier</a> (direct member of model.identifierLike)
                </div>
             </div>
          </td>
