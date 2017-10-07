@@ -4,12 +4,12 @@
   {% assign levels = doc.relative_path | split: '/' %}
   {% assign levels = levels | shift %}
 
-  {% if levels.size < 2 %}
-<p>
-    <a href="{{ doc.sectionid | downcase | url_encode }}.html">
-      {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
+  {% if doc.url contains include.section and levels.size > 1 and levels.size < 4 %}
+<p>   
+    <a href="{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
+        {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
     </a>
-</p> 
+</p>
   {% endif %}
-      
+
 {% endfor %}
