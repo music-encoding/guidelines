@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.measureLike"
 
 ---
@@ -9,57 +10,55 @@ title: "model.measureLike"
    <h3 id="model.measureLike">model.measureLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.measureLike</span> Groups measure-like elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups measure-like elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.sectionPart.cmn">model.sectionPart.cmn</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.cmn.html">model.sectionPart.cmn</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sic.html">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a> (direct member of model.measureLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a> (direct member of model.measureLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

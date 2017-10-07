@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pointing"
 
 ---
@@ -9,134 +10,53 @@ title: "att.pointing"
    <h3 id="att.pointing">att.pointing</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.pointing</span> Attributes common to all pointing/linking elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes common to all pointing/linking elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/avFile">avFile</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bibl">bibl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipCode">incipCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/item">item</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pb">pb</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ref">ref</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relatedItem">relatedItem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relation">relation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/source">source</a> (direct members of att.pointing)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/avFile.html">avFile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/barLine.html">barLine</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bibl.html">bibl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contents.html">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/graphic.html">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipCode.html">incipCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/item.html">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ptr.html">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ref.html">ref</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relatedItem.html">relatedItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relation.html">relation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/source.html">source</a> (direct members of att.pointing)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@target</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Allows the use of one or more previously-undeclared URIs to identify passive
-                  participants in a relationship; that is, the entities pointed "to".
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@targettype</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Characterization of target resource(s) using any convenient classification scheme
-                  or
-                  typology.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">NMTOKEN</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@xlink:actuate</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Defines whether a link occurs automatically or must be requested by the user.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">onLoad</span>" 
-               <i>(Load the target resource(s) immediately.)</i>,  "
-               <span style="font-weight: 500;">onRequest</span>" 
-               <i>(Load the target resource(s) upon user request.)</i>,  "
-               <span style="font-weight: 500;">none</span>" 
-               <i>(Do not permit loading of the target resource(s).)</i>,  "
-               <span style="font-weight: 500;">other</span>" 
-               <i>(Behavior other than allowed by the other values of this attribute.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@xlink:role</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Characterization of the relationship between resources. The value of the role
-                  attribute must be a URI.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@xlink:show</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Defines how a remote resource is rendered.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">new</span>" 
-               <i>(Open in a new window.)</i>,  "
-               <span style="font-weight: 500;">replace</span>" 
-               <i>(Load the referenced resource in the same window.)</i>,  "
-               <span style="font-weight: 500;">embed</span>" 
-               <i>(Embed the referenced resource at the point of the link.)</i>,  "
-               <span style="font-weight: 500;">none</span>" 
-               <i>(Do not permit traversal to the referenced resource.)</i>,  "
-               <span style="font-weight: 500;">other</span>" 
-               <i>(Behavior other than permitted by the other values of this attribute.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pointing">att.pointing</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

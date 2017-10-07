@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "macro.availabilityPart"
 
 ---
@@ -9,30 +10,29 @@ title: "macro.availabilityPart"
    <h3 id="macro.availabilityPart">macro.availabilityPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">macro.availabilityPart</span> Groups elements that may appear as part of a description of the availability of and
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of a description of the availability of and
             access to a bibliographic item.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/availability">availability</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/availability.html">availability</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

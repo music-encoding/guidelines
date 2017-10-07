@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.nameLike.place"
 
 ---
@@ -9,46 +10,44 @@ title: "model.nameLike.place"
    <h3 id="model.nameLike.place">model.nameLike.place</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.nameLike.place</span> Groups place name elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups place name elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.namesdates</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.nameLike">model.nameLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/geogName.html">geogName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.nameLike.geogName">model.nameLike.geogName</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.geogName.html">model.nameLike.geogName</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/physLoc.html">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/repository.html">repository</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.repositoryLike">model.repositoryLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.repositoryLike.html">model.repositoryLike</a>)
                   </span>
                </div>
             </div>
@@ -56,7 +55,7 @@ title: "model.nameLike.place"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.partsLike"
 
 ---
@@ -9,36 +10,34 @@ title: "model.partsLike"
    <h3 id="model.partsLike">model.partsLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.partsLike</span> Groups elements that group separate performer parts.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that group separate performer parts.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mdiv">mdiv</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mdiv.html">mdiv</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/parts">parts</a> (direct member of model.partsLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/parts.html">parts</a> (direct member of model.partsLike)
                </div>
             </div>
          </td>

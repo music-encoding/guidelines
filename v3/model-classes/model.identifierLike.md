@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.identifierLike"
 
 ---
@@ -9,53 +10,51 @@ title: "model.identifierLike"
    <h3 id="model.identifierLike">model.identifierLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.identifierLike</span> Groups identifier-like elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups identifier-like elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.pubStmtPart">model.pubStmtPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.pubStmtPart.html">model.pubStmtPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/expression">expression</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/item">item</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/physLoc">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/seriesStmt">seriesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/source">source</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/work">work</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expression.html">expression</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/item.html">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physLoc.html">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/series.html">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/seriesStmt.html">seriesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/source.html">source</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/work.html">work</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/identifier">identifier</a> (direct member of model.identifierLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/identifier.html">identifier</a> (direct member of model.identifierLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

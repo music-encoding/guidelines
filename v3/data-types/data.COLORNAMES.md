@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.COLORNAMES"
 
 ---
@@ -9,29 +10,27 @@ title: "data.COLORNAMES"
    <h3 id="data.COLORNAMES">data.COLORNAMES</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.COLORNAMES</span> List of HTML 4.01 color names.
-         </td>
+         <td colspan="2" class="wovenodd-col2">List of HTML 4.01 color names.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.COLOR">data.COLOR</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.COLOR.html">data.COLOR</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -72,7 +71,7 @@ title: "data.COLORNAMES"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

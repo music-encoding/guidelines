@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.filing"
 
 ---
@@ -9,47 +10,45 @@ title: "att.filing"
    <h3 id="att.filing">att.filing</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.filing</span> Attributes that deal with string filing characteristics.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that deal with string filing characteristics.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/title">title</a> (direct member of att.filing)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/title.html">title</a> (direct member of att.filing)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/addName.html">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bloc.html">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/country.html">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/district.html">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/famName.html">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/foreName.html">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genName.html">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogFeat.html">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogName.html">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/name.html">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/nameLink.html">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/periodName.html">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/region.html">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/repository.html">repository</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/roleName.html">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/settlement.html">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/styleName.html">styleName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.name">att.name</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.name.html">att.name</a>)
                   </span>
                </div>
             </div>
@@ -57,27 +56,13 @@ title: "att.filing"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@nonfiling</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the number of initial characters (such as those constituing an article or
-                  preposition) that should not be used for sorting a title or name.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.filing">att.filing</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

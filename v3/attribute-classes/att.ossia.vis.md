@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.ossia.vis"
 
 ---
@@ -9,31 +10,29 @@ title: "att.ossia.vis"
    <h3 id="att.ossia.vis">att.ossia.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.ossia.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ossia">ossia</a> (direct member of att.ossia.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of att.ossia.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
          <td class="wovenodd-col2"></td>
       </tr>

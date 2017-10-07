@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.sectionLike"
 
 ---
@@ -9,58 +10,56 @@ title: "model.sectionLike"
    <h3 id="model.sectionLike">model.sectionLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.sectionLike</span> Groups elements that represent a segment of music notation.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that represent a segment of music notation.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.scorePart">model.scorePart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.sectionPart">model.sectionPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sic.html">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a> (direct member of model.sectionLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a> (direct member of model.sectionLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

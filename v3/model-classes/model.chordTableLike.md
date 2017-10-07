@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.chordTableLike"
 
 ---
@@ -9,36 +10,34 @@ title: "model.chordTableLike"
    <h3 id="model.chordTableLike">model.chordTableLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.chordTableLike</span> Groups elements that group playable chord definitions.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that group playable chord definitions.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.harmony</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chordTable">chordTable</a> (direct member of model.chordTableLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chordTable.html">chordTable</a> (direct member of model.chordTableLike)
                </div>
             </div>
          </td>

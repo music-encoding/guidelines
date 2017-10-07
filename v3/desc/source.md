@@ -1,7 +1,0 @@
----
-desc: "source"
-type: "elementSpec"
----
-
-A bibliographic description of a source used in the creation of the electronic
-file.

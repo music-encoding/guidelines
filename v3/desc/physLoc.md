@@ -1,9 +1,0 @@
----
-desc: "physLoc"
-type: "elementSpec"
----
-
-(physical location) – Groups information about the current physical location of a
-bibliographic item, such as the repository in which it is located and its shelf mark(s),
-and
-its previous locations.

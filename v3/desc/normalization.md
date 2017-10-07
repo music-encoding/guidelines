@@ -1,7 +1,0 @@
----
-desc: "normalization"
-type: "elementSpec"
----
-
-Indicates the extent of normalization or regularization of the original source carried
-out in converting it to electronic form.

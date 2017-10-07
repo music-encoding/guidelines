@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterSigGrp.log"
 
 ---
@@ -9,57 +10,35 @@ title: "att.meterSigGrp.log"
    <h3 id="att.meterSigGrp.log">att.meterSigGrp.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.meterSigGrp.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meterSigGrp">meterSigGrp</a> (direct member of att.meterSigGrp.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSigGrp.html">meterSigGrp</a> (direct member of att.meterSigGrp.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@func</span>
-               <span class="attributeUsage">(required)</span>
-               <span class="attributeDesc">Function of the meter signature group.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">alternating</span>" 
-               <i>(Meter signatures appear in alternating measures.)</i>,  "
-               <span style="font-weight: 500;">interchanging</span>" 
-               <i>(Meter signatures are interchangable, e.g. 3/4 and 6/8.)</i>,  "
-               <span style="font-weight: 500;">mixed</span>" 
-               <i>(Meter signatures with different unit values are used to express a complex
-                  metrical pattern that is not expressable using traditional means, such as
-                  2/4+1/8.)
-               </i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSigGrp.log">att.meterSigGrp.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

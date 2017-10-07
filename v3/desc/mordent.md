@@ -1,7 +1,0 @@
----
-desc: "mordent"
-type: "elementSpec"
----
-
-An ornament indicating rapid alternation of the main note with a secondary note, usually
-a step below, but sometimes a step above. 

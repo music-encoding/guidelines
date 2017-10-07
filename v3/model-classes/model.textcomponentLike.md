@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.textcomponentLike"
 
 ---
@@ -9,97 +10,95 @@ title: "model.textcomponentLike"
    <h3 id="model.textcomponentLike">model.textcomponentLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.textcomponentLike</span> Groups block-level text elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups block-level text elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.rdgPart.text">model.rdgPart.text</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.rdgPart.text.html">model.rdgPart.text</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/div">div</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/figDesc">figDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/history">history</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/li">li</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgDesc">pgDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgFoot">pgFoot</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgFoot2">pgFoot2</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgHead">pgHead</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgHead2">pgHead2</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/td">td</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/th">th</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/div.html">div</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/figDesc.html">figDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/history.html">history</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/li.html">li</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgDesc.html">pgDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgFoot.html">pgFoot</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgFoot2.html">pgFoot2</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgHead.html">pgHead</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgHead2.html">pgHead2</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/td.html">td</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/th.html">th</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/titlePage.html">titlePage</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lg">lg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/lg.html">lg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.lgLike">model.lgLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.lgLike.html">model.lgLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/castList">castList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/list">list</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/biblList.html">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/castList.html">castList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/list.html">list</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.listLike">model.listLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.listLike.html">model.listLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/application">application</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/changeDesc">changeDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/interpretation">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/normalization">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/p">p</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/physDesc">physDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/samplingDecl">samplingDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/segmentation">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/stdVals">stdVals</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/application.html">application</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/changeDesc.html">changeDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/contents.html">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/editorialDecl.html">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/event.html">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/interpretation.html">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/normalization.html">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/p.html">p</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/physDesc.html">physDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/projectDesc.html">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/samplingDecl.html">samplingDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/segmentation.html">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/series.html">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/stdVals.html">stdVals</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.pLike">model.pLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.pLike.html">model.pLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/quote">quote</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/quote.html">quote</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.quoteLike">model.quoteLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.quoteLike.html">model.quoteLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/table">table</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/event.html">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/table.html">table</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.tableLike">model.tableLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.tableLike.html">model.tableLike</a>)
                   </span>
                </div>
             </div>
@@ -107,7 +106,7 @@ title: "model.textcomponentLike"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

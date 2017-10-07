@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.SLURDIRECTION"
 
 ---
@@ -9,19 +10,17 @@ title: "data.SLURDIRECTION"
    <h3 id="data.SLURDIRECTION">data.SLURDIRECTION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.SLURDIRECTION</span> Slur direction.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Slur direction.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -29,7 +28,7 @@ title: "data.SLURDIRECTION"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -42,7 +41,7 @@ title: "data.SLURDIRECTION"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

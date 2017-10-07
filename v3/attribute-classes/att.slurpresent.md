@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.slurpresent"
 
 ---
@@ -9,32 +10,30 @@ title: "att.slurpresent"
    <h3 id="att.slurpresent">att.slurpresent</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.slurpresent</span> Attributes for marking the presence of a slur.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes for marking the presence of a slur.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.log.html">att.chord.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.log.html">att.note.log</a>)
                   </span>
                </div>
             </div>
@@ -42,27 +41,13 @@ title: "att.slurpresent"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@slur</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates that this element participates in a slur. If visual information about the
-                  slur needs to be recorded, then a &lt;slur&gt; element should be employed.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.SLUR">data.SLUR</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slurpresent">att.slurpresent</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

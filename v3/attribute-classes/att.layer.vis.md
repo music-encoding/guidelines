@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layer.vis"
 
 ---
@@ -9,51 +10,35 @@ title: "att.layer.vis"
    <h3 id="att.layer.vis">att.layer.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.layer.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a> (direct member of att.layer.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a> (direct member of att.layer.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@visible</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates if a feature should be rendered when the notation is presented graphically
-                  or sounded when it is presented in an aural form.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

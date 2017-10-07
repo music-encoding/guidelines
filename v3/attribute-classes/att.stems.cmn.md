@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.stems.cmn"
 
 ---
@@ -9,38 +10,37 @@ title: "att.stems.cmn"
    <h3 id="att.stems.cmn">att.stems.cmn</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.stems.cmn</span> Attributes that describe the properties of stemmed features; that is, chords and
+         <td colspan="2" class="wovenodd-col2">Attributes that describe the properties of stemmed features; that is, chords and
             notes.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.stems">att.stems</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.stems">att.stems</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.vis.html">att.chord.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.vis.html">att.note.vis</a>)
                   </span>
                </div>
             </div>
@@ -48,28 +48,13 @@ title: "att.stems.cmn"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@stem.with</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains an indication of which staff a note or chord that logically belongs to the
-                  current staff should be visually placed on; that is, the one above or the one
-                  below.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OTHERSTAFF">data.OTHERSTAFF</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.stems.cmn">att.stems.cmn</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

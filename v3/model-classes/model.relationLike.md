@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.relationLike"
 
 ---
@@ -9,36 +10,34 @@ title: "model.relationLike"
    <h3 id="model.relationLike">model.relationLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.relationLike</span> Collects relationLike elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Collects relationLike elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.frbr</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/relationList">relationList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relationList.html">relationList</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/relation">relation</a> (direct member of model.relationLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relation.html">relation</a> (direct member of model.relationLike)
                </div>
             </div>
          </td>

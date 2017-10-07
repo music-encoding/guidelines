@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.duration.ratio"
 
 ---
@@ -9,67 +10,65 @@ title: "att.duration.ratio"
    <h3 id="att.duration.ratio">att.duration.ratio</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.duration.ratio</span> Attributes that describe duration as a ratio.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe duration as a ratio.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensuration.html">mensuration</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mensur.log">att.mensur.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensur.log.html">att.mensur.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges.mensural">att.note.ges.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.ges.mensural">att.note.ges.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.ges.html">att.note.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/proport">proport</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/proport.html">proport</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.proport.log">att.proport.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.proport.log.html">att.proport.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.rest.ges.mensural">att.rest.ges.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.ges.mensural">att.rest.ges.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.ges">att.rest.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.ges.html">att.rest.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tuplet.html">tuplet</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tuplet.log">att.tuplet.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tuplet.log.html">att.tuplet.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tupletSpan.log">att.tupletSpan.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tupletSpan.log.html">att.tupletSpan.log</a>)
                   </span>
                </div>
             </div>
@@ -77,40 +76,13 @@ title: "att.duration.ratio"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@num</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Along with numbase, describes duration as a ratio. num is the first value in the
-                  ratio, while numbase is the second.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@numbase</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Along with num, describes duration as a ratio. num is the first value in the ratio,
-                  while numbase is the second.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,0 +1,2 @@
+Encodes the onset time in terms of musical time, i.e.,
+beats[.fractional_beat_part].

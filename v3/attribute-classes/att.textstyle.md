@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.textstyle"
 
 ---
@@ -9,38 +10,36 @@ title: "att.textstyle"
    <h3 id="att.textstyle">att.textstyle</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.textstyle</span> Attributes that describe default text typography.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe default text typography.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.vis">att.layerDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.layerDef.vis.html">att.layerDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -48,79 +47,13 @@ title: "att.textstyle"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@text.fam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font family name of text (other than lyrics) when
-                  this information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.name</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font name of text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.size</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font size of text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.style</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font style of text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.weight</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font weight for text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

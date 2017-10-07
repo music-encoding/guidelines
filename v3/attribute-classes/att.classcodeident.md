@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.classcodeident"
 
 ---
@@ -9,54 +10,36 @@ title: "att.classcodeident"
    <h3 id="att.classcodeident">att.classcodeident</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.classcodeident</span> 
-         </td>
+         <td colspan="2" class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/term">term</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/termList">termList</a> (direct members of att.classcodeident)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/term.html">term</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/termList.html">termList</a> (direct members of att.classcodeident)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@classcode</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains a reference to the controlled vocabulary from which the term is drawn. The
-                  value must match the value of an ID attribute on a classCode element given elsewhere
-                  in
-                  the document.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.classcodeident">att.classcodeident</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -151,7 +134,7 @@ title: "att.classcodeident"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

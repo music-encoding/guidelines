@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.expressionLike"
 
 ---
@@ -9,37 +10,35 @@ title: "model.expressionLike"
    <h3 id="model.expressionLike">model.expressionLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.expressionLike</span> Collects expressionlike elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Collects expressionlike elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.frbr</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/componentGrp">componentGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expressionList">expressionList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/componentGrp.html">componentGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expressionList.html">expressionList</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/expression">expression</a> (direct member of model.expressionLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expression.html">expression</a> (direct member of model.expressionLike)
                </div>
             </div>
          </td>

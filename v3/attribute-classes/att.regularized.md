@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.regularized"
 
 ---
@@ -9,19 +10,17 @@ title: "att.regularized"
    <h3 id="att.regularized">att.regularized</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.regularized</span> Attributes that hold a controlled value.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that hold a controlled value.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -29,25 +28,13 @@ title: "att.regularized"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@reg</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a regularized, authorized value.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.regularized">att.regularized</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

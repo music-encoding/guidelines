@@ -1,8 +1,0 @@
----
-desc: "pgHead"
-type: "elementSpec"
----
-
-(page header) – A running header on the first page. Also, used to temporarily override
-a
-running header on individual pages.

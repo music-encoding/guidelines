@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.extent"
 
 ---
@@ -9,50 +10,36 @@ title: "att.extent"
    <h3 id="att.extent">att.extent</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.extent</span> Attributes for identification of the extent of editorial assertions.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes for identification of the extent of editorial assertions.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.edittrans</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/gap">gap</a> (direct members of att.extent)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gap.html">gap</a> (direct members of att.extent)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@extent</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the extent of damage or omission.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extent">att.extent</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

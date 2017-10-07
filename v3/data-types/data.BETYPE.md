@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.BETYPE"
 
 ---
@@ -9,30 +10,28 @@ title: "data.BETYPE"
    <h3 id="data.BETYPE">data.BETYPE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.BETYPE</span> Datatypes for values in begin, end, abstype and inttype attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Datatypes for values in begin, end, abstype and inttype attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.mediabounds">att.mediabounds</a> (@betype), 
-               <a class="link_odd_classSpec" href="/v3/when">when</a>/@abstype
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mediabounds.html">att.mediabounds</a> (@betype), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/when.html">when</a>/@abstype
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -67,7 +66,7 @@ title: "data.BETYPE"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

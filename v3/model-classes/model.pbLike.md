@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.pbLike"
 
 ---
@@ -9,45 +10,43 @@ title: "model.pbLike"
    <h3 id="model.pbLike">model.pbLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.pbLike</span> Groups pagebreak-like elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups pagebreak-like elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.milestoneLike.music">model.milestoneLike.music</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.milestoneLike.text">model.milestoneLike.text</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike">model.textphraseLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.html">model.textphraseLike</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pb">pb</a> (direct member of model.pbLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a> (direct member of model.pbLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

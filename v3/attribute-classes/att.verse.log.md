@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.verse.log"
 
 ---
@@ -9,66 +10,37 @@ title: "att.verse.log"
    <h3 id="att.verse.log">att.verse.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.verse.log</span> Logical domain attributes. The n attribute should be used for verse numbers. Numbers
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes. The n attribute should be used for verse numbers. Numbers
             need not be consecutive; they may also be expressed as ranges, e.g. 2-3,6.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.lyrics</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a> (direct member of att.verse.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a> (direct member of att.verse.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@refrain</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to indicate a common, usually centered, refrain.
-                  
-                  <!-- (Mup User's Guide, p. 44) -->
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.verse.log">att.verse.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@rhythm</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to specify a rhythm for the lyric syllables that differs from that of the notes
-                  on the staff, e.g. '4,4,4,4' when the rhythm of the notes is '4.,8,4.,8'.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.verse.log">att.verse.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

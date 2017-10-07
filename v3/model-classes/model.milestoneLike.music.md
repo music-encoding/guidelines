@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.milestoneLike.music"
 
 ---
@@ -9,50 +10,48 @@ title: "model.milestoneLike.music"
    <h3 id="model.milestoneLike.music">model.milestoneLike.music</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.milestoneLike.music</span> Groups milestone-style elements found in music notation.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups milestone-style elements found in music notation.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/score.html">score</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staff.html">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syllable.html">syllable</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/sb">sb</a> (direct member of model.milestoneLike.music)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sb.html">sb</a> (direct member of model.milestoneLike.music)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/pb">pb</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/pb.html">pb</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.pbLike">model.pbLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.pbLike.html">model.pbLike</a>)
                   </span>
                </div>
             </div>

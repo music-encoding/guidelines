@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.annot.vis"
 
 ---
@@ -9,31 +10,29 @@ title: "att.annot.vis"
    <h3 id="att.annot.vis">att.annot.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.annot.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a> (direct member of att.annot.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a> (direct member of att.annot.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
          <td class="wovenodd-col2"></td>
       </tr>

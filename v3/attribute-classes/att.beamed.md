@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beamed"
 
 ---
@@ -9,64 +10,62 @@ title: "att.beamed"
    <h3 id="att.beamed">att.beamed</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.beamed</span> Attributes that indicate whether an event lies under a beam.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that indicate whether an event lies under a beam.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log.cmn">att.chord.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.log.cmn">att.chord.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.log.html">att.chord.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.note.log.cmn">att.note.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.log.cmn">att.note.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.log.html">att.note.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.rest.log.cmn">att.rest.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.log.cmn">att.rest.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.log">att.rest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.log.html">att.rest.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.space.log.cmn">att.space.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.space.log.cmn">att.space.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/space">space</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/space.html">space</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.space.log">att.space.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.space.log.html">att.space.log</a>)
                   </span>
                </div>
             </div>
@@ -74,25 +73,13 @@ title: "att.beamed"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@beam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates that this event is "under a beam".</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.BEAM">data.BEAM</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamed">att.beamed</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

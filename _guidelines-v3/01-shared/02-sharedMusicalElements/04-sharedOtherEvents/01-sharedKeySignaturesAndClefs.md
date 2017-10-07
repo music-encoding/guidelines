@@ -1,6 +1,7 @@
 ---
 sectionid: sharedKeySignaturesAndClefs
 title: "Key Signatures and Clefs"
+version: "v3"
 ---
 
 
@@ -11,10 +12,10 @@ treated as events.
 
 
 
-{% include specDesc.html key="keySig" atts="" %}
-{% include specDesc.html key="keyAccid" atts="" %}
-{% include specDesc.html key="clef" atts="" %}
-{% include specDesc.html key="clefGrp" atts="" %}
+{% include specDesc.html version=page.version elem="keySig" atts="" %}
+{% include specDesc.html version=page.version elem="keyAccid" atts="" %}
+{% include specDesc.html version=page.version elem="clef" atts="" %}
+{% include specDesc.html version=page.version elem="clefGrp" atts="" %}
 
 
 

@@ -1,6 +1,7 @@
 ---
 sectionid: sharedParagraphs
 title: "Paragraphs"
+version: "v3"
 ---
 
 
@@ -14,11 +15,11 @@ HTML.
 
 
 
-{% include specDesc.html key="p" atts="" %}
+{% include specDesc.html version=page.version elem="p" atts="" %}
 
 
 
-In MEI, a [p](/v3/elements/p.html){:.link_odd_elementSpec} is used in many different situations, including
-transcriptional use within a [titlePage](/v3/elements/titlePage.html){:.link_odd_elementSpec} or descriptive purposes as in a
-[changeDesc](/v3/elements/changeDesc.html){:.link_odd_elementSpec}.
+In MEI, a [p](/{{ page.version }}/elements/p.html){:.link_odd_elementSpec} is used in many different situations, including
+transcriptional use within a [titlePage](/{{ page.version }}/elements/titlePage.html){:.link_odd_elementSpec} or descriptive purposes as in a
+[changeDesc](/{{ page.version }}/elements/changeDesc.html){:.link_odd_elementSpec}.
 

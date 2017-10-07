@@ -1,0 +1,1 @@
+Beat proportion representation equivalent to Humdrum **recip.

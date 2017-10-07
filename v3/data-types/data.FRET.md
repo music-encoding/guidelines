@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.FRET"
 
 ---
@@ -9,8 +10,7 @@ title: "data.FRET"
    <h3 id="data.FRET">data.FRET</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.FRET</span> In a guitar chord diagram, the fret where the finger should be placed. Since guitar
+         <td colspan="2" class="wovenodd-col2">In a guitar chord diagram, the fret where the finger should be placed. Since guitar
             chord diagrams are limited to the range of frets that fall under the hand, the value
             here is
             also limited. The pos (position) attribute on the chordDef element must be used to
@@ -20,23 +20,23 @@ title: "data.FRET"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.fretlocation">att.fretlocation</a> (@fret)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a> (@fret)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

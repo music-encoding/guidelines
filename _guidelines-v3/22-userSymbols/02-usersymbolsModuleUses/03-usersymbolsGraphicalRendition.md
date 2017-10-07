@@ -1,18 +1,19 @@
 ---
 sectionid: usersymbolsGraphicalRendition
 title: "Defining a Specific Graphical Rendition for a Semantic Element"
+version: "v3"
 ---
 
 
 
 Usersymbols can define the rendition of different elements in two ways. Some elements,
 for
-example [dir](/v3/elements/dir.html){:.link_odd_elementSpec} and [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec}, can have user symbol
-elements as content. In the following example, the content of [dir](/v3/elements/dir.html){:.link_odd_elementSpec} is
+example [dir](/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} and [tempo](/{{ page.version }}/elements/tempo.html){:.link_odd_elementSpec}, can have user symbol
+elements as content. In the following example, the content of [dir](/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} is
 used to provide pictograms of percussion instruments.
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/percussion.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/usersymbols/percussion.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
 </figure>
 
@@ -26,7 +27,7 @@ the
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/charpentier.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/usersymbols/charpentier.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 57. Different treble clef renditions as written by Charpentier (source: [Journal of Seventeenth-Century Music,
       Volume 12, No. 1 (2006)](www.sscm-jscm.org/v12/no1/gosine.html){:.link_ref}, [figure 3](http://www.sscm-jscm.org/v12/no1/gosine.html#ch10){:.link_ref})
    </figcaption>

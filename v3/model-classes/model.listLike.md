@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.listLike"
 
 ---
@@ -9,47 +10,45 @@ title: "model.listLike"
    <h3 id="model.listLike">model.listLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.listLike</span> Groups list-like elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups list-like elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.text</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.paracontentPart">model.paracontentPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.textcomponentLike">model.textcomponentLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/castList">castList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/list">list</a> (direct members of model.listLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblList.html">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/castList.html">castList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/eventList.html">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/list.html">list</a> (direct members of model.listLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.labelLike"
 
 ---
@@ -9,44 +10,42 @@ title: "model.labelLike"
    <h3 id="model.labelLike">model.labelLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.labelLike</span> Groups elements used to assign a label to other parts of a document.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements used to assign a label to other parts of a document.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/grpSym">grpSym</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handList">handList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/list">list</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/termList">termList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblList.html">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contents.html">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/grpSym.html">grpSym</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handList.html">handList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/list.html">list</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffGrp.html">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/termList.html">termList</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/label">label</a> (direct member of model.labelLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/label.html">label</a> (direct member of model.labelLike)
                </div>
             </div>
          </td>

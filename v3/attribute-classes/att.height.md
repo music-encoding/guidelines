@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.height"
 
 ---
@@ -9,26 +10,24 @@ title: "att.height"
    <h3 id="att.height">att.height</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.height</span> Attributes that describe vertical size.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe vertical size.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/graphic.html">graphic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dimensions">att.dimensions</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dimensions.html">att.dimensions</a>)
                   </span>
                </div>
             </div>
@@ -36,25 +35,13 @@ title: "att.height"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@height</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Measurement of the vertical dimension of an entity.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.height">att.height</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

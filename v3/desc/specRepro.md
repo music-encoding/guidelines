@@ -1,7 +1,0 @@
----
-desc: "specRepro"
-type: "elementSpec"
----
-
-(special reproduction characteristic) – The equalization system, noise reduction system,
-etc. used in making the recording (e.g., NAB, DBX, Dolby, etc.).

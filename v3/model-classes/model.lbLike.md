@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.lbLike"
 
 ---
@@ -9,50 +10,48 @@ title: "model.lbLike"
    <h3 id="model.lbLike">model.lbLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.lbLike</span> Groups elements that function like line breaks.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that function like line breaks.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.milestoneLike.text">model.milestoneLike.text</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/altId">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/classCode">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reh">reh</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/altId.html">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classCode.html">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reh.html">reh</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lb">lb</a> (direct member of model.lbLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lb.html">lb</a> (direct member of model.lbLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,0 +1,2 @@
+Holds the number of initial characters (such as those constituing an article or
+preposition) that should not be used for sorting a title or name.

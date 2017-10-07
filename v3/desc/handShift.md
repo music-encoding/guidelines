@@ -1,7 +1,0 @@
----
-desc: "handShift"
-type: "elementSpec"
----
-
-Marks the beginning of a passage written in a new hand, or of a change in the scribe,
-writing style, ink or character of the document hand.

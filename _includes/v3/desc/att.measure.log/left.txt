@@ -1,0 +1,3 @@
+Indicates the visual rendition of the left bar line. It is present here only for
+facilitation of translation from legacy encodings which use it. Usually, it can be
+safely ignored.

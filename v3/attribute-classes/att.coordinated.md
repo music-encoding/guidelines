@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.coordinated"
 
 ---
@@ -9,85 +10,39 @@ title: "att.coordinated"
    <h3 id="att.coordinated">att.coordinated</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.coordinated</span> This attribute class records the position of a feature within a two-dimensional
+         <td colspan="2" class="wovenodd-col2">This attribute class records the position of a feature within a two-dimensional
             coordinate system.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/surface">surface</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/symbolDef">symbolDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/zone">zone</a> (direct members of att.coordinated)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/surface.html">surface</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/symbolDef.html">symbolDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/zone.html">zone</a> (direct members of att.coordinated)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@lrx</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the lower-right corner x coordinate.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">nonNegativeInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@lry</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the lower-left corner x coordinate.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">nonNegativeInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@ulx</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the upper-left corner x coordinate.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">nonNegativeInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@uly</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the upper-left corner y coordinate.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">nonNegativeInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.coordinated">att.coordinated</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

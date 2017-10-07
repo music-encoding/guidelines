@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.multiRest.vis"
 
 ---
@@ -9,183 +10,35 @@ title: "att.multiRest.vis"
    <h3 id="att.multiRest.vis">att.multiRest.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.multiRest.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRest">multiRest</a> (direct member of att.multiRest.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRest.html">multiRest</a> (direct member of att.multiRest.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@altsym</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a way of pointing to a user-defined symbol. It must contain an ID of a
-                  &lt;symbolDef&gt; element elsewhere in the document.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.altsym">att.altsym</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@block</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms
-                  (Read, p. 104) should be rendered instead of the modern form or an alternative
-                  symbol.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.multiRest.vis">att.multiRest.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontfam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains the name of a font-family.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontname</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the name of a font.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontsize</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch,
-                  relative terms, e.g., "small", "larger", etc., or percentage values relative to "normal"
-                  size, e.g., "125%". 
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontstyle</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the style of a font, i.e, italic, oblique, or normal.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontweight</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to indicate bold type.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@glyphname</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Glyph name.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extsym">att.extsym</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@glyphnum</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B.
-                  SMuFL version 1.18 uses the range U+E000 - U+ECBF.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">
-                  a string matching the following regular expression: "(#x|U\+)[A-F0-9]+"
-                  
-               </span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.extsym">att.extsym</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@loc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the staff location of the feature.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.STAFFLOC">data.STAFFLOC</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc">att.staffloc</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@oloc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records staff location in terms of written octave.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@ploc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures staff location in terms of written pitch name.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

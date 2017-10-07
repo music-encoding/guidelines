@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MEASUREMENTABS"
 
 ---
@@ -9,8 +10,7 @@ title: "data.MEASUREMENTABS"
    <h3 id="data.MEASUREMENTABS">data.MEASUREMENTABS</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MEASUREMENTABS</span> Measurement expressed in real-world (e.g., centimeters, millimeters, inches, points,
+         <td colspan="2" class="wovenodd-col2">Measurement expressed in real-world (e.g., centimeters, millimeters, inches, points,
             picas, or pixels) or virtual units (vu). 'vu' is the default value. Unlike
             data.MEASUREMENTREL, which may be used to express relative measures, only positive
             values
@@ -19,29 +19,29 @@ title: "data.MEASUREMENTABS"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>, 
-               <a class="link_odd_classSpec" href="/v3/att.hairpin.vis">att.hairpin.vis</a> (@opening), 
-               <a class="link_odd_classSpec" href="/v3/att.height">att.height</a> (@height), 
-               <a class="link_odd_classSpec" href="/v3/att.pages">att.pages</a> (@page.height), 
-               <a class="link_odd_classSpec" href="/v3/att.stems">att.stems</a> (@stem.len), 
-               <a class="link_odd_classSpec" href="/v3/att.systems">att.systems</a> (@system.leftmar), 
-               <a class="link_odd_classSpec" href="/v3/att.width">att.width</a> (@width)
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.hairpin.vis.html">att.hairpin.vis</a> (@opening), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.height.html">att.height</a> (@height), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.pages.html">att.pages</a> (@page.height), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a> (@stem.len), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.systems.html">att.systems</a> (@system.leftmar), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.width.html">att.width</a> (@width)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

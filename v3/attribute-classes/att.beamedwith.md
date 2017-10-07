@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beamedwith"
 
 ---
@@ -9,44 +10,42 @@ title: "att.beamedwith"
    <h3 id="att.beamedwith">att.beamedwith</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.beamedwith</span> Attributes indicating cross-staff beaming.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes indicating cross-staff beaming.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beam.html">beam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beam.log">att.beam.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beam.log.html">att.beam.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beamSpan">beamSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beamSpan.html">beamSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.beamSpan.log">att.beamSpan.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beamSpan.log.html">att.beamSpan.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tuplet.html">tuplet</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tuplet.log">att.tuplet.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tuplet.log.html">att.tuplet.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tupletSpan.log">att.tupletSpan.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tupletSpan.log.html">att.tupletSpan.log</a>)
                   </span>
                </div>
             </div>
@@ -54,27 +53,13 @@ title: "att.beamedwith"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@beam.with</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">In the case of cross-staff beams, the beam.with attribute is used to indicate which
-                  staff the beam is connected to; that is, the staff above or the staff below.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OTHERSTAFF">data.OTHERSTAFF</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beamedwith">att.beamedwith</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.measure.log"
 
 ---
@@ -9,8 +10,7 @@ title: "att.measure.log"
    <h3 id="att.measure.log">att.measure.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.measure.log</span> Logical domain attributes. The n attribute contains a name or number associated with
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes. The n attribute contains a name or number associated with
             the
             measure (Read, p. 445). Often, this is an integer, but not always. For example, some
             measures, especially incomplete measures or those under an ending mark, may have labels
@@ -26,86 +26,31 @@ title: "att.measure.log"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a> (direct member of att.measure.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a> (direct member of att.measure.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@control</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates whether or not a bar line is "controlling"; that is, if it indicates a
-                  point of alignment across all the parts. Bar lines within a score are usually
-                  controlling; that is, they "line up". Bar lines within parts may or may not be
-                  controlling. When applied to &lt;measure&gt;, this attribute indicates the nature of the
-                  right barline but not the left.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@left</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the visual rendition of the left bar line. It is present here only for
-                  facilitation of translation from legacy encodings which use it. Usually, it can be
-                  safely ignored.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARRENDITION">data.BARRENDITION</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measure.log">att.measure.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@metcon</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the relationship between the content of a measure and the prevailing
-                  meter.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@right</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the function of the right bar line and is structurally important.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BARRENDITION">data.BARRENDITION</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measure.log">att.measure.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

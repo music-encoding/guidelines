@@ -1,7 +1,0 @@
----
-desc: "harm"
-type: "elementSpec"
----
-
-(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
-analysis, figured bass.

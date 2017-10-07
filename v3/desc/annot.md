@@ -1,7 +1,0 @@
----
-desc: "annot"
-type: "elementSpec"
----
-
-(annotation) – Provides a short statement explaining the text or indicating the basis
-for an assertion.

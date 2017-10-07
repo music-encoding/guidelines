@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.origin.timestamp.musical"
 
 ---
@@ -9,26 +10,24 @@ title: "att.origin.timestamp.musical"
    <h3 id="att.origin.timestamp.musical">att.origin.timestamp.musical</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.origin.timestamp.musical</span> Attributes that identify a musical range in terms of musical time.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that identify a musical range in terms of musical time.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cpMark.html">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.log">att.cpMark.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cpMark.log.html">att.cpMark.log</a>)
                   </span>
                </div>
             </div>
@@ -36,42 +35,13 @@ title: "att.origin.timestamp.musical"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@origin.tstamp</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">encodes the starting point of musical material in terms of musical time, i.e., a
-                  (potentially negative) count of measures plus a beat location.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREBEATOFFSET">data.MEASUREBEATOFFSET</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@origin.tstamp2</span>
-               <span class="attributeUsage">(rec)</span>
-               <span class="attributeDesc">encodes the ending point of musical material in terms of musical time, i.e., a count
-                  of measures plus a beat location. The values are relative to the measure identified
-                  by
-                  @origin.tstamp.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREBEAT">data.MEASUREBEAT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -191,7 +161,7 @@ title: "att.origin.timestamp.musical"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

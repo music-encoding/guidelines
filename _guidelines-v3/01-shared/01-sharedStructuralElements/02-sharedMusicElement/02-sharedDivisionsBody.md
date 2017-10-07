@@ -1,13 +1,14 @@
 ---
 sectionid: sharedDivisionsBody
 title: "Divisions of the Body"
+version: "v3"
 ---
 
 
 
 This section describes sub-division of the body of a musical text. Front and back
 matter
-are described in chapter <a class="link_ptr" title="Text in MEI" href="/v3/guidelines/text.html">21 Text in MEI</a>.
+are described in chapter <a class="link_ptr" title="Text in MEI" href="/{{ page.version }}/guidelines/text.html">21 Text in MEI</a>.
 
 The body of a unitary musical text may contain one or more discrete, linear segments.
 The
@@ -25,18 +26,18 @@ level.
 
 The following element is used to identify musical subdivisions. As a member of the
 class
-att.typed, the [mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} element has attributes which can be used to
+att.typed, the [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} element has attributes which can be used to
 classify it according to a two-tier hierarchy.
 
 
 
-{% include specDesc.html key="mdiv" atts="" %}
-{% include specDesc.html key="mdiv" atts="type subtype" %}
+{% include specDesc.html version=page.version elem="mdiv" atts="" %}
 
 
 
-To accommodate "divisions within divisions", an [mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} element may
-contain additional [mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} sub-elements nested to any level required.
+
+To accommodate "divisions within divisions", an [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} element may
+contain additional [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} sub-elements nested to any level required.
 For example, the encoding of a multi-movement work, such as a symphony, frequently
 have
 the following structure:
@@ -48,12 +49,12 @@ more deeply-nested structure:
 
 {% include plainExample.html example="./v3/examples/shared/shared-sample005.xml" valid="true" %}
 
-Conventionally, in performance the musical structures represented by [mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} elements are separated by pauses; however, *attacca*,
+Conventionally, in performance the musical structures represented by [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} elements are separated by pauses; however, *attacca*,
 *attacca subito*, *seque*, or similar terms are
-sometimes used at the end of an [mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} to indicate that the next [mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} should begin immediately after the conclusion of the current one.
+sometimes used at the end of an [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} to indicate that the next [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} should begin immediately after the conclusion of the current one.
 These terms have no effect, however, on the logical segmentation of musical content
 using
-[mdiv](/v3/elements/mdiv.html){:.link_odd_elementSpec} elements.
+[mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} elements.
 
 
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.sequence"
 
 ---
@@ -9,39 +10,37 @@ title: "att.sequence"
    <h3 id="att.sequence">att.sequence</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.sequence</span> Attributes that describe order within a collection of features.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe order within a collection of features.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.crit">att.crit</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.crit.html">att.crit</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/subst">subst</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/subst.html">subst</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.trans">att.trans</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.trans.html">att.trans</a>)
                   </span>
                </div>
             </div>
@@ -49,27 +48,13 @@ title: "att.sequence"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@seq</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to assign a sequence number related to the order in which the encoded features
-                  carrying this attribute are believed to have occurred.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.sequence">att.sequence</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

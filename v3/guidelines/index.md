@@ -6,4 +6,4 @@ version: "guidelines-v3"
 ---
 <h1>Guidelines</h1>
 
-{% include toc.html version=page.version %}
+{% include toc.html version=page.version section="" %}

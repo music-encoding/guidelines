@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.BOOLEAN"
 
 ---
@@ -9,63 +10,61 @@ title: "data.BOOLEAN"
    <h3 id="data.BOOLEAN">data.BOOLEAN</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.BOOLEAN</span> Boolean attribute values.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Boolean attribute values.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.arpeg.vis">att.arpeg.vis</a> (@arrow), 
-               <a class="link_odd_classSpec" href="/v3/att.beaming.log">att.beaming.log</a> (@beam.rests), 
-               <a class="link_odd_classSpec" href="/v3/att.clef.log">att.clef.log</a> (@cautionary), 
-               <a class="link_odd_classSpec" href="/v3/att.cleffing.vis">att.cleffing.vis</a> (@clef.visible), 
-               <a class="link_odd_classSpec" href="/v3/att.coloration">att.coloration</a> (@colored), 
-               <a class="link_odd_classSpec" href="/v3/att.expandable">att.expandable</a> (@expand), 
-               <a class="link_odd_classSpec" href="/v3/att.extender">att.extender</a> (@extender), 
-               <a class="link_odd_classSpec" href="/v3/att.hairpin.log">att.hairpin.log</a> (@niente), 
-               <a class="link_odd_classSpec" href="/v3/att.keySig.vis">att.keySig.vis</a> (@sig.showchange), 
-               <a class="link_odd_classSpec" href="/v3/att.keySigDefault.vis">att.keySigDefault.vis</a> (@key.sig.show), 
-               <a class="link_odd_classSpec" href="/v3/att.lvpresent">att.lvpresent</a> (@lv), 
-               <a class="link_odd_classSpec" href="/v3/att.measurenumbers">att.measurenumbers</a> (@mnum.visible), 
-               <a class="link_odd_classSpec" href="/v3/att.mensur.log">att.mensur.log</a> (@dot), 
-               <a class="link_odd_classSpec" href="/v3/att.mensural.log">att.mensural.log</a> (@mensur.dot), 
-               <a class="link_odd_classSpec" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a> (@metcon), 
-               <a class="link_odd_classSpec" href="/v3/att.meterSigDefault.vis">att.meterSigDefault.vis</a> (@meter.showchange), 
-               <a class="link_odd_classSpec" href="/v3/att.mordent.log">att.mordent.log</a> (@long), 
-               <a class="link_odd_classSpec" href="/v3/att.multinummeasures">att.multinummeasures</a> (@multi.number), 
-               <a class="link_odd_classSpec" href="/v3/att.multiRest.vis">att.multiRest.vis</a> (@block), 
-               <a class="link_odd_classSpec" href="/v3/att.noteheads">att.noteheads</a> (@head.visible), 
-               <a class="link_odd_classSpec" href="/v3/att.numberplacement">att.numberplacement</a> (@num.visible), 
-               <a class="link_odd_classSpec" href="/v3/att.onelinestaff">att.onelinestaff</a> (@ontheline), 
-               <a class="link_odd_classSpec" href="/v3/att.optimization">att.optimization</a> (@optimize), 
-               <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a> (@grid.show), 
-               <a class="link_odd_classSpec" href="/v3/att.section.vis">att.section.vis</a> (@restart), 
-               <a class="link_odd_classSpec" href="/v3/att.space.vis">att.space.vis</a> (@compressable), 
-               <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a> (@grid.show), 
-               <a class="link_odd_classSpec" href="/v3/att.staffGrp.vis">att.staffGrp.vis</a> (@barthru), 
-               <a class="link_odd_classSpec" href="/v3/att.systems">att.systems</a> (@system.leftline), 
-               <a class="link_odd_classSpec" href="/v3/att.tuplet.vis">att.tuplet.vis</a> (@bracket.visible), 
-               <a class="link_odd_classSpec" href="/v3/att.turn.log">att.turn.log</a> (@delayed), 
-               <a class="link_odd_classSpec" href="/v3/att.verse.log">att.verse.log</a> (@refrain), 
-               <a class="link_odd_classSpec" href="/v3/att.visibility">att.visibility</a> (@visible), 
-               <a class="link_odd_classSpec" href="/v3/hand">hand</a>/@initial, 
-               <a class="link_odd_classSpec" href="/v3/perfRes">perfRes</a>/@solo
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.arpeg.vis.html">att.arpeg.vis</a> (@arrow), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beaming.log.html">att.beaming.log</a> (@beam.rests), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.clef.log.html">att.clef.log</a> (@cautionary), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.vis.html">att.cleffing.vis</a> (@clef.visible), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.coloration.html">att.coloration</a> (@colored), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.expandable.html">att.expandable</a> (@expand), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.extender.html">att.extender</a> (@extender), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.hairpin.log.html">att.hairpin.log</a> (@niente), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySig.vis.html">att.keySig.vis</a> (@sig.showchange), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySigDefault.vis.html">att.keySigDefault.vis</a> (@key.sig.show), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.lvpresent.html">att.lvpresent</a> (@lv), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.measurenumbers.html">att.measurenumbers</a> (@mnum.visible), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensur.log.html">att.mensur.log</a> (@dot), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensural.log.html">att.mensural.log</a> (@mensur.dot), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.meterconformance.bar.html">att.meterconformance.bar</a> (@metcon), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.meterSigDefault.vis.html">att.meterSigDefault.vis</a> (@meter.showchange), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mordent.log.html">att.mordent.log</a> (@long), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multinummeasures.html">att.multinummeasures</a> (@multi.number), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multiRest.vis.html">att.multiRest.vis</a> (@block), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a> (@head.visible), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.numberplacement.html">att.numberplacement</a> (@num.visible), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.onelinestaff.html">att.onelinestaff</a> (@ontheline), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.optimization.html">att.optimization</a> (@optimize), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.cmn.html">att.scoreDef.vis.cmn</a> (@grid.show), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.section.vis.html">att.section.vis</a> (@restart), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.space.vis.html">att.space.vis</a> (@compressable), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a> (@grid.show), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffGrp.vis.html">att.staffGrp.vis</a> (@barthru), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.systems.html">att.systems</a> (@system.leftline), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tuplet.vis.html">att.tuplet.vis</a> (@bracket.visible), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.turn.log.html">att.turn.log</a> (@delayed), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.verse.log.html">att.verse.log</a> (@refrain), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visibility.html">att.visibility</a> (@visible), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/hand.html">hand</a>/@initial, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/perfRes.html">perfRes</a>/@solo
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -78,7 +77,7 @@ title: "data.BOOLEAN"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

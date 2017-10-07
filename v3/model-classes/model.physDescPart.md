@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.physDescPart"
 
 ---
@@ -9,64 +10,63 @@ title: "model.physDescPart"
    <h3 id="model.physDescPart">model.physDescPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.physDescPart</span> Groups elements that may appear as part of the physical description of a bibliographic
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of the physical description of a bibliographic
             item.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/physDesc">physDesc</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physDesc.html">physDesc</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/captureMode">captureMode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/carrierForm">carrierForm</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/condition">condition</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/dimensions">dimensions</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/exhibHist">exhibHist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/extent">extent</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fileChar">fileChar</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fingerprint">fingerprint</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handList">handList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/inscription">inscription</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfDuration">perfDuration</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/physMedium">physMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/plateNum">plateNum</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/playingSpeed">playingSpeed</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/scoreFormat">scoreFormat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/soundChan">soundChan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/specRepro">specRepro</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/trackConfig">trackConfig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/treatHist">treatHist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/treatSched">treatSched</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/watermark">watermark</a> (direct members of model.physDescPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/captureMode.html">captureMode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/carrierForm.html">carrierForm</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/condition.html">condition</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dimensions.html">dimensions</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/exhibHist.html">exhibHist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/extent.html">extent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fileChar.html">fileChar</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fingerprint.html">fingerprint</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handList.html">handList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/inscription.html">inscription</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfDuration.html">perfDuration</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physMedium.html">physMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/plateNum.html">plateNum</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/playingSpeed.html">playingSpeed</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreFormat.html">scoreFormat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/soundChan.html">soundChan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/specRepro.html">specRepro</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trackConfig.html">trackConfig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/treatHist.html">treatHist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/treatSched.html">treatSched</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/watermark.html">watermark</a> (direct members of model.physDescPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/back">back</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/front">front</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/titlePage">titlePage</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/back.html">back</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/front.html">front</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/titlePage.html">titlePage</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.frontPart">model.frontPart</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.frontPart.html">model.frontPart</a>)
                   </span>
                </div>
             </div>

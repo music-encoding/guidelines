@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.controleventLike.harmony"
 
 ---
@@ -9,40 +10,39 @@ title: "model.controleventLike.harmony"
    <h3 id="model.controleventLike.harmony">model.controleventLike.harmony</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.controleventLike.harmony</span> Groups elements that function as control events; that is, those events that modify
+         <td colspan="2" class="wovenodd-col2">Groups elements that function as control events; that is, those events that modify
             or
             otherwise depend on the existence of notated events.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.harmony</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.controleventLike">model.controleventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/harm.html">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.harmLike">model.harmLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.harmLike.html">model.harmLike</a>)
                   </span>
                </div>
             </div>
@@ -50,7 +50,7 @@ title: "model.controleventLike.harmony"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

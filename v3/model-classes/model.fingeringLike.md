@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.fingeringLike"
 
 ---
@@ -9,48 +10,47 @@ title: "model.fingeringLike"
    <h3 id="model.fingeringLike">model.fingeringLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.fingeringLike</span> Groups elements that capture performance instructions regarding the use of the fingers
+         <td colspan="2" class="wovenodd-col2">Groups elements that capture performance instructions regarding the use of the fingers
             of the hand (or a subset of them).
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.fingering</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.controleventLike">model.controleventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fingGrp">fingGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fingGrp.html">fingGrp</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fing">fing</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/fingGrp">fingGrp</a> (direct members of model.fingeringLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fing.html">fing</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fingGrp.html">fingGrp</a> (direct members of model.fingeringLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

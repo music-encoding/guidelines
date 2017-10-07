@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.noteheads"
 
 ---
@@ -9,26 +10,24 @@ title: "att.noteheads"
    <h3 id="att.noteheads">att.noteheads</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.noteheads</span> Attributes pertaining to the notehead part of a note.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes pertaining to the notehead part of a note.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.vis.html">att.note.vis</a>)
                   </span>
                </div>
             </div>
@@ -36,98 +35,13 @@ title: "att.noteheads"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@head.color</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures the overall color of a notehead.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@head.fill</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes how/if the notehead is filled.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FILL">data.FILL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@head.fillcolor</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures the fill color of a notehead if different from the overall note
-                  color.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@head.mod</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records any additional symbols applied to the notehead.</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.NOTEHEADMODIFIER">data.NOTEHEADMODIFIER</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@head.rotation</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes rotation applied to the basic notehead shape. A positive value rotates the
-                  notehead in a counter-clockwise fashion, while negative values produce clockwise
-                  rotation.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ROTATION">data.ROTATION</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@head.shape</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to override the head shape normally used for the given duration.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.HEADSHAPE">data.HEADSHAPE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@head.visible</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates if a feature should be rendered when the notation is presented graphically
-                  or sounded when it is presented in an aural form.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.noteheads">att.noteheads</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

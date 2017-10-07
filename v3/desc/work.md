@@ -1,9 +1,0 @@
----
-desc: "work"
-type: "elementSpec"
----
-
-Provides a detailed description of a work, specifically its history, language use,
-and
-high-level musical attributes: key, tempo, meter, medium of performance, and intended
-duration.

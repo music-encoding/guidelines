@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.biblLike"
 
 ---
@@ -9,47 +10,45 @@ title: "model.biblLike"
    <h3 id="model.biblLike">model.biblLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.biblLike</span> Groups elements containing a bibliographic description.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements containing a bibliographic description.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relatedItem">relatedItem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblList.html">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relatedItem.html">relatedItem</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bibl">bibl</a> (direct member of model.biblLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bibl.html">bibl</a> (direct member of model.biblLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.calendared"
 
 ---
@@ -9,52 +10,36 @@ title: "att.calendared"
    <h3 id="att.calendared">att.calendared</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.calendared</span> Attributes that indicate the calendar system of a date or other datable element.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that indicate the calendar system of a date or other datable element.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a> (direct members of att.calendared)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/date.html">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/event.html">event</a> (direct members of att.calendared)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@calendar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the calendar system to which a date belongs, for example, Gregorian,
-                  Julian, Roman, Mosaic, Revolutionary, Islamic, etc.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">NMTOKEN</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.calendared">att.calendared</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

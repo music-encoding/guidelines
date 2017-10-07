@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.numLike"
 
 ---
@@ -9,43 +10,41 @@ title: "model.numLike"
    <h3 id="model.numLike">model.numLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.numLike</span> Groups elements that denote a number or a quantity.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that denote a number or a quantity.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.measurementLike">model.measurementLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.measurementLike.html">model.measurementLike</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/num">num</a> (direct member of model.numLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/num.html">num</a> (direct member of model.numLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

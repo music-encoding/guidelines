@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.accidental"
 
 ---
@@ -9,45 +10,43 @@ title: "att.accidental"
    <h3 id="att.accidental">att.accidental</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.accidental</span> Attributes for capturing momentary pitch inflection.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes for capturing momentary pitch inflection.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.log">att.accid.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.log.html">att.accid.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keyAccid">keyAccid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/keyAccid.html">keyAccid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.keyAccid.log">att.keyAccid.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keyAccid.log.html">att.keyAccid.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/key">key</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/key.html">key</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/keySig.html">keySig</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.keySig.log">att.keySig.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySig.log.html">att.keySig.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.log.html">att.note.log</a>)
                   </span>
                </div>
             </div>
@@ -55,25 +54,13 @@ title: "att.accidental"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@accid</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures a written accidental.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental">att.accidental</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

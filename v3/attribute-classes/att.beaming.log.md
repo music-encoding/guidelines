@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.beaming.log"
 
 ---
@@ -9,55 +10,54 @@ title: "att.beaming.log"
    <h3 id="att.beaming.log">att.beaming.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.beaming.log</span> Used by layerDef, staffDef, and scoreDef to provide default values for attributes
+         <td colspan="2" class="wovenodd-col2">Used by layerDef, staffDef, and scoreDef to provide default values for attributes
             in the
             logical domain related to beaming.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.log.cmn">att.layerDef.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.layerDef.log.cmn">att.layerDef.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.log">att.layerDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.layerDef.log.html">att.layerDef.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log.cmn">att.scoreDef.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.log.cmn">att.scoreDef.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log.cmn">att.staffDef.log.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.log.cmn">att.staffDef.log.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.log.html">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -65,40 +65,13 @@ title: "att.beaming.log"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@beam.group</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides an example of how automated beaming (including secondary beams) is to be
-                  performed.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@beam.rests</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates whether automatically-drawn beams should include rests shorter than a
-                  quarter note duration.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -179,7 +152,7 @@ title: "att.beaming.log"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Remarks</span>
+            <strong>Remarks</strong>
          </td>
          <td class="wovenodd-col2">
             <p>The 
@@ -196,8 +169,8 @@ title: "att.beaming.log"
                '(4,4),(4,4)' will result in a primary beam covering all the notes and secondary beams
                for
                each group of 4 notes. This beaming "directive" can be overridden by using 
-               <a class="link_odd_elementSpec" href="/v3/beam">beam</a> elements. If neither 
-               <a class="link_odd_elementSpec" href="/v3/beam">beam</a> elements or the
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> elements. If neither 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> elements or the
                
                <span class="att">beam.group</span> attribute is used, then no beaming is rendered. Beaming can be
                explicitly 'turned off' by setting 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.appLike"
 
 ---
@@ -9,56 +10,54 @@ title: "model.appLike"
    <h3 id="model.appLike">model.appLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.appLike</span> Groups elements that contain a critical apparatus entry.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that contain a critical apparatus entry.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.critapp</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/beam">beam</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ineume">ineume</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgFoot">pgFoot</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgFoot2">pgFoot2</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgHead">pgHead</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgHead2">pgHead2</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/tuplet">tuplet</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/verse">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beam.html">beam</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ineume.html">ineume</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgFoot.html">pgFoot</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgFoot2.html">pgFoot2</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgHead.html">pgHead</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgHead2.html">pgHead2</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/score.html">score</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staff.html">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syllable.html">syllable</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tuplet.html">tuplet</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/uneume.html">uneume</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/app">app</a> (direct member of model.appLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/app.html">app</a> (direct member of model.appLike)
                </div>
             </div>
          </td>

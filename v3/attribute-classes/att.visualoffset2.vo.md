@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.visualoffset2.vo"
 
 ---
@@ -9,68 +10,66 @@ title: "att.visualoffset2.vo"
    <h3 id="att.visualoffset2.vo">att.visualoffset2.vo</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.visualoffset2.vo</span> Vertical offset attributes requiring a pair of attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Vertical offset attributes requiring a pair of attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/curve">curve</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/curve.html">curve</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.visualoffset2">att.visualoffset2</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visualoffset2.html">att.visualoffset2</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bend">bend</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bend.html">bend</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bend.vis">att.bend.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.bend.vis.html">att.bend.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/gliss">gliss</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gliss.html">gliss</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.gliss.vis">att.gliss.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.gliss.vis.html">att.gliss.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/hairpin">hairpin</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hairpin.html">hairpin</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.hairpin.vis">att.hairpin.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.hairpin.vis.html">att.hairpin.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/line">line</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/line.html">line</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.line.vis">att.line.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/phrase.html">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.phrase.vis">att.phrase.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.phrase.vis.html">att.phrase.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/slur.html">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.slur.vis">att.slur.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.slur.vis.html">att.slur.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/tie">tie</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tie.html">tie</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.tie.vis">att.tie.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tie.vis.html">att.tie.vis</a>)
                   </span>
                </div>
             </div>
@@ -78,40 +77,13 @@ title: "att.visualoffset2.vo"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@endvo</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records a vertical adjustment of a feature's programmatically-determined end
-                  point.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.vo">att.visualoffset2.vo</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@startvo</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records a vertical adjustment of a feature's programmatically-determined start
-                  point.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visualoffset2.vo">att.visualoffset2.vo</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

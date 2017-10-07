@@ -1,0 +1,1 @@
+Single instance or exemplar of a source/manifestation.

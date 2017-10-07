@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MIDIVALUE"
 
 ---
@@ -9,34 +10,32 @@ title: "data.MIDIVALUE"
    <h3 id="data.MIDIVALUE">data.MIDIVALUE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MIDIVALUE</span> MIDI values in the following range.
-         </td>
+         <td colspan="2" class="wovenodd-col2">MIDI values in the following range.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.channelized">att.channelized</a> (@midi.port), 
-               <a class="link_odd_classSpec" href="/v3/att.midiinstrument">att.midiinstrument</a> (@midi.instrnum), 
-               <a class="link_odd_classSpec" href="/v3/att.midinumber">att.midinumber</a> (@num), 
-               <a class="link_odd_classSpec" href="/v3/att.midivalue">att.midivalue</a> (@val), 
-               <a class="link_odd_classSpec" href="/v3/att.midivalue2">att.midivalue2</a> (@val2), 
-               <a class="link_odd_classSpec" href="/v3/att.midivelocity">att.midivelocity</a> (@vel)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a> (@midi.port), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiinstrument</a> (@midi.instrnum), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.midinumber.html">att.midinumber</a> (@num), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.midivalue.html">att.midivalue</a> (@val), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.midivalue2.html">att.midivalue2</a> (@val2), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.midivelocity.html">att.midivelocity</a> (@vel)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

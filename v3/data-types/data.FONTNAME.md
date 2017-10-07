@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.FONTNAME"
 
 ---
@@ -9,32 +10,31 @@ title: "data.FONTNAME"
    <h3 id="data.FONTNAME">data.FONTNAME</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.FONTNAME</span> Font name (for text) attribute
+         <td colspan="2" class="wovenodd-col2">Font name (for text) attribute
             values.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.lyricstyle">att.lyricstyle</a> (@lyric.name), 
-               <a class="link_odd_classSpec" href="/v3/att.textstyle">att.textstyle</a> (@text.name), 
-               <a class="link_odd_classSpec" href="/v3/att.typography">att.typography</a> (@fontname)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricstyle</a> (@lyric.name), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.textstyle.html">att.textstyle</a> (@text.name), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a> (@fontname)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

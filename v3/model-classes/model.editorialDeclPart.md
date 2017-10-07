@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.editorialDeclPart"
 
 ---
@@ -9,41 +10,40 @@ title: "model.editorialDeclPart"
    <h3 id="model.editorialDeclPart">model.editorialDeclPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.editorialDeclPart</span> Groups elements that may appear as part of a description of the editorial process
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of a description of the editorial process
             applied to the encoding of notation.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/interpretation">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/normalization">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/segmentation">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/stdVals">stdVals</a> (direct members of model.editorialDeclPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stdVals.html">stdVals</a> (direct members of model.editorialDeclPart)
                </div>
             </div>
          </td>

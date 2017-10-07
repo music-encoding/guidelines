@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.SCALEDEGREE"
 
 ---
@@ -9,29 +10,27 @@ title: "data.SCALEDEGREE"
    <h3 id="data.SCALEDEGREE">data.SCALEDEGREE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.SCALEDEGREE</span> Relative scale degree values.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Relative scale degree values.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.harmonicfunction">att.harmonicfunction</a> (@deg)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.harmonicfunction.html">att.harmonicfunction</a> (@deg)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

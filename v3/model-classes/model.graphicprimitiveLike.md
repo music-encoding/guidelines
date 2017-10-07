@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.graphicprimitiveLike"
 
 ---
@@ -9,65 +10,63 @@ title: "model.graphicprimitiveLike"
    <h3 id="model.graphicprimitiveLike">model.graphicprimitiveLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.graphicprimitiveLike</span> Groups elements that function as drawing primitives.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that function as drawing primitives.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.usersymbols</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/dir">dir</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ending">ending</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ornam">ornam</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/part">part</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgDesc">pgDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/score">score</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/section">section</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/staff">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/syllable">syllable</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/symbolDef">symbolDef</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/tempo">tempo</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dir.html">dir</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/harm.html">harm</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ornam.html">ornam</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgDesc.html">pgDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/score.html">score</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sic.html">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staff.html">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syllable.html">syllable</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/symbolDef.html">symbolDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tempo.html">tempo</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/anchoredText">anchoredText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/curve">curve</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/line">line</a> (direct members of model.graphicprimitiveLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/anchoredText.html">anchoredText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/curve.html">curve</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/line.html">line</a> (direct members of model.graphicprimitiveLike)
                </div>
             </div>
          </td>

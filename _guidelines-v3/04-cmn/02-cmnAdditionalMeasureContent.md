@@ -1,6 +1,7 @@
 ---
 sectionid: cmnAdditionalMeasureContent
 title: "Advanced CMN Features"
+version: "v3"
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mensur.ges"
 
 ---
@@ -9,31 +10,29 @@ title: "att.mensur.ges"
    <h3 id="att.mensur.ges">att.mensur.ges</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.mensur.ges</span> Gestural domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Gestural domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.mensural</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a> (direct member of att.mensur.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a> (direct member of att.mensur.ges)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
          <td class="wovenodd-col2"></td>
       </tr>

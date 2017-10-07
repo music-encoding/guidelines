@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MEASUREBEAT"
 
 ---
@@ -9,9 +10,7 @@ title: "data.MEASUREBEAT"
    <h3 id="data.MEASUREBEAT">data.MEASUREBEAT</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MEASUREBEAT</span> A count of measures plus a beat location, i.e., [0-9]+m *\+ *[0-9]+(\.?[0-9]*)?.
-            The
+         <td colspan="2" class="wovenodd-col2">A count of measures plus a beat location, i.e., [0-9]+m *\+ *[0-9]+(\.?[0-9]*)?. The
             measure count is the number of barlines crossed by the event, while the beat location
             is a
             timestamp expressed as a beat with an optional fractional part. For example, "1m+3.5"
@@ -29,24 +28,24 @@ title: "data.MEASUREBEAT"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.origin.timestamp.musical">att.origin.timestamp.musical</a> (@origin.tstamp2), 
-               <a class="link_odd_classSpec" href="/v3/att.timestamp2.musical">att.timestamp2.musical</a> (@tstamp2)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.origin.timestamp.musical.html">att.origin.timestamp.musical</a> (@origin.tstamp2), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.timestamp2.musical.html">att.timestamp2.musical</a> (@tstamp2)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

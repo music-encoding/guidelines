@@ -1,7 +1,0 @@
----
-desc: "tupletSpan"
-type: "elementSpec"
----
-
-(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
-that extend across bar lines.

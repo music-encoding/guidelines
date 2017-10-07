@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.nameLike.agent"
 
 ---
@@ -9,48 +10,46 @@ title: "model.nameLike.agent"
    <h3 id="model.nameLike.agent">model.nameLike.agent</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.nameLike.agent</span> Groups elements which contain names of individuals or corporate bodies.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements which contain names of individuals or corporate bodies.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.namesdates</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventPart">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.nameLike">model.nameLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/eventList.html">eventList</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a> (direct members of model.nameLike.agent)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a> (direct members of model.nameLike.agent)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

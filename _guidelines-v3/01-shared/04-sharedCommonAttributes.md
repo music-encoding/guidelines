@@ -1,18 +1,21 @@
 ---
 sectionid: sharedCommonAttributes
 title: "Common Attributes"
+version: "v3"
 ---
 
 
 
-The following attributes, provided by the [att.common](/v3/attribute-classes/att.common.html){:.link_odd} attribute
+The following attributes, provided by the [att.common](/{{ page.version }}/attribute-classes/att.common.html){:.link_odd} attribute
 class, are available on nearly all elements in an MEI encoding. They provide the means
 to
 identify, label, and access elements in MEI-encoded files.
 
 
 
-{% include specDesc.html key="att.common" atts="xml:id label n xml:base" %}
+{% include specDesc.html version=page.version elem="att.common" atts="att.common/n" %}
+{% include specDesc.html version=page.version elem="att.id" atts="att.id/xml---id" %}
+{% include specDesc.html version=page.version elem="att.commonPart" atts="att.commonPart/xml---base att.commonPart/label" %}
 
 
 
@@ -49,7 +52,7 @@ location.
 
 The value of **@xml:base** can be inherited from an ancestor. In the following example,
 the values of the graphic elements' **@target** attribute can be completed by the
-xml:base value specified for the [facsimile](/v3/elements/facsimile.html){:.link_odd_elementSpec} element:
+xml:base value specified for the [facsimile](/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec} element:
 
 {% include plainExample.html example="./v3/examples/shared/shared-sample018.xml" valid="true" %}
 

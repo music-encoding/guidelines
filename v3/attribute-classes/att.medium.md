@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.medium"
 
 ---
@@ -9,50 +10,36 @@ title: "att.medium"
    <h3 id="att.medium">att.medium</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.medium</span> Attributes describing a writing medium, such as pencil or ink.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes describing a writing medium, such as pencil or ink.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/hand">hand</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handShift">handShift</a> (direct members of att.medium)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hand.html">hand</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handShift.html">handShift</a> (direct members of att.medium)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@medium</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the writing medium.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.medium">att.medium</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

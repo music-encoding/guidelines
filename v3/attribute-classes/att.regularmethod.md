@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.regularmethod"
 
 ---
@@ -9,53 +10,36 @@ title: "att.regularmethod"
    <h3 id="att.regularmethod">att.regularmethod</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.regularmethod</span> Attributes that describe correction and normalization methods.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe correction and normalization methods.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/normalization">normalization</a> (direct members of att.regularmethod)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a> (direct members of att.regularmethod)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@method</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the method employed to mark corrections and normalizations.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">silent</span>" 
-               <i>(Corrections and normalizations made silently.)</i>,  "
-               <span style="font-weight: 500;">tags</span>" 
-               <i>(Corrections and normalizations indicated using elements.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.regularmethod">att.regularmethod</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

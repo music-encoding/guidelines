@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.PLACE"
 
 ---
@@ -9,33 +10,31 @@ title: "data.PLACE"
    <h3 id="data.PLACE">data.PLACE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.PLACE</span> Location of symbol relative to other notational components.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Location of symbol relative to other notational components.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.cleffing.log">att.cleffing.log</a> (@clef.dis.place), 
-               <a class="link_odd_classSpec" href="/v3/att.fermatapresent">att.fermatapresent</a> (@fermata), 
-               <a class="link_odd_classSpec" href="/v3/att.numberplacement">att.numberplacement</a> (@num.place), 
-               <a class="link_odd_classSpec" href="/v3/att.octavedisplacement">att.octavedisplacement</a> (@dis.place), 
-               <a class="link_odd_classSpec" href="/v3/att.tuplet.vis">att.tuplet.vis</a> (@bracket.place)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.dis.place), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermatapresent</a> (@fermata), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.numberplacement.html">att.numberplacement</a> (@num.place), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a> (@dis.place), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tuplet.vis.html">att.tuplet.vis</a> (@bracket.place)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -48,7 +47,7 @@ title: "data.PLACE"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,8 +1,0 @@
----
-desc: "model.paracontentPart"
-type: "classSpec"
----
-
-Groups elements which may appear as part of the paragraph content model. A paragraph
-may
-contain inline elements and all the other block-level elements except lg and itself.

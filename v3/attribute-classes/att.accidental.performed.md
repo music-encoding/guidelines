@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.accidental.performed"
 
 ---
@@ -9,35 +10,33 @@ title: "att.accidental.performed"
    <h3 id="att.accidental.performed">att.accidental.performed</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.accidental.performed</span> Attributes for capturing momentary pitch inflection in the gestural domain.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes for capturing momentary pitch inflection in the gestural domain.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> (direct member of att.accidental.performed)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chordMember.html">chordMember</a> (direct member of att.accidental.performed)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.ges">att.accid.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.ges.html">att.accid.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.ges.html">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -45,25 +44,13 @@ title: "att.accidental.performed"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@accid.ges</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the performed pitch inflection.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.accidental.performed">att.accidental.performed</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -144,7 +131,7 @@ title: "att.accidental.performed"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

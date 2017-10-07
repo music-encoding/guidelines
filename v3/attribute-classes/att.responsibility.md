@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.responsibility"
 
 ---
@@ -9,75 +10,73 @@ title: "att.responsibility"
    <h3 id="att.responsibility">att.responsibility</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.responsibility</span> Attributes capturing information regarding responsibility for some aspect of the
-            text's
+         <td colspan="2" class="wovenodd-col2">Attributes capturing information regarding responsibility for some aspect of the text's
             creation, transcription, editing, or encoding.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/annot">annot</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/change">change</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/hand">hand</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mapping">mapping</a> (direct members of att.responsibility)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/change.html">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hand.html">hand</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mapping.html">mapping</a> (direct members of att.responsibility)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/rdg">rdg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.crit">att.crit</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.crit.html">att.crit</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/gap">gap</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/handShift">handShift</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfRes">perfRes</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/perfResList">perfResList</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/relation">relation</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/subst">subst</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/addName.html">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bloc.html">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/country.html">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/date.html">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/district.html">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/event.html">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/famName.html">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/foreName.html">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gap.html">gap</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genName.html">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogFeat.html">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogName.html">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handShift.html">handShift</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/name.html">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/nameLink.html">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfRes.html">perfRes</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfResList.html">perfResList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/periodName.html">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/region.html">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relation.html">relation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/roleName.html">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/settlement.html">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/styleName.html">styleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/subst.html">subst</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.edit">att.edit</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.edit.html">att.edit</a>)
                   </span>
                </div>
             </div>
@@ -85,28 +84,13 @@ title: "att.responsibility"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@resp</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures information regarding responsibility for some aspect of the text's
-                  creation, transcription, editing, or encoding. Its value must point to one or more
-                  identifiers declared in the document header.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.responsibility">att.responsibility</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -200,7 +184,7 @@ title: "att.responsibility"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

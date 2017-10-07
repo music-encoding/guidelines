@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MIDIBPM"
 
 ---
@@ -9,31 +10,30 @@ title: "data.MIDIBPM"
    <h3 id="data.MIDIBPM">data.MIDIBPM</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MIDIBPM</span> Tempo expressed as "beats" per minute, where "beat" is always defined as a quarter
+         <td colspan="2" class="wovenodd-col2">Tempo expressed as "beats" per minute, where "beat" is always defined as a quarter
             note,
             *not the numerator of the time signature or the metronomic indication*.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.miditempo">att.miditempo</a> (@midi.bpm)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.miditempo.html">att.miditempo</a> (@midi.bpm)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

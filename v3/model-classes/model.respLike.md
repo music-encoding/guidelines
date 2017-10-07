@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.respLike"
 
 ---
@@ -9,53 +10,52 @@ title: "model.respLike"
    <h3 id="model.respLike">model.respLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.respLike</span> Groups elements that are used to indicate intellectual or other significant
+         <td colspan="2" class="wovenodd-col2">Groups elements that are used to indicate intellectual or other significant
             responsibility, for example within a bibliographic citation.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.biblPart">model.biblPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/titleStmt">titleStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/titleStmt.html">titleStmt</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/respStmt">respStmt</a> (direct member of model.respLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/respStmt.html">respStmt</a> (direct member of model.respLike)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/arranger">arranger</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/author">author</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/byline">byline</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/composer">composer</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editor">editor</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/funder">funder</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/librettist">librettist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/lyricist">lyricist</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/sponsor">sponsor</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/arranger.html">arranger</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/author.html">author</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/byline.html">byline</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/composer.html">composer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/editor.html">editor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/funder.html">funder</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/librettist.html">librettist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/lyricist.html">lyricist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/sponsor.html">sponsor</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.respLikePart">model.respLikePart</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.respLikePart.html">model.respLikePart</a>)
                   </span>
                </div>
             </div>
@@ -63,7 +63,7 @@ title: "model.respLike"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

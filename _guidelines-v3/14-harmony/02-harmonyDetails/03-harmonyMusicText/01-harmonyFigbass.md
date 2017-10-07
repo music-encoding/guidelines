@@ -1,6 +1,7 @@
 ---
 sectionid: harmonyFigbass
 title: "Figured Bass"
+version: "v3"
 ---
 
 
@@ -12,8 +13,8 @@ provides the following elements:
 
 
 
-{% include specDesc.html key="fb" atts="" %}
-{% include specDesc.html key="f" atts="extender" %}
+{% include specDesc.html version=page.version elem="fb" atts="" %}
+
 
 
 
@@ -24,7 +25,7 @@ of
 figured bass:
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass01.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass01.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 41. Figured bass</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample252.xml" valid="true" %}
@@ -46,24 +47,24 @@ MUSIC NATURAL SIGN character.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass02.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass02.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 42. Figured bass with accidental</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample254.xml" valid="true" %}
 
 
-Encoding order of the component [f](/v3/elements/f.html){:.link_odd_elementSpec} elements is significant as is the
+Encoding order of the component [f](/{{ page.version }}/elements/f.html){:.link_odd_elementSpec} elements is significant as is the
 encoding order of the characters within each component. In the preceding example,
 the
 entire figured bass sign is encoded from top to bottom, in other words, just as the
 figure
 appears on the page. In the following examples, the encoding order of the characters
 in
-[f](/v3/elements/f.html){:.link_odd_elementSpec} explicitly locates the accidentals:
+[f](/{{ page.version }}/elements/f.html){:.link_odd_elementSpec} explicitly locates the accidentals:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass03.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass03.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 43. Figured bass with chromatically altered figure</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample255.xml" valid="true" %}
@@ -71,7 +72,7 @@ in
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass04.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass04.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 44. Figured bass with chromatically altered figures</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample256.xml" valid="true" %}
@@ -87,7 +88,7 @@ the preceding character. The usual convention for slashes; that is,
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass05.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass05.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 45. Figured bass with chromatically altered figure</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample257.xml" valid="true" %}
@@ -104,7 +105,7 @@ example 6 can be represented by the Unicode COMBINING INVERTED BREVE.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass06.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass06.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 46. Figured bass with alternative sign</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample258.xml" valid="false" %}
@@ -121,7 +122,7 @@ is also consistent with other existing figured bass encoding schemes.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass07.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass07.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 47. Figured bass repetition </figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample259.xml" valid="true" %}
@@ -136,7 +137,7 @@ the following example the dashes on beat 4 and 4.5 are treated as repetition sig
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass09.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass09.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 48. Extenders and repetition</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample260.xml" valid="false" %}
@@ -152,7 +153,7 @@ after-beat.
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample261.xml" valid="false" %}
 
 
-The primary goal of [fb](/v3/elements/fb.html){:.link_odd_elementSpec} is not the capture all the visual
+The primary goal of [fb](/{{ page.version }}/elements/fb.html){:.link_odd_elementSpec} is not the capture all the visual
 idiosyncracies that can be found in printed and manuscript scores throughout the
 centuries, but to provide a more-or-less standardized label. The markup below, or
 any
@@ -163,7 +164,7 @@ the symbol as it occurs in the encoding source material.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass10.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass10.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 49. Figured bass with alternative sign</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/harmony/harmony-sample262.xml" valid="false" %}

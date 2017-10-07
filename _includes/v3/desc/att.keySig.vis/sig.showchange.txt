@@ -1,0 +1,2 @@
+Determines whether cautionary accidentals should be displayed at a key
+change.

@@ -1,6 +1,7 @@
 ---
 sectionid: cmnOrnamentsTurns
 title: "Turns"
+version: "v3"
 ---
 
 
@@ -10,14 +11,14 @@ the
 principal note, the principal note, the lower neighbor, and the principal note again.
 
 
-The presence of a turn is encoded with the [turn](/v3/elements/turn.html){:.link_odd_elementSpec} element and its
+The presence of a turn is encoded with the [turn](/{{ page.version }}/elements/turn.html){:.link_odd_elementSpec} element and its
 attributes:
 
 
 
 
-{% include specDesc.html key="turn" atts="form delayed" %}
-{% include specDesc.html key="att.ornamentaccid" atts="accidlower accidupper" %}
+
+{% include specDesc.html version=page.version elem="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
 
 
 
@@ -40,14 +41,14 @@ The attribute **@form** accepts the following values:
       <tr>
          <td>norm</td>
          <td> - usually corresponding to the symbol: 
-            <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/turn.png" class="graphic"></img>. This turn is commonly
+            <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/turn.png" class="graphic"></img>. This turn is commonly
             performed beginning on a note higher than the principal note.
          </td>
       </tr>
       <tr>
          <td>inv</td>
          <td> - usually corresponding to the symbol: 
-            <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/inv_turn.png" class="graphic"></img>. This turn is commonly
+            <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/inv_turn.png" class="graphic"></img>. This turn is commonly
             performed beginning on a note lower than the principal note.
          </td>
       </tr>
@@ -60,7 +61,7 @@ The following example shows the encoding of a simple turn:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_turn.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_turn.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 33. Example of a simple turn.</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample193.xml" valid="true" %}
@@ -83,7 +84,7 @@ demonstrates the encoding of turns with the **@delayed** attribute. Note that th
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 34. Delayed turn.</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample194.xml" valid="true" %}

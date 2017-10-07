@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.spacing"
 
 ---
@@ -9,26 +10,24 @@ title: "att.spacing"
    <h3 id="att.spacing">att.spacing</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.spacing</span> Attributes that capture notation spacing information.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that capture notation spacing information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -36,65 +35,13 @@ title: "att.spacing"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@spacing.packexp</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes a note's spacing relative to its time value.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">decimal</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@spacing.packfact</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the note spacing of output.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">decimal</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@spacing.staff</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the minimum amount of space between adjacent staves in the same system;
-                  measured from the bottom line of the staff above to the top line of the staff
-                  below.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@spacing.system</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the space between adjacent systems; a pair of space-separated values
-                  (minimum and maximum, respectively) provides a range between which a rendering
-                  system-supplied value may fall, while a single value indicates a fixed amount of space;
-                  that is, the minimum and maximum values are equal.
-               </span>
-               One or two values from 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTREL">data.MEASUREMENTREL</a>, separated by a space.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.spacing">att.spacing</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

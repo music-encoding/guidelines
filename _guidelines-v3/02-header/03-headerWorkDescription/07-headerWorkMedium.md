@@ -1,6 +1,7 @@
 ---
 sectionid: headerWorkMedium
 title: "Performance Medium"
+version: "v3"
 ---
 
 
@@ -10,17 +11,17 @@ forces:
 
 
 
-{% include specDesc.html key="perfMedium" atts="" %}
-{% include specDesc.html key="perfResList" atts="" %}
-{% include specDesc.html key="castList" atts="" %}
+{% include specDesc.html version=page.version elem="perfMedium" atts="" %}
+{% include specDesc.html version=page.version elem="perfResList" atts="" %}
+{% include specDesc.html version=page.version elem="castList" atts="" %}
 
 
 
-The [perfMedium](/v3/elements/perfMedium.html){:.link_odd_elementSpec} element provides the possibility of describing a work
+The [perfMedium](/{{ page.version }}/elements/perfMedium.html){:.link_odd_elementSpec} element provides the possibility of describing a work
 in terms of its medium of performance; that is, the performing forces required. In
 the case
 of a dramatic work, the dramatis personae and associated voice qualities may be enumerated
-using [castList](/v3/elements/castList.html){:.link_odd_elementSpec}. The [perfResList](/v3/elements/perfResList.html){:.link_odd_elementSpec} element
+using [castList](/{{ page.version }}/elements/castList.html){:.link_odd_elementSpec}. The [perfResList](/{{ page.version }}/elements/perfResList.html){:.link_odd_elementSpec} element
 describes the necessary instrumental and vocal resources.
 
 

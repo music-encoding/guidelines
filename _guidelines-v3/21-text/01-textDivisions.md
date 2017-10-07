@@ -1,17 +1,18 @@
 ---
 sectionid: textDivisions
 title: "Organizing Text into Divisions"
+version: "v3"
 ---
 
 
 
 Text can be organized in different parts, for example in chapters or sections. The
-[div](/v3/elements/div.html){:.link_odd_elementSpec} element is used to encode such structural divisions.
+[div](/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element is used to encode such structural divisions.
 
 
 
-{% include specDesc.html key="div" atts="" %}
-{% include specDesc.html key="div" atts="type subtype" %}
+{% include specDesc.html version=page.version elem="div" atts="" %}
+{% include specDesc.html version=page.version elem="div" atts="div/type div/subtype" %}
 
 
 
@@ -21,21 +22,21 @@ in multiple sections (e.g. a preface, a critical report, performance instruction
 etc. for
 which see the following sections); each of these sections should be identified by
 a different
-[div](/v3/elements/div.html){:.link_odd_elementSpec} element. Text might also occur in between music sections (see <a class="link_ptr" title="Content of Musical Divisions" href="/v3/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few
+[div](/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element. Text might also occur in between music sections (see <a class="link_ptr" title="Content of Musical Divisions" href="/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>), for example in a collection of romantic piano works, a few
 pieces might be preceded or followed by poetry. Such text should be encoded with the
-[div](/v3/elements/div.html){:.link_odd_elementSpec} element, as demonstrated in the following example:
+[div](/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, as demonstrated in the following example:
 
 {% include plainExample.html example="./v3/examples/text/text-sample328.xml" valid="true" %}
 
 
 Textual divisions may have titles or other forms of introductory material, which are
 encoded
-with the [head](/v3/elements/head.html){:.link_odd_elementSpec} element.
+with the [head](/{{ page.version }}/elements/head.html){:.link_odd_elementSpec} element.
 
 
 
 
-{% include specDesc.html key="head" atts="" %}
+{% include specDesc.html version=page.version elem="head" atts="" %}
 
 
 
@@ -46,7 +47,7 @@ languages, each with a different heading:
 
 {% include plainExample.html example="./v3/examples/text/text-sample329.xml" valid="false" %}
 
-Having said that [div](/v3/elements/div.html){:.link_odd_elementSpec} identifies any structural organization of text, it
+Having said that [div](/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} identifies any structural organization of text, it
 is often helpful to distinguish the typology of division. The attributes **@type** and
 **@subtype** can be used for this purpose. It is required that **@type** be
 present when **@subtype** is used, though their values can be freely set by the

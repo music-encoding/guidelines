@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.slashcount"
 
 ---
@@ -9,33 +10,31 @@ title: "att.slashcount"
    <h3 id="att.slashcount">att.slashcount</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.slashcount</span> Attributes for recording the number of slashes that accompany a feature.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes for recording the number of slashes that accompany a feature.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fTrem.html">fTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fTrem.vis">att.fTrem.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fTrem.vis.html">att.fTrem.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/mensuration">mensuration</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensuration.html">mensuration</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mensur.log">att.mensur.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensur.log.html">att.mensur.log</a>)
                   </span>
                </div>
             </div>
@@ -43,25 +42,13 @@ title: "att.slashcount"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@slash</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the number of slashes present.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SLASH">data.SLASH</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slashcount">att.slashcount</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

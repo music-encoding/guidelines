@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterSigGrp.ges"
 
 ---
@@ -9,31 +10,29 @@ title: "att.meterSigGrp.ges"
    <h3 id="att.meterSigGrp.ges">att.meterSigGrp.ges</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.meterSigGrp.ges</span> Gestural domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Gestural domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meterSigGrp">meterSigGrp</a> (direct member of att.meterSigGrp.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSigGrp.html">meterSigGrp</a> (direct member of att.meterSigGrp.ges)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
          <td class="wovenodd-col2"></td>
       </tr>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.bTrem.vis"
 
 ---
@@ -9,60 +10,35 @@ title: "att.bTrem.vis"
    <h3 id="att.bTrem.vis">att.bTrem.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.bTrem.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a> (direct member of att.bTrem.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bTrem.html">bTrem</a> (direct member of att.bTrem.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@num.place</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">States where the tuplet number will be placed in relation to the note heads.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numberplacement">att.numberplacement</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@num.visible</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Determines if the tuplet number is visible.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numberplacement">att.numberplacement</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

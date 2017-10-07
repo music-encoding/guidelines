@@ -1,0 +1,5 @@
+Traditionally, the 'normal' mordent is written as a short wavy line with a vertical
+line through it and the inverted mordent is written without the vertical line. However,
+the meaning of these signs is sometimes reversed. See Read, p. 245-246. Another
+attribute in the visual domain would be necessary in order to be completely explicit
+about which visual symbol is actually to be rendered.

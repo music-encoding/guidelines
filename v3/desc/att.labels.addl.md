@@ -1,7 +1,0 @@
----
-desc: "att.labels.addl"
-type: "classSpec"
----
-
-Attributes that record labels for a feature in addition to those found in
-att.common.

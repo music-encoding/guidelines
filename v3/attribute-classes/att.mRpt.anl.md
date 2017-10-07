@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.mRpt.anl"
 
 ---
@@ -9,122 +10,35 @@ title: "att.mRpt.anl"
    <h3 id="att.mRpt.anl">att.mRpt.anl</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.mRpt.anl</span> Analytical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Analytical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRpt">mRpt</a> (direct member of att.mRpt.anl)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRpt.html">mRpt</a> (direct member of att.mRpt.anl)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@copyof</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@corresp</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to point to other elements that correspond to this one in a generic
-                  fashion.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@next</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@prev</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@sameas</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Points to an element that is the same as the current element but is not a literal
-                  copy of the current element.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@synch</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common.anl">att.common.anl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@when</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
-                  be the ID of a 
-                  <a class="link_odd_elementSpec" href="/v3/when">when</a> element elsewhere in the document.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.alignment">att.alignment</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

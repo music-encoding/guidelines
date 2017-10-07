@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.startLike.header"
 
 ---
@@ -9,19 +10,17 @@ title: "model.startLike.header"
    <h3 id="model.startLike.header">model.startLike.header</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.startLike.header</span> Groups elements that may be document elements when the header module is invoked.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may be document elements when the header module is invoked.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -29,12 +28,12 @@ title: "model.startLike.header"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meiHead">meiHead</a> (direct member of model.startLike.header)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiHead.html">meiHead</a> (direct member of model.startLike.header)
                </div>
             </div>
          </td>

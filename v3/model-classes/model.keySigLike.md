@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.keySigLike"
 
 ---
@@ -9,47 +10,45 @@ title: "model.keySigLike"
    <h3 id="model.keySigLike">model.keySigLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.keySigLike</span> Groups elements that have the same function as a key signature.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that have the same function as a key signature.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.eventLike">model.eventLike</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.staffDefPart">model.staffDefPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.eventLike.html">model.eventLike</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.staffDefPart.html">model.staffDefPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/keySig">keySig</a> (direct member of model.keySigLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/keySig.html">keySig</a> (direct member of model.keySigLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

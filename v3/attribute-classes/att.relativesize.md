@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.relativesize"
 
 ---
@@ -9,56 +10,54 @@ title: "att.relativesize"
    <h3 id="att.relativesize">att.relativesize</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.relativesize</span> Attributes that record relative size.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record relative size.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.vis">att.chord.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.vis.html">att.chord.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mensur">mensur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mensur.vis">att.mensur.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensur.vis.html">att.mensur.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.vis">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRest.vis.html">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.vis.html">att.note.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.vis">att.rest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.vis.html">att.rest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/uneume.html">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.uneume.vis">att.uneume.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.uneume.vis.html">att.uneume.vis</a>)
                   </span>
                </div>
             </div>
@@ -66,25 +65,13 @@ title: "att.relativesize"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@size</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the relative size of a feature.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SIZE">data.SIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.relativesize">att.relativesize</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

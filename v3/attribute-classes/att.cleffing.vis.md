@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.cleffing.vis"
 
 ---
@@ -9,33 +10,32 @@ title: "att.cleffing.vis"
    <h3 id="att.cleffing.vis">att.cleffing.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.cleffing.vis</span> Used by staffDef and scoreDef to provide default values for attributes in the visual
+         <td colspan="2" class="wovenodd-col2">Used by staffDef and scoreDef to provide default values for attributes in the visual
             domain related to clefs.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -43,36 +43,13 @@ title: "att.cleffing.vis"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@clef.color</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the color of the clef.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.vis">att.cleffing.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@clef.visible</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Determines whether the clef is to be displayed.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.vis">att.cleffing.vis</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

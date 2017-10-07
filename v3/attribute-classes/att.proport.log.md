@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.proport.log"
 
 ---
@@ -9,66 +10,38 @@ title: "att.proport.log"
    <h3 id="att.proport.log">att.proport.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.proport.log</span> Logical domain attributes. These attributes describe augmentation or diminution of
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes. These attributes describe augmentation or diminution of
             the
             normal value of the notes in mensural notation as a ratio.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.mensural</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/proport">proport</a> (direct member of att.proport.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/proport.html">proport</a> (direct member of att.proport.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@num</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Along with numbase, describes duration as a ratio. num is the first value in the
-                  ratio, while numbase is the second.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@numbase</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Along with num, describes duration as a ratio. num is the first value in the ratio,
-                  while numbase is the second.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.ratio">att.duration.ratio</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

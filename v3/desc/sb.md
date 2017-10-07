@@ -1,8 +1,0 @@
----
-desc: "sb"
-type: "elementSpec"
----
-
-(system break) – An empty formatting element that forces musical notation to begin
-on a
-new line.

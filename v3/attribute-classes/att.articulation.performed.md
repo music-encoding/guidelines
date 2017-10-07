@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.articulation.performed"
 
 ---
@@ -9,38 +10,36 @@ title: "att.articulation.performed"
    <h3 id="att.articulation.performed">att.articulation.performed</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.articulation.performed</span> Attributes describing the method of performance.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes describing the method of performance.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/artic">artic</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/artic.html">artic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.artic.ges">att.artic.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.artic.ges.html">att.artic.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.ges">att.chord.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.ges.html">att.chord.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.ges.html">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -48,25 +47,13 @@ title: "att.articulation.performed"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@artic.ges</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records performed articulation that differs from the written value.</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.ARTICULATION">data.ARTICULATION</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.articulation.performed">att.articulation.performed</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

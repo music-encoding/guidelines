@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.sectionPart.mensural"
 
 ---
@@ -9,31 +10,29 @@ title: "model.sectionPart.mensural"
    <h3 id="model.sectionPart.mensural">model.sectionPart.mensural</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.sectionPart.mensural</span> Groups elements that may appear as part of a section in the mensural repertoire.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of a section in the mensural repertoire.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.mensural</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.sectionPart.mensuralAndNeumes">model.sectionPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.mensuralAndNeumes.html">model.sectionPart.mensuralAndNeumes</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -41,7 +40,7 @@ title: "model.sectionPart.mensural"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

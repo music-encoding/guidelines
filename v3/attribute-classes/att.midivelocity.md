@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.midivelocity"
 
 ---
@@ -9,26 +10,24 @@ title: "att.midivelocity"
    <h3 id="att.midivelocity">att.midivelocity</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.midivelocity</span> MIDI attributes pertaining to key velocity.
-         </td>
+         <td colspan="2" class="wovenodd-col2">MIDI attributes pertaining to key velocity.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.midi</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.ges">att.note.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.ges.html">att.note.ges</a>)
                   </span>
                </div>
             </div>
@@ -36,25 +35,13 @@ title: "att.midivelocity"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@vel</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">MIDI Note-on/off velocity.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MIDIVALUE">data.MIDIVALUE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.midivelocity">att.midivelocity</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

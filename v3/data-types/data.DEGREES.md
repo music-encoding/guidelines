@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.DEGREES"
 
 ---
@@ -9,32 +10,30 @@ title: "data.DEGREES"
    <h3 id="data.DEGREES">data.DEGREES</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.DEGREES</span> 360th-unit measure of a circle's circumference; optionally signed decimal number
-            between
+         <td colspan="2" class="wovenodd-col2">360th-unit measure of a circle's circumference; optionally signed decimal number between
             -360 and 360.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.ROTATION">data.ROTATION</a>, 
-               <a class="link_odd_classSpec" href="/v3/rend">rend</a>/@rotation
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.ROTATION.html">data.ROTATION</a>, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/rend.html">rend</a>/@rotation
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

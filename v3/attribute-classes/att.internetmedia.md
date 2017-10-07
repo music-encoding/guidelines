@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.internetmedia"
 
 ---
@@ -9,58 +10,40 @@ title: "att.internetmedia"
    <h3 id="att.internetmedia">att.internetmedia</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.internetmedia</span> Attributes which record the type of an electronic resource.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes which record the type of an electronic resource.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/avFile">avFile</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipCode">incipCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ref">ref</a> (direct members of att.internetmedia)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/avFile.html">avFile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/graphic.html">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipCode.html">incipCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ptr.html">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ref.html">ref</a> (direct members of att.internetmedia)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@mimetype</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the applicable MIME (multimedia internet mail extension) type. The value
-                  should be a valid MIME media type defined by the Internet Engineering Task Force in
-                  RFC
-                  2046.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.internetmedia">att.internetmedia</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

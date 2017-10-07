@@ -1,7 +1,0 @@
----
-desc: "ref"
-type: "elementSpec"
----
-
-(reference) – Defines a reference to another location that may contain text and
-sub-elements to describe the destination.

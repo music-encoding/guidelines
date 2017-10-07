@@ -1,15 +1,16 @@
 ---
 sectionid: cmnPedal
 title: "Piano Pedal"
+version: "v3"
 ---
 
 
 
 Music for piano also often includes indications of the use of pedals. In MEI, these
-symbols are encoded using the [pedal](/v3/elements/pedal.html){:.link_odd_elementSpec} element. As a member of the
-[model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class, it is located within [measure](/v3/elements/measure.html){:.link_odd_elementSpec} and refers to a staff, layer and timestamp using the
+symbols are encoded using the [pedal](/{{ page.version }}/elements/pedal.html){:.link_odd_elementSpec} element. As a member of the
+[model.controleventLike](/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class, it is located within [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} and refers to a staff, layer and timestamp using the
 **@staff**, **@layer** and **@tstamp** attributes. Alternatively, the
-**@startid** attribute may be used to identify a [note](/v3/elements/note.html){:.link_odd_elementSpec} or [chord](/v3/elements/chord.html){:.link_odd_elementSpec} to which the mark should be assigned.
+**@startid** attribute may be used to identify a [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} or [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} to which the mark should be assigned.
 
 The meaning of the mark is captured using the **@dir** attribute, which provides
 the following values:

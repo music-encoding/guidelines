@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MEASUREMENTREL"
 
 ---
@@ -9,8 +10,7 @@ title: "data.MEASUREMENTREL"
    <h3 id="data.MEASUREMENTREL">data.MEASUREMENTREL</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MEASUREMENTREL</span> Measurement expressed in real-world (e.g., centimeters, millimeters, inches, points,
+         <td colspan="2" class="wovenodd-col2">Measurement expressed in real-world (e.g., centimeters, millimeters, inches, points,
             picas, or pixels) or virtual units (vu). 'vu' is the default value. Unlike
             data.MEASUREMENTABS, in which only positive values are allowed, both positive and
             negative
@@ -19,30 +19,30 @@ title: "data.MEASUREMENTREL"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.distances">att.distances</a> (@dynam.dist), 
-               <a class="link_odd_classSpec" href="/v3/att.lyricstyle">att.lyricstyle</a> (@lyric.align), 
-               <a class="link_odd_classSpec" href="/v3/att.spacing">att.spacing</a> (@spacing.staff), 
-               <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a> (@spacing), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset.ho">att.visualoffset.ho</a> (@ho), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset.vo">att.visualoffset.vo</a> (@vo), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset2.ho">att.visualoffset2.ho</a> (@startho), 
-               <a class="link_odd_classSpec" href="/v3/att.visualoffset2.vo">att.visualoffset2.vo</a> (@startvo)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.distances.html">att.distances</a> (@dynam.dist), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricstyle</a> (@lyric.align), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.spacing.html">att.spacing</a> (@spacing.staff), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a> (@spacing), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualoffset.ho</a> (@ho), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visualoffset.vo.html">att.visualoffset.vo</a> (@vo), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visualoffset2.ho.html">att.visualoffset2.ho</a> (@startho), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.visualoffset2.vo.html">att.visualoffset2.vo</a> (@startvo)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

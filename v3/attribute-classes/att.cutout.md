@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.cutout"
 
 ---
@@ -9,33 +10,32 @@ title: "att.cutout"
    <h3 id="att.cutout">att.cutout</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.cutout</span> Attributes that indicate how to render staff lines of the measure containing an element
+         <td colspan="2" class="wovenodd-col2">Attributes that indicate how to render staff lines of the measure containing an element
             belonging to this attribute class.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.vis">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRest.vis.html">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mSpace">mSpace</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mSpace.html">mSpace</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mSpace.vis">att.mSpace.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mSpace.vis.html">att.mSpace.vis</a>)
                   </span>
                </div>
             </div>
@@ -43,26 +43,13 @@ title: "att.cutout"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@cutout</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">"Cut-out" style indicated for this measure.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">cutout</span>" 
-               <i>(The staff lines should not be drawn.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cutout">att.cutout</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

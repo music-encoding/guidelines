@@ -1,6 +1,7 @@
 ---
 sectionid: textTitlePages
 title: "Title Pages"
+version: "v3"
 ---
 
 
@@ -16,25 +17,25 @@ features of most title pages for faithful rendition:
 
 
 
-{% include specDesc.html key="titlePage" atts="" %}
-{% include specDesc.html key="p" atts="" %}
-{% include specDesc.html key="table" atts="" %}
-{% include specDesc.html key="list" atts="" %}
-{% include specDesc.html key="quote" atts="" %}
-{% include specDesc.html key="lg" atts="" %}
+{% include specDesc.html version=page.version elem="titlePage" atts="" %}
+{% include specDesc.html version=page.version elem="p" atts="" %}
+{% include specDesc.html version=page.version elem="table" atts="" %}
+{% include specDesc.html version=page.version elem="list" atts="" %}
+{% include specDesc.html version=page.version elem="quote" atts="" %}
+{% include specDesc.html version=page.version elem="lg" atts="" %}
 
 
 
 The following example shows the encoding of the title page of Vaughan Williams' *On
-Wenlock Edge*. Note the use of the [lb](/v3/elements/lb.html){:.link_odd_elementSpec} element to mark the
+Wenlock Edge*. Note the use of the [lb](/{{ page.version }}/elements/lb.html){:.link_odd_elementSpec} element to mark the
 line breaks present in the original.
 
 {% include plainExample.html example="./v3/examples/text/text-sample341.xml" valid="true" %}
 
 The physical rendition of title page information is often of considerable importance.
 One
-approach to this requirement would be to use the [rend](/v3/elements/rend.html){:.link_odd_elementSpec} element,
-described in chapter <a class="link_ptr" title="Text Rendition" href="/v3/guidelines/shared.html#sharedTextRendition">1.3.2 Text Rendition</a> to specify the rendition of each
+approach to this requirement would be to use the [rend](/{{ page.version }}/elements/rend.html){:.link_odd_elementSpec} element,
+described in chapter <a class="link_ptr" title="Text Rendition" href="/{{ page.version }}/guidelines/shared.html#sharedTextRendition">1.3.2 Text Rendition</a> to specify the rendition of each
 of the components of the title page. Another would be to employ a CSS stylesheet.
 Finally, a
 module customized for the description of typographic entities such as pages, lines,

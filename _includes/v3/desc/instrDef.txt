@@ -1,0 +1,1 @@
+(instrument definition) – MIDI instrument declaration.

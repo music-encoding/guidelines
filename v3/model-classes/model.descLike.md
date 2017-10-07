@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.descLike"
 
 ---
@@ -9,19 +10,17 @@ title: "model.descLike"
    <h3 id="model.descLike">model.descLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.descLike</span> Groups elements which provide a description of their parent entity.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements which provide a description of their parent entity.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -29,12 +28,12 @@ title: "model.descLike"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/desc">desc</a> (direct member of model.descLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/desc.html">desc</a> (direct member of model.descLike)
                </div>
             </div>
          </td>

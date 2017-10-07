@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.ISODATE"
 
 ---
@@ -9,29 +10,27 @@ title: "data.ISODATE"
    <h3 id="data.ISODATE">data.ISODATE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.ISODATE</span> ISO date formats.
-         </td>
+         <td colspan="2" class="wovenodd-col2">ISO date formats.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.datable">att.datable</a> (@enddate)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a> (@enddate)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

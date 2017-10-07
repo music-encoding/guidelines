@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.measurement"
 
 ---
@@ -9,43 +10,41 @@ title: "att.measurement"
    <h3 id="att.measurement">att.measurement</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.measurement</span> Attributes that record the unit of measurement in which a value is expressed.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record the unit of measurement in which a value is expressed.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/biblScope">biblScope</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/depth">depth</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/dimensions">dimensions</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/extent">extent</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/gap">gap</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/graphic">graphic</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/height">height</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/num">num</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/width">width</a> (direct members of att.measurement)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblScope.html">biblScope</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/depth.html">depth</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dimensions.html">dimensions</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/extent.html">extent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gap.html">gap</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/graphic.html">graphic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/height.html">height</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/num.html">num</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/width.html">width</a> (direct members of att.measurement)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/barLine.html">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.barLine.vis">att.barLine.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.barLine.vis.html">att.barLine.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.measure.vis">att.measure.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.measure.vis.html">att.measure.vis</a>)
                   </span>
                </div>
             </div>
@@ -53,50 +52,13 @@ title: "att.measurement"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@unit</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the unit of measurement.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">byte</span>" 
-               <i>(Byte.)</i>,  "
-               <span style="font-weight: 500;">char</span>" 
-               <i>(Character.)</i>,  "
-               <span style="font-weight: 500;">cm</span>" 
-               <i>(Centimeter.)</i>,  "
-               <span style="font-weight: 500;">in</span>" 
-               <i>(Inch.)</i>,  "
-               <span style="font-weight: 500;">issue</span>" 
-               <i>(Serial issue.)</i>,  "
-               <span style="font-weight: 500;">mm</span>" 
-               <i>(Millimeter.)</i>,  "
-               <span style="font-weight: 500;">page</span>" 
-               <i>(Page.)</i>,  "
-               <span style="font-weight: 500;">pc</span>" 
-               <i>(Pica.)</i>,  "
-               <span style="font-weight: 500;">pt</span>" 
-               <i>(Point.)</i>,  "
-               <span style="font-weight: 500;">px</span>" 
-               <i>(Pixel.)</i>,  "
-               <span style="font-weight: 500;">record</span>" 
-               <i>(Record.)</i>,  "
-               <span style="font-weight: 500;">vol</span>" 
-               <i>(Serial volume.)</i>,  "
-               <span style="font-weight: 500;">vu</span>" 
-               <i>(MEI virtual unit.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.measurement">att.measurement</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

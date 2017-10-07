@@ -1,8 +1,0 @@
----
-desc: "fig"
-type: "elementSpec"
----
-
-(figure) – Groups elements representing or containing graphic information such as
-an
-illustration or figure.

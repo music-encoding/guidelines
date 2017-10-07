@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "label"
 
 ---
@@ -9,169 +10,46 @@ title: "label"
    <h3 id="label">&lt;label&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;label&gt;</span> A container for text that identifies the feature to which it is attached.
-         </td>
+         <td colspan="2" class="wovenodd-col2">A container for text that identifies the feature to which it is attached.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
          <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@facs</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Permits the current element to reference a facsimile surface or image zone which
-                  corresponds to it.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.facsimile">att.facsimile</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@label</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@n</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a number-like designation for an element.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/token">token</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.common">att.common</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@source</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains a list of one or more pointers indicating the sources which attest to a
-                  given reading. Each value should correspond to the ID of a &lt;source&gt; element
-                  located in the document header.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.source">att.source</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@subtype</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provide any sub-classification for the element, additional to that given by its type
-                  attribute.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">NMTOKEN</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@translit</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the transliteration technique used.
-                  
-                  <!--There is no standard list of transliteration schemes.-->
-                  
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">NMTOKEN</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@type</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Characterizes the element in some sense, using any convenient classification scheme
-                  or typology.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">NMTOKEN</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.typed">att.typed</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@xml:base</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
-                  references into absolute URI references.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.commonPart">att.commonPart</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@xml:id</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
-                  and other resources. Each id attribute within a document must have a unique
-                  value.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">ID</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.id">att.id</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@xml:lang</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Identifies the language of the element's content. The values for this attribute are
-                  language 'tags' as defined in BCP 47. All language tags that make use of private use
-                  sub-tags must be documented in a corresponding language element in the MEI header
-                  whose
-                  id attribute is the same as the language tag's value.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">language</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.lang">att.lang</a>
-               </span>
-            </div>
+            <table class="table table-striped table-hover">
+               <thead>
+                  <tr>
+                     <th></th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Member of</span>
+            <strong>Member of</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/model.labelLike">model.labelLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.labelLike,html">model.labelLike</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Contained by</span>
+            <strong>Contained by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
@@ -179,26 +57,26 @@ title: "label"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/contents">contents</a> 
-                        <a class="link_odd_elementSpec" href="/v3/handList">handList</a> 
-                        <a class="link_odd_elementSpec" href="/v3/termList">termList</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contents.html">contents</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handList.html">handList</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/termList.html">termList</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/biblList">biblList</a> 
-                        <a class="link_odd_elementSpec" href="/v3/grpSym">grpSym</a> 
-                        <a class="link_odd_elementSpec" href="/v3/label">label</a> 
-                        <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a> 
-                        <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a> 
-                        <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblList.html">biblList</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/grpSym.html">grpSym</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/label.html">label</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffGrp.html">staffGrp</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.text</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/v3/list">list</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/list.html">list</a>
                      </span>
                   </div>
                </div>
@@ -207,7 +85,7 @@ title: "label"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">May contain</span>
+            <strong>May contain</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="specChildren">
@@ -218,77 +96,77 @@ title: "label"
                <div class="specChild">
                   <span class="specChildModule">MEI.edittrans</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a> 
-                     <a class="link_odd_elementSpec" href="/v3/add">add</a> 
-                     <a class="link_odd_elementSpec" href="/v3/choice">choice</a> 
-                     <a class="link_odd_elementSpec" href="/v3/corr">corr</a> 
-                     <a class="link_odd_elementSpec" href="/v3/damage">damage</a> 
-                     <a class="link_odd_elementSpec" href="/v3/del">del</a> 
-                     <a class="link_odd_elementSpec" href="/v3/expan">expan</a> 
-                     <a class="link_odd_elementSpec" href="/v3/gap">gap</a> 
-                     <a class="link_odd_elementSpec" href="/v3/handShift">handShift</a> 
-                     <a class="link_odd_elementSpec" href="/v3/orig">orig</a> 
-                     <a class="link_odd_elementSpec" href="/v3/reg">reg</a> 
-                     <a class="link_odd_elementSpec" href="/v3/restore">restore</a> 
-                     <a class="link_odd_elementSpec" href="/v3/sic">sic</a> 
-                     <a class="link_odd_elementSpec" href="/v3/subst">subst</a> 
-                     <a class="link_odd_elementSpec" href="/v3/supplied">supplied</a> 
-                     <a class="link_odd_elementSpec" href="/v3/unclear">unclear</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/choice.html">choice</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gap.html">gap</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handShift.html">handShift</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sic.html">sic</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/subst.html">subst</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.figtable</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/fig">fig</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fig.html">fig</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.namesdates</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a> 
-                     <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/country">country</a> 
-                     <a class="link_odd_elementSpec" href="/v3/district">district</a> 
-                     <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a> 
-                     <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/persName">persName</a> 
-                     <a class="link_odd_elementSpec" href="/v3/postBox">postBox</a> 
-                     <a class="link_odd_elementSpec" href="/v3/postCode">postCode</a> 
-                     <a class="link_odd_elementSpec" href="/v3/region">region</a> 
-                     <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a> 
-                     <a class="link_odd_elementSpec" href="/v3/street">street</a> 
-                     <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bloc.html">bloc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/country.html">country</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/district.html">district</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogFeat.html">geogFeat</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogName.html">geogName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/periodName.html">periodName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/postBox.html">postBox</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/postCode.html">postCode</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/region.html">region</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/settlement.html">settlement</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/street.html">street</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/styleName.html">styleName</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.ptrref</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a> 
-                     <a class="link_odd_elementSpec" href="/v3/ref">ref</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ptr.html">ptr</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ref.html">ref</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/address">address</a> 
-                     <a class="link_odd_elementSpec" href="/v3/annot">annot</a> 
-                     <a class="link_odd_elementSpec" href="/v3/bibl">bibl</a> 
-                     <a class="link_odd_elementSpec" href="/v3/date">date</a> 
-                     <a class="link_odd_elementSpec" href="/v3/identifier">identifier</a> 
-                     <a class="link_odd_elementSpec" href="/v3/lb">lb</a> 
-                     <a class="link_odd_elementSpec" href="/v3/name">name</a> 
-                     <a class="link_odd_elementSpec" href="/v3/num">num</a> 
-                     <a class="link_odd_elementSpec" href="/v3/rend">rend</a> 
-                     <a class="link_odd_elementSpec" href="/v3/repository">repository</a> 
-                     <a class="link_odd_elementSpec" href="/v3/stack">stack</a> 
-                     <a class="link_odd_elementSpec" href="/v3/title">title</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/address.html">address</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bibl.html">bibl</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/date.html">date</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/identifier.html">identifier</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lb.html">lb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/name.html">name</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/num.html">num</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rend.html">rend</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/repository.html">repository</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stack.html">stack</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/title.html">title</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.usersymbols</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/v3/symbol">symbol</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/symbol.html">symbol</a>
                   </span>
                </div>
             </div>
@@ -296,123 +174,125 @@ title: "label"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1">
-                  <span data-indentation="1" class="element">&lt;classes&gt;</span>
-                  
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="/att.common">att.common</a>"
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="/att.facsimile">att.facsimile</a>"
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="/att.lang">att.lang</a>"
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="/att.source">att.source</a>"
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="/att.typed">att.typed</a>"
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="/model.labelLike">model.labelLike</a>"
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/classes&gt;</span>
-               </div>
-               <div class="indent1">
-                  <span data-indentation="1" class="element">&lt;content&gt;</span>
-                  
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD">
+               <code>
+                  <div class="indent1">
+                     <span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
-                        
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:text/&gt;</span>
-                        </div>
-                        
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/model.textphraseLike.limited">model.textphraseLike.limited</a>"
-                              </span>/&gt;
-                           </span>
-                        </div>
-                        
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/model.editLike">model.editLike</a>"
-                              </span>/&gt;
-                           </span>
-                        </div>
-                        
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/model.transcriptionLike">model.transcriptionLike</a>"
-                              </span>/&gt;
-                           </span>
-                        </div>
-                        
-                        <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span>
+                     <div class="indent2">
+                        <span data-indentation="2" class="element">&lt;memberOf 
+                           <span class="attribute">key=</span>
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="/att.common">att.common</a>"
+                           </span>/&gt;
+                        </span>
                      </div>
                      
-                     <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span>
+                     <div class="indent2">
+                        <span data-indentation="2" class="element">&lt;memberOf 
+                           <span class="attribute">key=</span>
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="/att.facsimile">att.facsimile</a>"
+                           </span>/&gt;
+                        </span>
+                     </div>
+                     
+                     <div class="indent2">
+                        <span data-indentation="2" class="element">&lt;memberOf 
+                           <span class="attribute">key=</span>
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="/att.lang">att.lang</a>"
+                           </span>/&gt;
+                        </span>
+                     </div>
+                     
+                     <div class="indent2">
+                        <span data-indentation="2" class="element">&lt;memberOf 
+                           <span class="attribute">key=</span>
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="/att.source">att.source</a>"
+                           </span>/&gt;
+                        </span>
+                     </div>
+                     
+                     <div class="indent2">
+                        <span data-indentation="2" class="element">&lt;memberOf 
+                           <span class="attribute">key=</span>
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="/att.typed">att.typed</a>"
+                           </span>/&gt;
+                        </span>
+                     </div>
+                     
+                     <div class="indent2">
+                        <span data-indentation="2" class="element">&lt;memberOf 
+                           <span class="attribute">key=</span>
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="/model.labelLike">model.labelLike</a>"
+                           </span>/&gt;
+                        </span>
+                     </div>
+                     
+                     <span data-indentation="1" class="element">&lt;/classes&gt;</span>
                   </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/content&gt;</span>
-               </div>
+                  <div class="indent1">
+                     <span data-indentation="1" class="element">&lt;content&gt;</span>
+                     
+                     <div class="indent2">
+                        <span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3">
+                           <span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
+                           
+                           <div class="indent4">
+                              <span data-indentation="4" class="element">&lt;rng:text/&gt;</span>
+                           </div>
+                           
+                           <div class="indent4">
+                              <span data-indentation="4" class="element">&lt;rng:ref 
+                                 <span class="attribute">name=</span>
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="/model.textphraseLike.limited">model.textphraseLike.limited</a>"
+                                 </span>/&gt;
+                              </span>
+                           </div>
+                           
+                           <div class="indent4">
+                              <span data-indentation="4" class="element">&lt;rng:ref 
+                                 <span class="attribute">name=</span>
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="/model.editLike">model.editLike</a>"
+                                 </span>/&gt;
+                              </span>
+                           </div>
+                           
+                           <div class="indent4">
+                              <span data-indentation="4" class="element">&lt;rng:ref 
+                                 <span class="attribute">name=</span>
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="/model.transcriptionLike">model.transcriptionLike</a>"
+                                 </span>/&gt;
+                              </span>
+                           </div>
+                           
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span>
+                        </div>
+                        
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span>
+                     </div>
+                     
+                     <span data-indentation="1" class="element">&lt;/content&gt;</span>
+                  </div>
+               </code>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Remarks</span>
+            <strong>Remarks</strong>
          </td>
          <td class="wovenodd-col2">
             <p>This element is modelled on an element in the Text Encoding Initiative (TEI)

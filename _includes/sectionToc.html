@@ -1,0 +1,15 @@
+{% assign c = site.collections | where: "label", include.version | first %}
+{% for doc in c.docs %}
+  {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
+  {% assign levels = doc.relative_path | split: '/' %}
+  {% assign levels = levels | shift %}
+
+  {% if doc.url contains include.section and levels.size > 1 and levels.size < 4 %}
+<p>   
+    <a href="{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
+        {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
+    </a>
+</p>
+  {% endif %}
+
+{% endfor %}

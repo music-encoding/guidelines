@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layer.log"
 
 ---
@@ -9,67 +10,35 @@ title: "att.layer.log"
    <h3 id="att.layer.log">att.layer.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.layer.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layer">layer</a> (direct member of att.layer.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a> (direct member of att.layer.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@def</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a mechanism for linking the layer to a layerDef element.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.layer.log">att.layer.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@metcon</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the relationship between the content of a staff or layer and the
-                  prevailing meter.
-               </span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">c</span>" 
-               <i>(Complete; i.e., conformant with the prevailing meter.)</i>,  "
-               <span style="font-weight: 500;">i</span>" 
-               <i>(Incomplete; i.e., not enough beats.)</i>,  "
-               <span style="font-weight: 500;">o</span>" 
-               <i>(Overfull; i.e., too many beats.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance">att.meterconformance</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -177,7 +146,7 @@ title: "att.layer.log"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

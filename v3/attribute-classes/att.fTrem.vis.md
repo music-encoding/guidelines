@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.fTrem.vis"
 
 ---
@@ -9,49 +10,35 @@ title: "att.fTrem.vis"
    <h3 id="att.fTrem.vis">att.fTrem.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.fTrem.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a> (direct member of att.fTrem.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fTrem.html">fTrem</a> (direct member of att.fTrem.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@slash</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the number of slashes present.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.SLASH">data.SLASH</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.slashcount">att.slashcount</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

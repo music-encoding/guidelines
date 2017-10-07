@@ -1,7 +1,0 @@
----
-desc: "model.encodingPart"
-type: "classSpec"
----
-
-Groups elements that may appear as part of information regarding the encoding
-process.

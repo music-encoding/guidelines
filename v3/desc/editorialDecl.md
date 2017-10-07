@@ -1,7 +1,0 @@
----
-desc: "editorialDecl"
-type: "elementSpec"
----
-
-(editorial declaration) – Used to provide details of editorial principles and practices
-applied during the encoding of musical text.

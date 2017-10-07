@@ -1,6 +1,7 @@
 ---
 sectionid: cmnOrnamentsTrillsSpecial
 title: "Special Cases"
+version: "v3"
 ---
 
 
@@ -8,7 +9,7 @@ title: "Special Cases"
 
 Symbols and abbreviations for trills have changed and evolved considerably throughout
 history. Strategies to clarify the encoding and interpretation of ornaments have been
-discussed in section <a class="link_ptr" title="Overriding Default Resolutions" href="/v3/guidelines/cmnOrnaments.html#cmnOrnamentsOverride">8.1.1 Overriding Default Resolutions</a> above. However, in order to aid
+discussed in section <a class="link_ptr" title="Overriding Default Resolutions" href="/{{ page.version }}/guidelines/cmnOrnaments.html#cmnOrnamentsOverride">8.1.1 Overriding Default Resolutions</a> above. However, in order to aid
 the encoder in making educated choices in the encoding of non-standard trills, this
 section
 shows two examples diverging from modern standard use.
@@ -20,7 +21,7 @@ indicate multiple trills:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 31. Example of multiple trills.</figcaption>
 </figure>
 The encoding of this kind of trill may vary depending on the purpose of the encoding.
@@ -36,7 +37,7 @@ explicitly encoded, as the following example demonstrates:
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample189.xml" valid="true" %}
 
 
-However, when it is necessary to support multiple outputs, use of the [choice](/v3/elements/choice.html){:.link_odd_elementSpec} element and appropriate sub-elements is recommended. In this case, the [orig](/v3/elements/orig.html){:.link_odd_elementSpec} and [reg](/v3/elements/reg.html){:.link_odd_elementSpec} elements can be used to represent the
+However, when it is necessary to support multiple outputs, use of the [choice](/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element and appropriate sub-elements is recommended. In this case, the [orig](/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} and [reg](/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} elements can be used to represent the
 original source and a regularization provided by the editor, respectively:
 
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample190.xml" valid="true" %}
@@ -51,14 +52,14 @@ Wilhelm Friedemann Bach* (1720), shows a trill (
 symbol associated with a mordent in modern practice. Nonetheless, J.S. Bach's suggested
 resolution should be encoded with a variant of the procedure presented above.
 
-In the example below, the child elements of [choice](/v3/elements/choice.html){:.link_odd_elementSpec}; that is, [orig](/v3/elements/orig.html){:.link_odd_elementSpec} and [reg](/v3/elements/reg.html){:.link_odd_elementSpec}, represent non-exclusive options;
+In the example below, the child elements of [choice](/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec}; that is, [orig](/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} and [reg](/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec}, represent non-exclusive options;
 that is, both may be processed by applications that aim to support both visual and
 aural
 renditions.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 32. Trill transcribed from J.S. Bach's *Klavierbüchlein für Wilhelm Friedemann
       Bach* (1720)
    </figcaption>
@@ -73,8 +74,8 @@ to the existence of the trill marking, as in the following example:
 
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample192.xml" valid="true" %}
 
-The [orig](/v3/elements/orig.html){:.link_odd_elementSpec} element contains the single-note-with-trill transcription of
-the original text, while the [reg](/v3/elements/reg.html){:.link_odd_elementSpec} element represents the
+The [orig](/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} element contains the single-note-with-trill transcription of
+the original text, while the [reg](/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} element represents the
 realization-without-trill version.
 
 This approach facilitates substitution of the realization of the trill for the original

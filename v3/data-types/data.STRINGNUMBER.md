@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.STRINGNUMBER"
 
 ---
@@ -9,29 +10,27 @@ title: "data.STRINGNUMBER"
    <h3 id="data.STRINGNUMBER">data.STRINGNUMBER</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.STRINGNUMBER</span> In string tablature, the number of the string to be played, i.e., [1-9]+.
-         </td>
+         <td colspan="2" class="wovenodd-col2">In string tablature, the number of the string to be played, i.e., [1-9]+.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.note.ges.tablature">att.note.ges.tablature</a> (@tab.string)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.ges.tablature.html">att.note.ges.tablature</a> (@tab.string)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

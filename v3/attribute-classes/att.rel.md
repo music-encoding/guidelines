@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.rel"
 
 ---
@@ -9,52 +10,35 @@ title: "att.rel"
    <h3 id="att.rel">att.rel</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.rel</span> Attributes specific to bibliographic entity relationships.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes specific to bibliographic entity relationships.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.frbr</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/relation">relation</a> (direct member of att.rel)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relation.html">relation</a> (direct member of att.rel)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@rel</span>
-               <span class="attributeUsage">(required)</span>
-               <span class="attributeDesc">Describes the relationship between the current entity and the target entity. The
-                  values follow FRBR (see
-                  http://www.ifla.org/files/assets/cataloguing/frbr/frbr_2008.pdf).
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FRBRRELATIONSHIP">data.FRBRRELATIONSHIP</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.rel">att.rel</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

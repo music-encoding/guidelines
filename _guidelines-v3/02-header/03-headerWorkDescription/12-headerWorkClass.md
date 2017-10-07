@@ -1,11 +1,12 @@
 ---
 sectionid: headerWorkClass
 title: "Classification"
+version: "v3"
 ---
 
 
 
-The next component of the core [workDesc](/v3/elements/workDesc.html){:.link_odd_elementSpec} element is the [classification](/v3/elements/classification.html){:.link_odd_elementSpec} element. This element is used to classify a musical text
+The next component of the core [workDesc](/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec} element is the [classification](/{{ page.version }}/elements/classification.html){:.link_odd_elementSpec} element. This element is used to classify a musical text
 according to one or more of the following methods:
 
 
@@ -21,14 +22,14 @@ The following elements are provided for this purpose:
 
 
 
-{% include specDesc.html key="termList" atts="" %}
-{% include specDesc.html key="classCode" atts="" %}
+{% include specDesc.html version=page.version elem="termList" atts="" %}
+{% include specDesc.html version=page.version elem="classCode" atts="" %}
 
 
 
-The [termList](/v3/elements/termList.html){:.link_odd_elementSpec} element categorizes an individual text by supplying a
+The [termList](/{{ page.version }}/elements/termList.html){:.link_odd_elementSpec} element categorizes an individual text by supplying a
 set of terms which may describe its topic or subject matter, its physical or intellectual
-form, date, etc. Each term is indicated by a [term](/v3/elements/term.html){:.link_odd_elementSpec} element. In some
+form, date, etc. Each term is indicated by a [term](/{{ page.version }}/elements/term.html){:.link_odd_elementSpec} element. In some
 schemes, the order of items in the list is significant, for example, from major topic
 to
 minor; in others, the list has an organized substructure of its own. No recommendations
@@ -52,7 +53,7 @@ means of an identifier, to the classification scheme from which it is drawn.
 
 {% include plainExample.html example="./v3/examples/header/header-sample073.xml" valid="true" %}
 
-Alternatively, **@classcode** may be used on [termList](/v3/elements/termList.html){:.link_odd_elementSpec} when all
+Alternatively, **@classcode** may be used on [termList](/{{ page.version }}/elements/termList.html){:.link_odd_elementSpec} when all
 the contained terms come from the same source.
 
 {% include plainExample.html example="./v3/examples/header/header-sample074.xml" valid="true" %}

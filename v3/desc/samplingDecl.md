@@ -1,8 +1,0 @@
----
-desc: "samplingDecl"
-type: "elementSpec"
----
-
-(sampling declaration) – Contains a prose description of the rationale and methods
-used
-in sampling texts in the creation of a corpus or collection.

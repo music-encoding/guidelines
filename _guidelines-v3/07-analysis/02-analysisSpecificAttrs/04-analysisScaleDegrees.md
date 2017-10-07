@@ -1,13 +1,14 @@
 ---
 sectionid: analysisScaleDegrees
 title: "Scale Degrees"
+version: "v3"
 ---
 
 
 
 
 
-{% include specDesc.html key="att.harmonicfunction" atts="deg" %}
+{% include specDesc.html version=page.version elem="att.harmonicfunction" atts="att.harmonicfunction/deg" %}
 
 
 

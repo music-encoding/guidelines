@@ -1,7 +1,0 @@
----
-desc: "att.extsym"
-type: "classSpec"
----
-
-Attributes used to associated MEI features with corresponding glyphs in an
-externally-defined standard such as SMuFL.

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layerDef.log.cmn"
 
 ---
@@ -9,26 +10,24 @@ title: "att.layerDef.log.cmn"
    <h3 id="att.layerDef.log.cmn">att.layerDef.log.cmn</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.layerDef.log.cmn</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.layerDef.log">att.layerDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.layerDef.log.html">att.layerDef.log</a>)
                   </span>
                </div>
             </div>
@@ -36,40 +35,13 @@ title: "att.layerDef.log.cmn"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@beam.group</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides an example of how automated beaming (including secondary beams) is to be
-                  performed.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@beam.rests</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates whether automatically-drawn beams should include rests shorter than a
-                  quarter note duration.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.log">att.beaming.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

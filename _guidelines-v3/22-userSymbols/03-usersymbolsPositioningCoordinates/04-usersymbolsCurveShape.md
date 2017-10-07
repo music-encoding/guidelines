@@ -1,6 +1,7 @@
 ---
 sectionid: usersymbolsCurveShape
 title: "Curve Shape"
+version: "v3"
 ---
 
 
@@ -19,7 +20,7 @@ curve with two inner control points. The coordinates are given by a space separa
 list,
 first x and y offsets for the first control point, then x and y offsets for the second
 one.
-The x and y offsets are given in staff units (or inside the context of [symbolDef](/v3/elements/symbolDef.html){:.link_odd_elementSpec} in abstract units). The offsets for the first inner control point are
+The x and y offsets are given in staff units (or inside the context of [symbolDef](/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} in abstract units). The offsets for the first inner control point are
 relative to the start point, the ones for the second inner control point are relative
 to the
 end point.
@@ -40,7 +41,7 @@ from start
 to end), negative ones to the right.
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/bulge.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/usersymbols/bulge.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 58. Rendering a bulge attribute with value "-2 1"</figcaption>
 </figure>
 The interpolation algorithm used by the rendering application is implementation

@@ -1,0 +1,2 @@
+Holds a short phrase describing the reason for missing textual material (gap), why
+material is supplied (supplied), or why transcription is difficult (unclear).

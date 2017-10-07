@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.name"
 
 ---
@@ -9,189 +10,53 @@ title: "att.name"
    <h3 id="att.name">att.name</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.name</span> Attributes shared by names.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes shared by names.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/repository">repository</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/styleName">styleName</a> (direct members of att.name)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/addName.html">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bloc.html">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/country.html">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/district.html">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/famName.html">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/foreName.html">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genName.html">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogFeat.html">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogName.html">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/name.html">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/nameLink.html">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/periodName.html">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/region.html">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/repository.html">repository</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/roleName.html">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/settlement.html">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/styleName.html">styleName</a> (direct members of att.name)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@authURI</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">The web-accessible location of the controlled vocabulary from which the value is
-                  taken.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@authority</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">A name or label associated with the controlled vocabulary from which the value is
-                  taken.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.authorized">att.authorized</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@codedval</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">a value that represents or identifies the element content. May serve as a primary
-                  key in a web-accessible database identified by the authURI attribute.
-               </span>
-               One or more values of datatype 
-               <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.canonical">att.canonical</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@enddate</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains the end point of a date range in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@isodate</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides the value of a textual date in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@nonfiling</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the number of initial characters (such as those constituing an article or
-                  preposition) that should not be used for sorting a title or name.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.filing">att.filing</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@notafter</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains an upper boundary for an uncertain date in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@notbefore</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@nymref</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to record a pointer to the regularized form of the name elsewhere in the
-                  document.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.name">att.name</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@role</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to specify further information about the entity referenced by this name, for
-                  example, the occupation of a person or the status of a place. Use a standard value
-                  whenever possible.
-               </span>
-               Value is plain text.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.name">att.name</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@startdate</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains the starting point of a date range in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.datable">att.datable</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -361,7 +226,7 @@ title: "att.name"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

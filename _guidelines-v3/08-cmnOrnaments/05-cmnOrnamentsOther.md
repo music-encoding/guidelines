@@ -1,18 +1,19 @@
 ---
 sectionid: cmnOrnamentsOther
 title: "Other Ornaments"
+version: "v3"
 ---
 
 
 
 CMN ornaments that are not mordents, trills, or turns can be encoded with a generic
-[ornam](/v3/elements/ornam.html){:.link_odd_elementSpec}.
+[ornam](/{{ page.version }}/elements/ornam.html){:.link_odd_elementSpec}.
 
 This element allows the encoder to represent ornaments as textual strings (e.g. with
 a
 Unicode symbol) or with a user defined symbol. Chromatic auxiliaries can be represented
 with
-**@accidlower** and **@accidupper**. The [ornam](/v3/elements/ornam.html){:.link_odd_elementSpec} element can
+**@accidlower** and **@accidupper**. The [ornam](/{{ page.version }}/elements/ornam.html){:.link_odd_elementSpec} element can
 also be a control element. That is, it can be linked via its attributes to other events.
 The
 starting point of the directive may be indicated by either a tstamp, tstamp.ges, tstamp.real
@@ -24,7 +25,7 @@ For example, Johann Sebastian Bach used non-standard ornaments in the *Klavierb�
 für Wilhelm Friedemann Bach*:
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 35. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm
       Friedemann Bach
    </figcaption>
@@ -36,5 +37,5 @@ adopting the Unicode code-points defined by the SMuFL standard:
 {% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" %}
 
 A resolution, or expansion of the ornament can be provided as discussed in 
-<a class="link_ptr" title="Special Cases" href="/v3/guidelines/cmnOrnaments.html#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below.
+<a class="link_ptr" title="Special Cases" href="/{{ page.version }}/guidelines/cmnOrnaments.html#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below.
 

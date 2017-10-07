@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.numbered"
 
 ---
@@ -9,38 +10,36 @@ title: "att.numbered"
    <h3 id="att.numbered">att.numbered</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.numbered</span> Attributes that record numbers to be displayed with a feature.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record numbers to be displayed with a feature.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bTrem.html">bTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bTrem.log">att.bTrem.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.bTrem.log.html">att.bTrem.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRest.html">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRest.log">att.multiRest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multiRest.log.html">att.multiRest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRpt">multiRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRpt.html">multiRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRpt.log">att.multiRpt.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multiRpt.log.html">att.multiRpt.log</a>)
                   </span>
                </div>
             </div>
@@ -48,25 +47,13 @@ title: "att.numbered"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@num</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records a number or count accompanying a notational feature.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.numbered">att.numbered</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

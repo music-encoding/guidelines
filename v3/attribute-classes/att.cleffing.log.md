@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.cleffing.log"
 
 ---
@@ -9,33 +10,32 @@ title: "att.cleffing.log"
    <h3 id="att.cleffing.log">att.cleffing.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.cleffing.log</span> Used by staffDef and scoreDef to provide default values for attributes in the logical
+         <td colspan="2" class="wovenodd-col2">Used by staffDef and scoreDef to provide default values for attributes in the logical
             domain related to clefs.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.log.html">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -43,62 +43,13 @@ title: "att.cleffing.log"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@clef.dis</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the amount of octave displacement to be applied to the clef.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@clef.dis.place</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the direction of octave displacement to be applied to the clef.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PLACE">data.PLACE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@clef.line</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains a default value for the position of the clef. The value must be in the
-                  range between 1 and the number of lines on the staff. The numbering of lines starts
-                  with
-                  the lowest line of the staff.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFLINE">data.CLEFLINE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@clef.shape</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Encodes a value for the clef symbol.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFSHAPE">data.CLEFSHAPE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.cleffing.log">att.cleffing.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

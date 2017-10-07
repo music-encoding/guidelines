@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.RATIO"
 
 ---
@@ -9,19 +10,17 @@ title: "data.RATIO"
    <h3 id="data.RATIO">data.RATIO</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.RATIO</span> A ratio, i.e., [0-9]+(\.?[0-9]*)?:[0-9]+(\.?[0-9]*)? For example, "40:7.2319".
-         </td>
+         <td colspan="2" class="wovenodd-col2">A ratio, i.e., [0-9]+(\.?[0-9]*)?:[0-9]+(\.?[0-9]*)? For example, "40:7.2319".</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -29,7 +28,7 @@ title: "data.RATIO"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

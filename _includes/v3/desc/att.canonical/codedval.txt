@@ -1,0 +1,2 @@
+a value that represents or identifies the element content. May serve as a primary
+key in a web-accessible database identified by the authURI attribute.

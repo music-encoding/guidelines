@@ -1,0 +1,1 @@
+Color of beams, including those associated with tuplets.

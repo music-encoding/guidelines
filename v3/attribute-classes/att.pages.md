@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pages"
 
 ---
@@ -9,26 +10,24 @@ title: "att.pages"
    <h3 id="att.pages">att.pages</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.pages</span> Attributes that record page-level layout information.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record page-level layout information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -36,108 +35,13 @@ title: "att.pages"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@page.botmar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the amount of whitespace at the bottom of a page.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@page.height</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the height of the page; may be expressed in real-world units or staff
-                  steps.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@page.leftmar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the amount of whitespace at the left side of a page.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@page.panels</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the number of logical pages to be rendered on a single physical
-                  page.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PAGE.PANELS">data.PAGE.PANELS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@page.rightmar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the amount of whitespace at the right side of a page.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@page.scale</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates how the page should be scaled when rendered.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PGSCALE">data.PGSCALE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@page.topmar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the amount of whitespace at the top of a page.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@page.width</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the width of the page; may be expressed in real-world units or staff
-                  steps.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pages">att.pages</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

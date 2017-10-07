@@ -1,7 +1,0 @@
----
-desc: "data.BARRENDITION"
-type: "macroSpec"
----
-
-Renderings of bar lines. Some values correspond to the Western Musical Symbols portion
-of the Unicode Standard.

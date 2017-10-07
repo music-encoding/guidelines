@@ -1,7 +1,0 @@
----
-desc: "when"
-type: "elementSpec"
----
-
-Indicates a point in time either absolutely (using the absolute attribute), or relative
-to another when element (using the since, interval and inttype attributes).

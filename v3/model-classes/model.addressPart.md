@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.addressPart"
 
 ---
@@ -9,51 +10,49 @@ title: "model.addressPart"
    <h3 id="model.addressPart">model.addressPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.addressPart</span> Groups elements used as part of a physical address.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements used as part of a physical address.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.namesdates</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/address">address</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/address.html">address</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/postBox">postBox</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/postCode">postCode</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/street">street</a> (direct members of model.addressPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/postBox.html">postBox</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/postCode.html">postCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/street.html">street</a> (direct members of model.addressPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/settlement">settlement</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/bloc.html">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/country.html">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/district.html">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/geogFeat.html">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/region.html">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/settlement.html">settlement</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/model.geogNamePart">model.geogNamePart</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.geogNamePart.html">model.geogNamePart</a>)
                   </span>
                </div>
             </div>
@@ -61,7 +60,7 @@ title: "model.addressPart"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

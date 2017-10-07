@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.clefshape"
 
 ---
@@ -9,26 +10,24 @@ title: "att.clefshape"
    <h3 id="att.clefshape">att.clefshape</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.clefshape</span> Attributes that record the shape of a clef.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record the shape of a clef.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/clef">clef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clef.html">clef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.clef.log">att.clef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.clef.log.html">att.clef.log</a>)
                   </span>
                </div>
             </div>
@@ -36,25 +35,13 @@ title: "att.clefshape"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@shape</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes a clef's shape.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.CLEFSHAPE">data.CLEFSHAPE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.clefshape">att.clefshape</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

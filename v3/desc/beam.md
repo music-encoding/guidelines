@@ -1,7 +1,0 @@
----
-desc: "beam"
-type: "elementSpec"
----
-
-A container for a series of explicitly beamed events that begins and ends entirely
-within a measure.

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.origin.layerident"
 
 ---
@@ -9,26 +10,24 @@ title: "att.origin.layerident"
    <h3 id="att.origin.layerident">att.origin.layerident</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.origin.layerident</span> Attributes that identify the layer associated with a distant feature.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that identify the layer associated with a distant feature.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cpMark.html">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.cpMark.log">att.cpMark.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cpMark.log.html">att.cpMark.log</a>)
                   </span>
                </div>
             </div>
@@ -36,25 +35,13 @@ title: "att.origin.layerident"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@origin.layer</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">identifies the layer on which referenced notation occurs.</span>
-               One or more of 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.origin.layerident">att.origin.layerident</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

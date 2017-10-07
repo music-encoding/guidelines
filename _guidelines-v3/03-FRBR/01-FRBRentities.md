@@ -1,6 +1,7 @@
 ---
 sectionid: FRBRentities
 title: "FRBR Entities in MEI"
+version: "v3"
 ---
 
 
@@ -10,41 +11,41 @@ entities:
 
 
 
-{% include specDesc.html key="work" atts="" %}
-{% include specDesc.html key="expression" atts="" %}
-{% include specDesc.html key="source" atts="" %}
-{% include specDesc.html key="item" atts="" %}
+{% include specDesc.html version=page.version elem="work" atts="" %}
+{% include specDesc.html version=page.version elem="expression" atts="" %}
+{% include specDesc.html version=page.version elem="source" atts="" %}
+{% include specDesc.html version=page.version elem="item" atts="" %}
 
 
 
-The names of the MEI entities generally follow those of FRBR: the [work](/v3/elements/work.html){:.link_odd_elementSpec}
-element is a container for description at the FRBR "work" level, [expression](/v3/elements/expression.html){:.link_odd_elementSpec} is for description at the FRBR "expression" level, and [item](/v3/elements/item.html){:.link_odd_elementSpec} holds FRBR "item" level description. The [source](/v3/elements/source.html){:.link_odd_elementSpec} element,
+The names of the MEI entities generally follow those of FRBR: the [work](/{{ page.version }}/elements/work.html){:.link_odd_elementSpec}
+element is a container for description at the FRBR "work" level, [expression](/{{ page.version }}/elements/expression.html){:.link_odd_elementSpec} is for description at the FRBR "expression" level, and [item](/{{ page.version }}/elements/item.html){:.link_odd_elementSpec} holds FRBR "item" level description. The [source](/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} element,
 however, is the MEI equivalent to FRBR "manifestation" level description. The name
 "source" is
 used because it is both shorter and more familiar than "manifestation" to users of
 existing
 bibliographic markup schemes.
 
-The [work](/v3/elements/work.html){:.link_odd_elementSpec} element has an optional child element to hold the expression
+The [work](/{{ page.version }}/elements/work.html){:.link_odd_elementSpec} element has an optional child element to hold the expression
 elements:
 
 
 
-{% include specDesc.html key="expressionList" atts="" %}
+{% include specDesc.html version=page.version elem="expressionList" atts="" %}
 
 
 
-As [expressionList](/v3/elements/expressionList.html){:.link_odd_elementSpec} is a container element for descriptions of different
-expressions of the same work, it may contain only [expression](/v3/elements/expression.html){:.link_odd_elementSpec}
+As [expressionList](/{{ page.version }}/elements/expressionList.html){:.link_odd_elementSpec} is a container element for descriptions of different
+expressions of the same work, it may contain only [expression](/{{ page.version }}/elements/expression.html){:.link_odd_elementSpec}
 elements.
 
-The content model of [expression](/v3/elements/expression.html){:.link_odd_elementSpec} is similar to that of [work](/v3/elements/work.html){:.link_odd_elementSpec}. It does not, however, permit [expressionList](/v3/elements/expressionList.html){:.link_odd_elementSpec} and [audience](/v3/elements/audience.html){:.link_odd_elementSpec} elements. But it adds elements that aid identification and
+The content model of [expression](/{{ page.version }}/elements/expression.html){:.link_odd_elementSpec} is similar to that of [work](/{{ page.version }}/elements/work.html){:.link_odd_elementSpec}. It does not, however, permit [expressionList](/{{ page.version }}/elements/expressionList.html){:.link_odd_elementSpec} and [audience](/{{ page.version }}/elements/audience.html){:.link_odd_elementSpec} elements. But it adds elements that aid identification and
 description of specific versions of a work:
 
 
 
-{% include specDesc.html key="extent" atts="" %}
-{% include specDesc.html key="scoreFormat" atts="" %}
+{% include specDesc.html version=page.version elem="extent" atts="" %}
+{% include specDesc.html version=page.version elem="scoreFormat" atts="" %}
 
 
 
@@ -56,7 +57,7 @@ title element may be omitted with the assumption that it will be inherited from 
 work. If
 no title is provided for an expression, distinguishing characteristics must be provided
 in
-other elements, such as [perfMedium](/v3/elements/perfMedium.html){:.link_odd_elementSpec}, as in the following example:
+other elements, such as [perfMedium](/{{ page.version }}/elements/perfMedium.html){:.link_odd_elementSpec}, as in the following example:
 
 {% include plainExample.html example="./v3/examples/FRBR/FRBR-sample079.xml" valid="true" %}
 
@@ -77,7 +78,7 @@ often a good source of this kind of descriptive text.
 
 
 
-{% include specDesc.html key="itemList" atts="" %}
+{% include specDesc.html version=page.version elem="itemList" atts="" %}
 
 
 
@@ -85,7 +86,7 @@ The itemList element provides functionality similar to that of expressionList; t
 is, it
 can be used to group descriptions of individual items (exemplars) of the parent source.
 Just
-like [expressionList](/v3/elements/expressionList.html){:.link_odd_elementSpec}, which can only hold [expression](/v3/elements/expression.html){:.link_odd_elementSpec} sub-components, [itemList](/v3/elements/itemList.html){:.link_odd_elementSpec} may only contain [item](/v3/elements/item.html){:.link_odd_elementSpec} elements.
+like [expressionList](/{{ page.version }}/elements/expressionList.html){:.link_odd_elementSpec}, which can only hold [expression](/{{ page.version }}/elements/expression.html){:.link_odd_elementSpec} sub-components, [itemList](/{{ page.version }}/elements/itemList.html){:.link_odd_elementSpec} may only contain [item](/{{ page.version }}/elements/item.html){:.link_odd_elementSpec} elements.
 
 {% include plainExample.html example="./v3/examples/FRBR/FRBR-sample082.xml" valid="true" %}
 

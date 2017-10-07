@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.duration.musical"
 
 ---
@@ -9,74 +10,72 @@ title: "att.duration.musical"
    <h3 id="att.duration.musical">att.duration.musical</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.duration.musical</span> Attributes that express duration in musical terms.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that express duration in musical terms.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bTrem.html">bTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bTrem.log">att.bTrem.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.bTrem.log.html">att.bTrem.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.log.html">att.chord.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fTrem.html">fTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fTrem.log">att.fTrem.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fTrem.log.html">att.fTrem.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/halfmRpt">halfmRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/halfmRpt.html">halfmRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.halfmRpt.log">att.halfmRpt.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.halfmRpt.log.html">att.halfmRpt.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.log">att.mRest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRest.log.html">att.mRest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mSpace">mSpace</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mSpace.html">mSpace</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mSpace.log">att.mSpace.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mSpace.log.html">att.mSpace.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.log.html">att.note.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.log">att.rest.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.log.html">att.rest.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/space">space</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/space.html">space</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.space.log">att.space.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.space.log.html">att.space.log</a>)
                   </span>
                </div>
             </div>
@@ -84,27 +83,13 @@ title: "att.duration.musical"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@dur</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the duration of a feature using the relative durational values provided by
-                  the data.DURATION datatype.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION">data.DURATION</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.duration.musical">att.duration.musical</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

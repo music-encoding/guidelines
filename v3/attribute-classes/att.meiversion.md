@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meiversion"
 
 ---
@@ -9,53 +10,38 @@ title: "att.meiversion"
    <h3 id="att.meiversion">att.meiversion</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.meiversion</span> Attributes that record the version of MEI in use.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record the version of MEI in use.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mei">mei</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meiCorpus">meiCorpus</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meiHead">meiHead</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/music">music</a> (direct members of att.meiversion)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mei.html">mei</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiHead.html">meiHead</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/music.html">music</a> (direct members of att.meiversion)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@meiversion</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies a generic MEI version label.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">3.0.0</span>" 
-               <i>(This version of MEI.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meiversion">att.meiversion</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

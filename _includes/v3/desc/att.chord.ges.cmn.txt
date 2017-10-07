@@ -1,0 +1,1 @@
+Gestural domain attributes for CMN features.

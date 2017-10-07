@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.horizontalalign"
 
 ---
@@ -9,29 +10,27 @@ title: "att.horizontalalign"
    <h3 id="att.horizontalalign">att.horizontalalign</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.horizontalalign</span> Attributes that record horizontal alignment.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record horizontal alignment.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rend">rend</a> (direct member of att.horizontalalign)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rend.html">rend</a> (direct member of att.horizontalalign)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/syl">syl</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syl.html">syl</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.syl.vis">att.syl.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.syl.vis.html">att.syl.vis</a>)
                   </span>
                </div>
             </div>
@@ -39,25 +38,13 @@ title: "att.horizontalalign"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@halign</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records horizontal alignment.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.HORIZONTALALIGNMENT">data.HORIZONTALALIGNMENT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.horizontalalign">att.horizontalalign</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

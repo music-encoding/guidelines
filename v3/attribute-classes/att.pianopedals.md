@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pianopedals"
 
 ---
@@ -9,43 +10,42 @@ title: "att.pianopedals"
    <h3 id="att.pianopedals">att.pianopedals</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.pianopedals</span> Used by scoreDef and staffDef to provide default description of piano pedal
+         <td colspan="2" class="wovenodd-col2">Used by scoreDef and staffDef to provide default description of piano pedal
             rendition.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.cmn">att.scoreDef.vis.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis.cmn">att.staffDef.vis.cmn</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.cmn">att.staffDef.vis.cmn</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -53,36 +53,13 @@ title: "att.pianopedals"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@pedal.style</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Determines whether piano pedal marks should be rendered as lines or as terms.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">line</span>" 
-               <i>(Continuous line with start and end positions rendered by vertical bars and
-                  bounces shown by upward-pointing "blips".)
-               </i>,  "
-               <span style="font-weight: 500;">pedstar</span>" 
-               <i>(Pedal down and half pedal rendered with "Ped.", pedal up rendered by "*", pedal
-                  "bounce" rendered with "* Ped.".)
-               </i>,  "
-               <span style="font-weight: 500;">altpedstar</span>" 
-               <i>(Pedal up and down indications same as with "pedstar", but bounce is rendered
-                  with "Ped." only.)
-               </i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pianopedals">att.pianopedals</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

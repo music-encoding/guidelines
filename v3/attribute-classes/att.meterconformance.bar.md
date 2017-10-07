@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterconformance.bar"
 
 ---
@@ -9,33 +10,32 @@ title: "att.meterconformance.bar"
    <h3 id="att.meterconformance.bar">att.meterconformance.bar</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.meterconformance.bar</span> Attributes that provide information about a measure's conformance to the prevailing
+         <td colspan="2" class="wovenodd-col2">Attributes that provide information about a measure's conformance to the prevailing
             meter.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/barLine">barLine</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/barLine.html">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.barLine.log">att.barLine.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.barLine.log.html">att.barLine.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.measure.log">att.measure.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.measure.log.html">att.measure.log</a>)
                   </span>
                </div>
             </div>
@@ -43,43 +43,13 @@ title: "att.meterconformance.bar"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@control</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates whether or not a bar line is "controlling"; that is, if it indicates a
-                  point of alignment across all the parts. Bar lines within a score are usually
-                  controlling; that is, they "line up". Bar lines within parts may or may not be
-                  controlling. When applied to &lt;measure&gt;, this attribute indicates the nature of the
-                  right barline but not the left.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@metcon</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the relationship between the content of a measure and the prevailing
-                  meter.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterconformance.bar">att.meterconformance.bar</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

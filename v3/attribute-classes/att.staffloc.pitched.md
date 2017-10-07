@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffloc.pitched"
 
 ---
@@ -9,60 +10,58 @@ title: "att.staffloc.pitched"
    <h3 id="att.staffloc.pitched">att.staffloc.pitched</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.staffloc.pitched</span> Attributes that identify location on a staff in terms of pitch and octave.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that identify location on a staff in terms of pitch and octave.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.accid.vis.mensural">att.accid.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.vis.mensural">att.accid.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.accid.vis">att.accid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.vis.html">att.accid.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.dot.vis.mensural">att.dot.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dot.vis.mensural">att.dot.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/dot">dot</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dot.html">dot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.dot.vis">att.dot.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dot.vis.html">att.dot.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.mRest.vis">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRest.vis.html">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRest.html">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.multiRest.vis">att.multiRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multiRest.vis.html">att.multiRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.rest.vis">att.rest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.vis.html">att.rest.vis</a>)
                   </span>
                </div>
             </div>
@@ -70,36 +69,13 @@ title: "att.staffloc.pitched"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@oloc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records staff location in terms of written octave.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.OCTAVE">data.OCTAVE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@ploc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures staff location in terms of written pitch name.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHNAME">data.PITCHNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffloc.pitched">att.staffloc.pitched</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

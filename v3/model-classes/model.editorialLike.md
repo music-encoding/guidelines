@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.editorialLike"
 
 ---
@@ -9,45 +10,43 @@ title: "model.editorialLike"
    <h3 id="model.editorialLike">model.editorialLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.editorialLike</span> Groups editorial intervention elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups editorial intervention elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/v3/model.choicePart">model.choicePart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.choicePart.html">model.choicePart</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/expan">expan</a> (direct members of model.editorialLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a> (direct members of model.editorialLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

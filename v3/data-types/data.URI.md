@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.URI"
 
 ---
@@ -9,54 +10,52 @@ title: "data.URI"
    <h3 id="data.URI">data.URI</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.URI</span> A Uniform Resource Identifier, see [RFC2396].
-         </td>
+         <td colspan="2" class="wovenodd-col2">A Uniform Resource Identifier, see [RFC2396].</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.alignment">att.alignment</a> (@when), 
-               <a class="link_odd_classSpec" href="/v3/att.altsym">att.altsym</a> (@altsym), 
-               <a class="link_odd_classSpec" href="/v3/att.authorized">att.authorized</a> (@authURI), 
-               <a class="link_odd_classSpec" href="/v3/att.classcodeident">att.classcodeident</a> (@classcode), 
-               <a class="link_odd_classSpec" href="/v3/att.commonPart">att.commonPart</a> (@xml:base), 
-               <a class="link_odd_classSpec" href="/v3/att.common.anl">att.common.anl</a> (@copyof), 
-               <a class="link_odd_classSpec" href="/v3/att.custos.log">att.custos.log</a> (@target), 
-               <a class="link_odd_classSpec" href="/v3/att.datapointing">att.datapointing</a> (@data), 
-               <a class="link_odd_classSpec" href="/v3/att.declaring">att.declaring</a> (@decls), 
-               <a class="link_odd_classSpec" href="/v3/att.facsimile">att.facsimile</a> (@facs), 
-               <a class="link_odd_classSpec" href="/v3/att.handident">att.handident</a> (@hand), 
-               <a class="link_odd_classSpec" href="/v3/att.harm.log">att.harm.log</a> (@chordref), 
-               <a class="link_odd_classSpec" href="/v3/att.instrumentident">att.instrumentident</a> (@instr), 
-               <a class="link_odd_classSpec" href="/v3/att.joined">att.joined</a> (@join), 
-               <a class="link_odd_classSpec" href="/v3/att.layer.log">att.layer.log</a> (@def), 
-               <a class="link_odd_classSpec" href="/v3/att.name">att.name</a> (@nymref), 
-               <a class="link_odd_classSpec" href="/v3/att.origin.startendid">att.origin.startendid</a> (@origin.startid), 
-               <a class="link_odd_classSpec" href="/v3/att.plist">att.plist</a> (@plist), 
-               <a class="link_odd_classSpec" href="/v3/att.pointing">att.pointing</a> (@xlink:role), 
-               <a class="link_odd_classSpec" href="/v3/att.responsibility">att.responsibility</a> (@resp), 
-               <a class="link_odd_classSpec" href="/v3/att.source">att.source</a> (@source), 
-               <a class="link_odd_classSpec" href="/v3/att.staff.log">att.staff.log</a> (@def), 
-               <a class="link_odd_classSpec" href="/v3/att.startendid">att.startendid</a> (@endid), 
-               <a class="link_odd_classSpec" href="/v3/att.startid">att.startid</a> (@startid), 
-               <a class="link_odd_classSpec" href="/v3/handShift">handShift</a>/@new, 
-               <a class="link_odd_classSpec" href="/v3/when">when</a>/@since
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.alignment.html">att.alignment</a> (@when), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.altsym.html">att.altsym</a> (@altsym), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.authorized.html">att.authorized</a> (@authURI), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.classcodeident.html">att.classcodeident</a> (@classcode), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a> (@xml:base), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.common.anl.html">att.common.anl</a> (@copyof), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.custos.log.html">att.custos.log</a> (@target), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a> (@data), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a> (@decls), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a> (@facs), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.handident.html">att.handident</a> (@hand), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.harm.log.html">att.harm.log</a> (@chordref), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.instrumentident.html">att.instrumentident</a> (@instr), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.joined.html">att.joined</a> (@join), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.layer.log.html">att.layer.log</a> (@def), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.name.html">att.name</a> (@nymref), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.origin.startendid.html">att.origin.startendid</a> (@origin.startid), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.plist.html">att.plist</a> (@plist), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a> (@xlink:role), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a> (@resp), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.source.html">att.source</a> (@source), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staff.log.html">att.staff.log</a> (@def), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.startendid.html">att.startendid</a> (@endid), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.startid.html">att.startid</a> (@startid), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/handShift.html">handShift</a>/@new, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/when.html">when</a>/@since
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

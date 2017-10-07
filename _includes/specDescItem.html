@@ -1,0 +1,22 @@
+<div class="tile tile-centered">
+    <div class="tile-icon">
+        <div class="example-tile-icon">
+            <i class="icon icon-file centered"></i>
+        </div>
+    </div>
+    <div class="tile-content">
+        <div class="tile-title">
+            {% if include.att %}
+                @{{ include.att | split: '/' | last }}
+            {% else %}  
+                {{ include.elem }}
+            {% endif %}
+        </div>
+        <div class="tile-subtitle text-gray">
+            {% assign file = include.version | append:'/desc/' | append:include.elem | append:'.txt' %}
+            {% if include.att %}
+                {% assign file = include.version | append:'/desc/' | append:include.att | append:'.txt' %}
+            {% endif %}
+            {% include {{ file | replace: ':', '---' }} %}</div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.locrefLike"
 
 ---
@@ -9,49 +10,47 @@ title: "model.locrefLike"
    <h3 id="model.locrefLike">model.locrefLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.locrefLike</span> Groups elements used for purposes of location and reference.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements used for purposes of location and reference.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.ptrref</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/application">application</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/pgDesc">pgDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/series">series</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/application.html">application</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgDesc.html">pgDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/series.html">series</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/ptr">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/ref">ref</a> (direct members of model.locrefLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ptr.html">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ref.html">ref</a> (direct members of model.locrefLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.meterSig.log"
 
 ---
@@ -9,83 +10,36 @@ title: "att.meterSig.log"
    <h3 id="att.meterSig.log">att.meterSig.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.meterSig.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/meter">meter</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/meterSig">meterSig</a> (direct members of att.meterSig.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meter.html">meter</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSig.html">meterSig</a> (direct members of att.meterSig.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@count</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures the number of beats in a measure, that is, the top number of the meter
-                  signature. It must contain a decimal number or an additive expression that evaluates
-                  to
-                  a decimal number, such as 2+3.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">
-                  a string matching the following regular expression: "\d+(\.\d+)?(\s*\+\s*\d+(\.\d+)?)*"
-                  
-               </span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@sym</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
-                  'C' for common time or 'C' with a slash for cut time.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.METERSIGN">data.METERSIGN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@unit</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains the number indicating the beat unit, that is, the bottom number of the
-                  meter signature.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">decimal</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.meterSig.log">att.meterSig.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

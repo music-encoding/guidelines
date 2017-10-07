@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.grpSym.log"
 
 ---
@@ -9,97 +10,35 @@ title: "att.grpSym.log"
    <h3 id="att.grpSym.log">att.grpSym.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.grpSym.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/grpSym">grpSym</a> (direct member of att.grpSym.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/grpSym.html">grpSym</a> (direct member of att.grpSym.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@endid</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the final element in a sequence of events to which the feature
-                  applies.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startendid">att.startendid</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@level</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the nesting level of staff grouping symbols.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.grpSym.log">att.grpSym.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@startid</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds a reference to the first element in a sequence of events to which the feature
-                  applies.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.startid">att.startid</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@symbol</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the symbol used to group a set of staves.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">brace</span>" 
-               <i>(Curved symbol, i.e., {.)</i>,  "
-               <span style="font-weight: 500;">bracket</span>" 
-               <i>(Square symbol, i.e., [, but with curved/angled top and bottom segments.)</i>,  "
-               <span style="font-weight: 500;">bracketsq</span>" 
-               <i>(Square symbol, i.e., [, with horizontal top and bottom segments.)</i>,  "
-               <span style="font-weight: 500;">line</span>" 
-               <i>(Line symbol, i.e., |, (wide) line without top and bottom curved/horizontal
-                  segments.)
-               </i>,  "
-               <span style="font-weight: 500;">none</span>" 
-               <i>(Grouping symbol missing.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffgroupingsym">att.staffgroupingsym</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -1,0 +1,1 @@
+Holds pitch class information.

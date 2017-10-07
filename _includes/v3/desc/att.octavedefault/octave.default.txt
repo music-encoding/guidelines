@@ -1,0 +1,2 @@
+Contains a default octave specification for use when the first note, rest, chord,
+etc. in a measure does not have an octave value specified.

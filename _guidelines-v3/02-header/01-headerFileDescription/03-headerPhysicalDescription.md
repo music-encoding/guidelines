@@ -1,21 +1,22 @@
 ---
 sectionid: headerPhysicalDescription
 title: "Physical Description of the File"
+version: "v3"
 ---
 
 
 
 The third component of the fileDesc is a description of the physical qualities of
 the file.
-The [extent](/v3/elements/extent.html){:.link_odd_elementSpec} element is provided for this purpose.
+The [extent](/{{ page.version }}/elements/extent.html){:.link_odd_elementSpec} element is provided for this purpose.
 
 
 
-{% include specDesc.html key="extent" atts="" %}
+{% include specDesc.html version=page.version elem="extent" atts="" %}
 
 
 
-The [extent](/v3/elements/extent.html){:.link_odd_elementSpec} element describes the approximate size of a text as stored
+The [extent](/{{ page.version }}/elements/extent.html){:.link_odd_elementSpec} element describes the approximate size of a text as stored
 on some carrier medium, whether digital or non-digital, specified in any convenient
 units.
 
@@ -47,7 +48,7 @@ file may
 be of use for cataloging and other practical purposes. Because the measurement and
 expression of file size is fraught with difficulties, only very general recommendations
 are
-possible; the element [extent](/v3/elements/extent.html){:.link_odd_elementSpec} should contain a phrase indicating the
+possible; the element [extent](/{{ page.version }}/elements/extent.html){:.link_odd_elementSpec} should contain a phrase indicating the
 size or approximate size of the computer file in one of the following ways:
 
 

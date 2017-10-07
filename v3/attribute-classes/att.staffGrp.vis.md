@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.staffGrp.vis"
 
 ---
@@ -9,99 +10,35 @@ title: "att.staffGrp.vis"
    <h3 id="att.staffGrp.vis">att.staffGrp.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.staffGrp.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffGrp">staffGrp</a> (direct member of att.staffGrp.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffGrp.html">staffGrp</a> (direct member of att.staffGrp.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@barthru</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates whether bar lines go across the space between staves (true) or are only
-                  drawn across the lines of each staff (false).
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffGrp.vis">att.staffGrp.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@label.abbr</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a label for a group of staves on pages after the first page. Usually, this
-                  label takes an abbreviated form.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.labels.addl">att.labels.addl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@symbol</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the symbol used to group a set of staves.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">brace</span>" 
-               <i>(Curved symbol, i.e., {.)</i>,  "
-               <span style="font-weight: 500;">bracket</span>" 
-               <i>(Square symbol, i.e., [, but with curved/angled top and bottom segments.)</i>,  "
-               <span style="font-weight: 500;">bracketsq</span>" 
-               <i>(Square symbol, i.e., [, with horizontal top and bottom segments.)</i>,  "
-               <span style="font-weight: 500;">line</span>" 
-               <i>(Line symbol, i.e., |, (wide) line without top and bottom curved/horizontal
-                  segments.)
-               </i>,  "
-               <span style="font-weight: 500;">none</span>" 
-               <i>(Grouping symbol missing.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.staffgroupingsym">att.staffgroupingsym</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@visible</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates if a feature should be rendered when the notation is presented graphically
-                  or sounded when it is presented in an aural form.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

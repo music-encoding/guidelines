@@ -1,0 +1,1 @@
+Indicates where the key lies in the circle of fifths.

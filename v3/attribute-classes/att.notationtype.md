@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.notationtype"
 
 ---
@@ -9,26 +10,24 @@ title: "att.notationtype"
    <h3 id="att.notationtype">att.notationtype</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.notationtype</span> Attributes that provide for classification of notation.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that provide for classification of notation.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.log.html">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -36,40 +35,13 @@ title: "att.notationtype"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@notationsubtype</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides any sub-classification of the notation contained or described by the
-                  element, additional to that given by its notationtype attribute.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">NMTOKEN</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.notationtype">att.notationtype</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@notationtype</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains classification of the notation contained or described by the element
-                  bearing this attribute.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.NOTATIONTYPE">data.NOTATIONTYPE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.notationtype">att.notationtype</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -185,7 +157,7 @@ title: "att.notationtype"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.LINEWIDTHTERM"
 
 ---
@@ -9,29 +10,27 @@ title: "data.LINEWIDTHTERM"
    <h3 id="data.LINEWIDTHTERM">data.LINEWIDTHTERM</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.LINEWIDTHTERM</span> Relative width of a line.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Relative width of a line.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.LINEWIDTH">data.LINEWIDTH</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -46,7 +45,7 @@ title: "data.LINEWIDTHTERM"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

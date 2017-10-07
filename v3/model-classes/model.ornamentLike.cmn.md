@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.ornamentLike.cmn"
 
 ---
@@ -9,45 +10,43 @@ title: "model.ornamentLike.cmn"
    <h3 id="model.ornamentLike.cmn">model.ornamentLike.cmn</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.ornamentLike.cmn</span> Groups CMN ornament elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups CMN ornament elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmnOrnaments</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/v3/model.controleventLike.cmn">model.controleventLike.cmn</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.controleventLike.cmn.html">model.controleventLike.cmn</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/mordent">mordent</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/trill">trill</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/turn">turn</a> (direct members of model.ornamentLike.cmn)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mordent.html">mordent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trill.html">trill</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/turn.html">turn</a> (direct members of model.ornamentLike.cmn)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

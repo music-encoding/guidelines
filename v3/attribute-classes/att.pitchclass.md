@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.pitchclass"
 
 ---
@@ -9,26 +10,24 @@ title: "att.pitchclass"
    <h3 id="att.pitchclass">att.pitchclass</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.pitchclass</span> Attributes that describe pitch class.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe pitch class.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.analysis</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.note.anl">att.note.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.anl.html">att.note.anl</a>)
                   </span>
                </div>
             </div>
@@ -36,25 +35,13 @@ title: "att.pitchclass"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@pclass</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds pitch class information.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.PITCHCLASS">data.PITCHCLASS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.pitchclass">att.pitchclass</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

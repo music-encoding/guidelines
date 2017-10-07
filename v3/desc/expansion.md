@@ -1,7 +1,0 @@
----
-desc: "expansion"
-type: "elementSpec"
----
-
-Indicates how a section may be programmatically expanded into its 'through-composed'
-form.

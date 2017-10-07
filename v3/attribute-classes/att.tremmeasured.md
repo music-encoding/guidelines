@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.tremmeasured"
 
 ---
@@ -9,32 +10,30 @@ title: "att.tremmeasured"
    <h3 id="att.tremmeasured">att.tremmeasured</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.tremmeasured</span> Attributes that describe measured tremolandi.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe measured tremolandi.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/bTrem">bTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bTrem.html">bTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.bTrem.ges">att.bTrem.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.bTrem.ges.html">att.bTrem.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/fTrem">fTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fTrem.html">fTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.fTrem.ges">att.fTrem.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fTrem.ges.html">att.fTrem.ges</a>)
                   </span>
                </div>
             </div>
@@ -42,25 +41,13 @@ title: "att.tremmeasured"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@measperf</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">The performed duration of an individual note in a measured tremolo.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.DURATION.cmn">data.DURATION.cmn</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.tremmeasured">att.tremmeasured</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

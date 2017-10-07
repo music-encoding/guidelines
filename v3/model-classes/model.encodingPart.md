@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "model.encodingPart"
 
 ---
@@ -9,20 +10,19 @@ title: "model.encodingPart"
    <h3 id="model.encodingPart">model.encodingPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.encodingPart</span> Groups elements that may appear as part of information regarding the encoding
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of information regarding the encoding
             process.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -30,15 +30,15 @@ title: "model.encodingPart"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/appInfo">appInfo</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/v3/samplingDecl">samplingDecl</a> (direct members of model.encodingPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/appInfo.html">appInfo</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a> (direct members of model.encodingPart)
                </div>
             </div>
          </td>

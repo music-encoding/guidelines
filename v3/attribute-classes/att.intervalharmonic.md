@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.intervalharmonic"
 
 ---
@@ -9,34 +10,32 @@ title: "att.intervalharmonic"
    <h3 id="att.intervalharmonic">att.intervalharmonic</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.intervalharmonic</span> Attributes that describe harmonic intervals.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe harmonic intervals.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.analysis</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/chordMember">chordMember</a> (direct member of att.intervalharmonic)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chordMember.html">chordMember</a> (direct member of att.intervalharmonic)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/harm.html">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/v3/att.harm.anl">att.harm.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.harm.anl.html">att.harm.anl</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/v3/att.intervallicdesc">att.intervallicdesc</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.intervallicdesc">att.intervallicdesc</a> (no elements directly inheriting from this class)
                   </span>
                </div>
             </div>
@@ -44,25 +43,13 @@ title: "att.intervalharmonic"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@inth</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Encodes the harmonic interval between pitches occurring at the same time.</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/v3/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.intervalharmonic">att.intervalharmonic</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

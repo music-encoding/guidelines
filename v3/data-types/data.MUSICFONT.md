@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.MUSICFONT"
 
 ---
@@ -9,29 +10,27 @@ title: "data.MUSICFONT"
    <h3 id="data.MUSICFONT">data.MUSICFONT</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MUSICFONT</span> Music font family.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Music font family.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/v3/att.notationstyle">att.notationstyle</a> (@music.name)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.notationstyle.html">att.notationstyle</a> (@music.name)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

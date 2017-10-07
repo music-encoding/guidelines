@@ -1,6 +1,7 @@
 ---
 sectionid: cmnInstr
 title: "Instrument-specific Symbols in CMN"
+version: "v3"
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 sectionid: facsimileElements
 title: "Elements of the Facsimile Module"
+version: "v3"
 ---
 
 
@@ -9,42 +10,42 @@ This module makes available the following elements for encoding facsimiles:
 
 
 
-{% include specDesc.html key="facsimile" atts="" %}
-{% include specDesc.html key="surface" atts="" %}
-{% include specDesc.html key="zone" atts="" %}
+{% include specDesc.html version=page.version elem="facsimile" atts="" %}
+{% include specDesc.html version=page.version elem="surface" atts="" %}
+{% include specDesc.html version=page.version elem="zone" atts="" %}
 
 
 
-These element are used to add a separate subtree to MEI, starting with the [facsimile](/v3/elements/facsimile.html){:.link_odd_elementSpec} element inside [music](/v3/elements/music.html){:.link_odd_elementSpec}, as seen in the following
+These element are used to add a separate subtree to MEI, starting with the [facsimile](/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec} element inside [music](/{{ page.version }}/elements/music.html){:.link_odd_elementSpec}, as seen in the following
 example:
 
 {% include plainExample.html example="./v3/examples/facsimiles/facsimiles-sample230.xml" valid="false" %}
 
 
-It is possible to have more than one [facsimile](/v3/elements/facsimile.html){:.link_odd_elementSpec} element in this
+It is possible to have more than one [facsimile](/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec} element in this
 location. This is especially useful when multiple sources are encoded in the same
 file using
-the mechanisms described in chapter <a class="link_ptr" title="Editorial Markup" href="/v3/guidelines/editTrans.html">11 Editorial Markup</a> of these Guidelines. In this
-case, the **@decls** (declarations) attribute of [facsimile](/v3/elements/facsimile.html){:.link_odd_elementSpec} may be
+the mechanisms described in chapter <a class="link_ptr" title="Editorial Markup" href="/{{ page.version }}/guidelines/editTrans.html">11 Editorial Markup</a> of these Guidelines. In this
+case, the **@decls** (declarations) attribute of [facsimile](/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec} may be
 used to refer to a source defined in the document's header, as seen in the following
 example:
 
 {% include plainExample.html example="./v3/examples/facsimiles/facsimiles-sample231.xml" valid="false" %}
 
 
-Within a [facsimile](/v3/elements/facsimile.html){:.link_odd_elementSpec} element, each page of the source is represented by a
-[surface](/v3/elements/surface.html){:.link_odd_elementSpec} element. Each surface may be assigned an identifying string
+Within a [facsimile](/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec} element, each page of the source is represented by a
+[surface](/{{ page.version }}/elements/surface.html){:.link_odd_elementSpec} element. Each surface may be assigned an identifying string
 utilizing the **@label** attribute. In addition, it may encapsulate more detailed
-metadata about itself in a [figDesc](/v3/elements/figDesc.html){:.link_odd_elementSpec} element. The coordinate space of the
+metadata about itself in a [figDesc](/{{ page.version }}/elements/figDesc.html){:.link_odd_elementSpec} element. The coordinate space of the
 surface may be recorded in abstract terms in the **@ulx**, **@uly**,
-**@lrx**, and **@lry** attributes. For navigation purposes, [surface](/v3/elements/surface.html){:.link_odd_elementSpec} has a **@startid** attribute that accommodates pointing to the first
+**@lrx**, and **@lry** attributes. For navigation purposes, [surface](/{{ page.version }}/elements/surface.html){:.link_odd_elementSpec} has a **@startid** attribute that accommodates pointing to the first
 object appearing on this particular writing surface.
 
 {% include plainExample.html example="./v3/examples/facsimiles/facsimiles-sample232.xml" valid="true" %}
 
 
-Within [surface](/v3/elements/surface.html){:.link_odd_elementSpec} elements, one may nest one or more [graphic](/v3/elements/graphic.html){:.link_odd_elementSpec} elements, each providing a reference to an image file that represents the
-writing surface. Multiple [graphic](/v3/elements/graphic.html){:.link_odd_elementSpec} elements are permitted in order to
+Within [surface](/{{ page.version }}/elements/surface.html){:.link_odd_elementSpec} elements, one may nest one or more [graphic](/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec} elements, each providing a reference to an image file that represents the
+writing surface. Multiple [graphic](/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec} elements are permitted in order to
 accommodate alternative versions (different resolutions or formats, for instance)
 of the
 surface image. In spite of changes in resolution or format, all images must contain
@@ -56,7 +57,7 @@ content, i.e., the entire writing surface.
 
 The preceding markup will provide the basis for most page-turning applications. Often,
 however, it is desirable to focus attention on particular areas of the graphical
-representation of the surface. The [zone](/v3/elements/zone.html){:.link_odd_elementSpec} element fulfills this
+representation of the surface. The [zone](/{{ page.version }}/elements/zone.html){:.link_odd_elementSpec} element fulfills this
 purpose:
 
 {% include plainExample.html example="./v3/examples/facsimiles/facsimiles-sample234.xml" valid="true" %}
@@ -85,28 +86,28 @@ are provided alongside specification of two zones of interest within the surface
 {% include plainExample.html example="./v3/examples/facsimiles/facsimiles-sample235.xml" valid="true" %}
 
 
-A [zone](/v3/elements/zone.html){:.link_odd_elementSpec} element may contain [figDesc](/v3/elements/figDesc.html){:.link_odd_elementSpec} or [graphic](/v3/elements/graphic.html){:.link_odd_elementSpec} elements that provide detailed descriptive information about the
+A [zone](/{{ page.version }}/elements/zone.html){:.link_odd_elementSpec} element may contain [figDesc](/{{ page.version }}/elements/figDesc.html){:.link_odd_elementSpec} or [graphic](/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec} elements that provide detailed descriptive information about the
 zone and additional images, e.g., at a different/higher resolution, of the rectangle
 defined
 by the zone. The data objects contained within the zone may also be specified through
 the use
 of the **@data** attribute, which contains ID references to one more elements in the
-content tree of the MEI file, such as a [note](/v3/elements/note.html){:.link_odd_elementSpec}, [measure](/v3/elements/measure.html){:.link_odd_elementSpec}, etc.
+content tree of the MEI file, such as a [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}, [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, etc.
 
 {% include plainExample.html example="./v3/examples/facsimiles/facsimiles-sample236.xml" valid="false" %}
 
 
-Conversely, an element in the content may refer to the [facsimile](/v3/elements/facsimile.html){:.link_odd_elementSpec}
-subtree using its **@facs** attribute, which is made available by the [att.facsimile](/v3/attribute-classes/att.facsimile.html){:.link_odd} attribute class. The last example could therefore be
+Conversely, an element in the content may refer to the [facsimile](/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec}
+subtree using its **@facs** attribute, which is made available by the [att.facsimile](/{{ page.version }}/attribute-classes/att.facsimile.html){:.link_odd} attribute class. The last example could therefore be
 encoded with pointers in the other direction:
 
 {% include plainExample.html example="./v3/examples/facsimiles/facsimiles-sample237.xml" valid="false" %}
 
 
-The [pb](/v3/elements/pb.html){:.link_odd_elementSpec} element defined in the [shared module](/v3/guidelines/shared.html "Shared Elements, Models, and Attributes"){:.link_ref}
-makes special use of the **@facs** attribute, in that it does not point to a [zone](/v3/elements/zone.html){:.link_odd_elementSpec}, but a [surface](/v3/elements/surface.html){:.link_odd_elementSpec} element instead. A [pb](/v3/elements/pb.html){:.link_odd_elementSpec} marks the beginning of a page, so it can be concluded that all elements
-in the content tree which are encoded between any two [pb](/v3/elements/pb.html){:.link_odd_elementSpec} elements encode
-musical symbols written on the page ([surface](/v3/elements/surface.html){:.link_odd_elementSpec}) referenced by the first of
-these two [pb](/v3/elements/pb.html){:.link_odd_elementSpec} element's **@facs** attribute.
+The [pb](/{{ page.version }}/elements/pb.html){:.link_odd_elementSpec} element defined in the [shared module](/{{ page.version }}/guidelines/shared.html "Shared Elements, Models, and Attributes"){:.link_ref}
+makes special use of the **@facs** attribute, in that it does not point to a [zone](/{{ page.version }}/elements/zone.html){:.link_odd_elementSpec}, but a [surface](/{{ page.version }}/elements/surface.html){:.link_odd_elementSpec} element instead. A [pb](/{{ page.version }}/elements/pb.html){:.link_odd_elementSpec} marks the beginning of a page, so it can be concluded that all elements
+in the content tree which are encoded between any two [pb](/{{ page.version }}/elements/pb.html){:.link_odd_elementSpec} elements encode
+musical symbols written on the page ([surface](/{{ page.version }}/elements/surface.html){:.link_odd_elementSpec}) referenced by the first of
+these two [pb](/{{ page.version }}/elements/pb.html){:.link_odd_elementSpec} element's **@facs** attribute.
 
 

@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "att.layerDef.vis"
 
 ---
@@ -9,167 +10,35 @@ title: "att.layerDef.vis"
    <h3 id="att.layerDef.vis">att.layerDef.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.layerDef.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/v3/layerDef">layerDef</a> (direct member of att.layerDef.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a> (direct member of att.layerDef.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@beam.color</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Color of beams, including those associated with tuplets.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.COLOR">data.COLOR</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.vis">att.beaming.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@beam.rend</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Encodes whether a beam is "feathered" and in which direction.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">acc</span>" 
-               <i>(Beam lines grow farther apart from left to right.)</i>,  "
-               <span style="font-weight: 500;">rit</span>" 
-               <i>(Beam lines grow closer together from left to right.)</i>,  "
-               <span style="font-weight: 500;">norm</span>" 
-               <i>(Beam lines are equally-spaced over the entire length of the beam.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.vis">att.beaming.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@beam.slope</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures beam slope.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">decimal</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.beaming.vis">att.beaming.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@label.abbr</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a label for a group of staves on pages after the first page. Usually, this
-                  label takes an abbreviated form.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.labels.addl">att.labels.addl</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.fam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font family name of text (other than lyrics) when
-                  this information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTFAMILY">data.FONTFAMILY</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.name</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font name of text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTNAME">data.FONTNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.size</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font size of text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSIZE">data.FONTSIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.style</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font style of text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTSTYLE">data.FONTSTYLE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@text.weight</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a default value for the font weight for text (other than lyrics) when this
-                  information is not provided on the individual elements.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.FONTWEIGHT">data.FONTWEIGHT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.textstyle">att.textstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@visible</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates if a feature should be rendered when the notation is presented graphically
-                  or sounded when it is presented in an aural form.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/v3/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/v3/att.visibility">att.visibility</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

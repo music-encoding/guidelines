@@ -1,6 +1,7 @@
 ---
 sectionid: analysisDescribingRelationships
 title: "General Relationships Between Elements"
+version: "v3"
 ---
 
 
@@ -14,20 +15,21 @@ the context of a formal analysis, for instance, the attributes presented here ca
 be useful in
 the capture information about the structure of a musical work.
 
-The analysis module offers several attributes in the [att.common.anl](/v3/attribute-classes/att.common.anl.html){:.link_odd} class for the description of basic relationships:
+The analysis module offers several attributes in the [att.common.anl](/{{ page.version }}/attribute-classes/att.common.anl.html){:.link_odd} class for the description of basic relationships:
 
 
 
-{% include specDesc.html key="att.common.anl" atts="copyof corresp next prev sameas synch" %}
+{% include specDesc.html version=page.version elem="att.common.anl" atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev
+att.common.anl/sameas att.common.anl/synch" %}
 
 
 
-The [att.alignment](/v3/attribute-classes/att.alignment.html){:.link_odd} class also contains an attribute for describing
+The [att.alignment](/{{ page.version }}/attribute-classes/att.alignment.html){:.link_odd} class also contains an attribute for describing
 temporal relationships:
 
 
 
-{% include specDesc.html key="att.alignment" atts="when" %}
+{% include specDesc.html version=page.version elem="att.alignment" atts="att.alignment/when" %}
 
 
 
@@ -48,27 +50,27 @@ of
 the encoding.
 
 The **@copyof** attribute points to an element of which the current element is a copy.
-It can be used to repeat a note, for example, without encoding the whole [note](/v3/elements/note.html){:.link_odd_elementSpec} element again. The copy is a ‘deep’one; that is, the
+It can be used to repeat a note, for example, without encoding the whole [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} element again. The copy is a ‘deep’one; that is, the
 **@copyof** attribute copies all attributes and child elements which belong to the
-copied element, such as the **@dur** and **@oct** attributes of a copied [note](/v3/elements/note.html){:.link_odd_elementSpec}. The value of the **@copyof** attribute must be a URI, which
+copied element, such as the **@dur** and **@oct** attributes of a copied [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}. The value of the **@copyof** attribute must be a URI, which
 usually refers to an element in the current document. The following example demonstrates
 use
 of the **@copyof** attribute:
 
 {% include plainExample.html example="./v3/examples/analysis/analysis-sample162.xml" valid="false" %}
 
-In this example. the [note](/v3/elements/note.html){:.link_odd_elementSpec} in the second measure has exactly the same
-characteristics as the [note](/v3/elements/note.html){:.link_odd_elementSpec} in the first [measure](/v3/elements/measure.html){:.link_odd_elementSpec}.
+In this example. the [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} in the second measure has exactly the same
+characteristics as the [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} in the first [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}.
 
 Using **@copyof** is not limited to copying events. The **@copyof** attribute can
-also be used to copy an entire [measure](/v3/elements/measure.html){:.link_odd_elementSpec} or [staff](/v3/elements/staff.html){:.link_odd_elementSpec}.
+also be used to copy an entire [measure](/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} or [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}.
 When there are many repeated features, the use of the **@copyof** greatly reduces
 encoding effort. The image and the following encoding of the beginning of Schubert's
 *Erlkönig* illustrates the benefit of using the **@copyof**
 attribute.
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/analysis/analysis-sample163.xml" valid="true" %}
@@ -87,7 +89,7 @@ the sharing of one note head between two voices in the first full measure of a c
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/analysis/analysis-sample165.xml" valid="true" %}
@@ -102,7 +104,7 @@ fermata is not placed directly above the note.
 
 The **@corresp** attribute only marks the correspondence between the current element
 and one or more other entities. To describe the nature of the correspondence, one
-must use [annot](/v3/elements/annot.html){:.link_odd_elementSpec}.
+must use [annot](/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec}.
 
 The **@next** and **@prev** attributes point to elements which follow or precede
 the current element in some fashion other than that indicated by encoding order. The
@@ -116,7 +118,7 @@ occurs after the pointing element in time, but before it in encoding order:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/3.0.0/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"></img>
+   <img src="../../../../guidelines/v3/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
 </figure>
 {% include plainExample.html example="./v3/examples/analysis/analysis-sample167.xml" valid="false" %}
@@ -142,8 +144,8 @@ differs from the order in which entities occur in time.
 
 
 The **@when** attribute may be used to indicate the point of occurrence of the feature
-bearing this attribute along a time line. Its value must be the ID of a [when](/v3/elements/when.html){:.link_odd_elementSpec} element. For more detailed information regarding the use of **@when**,
+bearing this attribute along a time line. Its value must be the ID of a [when](/{{ page.version }}/elements/when.html){:.link_odd_elementSpec} element. For more detailed information regarding the use of **@when**,
 please see 
-<a class="link_ptr" title="Performances" href="/v3/guidelines/performances.html">18 Performances</a>.
+<a class="link_ptr" title="Performances" href="/{{ page.version }}/guidelines/performances.html">18 Performances</a>.
 
 

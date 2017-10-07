@@ -1,6 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
+version: "v3"
 title: "data.STEMDIRECTION.basic"
 
 ---
@@ -9,29 +10,27 @@ title: "data.STEMDIRECTION.basic"
    <h3 id="data.STEMDIRECTION.basic">data.STEMDIRECTION.basic</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.STEMDIRECTION.basic</span> Common stem directions.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Common stem directions.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/v3/data.STEMDIRECTION">data.STEMDIRECTION</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.STEMDIRECTION.html">data.STEMDIRECTION</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -44,7 +43,7 @@ title: "data.STEMDIRECTION.basic"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

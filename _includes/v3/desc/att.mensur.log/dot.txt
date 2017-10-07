@@ -1,0 +1,1 @@
+Specifies whether a dot is to be added to the base symbol.
