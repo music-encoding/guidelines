@@ -10,19 +10,17 @@ title: "model.headerPart"
    <h3 id="model.headerPart">model.headerPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.headerPart</span> Groups elements that may appear as part of the MEI header.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of the MEI header.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -30,13 +28,13 @@ title: "model.headerPart"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/encodingDesc">encodingDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/workDesc">workDesc</a> (direct members of model.headerPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/workDesc.html">workDesc</a> (direct members of model.headerPart)
                </div>
             </div>
          </td>

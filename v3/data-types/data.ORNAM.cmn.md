@@ -10,8 +10,7 @@ title: "data.ORNAM.cmn"
    <h3 id="data.ORNAM.cmn">data.ORNAM.cmn</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.ORNAM.cmn</span> CMN ornam attribute values: A = appogiatura (upper neighbor); a = acciaccatura (lower
+         <td colspan="2" class="wovenodd-col2">CMN ornam attribute values: A = appogiatura (upper neighbor); a = acciaccatura (lower
             neighbor); b = bebung; I = ascending slide; i = descending slide; k = delayed turn;
             K =
             5-note turn; m = mordent (alternation with lower neighbor); M = inverted mordent
@@ -24,23 +23,23 @@ title: "data.ORNAM.cmn"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmnOrnaments</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.ornam">att.ornam</a> (@ornam)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ornam.html">att.ornam</a> (@ornam)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

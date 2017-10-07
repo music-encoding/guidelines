@@ -10,26 +10,24 @@ title: "att.systems"
    <h3 id="att.systems">att.systems</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.systems</span> Attributes that capture system layout information.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that capture system layout information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -37,68 +35,13 @@ title: "att.systems"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@system.leftline</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates whether the staves are joined at the left by a continuous line. The
-                  default value is "true". Do not confuse this with the heavy vertical line used as
-                  a
-                  grouping symbol.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@system.leftmar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the amount of whitespace at the left system margin relative to
-                  page.leftmar.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@system.rightmar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the amount of whitespace at the right system margin relative to
-                  page.rightmar.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@system.topmar</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the distance from page's top edge to the first system; used for first page
-                  only.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.systems">att.systems</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

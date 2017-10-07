@@ -10,51 +10,35 @@ title: "att.bend.ges"
    <h3 id="att.bend.ges">att.bend.ges</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.bend.ges</span> Gestural domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Gestural domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bend">bend</a> (direct member of att.bend.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bend.html">bend</a> (direct member of att.bend.ges)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@amount</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the amount of detuning. The decimal values should be rendered as a fraction
-                  (or an integer plus a fraction) along with the bend symbol.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEND.AMOUNT">data.BEND.AMOUNT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.bend.ges">att.bend.ges</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

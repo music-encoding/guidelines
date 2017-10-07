@@ -10,33 +10,32 @@ title: "data.OCTAVE"
    <h3 id="data.OCTAVE">data.OCTAVE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.OCTAVE</span> Oct attribute values. The default values conform to Acoustical Society of America
+         <td colspan="2" class="wovenodd-col2">Oct attribute values. The default values conform to Acoustical Society of America
             representation. Read, p. 44.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.ges">att.note.ges</a> (@oct.ges), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.octave">att.octave</a> (@oct), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.octavedefault">att.octavedefault</a> (@octave.default), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a> (@oloc)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.ges.html">att.note.ges</a> (@oct.ges), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.octave.html">att.octave</a> (@oct), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.octavedefault.html">att.octavedefault</a> (@octave.default), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffloc.pitched.html">att.staffloc.pitched</a> (@oloc)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

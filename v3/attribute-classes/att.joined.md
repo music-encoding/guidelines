@@ -10,40 +10,39 @@ title: "att.joined"
    <h3 id="att.joined">att.joined</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.joined</span> Attributes indicating that elements are semantically linked; that is, while the parts
+         <td colspan="2" class="wovenodd-col2">Attributes indicating that elements are semantically linked; that is, while the parts
             are encoded separately, together they may be thought of as a single intellectual
             object.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.measure.anl">att.measure.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.measure.anl.html">att.measure.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/phrase.html">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.anl">att.phrase.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.phrase.anl.html">att.phrase.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/slur.html">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.slur.anl">att.slur.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.slur.anl.html">att.slur.anl</a>)
                   </span>
                </div>
             </div>
@@ -51,31 +50,13 @@ title: "att.joined"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@join</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used for linking visually separate entities that form a single logical entity, for
-                  example, multiple slurs broken across a system break that form a single musical phrase.
-                  Also used to indicate a measure which metrically completes the current one. Record
-                  the
-                  identifiers of the separately encoded components, excluding the one carrying the
-                  attribute.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.joined">att.joined</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -172,7 +153,7 @@ title: "att.joined"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

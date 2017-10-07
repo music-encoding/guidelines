@@ -10,110 +10,35 @@ title: "att.clef.log"
    <h3 id="att.clef.log">att.clef.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.clef.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a> (direct member of att.clef.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clef.html">clef</a> (direct member of att.clef.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@cautionary</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the function of the clef. A "cautionary" clef does not change the following
-                  pitches.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.clef.log">att.clef.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@dis</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the amount of octave displacement.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE.DIS">data.OCTAVE.DIS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@dis.place</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the direction of octave displacement.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PLACE">data.PLACE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@line</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the line upon which a feature stands. The value must be in the range
-                  between 1 and the number of lines on the staff. The numbering of lines starts with
-                  the
-                  lowest line of the staff.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFLINE">data.CLEFLINE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lineloc">att.lineloc</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@oct</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures written octave information.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.octave">att.octave</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@shape</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes a clef's shape.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.CLEFSHAPE">data.CLEFSHAPE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.clefshape">att.clefshape</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -10,55 +10,41 @@ title: "att.midinumber"
    <h3 id="att.midinumber">att.midinumber</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.midinumber</span> Attributes that record MIDI numbers.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record MIDI numbers.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.midi</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cc">cc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chanPr">chanPr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOff">noteOff</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOn">noteOn</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/port">port</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/prog">prog</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/vel">vel</a> (direct members of att.midinumber)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cc.html">cc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chanPr.html">chanPr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOff.html">noteOff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOn.html">noteOn</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/port.html">port</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/prog.html">prog</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/vel.html">vel</a> (direct members of att.midinumber)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@num</span>
-               <span class="attributeUsage">(required)</span>
-               <span class="attributeDesc">MIDI number in the range set by data.MIDIVALUE.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.midinumber">att.midinumber</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

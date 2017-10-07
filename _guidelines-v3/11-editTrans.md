@@ -46,7 +46,7 @@ discussed here thus may potentially carry the following optional attributes:
 
 
 
-{% include specDesc.html version=page.version elem="att.edit" atts="att.evidence/cert" %}
+
 {% include specDesc.html version=page.version elem="att.responsibility" atts="att.responsibility/resp" %}
 
 

@@ -10,46 +10,44 @@ title: "model.editionLike"
    <h3 id="model.editionLike">model.editionLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.editionLike</span> Groups elements containing bibliographic edition information.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements containing bibliographic edition information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.biblPart">model.biblPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editionStmt">editionStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editionStmt.html">editionStmt</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/edition">edition</a> (direct member of model.editionLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/edition.html">edition</a> (direct member of model.editionLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

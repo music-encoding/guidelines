@@ -10,30 +10,28 @@ title: "data.MENSURATIONSIGN"
    <h3 id="data.MENSURATIONSIGN">data.MENSURATIONSIGN</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MENSURATIONSIGN</span> Mensuration attribute values.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Mensuration attribute values.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a> (@sign), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.log">att.mensural.log</a> (@mensur.sign)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensur.log.html">att.mensur.log</a> (@sign), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensural.log.html">att.mensural.log</a> (@mensur.sign)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -46,7 +44,7 @@ title: "data.MENSURATIONSIGN"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

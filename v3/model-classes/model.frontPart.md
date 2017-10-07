@@ -10,47 +10,45 @@ title: "model.frontPart"
    <h3 id="model.frontPart">model.frontPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.frontPart</span> Groups elements that may appear as part of front matter.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of front matter.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.physDescPart">model.physDescPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.physDescPart.html">model.physDescPart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/front">front</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/back.html">back</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/front.html">front</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a> (direct member of model.frontPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/titlePage.html">titlePage</a> (direct member of model.frontPart)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

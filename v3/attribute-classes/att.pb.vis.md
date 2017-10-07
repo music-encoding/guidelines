@@ -10,52 +10,35 @@ title: "att.pb.vis"
    <h3 id="att.pb.vis">att.pb.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.pb.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pb">pb</a> (direct member of att.pb.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a> (direct member of att.pb.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@folium</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">States the side of a leaf (as in a manuscript) on which the content following the
-                  &lt;pb&gt; element occurs.
-               </span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">verso</span>" ,  "
-               <span style="font-weight: 500;">recto</span>" 
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.pb.vis">att.pb.vis</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

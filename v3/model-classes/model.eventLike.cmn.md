@@ -10,48 +10,46 @@ title: "model.eventLike.cmn"
    <h3 id="model.eventLike.cmn">model.eventLike.cmn</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.eventLike.cmn</span> Groups events that appear in CMN.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups events that appear in CMN.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventLike">model.eventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.eventLike.html">model.eventLike</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beatRpt">beatRpt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bTrem">bTrem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fTrem">fTrem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/halfmRpt">halfmRpt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a> (direct members of model.eventLike.cmn)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beam.html">beam</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beatRpt.html">beatRpt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bTrem.html">bTrem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fTrem.html">fTrem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/halfmRpt.html">halfmRpt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tuplet.html">tuplet</a> (direct members of model.eventLike.cmn)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

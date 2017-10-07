@@ -10,133 +10,35 @@ title: "att.uneume.log"
    <h3 id="att.uneume.log">att.uneume.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.uneume.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.neumes</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a> (direct member of att.uneume.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/uneume.html">uneume</a> (direct member of att.uneume.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@form</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a subclass or functional label for the neume.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.UNEUMEFORM">data.UNEUMEFORM</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.uneume.log">att.uneume.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@layer</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Identifies the layer to which a feature applies.</span>
-               One or more values of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.layerident">att.layerident</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@name</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the name of the neume.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.UNEUMENAME">data.UNEUMENAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.uneume.log">att.uneume.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@staff</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Signifies the staff on which a notated event occurs or to which a control event
-                  applies. Mandatory when applicable.
-               </span>
-               One or more values of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.staffident">att.staffident</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@syl</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds an associated sung text syllable.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.syltext">att.syltext</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@tstamp</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Encodes the onset time in terms of musical time, i.e.,
-                  beats[.fractional_beat_part].
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@tstamp.ges</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures performed onset time in several forms; that is, ppq (MIDI clicks and
-                  MusicXML 'divisions'), Humdrum **recip values, beats, seconds, or mensural duration
-                  values.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@tstamp.real</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to record the onset time in terms of ISO time.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISOTIME">data.ISOTIME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.performed">att.timestamp.performed</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

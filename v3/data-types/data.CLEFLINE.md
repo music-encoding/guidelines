@@ -10,32 +10,31 @@ title: "data.CLEFLINE"
    <h3 id="data.CLEFLINE">data.CLEFLINE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.CLEFLINE</span> Clef line attribute values. The value must be in the range between 1 and the number
+         <td colspan="2" class="wovenodd-col2">Clef line attribute values. The value must be in the range between 1 and the number
             of
             lines on the staff. The numbering of lines starts with the lowest line of the staff.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a> (@clef.line), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.lineloc">att.lineloc</a> (@line)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.line), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.lineloc.html">att.lineloc</a> (@line)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

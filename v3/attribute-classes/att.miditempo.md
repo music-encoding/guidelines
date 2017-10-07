@@ -10,32 +10,30 @@ title: "att.miditempo"
    <h3 id="att.miditempo">att.miditempo</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.miditempo</span> Attributes that record MIDI tempo information.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record MIDI tempo information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.midi</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tempo.html">tempo</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tempo.ges">att.tempo.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tempo.ges.html">att.tempo.ges</a>)
                   </span>
                </div>
             </div>
@@ -43,43 +41,13 @@ title: "att.miditempo"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@midi.bpm</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
-                  as a quarter note, *not the numerator of the time signature or the metronomic
-                  indication*.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIBPM">data.MIDIBPM</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@midi.mspb</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
-                  defined as a quarter note, *not the numerator of the time signature or the metronomic
-                  indication*. At 120 quarter notes per minute, each quarter note will last 500,000
-                  microseconds.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIMSPB">data.MIDIMSPB</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

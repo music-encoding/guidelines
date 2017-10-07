@@ -17,7 +17,7 @@ syllable. These are the key components:
 
 
 {% include specDesc.html version=page.version elem="syl" atts="" %}
-{% include specDesc.html version=page.version elem="syl" atts="att.syl.log/wordpos att.syl.log/con att.horizontalalign/halign" %}
+
 
 
 

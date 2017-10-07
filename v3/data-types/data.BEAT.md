@@ -10,8 +10,7 @@ title: "data.BEAT"
    <h3 id="data.BEAT">data.BEAT</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.BEAT</span> A beat location, i.e., [0-9]+(\.?[0-9]*)? The value must fall between 0 and the
+         <td colspan="2" class="wovenodd-col2">A beat location, i.e., [0-9]+(\.?[0-9]*)? The value must fall between 0 and the
             numerator of the time signature + 1, where 0 represents the left bar line and the
             upper
             boundary represents the right bar line. For example, in 12/8 the value must be in
@@ -21,23 +20,23 @@ title: "data.BEAT"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a> (@tstamp)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.timestamp.musical.html">att.timestamp.musical</a> (@tstamp)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

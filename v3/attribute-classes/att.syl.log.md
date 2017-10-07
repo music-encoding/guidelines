@@ -10,82 +10,35 @@ title: "att.syl.log"
    <h3 id="att.syl.log">att.syl.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.syl.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syl">syl</a> (direct member of att.syl.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syl.html">syl</a> (direct member of att.syl.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@con</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the symbols typically used to indicate breaks between syllables and their
-                  functions.
-               </span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">s</span>" 
-               <i>(Space (word separator).)</i>,  "
-               <span style="font-weight: 500;">d</span>" 
-               <i>(Dash (syllable separator).)</i>,  "
-               <span style="font-weight: 500;">u</span>" 
-               <i>(Underscore (syllable extension).)</i>,  "
-               <span style="font-weight: 500;">t</span>" 
-               <i>(Tilde (syllable elision).)</i>,  "
-               <span style="font-weight: 500;">c</span>" 
-               <i>(Circumflex [angled line above] (syllable elision).)</i>,  "
-               <span style="font-weight: 500;">v</span>" 
-               <i>(Caron [angled line below] (syllable elision).)</i>,  "
-               <span style="font-weight: 500;">i</span>" 
-               <i>(Inverted breve [curved line above] (syllable elision).)</i>,  "
-               <span style="font-weight: 500;">b</span>" 
-               <i>(Breve [curved line below] (syllable elision).)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.syl.log">att.syl.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@wordpos</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the position of a syllable within a word.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">i</span>" 
-               <i>((initial) first syllable.)</i>,  "
-               <span style="font-weight: 500;">m</span>" 
-               <i>((medial) neither first nor last syllable.)</i>,  "
-               <span style="font-weight: 500;">t</span>" 
-               <i>((terminal) last syllable.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.syl.log">att.syl.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

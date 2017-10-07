@@ -10,20 +10,19 @@ title: "macro.XSLT"
    <h3 id="macro.XSLT">macro.XSLT</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">macro.XSLT</span> Permits any element from the XSLT namespace. Allowing XSLT in &lt;incipit&gt; makes it
+         <td colspan="2" class="wovenodd-col2">Permits any element from the XSLT namespace. Allowing XSLT in &lt;incipit&gt; makes it
             possible to generate the incipit from the notational content of the MEI file.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -31,7 +30,7 @@ title: "macro.XSLT"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

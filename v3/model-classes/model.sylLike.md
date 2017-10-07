@@ -10,48 +10,46 @@ title: "model.sylLike"
    <h3 id="model.sylLike">model.sylLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.sylLike</span> Groups elements that contain a lyric syllable.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that contain a lyric syllable.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.lyrics</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.syllablePart">model.syllablePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.rdgPart.critapp">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.syllablePart.html">model.syllablePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.rdgPart.critapp.html">model.rdgPart.critapp</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/verse">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syl">syl</a> (direct member of model.sylLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syl.html">syl</a> (direct member of model.sylLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

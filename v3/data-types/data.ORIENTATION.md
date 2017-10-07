@@ -10,30 +10,28 @@ title: "data.ORIENTATION"
    <h3 id="data.ORIENTATION">data.ORIENTATION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.ORIENTATION</span> Rotation or reflection of base symbol values.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Rotation or reflection of base symbol values.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensur.vis">att.mensur.vis</a> (@orient), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a> (@mensur.orient)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensur.vis.html">att.mensur.vis</a> (@orient), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensural.vis.html">att.mensural.vis</a> (@mensur.orient)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

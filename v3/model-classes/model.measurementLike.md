@@ -10,38 +10,36 @@ title: "model.measurementLike"
    <h3 id="model.measurementLike">model.measurementLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.measurementLike</span> Groups elements that represent a measurement.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that represent a measurement.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/num">num</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/num.html">num</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model.numLike">model.numLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.numLike.html">model.numLike</a>)
                   </span>
                </div>
             </div>
@@ -49,7 +47,7 @@ title: "model.measurementLike"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

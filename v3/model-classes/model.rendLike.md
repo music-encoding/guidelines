@@ -10,49 +10,47 @@ title: "model.rendLike"
    <h3 id="model.rendLike">model.rendLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.rendLike</span> Groups elements that mark typographical features.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that mark typographical features.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/altId">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classCode">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reh">reh</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/altId.html">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classCode.html">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reh.html">reh</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rend">rend</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/stack">stack</a> (direct members of model.rendLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rend.html">rend</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stack.html">stack</a> (direct members of model.rendLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

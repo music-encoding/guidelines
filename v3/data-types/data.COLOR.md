@@ -10,35 +10,34 @@ title: "data.COLOR"
    <h3 id="data.COLOR">data.COLOR</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.COLOR</span> A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal
+         <td colspan="2" class="wovenodd-col2">A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal
             AARRGGBB, 3) CSS RGB, 4) CSS RGBA, 5) HSL, 6) HSLA, or 7) HTML 4.01 color name.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.beaming.vis">att.beaming.vis</a> (@beam.color), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.vis">att.cleffing.vis</a> (@clef.color), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.color">att.color</a> (@color), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a> (@mensur.color), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.noteheads">att.noteheads</a> (@head.color), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a> (@lines.color)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beaming.vis.html">att.beaming.vis</a> (@beam.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.vis.html">att.cleffing.vis</a> (@clef.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.color.html">att.color</a> (@color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensural.vis.html">att.mensural.vis</a> (@mensur.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a> (@head.color), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a> (@lines.color)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

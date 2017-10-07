@@ -10,9 +10,7 @@ title: "data.DURATION.additive"
    <h3 id="data.DURATION.additive">data.DURATION.additive</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.DURATION.additive</span> Records duration using optionally dotted, relative durational values provided by
-            the
+         <td colspan="2" class="wovenodd-col2">Records duration using optionally dotted, relative durational values provided by the
             data.DURATION datatype. When the duration is "irrational", as is sometimes the case
             with
             tuplets, multiple space-separated values that add up to the total duration may be
@@ -21,23 +19,23 @@ title: "data.DURATION.additive"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.duration.additive">att.duration.additive</a> (@dur)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.duration.additive.html">att.duration.additive</a> (@dur)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

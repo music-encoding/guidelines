@@ -10,33 +10,32 @@ title: "att.keySigDefault.log"
    <h3 id="att.keySigDefault.log">att.keySigDefault.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.keySigDefault.log</span> Used by staffDef and scoreDef to provide default values for attributes in the logical
+         <td colspan="2" class="wovenodd-col2">Used by staffDef and scoreDef to provide default values for attributes in the logical
             domain related to key signatures.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.log">att.scoreDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.log.html">att.scoreDef.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.log">att.staffDef.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.log.html">att.staffDef.log</a>)
                   </span>
                </div>
             </div>
@@ -44,80 +43,13 @@ title: "att.keySigDefault.log"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@key.accid</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains an accidental for the tonic key, if one is required, e.g., if key.pname
-                  equals 'c' and key.accid equals 's', then a tonic of C# is indicated.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@key.mode</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates major, minor, or other tonality.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODE">data.MODE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@key.pname</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the pitch name of the tonic key, e.g. 'c' for the key of C.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@key.sig</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates where the key lies in the circle of fifths.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.KEYSIGNATURE">data.KEYSIGNATURE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@key.sig.mixed</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Mixed key signatures, e.g. those consisting of a mixture of flats and sharps (Read,
-                  p. 143, ex. 9-39), and key signatures with unorthodox placement of the accidentals
-                  (Read, p. 141) must be indicated by setting the key.sig attribute to 'mixed' and
-                  providing explicit key signature information in the key.sig.mixed attribute or in
-                  the
-                  &lt;keySig&gt; element. It is intended that key.sig.mixed contain a series of tokens
-                  with each token containing pitch name, accidental, and octave, such as 'a4 c5s e5f'
-                  that
-                  indicate what key accidentals should be rendered and where they should be placed.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

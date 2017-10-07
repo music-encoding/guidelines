@@ -10,30 +10,28 @@ title: "data.TEXTRENDITION"
    <h3 id="data.TEXTRENDITION">data.TEXTRENDITION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.TEXTRENDITION</span> Text rendition values.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Text rendition values.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/del">del</a>/@rend, 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/rend">rend</a>/@rend
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/del.html">del</a>/@rend, 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/rend.html">rend</a>/@rend
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

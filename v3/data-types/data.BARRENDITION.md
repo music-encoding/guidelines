@@ -10,31 +10,30 @@ title: "data.BARRENDITION"
    <h3 id="data.BARRENDITION">data.BARRENDITION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.BARRENDITION</span> Renderings of bar lines. Some values correspond to the Western Musical Symbols portion
+         <td colspan="2" class="wovenodd-col2">Renderings of bar lines. Some values correspond to the Western Musical Symbols portion
             of the Unicode Standard.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.barLine.log">att.barLine.log</a> (@form), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.measure.log">att.measure.log</a> (@left)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.barLine.log.html">att.barLine.log</a> (@form), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.measure.log.html">att.measure.log</a> (@left)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -65,7 +64,7 @@ title: "data.BARRENDITION"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

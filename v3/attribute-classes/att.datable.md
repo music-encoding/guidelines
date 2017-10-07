@@ -10,50 +10,48 @@ title: "att.datable"
    <h3 id="att.datable">att.datable</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.datable</span> Attributes common to dates.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes common to dates.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/application">application</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/change">change</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a> (direct members of att.datable)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/application.html">application</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/change.html">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/date.html">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/event.html">event</a> (direct members of att.datable)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/styleName">styleName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/addName.html">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bloc.html">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/country.html">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/district.html">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/famName.html">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/foreName.html">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genName.html">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogFeat.html">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogName.html">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/name.html">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/nameLink.html">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/periodName.html">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/region.html">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/repository.html">repository</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/roleName.html">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/settlement.html">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/styleName.html">styleName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.name">att.name</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.name.html">att.name</a>)
                   </span>
                </div>
             </div>
@@ -61,69 +59,13 @@ title: "att.datable"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@enddate</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains the end point of a date range in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@isodate</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides the value of a textual date in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@notafter</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains an upper boundary for an uncertain date in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@notbefore</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@startdate</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains the starting point of a date range in standard ISO form.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ISODATE">data.ISODATE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.datable">att.datable</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -10,19 +10,17 @@ title: "model.scorePart.neumes"
    <h3 id="model.scorePart.neumes">model.scorePart.neumes</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.scorePart.neumes</span> Groups elements that may appear as part of a score in the mensural repertoire.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of a score in the mensural repertoire.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.neumes</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -30,7 +28,7 @@ title: "model.scorePart.neumes"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>

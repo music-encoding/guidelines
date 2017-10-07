@@ -10,26 +10,24 @@ title: "att.endings"
    <h3 id="att.endings">att.endings</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.endings</span> Attributes that record ending style information
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record ending style information</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -37,30 +35,13 @@ title: "att.endings"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@ending.rend</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes where ending marks should be displayed.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">top</span>" 
-               <i>(Ending rendered only above top staff.)</i>,  "
-               <span style="font-weight: 500;">barred</span>" 
-               <i>(Ending rendered above staves that have bar lines drawn across them.)</i>,  "
-               <span style="font-weight: 500;">grouped</span>" 
-               <i>(Endings rendered above staff groups.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.endings">att.endings</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

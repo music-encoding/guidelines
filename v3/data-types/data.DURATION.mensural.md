@@ -10,29 +10,27 @@ title: "data.DURATION.mensural"
    <h3 id="data.DURATION.mensural">data.DURATION.mensural</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.DURATION.mensural</span> Logical, that is, written, duration attribute values for the mensural repertoire.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical, that is, written, duration attribute values for the mensural repertoire.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.mensural</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.DURATION.gestural.html">data.DURATION.gestural</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -57,7 +55,7 @@ title: "data.DURATION.mensural"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

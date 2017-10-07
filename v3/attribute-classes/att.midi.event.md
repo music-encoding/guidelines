@@ -10,88 +10,48 @@ title: "att.midi.event"
    <h3 id="att.midi.event">att.midi.event</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.midi.event</span> Attributes common to MIDI events.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes common to MIDI events.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.midi</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cc">cc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chan">chan</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chanPr">chanPr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cue">cue</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hex">hex</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/marker">marker</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/metaText">metaText</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOff">noteOff</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOn">noteOn</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/port">port</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/prog">prog</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/seqNum">seqNum</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trkName">trkName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/vel">vel</a> (direct members of att.midi.event)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cc.html">cc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chan.html">chan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chanPr.html">chanPr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cue.html">cue</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hex.html">hex</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/marker.html">marker</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/metaText.html">metaText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOff.html">noteOff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOn.html">noteOn</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/port.html">port</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/prog.html">prog</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/seqNum.html">seqNum</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trkName.html">trkName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/vel.html">vel</a> (direct members of att.midi.event)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@layer</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Identifies the layer to which a feature applies.</span>
-               One or more values of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.layerident">att.layerident</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@staff</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Signifies the staff on which a notated event occurs or to which a control event
-                  applies. Mandatory when applicable.
-               </span>
-               One or more values of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.staffident">att.staffident</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@tstamp</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Encodes the onset time in terms of musical time, i.e.,
-                  beats[.fractional_beat_part].
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAT">data.BEAT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.timestamp.musical">att.timestamp.musical</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

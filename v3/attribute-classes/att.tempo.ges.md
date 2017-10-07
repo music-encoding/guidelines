@@ -10,106 +10,35 @@ title: "att.tempo.ges"
    <h3 id="att.tempo.ges">att.tempo.ges</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.tempo.ges</span> Gestural domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Gestural domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a> (direct member of att.tempo.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tempo.html">tempo</a> (direct member of att.tempo.ges)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@midi.bpm</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
-                  as a quarter note, *not the numerator of the time signature or the metronomic
-                  indication*.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIBPM">data.MIDIBPM</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@midi.mspb</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
-                  defined as a quarter note, *not the numerator of the time signature or the metronomic
-                  indication*. At 120 quarter notes per minute, each quarter note will last 500,000
-                  microseconds.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIMSPB">data.MIDIMSPB</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@mm</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to describe tempo in terms of beats (often the meter signature denominator) per
-                  minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
-                  or
-                  midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
-                  of
-                  the time signature or the metronomic indication*.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPOVALUE">data.TEMPOVALUE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@mm.dots</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the number of augmentation dots required by a dotted metronome unit.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.AUGMENTDOT">data.AUGMENTDOT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@mm.unit</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures the metronomic unit.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION">data.DURATION</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

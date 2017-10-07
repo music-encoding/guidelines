@@ -10,30 +10,29 @@ title: "data.NMTOKEN"
    <h3 id="data.NMTOKEN">data.NMTOKEN</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.NMTOKEN</span> "Convenience" datatype that permits combining enumerated values with user-supplied
+         <td colspan="2" class="wovenodd-col2">"Convenience" datatype that permits combining enumerated values with user-supplied
             values.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data.HEADSHAPE">data.HEADSHAPE</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.HEADSHAPE.html">data.HEADSHAPE</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

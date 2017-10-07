@@ -10,30 +10,28 @@ title: "data.LINESTARTENDSYMBOL"
    <h3 id="data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.LINESTARTENDSYMBOL</span> Symbol that may begin/end a line.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Symbol that may begin/end a line.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.line.vis">att.line.vis</a> (@endsym), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.linerend">att.linerend</a> (@lendsym)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@endsym), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.linerend.html">att.linerend</a> (@lendsym)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -72,7 +70,7 @@ title: "data.LINESTARTENDSYMBOL"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

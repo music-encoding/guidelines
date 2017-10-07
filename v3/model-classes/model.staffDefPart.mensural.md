@@ -10,45 +10,44 @@ title: "model.staffDefPart.mensural"
    <h3 id="model.staffDefPart.mensural">model.staffDefPart.mensural</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.staffDefPart.mensural</span> Groups elements that may appear more than once in the declaration of staff
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear more than once in the declaration of staff
             features.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.mensural</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffDefPart">model.staffDefPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.staffDefPart.html">model.staffDefPart</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/proport">proport</a> (direct members of model.staffDefPart.mensural)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/proport.html">proport</a> (direct members of model.staffDefPart.mensural)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

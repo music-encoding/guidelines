@@ -10,60 +10,58 @@ title: "model.pLike"
    <h3 id="model.pLike">model.pLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.pLike</span> Groups paragraph-like elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups paragraph-like elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textcomponentLike">model.textcomponentLike</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/application">application</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/changeDesc">changeDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/interpretation">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/normalization">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physDesc">physDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/samplingDecl">samplingDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/segmentation">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/stdVals">stdVals</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/application.html">application</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/changeDesc.html">changeDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contents.html">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/event.html">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physDesc.html">physDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/series.html">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stdVals.html">stdVals</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/p">p</a> (direct member of model.pLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/p.html">p</a> (direct member of model.pLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

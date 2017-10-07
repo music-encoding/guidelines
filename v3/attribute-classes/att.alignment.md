@@ -10,506 +10,504 @@ title: "att.alignment"
    <h3 id="att.alignment">att.alignment</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.alignment</span> Temporal alignment attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Temporal alignment attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.performance</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/anchoredText">anchoredText</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cc">cc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chan">chan</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chanPr">chanPr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cue">cue</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/curve">curve</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fb">fb</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hex">hex</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/marker">marker</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/metaText">metaText</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOff">noteOff</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/noteOn">noteOn</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/port">port</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/prog">prog</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/seqNum">seqNum</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/symbol">symbol</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trkName">trkName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/vel">vel</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/anchoredText.html">anchoredText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cc.html">cc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chan.html">chan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chanPr.html">chanPr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cue.html">cue</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/curve.html">curve</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fb.html">fb</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hex.html">hex</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/marker.html">marker</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/metaText.html">metaText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOff.html">noteOff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/noteOn.html">noteOn</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/port.html">port</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/prog.html">prog</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/seqNum.html">seqNum</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/symbol.html">symbol</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trkName.html">trkName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/vel.html">vel</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.common.anl">att.common.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.common.anl.html">att.common.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.accid.anl">att.accid.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.anl.html">att.accid.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/annot">annot</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.annot.anl">att.annot.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.annot.anl.html">att.annot.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/arpeg">arpeg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/arpeg.html">arpeg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.arpeg.anl">att.arpeg.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.arpeg.anl.html">att.arpeg.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/artic">artic</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/artic.html">artic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.artic.anl">att.artic.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.artic.anl.html">att.artic.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/barLine.html">barLine</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.barLine.anl">att.barLine.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.barLine.anl.html">att.barLine.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beam.html">beam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beam.anl">att.beam.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beam.anl.html">att.beam.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beamSpan">beamSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beamSpan.html">beamSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beamSpan.anl">att.beamSpan.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beamSpan.anl.html">att.beamSpan.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/beatRpt">beatRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beatRpt.html">beatRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.beatRpt.anl">att.beatRpt.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beatRpt.anl.html">att.beatRpt.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bend">bend</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bend.html">bend</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.bend.anl">att.bend.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.bend.anl.html">att.bend.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/breath">breath</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/breath.html">breath</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.breath.anl">att.breath.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.breath.anl.html">att.breath.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bTrem">bTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bTrem.html">bTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.bTrem.anl">att.bTrem.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.bTrem.anl.html">att.bTrem.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.anl">att.chord.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.anl.html">att.chord.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clef.html">clef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.clef.anl">att.clef.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.clef.anl.html">att.clef.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clefGrp">clefGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clefGrp.html">clefGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.clefGrp.anl">att.clefGrp.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.clefGrp.anl.html">att.clefGrp.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/cpMark">cpMark</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cpMark.html">cpMark</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.cpMark.anl">att.cpMark.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cpMark.anl.html">att.cpMark.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/custos.html">custos</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.custos.anl">att.custos.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.custos.anl.html">att.custos.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dir">dir</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dir.html">dir</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dir.anl">att.dir.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dir.anl.html">att.dir.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dot">dot</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dot.html">dot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dot.anl">att.dot.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dot.anl.html">att.dot.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dynam">dynam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dynam.html">dynam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dynam.anl">att.dynam.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dynam.anl.html">att.dynam.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ending">ending</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ending.anl">att.ending.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ending.anl.html">att.ending.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/f">f</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/f.html">f</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.f.anl">att.f.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.f.anl.html">att.f.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fermata">fermata</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fermata.html">fermata</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fermata.anl">att.fermata.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fermata.anl.html">att.fermata.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fing">fing</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fing.html">fing</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fing.anl">att.fing.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fing.anl.html">att.fing.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingGrp">fingGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fingGrp.html">fingGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fingGrp.anl">att.fingGrp.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fingGrp.anl.html">att.fingGrp.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fTrem">fTrem</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fTrem.html">fTrem</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.fTrem.anl">att.fTrem.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.fTrem.anl.html">att.fTrem.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/gliss">gliss</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gliss.html">gliss</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.gliss.anl">att.gliss.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.gliss.anl.html">att.gliss.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/grpSym">grpSym</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/grpSym.html">grpSym</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.grpSym.anl">att.grpSym.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.grpSym.anl.html">att.grpSym.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hairpin">hairpin</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hairpin.html">hairpin</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.hairpin.anl">att.hairpin.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.hairpin.anl.html">att.hairpin.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/halfmRpt">halfmRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/halfmRpt.html">halfmRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.halfmRpt.anl">att.halfmRpt.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.halfmRpt.anl.html">att.halfmRpt.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harm">harm</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/harm.html">harm</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.harm.anl">att.harm.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.harm.anl.html">att.harm.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/harpPedal">harpPedal</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/harpPedal.html">harpPedal</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.harpPedal.anl">att.harpPedal.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.harpPedal.anl.html">att.harpPedal.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ineume.html">ineume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ineume.anl">att.ineume.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ineume.anl.html">att.ineume.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/keyAccid.html">keyAccid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keyAccid.anl">att.keyAccid.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keyAccid.anl.html">att.keyAccid.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/keySig.html">keySig</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySig.anl">att.keySig.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySig.anl.html">att.keySig.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.layer.anl">att.layer.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.layer.anl.html">att.layer.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ligature.html">ligature</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ligature.anl">att.ligature.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ligature.anl.html">att.ligature.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyrics">lyrics</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lyrics.html">lyrics</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.lyrics.anl">att.lyrics.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.lyrics.anl.html">att.lyrics.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/measure">measure</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.measure.anl">att.measure.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.measure.anl.html">att.measure.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensur.anl">att.mensur.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensur.anl.html">att.mensur.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSig">meterSig</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSig.html">meterSig</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.meterSig.anl">att.meterSig.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.meterSig.anl.html">att.meterSig.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meterSigGrp">meterSigGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSigGrp.html">meterSigGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.meterSigGrp.anl">att.meterSigGrp.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.meterSigGrp.anl.html">att.meterSigGrp.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/midi">midi</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/midi.html">midi</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.midi.anl">att.midi.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.midi.anl.html">att.midi.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mordent">mordent</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mordent.html">mordent</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mordent.anl">att.mordent.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mordent.anl.html">att.mordent.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRest.anl">att.mRest.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRest.anl.html">att.mRest.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRpt">mRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRpt.html">mRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRpt.anl">att.mRpt.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRpt.anl.html">att.mRpt.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRpt2">mRpt2</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRpt2.html">mRpt2</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRpt2.anl">att.mRpt2.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRpt2.anl.html">att.mRpt2.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mSpace">mSpace</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mSpace.html">mSpace</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mSpace.anl">att.mSpace.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mSpace.anl.html">att.mSpace.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRest.html">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.multiRest.anl">att.multiRest.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multiRest.anl.html">att.multiRest.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/multiRpt">multiRpt</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRpt.html">multiRpt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.multiRpt.anl">att.multiRpt.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multiRpt.anl.html">att.multiRpt.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.anl">att.note.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.note.anl.html">att.note.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/octave">octave</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/octave.html">octave</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.octave.anl">att.octave.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.octave.anl.html">att.octave.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ornam">ornam</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ornam.html">ornam</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ornam.anl">att.ornam.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ornam.anl.html">att.ornam.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ossia">ossia</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ossia.html">ossia</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ossia.anl">att.ossia.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ossia.anl.html">att.ossia.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.part.anl">att.part.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.part.anl.html">att.part.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/parts">parts</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/parts.html">parts</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.parts.anl">att.parts.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.parts.anl.html">att.parts.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pb">pb</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.pb.anl">att.pb.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.pb.anl.html">att.pb.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pedal">pedal</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pedal.html">pedal</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.pedal.anl">att.pedal.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.pedal.anl.html">att.pedal.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/phrase.html">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.anl">att.phrase.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.phrase.anl.html">att.phrase.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/proport">proport</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/proport.html">proport</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.proport.anl">att.proport.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.proport.anl.html">att.proport.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.rdg.anl">att.rdg.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rdg.anl.html">att.rdg.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reh">reh</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reh.html">reh</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.reh.anl">att.reh.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.reh.anl.html">att.reh.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.rest.anl">att.rest.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.anl.html">att.rest.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sb">sb</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sb.html">sb</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.sb.anl">att.sb.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.sb.anl.html">att.sb.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/score.html">score</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.score.anl">att.score.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.score.anl.html">att.score.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.section.anl">att.section.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.section.anl.html">att.section.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/slur.html">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.slur.anl">att.slur.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.slur.anl.html">att.slur.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/space.html">space</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.space.anl">att.space.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.space.anl.html">att.space.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staff">staff</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staff.html">staff</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staff.anl">att.staff.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staff.anl.html">att.staff.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syl">syl</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syl.html">syl</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.syl.anl">att.syl.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.syl.anl.html">att.syl.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tempo.html">tempo</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tempo.anl">att.tempo.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tempo.anl.html">att.tempo.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tie">tie</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tie.html">tie</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tie.anl">att.tie.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tie.anl.html">att.tie.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trill">trill</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trill.html">trill</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.trill.anl">att.trill.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.trill.anl.html">att.trill.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tuplet.html">tuplet</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tuplet.anl">att.tuplet.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tuplet.anl.html">att.tuplet.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tupletSpan">tupletSpan</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tupletSpan.anl">att.tupletSpan.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tupletSpan.anl.html">att.tupletSpan.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/turn">turn</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/turn.html">turn</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.turn.anl">att.turn.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.turn.anl.html">att.turn.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/uneume.html">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.uneume.anl">att.uneume.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.uneume.anl.html">att.uneume.anl</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/verse">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.verse.anl">att.verse.anl</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.verse.anl.html">att.verse.anl</a>)
                   </span>
                </div>
             </div>
@@ -517,28 +515,13 @@ title: "att.alignment"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@when</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
-                  be the ID of a 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/when">when</a> element elsewhere in the document.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.alignment">att.alignment</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -590,7 +573,7 @@ title: "att.alignment"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

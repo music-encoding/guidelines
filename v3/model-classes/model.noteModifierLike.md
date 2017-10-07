@@ -10,62 +10,60 @@ title: "model.noteModifierLike"
    <h3 id="model.noteModifierLike">model.noteModifierLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.noteModifierLike</span> Groups elements that modify note-like features.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that modify note-like features.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.layerPart.mensural">model.layerPart.mensural</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.syllablePart">model.syllablePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.rdgPart.critapp">model.rdgPart.critapp</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.layerPart.mensural.html">model.layerPart.mensural</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.syllablePart.html">model.syllablePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.rdgPart.critapp.html">model.rdgPart.critapp</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sic.html">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accid">accid</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/artic">artic</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dot">dot</a> (direct members of model.noteModifierLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/artic.html">artic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dot.html">dot</a> (direct members of model.noteModifierLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

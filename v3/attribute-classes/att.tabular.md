@@ -10,61 +10,36 @@ title: "att.tabular"
    <h3 id="att.tabular">att.tabular</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.tabular</span> Attributes shared by table cells.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes shared by table cells.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.figtable</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/td">td</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/th">th</a> (direct members of att.tabular)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/td.html">td</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/th.html">th</a> (direct members of att.tabular)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@colspan</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">The number of columns spanned by this cell.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.tabular">att.tabular</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@rowspan</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">The number of rows spanned by this cell.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.tabular">att.tabular</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

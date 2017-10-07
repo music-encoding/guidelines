@@ -10,77 +10,36 @@ title: "att.mediabounds"
    <h3 id="att.mediabounds">att.mediabounds</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.mediabounds</span> Attributes that establish the boundaries of a media object.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that establish the boundaries of a media object.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clip">clip</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/recording">recording</a> (direct members of att.mediabounds)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clip.html">clip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/recording.html">recording</a> (direct members of att.mediabounds)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@begin</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies a point where the relevant content begins. A numerical value must be less
-                  and a time value must be earlier than that given by the end attribute.
-               </span>
-               Value is plain text.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@betype</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Type of values used in the begin/end attributes. The begin and end attributes can
-                  only be interpreted meaningfully in conjunction with this attribute.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BETYPE">data.BETYPE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@end</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies a point where the relevant content ends. If not specified, the end of the
-                  content is assumed to be the end point. A numerical value must be greater and a time
-                  value must be later than that given by the begin attribute.
-               </span>
-               Value is plain text.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mediabounds">att.mediabounds</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

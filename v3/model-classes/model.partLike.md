@@ -10,36 +10,34 @@ title: "model.partLike"
    <h3 id="model.partLike">model.partLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.partLike</span> Groups elements that represent a separate performer part.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that represent a separate performer part.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/parts">parts</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/parts.html">parts</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/part">part</a> (direct member of model.partLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a> (direct member of model.partLike)
                </div>
             </div>
          </td>

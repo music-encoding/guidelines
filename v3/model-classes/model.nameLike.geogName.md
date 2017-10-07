@@ -10,47 +10,45 @@ title: "model.nameLike.geogName"
    <h3 id="model.nameLike.geogName">model.nameLike.geogName</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.nameLike.geogName</span> Groups geographic name elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups geographic name elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.namesdates</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventPart">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.nameLike.place">model.nameLike.place</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.place.html">model.nameLike.place</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/eventList.html">eventList</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a> (direct member of model.nameLike.geogName)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogName.html">geogName</a> (direct member of model.nameLike.geogName)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

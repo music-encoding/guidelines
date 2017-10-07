@@ -10,41 +10,39 @@ title: "model.persNamePart"
    <h3 id="model.persNamePart">model.persNamePart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.persNamePart</span> Groups elements which form part of a personal name.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements which form part of a personal name.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.namesdates</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/roleName">roleName</a> (direct members of model.persNamePart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/addName.html">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/famName.html">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/foreName.html">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genName.html">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/nameLink.html">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/roleName.html">roleName</a> (direct members of model.persNamePart)
                </div>
             </div>
          </td>

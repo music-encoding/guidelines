@@ -10,8 +10,7 @@ title: "data.FINGER.FRET"
    <h3 id="data.FINGER.FRET">data.FINGER.FRET</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.FINGER.FRET</span> In a guitar chord diagram, a label indicating which finger, if any, should be used
+         <td colspan="2" class="wovenodd-col2">In a guitar chord diagram, a label indicating which finger, if any, should be used
             to
             play an individual string. The index, middle, ring, and little fingers are represented
             by
@@ -22,23 +21,23 @@ title: "data.FINGER.FRET"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/chordMember">chordMember</a>/@fing
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/chordMember.html">chordMember</a>/@fing
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

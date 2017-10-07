@@ -10,29 +10,27 @@ title: "att.channelized"
    <h3 id="att.channelized">att.channelized</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.channelized</span> Attributes that record MIDI channel information.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that record MIDI channel information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.midi</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/instrDef">instrDef</a> (direct member of att.channelized)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/instrDef.html">instrDef</a> (direct member of att.channelized)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a>)
                   </span>
                </div>
             </div>
@@ -40,60 +38,13 @@ title: "att.channelized"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@midi.channel</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records a MIDI channel value.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDICHANNEL">data.MIDICHANNEL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@midi.duty</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the 'on' part of the duty cycle as a percentage of a note's
-                  duration.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PERCENT">data.PERCENT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@midi.port</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Sets the MIDI port value.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@midi.track</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Sets the MIDI track.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

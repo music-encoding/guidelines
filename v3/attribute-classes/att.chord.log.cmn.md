@@ -10,26 +10,24 @@ title: "att.chord.log.cmn"
    <h3 id="att.chord.log.cmn">att.chord.log.cmn</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.chord.log.cmn</span> Logical domain attributes for CMN features.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes for CMN features.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.chord.log">att.chord.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.chord.log.html">att.chord.log</a>)
                   </span>
                </div>
             </div>
@@ -37,50 +35,13 @@ title: "att.chord.log.cmn"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@beam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates that this event is "under a beam".</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BEAM">data.BEAM</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.beamed">att.beamed</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@lv</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the attachment of an l.v. (laissez vibrer) sign to this element.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lvpresent">att.lvpresent</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@ornam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates that this element has an attached ornament. If visual information about
-                  the ornament is needed, then one of the elements that represents an ornament (mordent,
-                  trill, or turn) should be employed.
-               </span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ORNAM.cmn">data.ORNAM.cmn</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.ornam">att.ornam</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

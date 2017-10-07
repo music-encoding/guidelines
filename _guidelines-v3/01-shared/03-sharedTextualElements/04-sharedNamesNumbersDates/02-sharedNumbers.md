@@ -12,7 +12,7 @@ a text. The **@unit** may be used to specify the unit of measurement.
 
 
 {% include specDesc.html version=page.version elem="num" atts="" %}
-{% include specDesc.html version=page.version elem="num" atts="att.measurement/unit" %}
+
 
 
 

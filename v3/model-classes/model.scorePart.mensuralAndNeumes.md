@@ -10,32 +10,31 @@ title: "model.scorePart.mensuralAndNeumes"
    <h3 id="model.scorePart.mensuralAndNeumes">model.scorePart.mensuralAndNeumes</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.scorePart.mensuralAndNeumes</span> Groups elements that may appear as part of a score in the mensural and neumes
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of a score in the mensural and neumes
             repertoires.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.scorePart">model.scorePart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -43,7 +42,7 @@ title: "model.scorePart.mensuralAndNeumes"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

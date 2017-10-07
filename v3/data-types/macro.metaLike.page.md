@@ -10,29 +10,27 @@ title: "macro.metaLike.page"
    <h3 id="macro.metaLike.page">macro.metaLike.page</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">macro.metaLike.page</span> Groups elements that contain meta-data about a single page.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that contain meta-data about a single page.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/pb">pb</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/pb.html">pb</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

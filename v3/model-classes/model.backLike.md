@@ -10,43 +10,41 @@ title: "model.backLike"
    <h3 id="model.backLike">model.backLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.backLike</span> Groups elements that may contain back matter.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may contain back matter.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.text</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.musicPart">model.musicPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.musicPart.html">model.musicPart</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/back">back</a> (direct member of model.backLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/back.html">back</a> (direct member of model.backLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

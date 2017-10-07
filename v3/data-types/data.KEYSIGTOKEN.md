@@ -10,32 +10,31 @@ title: "data.KEYSIGTOKEN"
    <h3 id="data.KEYSIGTOKEN">data.KEYSIGTOKEN</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.KEYSIGTOKEN</span> A token describing the pitch name, inflection, and octave number of an altered pitch
+         <td colspan="2" class="wovenodd-col2">A token describing the pitch name, inflection, and octave number of an altered pitch
             in
             a key signature.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a> (@sig.mixed), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a> (@key.sig.mixed)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySig.log.html">att.keySig.log</a> (@sig.mixed), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a> (@key.sig.mixed)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

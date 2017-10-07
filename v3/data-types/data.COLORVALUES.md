@@ -10,29 +10,27 @@ title: "data.COLORVALUES"
    <h3 id="data.COLORVALUES">data.COLORVALUES</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.COLORVALUES</span> Parameterized color values
-         </td>
+         <td colspan="2" class="wovenodd-col2">Parameterized color values</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data.COLOR">data.COLOR</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.COLOR.html">data.COLOR</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

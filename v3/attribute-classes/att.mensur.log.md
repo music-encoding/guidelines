@@ -10,142 +10,36 @@ title: "att.mensur.log"
    <h3 id="att.mensur.log">att.mensur.log</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.mensur.log</span> Logical domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a> (direct members of att.mensur.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensuration.html">mensuration</a> (direct members of att.mensur.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@dot</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies whether a dot is to be added to the base symbol.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@modusmaior</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the maxima-long relationship.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMAIOR">data.MODUSMAIOR</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@modusminor</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the long-breve relationship.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODUSMINOR">data.MODUSMINOR</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@num</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Along with numbase, describes duration as a ratio. num is the first value in the
-                  ratio, while numbase is the second.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@numbase</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Along with num, describes duration as a ratio. num is the first value in the ratio,
-                  while numbase is the second.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">positiveInteger</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@prolatio</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the semibreve-minim relationship.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PROLATIO">data.PROLATIO</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@sign</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">The base symbol in the mensuration sign/time signature of mensural notation.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensur.log">att.mensur.log</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@slash</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the number of slashes present.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SLASH">data.SLASH</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.slashcount">att.slashcount</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@tempus</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the breve-semibreve relationship.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPUS">data.TEMPUS</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.shared">att.mensural.shared</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

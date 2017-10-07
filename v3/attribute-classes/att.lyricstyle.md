@@ -10,32 +10,30 @@ title: "att.lyricstyle"
    <h3 id="att.lyricstyle">att.lyricstyle</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.lyricstyle</span> Attributes that describe default typography of lyrics.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe default typography of lyrics.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -43,80 +41,13 @@ title: "att.lyricstyle"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@lyric.align</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the alignment of lyric syllables associated with a note or chord.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@lyric.fam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Sets the font family default value for lyrics.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@lyric.name</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Sets the font name default value for lyrics.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@lyric.size</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Sets the default font size value for lyrics.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@lyric.style</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Sets the default font style value for lyrics.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@lyric.weight</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Sets the default font weight value for lyrics.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

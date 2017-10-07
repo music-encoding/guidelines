@@ -10,43 +10,42 @@ title: "att.mensural.vis"
    <h3 id="att.mensural.vis">att.mensural.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.mensural.vis</span> Used by staffDef and scoreDef to provide default values for attributes in the visual
+         <td colspan="2" class="wovenodd-col2">Used by staffDef and scoreDef to provide default values for attributes in the visual
             domain related to mensuration.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.mensural</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis.mensural">att.scoreDef.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.mensural">att.scoreDef.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis.mensural">att.staffDef.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.mensural">att.staffDef.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -54,72 +53,13 @@ title: "att.mensural.vis"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@mensur.color</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the color of the mensuration sign. Do not confuse this with the musical term
-                  'color' as used in pre-CMN notation.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.COLOR">data.COLOR</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@mensur.form</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates whether the base symbol is written vertically or horizontally.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">horizontal</span>" ,  "
-               <span style="font-weight: 500;">vertical</span>" 
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@mensur.loc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the staff location of the mensuration sign.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@mensur.orient</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the rotation or reflection of the base symbol.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ORIENTATION">data.ORIENTATION</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@mensur.size</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the relative size of the mensuration sign.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SIZE">data.SIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.mensural.vis">att.mensural.vis</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

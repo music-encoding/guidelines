@@ -10,29 +10,27 @@ title: "data.STEMPOSITION"
    <h3 id="data.STEMPOSITION">data.STEMPOSITION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.STEMPOSITION</span> Position of a note's stem relative to the head of the note.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Position of a note's stem relative to the head of the note.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.stems">att.stems</a> (@stem.pos)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a> (@stem.pos)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -47,7 +45,7 @@ title: "data.STEMPOSITION"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

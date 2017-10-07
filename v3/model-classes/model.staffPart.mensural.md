@@ -10,31 +10,29 @@ title: "model.staffPart.mensural"
    <h3 id="model.staffPart.mensural">model.staffPart.mensural</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.staffPart.mensural</span> Groups elements that are components of a staff in the mensural repertoire.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that are components of a staff in the mensural repertoire.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.mensural</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart.mensuralAndNeumes">model.staffPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -42,7 +40,7 @@ title: "model.staffPart.mensural"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

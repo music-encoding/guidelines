@@ -11,7 +11,7 @@ Vocally performed text may also be encoded separately from the notes with the [l
 
 
 {% include specDesc.html version=page.version elem="lyrics" atts="" %}
-{% include specDesc.html version=page.version elem="lyrics" atts="att.staffident/staff att.layerident/layer" %}
+
 
 
 

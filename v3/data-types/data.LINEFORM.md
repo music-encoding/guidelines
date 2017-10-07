@@ -10,33 +10,31 @@ title: "data.LINEFORM"
    <h3 id="data.LINEFORM">data.LINEFORM</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.LINEFORM</span> Visual form of a line.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual form of a line.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.curverend">att.curverend</a> (@lform), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.line.vis">att.line.vis</a> (@form), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.linerend.base">att.linerend.base</a> (@lform), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.slurrend">att.slurrend</a> (@slur.lform), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.tierend">att.tierend</a> (@tie.lform)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.curverend.html">att.curverend</a> (@lform), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@form), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.linerend.base.html">att.linerend.base</a> (@lform), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.slurrend.html">att.slurrend</a> (@slur.lform), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tierend.html">att.tierend</a> (@tie.lform)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -53,7 +51,7 @@ title: "data.LINEFORM"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

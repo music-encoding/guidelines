@@ -10,33 +10,32 @@ title: "data.PITCHNAME"
    <h3 id="data.PITCHNAME">data.PITCHNAME</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.PITCHNAME</span> The pitch names (gamut) used within a single octave. The default values conform to
+         <td colspan="2" class="wovenodd-col2">The pitch names (gamut) used within a single octave. The default values conform to
             Acoustical Society of America representation.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a> (@key.pname), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.pitch">att.pitch</a> (@pname), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a> (@tune.pname), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a> (@ploc)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a> (@key.pname), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.pitch.html">att.pitch</a> (@pname), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.ges.html">att.scoreDef.ges</a> (@tune.pname), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffloc.pitched.html">att.staffloc.pitched</a> (@ploc)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

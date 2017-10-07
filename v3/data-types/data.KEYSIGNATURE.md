@@ -10,9 +10,7 @@ title: "data.KEYSIGNATURE"
    <h3 id="data.KEYSIGNATURE">data.KEYSIGNATURE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.KEYSIGNATURE</span> Key signature may be indicated by a value showing where the key is in the circle
-            of
+         <td colspan="2" class="wovenodd-col2">Key signature may be indicated by a value showing where the key is in the circle of
             fifths. Mixed key signatures, e.g. those consisting of a mixture of flats and sharps,
             and
             key signatures with unorthodox placement of the accidentals (Read, p. 143) must be
@@ -23,24 +21,24 @@ title: "data.KEYSIGNATURE"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a> (@sig), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySigDefault.log">att.keySigDefault.log</a> (@key.sig)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySig.log.html">att.keySig.log</a> (@sig), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.keySigDefault.log.html">att.keySigDefault.log</a> (@key.sig)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

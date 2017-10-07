@@ -10,39 +10,37 @@ title: "model.imprintPart"
    <h3 id="model.imprintPart">model.imprintPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.imprintPart</span> Groups elements that may appear as part of a bibliographic imprint.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of a bibliographic imprint.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bibl">bibl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/imprint">imprint</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bibl.html">bibl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/imprint.html">imprint</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/distributor">distributor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/publisher">publisher</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pubPlace">pubPlace</a> (direct members of model.imprintPart)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/distributor.html">distributor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/publisher.html">publisher</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pubPlace.html">pubPlace</a> (direct members of model.imprintPart)
                </div>
             </div>
          </td>

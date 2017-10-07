@@ -10,31 +10,29 @@ title: "data.DURATION"
    <h3 id="data.DURATION">data.DURATION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.DURATION</span> Logical, that is, written, duration attribute values.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Logical, that is, written, duration attribute values.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.duration.default">att.duration.default</a> (@dur.default), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.duration.musical">att.duration.musical</a> (@dur), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a> (@mm.unit)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.duration.default.html">att.duration.default</a> (@dur.default), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.duration.musical.html">att.duration.musical</a> (@dur), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmtempo</a> (@mm.unit)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

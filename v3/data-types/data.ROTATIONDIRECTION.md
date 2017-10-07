@@ -10,29 +10,27 @@ title: "data.ROTATIONDIRECTION"
    <h3 id="data.ROTATIONDIRECTION">data.ROTATIONDIRECTION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.ROTATIONDIRECTION</span> Rotation term.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Rotation term.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data.ROTATION">data.ROTATION</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.ROTATION.html">data.ROTATION</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -55,7 +53,7 @@ title: "data.ROTATIONDIRECTION"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

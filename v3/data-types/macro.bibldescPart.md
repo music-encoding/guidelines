@@ -10,30 +10,29 @@ title: "macro.bibldescPart"
    <h3 id="macro.bibldescPart">macro.bibldescPart</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">macro.bibldescPart</span> Groups manifestation- and item-specific elements that may appear as part of a
+         <td colspan="2" class="wovenodd-col2">Groups manifestation- and item-specific elements that may appear as part of a
             bibliographic description.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/source">source</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/source.html">source</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

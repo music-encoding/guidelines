@@ -10,39 +10,38 @@ title: "model.captionLike"
    <h3 id="model.captionLike">model.captionLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.captionLike</span> Groups elements that contain the text of a caption or other text displayed along
-            with a
+         <td colspan="2" class="wovenodd-col2">Groups elements that contain the text of a caption or other text displayed along with
+            a
             figure.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fig">fig</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/table">table</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fig.html">fig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/table.html">table</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/caption">caption</a> (direct member of model.captionLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/caption.html">caption</a> (direct member of model.captionLike)
                </div>
             </div>
          </td>

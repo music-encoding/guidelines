@@ -10,29 +10,27 @@ title: "data.LIGATUREFORM"
    <h3 id="data.LIGATUREFORM">data.LIGATUREFORM</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.LIGATUREFORM</span> Ligature forms.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Ligature forms.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.ligature.log">att.ligature.log</a> (@form)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.ligature.log.html">att.ligature.log</a> (@form)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -45,7 +43,7 @@ title: "data.LIGATUREFORM"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

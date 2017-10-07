@@ -10,8 +10,7 @@ title: "data.MEASUREBEATOFFSET"
    <h3 id="data.MEASUREBEATOFFSET">data.MEASUREBEATOFFSET</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.MEASUREBEATOFFSET</span> A count of measures plus a beat location, i.e., (\+|-)?[0-9]+m\+[0-9]+(\.?[0-9]*)?.
+         <td colspan="2" class="wovenodd-col2">A count of measures plus a beat location, i.e., (\+|-)?[0-9]+m\+[0-9]+(\.?[0-9]*)?.
             The
             measure count is the number of barlines crossed by the event, while the beat location
             is a
@@ -31,23 +30,23 @@ title: "data.MEASUREBEATOFFSET"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.origin.timestamp.musical">att.origin.timestamp.musical</a> (@origin.tstamp)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.origin.timestamp.musical.html">att.origin.timestamp.musical</a> (@origin.tstamp)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

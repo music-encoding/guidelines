@@ -10,31 +10,30 @@ title: "data.OTHERSTAFF"
    <h3 id="data.OTHERSTAFF">data.OTHERSTAFF</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.OTHERSTAFF</span> For musical material designated to appear on another staff, the location of the staff
+         <td colspan="2" class="wovenodd-col2">For musical material designated to appear on another staff, the location of the staff
             relative to the current one; i.e., the staff above or the staff below.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.beamedwith">att.beamedwith</a> (@beam.with), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.stems.cmn">att.stems.cmn</a> (@stem.with)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beamedwith.html">att.beamedwith</a> (@beam.with), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.stems.cmn.html">att.stems.cmn</a> (@stem.with)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -47,7 +46,7 @@ title: "data.OTHERSTAFF"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -10,186 +10,169 @@ title: "att.bibl"
    <h3 id="att.bibl">att.bibl</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.bibl</span> Bibliographic attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Bibliographic attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accessRestrict">accessRestrict</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/addName">addName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/altId">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/annot">annot</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/arranger">arranger</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/audience">audience</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/author">author</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/availability">availability</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/avFile">avFile</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bibl">bibl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/biblList">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/biblScope">biblScope</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bloc">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/byline">byline</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/captureMode">captureMode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/carrierForm">carrierForm</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/castItem">castItem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/castList">castList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/change">change</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/changeDesc">changeDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classCode">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classification">classification</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/composer">composer</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/condition">condition</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/contentItem">contentItem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/contents">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/context">context</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/corpName">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/country">country</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/creation">creation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/depth">depth</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dimensions">dimensions</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/distributor">distributor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/district">district</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/edition">edition</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editionStmt">editionStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editor">editor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/encodingDesc">encodingDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/event">event</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/exhibHist">exhibHist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/extent">extent</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/famName">famName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fileChar">fileChar</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fileDesc">fileDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fingerprint">fingerprint</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/foreName">foreName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/funder">funder</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genName">genName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/genre">genre</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogFeat">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/geogName">geogName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hand">hand</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/handList">handList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/height">height</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/history">history</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/identifier">identifier</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/imprint">imprint</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incipCode">incipCode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incipText">incipText</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/inscription">inscription</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/interpretation">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/item">item</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/key">key</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/language">language</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/langUsage">langUsage</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/librettist">librettist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lyricist">lyricist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meiHead">meiHead</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensuration">mensuration</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meter">meter</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/name">name</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/normalization">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/nameLink">nameLink</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/notesStmt">notesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/otherChar">otherChar</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfDuration">perfDuration</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfMedium">perfMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfRes">perfRes</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/perfResList">perfResList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/periodName">periodName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/persName">persName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physDesc">physDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physLoc">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/physMedium">physMedium</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/plateNum">plateNum</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/playingSpeed">playingSpeed</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/price">price</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/provenance">provenance</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/publisher">publisher</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pubPlace">pubPlace</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/pubStmt">pubStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/recipient">recipient</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/region">region</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/relatedItem">relatedItem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/relation">relation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/repository">repository</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/resp">resp</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/respStmt">respStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/revisionDesc">revisionDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/roleName">roleName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/samplingDecl">samplingDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreFormat">scoreFormat</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/segmentation">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/series">series</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/seriesStmt">seriesStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/settlement">settlement</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/soundChan">soundChan</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/source">source</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/specRepro">specRepro</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sponsor">sponsor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/stdVals">stdVals</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/styleName">styleName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/sysReq">sysReq</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tempo">tempo</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/term">term</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/termList">termList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/textLang">textLang</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/title">title</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titlePage">titlePage</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/titleStmt">titleStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trackConfig">trackConfig</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/treatHist">treatHist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/treatSched">treatSched</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/unpub">unpub</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/useRestrict">useRestrict</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/watermark">watermark</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/width">width</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a> (direct members of att.bibl)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accessRestrict.html">accessRestrict</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/addName.html">addName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/altId.html">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/arranger.html">arranger</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/audience.html">audience</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/author.html">author</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/availability.html">availability</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/avFile.html">avFile</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bibl.html">bibl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblList.html">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblScope.html">biblScope</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bloc.html">bloc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/byline.html">byline</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/captureMode.html">captureMode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/carrierForm.html">carrierForm</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/castItem.html">castItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/castList.html">castList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/change.html">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/changeDesc.html">changeDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classCode.html">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classification.html">classification</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/composer.html">composer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/condition.html">condition</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contentItem.html">contentItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contents.html">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/context.html">context</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/country.html">country</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/creation.html">creation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/date.html">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/depth.html">depth</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dimensions.html">dimensions</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/distributor.html">distributor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/district.html">district</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/edition.html">edition</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editionStmt.html">editionStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editor.html">editor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/event.html">event</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/eventList.html">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/exhibHist.html">exhibHist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expression.html">expression</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/extent.html">extent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/famName.html">famName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fileChar.html">fileChar</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fileDesc.html">fileDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fingerprint.html">fingerprint</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/foreName.html">foreName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/funder.html">funder</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genName.html">genName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genre.html">genre</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogFeat.html">geogFeat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/geogName.html">geogName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hand.html">hand</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handList.html">handList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/height.html">height</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/history.html">history</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/identifier.html">identifier</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/imprint.html">imprint</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incip.html">incip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipCode.html">incipCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipText.html">incipText</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/inscription.html">inscription</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/item.html">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/key.html">key</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/language.html">language</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/langUsage.html">langUsage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/librettist.html">librettist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lyricist.html">lyricist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiHead.html">meiHead</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensuration.html">mensuration</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meter.html">meter</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/name.html">name</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/nameLink.html">nameLink</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/notesStmt.html">notesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/otherChar.html">otherChar</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfDuration.html">perfDuration</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfMedium.html">perfMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfRes.html">perfRes</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfResList.html">perfResList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/periodName.html">periodName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physDesc.html">physDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physLoc.html">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physMedium.html">physMedium</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/plateNum.html">plateNum</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/playingSpeed.html">playingSpeed</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/price.html">price</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/provenance.html">provenance</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/publisher.html">publisher</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pubPlace.html">pubPlace</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pubStmt.html">pubStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/recipient.html">recipient</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/region.html">region</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relatedItem.html">relatedItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relation.html">relation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/repository.html">repository</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/resp.html">resp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/respStmt.html">respStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/revisionDesc.html">revisionDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/roleName.html">roleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreFormat.html">scoreFormat</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/series.html">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/seriesStmt.html">seriesStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/settlement.html">settlement</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/soundChan.html">soundChan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/source.html">source</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/specRepro.html">specRepro</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sponsor.html">sponsor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stdVals.html">stdVals</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/styleName.html">styleName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sysReq.html">sysReq</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tempo.html">tempo</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/term.html">term</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/termList.html">termList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/textLang.html">textLang</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/title.html">title</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/titlePage.html">titlePage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/titleStmt.html">titleStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trackConfig.html">trackConfig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/treatHist.html">treatHist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/treatSched.html">treatSched</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unpub.html">unpub</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/useRestrict.html">useRestrict</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/watermark.html">watermark</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/width.html">width</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/work.html">work</a> (direct members of att.bibl)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@analog</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains a reference to a field or element in another descriptive encoding system
-                  to
-                  which this MEI element is comparable.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.bibl">att.bibl</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -233,7 +216,7 @@ title: "att.bibl"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Remarks</span>
+            <strong>Remarks</strong>
          </td>
          <td class="wovenodd-col2">
             <p>Mapping elements from one system to another via @analog may help a repository harvest

@@ -10,8 +10,7 @@ title: "data.CERTAINTY"
    <h3 id="data.CERTAINTY">data.CERTAINTY</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.CERTAINTY</span> Values for certainty attribute. Certainty may be expressed by one of the values 'high',
+         <td colspan="2" class="wovenodd-col2">Values for certainty attribute. Certainty may be expressed by one of the values 'high',
             'medium', or 'low'. The value 'unknown' should be used in cases where the encoder
             does not
             wish to assert an opinion.
@@ -19,23 +18,23 @@ title: "data.CERTAINTY"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.evidence">att.evidence</a> (@cert)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.evidence.html">att.evidence</a> (@cert)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -52,7 +51,7 @@ title: "data.CERTAINTY"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -10,32 +10,31 @@ title: "data.OCTAVE.DIS"
    <h3 id="data.OCTAVE.DIS">data.OCTAVE.DIS</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.OCTAVE.DIS</span> The amount of octave displacement; that is, '8' (as in '8va' for 1 octave), '15'
-            (for 2
+         <td colspan="2" class="wovenodd-col2">The amount of octave displacement; that is, '8' (as in '8va' for 1 octave), '15' (for
+            2
             octaves), or rarely '22' (for 3 octaves).
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a> (@clef.dis), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.octavedisplacement">att.octavedisplacement</a> (@dis)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.dis), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a> (@dis)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

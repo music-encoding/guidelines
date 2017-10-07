@@ -10,40 +10,39 @@ title: "model.dimLike"
    <h3 id="model.dimLike">model.dimLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.dimLike</span> Groups elements which describe a measurement forming part of the physical dimensions
+         <td colspan="2" class="wovenodd-col2">Groups elements which describe a measurement forming part of the physical dimensions
             of
             an object.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dimensions">dimensions</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dimensions.html">dimensions</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/depth">depth</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/height">height</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/width">width</a> (direct members of model.dimLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/depth.html">depth</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/height.html">height</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/width.html">width</a> (direct members of model.dimLike)
                </div>
             </div>
          </td>

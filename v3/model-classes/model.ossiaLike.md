@@ -10,44 +10,42 @@ title: "model.ossiaLike"
    <h3 id="model.ossiaLike">model.ossiaLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.ossiaLike</span> Groups elements that function like ossia.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that function like ossia.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.measurePart">model.measurePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart">model.staffPart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.measurePart.html">model.measurePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.staffPart.html">model.staffPart</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ossia">ossia</a> (direct member of model.ossiaLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ossia.html">ossia</a> (direct member of model.ossiaLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

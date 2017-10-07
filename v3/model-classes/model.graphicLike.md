@@ -10,40 +10,39 @@ title: "model.graphicLike"
    <h3 id="model.graphicLike">model.graphicLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.graphicLike</span> Groups elements that indicate the location of an inline graphic, illustration, or
+         <td colspan="2" class="wovenodd-col2">Groups elements that indicate the location of an inline graphic, illustration, or
             figure.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.figtable</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/fig">fig</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fig.html">fig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incip.html">incip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/surface.html">surface</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/zone.html">zone</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a> (direct member of model.graphicLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/graphic.html">graphic</a> (direct member of model.graphicLike)
                </div>
             </div>
          </td>

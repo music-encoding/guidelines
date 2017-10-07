@@ -10,49 +10,47 @@ title: "model.scoreDefLike"
    <h3 id="model.scoreDefLike">model.scoreDefLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.scoreDefLike</span> Groups elements that provide score meta-information.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that provide score meta-information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.scorePart">model.scorePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.sectionPart">model.sectionPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.staffPart.mensuralAndNeumes">model.staffPart.mensuralAndNeumes</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.layerPart.mensuralAndNeumes">model.layerPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syllable.html">syllable</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a> (direct member of model.scoreDefLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a> (direct member of model.scoreDefLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

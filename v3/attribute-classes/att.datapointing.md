@@ -10,69 +10,55 @@ title: "att.datapointing"
    <h3 id="att.datapointing">att.datapointing</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.datapointing</span> Attributes for linking metadata to data.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes for linking metadata to data.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/availability">availability</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/classification">classification</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/clip">clip</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/correction">correction</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/editorialDecl">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/expression">expression</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/interpretation">interpretation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/item">item</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/langUsage">langUsage</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/normalization">normalization</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/projectDesc">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/recording">recording</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/relatedItem">relatedItem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/samplingDecl">samplingDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/segmentation">segmentation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/source">source</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/stdVals">stdVals</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/when">when</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/work">work</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a> (direct members of att.datapointing)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/availability.html">availability</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classification.html">classification</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clip.html">clip</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/correction.html">correction</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expression.html">expression</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/interpretation.html">interpretation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/item.html">item</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/langUsage.html">langUsage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/normalization.html">normalization</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/recording.html">recording</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relatedItem.html">relatedItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/segmentation.html">segmentation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/source.html">source</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/stdVals.html">stdVals</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/surface.html">surface</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/when.html">when</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/work.html">work</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/zone.html">zone</a> (direct members of att.datapointing)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@data</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
-               One or more values from
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.datapointing">att.datapointing</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
@@ -164,7 +150,7 @@ title: "att.datapointing"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Constraints</span>
+            <strong>Constraints</strong>
          </td>
          <td class="wovenodd-col2">
             <div>

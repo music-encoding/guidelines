@@ -10,8 +10,7 @@ title: "data.ARTICULATION"
    <h3 id="data.ARTICULATION">data.ARTICULATION</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.ARTICULATION</span> The following list of articulations mostly corresponds to symbols from the Western
+         <td colspan="2" class="wovenodd-col2">The following list of articulations mostly corresponds to symbols from the Western
             Musical Symbols portion of the Unicode Standard. The dot and stroke values may be
             used in
             cases where interpretation is difficult or undesirable.
@@ -19,24 +18,24 @@ title: "data.ARTICULATION"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.articulation">att.articulation</a> (@artic), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.articulation.performed">att.articulation.performed</a> (@artic.ges)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.articulation.html">att.articulation</a> (@artic), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.articulation.performed.html">att.articulation.performed</a> (@artic.ges)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -125,7 +124,7 @@ title: "data.ARTICULATION"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

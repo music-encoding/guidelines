@@ -10,50 +10,48 @@ title: "model.dateLike"
    <h3 id="model.dateLike">model.dateLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.dateLike</span> Groups elements containing date expressions.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements containing date expressions.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.textphraseLike.limited">model.textphraseLike.limited</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.pubStmtPart">model.pubStmtPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.eventPart">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model.titlePagePart">model.titlePagePart</a>
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.pubStmtPart.html">model.pubStmtPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/change">change</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/eventList">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/change.html">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/eventList.html">eventList</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/date">date</a> (direct member of model.dateLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/date.html">date</a> (direct member of model.dateLike)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

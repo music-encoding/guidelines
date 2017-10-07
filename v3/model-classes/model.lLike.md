@@ -10,36 +10,34 @@ title: "model.lLike"
    <h3 id="model.lLike">model.lLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.lLike</span> Groups elements representing metrical components such as verse lines.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements representing metrical components such as verse lines.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.text</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/lg">lg</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lg.html">lg</a>
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/l">l</a> (direct member of model.lLike)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/l.html">l</a> (direct member of model.lLike)
                </div>
             </div>
          </td>

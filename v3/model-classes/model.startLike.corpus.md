@@ -10,19 +10,17 @@ title: "model.startLike.corpus"
    <h3 id="model.startLike.corpus">model.startLike.corpus</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">model.startLike.corpus</span> Groups elements that may be document elements when the corpus module is invoked.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that may be document elements when the corpus module is invoked.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.corpus</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Available in</span>
+            <strong>Available in</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent"></div>
@@ -30,12 +28,12 @@ title: "model.startLike.corpus"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/meiCorpus">meiCorpus</a> (direct member of model.startLike.corpus)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a> (direct member of model.startLike.corpus)
                </div>
             </div>
          </td>

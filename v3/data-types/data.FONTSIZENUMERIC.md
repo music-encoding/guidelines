@@ -10,29 +10,27 @@ title: "data.FONTSIZENUMERIC"
    <h3 id="data.FONTSIZENUMERIC">data.FONTSIZENUMERIC</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.FONTSIZENUMERIC</span> Font size expressed as numbers; i.e. points.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Font size expressed as numbers; i.e. points.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>
+               <a class="link_odd" href="/{{ page.version }}/data-types/data.FONTSIZE.html">data.FONTSIZE</a>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

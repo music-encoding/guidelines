@@ -10,32 +10,31 @@ title: "data.FONTFAMILY"
    <h3 id="data.FONTFAMILY">data.FONTFAMILY</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.FONTFAMILY</span> Font family (for text) attribute
+         <td colspan="2" class="wovenodd-col2">Font family (for text) attribute
             values.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.lyricstyle">att.lyricstyle</a> (@lyric.fam), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.textstyle">att.textstyle</a> (@text.fam), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.typography">att.typography</a> (@fontfam)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricstyle</a> (@lyric.fam), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.textstyle.html">att.textstyle</a> (@text.fam), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a> (@fontfam)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

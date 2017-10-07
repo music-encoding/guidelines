@@ -10,32 +10,30 @@ title: "att.staffgroupingsym"
    <h3 id="att.staffgroupingsym">att.staffgroupingsym</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.staffgroupingsym</span> Attributes that describe the symbol used to group a set of staves.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes that describe the symbol used to group a set of staves.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/grpSym">grpSym</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/grpSym.html">grpSym</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.grpSym.log">att.grpSym.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.grpSym.log.html">att.grpSym.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffGrp.html">staffGrp</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffGrp.vis">att.staffGrp.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffGrp.vis.html">att.staffGrp.vis</a>)
                   </span>
                </div>
             </div>
@@ -43,36 +41,13 @@ title: "att.staffgroupingsym"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@symbol</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Specifies the symbol used to group a set of staves.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">brace</span>" 
-               <i>(Curved symbol, i.e., {.)</i>,  "
-               <span style="font-weight: 500;">bracket</span>" 
-               <i>(Square symbol, i.e., [, but with curved/angled top and bottom segments.)</i>,  "
-               <span style="font-weight: 500;">bracketsq</span>" 
-               <i>(Square symbol, i.e., [, with horizontal top and bottom segments.)</i>,  "
-               <span style="font-weight: 500;">line</span>" 
-               <i>(Line symbol, i.e., |, (wide) line without top and bottom curved/horizontal
-                  segments.)
-               </i>,  "
-               <span style="font-weight: 500;">none</span>" 
-               <i>(Grouping symbol missing.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.staffgroupingsym">att.staffgroupingsym</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

@@ -10,274 +10,35 @@ title: "att.mRest.vis"
    <h3 id="att.mRest.vis">att.mRest.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.mRest.vis</span> Visual domain attributes.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRest">mRest</a> (direct member of att.mRest.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a> (direct member of att.mRest.vis)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@altsym</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Provides a way of pointing to a user-defined symbol. It must contain an ID of a
-                  &lt;symbolDef&gt; element elsewhere in the document.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.altsym">att.altsym</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@cutout</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">"Cut-out" style indicated for this measure.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">cutout</span>" 
-               <i>(The staff lines should not be drawn.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.cutout">att.cutout</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontfam</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains the name of a font-family.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTFAMILY">data.FONTFAMILY</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontname</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the name of a font.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTNAME">data.FONTNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontsize</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch,
-                  relative terms, e.g., "small", "larger", etc., or percentage values relative to "normal"
-                  size, e.g., "125%". 
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSIZE">data.FONTSIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontstyle</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the style of a font, i.e, italic, oblique, or normal.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTSTYLE">data.FONTSTYLE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@fontweight</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Used to indicate bold type.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FONTWEIGHT">data.FONTWEIGHT</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.typography">att.typography</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@glyphname</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Glyph name.</span>
-               Value of datatype 
-               <span style="font-weight: 500;">string</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@glyphnum</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B.
-                  SMuFL version 1.18 uses the range U+E000 - U+ECBF.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">
-                  a string matching the following regular expression: "(#x|U\+)[A-F0-9]+"
-                  
-               </span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.extsym">att.extsym</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@ho</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records a horizontal adjustment to a feature's programmatically-determined location
-                  in terms of staff interline distance; that is, in units of 1/2 the distance between
-                  adjacent staff lines.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.ho">att.visualoffset.ho</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@loc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Holds the staff location of the feature.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.staffloc">att.staffloc</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@oloc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records staff location in terms of written octave.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.OCTAVE">data.OCTAVE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@ploc</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Captures staff location in terms of written pitch name.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.staffloc.pitched">att.staffloc.pitched</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@size</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Describes the relative size of a feature.</span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.SIZE">data.SIZE</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.relativesize">att.relativesize</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@to</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records a timestamp adjustment of a feature's programmatically-determined location
-                  in terms of musical time; that is, beats.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.to">att.visualoffset.to</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@visible</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates if a feature should be rendered when the notation is presented graphically
-                  or sounded when it is presented in an aural form.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.visibility">att.visibility</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@vo</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records the vertical adjustment of a feature's programmatically-determined location
-                  in terms of staff interline distance; that is, in units of 1/2 the distance between
-                  adjacent staff lines.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.vo">att.visualoffset.vo</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@x</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Encodes an x coordinate for a feature in an output coordinate system. When it is
-                  necessary to record the placement of a feature in a facsimile image, use the facs
-                  attribute.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">decimal</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@y</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Encodes an y coordinate for a feature in an output coordinate system. When it is
-                  necessary to record the placement of a feature in a facsimile image, use the facs
-                  attribute.
-               </span>
-               Value of datatype 
-               <span style="font-weight: 500;">decimal</span>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.xy">att.xy</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

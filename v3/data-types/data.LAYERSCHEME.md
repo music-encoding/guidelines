@@ -10,8 +10,7 @@ title: "data.LAYERSCHEME"
    <h3 id="data.LAYERSCHEME">data.LAYERSCHEME</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.LAYERSCHEME</span> Indicates how stems should be drawn when more than one layer is present and stem
+         <td colspan="2" class="wovenodd-col2">Indicates how stems should be drawn when more than one layer is present and stem
             directions are not indicated on the notes/chords themselves. '1' indicates that there
             is
             only a single layer on a staff. '2o' means there are two layers with opposing stems.
@@ -27,23 +26,23 @@ title: "data.LAYERSCHEME"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a> (@layerscheme)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a> (@layerscheme)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -62,7 +61,7 @@ title: "data.LAYERSCHEME"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

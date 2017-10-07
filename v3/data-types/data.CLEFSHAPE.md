@@ -10,31 +10,30 @@ title: "data.CLEFSHAPE"
    <h3 id="data.CLEFSHAPE">data.CLEFSHAPE</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">data.CLEFSHAPE</span> Clef shape attribute values (Read, p.53-56). Some values correspond to the Unicode
+         <td colspan="2" class="wovenodd-col2">Clef shape attribute values (Read, p.53-56). Some values correspond to the Unicode
             Standard.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Used by</span>
+            <strong>Used by</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.cleffing.log">att.cleffing.log</a> (@clef.shape), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/att.clefshape">att.clefshape</a> (@shape)
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.shape), 
+               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.clefshape.html">att.clefshape</a> (@shape)
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Allowed values</span>
+            <strong>Allowed values</strong>
          </td>
          <td class="wovenodd-col2">
             <dl>
@@ -55,7 +54,7 @@ title: "data.CLEFSHAPE"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

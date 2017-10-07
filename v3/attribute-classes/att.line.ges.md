@@ -10,53 +10,35 @@ title: "att.line.ges"
    <h3 id="att.line.ges">att.line.ges</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.line.ges</span> Attributes for describing the performed components of a line.
-         </td>
+         <td colspan="2" class="wovenodd-col2">Attributes for describing the performed components of a line.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/line">line</a> (direct member of att.line.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/line.html">line</a> (direct member of att.line.ges)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@dur.ges</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Records performed duration information that differs from the written duration. Its
-                  value may be expressed in several forms; that is, ppq (MIDI clicks and MusicXML
-                  'divisions'), Humdrum **recip values, beats, seconds, or mensural duration
-                  values.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.duration.performed">att.duration.performed</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">

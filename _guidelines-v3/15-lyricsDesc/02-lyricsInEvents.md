@@ -34,7 +34,7 @@ specific about connectors, etc., the use of [verse](/{{ page.version }}/elements
 
 
 {% include specDesc.html version=page.version elem="verse" atts="" %}
-{% include specDesc.html version=page.version elem="verse" atts="att.verse.log/rhythm" %}
+
 
 
 

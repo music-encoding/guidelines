@@ -10,33 +10,32 @@ title: "att.meterSigDefault.vis"
    <h3 id="att.meterSigDefault.vis">att.meterSigDefault.vis</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">att.meterSigDefault.vis</span> Used by staffDef and scoreDef to provide default values for attributes in the visual
+         <td colspan="2" class="wovenodd-col2">Used by staffDef and scoreDef to provide default values for attributes in the visual
             domain related to meter signature.
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Module</span>
+            <strong>Module</strong>
          </td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Members</span>
+            <strong>Members</strong>
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.scoreDef.vis">att.scoreDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.scoreDef.vis.html">att.scoreDef.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.staffDef.vis">att.staffDef.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a>)
                   </span>
                </div>
             </div>
@@ -44,58 +43,13 @@ title: "att.meterSigDefault.vis"
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Attributes</span>
+            <strong>Attributes</strong>
          </td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef">
-               <span class="attribute">@meter.rend</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Contains an indication of how the meter signature should be rendered.</span>
-               Allowed values are:
-               "
-               <span style="font-weight: 500;">num</span>" 
-               <i>(Show only the number of beats.)</i>,  "
-               <span style="font-weight: 500;">denomsym</span>" 
-               <i>(The lower number in the meter signature is replaced by a note symbol.)</i>,  "
-               <span style="font-weight: 500;">norm</span>" 
-               <i>(Meter signature rendered using traditional numeric values.)</i>,  "
-               <span style="font-weight: 500;">invis</span>" 
-               <i>(Meter signature not rendered.)</i>
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@meter.showchange</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Determines whether a new meter signature should be displayed when the meter
-                  signature changes.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
-               </span>
-            </div>
-            <div class="attributeDef">
-               <span class="attribute">@meter.sym</span>
-               <span class="attributeUsage">(optional)</span>
-               <span class="attributeDesc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
-                  'C' for common time or 'C' with a slash for cut time.
-               </span>
-               Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/data.METERSIGN">data.METERSIGN</a>.
-               
-               <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ page.version }}/att.meterSigDefault.vis">att.meterSigDefault.vis</a>
-               </span>
-            </div>
-         </td>
+         <td class="wovenodd-col2"></td>
       </tr>
       <tr>
          <td class="wovenodd-col1">
-            <span class="label" lang="en">Declaration</span>
+            <strong>Declaration</strong>
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
