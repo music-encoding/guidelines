@@ -26,7 +26,7 @@ Run `bundle install` in your directory. This will install all of the requirement
 
 ### Step 4. Run the Jekyll server
 
-You can run the Jekyll service locally with `bundle exec jekyll serve`. This will compile the site and start serving the content locally. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the site.
+You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the site.
 
 ### Step 5. Make your changes and commit
 
