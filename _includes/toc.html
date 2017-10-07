@@ -7,7 +7,7 @@
 
   {% if levels.size < 2 %}
 <p>
-    <a href="{{ doc.sectionid | downcase | url_encode }}.html">
+    <a href="{{ doc.sectionid }}.html">
       {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
     </a>
 </p> 
