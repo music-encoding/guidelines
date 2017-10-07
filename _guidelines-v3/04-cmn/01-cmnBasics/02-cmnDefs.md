@@ -23,12 +23,9 @@ score, e.g., key and meter. The most important attributes for this purpose are:
 
 
 {% include specDesc.html version=page.version elem="att.meterSigDefault.log" atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %}
-
 {% include specDesc.html version=page.version elem="att.meterSigDefault.vis" atts="att.meterSigDefault.vis/meter.sym" %}
-
 {% include specDesc.html version=page.version elem="att.keySigDefault.log" atts="att.keySigDefault.log/key.pname att.keySigDefault.log/key.accid att.keySigDefault.log/key.mode
 att.keySigDefault.log/key.sig" %}
-
 
 
 
@@ -44,11 +41,10 @@ text and music:
 
 
 {% include specDesc.html version=page.version elem="scoreDef" atts="att.pages/page.width att.pages/page.height att.pages/page.leftmar att.pages/page.topmar
-/ / / / / / / / / / / / att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar
-att.systems/system.topmar att.systems/system.rightmar / / / / / / / / / / / / att.textstyle/text.name
-att.textstyle/text.fam att.textstyle/text.size att.notationstyle/music.name att.notationstyle/music.size
-att.lyricstyle/lyric.name att.lyricstyle/lyric.fam / / / / / / / / / / / / att.lyricstyle/lyric.size" %}
-
+att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar att.systems/system.topmar
+att.systems/system.rightmar att.textstyle/text.name att.textstyle/text.fam att.textstyle/text.size
+att.notationstyle/music.name att.notationstyle/music.size att.lyricstyle/lyric.name
+att.lyricstyle/lyric.fam att.lyricstyle/lyric.size" %}
 
 
 
@@ -88,7 +84,6 @@ attributes are important for [staffDef](/{{ page.version }}/elements/staffDef.ht
 
 
 {% include specDesc.html version=page.version elem="att.cleffing.log" atts="att.cleffing.log/clef.line att.cleffing.log/clef.shape att.cleffing.log/clef.dis att.cleffing.log/clef.dis.place" %}
-
 
 
 

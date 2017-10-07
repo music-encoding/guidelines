@@ -19,7 +19,6 @@ its attributes:
 
 
 
-
 Trills in modern notation are usually expressed with the abbreviation "tr" above a
 note on
 the staff. Often the abbreviation is followed by a wavy line that indicates the length

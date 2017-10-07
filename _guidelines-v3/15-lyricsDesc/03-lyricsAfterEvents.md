@@ -15,7 +15,6 @@ Vocally performed text may also be encoded separately from the notes with the [l
 
 
 
-
 Since this element is separated from the encoding of the notes, it must be associated
 with a
 staff that will provide rhythm information when required for automated processing.

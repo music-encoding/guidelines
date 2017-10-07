@@ -1317,7 +1317,9 @@
       identify, label, and access elements in MEI-encoded files.</p>
     <p part="N">
       <specList>
-        <specDesc atts="xml:id label n xml:base" key="att.common"></specDesc>
+        <specDesc atts="n" key="att.common"></specDesc>
+        <specDesc atts="xml:id" key="att.id"></specDesc>
+        <specDesc atts="xml:base label" key="att.commonPart"></specDesc>
       </specList>
     </p>
     <p part="N">The value of the <att scheme="TEI">xml:id</att> attribute serves as an identifier for an element and its
@@ -9969,7 +9971,7 @@
     <p part="N">
       <specList>
         <specDesc key="syl"></specDesc>
-        <specDesc atts="worpos con halign" key="syl"></specDesc>
+        <specDesc atts="wordpos con halign" key="syl"></specDesc>
       </specList>
     </p>
 

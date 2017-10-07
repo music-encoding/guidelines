@@ -14,7 +14,6 @@ an MEI document:
 
 {% include specDesc.html version=page.version elem="mei" atts="" %}
 {% include specDesc.html version=page.version elem="mei" atts="att.meiversion/meiversion" %}
-
 {% include specDesc.html version=page.version elem="meiCorpus" atts="" %}
 {% include specDesc.html version=page.version elem="meiHead" atts="" %}
 {% include specDesc.html version=page.version elem="music" atts="" %}

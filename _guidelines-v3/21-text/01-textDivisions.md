@@ -16,7 +16,6 @@ Text can be organized in different parts, for example in chapters or sections. T
 
 
 
-
 For example, printed scores, before the actual notation, can have text that can be
 organized
 in multiple sections (e.g. a preface, a critical report, performance instructions,

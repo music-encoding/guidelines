@@ -20,7 +20,6 @@ harmonic indications of all kinds:
 
 
 
-
 The [harm](/{{ page.version }}/elements/harm.html){:.link_odd_elementSpec} element can be used to capture chord labels that consist
 entirely of text:
 

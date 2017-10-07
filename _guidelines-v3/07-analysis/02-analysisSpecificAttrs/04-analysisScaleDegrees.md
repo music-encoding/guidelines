@@ -12,7 +12,6 @@ version: "v3"
 
 
 
-
 The **@deg** attribute can be used to represent key-dependent scale-degree
 information for music in major or minor keys.
 

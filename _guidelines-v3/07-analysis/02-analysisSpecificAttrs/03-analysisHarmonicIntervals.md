@@ -12,7 +12,6 @@ version: "v3"
 
 
 
-
 In contrast with **@intm**, which characterizes melodic (sequential) intervals, the
 **@inth** attribute is used to encode the harmonic interval between the current note
 and other pitches occurring at the same moment in time. The notes of interest may

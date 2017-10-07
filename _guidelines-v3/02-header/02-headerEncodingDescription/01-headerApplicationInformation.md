@@ -28,7 +28,6 @@ those sections of the file.
 
 
 
-
 Each [application](/{{ page.version }}/elements/application.html){:.link_odd_elementSpec} element identifies the current state of one software
 application with regard to the current file. This element is a member of the att.datable
 class, which provides a variety of attributes for associating this state with a date

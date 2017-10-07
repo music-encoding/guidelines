@@ -19,7 +19,6 @@ provides the following elements:
 
 
 
-
 Figured bass, consisting as it does of text, can always be represented purely visually.
 This is probably how an OMR program or other naive encoder might deal with the markup
 of
