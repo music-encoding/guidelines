@@ -7,7 +7,7 @@
 
   {% if doc.url contains include.section and levels.size > 1 and levels.size < 4 %}
 <p>   
-    <a href="{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
+    <a href="{{ site.baseurl}}/{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
         {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
     </a>
 </p>
