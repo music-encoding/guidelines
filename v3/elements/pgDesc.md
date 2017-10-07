@@ -10,8 +10,7 @@ title: "pgDesc"
    <h3 id="pgDesc">&lt;pgDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pgDesc&gt;</span> (page description) – Contains a brief prose description of the appearance or description
+         <td colspan="2" class="wovenodd-col2"> (page description) – Contains a brief prose description of the appearance or description
             of the content of a physical page.
          </td>
       </tr>

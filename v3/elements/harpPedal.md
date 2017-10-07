@@ -10,9 +10,7 @@ title: "harpPedal"
    <h3 id="harpPedal">&lt;harpPedal&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;harpPedal&gt;</span> (harp pedal) – Harp pedal diagram.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (harp pedal) – Harp pedal diagram.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

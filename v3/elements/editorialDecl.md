@@ -10,8 +10,7 @@ title: "editorialDecl"
    <h3 id="editorialDecl">&lt;editorialDecl&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;editorialDecl&gt;</span> (editorial declaration) – Used to provide details of editorial principles and practices
+         <td colspan="2" class="wovenodd-col2"> (editorial declaration) – Used to provide details of editorial principles and practices
             applied during the encoding of musical text.
          </td>
       </tr>

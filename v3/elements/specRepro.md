@@ -10,8 +10,7 @@ title: "specRepro"
    <h3 id="specRepro">&lt;specRepro&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;specRepro&gt;</span> (special reproduction characteristic) – The equalization system, noise reduction
+         <td colspan="2" class="wovenodd-col2"> (special reproduction characteristic) – The equalization system, noise reduction
             system,
             etc. used in making the recording (e.g., NAB, DBX, Dolby, etc.).
          </td>

@@ -10,8 +10,7 @@ title: "annot"
    <h3 id="annot">&lt;annot&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;annot&gt;</span> (annotation) – Provides a short statement explaining the text or indicating the basis
+         <td colspan="2" class="wovenodd-col2"> (annotation) – Provides a short statement explaining the text or indicating the basis
             for an assertion.
          </td>
       </tr>

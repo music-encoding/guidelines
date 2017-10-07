@@ -10,9 +10,7 @@ title: "pgHead2"
    <h3 id="pgHead2">&lt;pgHead2&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pgHead2&gt;</span> (page header 2) – A running header on the pages following the first.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (page header 2) – A running header on the pages following the first.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

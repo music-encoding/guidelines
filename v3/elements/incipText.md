@@ -10,9 +10,7 @@ title: "incipText"
    <h3 id="incipText">&lt;incipText&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;incipText&gt;</span> Opening words of a musical composition.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Opening words of a musical composition.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

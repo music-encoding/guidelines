@@ -10,9 +10,7 @@ title: "pubPlace"
    <h3 id="pubPlace">&lt;pubPlace&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pubPlace&gt;</span> (publication place) – Name of the place where a bibliographic item was published.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (publication place) – Name of the place where a bibliographic item was published.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

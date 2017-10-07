@@ -10,8 +10,7 @@ title: "when"
    <h3 id="when">&lt;when&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;when&gt;</span> Indicates a point in time either absolutely (using the absolute attribute), or relative
+         <td colspan="2" class="wovenodd-col2"> Indicates a point in time either absolutely (using the absolute attribute), or relative
             to another when element (using the since, interval and inttype attributes).
          </td>
       </tr>

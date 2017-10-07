@@ -10,9 +10,7 @@ title: "artic"
    <h3 id="artic">&lt;artic&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;artic&gt;</span> (articulation) – An indication of how to play a note or chord.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (articulation) – An indication of how to play a note or chord.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

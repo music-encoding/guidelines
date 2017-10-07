@@ -10,8 +10,7 @@ title: "multiRest"
    <h3 id="multiRest">&lt;multiRest&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;multiRest&gt;</span> (multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
+         <td colspan="2" class="wovenodd-col2"> (multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
             found in performer parts.
          </td>
       </tr>

@@ -10,8 +10,7 @@ title: "distributor"
    <h3 id="distributor">&lt;distributor&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;distributor&gt;</span> Person or agency, other than a publisher, from which access (including electronic
+         <td colspan="2" class="wovenodd-col2"> Person or agency, other than a publisher, from which access (including electronic
             access) to a bibliographic entity may be obtained.
          </td>
       </tr>

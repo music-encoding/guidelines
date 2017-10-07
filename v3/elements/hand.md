@@ -10,9 +10,7 @@ title: "hand"
    <h3 id="hand">&lt;hand&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;hand&gt;</span> Defines a distinct scribe or handwriting style.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Defines a distinct scribe or handwriting style.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

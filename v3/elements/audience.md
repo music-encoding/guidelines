@@ -10,8 +10,7 @@ title: "audience"
    <h3 id="audience">&lt;audience&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;audience&gt;</span> Defines the class of user for which the work is intended, as defined by age group
+         <td colspan="2" class="wovenodd-col2"> Defines the class of user for which the work is intended, as defined by age group
             (e.g.,
             children, young adults, adults, etc.), educational level (e.g., primary, secondary,
             etc.),

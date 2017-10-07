@@ -10,8 +10,7 @@ title: "rend"
    <h3 id="rend">&lt;rend&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;rend&gt;</span> (render) – A formatting element indicating special visual rendering, e.g., bold or
+         <td colspan="2" class="wovenodd-col2"> (render) – A formatting element indicating special visual rendering, e.g., bold or
             italicized, of a text word or phrase.
          </td>
       </tr>

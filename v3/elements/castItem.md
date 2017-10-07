@@ -10,8 +10,7 @@ title: "castItem"
    <h3 id="castItem">&lt;castItem&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;castItem&gt;</span> Contains a single entry within a cast list, describing either a single role or a
+         <td colspan="2" class="wovenodd-col2"> Contains a single entry within a cast list, describing either a single role or a
             list of
             non-speaking roles.
          </td>

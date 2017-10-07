@@ -10,8 +10,7 @@ title: "stdVals"
    <h3 id="stdVals">&lt;stdVals&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;stdVals&gt;</span> (standard values) – Specifies the format used when standardized date or number values
+         <td colspan="2" class="wovenodd-col2"> (standard values) – Specifies the format used when standardized date or number values
             are supplied.
          </td>
       </tr>

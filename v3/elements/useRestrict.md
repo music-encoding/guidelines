@@ -10,8 +10,7 @@ title: "useRestrict"
    <h3 id="useRestrict">&lt;useRestrict&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;useRestrict&gt;</span> (usage restrictions) – Container for information about the conditions that affect
+         <td colspan="2" class="wovenodd-col2"> (usage restrictions) – Container for information about the conditions that affect
             use of
             a bibliographic item after access has been granted.
          </td>

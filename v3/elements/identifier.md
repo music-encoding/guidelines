@@ -10,9 +10,7 @@ title: "identifier"
    <h3 id="identifier">&lt;identifier&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;identifier&gt;</span> An alpha-numeric string that establishes the identity of the described material.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> An alpha-numeric string that establishes the identity of the described material.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

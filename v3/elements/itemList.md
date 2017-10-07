@@ -10,9 +10,7 @@ title: "itemList"
    <h3 id="itemList">&lt;itemList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;itemList&gt;</span> Gathers bibliographic item entities.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Gathers bibliographic item entities.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

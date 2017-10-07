@@ -10,8 +10,7 @@ title: "ending"
    <h3 id="ending">&lt;ending&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;ending&gt;</span> Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta,
+         <td colspan="2" class="wovenodd-col2"> Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta,
             etc.
          </td>
       </tr>

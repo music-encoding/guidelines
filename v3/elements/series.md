@@ -10,8 +10,7 @@ title: "series"
    <h3 id="series">&lt;series&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;series&gt;</span> Contains information about the serial publication in which a bibliographic item has
+         <td colspan="2" class="wovenodd-col2"> Contains information about the serial publication in which a bibliographic item has
             appeared.
          </td>
       </tr>

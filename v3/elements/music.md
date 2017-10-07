@@ -10,8 +10,7 @@ title: "music"
    <h3 id="music">&lt;music&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;music&gt;</span> Contains a single musical text of any kind, whether unitary or composite, for example,
+         <td colspan="2" class="wovenodd-col2"> Contains a single musical text of any kind, whether unitary or composite, for example,
             an etude, opera, song cycle, symphony, or anthology of piano solos.
          </td>
       </tr>

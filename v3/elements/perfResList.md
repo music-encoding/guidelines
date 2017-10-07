@@ -10,9 +10,7 @@ title: "perfResList"
    <h3 id="perfResList">&lt;perfResList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;perfResList&gt;</span> Several instrumental or vocal resources treated as a group.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Several instrumental or vocal resources treated as a group.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

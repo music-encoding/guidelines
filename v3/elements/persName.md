@@ -10,8 +10,7 @@ title: "persName"
    <h3 id="persName">&lt;persName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;persName&gt;</span> (personal name) – Designation for an individual, including any or all of that
+         <td colspan="2" class="wovenodd-col2"> (personal name) – Designation for an individual, including any or all of that
             individual's forenames, surnames, honorific titles, and added names.
          </td>
       </tr>

@@ -10,8 +10,7 @@ title: "plateNum"
    <h3 id="plateNum">&lt;plateNum&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;plateNum&gt;</span> (plate number) – Designation assigned to a resource by a music publisher, usually
+         <td colspan="2" class="wovenodd-col2"> (plate number) – Designation assigned to a resource by a music publisher, usually
             printed at the bottom of each page, and sometimes appearing also on the title page.
          </td>
       </tr>

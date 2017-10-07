@@ -10,8 +10,7 @@ title: "fTrem"
    <h3 id="fTrem">&lt;fTrem&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fTrem&gt;</span> (fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
+         <td colspan="2" class="wovenodd-col2"> (fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
             between a note and a chord) that are (usually) farther apart than a major second.
          </td>
       </tr>

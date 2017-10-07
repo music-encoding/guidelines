@@ -10,9 +10,7 @@ title: "table"
    <h3 id="table">&lt;table&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;table&gt;</span> Contains text displayed in tabular form.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains text displayed in tabular form.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

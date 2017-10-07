@@ -10,8 +10,7 @@ title: "td"
    <h3 id="td">&lt;td&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;td&gt;</span> (table data) – Designates a table cell that contains data as opposed to a cell that
+         <td colspan="2" class="wovenodd-col2"> (table data) – Designates a table cell that contains data as opposed to a cell that
             contains column or row heading information.
          </td>
       </tr>

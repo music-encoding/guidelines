@@ -10,8 +10,7 @@ title: "restore"
    <h3 id="restore">&lt;restore&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;restore&gt;</span> Indicates restoration of material to an earlier state by cancellation of an editorial
+         <td colspan="2" class="wovenodd-col2"> Indicates restoration of material to an earlier state by cancellation of an editorial
             or
             authorial marking or instruction.
          </td>

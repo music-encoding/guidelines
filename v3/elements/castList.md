@@ -10,9 +10,7 @@ title: "castList"
    <h3 id="castList">&lt;castList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;castList&gt;</span> Contains a single cast list or dramatis personae.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains a single cast list or dramatis personae.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,8 +10,7 @@ title: "address"
    <h3 id="address">&lt;address&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;address&gt;</span> Contains a postal address, for example of a publisher, an organization, or an
+         <td colspan="2" class="wovenodd-col2"> Contains a postal address, for example of a publisher, an organization, or an
             individual.
          </td>
       </tr>

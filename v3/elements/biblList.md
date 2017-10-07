@@ -10,9 +10,7 @@ title: "biblList"
    <h3 id="biblList">&lt;biblList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;biblList&gt;</span> List of bibliographic references.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> List of bibliographic references.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

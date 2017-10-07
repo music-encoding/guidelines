@@ -10,8 +10,7 @@ title: "sourceDesc"
    <h3 id="sourceDesc">&lt;sourceDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;sourceDesc&gt;</span> (source description) – A container for the descriptions of the source(s) used in
+         <td colspan="2" class="wovenodd-col2"> (source description) – A container for the descriptions of the source(s) used in
             the
             creation of the electronic file.
          </td>

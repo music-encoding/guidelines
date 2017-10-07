@@ -10,8 +10,7 @@ title: "head"
    <h3 id="head">&lt;head&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;head&gt;</span> (heading) – Contains any heading, for example, the title of a section of text, or
+         <td colspan="2" class="wovenodd-col2"> (heading) – Contains any heading, for example, the title of a section of text, or
             the
             heading of a list.
          </td>

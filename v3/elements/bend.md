@@ -10,8 +10,7 @@ title: "bend"
    <h3 id="bend">&lt;bend&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;bend&gt;</span> A variation in pitch (often micro-tonal) upwards or downwards during the course of
+         <td colspan="2" class="wovenodd-col2"> A variation in pitch (often micro-tonal) upwards or downwards during the course of
             a
             note.
          </td>

@@ -10,8 +10,7 @@ title: "perfDuration"
    <h3 id="perfDuration">&lt;perfDuration&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;perfDuration&gt;</span> (performance duration) – Used to express the duration of performance of printed or
+         <td colspan="2" class="wovenodd-col2"> (performance duration) – Used to express the duration of performance of printed or
             manuscript music or the playing time for a sound recording, videorecording, etc.
          </td>
       </tr>

@@ -10,8 +10,7 @@ title: "orig"
    <h3 id="orig">&lt;orig&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;orig&gt;</span> (original) – Contains material which is marked as following the original, rather
+         <td colspan="2" class="wovenodd-col2"> (original) – Contains material which is marked as following the original, rather
             than
             being normalized or corrected.
          </td>

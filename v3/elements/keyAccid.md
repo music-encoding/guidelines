@@ -10,9 +10,7 @@ title: "keyAccid"
    <h3 id="keyAccid">&lt;keyAccid&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;keyAccid&gt;</span> (key accidental) – Accidental in a key signature.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (key accidental) – Accidental in a key signature.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

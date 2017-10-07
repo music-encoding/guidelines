@@ -10,9 +10,7 @@ title: "score"
    <h3 id="score">&lt;score&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;score&gt;</span> Full score view of the musical content.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Full score view of the musical content.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

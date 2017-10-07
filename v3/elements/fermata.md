@@ -10,8 +10,7 @@ title: "fermata"
    <h3 id="fermata">&lt;fermata&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fermata&gt;</span> An indication placed over a note or rest to indicate that it should be held longer
+         <td colspan="2" class="wovenodd-col2"> An indication placed over a note or rest to indicate that it should be held longer
             than
             its written value. May also occur over a bar line to indicate the end of a phrase
             or

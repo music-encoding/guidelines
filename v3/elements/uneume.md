@@ -10,9 +10,7 @@ title: "uneume"
    <h3 id="uneume">&lt;uneume&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;uneume&gt;</span> (uninterrupted neume) – A graphically-uninterrupted neume sign.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (uninterrupted neume) – A graphically-uninterrupted neume sign.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

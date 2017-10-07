@@ -10,9 +10,7 @@ title: "titlePage"
    <h3 id="titlePage">&lt;titlePage&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;titlePage&gt;</span> Contains a transcription of the title page of a text.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains a transcription of the title page of a text.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

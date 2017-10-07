@@ -10,8 +10,7 @@ title: "genre"
    <h3 id="genre">&lt;genre&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;genre&gt;</span> Term or terms that designate a category characterizing a particular style, form,
+         <td colspan="2" class="wovenodd-col2"> Term or terms that designate a category characterizing a particular style, form,
             or
             content.
          </td>

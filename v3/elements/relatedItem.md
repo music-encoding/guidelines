@@ -10,8 +10,7 @@ title: "relatedItem"
    <h3 id="relatedItem">&lt;relatedItem&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;relatedItem&gt;</span> (related item) – Contains or references another bibliographic item which is related
+         <td colspan="2" class="wovenodd-col2"> (related item) – Contains or references another bibliographic item which is related
             to
             the present one.
          </td>

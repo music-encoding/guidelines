@@ -10,9 +10,7 @@ title: "expressionList"
    <h3 id="expressionList">&lt;expressionList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;expressionList&gt;</span> Gathers bibliographic expression entities.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Gathers bibliographic expression entities.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

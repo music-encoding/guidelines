@@ -10,9 +10,7 @@ title: "meter"
    <h3 id="meter">&lt;meter&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;meter&gt;</span> Captures information about the time signature within bibliographic descriptions.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Captures information about the time signature within bibliographic descriptions.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

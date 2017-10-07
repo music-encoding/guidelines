@@ -10,8 +10,7 @@ title: "handShift"
    <h3 id="handShift">&lt;handShift&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;handShift&gt;</span> Marks the beginning of a passage written in a new hand, or of a change in the scribe,
+         <td colspan="2" class="wovenodd-col2"> Marks the beginning of a passage written in a new hand, or of a change in the scribe,
             writing style, ink or character of the document hand.
          </td>
       </tr>

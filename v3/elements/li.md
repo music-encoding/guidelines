@@ -10,9 +10,7 @@ title: "li"
    <h3 id="li">&lt;li&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;li&gt;</span> (list item) – Single item in a &lt;list&gt;.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (list item) – Single item in a &lt;list&gt;.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

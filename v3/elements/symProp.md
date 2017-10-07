@@ -10,8 +10,7 @@ title: "symProp"
    <h3 id="symProp">&lt;symProp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;symProp&gt;</span> (symbol property) – Provides a name and value for some property of the parent
+         <td colspan="2" class="wovenodd-col2"> (symbol property) – Provides a name and value for some property of the parent
             symbol.
          </td>
       </tr>

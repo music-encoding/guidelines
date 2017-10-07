@@ -10,8 +10,7 @@ title: "biblScope"
    <h3 id="biblScope">&lt;biblScope&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;biblScope&gt;</span> (scope of citation) – Defines the scope of a bibliographic reference, for example
+         <td colspan="2" class="wovenodd-col2"> (scope of citation) – Defines the scope of a bibliographic reference, for example
             as a
             list of page numbers, or a named subdivision of a larger work.
          </td>

@@ -10,8 +10,7 @@ title: "inscription"
    <h3 id="inscription">&lt;inscription&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;inscription&gt;</span> An inscription added to an item, such as a bookplate, a note designating the item
+         <td colspan="2" class="wovenodd-col2"> An inscription added to an item, such as a bookplate, a note designating the item
             as a
             gift, and/or the author's signature.
          </td>

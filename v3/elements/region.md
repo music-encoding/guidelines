@@ -10,8 +10,7 @@ title: "region"
    <h3 id="region">&lt;region&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;region&gt;</span> Contains the name of an administrative unit such as a state, province, or county,
+         <td colspan="2" class="wovenodd-col2"> Contains the name of an administrative unit such as a state, province, or county,
             larger
             than a settlement, but smaller than a country.
          </td>

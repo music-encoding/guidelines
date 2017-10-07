@@ -10,8 +10,7 @@ title: "playingSpeed"
    <h3 id="playingSpeed">&lt;playingSpeed&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;playingSpeed&gt;</span> Playing speed for a sound recording is the speed at which the carrier must be operated
+         <td colspan="2" class="wovenodd-col2"> Playing speed for a sound recording is the speed at which the carrier must be operated
             to produce the sound intended (e.g., 33 1/3 rpm, 19 cm/s, etc.).
          </td>
       </tr>

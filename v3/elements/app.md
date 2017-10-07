@@ -10,9 +10,7 @@ title: "app"
    <h3 id="app">&lt;app&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;app&gt;</span> (apparatus) – Contains one or more alternative encodings.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (apparatus) – Contains one or more alternative encodings.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,8 +10,7 @@ title: "district"
    <h3 id="district">&lt;district&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;district&gt;</span> Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+         <td colspan="2" class="wovenodd-col2"> Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
             or
             other administrative or geographic unit.
          </td>

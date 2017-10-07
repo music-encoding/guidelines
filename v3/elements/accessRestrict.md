@@ -10,8 +10,7 @@ title: "accessRestrict"
    <h3 id="accessRestrict">&lt;accessRestrict&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;accessRestrict&gt;</span> (access restriction) – Describes the conditions that affect the accessibility of
+         <td colspan="2" class="wovenodd-col2"> (access restriction) – Describes the conditions that affect the accessibility of
             material.
          </td>
       </tr>

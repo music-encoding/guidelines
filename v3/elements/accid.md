@@ -10,9 +10,7 @@ title: "accid"
    <h3 id="accid">&lt;accid&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;accid&gt;</span> (accidental) – Records a temporary alteration to the pitch of a note.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (accidental) – Records a temporary alteration to the pitch of a note.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,8 +10,7 @@ title: "perfMedium"
    <h3 id="perfMedium">&lt;perfMedium&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;perfMedium&gt;</span> (performance medium) – Indicates the number and character of the performing forces
+         <td colspan="2" class="wovenodd-col2"> (performance medium) – Indicates the number and character of the performing forces
             used
             in a musical composition.
          </td>

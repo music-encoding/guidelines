@@ -10,8 +10,7 @@ title: "soundChan"
    <h3 id="soundChan">&lt;soundChan&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;soundChan&gt;</span> (sound channels) – Reflects the number of apparent sound channels in the playback
+         <td colspan="2" class="wovenodd-col2"> (sound channels) – Reflects the number of apparent sound channels in the playback
             of a
             recording (monaural, stereophonic, quadraphonic, etc.).
          </td>

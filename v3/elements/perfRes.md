@@ -10,8 +10,7 @@ title: "perfRes"
    <h3 id="perfRes">&lt;perfRes&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;perfRes&gt;</span> (performance resource) – Name of an instrument on which a performer plays, a performer's
+         <td colspan="2" class="wovenodd-col2"> (performance resource) – Name of an instrument on which a performer plays, a performer's
             voice range, or a standard performing ensemble designation.
          </td>
       </tr>

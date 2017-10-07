@@ -10,8 +10,7 @@ title: "availability"
    <h3 id="availability">&lt;availability&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;availability&gt;</span> Groups elements that describe the availability of and access to a bibliographic item,
+         <td colspan="2" class="wovenodd-col2"> Groups elements that describe the availability of and access to a bibliographic item,
             including an MEI-encoded document.
          </td>
       </tr>

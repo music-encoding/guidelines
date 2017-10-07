@@ -10,8 +10,7 @@ title: "th"
    <h3 id="th">&lt;th&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;th&gt;</span> (table header) – Designates a table cell containing column or row heading information
+         <td colspan="2" class="wovenodd-col2"> (table header) – Designates a table cell containing column or row heading information
             as
             opposed to one containing data.
          </td>

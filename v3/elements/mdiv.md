@@ -10,9 +10,7 @@ title: "mdiv"
    <h3 id="mdiv">&lt;mdiv&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mdiv&gt;</span> (musical division) – Contains a subdivision of the body of a musical text.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (musical division) – Contains a subdivision of the body of a musical text.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

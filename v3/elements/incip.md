@@ -10,9 +10,7 @@ title: "incip"
    <h3 id="incip">&lt;incip&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;incip&gt;</span> (incipit) – The opening music and/or words of a composition.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (incipit) – The opening music and/or words of a composition.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,9 +10,7 @@ title: "librettist"
    <h3 id="librettist">&lt;librettist&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;librettist&gt;</span> Person or organization who is a writer of the text of an opera, oratorio, etc.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Person or organization who is a writer of the text of an opera, oratorio, etc.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

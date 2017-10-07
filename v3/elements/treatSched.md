@@ -10,8 +10,7 @@ title: "treatSched"
    <h3 id="treatSched">&lt;treatSched&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;treatSched&gt;</span> (treatment scheduled) – Scheduled treatment, e.g. de-acidification, restoration,
+         <td colspan="2" class="wovenodd-col2"> (treatment scheduled) – Scheduled treatment, e.g. de-acidification, restoration,
             etc.,
             for an item.
          </td>

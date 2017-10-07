@@ -10,8 +10,7 @@ title: "roleName"
    <h3 id="roleName">&lt;roleName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;roleName&gt;</span> (role name) – Contains a name component which indicates that the referent has a
+         <td colspan="2" class="wovenodd-col2"> (role name) – Contains a name component which indicates that the referent has a
             particular role or position in society, such as an official title or rank.
          </td>
       </tr>

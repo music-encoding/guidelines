@@ -10,8 +10,7 @@ title: "mapping"
    <h3 id="mapping">&lt;mapping&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mapping&gt;</span> One or more characters which are related to the parent symbol in some respect, as
+         <td colspan="2" class="wovenodd-col2"> One or more characters which are related to the parent symbol in some respect, as
             specified by the type attribute.
          </td>
       </tr>

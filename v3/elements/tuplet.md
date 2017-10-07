@@ -10,8 +10,7 @@ title: "tuplet"
    <h3 id="tuplet">&lt;tuplet&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;tuplet&gt;</span> A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+         <td colspan="2" class="wovenodd-col2"> A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
             for
             example, three notes in the time normally occupied by two or nine in the time of
             five.

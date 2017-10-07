@@ -10,9 +10,7 @@ title: "lyricist"
    <h3 id="lyricist">&lt;lyricist&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;lyricist&gt;</span> Person or organization who is a writer of the text of a song.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Person or organization who is a writer of the text of a song.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

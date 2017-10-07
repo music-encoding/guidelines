@@ -10,9 +10,7 @@ title: "marker"
    <h3 id="marker">&lt;marker&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;marker&gt;</span> MIDI marker meta-event.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> MIDI marker meta-event.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

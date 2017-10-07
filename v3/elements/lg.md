@@ -10,8 +10,7 @@ title: "lg"
    <h3 id="lg">&lt;lg&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;lg&gt;</span> (line group) – May be used for any section of text that is organized as a group of
+         <td colspan="2" class="wovenodd-col2"> (line group) – May be used for any section of text that is organized as a group of
             lines; however, it is most often used for a group of verse lines functioning as a
             formal
             unit, e.g. a stanza, refrain, verse paragraph, etc.

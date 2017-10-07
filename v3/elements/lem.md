@@ -10,9 +10,7 @@ title: "lem"
    <h3 id="lem">&lt;lem&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;lem&gt;</span> (lemma) – Contains the lemma, or base text, of a textual variation.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (lemma) – Contains the lemma, or base text, of a textual variation.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

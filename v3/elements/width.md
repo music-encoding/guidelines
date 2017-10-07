@@ -10,9 +10,7 @@ title: "width"
    <h3 id="width">&lt;width&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;width&gt;</span> Description of the horizontal size of an object.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Description of the horizontal size of an object.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

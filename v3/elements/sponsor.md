@@ -10,8 +10,7 @@ title: "sponsor"
    <h3 id="sponsor">&lt;sponsor&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;sponsor&gt;</span> Names of sponsoring individuals, organizations or institutions. Sponsors give their
+         <td colspan="2" class="wovenodd-col2"> Names of sponsoring individuals, organizations or institutions. Sponsors give their
             intellectual authority to a project; they are to be distinguished from funders, who
             provide
             the funding but do not necessarily take intellectual responsibility.

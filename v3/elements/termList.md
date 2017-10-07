@@ -10,9 +10,7 @@ title: "termList"
    <h3 id="termList">&lt;termList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;termList&gt;</span> Collection of text phrases which describe a resource.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Collection of text phrases which describe a resource.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

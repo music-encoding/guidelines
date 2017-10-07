@@ -10,8 +10,7 @@ title: "pb"
    <h3 id="pb">&lt;pb&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pb&gt;</span> (page break) – An empty formatting element that forces text to begin on a new
+         <td colspan="2" class="wovenodd-col2"> (page break) – An empty formatting element that forces text to begin on a new
             page.
          </td>
       </tr>

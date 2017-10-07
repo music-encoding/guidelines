@@ -10,8 +10,7 @@ title: "octave"
    <h3 id="octave">&lt;octave&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;octave&gt;</span> An indication that a passage should be performed one or more octaves above or below
+         <td colspan="2" class="wovenodd-col2"> An indication that a passage should be performed one or more octaves above or below
             its
             written pitch.
          </td>

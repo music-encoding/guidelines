@@ -10,8 +10,7 @@ title: "interpretation"
    <h3 id="interpretation">&lt;interpretation&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;interpretation&gt;</span> Describes the scope of any analytic or interpretive information added to the
+         <td colspan="2" class="wovenodd-col2"> Describes the scope of any analytic or interpretive information added to the
             transcription of the music.
          </td>
       </tr>

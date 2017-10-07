@@ -10,8 +10,7 @@ title: "famName"
    <h3 id="famName">&lt;famName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;famName&gt;</span> (family name) – Contains a family (inherited) name, as opposed to a given, baptismal,
+         <td colspan="2" class="wovenodd-col2"> (family name) – Contains a family (inherited) name, as opposed to a given, baptismal,
             or
             nick name.
          </td>

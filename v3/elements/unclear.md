@@ -10,8 +10,7 @@ title: "unclear"
    <h3 id="unclear">&lt;unclear&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;unclear&gt;</span> Contains material that cannot be transcribed with certainty because it is illegible
+         <td colspan="2" class="wovenodd-col2"> Contains material that cannot be transcribed with certainty because it is illegible
             or
             inaudible in the source.
          </td>

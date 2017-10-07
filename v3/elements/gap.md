@@ -10,8 +10,7 @@ title: "gap"
    <h3 id="gap">&lt;gap&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;gap&gt;</span> Indicates a point where material has been omitted in a transcription, whether as
+         <td colspan="2" class="wovenodd-col2"> Indicates a point where material has been omitted in a transcription, whether as
             part of
             sampling practice or for editorial reasons described in the MEI header.
          </td>

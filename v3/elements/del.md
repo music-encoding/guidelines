@@ -10,8 +10,7 @@ title: "del"
    <h3 id="del">&lt;del&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;del&gt;</span> (deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+         <td colspan="2" class="wovenodd-col2"> (deletion) – Contains information deleted, marked as deleted, or otherwise indicated
             as
             superfluous or spurious in the copy text by an author, scribe, annotator, or
             corrector.

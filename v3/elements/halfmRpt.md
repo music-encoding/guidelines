@@ -10,9 +10,7 @@ title: "halfmRpt"
    <h3 id="halfmRpt">&lt;halfmRpt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;halfmRpt&gt;</span> (half-measure repeat) – A half-measure repeat in any meter.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (half-measure repeat) – A half-measure repeat in any meter.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,8 +10,7 @@ title: "surface"
    <h3 id="surface">&lt;surface&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;surface&gt;</span> Defines a writing surface in terms of a rectangular coordinate space, optionally
+         <td colspan="2" class="wovenodd-col2"> Defines a writing surface in terms of a rectangular coordinate space, optionally
             grouping one or more graphic representations of that space, and rectangular zones
             of
             interest within it.

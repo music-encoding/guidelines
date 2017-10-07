@@ -10,8 +10,7 @@ title: "curve"
    <h3 id="curve">&lt;curve&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;curve&gt;</span> A curved line that cannot be represented by a more specific element, such as a
+         <td colspan="2" class="wovenodd-col2"> A curved line that cannot be represented by a more specific element, such as a
             slur.
          </td>
       </tr>

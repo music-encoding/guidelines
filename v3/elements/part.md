@@ -10,8 +10,7 @@ title: "part"
    <h3 id="part">&lt;part&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;part&gt;</span> An alternative visual rendition of the score from the point of view of a particular
+         <td colspan="2" class="wovenodd-col2"> An alternative visual rendition of the score from the point of view of a particular
             performer (or group of performers).
          </td>
       </tr>

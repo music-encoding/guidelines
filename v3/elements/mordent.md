@@ -10,8 +10,7 @@ title: "mordent"
    <h3 id="mordent">&lt;mordent&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mordent&gt;</span> An ornament indicating rapid alternation of the main note with a secondary note,
+         <td colspan="2" class="wovenodd-col2"> An ornament indicating rapid alternation of the main note with a secondary note,
             usually
             a step below, but sometimes a step above. 
             

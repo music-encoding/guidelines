@@ -10,8 +10,7 @@ title: "turn"
    <h3 id="turn">&lt;turn&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;turn&gt;</span> An ornament consisting of four notes — the upper neighbor of the written note, the
+         <td colspan="2" class="wovenodd-col2"> An ornament consisting of four notes — the upper neighbor of the written note, the
             written note, the lower neighbor, and the written note.
          </td>
       </tr>

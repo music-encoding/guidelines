@@ -10,8 +10,7 @@ title: "beam"
    <h3 id="beam">&lt;beam&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;beam&gt;</span> A container for a series of explicitly beamed events that begins and ends entirely
+         <td colspan="2" class="wovenodd-col2"> A container for a series of explicitly beamed events that begins and ends entirely
             within a measure.
          </td>
       </tr>

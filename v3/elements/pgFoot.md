@@ -10,8 +10,7 @@ title: "pgFoot"
    <h3 id="pgFoot">&lt;pgFoot&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pgFoot&gt;</span> (page footer) – A running footer on the first page. Also, used to temporarily override
+         <td colspan="2" class="wovenodd-col2"> (page footer) – A running footer on the first page. Also, used to temporarily override
             a
             running footer on individual pages.
          </td>

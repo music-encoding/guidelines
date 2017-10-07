@@ -10,8 +10,7 @@ title: "harm"
    <h3 id="harm">&lt;harm&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;harm&gt;</span> (harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+         <td colspan="2" class="wovenodd-col2"> (harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
             analysis, figured bass.
          </td>
       </tr>

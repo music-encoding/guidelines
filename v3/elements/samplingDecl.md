@@ -10,8 +10,7 @@ title: "samplingDecl"
    <h3 id="samplingDecl">&lt;samplingDecl&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;samplingDecl&gt;</span> (sampling declaration) – Contains a prose description of the rationale and methods
+         <td colspan="2" class="wovenodd-col2"> (sampling declaration) – Contains a prose description of the rationale and methods
             used
             in sampling texts in the creation of a corpus or collection.
          </td>

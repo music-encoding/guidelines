@@ -10,9 +10,7 @@ title: "multiRpt"
    <h3 id="multiRpt">&lt;multiRpt&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;multiRpt&gt;</span> (multiple repeat) – Multiple repeated measures.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (multiple repeat) – Multiple repeated measures.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

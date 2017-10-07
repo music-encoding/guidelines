@@ -10,8 +10,7 @@ title: "cpMark"
    <h3 id="cpMark">&lt;cpMark&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;cpMark&gt;</span> (copy/colla parte mark) – A verbal or graphical indication to copy musical material
+         <td colspan="2" class="wovenodd-col2"> (copy/colla parte mark) – A verbal or graphical indication to copy musical material
             written elsewhere.
          </td>
       </tr>

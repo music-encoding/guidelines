@@ -10,8 +10,7 @@ title: "genName"
    <h3 id="genName">&lt;genName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;genName&gt;</span> (generational name component) – Contains a name component used to distinguish otherwise
+         <td colspan="2" class="wovenodd-col2"> (generational name component) – Contains a name component used to distinguish otherwise
             similar names on the basis of the relative ages or generations of the persons named.
          </td>
       </tr>

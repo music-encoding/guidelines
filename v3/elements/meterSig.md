@@ -10,9 +10,7 @@ title: "meterSig"
    <h3 id="meterSig">&lt;meterSig&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;meterSig&gt;</span> (meter signature) – Written meter signature.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (meter signature) – Written meter signature.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

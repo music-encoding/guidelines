@@ -10,8 +10,7 @@ title: "nameLink"
    <h3 id="nameLink">&lt;nameLink&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;nameLink&gt;</span> (name link) – Contains a connecting phrase or link used within a name but not regarded
+         <td colspan="2" class="wovenodd-col2"> (name link) – Contains a connecting phrase or link used within a name but not regarded
             as part of it, such as "van der" or "of", "from", etc.
          </td>
       </tr>

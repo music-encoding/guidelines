@@ -10,9 +10,7 @@ title: "propName"
    <h3 id="propName">&lt;propName&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;propName&gt;</span> (property name) – Name of a property of the symbol.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (property name) – Name of a property of the symbol.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

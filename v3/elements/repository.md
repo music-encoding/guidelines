@@ -10,9 +10,7 @@ title: "repository"
    <h3 id="repository">&lt;repository&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;repository&gt;</span> Institution, agency, or individual which holds a bibliographic item.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Institution, agency, or individual which holds a bibliographic item.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

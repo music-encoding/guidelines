@@ -10,9 +10,7 @@ title: "add"
    <h3 id="add">&lt;add&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;add&gt;</span> (addition) – Marks an addition to the text.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (addition) – Marks an addition to the text.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

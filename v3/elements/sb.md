@@ -10,8 +10,7 @@ title: "sb"
    <h3 id="sb">&lt;sb&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;sb&gt;</span> (system break) – An empty formatting element that forces musical notation to begin
+         <td colspan="2" class="wovenodd-col2"> (system break) – An empty formatting element that forces musical notation to begin
             on a
             new line.
          </td>

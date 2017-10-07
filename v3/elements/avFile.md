@@ -10,9 +10,7 @@ title: "avFile"
    <h3 id="avFile">&lt;avFile&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;avFile&gt;</span> (audio/video file) – References an external digital audio or video file.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (audio/video file) – References an external digital audio or video file.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

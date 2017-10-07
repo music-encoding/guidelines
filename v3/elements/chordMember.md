@@ -10,9 +10,7 @@ title: "chordMember"
    <h3 id="chordMember">&lt;chordMember&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;chordMember&gt;</span> An individual pitch in a chord defined by a &lt;chordDef&gt; element.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> An individual pitch in a chord defined by a &lt;chordDef&gt; element.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

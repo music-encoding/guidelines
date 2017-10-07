@@ -10,9 +10,7 @@ title: "port"
    <h3 id="port">&lt;port&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;port&gt;</span> MIDI port.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> MIDI port.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

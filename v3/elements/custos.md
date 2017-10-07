@@ -10,8 +10,7 @@ title: "custos"
    <h3 id="custos">&lt;custos&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;custos&gt;</span> Symbol placed at the end of a line of music to indicate the first note of the next
+         <td colspan="2" class="wovenodd-col2"> Symbol placed at the end of a line of music to indicate the first note of the next
             line.
             Sometimes called a "direct".
          </td>

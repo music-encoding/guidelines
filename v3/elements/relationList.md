@@ -10,9 +10,7 @@ title: "relationList"
    <h3 id="relationList">&lt;relationList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;relationList&gt;</span> Gathers bibliographic relation elements.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Gathers bibliographic relation elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

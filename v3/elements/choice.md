@@ -10,9 +10,7 @@ title: "choice"
    <h3 id="choice">&lt;choice&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;choice&gt;</span> Groups a number of alternative encodings for the same point in a text.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Groups a number of alternative encodings for the same point in a text.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

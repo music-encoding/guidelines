@@ -10,9 +10,7 @@ title: "eventList"
    <h3 id="eventList">&lt;eventList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;eventList&gt;</span> Contains historical information given as a sequence of significant past events.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains historical information given as a sequence of significant past events.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

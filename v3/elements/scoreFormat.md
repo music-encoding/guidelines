@@ -10,8 +10,7 @@ title: "scoreFormat"
    <h3 id="scoreFormat">&lt;scoreFormat&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;scoreFormat&gt;</span> Describes the type of score used to represent a musical composition (e.g., short
+         <td colspan="2" class="wovenodd-col2"> Describes the type of score used to represent a musical composition (e.g., short
             score,
             full score, condensed score, close score, etc.).
          </td>

@@ -10,9 +10,7 @@ title: "fingGrp"
    <h3 id="fingGrp">&lt;fingGrp&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fingGrp&gt;</span> (finger group)– A group of individual fingers in a fingering indication.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (finger group)– A group of individual fingers in a fingering indication.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

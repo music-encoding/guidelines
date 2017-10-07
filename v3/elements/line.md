@@ -10,8 +10,7 @@ title: "line"
    <h3 id="line">&lt;line&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;line&gt;</span> A visual line that cannot be represented by a more specific; i.e., semantic,
+         <td colspan="2" class="wovenodd-col2"> A visual line that cannot be represented by a more specific; i.e., semantic,
             element.
          </td>
       </tr>

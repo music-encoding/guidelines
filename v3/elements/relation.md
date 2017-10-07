@@ -10,8 +10,7 @@ title: "relation"
    <h3 id="relation">&lt;relation&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;relation&gt;</span> A relation element describes the relationship between its parent and the object
+         <td colspan="2" class="wovenodd-col2"> A relation element describes the relationship between its parent and the object
             referenced by the relation element's target attribute.
          </td>
       </tr>

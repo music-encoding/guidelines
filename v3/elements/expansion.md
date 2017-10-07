@@ -10,8 +10,7 @@ title: "expansion"
    <h3 id="expansion">&lt;expansion&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;expansion&gt;</span> Indicates how a section may be programmatically expanded into its 'through-composed'
+         <td colspan="2" class="wovenodd-col2"> Indicates how a section may be programmatically expanded into its 'through-composed'
             form.
          </td>
       </tr>

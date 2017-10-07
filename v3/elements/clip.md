@@ -10,8 +10,7 @@ title: "clip"
    <h3 id="clip">&lt;clip&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;clip&gt;</span> Defines a time segment of interest within a recording or within a digital audio or
+         <td colspan="2" class="wovenodd-col2"> Defines a time segment of interest within a recording or within a digital audio or
             video
             file.
          </td>

@@ -10,9 +10,7 @@ title: "correction"
    <h3 id="correction">&lt;correction&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;correction&gt;</span> States how and under what circumstances corrections have been made in the text.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> States how and under what circumstances corrections have been made in the text.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

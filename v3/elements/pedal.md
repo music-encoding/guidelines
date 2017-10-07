@@ -10,9 +10,7 @@ title: "pedal"
    <h3 id="pedal">&lt;pedal&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pedal&gt;</span> Piano pedal mark.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Piano pedal mark.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

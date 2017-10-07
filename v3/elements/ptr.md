@@ -10,8 +10,7 @@ title: "ptr"
    <h3 id="ptr">&lt;ptr&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;ptr&gt;</span> (pointer) – Defines a pointer to another location, using only attributes to describe
+         <td colspan="2" class="wovenodd-col2"> (pointer) – Defines a pointer to another location, using only attributes to describe
             the
             destination.
          </td>

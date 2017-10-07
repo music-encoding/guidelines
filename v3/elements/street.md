@@ -10,8 +10,7 @@ title: "street"
    <h3 id="street">&lt;street&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;street&gt;</span> full street address including any name or number identifying a building as well as
+         <td colspan="2" class="wovenodd-col2"> full street address including any name or number identifying a building as well as
             the
             name of the street or route on which it is located.
          </td>

@@ -10,9 +10,7 @@ title: "chordDef"
    <h3 id="chordDef">&lt;chordDef&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;chordDef&gt;</span> (chord definition) – Chord tablature definition.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (chord definition) – Chord tablature definition.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

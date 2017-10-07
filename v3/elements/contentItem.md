@@ -10,9 +10,7 @@ title: "contentItem"
    <h3 id="contentItem">&lt;contentItem&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;contentItem&gt;</span> Contains a single entry within a content description element.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains a single entry within a content description element.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

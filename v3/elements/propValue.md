@@ -10,9 +10,7 @@ title: "propValue"
    <h3 id="propValue">&lt;propValue&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;propValue&gt;</span> (property value) – A single property value.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (property value) – A single property value.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

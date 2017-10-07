@@ -10,8 +10,7 @@ title: "fig"
    <h3 id="fig">&lt;fig&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fig&gt;</span> (figure) – Groups elements representing or containing graphic information such as
+         <td colspan="2" class="wovenodd-col2"> (figure) – Groups elements representing or containing graphic information such as
             an
             illustration or figure.
          </td>

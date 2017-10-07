@@ -10,9 +10,7 @@ title: "proport"
    <h3 id="proport">&lt;proport&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;proport&gt;</span> (proportion) – Description of note duration as arithmetic ratio.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (proportion) – Description of note duration as arithmetic ratio.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

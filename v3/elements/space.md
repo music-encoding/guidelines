@@ -10,8 +10,7 @@ title: "space"
    <h3 id="space">&lt;space&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;space&gt;</span> A placeholder used to fill an incomplete measure, layer, etc. most often so that
+         <td colspan="2" class="wovenodd-col2"> A placeholder used to fill an incomplete measure, layer, etc. most often so that
             the
             combined duration of the events equals the number of beats in the measure.
          </td>

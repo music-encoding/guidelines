@@ -10,9 +10,7 @@ title: "cc"
    <h3 id="cc">&lt;cc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;cc&gt;</span> (control change) – MIDI parameter/control change.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (control change) – MIDI parameter/control change.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

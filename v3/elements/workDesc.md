@@ -10,8 +10,7 @@ title: "workDesc"
    <h3 id="workDesc">&lt;workDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;workDesc&gt;</span> (work description) – Grouping mechanism for information describing non-bibliographic
+         <td colspan="2" class="wovenodd-col2"> (work description) – Grouping mechanism for information describing non-bibliographic
             aspects of a text.
          </td>
       </tr>

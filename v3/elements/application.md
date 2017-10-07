@@ -10,8 +10,7 @@ title: "application"
    <h3 id="application">&lt;application&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;application&gt;</span> Provides information about an application which has acted upon the current
+         <td colspan="2" class="wovenodd-col2"> Provides information about an application which has acted upon the current
             document.
          </td>
       </tr>

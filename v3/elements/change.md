@@ -10,9 +10,7 @@ title: "change"
    <h3 id="change">&lt;change&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;change&gt;</span> Individual change within the revision description.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Individual change within the revision description.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

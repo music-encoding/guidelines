@@ -10,9 +10,7 @@ title: "title"
    <h3 id="title">&lt;title&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;title&gt;</span> Title of a bibliographic entity.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Title of a bibliographic entity.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

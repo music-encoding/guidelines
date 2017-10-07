@@ -10,9 +10,7 @@ title: "provenance"
    <h3 id="provenance">&lt;provenance&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;provenance&gt;</span> The record of ownership or custodianship of an item.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> The record of ownership or custodianship of an item.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

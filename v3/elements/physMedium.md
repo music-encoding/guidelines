@@ -10,8 +10,7 @@ title: "physMedium"
    <h3 id="physMedium">&lt;physMedium&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;physMedium&gt;</span> (physical medium) – Records the physical materials used in the source, such as ink
+         <td colspan="2" class="wovenodd-col2"> (physical medium) – Records the physical materials used in the source, such as ink
             and
             paper.
          </td>

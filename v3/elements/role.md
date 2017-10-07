@@ -10,9 +10,7 @@ title: "role"
    <h3 id="role">&lt;role&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;role&gt;</span> Name of a dramatic role, as given in a cast list.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Name of a dramatic role, as given in a cast list.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

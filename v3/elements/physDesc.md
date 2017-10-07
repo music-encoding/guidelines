@@ -10,8 +10,7 @@ title: "physDesc"
    <h3 id="physDesc">&lt;physDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;physDesc&gt;</span> (physical description) – Container for information about the appearance, construction,
+         <td colspan="2" class="wovenodd-col2"> (physical description) – Container for information about the appearance, construction,
             or handling of physical materials, such as their dimension, quantity, color, style,
             and
             technique of creation.

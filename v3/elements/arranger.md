@@ -10,8 +10,7 @@ title: "arranger"
    <h3 id="arranger">&lt;arranger&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;arranger&gt;</span> A person or organization who transcribes a musical composition, usually for a different
+         <td colspan="2" class="wovenodd-col2"> A person or organization who transcribes a musical composition, usually for a different
             medium from that of the original; in an arrangement the musical substance remains
             essentially unchanged.
          </td>

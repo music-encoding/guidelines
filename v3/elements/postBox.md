@@ -10,8 +10,7 @@ title: "postBox"
    <h3 id="postBox">&lt;postBox&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;postBox&gt;</span> (postal box or post office box) contains a number or other identifier for some postal
+         <td colspan="2" class="wovenodd-col2"> (postal box or post office box) contains a number or other identifier for some postal
             delivery point other than a street address.
          </td>
       </tr>

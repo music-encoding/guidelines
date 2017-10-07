@@ -10,9 +10,7 @@ title: "bTrem"
    <h3 id="bTrem">&lt;bTrem&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;bTrem&gt;</span> (bowed tremolo) – A rapid alternation on a single pitch or chord.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (bowed tremolo) – A rapid alternation on a single pitch or chord.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

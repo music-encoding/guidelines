@@ -10,9 +10,7 @@ title: "prog"
    <h3 id="prog">&lt;prog&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;prog&gt;</span> (program) – MIDI program change.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (program) – MIDI program change.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,9 +10,7 @@ title: "graphic"
    <h3 id="graphic">&lt;graphic&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;graphic&gt;</span> Indicates the location of an inline graphic.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Indicates the location of an inline graphic.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

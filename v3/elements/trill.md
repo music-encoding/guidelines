@@ -10,8 +10,7 @@ title: "trill"
    <h3 id="trill">&lt;trill&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;trill&gt;</span> Rapid alternation of a note with another (usually at the interval of a second
+         <td colspan="2" class="wovenodd-col2"> Rapid alternation of a note with another (usually at the interval of a second
             above).
          </td>
       </tr>

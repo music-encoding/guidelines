@@ -10,8 +10,7 @@ title: "tr"
    <h3 id="tr">&lt;tr&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;tr&gt;</span> (table row) – A formatting element that contains one or more cells (intersection
+         <td colspan="2" class="wovenodd-col2"> (table row) – A formatting element that contains one or more cells (intersection
             of a
             row and a column) in a &lt;table&gt;.
          </td>

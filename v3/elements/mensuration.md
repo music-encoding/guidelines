@@ -10,9 +10,7 @@ title: "mensuration"
    <h3 id="mensuration">&lt;mensuration&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mensuration&gt;</span> Captures information about mensuration within bibliographic descriptions.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Captures information about mensuration within bibliographic descriptions.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

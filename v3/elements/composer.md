@@ -10,9 +10,7 @@ title: "composer"
    <h3 id="composer">&lt;composer&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;composer&gt;</span> The name of the creator of the intellectual content of a musical work.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> The name of the creator of the intellectual content of a musical work.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

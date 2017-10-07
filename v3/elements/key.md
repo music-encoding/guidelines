@@ -10,9 +10,7 @@ title: "key"
    <h3 id="key">&lt;key&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;key&gt;</span> Key captures information about tonal center and mode.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Key captures information about tonal center and mode.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

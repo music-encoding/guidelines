@@ -10,8 +10,7 @@ title: "extent"
    <h3 id="extent">&lt;extent&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;extent&gt;</span> Used to express size in terms other than physical dimensions, such as number of pages,
+         <td colspan="2" class="wovenodd-col2"> Used to express size in terms other than physical dimensions, such as number of pages,
             number of records in file, number of bytes, performance duration for music, audio
             recordings
             and visual projections, etc.

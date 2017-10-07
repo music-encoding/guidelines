@@ -10,8 +10,7 @@ title: "encodingDesc"
    <h3 id="encodingDesc">&lt;encodingDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;encodingDesc&gt;</span> (encoding description) – Documents the relationship between an electronic file and
+         <td colspan="2" class="wovenodd-col2"> (encoding description) – Documents the relationship between an electronic file and
             the
             source or sources from which it was derived as well as applications used in the
             encoding/editing process.

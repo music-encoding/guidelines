@@ -10,9 +10,7 @@ title: "rdg"
    <h3 id="rdg">&lt;rdg&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;rdg&gt;</span> (reading) – Contains a single reading within a textual variation.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (reading) – Contains a single reading within a textual variation.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

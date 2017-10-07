@@ -10,9 +10,7 @@ title: "term"
    <h3 id="term">&lt;term&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;term&gt;</span> Keyword or phrase which describes a resource.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Keyword or phrase which describes a resource.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

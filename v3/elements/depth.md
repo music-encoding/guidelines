@@ -10,9 +10,7 @@ title: "depth"
    <h3 id="depth">&lt;depth&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;depth&gt;</span> Description of a measurement taken through a three-dimensional object.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Description of a measurement taken through a three-dimensional object.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

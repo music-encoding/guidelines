@@ -10,9 +10,7 @@ title: "chanPr"
    <h3 id="chanPr">&lt;chanPr&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;chanPr&gt;</span> (channel pressure) – MIDI channel pressure/after touch.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (channel pressure) – MIDI channel pressure/after touch.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

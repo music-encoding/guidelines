@@ -10,8 +10,7 @@ title: "mei"
    <h3 id="mei">&lt;mei&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mei&gt;</span> Contains a single MEI-conformant document, consisting of an MEI header and a musical
+         <td colspan="2" class="wovenodd-col2"> Contains a single MEI-conformant document, consisting of an MEI header and a musical
             text, either in isolation or as part of an meiCorpus element.
          </td>
       </tr>

@@ -10,8 +10,7 @@ title: "work"
    <h3 id="work">&lt;work&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;work&gt;</span> Provides a detailed description of a work, specifically its history, language use,
+         <td colspan="2" class="wovenodd-col2"> Provides a detailed description of a work, specifically its history, language use,
             and
             high-level musical attributes: key, tempo, meter, medium of performance, and intended
             duration.

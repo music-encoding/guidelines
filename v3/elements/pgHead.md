@@ -10,8 +10,7 @@ title: "pgHead"
    <h3 id="pgHead">&lt;pgHead&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;pgHead&gt;</span> (page header) – A running header on the first page. Also, used to temporarily override
+         <td colspan="2" class="wovenodd-col2"> (page header) – A running header on the first page. Also, used to temporarily override
             a
             running header on individual pages.
          </td>

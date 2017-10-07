@@ -10,8 +10,7 @@ title: "physLoc"
    <h3 id="physLoc">&lt;physLoc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;physLoc&gt;</span> (physical location) – Groups information about the current physical location of a
+         <td colspan="2" class="wovenodd-col2"> (physical location) – Groups information about the current physical location of a
             bibliographic item, such as the repository in which it is located and its shelf mark(s),
             and
             its previous locations.

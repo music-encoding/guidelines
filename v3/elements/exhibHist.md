@@ -10,8 +10,7 @@ title: "exhibHist"
    <h3 id="exhibHist">&lt;exhibHist&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;exhibHist&gt;</span> (exhibition history) – A record of public exhibitions, including dates, venues,
+         <td colspan="2" class="wovenodd-col2"> (exhibition history) – A record of public exhibitions, including dates, venues,
             etc.
          </td>
       </tr>

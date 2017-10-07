@@ -10,8 +10,7 @@ title: "staff"
    <h3 id="staff">&lt;staff&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;staff&gt;</span> A group of equidistant horizontal lines on which notes are placed in order to represent
+         <td colspan="2" class="wovenodd-col2"> A group of equidistant horizontal lines on which notes are placed in order to represent
             pitch or a grouping element for individual 'strands' of notes, rests, etc. that may
             or may
             not actually be rendered on staff lines; that is, both diastematic and non-diastematic

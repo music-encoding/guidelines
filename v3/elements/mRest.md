@@ -10,8 +10,7 @@ title: "mRest"
    <h3 id="mRest">&lt;mRest&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;mRest&gt;</span> (measure rest) – Complete measure rest in any meter. 
+         <td colspan="2" class="wovenodd-col2"> (measure rest) – Complete measure rest in any meter. 
             
          </td>
       </tr>

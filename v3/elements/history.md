@@ -10,8 +10,7 @@ title: "history"
    <h3 id="history">&lt;history&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;history&gt;</span> Provides a container for information about the history of a resource. To facilitate
+         <td colspan="2" class="wovenodd-col2"> Provides a container for information about the history of a resource. To facilitate
             efficient data interchange, basic information about the circumstances surrounding
             the
             creation of bibliographic resources should be recorded within the creation element.

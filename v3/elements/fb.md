@@ -10,8 +10,7 @@ title: "fb"
    <h3 id="fb">&lt;fb&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;fb&gt;</span> (figured bass) – Symbols added to a bass line that indicate harmony. Used to improvise
+         <td colspan="2" class="wovenodd-col2"> (figured bass) – Symbols added to a bass line that indicate harmony. Used to improvise
             a
             chordal accompaniment. Sometimes called Generalbass, thoroughbass, or basso continuo.
          </td>

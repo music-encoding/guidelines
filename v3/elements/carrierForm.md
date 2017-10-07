@@ -10,8 +10,7 @@ title: "carrierForm"
    <h3 id="carrierForm">&lt;carrierForm&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;carrierForm&gt;</span> (carrier form) – The specific class of material to which the physical carrier of
+         <td colspan="2" class="wovenodd-col2"> (carrier form) – The specific class of material to which the physical carrier of
             the
             source/manifestation belongs (e.g., sound cassette, videodisc, microfilm cartridge,
             transparency, etc.). The carrier for a manifestation comprising multiple physical

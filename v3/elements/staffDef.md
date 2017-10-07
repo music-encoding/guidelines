@@ -10,9 +10,7 @@ title: "staffDef"
    <h3 id="staffDef">&lt;staffDef&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;staffDef&gt;</span> (staff definition) – Container for staff meta-information.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> (staff definition) – Container for staff meta-information.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

@@ -10,8 +10,7 @@ title: "revisionDesc"
    <h3 id="revisionDesc">&lt;revisionDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;revisionDesc&gt;</span> (revision description) – Container for information about alterations that have been
+         <td colspan="2" class="wovenodd-col2"> (revision description) – Container for information about alterations that have been
             made
             to an MEI file.
          </td>

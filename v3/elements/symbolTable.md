@@ -10,9 +10,7 @@ title: "symbolTable"
    <h3 id="symbolTable">&lt;symbolTable&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;symbolTable&gt;</span> Contains a set of user-defined symbols.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> Contains a set of user-defined symbols.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

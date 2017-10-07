@@ -10,8 +10,7 @@ title: "clef"
    <h3 id="clef">&lt;clef&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;clef&gt;</span> Indication of the exact location of a particular note on the staff and, therefore,
+         <td colspan="2" class="wovenodd-col2"> Indication of the exact location of a particular note on the staff and, therefore,
             the
             other notes as well.
          </td>

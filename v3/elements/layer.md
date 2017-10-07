@@ -10,9 +10,7 @@ title: "layer"
    <h3 id="layer">&lt;layer&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;layer&gt;</span> An independent stream of events on a staff.
-         </td>
+         <td colspan="2" class="wovenodd-col2"> An independent stream of events on a staff.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1">

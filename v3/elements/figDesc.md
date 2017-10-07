@@ -10,8 +10,7 @@ title: "figDesc"
    <h3 id="figDesc">&lt;figDesc&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">
-            <span class="label">&lt;figDesc&gt;</span> (figure description) – Contains a brief prose description of the appearance or content
+         <td colspan="2" class="wovenodd-col2"> (figure description) – Contains a brief prose description of the appearance or content
             of a graphic figure, for use when documenting an image without displaying it.
          </td>
       </tr>
