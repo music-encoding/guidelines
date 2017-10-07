@@ -1,7 +1,7 @@
 # Site settings
 title: MEI Guidelines
 email: info@music-encoding.org
-baseurl: "" 
+baseurl: "/guidelines" 
 url: "http://guidelines.music-encoding.org"
 style_baseurl: "https://music-encoding.github.io"
 twitter_username: music-encoding
