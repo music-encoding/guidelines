@@ -25,7 +25,7 @@ title: "model.controleventLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>
                </div>
             </div>
          </td>
@@ -37,26 +37,26 @@ title: "model.controleventLike.cmn"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/arpeg.html">arpeg</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beamSpan.html">beamSpan</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/breath.html">breath</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cpMark.html">cpMark</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fermata.html">fermata</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hairpin.html">hairpin</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/harpPedal.html">harpPedal</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/octave.html">octave</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pedal.html">pedal</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reh.html">reh</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/slur.html">slur</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tie.html">tie</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a> (direct members of model.controleventLike.cmn)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/arpeg.html">arpeg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html">beamSpan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/breath.html">breath</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html">cpMark</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fermata.html">fermata</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/hairpin.html">hairpin</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/harpPedal.html">harpPedal</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pedal.html">pedal</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/reh.html">reh</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/slur.html">slur</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tie.html">tie</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a> (direct members of model.controleventLike.cmn)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/mordent.html">mordent</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/trill.html">trill</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/turn.html">turn</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/mordent.html">mordent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/trill.html">trill</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/turn.html">turn</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.ornamentLike.cmn.html">model.ornamentLike.cmn</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.ornamentLike.cmn.html">model.ornamentLike.cmn</a>)
                   </span>
                </div>
             </div>
@@ -75,7 +75,7 @@ title: "model.controleventLike.cmn"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.controleventLike">model.controleventLike</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html">model.controleventLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

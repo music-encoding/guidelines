@@ -26,42 +26,42 @@ title: "att.staffloc.pitched"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.vis.mensural">att.accid.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accid.vis.mensural">att.accid.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/accid.html">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.vis.html">att.accid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accid.vis.html">att.accid.vis</a>)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dot.vis.mensural">att.dot.vis.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.dot.vis.mensural">att.dot.vis.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dot.html">dot</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/dot.html">dot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.dot.vis.html">att.dot.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.dot.vis.html">att.dot.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mRest.html">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mRest.vis.html">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mRest.vis.html">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRest.html">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/multiRest.html">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.multiRest.vis.html">att.multiRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.multiRest.vis.html">att.multiRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rest.html">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.rest.vis.html">att.rest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rest.vis.html">att.rest.vis</a>)
                   </span>
                </div>
             </div>

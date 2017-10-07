@@ -29,9 +29,9 @@ title: "data.STAFFLOC"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.barplacement.html">att.barplacement</a> (@taktplace), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensural.vis.html">att.mensural.vis</a> (@mensur.loc), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.staffloc.html">att.staffloc</a> (@loc)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barplacement.html">att.barplacement</a> (@taktplace), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.vis.html">att.mensural.vis</a> (@mensur.loc), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffloc.html">att.staffloc</a> (@loc)
             </div>
          </td>
       </tr>

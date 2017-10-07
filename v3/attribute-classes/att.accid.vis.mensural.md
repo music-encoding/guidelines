@@ -25,9 +25,9 @@ title: "att.accid.vis.mensural"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/accid.html">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.accid.vis.html">att.accid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accid.vis.html">att.accid.vis</a>)
                   </span>
                </div>
             </div>
@@ -52,7 +52,7 @@ title: "att.accid.vis.mensural"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.staffloc.pitched">att.staffloc.pitched</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffloc.pitched.html">att.staffloc.pitched</a>"
                         </span>/&gt;
                      </span>
                   </div>

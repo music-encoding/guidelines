@@ -46,7 +46,7 @@ title: "appInfo"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.encodingPart,html">model.encodingPart</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.encodingPart,html">model.encodingPart</a>
             </div>
          </td>
       </tr>
@@ -60,11 +60,11 @@ title: "appInfo"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/appInfo.html">appInfo</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/projectDesc.html">projectDesc</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/appInfo.html">appInfo</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/projectDesc.html">projectDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a>
                      </span>
                   </div>
                </div>
@@ -80,13 +80,13 @@ title: "appInfo"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/application.html">application</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/application.html">application</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/head.html">head</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a>
                   </span>
                </div>
             </div>
@@ -106,7 +106,7 @@ title: "appInfo"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -115,7 +115,7 @@ title: "appInfo"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.encodingPart">model.encodingPart</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.encodingPart.html">model.encodingPart</a>"
                            </span>/&gt;
                         </span>
                      </div>

@@ -27,13 +27,13 @@ title: "att.trans"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/abbr.html">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expan.html">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/subst.html">subst</a> (direct members of att.trans)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/subst.html">subst</a> (direct members of att.trans)
                </div>
             </div>
          </td>
@@ -57,7 +57,7 @@ title: "att.trans"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.handident">att.handident</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.handident.html">att.handident</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -66,7 +66,7 @@ title: "att.trans"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.sequence">att.sequence</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.sequence.html">att.sequence</a>"
                         </span>/&gt;
                      </span>
                   </div>

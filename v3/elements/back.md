@@ -45,7 +45,7 @@ title: "back"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.backLike,html">model.backLike</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.backLike,html">model.backLike</a>
             </div>
          </td>
       </tr>
@@ -59,7 +59,7 @@ title: "back"
                   <div class="specChild">
                      <span class="specChildModule">MEI.text</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/back.html">back</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a>
                      </span>
                   </div>
                </div>
@@ -75,10 +75,10 @@ title: "back"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/div.html">div</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lb.html">lb</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/titlePage.html">titlePage</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/titlePage.html">titlePage</a>
                   </span>
                </div>
             </div>
@@ -98,7 +98,7 @@ title: "back"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -107,7 +107,7 @@ title: "back"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -116,7 +116,7 @@ title: "back"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.facsimile">att.facsimile</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -125,7 +125,7 @@ title: "back"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.lang">att.lang</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -134,7 +134,7 @@ title: "back"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.backLike">model.backLike</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.backLike.html">model.backLike</a>"
                            </span>/&gt;
                         </span>
                      </div>

@@ -35,7 +35,7 @@ title: "att.bend.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bend.html">bend</a> (direct member of att.bend.vis)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/bend.html">bend</a> (direct member of att.bend.vis)
                </div>
             </div>
          </td>
@@ -59,7 +59,7 @@ title: "att.bend.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.color">att.color</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -68,7 +68,7 @@ title: "att.bend.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.visualoffset">att.visualoffset</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.html">att.visualoffset</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -77,7 +77,7 @@ title: "att.bend.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.visualoffset2">att.visualoffset2</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.html">att.visualoffset2</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -86,7 +86,7 @@ title: "att.bend.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.xy">att.xy</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -95,7 +95,7 @@ title: "att.bend.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.xy2">att.xy2</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy2.html">att.xy2</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -104,7 +104,7 @@ title: "att.bend.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.curvature">att.curvature</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.curvature.html">att.curvature</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -113,7 +113,7 @@ title: "att.bend.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.curverend">att.curverend</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.curverend.html">att.curverend</a>"
                         </span>/&gt;
                      </span>
                   </div>

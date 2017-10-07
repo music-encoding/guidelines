@@ -57,7 +57,7 @@ title: "mapping"
                   <div class="specChild">
                      <span class="specChildModule">MEI.usersymbols</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/symbolDef.html">symbolDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html">symbolDef</a>
                      </span>
                   </div>
                </div>
@@ -91,7 +91,7 @@ title: "mapping"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -100,7 +100,7 @@ title: "mapping"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.responsibility">att.responsibility</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -109,7 +109,7 @@ title: "mapping"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.typed">att.typed</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"
                            </span>/&gt;
                         </span>
                      </div>

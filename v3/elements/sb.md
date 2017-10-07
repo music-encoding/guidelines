@@ -46,7 +46,7 @@ title: "sb"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.milestoneLike.music,html">model.milestoneLike.music</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.music,html">model.milestoneLike.music</a>
             </div>
          </td>
       </tr>
@@ -60,32 +60,32 @@ title: "sb"
                   <div class="specChild">
                      <span class="specChildModule">MEI.cmn</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lem.html">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rdg.html">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.neumes</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syllable.html">syllable</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/syllable.html">syllable</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sb.html">sb</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/score.html">score</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staff.html">staff</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/layer.html">layer</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/part.html">part</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/sb.html">sb</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/score.html">score</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staff.html">staff</a>
                      </span>
                   </div>
                </div>
@@ -101,7 +101,7 @@ title: "sb"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/custos.html">custos</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/custos.html">custos</a>
                   </span>
                </div>
             </div>
@@ -121,7 +121,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -130,7 +130,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.facsimile">att.facsimile</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -139,7 +139,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.source">att.source</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.source.html">att.source</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -148,7 +148,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.sb.log">att.sb.log</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.sb.log.html">att.sb.log</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -157,7 +157,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.sb.vis">att.sb.vis</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.sb.vis.html">att.sb.vis</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -166,7 +166,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.sb.ges">att.sb.ges</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.sb.ges.html">att.sb.ges</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -175,7 +175,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.sb.anl">att.sb.anl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.sb.anl.html">att.sb.anl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -184,7 +184,7 @@ title: "sb"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.milestoneLike.music">model.milestoneLike.music</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -221,7 +221,7 @@ title: "sb"
          </td>
          <td class="wovenodd-col2">
             <p>Do not confuse this element with the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/lb">lb</a> element, which performs a
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a> element, which performs a
                similar function in prose.
             </p>
          </td>

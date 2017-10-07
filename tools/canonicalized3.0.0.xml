@@ -23019,7 +23019,7 @@
       <desc>Groups elements containing bibliographic edition information.</desc>
       <classes mode="replace">
         <memberOf key="model.biblPart" mode="add"></memberOf>
-        <memberOf key="titlePagePart" mode="add"></memberOf>
+        <memberOf key="model.titlePagePart" mode="add"></memberOf>
       </classes>
     </classSpec>
     <classSpec ident="model.editLike" mode="add" module="MEI.edittrans" predeclare="false" status="stable" type="model">

@@ -55,7 +55,7 @@ title: "recording"
                   <div class="specChild">
                      <span class="specChildModule">MEI.performance</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/performance.html">performance</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/performance.html">performance</a>
                      </span>
                   </div>
                </div>
@@ -71,9 +71,9 @@ title: "recording"
                <div class="specChild">
                   <span class="specChildModule">MEI.performance</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/avFile.html">avFile</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clip.html">clip</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/when.html">when</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/avFile.html">avFile</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clip.html">clip</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/when.html">when</a>
                   </span>
                </div>
             </div>
@@ -93,7 +93,7 @@ title: "recording"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -102,7 +102,7 @@ title: "recording"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.datapointing">att.datapointing</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -111,7 +111,7 @@ title: "recording"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -120,7 +120,7 @@ title: "recording"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.mediabounds">att.mediabounds</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mediabounds.html">att.mediabounds</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -129,7 +129,7 @@ title: "recording"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.startid">att.startid</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startid.html">att.startid</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -198,7 +198,7 @@ title: "recording"
             <p>The 
                <span class="att">startid</span> attribute may be used to hold a reference to the first feature
                occurring in this performance. This element is analogous to the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a> element in the facsimile module.
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/surface.html">surface</a> element in the facsimile module.
             </p>
          </td>
       </tr>

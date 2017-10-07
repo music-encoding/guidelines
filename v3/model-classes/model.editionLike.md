@@ -25,10 +25,11 @@ title: "model.editionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editionStmt.html">editionStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editionStmt.html">editionStmt</a>
                </div>
             </div>
          </td>
@@ -40,7 +41,7 @@ title: "model.editionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/edition.html">edition</a> (direct member of model.editionLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/edition.html">edition</a> (direct member of model.editionLike)
                </div>
             </div>
          </td>
@@ -58,7 +59,7 @@ title: "model.editionLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.biblPart">model.biblPart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -67,7 +68,7 @@ title: "model.editionLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/titlePagePart">titlePagePart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlePagePart.html">model.titlePagePart</a>"
                         </span>/&gt;
                      </span>
                   </div>

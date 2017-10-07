@@ -27,8 +27,8 @@ title: "data.OCTAVE.DIS"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.dis), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a> (@dis)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.cleffing.log.html">att.cleffing.log</a> (@clef.dis), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a> (@dis)
             </div>
          </td>
       </tr>

@@ -25,8 +25,8 @@ title: "model.endingLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>
                </div>
             </div>
          </td>
@@ -38,7 +38,7 @@ title: "model.endingLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a> (direct member of model.endingLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> (direct member of model.endingLike)
                </div>
             </div>
          </td>
@@ -56,7 +56,7 @@ title: "model.endingLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.scorePart">model.scorePart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -65,7 +65,7 @@ title: "model.endingLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.sectionPart">model.sectionPart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>"
                         </span>/&gt;
                      </span>
                   </div>

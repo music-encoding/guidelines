@@ -25,12 +25,12 @@ title: "model.locrefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/application.html">application</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pgDesc.html">pgDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/series.html">series</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/application.html">application</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pgDesc.html">pgDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/series.html">series</a>
                </div>
             </div>
          </td>
@@ -42,8 +42,8 @@ title: "model.locrefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ptr.html">ptr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ref.html">ref</a> (direct members of model.locrefLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html">ptr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ref.html">ref</a> (direct members of model.locrefLike)
                </div>
             </div>
          </td>
@@ -61,7 +61,7 @@ title: "model.locrefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.textphraseLike.limited">model.textphraseLike.limited</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
                         </span>/&gt;
                      </span>
                   </div>

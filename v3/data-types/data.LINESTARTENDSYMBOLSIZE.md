@@ -24,8 +24,8 @@ title: "data.LINESTARTENDSYMBOLSIZE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@endsymsize), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.linerend.html">att.linerend</a> (@lendsymsize)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@endsymsize), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.linerend</a> (@lendsymsize)
             </div>
          </td>
       </tr>

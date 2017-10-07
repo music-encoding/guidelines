@@ -25,8 +25,8 @@ title: "model.quoteLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>
                </div>
             </div>
          </td>
@@ -38,7 +38,7 @@ title: "model.quoteLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/quote.html">quote</a> (direct member of model.quoteLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/quote.html">quote</a> (direct member of model.quoteLike)
                </div>
             </div>
          </td>
@@ -56,7 +56,7 @@ title: "model.quoteLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.paracontentPart">model.paracontentPart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.paracontentPart.html">model.paracontentPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -65,7 +65,7 @@ title: "model.quoteLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.textcomponentLike">model.textcomponentLike</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textcomponentLike.html">model.textcomponentLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

@@ -25,8 +25,8 @@ title: "att.keySig.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/key.html">key</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/keySig.html">keySig</a> (direct members of att.keySig.log)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/key.html">key</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/keySig.html">keySig</a> (direct members of att.keySig.log)
                </div>
             </div>
          </td>
@@ -50,7 +50,7 @@ title: "att.keySig.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.accidental">att.accidental</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.html">att.accidental</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -59,7 +59,7 @@ title: "att.keySig.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.pitch">att.pitch</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitch.html">att.pitch</a>"
                         </span>/&gt;
                      </span>
                   </div>

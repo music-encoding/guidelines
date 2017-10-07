@@ -24,11 +24,11 @@ title: "data.LINEWIDTH"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.curverend.html">att.curverend</a> (@lwidth), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@width), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.linerend.base.html">att.linerend.base</a> (@lwidth), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.slurrend.html">att.slurrend</a> (@slur.lwidth), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tierend.html">att.tierend</a> (@tie.lwidth)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.curverend.html">att.curverend</a> (@lwidth), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@width), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.linerend.base</a> (@lwidth), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slurrend.html">att.slurrend</a> (@slur.lwidth), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tierend.html">att.tierend</a> (@tie.lwidth)
             </div>
          </td>
       </tr>

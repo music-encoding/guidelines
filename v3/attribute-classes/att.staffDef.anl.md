@@ -25,7 +25,7 @@ title: "att.staffDef.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a> (direct member of att.staffDef.anl)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a> (direct member of att.staffDef.anl)
                </div>
             </div>
          </td>

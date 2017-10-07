@@ -43,7 +43,7 @@ title: "handList"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.physDescPart,html">model.physDescPart</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.physDescPart,html">model.physDescPart</a>
             </div>
          </td>
       </tr>
@@ -57,33 +57,33 @@ title: "handList"
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/captureMode.html">captureMode</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/carrierForm.html">carrierForm</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/condition.html">condition</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dimensions.html">dimensions</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/exhibHist.html">exhibHist</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fileChar.html">fileChar</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fingerprint.html">fingerprint</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handList.html">handList</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/inscription.html">inscription</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfDuration.html">perfDuration</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physDesc.html">physDesc</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physMedium.html">physMedium</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/plateNum.html">plateNum</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/playingSpeed.html">playingSpeed</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreFormat.html">scoreFormat</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/soundChan.html">soundChan</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/specRepro.html">specRepro</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trackConfig.html">trackConfig</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/treatHist.html">treatHist</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/treatSched.html">treatSched</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/watermark.html">watermark</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/captureMode.html">captureMode</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/carrierForm.html">carrierForm</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/condition.html">condition</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/dimensions.html">dimensions</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/exhibHist.html">exhibHist</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fileChar.html">fileChar</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fingerprint.html">fingerprint</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/handList.html">handList</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/inscription.html">inscription</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/perfDuration.html">perfDuration</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/physDesc.html">physDesc</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/physMedium.html">physMedium</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/plateNum.html">plateNum</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/playingSpeed.html">playingSpeed</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/scoreFormat.html">scoreFormat</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/soundChan.html">soundChan</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/specRepro.html">specRepro</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/trackConfig.html">trackConfig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/treatHist.html">treatHist</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/treatSched.html">treatSched</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/watermark.html">watermark</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/extent.html">extent</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/extent.html">extent</a>
                      </span>
                   </div>
                </div>
@@ -99,14 +99,14 @@ title: "handList"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hand.html">hand</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/hand.html">hand</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/head.html">head</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/label.html">label</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/label.html">label</a>
                   </span>
                </div>
             </div>
@@ -126,7 +126,7 @@ title: "handList"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -135,7 +135,7 @@ title: "handList"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.bibl">att.bibl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -144,7 +144,7 @@ title: "handList"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.typed">att.typed</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -153,7 +153,7 @@ title: "handList"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.physDescPart">model.physDescPart</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.physDescPart.html">model.physDescPart</a>"
                            </span>/&gt;
                         </span>
                      </div>

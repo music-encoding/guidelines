@@ -24,7 +24,7 @@ title: "data.MUSICFONT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.notationstyle.html">att.notationstyle</a> (@music.name)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.notationstyle.html">att.notationstyle</a> (@music.name)
             </div>
          </td>
       </tr>

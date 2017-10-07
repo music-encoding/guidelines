@@ -25,7 +25,7 @@ title: "model.chordTableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.chordTableLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chordTable.html">chordTable</a> (direct member of model.chordTableLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordTable.html">chordTable</a> (direct member of model.chordTableLike)
                </div>
             </div>
          </td>

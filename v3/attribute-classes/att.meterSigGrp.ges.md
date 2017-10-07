@@ -25,7 +25,7 @@ title: "att.meterSigGrp.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSigGrp.html">meterSigGrp</a> (direct member of att.meterSigGrp.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meterSigGrp.html">meterSigGrp</a> (direct member of att.meterSigGrp.ges)
                </div>
             </div>
          </td>

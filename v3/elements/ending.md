@@ -45,7 +45,7 @@ title: "ending"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.endingLike,html">model.endingLike</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.endingLike,html">model.endingLike</a>
             </div>
          </td>
       </tr>
@@ -59,17 +59,17 @@ title: "ending"
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lem.html">lem</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rdg.html">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lem.html">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rdg.html">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/part.html">part</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/score.html">score</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/part.html">part</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/score.html">score</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a>
                      </span>
                   </div>
                </div>
@@ -85,55 +85,55 @@ title: "ending"
                <div class="specChild">
                   <span class="specChildModule">MEI.cmn</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.critapp</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/app.html">app</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/app.html">app</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.edittrans</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/choice.html">choice</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gap.html">gap</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handShift.html">handShift</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sic.html">sic</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/subst.html">subst</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/handShift.html">handShift</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/subst.html">subst</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/div.html">div</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expansion.html">expansion</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sb.html">sb</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staff.html">staff</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expansion.html">expansion</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/sb.html">sb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staff.html">staff</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.usersymbols</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/anchoredText.html">anchoredText</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/curve.html">curve</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/line.html">line</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/anchoredText.html">anchoredText</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/curve.html">curve</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/line.html">line</a>
                   </span>
                </div>
             </div>
@@ -153,7 +153,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -162,7 +162,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.ending.anl">att.ending.anl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ending.anl.html">att.ending.anl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -171,7 +171,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.ending.ges">att.ending.ges</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ending.ges.html">att.ending.ges</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -180,7 +180,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.ending.log">att.ending.log</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ending.log.html">att.ending.log</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -189,7 +189,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.ending.vis">att.ending.vis</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ending.vis.html">att.ending.vis</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -198,7 +198,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.facsimile">att.facsimile</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -207,7 +207,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.pointing">att.pointing</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -216,7 +216,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.targeteval">att.targeteval</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.targeteval.html">att.targeteval</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -225,7 +225,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.typed">att.typed</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -234,7 +234,7 @@ title: "ending"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.endingLike">model.endingLike</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.endingLike.html">model.endingLike</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -355,11 +355,11 @@ title: "ending"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a> element is allowed as a sub-element so that an ending
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a> element is allowed as a sub-element so that an ending
                may have its own meta-data without the overhead of child 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/section">section</a>
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a>
                elements. 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/div">div</a> sub-elements are not allowed within ending in order to
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> sub-elements are not allowed within ending in order to
                avoid collisions with the brackets that are usually displayed over endings. Endings
                may
                *not* contain other ending elements.

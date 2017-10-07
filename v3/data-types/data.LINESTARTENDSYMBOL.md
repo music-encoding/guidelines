@@ -24,8 +24,8 @@ title: "data.LINESTARTENDSYMBOL"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@endsym), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.linerend.html">att.linerend</a> (@lendsym)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.line.vis.html">att.line.vis</a> (@endsym), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.linerend</a> (@lendsym)
             </div>
          </td>
       </tr>

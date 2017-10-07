@@ -43,7 +43,7 @@ title: "performance"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.resourceLike,html">model.resourceLike</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.resourceLike,html">model.resourceLike</a>
             </div>
          </td>
       </tr>
@@ -57,19 +57,19 @@ title: "performance"
                   <div class="specChild">
                      <span class="specChildModule">MEI.facsimile</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/facsimile.html">facsimile</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.performance</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/performance.html">performance</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/performance.html">performance</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/music.html">music</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a>
                      </span>
                   </div>
                </div>
@@ -85,7 +85,7 @@ title: "performance"
                <div class="specChild">
                   <span class="specChildModule">MEI.performance</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/recording.html">recording</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/recording.html">recording</a>
                   </span>
                </div>
             </div>
@@ -105,7 +105,7 @@ title: "performance"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -114,7 +114,7 @@ title: "performance"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -123,7 +123,7 @@ title: "performance"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.resourceLike">model.resourceLike</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.resourceLike.html">model.resourceLike</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -162,7 +162,7 @@ title: "performance"
             <p>The 
                <span class="att">decls</span> attribute may be used to link the collection with a particular
                source described in the header. This element is analogous to the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/facsimile">facsimile</a> element in the facsimile module.
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a> element in the facsimile module.
             </p>
          </td>
       </tr>

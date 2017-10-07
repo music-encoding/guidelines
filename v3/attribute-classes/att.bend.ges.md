@@ -25,7 +25,7 @@ title: "att.bend.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bend.html">bend</a> (direct member of att.bend.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/bend.html">bend</a> (direct member of att.bend.ges)
                </div>
             </div>
          </td>

@@ -26,8 +26,8 @@ title: "data.BARRENDITION"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.barLine.log.html">att.barLine.log</a> (@form), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.measure.log.html">att.measure.log</a> (@left)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barLine.log.html">att.barLine.log</a> (@form), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.measure.log.html">att.measure.log</a> (@left)
             </div>
          </td>
       </tr>

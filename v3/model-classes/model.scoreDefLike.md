@@ -25,13 +25,13 @@ title: "model.scoreDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syllable.html">syllable</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/syllable.html">syllable</a>
                </div>
             </div>
          </td>
@@ -43,7 +43,7 @@ title: "model.scoreDefLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a> (direct member of model.scoreDefLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a> (direct member of model.scoreDefLike)
                </div>
             </div>
          </td>
@@ -61,7 +61,7 @@ title: "model.scoreDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.scorePart">model.scorePart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorePart.html">model.scorePart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -70,7 +70,7 @@ title: "model.scoreDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.sectionPart">model.sectionPart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -79,7 +79,7 @@ title: "model.scoreDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.staffPart.mensuralAndNeumes">model.staffPart.mensuralAndNeumes</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffPart.mensuralAndNeumes.html">model.staffPart.mensuralAndNeumes</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -88,7 +88,7 @@ title: "model.scoreDefLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.layerPart.mensuralAndNeumes">model.layerPart.mensuralAndNeumes</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerPart.mensuralAndNeumes.html">model.layerPart.mensuralAndNeumes</a>"
                         </span>/&gt;
                      </span>
                   </div>

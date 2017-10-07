@@ -15,12 +15,12 @@ clear examples; a less definite case might be the prologue attached to a dramati
 work. The
 front matter of an encoded text should not be confused with the MEI header described
 in
-chapter <a class="link_ptr" title="The MEI Header" href="/{{ page.version }}/guidelines/header.html">2 The MEI Header</a>, which provides metadata for the entire file.
+chapter <a class="link_ptr" title="The MEI Header" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/header.html">2 The MEI Header</a>, which provides metadata for the entire file.
 
 An encoder may choose simply to ignore the front matter in a text, if the original
 presentation of the work is of no interest. No specific tags are provided for the
 various
-kinds of subdivision which may appear within front matter: instead, generic [div](/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} (“division”) elements may be used, which should not be confused with [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} (“musical division”) elements. The following suggested values for
+kinds of subdivision which may appear within front matter: instead, generic [div](/{{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} (“division”) elements may be used, which should not be confused with [mdiv](/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} (“musical division”) elements. The following suggested values for
 the **@type** attribute may be used to distinguish various kinds of division
 characteristic of front matter:
 
@@ -71,20 +71,20 @@ The following extended example demonstrates how various parts of the front matte
 of a text
 may be encoded. The front part begins with a title page, which is presented in section
 
-<a class="link_ptr" title="Title Pages" href="/{{ page.version }}/guidelines/text.html#textTitlePages">21.6.2 Title Pages</a>, below. This is followed by a dedication and a preface, each of
+<a class="link_ptr" title="Title Pages" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/text.html#textTitlePages">21.6.2 Title Pages</a>, below. This is followed by a dedication and a preface, each of
 which is encoded as a distinct div:
 
 {% include plainExample.html example="./v3/examples/text/text-sample338.xml" valid="true" %}
 
-The front matter concludes with another [div](/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, shown in the
-next example, this time containing a table of contents, which contains a [list](/{{ page.version }}/elements/list.html){:.link_odd_elementSpec} element (as described in chapter 
-<a class="link_ptr" title="Lists" href="/{{ page.version }}/guidelines/text.html#textLists">21.3 Lists</a>). Note the use of
-the [ptr](/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element to provide page-references: the implication here is
+The front matter concludes with another [div](/{{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, shown in the
+next example, this time containing a table of contents, which contains a [list](/{{ site.baseurl }}/{{ page.version }}/elements/list.html){:.link_odd_elementSpec} element (as described in chapter 
+<a class="link_ptr" title="Lists" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/text.html#textLists">21.3 Lists</a>). Note the use of
+the [ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element to provide page-references: the implication here is
 that the target identifiers (song1, song2, etc.) will correspond with identifiers
 used for
-the [mdiv](/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} elements containing the individual songs. (For a description
-of the [ptr](/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element, see chapter 
-<a class="link_ptr" title="Pointers and References" href="/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a>.)
+the [mdiv](/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} elements containing the individual songs. (For a description
+of the [ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element, see chapter 
+<a class="link_ptr" title="Pointers and References" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a>.)
 
 {% include plainExample.html example="./v3/examples/text/text-sample339.xml" valid="true" %}
 

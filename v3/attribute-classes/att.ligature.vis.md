@@ -25,7 +25,7 @@ title: "att.ligature.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ligature.html">ligature</a> (direct member of att.ligature.vis)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ligature.html">ligature</a> (direct member of att.ligature.vis)
                </div>
             </div>
          </td>

@@ -25,7 +25,7 @@ title: "att.accid.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a> (direct member of att.accid.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/accid.html">accid</a> (direct member of att.accid.ges)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.accid.ges"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.accidental.performed">att.accidental.performed</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>"
                         </span>/&gt;
                      </span>
                   </div>

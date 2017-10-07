@@ -35,10 +35,10 @@ title: "model.encodingPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/appInfo.html">appInfo</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a> (direct members of model.encodingPart)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/appInfo.html">appInfo</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/editorialDecl.html">editorialDecl</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/projectDesc.html">projectDesc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/samplingDecl.html">samplingDecl</a> (direct members of model.encodingPart)
                </div>
             </div>
          </td>

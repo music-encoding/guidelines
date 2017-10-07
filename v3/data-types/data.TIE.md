@@ -24,7 +24,7 @@ title: "data.TIE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.tiepresent.html">att.tiepresent</a> (@tie)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tiepresent.html">att.tiepresent</a> (@tie)
             </div>
          </td>
       </tr>

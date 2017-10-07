@@ -24,7 +24,7 @@ title: "data.DURATION.gestural.prop"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data-types/data.DURATION.gestural.html">data.DURATION.gestural</a>
+               <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/data-types/data.DURATION.gestural.html">data.DURATION.gestural</a>
             </div>
          </td>
       </tr>

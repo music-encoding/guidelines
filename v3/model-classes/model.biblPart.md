@@ -25,7 +25,7 @@ title: "model.biblPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bibl.html">bibl</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a>
                </div>
             </div>
          </td>
@@ -37,44 +37,44 @@ title: "model.biblPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblScope.html">biblScope</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/creation.html">creation</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/extent.html">extent</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/genre.html">genre</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/imprint.html">imprint</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/perfDuration.html">perfDuration</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/physLoc.html">physLoc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/recipient.html">recipient</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relatedItem.html">relatedItem</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/series.html">series</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/textLang.html">textLang</a> (direct members of model.biblPart)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/biblScope.html">biblScope</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/creation.html">creation</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/extent.html">extent</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/genre.html">genre</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/imprint.html">imprint</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/perfDuration.html">perfDuration</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/physLoc.html">physLoc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/recipient.html">recipient</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html">relatedItem</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/series.html">series</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/textLang.html">textLang</a> (direct members of model.biblPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/edition.html">edition</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/editionStmt.html">editionStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/edition.html">edition</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/editionStmt.html">editionStmt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.editionLike.html">model.editionLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.editionLike.html">model.editionLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/respStmt.html">respStmt</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/titleStmt.html">titleStmt</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/respStmt.html">respStmt</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/titleStmt.html">titleStmt</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.respLike.html">model.respLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.respLike.html">model.respLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/arranger.html">arranger</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/author.html">author</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/byline.html">byline</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/composer.html">composer</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/editor.html">editor</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/funder.html">funder</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/librettist.html">librettist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/lyricist.html">lyricist</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/sponsor.html">sponsor</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/arranger.html">arranger</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/author.html">author</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/byline.html">byline</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/composer.html">composer</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/editor.html">editor</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/funder.html">funder</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/librettist.html">librettist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/lyricist.html">lyricist</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/sponsor.html">sponsor</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.respLikePart.html">model.respLikePart</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.respLikePart.html">model.respLikePart</a>)
                   </span>
                </div>
             </div>

@@ -25,9 +25,9 @@ title: "att.whitespace"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/extMeta.html">extMeta</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/incipCode.html">incipCode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rend.html">rend</a> (direct members of att.whitespace)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/extMeta.html">extMeta</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/incipCode.html">incipCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a> (direct members of att.whitespace)
                </div>
             </div>
          </td>

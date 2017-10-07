@@ -55,12 +55,12 @@ allowed:
 </table>
 The **@stem.mod** attibute is normally used in accordance with practices
 described in section 
-<a class="link_ptr" title="Tremolandi" href="/{{ page.version }}/guidelines/cmn.html#cmnTrem">4.2.5.3 Tremolandi</a>.
+<a class="link_ptr" title="Tremolandi" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTrem">4.2.5.3 Tremolandi</a>.
 
 
 
-The CMN module makes the [att.stems.cmn](/{{ page.version }}/attribute-classes/att.stems.cmn.html){:.link_odd} attribute class
-available, which adds the optional **@stem.with** attribute to [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}. The attribute **@stem.with** allows
+The CMN module makes the [att.stems.cmn](/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.cmn.html){:.link_odd} attribute class
+available, which adds the optional **@stem.with** attribute to [note](/{{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord](/{{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}. The attribute **@stem.with** allows
 for the indication of a stem that joins notes on adjacent staves.
 
 
@@ -76,9 +76,9 @@ notes or chords attached to the cross-staff stem.
 
 Alternatively, the encoder may choose to treat the notes in the lower staff as
 logically belonging to the top staff and to ‘displace’ them using the
-**@staff** attribute on [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}. Some use cases, however, may
-require filling the time that those notes would normally occupy using the [space](/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} element described in section 
-<a class="link_ptr" title="Event Spacing" href="/{{ page.version }}/guidelines/shared.html#sharedNoteSpacing">1.2.4.5 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:
+**@staff** attribute on [note](/{{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}. Some use cases, however, may
+require filling the time that those notes would normally occupy using the [space](/{{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} element described in section 
+<a class="link_ptr" title="Event Spacing" href="/{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedNoteSpacing">1.2.4.5 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample100.xml" valid="false" %}
 

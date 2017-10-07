@@ -7,7 +7,7 @@ version: "v3"
 
 
 Additional information that aids the identification of the work may be encoded using
-[otherChar](/{{ page.version }}/elements/otherChar.html){:.link_odd_elementSpec}.
+[otherChar](/{{ site.baseurl }}/{{ page.version }}/elements/otherChar.html){:.link_odd_elementSpec}.
 
 
 

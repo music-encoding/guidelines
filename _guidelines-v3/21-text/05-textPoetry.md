@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-This [lg](/{{ page.version }}/elements/lg.html){:.link_odd_elementSpec} (line group) element is used generically to encode any section
+This [lg](/{{ site.baseurl }}/{{ page.version }}/elements/lg.html){:.link_odd_elementSpec} (line group) element is used generically to encode any section
 of text that is organized as a group of lines. Following the recommendations of the
 Text
 Encoding Initiative, it is recommended to use it, along with the following elements,
@@ -21,7 +21,7 @@ marking up poetry:
 
 
 
-Because [lg](/{{ page.version }}/elements/lg.html){:.link_odd_elementSpec} groups verses, it can be used to encode additional stanzas
+Because [lg](/{{ site.baseurl }}/{{ page.version }}/elements/lg.html){:.link_odd_elementSpec} groups verses, it can be used to encode additional stanzas
 not integrated into the music notation. In addition, it is common for a poem to include
 a
 title or a header, as is demonstrated by the following example:

@@ -26,7 +26,7 @@ title: "macro.bibldescPart"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/source.html">source</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a>
             </div>
          </td>
       </tr>

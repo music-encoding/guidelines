@@ -25,7 +25,7 @@ title: "att.barLine.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/barLine.html">barLine</a> (direct member of att.barLine.log)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/barLine.html">barLine</a> (direct member of att.barLine.log)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.barLine.log"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.meterconformance.bar">att.meterconformance.bar</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterconformance.bar.html">att.meterconformance.bar</a>"
                         </span>/&gt;
                      </span>
                   </div>

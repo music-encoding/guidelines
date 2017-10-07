@@ -25,14 +25,14 @@ title: "model.lbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/altId.html">altId</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/classCode.html">classCode</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reh.html">reh</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/altId.html">altId</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/classCode.html">classCode</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/reh.html">reh</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/verse.html">verse</a>
                </div>
             </div>
          </td>
@@ -44,7 +44,7 @@ title: "model.lbLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lb.html">lb</a> (direct member of model.lbLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a> (direct member of model.lbLike)
                </div>
             </div>
          </td>
@@ -62,7 +62,7 @@ title: "model.lbLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.milestoneLike.text">model.milestoneLike.text</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.text.html">model.milestoneLike.text</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -71,7 +71,7 @@ title: "model.lbLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.textphraseLike.limited">model.textphraseLike.limited</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
                         </span>/&gt;
                      </span>
                   </div>

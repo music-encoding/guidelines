@@ -10,7 +10,7 @@ It is common, in many types of texts, to find quotations. A quotation is typical
 attributed
 to another text other than the one being encoded. Often, the quoted material is
 typographically distinct from the surrounding text; i.e., surrounded by so-called
-‘quote marks’ or rendered as a separate block of text. The [quote](/{{ page.version }}/elements/quote.html){:.link_odd_elementSpec} element is used to mark this function:
+‘quote marks’ or rendered as a separate block of text. The [quote](/{{ site.baseurl }}/{{ page.version }}/elements/quote.html){:.link_odd_elementSpec} element is used to mark this function:
 
 
 
@@ -18,7 +18,7 @@ typographically distinct from the surrounding text; i.e., surrounded by so-calle
 
 
 
-The following examples show the use of [quote](/{{ page.version }}/elements/quote.html){:.link_odd_elementSpec}.
+The following examples show the use of [quote](/{{ site.baseurl }}/{{ page.version }}/elements/quote.html){:.link_odd_elementSpec}.
 
 {% include plainExample.html example="./v3/examples/text/text-sample335.xml" valid="true" %}
 

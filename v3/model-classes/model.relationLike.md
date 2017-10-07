@@ -25,7 +25,7 @@ title: "model.relationLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relationList.html">relationList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/relationList.html">relationList</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.relationLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/relation.html">relation</a> (direct member of model.relationLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/relation.html">relation</a> (direct member of model.relationLike)
                </div>
             </div>
          </td>

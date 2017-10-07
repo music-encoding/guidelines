@@ -24,9 +24,9 @@ title: "data.DURATION.gestural"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beatRpt.log.html">att.beatRpt.log</a> (@beatDef), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.duration.performed.html">att.duration.performed</a> (@dur.ges), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a> (@tstamp.ges)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beatRpt.log.html">att.beatRpt.log</a> (@beatDef), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.performed.html">att.duration.performed</a> (@dur.ges), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a> (@tstamp.ges)
             </div>
          </td>
       </tr>

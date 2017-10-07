@@ -25,15 +25,15 @@ title: "model.labelLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/biblList.html">biblList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/contents.html">contents</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/grpSym.html">grpSym</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handList.html">handList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layerDef.html">layerDef</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/list.html">list</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffGrp.html">staffGrp</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/termList.html">termList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/biblList.html">biblList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/grpSym.html">grpSym</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/handList.html">handList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/list.html">list</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffGrp.html">staffGrp</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/termList.html">termList</a>
                </div>
             </div>
          </td>
@@ -45,7 +45,7 @@ title: "model.labelLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/label.html">label</a> (direct member of model.labelLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/label.html">label</a> (direct member of model.labelLike)
                </div>
             </div>
          </td>

@@ -24,7 +24,7 @@ title: "data.BEATRPT.REND"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beatRpt.vis.html">att.beatRpt.vis</a> (@form)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beatRpt.vis.html">att.beatRpt.vis</a> (@form)
             </div>
          </td>
       </tr>

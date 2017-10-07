@@ -24,8 +24,8 @@ title: "data.SIZE"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.mensural.vis.html">att.mensural.vis</a> (@mensur.size), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.relativesize.html">att.relativesize</a> (@size)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.vis.html">att.mensural.vis</a> (@mensur.size), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.relativesize.html">att.relativesize</a> (@size)
             </div>
          </td>
       </tr>

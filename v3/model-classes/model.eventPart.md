@@ -25,7 +25,7 @@ title: "model.eventPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/event.html">event</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a>
                </div>
             </div>
          </td>
@@ -37,37 +37,37 @@ title: "model.eventPart"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/desc.html">desc</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/name.html">name</a> (direct members of model.eventPart)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/desc.html">desc</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a> (direct members of model.eventPart)
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/address.html">address</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/address.html">address</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/eventList.html">eventList</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.addressLike.html">model.addressLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.addressLike.html">model.addressLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/change.html">change</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/date.html">date</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/change.html">change</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/date.html">date</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/eventList.html">eventList</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.dateLike.html">model.dateLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.dateLike.html">model.dateLike</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/corpName.html">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/persName.html">persName</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/persName.html">persName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.agent.html">model.nameLike.agent</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.agent.html">model.nameLike.agent</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/geogName.html">geogName</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/eventList.html">eventList</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/geogName.html">geogName</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.geogName.html">model.nameLike.geogName</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.geogName.html">model.nameLike.geogName</a>)
                   </span>
                </div>
             </div>

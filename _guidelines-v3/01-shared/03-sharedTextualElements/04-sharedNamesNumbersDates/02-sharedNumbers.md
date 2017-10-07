@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-The [num](/{{ page.version }}/elements/num.html){:.link_odd_elementSpec} element may be used to identify any numeric information in
+The [num](/{{ site.baseurl }}/{{ page.version }}/elements/num.html){:.link_odd_elementSpec} element may be used to identify any numeric information in
 a text. The **@unit** may be used to specify the unit of measurement.
 
 

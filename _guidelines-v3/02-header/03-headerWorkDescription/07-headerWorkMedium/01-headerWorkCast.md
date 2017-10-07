@@ -24,10 +24,10 @@ Attires’) or the name of an actor or actress (‘Old Lady Squeamish. Mrs Rutte
 Cast lists often function as identifying metadata and for this reason are permitted
 within the description of a work.
 
-Because the format and internal structure of cast lists are unpredictable, a [castList](/{{ page.version }}/elements/castList.html){:.link_odd_elementSpec} may contain any combination of [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec}
-and [castGrp](/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec} elements.
+Because the format and internal structure of cast lists are unpredictable, a [castList](/{{ site.baseurl }}/{{ page.version }}/elements/castList.html){:.link_odd_elementSpec} may contain any combination of [castItem](/{{ site.baseurl }}/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec}
+and [castGrp](/{{ site.baseurl }}/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec} elements.
 
-A [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec} element may contain any mixture of text and the
+A [castItem](/{{ site.baseurl }}/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec} element may contain any mixture of text and the
 following elements:
 
 
@@ -38,9 +38,9 @@ following elements:
 
 
 
-In the following example, [role](/{{ page.version }}/elements/role.html){:.link_odd_elementSpec} provides the name of the dramatic
-character and [roleDesc](/{{ page.version }}/elements/roleDesc.html){:.link_odd_elementSpec} contains a brief description of the role. The
-[perfRes](/{{ page.version }}/elements/perfRes.html){:.link_odd_elementSpec} element is used to describe the voice range of the
+In the following example, [role](/{{ site.baseurl }}/{{ page.version }}/elements/role.html){:.link_odd_elementSpec} provides the name of the dramatic
+character and [roleDesc](/{{ site.baseurl }}/{{ page.version }}/elements/roleDesc.html){:.link_odd_elementSpec} contains a brief description of the role. The
+[perfRes](/{{ site.baseurl }}/{{ page.version }}/elements/perfRes.html){:.link_odd_elementSpec} element is used to describe the voice range of the
 role.
 
 {% include plainExample.html example="./v3/examples/header/header-sample055.xml" valid="true" %}
@@ -50,7 +50,7 @@ be encoded as:
 
 {% include plainExample.html example="./v3/examples/header/header-sample056.xml" valid="true" %}
 
-The [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec} element may also contain:
+The [castItem](/{{ site.baseurl }}/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec} element may also contain:
 
 
 
@@ -65,7 +65,7 @@ and is
 only performable by a single person or group, as for certain "performance art" works.
 
 It is common to find some roles presented in groups or sublists. Roles are also often
-grouped together by their function. To accommodate these situations, the [castGrp](/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec} element is provided as a component of [castList](/{{ page.version }}/elements/castList.html){:.link_odd_elementSpec}. It
-may contain any combination of [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec}, [castGrp](/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec}, and [roleDesc](/{{ page.version }}/elements/roleDesc.html){:.link_odd_elementSpec} elements.
+grouped together by their function. To accommodate these situations, the [castGrp](/{{ site.baseurl }}/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec} element is provided as a component of [castList](/{{ site.baseurl }}/{{ page.version }}/elements/castList.html){:.link_odd_elementSpec}. It
+may contain any combination of [castItem](/{{ site.baseurl }}/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec}, [castGrp](/{{ site.baseurl }}/{{ page.version }}/elements/castGrp.html){:.link_odd_elementSpec}, and [roleDesc](/{{ site.baseurl }}/{{ page.version }}/elements/roleDesc.html){:.link_odd_elementSpec} elements.
 
 

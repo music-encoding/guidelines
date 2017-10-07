@@ -55,7 +55,7 @@ title: "barre"
                   <div class="specChild">
                      <span class="specChildModule">MEI.harmony</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chordDef.html">chordDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordDef.html">chordDef</a>
                      </span>
                   </div>
                </div>
@@ -87,7 +87,7 @@ title: "barre"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -96,7 +96,7 @@ title: "barre"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.fretlocation">att.fretlocation</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -105,7 +105,7 @@ title: "barre"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.startendid">att.startendid</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startendid.html">att.startendid</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -133,7 +133,7 @@ title: "barre"
             <p>The 
                <span class="att">startid</span> and 
                <span class="att">endid</span> attributes are used to indicate the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a> elements on which the barre starts and finishes
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a> elements on which the barre starts and finishes
                respectively. The fret at which the barre should be created is recorded by the
                
                <span class="att">fret</span> attribute.

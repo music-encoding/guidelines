@@ -25,7 +25,7 @@ title: "att.ending.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a> (direct member of att.ending.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> (direct member of att.ending.ges)
                </div>
             </div>
          </td>

@@ -24,7 +24,7 @@ title: "data.STAFFREL"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a> (@place)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a> (@place)
             </div>
          </td>
       </tr>

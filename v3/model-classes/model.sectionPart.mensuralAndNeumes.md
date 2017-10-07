@@ -25,7 +25,7 @@ title: "model.sectionPart.mensuralAndNeumes"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>
                </div>
             </div>
          </td>
@@ -38,31 +38,31 @@ title: "model.sectionPart.mensuralAndNeumes"
             <div class="parent">
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.mensural.html">model.sectionPart.mensural</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.mensural.html">model.sectionPart.mensural</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
                   <span>
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.sectionPart.neumes.html">model.sectionPart.neumes</a> (no elements directly inheriting from this class)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.neumes.html">model.sectionPart.neumes</a> (no elements directly inheriting from this class)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/abbr.html">abbr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/add.html">add</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/corr.html">corr</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/damage.html">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/del.html">del</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/expan.html">expan</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/orig.html">orig</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/ossia.html">ossia</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/reg.html">reg</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/restore.html">restore</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/sic.html">sic</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/staff.html">staff</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/supplied.html">supplied</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/model-classes/unclear.html">unclear</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/abbr.html">abbr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/add.html">add</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/corr.html">corr</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/damage.html">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/del.html">del</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/expan.html">expan</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/orig.html">orig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/ossia.html">ossia</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/reg.html">reg</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/restore.html">restore</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/sic.html">sic</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/staff.html">staff</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/supplied.html">supplied</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/unclear.html">unclear</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.staffLike.html">model.staffLike</a>)
+                     <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffLike.html">model.staffLike</a>)
                   </span>
                </div>
             </div>
@@ -81,7 +81,7 @@ title: "model.sectionPart.mensuralAndNeumes"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.sectionPart">model.sectionPart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionPart.html">model.sectionPart</a>"
                         </span>/&gt;
                      </span>
                   </div>

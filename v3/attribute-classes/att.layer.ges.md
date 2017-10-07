@@ -25,7 +25,7 @@ title: "att.layer.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a> (direct member of att.layer.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/layer.html">layer</a> (direct member of att.layer.ges)
                </div>
             </div>
          </td>

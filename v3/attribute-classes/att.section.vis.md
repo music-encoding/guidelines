@@ -25,7 +25,7 @@ title: "att.section.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a> (direct member of att.section.vis)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a> (direct member of att.section.vis)
                </div>
             </div>
          </td>

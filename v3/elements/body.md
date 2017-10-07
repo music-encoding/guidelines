@@ -43,7 +43,7 @@ title: "body"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.musicPart,html">model.musicPart</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.musicPart,html">model.musicPart</a>
             </div>
          </td>
       </tr>
@@ -57,7 +57,7 @@ title: "body"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/music.html">music</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a>
                      </span>
                   </div>
                </div>
@@ -73,7 +73,7 @@ title: "body"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mdiv.html">mdiv</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a>
                   </span>
                </div>
             </div>
@@ -93,7 +93,7 @@ title: "body"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -102,7 +102,7 @@ title: "body"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -111,7 +111,7 @@ title: "body"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.musicPart">model.musicPart</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.musicPart.html">model.musicPart</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -149,9 +149,9 @@ title: "body"
          <td class="wovenodd-col2">
             <p>When the music can be broken into high-level, discrete, linear segments, such as
                movements of a symphony, there may be multiple 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> elements within
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a> elements within
                
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/body">body</a>. This is the highest level indication of the structure of the
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a>. This is the highest level indication of the structure of the
                music.
             </p>
          </td>

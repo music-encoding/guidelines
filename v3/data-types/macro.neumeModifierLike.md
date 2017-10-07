@@ -24,8 +24,8 @@ title: "macro.neumeModifierLike"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/ineume.html">ineume</a>, 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/elements/uneume.html">uneume</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ineume.html">ineume</a>, 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/uneume.html">uneume</a>
             </div>
          </td>
       </tr>

@@ -18,8 +18,8 @@ notes. MEI provides two elements for the explicit encoding of features joined by
 
 
 
-Use of the [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element is straightforward. The beamed notes, rests,
-or chords are simply enclosed by the [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element:
+Use of the [beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element is straightforward. The beamed notes, rests,
+or chords are simply enclosed by the [beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element:
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample104.xml" valid="true" %}
 
@@ -35,7 +35,7 @@ set of beamed notes is presumed to be handled by rendering processes.
 
 From the 19th century onwards, it became quite common to break secondary beams to
 increase
-readability of longer beamed passages. The optional **@breaksec** attribute on [note](/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}s and [chord](/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}s under the beam may be used to
+readability of longer beamed passages. The optional **@breaksec** attribute on [note](/{{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}s and [chord](/{{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}s under the beam may be used to
 encode the breaking of secondary beams *after* the note or chord bearing the
 attribute. The value of **@breaksec** indicates the number of continuous beams. For
 example:
@@ -124,15 +124,15 @@ logically belonging to the same layer as the initial event but visually
 ‘displaced’ to an adjacent staff. In the example below, the last two
 notes under the beam carry a **@staff** attribute value that contradicts the
 ‘normal’ staff placement indicated by the **@n** attribute on
-their ancestor [staff](/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}.
+their ancestor [staff](/{{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}.
 
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample109.xml" valid="true" %}
 
 Alternatively, a staff-by-staff methodology may be employed in which the notes are
 encoded
 according to the staff on which they appear. This encoding style requires that each
-[beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element account for the total time encompassed by the beam; that
-is, each [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} must use one or more [space](/{{ page.version }}/elements/space.html){:.link_odd_elementSpec}
+[beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element account for the total time encompassed by the beam; that
+is, each [beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} must use one or more [space](/{{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec}
 elements to account for the time occupied by notes on the opposing staff. For example,
 the
 time used by the first two notes of the beam must be represented on staff number 1
@@ -145,9 +145,9 @@ Downstream processing needs are the determining factor in the choice between the
 alternative encoding methods.
 
 
-Due to the potential problem of overlapping hierarchies, the [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec}
+Due to the potential problem of overlapping hierarchies, the [beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec}
 element only allows the encoding of beams that do not cross barlines. When beams cross
-barlines, the use of the [beamSpan](/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec} element is required. Unlike [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec}, the [beamSpan](/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec}element does not contain the
+barlines, the use of the [beamSpan](/{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec} element is required. Unlike [beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec}, the [beamSpan](/{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec}element does not contain the
 beamed notes as its children. Instead, it references the **@xml:id** values of all
 affected notes in its **@plist** attribute and denotes the initial and terminal notes
 of the beam using **@startid** and **@endid** attributes. This configuration
@@ -157,10 +157,10 @@ example of such hierarchy-crossing beams:
 {% include plainExample.html example="./v3/examples/cmn/cmn-sample111.xml" valid="true" %}
 
 
-In addition to the explicit encoding of beams accommodated by the [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} and [beamSpan](/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec} elements and the **@beam** attribute,
+In addition to the explicit encoding of beams accommodated by the [beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} and [beamSpan](/{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec} elements and the **@beam** attribute,
 MEI allows for specification of default beaming behavior using the following attributes
 on
-[scoreDef](/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}, [staffDef](/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}, and [layerDef](/{{ page.version }}/elements/layerDef.html){:.link_odd_elementSpec}:
+[scoreDef](/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}, [staffDef](/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}, and [layerDef](/{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html){:.link_odd_elementSpec}:
 
 
 <table class="table table-striped table-hover">
@@ -206,12 +206,12 @@ notes being rendered with a primary beam covering all the notes and secondary be
 for each
 group of four 16th notes.
 
-The **@beam.group** attribute is available on [scoreDef](/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}, [staffDef](/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}, and [layerDef](/{{ page.version }}/elements/layerDef.html){:.link_odd_elementSpec} elements, making it
+The **@beam.group** attribute is available on [scoreDef](/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}, [staffDef](/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}, and [layerDef](/{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html){:.link_odd_elementSpec} elements, making it
 possible to set different beaming patterns for each of these. Also, the beaming pattern
 can
 be changed anywhere score parameters may be changed, for example, at the start of
 sections.
-This beaming "directive" can be overridden by using [beam](/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec}, [beamSpan](/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec}, or **@beam** attributes as described above. If none of
+This beaming "directive" can be overridden by using [beam](/{{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec}, [beamSpan](/{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec}, or **@beam** attributes as described above. If none of
 these beaming specifications is used, then no beaming is implied. Default beaming
 can be
 explicitly 'turned off' by setting **@beam.group** to an empty string.

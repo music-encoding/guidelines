@@ -38,8 +38,8 @@ title: "data.MEASUREBEAT"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.origin.timestamp.musical.html">att.origin.timestamp.musical</a> (@origin.tstamp2), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.timestamp2.musical.html">att.timestamp2.musical</a> (@tstamp2)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.origin.timestamp.musical.html">att.origin.timestamp.musical</a> (@origin.tstamp2), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp2.musical.html">att.timestamp2.musical</a> (@tstamp2)
             </div>
          </td>
       </tr>

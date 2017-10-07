@@ -25,7 +25,7 @@ title: "att.tupletSpan.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a> (direct member of att.tupletSpan.vis)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a> (direct member of att.tupletSpan.vis)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.tupletSpan.vis"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.tuplet.vis">att.tuplet.vis</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tuplet.vis.html">att.tuplet.vis</a>"
                         </span>/&gt;
                      </span>
                   </div>

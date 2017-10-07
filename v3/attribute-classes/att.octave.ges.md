@@ -25,7 +25,7 @@ title: "att.octave.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/octave.html">octave</a> (direct member of att.octave.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a> (direct member of att.octave.ges)
                </div>
             </div>
          </td>
@@ -49,7 +49,7 @@ title: "att.octave.ges"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/att.duration.performed">att.duration.performed</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.performed.html">att.duration.performed</a>"
                         </span>/&gt;
                      </span>
                   </div>

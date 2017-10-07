@@ -28,8 +28,8 @@ title: "model.captionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fig.html">fig</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/table.html">table</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/table.html">table</a>
                </div>
             </div>
          </td>
@@ -41,7 +41,7 @@ title: "model.captionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/caption.html">caption</a> (direct member of model.captionLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/caption.html">caption</a> (direct member of model.captionLike)
                </div>
             </div>
          </td>

@@ -25,8 +25,8 @@ title: "att.extent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gap.html">gap</a> (direct members of att.extent)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> (direct members of att.extent)
                </div>
             </div>
          </td>

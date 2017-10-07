@@ -58,8 +58,8 @@ title: "clip"
                   <div class="specChild">
                      <span class="specChildModule">MEI.performance</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/avFile.html">avFile</a> 
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/recording.html">recording</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/avFile.html">avFile</a> 
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/recording.html">recording</a>
                      </span>
                   </div>
                </div>
@@ -75,8 +75,8 @@ title: "clip"
                <div class="specChild">
                   <span class="specChildModule">MEI.performance</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/avFile.html">avFile</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/when.html">when</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/avFile.html">avFile</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/when.html">when</a>
                   </span>
                </div>
             </div>
@@ -96,7 +96,7 @@ title: "clip"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -105,7 +105,7 @@ title: "clip"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.datapointing">att.datapointing</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -114,7 +114,7 @@ title: "clip"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.declaring">att.declaring</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.declaring.html">att.declaring</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -123,7 +123,7 @@ title: "clip"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.mediabounds">att.mediabounds</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mediabounds.html">att.mediabounds</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -132,7 +132,7 @@ title: "clip"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.startid">att.startid</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startid.html">att.startid</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -184,7 +184,7 @@ title: "clip"
          </td>
          <td class="wovenodd-col2">
             <p>This element is analogous to the 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a> element in the facsimile
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/zone.html">zone</a> element in the facsimile
                module.
             </p>
          </td>

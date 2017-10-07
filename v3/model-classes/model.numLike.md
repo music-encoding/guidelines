@@ -25,7 +25,7 @@ title: "model.numLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.measurementLike.html">model.measurementLike</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.measurementLike.html">model.measurementLike</a>
                </div>
             </div>
          </td>
@@ -37,7 +37,7 @@ title: "model.numLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/num.html">num</a> (direct member of model.numLike)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/num.html">num</a> (direct member of model.numLike)
                </div>
             </div>
          </td>
@@ -55,7 +55,7 @@ title: "model.numLike"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.measurementLike">model.measurementLike</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.measurementLike.html">model.measurementLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

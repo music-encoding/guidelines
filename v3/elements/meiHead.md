@@ -45,7 +45,7 @@ title: "meiHead"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.startLike.header,html">model.startLike.header</a>
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.startLike.header,html">model.startLike.header</a>
             </div>
          </td>
       </tr>
@@ -59,19 +59,19 @@ title: "meiHead"
                   <div class="specChild">
                      <span class="specChildModule">MEI.corpus</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meiCorpus.html">meiCorpus</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.header</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meiHead.html">meiHead</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meiHead.html">meiHead</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mei.html">mei</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a>
                      </span>
                   </div>
                </div>
@@ -87,12 +87,12 @@ title: "meiHead"
                <div class="specChild">
                   <span class="specChildModule">MEI.header</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/altId.html">altId</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/extMeta.html">extMeta</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fileDesc.html">fileDesc</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/revisionDesc.html">revisionDesc</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/workDesc.html">workDesc</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/altId.html">altId</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/extMeta.html">extMeta</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html">fileDesc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/revisionDesc.html">revisionDesc</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a>
                   </span>
                </div>
             </div>
@@ -112,7 +112,7 @@ title: "meiHead"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.bibl">att.bibl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -121,7 +121,7 @@ title: "meiHead"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -130,7 +130,7 @@ title: "meiHead"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.lang">att.lang</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -139,7 +139,7 @@ title: "meiHead"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.meiversion">att.meiversion</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meiversion.html">att.meiversion</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -148,7 +148,7 @@ title: "meiHead"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/model.startLike.header">model.startLike.header</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.startLike.header.html">model.startLike.header</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -260,11 +260,11 @@ title: "meiHead"
                information is often essential in a machine-readable environment. Five sub-elements
                must
                be encoded in the following order: 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/altId">altId</a>(optional), 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/fileDesc">fileDesc</a>(required), 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/encodingDesc">encodingDesc</a>(optional), 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/workDesc">workDesc</a>(optional), and 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/revisionDesc">revisionDesc</a>(optional). These
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/altId.html">altId</a>(optional), 
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html">fileDesc</a>(required), 
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>(optional), 
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a>(optional), and 
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/revisionDesc.html">revisionDesc</a>(optional). These
                elements and their sub-elements provide: a unique identifier for the MEI file,
                bibliographic information about the MEI file and its sources, information about the
                encoding process, information about the creation of the work being encoded, and statements

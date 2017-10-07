@@ -24,7 +24,7 @@ title: "data.MIDINAMES"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiinstrument</a> (@midi.instrname)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiinstrument</a> (@midi.instrname)
             </div>
          </td>
       </tr>

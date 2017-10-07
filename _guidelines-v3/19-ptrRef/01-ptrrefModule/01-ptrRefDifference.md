@@ -6,8 +6,8 @@ version: "v3"
 
 
 
-The [ptr](/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element is an empty linking element that uses only attributes
-to provide for movement from one place to another. Unlike the [ref](/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec}
+The [ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element is an empty linking element that uses only attributes
+to provide for movement from one place to another. Unlike the [ref](/{{ site.baseurl }}/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec}
 element, it cannot contain text or sub-elements to describe the referenced object.
 Its
 primary function is simply to point to another location. The next example shows targets
@@ -17,15 +17,15 @@ identifiers:
 
 {% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample319.xml" valid="true" %}
 
-As shown above, the [ptr](/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element can be used to ‘point
+As shown above, the [ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element can be used to ‘point
 to’ a digital image. However, when the intention is to *display* a
-digital image as part of the rendering of an MEI file, the [graphic](/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec}
+digital image as part of the rendering of an MEI file, the [graphic](/{{ site.baseurl }}/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec}
 element provides a convenient and recommended alternative:
 
 {% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample320.xml" valid="true" %}
 
 
-While [ptr](/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} cannot contain other markup, the [ref](/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec}
+While [ptr](/{{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} cannot contain other markup, the [ref](/{{ site.baseurl }}/{{ page.version }}/elements/ref.html){:.link_odd_elementSpec}
 element can include text and sub-elements that name or describe the destination:
 
 {% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample321.xml" valid="true" %}

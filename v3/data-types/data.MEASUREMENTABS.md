@@ -29,13 +29,13 @@ title: "data.MEASUREMENTABS"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd" href="/{{ page.version }}/data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>, 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.hairpin.vis.html">att.hairpin.vis</a> (@opening), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.height.html">att.height</a> (@height), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.pages.html">att.pages</a> (@page.height), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a> (@stem.len), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.systems.html">att.systems</a> (@system.leftmar), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.width.html">att.width</a> (@width)
+               <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>, 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.hairpin.vis.html">att.hairpin.vis</a> (@opening), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.height.html">att.height</a> (@height), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pages.html">att.pages</a> (@page.height), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a> (@stem.len), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.systems.html">att.systems</a> (@system.leftmar), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.width.html">att.width</a> (@width)
             </div>
          </td>
       </tr>

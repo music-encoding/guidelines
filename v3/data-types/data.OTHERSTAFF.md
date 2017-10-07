@@ -26,8 +26,8 @@ title: "data.OTHERSTAFF"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.beamedwith.html">att.beamedwith</a> (@beam.with), 
-               <a class="link_odd_classSpec" href="/{{ page.version }}/attribute-classes/att.stems.cmn.html">att.stems.cmn</a> (@stem.with)
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beamedwith.html">att.beamedwith</a> (@beam.with), 
+               <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.cmn.html">att.stems.cmn</a> (@stem.with)
             </div>
          </td>
       </tr>

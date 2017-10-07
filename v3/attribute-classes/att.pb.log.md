@@ -25,7 +25,7 @@ title: "att.pb.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a> (direct member of att.pb.log)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> (direct member of att.pb.log)
                </div>
             </div>
          </td>

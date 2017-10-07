@@ -25,11 +25,11 @@ title: "model.nameLike.agent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
-                  <a class="link_odd_classSpec" href="/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>, 
+                  <a class="link_odd_classSpec" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/eventList.html">eventList</a>
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a>
                </div>
             </div>
          </td>
@@ -41,8 +41,8 @@ title: "model.nameLike.agent"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corpName.html">corpName</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/persName.html">persName</a> (direct members of model.nameLike.agent)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/corpName.html">corpName</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/persName.html">persName</a> (direct members of model.nameLike.agent)
                </div>
             </div>
          </td>
@@ -60,7 +60,7 @@ title: "model.nameLike.agent"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.eventPart">model.eventPart</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventPart.html">model.eventPart</a>"
                         </span>/&gt;
                      </span>
                   </div>
@@ -69,7 +69,7 @@ title: "model.nameLike.agent"
                      <span data-indentation="2" class="element">&lt;memberOf 
                         <span class="attribute">key=</span>
                         <span class="attributevalue">"
-                           <a class="link_odd" href="/model.nameLike">model.nameLike</a>"
+                           <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/model-classes/model.nameLike.html">model.nameLike</a>"
                         </span>/&gt;
                      </span>
                   </div>

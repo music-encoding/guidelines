@@ -55,7 +55,7 @@ title: "lem"
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/app.html">app</a>
+                        <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/app.html">app</a>
                      </span>
                   </div>
                </div>
@@ -71,155 +71,155 @@ title: "lem"
                <div class="specChild">
                   <span class="specChildModule">MEI.cmn</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/arpeg.html">arpeg</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beam.html">beam</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beamSpan.html">beamSpan</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beatRpt.html">beatRpt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bend.html">bend</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/breath.html">breath</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/bTrem.html">bTrem</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fermata.html">fermata</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fTrem.html">fTrem</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gliss.html">gliss</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/hairpin.html">hairpin</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/halfmRpt.html">halfmRpt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/harpPedal.html">harpPedal</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/measure.html">measure</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSig.html">meterSig</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/meterSigGrp.html">meterSigGrp</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRest.html">mRest</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRpt.html">mRpt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mRpt2.html">mRpt2</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mSpace.html">mSpace</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRest.html">multiRest</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/multiRpt.html">multiRpt</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/octave.html">octave</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pedal.html">pedal</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reh.html">reh</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/slur.html">slur</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tie.html">tie</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tuplet.html">tuplet</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/arpeg.html">arpeg</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/beam.html">beam</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html">beamSpan</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/beatRpt.html">beatRpt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/bend.html">bend</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/breath.html">breath</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/bTrem.html">bTrem</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fermata.html">fermata</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fTrem.html">fTrem</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/gliss.html">gliss</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/hairpin.html">hairpin</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/halfmRpt.html">halfmRpt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/harpPedal.html">harpPedal</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meterSig.html">meterSig</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/meterSigGrp.html">meterSigGrp</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mRest.html">mRest</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mRpt.html">mRpt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mRpt2.html">mRpt2</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mSpace.html">mSpace</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/multiRest.html">multiRest</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/multiRpt.html">multiRpt</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pedal.html">pedal</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/reh.html">reh</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/slur.html">slur</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tie.html">tie</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tuplet.html">tuplet</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tupletSpan.html">tupletSpan</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.cmnOrnaments</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mordent.html">mordent</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/trill.html">trill</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/turn.html">turn</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mordent.html">mordent</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/trill.html">trill</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/turn.html">turn</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.critapp</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/app.html">app</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/app.html">app</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.edittrans</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/add.html">add</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/choice.html">choice</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/corr.html">corr</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/cpMark.html">cpMark</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/damage.html">damage</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/del.html">del</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/gap.html">gap</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/handShift.html">handShift</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/orig.html">orig</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/reg.html">reg</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/restore.html">restore</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sic.html">sic</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/subst.html">subst</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/supplied.html">supplied</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/unclear.html">unclear</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/cpMark.html">cpMark</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/handShift.html">handShift</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/subst.html">subst</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.fingering</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fing.html">fing</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/fingGrp.html">fingGrp</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fing.html">fing</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/fingGrp.html">fingGrp</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.harmony</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/harm.html">harm</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.lyrics</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/lyrics.html">lyrics</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/verse.html">verse</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lyrics.html">lyrics</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/verse.html">verse</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.mensural</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ligature.html">ligature</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/mensur.html">mensur</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/proport.html">proport</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ligature.html">ligature</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/proport.html">proport</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.midi</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/midi.html">midi</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.neumes</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ineume.html">ineume</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syllable.html">syllable</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/uneume.html">uneume</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ineume.html">ineume</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/syllable.html">syllable</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/uneume.html">uneume</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/accid.html">accid</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/annot.html">annot</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/artic.html">artic</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/barLine.html">barLine</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/chord.html">chord</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clef.html">clef</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/clefGrp.html">clefGrp</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/custos.html">custos</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dir.html">dir</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/div.html">div</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dot.html">dot</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/dynam.html">dynam</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ending.html">ending</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/expansion.html">expansion</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/keySig.html">keySig</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/layer.html">layer</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/note.html">note</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/ornam.html">ornam</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pad.html">pad</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/pb.html">pb</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/phrase.html">phrase</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/rest.html">rest</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/sb.html">sb</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/scoreDef.html">scoreDef</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/section.html">section</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/space.html">space</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staff.html">staff</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffDef.html">staffDef</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/staffGrp.html">staffGrp</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/syl.html">syl</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/tempo.html">tempo</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/accid.html">accid</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/artic.html">artic</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/barLine.html">barLine</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clef.html">clef</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/clefGrp.html">clefGrp</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/custos.html">custos</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/dir.html">dir</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/dot.html">dot</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/dynam.html">dynam</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/expansion.html">expansion</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/keySig.html">keySig</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/layer.html">layer</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/ornam.html">ornam</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pad.html">pad</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/phrase.html">phrase</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/rest.html">rest</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/sb.html">sb</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/space.html">space</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staff.html">staff</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/staffGrp.html">staffGrp</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/syl.html">syl</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a>
                   </span>
                </div>
                <div class="specChild">
                   <span class="specChildModule">MEI.usersymbols</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/anchoredText.html">anchoredText</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/curve.html">curve</a> 
-                     <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/line.html">line</a>
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/anchoredText.html">anchoredText</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/curve.html">curve</a> 
+                     <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/line.html">line</a>
                   </span>
                </div>
             </div>
@@ -239,7 +239,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.common">att.common</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -248,7 +248,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.crit">att.crit</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.crit.html">att.crit</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -257,7 +257,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.pointing">att.pointing</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -266,7 +266,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.rdg.anl">att.rdg.anl</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rdg.anl.html">att.rdg.anl</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -275,7 +275,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.rdg.ges">att.rdg.ges</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rdg.ges.html">att.rdg.ges</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -284,7 +284,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.rdg.log">att.rdg.log</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rdg.log.html">att.rdg.log</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -293,7 +293,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.rdg.vis">att.rdg.vis</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rdg.vis.html">att.rdg.vis</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -302,7 +302,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.targeteval">att.targeteval</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.targeteval.html">att.targeteval</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -311,7 +311,7 @@ title: "lem"
                         <span data-indentation="2" class="element">&lt;memberOf 
                            <span class="attribute">key=</span>
                            <span class="attributevalue">"
-                              <a class="link_odd" href="/att.typed">att.typed</a>"
+                              <a class="link_odd" href="/{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"
                            </span>/&gt;
                         </span>
                      </div>
@@ -450,7 +450,7 @@ title: "lem"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a> element may also be used, under some circumstances, to
+               <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/lem.html">lem</a> element may also be used, under some circumstances, to
                record the base text of the source edition, to mark the readings of a base witness,
                to
                indicate the preference of an editor or encoder for a particular reading, or to make

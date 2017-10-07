@@ -25,7 +25,7 @@ title: "att.beatRpt.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ page.version }}/elements/beatRpt.html">beatRpt</a> (direct member of att.beatRpt.ges)
+                  <a class="link_odd_elementSpec" href="/{{ site.baseurl }}/{{ page.version }}/elements/beatRpt.html">beatRpt</a> (direct member of att.beatRpt.ges)
                </div>
             </div>
          </td>
