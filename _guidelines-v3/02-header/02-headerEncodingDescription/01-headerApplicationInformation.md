@@ -24,7 +24,8 @@ those sections of the file.
 
 
 {% include specDesc.html version=page.version key="application" atts="" %}
-{% include specDesc.html version=page.version key="application" atts="version" %}
+{% include specDesc.html version=page.version key="application" atts="application/version" %}
+
 
 
 

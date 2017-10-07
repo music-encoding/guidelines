@@ -32,10 +32,10 @@ title: "graphic"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +45,10 @@ title: "graphic"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -56,10 +56,10 @@ title: "graphic"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Measurement of the vertical dimension of an entity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.height">att.height</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.height">att.height</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -70,10 +70,10 @@ title: "graphic"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.ho">att.visualoffset.ho</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.ho">att.visualoffset.ho</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -84,7 +84,7 @@ title: "graphic"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -99,7 +99,7 @@ title: "graphic"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.internetmedia">att.internetmedia</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.internetmedia">att.internetmedia</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -107,10 +107,10 @@ title: "graphic"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -120,10 +120,10 @@ title: "graphic"
                   applies.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.startid">att.startid</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.startid">att.startid</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -136,7 +136,7 @@ title: "graphic"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -146,10 +146,10 @@ title: "graphic"
                   participants in a relationship; that is, the entities pointed "to".
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -163,7 +163,7 @@ title: "graphic"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -173,10 +173,10 @@ title: "graphic"
                   in terms of musical time; that is, beats.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.to">att.visualoffset.to</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.to">att.visualoffset.to</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -189,7 +189,7 @@ title: "graphic"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -200,7 +200,7 @@ title: "graphic"
                <span style="font-weight: 500;">nonNegativeInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/graphic">graphic</a>
+                  <a class="link_odd" href="/{{ page.version }}/graphic">graphic</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -211,7 +211,7 @@ title: "graphic"
                <span style="font-weight: 500;">nonNegativeInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/graphic">graphic</a>
+                  <a class="link_odd" href="/{{ page.version }}/graphic">graphic</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -247,7 +247,7 @@ title: "graphic"
                <span style="font-weight: 500;">vu</span>" 
                <i>(MEI virtual unit.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.measurement">att.measurement</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.measurement">att.measurement</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -258,10 +258,10 @@ title: "graphic"
                   adjacent staff lines.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset.vo">att.visualoffset.vo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset.vo">att.visualoffset.vo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -269,10 +269,10 @@ title: "graphic"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Measurement of the horizontal dimension of an entity.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTABS">data.MEASUREMENTABS</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.width">att.width</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.width">att.width</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -290,7 +290,7 @@ title: "graphic"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than allowed by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -300,10 +300,10 @@ title: "graphic"
                   attribute must be a URI.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -323,7 +323,7 @@ title: "graphic"
                <span style="font-weight: 500;">other</span>" 
                <i>(Behavior other than permitted by the other values of this attribute.)</i>
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pointing">att.pointing</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pointing">att.pointing</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -333,10 +333,10 @@ title: "graphic"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -350,7 +350,7 @@ title: "graphic"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -361,7 +361,7 @@ title: "graphic"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.graphicLike">model.graphicLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.graphicLike">model.graphicLike</a>
             </div>
          </td>
       </tr>
@@ -375,27 +375,27 @@ title: "graphic"
                   <div class="specChild">
                      <span class="specChildModule">MEI.facsimile</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/surface">surface</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/zone">zone</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/surface">surface</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.figtable</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/fig">fig</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/graphic">graphic</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/fig">fig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/graphic">graphic</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/incip">incip</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/incip">incip</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.usersymbols</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/symbolDef">symbolDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/symbolDef">symbolDef</a>
                      </span>
                   </div>
                </div>
@@ -411,7 +411,7 @@ title: "graphic"
                <div class="specChild">
                   <span class="specChildModule">MEI.facsimile</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/zone">zone</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/zone">zone</a>
                   </span>
                </div>
             </div>

@@ -1,0 +1,2 @@
+Along with num.default, describes the default duration as a ratio. numbase.default
+is the second value in the ratio.

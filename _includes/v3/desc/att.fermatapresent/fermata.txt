@@ -1,0 +1,3 @@
+Indicates the attachment of a fermata to this element. If visual information about
+the fermata needs to be recorded, then a &lt;fermata&gt; element should be employed
+instead.

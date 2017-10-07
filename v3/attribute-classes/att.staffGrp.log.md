@@ -27,7 +27,7 @@ title: "att.staffGrp.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffGrp">staffGrp</a> (direct member of att.staffGrp.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffGrp">staffGrp</a> (direct member of att.staffGrp.log)
                </div>
             </div>
          </td>

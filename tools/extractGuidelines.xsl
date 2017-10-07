@@ -174,10 +174,34 @@
         
         <!-- extract desc -->
         
-        <xsl:for-each select=".//tei:elementSpec | .//tei:classSpec | .//tei:macroSpec">
+        <xsl:for-each select=".//tei:elementSpec">
+            <xsl:variable name="element" select="."/>
             <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/>
-            </xsl:result-document>
+            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:for-each select=".//tei:attDef">
+                <xsl:variable name="path" select="$outPutFolder || 'desc/' || $element/@ident || '/' || @ident || '.txt'" as="xs:string"/>
+                <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            </xsl:for-each>
+        </xsl:for-each>
+        
+        <xsl:for-each select=".//tei:classSpec">
+            <xsl:variable name="class" select="."/>
+            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:for-each select=".//tei:attDef">
+                <xsl:variable name="path" select="$outPutFolder || 'desc/' || $class/@ident || '/' || @ident || '.txt'" as="xs:string"/>
+                <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            </xsl:for-each>
+        </xsl:for-each>
+        
+        <xsl:for-each select=".//tei:macroSpec">
+            <xsl:variable name="macro" select="."/>
+            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:for-each select=".//tei:attDef">
+                <xsl:variable name="path" select="$outPutFolder || 'desc/' || $macro/@ident || '/' || @ident || '.txt'" as="xs:string"/>
+                <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            </xsl:for-each>
         </xsl:for-each>
         
         <!-- /extract desc -->
@@ -987,9 +1011,39 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:specList" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/></xsl:template>
+    <xsl:template match="tei:specList" mode="markdown">
+        <xsl:apply-templates select="node()" mode="#current"/>
     
-    <xsl:template match="tei:specDesc" mode="markdown">{% include specDesc.html version=page.version key="<xsl:value-of select="@key"/>" atts="<xsl:value-of select="@atts"/>" %}</xsl:template>
+    </xsl:template>
+    
+    <xsl:template match="tei:specDesc" mode="markdown">
+        <xsl:choose>
+            <xsl:when test="not(@atts)">{% include specDesc.html version=page.version key="<xsl:value-of select="@key"/>" atts="" %}</xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="key" select="@key" as="xs:string"/>
+                <xsl:variable name="spec" select="//tei:*[@ident = $key and not(local-name() = ('schemaSpec','valItem','attDef'))]" as="node()?"/>
+                <xsl:if test="not($spec)">
+                    <xsl:message select="."></xsl:message>
+                    <xsl:message terminate="yes" select="$key"/>
+                </xsl:if>
+                <xsl:variable name="specDesc" select="." as="node()"/>
+                <xsl:variable name="refs" as="xs:string*">
+                    <xsl:for-each select="tokenize(@atts,' ')">
+                        <xsl:variable name="current.att" select="." as="xs:string"/>
+                        <xsl:choose>
+                            <!-- attributes directly defined at the element -->
+                            <xsl:when test="$spec//tei:attDef[@ident = $current.att]">
+                                <xsl:value-of select="$key || '/' || $current.att"/>
+                            </xsl:when>
+                            <xsl:otherwise><xsl:variable name="attributes" select="local:getAttributes($spec)" as="node()*"/>
+                                <xsl:value-of select="$attributes/descendant-or-self::*:div[*:span[@class='attribute']/text() = '@' || $current.att]//span[@class = 'attributeClasses']/a/text() || '/' || $current.att || '.txt'"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>    
+                </xsl:variable>{% include specDesc.html version=page.version key="<xsl:value-of select="$key"/>" atts="<xsl:value-of select="string-join($refs,' ')"/>" %}
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
     <xsl:template match="tei:ptr">
         

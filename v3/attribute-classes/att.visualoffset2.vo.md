@@ -27,51 +27,51 @@ title: "att.visualoffset2.vo"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/curve">curve</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/curve">curve</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.visualoffset2">att.visualoffset2</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.visualoffset2">att.visualoffset2</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/bend">bend</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/bend">bend</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.bend.vis">att.bend.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.bend.vis">att.bend.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/gliss">gliss</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/gliss">gliss</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.gliss.vis">att.gliss.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.gliss.vis">att.gliss.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/hairpin">hairpin</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/hairpin">hairpin</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.hairpin.vis">att.hairpin.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.hairpin.vis">att.hairpin.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/line">line</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/line">line</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.line.vis">att.line.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.line.vis">att.line.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/phrase">phrase</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/phrase">phrase</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.phrase.vis">att.phrase.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.phrase.vis">att.phrase.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/slur">slur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/slur">slur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.slur.vis">att.slur.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.slur.vis">att.slur.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/tie">tie</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/tie">tie</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.tie.vis">att.tie.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.tie.vis">att.tie.vis</a>)
                   </span>
                </div>
             </div>
@@ -89,10 +89,10 @@ title: "att.visualoffset2.vo"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.vo">att.visualoffset2.vo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.vo">att.visualoffset2.vo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -102,10 +102,10 @@ title: "att.visualoffset2.vo"
                   point.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MEASUREMENTREL">data.MEASUREMENTREL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visualoffset2.vo">att.visualoffset2.vo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visualoffset2.vo">att.visualoffset2.vo</a>
                </span>
             </div>
          </td>

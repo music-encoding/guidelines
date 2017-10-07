@@ -1,0 +1,1 @@
+Indicates whether the tremolo is measured or unmeasured.

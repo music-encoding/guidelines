@@ -30,10 +30,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures a written accidental.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.accidental">att.accidental</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.accidental">att.accidental</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -41,10 +41,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to an element of which the current element is a copy.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -54,10 +54,10 @@ title: "keySig"
                   fashion.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +67,10 @@ title: "keySig"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -81,7 +81,7 @@ title: "keySig"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -89,10 +89,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates major, minor, or other tonality.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MODE">data.MODE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MODE">data.MODE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.keySig.log">att.keySig.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -100,10 +100,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -111,10 +111,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -122,10 +122,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pitch">att.pitch</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pitch">att.pitch</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -133,10 +133,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -146,10 +146,10 @@ title: "keySig"
                   copy of the current element.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -157,10 +157,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates where the key lies in the circle of fifths.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.KEYSIGNATURE">data.KEYSIGNATURE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.KEYSIGNATURE">data.KEYSIGNATURE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.keySig.log">att.keySig.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -177,10 +177,10 @@ title: "keySig"
                   indicate what key accidentals should be rendered and where they should be placed.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.keySig.log">att.keySig.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -190,10 +190,10 @@ title: "keySig"
                   change.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.keySig.vis">att.keySig.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.keySig.vis">att.keySig.vis</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -201,10 +201,10 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common.anl">att.common.anl</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common.anl">att.common.anl</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -214,10 +214,10 @@ title: "keySig"
                   or sounded when it is presented in an aural form.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.visibility">att.visibility</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.visibility">att.visibility</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -225,13 +225,13 @@ title: "keySig"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Indicates the point of occurrence of this feature along a time line. Its value must
                   be the ID of a 
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/when">when</a> element elsewhere in the document.
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/when">when</a> element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.alignment">att.alignment</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.alignment">att.alignment</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -241,10 +241,10 @@ title: "keySig"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -258,7 +258,7 @@ title: "keySig"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -269,7 +269,7 @@ title: "keySig"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.keySigLike">model.keySigLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.keySigLike">model.keySigLike</a>
             </div>
          </td>
       </tr>
@@ -283,64 +283,64 @@ title: "keySig"
                   <div class="specChild">
                      <span class="specChildModule">MEI.cmn</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/beam">beam</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/tuplet">tuplet</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/beam">beam</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/tuplet">tuplet</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.critapp</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/lem">lem</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/rdg">rdg</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/lem">lem</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rdg">rdg</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.edittrans</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/abbr">abbr</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/add">add</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/corr">corr</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/damage">damage</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/del">del</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/expan">expan</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/orig">orig</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/reg">reg</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/restore">restore</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/sic">sic</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/supplied">supplied</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/unclear">unclear</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/abbr">abbr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/add">add</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/corr">corr</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/damage">damage</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/del">del</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/expan">expan</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/orig">orig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/reg">reg</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/restore">restore</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/sic">sic</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/supplied">supplied</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/unclear">unclear</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.mensural</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/ligature">ligature</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ligature">ligature</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.neumes</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/ineume">ineume</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/syllable">syllable</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/uneume">uneume</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/syllable">syllable</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                      </span>
                   </div>
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/barLine">barLine</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/chord">chord</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/clef">clef</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/clefGrp">clefGrp</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/custos">custos</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/keySig">keySig</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/layer">layer</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/pad">pad</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/space">space</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/barLine">barLine</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/chord">chord</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/clef">clef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/clefGrp">clefGrp</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/layer">layer</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/pad">pad</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>
                      </span>
                   </div>
                </div>
@@ -356,7 +356,7 @@ title: "keySig"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/keyAccid">keyAccid</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a>
                   </span>
                </div>
             </div>
@@ -467,8 +467,8 @@ title: "keySig"
             <p>This element may be used as an alternative to the key.* attributes (especially
                
                <span class="att">key.sig.mixed</span>) on 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a> and 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a>.
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a> and 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a>.
             </p>
          </td>
       </tr>

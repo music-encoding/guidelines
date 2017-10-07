@@ -15,8 +15,10 @@ its attributes:
 
 
 {% include specDesc.html version=page.version key="mordent" atts="" %}
-{% include specDesc.html version=page.version key="mordent" atts="form long" %}
-{% include specDesc.html version=page.version key="att.ornamentaccid" atts="accidlower accidupper" %}
+{% include specDesc.html version=page.version key="mordent" atts="att.mordent.log/form.txt att.mordent.log/long.txt" %}
+
+{% include specDesc.html version=page.version key="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
+
 
 
 

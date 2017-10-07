@@ -12,7 +12,8 @@ Text can be organized in different parts, for example in chapters or sections. T
 
 
 {% include specDesc.html version=page.version key="div" atts="" %}
-{% include specDesc.html version=page.version key="div" atts="type subtype" %}
+{% include specDesc.html version=page.version key="div" atts="div/type div/subtype" %}
+
 
 
 

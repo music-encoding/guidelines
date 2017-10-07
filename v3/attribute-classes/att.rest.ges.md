@@ -27,7 +27,7 @@ title: "att.rest.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a> (direct member of att.rest.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a> (direct member of att.rest.ges)
                </div>
             </div>
          </td>
@@ -46,10 +46,10 @@ title: "att.rest.ges"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.performed">att.duration.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.performed">att.duration.performed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,10 +59,10 @@ title: "att.rest.ges"
                   of an &lt;instrDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.instrumentident">att.instrumentident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.instrumentident">att.instrumentident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -75,7 +75,7 @@ title: "att.rest.ges"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -88,7 +88,7 @@ title: "att.rest.ges"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.ratio">att.duration.ratio</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.ratio">att.duration.ratio</a>
                </span>
             </div>
          </td>

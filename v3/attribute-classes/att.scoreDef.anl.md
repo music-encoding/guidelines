@@ -27,7 +27,7 @@ title: "att.scoreDef.anl"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a> (direct member of att.scoreDef.anl)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a> (direct member of att.scoreDef.anl)
                </div>
             </div>
          </td>

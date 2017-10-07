@@ -27,75 +27,75 @@ title: "att.staffloc"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/accid">accid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/accid">accid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.accid.vis">att.accid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.accid.vis">att.accid.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/artic">artic</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/artic">artic</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.artic.vis">att.artic.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.artic.vis">att.artic.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/custos">custos</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.custos.vis">att.custos.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.custos.vis">att.custos.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/dot">dot</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/dot">dot</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.dot.vis">att.dot.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.dot.vis">att.dot.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/ineume">ineume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/ineume">ineume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.ineume.vis">att.ineume.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.ineume.vis">att.ineume.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/keyAccid">keyAccid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.keyAccid.vis">att.keyAccid.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keyAccid.vis">att.keyAccid.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/mensur">mensur</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mensur">mensur</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mensur.vis">att.mensur.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mensur.vis">att.mensur.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/mRest">mRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/mRest">mRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.mRest.vis">att.mRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.mRest.vis">att.mRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/multiRest">multiRest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/multiRest">multiRest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.multiRest.vis">att.multiRest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.multiRest.vis">att.multiRest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.vis">att.note.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.vis">att.note.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/rest">rest</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/rest">rest</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.rest.vis">att.rest.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.rest.vis">att.rest.vis</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/uneume">uneume</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/uneume">uneume</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.uneume.vis">att.uneume.vis</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.uneume.vis">att.uneume.vis</a>)
                   </span>
                </div>
             </div>
@@ -111,10 +111,10 @@ title: "att.staffloc"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the staff location of the feature.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.STAFFLOC">data.STAFFLOC</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.STAFFLOC">data.STAFFLOC</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.staffloc">att.staffloc</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffloc">att.staffloc</a>
                </span>
             </div>
          </td>

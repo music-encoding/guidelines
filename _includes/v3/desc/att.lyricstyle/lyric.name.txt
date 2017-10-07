@@ -1,0 +1,1 @@
+Sets the font name default value for lyrics.

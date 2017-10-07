@@ -21,7 +21,8 @@ provides information about the ‘container’ where the outer [bibl](/{{ page.v
 
 
 
-{% include specDesc.html version=page.version key="relatedItem" atts="rel" %}
+{% include specDesc.html version=page.version key="relatedItem" atts="relatedItem/rel" %}
+
 
 
 

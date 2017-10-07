@@ -27,34 +27,34 @@ title: "att.pitch"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/key">key</a>, 
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/keySig">keySig</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/key">key</a>, 
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keySig">keySig</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.keySig.log">att.keySig.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keySig.log">att.keySig.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/chordMember">chordMember</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/chordMember">chordMember</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.pitched">att.pitched</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.pitched">att.pitched</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/custos">custos</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/custos">custos</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.custos.log">att.custos.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.custos.log">att.custos.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/keyAccid">keyAccid</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/keyAccid">keyAccid</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.keyAccid.log">att.keyAccid.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.keyAccid.log">att.keyAccid.log</a>)
                   </span>
                </div>
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/note">note</a>
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/note">note</a>
                   <span> (via 
-                     <a class="link_odd_classSpec" href="/{{ v3}}/att.note.log">att.note.log</a>)
+                     <a class="link_odd_classSpec" href="/{{ page.version }}/att.note.log">att.note.log</a>)
                   </span>
                </div>
             </div>
@@ -70,10 +70,10 @@ title: "att.pitch"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Contains a written pitch name.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.pitch">att.pitch</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.pitch">att.pitch</a>
                </span>
             </div>
          </td>

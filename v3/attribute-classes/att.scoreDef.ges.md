@@ -37,7 +37,7 @@ title: "att.scoreDef.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/scoreDef">scoreDef</a> (direct member of att.scoreDef.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/scoreDef">scoreDef</a> (direct member of att.scoreDef.ges)
                </div>
             </div>
          </td>
@@ -55,10 +55,10 @@ title: "att.scoreDef.ges"
                   indication*.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIBPM">data.MIDIBPM</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIBPM">data.MIDIBPM</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.miditempo">att.miditempo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -66,10 +66,10 @@ title: "att.scoreDef.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records a MIDI channel value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDICHANNEL">data.MIDICHANNEL</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDICHANNEL">data.MIDICHANNEL</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -79,10 +79,10 @@ title: "att.scoreDef.ges"
                   duration.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PERCENT">data.PERCENT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PERCENT">data.PERCENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -94,10 +94,10 @@ title: "att.scoreDef.ges"
                   microseconds.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIMSPB">data.MIDIMSPB</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIMSPB">data.MIDIMSPB</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.miditempo">att.miditempo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.miditempo">att.miditempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -105,10 +105,10 @@ title: "att.scoreDef.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Sets the MIDI port value.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.MIDIVALUE">data.MIDIVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.MIDIVALUE">data.MIDIVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -119,7 +119,7 @@ title: "att.scoreDef.ges"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.channelized">att.channelized</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.channelized">att.channelized</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -133,10 +133,10 @@ title: "att.scoreDef.ges"
                   the time signature or the metronomic indication*.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TEMPOVALUE">data.TEMPOVALUE</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPOVALUE">data.TEMPOVALUE</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mmtempo">att.mmtempo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -144,10 +144,10 @@ title: "att.scoreDef.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Records the number of augmentation dots required by a dotted metronome unit.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.AUGMENTDOT">data.AUGMENTDOT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.AUGMENTDOT">data.AUGMENTDOT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mmtempo">att.mmtempo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -155,10 +155,10 @@ title: "att.scoreDef.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Captures the metronomic unit.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION">data.DURATION</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION">data.DURATION</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.mmtempo">att.mmtempo</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.mmtempo">att.mmtempo</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -172,7 +172,7 @@ title: "att.scoreDef.ges"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.timebase">att.timebase</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timebase">att.timebase</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -185,7 +185,7 @@ title: "att.scoreDef.ges"
                <span style="font-weight: 500;">decimal</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.scoreDef.ges">att.scoreDef.ges</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -193,10 +193,10 @@ title: "att.scoreDef.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Holds the pitch name of a tuning reference pitch.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.PITCHNAME">data.PITCHNAME</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.PITCHNAME">data.PITCHNAME</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.scoreDef.ges">att.scoreDef.ges</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -204,10 +204,10 @@ title: "att.scoreDef.ges"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides an indication of the tuning system, 'just', for example.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.TEMPERAMENT">data.TEMPERAMENT</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.TEMPERAMENT">data.TEMPERAMENT</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.scoreDef.ges">att.scoreDef.ges</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.scoreDef.ges">att.scoreDef.ges</a>
                </span>
             </div>
          </td>

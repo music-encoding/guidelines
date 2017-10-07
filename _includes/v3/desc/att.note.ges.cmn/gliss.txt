@@ -1,0 +1,1 @@
+Indicates that this element participates in a glissando.

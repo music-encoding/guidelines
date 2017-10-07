@@ -27,7 +27,7 @@ title: "att.trill.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/trill">trill</a> (direct member of att.trill.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/trill">trill</a> (direct member of att.trill.ges)
                </div>
             </div>
          </td>
@@ -46,10 +46,10 @@ title: "att.trill.ges"
                   values.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.DURATION.gestural">data.DURATION.gestural</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.DURATION.gestural">data.DURATION.gestural</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.duration.performed">att.duration.performed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.duration.performed">att.duration.performed</a>
                </span>
             </div>
          </td>

@@ -1,0 +1,1 @@
+Captures whether a beam is "feathered" and in which direction.

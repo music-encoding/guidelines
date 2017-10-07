@@ -1,0 +1,2 @@
+Identifies one or more metadata elements within the header, which are understood to
+apply to the element bearing this attribute and its content.

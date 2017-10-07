@@ -32,10 +32,10 @@ title: "mdiv"
                   apply to the element bearing this attribute and its content.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.declaring">att.declaring</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.declaring">att.declaring</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -45,10 +45,10 @@ title: "mdiv"
                   corresponds to it.
                </span>
                One or more values from
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>, separated by spaces.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>, separated by spaces.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.facsimile">att.facsimile</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.facsimile">att.facsimile</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -59,7 +59,7 @@ title: "mdiv"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -67,10 +67,10 @@ title: "mdiv"
                <span class="attributeUsage">(optional)</span>
                <span class="attributeDesc">Provides a number-like designation for an element.</span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/token">token</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/token">token</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.common">att.common</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.common">att.common</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -83,7 +83,7 @@ title: "mdiv"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -96,7 +96,7 @@ title: "mdiv"
                <span style="font-weight: 500;">NMTOKEN</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.typed">att.typed</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.typed">att.typed</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -106,10 +106,10 @@ title: "mdiv"
                   references into absolute URI references.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.commonPart">att.commonPart</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.commonPart">att.commonPart</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -123,7 +123,7 @@ title: "mdiv"
                <span style="font-weight: 500;">ID</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.id">att.id</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.id">att.id</a>
                </span>
             </div>
          </td>
@@ -134,7 +134,7 @@ title: "mdiv"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="/{{ v3}}/model.mdivLike">model.mdivLike</a>
+               <a class="link_odd_classSpec" href="/{{ page.version }}/model.mdivLike">model.mdivLike</a>
             </div>
          </td>
       </tr>
@@ -148,8 +148,8 @@ title: "mdiv"
                   <div class="specChild">
                      <span class="specChildModule">MEI.shared</span>
                      <span class="specChildElements">
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/body">body</a> 
-                        <a class="link_odd_elementSpec" href="/{{ v3}}/mdiv">mdiv</a>
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/body">body</a> 
+                        <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a>
                      </span>
                   </div>
                </div>
@@ -165,9 +165,9 @@ title: "mdiv"
                <div class="specChild">
                   <span class="specChildModule">MEI.shared</span>
                   <span class="specChildElements">
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/mdiv">mdiv</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/parts">parts</a> 
-                     <a class="link_odd_elementSpec" href="/{{ v3}}/score">score</a>
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/parts">parts</a> 
+                     <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a>
                   </span>
                </div>
             </div>
@@ -300,23 +300,23 @@ title: "mdiv"
          </td>
          <td class="wovenodd-col2">
             <p>The 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/mdiv">mdiv</a> element may contain one or both of 2 possible views of the
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> element may contain one or both of 2 possible views of the
                music. The score view is the traditional full and open score while the parts view
                contains
                each performer's view of the score; that is, his part. These 2 views are necessary
                because
                it is not always possible or desirable to generate one from the other. The 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/score">score</a> and 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/parts">parts</a> elements are placed here and not
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/score">score</a> and 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/parts">parts</a> elements are placed here and not
                directly within the 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/body">body</a> element because score and part
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/body">body</a> element because score and part
                characteristics may change from 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/mdiv">mdiv</a> to 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/mdiv">mdiv</a>.
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> to 
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a>.
                For example, the 2nd movement of a symphony may require different performing forces
                (and
                therefore different score and part layout) than the other movements. The 
-               <a class="link_odd_elementSpec" href="/{{ v3}}/mdiv">mdiv</a> element may be recursively nested in order to represent music which exhibits
+               <a class="link_odd_elementSpec" href="/{{ page.version }}/mdiv">mdiv</a> element may be recursively nested in order to represent music which exhibits
                this kind of structure. For example, an opera is normally divided into acts, which
                are in
                turn divided into scenes.

@@ -1,0 +1,7 @@
+Used to indicate the format of a list. In a "simple" list, 
+elements are not numbered or bulleted. In a "marked" list, the sequence of the list
+items is not critical, and a bullet, box, dash, or other character is displayed at
+the
+start of each . In an "ordered" list, the sequence of the
+items is important, and each  is lettered or numbered. Style
+sheet functions should be used to specify the mark or numeration system for each .

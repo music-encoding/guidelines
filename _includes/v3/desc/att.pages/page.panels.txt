@@ -1,0 +1,2 @@
+Indicates the number of logical pages to be rendered on a single physical
+page.

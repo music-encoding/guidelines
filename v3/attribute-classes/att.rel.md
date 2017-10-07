@@ -27,7 +27,7 @@ title: "att.rel"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/relation">relation</a> (direct member of att.rel)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/relation">relation</a> (direct member of att.rel)
                </div>
             </div>
          </td>
@@ -45,10 +45,10 @@ title: "att.rel"
                   http://www.ifla.org/files/assets/cataloguing/frbr/frbr_2008.pdf).
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.FRBRRELATIONSHIP">data.FRBRRELATIONSHIP</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.FRBRRELATIONSHIP">data.FRBRRELATIONSHIP</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.rel">att.rel</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.rel">att.rel</a>
                </span>
             </div>
          </td>

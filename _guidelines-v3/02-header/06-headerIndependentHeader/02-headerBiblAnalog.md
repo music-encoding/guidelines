@@ -14,7 +14,8 @@ purpose, the following attribute is provided on most meiHead elements:
 
 
 
-{% include specDesc.html version=page.version key="att.bibl" atts="analog" %}
+{% include specDesc.html version=page.version key="att.bibl" atts="att.bibl/analog" %}
+
 
 
 

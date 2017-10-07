@@ -41,7 +41,8 @@ used to define this space:
 
 
 
-{% include specDesc.html version=page.version key="att.mediabounds" atts="begin end betype" %}
+{% include specDesc.html version=page.version key="att.mediabounds" atts="att.mediabounds/begin att.mediabounds/end att.mediabounds/betype" %}
+
 
 
 

@@ -27,7 +27,7 @@ title: "att.space.vis"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/space">space</a> (direct member of att.space.vis)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/space">space</a> (direct member of att.space.vis)
                </div>
             </div>
          </td>
@@ -44,10 +44,10 @@ title: "att.space.vis"
                   discretion of processing software.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.space.vis">att.space.vis</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.space.vis">att.space.vis</a>
                </span>
             </div>
          </td>

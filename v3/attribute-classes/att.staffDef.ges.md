@@ -27,7 +27,7 @@ title: "att.staffDef.ges"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/staffDef">staffDef</a> (direct member of att.staffDef.ges)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/staffDef">staffDef</a> (direct member of att.staffDef.ges)
                </div>
             </div>
          </td>
@@ -44,10 +44,10 @@ title: "att.staffDef.ges"
                   of an &lt;instrDef&gt; element elsewhere in the document.
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.URI">data.URI</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.URI">data.URI</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.instrumentident">att.instrumentident</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.instrumentident">att.instrumentident</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -61,7 +61,7 @@ title: "att.staffDef.ges"
                <span style="font-weight: 500;">positiveInteger</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.timebase">att.timebase</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.timebase">att.timebase</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -74,7 +74,7 @@ title: "att.staffDef.ges"
                <span style="font-weight: 500;">[a-g][0-9](s|f|ss|x|ff|xs|sx|ts|tf|n|nf|ns|su|sd|fu|fd|nu|nd|1qf|3qf|1qs|3qs)?([a-g][0-9](s|f|ss|x|ff|xs|sx|ts|tf|n|nf|ns|su|sd|fu|fd|nu|nd|1qf|3qf|1qs|3qs)?)*</span>".
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.staffDef.ges.tablature">att.staffDef.ges.tablature</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.staffDef.ges.tablature">att.staffDef.ges.tablature</a>
                </span>
             </div>
          </td>

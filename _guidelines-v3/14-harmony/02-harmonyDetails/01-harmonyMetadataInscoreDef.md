@@ -24,11 +24,14 @@ The following elements enable the creation and re-use of interpreted chord data:
 
 {% include specDesc.html version=page.version key="chordTable" atts="" %}
 {% include specDesc.html version=page.version key="chordDef" atts="" %}
-{% include specDesc.html version=page.version key="chordDef" atts="pos" %}
+{% include specDesc.html version=page.version key="chordDef" atts="chordDef/pos" %}
+
 {% include specDesc.html version=page.version key="chordMember" atts="" %}
-{% include specDesc.html version=page.version key="chordMember" atts="inth fing fret" %}
+{% include specDesc.html version=page.version key="chordMember" atts="att.intervalharmonic/inth.txt chordMember/fing att.fretlocation/fret.txt" %}
+
 {% include specDesc.html version=page.version key="barre" atts="" %}
-{% include specDesc.html version=page.version key="barre" atts="fret" %}
+{% include specDesc.html version=page.version key="barre" atts="att.fretlocation/fret.txt" %}
+
 
 
 

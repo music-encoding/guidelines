@@ -28,7 +28,7 @@ title: "att.verse.log"
          <td class="wovenodd-col2">
             <div class="parent">
                <div>
-                  <a class="link_odd_elementSpec" href="/{{ v3}}/verse">verse</a> (direct member of att.verse.log)
+                  <a class="link_odd_elementSpec" href="/{{ page.version }}/verse">verse</a> (direct member of att.verse.log)
                </div>
             </div>
          </td>
@@ -46,10 +46,10 @@ title: "att.verse.log"
                   <!-- (Mup User's Guide, p. 44) -->
                </span>
                Value conforms to 
-               <a class="link_odd_classSpec" href="/{{ v3}}/data.BOOLEAN">data.BOOLEAN</a>.
+               <a class="link_odd_classSpec" href="/{{ page.version }}/data.BOOLEAN">data.BOOLEAN</a>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.verse.log">att.verse.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.verse.log">att.verse.log</a>
                </span>
             </div>
             <div class="attributeDef">
@@ -62,7 +62,7 @@ title: "att.verse.log"
                <span style="font-weight: 500;">string</span>.
                
                <span class="attributeClasses">
-                  <a class="link_odd" href="/{{ v3}}/att.verse.log">att.verse.log</a>
+                  <a class="link_odd" href="/{{ page.version }}/att.verse.log">att.verse.log</a>
                </span>
             </div>
          </td>
