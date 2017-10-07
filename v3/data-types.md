@@ -8,199 +8,199 @@ title: "Data Types"
    <div class="textwidget">
       <div class="sortedInitials well A">
          <h3>a</h3>
-         <a class="link_odd chip A" href="/v3/data-types/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a>
-         <a class="link_odd chip A" href="/v3/data-types/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>
-         <a class="link_odd chip A" href="/v3/data-types/data.ARTICULATION">data.ARTICULATION</a>
-         <a class="link_odd chip A" href="/v3/data-types/data.AUGMENTDOT">data.AUGMENTDOT</a>
+         <a class="link_odd chip A" href="/v3/data-types/data.ACCIDENTAL.EXPLICIT.html">data.ACCIDENTAL.EXPLICIT</a>
+         <a class="link_odd chip A" href="/v3/data-types/data.ACCIDENTAL.IMPLICIT.html">data.ACCIDENTAL.IMPLICIT</a>
+         <a class="link_odd chip A" href="/v3/data-types/data.ARTICULATION.html">data.ARTICULATION</a>
+         <a class="link_odd chip A" href="/v3/data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>
       </div>
       <div class="sortedInitials well B">
          <h3>b</h3>
-         <a class="link_odd chip B" href="/v3/data-types/data.BARPLACE">data.BARPLACE</a>
-         <a class="link_odd chip B" href="/v3/data-types/data.BARRENDITION">data.BARRENDITION</a>
-         <a class="link_odd chip B" href="/v3/data-types/data.BEAM">data.BEAM</a>
-         <a class="link_odd chip B" href="/v3/data-types/data.BEAT">data.BEAT</a>
-         <a class="link_odd chip B" href="/v3/data-types/data.BEATRPT.REND">data.BEATRPT.REND</a>
-         <a class="link_odd chip B" href="/v3/data-types/data.BEND.AMOUNT">data.BEND.AMOUNT</a>
-         <a class="link_odd chip B" href="/v3/data-types/data.BETYPE">data.BETYPE</a>
-         <a class="link_odd chip B" href="/v3/data-types/data.BOOLEAN">data.BOOLEAN</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BARPLACE.html">data.BARPLACE</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BARRENDITION.html">data.BARRENDITION</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BEAM.html">data.BEAM</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BEAT.html">data.BEAT</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BEATRPT.REND.html">data.BEATRPT.REND</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BEND.AMOUNT.html">data.BEND.AMOUNT</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BETYPE.html">data.BETYPE</a>
+         <a class="link_odd chip B" href="/v3/data-types/data.BOOLEAN.html">data.BOOLEAN</a>
       </div>
       <div class="sortedInitials well C">
          <h3>c</h3>
-         <a class="link_odd chip C" href="/v3/data-types/data.CERTAINTY">data.CERTAINTY</a>
-         <a class="link_odd chip C" href="/v3/data-types/data.CLEFLINE">data.CLEFLINE</a>
-         <a class="link_odd chip C" href="/v3/data-types/data.CLEFSHAPE">data.CLEFSHAPE</a>
-         <a class="link_odd chip C" href="/v3/data-types/data.CLUSTER">data.CLUSTER</a>
-         <a class="link_odd chip C" href="/v3/data-types/data.COLOR">data.COLOR</a>
-         <a class="link_odd chip C" href="/v3/data-types/data.COLORNAMES">data.COLORNAMES</a>
-         <a class="link_odd chip C" href="/v3/data-types/data.COLORVALUES">data.COLORVALUES</a>
+         <a class="link_odd chip C" href="/v3/data-types/data.CERTAINTY.html">data.CERTAINTY</a>
+         <a class="link_odd chip C" href="/v3/data-types/data.CLEFLINE.html">data.CLEFLINE</a>
+         <a class="link_odd chip C" href="/v3/data-types/data.CLEFSHAPE.html">data.CLEFSHAPE</a>
+         <a class="link_odd chip C" href="/v3/data-types/data.CLUSTER.html">data.CLUSTER</a>
+         <a class="link_odd chip C" href="/v3/data-types/data.COLOR.html">data.COLOR</a>
+         <a class="link_odd chip C" href="/v3/data-types/data.COLORNAMES.html">data.COLORNAMES</a>
+         <a class="link_odd chip C" href="/v3/data-types/data.COLORVALUES.html">data.COLORVALUES</a>
       </div>
       <div class="sortedInitials well D">
          <h3>d</h3>
-         <a class="link_odd chip D" href="/v3/data-types/data.DEGREES">data.DEGREES</a>
-         <a class="link_odd chip D" href="/v3/data-types/data.DURATION">data.DURATION</a>
-         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.additive">data.DURATION.additive</a>
-         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.cmn">data.DURATION.cmn</a>
-         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.gestural">data.DURATION.gestural</a>
-         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.gestural.pat">data.DURATION.gestural.pat</a>
-         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.gestural.prop">data.DURATION.gestural.prop</a>
-         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.mensural">data.DURATION.mensural</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DEGREES.html">data.DEGREES</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.html">data.DURATION</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.additive.html">data.DURATION.additive</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.cmn.html">data.DURATION.cmn</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.gestural.html">data.DURATION.gestural</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.gestural.pat.html">data.DURATION.gestural.pat</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.gestural.prop.html">data.DURATION.gestural.prop</a>
+         <a class="link_odd chip D" href="/v3/data-types/data.DURATION.mensural.html">data.DURATION.mensural</a>
       </div>
       <div class="sortedInitials well E">
          <h3>e</h3>
-         <a class="link_odd chip E" href="/v3/data-types/data.ENCLOSURE">data.ENCLOSURE</a>
+         <a class="link_odd chip E" href="/v3/data-types/data.ENCLOSURE.html">data.ENCLOSURE</a>
       </div>
       <div class="sortedInitials well F">
          <h3>f</h3>
-         <a class="link_odd chip F" href="/v3/data-types/data.FILL">data.FILL</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FINGER.FRET">data.FINGER.FRET</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FONTFAMILY">data.FONTFAMILY</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FONTNAME">data.FONTNAME</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FONTSIZE">data.FONTSIZE</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FONTSIZENUMERIC">data.FONTSIZENUMERIC</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FONTSIZETERM">data.FONTSIZETERM</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FONTSTYLE">data.FONTSTYLE</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FONTWEIGHT">data.FONTWEIGHT</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FRBRRELATIONSHIP">data.FRBRRELATIONSHIP</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FRET">data.FRET</a>
-         <a class="link_odd chip F" href="/v3/data-types/data.FRETNUMBER">data.FRETNUMBER</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FILL.html">data.FILL</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FINGER.FRET.html">data.FINGER.FRET</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FONTFAMILY.html">data.FONTFAMILY</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FONTNAME.html">data.FONTNAME</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FONTSIZE.html">data.FONTSIZE</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FONTSIZENUMERIC.html">data.FONTSIZENUMERIC</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FONTSIZETERM.html">data.FONTSIZETERM</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FONTSTYLE.html">data.FONTSTYLE</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FONTWEIGHT.html">data.FONTWEIGHT</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FRBRRELATIONSHIP.html">data.FRBRRELATIONSHIP</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FRET.html">data.FRET</a>
+         <a class="link_odd chip F" href="/v3/data-types/data.FRETNUMBER.html">data.FRETNUMBER</a>
       </div>
       <div class="sortedInitials well G">
          <h3>g</h3>
-         <a class="link_odd chip G" href="/v3/data-types/data.GLISSANDO">data.GLISSANDO</a>
-         <a class="link_odd chip G" href="/v3/data-types/data.GRACE">data.GRACE</a>
+         <a class="link_odd chip G" href="/v3/data-types/data.GLISSANDO.html">data.GLISSANDO</a>
+         <a class="link_odd chip G" href="/v3/data-types/data.GRACE.html">data.GRACE</a>
       </div>
       <div class="sortedInitials well H">
          <h3>h</h3>
-         <a class="link_odd chip H" href="/v3/data-types/data.HEADSHAPE">data.HEADSHAPE</a>
-         <a class="link_odd chip H" href="/v3/data-types/data.HEADSHAPE.list">data.HEADSHAPE.list</a>
-         <a class="link_odd chip H" href="/v3/data-types/data.HORIZONTALALIGNMENT">data.HORIZONTALALIGNMENT</a>
+         <a class="link_odd chip H" href="/v3/data-types/data.HEADSHAPE.html">data.HEADSHAPE</a>
+         <a class="link_odd chip H" href="/v3/data-types/data.HEADSHAPE.list.html">data.HEADSHAPE.list</a>
+         <a class="link_odd chip H" href="/v3/data-types/data.HORIZONTALALIGNMENT.html">data.HORIZONTALALIGNMENT</a>
       </div>
       <div class="sortedInitials well I">
          <h3>i</h3>
-         <a class="link_odd chip I" href="/v3/data-types/data.IDREF">data.IDREF</a>
-         <a class="link_odd chip I" href="/v3/data-types/data.INEUMEFORM">data.INEUMEFORM</a>
-         <a class="link_odd chip I" href="/v3/data-types/data.INEUMENAME">data.INEUMENAME</a>
-         <a class="link_odd chip I" href="/v3/data-types/data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</a>
-         <a class="link_odd chip I" href="/v3/data-types/data.INTERVAL.MELODIC">data.INTERVAL.MELODIC</a>
-         <a class="link_odd chip I" href="/v3/data-types/data.ISODATE">data.ISODATE</a>
-         <a class="link_odd chip I" href="/v3/data-types/data.ISOTIME">data.ISOTIME</a>
+         <a class="link_odd chip I" href="/v3/data-types/data.IDREF.html">data.IDREF</a>
+         <a class="link_odd chip I" href="/v3/data-types/data.INEUMEFORM.html">data.INEUMEFORM</a>
+         <a class="link_odd chip I" href="/v3/data-types/data.INEUMENAME.html">data.INEUMENAME</a>
+         <a class="link_odd chip I" href="/v3/data-types/data.INTERVAL.HARMONIC.html">data.INTERVAL.HARMONIC</a>
+         <a class="link_odd chip I" href="/v3/data-types/data.INTERVAL.MELODIC.html">data.INTERVAL.MELODIC</a>
+         <a class="link_odd chip I" href="/v3/data-types/data.ISODATE.html">data.ISODATE</a>
+         <a class="link_odd chip I" href="/v3/data-types/data.ISOTIME.html">data.ISOTIME</a>
       </div>
       <div class="sortedInitials well K">
          <h3>k</h3>
-         <a class="link_odd chip K" href="/v3/data-types/data.KEYSIGNATURE">data.KEYSIGNATURE</a>
-         <a class="link_odd chip K" href="/v3/data-types/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>
+         <a class="link_odd chip K" href="/v3/data-types/data.KEYSIGNATURE.html">data.KEYSIGNATURE</a>
+         <a class="link_odd chip K" href="/v3/data-types/data.KEYSIGTOKEN.html">data.KEYSIGTOKEN</a>
       </div>
       <div class="sortedInitials well L">
          <h3>l</h3>
-         <a class="link_odd chip L" href="/v3/data-types/data.LAYERSCHEME">data.LAYERSCHEME</a>
-         <a class="link_odd chip L" href="/v3/data-types/data.LIGATUREFORM">data.LIGATUREFORM</a>
-         <a class="link_odd chip L" href="/v3/data-types/data.LINEFORM">data.LINEFORM</a>
-         <a class="link_odd chip L" href="/v3/data-types/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>
-         <a class="link_odd chip L" href="/v3/data-types/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>
-         <a class="link_odd chip L" href="/v3/data-types/data.LINEWIDTH">data.LINEWIDTH</a>
-         <a class="link_odd chip L" href="/v3/data-types/data.LINEWIDTHTERM">data.LINEWIDTHTERM</a>
+         <a class="link_odd chip L" href="/v3/data-types/data.LAYERSCHEME.html">data.LAYERSCHEME</a>
+         <a class="link_odd chip L" href="/v3/data-types/data.LIGATUREFORM.html">data.LIGATUREFORM</a>
+         <a class="link_odd chip L" href="/v3/data-types/data.LINEFORM.html">data.LINEFORM</a>
+         <a class="link_odd chip L" href="/v3/data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>
+         <a class="link_odd chip L" href="/v3/data-types/data.LINESTARTENDSYMBOLSIZE.html">data.LINESTARTENDSYMBOLSIZE</a>
+         <a class="link_odd chip L" href="/v3/data-types/data.LINEWIDTH.html">data.LINEWIDTH</a>
+         <a class="link_odd chip L" href="/v3/data-types/data.LINEWIDTHTERM.html">data.LINEWIDTHTERM</a>
       </div>
       <div class="sortedInitials well M">
          <h3>m</h3>
-         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREBEAT">data.MEASUREBEAT</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREBEATOFFSET">data.MEASUREBEATOFFSET</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREMENTABS">data.MEASUREMENTABS</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREMENTREL">data.MEASUREMENTREL</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MELODICFUNCTION">data.MELODICFUNCTION</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.METERSIGN">data.METERSIGN</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MIDIBPM">data.MIDIBPM</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MIDICHANNEL">data.MIDICHANNEL</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MIDIMSPB">data.MIDIMSPB</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MIDINAMES">data.MIDINAMES</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MIDIVALUE">data.MIDIVALUE</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MODE">data.MODE</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MODUSMAIOR">data.MODUSMAIOR</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MODUSMINOR">data.MODUSMINOR</a>
-         <a class="link_odd chip M" href="/v3/data-types/data.MUSICFONT">data.MUSICFONT</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREBEAT.html">data.MEASUREBEAT</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREBEATOFFSET.html">data.MEASUREBEATOFFSET</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREMENTABS.html">data.MEASUREMENTABS</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MEASUREMENTREL.html">data.MEASUREMENTREL</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MELODICFUNCTION.html">data.MELODICFUNCTION</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MENSURATIONSIGN.html">data.MENSURATIONSIGN</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.METERSIGN.html">data.METERSIGN</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MIDIBPM.html">data.MIDIBPM</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MIDICHANNEL.html">data.MIDICHANNEL</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MIDIMSPB.html">data.MIDIMSPB</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MIDINAMES.html">data.MIDINAMES</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MIDIVALUE.html">data.MIDIVALUE</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MODE.html">data.MODE</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MODUSMAIOR.html">data.MODUSMAIOR</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MODUSMINOR.html">data.MODUSMINOR</a>
+         <a class="link_odd chip M" href="/v3/data-types/data.MUSICFONT.html">data.MUSICFONT</a>
       </div>
       <div class="sortedInitials well N">
          <h3>n</h3>
-         <a class="link_odd chip N" href="/v3/data-types/data.NMTOKEN">data.NMTOKEN</a>
-         <a class="link_odd chip N" href="/v3/data-types/data.NOTATIONTYPE">data.NOTATIONTYPE</a>
-         <a class="link_odd chip N" href="/v3/data-types/data.NOTEHEADMODIFIER">data.NOTEHEADMODIFIER</a>
-         <a class="link_odd chip N" href="/v3/data-types/data.NOTEHEADMODIFIER.list">data.NOTEHEADMODIFIER.list</a>
-         <a class="link_odd chip N" href="/v3/data-types/data.NOTEHEADMODIFIER.pat">data.NOTEHEADMODIFIER.pat</a>
+         <a class="link_odd chip N" href="/v3/data-types/data.NMTOKEN.html">data.NMTOKEN</a>
+         <a class="link_odd chip N" href="/v3/data-types/data.NOTATIONTYPE.html">data.NOTATIONTYPE</a>
+         <a class="link_odd chip N" href="/v3/data-types/data.NOTEHEADMODIFIER.html">data.NOTEHEADMODIFIER</a>
+         <a class="link_odd chip N" href="/v3/data-types/data.NOTEHEADMODIFIER.list.html">data.NOTEHEADMODIFIER.list</a>
+         <a class="link_odd chip N" href="/v3/data-types/data.NOTEHEADMODIFIER.pat.html">data.NOTEHEADMODIFIER.pat</a>
       </div>
       <div class="sortedInitials well O">
          <h3>o</h3>
-         <a class="link_odd chip O" href="/v3/data-types/data.OCTAVE">data.OCTAVE</a>
-         <a class="link_odd chip O" href="/v3/data-types/data.OCTAVE.DIS">data.OCTAVE.DIS</a>
-         <a class="link_odd chip O" href="/v3/data-types/data.ORIENTATION">data.ORIENTATION</a>
-         <a class="link_odd chip O" href="/v3/data-types/data.ORNAM.cmn">data.ORNAM.cmn</a>
-         <a class="link_odd chip O" href="/v3/data-types/data.OTHERSTAFF">data.OTHERSTAFF</a>
+         <a class="link_odd chip O" href="/v3/data-types/data.OCTAVE.html">data.OCTAVE</a>
+         <a class="link_odd chip O" href="/v3/data-types/data.OCTAVE.DIS.html">data.OCTAVE.DIS</a>
+         <a class="link_odd chip O" href="/v3/data-types/data.ORIENTATION.html">data.ORIENTATION</a>
+         <a class="link_odd chip O" href="/v3/data-types/data.ORNAM.cmn.html">data.ORNAM.cmn</a>
+         <a class="link_odd chip O" href="/v3/data-types/data.OTHERSTAFF.html">data.OTHERSTAFF</a>
       </div>
       <div class="sortedInitials well P">
          <h3>p</h3>
-         <a class="link_odd chip P" href="/v3/data-types/data.PAGE.PANELS">data.PAGE.PANELS</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PERCENT">data.PERCENT</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PGSCALE">data.PGSCALE</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PITCHCLASS">data.PITCHCLASS</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PITCHNAME">data.PITCHNAME</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PITCHNAME.GES">data.PITCHNAME.GES</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PITCHNUMBER">data.PITCHNUMBER</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PLACE">data.PLACE</a>
-         <a class="link_odd chip P" href="/v3/data-types/data.PROLATIO">data.PROLATIO</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PAGE.PANELS.html">data.PAGE.PANELS</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PERCENT.html">data.PERCENT</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PGSCALE.html">data.PGSCALE</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PITCHCLASS.html">data.PITCHCLASS</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PITCHNAME.html">data.PITCHNAME</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PITCHNAME.GES.html">data.PITCHNAME.GES</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PITCHNUMBER.html">data.PITCHNUMBER</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PLACE.html">data.PLACE</a>
+         <a class="link_odd chip P" href="/v3/data-types/data.PROLATIO.html">data.PROLATIO</a>
       </div>
       <div class="sortedInitials well R">
          <h3>r</h3>
-         <a class="link_odd chip R" href="/v3/data-types/data.RATIO">data.RATIO</a>
-         <a class="link_odd chip R" href="/v3/data-types/data.ROTATION">data.ROTATION</a>
-         <a class="link_odd chip R" href="/v3/data-types/data.ROTATIONDIRECTION">data.ROTATIONDIRECTION</a>
+         <a class="link_odd chip R" href="/v3/data-types/data.RATIO.html">data.RATIO</a>
+         <a class="link_odd chip R" href="/v3/data-types/data.ROTATION.html">data.ROTATION</a>
+         <a class="link_odd chip R" href="/v3/data-types/data.ROTATIONDIRECTION.html">data.ROTATIONDIRECTION</a>
       </div>
       <div class="sortedInitials well S">
          <h3>s</h3>
-         <a class="link_odd chip S" href="/v3/data-types/data.SCALEDEGREE">data.SCALEDEGREE</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.SIZE">data.SIZE</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.SLASH">data.SLASH</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.SLUR">data.SLUR</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.SLURDIRECTION">data.SLURDIRECTION</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STAFFLOC">data.STAFFLOC</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STAFFREL">data.STAFFREL</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STEMDIRECTION">data.STEMDIRECTION</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STEMDIRECTION.basic">data.STEMDIRECTION.basic</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STEMDIRECTION.extended">data.STEMDIRECTION.extended</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STEMMODIFIER">data.STEMMODIFIER</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STEMPOSITION">data.STEMPOSITION</a>
-         <a class="link_odd chip S" href="/v3/data-types/data.STRINGNUMBER">data.STRINGNUMBER</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.SCALEDEGREE.html">data.SCALEDEGREE</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.SIZE.html">data.SIZE</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.SLASH.html">data.SLASH</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.SLUR.html">data.SLUR</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.SLURDIRECTION.html">data.SLURDIRECTION</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STAFFLOC.html">data.STAFFLOC</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STAFFREL.html">data.STAFFREL</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STEMDIRECTION.html">data.STEMDIRECTION</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STEMDIRECTION.basic.html">data.STEMDIRECTION.basic</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STEMDIRECTION.extended.html">data.STEMDIRECTION.extended</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STEMMODIFIER.html">data.STEMMODIFIER</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STEMPOSITION.html">data.STEMPOSITION</a>
+         <a class="link_odd chip S" href="/v3/data-types/data.STRINGNUMBER.html">data.STRINGNUMBER</a>
       </div>
       <div class="sortedInitials well T">
          <h3>t</h3>
-         <a class="link_odd chip T" href="/v3/data-types/data.TEMPERAMENT">data.TEMPERAMENT</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TEMPOVALUE">data.TEMPOVALUE</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TEMPUS">data.TEMPUS</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TEXTRENDITION">data.TEXTRENDITION</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TEXTRENDITIONLIST">data.TEXTRENDITIONLIST</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TEXTRENDITIONPAR">data.TEXTRENDITIONPAR</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TIE">data.TIE</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TIEDIRECTION">data.TIEDIRECTION</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a>
-         <a class="link_odd chip T" href="/v3/data-types/data.TUPLET">data.TUPLET</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TEMPERAMENT.html">data.TEMPERAMENT</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TEMPOVALUE.html">data.TEMPOVALUE</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TEMPUS.html">data.TEMPUS</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TEXTRENDITION.html">data.TEXTRENDITION</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TEXTRENDITIONLIST.html">data.TEXTRENDITIONLIST</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TEXTRENDITIONPAR.html">data.TEXTRENDITIONPAR</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TIE.html">data.TIE</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TIEDIRECTION.html">data.TIEDIRECTION</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TSTAMPOFFSET.html">data.TSTAMPOFFSET</a>
+         <a class="link_odd chip T" href="/v3/data-types/data.TUPLET.html">data.TUPLET</a>
       </div>
       <div class="sortedInitials well U">
          <h3>u</h3>
-         <a class="link_odd chip U" href="/v3/data-types/data.UNEUMEFORM">data.UNEUMEFORM</a>
-         <a class="link_odd chip U" href="/v3/data-types/data.UNEUMENAME">data.UNEUMENAME</a>
-         <a class="link_odd chip U" href="/v3/data-types/data.URI">data.URI</a>
+         <a class="link_odd chip U" href="/v3/data-types/data.UNEUMEFORM.html">data.UNEUMEFORM</a>
+         <a class="link_odd chip U" href="/v3/data-types/data.UNEUMENAME.html">data.UNEUMENAME</a>
+         <a class="link_odd chip U" href="/v3/data-types/data.URI.html">data.URI</a>
       </div>
       <div class="sortedInitials well X">
          <h3>x</h3>
-         <a class="link_odd chip X" href="/v3/data-types/macro.XSLT">macro.XSLT</a>
+         <a class="link_odd chip X" href="/v3/data-types/macro.XSLT.html">macro.XSLT</a>
       </div>
       <div class="sortedInitials well macros">
          <h3>Macros</h3>
-         <a class="link_odd chip X" href="/v3/data-types/macro.XSLT">macro.XSLT</a>
-         <a class="link_odd chip a" href="/v3/data-types/macro.anyXML">macro.anyXML</a>
-         <a class="link_odd chip a" href="/v3/data-types/macro.availabilityPart">macro.availabilityPart</a>
-         <a class="link_odd chip b" href="/v3/data-types/macro.bibldescPart">macro.bibldescPart</a>
-         <a class="link_odd chip m" href="/v3/data-types/macro.metaLike.page">macro.metaLike.page</a>
-         <a class="link_odd chip m" href="/v3/data-types/macro.musicPart">macro.musicPart</a>
-         <a class="link_odd chip n" href="/v3/data-types/macro.neumeModifierLike">macro.neumeModifierLike</a>
+         <a class="link_odd chip X" href="/v3/data-types/macro.XSLT.html">macro.XSLT</a>
+         <a class="link_odd chip a" href="/v3/data-types/macro.anyXML.html">macro.anyXML</a>
+         <a class="link_odd chip a" href="/v3/data-types/macro.availabilityPart.html">macro.availabilityPart</a>
+         <a class="link_odd chip b" href="/v3/data-types/macro.bibldescPart.html">macro.bibldescPart</a>
+         <a class="link_odd chip m" href="/v3/data-types/macro.metaLike.page.html">macro.metaLike.page</a>
+         <a class="link_odd chip m" href="/v3/data-types/macro.musicPart.html">macro.musicPart</a>
+         <a class="link_odd chip n" href="/v3/data-types/macro.neumeModifierLike.html">macro.neumeModifierLike</a>
       </div>
    </div>
 </div>

@@ -11,16 +11,15 @@ provides the following elements for this purpose.
 
 
 
-{% include _specDesc.html key="relationList" atts="" %}
-{% include _specDesc.html key="relation" atts="" %}
-{% include _specDesc.html key="relation" atts="rel" %}
+{% include specDesc.html key="relationList" atts="" %}
+{% include specDesc.html key="relation" atts="" %}
+{% include specDesc.html key="relation" atts="rel" %}
 
 
 
 Each of the four FRBR entity equivalents – the work, expression, source, and item
 elements –
-allows a list of such relationship descriptions as its last child element. <a class="link_odd_elementSpec" href="/v3/elements/relationList">relationList</a> provides a container for individual 
-<a class="link_odd_elementSpec" href="/v3/elements/relation">relation</a>
+allows a list of such relationship descriptions as its last child element. [relationList](/v3/elements/relationList.html){:.link_odd_elementSpec} provides a container for individual [relation](/v3/elements/relation.html){:.link_odd_elementSpec}
 elements. The nature of the relationship must be specified by the **@rel** attribute and
 the target of the relationship must be identified by the **@target** attribute.
 
@@ -72,29 +71,25 @@ declare these relations explicitly. In FRBR terms, a manifestation / source is a
 embodiment
 of an expression.
 
-{% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample085.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample085.xml" valid="true" %}
 
-Within the 
-<a class="link_odd_elementSpec" href="/v3/elements/componentGrp">componentGrp</a> element, the order of child elements implicitly
+Within the [componentGrp](/v3/elements/componentGrp.html){:.link_odd_elementSpec} element, the order of child elements implicitly
 describes a hasSuccessor/isSuccessorOf relationship between components, i.e. it defines
 a
-certain sequence such as the movements of a work. In other cases, 
-<a class="link_odd_elementSpec" href="/v3/elements/relation">relation</a> elements may be needed to explicitly encode relationships not otherwise
+certain sequence such as the movements of a work. In other cases, [relation](/v3/elements/relation.html){:.link_odd_elementSpec} elements may be needed to explicitly encode relationships not otherwise
 defined by encoding order or hierarchy. For instance, the hasReproduction/isReproductionOf
 relationship may be used to indicate that one source is a reprint of another.
 
-{% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample086.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample086.xml" valid="true" %}
 
-Moreover, the use of 
-<a class="link_odd_elementSpec" href="/v3/elements/componentGrp">componentGrp</a> implicitly defines a hasPart/isPartOf
+Moreover, the use of [componentGrp](/v3/elements/componentGrp.html){:.link_odd_elementSpec} implicitly defines a hasPart/isPartOf
 relationship between the componentGrp element’s parent and its child elements. Using
-the 
-<a class="link_odd_elementSpec" href="/v3/elements/relationList">relationList</a> and relation elements to define their relationship, the four
+the [relationList](/v3/elements/relationList.html){:.link_odd_elementSpec} and relation elements to define their relationship, the four
 component works in the "Der Ring des Nibelungen" example above could alternatively
 be encoded
 as sibling work elements to the "Ring" work element.
 
-{% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample087.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample087.xml" valid="true" %}
 
 Relations may also be used to point to external resources. For instance, each of the
 individual component works of the "Ring" could be encoded in separate files, with
@@ -103,9 +98,9 @@ pointing to them.
 
 In the file "ring.xml":
 
-{% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample088.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample088.xml" valid="true" %}
 
 In the file "rheingold.xml":
 
-{% include _plainExample.html example="./v3/examples/FRBR/FRBR-sample089.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample089.xml" valid="true" %}
 

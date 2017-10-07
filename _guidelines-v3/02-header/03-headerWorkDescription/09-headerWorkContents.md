@@ -7,8 +7,8 @@ title: "Work Contents"
 
 
 
-{% include _specDesc.html key="contents" atts="" %}
-{% include _specDesc.html key="contentItem" atts="" %}
+{% include specDesc.html key="contents" atts="" %}
+{% include specDesc.html key="contentItem" atts="" %}
 
 
 
@@ -17,25 +17,22 @@ description of the work's content, such as may be found in a bibliographic recor
 can be
 given in single paragraph element:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample065.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample065.xml" valid="true" %}
 
-Alternatively, a structured list of contents may be constructed using the <a class="link_odd_elementSpec" href="/v3/elements/contentItem">contentItem</a> element:
+Alternatively, a structured list of contents may be constructed using the [contentItem](/v3/elements/contentItem.html){:.link_odd_elementSpec} element:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample066.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample066.xml" valid="true" %}
 
-Each 
-<a class="link_odd_elementSpec" href="/v3/elements/contentItem">contentItem</a> element may be preceded by an optional 
-<a class="link_odd_elementSpec" href="/v3/elements/label">label</a>:
+Each [contentItem](/v3/elements/contentItem.html){:.link_odd_elementSpec} element may be preceded by an optional [label](/v3/elements/label.html){:.link_odd_elementSpec}:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample067.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample067.xml" valid="true" %}
 
 To reference a contents list in an external location, use the **@target**
 attribute:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample068.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample068.xml" valid="true" %}
 
-To facilitate the creation of music catalogs based on MEI header information, 
-<a class="link_odd_elementSpec" href="/v3/elements/contents">contents</a> may contain a heading:
+To facilitate the creation of music catalogs based on MEI header information, [contents](/v3/elements/contents.html){:.link_odd_elementSpec} may contain a heading:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample069.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample069.xml" valid="true" %}
 

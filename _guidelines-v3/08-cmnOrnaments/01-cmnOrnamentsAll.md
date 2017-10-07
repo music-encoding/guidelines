@@ -5,9 +5,8 @@ title: "Encoding Common To All Ornaments"
 
 
 
-When encoding CMN, ornaments should be encoded within a <a class="link_odd_elementSpec" href="/v3/elements/measure">measure</a>,
-following the 
-<a class="link_odd_elementSpec" href="/v3/elements/staff">staff</a> elements, and connected to events on the staff via
+When encoding CMN, ornaments should be encoded within a [measure](/v3/elements/measure.html){:.link_odd_elementSpec},
+following the [staff](/v3/elements/staff.html){:.link_odd_elementSpec} elements, and connected to events on the staff via
 attributes. The **@startid** attribute is used to refer to the **@xml:id** of the
 starting note. Additionally, if the ornament involves more than one events on the
 staff, the
@@ -16,14 +15,13 @@ staff, the
 The following example demonstrates the encoding of an inverted mordent over a middle
 C:
 
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample179.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample179.xml" valid="true" %}
 
 Alternatively, the relationship of an ornament to a note can be expressed in terms
 of beats
 with the attribute **@tstamp**. If the ornament involves more than one event on the
 staff, the **@tstamp2** attribute can be used to indicate the ending time stamp, as is
-explained in section 
-<a class="link_ptr" title="Timestamps and Durations" href="/v3/guidelines/cmn#cmnTstamp">4.1.5 Timestamps and Durations</a>. These methods may also be utilized
+explained in section <a class="link_ptr" title="Timestamps and Durations" href="/v3/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>. These methods may also be utilized
 simultaneously.
 
 
@@ -32,7 +30,7 @@ following measure is in 2/2, the ornament (in this case, a mordent) is related t
 the note on
 the second beat.
 
-{% include _plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample180.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample180.xml" valid="true" %}
 
 The relationship between an ornament and the notes on staff must always be encoded.
 It is, in

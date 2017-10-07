@@ -42,43 +42,35 @@ Supplying only the level of encoding required, the MEI header of a single text w
 look like
 the following example:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample077.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample077.xml" valid="true" %}
 
-The only mandatory component of the MEI Header is the <a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element.
-Within this element, 
-<a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/pubStmt">pubStmt</a> are
+The only mandatory component of the MEI Header is the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element.
+Within this element, [titleStmt](/v3/elements/titleStmt.html){:.link_odd_elementSpec} and [pubStmt](/v3/elements/pubStmt.html){:.link_odd_elementSpec} are
 required constituents. Within the title statement, a title is required. Within the
-
-<a class="link_odd_elementSpec" href="/v3/elements/pubStmt">pubStmt</a>, a publisher, distributor, or other agency responsible for the
+[pubStmt](/v3/elements/pubStmt.html){:.link_odd_elementSpec}, a publisher, distributor, or other agency responsible for the
 file is required.
 
 While not formally required, additional information is recommended for a minimally
 effective
 header. For example, it is recommended that the person or corporate entity responsible
 for the
-creation of the encoding should be specified using 
-<a class="link_odd_elementSpec" href="/v3/elements/respStmt">respStmt</a> within the
-
-<a class="link_odd_elementSpec" href="/v3/elements/titleStmt">titleStmt</a> element. It is also recommended that information about the
-source, or sources, of the encoding be included. Each 
-<a class="link_odd_elementSpec" href="/v3/elements/source">source</a> element
+creation of the encoding should be specified using [respStmt](/v3/elements/respStmt.html){:.link_odd_elementSpec} within the
+[titleStmt](/v3/elements/titleStmt.html){:.link_odd_elementSpec} element. It is also recommended that information about the
+source, or sources, of the encoding be included. Each [source](/v3/elements/source.html){:.link_odd_elementSpec} element
 should contain at the least a loosely structured bibliographic citation that identifies
 the
 source used to construct the MEI file.
 
 Furthermore, If the electronic transcription is a member of a series of publications,
 the
-series title and publisher should be included using the 
-<a class="link_odd_elementSpec" href="/v3/elements/seriesStmt">seriesStmt</a>
+series title and publisher should be included using the [seriesStmt](/v3/elements/seriesStmt.html){:.link_odd_elementSpec}
 element. It is also common for cataloging records to include genre and/or form information,
-here represented by the MEI 
-<a class="link_odd_elementSpec" href="/v3/elements/classification">classification</a> element.
+here represented by the MEI [classification](/v3/elements/classification.html){:.link_odd_elementSpec} element.
 
 We now present the same example header, expanded to include additionally recommended
 information, adequate for most bibliographic purposes, in particular to allow for
 the creation
 of an AACR2-conformant bibliographic record.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample078.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample078.xml" valid="true" %}
 

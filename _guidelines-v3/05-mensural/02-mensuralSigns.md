@@ -8,12 +8,9 @@ title: "Mensuration Signs"
 
 Using the mensural module, mensuration signs can be indicated with the attributes
 available
-on the <a class="link_odd_elementSpec" href="/v3/elements/scoreDef">scoreDef</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/staffDef">staffDef</a> elements. Mensuration
-signs encoded using attributes on 
-<a class="link_odd_elementSpec" href="/v3/elements/scoreDef">scoreDef</a> are regarded as default
-values which may be overridden by values attached to individual 
-<a class="link_odd_elementSpec" href="/v3/elements/staffDef">staffDef</a>
+on the [scoreDef](/v3/elements/scoreDef.html){:.link_odd_elementSpec} and [staffDef](/v3/elements/staffDef.html){:.link_odd_elementSpec} elements. Mensuration
+signs encoded using attributes on [scoreDef](/v3/elements/scoreDef.html){:.link_odd_elementSpec} are regarded as default
+values which may be overridden by values attached to individual [staffDef](/v3/elements/staffDef.html){:.link_odd_elementSpec}
 elements.
 
 
@@ -34,9 +31,7 @@ indicating the presence of a dot.
 
 
 
-
-<a class="link_odd_elementSpec" href="/v3/elements/mensur">mensur</a> elements can also be used instead of 
-<a class="link_odd_elementSpec" href="/v3/elements/staffDef">staffDef</a> and its attributes.
+[mensur](/v3/elements/mensur.html){:.link_odd_elementSpec} elements can also be used instead of [staffDef](/v3/elements/staffDef.html){:.link_odd_elementSpec} and its attributes.
 
 
 

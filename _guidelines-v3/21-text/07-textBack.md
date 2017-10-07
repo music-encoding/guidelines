@@ -9,20 +9,18 @@ Conventions vary as to which elements are grouped as back matter and which as fr
 For
 example, some books place the table of contents at the front, and others at the back.
 For this
-reason, the content models of the <a class="link_odd_elementSpec" href="/v3/elements/front">front</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/back">back</a>
+reason, the content models of the [front](/v3/elements/front.html){:.link_odd_elementSpec} and [back](/v3/elements/back.html){:.link_odd_elementSpec}
 elements are identical.
 
 The following suggested values may be used for the **@type** attribute on all division
 elements, in order to distinguish various kinds of divisions characteristic of back
 matter:
 
-
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -61,7 +59,7 @@ characteristic examples follow; first, an index (for the case in which a printed
 is of
 sufficient interest to merit transcription):
 
-{% include _plainExample.html example="./v3/examples/text/text-sample342.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/text/text-sample342.xml" valid="true" %}
 
 Note that if the page breaks in the original source have also been explicitly encoded,
 and
@@ -71,9 +69,9 @@ links. For example, assuming that the encoding of page 77 of the original source
 like
 this:
 
-{% include _plainExample.html example="./v3/examples/text/text-sample343.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/text/text-sample343.xml" valid="true" %}
 
 then the last item above might be encoded more usefully in the following form:
 
-{% include _plainExample.html example="./v3/examples/text/text-sample344.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/text/text-sample344.xml" valid="true" %}
 

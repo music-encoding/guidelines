@@ -194,7 +194,7 @@
                 <xsl:variable name="name" select="@xml:id"/>
                 <xsl:variable name="heading" select="./tei:head[1]/text()"/>
                 <xsl:variable name="headingNo" select="concat(position(),'.')"/>
-                <a class="module" href="/{$version}/guidelines/{$name}">
+                <a class="module" href="/{$version}/guidelines/{$name}.html">
                     <span class="no"><xsl:value-of select="$headingNo"/></span>
                     <span class="title"><xsl:value-of select="$heading"/></span></a>
             </xsl:for-each>
@@ -207,7 +207,7 @@
                 <xsl:sort select="@ident" data-type="text"/>
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd_elementSpec chip {substring($name,1,1)}" href="/{$version}/elements/{$name}"><xsl:value-of select="$heading"/></a>
+                <a class="link_odd_elementSpec chip {substring($name,1,1)}" href="/{$version}/elements/{$name}.html"><xsl:value-of select="$heading"/></a>
             </xsl:for-each>
         </xsl:variable>
         
@@ -218,7 +218,7 @@
                 <xsl:sort select="@ident" data-type="text"/>
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd_classSpec chip {substring($name,7,1)}" href="/{$version}/model-classes/{$name}"><xsl:value-of select="$heading"/></a><br/>
+                <a class="link_odd_classSpec chip {substring($name,7,1)}" href="/{$version}/model-classes/{$name}.html"><xsl:value-of select="$heading"/></a><br/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -229,7 +229,7 @@
                 <xsl:sort select="@ident" data-type="text"/>
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd chip {substring($name,5,1)}" href="/{$version}/attribute-classes/{$name}"><xsl:value-of select="$heading"/></a><br/>
+                <a class="link_odd chip {substring($name,5,1)}" href="/{$version}/attribute-classes/{$name}.html"><xsl:value-of select="$heading"/></a><br/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -239,7 +239,7 @@
             <xsl:for-each select="$data.types">
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd chip {if(starts-with($name,'macro')) then(substring($name,7,1)) else(substring($name,6,1))}" href="/{$version}/data-types/{$name}"><xsl:value-of select="$heading"/></a><br/>
+                <a class="link_odd chip {if(starts-with($name,'macro')) then(substring($name,7,1)) else(substring($name,6,1))}" href="/{$version}/data-types/{$name}.html"><xsl:value-of select="$heading"/></a><br/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -840,7 +840,7 @@
             </xsl:call-template>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="$text = $elements/@ident"><a class="link_odd_elementSpec" href="{$link}"><xsl:value-of select="$text"/></a></xsl:when>
+            <xsl:when test="$text = $elements/@ident">[<xsl:value-of select="$text"/>](<xsl:value-of select="$link"/>){:.link_odd_elementSpec}</xsl:when>
             <xsl:otherwise>
                 <xsl:message select="'WARNING: Unable to retrieve definition of element ' || $text || '. No link created. Please check spelling…'"/>
                 <xsl:next-match/>
@@ -880,9 +880,7 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="$text = //tei:classSpec/@ident">
-                <a class="link_odd" href="{$link}"><xsl:value-of select="$text"/></a>
-            </xsl:when>
+            <xsl:when test="$text = //tei:classSpec/@ident">[<xsl:value-of select="$text"/>](<xsl:value-of select="$link"/>){:.link_odd}</xsl:when>
             <xsl:otherwise>
                 <xsl:message terminate="no" select="'ERROR: Unable to identify class ' || $text || ' from tei:ident element. No link created.'"/>
                 <span class="ident">
@@ -989,7 +987,7 @@
     
     <xsl:template match="tei:specList" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/></xsl:template>
     
-    <xsl:template match="tei:specDesc" mode="markdown">{% include _specDesc.html key="<xsl:value-of select="@key"/>" atts="<xsl:value-of select="@atts"/>" %}</xsl:template>
+    <xsl:template match="tei:specDesc" mode="markdown">{% include specDesc.html key="<xsl:value-of select="@key"/>" atts="<xsl:value-of select="@atts"/>" %}</xsl:template>
     
     <xsl:template match="tei:ptr">
         
@@ -1021,7 +1019,7 @@
             </xsl:when>
             <xsl:otherwise>
                 
-                <xsl:variable name="base.id" select="if($tocInfo/@level = '1') then($tocInfo/@xml:id) else($tocInfo/preceding-sibling::*[@level = '1'][1]/@xml:id)" as="xs:string"/>
+                <xsl:variable name="base.id" select="if($tocInfo/@level = '1') then($tocInfo/@xml:id || '.html') else($tocInfo/preceding-sibling::*[@level = '1'][1]/@xml:id || '.html')" as="xs:string"/>
                 
                 <a class="link_ptr" title="{$tocInfo/@head}" href="/{$version}/guidelines/{$base.id || (if(not($tocInfo/@level = '1')) then('#' || $chapter.id) else())}"><xsl:value-of select="$tocInfo/@number || ' ' || $tocInfo/@head"/></a>        
                 
@@ -1063,18 +1061,13 @@
                     <xsl:when test="exists($chapter)">
                         <xsl:variable name="head" select="string($chapter/tei:head[1]/text())" as="xs:string"/>
                         <xsl:variable name="base.id" select="$chapter/ancestor-or-self::tei:div[@type = 'div1']/@xml:id" as="xs:string"/>
-                        
-                        <a class="link_ref" title="{$head}" href="/{$version}/guidelines/{$base.id || (if($base.id = $chapter.id) then() else('#' || $chapter.id))}"><xsl:apply-templates select="node()" mode="#current"/></a>
-                        
-                    </xsl:when>
+                        <xsl:variable name="url" select="'/' || $version || '/guidelines/' || $base.id || '.html' || (if($base.id = $chapter.id) then() else('#' || $chapter.id))"/>[<xsl:apply-templates select="node()" mode="#current"/>](<xsl:value-of select="$url"/> "<xsl:value-of select="$head"/>"){:.link_ref}</xsl:when>
                     <xsl:otherwise>
                         <span class="ref" data-target="{$chapter.id}"><xsl:apply-templates select="node()" mode="#current"/></span>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <xsl:otherwise>
-                <a class="link_ref" href="{@target}"><xsl:apply-templates select="node()" mode="#current"/></a>
-            </xsl:otherwise>
+            <xsl:otherwise>[<xsl:apply-templates select="node()" mode="#current"/>](<xsl:value-of select="@target"/>){:.link_ref}</xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
@@ -1158,7 +1151,7 @@
                 <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="path" select="$outPutFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include _plainExample.html example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" %}
+        <xsl:variable name="path" select="$outPutFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include plainExample.html example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" %}
     </xsl:template>
         
     <xsl:template match="tei:table">
@@ -2405,27 +2398,27 @@
     
     <xsl:template name="linkToElement">
         <xsl:param name="elem" as="xs:string"/>
-        <xsl:value-of select="'/' || $version || '/elements/' || $elem"/>
+        <xsl:value-of select="'/' || $version || '/elements/' || $elem || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToChapter">
         <xsl:param name="chapter" as="xs:string"/>
-        <xsl:value-of select="'/' || $version || '/guidelines/' || $chapter"/>
+        <xsl:value-of select="'/' || $version || '/guidelines/' || $chapter || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToAttribute">
         <xsl:param name="att" as="xs:string"/>
-        <xsl:value-of select="'/' || $version || '/attribute-classes/' || $att"/>
+        <xsl:value-of select="'/' || $version || '/attribute-classes/' || $att || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToModel">
         <xsl:param name="model" as="xs:string"/>
-        <xsl:value-of select="'/' || $version || '/model-classes/' || $model"/>
+        <xsl:value-of select="'/' || $version || '/model-classes/' || $model || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToData">
         <xsl:param name="data" as="xs:string"/>
-        <xsl:value-of select="'/' || $version || '/data-types/' || $data"/>
+        <xsl:value-of select="'/' || $version || '/data-types/' || $data || '.html'"/>
     </xsl:template>
     
     <xsl:function name="local:padNumber2" as="xs:string">

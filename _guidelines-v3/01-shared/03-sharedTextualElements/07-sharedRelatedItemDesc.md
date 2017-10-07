@@ -7,28 +7,20 @@ title: "Related Items"
 
 In some situations it is necessary to provide references from one bibliographic item
 to
-another. For these situations, MEI offers the <a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> element. A
-
-<a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> may be used inside of 
-<a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a>, and
+another. For these situations, MEI offers the [relatedItem](/v3/elements/relatedItem.html){:.link_odd_elementSpec} element. A
+[relatedItem](/v3/elements/relatedItem.html){:.link_odd_elementSpec} may be used inside of [bibl](/v3/elements/bibl.html){:.link_odd_elementSpec}, and
 may either point to a different entity using its **@target** attribute, or may hold
 the related item as child. 
 
-{% include _plainExample.html example="./v3/examples/shared/shared-sample013.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/shared/shared-sample013.xml" valid="true" %}
 
- In this example, the nested 
-<a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> / 
-<a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a>
-provides information about the ‘container’ where the outer 
-<a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a> may be found. The kind of relation is expressed using the
-**@rel** attribute. It describes the relationship of the child 
-<a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a> to the 
-<a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a>'s parent 
-<a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a>. 
+ In this example, the nested [relatedItem](/v3/elements/relatedItem.html){:.link_odd_elementSpec} / [bibl](/v3/elements/bibl.html){:.link_odd_elementSpec}
+provides information about the ‘container’ where the outer [bibl](/v3/elements/bibl.html){:.link_odd_elementSpec} may be found. The kind of relation is expressed using the
+**@rel** attribute. It describes the relationship of the child [bibl](/v3/elements/bibl.html){:.link_odd_elementSpec} to the [relatedItem](/v3/elements/relatedItem.html){:.link_odd_elementSpec}'s parent [bibl](/v3/elements/bibl.html){:.link_odd_elementSpec}. 
 
 
 
-{% include _specDesc.html key="relatedItem" atts="rel" %}
+{% include specDesc.html key="relatedItem" atts="rel" %}
 
 
 
@@ -36,14 +28,9 @@ provides information about the ‘container’ where the outer
 the
 parent of the relatedItem. Thus, a value of **@rel**="preceding" indicates that the
 resource described within the relatedItem (or referenced by its **@target** attribute)
-precedes the 
-<a class="link_odd_elementSpec" href="/v3/elements/bibl">bibl</a> containing the 
-<a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a>.
+precedes the [bibl](/v3/elements/bibl.html){:.link_odd_elementSpec} containing the [relatedItem](/v3/elements/relatedItem.html){:.link_odd_elementSpec}.
 Following MODS, both values of "preceding" and "succeeding" indicate a temporal order.
 
 
- It is important not to confuse 
-<a class="link_odd_elementSpec" href="/v3/elements/relatedItem">relatedItem</a> with the concepts of 
-<a class="link_ref" title="Functional Requirements for Bibliographic Records (FRBR)" href="/v3/guidelines/FRBR">FRBR</a>; see 
-<a class="link_ptr" title="RelatedItem vs. FRBR" href="/v3/guidelines/header#headerRelatedItemVsFRBR">2.7 RelatedItem vs. FRBR</a>. 
+ It is important not to confuse [relatedItem](/v3/elements/relatedItem.html){:.link_odd_elementSpec} with the concepts of [FRBR](/v3/guidelines/FRBR.html "Functional Requirements for Bibliographic Records (FRBR)"){:.link_ref}; see <a class="link_ptr" title="RelatedItem vs. FRBR" href="/v3/guidelines/header.html#headerRelatedItemVsFRBR">2.7 RelatedItem vs. FRBR</a>. 
 

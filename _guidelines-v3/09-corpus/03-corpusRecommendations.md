@@ -23,8 +23,8 @@ convenient to divide the set of elements to be encoded into the following four c
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -53,7 +53,7 @@ convenient to divide the set of elements to be encoded into the following four c
          <td>proscribed</td>
          <td> - textual features in this category are deliberately not encoded; they may be
             transcribed as unmarked up text, or represented as 
-            <a class="link_odd_elementSpec" href="/v3/elements/gap">gap</a> elements, or
+            <a class="link_odd_elementSpec" href="/v3/gap">gap</a> elements, or
             silently omitted, as appropriate.
          </td>
       </tr>

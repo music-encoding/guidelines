@@ -25,7 +25,7 @@ duration of each note is given as a proportion of a whole note using the **@num*
 **@numbase**:
 
 
-{% include _plainExample.html example="./v3/examples/mensural/mensural-sample154.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/mensural/mensural-sample154.xml" valid="false" %}
 
 
 The following example illustrates an imperfection (the two *longae*) in
@@ -34,6 +34,6 @@ The following example illustrates an imperfection (the two *longae*) in
 with an additional *punctus divisionis* between the two *breves*:
 
 
-{% include _plainExample.html example="./v3/examples/mensural/mensural-sample155.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/mensural/mensural-sample155.xml" valid="false" %}
 
 

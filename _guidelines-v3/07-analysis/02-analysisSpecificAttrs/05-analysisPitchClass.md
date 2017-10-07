@@ -8,7 +8,7 @@ title: "Pitch Class"
 The **@pclass** attribute can be used to encode information about the pitch class to
 which a note belongs. The attribute's value must be an integer less than or equal
 to 11. It
-is only allowed on the <a class="link_odd_elementSpec" href="/v3/elements/note">note</a> element. The **@pclass** attribute
+is only allowed on the [note](/v3/elements/note.html){:.link_odd_elementSpec} element. The **@pclass** attribute
 comes from "musical set theory" elaborated first by Howard Hanson and Allen Forte
 as a new
 method for organizing tones. It provides a concept for categorizing musical objects
@@ -31,15 +31,14 @@ but all
 are part of the same pitch class.
 
 
-{% include _plainExample.html example="./v3/examples/analysis/analysis-sample175.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/analysis/analysis-sample175.xml" valid="false" %}
 
 
 For further information on pitch class set theory, please consult the following
 sources:
 
 
-- 
-<a class="link_ref" href="http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html">http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html</a>
+- [http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html](http://www.mta.ca/faculty/arts-letters/music/pc-set_project/pc-set_new/pages/introduction/toc.html){:.link_ref}
 - "Analyzing Atonal Music: Pitch Class Set Theory and its Contexts" by Michael Schuijler
 (2008)
 - Cohen, Allen Laurence (2004). Howard Hanson in Theory and Practice

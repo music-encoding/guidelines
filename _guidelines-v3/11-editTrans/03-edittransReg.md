@@ -19,9 +19,9 @@ explicitly marked using the following elements:
 
 
 
-{% include _specDesc.html key="reg" atts="" %}
-{% include _specDesc.html key="orig" atts="" %}
-{% include _specDesc.html key="choice" atts="" %}
+{% include specDesc.html key="reg" atts="" %}
+{% include specDesc.html key="orig" atts="" %}
+{% include specDesc.html key="choice" atts="" %}
 
 
 
@@ -32,25 +32,24 @@ piece:
 
 An encoder may choose to preserve this original clef, but flag it as nonstandard from
 the
-perspective of current practice by using the <a class="link_odd_elementSpec" href="/v3/elements/orig">orig</a> element with no
+perspective of current practice by using the [orig](/v3/elements/orig.html){:.link_odd_elementSpec} element with no
 attributes specified, as follows:
 
-{% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample218.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample218.xml" valid="true" %}
 
 
 Alternatively, the encoder may indicate that the clef has been modernized into a G-clef
 by
-using the 
-<a class="link_odd_elementSpec" href="/v3/elements/reg">reg</a> element with no attributes specified, as follows:
+using the [reg](/v3/elements/reg.html){:.link_odd_elementSpec} element with no attributes specified, as follows:
 
-{% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample219.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample219.xml" valid="true" %}
 
 
 As another alternative, the encoder may encode both the old and modernized shapes,
 so that
 applications may render both at the reader's will:
 
-{% include _plainExample.html example="./v3/examples/editTrans/editTrans-sample220.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample220.xml" valid="true" %}
 
 
 As described above, the **@resp** attribute may be used to specify the agent

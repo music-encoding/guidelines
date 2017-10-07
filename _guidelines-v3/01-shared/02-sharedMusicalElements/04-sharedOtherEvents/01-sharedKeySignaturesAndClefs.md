@@ -11,10 +11,10 @@ treated as events.
 
 
 
-{% include _specDesc.html key="keySig" atts="" %}
-{% include _specDesc.html key="keyAccid" atts="" %}
-{% include _specDesc.html key="clef" atts="" %}
-{% include _specDesc.html key="clefGrp" atts="" %}
+{% include specDesc.html key="keySig" atts="" %}
+{% include specDesc.html key="keyAccid" atts="" %}
+{% include specDesc.html key="clef" atts="" %}
+{% include specDesc.html key="clefGrp" atts="" %}
 
 
 

@@ -22,8 +22,7 @@ sectionid: "FRBR"
    the FRBR
    module adapts the Functional Requirements for Bibliographic Records (FRBR) as recommended
    by the
-   International Federation of Library Associations and Institutions (IFLA) [
-   <a class="link_ref" href="http://www.ifla.org/publications/functional-requirements-for-bibliographic-records">http://www.ifla.org/publications/functional-requirements-for-bibliographic-records</a>].
+   International Federation of Library Associations and Institutions (IFLA) [[http://www.ifla.org/publications/functional-requirements-for-bibliographic-records](http://www.ifla.org/publications/functional-requirements-for-bibliographic-records){:.link_ref}].
    
    The IFLA’s FRBR model distinguishes four levels of abstraction, or entities:
    
@@ -31,8 +30,8 @@ sectionid: "FRBR"
    <table class="table table-striped table-hover">
       <thead>
          <tr>
-            <th>name</th>
-            <th>genre</th>
+            <th>Value</th>
+            <th>Description</th>
          </tr>
       </thead>
       <tbody>

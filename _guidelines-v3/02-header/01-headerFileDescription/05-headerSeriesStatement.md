@@ -5,12 +5,11 @@ title: "Series Statement"
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/seriesStmt">seriesStmt</a> element is the fifth component of the 
-<a class="link_odd_elementSpec" href="/v3/elements/fileDesc">fileDesc</a> element and is optional.
+The [seriesStmt](/v3/elements/seriesStmt.html){:.link_odd_elementSpec} element is the fifth component of the [fileDesc](/v3/elements/fileDesc.html){:.link_odd_elementSpec} element and is optional.
 
 
 
-{% include _specDesc.html key="seriesStmt" atts="" %}
+{% include specDesc.html key="seriesStmt" atts="" %}
 
 
 
@@ -27,64 +26,52 @@ in
 character and issued in sequence.
 - A separately numbered sequence of volumes within a series or serial.
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/seriesStmt">seriesStmt</a> element may contain one or more of the following more
+The [seriesStmt](/v3/elements/seriesStmt.html){:.link_odd_elementSpec} element may contain one or more of the following more
 specific elements:
 
 
 
-{% include _specDesc.html key="title" atts="" %}
-{% include _specDesc.html key="editor" atts="" %}
-{% include _specDesc.html key="respStmt" atts="" %}
-{% include _specDesc.html key="identifier" atts="" %}
-{% include _specDesc.html key="contents" atts="" %}
-{% include _specDesc.html key="seriesStmt" atts="" %}
+{% include specDesc.html key="title" atts="" %}
+{% include specDesc.html key="editor" atts="" %}
+{% include specDesc.html key="respStmt" atts="" %}
+{% include specDesc.html key="identifier" atts="" %}
+{% include specDesc.html key="contents" atts="" %}
+{% include specDesc.html key="seriesStmt" atts="" %}
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/title">title</a>, 
-<a class="link_odd_elementSpec" href="/v3/elements/editor">editor</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/identifier">identifier</a> elements have the same function described above: identification of the
+The [title](/v3/elements/title.html){:.link_odd_elementSpec}, [editor](/v3/elements/editor.html){:.link_odd_elementSpec} and [identifier](/v3/elements/identifier.html){:.link_odd_elementSpec} elements have the same function described above: identification of the
 item, in this case the series, and the individuals or groups responsible for its creation.
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/title">title</a> element is required within 
-<a class="link_odd_elementSpec" href="/v3/elements/seriesStmt">seriesStmt</a>.
+The [title](/v3/elements/title.html){:.link_odd_elementSpec} element is required within [seriesStmt](/v3/elements/seriesStmt.html){:.link_odd_elementSpec}.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample036.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample036.xml" valid="true" %}
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/identifier">identifier</a> element may be used to supply any identifying number
+The [identifier](/v3/elements/identifier.html){:.link_odd_elementSpec} element may be used to supply any identifying number
 associated with the series, including both standard numbers such as an ISSN and particular
 issue numbers. Its **@type** attribute is used to categorize the number further,
 taking the value 'ISSN' for an ISSN, for example.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample037.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample037.xml" valid="true" %}
 
-The contents of the series may be enumerated using the 
-<a class="link_odd_elementSpec" href="/v3/elements/contents">contents</a>
+The contents of the series may be enumerated using the [contents](/v3/elements/contents.html){:.link_odd_elementSpec}
 element. Use of this element should be determined by the complexity of the resource
 and
-whether or not the information is readily available. The 
-<a class="link_odd_elementSpec" href="/v3/elements/contents">contents</a>
+whether or not the information is readily available. The [contents](/v3/elements/contents.html){:.link_odd_elementSpec}
 element may consist of a single paragraph when unstructured information is sufficient.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample038.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample038.xml" valid="true" %}
 
-Alternatively, 
-<a class="link_odd_elementSpec" href="/v3/elements/contentItem">contentItem</a> elements may be used to provide structure
+Alternatively, [contentItem](/v3/elements/contentItem.html){:.link_odd_elementSpec} elements may be used to provide structure
 for the content description.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample039.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample039.xml" valid="true" %}
 
 Finally, using the **@target** attribute, a link to an external table of contents may
-be supplied in lieu of or in addition to the child elements of 
-<a class="link_odd_elementSpec" href="/v3/elements/contents">contents</a>.
+be supplied in lieu of or in addition to the child elements of [contents](/v3/elements/contents.html){:.link_odd_elementSpec}.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample040.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample040.xml" valid="true" %}
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/seriesStmt">seriesStmt</a> element is allowed to nest within itself in order to
+The [seriesStmt](/v3/elements/seriesStmt.html){:.link_odd_elementSpec} element is allowed to nest within itself in order to
 accommodate a series within a series.
 
 

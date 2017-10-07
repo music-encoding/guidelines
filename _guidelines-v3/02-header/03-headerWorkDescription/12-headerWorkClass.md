@@ -5,8 +5,7 @@ title: "Classification"
 
 
 
-The next component of the core <a class="link_odd_elementSpec" href="/v3/elements/workDesc">workDesc</a> element is the 
-<a class="link_odd_elementSpec" href="/v3/elements/classification">classification</a> element. This element is used to classify a musical text
+The next component of the core [workDesc](/v3/elements/workDesc.html){:.link_odd_elementSpec} element is the [classification](/v3/elements/classification.html){:.link_odd_elementSpec} element. This element is used to classify a musical text
 according to one or more of the following methods:
 
 
@@ -22,16 +21,14 @@ The following elements are provided for this purpose:
 
 
 
-{% include _specDesc.html key="termList" atts="" %}
-{% include _specDesc.html key="classCode" atts="" %}
+{% include specDesc.html key="termList" atts="" %}
+{% include specDesc.html key="classCode" atts="" %}
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/termList">termList</a> element categorizes an individual text by supplying a
+The [termList](/v3/elements/termList.html){:.link_odd_elementSpec} element categorizes an individual text by supplying a
 set of terms which may describe its topic or subject matter, its physical or intellectual
-form, date, etc. Each term is indicated by a 
-<a class="link_odd_elementSpec" href="/v3/elements/term">term</a> element. In some
+form, date, etc. Each term is indicated by a [term](/v3/elements/term.html){:.link_odd_elementSpec} element. In some
 schemes, the order of items in the list is significant, for example, from major topic
 to
 minor; in others, the list has an organized substructure of its own. No recommendations
@@ -44,20 +41,19 @@ The classCode element offers the possibility of capturing a bibliographic citati
 and/or a
 URI at which the classification scheme or information about it may be found.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample070.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample070.xml" valid="true" %}
 
-{% include _plainExample.html example="./v3/examples/header/header-sample071.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample071.xml" valid="true" %}
 
-{% include _plainExample.html example="./v3/examples/header/header-sample072.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample072.xml" valid="true" %}
 
 The **@classcode** attribute may be used on each term element to make reference, by
 means of an identifier, to the classification scheme from which it is drawn.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample073.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample073.xml" valid="true" %}
 
-Alternatively, **@classcode** may be used on 
-<a class="link_odd_elementSpec" href="/v3/elements/termList">termList</a> when all
+Alternatively, **@classcode** may be used on [termList](/v3/elements/termList.html){:.link_odd_elementSpec} when all
 the contained terms come from the same source.
 
-{% include _plainExample.html example="./v3/examples/header/header-sample074.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample074.xml" valid="true" %}
 

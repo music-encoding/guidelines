@@ -7,8 +7,7 @@ title: "Octave Shift"
 
 An indication that a passage should be performed one or more octaves above or below
 its
-written pitch is represented by the <a class="link_odd_elementSpec" href="/v3/elements/octave">octave</a> element.
-
+written pitch is represented by the [octave](/v3/elements/octave.html){:.link_odd_elementSpec} element.
 
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/octave-a-20100510.png" class="img-responsive"></img>

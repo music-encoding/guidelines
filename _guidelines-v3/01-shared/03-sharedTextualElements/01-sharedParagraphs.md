@@ -14,13 +14,11 @@ HTML.
 
 
 
-{% include _specDesc.html key="p" atts="" %}
+{% include specDesc.html key="p" atts="" %}
 
 
 
-In MEI, a <a class="link_odd_elementSpec" href="/v3/elements/p">p</a> is used in many different situations, including
-transcriptional use within a 
-<a class="link_odd_elementSpec" href="/v3/elements/titlePage">titlePage</a> or descriptive purposes as in a
-
-<a class="link_odd_elementSpec" href="/v3/elements/changeDesc">changeDesc</a>.
+In MEI, a [p](/v3/elements/p.html){:.link_odd_elementSpec} is used in many different situations, including
+transcriptional use within a [titlePage](/v3/elements/titlePage.html){:.link_odd_elementSpec} or descriptive purposes as in a
+[changeDesc](/v3/elements/changeDesc.html){:.link_odd_elementSpec}.
 

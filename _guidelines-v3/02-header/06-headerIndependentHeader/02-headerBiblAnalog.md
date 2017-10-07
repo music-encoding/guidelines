@@ -13,7 +13,7 @@ purpose, the following attribute is provided on most meiHead elements:
 
 
 
-{% include _specDesc.html key="att.bibl" atts="analog" %}
+{% include specDesc.html key="att.bibl" atts="analog" %}
 
 
 

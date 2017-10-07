@@ -5,12 +5,12 @@ title: "Vocally Performed Text Encoded Separately"
 
 
 
-Vocally performed text may also be encoded separately from the notes with the <a class="link_odd_elementSpec" href="/v3/elements/lyrics">lyrics</a> element. These are the main components:
+Vocally performed text may also be encoded separately from the notes with the [lyrics](/v3/elements/lyrics.html){:.link_odd_elementSpec} element. These are the main components:
 
 
 
-{% include _specDesc.html key="lyrics" atts="" %}
-{% include _specDesc.html key="lyrics" atts="staff layer" %}
+{% include specDesc.html key="lyrics" atts="" %}
+{% include specDesc.html key="lyrics" atts="staff layer" %}
 
 
 
@@ -22,29 +22,26 @@ The
 that staff, the **@layer** attribute may be used to indicate the layer from which the
 rhythm should be taken. If there is any divergence between the rhythm of the vocally
 performed
-text and the notes, the **@rhythm** attribute on 
-<a class="link_odd_elementSpec" href="/v3/elements/verse">verse</a> may be used
+text and the notes, the **@rhythm** attribute on [verse](/v3/elements/verse.html){:.link_odd_elementSpec} may be used
 to specify the text's rhythm.
 
 
 The following example from Carl Maria von Weber's *Der Freischütz* illustrates
 this encoding method:
 
-
 <figure class="figure">
    <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_lyric.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 52. Weber, Der Freischütz</figcaption>
 </figure>
-{% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
 
 
-In this encoding style, a 
-<a class="link_odd_elementSpec" href="/v3/elements/syl">syl</a> element with its **@con** attribute
+In this encoding style, a [syl](/v3/elements/syl.html){:.link_odd_elementSpec} element with its **@con** attribute
 set to 't' and the following syllable are presumed to be associated with a single
 note. In the
 following example, the first two syllables occur on the first note and the third syllable
 occurs on the second note.
 
-{% include _plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample268.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample268.xml" valid="false" %}
 
 

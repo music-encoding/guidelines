@@ -7,15 +7,13 @@ title: "Text Directives"
 
 All of the following elements can be considered text directives; however, MEI uses
 the
-<a class="link_odd_elementSpec" href="/v3/elements/dir">dir</a> element specifically for words, abbreviations, numbers, or
+[dir](/v3/elements/dir.html){:.link_odd_elementSpec} element specifically for words, abbreviations, numbers, or
 symbols specifying or suggesting the manner of performance that are not encoded elsewhere
-using the more specific elements of 
-<a class="link_odd_elementSpec" href="/v3/elements/tempo">tempo</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/dynam">dynam</a>.
+using the more specific elements of [tempo](/v3/elements/tempo.html){:.link_odd_elementSpec} and [dynam](/v3/elements/dynam.html){:.link_odd_elementSpec}.
 
 
 
-{% include _specDesc.html key="dir" atts="" %}
+{% include specDesc.html key="dir" atts="" %}
 
 
 

@@ -7,16 +7,15 @@ title: "Physical Description of the File"
 
 The third component of the fileDesc is a description of the physical qualities of
 the file.
-The <a class="link_odd_elementSpec" href="/v3/elements/extent">extent</a> element is provided for this purpose.
+The [extent](/v3/elements/extent.html){:.link_odd_elementSpec} element is provided for this purpose.
 
 
 
-{% include _specDesc.html key="extent" atts="" %}
+{% include specDesc.html key="extent" atts="" %}
 
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/extent">extent</a> element describes the approximate size of a text as stored
+The [extent](/v3/elements/extent.html){:.link_odd_elementSpec} element describes the approximate size of a text as stored
 on some carrier medium, whether digital or non-digital, specified in any convenient
 units.
 
@@ -48,8 +47,7 @@ file may
 be of use for cataloging and other practical purposes. Because the measurement and
 expression of file size is fraught with difficulties, only very general recommendations
 are
-possible; the element 
-<a class="link_odd_elementSpec" href="/v3/elements/extent">extent</a> should contain a phrase indicating the
+possible; the element [extent](/v3/elements/extent.html){:.link_odd_elementSpec} should contain a phrase indicating the
 size or approximate size of the computer file in one of the following ways:
 
 
@@ -67,13 +65,12 @@ paragraphs)
 drives, DVDs)
 
 The use of standard abbreviations for units of quantity is recommended where applicable,
-here as elsewhere (see 
-<a class="link_ref" href="http://physics.nist.gov/cuu/Units/binary.html">http://physics.nist.gov/cuu/Units/binary.html</a>).
+here as elsewhere (see [http://physics.nist.gov/cuu/Units/binary.html](http://physics.nist.gov/cuu/Units/binary.html){:.link_ref}).
 
-{% include _plainExample.html example="./v3/examples/header/header-sample031.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/header/header-sample031.xml" valid="false" %}
 
 For ease of processability, the use of the **@unit** attribute is recommended, as in
 the following example:
 
-{% include _plainExample.html example="./v3/examples/header/header-sample032.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/header/header-sample032.xml" valid="true" %}
 

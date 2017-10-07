@@ -9,61 +9,48 @@ The following elements are defined in the critApp Module:
 
 
 
-{% include _specDesc.html key="app" atts="" %}
-{% include _specDesc.html key="lem" atts="" %}
-{% include _specDesc.html key="rdg" atts="" %}
+{% include specDesc.html key="app" atts="" %}
+{% include specDesc.html key="lem" atts="" %}
+{% include specDesc.html key="rdg" atts="" %}
 
 
 
-An <a class="link_odd_elementSpec" href="/v3/elements/app">app</a> element always encapsulates the differences between varying
+An [app](/v3/elements/app.html){:.link_odd_elementSpec} element always encapsulates the differences between varying
 sources. Therefore, it must contain at least two child elements.
- Possible child elements are 
-<a class="link_odd_elementSpec" href="/v3/elements/lem">lem</a> and 
-<a class="link_odd_elementSpec" href="/v3/elements/rdg">rdg</a>, which use the same model, but have a different
-meaning: Whereas 
-<a class="link_odd_elementSpec" href="/v3/elements/lem">lem</a> is used for prioritizing one alternative, a 
-<a class="link_odd_elementSpec" href="/v3/elements/rdg">rdg</a> has no such additional meaning and simply indicates a reading as found
-in one or more sources. Accordingly, 
-<a class="link_odd_elementSpec" href="/v3/elements/lem">lem</a> is allowed only once in 
-<a class="link_odd_elementSpec" href="/v3/elements/app">app</a>, whereas 
-<a class="link_odd_elementSpec" href="/v3/elements/rdg">rdg</a> may appear as often as
+ Possible child elements are [lem](/v3/elements/lem.html){:.link_odd_elementSpec} and [rdg](/v3/elements/rdg.html){:.link_odd_elementSpec}, which use the same model, but have a different
+meaning: Whereas [lem](/v3/elements/lem.html){:.link_odd_elementSpec} is used for prioritizing one alternative, a [rdg](/v3/elements/rdg.html){:.link_odd_elementSpec} has no such additional meaning and simply indicates a reading as found
+in one or more sources. Accordingly, [lem](/v3/elements/lem.html){:.link_odd_elementSpec} is allowed only once in [app](/v3/elements/app.html){:.link_odd_elementSpec}, whereas [rdg](/v3/elements/rdg.html){:.link_odd_elementSpec} may appear as often as
 necessary.
 
-{% include _plainExample.html example="./v3/examples/critApp/critApp-sample199.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/critApp/critApp-sample199.xml" valid="true" %}
 
 
-The 
-<a class="link_odd_elementSpec" href="/v3/elements/rdg">rdg</a> (and 
-<a class="link_odd_elementSpec" href="/v3/elements/lem">lem</a>) elements use the
+The [rdg](/v3/elements/rdg.html){:.link_odd_elementSpec} (and [lem](/v3/elements/lem.html){:.link_odd_elementSpec}) elements use the
 **@source** attribute to point to one or more descriptions of the bibliographic
 sources containing the material they mark:
 
-{% include _plainExample.html example="./v3/examples/critApp/critApp-sample200.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/critApp/critApp-sample200.xml" valid="false" %}
 
 
-The **@seq** attribute may be used on 
-<a class="link_odd_elementSpec" href="/v3/elements/lem">lem</a> or 
-<a class="link_odd_elementSpec" href="/v3/elements/rdg">rdg</a> to record the sequence of a series of readings. In the following example, the
+The **@seq** attribute may be used on [lem](/v3/elements/lem.html){:.link_odd_elementSpec} or [rdg](/v3/elements/rdg.html){:.link_odd_elementSpec} to record the sequence of a series of readings. In the following example, the
 material in source B is marked as sequential to (and perhaps derived from) the reading
 in
 source A:
 
-{% include _plainExample.html example="./v3/examples/critApp/critApp-sample201.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/critApp/critApp-sample201.xml" valid="true" %}
 
 
-If a source has additional content that is not found in other sources, an empty 
-<a class="link_odd_elementSpec" href="/v3/elements/rdg">rdg</a> element may be used to indicate the lack of material in the other
+If a source has additional content that is not found in other sources, an empty [rdg](/v3/elements/rdg.html){:.link_odd_elementSpec} element may be used to indicate the lack of material in the other
 sources. In the following example, source 1 includes material that is not found in
 sources 2
 and 3:
 
-{% include _plainExample.html example="./v3/examples/critApp/critApp-sample202.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/critApp/critApp-sample202.xml" valid="true" %}
 
 
 When working with a large number of sources, it might seem tedious to provide references
 for
-all sources. However, use of the 
-<a class="link_odd_elementSpec" href="/v3/elements/rdg">rdg</a> element without **@source**
+all sources. However, use of the [rdg](/v3/elements/rdg.html){:.link_odd_elementSpec} element without **@source**
 is not recommended because such an encoding is not explicit and is therefore difficult
 to
 process.

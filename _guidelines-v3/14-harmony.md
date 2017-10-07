@@ -13,7 +13,7 @@ sectionid: "harmony"
    and the
    methods by which these indications can be connected with their interpretations. For
    encoder-supplied analysis of intervallic content, please see chapter 
-   <a class="link_ptr" title="Analytical Information" href="/v3/guidelines/analysis">7 Analytical Information</a>. 
+   <a class="link_ptr" title="Analytical Information" href="/v3/guidelines/analysis.html">7 Analytical Information</a>. 
    
    
    

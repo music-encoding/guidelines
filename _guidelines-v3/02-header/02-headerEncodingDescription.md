@@ -5,7 +5,7 @@ title: "Encoding Description"
 
 
 
-The <a class="link_odd_elementSpec" href="/v3/elements/encodingDesc">encodingDesc</a> element is the second major subdivision of the MEI
+The [encodingDesc](/v3/elements/encodingDesc.html){:.link_odd_elementSpec} element is the second major subdivision of the MEI
 header. It specifies the methods and editorial principles which governed the transcription
 or
 encoding of the source material. Though not formally required, its use is highly
@@ -13,7 +13,7 @@ recommended.
 
 
 
-{% include _specDesc.html key="encodingDesc" atts="" %}
+{% include specDesc.html key="encodingDesc" atts="" %}
 
 
 
@@ -23,10 +23,10 @@ default, this class makes available the following elements:
 
 
 
-{% include _specDesc.html key="appInfo" atts="" %}
-{% include _specDesc.html key="editorialDecl" atts="" %}
-{% include _specDesc.html key="projectDesc" atts="" %}
-{% include _specDesc.html key="samplingDecl" atts="" %}
+{% include specDesc.html key="appInfo" atts="" %}
+{% include specDesc.html key="editorialDecl" atts="" %}
+{% include specDesc.html key="projectDesc" atts="" %}
+{% include specDesc.html key="samplingDecl" atts="" %}
 
 
 

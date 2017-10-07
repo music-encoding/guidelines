@@ -12,19 +12,15 @@ may stand above or below the staff it affects. If this symbol is used, its
 or rest under it should be held longer than its written duration would normally require.
 Sometimes, a fermata occurs over a barline to indicate the end of a phrase or section.
 
-In MEI, fermatas may be encoded using an attribute on <a class="link_odd_elementSpec" href="/v3/elements/note">note</a>, 
-<a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a> or 
-<a class="link_odd_elementSpec" href="/v3/elements/rest">rest</a>. This attribute allows placement
+In MEI, fermatas may be encoded using an attribute on [note](/v3/elements/note.html){:.link_odd_elementSpec}, [chord](/v3/elements/chord.html){:.link_odd_elementSpec} or [rest](/v3/elements/rest.html){:.link_odd_elementSpec}. This attribute allows placement
 of a fermata above or below the element to which it's attached.
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample142.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample142.xml" valid="true" %}
 
 However, if there is further information about the fermata that should be addressed
 in
-the encoding, MEI offers the 
-<a class="link_odd_elementSpec" href="/v3/elements/fermata">fermata</a> element. This element, which is
-a member of the 
-<a class="link_odd" href="/v3/model-classes/model.controleventLike">model.controleventLike</a> class and therefore
+the encoding, MEI offers the [fermata](/v3/elements/fermata.html){:.link_odd_elementSpec} element. This element, which is
+a member of the [model.controleventLike](/v3/model-classes/model.controleventLike.html){:.link_odd} class and therefore
 requires the use of such attributes as **@staff**, **@layer**,
 **@tstamp** and **@startid**, allows specification of the orientation of the
 fermata using its **@form** attribute. In addition, the **@shape** attribute
@@ -34,6 +30,6 @@ semisquare ("square"). If the fermata should be rendered using some other symbol
 a
 user-defined symbol may be referred to using the **@altsym** attribute.
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample143.xml" valid="false" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample143.xml" valid="false" %}
 
 

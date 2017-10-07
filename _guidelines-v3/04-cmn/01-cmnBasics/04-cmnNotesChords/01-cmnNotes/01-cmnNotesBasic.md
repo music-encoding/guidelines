@@ -14,26 +14,24 @@ In CMN, notes are determined by three basic parameters:
 
 A typical note, in this case a quarter note C4, is therefore encoded like so:
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample096.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample096.xml" valid="true" %}
 
 Because these attributes may not be required in all situations (such as **@dur**
 for the notes of a chord), processing software should anticipate retrieving the
 information that would have been provided by missing attributes from a preceding note
 or
-<a class="link_odd_elementSpec" href="/v3/elements/chord">chord</a> parent in the same 
-<a class="link_odd_elementSpec" href="/v3/elements/layer">layer</a>. Only
+[chord](/v3/elements/chord.html){:.link_odd_elementSpec} parent in the same [layer](/v3/elements/layer.html){:.link_odd_elementSpec}. Only
 information from **@pname**, **@oct** and **@dur** attributes can be
 gathered in this fashion. No other attributes can be treated this way.
 
 
 The usual CMN-specific values for **@dur** are:
 
-
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -75,8 +73,8 @@ they sometimes also appear in CMN:
 <table class="table table-striped table-hover">
    <thead>
       <tr>
-         <th>name</th>
-         <th>genre</th>
+         <th>Value</th>
+         <th>Description</th>
       </tr>
    </thead>
    <tbody>
@@ -97,5 +95,5 @@ Dotted durational values are accommodated by the **@dots** attribute, which
 records the number of written augmentation dots. Thus, a dotted quarter note may is
 represented:
 
-{% include _plainExample.html example="./v3/examples/cmn/cmn-sample097.xml" valid="true" %}
+{% include plainExample.html example="./v3/examples/cmn/cmn-sample097.xml" valid="true" %}
 
