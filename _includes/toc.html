@@ -2,15 +2,24 @@
 {% for doc in c.docs %}
   {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
   {% assign levels = doc.relative_path | split: '/' %}
-  {% if levels.size < 3 %}
   {% assign levels = levels | shift %}
-  
-  <p>   
-      <a href="{{ doc.sectionid | downcase | url_encode }}.html">
-          {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
-      </a>
-  </p>
-  
+
+  {% if include.section != '') %}
+    {% if doc.url contains include.section and levels.size > 1 and levels.size < 3 %}
+<p>   
+    <a href="{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
+        {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
+    </a>
+</p>
+    {% endif %}
+
+  {% elsif levels.size < 2 %}
+
+<p>
+    <a href="{{ doc.sectionid | downcase | url_encode }}.html">
+      {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
+    </a>
+</p> 
   {% endif %}
       
 {% endfor %}

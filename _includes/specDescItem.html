@@ -7,7 +7,7 @@
     <div class="tile-content">
         <div class="tile-title">
             {% if include.att %}
-                @{{ include.att }}
+                @{{ include.att | split: '/' | last }}
             {% else %}  
                 {{ include.elem }}
             {% endif %}
@@ -17,6 +17,6 @@
             {% if include.att %}
                 {% assign file = include.version | append:'/desc/' | append:include.att | append:'.txt' %}
             {% endif %}
-            {% include {{ file }} %}</div>
+            {{ include {{ file | replace: ':', '---' }} }}</div>
     </div>
 </div>

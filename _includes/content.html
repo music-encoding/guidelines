@@ -1,6 +1,6 @@
 {% assign c = site.collections | where: "label", include.version | first %}
 {% for doc in c.docs %}
-  {% if doc.relative_path contains include.dir %}
+  {% if doc.relative_path contains include.section %}
 
   {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
   {% assign levels = doc.relative_path | split: '/' %}
