@@ -1,37 +1,18 @@
-<span class="dropdown dropdownCustomMenuToggle">
-    <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">Current (MEI 3.0.0) <i class="icon icon-caret"></i></a>
-    <ul class="menu">
-        <li class="menu-item">
-            <a href="#" class="btn btn-link text-left">Current (MEI 3.0.0)</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="btn btn-link text-left">MEI 2.1.1</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="btn btn-link text-left">MEI 2.0.0</a>
-        </li>
-        <li class="menu-item">
-            <a href="#" class="btn btn-link text-left">Development Version</a>
-        </li>
-    </ul>
-</span>
-
-<!--
 {% for entry in site.menu %}
     <span class="dropdown dropdownCustomMenuToggle">
         {% unless entry.submenu %}
-            <a href="{{m.url}}" class="btn btn-link" tabindex="{{ forloop.index0}}">
+            <a href="{{m.url}}" class="btn btn-link top-menu-link" tabindex="{{ forloop.index0}}">
                 {{ entry.label }}
             </a>
         {% else %}
-            <a href="#" class="btn btn-link dropdown-toggle" tabindex="{{ forloop.index0}}">
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="{{ forloop.index0}}">
                 {{ entry.label }} <i class="icon icon-caret"></i>
             </a>
             
             {% for item in entry.submenu %}
             {% if forloop.first %} <ul class="menu"> {% endif %}
                 <li class="menu-item">
-                    <a href="{{entry.url}}{{item.url}}" class="btn btn-link text-left">
+                    <a href="{{entry.url}}{{item.url}}" class="btn btn-link text-left menu-link">
                         {{item.label}}
                     </a>
                 </li>
@@ -40,26 +21,4 @@
             
         {% endunless %}
     </span>
-
 {% endfor %}
--->
-<script type="text/javascript">
-    /*var items = document.querySelectorAll('.dropdownCustomMenuToggle');
-    console.log(items);
-    
-    for(var i=0; i < items.length;i++) {
-        var item = items[i];
-        
-        item.addEventListener('mouseenter',function(e) {
-            console.log('opening menu')
-           
-            e.target.classList.add('active');
-        });
-        
-        item.addEventListener('mouseleave',function(e) {
-            console.log(e)
-            
-            e.target.classList.remove('active');
-        });
-    }*/
-</script>
