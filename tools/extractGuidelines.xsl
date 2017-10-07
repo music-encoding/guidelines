@@ -456,7 +456,7 @@
         <xsl:for-each select="$items">
             <xsl:variable name="name" select="if($mode = 'chapters') then(@xml:id) else(@ident)" as="xs:string"/>
             
-            <xsl:variable name="result" as="node()">
+            <xsl:variable name="result" as="node()+">
                 <xsl:choose>
                     <xsl:when test="$mode = 'chapters'">
                         <xsl:apply-templates select="." mode="markdown"/>
@@ -620,6 +620,11 @@
         </xsl:result-document>
             
     </xsl:template>
+    
+    <xsl:template match="tei:div[@type = 'div1']" mode="markdown">
+        <xsl:apply-templates select="node()" mode="#current"/>
+    </xsl:template>
+    
     
     <xsl:template match="tei:div[not(@type = 'div1')]" mode="markdown"/>
     

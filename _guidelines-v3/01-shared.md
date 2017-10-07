@@ -6,16 +6,14 @@ title: "Shared Elements, Models, and Attributes"
 sectionid: "shared"
 ---
 
-<span class="div">
-   
-   This chapter describes the elements, models, and attributes that are part of the MEI.shared
-   module. The shared module contains declarations that are common to two or more other
-   modules.
-   
-   
-   
-   
-   
-   
-   
-</span>
+
+
+This chapter describes the elements, models, and attributes that are part of the MEI.shared
+module. The shared module contains declarations that are common to two or more other
+modules.
+
+
+
+
+
+
