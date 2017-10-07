@@ -20,9 +20,9 @@ explicitly marked using the following elements:
 
 
 
-{% include specDesc.html version=page.version key="reg" atts="" %}
-{% include specDesc.html version=page.version key="orig" atts="" %}
-{% include specDesc.html version=page.version key="choice" atts="" %}
+{% include specDesc.html version=page.version elem="reg" atts="" %}
+{% include specDesc.html version=page.version elem="orig" atts="" %}
+{% include specDesc.html version=page.version elem="choice" atts="" %}
 
 
 

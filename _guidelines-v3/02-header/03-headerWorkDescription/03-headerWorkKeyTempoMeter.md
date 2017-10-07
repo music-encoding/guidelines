@@ -12,10 +12,10 @@ it does not have a distinctive title.
 
 
 
-{% include specDesc.html version=page.version key="key" atts="" %}
-{% include specDesc.html version=page.version key="mensuration" atts="" %}
-{% include specDesc.html version=page.version key="meter" atts="" %}
-{% include specDesc.html version=page.version key="tempo" atts="" %}
+{% include specDesc.html version=page.version elem="key" atts="" %}
+{% include specDesc.html version=page.version elem="mensuration" atts="" %}
+{% include specDesc.html version=page.version elem="meter" atts="" %}
+{% include specDesc.html version=page.version elem="tempo" atts="" %}
 
 
 

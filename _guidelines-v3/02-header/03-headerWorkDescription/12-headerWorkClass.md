@@ -22,8 +22,8 @@ The following elements are provided for this purpose:
 
 
 
-{% include specDesc.html version=page.version key="termList" atts="" %}
-{% include specDesc.html version=page.version key="classCode" atts="" %}
+{% include specDesc.html version=page.version elem="termList" atts="" %}
+{% include specDesc.html version=page.version elem="classCode" atts="" %}
 
 
 

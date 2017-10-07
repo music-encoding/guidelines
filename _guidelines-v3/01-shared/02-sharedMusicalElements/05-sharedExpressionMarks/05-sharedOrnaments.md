@@ -11,7 +11,7 @@ notes to one or more notes of the melody.
 
 
 
-{% include specDesc.html version=page.version key="ornam" atts="" %}
+{% include specDesc.html version=page.version elem="ornam" atts="" %}
 
 
 

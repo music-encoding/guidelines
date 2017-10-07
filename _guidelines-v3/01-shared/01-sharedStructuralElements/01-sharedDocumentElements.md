@@ -12,12 +12,12 @@ an MEI document:
 
 
 
-{% include specDesc.html version=page.version key="mei" atts="" %}
-{% include specDesc.html version=page.version key="mei" atts="att.meiversion/meiversion.txt" %}
+{% include specDesc.html version=page.version elem="mei" atts="" %}
+{% include specDesc.html version=page.version elem="mei" atts="att.meiversion/meiversion" %}
 
-{% include specDesc.html version=page.version key="meiCorpus" atts="" %}
-{% include specDesc.html version=page.version key="meiHead" atts="" %}
-{% include specDesc.html version=page.version key="music" atts="" %}
+{% include specDesc.html version=page.version elem="meiCorpus" atts="" %}
+{% include specDesc.html version=page.version elem="meiHead" atts="" %}
+{% include specDesc.html version=page.version elem="music" atts="" %}
 
 
 

@@ -15,9 +15,9 @@ Attires’) or the name of an actor or actress (‘Old Lady Squeamish. Mrs Rutte
 
 
 
-{% include specDesc.html version=page.version key="castList" atts="" %}
-{% include specDesc.html version=page.version key="castItem" atts="" %}
-{% include specDesc.html version=page.version key="castGrp" atts="" %}
+{% include specDesc.html version=page.version elem="castList" atts="" %}
+{% include specDesc.html version=page.version elem="castItem" atts="" %}
+{% include specDesc.html version=page.version elem="castGrp" atts="" %}
 
 
 
@@ -32,9 +32,9 @@ following elements:
 
 
 
-{% include specDesc.html version=page.version key="role" atts="" %}
-{% include specDesc.html version=page.version key="roleDesc" atts="" %}
-{% include specDesc.html version=page.version key="perfRes" atts="" %}
+{% include specDesc.html version=page.version elem="role" atts="" %}
+{% include specDesc.html version=page.version elem="roleDesc" atts="" %}
+{% include specDesc.html version=page.version elem="perfRes" atts="" %}
 
 
 
@@ -54,7 +54,7 @@ The [castItem](/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpe
 
 
 
-{% include specDesc.html version=page.version key="actor" atts="" %}
+{% include specDesc.html version=page.version elem="actor" atts="" %}
 
 
 

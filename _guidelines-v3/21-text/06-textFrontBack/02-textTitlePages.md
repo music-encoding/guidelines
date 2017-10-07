@@ -17,12 +17,12 @@ features of most title pages for faithful rendition:
 
 
 
-{% include specDesc.html version=page.version key="titlePage" atts="" %}
-{% include specDesc.html version=page.version key="p" atts="" %}
-{% include specDesc.html version=page.version key="table" atts="" %}
-{% include specDesc.html version=page.version key="list" atts="" %}
-{% include specDesc.html version=page.version key="quote" atts="" %}
-{% include specDesc.html version=page.version key="lg" atts="" %}
+{% include specDesc.html version=page.version elem="titlePage" atts="" %}
+{% include specDesc.html version=page.version elem="p" atts="" %}
+{% include specDesc.html version=page.version elem="table" atts="" %}
+{% include specDesc.html version=page.version elem="list" atts="" %}
+{% include specDesc.html version=page.version elem="quote" atts="" %}
+{% include specDesc.html version=page.version elem="lg" atts="" %}
 
 
 

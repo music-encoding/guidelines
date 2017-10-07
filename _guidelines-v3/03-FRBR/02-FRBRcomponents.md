@@ -11,7 +11,7 @@ constituent parts. All four entities utilize the same element:
 
 
 
-{% include specDesc.html version=page.version key="componentGrp" atts="" %}
+{% include specDesc.html version=page.version elem="componentGrp" atts="" %}
 
 
 

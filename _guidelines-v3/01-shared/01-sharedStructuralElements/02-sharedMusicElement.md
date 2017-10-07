@@ -27,10 +27,10 @@ any musical text, unitary or composite, is thus defined by the following element
 
 
 
-{% include specDesc.html version=page.version key="front" atts="" %}
-{% include specDesc.html version=page.version key="body" atts="" %}
-{% include specDesc.html version=page.version key="group" atts="" %}
-{% include specDesc.html version=page.version key="back" atts="" %}
+{% include specDesc.html version=page.version elem="front" atts="" %}
+{% include specDesc.html version=page.version elem="body" atts="" %}
+{% include specDesc.html version=page.version elem="group" atts="" %}
+{% include specDesc.html version=page.version elem="back" atts="" %}
 
 
 

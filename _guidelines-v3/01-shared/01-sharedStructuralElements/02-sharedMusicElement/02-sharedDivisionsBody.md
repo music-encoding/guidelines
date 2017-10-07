@@ -31,8 +31,8 @@ classify it according to a two-tier hierarchy.
 
 
 
-{% include specDesc.html version=page.version key="mdiv" atts="" %}
-{% include specDesc.html version=page.version key="mdiv" atts="att.typed/type.txt att.typed/subtype.txt" %}
+{% include specDesc.html version=page.version elem="mdiv" atts="" %}
+{% include specDesc.html version=page.version elem="mdiv" atts="att.typed/type att.typed/subtype" %}
 
 
 

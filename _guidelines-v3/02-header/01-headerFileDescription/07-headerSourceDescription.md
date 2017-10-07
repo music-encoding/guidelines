@@ -18,8 +18,8 @@ created in electronic form.
 
 
 
-{% include specDesc.html version=page.version key="sourceDesc" atts="" %}
-{% include specDesc.html version=page.version key="source" atts="" %}
+{% include specDesc.html version=page.version elem="sourceDesc" atts="" %}
+{% include specDesc.html version=page.version elem="source" atts="" %}
 
 
 
@@ -29,19 +29,19 @@ occur.
 
 
 
-{% include specDesc.html version=page.version key="identifier" atts="" %}
-{% include specDesc.html version=page.version key="titleStmt" atts="" %}
-{% include specDesc.html version=page.version key="editionStmt" atts="" %}
-{% include specDesc.html version=page.version key="pubStmt" atts="" %}
-{% include specDesc.html version=page.version key="physDesc" atts="" %}
-{% include specDesc.html version=page.version key="physLoc" atts="" %}
-{% include specDesc.html version=page.version key="seriesStmt" atts="" %}
-{% include specDesc.html version=page.version key="history" atts="" %}
-{% include specDesc.html version=page.version key="langUsage" atts="" %}
-{% include specDesc.html version=page.version key="contents" atts="" %}
-{% include specDesc.html version=page.version key="biblList" atts="" %}
-{% include specDesc.html version=page.version key="notesStmt" atts="" %}
-{% include specDesc.html version=page.version key="classification" atts="" %}
+{% include specDesc.html version=page.version elem="identifier" atts="" %}
+{% include specDesc.html version=page.version elem="titleStmt" atts="" %}
+{% include specDesc.html version=page.version elem="editionStmt" atts="" %}
+{% include specDesc.html version=page.version elem="pubStmt" atts="" %}
+{% include specDesc.html version=page.version elem="physDesc" atts="" %}
+{% include specDesc.html version=page.version elem="physLoc" atts="" %}
+{% include specDesc.html version=page.version elem="seriesStmt" atts="" %}
+{% include specDesc.html version=page.version elem="history" atts="" %}
+{% include specDesc.html version=page.version elem="langUsage" atts="" %}
+{% include specDesc.html version=page.version elem="contents" atts="" %}
+{% include specDesc.html version=page.version elem="biblList" atts="" %}
+{% include specDesc.html version=page.version elem="notesStmt" atts="" %}
+{% include specDesc.html version=page.version elem="classification" atts="" %}
 
 
 
@@ -53,9 +53,9 @@ Bibliographic Records) can be found at <a class="link_ptr" title="Functional Req
 
 
 
-{% include specDesc.html version=page.version key="itemList" atts="" %}
-{% include specDesc.html version=page.version key="componentGrp" atts="" %}
-{% include specDesc.html version=page.version key="relationList" atts="" %}
+{% include specDesc.html version=page.version elem="itemList" atts="" %}
+{% include specDesc.html version=page.version elem="componentGrp" atts="" %}
+{% include specDesc.html version=page.version elem="relationList" atts="" %}
 
 
 

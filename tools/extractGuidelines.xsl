@@ -1018,7 +1018,7 @@
     
     <xsl:template match="tei:specDesc" mode="markdown">
         <xsl:choose>
-            <xsl:when test="not(@atts)">{% include specDesc.html version=page.version key="<xsl:value-of select="@key"/>" atts="" %}</xsl:when>
+            <xsl:when test="not(@atts)">{% include specDesc.html version=page.version elem="<xsl:value-of select="@key"/>" atts="" %}</xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="key" select="@key" as="xs:string"/>
                 <xsl:variable name="spec" select="//tei:*[@ident = $key and not(local-name() = ('schemaSpec','valItem','attDef'))]" as="node()?"/>
@@ -1036,11 +1036,11 @@
                                 <xsl:value-of select="$key || '/' || $current.att"/>
                             </xsl:when>
                             <xsl:otherwise><xsl:variable name="attributes" select="local:getAttributes($spec)" as="node()*"/>
-                                <xsl:value-of select="$attributes/descendant-or-self::*:div[*:span[@class='attribute']/text() = '@' || $current.att]//span[@class = 'attributeClasses']/a/text() || '/' || $current.att || '.txt'"/>
+                                <xsl:value-of select="$attributes/descendant-or-self::*:div[*:span[@class='attribute']/text() = '@' || $current.att]//span[@class = 'attributeClasses']/a/text() || '/' || $current.att"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:for-each>    
-                </xsl:variable>{% include specDesc.html version=page.version key="<xsl:value-of select="$key"/>" atts="<xsl:value-of select="string-join($refs,' ')"/>" %}
+                </xsl:variable>{% include specDesc.html version=page.version elem="<xsl:value-of select="$key"/>" atts="<xsl:value-of select="string-join($refs,' ')"/>" %}
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

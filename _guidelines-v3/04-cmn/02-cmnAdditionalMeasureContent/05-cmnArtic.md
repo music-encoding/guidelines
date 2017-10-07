@@ -13,13 +13,13 @@ following elements are relevant in this context:
 
 
 
-{% include specDesc.html version=page.version key="bend" atts="" %}
-{% include specDesc.html version=page.version key="bTrem" atts="" %}
-{% include specDesc.html version=page.version key="fTrem" atts="" %}
-{% include specDesc.html version=page.version key="gliss" atts="" %}
-{% include specDesc.html version=page.version key="arpeg" atts="" %}
-{% include specDesc.html version=page.version key="octave" atts="" %}
-{% include specDesc.html version=page.version key="fermata" atts="" %}
+{% include specDesc.html version=page.version elem="bend" atts="" %}
+{% include specDesc.html version=page.version elem="bTrem" atts="" %}
+{% include specDesc.html version=page.version elem="fTrem" atts="" %}
+{% include specDesc.html version=page.version elem="gliss" atts="" %}
+{% include specDesc.html version=page.version elem="arpeg" atts="" %}
+{% include specDesc.html version=page.version elem="octave" atts="" %}
+{% include specDesc.html version=page.version elem="fermata" atts="" %}
 
 
 

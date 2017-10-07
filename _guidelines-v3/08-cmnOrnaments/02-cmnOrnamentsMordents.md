@@ -14,10 +14,10 @@ its attributes:
 
 
 
-{% include specDesc.html version=page.version key="mordent" atts="" %}
-{% include specDesc.html version=page.version key="mordent" atts="att.mordent.log/form.txt att.mordent.log/long.txt" %}
+{% include specDesc.html version=page.version elem="mordent" atts="" %}
+{% include specDesc.html version=page.version elem="mordent" atts="att.mordent.log/form att.mordent.log/long" %}
 
-{% include specDesc.html version=page.version key="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
+{% include specDesc.html version=page.version elem="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
 
 
 

@@ -12,9 +12,9 @@ provides the following elements for this purpose.
 
 
 
-{% include specDesc.html version=page.version key="relationList" atts="" %}
-{% include specDesc.html version=page.version key="relation" atts="" %}
-{% include specDesc.html version=page.version key="relation" atts="att.rel/rel.txt" %}
+{% include specDesc.html version=page.version elem="relationList" atts="" %}
+{% include specDesc.html version=page.version elem="relation" atts="" %}
+{% include specDesc.html version=page.version elem="relation" atts="att.rel/rel" %}
 
 
 

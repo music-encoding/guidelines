@@ -12,7 +12,7 @@ continuous tempo markings may be encoded using this element.
 
 
 
-{% include specDesc.html version=page.version key="tempo" atts="" %}
+{% include specDesc.html version=page.version elem="tempo" atts="" %}
 
 
 

@@ -13,8 +13,8 @@ its attributes:
 
 
 
-{% include specDesc.html version=page.version key="trill" atts="" %}
-{% include specDesc.html version=page.version key="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
+{% include specDesc.html version=page.version elem="trill" atts="" %}
+{% include specDesc.html version=page.version elem="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
 
 
 

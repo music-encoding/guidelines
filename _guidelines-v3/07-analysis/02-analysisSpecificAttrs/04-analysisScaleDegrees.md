@@ -8,7 +8,7 @@ version: "v3"
 
 
 
-{% include specDesc.html version=page.version key="att.harmonicfunction" atts="att.harmonicfunction/deg" %}
+{% include specDesc.html version=page.version elem="att.harmonicfunction" atts="att.harmonicfunction/deg" %}
 
 
 

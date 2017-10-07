@@ -11,7 +11,7 @@ Additional information that aids the identification of the work may be encoded u
 
 
 
-{% include specDesc.html version=page.version key="otherChar" atts="" %}
+{% include specDesc.html version=page.version elem="otherChar" atts="" %}
 
 
 

@@ -18,8 +18,8 @@ way as make it easy for software to present either the original or the correctio
 
 
 
-{% include specDesc.html version=page.version key="sic" atts="" %}
-{% include specDesc.html version=page.version key="corr" atts="" %}
+{% include specDesc.html version=page.version elem="sic" atts="" %}
+{% include specDesc.html version=page.version elem="corr" atts="" %}
 
 
 

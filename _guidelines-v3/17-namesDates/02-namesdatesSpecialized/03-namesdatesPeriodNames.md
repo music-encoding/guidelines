@@ -8,7 +8,7 @@ version: "v3"
 
 
 
-{% include specDesc.html version=page.version key="periodName" atts="" %}
+{% include specDesc.html version=page.version elem="periodName" atts="" %}
 
 
 

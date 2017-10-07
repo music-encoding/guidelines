@@ -11,9 +11,9 @@ established for it. The following attributes are provided for this purpose:
 
 
 
-{% include specDesc.html version=page.version key="att.meterconformance" atts="att.meterconformance/metcon" %}
+{% include specDesc.html version=page.version elem="att.meterconformance" atts="att.meterconformance/metcon" %}
 
-{% include specDesc.html version=page.version key="att.meterconformance.bar" atts="att.meterconformance.bar/metcon" %}
+{% include specDesc.html version=page.version elem="att.meterconformance.bar" atts="att.meterconformance.bar/metcon" %}
 
 
 

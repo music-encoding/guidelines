@@ -14,7 +14,7 @@ recommended.
 
 
 
-{% include specDesc.html version=page.version key="encodingDesc" atts="" %}
+{% include specDesc.html version=page.version elem="encodingDesc" atts="" %}
 
 
 
@@ -24,10 +24,10 @@ default, this class makes available the following elements:
 
 
 
-{% include specDesc.html version=page.version key="appInfo" atts="" %}
-{% include specDesc.html version=page.version key="editorialDecl" atts="" %}
-{% include specDesc.html version=page.version key="projectDesc" atts="" %}
-{% include specDesc.html version=page.version key="samplingDecl" atts="" %}
+{% include specDesc.html version=page.version elem="appInfo" atts="" %}
+{% include specDesc.html version=page.version elem="editorialDecl" atts="" %}
+{% include specDesc.html version=page.version elem="projectDesc" atts="" %}
+{% include specDesc.html version=page.version elem="samplingDecl" atts="" %}
 
 
 

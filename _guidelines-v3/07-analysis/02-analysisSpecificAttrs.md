@@ -12,17 +12,17 @@ specific attributes on certain musical elements:
 
 
 
-{% include specDesc.html version=page.version key="att.intervalharmonic" atts="att.intervalharmonic/inth" %}
+{% include specDesc.html version=page.version elem="att.intervalharmonic" atts="att.intervalharmonic/inth" %}
 
-{% include specDesc.html version=page.version key="att.intervallicdesc" atts="att.intervalmelodic/intm.txt" %}
+{% include specDesc.html version=page.version elem="att.intervallicdesc" atts="att.intervalmelodic/intm" %}
 
-{% include specDesc.html version=page.version key="att.melodicfunction" atts="att.melodicfunction/mfunc" %}
+{% include specDesc.html version=page.version elem="att.melodicfunction" atts="att.melodicfunction/mfunc" %}
 
-{% include specDesc.html version=page.version key="att.harmonicfunction" atts="att.harmonicfunction/deg" %}
+{% include specDesc.html version=page.version elem="att.harmonicfunction" atts="att.harmonicfunction/deg" %}
 
-{% include specDesc.html version=page.version key="att.pitchclass" atts="att.pitchclass/pclass" %}
+{% include specDesc.html version=page.version elem="att.pitchclass" atts="att.pitchclass/pclass" %}
 
-{% include specDesc.html version=page.version key="att.solfa" atts="att.solfa/psolfa" %}
+{% include specDesc.html version=page.version elem="att.solfa" atts="att.solfa/psolfa" %}
 
 
 

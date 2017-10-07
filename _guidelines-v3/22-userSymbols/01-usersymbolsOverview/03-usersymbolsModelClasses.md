@@ -10,8 +10,8 @@ The usersymbols module defines the following model classes:
 
 
 
-{% include specDesc.html version=page.version key="model.graphicprimitiveLike" atts="" %}
-{% include specDesc.html version=page.version key="model.symbolTableLike" atts="" %}
+{% include specDesc.html version=page.version elem="model.graphicprimitiveLike" atts="" %}
+{% include specDesc.html version=page.version elem="model.symbolTableLike" atts="" %}
 
 
 

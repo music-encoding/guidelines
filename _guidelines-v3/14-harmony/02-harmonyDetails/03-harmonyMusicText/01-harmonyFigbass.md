@@ -13,8 +13,8 @@ provides the following elements:
 
 
 
-{% include specDesc.html version=page.version key="fb" atts="" %}
-{% include specDesc.html version=page.version key="f" atts="att.extender/extender.txt" %}
+{% include specDesc.html version=page.version elem="fb" atts="" %}
+{% include specDesc.html version=page.version elem="f" atts="att.extender/extender" %}
 
 
 

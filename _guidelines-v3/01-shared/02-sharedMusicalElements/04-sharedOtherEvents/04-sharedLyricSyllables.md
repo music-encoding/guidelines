@@ -11,7 +11,7 @@ to be vocally performed. A fuller description of its use is provided in chapter 
 
 
 
-{% include specDesc.html version=page.version key="syl" atts="" %}
+{% include specDesc.html version=page.version elem="syl" atts="" %}
 
 
 

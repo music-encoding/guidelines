@@ -19,9 +19,9 @@ rendition information.
 
 
 
-{% include specDesc.html version=page.version key="rend" atts="" %}
-{% include specDesc.html version=page.version key="rend" atts="rend/rend rend/altrend att.typography/fontname.txt att.typography/fontsize.txt att.typography/fontstyle.txt
-att.typography/fontweight.txt" %}
+{% include specDesc.html version=page.version elem="rend" atts="" %}
+{% include specDesc.html version=page.version elem="rend" atts="rend/rend rend/altrend att.typography/fontname att.typography/fontsize att.typography/fontstyle
+att.typography/fontweight" %}
 
 
 

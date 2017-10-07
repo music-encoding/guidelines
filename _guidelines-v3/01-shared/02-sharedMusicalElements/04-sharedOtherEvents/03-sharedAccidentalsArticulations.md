@@ -13,9 +13,9 @@ repertoires.
 
 
 
-{% include specDesc.html version=page.version key="accid" atts="" %}
-{% include specDesc.html version=page.version key="artic" atts="" %}
-{% include specDesc.html version=page.version key="dot" atts="" %}
+{% include specDesc.html version=page.version elem="accid" atts="" %}
+{% include specDesc.html version=page.version elem="artic" atts="" %}
+{% include specDesc.html version=page.version elem="dot" atts="" %}
 
 
 

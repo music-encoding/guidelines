@@ -10,9 +10,9 @@ This module makes available the following elements for encoding facsimiles:
 
 
 
-{% include specDesc.html version=page.version key="facsimile" atts="" %}
-{% include specDesc.html version=page.version key="surface" atts="" %}
-{% include specDesc.html version=page.version key="zone" atts="" %}
+{% include specDesc.html version=page.version elem="facsimile" atts="" %}
+{% include specDesc.html version=page.version elem="surface" atts="" %}
+{% include specDesc.html version=page.version elem="zone" atts="" %}
 
 
 

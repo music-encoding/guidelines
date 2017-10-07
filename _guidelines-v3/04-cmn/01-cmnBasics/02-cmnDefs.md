@@ -10,10 +10,10 @@ When encoding a score in CMN, MEI relies on the following elements from the [Sha
 
 
 
-{% include specDesc.html version=page.version key="scoreDef" atts="" %}
-{% include specDesc.html version=page.version key="staffGrp" atts="" %}
-{% include specDesc.html version=page.version key="staffDef" atts="" %}
-{% include specDesc.html version=page.version key="layerDef" atts="" %}
+{% include specDesc.html version=page.version elem="scoreDef" atts="" %}
+{% include specDesc.html version=page.version elem="staffGrp" atts="" %}
+{% include specDesc.html version=page.version elem="staffDef" atts="" %}
+{% include specDesc.html version=page.version elem="layerDef" atts="" %}
 
 
 
@@ -22,11 +22,11 @@ score, e.g., key and meter. The most important attributes for this purpose are:
 
 
 
-{% include specDesc.html version=page.version key="att.meterSigDefault.log" atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %}
+{% include specDesc.html version=page.version elem="att.meterSigDefault.log" atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %}
 
-{% include specDesc.html version=page.version key="att.meterSigDefault.vis" atts="att.meterSigDefault.vis/meter.sym" %}
+{% include specDesc.html version=page.version elem="att.meterSigDefault.vis" atts="att.meterSigDefault.vis/meter.sym" %}
 
-{% include specDesc.html version=page.version key="att.keySigDefault.log" atts="att.keySigDefault.log/key.pname att.keySigDefault.log/key.accid att.keySigDefault.log/key.mode
+{% include specDesc.html version=page.version elem="att.keySigDefault.log" atts="att.keySigDefault.log/key.pname att.keySigDefault.log/key.accid att.keySigDefault.log/key.mode
 att.keySigDefault.log/key.sig" %}
 
 
@@ -43,14 +43,11 @@ text and music:
 
 
 
-{% include specDesc.html version=page.version key="scoreDef" atts="att.pages/page.width.txt att.pages/page.height.txt att.pages/page.leftmar.txt att.pages/page.topmar.txt
-/.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt att.pages/page.rightmar.txt
-att.pages/page.botmar.txt att.systems/system.leftmar.txt att.systems/system.topmar.txt
-att.systems/system.rightmar.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt
-/.txt /.txt /.txt att.textstyle/text.name.txt att.textstyle/text.fam.txt att.textstyle/text.size.txt
-att.notationstyle/music.name.txt att.notationstyle/music.size.txt att.lyricstyle/lyric.name.txt
-att.lyricstyle/lyric.fam.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt /.txt
-/.txt /.txt /.txt att.lyricstyle/lyric.size.txt" %}
+{% include specDesc.html version=page.version elem="scoreDef" atts="att.pages/page.width att.pages/page.height att.pages/page.leftmar att.pages/page.topmar
+/ / / / / / / / / / / / att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar
+att.systems/system.topmar att.systems/system.rightmar / / / / / / / / / / / / att.textstyle/text.name
+att.textstyle/text.fam att.textstyle/text.size att.notationstyle/music.name att.notationstyle/music.size
+att.lyricstyle/lyric.name att.lyricstyle/lyric.fam / / / / / / / / / / / / att.lyricstyle/lyric.size" %}
 
 
 
@@ -90,7 +87,7 @@ attributes are important for [staffDef](/{{ page.version }}/elements/staffDef.ht
 
 
 
-{% include specDesc.html version=page.version key="att.cleffing.log" atts="att.cleffing.log/clef.line att.cleffing.log/clef.shape att.cleffing.log/clef.dis att.cleffing.log/clef.dis.place" %}
+{% include specDesc.html version=page.version elem="att.cleffing.log" atts="att.cleffing.log/clef.line att.cleffing.log/clef.shape att.cleffing.log/clef.dis att.cleffing.log/clef.dis.place" %}
 
 
 
@@ -118,13 +115,13 @@ a clef or a key signature added in a different hand. These elements include:
 
 
 
-{% include specDesc.html version=page.version key="clef" atts="" %}
-{% include specDesc.html version=page.version key="clefGrp" atts="" %}
-{% include specDesc.html version=page.version key="keySig" atts="" %}
-{% include specDesc.html version=page.version key="keyAccid" atts="" %}
-{% include specDesc.html version=page.version key="label" atts="" %}
-{% include specDesc.html version=page.version key="meterSig" atts="" %}
-{% include specDesc.html version=page.version key="meterSigGrp" atts="" %}
+{% include specDesc.html version=page.version elem="clef" atts="" %}
+{% include specDesc.html version=page.version elem="clefGrp" atts="" %}
+{% include specDesc.html version=page.version elem="keySig" atts="" %}
+{% include specDesc.html version=page.version elem="keyAccid" atts="" %}
+{% include specDesc.html version=page.version elem="label" atts="" %}
+{% include specDesc.html version=page.version elem="meterSig" atts="" %}
+{% include specDesc.html version=page.version elem="meterSigGrp" atts="" %}
 
 
 

@@ -11,7 +11,7 @@ kind treated as ‘general notes’ in traditional bibliographic descriptions.
 
 
 
-{% include specDesc.html version=page.version key="notesStmt" atts="" %}
+{% include specDesc.html version=page.version elem="notesStmt" atts="" %}
 
 
 

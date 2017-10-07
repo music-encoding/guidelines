@@ -10,8 +10,8 @@ The elements below are used to capture the logical organization of musical notat
 
 
 
-{% include specDesc.html version=page.version key="staff" atts="" %}
-{% include specDesc.html version=page.version key="layer" atts="" %}
+{% include specDesc.html version=page.version elem="staff" atts="" %}
+{% include specDesc.html version=page.version elem="layer" atts="" %}
 
 
 

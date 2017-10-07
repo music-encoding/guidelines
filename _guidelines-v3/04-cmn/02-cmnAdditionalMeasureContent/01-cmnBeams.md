@@ -12,8 +12,8 @@ notes. MEI provides two elements for the explicit encoding of features joined by
 
 
 
-{% include specDesc.html version=page.version key="beam" atts="" %}
-{% include specDesc.html version=page.version key="beamSpan" atts="" %}
+{% include specDesc.html version=page.version elem="beam" atts="" %}
+{% include specDesc.html version=page.version elem="beamSpan" atts="" %}
 
 
 

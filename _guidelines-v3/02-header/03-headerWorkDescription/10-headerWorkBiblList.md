@@ -8,7 +8,7 @@ version: "v3"
 
 
 
-{% include specDesc.html version=page.version key="biblList" atts="" %}
+{% include specDesc.html version=page.version elem="biblList" atts="" %}
 
 
 

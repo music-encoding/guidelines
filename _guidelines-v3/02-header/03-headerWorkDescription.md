@@ -12,7 +12,7 @@ characterizing various descriptive aspects of the abstract work.
 
 
 
-{% include specDesc.html version=page.version key="workDesc" atts="" %}
+{% include specDesc.html version=page.version elem="workDesc" atts="" %}
 
 
 
@@ -21,7 +21,7 @@ information for each resource being described.
 
 
 
-{% include specDesc.html version=page.version key="work" atts="" %}
+{% include specDesc.html version=page.version elem="work" atts="" %}
 
 
 

@@ -11,11 +11,11 @@ The following elements are available to encode information about a recorded perf
 
 
 
-{% include specDesc.html version=page.version key="performance" atts="" %}
-{% include specDesc.html version=page.version key="recording" atts="" %}
-{% include specDesc.html version=page.version key="avFile" atts="" %}
-{% include specDesc.html version=page.version key="clip" atts="" %}
-{% include specDesc.html version=page.version key="when" atts="" %}
+{% include specDesc.html version=page.version elem="performance" atts="" %}
+{% include specDesc.html version=page.version elem="recording" atts="" %}
+{% include specDesc.html version=page.version elem="avFile" atts="" %}
+{% include specDesc.html version=page.version elem="clip" atts="" %}
+{% include specDesc.html version=page.version elem="when" atts="" %}
 
 
 
@@ -41,7 +41,7 @@ used to define this space:
 
 
 
-{% include specDesc.html version=page.version key="att.mediabounds" atts="att.mediabounds/begin att.mediabounds/end att.mediabounds/betype" %}
+{% include specDesc.html version=page.version elem="att.mediabounds" atts="att.mediabounds/begin att.mediabounds/end att.mediabounds/betype" %}
 
 
 

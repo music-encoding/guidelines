@@ -10,8 +10,8 @@ The basic elements for capturing names and dates are defined in the shared modul
 
 
 
-{% include specDesc.html version=page.version key="name" atts="" %}
-{% include specDesc.html version=page.version key="date" atts="" %}
+{% include specDesc.html version=page.version elem="name" atts="" %}
+{% include specDesc.html version=page.version elem="date" atts="" %}
 
 
 

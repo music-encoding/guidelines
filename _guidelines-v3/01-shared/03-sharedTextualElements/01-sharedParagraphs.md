@@ -15,7 +15,7 @@ HTML.
 
 
 
-{% include specDesc.html version=page.version key="p" atts="" %}
+{% include specDesc.html version=page.version elem="p" atts="" %}
 
 
 

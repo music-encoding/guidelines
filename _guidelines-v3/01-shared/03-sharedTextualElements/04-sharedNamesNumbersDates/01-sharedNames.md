@@ -11,8 +11,8 @@ mark up portions of a text that function as names or dates.
 
 
 
-{% include specDesc.html version=page.version key="name" atts="" %}
-{% include specDesc.html version=page.version key="date" atts="" %}
+{% include specDesc.html version=page.version elem="name" atts="" %}
+{% include specDesc.html version=page.version elem="date" atts="" %}
 
 
 

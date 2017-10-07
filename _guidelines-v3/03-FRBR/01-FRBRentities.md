@@ -11,10 +11,10 @@ entities:
 
 
 
-{% include specDesc.html version=page.version key="work" atts="" %}
-{% include specDesc.html version=page.version key="expression" atts="" %}
-{% include specDesc.html version=page.version key="source" atts="" %}
-{% include specDesc.html version=page.version key="item" atts="" %}
+{% include specDesc.html version=page.version elem="work" atts="" %}
+{% include specDesc.html version=page.version elem="expression" atts="" %}
+{% include specDesc.html version=page.version elem="source" atts="" %}
+{% include specDesc.html version=page.version elem="item" atts="" %}
 
 
 
@@ -31,7 +31,7 @@ elements:
 
 
 
-{% include specDesc.html version=page.version key="expressionList" atts="" %}
+{% include specDesc.html version=page.version elem="expressionList" atts="" %}
 
 
 
@@ -44,8 +44,8 @@ description of specific versions of a work:
 
 
 
-{% include specDesc.html version=page.version key="extent" atts="" %}
-{% include specDesc.html version=page.version key="scoreFormat" atts="" %}
+{% include specDesc.html version=page.version elem="extent" atts="" %}
+{% include specDesc.html version=page.version elem="scoreFormat" atts="" %}
 
 
 
@@ -78,7 +78,7 @@ often a good source of this kind of descriptive text.
 
 
 
-{% include specDesc.html version=page.version key="itemList" atts="" %}
+{% include specDesc.html version=page.version elem="itemList" atts="" %}
 
 
 
