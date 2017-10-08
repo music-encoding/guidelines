@@ -59,7 +59,7 @@ The tie-terminating event may lie in the following measure.
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/cmn/finger-300.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/cmn/finger-300.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 9. Ties across barlines</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample113.xml" valid="true" version=page.version %}
@@ -86,7 +86,7 @@ breath, while a single bow is indicated for string instruments.
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/ExampleImages/slur-300-20100514.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/ExampleImages/slur-300-20100514.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 10. Slurs</figcaption>
 </figure>
 

@@ -13,7 +13,7 @@ obliqua.
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/mensural/ex_ligatures01.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/mensural/ex_ligatures01.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 19. Recta and obliqua ligatures</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ ligature at the note level.
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/mensural/ex_ligatures02.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/mensural/ex_ligatures02.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 20. Ligature with more than two notes with recta and obliqua</figcaption>
 </figure>
 

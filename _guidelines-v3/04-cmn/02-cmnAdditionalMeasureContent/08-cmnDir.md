@@ -51,7 +51,7 @@ Fantastique* shows a typical example:
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/cmn/reh_berlioz.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/cmn/reh_berlioz.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample150.xml" valid="true" version=page.version %}

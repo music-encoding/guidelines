@@ -19,7 +19,7 @@ the
 most common signs:
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/ExampleImages/beatrpt-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/ExampleImages/beatrpt-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 14. Beat repeat signs</figcaption>
 </figure>
 In general, MEI places primary emphasis on the capture of the semantic meaning of
@@ -69,7 +69,7 @@ measure can be enabled using the **@multi.number** attribute available on the [s
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample152.xml" valid="false" version=page.version %}
@@ -89,7 +89,7 @@ importance. The following example from the beginning of Beethoven's
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample153.xml" valid="false" version=page.version %}
@@ -104,12 +104,12 @@ where it is often necessary to abbreviate the notation due to page size limitati
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/ExampleImages/mrpt2-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/ExampleImages/mrpt2-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 17. Two-measure repetition</figcaption>
 </figure>
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/ExampleImages/multirpt-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/ExampleImages/multirpt-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 18. Multi-measure repetition</figcaption>
 </figure>
 

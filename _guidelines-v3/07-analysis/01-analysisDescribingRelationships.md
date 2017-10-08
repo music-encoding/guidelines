@@ -70,7 +70,7 @@ encoding effort. The image and the following encoding of the beginning of Schube
 attribute.
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
 </figure>
 {% include plainExample.html example="examples/analysis/analysis-sample163.xml" valid="true" version=page.version %}
@@ -89,7 +89,7 @@ the sharing of one note head between two voices in the first full measure of a c
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
 </figure>
 {% include plainExample.html example="examples/analysis/analysis-sample165.xml" valid="true" version=page.version %}
@@ -118,7 +118,7 @@ occurs after the pointing element in time, but before it in encoding order:
 
 
 <figure class="figure">
-   <img src="{{ site.baseurl }}/images/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
 </figure>
 {% include plainExample.html example="examples/analysis/analysis-sample167.xml" valid="false" version=page.version %}
