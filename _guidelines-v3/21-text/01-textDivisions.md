@@ -26,7 +26,7 @@ a different
 pieces might be preceded or followed by poetry. Such text should be encoded with the
 [div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, as demonstrated in the following example:
 
-{% include plainExample.html example="./v3/examples/text/text-sample328.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample328.xml" valid="true" version=page.version %}
 
 
 Textual divisions may have titles or other forms of introductory material, which are
@@ -45,7 +45,7 @@ The following example shows the encoding of a preface translated into three diff
 languages, each with a different heading:
 
 
-{% include plainExample.html example="./v3/examples/text/text-sample329.xml" valid="false" %}
+{% include plainExample.html example="examples/text/text-sample329.xml" valid="false" version=page.version %}
 
 Having said that [div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} identifies any structural organization of text, it
 is often helpful to distinguish the typology of division. The attributes **@type** and
@@ -57,5 +57,5 @@ encoder.
 The following example shows the use of **@type** to indicate three prefaces in English,
 German and Italian are columns on the same page.
 
-{% include plainExample.html example="./v3/examples/text/text-sample330.xml" valid="false" %}
+{% include plainExample.html example="examples/text/text-sample330.xml" valid="false" version=page.version %}
 

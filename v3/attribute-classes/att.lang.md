@@ -201,7 +201,7 @@ title: "att.lang"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"xml:lang"</span> 
@@ -209,7 +209,7 @@ title: "att.lang"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Identifies the language of the element's content. The values for this attribute are
                      language 'tags' as defined in BCP 47. All language tags that make use of private use
                      sub-tags must be documented in a corresponding language element in the MEI header
@@ -218,7 +218,7 @@ title: "att.lang"
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -226,7 +226,7 @@ title: "att.lang"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"language"</span>/&gt;
@@ -240,7 +240,7 @@ title: "att.lang"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"translit"</span> 
@@ -248,17 +248,17 @@ title: "att.lang"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Specifies the transliteration technique used.
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!--There is no standard list of transliteration schemes.--&gt;</span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -266,7 +266,7 @@ title: "att.lang"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"NMTOKEN"</span>/&gt;

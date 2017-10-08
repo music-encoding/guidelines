@@ -15,7 +15,7 @@ In CMN, notes are determined by three basic parameters:
 
 A typical note, in this case a quarter note C4, is therefore encoded like so:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample096.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample096.xml" valid="true" version=page.version %}
 
 Because these attributes may not be required in all situations (such as **@dur**
 for the notes of a chord), processing software should anticipate retrieving the
@@ -96,5 +96,5 @@ Dotted durational values are accommodated by the **@dots** attribute, which
 records the number of written augmentation dots. Thus, a dotted quarter note may is
 represented:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample097.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample097.xml" valid="true" version=page.version %}
 

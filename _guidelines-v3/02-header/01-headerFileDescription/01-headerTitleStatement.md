@@ -47,7 +47,7 @@ edition’. This will distinguish the electronic work from the source text in ci
 and in
 catalogs, which contain descriptions of both types of material.
 
-{% include plainExample.html example="./v3/examples/header/header-sample020.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample020.xml" valid="true" version=page.version %}
 
 Other alternative titles or subtitles may be encoded in additional title elements
 with
@@ -66,7 +66,7 @@ any
 parallel titles, may be enclosed within a single [title]({{ site.baseurl }}/{{ page.version }}/elements/title.html){:.link_odd_elementSpec} element, as in
 the following example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample021.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample021.xml" valid="true" version=page.version %}
 
 The electronic work will also have an external name (its ‘filename’ or ‘data set name’)
 or
@@ -102,7 +102,7 @@ are given
 special prominence. MEI accommodates this approach by providing responsibility-role
 elements. For example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample022.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample022.xml" valid="true" version=page.version %}
 
 Secondary intellectual responsibility in this case is encoded using [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec}. The [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element has two subcomponents: a [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element identifying a responsible individual or organization, and a
 [resp]({{ site.baseurl }}/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} element indicating the nature of the responsibility. All names
@@ -111,7 +111,7 @@ This
 will usually be the fullest form of the name, including first names. No specific
 recommendations are made at this time as to appropriate content for [resp]({{ site.baseurl }}/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec}. However, it should make clear the nature of the responsibility.
 
-{% include plainExample.html example="./v3/examples/header/header-sample023.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample023.xml" valid="true" version=page.version %}
 
 This method of encoding facilitates exchange of bibliographic data with library catalogs
 and bibliographic databases as well as applications whose handling of bibliographic
@@ -134,7 +134,7 @@ the name
 than is permitted by the simpler [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element. The following example
 shows how a precise date range can be associated with a personal or corporate name.
 
-{% include plainExample.html example="./v3/examples/header/header-sample024.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample024.xml" valid="true" version=page.version %}
 
 For additional information about corporate and personal names, see chapter 
 <a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a>.
@@ -144,7 +144,7 @@ attribute on [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.
 responsibility statements, use of the **@role** attribute provides the possibility of
 recording a controlled value independently of the textual content of [resp]({{ site.baseurl }}/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec}.
 
-{% include plainExample.html example="./v3/examples/header/header-sample025.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample025.xml" valid="true" version=page.version %}
 
 Values from the MARC relator code list ([http://www.loc.gov/marc/relators/relacode.html](http://www.loc.gov/marc/relators/relacode.html){:.link_ref}) or term list ([http://www.loc.gov/marc/relators/relaterm.html](http://www.loc.gov/marc/relators/relaterm.html){:.link_ref}) are recommended for
 **@role**, where applicable.
@@ -152,18 +152,18 @@ Values from the MARC relator code list ([http://www.loc.gov/marc/relators/relaco
 Where it is necessary to group responsibilities and names, multiple responsibility
 statements may be used. For example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample026.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample026.xml" valid="true" version=page.version %}
 
 It is often desirable to mix primary and secondary intellectual responsibility information.
 Treating all intellectual roles the same way can allow literal transcription of existing
 responsibility statements and simplify programmatic processing. The following example
 demonstrates how a responsibility statement may be transcribed using interleaved [resp]({{ site.baseurl }}/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} and [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} elements:
 
-{% include plainExample.html example="./v3/examples/header/header-sample027.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample027.xml" valid="true" version=page.version %}
 
 However, eliminating explanatory text and relying on standardized values for
 **@role**, as in the following example, allows data creation and processing tools of
 the greatest simplicity.
 
-{% include plainExample.html example="./v3/examples/header/header-sample028.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample028.xml" valid="true" version=page.version %}
 

@@ -34,45 +34,57 @@ title: "macro.musicPart"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/model.frontLike">model.frontLike</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.frontLike.html">model.frontLike</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/body">body</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/group">group</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/group.html">group</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
@@ -82,15 +94,19 @@ title: "macro.musicPart"
                      <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/model.backLike">model.backLike</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.backLike.html">model.backLike</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      

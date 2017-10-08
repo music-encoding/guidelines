@@ -35,7 +35,116 @@ title: "physLoc"
                </thead>
                <tbody>
                   <tr>
-                     <td></td>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@analog</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Contains a reference to a field or element in another descriptive encoding system
+                              to
+                              which this MEI element is comparable.
+                           </span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">string</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@facs</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Permits the current element to reference a facsimile surface or image zone which
+                              corresponds to it.
+                           </span>
+                           One or more values from
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@label</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">string</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@n</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a number-like designation for an element.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/token.html">token</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:base</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
+                              references into absolute URI references.
+                           </span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:id</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
+                              and other resources. Each id attribute within a document must have a unique
+                              value.
+                           </span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">ID</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a>
+                           </span>
+                        </div>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -47,7 +156,7 @@ title: "physLoc"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblPart,html">model.biblPart</a>
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>
             </div>
          </td>
       </tr>
@@ -120,74 +229,90 @@ title: "physLoc"
          <td class="wovenodd-col2">
             <div class="code" xml:space="preserve" data-lang="ODD">
                <code>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblPart.html">model.biblPart</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span>
                   </div>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
                         
-                        <div class="indent3">
+                        <div class="indent3 indent">
                            <span data-indentation="3" class="element">&lt;rng:group&gt;</span>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.repositoryLike">model.repositoryLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.repositoryLike.html">model.repositoryLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
+                           <div class="indent4 indent">
                               <span data-indentation="4" class="element">&lt;rng:zeroOrMore&gt;</span>
                               
-                              <div class="indent5">
-                                 <span data-indentation="5" class="element">&lt;rng:ref 
-                                    <span class="attribute">name=</span>
-                                    <span class="attributevalue">"
-                                       <a class="link_odd" href="/model.identifierLike">model.identifierLike</a>"
-                                    </span>/&gt;
+                              <div class="indent5 indent">
+                                 <span data-indentation="5" class="element">&lt;rng:ref
+                                    
+                                    
+                                    <span class="attribute">name=
+                                       <span class="attributevalue">"
+                                          <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.identifierLike.html">model.identifierLike</a>"
+                                       </span>
+                                    </span>
+                                    /&gt;
                                  </span>
                               </div>
                               
@@ -200,15 +325,19 @@ title: "physLoc"
                         <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span>
                      </div>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
                         
-                        <div class="indent3">
-                           <span data-indentation="3" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/provenance">provenance</a>"
-                              </span>/&gt;
+                        <div class="indent3 indent">
+                           <span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/provenance.html">provenance</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         

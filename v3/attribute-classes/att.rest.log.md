@@ -42,59 +42,71 @@ title: "att.rest.log"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.augmentdots.html">att.augmentdots</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.augmentdots.html">att.augmentdots</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.event.html">att.event</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.event.html">att.event</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.musical.html">att.duration.musical</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.musical.html">att.duration.musical</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermatapresent</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermatapresent</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tupletpresent.html">att.tupletpresent</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tupletpresent.html">att.tupletpresent</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rest.log.cmn.html">att.rest.log.cmn</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rest.log.cmn.html">att.rest.log.cmn</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>

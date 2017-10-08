@@ -12,7 +12,7 @@ may be grouped using the [subst]({{ site.baseurl }}/{{ page.version }}/elements/
 a replacement of portions of the musical text using both the [add]({{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec} and
 [del]({{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec} element, as seen in the following example:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample227.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample227.xml" valid="true" version=page.version %}
 
 
 An intervention closely related to substitution is the restoration of a previously
@@ -24,7 +24,7 @@ The following example illustrates an instance where a lyric which was cancelled 
 later
 restored by overwriting it:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample228.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample228.xml" valid="true" version=page.version %}
 
 
 The **@desc** attribute gives a prose description of the means of restoration. The
@@ -48,7 +48,7 @@ of the tint or type of ink, e.g., 'brown' or the writing medium, e.g., 'pencil',
 be
 placed in the **@medium** attribute.
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample229.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample229.xml" valid="true" version=page.version %}
 
 
 The new hand may be identified using the **@new** attribute, while the previous hand

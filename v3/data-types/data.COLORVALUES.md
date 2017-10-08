@@ -34,23 +34,23 @@ title: "data.COLORVALUES"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;rng:choice&gt;</span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- hex values --&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"token"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:param 
                               <span class="attribute">name=</span>
                               <span class="attributevalue">"pattern"</span>&gt;
@@ -61,17 +61,17 @@ title: "data.COLORVALUES"
                         <span data-indentation="3" class="element">&lt;/rng:data&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- AARRGGBB values --&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"token"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:param 
                               <span class="attribute">name=</span>
                               <span class="attributevalue">"pattern"</span>&gt;
@@ -82,93 +82,93 @@ title: "data.COLORVALUES"
                         <span data-indentation="3" class="element">&lt;/rng:data&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- RGB values --&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"token"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:param 
                               <span class="attribute">name=</span>
                               <span class="attributevalue">"pattern"</span>&gt;
                            </span>
-                           <div class="indent5">rgb\((\s*(([01]?[0-9]?[0-9])|2[0-4][0-9]|25[0-5])\s*,\s*){2}</div>
-                           <div class="indent6">([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*\)</div>
+                           <div class="indent5 indent">rgb\((\s*(([01]?[0-9]?[0-9])|2[0-4][0-9]|25[0-5])\s*,\s*){2}</div>
+                           <div class="indent6 dblIndent">([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*\)</div>
                            <span data-indentation="4" class="element">&lt;/rng:param&gt;</span>
                         </div>
                         
                         <span data-indentation="3" class="element">&lt;/rng:data&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- RGBA values --&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"token"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:param 
                               <span class="attribute">name=</span>
                               <span class="attributevalue">"pattern"</span>&gt;
                            </span>
-                           <div class="indent5">rgba\(\s*(([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*,\s*){3}(</div>
-                           <div class="indent6">0(\.\d+)?|1(\.0+)?)\s*\)|rgba\(\s*(((\d{1,2})?%|100%)\s*,\s*</div>
-                           <div class="indent6">){2}(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)</div>
+                           <div class="indent5 indent">rgba\(\s*(([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*,\s*){3}(</div>
+                           <div class="indent6 dblIndent">0(\.\d+)?|1(\.0+)?)\s*\)|rgba\(\s*(((\d{1,2})?%|100%)\s*,\s*</div>
+                           <div class="indent6 dblIndent">){2}(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)</div>
                            <span data-indentation="4" class="element">&lt;/rng:param&gt;</span>
                         </div>
                         
                         <span data-indentation="3" class="element">&lt;/rng:data&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- HSL values --&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"token"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:param 
                               <span class="attribute">name=</span>
                               <span class="attributevalue">"pattern"</span>&gt;
                            </span>
-                           <div class="indent5">hsl\(\s*((\d{1,2})|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|1</div>
-                           <div class="indent6">00%)\s*,\s*(\d{1,2}%|100%)\s*\)</div>
+                           <div class="indent5 indent">hsl\(\s*((\d{1,2})|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|1</div>
+                           <div class="indent6 dblIndent">00%)\s*,\s*(\d{1,2}%|100%)\s*\)</div>
                            <span data-indentation="4" class="element">&lt;/rng:param&gt;</span>
                         </div>
                         
                         <span data-indentation="3" class="element">&lt;/rng:data&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- HSLA values --&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"token"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:param 
                               <span class="attribute">name=</span>
                               <span class="attributevalue">"pattern"</span>&gt;
                            </span>
-                           <div class="indent5">hsla\(\s*(\d{1,2}|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|10</div>
-                           <div class="indent6">0%)\s*,\s*(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)</div>
+                           <div class="indent5 indent">hsla\(\s*(\d{1,2}|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|10</div>
+                           <div class="indent6 dblIndent">0%)\s*,\s*(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)</div>
                            <span data-indentation="4" class="element">&lt;/rng:param&gt;</span>
                         </div>
                         

@@ -61,22 +61,22 @@ title: "data.STEMMODIFIER"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"none"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>No modifications to stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -84,13 +84,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"1slash"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>1 slash through stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -98,13 +98,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"2slash"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>2 slashes through stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -112,13 +112,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"3slash"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>3 slashes through stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -126,13 +126,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"4slash"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>4 slashes through stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -140,13 +140,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"5slash"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>5 slashes through stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -154,13 +154,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"6slash"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>6 slashes through stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -168,13 +168,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"sprech"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>X placed on stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -182,13 +182,13 @@ title: "data.STEMMODIFIER"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"z"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Z placed on stem.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>

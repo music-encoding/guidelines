@@ -57,7 +57,7 @@ usually refers to an element in the current document. The following example demo
 use
 of the **@copyof** attribute:
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample162.xml" valid="false" %}
+{% include plainExample.html example="examples/analysis/analysis-sample162.xml" valid="false" version=page.version %}
 
 In this example. the [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} in the second measure has exactly the same
 characteristics as the [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} in the first [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}.
@@ -73,12 +73,12 @@ attribute.
    <img src="../../../../guidelines/v3/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample163.xml" valid="true" %}
+{% include plainExample.html example="examples/analysis/analysis-sample163.xml" valid="true" version=page.version %}
 
 This example can be reduced further by using **@copyof** inside the initial tuplet to
 represent the repeated chords:
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample164.xml" valid="true" %}
+{% include plainExample.html example="examples/analysis/analysis-sample164.xml" valid="true" version=page.version %}
 
 While **@copyof** signifies a duplicate copy of an element, the **@sameas**
 indicates that the current element represents exactly the same entity as the one referenced
@@ -92,7 +92,7 @@ the sharing of one note head between two voices in the first full measure of a c
    <img src="../../../../guidelines/v3/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample165.xml" valid="true" %}
+{% include plainExample.html example="examples/analysis/analysis-sample165.xml" valid="true" version=page.version %}
 
 While **@copyof** and **@sameas** have defined semantics, the **@corresp**
 may be used to create user-defined relationships between elements. The example below
@@ -100,7 +100,7 @@ demonstrates the encoding of a relationship between #note3 and the fermata, even
 the
 fermata is not placed directly above the note.
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample166.xml" valid="true" %}
+{% include plainExample.html example="examples/analysis/analysis-sample166.xml" valid="true" version=page.version %}
 
 The **@corresp** attribute only marks the correspondence between the current element
 and one or more other entities. To describe the nature of the correspondence, one
@@ -121,7 +121,7 @@ occurs after the pointing element in time, but before it in encoding order:
    <img src="../../../../guidelines/v3/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample167.xml" valid="false" %}
+{% include plainExample.html example="examples/analysis/analysis-sample167.xml" valid="false" version=page.version %}
 
 This attribute may also be useful to clarify a sequence of entites which occurs across
 some
@@ -129,7 +129,7 @@ form of interruption, in this case, notes before and after a system or page brea
 where there
 is no custos or direct in the source:
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample168.xml" valid="true" %}
+{% include plainExample.html example="examples/analysis/analysis-sample168.xml" valid="true" version=page.version %}
 
 A one-to-many relationship between the current element and the entities being referred
 to can

@@ -72,7 +72,7 @@ measure can be enabled using the **@multi.number** attribute available on the [s
    <img src="../../../../guidelines/v3/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample152.xml" valid="false" %}
+{% include plainExample.html example="examples/cmn/cmn-sample152.xml" valid="false" version=page.version %}
 
 
 
@@ -92,7 +92,7 @@ importance. The following example from the beginning of Beethoven's
    <img src="../../../../guidelines/v3/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample153.xml" valid="false" %}
+{% include plainExample.html example="examples/cmn/cmn-sample153.xml" valid="false" version=page.version %}
 
 
 As seen in the example above, it is possible to continuously repeat half measures,

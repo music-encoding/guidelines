@@ -38,10 +38,10 @@ title: "data.LINEWIDTH"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;alternate 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -49,20 +49,22 @@ title: "data.LINEWIDTH"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;macroRef 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.LINEWIDTHTERM">data.LINEWIDTHTERM</a>"
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.LINEWIDTHTERM.html">data.LINEWIDTHTERM</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;macroRef 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.MEASUREMENTABS">data.MEASUREMENTABS</a>"
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.MEASUREMENTABS.html">data.MEASUREMENTABS</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>

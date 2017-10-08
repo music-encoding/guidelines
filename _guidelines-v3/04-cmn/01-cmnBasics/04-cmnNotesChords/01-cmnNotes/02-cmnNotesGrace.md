@@ -16,7 +16,7 @@ The presence of the **@grace** attribute indicates a grace note.
 </figure>
 The encoding of the left-most example would look like this:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample098.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample098.xml" valid="true" version=page.version %}
 
 
 Grace notes are not counted when determining the measure's conformance to the current

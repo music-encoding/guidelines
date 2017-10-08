@@ -14,7 +14,7 @@ provides the following elements for this purpose.
 
 {% include specDesc.html version=page.version elem="relationList" atts="" %}
 {% include specDesc.html version=page.version elem="relation" atts="" %}
-
+{% include specDesc.html version=page.version elem="relation" atts="att.rel/rel" %}
 
 
 
@@ -72,7 +72,7 @@ declare these relations explicitly. In FRBR terms, a manifestation / source is a
 embodiment
 of an expression.
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample085.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample085.xml" valid="true" version=page.version %}
 
 Within the [componentGrp]({{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html){:.link_odd_elementSpec} element, the order of child elements implicitly
 describes a hasSuccessor/isSuccessorOf relationship between components, i.e. it defines
@@ -81,7 +81,7 @@ certain sequence such as the movements of a work. In other cases, [relation]({{ 
 defined by encoding order or hierarchy. For instance, the hasReproduction/isReproductionOf
 relationship may be used to indicate that one source is a reprint of another.
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample086.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample086.xml" valid="true" version=page.version %}
 
 Moreover, the use of [componentGrp]({{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html){:.link_odd_elementSpec} implicitly defines a hasPart/isPartOf
 relationship between the componentGrp element’s parent and its child elements. Using
@@ -90,7 +90,7 @@ component works in the "Der Ring des Nibelungen" example above could alternative
 be encoded
 as sibling work elements to the "Ring" work element.
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample087.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample087.xml" valid="true" version=page.version %}
 
 Relations may also be used to point to external resources. For instance, each of the
 individual component works of the "Ring" could be encoded in separate files, with
@@ -99,9 +99,9 @@ pointing to them.
 
 In the file "ring.xml":
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample088.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample088.xml" valid="true" version=page.version %}
 
 In the file "rheingold.xml":
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample089.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample089.xml" valid="true" version=page.version %}
 

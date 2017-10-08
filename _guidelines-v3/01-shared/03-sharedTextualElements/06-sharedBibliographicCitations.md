@@ -111,7 +111,7 @@ When supplied with a **@target** attribute, [bibl]({{ site.baseurl }}/{{ page.ve
 as a hypertext reference to an external electronic resource. In addition, other related
 bibliographic items may be described or referenced using the [relatedItem]({{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html){:.link_odd_elementSpec} element.
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample012.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample012.xml" valid="true" version=page.version %}
 
 Please consult <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and 
 <a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a> for

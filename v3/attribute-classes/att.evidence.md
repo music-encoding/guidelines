@@ -79,7 +79,7 @@ title: "att.evidence"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"cert"</span> 
@@ -87,12 +87,12 @@ title: "att.evidence"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Signifies the degree of certainty or precision associated with a feature.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -100,12 +100,16 @@ title: "att.evidence"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.CERTAINTY">data.CERTAINTY</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.CERTAINTY.html">data.CERTAINTY</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -116,7 +120,7 @@ title: "att.evidence"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"evidence"</span> 
@@ -124,14 +128,14 @@ title: "att.evidence"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the nature of the evidence supporting the reliability or accuracy of the
                      intervention or interpretation. Suggested values include: 'internal', 'external',
                      'conjecture'.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -139,7 +143,7 @@ title: "att.evidence"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:data 
                            <span class="attribute">type=</span>
                            <span class="attributevalue">"NMTOKEN"</span>/&gt;

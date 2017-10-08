@@ -25,7 +25,7 @@ musical events within a [layer]({{ site.baseurl }}/{{ page.version }}/elements/l
    <img src="../../../../guidelines/v3/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 11. Bowed tremolandi</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample138.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample138.xml" valid="true" version=page.version %}
 
 
 The **@measperf** attribute value indicates the exact note values in an aural
@@ -36,7 +36,7 @@ on the note may disagree with the number of slashes that should be present accor
 to
 the **@measperf** attribute, especially in music manuscripts.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample139.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample139.xml" valid="true" version=page.version %}
 
 
 The [bTrem]({{ site.baseurl }}/{{ page.version }}/elements/bTrem.html){:.link_odd_elementSpec} element can be used as shorthand for a tuplet consisting
@@ -46,7 +46,7 @@ optical music recognition process in which complete semantics cannot be determin
 *a priori*. When used this way, the **@num** attribute on [bTrem]({{ site.baseurl }}/{{ page.version }}/elements/bTrem.html){:.link_odd_elementSpec} can record a number to be rendered along with the pseudo-tuplet.
 In spite of this capability, the [tuplet]({{ site.baseurl }}/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} element is preferred.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample140.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample140.xml" valid="true" version=page.version %}
 
 
 In the case of alternating pitches, MEI offers the [fTrem]({{ site.baseurl }}/{{ page.version }}/elements/fTrem.html){:.link_odd_elementSpec} (fingered
@@ -60,6 +60,6 @@ value indicated by the **@measperf** attribute, especially in manuscript
 sources.
 
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample141.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample141.xml" valid="true" version=page.version %}
 
 

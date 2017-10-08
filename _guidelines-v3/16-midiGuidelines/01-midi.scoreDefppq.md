@@ -10,7 +10,7 @@ To define the MIDI resolution of a score, the **@ppq** attribute may be used on 
 the **@dur.ges** attribute on elements in the [att.duration.performed]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.performed.html){:.link_odd} class.
 
 
-{% include plainExample.html example="./v3/examples/midiGuidelines/midiGuidelines-sample269.xml" valid="false" %}
+{% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample269.xml" valid="false" version=page.version %}
 
 
 
@@ -24,7 +24,7 @@ the [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.l
 attached to [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}. 
 
 
-{% include plainExample.html example="./v3/examples/midiGuidelines/midiGuidelines-sample270.xml" valid="true" %}
+{% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample270.xml" valid="true" version=page.version %}
 
 
 

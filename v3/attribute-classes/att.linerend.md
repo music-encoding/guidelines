@@ -98,14 +98,16 @@ title: "att.linerend"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.linerend.base</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.linerend.base</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
@@ -114,7 +116,7 @@ title: "att.linerend"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"lendsym"</span> 
@@ -122,12 +124,12 @@ title: "att.linerend"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Symbol rendered at end of line.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -135,12 +137,16 @@ title: "att.linerend"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -151,7 +157,7 @@ title: "att.linerend"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"lendsymsize"</span> 
@@ -159,12 +165,12 @@ title: "att.linerend"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Holds the relative size of the line-end symbol.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -172,12 +178,16 @@ title: "att.linerend"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.LINESTARTENDSYMBOLSIZE.html">data.LINESTARTENDSYMBOLSIZE</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -188,7 +198,7 @@ title: "att.linerend"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"lstartsym"</span> 
@@ -196,12 +206,12 @@ title: "att.linerend"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Symbol rendered at start of line.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -209,12 +219,16 @@ title: "att.linerend"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.LINESTARTENDSYMBOL.html">data.LINESTARTENDSYMBOL</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -225,7 +239,7 @@ title: "att.linerend"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"lstartsymsize"</span> 
@@ -233,12 +247,12 @@ title: "att.linerend"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Holds the relative size of the line-start symbol.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -246,12 +260,16 @@ title: "att.linerend"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.LINESTARTENDSYMBOLSIZE">data.LINESTARTENDSYMBOLSIZE</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.LINESTARTENDSYMBOLSIZE.html">data.LINESTARTENDSYMBOLSIZE</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      

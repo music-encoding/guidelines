@@ -68,22 +68,22 @@ title: "data.BARRENDITION"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"dashed"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Dashed line (Unicode 1D104).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -91,13 +91,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"dotted"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Dotted line.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -105,13 +105,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"dbl"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>(Unicode 1D101).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -119,13 +119,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"dbldashed"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Double dashed line.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -133,13 +133,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"dbldotted"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Double dotted line.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -147,13 +147,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"end"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>(Unicode 1D102).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -161,13 +161,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"invis"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Bar line not rendered.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -175,13 +175,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"rptstart"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Repeat start (Unicode 1D106).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -189,13 +189,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"rptboth"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Repeat start and end.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -203,13 +203,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"rptend"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Repeat end (Unicode 1D107).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -217,13 +217,13 @@ title: "data.BARRENDITION"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"single"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>(Unicode 1D100).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>

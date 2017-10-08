@@ -51,7 +51,7 @@ title: "att.staffgroupingsym"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"symbol"</span> 
@@ -59,24 +59,24 @@ title: "att.staffgroupingsym"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Specifies the symbol used to group a set of staves.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"brace"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Curved symbol, i.e., {.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -84,13 +84,13 @@ title: "att.staffgroupingsym"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"bracket"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Square symbol, i.e., [, but with curved/angled top and bottom segments.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -98,13 +98,13 @@ title: "att.staffgroupingsym"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"bracketsq"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Square symbol, i.e., [, with horizontal top and bottom segments.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -112,13 +112,13 @@ title: "att.staffgroupingsym"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"line"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Line symbol, i.e., |, (wide) line without top and bottom curved/horizontal
                            segments.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -127,13 +127,13 @@ title: "att.staffgroupingsym"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"none"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Grouping symbol missing.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>

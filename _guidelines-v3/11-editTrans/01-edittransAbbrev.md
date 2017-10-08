@@ -8,11 +8,11 @@ version: "v3"
 
 MEI offers methods for marking abbreviations in prose, as in the following example:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample207.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample207.xml" valid="true" version=page.version %}
 
 or abbreviations in the music itself, as in the following example:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample208.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample208.xml" valid="true" version=page.version %}
 
 
 
@@ -74,7 +74,7 @@ value,
 while [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} reverses this. The choice between the two is up to the user.
 For example:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample209.xml" valid="false" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample209.xml" valid="false" version=page.version %}
 
 
 The [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} tag is not required; if appropriate, the encoder may
@@ -93,7 +93,7 @@ must be
 presented within elements. Furthermore, as alternatives to each other, the [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} elements must be wrapped by the [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element, as described above. The previous example, where the 'o:' in 'pno:' is
 written as superscript, would be encoded as:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample210.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample210.xml" valid="true" version=page.version %}
 
 
 

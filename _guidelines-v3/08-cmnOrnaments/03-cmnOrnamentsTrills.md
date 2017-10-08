@@ -32,7 +32,7 @@ The following example demonstrates the encoding of simple trills:
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_tr.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 27. Example of simple trills.</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample184.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample184.xml" valid="true" version=page.version %}
 
 
 It has been specified earlier that it is a semantic error not to encode a starting
@@ -47,7 +47,7 @@ use of a wavy line extender as shown in this example:
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 28. Example of trills followed by wavy lines.</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample185.xml" valid="false" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample185.xml" valid="false" version=page.version %}
 
 
 Chromatic alterations of auxiliary notes are occasionally expressed on the staff using
@@ -62,7 +62,7 @@ processes.
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 29. Example alterations expressed on the staff.</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample186.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample186.xml" valid="true" version=page.version %}
 
 
 Some trills may be introduced by a turn or followed by an inverted turn leading to
@@ -83,7 +83,7 @@ grace notes:
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 30. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample187.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample187.xml" valid="true" version=page.version %}
 
 
 

@@ -53,7 +53,7 @@ title: "att.keySigDefault.log"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"key.accid"</span> 
@@ -61,13 +61,13 @@ title: "att.keySigDefault.log"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Contains an accidental for the tonic key, if one is required, e.g., if key.pname
                      equals 'c' and key.accid equals 's', then a tonic of C# is indicated.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -75,12 +75,16 @@ title: "att.keySigDefault.log"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ACCIDENTAL.IMPLICIT.html">data.ACCIDENTAL.IMPLICIT</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -91,7 +95,7 @@ title: "att.keySigDefault.log"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"key.mode"</span> 
@@ -99,12 +103,12 @@ title: "att.keySigDefault.log"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates major, minor, or other tonality.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -112,12 +116,16 @@ title: "att.keySigDefault.log"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.MODE">data.MODE</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.MODE.html">data.MODE</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -128,7 +136,7 @@ title: "att.keySigDefault.log"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"key.pname"</span> 
@@ -136,12 +144,12 @@ title: "att.keySigDefault.log"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Holds the pitch name of the tonic key, e.g. 'c' for the key of C.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -149,12 +157,16 @@ title: "att.keySigDefault.log"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.PITCHNAME">data.PITCHNAME</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PITCHNAME.html">data.PITCHNAME</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -165,7 +177,7 @@ title: "att.keySigDefault.log"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"key.sig"</span> 
@@ -173,12 +185,12 @@ title: "att.keySigDefault.log"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates where the key lies in the circle of fifths.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -186,12 +198,16 @@ title: "att.keySigDefault.log"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.KEYSIGNATURE">data.KEYSIGNATURE</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.KEYSIGNATURE.html">data.KEYSIGNATURE</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
@@ -202,7 +218,7 @@ title: "att.keySigDefault.log"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"key.sig.mixed"</span> 
@@ -210,7 +226,7 @@ title: "att.keySigDefault.log"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Mixed key signatures, e.g. those consisting of a mixture of flats and sharps (Read,
                      p. 143, ex. 9-39), and key signatures with unorthodox placement of the accidentals
                      (Read, p. 141) must be indicated by setting the key.sig attribute to 'mixed' and
@@ -223,7 +239,7 @@ title: "att.keySigDefault.log"
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"unbounded"</span> 
@@ -231,12 +247,16 @@ title: "att.keySigDefault.log"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.KEYSIGTOKEN.html">data.KEYSIGTOKEN</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      

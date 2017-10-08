@@ -42,68 +42,82 @@ title: "att.fermata.vis"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altsym</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altsym</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extsym</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extsym</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.html">att.visualoffset</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.html">att.visualoffset</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
@@ -112,7 +126,7 @@ title: "att.fermata.vis"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"form"</span> 
@@ -120,25 +134,25 @@ title: "att.fermata.vis"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Describes the visual appearance of the fermata; that is, whether it occurs as
                      upright or inverted.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"inv"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Inverted, i.e., curve or bracket below the dot.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -146,13 +160,13 @@ title: "att.fermata.vis"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"norm"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Upright; i.e., curve or bracket above the dot.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -167,7 +181,7 @@ title: "att.fermata.vis"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"shape"</span> 
@@ -175,25 +189,25 @@ title: "att.fermata.vis"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Describes the visual appearance of the fermata; that is, whether it has a curved,
                      square, or angular shape.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"curved"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>A curve above or below the dot.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -201,13 +215,13 @@ title: "att.fermata.vis"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"square"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>A bracket above or below the dot.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -215,13 +229,13 @@ title: "att.fermata.vis"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"angular"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>A triangle above or below the dot.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>

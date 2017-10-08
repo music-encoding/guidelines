@@ -60,7 +60,7 @@ characteristic examples follow; first, an index (for the case in which a printed
 is of
 sufficient interest to merit transcription):
 
-{% include plainExample.html example="./v3/examples/text/text-sample342.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample342.xml" valid="true" version=page.version %}
 
 Note that if the page breaks in the original source have also been explicitly encoded,
 and
@@ -70,9 +70,9 @@ links. For example, assuming that the encoding of page 77 of the original source
 like
 this:
 
-{% include plainExample.html example="./v3/examples/text/text-sample343.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample343.xml" valid="true" version=page.version %}
 
 then the last item above might be encoded more usefully in the following form:
 
-{% include plainExample.html example="./v3/examples/text/text-sample344.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample344.xml" valid="true" version=page.version %}
 

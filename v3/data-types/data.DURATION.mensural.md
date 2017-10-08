@@ -59,65 +59,65 @@ title: "data.DURATION.mensural"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"maxima"</span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"longa"</span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"brevis"</span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"semibrevis"</span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"minima"</span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"semiminima"</span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"fusa"</span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"semifusa"</span>/&gt;

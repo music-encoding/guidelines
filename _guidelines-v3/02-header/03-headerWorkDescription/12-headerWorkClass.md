@@ -42,19 +42,19 @@ The classCode element offers the possibility of capturing a bibliographic citati
 and/or a
 URI at which the classification scheme or information about it may be found.
 
-{% include plainExample.html example="./v3/examples/header/header-sample070.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample070.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/header/header-sample071.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample071.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/header/header-sample072.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample072.xml" valid="true" version=page.version %}
 
 The **@classcode** attribute may be used on each term element to make reference, by
 means of an identifier, to the classification scheme from which it is drawn.
 
-{% include plainExample.html example="./v3/examples/header/header-sample073.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample073.xml" valid="true" version=page.version %}
 
 Alternatively, **@classcode** may be used on [termList]({{ site.baseurl }}/{{ page.version }}/elements/termList.html){:.link_odd_elementSpec} when all
 the contained terms come from the same source.
 
-{% include plainExample.html example="./v3/examples/header/header-sample074.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample074.xml" valid="true" version=page.version %}
 

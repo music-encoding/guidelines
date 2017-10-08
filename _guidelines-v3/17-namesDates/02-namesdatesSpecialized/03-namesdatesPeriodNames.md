@@ -17,7 +17,7 @@ period of time, for example, those which characterize obvious similarities in st
 such as
 ‘Baroque’ or ‘3rd Style Period’:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample286.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample286.xml" valid="true" version=page.version %}
 
 
 The date sub-element is available within [periodName]({{ site.baseurl }}/{{ page.version }}/elements/periodName.html){:.link_odd_elementSpec} in order to
@@ -25,12 +25,12 @@ record any dates associated with the name that should be captured in the text, f
 example,
 start and end dates of the named period:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample287.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample287.xml" valid="true" version=page.version %}
 
 Recording start and end points of a certain period using the **@startdate** and
 **@enddate** attributes may prove to be better for machine processing:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample288.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample288.xml" valid="true" version=page.version %}
 
 If a controlled value is used, the list from which it is taken should be recorded.
 In this

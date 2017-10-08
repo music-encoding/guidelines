@@ -96,7 +96,7 @@ edition.
 
 Some examples follow:
 
-{% include plainExample.html example="./v3/examples/header/header-sample029.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample029.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/header/header-sample030.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample030.xml" valid="true" version=page.version %}
 

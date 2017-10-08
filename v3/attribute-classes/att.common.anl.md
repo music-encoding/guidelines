@@ -524,14 +524,16 @@ title: "att.common.anl"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.alignment.html">att.alignment</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.alignment.html">att.alignment</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
@@ -540,7 +542,7 @@ title: "att.common.anl"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"copyof"</span> 
@@ -548,12 +550,12 @@ title: "att.common.anl"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Points to an element of which the current element is a copy.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -561,19 +563,23 @@ title: "att.common.anl"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"When_copyof_element_empty"</span> 
@@ -581,16 +587,16 @@ title: "att.common.anl"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"mei:*[@copyof]"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">test=</span>
                                  <span class="attributevalue">"count(child::node()) = 0"</span>&gt;
@@ -608,7 +614,7 @@ title: "att.common.anl"
                      <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_copyofTarget"</span> 
@@ -616,16 +622,16 @@ title: "att.common.anl"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@copyof"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -636,7 +642,7 @@ title: "att.common.anl"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -660,7 +666,7 @@ title: "att.common.anl"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"corresp"</span> 
@@ -668,13 +674,13 @@ title: "att.common.anl"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Used to point to other elements that correspond to this one in a generic
                      fashion.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"unbounded"</span> 
@@ -682,19 +688,23 @@ title: "att.common.anl"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_correspTarget"</span> 
@@ -702,16 +712,16 @@ title: "att.common.anl"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@corresp"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -722,7 +732,7 @@ title: "att.common.anl"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -746,7 +756,7 @@ title: "att.common.anl"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"next"</span> 
@@ -754,12 +764,12 @@ title: "att.common.anl"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Used to point to the next event(s) in a user-defined collection.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"unbounded"</span> 
@@ -767,19 +777,23 @@ title: "att.common.anl"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_nextTarget"</span> 
@@ -787,16 +801,16 @@ title: "att.common.anl"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@next"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -807,7 +821,7 @@ title: "att.common.anl"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -831,7 +845,7 @@ title: "att.common.anl"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"prev"</span> 
@@ -839,12 +853,12 @@ title: "att.common.anl"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Points to the previous event(s) in a user-defined collection.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"unbounded"</span> 
@@ -852,19 +866,23 @@ title: "att.common.anl"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_prevTarget"</span> 
@@ -872,16 +890,16 @@ title: "att.common.anl"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@prev"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -892,7 +910,7 @@ title: "att.common.anl"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -916,7 +934,7 @@ title: "att.common.anl"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"sameas"</span> 
@@ -924,13 +942,13 @@ title: "att.common.anl"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Points to an element that is the same as the current element but is not a literal
                      copy of the current element.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"unbounded"</span> 
@@ -938,19 +956,23 @@ title: "att.common.anl"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_sameasTarget"</span> 
@@ -958,16 +980,16 @@ title: "att.common.anl"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@sameas"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -978,7 +1000,7 @@ title: "att.common.anl"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -1002,7 +1024,7 @@ title: "att.common.anl"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"synch"</span> 
@@ -1010,12 +1032,12 @@ title: "att.common.anl"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Points to elements that are synchronous with the current element.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"unbounded"</span> 
@@ -1023,19 +1045,23 @@ title: "att.common.anl"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_synchTarget"</span> 
@@ -1043,16 +1069,16 @@ title: "att.common.anl"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@synch"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -1063,7 +1089,7 @@ title: "att.common.anl"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -1097,13 +1123,13 @@ title: "att.common.anl"
                <div>An element with a copyof attribute cannot have content.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"mei:*[@copyof]"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">test=</span>
                         <span class="attributevalue">"count(child::node()) = 0"</span>&gt;
@@ -1127,13 +1153,13 @@ title: "att.common.anl"
                <div>The value in @copyof should correspond to the @xml:id attribute of an element.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@copyof"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1144,7 +1170,7 @@ title: "att.common.anl"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1170,13 +1196,13 @@ title: "att.common.anl"
                <div>Each value in @corresp should correspond to the @xml:id attribute of an element.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@corresp"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1187,7 +1213,7 @@ title: "att.common.anl"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1213,13 +1239,13 @@ title: "att.common.anl"
                <div>Each value in @next should correspond to the @xml:id attribute of an element.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@next"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1230,7 +1256,7 @@ title: "att.common.anl"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1256,13 +1282,13 @@ title: "att.common.anl"
                <div>Each value in @prev should correspond to the @xml:id attribute of an element.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@prev"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1273,7 +1299,7 @@ title: "att.common.anl"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1299,13 +1325,13 @@ title: "att.common.anl"
                <div>Each value in @sameas should correspond to the @xml:id attribute of an element.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@sameas"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1316,7 +1342,7 @@ title: "att.common.anl"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1342,13 +1368,13 @@ title: "att.common.anl"
                <div>Each value in @synch should correspond to the @xml:id attribute of an element.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@synch"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -1359,7 +1385,7 @@ title: "att.common.anl"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 

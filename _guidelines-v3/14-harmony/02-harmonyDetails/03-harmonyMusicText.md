@@ -16,14 +16,14 @@ harmonic indications of all kinds:
 
 
 
-
+{% include specDesc.html version=page.version elem="harm" atts="att.extender/extender att.harm.vis/rendgrid" %}
 
 
 
 The [harm]({{ site.baseurl }}/{{ page.version }}/elements/harm.html){:.link_odd_elementSpec} element can be used to capture chord labels that consist
 entirely of text:
 
-{% include plainExample.html example="./v3/examples/harmony/harmony-sample249.xml" valid="false" %}
+{% include plainExample.html example="examples/harmony/harmony-sample249.xml" valid="false" version=page.version %}
 
 or labels that are chord tablature grids:
 
@@ -32,7 +32,7 @@ or labels that are chord tablature grids:
    <img src="../../../../guidelines/v3/Images/modules/harmony/A7_5th.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 39. Chord grid without label</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/harmony/harmony-sample250.xml" valid="true" %}
+{% include plainExample.html example="examples/harmony/harmony-sample250.xml" valid="true" version=page.version %}
 
 or labels that mix these styles:
 
@@ -41,7 +41,7 @@ or labels that mix these styles:
    <img src="../../../../guidelines/v3/Images/modules/harmony/A7_1st.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 40. Chord grid with label</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/harmony/harmony-sample251.xml" valid="true" %}
+{% include plainExample.html example="examples/harmony/harmony-sample251.xml" valid="true" version=page.version %}
 
 
 The [harm]({{ site.baseurl }}/{{ page.version }}/elements/harm.html){:.link_odd_elementSpec} element must define a point of attachment using one of the

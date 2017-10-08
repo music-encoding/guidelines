@@ -28,19 +28,19 @@ The encoding of this kind of trill may vary depending on the purpose of the enco
 For
 representation of the source, a single trill is sufficient:
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample188.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample188.xml" valid="true" version=page.version %}
 
 
 To support analytical and aural rendering applications, however, each trill may be
 explicitly encoded, as the following example demonstrates:
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample189.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample189.xml" valid="true" version=page.version %}
 
 
 However, when it is necessary to support multiple outputs, use of the [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element and appropriate sub-elements is recommended. In this case, the [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} and [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} elements can be used to represent the
 original source and a regularization provided by the editor, respectively:
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample190.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample190.xml" valid="true" version=page.version %}
 
 
 Another situation that requires disambiguation of an ornament's name and its potential
@@ -64,7 +64,7 @@ renditions.
       Bach* (1720)
    </figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample191.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample191.xml" valid="true" version=page.version %}
 
 
 Depending on the purpose of the encoding, it may be more convenient to encode the
@@ -72,7 +72,7 @@ regularized text within the stream of events, along with a corresponding choice 
 regard
 to the existence of the trill marking, as in the following example:
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample192.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample192.xml" valid="true" version=page.version %}
 
 The [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} element contains the single-note-with-trill transcription of
 the original text, while the [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} element represents the

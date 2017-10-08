@@ -31,12 +31,12 @@ half note.
 
 An encoder may choose to silently correct the engraver's error:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample212.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample212.xml" valid="true" version=page.version %}
 
 
 or the correction may be made explicit:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample213.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample213.xml" valid="true" version=page.version %}
 
 
 Alternatively, the encoder may simply record the typographic error without correcting
@@ -44,7 +44,7 @@ it,
 either without comment or with a [sic]({{ site.baseurl }}/{{ page.version }}/elements/sic.html){:.link_odd_elementSpec} element to indicate the error is
 not a transcription error in the encoding:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample214.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample214.xml" valid="true" version=page.version %}
 
 
 If the encoder elects to record the original source text and provide a correction
@@ -52,14 +52,14 @@ for the
 sake of transparency, both [sic]({{ site.baseurl }}/{{ page.version }}/elements/sic.html){:.link_odd_elementSpec} and [corr]({{ site.baseurl }}/{{ page.version }}/elements/corr.html){:.link_odd_elementSpec} may be
 used, wrapped in a [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element. The order of the [sic]({{ site.baseurl }}/{{ page.version }}/elements/sic.html){:.link_odd_elementSpec} and [corr]({{ site.baseurl }}/{{ page.version }}/elements/corr.html){:.link_odd_elementSpec} elements is not significant:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample215.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample215.xml" valid="true" version=page.version %}
 
 
 An indication of the person or agency responsible for the emendation can be provided
 as
 follows:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample216.xml" valid="false" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample216.xml" valid="false" version=page.version %}
 
 
 Here the **@resp** attribute has been used to indicate responsibility for the
@@ -74,7 +74,7 @@ indicate the degree of editorial confidence in a particular correction, as in th
 following
 example:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample217.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample217.xml" valid="true" version=page.version %}
 
 
 Where, as here, the correction takes the form of amending information present in the

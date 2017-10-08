@@ -27,15 +27,15 @@ matters as:
 
 but is not restricted to these.
 
-{% include plainExample.html example="./v3/examples/header/header-sample051.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample051.xml" valid="true" version=page.version %}
 
 It may also include a simple description of any parts of the source text included
 or
 excluded:
 
-{% include plainExample.html example="./v3/examples/header/header-sample052.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample052.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/header/header-sample053.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample053.xml" valid="true" version=page.version %}
 
 A sampling declaration which applies to more than one text or division of a text need
 not

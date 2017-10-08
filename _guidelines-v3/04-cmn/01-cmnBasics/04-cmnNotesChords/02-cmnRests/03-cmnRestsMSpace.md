@@ -17,6 +17,6 @@ missing from the encoding.
    <img src="../../../../guidelines/v3/Images/ExampleImages/mspace-300-20100514.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 5. Empty measure</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample103.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample103.xml" valid="true" version=page.version %}
 
 

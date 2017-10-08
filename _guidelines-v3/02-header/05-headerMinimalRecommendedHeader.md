@@ -43,7 +43,7 @@ Supplying only the level of encoding required, the MEI header of a single text w
 look like
 the following example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample077.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample077.xml" valid="true" version=page.version %}
 
 The only mandatory component of the MEI Header is the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element.
 Within this element, [titleStmt]({{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec} and [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} are
@@ -73,5 +73,5 @@ information, adequate for most bibliographic purposes, in particular to allow fo
 the creation
 of an AACR2-conformant bibliographic record.
 
-{% include plainExample.html example="./v3/examples/header/header-sample078.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample078.xml" valid="true" version=page.version %}
 

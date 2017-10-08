@@ -56,7 +56,7 @@ that all avFile elements have a recording or clip parent which bears the **@begi
 **@end**, and **@betype** attributes.
 
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample297.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample297.xml" valid="true" version=page.version %}
 
 
 Sometimes, multiple digital files are created in order to provide greater flexibility
@@ -67,7 +67,7 @@ each with a different mimetype. Keep in mind, however, that each file still repr
 the
 complete temporal extent of the recording act in spite of the change of file format:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample298.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample298.xml" valid="true" version=page.version %}
 
 
 The [clip]({{ site.baseurl }}/{{ page.version }}/elements/clip.html){:.link_odd_elementSpec} element identifies a temporal segment of a recording act. In
@@ -75,7 +75,7 @@ the following example, the clip begins two minutes into the timeframe of the rec
 and
 ends 20 seconds later:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample299.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample299.xml" valid="true" version=page.version %}
 
 
 Beyond these relatively simple uses, complex situations may occur that require equally
@@ -85,7 +85,7 @@ files. Because they have differing durations, the media files must be the result
 separate
 recording acts, even if these recording acts took place at the same time:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample300.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample300.xml" valid="true" version=page.version %}
 
 
 A single performance may also be represented by multiple, *sequential* digital
@@ -97,7 +97,7 @@ start and end times for the movements in relation to the overall temporal space 
 the
 complete work:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample301.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample301.xml" valid="true" version=page.version %}
 
 
 Similar markup is also applicable when a single file representing the entirety of
@@ -105,13 +105,13 @@ a recording
 act is broken into segments later, as is often done for practical storage and distribution
 reasons. The file from which the clips are derived is indicated using an avFile element:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample302.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample302.xml" valid="true" version=page.version %}
 
 
 A [clip]({{ site.baseurl }}/{{ page.version }}/elements/clip.html){:.link_odd_elementSpec} may be used to define any region of interest, such as a cadenza
 or a modulation, a song verse, etc. The following example shows the use of [clip]({{ site.baseurl }}/{{ page.version }}/elements/clip.html){:.link_odd_elementSpec} and its attributes to identify significant sections of a recording:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample303.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample303.xml" valid="true" version=page.version %}
 
 
 The preceding example also demonstrates that media files are not required in order
@@ -127,7 +127,7 @@ in
 the MEI file, the **@startid** attribute can be used to indicate the first element in
 the sequence of events to which the recording corresponds:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample304.xml" valid="false" %}
+{% include plainExample.html example="examples/performances/performances-sample304.xml" valid="false" version=page.version %}
 
 
 Clips can also be aligned with components of the musical text encoded in the [body]({{ site.baseurl }}/{{ page.version }}/elements/body.html){:.link_odd_elementSpec}. The **@startid** attribute can be used to specify the starting element in
@@ -137,7 +137,7 @@ of clip elements to identify the exposition of the first movement from Beethoven
 piano
 sonata Op. 14, no. 2 and its concluding ‘codetta’.
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample305.xml" valid="false" %}
+{% include plainExample.html example="examples/performances/performances-sample305.xml" valid="false" version=page.version %}
 
 
 Please note that the begin and end times of clips may overlap. In the preceding example,
@@ -148,7 +148,7 @@ ending points may also be used to provide additional performance context for a s
 or
 because there is uncertainty with regard to precise values for these points.
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample306.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample306.xml" valid="true" version=page.version %}
 
 
 A bibliographic description of a recording or metadata explaining how clip boundaries
@@ -156,7 +156,7 @@ were
 determined may be associated with the recording and clip elements via the **@decls**
 attribute:
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample307.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample307.xml" valid="true" version=page.version %}
 
 Associations between a feature of the encoding, such as a note, dynamic mark, or annotation,
 and a time point, may be created using [when]({{ site.baseurl }}/{{ page.version }}/elements/when.html){:.link_odd_elementSpec} elements and **@when**
@@ -165,7 +165,7 @@ attributes.
 The [when]({{ site.baseurl }}/{{ page.version }}/elements/when.html){:.link_odd_elementSpec} element identifies a particular point in time during the
 playback of a media file, such as an audio recording.
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample308.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample308.xml" valid="true" version=page.version %}
 
 Time points may be identified in absolute terms as above; that is, in hours, minutes,
 and
@@ -175,13 +175,13 @@ example, the time point of interest happens 48 frames after the occurrence of th
 point
 labelled as "t1".
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample309.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample309.xml" valid="true" version=page.version %}
 
 Having identified a point of interest, another feature of the encoding may be associated
 with
 this point using its **@when** attribute: 
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample310.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample310.xml" valid="true" version=page.version %}
 
 One use of the association created between the annotation and the time point is to
 display
@@ -194,7 +194,7 @@ the opposite direction; that is, from a time point to other features of the mark
 For
 example, 
 
-{% include plainExample.html example="./v3/examples/performances/performances-sample311.xml" valid="true" %}
+{% include plainExample.html example="examples/performances/performances-sample311.xml" valid="true" version=page.version %}
 
 indicates that the entities identified in **@data** all occur at the same instant.
 

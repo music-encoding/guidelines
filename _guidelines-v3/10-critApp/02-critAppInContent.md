@@ -11,12 +11,12 @@ any point in a musical text. For example, it may be used to indicate minor diffe
 such as
 stem directions:
 
-{% include plainExample.html example="./v3/examples/critApp/critApp-sample203.xml" valid="true" %}
+{% include plainExample.html example="examples/critApp/critApp-sample203.xml" valid="true" version=page.version %}
 
 
 or to indicate more significant differences, such as the insertion of extra measures:
 
-{% include plainExample.html example="./v3/examples/critApp/critApp-sample204.xml" valid="true" %}
+{% include plainExample.html example="examples/critApp/critApp-sample204.xml" valid="true" version=page.version %}
 
 
 

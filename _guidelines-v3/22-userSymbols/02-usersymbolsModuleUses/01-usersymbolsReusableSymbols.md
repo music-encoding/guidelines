@@ -12,7 +12,7 @@ by other
 [symbolDef]({{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} elements by employing the [symbol]({{ site.baseurl }}/{{ page.version }}/elements/symbol.html){:.link_odd_elementSpec}
 element.
 
-<figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample345.xml" valid="true" %}
+<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample345.xml" valid="true" version=page.version %}
    
    <figcaption class="figure-caption">Listing 1. Definition of a triangle percussion symbol using graphic primitives</figcaption>
 </figure>
@@ -22,7 +22,7 @@ element.
    <figcaption class="figure-caption">Figure 53. Rendition of the triangle defined above</figcaption>
 </figure>
 
-<figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample346.xml" valid="true" %}
+<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample346.xml" valid="true" version=page.version %}
    
    <figcaption class="figure-caption">Listing 2. Symbol composed of the symbol defined above and additional graphics primitives</figcaption>
 </figure>

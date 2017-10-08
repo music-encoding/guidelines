@@ -20,8 +20,8 @@ typographically distinct from the surrounding text; i.e., surrounded by so-calle
 
 The following examples show the use of [quote]({{ site.baseurl }}/{{ page.version }}/elements/quote.html){:.link_odd_elementSpec}.
 
-{% include plainExample.html example="./v3/examples/text/text-sample335.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample335.xml" valid="true" version=page.version %}
 
 
-{% include plainExample.html example="./v3/examples/text/text-sample336.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample336.xml" valid="true" version=page.version %}
 

@@ -65,12 +65,12 @@ element, e.g. ‘Text in English with stage directions in French and German’
 
 Each such item of information may be tagged using the general-purpose [annot]({{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} element. Groups of annotations are contained within the [notesStmt]({{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec} element, as in the following example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample041.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample041.xml" valid="true" version=page.version %}
 
 There are advantages, however, to encoding such information with more precise elements
 elsewhere in the MEI header, when such elements are available. For example, the notes
 above
 might be encoded as follows:
 
-{% include plainExample.html example="./v3/examples/header/header-sample042.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample042.xml" valid="true" version=page.version %}
 

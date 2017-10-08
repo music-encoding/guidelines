@@ -15,7 +15,7 @@ The **@cutout** attribute provides for the description of the rendition of the
 including the staff lines will not be rendered for this measure.
 
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample101.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample101.xml" valid="true" version=page.version %}
 
 
 It is a semantic error to mix an [mRest]({{ site.baseurl }}/{{ page.version }}/elements/mRest.html){:.link_odd_elementSpec} with other events in the

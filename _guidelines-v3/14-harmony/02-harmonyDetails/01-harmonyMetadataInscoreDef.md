@@ -26,9 +26,9 @@ The following elements enable the creation and re-use of interpreted chord data:
 {% include specDesc.html version=page.version elem="chordDef" atts="" %}
 {% include specDesc.html version=page.version elem="chordDef" atts="chordDef/pos" %}
 {% include specDesc.html version=page.version elem="chordMember" atts="" %}
-{% include specDesc.html version=page.version elem="chordMember" atts="chordMember/fing" %}
+{% include specDesc.html version=page.version elem="chordMember" atts="att.intervalharmonic/inth chordMember/fing att.fretlocation/fret" %}
 {% include specDesc.html version=page.version elem="barre" atts="" %}
-
+{% include specDesc.html version=page.version elem="barre" atts="att.fretlocation/fret" %}
 
 
 
@@ -55,7 +55,7 @@ indications found in the musical text. For example, the harmonic label <span cla
 equated with a fully spelled-out indication of functional harmony that can be substituted
 for the harmonic label, say, in an aural rendition:
 
-{% include plainExample.html example="./v3/examples/harmony/harmony-sample246.xml" valid="false" %}
+{% include plainExample.html example="examples/harmony/harmony-sample246.xml" valid="false" version=page.version %}
 
 
 Alternatively, the non-bass chord tones may be indicated, not with pitch names, but
@@ -64,7 +64,7 @@ their intervallic distance above the bass note. Therefore, the example above may
 be
 encoded:
 
-{% include plainExample.html example="./v3/examples/harmony/harmony-sample247.xml" valid="true" %}
+{% include plainExample.html example="examples/harmony/harmony-sample247.xml" valid="true" version=page.version %}
 
 
 The preceding encoding possibilities provide the detailed information necessary to
@@ -77,5 +77,5 @@ intervals above the bass. Of course, the **@inth** attribute for the bass note i
 should be set to 
 <span class="q">0</span>. For example:
 
-{% include plainExample.html example="./v3/examples/harmony/harmony-sample248.xml" valid="true" %}
+{% include plainExample.html example="examples/harmony/harmony-sample248.xml" valid="true" version=page.version %}
 

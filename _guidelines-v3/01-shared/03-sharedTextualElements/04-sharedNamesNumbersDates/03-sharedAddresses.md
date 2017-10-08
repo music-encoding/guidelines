@@ -20,5 +20,5 @@ It is important to note that the [address]({{ site.baseurl }}/{{ page.version }}
 reference to the person or organization whose address is specified. This must be provided
 in a separate element, as in the following example:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample010.xml" valid="false" %}
+{% include plainExample.html example="examples/shared/shared-sample010.xml" valid="false" version=page.version %}
 

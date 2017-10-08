@@ -159,7 +159,7 @@ title: "att.duration.additive"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"dur"</span> 
@@ -167,7 +167,7 @@ title: "att.duration.additive"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Records duration using optionally dotted, relative durational values provided by the
                      data.DURATION datatype. When the duration is "irrational", as is sometimes the case
                      with
@@ -177,7 +177,7 @@ title: "att.duration.additive"
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"unbounded"</span> 
@@ -185,19 +185,23 @@ title: "att.duration.additive"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.DURATION.additive">data.DURATION.additive</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.DURATION.additive.html">data.DURATION.additive</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"ignore_dots_attribute"</span> 
@@ -205,16 +209,16 @@ title: "att.duration.additive"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"mei:*[contains(@dur, '.')]"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">test=</span>
                                  <span class="attributevalue">"not(@dots)"</span>&gt;
@@ -246,13 +250,13 @@ title: "att.duration.additive"
                <div>An element with a dur attribute that contains dotted values must not have a dots attribute.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"mei:*[contains(@dur, '.')]"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">test=</span>
                         <span class="attributevalue">"not(@dots)"</span>&gt;

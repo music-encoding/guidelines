@@ -31,7 +31,7 @@ att.keySigDefault.log/key.sig" %}
 
 The following example describes a score in common time with 3 flats:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample093.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample093.xml" valid="true" version=page.version %}
 
 
 Other attributes allow the description of default page and system margins and fonts
@@ -40,7 +40,11 @@ text and music:
 
 
 
-
+{% include specDesc.html version=page.version elem="scoreDef" atts="att.pages/page.width att.pages/page.height att.pages/page.leftmar att.pages/page.topmar
+att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar att.systems/system.topmar
+att.systems/system.rightmar att.textstyle/text.name att.textstyle/text.fam att.textstyle/text.size
+att.notationstyle/music.name att.notationstyle/music.size att.lyricstyle/lyric.name
+att.lyricstyle/lyric.fam att.lyricstyle/lyric.size" %}
 
 
 
@@ -86,7 +90,7 @@ attributes are important for [staffDef]({{ site.baseurl }}/{{ page.version }}/el
 
 A staff with a tenor clef is encoded as in the following example:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample094.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample094.xml" valid="true" version=page.version %}
 
 
 In the case of transposing instruments, the key-related attributes described above
@@ -98,7 +102,7 @@ semitones to calculate sounded pitch from written pitch. The piccolo and E♭ cl
 staves
 in the example below utilize these attributes:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample095.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample095.xml" valid="true" version=page.version %}
 
 
 There are a number of additional elements that can be used as children of [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} in order to describe additional features of the staff, such as the color of

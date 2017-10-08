@@ -24,7 +24,7 @@ Prose text is used for several different purposes within a MEI document, therefo
 [p]({{ site.baseurl }}/{{ page.version }}/elements/p.html){:.link_odd_elementSpec} can occur in many situations. For example, it may be used within
 metadata elements (see <a class="link_ptr" title="The MEI Header" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html">2 The MEI Header</a>):
 
-{% include plainExample.html example="./v3/examples/text/text-sample331.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample331.xml" valid="true" version=page.version %}
 
 Alternatively, paragraphs may be part of the document contents (and therefore encoded
 within
@@ -34,5 +34,5 @@ contained by a [div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.
 
 The following example shows a paragraph in a preface section:
 
-{% include plainExample.html example="./v3/examples/text/text-sample332.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample332.xml" valid="true" version=page.version %}
 

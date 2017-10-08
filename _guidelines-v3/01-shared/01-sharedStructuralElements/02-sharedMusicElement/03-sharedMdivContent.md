@@ -24,7 +24,7 @@ not always possible or desirable to automatically derive one view from the other
 In
 addition, separating scores and parts can eliminate a great deal of markup complexity.
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample006.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample006.xml" valid="true" version=page.version %}
 
 The [score]({{ site.baseurl }}/{{ page.version }}/elements/score.html){:.link_odd_elementSpec} and [parts]({{ site.baseurl }}/{{ page.version }}/elements/parts.html){:.link_odd_elementSpec} elements may also be
 employed to accommodate different methods of organizing the markup – with no particular
@@ -57,7 +57,7 @@ attribute, available on all the members of the [model.eventLike]({{ site.baseurl
 class. The [staffGrp]({{ site.baseurl }}/{{ page.version }}/elements/staffGrp.html){:.link_odd_elementSpec} element handles grouping of staves in the score
 context.
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample007.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample007.xml" valid="true" version=page.version %}
 
 In both score and part views, the [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} element is used to
 describe logical characteristics of the encoded music, such as key signature, the
@@ -97,7 +97,7 @@ recursively nested.
 The most common (non-analytical, non-editorial) use of [section]({{ site.baseurl }}/{{ page.version }}/elements/section.html){:.link_odd_elementSpec} and
 [ending]({{ site.baseurl }}/{{ page.version }}/elements/ending.html){:.link_odd_elementSpec} elements is illustrated below:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample008.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample008.xml" valid="true" version=page.version %}
 
 Within [section]({{ site.baseurl }}/{{ page.version }}/elements/section.html){:.link_odd_elementSpec} elements, several methods of organization are
 possible, depending upon the notational style of the source material and the encoder's
@@ -150,5 +150,5 @@ independently of any textual directives, such as "Da capo" or "D.S. al Fine", th
 may be
 present in the document.
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample009.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample009.xml" valid="true" version=page.version %}
 

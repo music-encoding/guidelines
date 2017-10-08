@@ -23,9 +23,9 @@ item in the
 list is encoded with the [li]({{ site.baseurl }}/{{ page.version }}/elements/li.html){:.link_odd_elementSpec} element. The **@n** can be used to
 record a label for a list item, as in the following example:
 
-{% include plainExample.html example="./v3/examples/text/text-sample333.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample333.xml" valid="true" version=page.version %}
 
 Occasionally, lists have headers or titles, which can be encoded with [head]({{ site.baseurl }}/{{ page.version }}/elements/head.html){:.link_odd_elementSpec}:
 
-{% include plainExample.html example="./v3/examples/text/text-sample334.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample334.xml" valid="true" version=page.version %}
 

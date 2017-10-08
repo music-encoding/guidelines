@@ -264,7 +264,7 @@ title: "att.altsym"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"altsym"</span> 
@@ -272,13 +272,13 @@ title: "att.altsym"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Provides a way of pointing to a user-defined symbol. It must contain an ID of a
                      &lt;symbolDef&gt; element elsewhere in the document.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -286,19 +286,23 @@ title: "att.altsym"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_altsymTarget"</span> 
@@ -306,16 +310,16 @@ title: "att.altsym"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@altsym"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -326,7 +330,7 @@ title: "att.altsym"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -337,7 +341,7 @@ title: "att.altsym"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">test=</span>
                                  <span class="attributevalue">"not(substring(., 2) eq ancestor::mei:symbolDef/@xml:id)"</span>&gt;
@@ -372,13 +376,13 @@ title: "att.altsym"
                <div>The value in @altsym must not correspond to the @xml:id attribute of a symbolDef ancestor.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@altsym"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -389,7 +393,7 @@ title: "att.altsym"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -400,7 +404,7 @@ title: "att.altsym"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">test=</span>
                         <span class="attributevalue">"not(substring(., 2) eq ancestor::mei:symbolDef/@xml:id)"</span>&gt;

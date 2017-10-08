@@ -68,13 +68,13 @@ attribute may take the following values:
       </tr>
    </tbody>
 </table>
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample289.xml" valid="false" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample289.xml" valid="false" version=page.version %}
 
 
 The [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element is often enclosed in the [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element which may occur within [titleStmt]({{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec}, [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt]({{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec} and [change]({{ site.baseurl }}/{{ page.version }}/elements/change.html){:.link_odd_elementSpec}. This usage of the [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element typical looks like
 this:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample290.xml" valid="false" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample290.xml" valid="false" version=page.version %}
 
 Apart from the composer or originator of a musical work, however, there could be many
 other
@@ -84,9 +84,9 @@ these
 persons may be marked using the **@role** attribute on [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec}.
 For example:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample291.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample291.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample292.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample292.xml" valid="true" version=page.version %}
 
 The [Marc code list for
 relators](http://www.loc.gov/marc/relators/relaterm.html){:.link_ref} offers a variety of controlled terms that may serve as values for this use
@@ -104,6 +104,6 @@ For maximal machine-processability, these three attributes may be used in combin
 For
 example:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample293.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample293.xml" valid="true" version=page.version %}
 
 

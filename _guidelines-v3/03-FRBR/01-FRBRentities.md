@@ -59,7 +59,7 @@ no title is provided for an expression, distinguishing characteristics must be p
 in
 other elements, such as [perfMedium]({{ site.baseurl }}/{{ page.version }}/elements/perfMedium.html){:.link_odd_elementSpec}, as in the following example:
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample079.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample079.xml" valid="true" version=page.version %}
 
 Programmatic concatenation of the work title and one or more characteristics of the
 expression can be used to provide identification for the expression. For example,
@@ -72,9 +72,9 @@ descriptive title to the expression, as illustrated below. The carrier of the ma
 is
 often a good source of this kind of descriptive text.
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample080.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample080.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample081.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample081.xml" valid="true" version=page.version %}
 
 
 
@@ -88,5 +88,5 @@ can be used to group descriptions of individual items (exemplars) of the parent 
 Just
 like [expressionList]({{ site.baseurl }}/{{ page.version }}/elements/expressionList.html){:.link_odd_elementSpec}, which can only hold [expression]({{ site.baseurl }}/{{ page.version }}/elements/expression.html){:.link_odd_elementSpec} sub-components, [itemList]({{ site.baseurl }}/{{ page.version }}/elements/itemList.html){:.link_odd_elementSpec} may only contain [item]({{ site.baseurl }}/{{ page.version }}/elements/item.html){:.link_odd_elementSpec} elements.
 
-{% include plainExample.html example="./v3/examples/FRBR/FRBR-sample082.xml" valid="true" %}
+{% include plainExample.html example="examples/FRBR/FRBR-sample082.xml" valid="true" version=page.version %}
 

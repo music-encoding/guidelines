@@ -13,7 +13,7 @@ to describe arpeggios. This element is a member of the [model.controleventLike](
 **@staff**, **@layer** and **@tstamp** or the **@startid** and
 **@endid** attributes to connect it to the affected chord.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample136.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample136.xml" valid="true" version=page.version %}
 
 
 The usual direction for the performance of an arpeggio is from lowest note to highest,
@@ -43,7 +43,7 @@ its direction to distinguish it from the upward arpeggio; therefore, the presenc
 of the
 arrowhead can be implied.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample137.xml" valid="false" %}
+{% include plainExample.html example="examples/cmn/cmn-sample137.xml" valid="false" version=page.version %}
 
 
 A third, and somewhat counter-intuitive, value for **@order**, "nonarp", indicates

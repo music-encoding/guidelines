@@ -33,7 +33,77 @@ title: "syllable"
                </thead>
                <tbody>
                   <tr>
-                     <td></td>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@label</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">string</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@n</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a number-like designation for an element.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/token.html">token</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:base</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
+                              references into absolute URI references.
+                           </span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:id</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
+                              and other resources. Each id attribute within a document must have a unique
+                              value.
+                           </span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">ID</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a>
+                           </span>
+                        </div>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -45,7 +115,7 @@ title: "syllable"
          </td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.syllableLike,html">model.syllableLike</a>
+               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.syllableLike.html">model.syllableLike</a>
             </div>
          </td>
       </tr>
@@ -242,134 +312,182 @@ title: "syllable"
          <td class="wovenodd-col2">
             <div class="code" xml:space="preserve" data-lang="ODD">
                <code>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.syllableLike.html">model.syllableLike</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.syllableLike.html">model.syllableLike</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span>
                   </div>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
                         
-                        <div class="indent3">
+                        <div class="indent3 indent">
                            <span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.appLike">model.appLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.appLike.html">model.appLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.divLike">model.divLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.divLike.html">model.divLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.milestoneLike.music">model.milestoneLike.music</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestoneLike.music.html">model.milestoneLike.music</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.scoreDefLike">model.scoreDefLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scoreDefLike.html">model.scoreDefLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.staffDefLike">model.staffDefLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefLike.html">model.staffDefLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.staffGrpLike">model.staffGrpLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffGrpLike.html">model.staffGrpLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.annotLike">model.annotLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.annotLike.html">model.annotLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.graphicprimitiveLike">model.graphicprimitiveLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.graphicprimitiveLike.html">model.graphicprimitiveLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.editLike">model.editLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editLike.html">model.editLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.transcriptionLike">model.transcriptionLike</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.transcriptionLike.html">model.transcriptionLike</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
-                           <div class="indent4">
-                              <span data-indentation="4" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/model.syllablePart">model.syllablePart</a>"
-                                 </span>/&gt;
+                           <div class="indent4 indent">
+                              <span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.syllablePart.html">model.syllablePart</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            

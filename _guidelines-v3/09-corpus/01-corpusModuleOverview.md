@@ -24,7 +24,7 @@ encoding practices common to multiple samples may be described. The overall stru
 of an
 MEI-conformant corpus is thus:
 
-{% include plainExample.html example="./v3/examples/corpus/corpus-sample197.xml" valid="true" %}
+{% include plainExample.html example="examples/corpus/corpus-sample197.xml" valid="true" version=page.version %}
 
 This two-level structure allows for metadata to be specified at the corpus level,
 at the

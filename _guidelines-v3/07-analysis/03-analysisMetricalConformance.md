@@ -36,7 +36,7 @@ on the [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link
 value of **@metcon** on the measure level can usually be computed based on the values of
 its layer and staff sub-elements.
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample177.xml" valid="true" %}
+{% include plainExample.html example="examples/analysis/analysis-sample177.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample178.xml" valid="true" %}
+{% include plainExample.html example="examples/analysis/analysis-sample178.xml" valid="true" version=page.version %}
 

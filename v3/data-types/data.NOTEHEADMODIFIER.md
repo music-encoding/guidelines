@@ -36,10 +36,10 @@ title: "data.NOTEHEADMODIFIER"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;alternate 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -47,20 +47,22 @@ title: "data.NOTEHEADMODIFIER"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;macroRef 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.NOTEHEADMODIFIER.list">data.NOTEHEADMODIFIER.list</a>"
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.NOTEHEADMODIFIER.list.html">data.NOTEHEADMODIFIER.list</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;macroRef 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.NOTEHEADMODIFIER.pat">data.NOTEHEADMODIFIER.pat</a>"
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.NOTEHEADMODIFIER.pat.html">data.NOTEHEADMODIFIER.pat</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
