@@ -1,16 +1,21 @@
 {% assign c-label = include.version | prepend:'guidelines-' %}
 {% assign c = site.collections | where: "label", c-label | first %}
+<p class="sectionToc">
 {% for doc in c.docs %}
   {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
   {% assign levels = doc.relative_path | split: '/' %}
   {% assign levels = levels | shift %}
 
   {% if doc.url contains include.section and levels.size > 1 and levels.size < 4 %}
-<p>   
-    <a href="{{ site.baseurl}}{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
-        {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
+
+    <a class="level-{{levels.size - 1}}" href="{{ site.baseurl}}{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
+        {% for level in levels %}
+        {% assign l = level | split:'-' | first | slice:0,1 %}
+        {% if l == "0" %}{% assign l = level | split:'-' | first | slice:1,2 %}
+        {% else %}{% assign l = level | split:'-' | first | slice:0,2 %}{% endif %}
+        {{ l }}.{% endfor %} {{ doc.title }}
     </a>
-</p>
   {% endif %}
 
 {% endfor %}
+</p>

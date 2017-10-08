@@ -8,7 +8,11 @@
   {% if levels.size < 2 %}
 <p>
     <a href="{{ doc.sectionid }}.html">
-      {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %} {{ doc.title }}
+      {% for level in levels %}
+      {% assign l = level | split:'-' | first | slice:0,1 %}
+      {% if l == "0" %}{% assign l = level | split:'-' | first | slice:1,2 %}
+      {% else %}{% assign l = level | split:'-' | first | slice:0,2 %}{% endif %}
+      {{ l }}.{% endfor %} {{ doc.title }}
     </a>
 </p> 
   {% endif %}
