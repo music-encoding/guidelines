@@ -1,1 +1,6 @@
-<pre class="code" data-lang="MEI"><code> need to load {{ include.example }} </code></pre>
+<div data-lang="{{include.valid}}">
+{% assign file = include.version | append:'/' | append:include.example %}
+{% highlight xml %}
+{% include {{ file }} %}
+{% endhighlight %}
+</div>
