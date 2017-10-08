@@ -29,7 +29,7 @@ or labels that are chord tablature grids:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/A7_5th.gif" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/A7_5th.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 39. Chord grid without label</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample250.xml" valid="true" version=page.version %}
@@ -38,7 +38,7 @@ or labels that mix these styles:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/A7_1st.gif" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/A7_1st.gif" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 40. Chord grid with label</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample251.xml" valid="true" version=page.version %}

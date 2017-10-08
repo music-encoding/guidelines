@@ -11,7 +11,7 @@ The CMN module adds two optional attributes, **@grace** and
 The presence of the **@grace** attribute indicates a grace note.
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmn/grace-300.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmn/grace-300.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 2. Grace notes</figcaption>
 </figure>
 The encoding of the left-most example would look like this:

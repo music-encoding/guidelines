@@ -28,7 +28,7 @@ than four
 notes are simply called "compound" neumes.
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/neumes/parrish_neumes.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/neumes/parrish_neumes.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 21. Table 1. Variant neume notation. (From Parrish, "The notation of medieval music,"
       6)
    </figcaption>

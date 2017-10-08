@@ -20,7 +20,7 @@ The following example from Handel's *Messiah* (HWV 56) shows the use of
 **@syl**:
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
 </figure>
 {% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample263.xml" valid="true" version=page.version %}
@@ -70,7 +70,7 @@ of the
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
 </figure>
 {% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample266.xml" valid="false" version=page.version %}

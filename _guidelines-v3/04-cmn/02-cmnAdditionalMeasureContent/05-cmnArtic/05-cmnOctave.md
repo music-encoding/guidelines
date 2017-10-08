@@ -11,7 +11,7 @@ its
 written pitch is represented by the [octave]({{ site.baseurl }}/{{ page.version }}/elements/octave.html){:.link_odd_elementSpec} element.
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/ExampleImages/octave-a-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/ExampleImages/octave-a-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 12. Octave displacement</figcaption>
 </figure>
 Its **@dis** and **@dis.place** attributes record the amount and direction of

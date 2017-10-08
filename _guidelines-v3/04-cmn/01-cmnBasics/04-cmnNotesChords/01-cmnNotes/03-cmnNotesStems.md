@@ -65,7 +65,7 @@ for the indication of a stem that joins notes on adjacent staves.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmn/xchord-300.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmn/xchord-300.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 3. Cross-staff chord</figcaption>
 </figure>
 The following code demonstrates one method of encoding the first chord in the last

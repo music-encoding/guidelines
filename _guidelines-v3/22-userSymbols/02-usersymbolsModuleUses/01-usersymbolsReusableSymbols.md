@@ -18,7 +18,7 @@ element.
 </figure>
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/usersymbols/triangle.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/usersymbols/triangle.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 53. Rendition of the triangle defined above</figcaption>
 </figure>
 
@@ -28,6 +28,6 @@ element.
 </figure>
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/usersymbols/triangleWithStick.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/usersymbols/triangleWithStick.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 54. Rendition of the composite triangle symbol</figcaption>
 </figure>

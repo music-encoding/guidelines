@@ -25,7 +25,7 @@ For example, Johann Sebastian Bach used non-standard ornaments in the *Klavierb�
 für Wilhelm Friedemann Bach*:
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 35. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm
       Friedemann Bach
    </figcaption>

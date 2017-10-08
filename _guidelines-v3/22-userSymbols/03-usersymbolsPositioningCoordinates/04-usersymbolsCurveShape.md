@@ -41,7 +41,7 @@ from start
 to end), negative ones to the right.
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/usersymbols/bulge.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/usersymbols/bulge.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 58. Rendering a bulge attribute with value "-2 1"</figcaption>
 </figure>
 The interpolation algorithm used by the rendering application is implementation

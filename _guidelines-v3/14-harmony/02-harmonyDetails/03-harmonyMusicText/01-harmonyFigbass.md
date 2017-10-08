@@ -25,7 +25,7 @@ of
 figured bass:
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass01.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass01.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 41. Figured bass</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample252.xml" valid="true" version=page.version %}
@@ -47,7 +47,7 @@ MUSIC NATURAL SIGN character.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass02.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass02.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 42. Figured bass with accidental</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample254.xml" valid="true" version=page.version %}
@@ -64,7 +64,7 @@ in
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass03.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass03.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 43. Figured bass with chromatically altered figure</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample255.xml" valid="true" version=page.version %}
@@ -72,7 +72,7 @@ in
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass04.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass04.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 44. Figured bass with chromatically altered figures</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample256.xml" valid="true" version=page.version %}
@@ -88,7 +88,7 @@ the preceding character. The usual convention for slashes; that is,
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass05.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass05.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 45. Figured bass with chromatically altered figure</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample257.xml" valid="true" version=page.version %}
@@ -105,7 +105,7 @@ example 6 can be represented by the Unicode COMBINING INVERTED BREVE.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass06.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass06.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 46. Figured bass with alternative sign</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample258.xml" valid="false" version=page.version %}
@@ -122,7 +122,7 @@ is also consistent with other existing figured bass encoding schemes.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass07.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass07.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 47. Figured bass repetition </figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample259.xml" valid="true" version=page.version %}
@@ -137,7 +137,7 @@ the following example the dashes on beat 4 and 4.5 are treated as repetition sig
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass09.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass09.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 48. Extenders and repetition</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample260.xml" valid="false" version=page.version %}
@@ -164,7 +164,7 @@ the symbol as it occurs in the encoding source material.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/harmony/figuredBass10.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/harmony/figuredBass10.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 49. Figured bass with alternative sign</figcaption>
 </figure>
 {% include plainExample.html example="examples/harmony/harmony-sample262.xml" valid="false" version=page.version %}

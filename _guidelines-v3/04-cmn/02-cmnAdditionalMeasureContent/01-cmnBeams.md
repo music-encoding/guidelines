@@ -41,7 +41,7 @@ attribute. The value of **@breaksec** indicates the number of continuous beams. 
 example:
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 6. Primary and secondary beams</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample106.xml" valid="true" version=page.version %}
@@ -101,7 +101,7 @@ this may be encoded thusly:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmn/beamAcc-Rit.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmn/beamAcc-Rit.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 7. Accelerando beams</figcaption>
 </figure>
 
@@ -113,7 +113,7 @@ this may be encoded thusly:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/ExampleImages/beam-c-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/ExampleImages/beam-c-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 8. Cross-staff beam</figcaption>
 </figure>
 

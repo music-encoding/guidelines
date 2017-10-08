@@ -41,14 +41,14 @@ The attribute **@form** accepts the following values:
       <tr>
          <td>norm</td>
          <td> - usually corresponding to the symbol: 
-            <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/turn.png" class="graphic"></img>. This turn is commonly
+            <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/turn.png" class="graphic"></img>. This turn is commonly
             performed beginning on a note higher than the principal note.
          </td>
       </tr>
       <tr>
          <td>inv</td>
          <td> - usually corresponding to the symbol: 
-            <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/inv_turn.png" class="graphic"></img>. This turn is commonly
+            <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/inv_turn.png" class="graphic"></img>. This turn is commonly
             performed beginning on a note lower than the principal note.
          </td>
       </tr>
@@ -61,7 +61,7 @@ The following example shows the encoding of a simple turn:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_turn.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/ex_turn.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 33. Example of a simple turn.</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample193.xml" valid="true" version=page.version %}
@@ -84,7 +84,7 @@ demonstrates the encoding of turns with the **@delayed** attribute. Note that th
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 34. Delayed turn.</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample194.xml" valid="true" version=page.version %}

@@ -13,7 +13,7 @@ elements as content. In the following example, the content of [dir]({{ site.base
 used to provide pictograms of percussion instruments.
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/usersymbols/percussion.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/usersymbols/percussion.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ the
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/usersymbols/charpentier.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/usersymbols/charpentier.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 57. Different treble clef renditions as written by Charpentier (source: [Journal of Seventeenth-Century Music,
       Volume 12, No. 1 (2006)](www.sscm-jscm.org/v12/no1/gosine.html){:.link_ref}, [figure 3](http://www.sscm-jscm.org/v12/no1/gosine.html#ch10){:.link_ref})
    </figcaption>

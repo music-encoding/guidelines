@@ -21,7 +21,7 @@ indicate multiple trills:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 31. Example of multiple trills.</figcaption>
 </figure>
 The encoding of this kind of trill may vary depending on the purpose of the encoding.
@@ -59,7 +59,7 @@ renditions.
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 32. Trill transcribed from J.S. Bach's *Klavierbüchlein für Wilhelm Friedemann
       Bach* (1720)
    </figcaption>

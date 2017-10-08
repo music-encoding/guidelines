@@ -22,7 +22,7 @@ For the repetition of a single note or chord, MEI offers the [bTrem]({{ site.bas
 musical events within a [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}. It holds exactly one [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} or [chord]({{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} element that is to be repeated.
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 11. Bowed tremolandi</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample138.xml" valid="true" version=page.version %}

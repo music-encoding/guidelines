@@ -40,7 +40,7 @@ The attribute **@form** accepts the following values:
       <tr>
          <td>norm</td>
          <td> - usually corresponding to the symbol: 
-            <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/lower_mordent.png" class="graphic"></img>. This mordent is
+            <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/lower_mordent.png" class="graphic"></img>. This mordent is
             commonly performed as the principal note, followed by its lower neighbor, with a return
             to
             the principal note.
@@ -49,7 +49,7 @@ The attribute **@form** accepts the following values:
       <tr>
          <td>inv</td>
          <td> - usually corresponding to the symbol: 
-            <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/upper_mordent.png" class="graphic"></img>. This mordent is
+            <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/upper_mordent.png" class="graphic"></img>. This mordent is
             commonly performed as the principal note, followed by its upper neighbor, with a return
             to
             the principal note.
@@ -62,7 +62,7 @@ The following example demonstrates the encoding of simple mordents:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_mordent.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/ex_mordent.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 25. Example of simple mordent</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample182.xml" valid="true" version=page.version %}
@@ -74,7 +74,7 @@ example shows the encoding of a long mordent:
 
 
 <figure class="figure">
-   <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive"></img>
+   <img src="{{ site.baseurl }}/images/Images/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 26. Example of a long mordent</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample183.xml" valid="true" version=page.version %}
