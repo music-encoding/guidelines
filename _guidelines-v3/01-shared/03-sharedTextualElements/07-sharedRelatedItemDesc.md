@@ -13,7 +13,7 @@ another. For these situations, MEI offers the [relatedItem]({{ site.baseurl }}/{
 may either point to a different entity using its **@target** attribute, or may hold
 the related item as child. 
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample013.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample013.xml" valid="true" version=page.version %}
 
  In this example, the nested [relatedItem]({{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html){:.link_odd_elementSpec} / [bibl]({{ site.baseurl }}/{{ page.version }}/elements/bibl.html){:.link_odd_elementSpec}
 provides information about the ‘container’ where the outer [bibl]({{ site.baseurl }}/{{ page.version }}/elements/bibl.html){:.link_odd_elementSpec} may be found. The kind of relation is expressed using the

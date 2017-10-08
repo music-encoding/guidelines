@@ -14,7 +14,7 @@ acts as a container for ‘events’ from the [model.eventLike]({{ site.baseurl 
 The following example demonstrates the use of the [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}
 element:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample090.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample090.xml" valid="true" version=page.version %}
 
 
 A [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} slices the flow of a score or part into chunks that
@@ -29,7 +29,7 @@ attribute uses the xs:anyURI datatype, the **@n** value refers to the
 closest preceding [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} or [layerDef]({{ site.baseurl }}/{{ page.version }}/elements/layerDef.html){:.link_odd_elementSpec} with the
 same value in its **@n** attribute.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample091.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample091.xml" valid="true" version=page.version %}
 
 
 Each [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} may hold a number of [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec} elements
@@ -38,5 +38,5 @@ the order of the [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.ht
 their original order in the document, so they also possess **@n** and **@def**
 attributes for association with the appropriate layer definition.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample092.xml" valid="false" %}
+{% include plainExample.html example="examples/cmn/cmn-sample092.xml" valid="false" version=page.version %}
 

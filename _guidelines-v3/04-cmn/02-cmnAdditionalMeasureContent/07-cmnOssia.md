@@ -26,7 +26,7 @@ inline ossia in a separate layer. The following example demonstrates an ossia on
 separate
 staff:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample147.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample147.xml" valid="true" version=page.version %}
 
 
 The example above demonstrates that only one of the two [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}
@@ -47,7 +47,7 @@ be derived from the value of the **@n** attribute. Alternatively, a separate [st
 In case of an inline ossia, the whole setup of elements moves down one step in the
 hierarchy, as seen in the following example:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample148.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample148.xml" valid="true" version=page.version %}
 
 
 

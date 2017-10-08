@@ -189,7 +189,7 @@ title: "att.augmentdots"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"dots"</span> 
@@ -197,12 +197,12 @@ title: "att.augmentdots"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Records the number of augmentation dots required by a dotted duration.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -210,19 +210,23 @@ title: "att.augmentdots"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.AUGMENTDOT">data.AUGMENTDOT</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.AUGMENTDOT.html">data.AUGMENTDOT</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"dots_attribute_requires_dur"</span> 
@@ -230,16 +234,16 @@ title: "att.augmentdots"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"mei:*[@dots]"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">test=</span>
                                  <span class="attributevalue">"@dur"</span>&gt;
@@ -271,13 +275,13 @@ title: "att.augmentdots"
                <div>An element with a dots attribute must also have a dur attribute.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"mei:*[@dots]"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">test=</span>
                         <span class="attributevalue">"@dur"</span>&gt;

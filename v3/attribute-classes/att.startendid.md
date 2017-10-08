@@ -208,14 +208,16 @@ title: "att.startendid"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2">
-                     <span data-indentation="2" class="element">&lt;memberOf 
-                        <span class="attribute">key=</span>
-                        <span class="attributevalue">"
-                           <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startid.html">att.startid</a>"
+                  <div class="indent2 indent">
+                     <span data-indentation="2" class="element">&lt;memberOf
+                        
+                        <span class="attribute">key=
+                           <span class="attributevalue">"
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startid.html">att.startid</a>"
+                           </span>
                         </span>/&gt;
                      </span>
                   </div>
@@ -224,7 +226,7 @@ title: "att.startendid"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"endid"</span> 
@@ -232,13 +234,13 @@ title: "att.startendid"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the final element in a sequence of events to which the feature
                      applies.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -246,19 +248,23 @@ title: "att.startendid"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
-                        <span data-indentation="3" class="element">&lt;rng:ref 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="/data.URI">data.URI</a>"
-                           </span>/&gt;
+                     <div class="indent3 indent">
+                        <span data-indentation="3" class="element">&lt;rng:ref
+                           
+                           
+                           <span class="attribute">name=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"
+                              </span>
+                           </span>
+                           /&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;constraintSpec 
                         <span class="attribute">ident=</span>
                         <span class="attributevalue">"check_endidTarget"</span> 
@@ -266,16 +272,16 @@ title: "att.startendid"
                         <span class="attributevalue">"isoschematron"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;constraint&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;sch:rule 
                               <span class="attribute">context=</span>
                               <span class="attributevalue">"@endid"</span>&gt;
                            </span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -286,7 +292,7 @@ title: "att.startendid"
                               <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;sch:assert 
                                  <span class="attribute">role=</span>
                                  <span class="attributevalue">"warning"</span> 
@@ -321,13 +327,13 @@ title: "att.startendid"
                <div>The value in @endid should correspond to the @xml:id attribute of an element.</div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;sch:rule 
                      <span class="attribute">context=</span>
                      <span class="attributevalue">"@endid"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 
@@ -338,7 +344,7 @@ title: "att.startendid"
                      <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;sch:assert 
                         <span class="attribute">role=</span>
                         <span class="attributevalue">"warning"</span> 

@@ -88,22 +88,22 @@ title: "data.ACCIDENTAL.EXPLICIT"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"s"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Sharp.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -111,13 +111,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"f"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Flat.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -125,13 +125,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"ss"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Double sharp (written as 2 sharps).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -139,13 +139,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"x"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Double sharp (written using croix).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -153,13 +153,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"ff"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Double flat.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -167,13 +167,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"xs"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Triple sharp (written as a croix followed by a sharp).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -181,13 +181,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"sx"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Triple sharp (written as a sharp followed by a croix).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -195,13 +195,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"ts"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Triple sharp (written as 3 sharps).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -209,13 +209,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"tf"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Triple flat.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -223,13 +223,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"n"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Natural.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -237,13 +237,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"nf"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Natural + flat; used to cancel preceding double flat.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -251,13 +251,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"ns"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Natural + sharp; used to cancel preceding double sharp.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -265,17 +265,17 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- su, sd, fu, fd are equivalent to usual symbols plus an arrow (Gould, p. 95)--&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"su"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Sharp note raised by quarter tone (sharp modified by arrow).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -283,13 +283,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"sd"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Sharp note lowered by quarter tone (sharp modified by arrow).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -297,13 +297,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"fu"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Flat note raised by quarter tone (flat modified by arrow).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -311,13 +311,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"fd"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Flat note lowered by quarter tone (flat modified by arrow).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -325,13 +325,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"nu"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Natural note raised by quarter tone (natural modified by arrow).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -339,13 +339,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"nd"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Natural note lowered by quarter tone (natural modified by arrow).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -353,17 +353,17 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="comment">&lt;!-- 1qf, 3qf, 1qs, 3qs represent fixed symbols (Gould, p. 96) --&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"1qf"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>1/4-tone flat accidental.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -371,13 +371,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"3qf"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>3/4-tone flat accidental.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -385,13 +385,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"1qs"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>1/4-tone sharp accidental.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -399,13 +399,13 @@ title: "data.ACCIDENTAL.EXPLICIT"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"3qs"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>3/4-tone sharp accidental.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>

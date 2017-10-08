@@ -71,7 +71,7 @@ title: "att.curvature"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"bezier"</span> 
@@ -79,13 +79,13 @@ title: "att.curvature"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Records the placement of Bezier control points as a series of pairs of
                      space-separated values; e.g., 19 45 -32 118.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -93,20 +93,20 @@ title: "att.curvature"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:list&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:oneOrMore&gt;</span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;rng:data 
                                  <span class="attribute">type=</span>
                                  <span class="attributevalue">"decimal"</span>/&gt;
                               </span>
                            </div>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;rng:data 
                                  <span class="attribute">type=</span>
                                  <span class="attributevalue">"decimal"</span>/&gt;
@@ -126,7 +126,7 @@ title: "att.curvature"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"bulge"</span> 
@@ -134,7 +134,7 @@ title: "att.curvature"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Describes a curve as one or more pairs of values with respect to an imaginary line
                      connecting the starting and ending points of the curve. The first value captures a
                      distance to the left (positive value) or right (negative value) of the line, expressed
@@ -144,7 +144,7 @@ title: "att.curvature"
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;datatype 
                         <span class="attribute">maxOccurs=</span>
                         <span class="attributevalue">"1"</span> 
@@ -152,25 +152,29 @@ title: "att.curvature"
                         <span class="attributevalue">"1"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:list&gt;</span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;rng:oneOrMore&gt;</span>
                            
-                           <div class="indent5">
+                           <div class="indent5 indent">
                               <span data-indentation="5" class="element">&lt;rng:data 
                                  <span class="attribute">type=</span>
                                  <span class="attributevalue">"decimal"</span>/&gt;
                               </span>
                            </div>
                            
-                           <div class="indent5">
-                              <span data-indentation="5" class="element">&lt;rng:ref 
-                                 <span class="attribute">name=</span>
-                                 <span class="attributevalue">"
-                                    <a class="link_odd" href="/data.PERCENT">data.PERCENT</a>"
-                                 </span>/&gt;
+                           <div class="indent5 indent">
+                              <span data-indentation="5" class="element">&lt;rng:ref
+                                 
+                                 
+                                 <span class="attribute">name=
+                                    <span class="attributevalue">"
+                                       <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PERCENT.html">data.PERCENT</a>"
+                                    </span>
+                                 </span>
+                                 /&gt;
                               </span>
                            </div>
                            
@@ -187,7 +191,7 @@ title: "att.curvature"
                </div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"curvedir"</span> 
@@ -195,24 +199,24 @@ title: "att.curvature"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Describes a curve with a generic term indicating the direction of curvature.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"above"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Upward curve.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -220,13 +224,13 @@ title: "att.curvature"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"below"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Downward curve.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -234,13 +238,13 @@ title: "att.curvature"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"mixed"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>A "meandering" curve, both above and below the items it pertains to.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>

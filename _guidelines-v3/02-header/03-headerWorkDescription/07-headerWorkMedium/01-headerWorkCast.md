@@ -43,12 +43,12 @@ character and [roleDesc]({{ site.baseurl }}/{{ page.version }}/elements/roleDesc
 [perfRes]({{ site.baseurl }}/{{ page.version }}/elements/perfRes.html){:.link_odd_elementSpec} element is used to describe the voice range of the
 role.
 
-{% include plainExample.html example="./v3/examples/header/header-sample055.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample055.xml" valid="true" version=page.version %}
 
 The vocal qualities and associated roles for Beethoven's opera *Fidelio* may
 be encoded as:
 
-{% include plainExample.html example="./v3/examples/header/header-sample056.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample056.xml" valid="true" version=page.version %}
 
 The [castItem]({{ site.baseurl }}/{{ page.version }}/elements/castItem.html){:.link_odd_elementSpec} element may also contain:
 

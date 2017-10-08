@@ -25,7 +25,7 @@ The duration of the entire tuplet may be encoded using the usual ‘power of
 2’ values, e.g., 1, 2, 4, etc., in the **@dur** attribute, and the
 **@dots** attribute, if necessary.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample134.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample134.xml" valid="true" version=page.version %}
 
 
 
@@ -75,6 +75,6 @@ tuplets to cross measure boundaries. The following example demonstrates a typica
 example of
 such hierarchy-crossing tuplets:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample135.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample135.xml" valid="true" version=page.version %}
 
 

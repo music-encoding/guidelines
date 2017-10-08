@@ -17,7 +17,7 @@ used to provide pictograms of percussion instruments.
    <figcaption class="figure-caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
 </figure>
 
-<figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample348.xml" valid="true" %}
+<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample348.xml" valid="true" version=page.version %}
    
    <figcaption class="figure-caption">Listing 4. Encoding of above example</figcaption>
 </figure>
@@ -33,7 +33,7 @@ the
    </figcaption>
 </figure>
 
-<figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample349.xml" valid="true" %}
+<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample349.xml" valid="true" version=page.version %}
    
    <figcaption class="figure-caption">Listing 5. Defining two staffs, each using its own treble clef shape</figcaption>
 </figure>
@@ -42,7 +42,7 @@ Externally-defined symbols may be referenced using a **@glyphname** or
 characters. Other character sets must be treated as internally-defined character sets.
 
 
-<figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample350.xml" valid="true" %}
+<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample350.xml" valid="true" version=page.version %}
    
    <figcaption class="figure-caption">Listing 6. Use of glyphname and glyphnum attributes</figcaption>
 </figure>

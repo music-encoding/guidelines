@@ -17,7 +17,7 @@ obliqua.
    <figcaption class="figure-caption">Figure 19. Recta and obliqua ligatures</figcaption>
 </figure>
 
-{% include plainExample.html example="./v3/examples/mensural/mensural-sample156.xml" valid="false" %}
+{% include plainExample.html example="examples/mensural/mensural-sample156.xml" valid="false" version=page.version %}
 
 
 In cases where the ligature contains both recta and obliqua notes, the **@lig**
@@ -31,7 +31,7 @@ ligature at the note level.
    <figcaption class="figure-caption">Figure 20. Ligature with more than two notes with recta and obliqua</figcaption>
 </figure>
 
-{% include plainExample.html example="./v3/examples/mensural/mensural-sample157.xml" valid="true" %}
+{% include plainExample.html example="examples/mensural/mensural-sample157.xml" valid="true" version=page.version %}
 
 
 

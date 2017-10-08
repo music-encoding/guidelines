@@ -71,7 +71,7 @@ material
 in another octave. This information can be captured using the **@dis** and
 **@dis.place** attributes on [cpMark]({{ site.baseurl }}/{{ page.version }}/elements/cpMark.html){:.link_odd_elementSpec}.
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample211.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample211.xml" valid="true" version=page.version %}
 
 
 <figure class="figure">

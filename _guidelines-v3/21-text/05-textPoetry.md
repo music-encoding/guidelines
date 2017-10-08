@@ -27,6 +27,6 @@ a
 title or a header, as is demonstrated by the following example:
 
 
-{% include plainExample.html example="./v3/examples/text/text-sample337.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample337.xml" valid="true" version=page.version %}
 
 

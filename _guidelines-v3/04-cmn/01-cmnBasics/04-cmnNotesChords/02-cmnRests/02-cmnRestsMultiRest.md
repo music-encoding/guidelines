@@ -19,5 +19,5 @@ measures. The various visual forms displayed below are not captured by [multiRes
    <img src="../../../../guidelines/v3/Images/ExampleImages/multirest.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 4. Forms of multiple measure rests</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample102.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample102.xml" valid="true" version=page.version %}
 

@@ -11,6 +11,6 @@ or neume using the Humdrum **embel syntax. In the following example, the note B 
 labeled
 as a lower neighbor while all other notes are labeled as chord tones:
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample172.xml" valid="false" %}
+{% include plainExample.html example="examples/analysis/analysis-sample172.xml" valid="false" version=page.version %}
 
 

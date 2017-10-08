@@ -32,7 +32,7 @@ using the [tempo]({{ site.baseurl }}/{{ page.version }}/elements/tempo.html){:.l
 **@layer** and **@tstamp** attributes are used to ensure correct semantic
 positioning, and **@place** indicates a visual position with respect to the staff.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample149.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample149.xml" valid="true" version=page.version %}
 
 
 Rehearsal marks are another specialized kind of directive. Consisting of
@@ -54,7 +54,7 @@ Fantastique* shows a typical example:
    <img src="../../../../guidelines/v3/Images/modules/cmn/reh_berlioz.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample150.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample150.xml" valid="true" version=page.version %}
 
 
 The following example demonstrates how rehearsal marks often apply to more than one
@@ -62,6 +62,6 @@ staff.
 In this instance, the rehearsal mark is placed above staff 1 and below staves 7 and
 11.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample151.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample151.xml" valid="true" version=page.version %}
 
 

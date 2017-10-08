@@ -22,7 +22,7 @@ example. The section regarding [trills]({{ site.baseurl }}/{{ page.version }}/gu
 specific number of alternations between the principal and secondary notes; the encoder,
 however, may specify an exact number in the encoding description.
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample181.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample181.xml" valid="true" version=page.version %}
 
 
 Alternatively, resolutions can be defined on a case-by-case basis by encoding a specific

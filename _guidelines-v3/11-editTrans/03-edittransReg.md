@@ -36,21 +36,21 @@ the
 perspective of current practice by using the [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec} element with no
 attributes specified, as follows:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample218.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample218.xml" valid="true" version=page.version %}
 
 
 Alternatively, the encoder may indicate that the clef has been modernized into a G-clef
 by
 using the [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec} element with no attributes specified, as follows:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample219.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample219.xml" valid="true" version=page.version %}
 
 
 As another alternative, the encoder may encode both the old and modernized shapes,
 so that
 applications may render both at the reader's will:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample220.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample220.xml" valid="true" version=page.version %}
 
 
 As described above, the **@resp** attribute may be used to specify the agent

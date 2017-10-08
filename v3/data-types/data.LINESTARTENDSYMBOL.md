@@ -74,22 +74,22 @@ title: "data.LINESTARTENDSYMBOL"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"angledown"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>90 degree turn down (similar to Unicode 231D at end of line, 231C at
                            start).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -98,13 +98,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"angleup"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>90 degree turn up (similar to Unicode 231F at end of line, 231E at start).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -112,13 +112,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"angleright"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>90 degree turn right (syntactic sugar for "angledown" for vertical or angled
                            lines).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -127,13 +127,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"angleleft"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>90 degree turn left (syntactic sugar for "angleup" for vertical or angled
                            lines).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -142,13 +142,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"arrow"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Filled, triangular arrowhead (similar to SMuFL U+EB78).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -156,13 +156,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"arrowopen"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Open triangular arrowhead (similar to SMuFL U+EB8A).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -170,13 +170,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"arrowwhite"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Unfilled, triangular arrowhead (similar to SMuFL U+EB82).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>
@@ -184,13 +184,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"harpoonleft"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Harpoon-shaped arrowhead left of line (similar to arrowhead of Unicode
                            U+21BD).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -199,13 +199,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"harpoonright"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>Harpoon-shaped arrowhead right of line (similar to arrowhead of Unicode
                            U+21BC).
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -214,13 +214,13 @@ title: "data.LINESTARTENDSYMBOL"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"none"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>No start symbol.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
                         </div>

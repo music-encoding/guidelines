@@ -74,7 +74,7 @@ may be encoded. The front part begins with a title page, which is presented in s
 <a class="link_ptr" title="Title Pages" href="{{ site.baseurl }}/{{ page.version }}/guidelines/text.html#textTitlePages">21.6.2 Title Pages</a>, below. This is followed by a dedication and a preface, each of
 which is encoded as a distinct div:
 
-{% include plainExample.html example="./v3/examples/text/text-sample338.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample338.xml" valid="true" version=page.version %}
 
 The front matter concludes with another [div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, shown in the
 next example, this time containing a table of contents, which contains a [list]({{ site.baseurl }}/{{ page.version }}/elements/list.html){:.link_odd_elementSpec} element (as described in chapter 
@@ -86,11 +86,11 @@ the [mdiv]({{ site.baseurl }}/{{ page.version }}/elements/mdiv.html){:.link_odd_
 of the [ptr]({{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element, see chapter 
 <a class="link_ptr" title="Pointers and References" href="{{ site.baseurl }}/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a>.)
 
-{% include plainExample.html example="./v3/examples/text/text-sample339.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample339.xml" valid="true" version=page.version %}
 
 Alternatively, the pointers in the table of contents might link to the page breaks
 at which
 a song begins, assuming that these have been included in the markup:
 
-{% include plainExample.html example="./v3/examples/text/text-sample340.xml" valid="true" %}
+{% include plainExample.html example="examples/text/text-sample340.xml" valid="true" version=page.version %}
 

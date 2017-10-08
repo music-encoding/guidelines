@@ -22,7 +22,7 @@ the
 encoder wants to preserve. The simplest solution is to use the **@tie** attribute
 found on [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord]({{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample112.xml" valid="false" %}
+{% include plainExample.html example="examples/cmn/cmn-sample112.xml" valid="false" version=page.version %}
 
 
 This attribute allows three values:
@@ -62,19 +62,19 @@ The tie-terminating event may lie in the following measure.
    <img src="../../../../guidelines/v3/Images/modules/cmn/finger-300.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 9. Ties across barlines</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample113.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample113.xml" valid="true" version=page.version %}
 
 
 When **@tie** is used on chords, it functions as a shorthand indication for multiple
 tie markings; that is, a separate tie is drawn for every pitch in the chord that remains
 unchanged in the succeeding chord.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample114.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample114.xml" valid="true" version=page.version %}
 
 
 This is equivalent to the following, more verbose version:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample115.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample115.xml" valid="true" version=page.version %}
 
 
 A slur is a curved line that connects a group of notes of different pitch. It
@@ -96,7 +96,7 @@ The
 *i*, *m* or *t* are followed by a single digit in the
 range 1 to 6, as in the following example:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample116.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample116.xml" valid="true" version=page.version %}
 
 
 The reason for this difference is that slurs, unlike ties, may overlap, so that a
@@ -113,14 +113,14 @@ the preceding note and by the one that it starts. The third note is affected by 
 slur
 that begins on note one and by the one that starts on note two.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample117.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample117.xml" valid="true" version=page.version %}
 
 
 
 To support analytical operations, **@slur** may take on more than one value. For
 example, the example above may be more explicitly encoded as:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample118.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample118.xml" valid="true" version=page.version %}
 
 In this encoding, the notes in the beamed group are marked as participating in two
 slurs –
@@ -135,7 +135,7 @@ While ties are not normally allowed to cross layers or staves, slurs may. The fo
 example demonstrates how cross-staff slurs may be encoded using the **@slur**
 attribute:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample119.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample119.xml" valid="true" version=page.version %}
 
 
 Slurs and ties that cross system or page breaks are often split into two separate
@@ -166,7 +166,7 @@ Although these elements are allowed within a [layer]({{ site.baseurl }}/{{ page.
 unmeasured notation, by convention in CMN they are normally placed inside [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, after the encoding of staves, alongside other so-called ‘control
 events’.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample120.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample120.xml" valid="true" version=page.version %}
 
 
 Obviously, to be complete the slur in the above example needs to be
@@ -174,7 +174,7 @@ Obviously, to be complete the slur in the above example needs to be
 assignment’ can be indicated for the example above using the **@staff**
 and **@layer** attributes like so:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample121.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample121.xml" valid="true" version=page.version %}
 
 
 For the ‘horizontal assignment’, the encoder may choose between two
@@ -182,7 +182,7 @@ different mechanisms. The first uses two timestamp attributes as described in se
 
 <a class="link_ptr" title="Timestamps and Durations" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample122.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample122.xml" valid="true" version=page.version %}
 
 
 By using **@tstamp** and **@tstamp2** attributes, the encoder denotes a rather

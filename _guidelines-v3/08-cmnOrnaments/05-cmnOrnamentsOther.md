@@ -34,7 +34,7 @@ The ornament for
 <span class="q">(5) doppelt-cadence</span> could be encoded in the following way, by
 adopting the Unicode code-points defined by the SMuFL standard:
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" version=page.version %}
 
 A resolution, or expansion of the ornament can be provided as discussed in 
 <a class="link_ptr" title="Special Cases" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmnOrnaments.html#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below.

@@ -31,6 +31,6 @@ its **@plist** attribute. This attribute uses URI references to link to one or m
 other elements using their **@xml:id** attribute values, as in the following
 example:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample011.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample011.xml" valid="true" version=page.version %}
 
 

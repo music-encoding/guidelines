@@ -161,7 +161,7 @@ principles applied not falling under one of the above headings may be recorded a
 additional
 prose following the special-use elements.
 
-{% include plainExample.html example="./v3/examples/header/header-sample049.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample049.xml" valid="true" version=page.version %}
 
 An editorial practices declaration which applies to more than one text or division
 of a

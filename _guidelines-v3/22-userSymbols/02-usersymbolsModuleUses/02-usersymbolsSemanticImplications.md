@@ -26,7 +26,7 @@ which is not covered by a specific MEI element.
    </figcaption>
 </figure>
 
-<figure class="figure">{% include plainExample.html example="./v3/examples/userSymbols/userSymbols-sample347.xml" valid="true" %}
+<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample347.xml" valid="true" version=page.version %}
    
    <figcaption class="figure-caption">Listing 3. Encoding of the Schumann example</figcaption>
 </figure>

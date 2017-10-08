@@ -11,7 +11,7 @@ Vocally performed text may also be encoded separately from the notes with the [l
 
 
 {% include specDesc.html version=page.version elem="lyrics" atts="" %}
-
+{% include specDesc.html version=page.version elem="lyrics" atts="att.staffident/staff att.layerident/layer" %}
 
 
 
@@ -34,7 +34,7 @@ this encoding method:
    <img src="../../../../guidelines/v3/Images/modules/lyrics/ex_lyric.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 52. Weber, Der Freischütz</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
+{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" version=page.version %}
 
 
 In this encoding style, a [syl]({{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} element with its **@con** attribute
@@ -43,6 +43,6 @@ note. In the
 following example, the first two syllables occur on the first note and the third syllable
 occurs on the second note.
 
-{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample268.xml" valid="false" %}
+{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample268.xml" valid="false" version=page.version %}
 
 

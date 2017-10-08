@@ -64,18 +64,18 @@ than a notes statement giving a simple prose description or a brief note stating
 the
 document has no physical source:
 
-{% include plainExample.html example="./v3/examples/header/header-sample043.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample043.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/header/header-sample044.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample044.xml" valid="true" version=page.version %}
 
 Alternatively, it may contain a basic bibliographic citation, also in an annotation:
 
-{% include plainExample.html example="./v3/examples/header/header-sample045.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample045.xml" valid="true" version=page.version %}
 
 However, more structured bibliographic data, such as that in the example below, facilitates
 better machine-processing:
 
-{% include plainExample.html example="./v3/examples/header/header-sample046.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample046.xml" valid="true" version=page.version %}
 
 A description of more precise capture of dates and date ranges is provided in chapter
 
@@ -94,6 +94,6 @@ If a source of the file is an unpublished manuscript, it is recommended that the
 collected in the [notesStmt]({{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec} element, as described in section 
 <a class="link_ptr" title="Notes Statement" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerNotesStatement">2.1.6 Notes Statement</a>.
 
-{% include plainExample.html example="./v3/examples/header/header-sample047.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample047.xml" valid="true" version=page.version %}
 
 

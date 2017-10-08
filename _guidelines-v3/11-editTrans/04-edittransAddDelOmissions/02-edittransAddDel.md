@@ -12,14 +12,14 @@ where material has been added or deleted in the source material.
 The following example demonstrates the usage of [add]({{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec} to mark up a note
 being added to an existing chord:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample225.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample225.xml" valid="true" version=page.version %}
 
 
 The next example shows how [del]({{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec} may be used to capture the information
 that two measures have been cancelled. As seen in this example, the **@rend**
 attribute is used to specify the method of deletion.
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample226.xml" valid="false" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample226.xml" valid="false" version=page.version %}
 
 
 Additional information for both elements may be specified using attributes. Whereas

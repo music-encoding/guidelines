@@ -72,7 +72,7 @@ The following code demonstrates one method of encoding the first chord in the la
 measure in the image above. The **@stem.with** attribute must occur on all the
 notes or chords attached to the cross-staff stem.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample099.xml" valid="false" %}
+{% include plainExample.html example="examples/cmn/cmn-sample099.xml" valid="false" version=page.version %}
 
 Alternatively, the encoder may choose to treat the notes in the lower staff as
 logically belonging to the top staff and to ‘displace’ them using the
@@ -80,7 +80,7 @@ logically belonging to the top staff and to ‘displace’ them using the
 require filling the time that those notes would normally occupy using the [space]({{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} element described in section 
 <a class="link_ptr" title="Event Spacing" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedNoteSpacing">1.2.4.5 Event Spacing</a>. Using this mechanism, the example above could also be encoded like so:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample100.xml" valid="false" %}
+{% include plainExample.html example="examples/cmn/cmn-sample100.xml" valid="false" version=page.version %}
 
 
 The choice between these two methods of representing material that crosses staves

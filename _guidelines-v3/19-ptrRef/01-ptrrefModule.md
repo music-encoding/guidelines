@@ -66,7 +66,7 @@ framework is described at [http://www.w3.org/TR/xptr-framework/](http://www.w3.o
 from the very simple (a reference to the value of the target element's **@xml:id**
 attribute) to the more complex usage of a full URI with embedded XPointers:
 
-{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample312.xml" valid="false" %}
+{% include plainExample.html example="examples/ptrRef/ptrRef-sample312.xml" valid="false" version=page.version %}
 
 
 The **@targettype** attribute allows the target resource to be characterized using any
@@ -78,7 +78,7 @@ formatted differently, e.g., the bibliographic citation may result in special ty
 while
 the pointer to the audio file may be used to embed an audio player:
 
-{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample313.xml" valid="false" %}
+{% include plainExample.html example="examples/ptrRef/ptrRef-sample313.xml" valid="false" version=page.version %}
 
 
 The **@xlink:actuate** and **@xlink:show** attributes are used in conjunction to
@@ -177,7 +177,7 @@ The following example illustrates a pointer that results in the automatic creati
 of a new
 window with the content of the target loaded in it:
 
-{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample314.xml" valid="true" %}
+{% include plainExample.html example="examples/ptrRef/ptrRef-sample314.xml" valid="true" version=page.version %}
 
 
 The **@xlink:title** and **@xlink:role** attributes describe the meaning of
@@ -189,7 +189,7 @@ available to applications used by visually impaired users, or to create a table 
 links, or
 to present help text that appears when a user's mouse hovers over the link.
 
-{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample315.xml" valid="true" %}
+{% include plainExample.html example="examples/ptrRef/ptrRef-sample315.xml" valid="true" version=page.version %}
 
 
 The attribute**@ xlink:role** serves a similar function to that of
@@ -200,7 +200,7 @@ describes the intended property. When no value is supplied, no particular role v
 is to be
 inferred.
 
-{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample316.xml" valid="false" %}
+{% include plainExample.html example="examples/ptrRef/ptrRef-sample316.xml" valid="false" version=page.version %}
 
 In the preceding example, the value of the **@xlink:role** attribute may be used to
 re-write the value of **@xlink:title**, depending on the target resource role.
@@ -215,13 +215,13 @@ Extension) type defined by the Internet Engineering Task Force in RFC 2046, avai
 at [http://www.ietf.org/rfc/rfc2046.txt](http://www.ietf.org/rfc/rfc2046.txt){:.link_ref}. The
 following are all valid mimetype values:
 
-{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample317.xml" valid="false" %}
+{% include plainExample.html example="examples/ptrRef/ptrRef-sample317.xml" valid="false" version=page.version %}
 
 The **@mimetype** attribute is particularly useful for documenting the nature of the
 destination when the value of **@target** does not provide a filename extension or when
 the destination is a non-standard file type:
 
-{% include plainExample.html example="./v3/examples/ptrRef/ptrRef-sample318.xml" valid="false" %}
+{% include plainExample.html example="examples/ptrRef/ptrRef-sample318.xml" valid="false" version=page.version %}
 
 
 

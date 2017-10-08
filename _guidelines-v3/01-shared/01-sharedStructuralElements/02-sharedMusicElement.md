@@ -46,13 +46,13 @@ chapter <a class="link_ptr" title="Text in MEI" href="{{ site.baseurl }}/{{ page
 
 The overall structure of a single musical text is:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample000.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample000.xml" valid="true" version=page.version %}
 
 The top-level structure of a composite musical text made up of two unitary musical
 texts
 is:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample001.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample001.xml" valid="true" version=page.version %}
 
 
 

@@ -24,7 +24,7 @@ controller event 7 (volume) values, or in musical terms, a crescendo. Other MIDI
 messages follow this same pattern, using the **@num** and **@val** attributes to
 record the raw MIDI data.
 
-{% include plainExample.html example="./v3/examples/midiGuidelines/midiGuidelines-sample273.xml" valid="true" %}
+{% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample273.xml" valid="true" version=page.version %}
 
 
 In the preceding example, each control change is associated with a time stamp. The
@@ -40,5 +40,5 @@ attribute is required on all parameters in order to associate them with their po
 of
 actuation:
 
-{% include plainExample.html example="./v3/examples/midiGuidelines/midiGuidelines-sample274.xml" valid="true" %}
+{% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample274.xml" valid="true" version=page.version %}
 

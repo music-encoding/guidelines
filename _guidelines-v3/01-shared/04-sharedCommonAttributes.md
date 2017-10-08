@@ -27,12 +27,12 @@ Suggestions for constructing an ID value can be found at [http://www.w3.org/TR/x
 
 The **@xml:id** attribute may take values similar to the following:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample014.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample014.xml" valid="true" version=page.version %}
 
 
 This is an example of an incorrectly-formulated **@xml:id** value:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample015.xml" valid="false" %}
+{% include plainExample.html example="examples/shared/shared-sample015.xml" valid="false" version=page.version %}
 
 
 The **@label** and **@n** attributes both serve a labeling function; however,
@@ -41,20 +41,20 @@ they differ in the values they allow. The **@n** attribute must be a single toke
 **@label** useful for the capture of free-text labels, but a name or number specified
 with **@n** may be easier to process.
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample016.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample016.xml" valid="true" version=page.version %}
 
 When a reference to an external entity is not a complete URI, the **@xml:base**
 attribute can record a value against which it can be resolved into a complete, or
 absolute,
 location.
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample017.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample017.xml" valid="true" version=page.version %}
 
 The value of **@xml:base** can be inherited from an ancestor. In the following example,
 the values of the graphic elements' **@target** attribute can be completed by the
 xml:base value specified for the [facsimile]({{ site.baseurl }}/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec} element:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample018.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample018.xml" valid="true" version=page.version %}
 
 See [http://www.w3.org/TR/xmlbase/](http://www.w3.org/TR/xmlbase/){:.link_ref} for more
 details on xml:base.

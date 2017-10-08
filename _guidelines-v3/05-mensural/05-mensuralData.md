@@ -17,7 +17,7 @@ organized into measures first. The organization of events (notes, rests, etc.) w
 the [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} and [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec} elements remains unchanged.
 
 
-{% include plainExample.html example="./v3/examples/mensural/mensural-sample158.xml" valid="true" %}
+{% include plainExample.html example="examples/mensural/mensural-sample158.xml" valid="true" version=page.version %}
 
 
 This feature may also be used to encode measured music without using the [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} element. That is, the same data organization described above may be used, but

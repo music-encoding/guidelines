@@ -45,14 +45,14 @@ The [title]({{ site.baseurl }}/{{ page.version }}/elements/title.html){:.link_od
 item, in this case the series, and the individuals or groups responsible for its creation.
 The [title]({{ site.baseurl }}/{{ page.version }}/elements/title.html){:.link_odd_elementSpec} element is required within [seriesStmt]({{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec}.
 
-{% include plainExample.html example="./v3/examples/header/header-sample036.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample036.xml" valid="true" version=page.version %}
 
 The [identifier]({{ site.baseurl }}/{{ page.version }}/elements/identifier.html){:.link_odd_elementSpec} element may be used to supply any identifying number
 associated with the series, including both standard numbers such as an ISSN and particular
 issue numbers. Its **@type** attribute is used to categorize the number further,
 taking the value 'ISSN' for an ISSN, for example.
 
-{% include plainExample.html example="./v3/examples/header/header-sample037.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample037.xml" valid="true" version=page.version %}
 
 The contents of the series may be enumerated using the [contents]({{ site.baseurl }}/{{ page.version }}/elements/contents.html){:.link_odd_elementSpec}
 element. Use of this element should be determined by the complexity of the resource
@@ -60,17 +60,17 @@ and
 whether or not the information is readily available. The [contents]({{ site.baseurl }}/{{ page.version }}/elements/contents.html){:.link_odd_elementSpec}
 element may consist of a single paragraph when unstructured information is sufficient.
 
-{% include plainExample.html example="./v3/examples/header/header-sample038.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample038.xml" valid="true" version=page.version %}
 
 Alternatively, [contentItem]({{ site.baseurl }}/{{ page.version }}/elements/contentItem.html){:.link_odd_elementSpec} elements may be used to provide structure
 for the content description.
 
-{% include plainExample.html example="./v3/examples/header/header-sample039.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample039.xml" valid="true" version=page.version %}
 
 Finally, using the **@target** attribute, a link to an external table of contents may
 be supplied in lieu of or in addition to the child elements of [contents]({{ site.baseurl }}/{{ page.version }}/elements/contents.html){:.link_odd_elementSpec}.
 
-{% include plainExample.html example="./v3/examples/header/header-sample040.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample040.xml" valid="true" version=page.version %}
 
 The [seriesStmt]({{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec} element is allowed to nest within itself in order to
 accommodate a series within a series.

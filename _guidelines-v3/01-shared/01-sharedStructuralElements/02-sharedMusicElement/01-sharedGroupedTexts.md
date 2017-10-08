@@ -29,11 +29,11 @@ might usefully be encoded in this way.
 For example, the overall structure of a collection of songs might be encoded as
 follows:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample002.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample002.xml" valid="true" version=page.version %}
 
 A group of musical texts may contain other unitary and grouped texts:
 
-{% include plainExample.html example="./v3/examples/shared/shared-sample003.xml" valid="true" %}
+{% include plainExample.html example="examples/shared/shared-sample003.xml" valid="true" version=page.version %}
 
 The [group]({{ site.baseurl }}/{{ page.version }}/elements/group.html){:.link_odd_elementSpec} element may be used to encode any kind of collection in
 which the constituents are regarded by the encoder as works in their own right, such

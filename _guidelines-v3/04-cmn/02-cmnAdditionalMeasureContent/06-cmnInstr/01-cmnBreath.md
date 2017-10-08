@@ -14,7 +14,7 @@ a guide to phrasing. In MEI, breath marks are encoded using the [breath]({{ site
 attribute.
 
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample144.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample144.xml" valid="true" version=page.version %}
 
 
 The usual sign for the breath mark is a comma; however, other visual forms of the

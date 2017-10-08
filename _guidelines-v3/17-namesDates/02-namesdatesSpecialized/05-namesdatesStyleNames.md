@@ -33,16 +33,16 @@ Music Online, accessed: April 27, 2012)
 The name of a musical style can be marked by the [styleName]({{ site.baseurl }}/{{ page.version }}/elements/styleName.html){:.link_odd_elementSpec} element,
 for example:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample294.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample294.xml" valid="true" version=page.version %}
 
 It may be, e.g., used for recording a style name within a title:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample295.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample295.xml" valid="true" version=page.version %}
 
 or to record a style of a certain epoch by using the [styleName]({{ site.baseurl }}/{{ page.version }}/elements/styleName.html){:.link_odd_elementSpec}
 sub-element:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample296.xml" valid="true" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample296.xml" valid="true" version=page.version %}
 
 
 If a controlled value is used, the list, from which it is taken should be recorded.

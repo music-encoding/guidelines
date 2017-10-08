@@ -30,7 +30,7 @@ be accomplished for two sources, both presenting a two-staff score, but with dif
 staff
 order. No further [app]({{ site.baseurl }}/{{ page.version }}/elements/app.html){:.link_odd_elementSpec} element is necessary within the [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} to describe the alternative score order of the sources.
 
-{% include plainExample.html example="./v3/examples/critApp/critApp-sample205.xml" valid="true" %}
+{% include plainExample.html example="examples/critApp/critApp-sample205.xml" valid="true" version=page.version %}
 
 
 when unique values for **@n** on [layerDef]({{ site.baseurl }}/{{ page.version }}/elements/layerDef.html){:.link_odd_elementSpec} and [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec} are provided, it is possible to reallocate layers in the same fashion as

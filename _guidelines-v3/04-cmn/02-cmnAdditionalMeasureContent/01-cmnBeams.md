@@ -21,7 +21,7 @@ notes. MEI provides two elements for the explicit encoding of features joined by
 Use of the [beam]({{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element is straightforward. The beamed notes, rests,
 or chords are simply enclosed by the [beam]({{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample104.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample104.xml" valid="true" version=page.version %}
 
 
 Whereas in music notation every note value shorter than an eighth adds another beam
@@ -30,7 +30,7 @@ element is used, no matter the durations of the contained notes. The visual rend
 of a
 set of beamed notes is presumed to be handled by rendering processes.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample105.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample105.xml" valid="true" version=page.version %}
 
 
 From the 19th century onwards, it became quite common to break secondary beams to
@@ -44,7 +44,7 @@ example:
    <img src="../../../../guidelines/v3/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 6. Primary and secondary beams</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample106.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample106.xml" valid="true" version=page.version %}
 
 
 In the music of the second half of the 20th century, it is quite common to indicate
@@ -87,7 +87,7 @@ beam, which allows the following values:
       </tr>
    </tbody>
 </table>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample107.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample107.xml" valid="true" version=page.version %}
 
 The duration of notes, rests, or chords under a beam which carries the **@rend**
 attribute with a value of 'acc', 'rit', or 'mixed' must be treated specially. The
@@ -105,7 +105,7 @@ this may be encoded thusly:
    <figcaption class="figure-caption">Figure 7. Accelerando beams</figcaption>
 </figure>
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample108.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample108.xml" valid="true" version=page.version %}
 
 
 
@@ -126,7 +126,7 @@ notes under the beam carry a **@staff** attribute value that contradicts the
 ‘normal’ staff placement indicated by the **@n** attribute on
 their ancestor [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample109.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample109.xml" valid="true" version=page.version %}
 
 Alternatively, a staff-by-staff methodology may be employed in which the notes are
 encoded
@@ -139,7 +139,7 @@ time used by the first two notes of the beam must be represented on staff number
 and the
 time taken by the last two notes of the beam must be filled on staff number 2.
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample110.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample110.xml" valid="true" version=page.version %}
 
 Downstream processing needs are the determining factor in the choice between the two
 alternative encoding methods.
@@ -154,7 +154,7 @@ of the beam using **@startid** and **@endid** attributes. This configuration
 allows beams to cross measure boundaries. The following example demonstrates a typical
 example of such hierarchy-crossing beams:
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample111.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample111.xml" valid="true" version=page.version %}
 
 
 In addition to the explicit encoding of beams accommodated by the [beam]({{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} and [beamSpan]({{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html){:.link_odd_elementSpec} elements and the **@beam** attribute,

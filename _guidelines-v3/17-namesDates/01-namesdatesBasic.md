@@ -60,14 +60,14 @@ Authority File (LCNAF), may be recorded using the authority attribute.
 
 Examples of the use of the [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample276.xml" valid="false" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample276.xml" valid="false" version=page.version %}
 
 The element [date]({{ site.baseurl }}/{{ page.version }}/elements/date.html){:.link_odd_elementSpec} contains a date in any format, including a date range.
 A date range may be expressed as textual content or, when intervening punctuation
 is present,
 as a combination of date sub-elements and text.
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample277.xml" valid="false" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample277.xml" valid="false" version=page.version %}
 
 To be more specific about the date, the attributes in the [att.datable]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html){:.link_odd} class can be used:
 
@@ -131,5 +131,5 @@ To be more specific about the date, the attributes in the [att.datable]({{ site.
 In the following example, the ambiguous date text "5/3/05" is resolved using the
 **@isodate** attribute:
 
-{% include plainExample.html example="./v3/examples/namesDates/namesDates-sample278.xml" valid="false" %}
+{% include plainExample.html example="examples/namesDates/namesDates-sample278.xml" valid="false" version=page.version %}
 

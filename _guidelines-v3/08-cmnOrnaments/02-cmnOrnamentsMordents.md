@@ -15,7 +15,7 @@ its attributes:
 
 
 {% include specDesc.html version=page.version elem="mordent" atts="" %}
-
+{% include specDesc.html version=page.version elem="mordent" atts="att.mordent.log/form att.mordent.log/long" %}
 {% include specDesc.html version=page.version elem="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
 
 
@@ -65,7 +65,7 @@ The following example demonstrates the encoding of simple mordents:
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_mordent.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 25. Example of simple mordent</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample182.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample182.xml" valid="true" version=page.version %}
 
 
 Occasionally, mordents can be longer, employing five notes instead of three. The
@@ -77,5 +77,5 @@ example shows the encoding of a long mordent:
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 26. Example of a long mordent</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample183.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample183.xml" valid="true" version=page.version %}
 

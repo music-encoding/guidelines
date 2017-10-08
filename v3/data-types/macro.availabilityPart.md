@@ -36,84 +36,116 @@ title: "macro.availabilityPart"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/accessRestrict">accessRestrict</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/accessRestrict.html">accessRestrict</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/distributor">distributor</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/distributor.html">distributor</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/price">price</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/price.html">price</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/sysReq">sysReq</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/sysReq.html">sysReq</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/useRestrict">useRestrict</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/useRestrict.html">useRestrict</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/model.addressLike">model.addressLike</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.addressLike.html">model.addressLike</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/model.dateLike">model.dateLike</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.dateLike.html">model.dateLike</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         
-                        <div class="indent4">
-                           <span data-indentation="4" class="element">&lt;rng:ref 
-                              <span class="attribute">name=</span>
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="/model.identifierLike">model.identifierLike</a>"
-                              </span>/&gt;
+                        <div class="indent4 indent">
+                           <span data-indentation="4" class="element">&lt;rng:ref
+                              
+                              
+                              <span class="attribute">name=
+                                 <span class="attributevalue">"
+                                    <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.identifierLike.html">model.identifierLike</a>"
+                                 </span>
+                              </span>
+                              /&gt;
                            </span>
                         </div>
                         

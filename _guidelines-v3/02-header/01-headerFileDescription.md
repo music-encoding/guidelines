@@ -48,7 +48,7 @@ in which they must occur within the [fileDesc]({{ site.baseurl }}/{{ page.versio
 
 A complete file description will resemble the following example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample019.xml" valid="false" %}
+{% include plainExample.html example="examples/header/header-sample019.xml" valid="false" version=page.version %}
 
 
 

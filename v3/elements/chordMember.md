@@ -31,7 +31,184 @@ title: "chordMember"
                </thead>
                <tbody>
                   <tr>
-                     <td></td>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@accid.ges</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Records the performed pitch inflection.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ACCIDENTAL.IMPLICIT.html">data.ACCIDENTAL.IMPLICIT</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@fing</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Indicates which finger, if any, should be used to play an individual string. The
+                              index, middle, ring, and little fingers are represented by the values 1-4, while 't'
+                              is
+                              for the thumb. The values 'x' and 'o' indicate muffled and open strings,
+                              respectively.
+                           </span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FINGER.FRET.html">data.FINGER.FRET</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/chordMember.html">chordMember</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@fret</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Records the location at which a string should be stopped against a fret.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FRET.html">data.FRET</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@inth</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Encodes the harmonic interval between pitches occurring at the same time.</span>
+                           One or more values from
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.INTERVAL.HARMONIC.html">data.INTERVAL.HARMONIC</a>, separated by spaces.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@label</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">string</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@n</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a number-like designation for an element.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/token.html">token</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@oct</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Captures written octave information.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.OCTAVE.html">data.OCTAVE</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.octave.html">att.octave</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@pname</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Contains a written pitch name.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PITCHNAME.html">data.PITCHNAME</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitch.html">att.pitch</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:base</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
+                              references into absolute URI references.
+                           </span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:id</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
+                              and other resources. Each id attribute within a document must have a unique
+                              value.
+                           </span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">ID</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a>
+                           </span>
+                        </div>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -80,60 +257,70 @@ title: "chordMember"
          <td class="wovenodd-col2">
             <div class="code" xml:space="preserve" data-lang="ODD">
                <code>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fretlocation.html">att.fretlocation</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalharmonic</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitched.html">att.pitched</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitched.html">att.pitched</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span>
                   </div>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;rng:empty/&gt;</span>
                      </div>
                      

@@ -19,7 +19,7 @@
             <xd:p>This XSL generates the website version of the MEI Guidelines, directly from a canonicalized ODD file.</xd:p>
         </xd:desc>
     </xd:doc>
-    <xsl:output indent="yes" method="xhtml"/>
+    <xsl:output indent="true" method="xhtml" suppress-indentation="egx:egXML tei:classes tei:content"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:variable name="plain.version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
     <xd:doc scope="component">
@@ -625,7 +625,6 @@
         <xsl:apply-templates select="node()" mode="#current"/>
     </xsl:template>
     
-    
     <xsl:template match="tei:div[not(@type = 'div1')]" mode="markdown"/>
     
     <xsl:template match="tei:head">
@@ -1057,7 +1056,8 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:variable name="attributes" select="local:getAttributes($spec)" as="node()*"/>
-                                <xsl:variable name="name" select="replace($attributes/descendant-or-self::*:div[*:span[@class='attribute']/text() = '@' || $current.att]//span[@class = 'attributeClasses']/a/text(),':','---')" as="xs:string"/>
+                                <xsl:variable name="name" select="$attributes/descendant-or-self::*:div[*:span[@class='attribute']/*:strong/text() = '@' || $current.att]//*:span[@class = 'attributeClasses']/*:a/text()" as="xs:string?"/>
+                                
                                 <xsl:choose>
                                     <xsl:when test="string-length($name) gt 0">
                                         <xsl:value-of select="$name || '/' || replace($current.att,':','---')"/>
@@ -1237,7 +1237,7 @@
                 <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="path" select="$outPutFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include plainExample.html example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" %}
+        <xsl:variable name="path" select="'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include plainExample.html example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" version=page.version %}
     </xsl:template>
         
     <xsl:template match="tei:table">
@@ -1330,9 +1330,12 @@
                             <!-- get attributes derived from attribute classes -->
                             <xsl:sequence select="local:getAttributes($elementSpec)"/>
                         </xsl:variable>
-                        <xsl:variable name="attribute.names" select="distinct-values($attributes/descendant-or-self::span[@class = 'attribute']/string(text()))" as="xs:string*"/>
+                        <xsl:variable name="attribute.names" select="distinct-values($attributes/descendant-or-self::*:span[@class = 'attribute']/*:strong/string(text()))" as="xs:string*"/>
                         
-                        <!--<xsl:message select="'DEBUG: element ' || $elementSpec/@ident || ' has ' || count($attribute.names) || ' attributes: ' || string-join($attribute.names,', ')"/>-->
+                        <xsl:if test="count($attributes) ne count($attribute.names)">
+                            <xsl:message select="'DEBUG: element ' || $elementSpec/@ident || ' has ' || count($attributes) || ' attributes: ' || string-join($attribute.names,', ')"/>
+                            <xsl:message select="' '"></xsl:message>
+                        </xsl:if>
                         
                         <xsl:if test="count($attributes) gt 0">
                             <table class="table table-striped table-hover">
@@ -1345,12 +1348,12 @@
                                     <xsl:for-each select="$attribute.names">
                                         <xsl:sort select="." data-type="text"/>
                                         <xsl:variable name="current.att" select="." as="xs:string"/>
-                                        <xsl:if test="count($attributes/descendant-or-self::div[span[@class='attribute']/text() = $current.att]) gt 1">
+                                        <xsl:if test="count($attributes/descendant-or-self::div[span[@class='attribute']/strong/text() = $current.att]) gt 1">
                                             <xsl:message select="'INFO: attribute ' || $current.att || ' specified multiple times on element ' || $elementSpec/@ident"/>
                                         </xsl:if>
                                         <tr>
                                             <td>
-                                            <xsl:sequence select="($attributes/descendant-or-self::div[span[@class='attribute']/text() = $current.att])[1]"/>
+                                            <xsl:sequence select="($attributes/descendant-or-self::div[span[@class='attribute']/strong/text() = $current.att])[1]"/>
                                             </td>
                                         </tr>
                                     </xsl:for-each>
@@ -1364,7 +1367,7 @@
                     <td class="wovenodd-col2">
                         <div class="parent">
                             <xsl:for-each select="$elementSpec//tei:memberOf[starts-with(@key,'model.')]">
-                                <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_classSpec" href="{$version}/model-classes/{@key},html"><xsl:value-of select="@key"/></a>
+                                <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_classSpec" href="{$version}/model-classes/{@key}.html"><xsl:value-of select="@key"/></a>
                             </xsl:for-each>
                         </div>
                     </td>
@@ -1458,7 +1461,10 @@
                 <tr>
                     <td class="wovenodd-col1"><strong>Declaration</strong></td>
                     <td class="wovenodd-col2">
-                        <div class="code" xml:space="preserve" data-lang="ODD"><code><xsl:apply-templates select="$elementSpec/(tei:classes | tei:content)" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></code></div>
+                        <xsl:variable name="codeBlock">
+                            <xsl:apply-templates select="$elementSpec/(tei:classes | tei:content)" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates>
+                        </xsl:variable>
+                        <div class="code" xml:space="preserve" data-lang="ODD"><code><xsl:apply-templates select="$codeBlock" mode="removeSpaceInCode"/></code></div>
                     </td>
                 </tr>
                 <xsl:if test="$elementSpec/tei:exemplum">
@@ -1485,7 +1491,7 @@
                         <td class="wovenodd-col2">
                             <div>
                                 <xsl:for-each select=".//sch:assert">
-                                    <div><xsl:value-of select="normalize-space(.//text())"/></div>
+                                    <div><xsl:value-of select="normalize-space(string-join(.//text(),' '))"/></div>
                                 </xsl:for-each>
                             </div>
                             <div class="code" xml:space="preserve" data-lang="Schematron"><code><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></code></div>
@@ -1539,13 +1545,13 @@
                     <xsl:variable name="dt" select="$current.att/tei:datatype" as="node()"/>
                     <xsl:choose>
                         <xsl:when test="$dt/@maxOccurs = '1'">
-                            Value conforms to <a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}"><xsl:value-of select="$dt/rng:ref/@name"/></a>.
+                            Value conforms to <a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>.
                         </xsl:when>
                         <xsl:when test="$dt/@maxOccurs = '2'">
-                            One or two values from <a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by a space.
+                            One or two values from <a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by a space.
                         </xsl:when>
                         <xsl:when test="$dt/@maxOccurs = 'unbounded'">
-                            One or more values from<a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by spaces.
+                            One or more values from<a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by spaces.
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
@@ -1564,6 +1570,9 @@
                         </xsl:when>
                         <xsl:when test="$dt/@maxOccurs = 'unbounded'">
                             One or more values of datatype <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data[1])"/></span>, separated by spaces.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:ref) = 1 and $dt/child::rng:ref/@type = 'string'">
+                            Value is plain text.
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
@@ -1584,7 +1593,7 @@
                             One or more of <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data[1])"/></span>.
                         </xsl:when>
                         <xsl:when test="$dt/rng:list/rng:oneOrMore/rng:data[following-sibling::rng:ref]">
-                            One or more values, each consisting of a sequence of a <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data)"/></span> part, followed by a <a class="link_odd_classSpec" href="{$version}/{$dt//rng:ref/@name}"><xsl:value-of select="$dt//rng:ref/@name"/></a>.
+                            One or more values, each consisting of a sequence of a <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data)"/></span> part, followed by a <a class="link_odd_classSpec" href="{$version}/data-types/{$dt//rng:ref/@name}.html"><xsl:value-of select="$dt//rng:ref/@name"/></a>.
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
@@ -1615,7 +1624,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
-                            <xsl:message terminate="yes" select="$dt"/>
+                            <xsl:message terminate="no" select="$dt"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
@@ -1624,7 +1633,7 @@
                 </xsl:otherwise>
             </xsl:choose>
             <span class="attributeClasses">
-                <a class="link_odd" href="{$version}/attribute-classes/{$current.class.id}"><xsl:value-of select="$current.class.id"/></a>
+                <a class="link_odd" href="{$version}/attribute-classes/{replace($current.class.id,':','---')}.html"><xsl:value-of select="$current.class.id"/></a>
             </span>
         </div>
         
@@ -2104,38 +2113,38 @@
         <xsl:variable name="element" select="." as="node()"/>
         <xsl:choose>
             <xsl:when test="local-name() = 'param' and @name = 'pattern' and string-length(text()) gt 30">
-                <div class="indent{$indent.level}"><span data-indentation="{$indent.level}" class="element">&lt;<xsl:value-of select="name($element)"/><xsl:apply-templates select="$element/@*" mode="#current"/>&gt;</span>
+                <div class="indent{$indent.level} indent"><span data-indentation="{$indent.level}" class="element">&lt;<xsl:value-of select="name($element)"/><xsl:apply-templates select="$element/@*" mode="#current"/>&gt;</span>
                     <xsl:choose>
                         <xsl:when test="string-length(text()) gt 240">
-                            <div class="indent{$indent.level + 1}"><xsl:value-of select="substring(text(),1,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),61,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),121,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),181,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),241,60)"/></div>
+                            <div class="indent{$indent.level + 1} indent"><xsl:value-of select="substring(text(),1,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),61,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),121,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),181,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),241,60)"/></div>
                         </xsl:when>
                         <xsl:when test="string-length(text()) gt 180">
-                            <div class="indent{$indent.level + 1}"><xsl:value-of select="substring(text(),1,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),61,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),121,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),181,60)"/></div>
+                            <div class="indent{$indent.level + 1} indent"><xsl:value-of select="substring(text(),1,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),61,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),121,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),181,60)"/></div>
                         </xsl:when>
                         <xsl:when test="string-length(text()) gt 120">
-                            <div class="indent{$indent.level + 1}"><xsl:value-of select="substring(text(),1,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),61,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),121,60)"/></div>
+                            <div class="indent{$indent.level + 1} indent"><xsl:value-of select="substring(text(),1,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),61,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),121,60)"/></div>
                         </xsl:when>
                         <xsl:when test="string-length(text()) gt 60">
-                            <div class="indent{$indent.level + 1}"><xsl:value-of select="substring(text(),1,60)"/></div>
-                            <div class="indent{$indent.level + 2}"><xsl:value-of select="substring(text(),61,60)"/></div>
+                            <div class="indent{$indent.level + 1} indent"><xsl:value-of select="substring(text(),1,60)"/></div>
+                            <div class="indent{$indent.level + 2} dblIndent"><xsl:value-of select="substring(text(),61,60)"/></div>
                         </xsl:when>
                         <xsl:when test="string-length(text()) gt 30">
-                            <div class="indent{$indent.level + 1}"><xsl:value-of select="substring(text(),1,100)"/></div>        
+                            <div class="indent{$indent.level + 1} indent"><xsl:value-of select="substring(text(),1,100)"/></div>        
                         </xsl:when>
                     </xsl:choose>
                 <span data-indentation="{$indent.level}" class="element">&lt;/<xsl:value-of select="name($element)"/>&gt;</span></div>
             </xsl:when>
             <xsl:otherwise>
-                <div class="indent{$indent.level}"><span data-indentation="{$indent.level}" class="element">&lt;<xsl:value-of select="name($element)"/><xsl:apply-templates select="$element/@*" mode="#current"/><xsl:if test="not($element/node())">/</xsl:if>&gt;</span><xsl:apply-templates select="$element/node()" mode="#current"><xsl:with-param name="indent" select="$indent.level + 1" as="xs:integer"/></xsl:apply-templates><xsl:if test="$element/node()"><span data-indentation="{$indent.level}" class="element">&lt;/<xsl:value-of select="name($element)"/>&gt;</span></xsl:if></div>
+                <div class="indent{$indent.level} indent"><span data-indentation="{$indent.level}" class="element">&lt;<xsl:value-of select="name($element)"/><xsl:apply-templates select="$element/@*" mode="#current"/><xsl:if test="not($element/node())">/</xsl:if>&gt;</span><xsl:apply-templates select="$element/node()" mode="#current"><xsl:with-param name="indent" select="$indent.level + 1" as="xs:integer"/></xsl:apply-templates><xsl:if test="$element/node()"><span data-indentation="{$indent.level}" class="element">&lt;/<xsl:value-of select="name($element)"/>&gt;</span></xsl:if></div>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -2145,25 +2154,41 @@
         <xsl:param name="indent" as="xs:integer?"/>
         <xsl:variable name="indent.level" select="if($indent) then($indent) else(1)" as="xs:integer"/>
         <xsl:variable name="element" select="." as="node()"/>
-        <div class="indent{$indent.level}"><span data-indentation="{$indent.level}" class="comment">&lt;!--<xsl:value-of select="."/>--&gt;</span></div>   
+        <div class="indent{$indent.level} indent"><span data-indentation="{$indent.level}" class="comment">&lt;!--<xsl:value-of select="."/>--&gt;</span></div>   
     </xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
     <xsl:template match="@*" mode="preserveSpace" priority="1"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="name()"/>=</span><span class="attributevalue">"<xsl:value-of select="string(.)"/>"</span></xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
-    <xsl:template match="tei:memberOf/@key" mode="preserveSpace" priority="2"><xsl:choose><xsl:when test="starts-with(string(.),'att.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="{$version}/attribute-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></xsl:when>
-            <xsl:when test="starts-with(string(.),'model.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="{$version}/model-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></xsl:when>
+    <xsl:template match="tei:memberOf/@key" mode="preserveSpace" priority="2" xml:space="preserve">
+        <xsl:choose>
+            <xsl:when test="starts-with(string(.),'att.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/attribute-classes/{string(.)}.html"><xsl:value-of select="normalize-space(string(.))"/></a>"</span></span></xsl:when>
+            <xsl:when test="starts-with(string(.),'model.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/model-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
             <xsl:otherwise><xsl:message terminate="yes" select="'Dunno how to resolve memberOf reference ' || ."/></xsl:otherwise>
         </xsl:choose></xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
-    <xsl:template match="tei:macroRef/@key" mode="preserveSpace" priority="2"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="/{string(.)}"><xsl:value-of select="string(.)"/></a>"</span></xsl:template>
+    <xsl:template match="tei:macroRef/@key" mode="preserveSpace" priority="2" xml:space="preserve"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/data-types/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
-    <xsl:template match="rng:ref/@name" mode="preserveSpace" priority="2"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=</span><span class="attributevalue">"<a class="link_odd" href="/{string(.)}"><xsl:value-of select="string(.)"/></a>"</span></xsl:template>
-    
-    <xsl:template match="@mode[not(ancestor::egx:egXML)]" mode="preserveSpace" priority="2">
+    <xsl:template match="rng:ref/@name" mode="preserveSpace" priority="2" xml:space="preserve">
+        <xsl:variable name="target.type" as="xs:string"><xsl:choose>
+                <xsl:when test="starts-with(.,'model.')"><xsl:value-of select="'model'"/></xsl:when>
+                <xsl:when test="starts-with(.,'macro.')"><xsl:value-of select="'macro'"/></xsl:when>
+                <xsl:when test="starts-with(.,'data.')"><xsl:value-of select="'macro'"/></xsl:when>
+                <xsl:when test=". = $mei.source//tei:elementSpec/@ident"><xsl:value-of select="'element'"/></xsl:when>
+                <xsl:otherwise><xsl:value-of select="'other'"/></xsl:otherwise>
+            </xsl:choose></xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$target.type = 'element'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/elements/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
+            <xsl:when test="$target.type = 'model'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/model-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
+            <xsl:when test="$target.type = 'macro'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/data-types/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
+            <xsl:when test="$target.type = 'other'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<xsl:value-of select="string(.)"/>"</span></span></xsl:when>
+        </xsl:choose>
+    </xsl:template>
+        
+     <xsl:template match="@mode[not(ancestor::egx:egXML)]" mode="preserveSpace" priority="2">
         <xsl:param name="getODD" tunnel="yes" as="xs:boolean?"/>
         <!--<xsl:if test="not($getODD) or $getODD = false()">
             <xsl:next-match/>

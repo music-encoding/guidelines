@@ -15,13 +15,13 @@ are
 specified using the [graphic]({{ site.baseurl }}/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec} element, whose **@target** attribute
 provides the location of an image. For example:
 
-{% include plainExample.html example="./v3/examples/figTable/figTable-sample238.xml" valid="true" %}
+{% include plainExample.html example="examples/figTable/figTable-sample238.xml" valid="true" version=page.version %}
 
 The graphic element may occur multiple times within the markup of the figure in order
 to
 indicate the availablity of different image formats or resolutions:
 
-{% include plainExample.html example="./v3/examples/figTable/figTable-sample239.xml" valid="true" %}
+{% include plainExample.html example="examples/figTable/figTable-sample239.xml" valid="true" version=page.version %}
 
 
 

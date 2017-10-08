@@ -14,9 +14,9 @@ place should be marked with a [gap]({{ site.baseurl }}/{{ page.version }}/elemen
 information about the reason for the omission, its extent, and the person or agency
 responsible for it, as in the following examples:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample221.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample221.xml" valid="true" version=page.version %}
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample222.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample222.xml" valid="true" version=page.version %}
 
 
 Note that the extent of the gap may be marked precisely using attributes **@unit**
@@ -34,7 +34,7 @@ reasons, as for example when transcribing a illegible source. Its **@reason** an
 indicate the cause of uncertainty and the person responsible for the conjectured
 reading.
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample223.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample223.xml" valid="true" version=page.version %}
 
 
 Where the difficulty in transcription arises from an identifiable cause, the
@@ -71,7 +71,7 @@ element.
 The following example demonstrates the use of the [supplied]({{ site.baseurl }}/{{ page.version }}/elements/supplied.html){:.link_odd_elementSpec} element in
 combination with [gap]({{ site.baseurl }}/{{ page.version }}/elements/gap.html){:.link_odd_elementSpec} within [subst]({{ site.baseurl }}/{{ page.version }}/elements/subst.html){:.link_odd_elementSpec}:
 
-{% include plainExample.html example="./v3/examples/editTrans/editTrans-sample224.xml" valid="true" %}
+{% include plainExample.html example="examples/editTrans/editTrans-sample224.xml" valid="true" version=page.version %}
 
 
 When the presumed loss of text arises from an identifiable cause, **@agent**

@@ -33,7 +33,190 @@ title: "when"
                </thead>
                <tbody>
                   <tr>
-                     <td></td>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@absolute</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides an absolute value for the time point.</span>
+                           Value is plain text.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@abstype</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Specifies the kind of values used in the absolute attribute.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.BETYPE.html">data.BETYPE</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@data</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
+                           One or more values from
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@interval</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Specifies the time interval between this time point and the one designated by the
+                              since attribute. This attribute can only be interpreted meaningfully in conjunction
+                              with
+                              the inttype attribute.
+                           </span>
+                           Value must either conform to 
+                           <span style="font-weight: 500;">
+                              a decimal number no smaller than 1
+                           </span> or 
+                           <span style="font-weight: 500;">time</span>.                            
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@inttype</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Specifies the kind of values used in the interval attribute.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.BETYPE.html">data.BETYPE</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@label</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">string</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@n</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a number-like designation for an element.</span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/token.html">token</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@since</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Identifies the reference point for determining the time of the current when element,
+                              which is obtained by adding the interval to the time of the reference point. The value
+                              should be the ID of another when element within the same parent element. If the since
+                              attribute is omitted and the absolute attribute is not specified, then the reference
+                              point is understood to be the immediately preceding when element.
+                           </span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:base</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
+                              references into absolute URI references.
+                           </span>
+                           Value conforms to 
+                           <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a>
+                           </span>
+                        </div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef">
+                           <span class="attribute">
+                              <strong>@xml:id</strong>
+                           </span>
+                           <span class="attributeUsage">(optional)</span>
+                           <span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
+                              and other resources. Each id attribute within a document must have a unique
+                              value.
+                           </span>
+                           Value of datatype 
+                           <span style="font-weight: 500;">ID</span>.
+                           
+                           <span class="attributeClasses">
+                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a>
+                           </span>
+                        </div>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -83,33 +266,37 @@ title: "when"
          <td class="wovenodd-col2">
             <div class="code" xml:space="preserve" data-lang="ODD">
                <code>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
-                     <div class="indent2">
-                        <span data-indentation="2" class="element">&lt;memberOf 
-                           <span class="attribute">key=</span>
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a>"
+                     <div class="indent2 indent">
+                        <span data-indentation="2" class="element">&lt;memberOf
+                           
+                           <span class="attribute">key=
+                              <span class="attributevalue">"
+                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a>"
+                              </span>
                            </span>/&gt;
                         </span>
                      </div>
                      
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span>
                   </div>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;rng:empty/&gt;</span>
                      </div>
                      
@@ -146,13 +333,13 @@ title: "when"
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron">
                <code>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;sch:rule 
                         <span class="attribute">context=</span>
                         <span class="attributevalue">"mei:when[@interval]"</span>&gt;
                      </span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">role=</span>
                            <span class="attributevalue">"warning"</span> 
@@ -163,7 +350,7 @@ title: "when"
                         <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                      </div>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">role=</span>
                            <span class="attributevalue">"warning"</span> 
@@ -174,7 +361,7 @@ title: "when"
                         <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                      </div>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">role=</span>
                            <span class="attributevalue">"warning"</span> 
@@ -187,13 +374,13 @@ title: "when"
                      
                      <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span>
                   </div>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;sch:rule 
                         <span class="attribute">context=</span>
                         <span class="attributevalue">"mei:when[matches(@interval, '^[0-9]+$')]"</span>&gt;
                      </span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">test=</span>
                            <span class="attributevalue">"not(@inttype eq 'time')"</span>&gt;
@@ -204,13 +391,13 @@ title: "when"
                      
                      <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span>
                   </div>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;sch:rule 
                         <span class="attribute">context=</span>
                         <span class="attributevalue">"mei:when[matches(@interval, ':')]"</span>&gt;
                      </span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">test=</span>
                            <span class="attributevalue">"@inttype eq 'time'"</span>&gt;
@@ -237,13 +424,13 @@ title: "when"
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron">
                <code>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;sch:rule 
                         <span class="attribute">context=</span>
                         <span class="attributevalue">"mei:when[@absolute]"</span>&gt;
                      </span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">role=</span>
                            <span class="attributevalue">"warning"</span> 
@@ -272,13 +459,13 @@ title: "when"
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron">
                <code>
-                  <div class="indent1">
+                  <div class="indent1 indent">
                      <span data-indentation="1" class="element">&lt;sch:rule 
                         <span class="attribute">context=</span>
                         <span class="attributevalue">"@since"</span>&gt;
                      </span>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">role=</span>
                            <span class="attributevalue">"warning"</span> 
@@ -289,7 +476,7 @@ title: "when"
                         <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span>
                      </div>
                      
-                     <div class="indent2">
+                     <div class="indent2 indent">
                         <span data-indentation="2" class="element">&lt;sch:assert 
                            <span class="attribute">role=</span>
                            <span class="attributevalue">"warning"</span> 

@@ -32,7 +32,7 @@ but all
 are part of the same pitch class.
 
 
-{% include plainExample.html example="./v3/examples/analysis/analysis-sample175.xml" valid="false" %}
+{% include plainExample.html example="examples/analysis/analysis-sample175.xml" valid="false" version=page.version %}
 
 
 For further information on pitch class set theory, please consult the following

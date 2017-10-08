@@ -241,7 +241,7 @@ title: "att.targeteval"
          </td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1">
+               <div class="indent1 indent">
                   <span data-indentation="1" class="element">&lt;attDef 
                      <span class="attribute">ident=</span>
                      <span class="attributevalue">"evaluate"</span> 
@@ -249,25 +249,25 @@ title: "att.targeteval"
                      <span class="attributevalue">"opt"</span>&gt;
                   </span>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;desc&gt;</span>Specifies the intended meaning when a participant in a relationship is itself a
                      pointer.
                      <span data-indentation="2" class="element">&lt;/desc&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;valList 
                         <span class="attribute">type=</span>
                         <span class="attributevalue">"closed"</span>&gt;
                      </span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"all"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>If an element pointed to is itself a pointer, then the target of that pointer
                            will be taken, and so on, until an element is found which is not a pointer.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -276,13 +276,13 @@ title: "att.targeteval"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"one"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>If an element pointed to is itself a pointer, then its target (whether a pointer
                            or not) is taken as the target of this pointer.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -291,13 +291,13 @@ title: "att.targeteval"
                         <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
                      </div>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;valItem 
                            <span class="attribute">ident=</span>
                            <span class="attributevalue">"none"</span>&gt;
                         </span>
                         
-                        <div class="indent4">
+                        <div class="indent4 indent">
                            <span data-indentation="4" class="element">&lt;desc&gt;</span>No further evaluation of targets is carried out beyond that needed to find the
                            element(s) specified in plist or target attribute.
                            <span data-indentation="4" class="element">&lt;/desc&gt;</span>
@@ -309,10 +309,10 @@ title: "att.targeteval"
                      <span data-indentation="2" class="element">&lt;/valList&gt;</span>
                   </div>
                   
-                  <div class="indent2">
+                  <div class="indent2 indent">
                      <span data-indentation="2" class="element">&lt;remarks&gt;</span>
                      
-                     <div class="indent3">
+                     <div class="indent3 indent">
                         <span data-indentation="3" class="element">&lt;p 
                            <span class="attribute">part=</span>
                            <span class="attributevalue">"N"</span>&gt;

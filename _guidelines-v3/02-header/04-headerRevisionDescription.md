@@ -53,7 +53,7 @@ It is recommended to give changes in reverse chronological order, most recent fi
 
 For example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample075.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample075.xml" valid="true" version=page.version %}
 
 A slightly shorter form for recording changes is also available when a the date of
 the change
@@ -63,5 +63,5 @@ responsible for the change, encoded elsewhere in the header, can be referred to 
 one or more
 URIs given in the **@resp** attribute. For example:
 
-{% include plainExample.html example="./v3/examples/header/header-sample076.xml" valid="true" %}
+{% include plainExample.html example="examples/header/header-sample076.xml" valid="true" version=page.version %}
 

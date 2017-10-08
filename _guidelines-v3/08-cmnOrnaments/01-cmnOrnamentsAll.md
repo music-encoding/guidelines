@@ -16,7 +16,7 @@ staff, the
 The following example demonstrates the encoding of an inverted mordent over a middle
 C:
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample179.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample179.xml" valid="true" version=page.version %}
 
 Alternatively, the relationship of an ornament to a note can be expressed in terms
 of beats
@@ -31,7 +31,7 @@ following measure is in 2/2, the ornament (in this case, a mordent) is related t
 the note on
 the second beat.
 
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample180.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample180.xml" valid="true" version=page.version %}
 
 The relationship between an ornament and the notes on staff must always be encoded.
 It is, in

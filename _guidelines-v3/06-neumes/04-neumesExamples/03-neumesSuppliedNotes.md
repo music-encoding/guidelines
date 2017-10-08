@@ -11,5 +11,5 @@ In the case of neume notation where no absolute pitch is indicated, you may use 
 **@source** attribute may be used to supply a reference to a source with the
 absolute pitch provided.
 
-{% include plainExample.html example="./v3/examples/neumes/neumes-sample161.xml" valid="true" %}
+{% include plainExample.html example="examples/neumes/neumes-sample161.xml" valid="true" version=page.version %}
 

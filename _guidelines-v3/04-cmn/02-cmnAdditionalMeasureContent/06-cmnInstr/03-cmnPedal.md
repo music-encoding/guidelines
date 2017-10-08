@@ -41,5 +41,5 @@ the following values:
       </tr>
    </tbody>
 </table>
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample146.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample146.xml" valid="true" version=page.version %}
 

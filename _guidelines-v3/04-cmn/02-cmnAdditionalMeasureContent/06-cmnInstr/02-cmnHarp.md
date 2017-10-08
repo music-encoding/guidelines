@@ -30,7 +30,7 @@ where "n" is the default value, which is assumed when one of these attributes is
 specified.
 
 
-{% include plainExample.html example="./v3/examples/cmn/cmn-sample145.xml" valid="true" %}
+{% include plainExample.html example="examples/cmn/cmn-sample145.xml" valid="true" version=page.version %}
 
 In the preceding example, the A, B, and E pedals are in the flat position, while the
 other, non-specified pedals are in the natural position.

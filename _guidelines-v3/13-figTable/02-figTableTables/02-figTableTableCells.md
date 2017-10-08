@@ -13,7 +13,7 @@ information. They indicate that a particular cell or row of a table spans more t
 one row
 or column.
 
-{% include plainExample.html example="./v3/examples/figTable/figTable-sample244.xml" valid="true" %}
+{% include plainExample.html example="examples/figTable/figTable-sample244.xml" valid="true" version=page.version %}
 
 
 The [th]({{ site.baseurl }}/{{ page.version }}/elements/th.html){:.link_odd_elementSpec} (table header) element designates a table cell containing
@@ -21,5 +21,5 @@ column or row heading information as opposed to one containing data. The **@cols
 and **@rowspan** attributes tabular display rendering information. They indicate that
 a particular cell or row of a table spans more than one row or column.
 
-{% include plainExample.html example="./v3/examples/figTable/figTable-sample245.xml" valid="true" %}
+{% include plainExample.html example="examples/figTable/figTable-sample245.xml" valid="true" version=page.version %}
 

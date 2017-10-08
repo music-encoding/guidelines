@@ -23,7 +23,7 @@ The following example from Handel's *Messiah* (HWV 56) shows the use of
    <img src="../../../../guidelines/v3/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample263.xml" valid="true" %}
+{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample263.xml" valid="true" version=page.version %}
 
 
 When there are multiple lines of vocally performed text, or the encoder wishes to
@@ -34,14 +34,14 @@ specific about connectors, etc., the use of [verse]({{ site.baseurl }}/{{ page.v
 
 
 {% include specDesc.html version=page.version elem="verse" atts="" %}
-
+{% include specDesc.html version=page.version elem="verse" atts="att.verse.log/rhythm" %}
 
 
 
 
 The following example from Handel's *Messiah* (HWV 56) shows the use of [verse]({{ site.baseurl }}/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec}:
 
-{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample264.xml" valid="true" %}
+{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample264.xml" valid="true" version=page.version %}
 
 
 As it is common practice in written text, it is assumed that a space separates words.
@@ -59,7 +59,7 @@ the vocal text from Mozart's *Don Giovanni* sung by Don Giovanni in Finale II,
 syllables within the same [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and setting the [syl]({{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec}
 element's **@con** attribute value to 't':
 
-{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample265.xml" valid="true" %}
+{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample265.xml" valid="true" version=page.version %}
 
 
 When there is more than one line of text, more than one [verse]({{ site.baseurl }}/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec} element
@@ -73,7 +73,7 @@ of the
    <img src="../../../../guidelines/v3/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/lyricsDesc/lyricsDesc-sample266.xml" valid="false" %}
+{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample266.xml" valid="false" version=page.version %}
 
 
 Optionally, it is possible to include an [lb]({{ site.baseurl }}/{{ page.version }}/elements/lb.html){:.link_odd_elementSpec} element within [verse]({{ site.baseurl }}/{{ page.version }}/elements/verse.html){:.link_odd_elementSpec} to explicitly encode line and line group endings. This is

@@ -17,7 +17,7 @@ attributes:
 
 
 
-
+{% include specDesc.html version=page.version elem="turn" atts="att.turn.log/form att.turn.log/delayed" %}
 {% include specDesc.html version=page.version elem="att.ornamentaccid" atts="att.ornamentaccid/accidlower att.ornamentaccid/accidupper" %}
 
 
@@ -64,7 +64,7 @@ The following example shows the encoding of a simple turn:
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_turn.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 33. Example of a simple turn.</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample193.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample193.xml" valid="true" version=page.version %}
 
 
 Turns can sometimes be performed after the principal note (usually on the second half
@@ -87,5 +87,5 @@ demonstrates the encoding of turns with the **@delayed** attribute. Note that th
    <img src="../../../../guidelines/v3/Images/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive"></img>
    <figcaption class="figure-caption">Figure 34. Delayed turn.</figcaption>
 </figure>
-{% include plainExample.html example="./v3/examples/cmnOrnaments/cmnOrnaments-sample194.xml" valid="true" %}
+{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample194.xml" valid="true" version=page.version %}
 
