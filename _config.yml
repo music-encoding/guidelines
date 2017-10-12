@@ -7,6 +7,13 @@ style_baseurl: "https://music-encoding.github.io"
 twitter_username: music-encoding
 github: [metadata]
 
+
+# Github repository used for Github edit button.
+repository: "music-encoding/guidelines"
+
+# path fragment to get to branch for files on github:
+github_edit_path: "blob/master"
+
 # Build settings
 markdown: kramdown
 

@@ -12,6 +12,8 @@
   <h{{ h }} id="{{ id }}">
       {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %}
       {{ doc.title }}
+      <a href="https://github.com/{{ site.repository}}/{{ site.github_edit_path }}/{{ doc.path }}"
+       target="_blank" class="btn btn-primary guidelines-edit">Edit this section</a>
   </h{{ h }}>
 
   {{ doc.content }}
