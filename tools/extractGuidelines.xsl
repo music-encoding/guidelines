@@ -819,7 +819,7 @@
                 </xsl:text>
             </xsl:when>
             <xsl:when test="@type = 'gloss'">
-                <table class="table table-striped table-hover">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>Value</th>
@@ -1338,7 +1338,7 @@
                         </xsl:if>
                         
                         <xsl:if test="count($attributes) gt 0">
-                            <table class="table table-striped table-hover">
+                            <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th></th>
