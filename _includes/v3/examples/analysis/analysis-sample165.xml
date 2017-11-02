@@ -1,78 +1,39 @@
-
 <measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1" xml:id="analysis.m_sc_22">
-   
    <staff n="1">
-      
       <layer n="1">
-         
          <note dur="4" oct="5" pname="c" xml:id="analysis.n_sc_23_3"></note>
-         
          <note dur="4" oct="4" pname="b" xml:id="analysis.n_sc_24_3"></note>
-         
          <note dur="4" oct="4" pname="a" sameas="analysis.n_sc_25_2" xml:id="analysis.n_sc_25_3"></note>
-         
          <note dur="4" oct="5" pname="e" xml:id="analysis.n_sc_26_3"></note>
-         
       </layer>
-      
       <layer n="2">
-         
          <note dur="4" oct="4" pname="a" xml:id="analysis.n_sc_23_2"></note>
-         
          <note accid="s" dur="4" oct="4" pname="g" xml:id="analysis.n_sc_24_2"></note>
-         
          <note dur="4" oct="4" pname="a" sameas="analysis.n_sc_25_3" xml:id="analysis.n_sc_25_2"></note>
-         
          <beam>
-            
             <note dur="8" oct="4" pname="g" xml:id="analysis.n_sc_26_2"></note>
-            
             <note dur="8" oct="4" pname="a" xml:id="analysis.n_sc_27_2"></note>
-            
          </beam>
-         
       </layer>
-      
    </staff>
-   
    <staff n="2">
-      
       <layer n="1">
-         
          <note dur="4" oct="4" pname="e" xml:id="analysis.n_sc_23_1"></note>
-         
          <note dur="4" oct="4" pname="d" xml:id="analysis.n_sc_24_1"></note>
-         
          <note dur="4" oct="4" pname="e" xml:id="analysis.n_sc_25_1"></note>
-         
          <beam>
-            
             <note dur="8" oct="4" pname="d" xml:id="analysis.n_sc_26_1"></note>
-            
             <note dur="8" oct="4" pname="c" xml:id="analysis.n_sc_27_1"></note>
-            
          </beam>
-         
       </layer>
-      
       <layer n="2">
-         
          <note dur="4" oct="3" pname="a" xml:id="n_sc_23_0"></note>
-         
          <note dur="4" oct="3" pname="b" xml:id="n_sc_24_0"></note>
-         
          <note dur="4" oct="4" pname="c" xml:id="n_sc_25_0"></note>
-         
          <beam>
-            
             <note dur="8" oct="3" pname="b" xml:id="n_sc_26_0"></note>
-            
             <note dur="8" oct="3" pname="a" xml:id="n_sc_27_0"></note>
-            
          </beam>
-         
       </layer>
-      
    </staff>
-   
 </measure>

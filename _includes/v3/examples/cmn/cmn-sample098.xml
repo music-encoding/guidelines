@@ -1,16 +1,8 @@
-
 <beam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <note dur="8" oct="5" pname="d" stem.dir="down"></note>
-   
    <note dur="8" grace="acc" oct="5" pname="e" stem.dir="up"></note>
-   
    <note dur="8" oct="5" pname="d" stem.dir="down"></note>
-   
    <note accid="s" dur="8" grace="acc" oct="5" pname="c" stem.dir="up"></note>
-   
    <note dur="8" oct="5" pname="d" stem.dir="down"></note>
-   
    <note dur="8" oct="4" pname="b" stem.dir="down"></note>
-   
 </beam>

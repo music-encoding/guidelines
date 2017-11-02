@@ -1,8 +1,4 @@
-
 <respStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
-   <resp>Encoded by </resp>
-   
+   <resp>Encoded by</resp>
    <corpName role="encoder">Members of the Local Symphony Orchestra</corpName>
-   
 </respStmt>

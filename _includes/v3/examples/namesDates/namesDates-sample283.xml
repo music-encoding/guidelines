@@ -1,16 +1,11 @@
-
 <p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <geogName>
-      <geogName>Baltimore</geogName>, 
+      <geogName>Baltimore</geogName>,
       <geogName>Maryland</geogName>
    </geogName>
-   
    <geogName>
-      <geogName>French Quarter</geogName>, 
+      <geogName>French Quarter</geogName>,
       <geogName>New Orleans</geogName>,
-      
       <geogName>Louisiana</geogName>
    </geogName>
-   
 </p>

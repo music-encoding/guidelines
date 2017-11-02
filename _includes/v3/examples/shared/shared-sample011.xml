@@ -1,10 +1,5 @@
-
 <note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:id="shared.someInterestingNote"></note>
-
 <!-- elsewhere in the document: -->
-
 <annot xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" plist="#shared.someInterestingNote">
-   
    <!-- additional information about this note -->
-   
 </annot>

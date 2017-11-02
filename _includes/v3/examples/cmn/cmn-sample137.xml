@@ -1,16 +1,8 @@
 
-
-<!-- default visualization and performance -->
-<arpeg xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" staff="2" tstamp="3"></arpeg>
-
+<!-- default visualization and performance --><arpeg xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" staff="2" tstamp="3"></arpeg>
 <!-- downward arpeggio with arrow added to visual symbol -->
-
 <arpeg xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" arrow="true" order="down" staff="2" tstamp="3"></arpeg>
-
 <!-- default rendition with (redundant) arrow added to the top of the visual symbol -->
-
 <arpeg xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" arrow="true" staff="2" tstamp="3"></arpeg>
-
 <!-- downward arpeggio with no visual indication of order -->
-
 <arpeg xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" order="down" staff="2" tstamp="3"></arpeg>

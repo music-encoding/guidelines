@@ -1,12 +1,6 @@
-
 <app xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <rdg source="#critApp.source1">
-      
       <!-- additional content of source 1 -->
-      
    </rdg>
-   
    <rdg source="#critApp.source2 #critApp.source3"></rdg>
-   
 </app>

@@ -1,20 +1,10 @@
-
 <meiHead xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <source xml:id="facsimile.source1">
-      
       <!-- description of source -->
-      
    </source>
-   
 </meiHead>
-
 <music xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <facsimile decls="#facsimile.source1">
-      
       <!-- facsimile content -->
-      
    </facsimile>
-   
 </music>

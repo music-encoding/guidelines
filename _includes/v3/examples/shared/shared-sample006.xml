@@ -1,22 +1,11 @@
-
 <body xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <mdiv n="1" type="movement">
-      
       <score>
-         
          <!-- markup of score goes here -->
-         
       </score>
-      
       <parts>
-         
          <!-- markup of performers’ parts goes here -->
-         
       </parts>
-      
    </mdiv>
-   
    <!-- additional movements go here -->
-   
 </body>

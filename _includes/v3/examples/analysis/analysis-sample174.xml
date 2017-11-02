@@ -1,16 +1,8 @@
 
-
-<!-- Fifth scale degree in the prevailing scale -->
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="5"></note>
-
+<!-- Fifth scale degree in the prevailing scale --><note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="5"></note>
 <!-- Augmented 5th -->
-
 <note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="5+"></note>
-
 <!-- Lowered 6 scale degree approached from below -->
-
 <note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="^6-"></note>
-
 <!-- Leading tone approached from above -->
-
 <note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="v7"></note>

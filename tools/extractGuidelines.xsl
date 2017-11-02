@@ -159,9 +159,8 @@
                 </xsl:choose>
             </xsl:variable>
             <xsl:variable name="path" select="$outPutFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes">
-                <xsl:apply-templates select="." mode="preserveSpace"/>
-            </xsl:result-document>
+            <xsl:variable name="example"><xsl:apply-templates select="." mode="preserveSpace"/></xsl:variable>
+            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:apply-templates select="$example" mode="cleanup.example"/></xsl:result-document>
         </xsl:for-each>
         
         <!-- /extract samples -->
@@ -2545,6 +2544,8 @@
         <xsl:param name="data" as="xs:string"/>
         <xsl:value-of select="$version || '/data-types/' || $data || '.html'"/>
     </xsl:template>
+    
+    <xsl:template match="text()" mode="cleanup.example" priority="1"><xsl:value-of select="normalize-space(.)"/></xsl:template>
     
     <xsl:function name="local:padNumber2" as="xs:string">
         <xsl:param name="number" as="xs:string"/>
