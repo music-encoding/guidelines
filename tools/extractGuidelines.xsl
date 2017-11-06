@@ -1663,6 +1663,9 @@
             <xsl:when test="$data/@type = 'decimal' and $data/rng:param[@name = 'minInclusive']">
                 a decimal number no smaller than <xsl:value-of select="$data/rng:param/text()"/>
             </xsl:when>
+            <xsl:when test="$data/@type = 'decimal' and $data/rng:param[@name = 'minExclusive']">
+                a decimal number larger than <xsl:value-of select="$data/rng:param/text()"/>
+            </xsl:when>
             <xsl:when test="$data/@type = 'positiveInteger' and $data/rng:param[@name = 'pattern']">
                 one of the following integers: <xsl:value-of select="string-join(tokenize($data/rng:param/text(),'|'),', ')"/>
             </xsl:when>
