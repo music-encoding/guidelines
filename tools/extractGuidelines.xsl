@@ -159,9 +159,8 @@
                 </xsl:choose>
             </xsl:variable>
             <xsl:variable name="path" select="$outPutFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes">
-                <xsl:apply-templates select="." mode="preserveSpace"/>
-            </xsl:result-document>
+            <xsl:variable name="example"><xsl:apply-templates select="." mode="preserveSpace"/></xsl:variable>
+            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:apply-templates select="$example" mode="cleanup.example"/></xsl:result-document>
         </xsl:for-each>
         
         <!-- /extract samples -->
@@ -819,7 +818,7 @@
                 </xsl:text>
             </xsl:when>
             <xsl:when test="@type = 'gloss'">
-                <table class="table table-striped table-hover">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>Value</th>
@@ -1338,7 +1337,7 @@
                         </xsl:if>
                         
                         <xsl:if test="count($attributes) gt 0">
-                            <table class="table table-striped table-hover">
+                            <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th></th>
@@ -1663,6 +1662,9 @@
             </xsl:when>
             <xsl:when test="$data/@type = 'decimal' and $data/rng:param[@name = 'minInclusive']">
                 a decimal number no smaller than <xsl:value-of select="$data/rng:param/text()"/>
+            </xsl:when>
+            <xsl:when test="$data/@type = 'decimal' and $data/rng:param[@name = 'minExclusive']">
+                a decimal number larger than <xsl:value-of select="$data/rng:param/text()"/>
             </xsl:when>
             <xsl:when test="$data/@type = 'positiveInteger' and $data/rng:param[@name = 'pattern']">
                 one of the following integers: <xsl:value-of select="string-join(tokenize($data/rng:param/text(),'|'),', ')"/>
@@ -2545,6 +2547,8 @@
         <xsl:param name="data" as="xs:string"/>
         <xsl:value-of select="$version || '/data-types/' || $data || '.html'"/>
     </xsl:template>
+    
+    <xsl:template match="text()" mode="cleanup.example" priority="1"><xsl:value-of select="normalize-space(.)"/></xsl:template>
     
     <xsl:function name="local:padNumber2" as="xs:string">
         <xsl:param name="number" as="xs:string"/>

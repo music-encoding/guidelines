@@ -1,34 +1,17 @@
-
 <work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <titleStmt>
-      
       <title>Sonata No. 2</title>
-      
    </titleStmt>
-   
    <expressionList>
-      
       <expression>
-         
          <titleStmt>
-            
             <title>Live recording at Carnegie Hall</title>
-            
          </titleStmt>
-         
       </expression>
-      
       <expression>
-         
          <titleStmt>
-            
             <title>Studio recording</title>
-            
          </titleStmt>
-         
       </expression>
-      
    </expressionList>
-   
 </work>

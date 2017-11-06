@@ -1,8 +1,4 @@
-
 <fTrem xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" measperf="32">
-   
    <note dur="4" oct="4" pname="g"></note>
-   
    <note dur="4" oct="4" pname="c"></note>
-   
 </fTrem>

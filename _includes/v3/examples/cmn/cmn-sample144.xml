@@ -1,18 +1,9 @@
-
 <measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <staff n="1">
-      
       <layer>
-         
          <note dur="2" oct="3" pname="g" syl="Wald,"></note>
-         
          <note dur="4" oct="3" pname="c" syl="so"></note>
-         
       </layer>
-      
    </staff>
-   
    <breath staff="1" tstamp="1.5"></breath>
-   
 </measure>

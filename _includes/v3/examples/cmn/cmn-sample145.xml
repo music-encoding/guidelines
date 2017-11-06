@@ -1,8 +1,4 @@
-
 <measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <!-- staves omitted -->
-   
    <harpPedal a="f" b="f" e="f" staff="2" tstamp="1"></harpPedal>
-   
 </measure>

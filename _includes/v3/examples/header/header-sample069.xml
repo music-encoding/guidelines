@@ -1,12 +1,6 @@
-
 <contents xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <head>Contents of this Work:</head>
-   
    <contentItem>Sonata No. 1</contentItem>
-   
-   <contentItem>Sonata No. 2 </contentItem>
-   
+   <contentItem>Sonata No. 2</contentItem>
    <contentItem>Sonata No. 3</contentItem>
-   
 </contents>

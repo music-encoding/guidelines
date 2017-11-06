@@ -1,8 +1,4 @@
-
 <notesStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <annot>Historical commentary provided by John Smith.</annot>
-   
    <annot>OCR scanning performed at University of Virginia.</annot>
-   
 </notesStmt>

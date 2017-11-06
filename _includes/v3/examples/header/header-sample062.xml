@@ -1,16 +1,8 @@
-
 <perfMedium xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <perfResList>
-      
       <!-- @code contains values from the MARC Instruments and Voices Code List -->
-      
       <perfRes codedval="ba">Horn</perfRes>
-      
       <perfRes codedval="bb">Trumpet</perfRes>
-      
       <perfRes codedval="bd">Trombone</perfRes>
-      
    </perfResList>
-   
 </perfMedium>

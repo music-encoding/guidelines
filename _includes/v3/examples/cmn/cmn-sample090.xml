@@ -1,36 +1,18 @@
-
 <section xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <measure n="1">
-      
       <staff n="1">
-         
          <layer>
-            
             <chord dur="1">
-               
                <note oct="5" pname="c"></note>
-               
                <note oct="4" pname="g"></note>
-               
                <note oct="4" pname="e"></note>
-               
             </chord>
-            
          </layer>
-         
       </staff>
-      
       <staff n="2">
-         
          <layer>
-            
             <note dur="1" oct="3" pname="c"></note>
-            
          </layer>
-         
       </staff>
-      
    </measure>
-   
 </section>

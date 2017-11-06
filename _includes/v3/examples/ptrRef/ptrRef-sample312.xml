@@ -1,20 +1,10 @@
 
-
-<!-- element ID -->
-<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="#SA"></ptr>
-
+<!-- element ID --><ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="#SA"></ptr>
 <!-- relative URL -->
-
 <ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="myFile.xml"></ptr>
-
 <!-- absolute URL -->
-
 <ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="http://www.w3.org/TR/xptr-framework/"></ptr>
-
 <!-- URL with fragment identifier -->
-
 <ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="http://www.w3.org/TR/xptr-xpointer/#xpointer(id('chum')/quote)"></ptr>
-
 <!-- URN -->
-
 <ref xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="urn:isan:0000-0000-9E59-0000-O-0000-0000-2">Spider-Man</ref>

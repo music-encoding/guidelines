@@ -1,20 +1,10 @@
-
 <measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   
    <staff>
-      
       <layer>
-         
          <note dur="4" oct="4" pname="c"></note>
-         
          <note dur="4" intm="1.1" oct="4" pname="d"></note>
-         
          <note dur="4" intm="7.9" oct="5" pname="d"></note>
-         
          <note dur="4" intm="-2.334" oct="5" pname="c"></note>
-         
       </layer>
-      
    </staff>
-   
 </measure>

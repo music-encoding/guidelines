@@ -1,4 +1,2 @@
-
 <fermata xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" form="inv" place="above" shape="square" staff="2" tstamp="4"></fermata>
-
 <fermata xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" altsym="#myFermata.1" place="above" staff="2" tstamp="5"></fermata>
