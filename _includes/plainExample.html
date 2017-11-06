@@ -1,5 +1,5 @@
 <div data-lang="{{include.valid}}">
-{% assign file = include.version | append:'/' | append:include.example %}
+{% assign file = page.version | append:'/' | append:include.example %}
 {% highlight xml %}
 {% include {{ file }} %}
 {% endhighlight %}

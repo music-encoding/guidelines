@@ -1,6 +1,6 @@
 {% assign atts = include.atts | split: ' ' %}
 {% if atts.size > 0 %}
-  {% for att in atts %}{% include specDescItem.html version=include.version att=att element="" %}{% endfor %}
+  {% for att in atts %}{% include specDescItem.html version=page.version att=att element="" %}{% endfor %}
 {% else %}
-  {% include specDescItem.html version=include.version elem=include.elem %}
+  {% include specDescItem.html version=page.version elem=include.elem %}
 {% endif %}
