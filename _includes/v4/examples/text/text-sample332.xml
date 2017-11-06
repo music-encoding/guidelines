@@ -1,0 +1,10 @@
+<front xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <div>
+      <head>The Preludes
+         <lb></lb>Symphonic Poem No.3 by F. Liszt.
+      </head>
+      <p>What else is our life but a series of preludes to that unknown Hymn, the first and
+         solemn note of which is intoned by Death?
+      </p>
+   </div>
+</front>

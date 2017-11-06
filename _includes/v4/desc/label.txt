@@ -1,0 +1,1 @@
+A container for text that identifies the feature to which it is attached.

@@ -25,7 +25,7 @@ plugins:
 collections:
   guidelines-v3:
     output: false
-  guidelines-dev:
+  guidelines-v4:
     output: false
 
 sidebar:  

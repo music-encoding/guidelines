@@ -1,0 +1,2 @@
+Groups elements used for editorial transcription of pre-existing source
+materials.

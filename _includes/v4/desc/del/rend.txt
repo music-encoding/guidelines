@@ -1,0 +1,1 @@
+Captures the appearance of the source material using MEI-defined descriptors.

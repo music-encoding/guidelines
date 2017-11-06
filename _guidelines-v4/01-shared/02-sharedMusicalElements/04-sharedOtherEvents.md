@@ -1,0 +1,19 @@
+---
+sectionid: sharedOtherEvents
+title: "Other Events"
+version: "v4"
+---
+
+
+
+Because they can occur in the context of a stream of events on the staff, some elements
+which are used in other contexts are also treated as events. For example, in addition
+to
+being used to define the initial clef of a staff, the [clef]({{ site.baseurl }}/{{ page.version }}/elements/clef.html){:.link_odd_elementSpec} element can
+also be used to indicate a clef change.
+
+
+
+
+
+

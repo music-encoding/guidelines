@@ -1,0 +1,15 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <staff>
+      <layer n="1">
+         <note dur="4" inth="M3 P5" oct="4" pname="c" xml:id="analysis.e1"></note>
+      </layer>
+      <layer n="2">
+         <note dur="4" inth="M3 m3" oct="4" pname="e" xml:id="analysis.e2"></note>
+      </layer>
+   </staff>
+   <staff n="2">
+      <layer n="3">
+         <note dur="4" inth="P5 m3" oct="4" pname="g" xml:id="analysis.e3"></note>
+      </layer>
+   </staff>
+</measure>

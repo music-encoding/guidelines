@@ -1,0 +1,4 @@
+Contains a reference to the controlled vocabulary from which the term is drawn. The
+value must match the value of an ID attribute on a classCode element given elsewhere
+in
+the document.

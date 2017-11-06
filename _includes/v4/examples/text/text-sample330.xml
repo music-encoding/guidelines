@@ -1,0 +1,13 @@
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1" type="column" xml:lang="en">
+   <head>Preface</head>
+   <!-- text -->
+</div>
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="2" type="column" xml:lang="de">
+   <head>Vorwort</head>
+   <!-- text -->
+</div>
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3" type="column" xml:lang="it">
+   <head>Prefazione</head>
+   <!-- text -->
+</div>
+<pb xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron"></pb>

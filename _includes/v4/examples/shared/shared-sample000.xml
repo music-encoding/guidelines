@@ -1,0 +1,16 @@
+<mei xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <meiHead>
+      <!-- metadata goes here -->
+   </meiHead>
+   <music>
+      <front>
+         <!-- front matter of text, if any, goes here -->
+      </front>
+      <body>
+         <!-- body of text goes here -->
+      </body>
+      <back>
+         <!-- back matter of text, if any, goes here -->
+      </back>
+   </music>
+</mei>

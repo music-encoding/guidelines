@@ -1,0 +1,1 @@
+Datatype of line width measurements.

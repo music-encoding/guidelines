@@ -1,0 +1,1 @@
+Attributes that provide a durational default value.

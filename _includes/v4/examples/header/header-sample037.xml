@@ -1,0 +1,5 @@
+<seriesStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <title level="s">Studies in Ornamentation</title>
+   <editor>Jacques Composeur</editor>
+   <identifier type="ISSN">0-345-6789</identifier>
+</seriesStmt>

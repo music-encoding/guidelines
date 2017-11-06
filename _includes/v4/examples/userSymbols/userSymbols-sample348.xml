@@ -1,0 +1,51 @@
+<section xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <scoreDef meter.count="4" meter.unit="4">
+      <symbolTable>
+         <symbolDef xml:id="userSymbols.triangleSymbol1">
+            <line x="0" x2="2.55" y="0" y2="4.25"></line>
+            <line x="2.55" x2="5.1" y="4.25" y2="0"></line>
+            <line x="5.1" x2="0.85" y="0" y2="0"></line>
+            <line x="2.55" x2="5.95" y="1.25" y2="3.4"></line>
+         </symbolDef>
+         <symbolDef xml:id="userSymbols.cowbellSymbol">
+            <line x="1" x2="1.8" y="0" y2="4"></line>
+            <line x="1.8" x2="4.2" y="4" y2="4"></line>
+            <line x="4.2" x2="5" y="4" y2="0"></line>
+            <line x="5" x2="1" y="0" y2="0"></line>
+            <curve bezier="0 1.5 0 1.5" endho="3" endvo="4" startho="1" startvo="4"></curve>
+         </symbolDef>
+      </symbolTable>
+      <staffGrp>
+         <staffDef clef.line="2" clef.shape="G" n="1"></staffDef>
+      </staffGrp>
+   </scoreDef>
+   <measure n="1">
+      <staffDef n="1">
+         <instrDef midi.instrname="Open_Triangle"></instrDef>
+      </staffDef>
+      <staff n="1">
+         <layer>
+            <dir tstamp="1">
+               <symbol ref="#userSymbols.triangleSymbol2"></symbol>
+            </dir>
+            <note dur="1"></note>
+         </layer>
+      </staff>
+   </measure>
+   <measure n="2">
+      <staffDef n="1">
+         <instrDef midi.instrname="Cowbell"></instrDef>
+      </staffDef>
+      <staff n="1">
+         <layer>
+            <dir tstamp="1">
+               <symbol ref="#userSymbols.cowbellSymbol"></symbol>
+            </dir>
+            <note dur="4"></note>
+            <note dur="4"></note>
+            <note dur="4"></note>
+            <note dur="4"></note>
+         </layer>
+      </staff>
+   </measure>
+</section>

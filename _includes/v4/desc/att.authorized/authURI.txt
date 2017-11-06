@@ -1,0 +1,2 @@
+The web-accessible location of the controlled vocabulary from which the value is
+taken.

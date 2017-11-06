@@ -1,0 +1,1 @@
+The number of columns spanned by this cell.

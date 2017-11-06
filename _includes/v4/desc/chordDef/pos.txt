@@ -1,0 +1,1 @@
+Records the fret position at which the chord tablature is to be played.

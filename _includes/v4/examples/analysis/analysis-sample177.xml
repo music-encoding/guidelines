@@ -1,0 +1,10 @@
+
+<!-- in 2/4 --><measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" metcon="true" n="1">
+   <staff n="1">
+      <layer>
+         <note dur="4" oct="4" pname="f"></note>
+         <note dur="8" oct="4" pname="b"></note>
+         <note dur="8" oct="4" pname="a"></note>
+      </layer>
+   </staff>
+</measure>

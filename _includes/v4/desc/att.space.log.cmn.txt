@@ -1,0 +1,1 @@
+Logical domain attributes for CMN features.

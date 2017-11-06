@@ -1,0 +1,2 @@
+Scale factor to be applied to the feature to make it the desired display
+size.
