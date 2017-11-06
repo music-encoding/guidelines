@@ -21,7 +21,7 @@ kinds
 of questions which these descriptions are intended to answer are given in the list
 below.
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -33,17 +33,14 @@ below.
          <td>correction</td>
          <td>
             
-            <div class="specList">
-               <span class="specList-elementSpec">correction</span>States how and under what circumstances corrections have been made in the text.
+            <div class="specList"><span class="specList-elementSpec">correction</span>States how and under what circumstances corrections have been made in the text.
             </div>
             
             <div class="specList">
                <table class="specDesc">
                   <tbody>
                      <tr>
-                        <td class="Attribute">
-                           <span class="att">corrlevel</span>
-                        </td>
+                        <td class="Attribute"><span class="att">corrlevel</span></td>
                         <td>Indicates the degree of correction applied to the text.</td>
                      </tr>
                   </tbody>
@@ -54,9 +51,7 @@ below.
                <table class="specDesc">
                   <tbody>
                      <tr>
-                        <td class="Attribute">
-                           <span class="att">method</span>
-                        </td>
+                        <td class="Attribute"><span class="att">method</span></td>
                         <td>Indicates the method employed to mark corrections and normalizations.</td>
                      </tr>
                   </tbody>
@@ -64,8 +59,7 @@ below.
             </div>
             
             <p>Was the text corrected during or after data capture? If so, were corrections made
-               silently or are they marked using the tags described in chapter 
-               <a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans">11 Editorial Markup</a>? What principles have been adopted with respect to omissions, truncations, dubious
+               silently or are they marked using the tags described in chapter <a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans">11 Editorial Markup</a>? What principles have been adopted with respect to omissions, truncations, dubious
                corrections, alternate readings, false starts, repetitions, etc.?
             </p>
          </td>
@@ -74,8 +68,7 @@ below.
          <td>interpretation</td>
          <td>
             
-            <div class="specList">
-               <span class="specList-elementSpec">interpretation</span>Describes the scope of any analytic or interpretive information added to the
+            <div class="specList"><span class="specList-elementSpec">interpretation</span>Describes the scope of any analytic or interpretive information added to the
                transcription of the music.
             </div>
             
@@ -89,8 +82,7 @@ below.
          <td>normalization</td>
          <td>
             
-            <div class="specList">
-               <span class="specList-elementSpec">normalization</span>Indicates the extent of normalization or regularization of the original source carried
+            <div class="specList"><span class="specList-elementSpec">normalization</span>Indicates the extent of normalization or regularization of the original source carried
                out in converting it to electronic form.
             </div>
             
@@ -98,9 +90,7 @@ below.
                <table class="specDesc">
                   <tbody>
                      <tr>
-                        <td class="Attribute">
-                           <span class="att">method</span>
-                        </td>
+                        <td class="Attribute"><span class="att">method</span></td>
                         <td>Indicates the method employed to mark corrections and normalizations.</td>
                      </tr>
                   </tbody>
@@ -110,12 +100,9 @@ below.
             <p>Was the text normalized, for example by regularizing any non-standard enharmonic
                spellings, etc.? If so, were normalizations performed silently or are they marked
                using
-               the tags described in chapter 
-               <a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans">11 Editorial Markup</a> ? What authority was used for
+               the tags described in chapter <a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans">11 Editorial Markup</a> ? What authority was used for
                the regularization? Also, what principles were used when normalizing numbers to provide
-               the standard values for the 
-               <span class="att">value</span> attribute described in section 
-               <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and what format is used for them?
+               the standard values for the <span class="att">value</span> attribute described in section <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and what format is used for them?
             </p>
             
          </td>
@@ -124,8 +111,7 @@ below.
          <td>segmentation</td>
          <td>
             
-            <div class="specList">
-               <span class="specList-elementSpec">segmentation</span>Describes the principles according to which the musical text has been segmented, for
+            <div class="specList"><span class="specList-elementSpec">segmentation</span>Describes the principles according to which the musical text has been segmented, for
                example into movements, sections, etc.
             </div>
             
@@ -141,8 +127,7 @@ below.
          <td>standard values</td>
          <td>
             
-            <div class="specList">
-               <span class="specList-elementSpec">stdVals</span>(standard values) – Specifies the format used when standardized date or number values
+            <div class="specList"><span class="specList-elementSpec">stdVals</span>(standard values) – Specifies the format used when standardized date or number values
                are supplied.
             </div>
             

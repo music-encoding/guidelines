@@ -1,2 +1,2 @@
-Groups notated events that may appear at the layer level in the mensural and neume
+Groups notated events at the layer level that are shared by the mensural and neume
 repertoires.

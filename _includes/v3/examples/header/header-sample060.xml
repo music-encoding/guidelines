@@ -2,7 +2,9 @@
    <perfResList>
       <!-- concert band -->
       <perfResList>
-         <head>Woodwinds</head>
+         <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Woodwinds
+         </head>
          <perfRes count="2">Piccolo</perfRes>
          <perfRes count="2">Flute</perfRes>
          <perfRes count="3">1st Clarinet</perfRes>

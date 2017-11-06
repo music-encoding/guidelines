@@ -1,1 +1,1 @@
-Font size expressed as terms.
+Font size expressed as relative term.

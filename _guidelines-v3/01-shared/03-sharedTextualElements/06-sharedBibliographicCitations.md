@@ -113,8 +113,7 @@ bibliographic items may be described or referenced using the [relatedItem]({{ si
 
 {% include plainExample.html example="examples/shared/shared-sample012.xml" valid="true" version=page.version %}
 
-Please consult <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and 
-<a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a> for
+Please consult <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> and <a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a> for
 more information about recording the names and dates frequently found in bibliographic
 citations.
 

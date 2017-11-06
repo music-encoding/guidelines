@@ -1,2 +1,1 @@
-Groups elements that may appear as part of information regarding the encoding
-process.
+Groups elements that may appear as part of the description of the encoding process.

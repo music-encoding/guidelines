@@ -1,2 +1,3 @@
-(annotation) – Provides a short statement explaining the text or indicating the basis
-for an assertion.
+(annotation) – Provides a statement explaining the text or indicating the basis for
+an
+assertion.

@@ -1,2 +1,1 @@
-Container for elements that contain information useful when generating MIDI
-output.
+Container for elements that contain information useful when generating MIDI output.

@@ -1,2 +1,1 @@
-(front matter) – Bundles prefatory text found before the start of the musical
-text.
+(front matter) – Bundles prefatory text found before the start of the musical text.

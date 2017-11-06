@@ -18,8 +18,7 @@ In MEI, harp pedal settings are encoded using the [harpPedal]({{ site.baseurl }}
 element. It is a member of the [model.controleventLike]({{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class
 and is therefore placed within [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, following all [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} children. The **@staff** and **@layer** attributes
 may be used to assign it to a certain [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} or [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}. Either a **@tstamp** or **@startid** attribute must be used to
-indicate the placement within the measure (see <a class="link_ptr" title="Timestamps and Durations" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a> and 
-<a class="link_ptr" title="Pointers and References" href="{{ site.baseurl }}/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a> for further details about those linking mechanisms).
+indicate the placement within the measure (see <a class="link_ptr" title="Timestamps and Durations" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a> and <a class="link_ptr" title="Pointers and References" href="{{ site.baseurl }}/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a> for further details about those linking mechanisms).
 
 The musical intention of the element is described using the **@c**, **@d**,
 **@e**, **@f**, **@g**, **@a** and **@b** attributes,

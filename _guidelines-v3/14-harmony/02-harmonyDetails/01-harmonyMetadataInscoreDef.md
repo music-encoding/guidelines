@@ -74,8 +74,7 @@ one
 step further; that is, it can be reduced to its minimum intervallic content by eliminating
 octave duplications and expressing all chord members, including the bass note, using
 intervals above the bass. Of course, the **@inth** attribute for the bass note itself
-should be set to 
-<span class="q">0</span>. For example:
+should be set to <span class="q">0</span>. For example:
 
 {% include plainExample.html example="examples/harmony/harmony-sample248.xml" valid="true" version=page.version %}
 

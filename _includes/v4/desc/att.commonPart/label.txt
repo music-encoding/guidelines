@@ -1,1 +1,0 @@
-Provides a name or label for an element. The value may be any string.

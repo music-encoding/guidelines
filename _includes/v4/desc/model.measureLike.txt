@@ -1,1 +1,1 @@
-Groups measure-like elements.
+Groups CMN measure-like elements.

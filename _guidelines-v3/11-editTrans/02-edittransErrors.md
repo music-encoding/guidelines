@@ -83,8 +83,7 @@ being encoded, the encoder should use the [corr]({{ site.baseurl }}/{{ page.vers
 correction is present in the text being encoded, and consists of some combination
 of visible
 additions and deletions, the elements [add]({{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec} or [del]({{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec}
-should be used. For additional information on the use of [add]({{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec} and [del]({{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec}, see section 
-<a class="link_ptr" title="Additions and Deletions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans.html#edittransAddDel">11.4.2 Additions and Deletions</a> below. Where the
+should be used. For additional information on the use of [add]({{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec} and [del]({{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec}, see section <a class="link_ptr" title="Additions and Deletions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans.html#edittransAddDel">11.4.2 Additions and Deletions</a> below. Where the
 correction takes the form of an addition of material not present in the original because
 of
 physical damage or illegibility, the [supplied]({{ site.baseurl }}/{{ page.version }}/elements/supplied.html){:.link_odd_elementSpec} element may be used. Where

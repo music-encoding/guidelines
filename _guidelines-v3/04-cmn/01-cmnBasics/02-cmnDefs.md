@@ -24,7 +24,8 @@ score, e.g., key and meter. The most important attributes for this purpose are:
 
 {% include specDesc.html version=page.version elem="att.meterSigDefault.log" atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %}
 {% include specDesc.html version=page.version elem="att.meterSigDefault.vis" atts="att.meterSigDefault.vis/meter.sym" %}
-{% include specDesc.html version=page.version elem="att.keySigDefault.log" atts="att.keySigDefault.log/key.pname att.keySigDefault.log/key.accid att.keySigDefault.log/key.mode att.keySigDefault.log/key.sig" %}
+{% include specDesc.html version=page.version elem="att.keySigDefault.log" atts="att.keySigDefault.log/key.pname att.keySigDefault.log/key.accid att.keySigDefault.log/key.mode
+att.keySigDefault.log/key.sig" %}
 
 
 
@@ -39,7 +40,11 @@ text and music:
 
 
 
-{% include specDesc.html version=page.version elem="scoreDef" atts="att.pages/page.width att.pages/page.height att.pages/page.leftmar att.pages/page.topmar att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar att.systems/system.topmar att.systems/system.rightmar att.textstyle/text.name att.textstyle/text.fam att.textstyle/text.size att.notationstyle/music.name att.notationstyle/music.size att.lyricstyle/lyric.name att.lyricstyle/lyric.fam att.lyricstyle/lyric.size" %}
+{% include specDesc.html version=page.version elem="scoreDef" atts="att.pages/page.width att.pages/page.height att.pages/page.leftmar att.pages/page.topmar
+att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar att.systems/system.topmar
+att.systems/system.rightmar att.textstyle/text.name att.textstyle/text.fam att.textstyle/text.size
+att.notationstyle/music.name att.notationstyle/music.size att.lyricstyle/lyric.name
+att.lyricstyle/lyric.fam att.lyricstyle/lyric.size" %}
 
 
 
@@ -124,8 +129,7 @@ measures) until their information is again overridden either by the same element
 different information or a [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} or [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}.
 In this context, it is also possible to combine them with the elements described in
 chapters
-<a class="link_ptr" title="Critical Apparatus" href="{{ site.baseurl }}/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> and 
-<a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans.html">11 Editorial Markup</a> of these Guidelines.
+<a class="link_ptr" title="Critical Apparatus" href="{{ site.baseurl }}/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> and <a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans.html">11 Editorial Markup</a> of these Guidelines.
 
 Such flexibility as this may require close inspection of an encoding to retrieve the
 correct definitions for a given staff. As a general rule, the closest preceding and

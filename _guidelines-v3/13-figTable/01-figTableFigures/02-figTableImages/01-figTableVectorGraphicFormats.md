@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -28,8 +28,7 @@ version: "v3"
          <td>SVG: Scalable Vector Graphics format</td>
          <td> - SVG is a language for describing two-dimensional vector and mixed vector or
             raster graphics in XML. It is defined by the Scalable Vector Graphics (SVG) 1.0
-            Specification, W3C Recommendation, 04 September 2001, available at 
-            <a class="link_ref" href="http://www.w3.org/TR/2001/REC-SVG-20010904/">http://www.w3.org/TR/2001/REC-SVG-20010904/</a>.
+            Specification, W3C Recommendation, 04 September 2001, available at <a class="link_ref" href="http://www.w3.org/TR/2001/REC-SVG-20010904/">http://www.w3.org/TR/2001/REC-SVG-20010904/</a>.
          </td>
       </tr>
       <tr>

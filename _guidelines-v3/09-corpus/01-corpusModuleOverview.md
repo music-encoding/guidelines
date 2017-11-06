@@ -50,9 +50,7 @@ members of the corpus should be encoded as composite texts instead, using the [g
 for corpus characterization described in this chapter, however, are designed to reduce
 the
 need to do this. Useful groupings of components may easily be expressed using the
-classification and identification elements described in section 
-<a class="link_ptr" title="Classification" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkClass">2.3.12 Classification</a>, and those for associating declarations with corpus components described in section
-
+classification and identification elements described in section <a class="link_ptr" title="Classification" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkClass">2.3.12 Classification</a>, and those for associating declarations with corpus components described in section
 <a class="link_ptr" title="Associating Metadata and Data" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerAssociatingMetadataAndData">2.1.7.1 Associating Metadata and Data</a>. These mechanisms also allow several different
 methods of text grouping to co-exist, each to be used as needed at different times.
 This helps

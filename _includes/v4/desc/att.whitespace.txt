@@ -1,1 +1,1 @@
-Attributes the address whitespacing processing.
+Attributes that address whitespace processing.

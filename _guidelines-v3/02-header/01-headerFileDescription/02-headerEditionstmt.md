@@ -35,13 +35,8 @@ appropriate, since they are far more easily copied and modified than printed one
 nonetheless, the term edition may be used for a particular state of a machine-readable
 text
 at which substantive changes are made and fixed. Synonymous terms used in these Guidelines
-are 
-<span class="mentioned">version</span>, 
-<span class="mentioned">level</span>, and
-
-<span class="mentioned">release</span>. The words 
-<span class="mentioned">revision</span> and
-
+are <span class="mentioned">version</span>, <span class="mentioned">level</span>, and
+<span class="mentioned">release</span>. The words <span class="mentioned">revision</span> and
 <span class="mentioned">update</span>, by contrast, are used for minor changes to a file which do
 not amount to a new edition.
 
@@ -74,8 +69,7 @@ each later release, though this requirement cannot be enforced.
 Note that all changes in a file, whether or not they are regarded as constituting
 a new
 edition or simply a revision, should be independently noted in the revision description
-section of the file header (see section 
-<a class="link_ptr" title="Revision Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a>).
+section of the file header (see section <a class="link_ptr" title="Revision Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a>).
 
 The edition element should contain phrases describing the edition or version, including
 the

@@ -18,9 +18,7 @@ upper left and lower right, much like a percent sign. The illustration below con
 the
 most common signs:
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/beatrpt-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 14. Beat repeat signs</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/beatrpt-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 14. Beat repeat signs</figcaption>
 </figure>
 In general, MEI places primary emphasis on the capture of the semantic meaning of
 symbols, not their visual rendition. In this case, the focus is on the material being
@@ -68,9 +66,7 @@ measure in the figure below. Instead, the numbering of repetitions of the writte
 measure can be enabled using the **@multi.number** attribute available on the [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} and [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} elements.
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample152.xml" valid="false" version=page.version %}
 
@@ -88,9 +84,7 @@ importance. The following example from the beginning of Beethoven's
 *Waldstein* sonata illustrates such usage:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"><figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample153.xml" valid="false" version=page.version %}
 
@@ -103,14 +97,10 @@ The [mRpt2]({{ site.baseurl }}/{{ page.version }}/elements/mRpt2.html){:.link_od
 where it is often necessary to abbreviate the notation due to page size limitations.
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/mrpt2-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 17. Two-measure repetition</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/mrpt2-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 17. Two-measure repetition</figcaption>
 </figure>
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/multirpt-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 18. Multi-measure repetition</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/multirpt-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 18. Multi-measure repetition</figcaption>
 </figure>
 
 The [mRpt2]({{ site.baseurl }}/{{ page.version }}/elements/mRpt2.html){:.link_odd_elementSpec} element represents repetition of a 2-measure fragment,
@@ -124,9 +114,7 @@ records the number of preceding measures to be repeated.
 All elements described above allow for association of the sign with a symbol in a
 digital
 facsimile (via the **@facs** attribute) and with a user-defined symbol (using
-**@altsym**). See 
-<a class="link_ptr" title="Facsimiles" href="{{ site.baseurl }}/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a> and 
-<a class="link_ptr" title="User-defined Symbols" href="{{ site.baseurl }}/{{ page.version }}/guidelines/userSymbols.html">22 User-defined Symbols</a> for
+**@altsym**). See <a class="link_ptr" title="Facsimiles" href="{{ site.baseurl }}/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a> and <a class="link_ptr" title="User-defined Symbols" href="{{ site.baseurl }}/{{ page.version }}/guidelines/userSymbols.html">22 User-defined Symbols</a> for
 further details. In addition, the **@expand** attribute is available on the
 foregoing elements to inform a rendering process whether to use the repeat symbol
 or the

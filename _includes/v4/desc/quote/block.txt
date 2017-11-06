@@ -1,0 +1,2 @@
+Indicates if the quotation is integrated into the flow of the text or interrupts
+it.

@@ -1,2 +1,1 @@
-Holds a value for cycles per second, i.e., Hertz, for a tuning reference
-pitch.
+Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.

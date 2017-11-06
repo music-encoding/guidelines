@@ -18,57 +18,27 @@ title: "data.MEASUREMENTREL"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Used by</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent">
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.distances.html">att.distances</a> (@dynam.dist), 
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricstyle</a> (@lyric.align), 
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.spacing.html">att.spacing</a> (@spacing.staff), 
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a> (@spacing), 
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualoffset.ho</a> (@ho), 
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.vo.html">att.visualoffset.vo</a> (@vo), 
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.ho.html">att.visualoffset2.ho</a> (@startho), 
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.vo.html">att.visualoffset2.vo</a> (@startvo)
+            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.distances.html">att.distances</a> (@dynam.dist), <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricstyle</a> (@lyric.align), <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.spacing.html">att.spacing</a> (@spacing.staff), <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffDef.vis.html">att.staffDef.vis</a> (@spacing), <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualoffset.ho</a> (@ho), <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.vo.html">att.visualoffset.vo</a> (@vo), <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.ho.html">att.visualoffset2.ho</a> (@startho), <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.vo.html">att.visualoffset2.vo</a> (@startvo)
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Declaration</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;content&gt;</span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;rng:data 
-                        <span class="attribute">type=</span>
-                        <span class="attributevalue">"token"</span>&gt;
-                     </span>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
                      
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;rng:param 
-                           <span class="attribute">name=</span>
-                           <span class="attributevalue">"pattern"</span>&gt;
-                        </span>
-                        <div class="indent4 indent">(\+|-)?\d+(\.\d+)?(cm|mm|in|pt|pc|px|vu)?</div>
-                        <span data-indentation="3" class="element">&lt;/rng:param&gt;</span>
-                     </div>
-                     
-                     <span data-indentation="2" class="element">&lt;/rng:data&gt;</span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/content&gt;</span>
-               </div>
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span><div class="indent4 indent">(\+|-)?\d+(\.\d+)?(cm|mm|in|pt|pc|px|vu)?</div><span data-indentation="3" class="element">&lt;/rng:param&gt;</span></div>
+                     <span data-indentation="2" class="element">&lt;/rng:data&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/content&gt;</span></div>
             </div>
          </td>
       </tr>

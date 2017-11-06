@@ -1,12 +1,10 @@
 Indicates how stems should be drawn when more than one layer is present and stem
 directions are not indicated on the notes/chords themselves. '1' indicates that there
-is
-only a single layer on a staff. '2o' means there are two layers with opposing stems.
-'2f'
-indicates two 'free' layers; that is, opposing stems will be drawn unless one of the
-layers
-has 'space'. In that case, stem direction in the remaining layer will be determined
-as if
-there were only one layer. '3o' and '3f' are analogous to '2o' and '2f' with three
-layers
-allowed.
+is only
+a single layer on a staff. '2o' means there are two layers with opposing stems. '2f'
+indicates
+two 'free' layers; that is, opposing stems will be drawn unless one of the layers
+has 'space'.
+In that case, stem direction in the remaining layer will be determined as if there
+were only
+one layer. '3o' and '3f' are analogous to '2o' and '2f' with three layers allowed.

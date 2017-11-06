@@ -1,0 +1,2 @@
+Provides a number-like designation that indicates an element's position in a sequence
+of similar elements. May not contain space characters.

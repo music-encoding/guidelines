@@ -19,9 +19,7 @@ on vocally performed text.
 The following example from Handel's *Messiah* (HWV 56) shows the use of
 **@syl**:
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"><figcaption class="figure-caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
 </figure>
 {% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample263.xml" valid="true" version=page.version %}
 
@@ -49,13 +47,8 @@ Many
 vocal texts, however, introduce elisions and connect two syllables into one unit.
 For example,
 the vocal text from Mozart's *Don Giovanni* sung by Don Giovanni in Finale II,
-
-<span class="q">Ho fermo il core in petto</span> introduces an elision between the word 
-<span class="q">fermo</span> and
-
-<span class="q">il</span> and between 
-<span class="q">core</span> and 
-<span class="q">in</span>. An elision can be indicated by placing both
+<span class="q">Ho fermo il core in petto</span> introduces an elision between the word <span class="q">fermo</span> and
+<span class="q">il</span> and between <span class="q">core</span> and <span class="q">in</span>. An elision can be indicated by placing both
 syllables within the same [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and setting the [syl]({{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec}
 element's **@con** attribute value to 't':
 
@@ -69,9 +62,7 @@ of the
 **@xml:lang** attribute to differentiate the two languages:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"><figcaption class="figure-caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
 </figure>
 {% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample266.xml" valid="false" version=page.version %}
 

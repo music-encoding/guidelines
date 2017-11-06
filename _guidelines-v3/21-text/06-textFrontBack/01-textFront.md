@@ -25,7 +25,7 @@ the **@type** attribute may be used to distinguish various kinds of division
 characteristic of front matter:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -70,21 +70,18 @@ characteristic of front matter:
 The following extended example demonstrates how various parts of the front matter
 of a text
 may be encoded. The front part begins with a title page, which is presented in section
-
 <a class="link_ptr" title="Title Pages" href="{{ site.baseurl }}/{{ page.version }}/guidelines/text.html#textTitlePages">21.6.2 Title Pages</a>, below. This is followed by a dedication and a preface, each of
 which is encoded as a distinct div:
 
 {% include plainExample.html example="examples/text/text-sample338.xml" valid="true" version=page.version %}
 
 The front matter concludes with another [div]({{ site.baseurl }}/{{ page.version }}/elements/div.html){:.link_odd_elementSpec} element, shown in the
-next example, this time containing a table of contents, which contains a [list]({{ site.baseurl }}/{{ page.version }}/elements/list.html){:.link_odd_elementSpec} element (as described in chapter 
-<a class="link_ptr" title="Lists" href="{{ site.baseurl }}/{{ page.version }}/guidelines/text.html#textLists">21.3 Lists</a>). Note the use of
+next example, this time containing a table of contents, which contains a [list]({{ site.baseurl }}/{{ page.version }}/elements/list.html){:.link_odd_elementSpec} element (as described in chapter <a class="link_ptr" title="Lists" href="{{ site.baseurl }}/{{ page.version }}/guidelines/text.html#textLists">21.3 Lists</a>). Note the use of
 the [ptr]({{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element to provide page-references: the implication here is
 that the target identifiers (song1, song2, etc.) will correspond with identifiers
 used for
 the [mdiv]({{ site.baseurl }}/{{ page.version }}/elements/mdiv.html){:.link_odd_elementSpec} elements containing the individual songs. (For a description
-of the [ptr]({{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element, see chapter 
-<a class="link_ptr" title="Pointers and References" href="{{ site.baseurl }}/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a>.)
+of the [ptr]({{ site.baseurl }}/{{ page.version }}/elements/ptr.html){:.link_odd_elementSpec} element, see chapter <a class="link_ptr" title="Pointers and References" href="{{ site.baseurl }}/{{ page.version }}/guidelines/ptrRef.html">19 Pointers and References</a>.)
 
 {% include plainExample.html example="examples/text/text-sample339.xml" valid="true" version=page.version %}
 

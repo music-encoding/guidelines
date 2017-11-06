@@ -110,9 +110,7 @@ However, staff-by-staff organization is more appropriate for music without measu
 and
 is provided when either the MEI.mensural or MEI.neumes module is employed. Coverage
 of
-mensural notation is provided in chapter 
-<a class="link_ptr" title="Mensural Notation" href="{{ site.baseurl }}/{{ page.version }}/guidelines/mensural.html">5 Mensural Notation</a>, while 
-<a class="link_ptr" title="Neume Notation" href="{{ site.baseurl }}/{{ page.version }}/guidelines/neumes.html">6 Neume Notation</a> describes neumatic notation.
+mensural notation is provided in chapter <a class="link_ptr" title="Mensural Notation" href="{{ site.baseurl }}/{{ page.version }}/guidelines/mensural.html">5 Mensural Notation</a>, while <a class="link_ptr" title="Neume Notation" href="{{ site.baseurl }}/{{ page.version }}/guidelines/neumes.html">6 Neume Notation</a> describes neumatic notation.
 
 It must be noted that, when both the MEI.cmn and MEI.mensural modules are available,
 it

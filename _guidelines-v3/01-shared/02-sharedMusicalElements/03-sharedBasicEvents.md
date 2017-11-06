@@ -22,5 +22,8 @@ in the [att.stems]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.s
 
 
 
-{% include specDesc.html version=page.version elem="att.stems" atts="att.stems/stem.dir att.stems/stem.len att.stems/stem.mod att.stems/stem.pos att.stems/stem.x att.stems/stem.y" %}
+{% include specDesc.html version=page.version elem="att.stems" atts="att.stems/stem.dir att.stems/stem.len att.stems/stem.mod att.stems/stem.pos att.stems/stem.x
+att.stems/stem.y" %}
+
+
 

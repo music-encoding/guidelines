@@ -136,8 +136,7 @@ shows how a precise date range can be associated with a personal or corporate na
 
 {% include plainExample.html example="examples/header/header-sample024.xml" valid="true" version=page.version %}
 
-For additional information about corporate and personal names, see chapter 
-<a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a>.
+For additional information about corporate and personal names, see chapter <a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a>.
 
 In addition to, or instead of the [resp]({{ site.baseurl }}/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} element, the **@role**
 attribute on [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec}, [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec}, and [corpName]({{ site.baseurl }}/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec} may be used to capture the nature of responsibility. While [resp]({{ site.baseurl }}/{{ page.version }}/elements/resp.html){:.link_odd_elementSpec} accommodates capturing the wide variety of text that may occur in

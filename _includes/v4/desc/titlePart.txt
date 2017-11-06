@@ -1,0 +1,1 @@
+Contains a subsection or division of the title of a bibliographic entity.

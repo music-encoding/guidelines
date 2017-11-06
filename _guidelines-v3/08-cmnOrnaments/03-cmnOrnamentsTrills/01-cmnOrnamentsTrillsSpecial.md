@@ -20,9 +20,7 @@ used to
 indicate multiple trills:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 31. Example of multiple trills.</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive"><figcaption class="figure-caption">Figure 31. Example of multiple trills.</figcaption>
 </figure>
 The encoding of this kind of trill may vary depending on the purpose of the encoding.
 For
@@ -47,8 +45,7 @@ Another situation that requires disambiguation of an ornament's name and its pot
 rendition is due to the fact that the symbols for trills and mordents have been often
 used
 interchangeably in the past. The following example, taken from *Klavierbüchlein für
-Wilhelm Friedemann Bach* (1720), shows a trill (
-<span class="q">Trillo</span>) identified by the
+Wilhelm Friedemann Bach* (1720), shows a trill (<span class="q">Trillo</span>) identified by the
 symbol associated with a mordent in modern practice. Nonetheless, J.S. Bach's suggested
 resolution should be encoded with a variant of the procedure presented above.
 
@@ -58,9 +55,7 @@ aural
 renditions.
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 32. Trill transcribed from J.S. Bach's *Klavierbüchlein für Wilhelm Friedemann
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive"><figcaption class="figure-caption">Figure 32. Trill transcribed from J.S. Bach's *Klavierbüchlein für Wilhelm Friedemann
       Bach* (1720)
    </figcaption>
 </figure>

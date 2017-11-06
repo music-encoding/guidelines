@@ -13,31 +13,22 @@ title: "model.chordTableLike"
          <td colspan="2" class="wovenodd-col2">Groups elements that group playable chord definitions.</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI.harmony</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Available in</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Available in</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a>
-               </div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a></div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Members</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordTable.html">chordTable</a> (direct member of model.chordTableLike)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordTable.html">chordTable</a> (direct member of model.chordTableLike)
                </div>
             </div>
          </td>

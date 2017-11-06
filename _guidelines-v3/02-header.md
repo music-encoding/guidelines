@@ -48,8 +48,7 @@ encoder resolved ambiguities in the source, what levels of encoding or analysis 
 applied,
 and similar matters. The MEI elements used to encode the encoding description are
 described in
-section 
-<a class="link_ptr" title="Encoding Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerEncodingDescription">2.2 Encoding Description</a> below.4. a work description, tagged [workDesc]({{ site.baseurl }}/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec}, containing
+section <a class="link_ptr" title="Encoding Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerEncodingDescription">2.2 Encoding Description</a> below.4. a work description, tagged [workDesc]({{ site.baseurl }}/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec}, containing
 classification and contextual information about the work, such as its subject matter,
 the
 situation in which it was produced, the individuals described by or participating
@@ -62,13 +61,11 @@ terms of
 text type or origin. The work description may however be of use in any form of automatic
 text
 processing. The MEI elements used to encode the work description are described in
-section 
-<a class="link_ptr" title="Work Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below.5. a revision history, tagged [revisionDesc]({{ site.baseurl }}/{{ page.version }}/elements/revisionDesc.html){:.link_odd_elementSpec}, which allows
+section <a class="link_ptr" title="Work Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below.5. a revision history, tagged [revisionDesc]({{ site.baseurl }}/{{ page.version }}/elements/revisionDesc.html){:.link_odd_elementSpec}, which allows
 the encoder to provide a history of changes made during the development of the electronic
 text. The revision history is important for version control and for resolving
 questions about the history of a file. The MEI elements used to encode the revision
-description are described in section 
-<a class="link_ptr" title="Revision Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a> below.
+description are described in section <a class="link_ptr" title="Revision Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a> below.
 
 
 

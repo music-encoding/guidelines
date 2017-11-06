@@ -1,1 +1,1 @@
-Collects expressionlike elements.
+Collects FRBR expression-like elements.

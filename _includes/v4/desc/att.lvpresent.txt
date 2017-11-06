@@ -1,3 +1,4 @@
 Attributes that indicate the presence of an l.v. (laissez vibrer) marking attached
 to a
-feature.
+feature. If visual information about the lv sign needs to be recorded, then an  element
+should be employed.

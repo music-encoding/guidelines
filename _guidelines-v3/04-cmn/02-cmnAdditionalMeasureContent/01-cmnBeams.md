@@ -40,9 +40,7 @@ encode the breaking of secondary beams *after* the note or chord bearing the
 attribute. The value of **@breaksec** indicates the number of continuous beams. For
 example:
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 6. Primary and secondary beams</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 6. Primary and secondary beams</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample106.xml" valid="true" version=page.version %}
 
@@ -55,7 +53,7 @@ The encoding of such a beam is accomplished using the **@rend** attribute of the
 beam, which allows the following values:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -100,9 +98,7 @@ change in the number of secondary beams must carry a **@dur** attribute. Beams l
 this may be encoded thusly:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmn/beamAcc-Rit.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 7. Accelerando beams</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/beamAcc-Rit.png" class="img-responsive"><figcaption class="figure-caption">Figure 7. Accelerando beams</figcaption>
 </figure>
 
 {% include plainExample.html example="examples/cmn/cmn-sample108.xml" valid="true" version=page.version %}
@@ -112,9 +108,7 @@ this may be encoded thusly:
 
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/beam-c-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 8. Cross-staff beam</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/beam-c-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 8. Cross-staff beam</figcaption>
 </figure>
 
 Beams that connect events on different staves may be encoded in two different ways.
@@ -163,7 +157,7 @@ on
 [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}, [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec}, and [layerDef]({{ site.baseurl }}/{{ page.version }}/elements/layerDef.html){:.link_odd_elementSpec}:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -172,18 +166,14 @@ on
    </thead>
    <tbody>
       <tr>
-         <td>
-            <span class="att">beam.group</span>
-         </td>
+         <td><span class="att">beam.group</span></td>
          <td> - Provides an example of how automated beaming (including secondary beams) is to
             be
             performed.
          </td>
       </tr>
       <tr>
-         <td>
-            <span class="att">beam.rests</span>
-         </td>
+         <td><span class="att">beam.rests</span></td>
          <td> - Indicates whether automatically-drawn beams should include rests shorter than a
             quarter note duration.
          </td>

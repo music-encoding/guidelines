@@ -19,7 +19,8 @@ The analysis module offers several attributes in the [att.common.anl]({{ site.ba
 
 
 
-{% include specDesc.html version=page.version elem="att.common.anl" atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev att.common.anl/sameas att.common.anl/synch" %}
+{% include specDesc.html version=page.version elem="att.common.anl" atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev
+att.common.anl/sameas att.common.anl/synch" %}
 
 
 
@@ -68,9 +69,7 @@ encoding effort. The image and the following encoding of the beginning of Schube
 *Erlkönig* illustrates the benefit of using the **@copyof**
 attribute.
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"><figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
 </figure>
 {% include plainExample.html example="examples/analysis/analysis-sample163.xml" valid="true" version=page.version %}
 
@@ -87,9 +86,7 @@ multiple perspectives, e.g., the same event in two layers. The following example
 the sharing of one note head between two voices in the first full measure of a chorale:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"><figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
 </figure>
 {% include plainExample.html example="examples/analysis/analysis-sample165.xml" valid="true" version=page.version %}
 
@@ -116,9 +113,7 @@ voices. In the second measure of the following example, the target of the next a
 occurs after the pointing element in time, but before it in encoding order:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"><figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
 </figure>
 {% include plainExample.html example="examples/analysis/analysis-sample167.xml" valid="false" version=page.version %}
 
@@ -144,7 +139,6 @@ differs from the order in which entities occur in time.
 
 The **@when** attribute may be used to indicate the point of occurrence of the feature
 bearing this attribute along a time line. Its value must be the ID of a [when]({{ site.baseurl }}/{{ page.version }}/elements/when.html){:.link_odd_elementSpec} element. For more detailed information regarding the use of **@when**,
-please see 
-<a class="link_ptr" title="Performances" href="{{ site.baseurl }}/{{ page.version }}/guidelines/performances.html">18 Performances</a>.
+please see <a class="link_ptr" title="Performances" href="{{ site.baseurl }}/{{ page.version }}/guidelines/performances.html">18 Performances</a>.
 
 

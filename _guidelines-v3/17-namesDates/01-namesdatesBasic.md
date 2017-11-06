@@ -24,7 +24,7 @@ the [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_
 refers to a person or a geographic feature. When name parts are needed, use [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} sub-elements. The recommended values for the **@type** attribute are:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -72,7 +72,7 @@ as a combination of date sub-elements and text.
 To be more specific about the date, the attributes in the [att.datable]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html){:.link_odd} class can be used:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -81,47 +81,33 @@ To be more specific about the date, the attributes in the [att.datable]({{ site.
    </thead>
    <tbody>
       <tr>
-         <td>
-            <span class="att">startdate</span>
-         </td>
+         <td><span class="att">startdate</span></td>
          <td> - contains the starting point of a date range in standard ISO form</td>
       </tr>
       <tr>
-         <td>
-            <span class="att">enddate</span>
-         </td>
+         <td><span class="att">enddate</span></td>
          <td> - contains the end point of a date range in standard ISO form</td>
       </tr>
       <tr>
-         <td>
-            <span class="att">notbefore</span>
-         </td>
+         <td><span class="att">notbefore</span></td>
          <td> - contains a lower boundary for an uncertain date</td>
       </tr>
       <tr>
-         <td>
-            <span class="att">notafter</span>
-         </td>
+         <td><span class="att">notafter</span></td>
          <td> - contains an upper boundary for an uncertain date</td>
       </tr>
       <tr>
-         <td>
-            <span class="att">isodate</span>
-         </td>
+         <td><span class="att">isodate</span></td>
          <td> - gives the value of a textual date in standard ISO form</td>
       </tr>
       <tr>
-         <td>
-            <span class="att">calendar</span>
-         </td>
+         <td><span class="att">calendar</span></td>
          <td> - indicates the system or calendar to which a date belongs, for example, Gregorian,
             Julian, Roman, Mosaic, Revolutionary, Islamic, etc.
          </td>
       </tr>
       <tr>
-         <td>
-            <span class="att">cert</span>
-         </td>
+         <td><span class="att">cert</span></td>
          <td> - signifies the degree of certainty or precision associated with a feature (high,
             medium, low, unknown)
          </td>

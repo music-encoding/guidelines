@@ -28,9 +28,7 @@ trill.
 
 The following example demonstrates the encoding of simple trills:
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 27. Example of simple trills.</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr.png" class="img-responsive"><figcaption class="figure-caption">Figure 27. Example of simple trills.</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample184.xml" valid="true" version=page.version %}
 
@@ -43,9 +41,7 @@ point is not required, although the **@tstamp2** attribute can be used to indica
 use of a wavy line extender as shown in this example:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 28. Example of trills followed by wavy lines.</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive"><figcaption class="figure-caption">Figure 28. Example of trills followed by wavy lines.</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample185.xml" valid="false" version=page.version %}
 
@@ -58,17 +54,14 @@ note in this ‘cautionary’ manner is left to down-stream rendering
 processes.
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 29. Example alterations expressed on the staff.</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive"><figcaption class="figure-caption">Figure 29. Example alterations expressed on the staff.</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample186.xml" valid="true" version=page.version %}
 
 
 Some trills may be introduced by a turn or followed by an inverted turn leading to
 the next
-note (see 
-<span class="bibl">Le garzantine, Musica 2003, p. 911</span>). In such cases, the trill is
+note (see <span class="bibl">Le garzantine, Musica 2003, p. 911</span>). In such cases, the trill is
 encoded as in previous examples and associated with the principal note. Starting or
 concluding
 turns are notated on the staff (in [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}) as [grace notes]({{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnNotesGrace "Grace Notes"){:.link_ref}.
@@ -79,9 +72,7 @@ concluding
 grace notes:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 30. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive"><figcaption class="figure-caption">Figure 30. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample187.xml" valid="true" version=page.version %}
 

@@ -1,7 +1,0 @@
-Indicates the number of slashes required to render the appropriate beat repeat
-symbol. When a single beat is repeated, consisting of a single note or chord, it is
-indicated by a single thick, slanting slash; therefore, the value '1' should be used.
-The following values should be used when the beat is divided into even notes: 4ths
-or
-8ths=1, 16ths=2, 32nds=3, 64ths=4, 128ths=5. When the beat is comprised of mixed
-duration values, the symbol is always rendered as 2 slashes and 2 dots.

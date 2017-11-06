@@ -27,9 +27,7 @@ ascending notes. Table 1 shows most of the named neume shapes. Neume groups of m
 than four
 notes are simply called "compound" neumes.
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/neumes/parrish_neumes.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 21. Table 1. Variant neume notation. (From Parrish, "The notation of medieval music,"
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/neumes/parrish_neumes.png" class="img-responsive"><figcaption class="figure-caption">Figure 21. Table 1. Variant neume notation. (From Parrish, "The notation of medieval music,"
       6)
    </figcaption>
 </figure>

@@ -1,1 +1,1 @@
-Attributes for describing the logical behaviour of a line.
+Attributes for describing the logical behavior of a line.

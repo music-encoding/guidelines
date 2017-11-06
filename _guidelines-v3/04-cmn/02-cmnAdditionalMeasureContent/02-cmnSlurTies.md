@@ -11,8 +11,7 @@ which connect notes. These lines are used to indicate various musical features, 
 on
 their context.
 
-A tie is a curved line connecting <span class="hi">two</span> notes of the 
-<span class="hi">same pitch</span>. The purpose of a tie is to join the durations of both notes,
+A tie is a curved line connecting <span class="hi">two</span> notes of the <span class="hi">same pitch</span>. The purpose of a tie is to join the durations of both notes,
 so that the first note sounds for the combined duration. In other words, there is
 only one
 onset for both notes.
@@ -28,7 +27,7 @@ found on [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link
 This attribute allows three values:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -58,9 +57,7 @@ a
 The tie-terminating event may lie in the following measure.
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmn/finger-300.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 9. Ties across barlines</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/finger-300.png" class="img-responsive"><figcaption class="figure-caption">Figure 9. Ties across barlines</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample113.xml" valid="true" version=page.version %}
 
@@ -85,9 +82,7 @@ in one
 breath, while a single bow is indicated for string instruments.
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/slur-300-20100514.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 10. Slurs</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/slur-300-20100514.png" class="img-responsive"><figcaption class="figure-caption">Figure 10. Slurs</figcaption>
 </figure>
 
 In MEI, slurs may be encoded in a similar way to ties: [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} and [chord]({{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} bear a **@slur** attribute that allows the commencement or
@@ -158,9 +153,7 @@ except ties. All three elements have nearly identical models.
 Another reason for using elements instead of attributes for ties, slurs, and phrase
 marks
 is that only elements may be combined with the functionality provided in chapters
-
-<a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans.html">11 Editorial Markup</a> and 
-<a class="link_ptr" title="Critical Apparatus" href="{{ site.baseurl }}/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
+<a class="link_ptr" title="Editorial Markup" href="{{ site.baseurl }}/{{ page.version }}/guidelines/editTrans.html">11 Editorial Markup</a> and <a class="link_ptr" title="Critical Apparatus" href="{{ site.baseurl }}/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
 
 Although these elements are allowed within a [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec} to accommodate
 unmeasured notation, by convention in CMN they are normally placed inside [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, after the encoding of staves, alongside other so-called ‘control
@@ -179,7 +172,6 @@ and **@layer** attributes like so:
 
 For the ‘horizontal assignment’, the encoder may choose between two
 different mechanisms. The first uses two timestamp attributes as described in section
-
 <a class="link_ptr" title="Timestamps and Durations" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>. The start and end points of the slur may be indicated thusly:
 
 {% include plainExample.html example="examples/cmn/cmn-sample122.xml" valid="true" version=page.version %}
@@ -214,6 +206,5 @@ increasingly more precise control of the curve.
 If the encoder wishes to draw attention to the appearance of a slur or tie in a given
 source, the **@facs** attribute may be used instead of (or in addition to) the curve
 description attributes to point to a graphic image or a zone within an image (see
-
 <a class="link_ptr" title="Facsimiles" href="{{ site.baseurl }}/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a>).
 

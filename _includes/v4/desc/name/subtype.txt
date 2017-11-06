@@ -1,2 +1,0 @@
-Provide any sub-classification for the element, additional to that given by its type
-attribute.

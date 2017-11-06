@@ -78,21 +78,17 @@ better machine-processing:
 {% include plainExample.html example="examples/header/header-sample046.xml" valid="true" version=page.version %}
 
 A description of more precise capture of dates and date ranges is provided in chapter
-
 <a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a>.
 
 The [identifier]({{ site.baseurl }}/{{ page.version }}/elements/identifier.html){:.link_odd_elementSpec} element is provided within [source]({{ site.baseurl }}/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} in order to accommodate identifying strings which cannot be captured by the
 **@xml:id** attribute, such as numbers or strings requiring XML markup.
 
 The [titleStmt]({{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec}, [editionStmt]({{ site.baseurl }}/{{ page.version }}/elements/editionStmt.html){:.link_odd_elementSpec}, [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt]({{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec}, and [notesStmt]({{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec}
-elements function in exactly the same way as described in section 
-<a class="link_ptr" title="File Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerFileDescription">2.1 File Description</a> above and 
-<a class="link_ptr" title="Work Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below
+elements function in exactly the same way as described in section <a class="link_ptr" title="File Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerFileDescription">2.1 File Description</a> above and <a class="link_ptr" title="Work Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below
 and will not be covered again here.
 
 If a source of the file is an unpublished manuscript, it is recommended that the [unpub]({{ site.baseurl }}/{{ page.version }}/elements/unpub.html){:.link_odd_elementSpec} element be used as the only content of the source's [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} element. Other identifying information for the manuscript may be
-collected in the [notesStmt]({{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec} element, as described in section 
-<a class="link_ptr" title="Notes Statement" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerNotesStatement">2.1.6 Notes Statement</a>.
+collected in the [notesStmt]({{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec} element, as described in section <a class="link_ptr" title="Notes Statement" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerNotesStatement">2.1.6 Notes Statement</a>.
 
 {% include plainExample.html example="examples/header/header-sample047.xml" valid="true" version=page.version %}
 

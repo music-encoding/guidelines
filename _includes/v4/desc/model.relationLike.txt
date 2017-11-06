@@ -1,1 +1,1 @@
-Collects relationLike elements.
+Collects elements that express a relationship.

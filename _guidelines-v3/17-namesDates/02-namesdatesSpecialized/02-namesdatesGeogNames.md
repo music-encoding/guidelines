@@ -32,7 +32,7 @@ names, the use of controlled vocabulary is recommend for names of administrative
 such as cities, states, and countries. In this case, the following attributes are
 particularly relevant:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -41,24 +41,20 @@ particularly relevant:
    </thead>
    <tbody>
       <tr>
-         <td>
-            <span class="att">authority</span>
-         </td>
+         <td><span class="att">authority</span></td>
          <td> - records the list from which a controlled value is taken, e.g., the Thesaurus of
             Geographic Names (TGN),
          </td>
       </tr>
       <tr>
-         <td>
-            <span class="att">authURI</span> (authority URI)
+         <td><span class="att">authURI</span> (authority URI)
          </td>
          <td> - records the web-accessible location of the controlled vocabulary from which the
             value is taken,
          </td>
       </tr>
       <tr>
-         <td>
-            <span class="att">dbkey</span> (database key)
+         <td><span class="att">dbkey</span> (database key)
          </td>
          <td> - records a value which serves as a primary key in an external database.</td>
       </tr>

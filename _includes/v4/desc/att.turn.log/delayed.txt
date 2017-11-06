@@ -1,2 +1,1 @@
-When the delayed attribute is set to 'true', the turn begins on the second half of
-the beat. See Read, p. 246.
+When set to 'true', the turn begins on the second half of the beat.

@@ -14,158 +14,58 @@ title: "att.chord.log"
             written articulations, augmentation dots, and duration values. The beam, fermata,
             lv, slur,
             syl, tie, and tuplet attributes may be used to indicate the attachment of these things
-            to
-            this chord. If visual information about these things needs to be recorded, then either
-            the
-            elements corresponding to these attributes or the attributes available in the att.vis.chord
-            class should be employed.
+            to this
+            chord. If visual information about these things needs to be recorded, then either
+            the elements
+            corresponding to these attributes or the attributes available in the att.vis.chord
+            class
+            should be employed.
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Members</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a> (direct member of att.chord.log)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a> (direct member of att.chord.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Attributes</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Attributes</strong></td>
          <td class="wovenodd-col2"></td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Declaration</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;classes&gt;</span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.event.html">att.event</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.articulation.html">att.articulation</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.articulation.html">att.articulation</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.augmentDots.html">att.augmentDots</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.augmentdots.html">att.augmentdots</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.chord.log.cmn.html">att.chord.log.cmn</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.musical.html">att.duration.musical</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.cue.html">att.cue</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermatapresent</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.logical.html">att.duration.logical</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.syltext.html">att.syltext</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.event.html">att.event</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slurpresent.html">att.slurpresent</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tiepresent.html">att.tiepresent</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tupletpresent.html">att.tupletpresent</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.chord.log.cmn.html">att.chord.log.cmn</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/classes&gt;</span>
-               </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.sylText.html">att.sylText</a>"</span></span>/&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
             </div>
          </td>
       </tr>

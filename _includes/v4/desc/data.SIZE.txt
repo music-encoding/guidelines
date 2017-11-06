@@ -1,1 +1,0 @@
-Relative size attribute values.

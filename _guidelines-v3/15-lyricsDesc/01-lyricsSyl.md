@@ -25,7 +25,7 @@ syllable. These are the key components:
 The attribute **@wordpos** is used to specify the position of the marked-up lyric
 syllable in a word. It allows the following values:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -35,21 +35,18 @@ syllable in a word. It allows the following values:
    <tbody>
       <tr>
          <td>i</td>
-         <td> - Indicates that the current syllable's position is 
-            <em class="mentioned">i</em>nitial; that is, at
+         <td> - Indicates that the current syllable's position is <em class="mentioned">i</em>nitial; that is, at
             the beginning of a word;
          </td>
       </tr>
       <tr>
          <td>m</td>
-         <td> - Indicates that the current syllable is in the 
-            <em class="mentioned">m</em>iddle of a word;
+         <td> - Indicates that the current syllable is in the <em class="mentioned">m</em>iddle of a word;
          </td>
       </tr>
       <tr>
          <td>t</td>
-         <td> - Indicates that the syllable's position is 
-            <em class="mentioned">t</em>erminal; that is, at the end
+         <td> - Indicates that the syllable's position is <em class="mentioned">t</em>erminal; that is, at the end
             of a word.
          </td>
       </tr>
@@ -65,7 +62,7 @@ syllable. This is expressed with the **@con** attribute, which takes the followi
 values:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -75,27 +72,23 @@ values:
    <tbody>
       <tr>
          <td>s</td>
-         <td> - A 
-            <em class="mentioned">s</em>pace is used as a connector between syllables;
+         <td> - A <em class="mentioned">s</em>pace is used as a connector between syllables;
          </td>
       </tr>
       <tr>
          <td>d</td>
-         <td> - A 
-            <em class="mentioned">d</em>ash is used as a connector between syllables;
+         <td> - A <em class="mentioned">d</em>ash is used as a connector between syllables;
          </td>
       </tr>
       <tr>
          <td>u</td>
-         <td> - An 
-            <em class="mentioned">u</em>nderscore sign (indicating prologation of the syllable) is used as a
+         <td> - An <em class="mentioned">u</em>nderscore sign (indicating prologation of the syllable) is used as a
             connector between syllables;
          </td>
       </tr>
       <tr>
          <td>t</td>
-         <td> - A 
-            <em class="mentioned">t</em>ilde is used to indicate elision with the following syllable. This is
+         <td> - A <em class="mentioned">t</em>ilde is used to indicate elision with the following syllable. This is
             typically rendered as a small curved line between the syllables.
          </td>
       </tr>
@@ -113,6 +106,5 @@ note to be sung with the syllable.
 The use of [syl]({{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} described in this section is common to CMN and other
 notation systems, such as mensural notation. Other uses specific to certain types
 of notation
-and repertoires are addressed in other chapters. See for example 
-<a class="link_ptr" title="Neume Notation" href="{{ site.baseurl }}/{{ page.version }}/guidelines/neumes.html">6 Neume Notation</a>.
+and repertoires are addressed in other chapters. See for example <a class="link_ptr" title="Neume Notation" href="{{ site.baseurl }}/{{ page.version }}/guidelines/neumes.html">6 Neume Notation</a>.
 

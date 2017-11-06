@@ -6,7 +6,9 @@
       <div>
          <!-- Text of Francesco Petrarca's Sonett n. 104. -->
          <lg>
-            <head>Sonetto 104</head>
+            <head>
+               <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Sonetto 104
+            </head>
             <l>L'aspectata vertù, che 'n voi fioriva</l>
             <l>quando Amor cominciò darvi bataglia,</l>
             <l>produce or frutto, che quel fiore aguaglia,</l>

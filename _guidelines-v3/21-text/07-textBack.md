@@ -17,7 +17,7 @@ The following suggested values may be used for the **@type** attribute on all di
 elements, in order to distinguish various kinds of divisions characteristic of back
 matter:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>

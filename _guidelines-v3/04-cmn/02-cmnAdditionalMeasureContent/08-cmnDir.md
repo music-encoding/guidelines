@@ -14,8 +14,7 @@ elements
 Instead of providing separate elements for all possible types of such directions,
 MEI offers
 the generic [dir]({{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} element. Although this element is not CMN specific (it
-is defined in 
-<a class="link_ptr" title="Shared Elements, Models, and Attributes" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html">1 Shared Elements, Models, and Attributes</a>), it is especially important in this repertoire.
+is defined in <a class="link_ptr" title="Shared Elements, Models, and Attributes" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html">1 Shared Elements, Models, and Attributes</a>), it is especially important in this repertoire.
 
 A tempo or character indication is often provided above the topmost staff of the first
 measure of a score, movement, or section. This indication, such as "Allegro moderato"
@@ -43,16 +42,13 @@ them
 within a square or circle. In MEI, they are encoded using the [reh]({{ site.baseurl }}/{{ page.version }}/elements/reh.html){:.link_odd_elementSpec}
 element, which holds the textual content of the rehearsal mark. The visual rendition
 of the
-rehearsal mark, including the surrounding shape, may be captured using the [rend]({{ site.baseurl }}/{{ page.version }}/elements/rend.html){:.link_odd_elementSpec} element described in chapter 
-<a class="link_ptr" title="Text Rendition" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedTextRendition">1.3.2 Text Rendition</a>.
+rehearsal mark, including the surrounding shape, may be captured using the [rend]({{ site.baseurl }}/{{ page.version }}/elements/rend.html){:.link_odd_elementSpec} element described in chapter <a class="link_ptr" title="Text Rendition" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedTextRendition">1.3.2 Text Rendition</a>.
 
 The following detail from an edition of Hector Berlioz' *Symphonie
 Fantastique* shows a typical example:
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/cmn/reh_berlioz.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/reh_berlioz.png" class="img-responsive"><figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample150.xml" valid="true" version=page.version %}
 

@@ -30,9 +30,7 @@ to specify the text's rhythm.
 The following example from Carl Maria von Weber's *Der Freischütz* illustrates
 this encoding method:
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/lyrics/ex_lyric.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 52. Weber, Der Freischütz</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/lyrics/ex_lyric.png" class="img-responsive"><figcaption class="figure-caption">Figure 52. Weber, Der Freischütz</figcaption>
 </figure>
 {% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" version=page.version %}
 

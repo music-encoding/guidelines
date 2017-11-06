@@ -1,1 +1,1 @@
-Logical domain attributes for CMN features.
+Logical domain attributes in the CMN repertoire.

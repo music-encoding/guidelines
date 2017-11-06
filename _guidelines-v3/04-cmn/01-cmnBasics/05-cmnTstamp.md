@@ -38,12 +38,8 @@ two timestamps – one for the onset of the event and one for its termination. B
 the
 termination of the event may be in a succeeding measure, the second timestamp
 (**@tstamp2**) has a slightly different datatype than the one marking the initiation
-of the event. Its datatype is constrained to values following the formula "
-<span class="hi">x</span>m+
-<span class="hi">y</span>", where 
-<span class="hi">x</span> is the number of full
+of the event. Its datatype is constrained to values following the formula "<span class="hi">x</span>m+<span class="hi">y</span>", where <span class="hi">x</span> is the number of full
 measures that this particular feature lasts (or the number of bar lines crossed) and
-
 <span class="hi">y</span> is the timestamp in the target measure where the feature ends. The
 timestamp is expressed using the same logic as described above. For example, a value
 of

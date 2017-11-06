@@ -10,9 +10,7 @@ An indication that a passage should be performed one or more octaves above or be
 its
 written pitch is represented by the [octave]({{ site.baseurl }}/{{ page.version }}/elements/octave.html){:.link_odd_elementSpec} element.
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/octave-a-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 12. Octave displacement</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/octave-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 12. Octave displacement</figcaption>
 </figure>
 Its **@dis** and **@dis.place** attributes record the amount and direction of
 displacement, respectively. The **@rend** attribute captures the appearance of the

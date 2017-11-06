@@ -28,7 +28,7 @@ gathered in this fashion. No other attributes can be treated this way.
 
 The usual CMN-specific values for **@dur** are:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -71,7 +71,7 @@ as
 they sometimes also appear in CMN:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>

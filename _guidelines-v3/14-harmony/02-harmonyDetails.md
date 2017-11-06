@@ -15,8 +15,7 @@ On the most basic level, chords in the musical text can be encoded using the [ch
 
 
 Additional information on the use of the [chord]({{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} element is available in
-<a class="link_ptr" title="Basic Music Events" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedBasicEvents">1.2.3 Basic Music Events</a> and 
-<a class="link_ptr" title="Notes, Chords and Rests in CMN" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnNotesChords">4.1.4 Notes, Chords and Rests in CMN</a>.
+<a class="link_ptr" title="Basic Music Events" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedBasicEvents">1.2.3 Basic Music Events</a> and <a class="link_ptr" title="Notes, Chords and Rests in CMN" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnNotesChords">4.1.4 Notes, Chords and Rests in CMN</a>.
 
 With only this kind of markup, harmonic information is implicit in the notes themselves.
 The

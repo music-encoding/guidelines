@@ -4,4 +4,4 @@ segno and coda symbols, fermatas over a bar line, etc., typically above, below, 
 between
 staves, but not on the staff — that is not encoded elsewhere in more specific elements,
 like
-&lt;tempo&gt; or &lt;dynam&gt;.
+or .

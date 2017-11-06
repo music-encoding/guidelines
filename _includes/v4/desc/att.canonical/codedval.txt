@@ -1,2 +1,3 @@
-a value that represents or identifies the element content. May serve as a primary
-key in a web-accessible database identified by the authURI attribute.
+A value that represents or identifies other data. Often, it is a primary key in the
+database or a unique value in the coded list identified by the  or
+attributes.

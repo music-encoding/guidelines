@@ -1,1 +1,1 @@
-Collects itemLike elements.
+Collects FRBR item-like elements.

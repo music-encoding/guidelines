@@ -1,1 +1,1 @@
-Font size expressed as numbers; i.e. points.
+Font size expressed as numbers; i.e. points or virtual units.

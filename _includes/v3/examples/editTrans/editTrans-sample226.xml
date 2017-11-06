@@ -4,16 +4,13 @@
    </measure>
    <measure>
       <!-- … -->
-   </measure>
-   <del rend="strikethrough">
+   </measure><del rend="strikethrough">
       <measure>
          <!-- … -->
       </measure>
       <measure>
          <!-- … -->
-      </measure>
-   </del>
-   <measure>
+      </measure></del><measure>
       <!-- … -->
    </measure>
 </section>

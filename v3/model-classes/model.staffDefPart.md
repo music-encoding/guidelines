@@ -15,55 +15,26 @@ title: "model.staffDefPart"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Available in</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Available in</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a>
-               </div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a></div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Members</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/clef.html">clef</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/clefGrp.html">clefGrp</a> (direct members of model.staffDefPart)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/clef.html">clef</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/clefGrp.html">clefGrp</a> (direct members of model.staffDefPart)
                </div>
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/keySig.html">keySig</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/scoreDef.html">scoreDef</a>
-                  <span> (via 
-                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.keySigLike.html">model.keySigLike</a>)
-                  </span>
-               </div>
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/meterSig.html">meterSig</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/meterSigGrp.html">meterSigGrp</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/scoreDef.html">scoreDef</a>
-                  <span> (via 
-                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.meterSigLike.html">model.meterSigLike</a>)
-                  </span>
-               </div>
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/mensur.html">mensur</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/proport.html">proport</a>
-                  <span> (via 
-                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefPart.mensural.html">model.staffDefPart.mensural</a>)
-                  </span>
-               </div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/keySig.html">keySig</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/scoreDef.html">scoreDef</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.keySigLike.html">model.keySigLike</a>)</span></div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/meterSig.html">meterSig</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/meterSigGrp.html">meterSigGrp</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/scoreDef.html">scoreDef</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.meterSigLike.html">model.meterSigLike</a>)</span></div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/mensur.html">mensur</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/proport.html">proport</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffDefPart.mensural.html">model.staffDefPart.mensural</a>)</span></div>
             </div>
          </td>
       </tr>

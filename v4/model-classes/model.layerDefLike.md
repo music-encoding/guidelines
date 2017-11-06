@@ -13,31 +13,22 @@ title: "model.layerDefLike"
          <td colspan="2" class="wovenodd-col2">Groups elements that permit declaration of layer properties.</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Available in</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Available in</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a>
-               </div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a></div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Members</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> (direct member of model.layerDefLike)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> (direct member of model.layerDefLike)
                </div>
             </div>
          </td>

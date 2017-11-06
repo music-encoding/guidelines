@@ -21,7 +21,7 @@ Because of the high cost of identifying and encoding many textual features, and 
 difficulty in ensuring consistent practice across very large corpora, encoders may
 find it
 convenient to divide the set of elements to be encoded into the following four categories:
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -53,8 +53,7 @@ convenient to divide the set of elements to be encoded into the following four c
       <tr>
          <td>proscribed</td>
          <td> - textual features in this category are deliberately not encoded; they may be
-            transcribed as unmarked up text, or represented as 
-            <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> elements, or
+            transcribed as unmarked up text, or represented as <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> elements, or
             silently omitted, as appropriate.
          </td>
       </tr>

@@ -1,5 +1,2 @@
-Describes the relationship between the &lt;relatedItem&gt; and the resource
-described in the parent element, i.e., &lt;bibl&gt;, &lt;source&gt; or
-&lt;relatedItem&gt;. The values are based on MODS version 3.4. The subject of these
-relations is always the &lt;relatedItem&gt;, and the object is always the parent of the
-&lt;relatedItem&gt;. "preceding" and "succeeding" indicate temporal order.
+Describes the relationship between the entity identified by the  element and the resource
+described in the parent element, i.e., ,  or .

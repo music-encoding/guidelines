@@ -13,74 +13,37 @@ title: "model.addressPart"
          <td colspan="2" class="wovenodd-col2">Groups elements used as part of a physical address.</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI.namesdates</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Available in</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Available in</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>
-               </div>
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/address.html">address</a>
-               </div>
+               <div><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a></div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/address.html">address</a></div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Members</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postBox.html">postBox</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postCode.html">postCode</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/street.html">street</a> (direct members of model.addressPart)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postBox.html">postBox</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postCode.html">postCode</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/street.html">street</a> (direct members of model.addressPart)
                </div>
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/bloc.html">bloc</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/country.html">country</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/district.html">district</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/geogFeat.html">geogFeat</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/region.html">region</a>, 
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/settlement.html">settlement</a>
-                  <span> (via 
-                     <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.geogNamePart.html">model.geogNamePart</a>)
-                  </span>
-               </div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/bloc.html">bloc</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/country.html">country</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/district.html">district</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/geogFeat.html">geogFeat</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/region.html">region</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/settlement.html">settlement</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.geogNamePart.html">model.geogNamePart</a>)</span></div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Declaration</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;classes&gt;</span>
-                  
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/classes&gt;</span>
-               </div>
-            </div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraseLike.limited.html">model.textphraseLike.limited</a>"</span></span>/&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/classes&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

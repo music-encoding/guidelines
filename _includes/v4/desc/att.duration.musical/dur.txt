@@ -1,2 +1,0 @@
-Records the duration of a feature using the relative durational values provided by
-the data.DURATION datatype.

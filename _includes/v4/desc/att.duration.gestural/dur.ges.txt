@@ -1,0 +1,3 @@
+Records performed duration information that differs from the written duration. Its
+value may be expressed in several forms; that is, ppq (MIDI clicks and MusicXML
+'divisions'), Humdrum **recip values, beats, seconds, or mensural duration values.

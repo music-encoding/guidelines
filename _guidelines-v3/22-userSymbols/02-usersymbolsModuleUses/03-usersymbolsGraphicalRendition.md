@@ -12,9 +12,7 @@ example [dir]({{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_od
 elements as content. In the following example, the content of [dir]({{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} is
 used to provide pictograms of percussion instruments.
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/usersymbols/percussion.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/percussion.png" class="img-responsive"><figcaption class="figure-caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
 </figure>
 
 <figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample348.xml" valid="true" version=page.version %}
@@ -26,9 +24,7 @@ the
 **@altsym** attribute.
 
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/usersymbols/charpentier.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 57. Different treble clef renditions as written by Charpentier (source: [Journal of Seventeenth-Century Music,
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/charpentier.png" class="img-responsive"><figcaption class="figure-caption">Figure 57. Different treble clef renditions as written by Charpentier (source: [Journal of Seventeenth-Century Music,
       Volume 12, No. 1 (2006)](www.sscm-jscm.org/v12/no1/gosine.html){:.link_ref}, [figure 3](http://www.sscm-jscm.org/v12/no1/gosine.html#ch10){:.link_ref})
    </figcaption>
 </figure>

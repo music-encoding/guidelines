@@ -1,2 +1,3 @@
 Classifies the cause for the variant reading, according to any appropriate typology
-of possible origins.
+of
+possible origins.

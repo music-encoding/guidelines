@@ -1,1 +1,1 @@
-An indication of fingering in a chord tablature grid.
+A barre in a chord tablature grid.

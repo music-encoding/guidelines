@@ -22,15 +22,13 @@ The following elements are available to encode information about a recorded perf
 
 The [performance]({{ site.baseurl }}/{{ page.version }}/elements/performance.html){:.link_odd_elementSpec} element begins a subtree of the [music]({{ site.baseurl }}/{{ page.version }}/elements/music.html){:.link_odd_elementSpec} element and appears alongside with, or instead of, [body]({{ site.baseurl }}/{{ page.version }}/elements/body.html){:.link_odd_elementSpec}
 (described in <a class="link_ptr" title="Music Element" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMusicElement">1.1.2 Music Element</a> and [facsimile]({{ site.baseurl }}/{{ page.version }}/elements/facsimile.html){:.link_odd_elementSpec}
-(described in 
-<a class="link_ptr" title="Facsimiles" href="{{ site.baseurl }}/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a>). A [performance]({{ site.baseurl }}/{{ page.version }}/elements/performance.html){:.link_odd_elementSpec} element
+(described in <a class="link_ptr" title="Facsimiles" href="{{ site.baseurl }}/{{ page.version }}/guidelines/facsimiles.html">12 Facsimiles</a>). A [performance]({{ site.baseurl }}/{{ page.version }}/elements/performance.html){:.link_odd_elementSpec} element
 represents one recorded performance event. As a performance may be recorded in multiple
 formats or by different personnel or or using different equipment, the [performance]({{ site.baseurl }}/{{ page.version }}/elements/performance.html){:.link_odd_elementSpec} element may group one or more recordings of the event.
 
 
 The **@decls** attribute can be used to point to performance medium metadata for the
-performed work. See 
-<a class="link_ptr" title="Performance Medium" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkMedium">2.3.7 Performance Medium</a> for more details.
+performed work. See <a class="link_ptr" title="Performance Medium" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkMedium">2.3.7 Performance Medium</a> for more details.
 
 
 The [recording]({{ site.baseurl }}/{{ page.version }}/elements/recording.html){:.link_odd_elementSpec} element identifies a single recording event taking place

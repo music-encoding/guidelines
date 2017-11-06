@@ -1,0 +1,2 @@
+(column layout) – An empty formatting element that signals the start of columnar
+layout.

@@ -19,7 +19,7 @@ or abbreviations in the music itself, as in the following example:
 The type attribute may be used to classify the abbreviation according to a convenient
 typology. Sample values include:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -65,8 +65,7 @@ typology. Sample values include:
 </table>
 
 This tag is the mirror image of the [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} tag (not to be confused with
-the [expansion]({{ site.baseurl }}/{{ page.version }}/elements/expansion.html){:.link_odd_elementSpec} element described in 
-<a class="link_ptr" title="Content of Musical Divisions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>).
+the [expansion]({{ site.baseurl }}/{{ page.version }}/elements/expansion.html){:.link_odd_elementSpec} element described in <a class="link_ptr" title="Content of Musical Divisions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>).
 Both [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} allow the encoder to
 transcribe an abbreviation and its expansion. In the case of [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec}, the
 original is transcribed as the content of the element and the expansion as an attribute

@@ -1,3 +1,3 @@
-Contains a list of one or more pointers indicating the sources which attest to a
-given reading. Each value should correspond to the ID of a &lt;source&gt; element
+Contains a list of one or more pointers indicating the sources which attest to a given
+reading. Each value should correspond to the ID of a  element
 located in the document header.

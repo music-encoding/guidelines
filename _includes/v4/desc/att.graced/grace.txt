@@ -1,2 +1,2 @@
-Marks a note or chord as a "grace" (without a definitive written duration) and
-records from which other note/chord it should "steal" time.
+Marks a note or chord as a "grace" (without a definite performed duration) and records
+from which other note/chord it should "steal" time.

@@ -1,2 +1,3 @@
 Marks this instrument or vocal part as a soloist. Do not use this attribute for a
-solo instrument which is not accompanied.
+solo
+instrument which is not accompanied.

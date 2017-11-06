@@ -1,6 +1,8 @@
 <back xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
    <div type="index">
-      <head>Index</head>
+      <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Index
+      </head>
       <list type="index">
          <li>a2, a3, etc., 175-176</li>
          <li>Abbreviations, 3

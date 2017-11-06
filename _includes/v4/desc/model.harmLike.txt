@@ -1,1 +1,1 @@
-Groups elements that record harmony.
+Groups elements that record indications of harmony.

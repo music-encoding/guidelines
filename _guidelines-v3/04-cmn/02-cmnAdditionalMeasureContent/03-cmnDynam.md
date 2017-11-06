@@ -11,10 +11,8 @@ of a
 note, phrase, section, etc. The first is a verbal instruction providing such information
 in
 human language, possibly in an abbreviated form. An example is the word <span class="hi">piano</span>, indicating a quiet volume, often abbreviated as
-
 <span class="hi">p</span>. In MEI, verbal instructions like this are encoded
-using the [dynam]({{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} element from the Shared module (see chapter 
-<a class="link_ptr" title="Shared Elements, Models, and Attributes" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html">1 Shared Elements, Models, and Attributes</a>):
+using the [dynam]({{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec} element from the Shared module (see chapter <a class="link_ptr" title="Shared Elements, Models, and Attributes" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html">1 Shared Elements, Models, and Attributes</a>):
 
 {% include plainExample.html example="examples/cmn/cmn-sample123.xml" valid="true" version=page.version %}
 
@@ -53,8 +51,7 @@ or *below* the staff:
 Dynamics must also be associated with a particular time point in a measure, using
 the
 **@tstamp**, or with a particular event, using the **@startid** attribute.
-Linking a control event with measures and events is discussed in section 
-<a class="link_ptr" title="Timestamps and Durations" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>:
+Linking a control event with measures and events is discussed in section <a class="link_ptr" title="Timestamps and Durations" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmn.html#cmnTstamp">4.1.5 Timestamps and Durations</a>:
 
 {% include plainExample.html example="examples/cmn/cmn-sample128.xml" valid="true" version=page.version %}
 

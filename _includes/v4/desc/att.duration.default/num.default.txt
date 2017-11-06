@@ -1,2 +1,3 @@
 Along with numbase.default, describes the default duration as a ratio. num.default
-is the first value in the ratio.
+is
+the first value in the ratio.

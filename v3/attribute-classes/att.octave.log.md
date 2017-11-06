@@ -13,149 +13,63 @@ title: "att.octave.log"
          <td colspan="2" class="wovenodd-col2">Logical domain attributes.</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI.cmn</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Members</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a> (direct member of att.octave.log)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a> (direct member of att.octave.log)
                </div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Attributes</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Attributes</strong></td>
          <td class="wovenodd-col2"></td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Declaration</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;classes&gt;</span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.controlevent.html">att.controlevent</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.controlevent.html">att.controlevent</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.augmentdots.html">att.augmentdots</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.augmentdots.html">att.augmentdots</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.additive.html">att.duration.additive</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.additive.html">att.duration.additive</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.octavedisplacement.html">att.octavedisplacement</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startendid.html">att.startendid</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startendid.html">att.startendid</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp2.musical.html">att.timestamp2.musical</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/classes&gt;</span>
-               </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp2.musical.html">att.timestamp2.musical</a>"</span></span>/&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;attDef 
-                     <span class="attribute">ident=</span>
-                     <span class="attributevalue">"coll"</span> 
-                     <span class="attribute">usage=</span>
-                     <span class="attributevalue">"opt"</span>&gt;
-                  </span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"coll"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates whether the octave displacement should be performed simultaneously with
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates whether the octave displacement should be performed simultaneously with
                      the written notes, i.e., "coll' ottava". Unlike other octave signs which are indicated
                      by broken lines, coll' ottava typically uses an unbroken line or a series of longer
-                     broken lines, ending with a short vertical stroke. See Read, p. 47-48.
-                     <span data-indentation="2" class="element">&lt;/desc&gt;</span>
-                  </div>
+                     broken lines, ending with a short vertical stroke. See Read, p. 47-48.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;valList 
-                        <span class="attribute">type=</span>
-                        <span class="attributevalue">"closed"</span>&gt;
-                     </span>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
                      
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;valItem 
-                           <span class="attribute">ident=</span>
-                           <span class="attributevalue">"coll"</span>&gt;
-                        </span>
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"coll"</span>&gt;</span>
                         
-                        <div class="indent4 indent">
-                           <span data-indentation="4" class="element">&lt;desc&gt;</span>Coll' ottava (with the octave).
-                           <span data-indentation="4" class="element">&lt;/desc&gt;</span>
-                        </div>
-                        
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
-                     </div>
-                     
-                     <span data-indentation="2" class="element">&lt;/valList&gt;</span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span>
-               </div>
+                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Coll' ottava (with the octave).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                     <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
             </div>
          </td>
       </tr>

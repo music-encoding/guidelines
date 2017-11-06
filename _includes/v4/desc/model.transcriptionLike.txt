@@ -1,2 +1,1 @@
-Groups elements used for editorial transcription of pre-existing source
-materials.
+Groups elements used for editorial transcription of pre-existing source materials.

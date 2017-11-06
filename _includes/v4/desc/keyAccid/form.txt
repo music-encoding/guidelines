@@ -1,2 +1,3 @@
 Specifies whether enharmonic (written) values or implicit ("perform-able") values
-are allowed.
+are
+allowed.

@@ -13,251 +13,94 @@ title: "att.note.ges"
          <td colspan="2" class="wovenodd-col2">Gestural domain attributes.</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI.shared</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Members</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div>
-                  <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a> (direct member of att.note.ges)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a> (direct member of att.note.ges)
                </div>
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Attributes</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Attributes</strong></td>
          <td class="wovenodd-col2"></td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Declaration</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;classes&gt;</span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.performed.html">att.accidental.performed</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.articulation.performed.html">att.articulation.performed</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.articulation.performed.html">att.articulation.performed</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.performed.html">att.duration.performed</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.performed.html">att.duration.performed</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.instrumentident.html">att.instrumentident</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.instrumentident.html">att.instrumentident</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midivelocity.html">att.midivelocity</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midivelocity.html">att.midivelocity</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.cmn.html">att.note.ges.cmn</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.cmn.html">att.note.ges.cmn</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.mensural.html">att.note.ges.mensural</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.mensural.html">att.note.ges.mensural</a>"</span></span>/&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;memberOf
-                        
-                        <span class="attribute">key=
-                           <span class="attributevalue">"
-                              <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.tablature.html">att.note.ges.tablature</a>"
-                           </span>
-                        </span>/&gt;
-                     </span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/classes&gt;</span>
-               </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.tablature.html">att.note.ges.tablature</a>"</span></span>/&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;attDef 
-                     <span class="attribute">ident=</span>
-                     <span class="attributevalue">"oct.ges"</span> 
-                     <span class="attribute">usage=</span>
-                     <span class="attributevalue">"opt"</span>&gt;
-                  </span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"oct.ges"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;desc&gt;</span>Records performed octave information that differs from the written value.
-                     <span data-indentation="2" class="element">&lt;/desc&gt;</span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records performed octave information that differs from the written value.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;datatype 
-                        <span class="attribute">maxOccurs=</span>
-                        <span class="attributevalue">"1"</span> 
-                        <span class="attribute">minOccurs=</span>
-                        <span class="attributevalue">"1"</span>&gt;
-                     </span>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                      
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;rng:ref
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                            
-                           
-                           <span class="attribute">name=
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.OCTAVE.html">data.OCTAVE</a>"
-                              </span>
-                           </span>
-                           /&gt;
-                        </span>
-                     </div>
-                     
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span>
-               </div>
+                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.OCTAVE.html">data.OCTAVE</a>"</span></span>
+                           /&gt;</span></div>
+                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;attDef 
-                     <span class="attribute">ident=</span>
-                     <span class="attributevalue">"pname.ges"</span> 
-                     <span class="attribute">usage=</span>
-                     <span class="attributevalue">"opt"</span>&gt;
-                  </span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"pname.ges"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;desc&gt;</span>Contains a performed pitch name that differs from the written value.
-                     <span data-indentation="2" class="element">&lt;/desc&gt;</span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Contains a performed pitch name that differs from the written value.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;datatype 
-                        <span class="attribute">maxOccurs=</span>
-                        <span class="attributevalue">"1"</span> 
-                        <span class="attribute">minOccurs=</span>
-                        <span class="attributevalue">"1"</span>&gt;
-                     </span>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                      
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;rng:ref
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                            
-                           
-                           <span class="attribute">name=
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PITCHNAME.GES.html">data.PITCHNAME.GES</a>"
-                              </span>
-                           </span>
-                           /&gt;
-                        </span>
-                     </div>
-                     
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span>
-               </div>
+                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PITCHNAME.GES.html">data.PITCHNAME.GES</a>"</span></span>
+                           /&gt;</span></div>
+                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
             </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;attDef 
-                     <span class="attribute">ident=</span>
-                     <span class="attributevalue">"pnum"</span> 
-                     <span class="attribute">usage=</span>
-                     <span class="attributevalue">"opt"</span>&gt;
-                  </span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"pnum"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;desc&gt;</span>Holds a pitch-to-number mapping, a base-40 or MIDI note number, for example.
-                     <span data-indentation="2" class="element">&lt;/desc&gt;</span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Holds a pitch-to-number mapping, a base-40 or MIDI note number, for example.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;datatype 
-                        <span class="attribute">maxOccurs=</span>
-                        <span class="attributevalue">"1"</span> 
-                        <span class="attribute">minOccurs=</span>
-                        <span class="attributevalue">"1"</span>&gt;
-                     </span>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                      
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;rng:ref
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                            
-                           
-                           <span class="attribute">name=
-                              <span class="attributevalue">"
-                                 <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PITCHNUMBER.html">data.PITCHNUMBER</a>"
-                              </span>
-                           </span>
-                           /&gt;
-                        </span>
-                     </div>
-                     
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span>
-                  </div>
-                  
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span>
-               </div>
+                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PITCHNUMBER.html">data.PITCHNUMBER</a>"</span></span>
+                           /&gt;</span></div>
+                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
             </div>
          </td>
       </tr>

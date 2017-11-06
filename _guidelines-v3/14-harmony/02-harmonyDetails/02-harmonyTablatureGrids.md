@@ -12,8 +12,7 @@ create displayable and performable chord tablature grids for guitar and other fr
 string
 instruments. The fret at which a finger should be placed is recorded in the **@fret**
 attribute, while **@fing** indicates which finger, if any, should be used to play an
-individual string. The values <span class="q">x</span> and 
-<span class="q">o</span> are used to indicate muffled and open
+individual string. The values <span class="q">x</span> and <span class="q">o</span> are used to indicate muffled and open
 strings, respectively.
 
 The [chordDef]({{ site.baseurl }}/{{ page.version }}/elements/chordDef.html){:.link_odd_elementSpec} element may contain [barre]({{ site.baseurl }}/{{ page.version }}/elements/barre.html){:.link_odd_elementSpec}

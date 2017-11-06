@@ -1,4 +1,4 @@
-Contains a default value for the position of the clef. The value must be in the
-range between 1 and the number of lines on the staff. The numbering of lines starts
-with
-the lowest line of the staff.
+Contains a default value for the position of the clef. The value must be in the range
+between 1 and the number of lines on the staff. The numbering of lines starts with
+the
+lowest line of the staff.

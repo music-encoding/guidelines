@@ -1,3 +1,0 @@
-Describes the relationship between the current entity and the target entity. The
-values follow FRBR (see
-http://www.ifla.org/files/assets/cataloguing/frbr/frbr_2008.pdf).

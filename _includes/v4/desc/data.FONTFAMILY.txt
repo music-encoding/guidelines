@@ -1,2 +1,1 @@
-Font family (for text) attribute
-values.
+Font family (for text) attribute values.

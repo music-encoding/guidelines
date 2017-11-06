@@ -3,5 +3,4 @@ tie.rend attributes here are "syntactic sugar" for these attributes on each of t
 chord's
 individual notes. The values here apply to all the notes in the chord. If some notes
 are
-slurred or tied while others aren't, then the individual note attributes must be
-used.
+slurred or tied while others aren't, then the individual note attributes must be used.

@@ -1,2 +1,1 @@
-Font name (for text) attribute
-values.
+Font name (for text) attribute values.

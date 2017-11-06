@@ -19,6 +19,5 @@ attribute.
 
 The usual sign for the breath mark is a comma; however, other visual forms of the
 breath
-mark may be indicated using the **@altsym** attribute (see chapter 
-<a class="link_ptr" title="User-defined Symbols" href="{{ site.baseurl }}/{{ page.version }}/guidelines/userSymbols.html">22 User-defined Symbols</a> for further details).
+mark may be indicated using the **@altsym** attribute (see chapter <a class="link_ptr" title="User-defined Symbols" href="{{ site.baseurl }}/{{ page.version }}/guidelines/userSymbols.html">22 User-defined Symbols</a> for further details).
 

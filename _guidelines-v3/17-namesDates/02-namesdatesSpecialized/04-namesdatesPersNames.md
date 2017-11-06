@@ -23,7 +23,7 @@ components may be marked using [name]({{ site.baseurl }}/{{ page.version }}/elem
 which may be indicated using the **@type** attribute. In this case, **@type**
 attribute may take the following values:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -55,9 +55,7 @@ attribute may take the following values:
          <td>'namelink' (name link)</td>
          <td> - contains a connecting phrase or link used within a name but not regarded as part
             of
-            it, such as 
-            <em class="mentioned">van der</em> or 
-            <em class="mentioned">of</em>.
+            it, such as <em class="mentioned">van der</em> or <em class="mentioned">of</em>.
          </td>
       </tr>
       <tr>

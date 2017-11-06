@@ -37,9 +37,7 @@ another kind of markup, such as TEI
 
 Further information regarding the organization and encoding of music corpora is given
 in
-chapter 
-<a class="link_ptr" title="Musical Corpora" href="{{ site.baseurl }}/{{ page.version }}/guidelines/corpus.html">9 Musical Corpora</a>. Stand-alone headers are more fully described in chapter
-
+chapter <a class="link_ptr" title="Musical Corpora" href="{{ site.baseurl }}/{{ page.version }}/guidelines/corpus.html">9 Musical Corpora</a>. Stand-alone headers are more fully described in chapter
 <a class="link_ptr" title="Independent Headers" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerIndependentHeader">2.6 Independent Headers</a>.
 
 Inclusion of MEI encodings (partial or complete) inside Text Encoding Initiative (TEI)

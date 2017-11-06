@@ -18,7 +18,7 @@ link. However, either element can be used for either purpose.
 
 The two elements share a set of common attributes that are inherited from the [att.pointing]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html){:.link_odd} class:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -89,7 +89,7 @@ resolution of a link occurs automatically or must be requested by the user.
 The following values are allowed for the **@xlink:actuate** attribute:
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -133,7 +133,7 @@ values are permitted:
 
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>

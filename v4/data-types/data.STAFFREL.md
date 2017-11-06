@@ -13,98 +13,56 @@ title: "data.STAFFREL"
          <td colspan="2" class="wovenodd-col2">Location of musical material relative to a staff.</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Module</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Module</strong></td>
          <td class="wovenodd-col2">MEI</td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Used by</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent">
-               <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a> (@place)
+            <div class="parent"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.PLACEMENT.html">data.PLACEMENT</a>, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a> (@place)
             </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Allowed values</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <dl>
-               <dt>above</dt>
-               <dd>Written above staff.</dd>
-               <dt>below</dt>
-               <dd>Written below staff.</dd>
-               <dt>within</dt>
-               <dd>Written on staff.</dd>
-            </dl>
+            <div xml:space="preserve" class="pre">
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
+                  
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;alternate <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                     
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFREL.basic.html">data.STAFFREL.basic</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFREL.extended.html">data.STAFFREL.extended</a>"</span></span>/&gt;</span></div>
+                     <span data-indentation="2" class="element">&lt;/alternate&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/content&gt;</span></div>
+            </div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1">
-            <strong>Declaration</strong>
-         </td>
+         <td class="wovenodd-col1"><strong>Constraints</strong></td>
          <td class="wovenodd-col2">
+            <div>
+               <div>The @staff attribute must contain 2 numerically-adjacent integer values.</div>
+               <div>Staves and are not adjacent.</div>
+            </div>
             <div xml:space="preserve" class="pre">
-               <div class="indent1 indent">
-                  <span data-indentation="1" class="element">&lt;content&gt;</span>
+               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[@place eq 'between']"</span>&gt;</span>
                   
-                  <div class="indent2 indent">
-                     <span data-indentation="2" class="element">&lt;valList 
-                        <span class="attribute">type=</span>
-                        <span class="attributevalue">"closed"</span>&gt;
-                     </span>
-                     
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;valItem 
-                           <span class="attribute">ident=</span>
-                           <span class="attributevalue">"above"</span>&gt;
-                        </span>
-                        
-                        <div class="indent4 indent">
-                           <span data-indentation="4" class="element">&lt;desc&gt;</span>Written above staff.
-                           <span data-indentation="4" class="element">&lt;/desc&gt;</span>
-                        </div>
-                        
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
-                     </div>
-                     
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;valItem 
-                           <span class="attribute">ident=</span>
-                           <span class="attributevalue">"below"</span>&gt;
-                        </span>
-                        
-                        <div class="indent4 indent">
-                           <span data-indentation="4" class="element">&lt;desc&gt;</span>Written below staff.
-                           <span data-indentation="4" class="element">&lt;/desc&gt;</span>
-                        </div>
-                        
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
-                     </div>
-                     
-                     <div class="indent3 indent">
-                        <span data-indentation="3" class="element">&lt;valItem 
-                           <span class="attribute">ident=</span>
-                           <span class="attributevalue">"within"</span>&gt;
-                        </span>
-                        
-                        <div class="indent4 indent">
-                           <span data-indentation="4" class="element">&lt;desc&gt;</span>Written on staff.
-                           <span data-indentation="4" class="element">&lt;/desc&gt;</span>
-                        </div>
-                        
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span>
-                     </div>
-                     
-                     <span data-indentation="2" class="element">&lt;/valList&gt;</span>
-                  </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(tokenize(normalize-space(string(@staff)), '\s+')) = 2"</span>&gt;</span>The @staff
+                     attribute must contain 2 numerically-adjacent integer values.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                   
-                  <span data-indentation="1" class="element">&lt;/content&gt;</span>
-               </div>
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"tokenizedStaff"</span> <span class="attribute">value=</span><span class="attributevalue">"tokenize(normalize-space(string(@staff)), '\s+')"</span>/&gt;</span></div>
+                  
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"maxValue"</span> <span class="attribute">value=</span><span class="attributevalue">"max((number($tokenizedStaff[1]), number($tokenizedStaff[2])))"</span>/&gt;</span></div>
+                  
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"minValue"</span> <span class="attribute">value=</span><span class="attributevalue">"min((number($tokenizedStaff[1]), number($tokenizedStaff[2])))"</span>/&gt;</span></div>
+                  
+                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"$maxValue - $minValue = 1"</span>&gt;</span>Staves 
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;sch:value-of <span class="attribute">select=</span><span class="attributevalue">"$minValue"</span>/&gt;</span></div> and
+                     
+                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;sch:value-of <span class="attribute">select=</span><span class="attributevalue">"$maxValue"</span>/&gt;</span></div> are not adjacent.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                  <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div>
             </div>
          </td>
       </tr>

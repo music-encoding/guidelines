@@ -27,7 +27,7 @@ International Federation of Library Associations and Institutions (IFLA) [[http:
 
 The IFLA’s FRBR model distinguishes four levels of abstraction, or entities:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>

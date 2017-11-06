@@ -21,9 +21,7 @@ For the repetition of a single note or chord, MEI offers the [bTrem]({{ site.bas
 (bowed tremolo) element, which is a member of the [model.eventLike]({{ site.baseurl }}/{{ page.version }}/model-classes/model.eventLike.html){:.link_odd} class, meaning it is encoded following the normal course of
 musical events within a [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec}. It holds exactly one [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} or [chord]({{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec} element that is to be repeated.
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 11. Bowed tremolandi</figcaption>
+<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 11. Bowed tremolandi</figcaption>
 </figure>
 {% include plainExample.html example="examples/cmn/cmn-sample138.xml" valid="true" version=page.version %}
 

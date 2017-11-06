@@ -3,9 +3,9 @@ score-wide defaults for attributes that are not set in descendant elements. For 
 the
 grace attribute value here applies to all the grace attribute values in the score
 (or, more
-accurately, until the next &lt;scoreDef&gt; element) without having to individually set
-each
-note's grace attribute value. The midi.* attributes function as default values when
-creating
-sounding output. The tune.* attributes provide the capability of recording a tuning
-reference pitch.
+accurately, until the next  element) without having to
+individually set each note's grace attribute value. The midi.* attributes function
+as default
+values when creating sounding output. The tune.* attributes provide the capability
+of
+recording a tuning reference pitch.

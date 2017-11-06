@@ -1,1 +1,1 @@
-Gathers bibliographic relation elements.
+Gathers relation elements.

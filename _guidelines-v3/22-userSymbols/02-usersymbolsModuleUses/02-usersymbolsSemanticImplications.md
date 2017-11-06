@@ -18,9 +18,7 @@ ties should be encoded using their respective elements, not using [curve]({{ sit
 An example usage for [line]({{ site.baseurl }}/{{ page.version }}/elements/line.html){:.link_odd_elementSpec} is the visualization of voice leading,
 which is not covered by a specific MEI element.
 
-<figure class="figure">
-   <img src="{{ site.baseurl }}/Images/modules/usersymbols/mignon.png" class="img-responsive"></img>
-   <figcaption class="figure-caption">Figure 55. Voice leading visualization as found in an Edition Peters print of *Album für
+<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/mignon.png" class="img-responsive"><figcaption class="figure-caption">Figure 55. Voice leading visualization as found in an Edition Peters print of *Album für
       die Jugend* by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
       is 10478.)
    </figcaption>

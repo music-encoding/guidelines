@@ -6,7 +6,7 @@ version: "v3"
 
 
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
@@ -35,8 +35,7 @@ version: "v3"
             use LZW, CCITT Group 4, or PackBits compression methods, or may use no compression
             at
             all. Also, TIFF files may be monochrome, greyscale, or polychromatic. All such options
-            should be specified in prose at the end of the 
-            <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>
+            should be specified in prose at the end of the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>
             section of the MEI header for any document including TIFF images. TIFF is owned by
             Aldus
             Corporation. Documentation on TIFF is available from the owner at Craigcook Castle,

@@ -26,7 +26,6 @@ however, may specify an exact number in the encoding description.
 
 
 Alternatively, resolutions can be defined on a case-by-case basis by encoding a specific
-resolution using the [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element. See the section 
-<a class="link_ptr" title="Special Cases" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmnOrnaments.html#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below for an example of a specific resolution of a
+resolution using the [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element. See the section <a class="link_ptr" title="Special Cases" href="{{ site.baseurl }}/{{ page.version }}/guidelines/cmnOrnaments.html#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a> below for an example of a specific resolution of a
 trill.
 

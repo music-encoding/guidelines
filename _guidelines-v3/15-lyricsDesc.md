@@ -12,8 +12,7 @@ This chapter describes how to encode words and syllables in vocal notation. This
 is
 typically written under a staff to indicate the text to be vocally performed. As such,
 this text
-should not be confused with other text on the score, for which see <a class="link_ptr" title="Shared Textual Elements" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedTextualElements">1.3 Shared Textual Elements</a> and 
-<a class="link_ptr" title="Text in MEI" href="{{ site.baseurl }}/{{ page.version }}/guidelines/text.html">21 Text in MEI</a>
+should not be confused with other text on the score, for which see <a class="link_ptr" title="Shared Textual Elements" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedTextualElements">1.3 Shared Textual Elements</a> and <a class="link_ptr" title="Text in MEI" href="{{ site.baseurl }}/{{ page.version }}/guidelines/text.html">21 Text in MEI</a>
 
 
 These guidelines suggest two methods for encoding text in vocal notation: encoding

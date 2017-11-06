@@ -1,0 +1,3 @@
+(ligature span) – Indicates the location of a ligature in material transcribed from
+a
+mensural notation source.

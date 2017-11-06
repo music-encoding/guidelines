@@ -26,15 +26,13 @@ intellectual category to which it may belong. These should be formally described
 the [workDesc]({{ site.baseurl }}/{{ page.version }}/elements/workDesc.html){:.link_odd_elementSpec} element (section <a class="link_ptr" title="Work Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a>).
 - bibliographic details relating to the source or sources of an electronic text: e.g.,
 ‘Transcribed from a facsimile of the 1743 publication’. These should be formally described
-in the [sourceDesc]({{ site.baseurl }}/{{ page.version }}/elements/sourceDesc.html){:.link_odd_elementSpec} element (section 
-<a class="link_ptr" title="Source Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerSourceDescription">2.1.7 Source Description</a>).
+in the [sourceDesc]({{ site.baseurl }}/{{ page.version }}/elements/sourceDesc.html){:.link_odd_elementSpec} element (section <a class="link_ptr" title="Source Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerSourceDescription">2.1.7 Source Description</a>).
 - further information relating to publication, distribution, or release of the text,
 including sources from which the text may be obtained, any restrictions on its use
 or
 formal terms on its availability. These should be placed in the appropriate division
 of
-the [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} element (section 
-<a class="link_ptr" title="Publication, Distribution, etc." href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerPublicationDistribution">2.1.4 Publication, Distribution, etc.</a>).
+the [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} element (section <a class="link_ptr" title="Publication, Distribution, etc." href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerPublicationDistribution">2.1.4 Publication, Distribution, etc.</a>).
 - publicly documented numbers associated *with the file* should be placed in
 an [altId]({{ site.baseurl }}/{{ page.version }}/elements/altId.html){:.link_odd_elementSpec} element within the [meiHead]({{ site.baseurl }}/{{ page.version }}/elements/meiHead.html){:.link_odd_elementSpec} element.
 International Standard Serial Numbers (ISSN), International Standard Book Numbers

@@ -1,2 +1,0 @@
-Specifies the vertical position of the element content relative to the surrounding
-text.

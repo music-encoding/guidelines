@@ -15,7 +15,7 @@ symbols are encoded using the [pedal]({{ site.baseurl }}/{{ page.version }}/elem
 The meaning of the mark is captured using the **@dir** attribute, which provides
 the following values:
 
-<table class="table table-striped table-hover">
+<table class="table table-striped">
    <thead>
       <tr>
          <th>Value</th>
