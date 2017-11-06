@@ -23,7 +23,6 @@ The following elements are provided for this purpose:
 
 
 {% include specDesc.html version=page.version elem="termList" atts="" %}
-{% include specDesc.html version=page.version elem="classCode" atts="" %}
 
 
 

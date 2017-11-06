@@ -14,7 +14,6 @@ provides the following elements for this purpose.
 
 {% include specDesc.html version=page.version elem="relationList" atts="" %}
 {% include specDesc.html version=page.version elem="relation" atts="" %}
-{% include specDesc.html version=page.version elem="relation" atts="att.rel/rel" %}
 
 
 

@@ -19,9 +19,6 @@ The analysis module offers several attributes in the [att.common.anl]({{ site.ba
 
 
 
-{% include specDesc.html version=page.version elem="att.common.anl" atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev att.common.anl/sameas att.common.anl/synch" %}
-
-
 
 The [att.alignment]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.alignment.html){:.link_odd} class also contains an attribute for describing
 temporal relationships:

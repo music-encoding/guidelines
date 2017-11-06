@@ -23,8 +23,8 @@ score, e.g., key and meter. The most important attributes for this purpose are:
 
 
 {% include specDesc.html version=page.version elem="att.meterSigDefault.log" atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %}
-{% include specDesc.html version=page.version elem="att.meterSigDefault.vis" atts="att.meterSigDefault.vis/meter.sym" %}
-{% include specDesc.html version=page.version elem="att.keySigDefault.log" atts="att.keySigDefault.log/key.pname att.keySigDefault.log/key.accid att.keySigDefault.log/key.mode att.keySigDefault.log/key.sig" %}
+{% include specDesc.html version=page.version elem="att.meterSigDefault.vis" atts="" %}
+{% include specDesc.html version=page.version elem="att.keySigDefault.log" atts="att.keySigDefault.log/key.sig" %}
 
 
 
