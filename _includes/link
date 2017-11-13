@@ -1,0 +1,3 @@
+{%- if include.elem %}
+  [{{ include.elem }}]({{ site.baseurl }}/{{ page.version }}/elements/{{ include.elem }}.html){:.link_odd_elementSpec}
+{%- else %}{% include link-section id=include.id %}{%- endif %}

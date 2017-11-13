@@ -1,7 +1,20 @@
+
+{%- comment %}
+
+In this template we are going through all the collection content and search for all the document that match the value passed in include.section
+We are looking for the chapter file (e.g. ../01-shared.html with section "01-shared") or its content "../01-shared/..."
+For each include we had a html header with the appropriate level and a link to the file for editing in gh-pages.
+
+{%- endcomment %}
+
 {% assign c-label = include.version | prepend:'guidelines-' %}
 {% assign c = site.collections | where: "label", c-label | first %}
+
+{% assign chapter-url = include.section | append: ".md" %}
+{% assign chapter-path = include.section | append: "/" %}
+
 {% for doc in c.docs %}
-  {% if doc.relative_path contains include.section %}
+  {% if doc.relative_path contains chapter-url or doc.relative_path contains chapter-path %}
 
   {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
   {% assign levels = doc.relative_path | split: '/' %}

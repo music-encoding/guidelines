@@ -1,0 +1,13 @@
+{%- assign c-label = page.version | prepend:'guidelines-' %}
+{%- assign c = site.collections | where: "label", c-label | first %}
+{%- for doc in c.docs %}
+  {%- if doc.sectionid != include.id %}{%- continue %}{%- endif %}
+  {%- assign url-parts = doc.url | split:'/' %}
+  {%- assign target = include.id | append: ".html" %}
+  {%- if url-parts.size > 3 %}
+    {%- assign chapter = url-parts[2] | slice:3,200 %}
+    {%- assign target = chapter | append: ".html#" | append: include.id %}
+  {%- endif %}
+  [{{ doc.title }}]({{ site.baseurl }}/{{ page.version }}/guidelines/{{ target }} )
+  {%- break %}
+{%- endfor %}
