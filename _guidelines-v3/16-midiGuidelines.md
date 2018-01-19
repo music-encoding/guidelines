@@ -6,8 +6,6 @@ title: "Musical Instrument Digital Interface (MIDI)"
 sectionid: "midiGuidelines"
 ---
 
-
-
 This chapter describes the MIDI encoding functionality present in MEI. The purpose
 of this
 module is to allow for integrating MIDI data into MEI-encoded notation, to both aid
@@ -24,12 +22,4 @@ of a
 MIDI context. For example, the **@dur.ges** attribute accepts MIDI <span class="abbr">ppq</span>
 (Pulses Per Quarter) as a valid measurement of duration. Similarly, the **@pnum**
 attribute allows MIDI note numbers for specifying a pitch value.
-
-
-
-
-
-
-
-
 

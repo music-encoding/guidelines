@@ -4,17 +4,16 @@ title: "Model Classes"
 version: "v3"
 ---
 
-
-
 The following model classes are enabled by the harmony module:
 
 
 
-{% include specDesc.html version=page.version elem="model.chordTableLike" atts="" %}
-{% include specDesc.html version=page.version elem="model.controleventLike.harmony" atts="" %}
-{% include specDesc.html version=page.version elem="model.figbassLike" atts="" %}
-{% include specDesc.html version=page.version elem="model.fLike" atts="" %}
-{% include specDesc.html version=page.version elem="model.harmLike" atts="" %}
+{% include desc elem="model.chordTableLike" %}
+{% include desc elem="model.controleventLike.harmony" %}
+{% include desc elem="model.figbassLike" %}
+{% include desc elem="model.fLike" %}
+{% include desc elem="model.harmLike" %}
+
 
 
 

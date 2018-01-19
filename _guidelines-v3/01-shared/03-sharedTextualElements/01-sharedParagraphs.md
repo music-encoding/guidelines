@@ -4,8 +4,6 @@ title: "Paragraphs"
 version: "v3"
 ---
 
-
-
 A paragraph is a structural unit of a larger text. Usually, it is typographically
 distinct;
 that is, it usually begins on a new line and the first letter of the content is often
@@ -15,11 +13,12 @@ HTML.
 
 
 
-{% include specDesc.html version=page.version elem="p" atts="" %}
+{% include desc elem="p" %}
 
 
 
-In MEI, a [p]({{ site.baseurl }}/{{ page.version }}/elements/p.html){:.link_odd_elementSpec} is used in many different situations, including
-transcriptional use within a [titlePage]({{ site.baseurl }}/{{ page.version }}/elements/titlePage.html){:.link_odd_elementSpec} or descriptive purposes as in a
-[changeDesc]({{ site.baseurl }}/{{ page.version }}/elements/changeDesc.html){:.link_odd_elementSpec}.
+
+In MEI, a {% include link elem="p" %} is used in many different situations, including
+transcriptional use within a {% include link elem="titlePage" %} or descriptive purposes as in a
+{% include link elem="changeDesc" %}.
 

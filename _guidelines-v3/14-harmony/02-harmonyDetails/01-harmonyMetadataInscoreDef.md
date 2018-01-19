@@ -4,8 +4,6 @@ title: "Interpreted Chord Data in scoreDef"
 version: "v3"
 ---
 
-
-
 An harmonic label, such as "7", may occur many times throughout an MEI instance. Where
 the
 goal is diplomatic transcription, simply recording the uninterpreted label is sufficient.
@@ -22,30 +20,31 @@ The following elements enable the creation and re-use of interpreted chord data:
 
 
 
-{% include specDesc.html version=page.version elem="chordTable" atts="" %}
-{% include specDesc.html version=page.version elem="chordDef" atts="" %}
-{% include specDesc.html version=page.version elem="chordDef" atts="chordDef/pos" %}
-{% include specDesc.html version=page.version elem="chordMember" atts="" %}
-{% include specDesc.html version=page.version elem="chordMember" atts="att.intervalharmonic/inth chordMember/fing att.fretlocation/fret" %}
-{% include specDesc.html version=page.version elem="barre" atts="" %}
-{% include specDesc.html version=page.version elem="barre" atts="att.fretlocation/fret" %}
+{% include desc elem="chordTable" %}
+{% include desc elem="chordDef" %}
+{% include desc atts="chordDef/pos" %}
+{% include desc elem="chordMember" %}
+{% include desc atts="att.intervalharmonic/inth chordMember/fing att.fretlocation/fret" %}
+{% include desc elem="barre" %}
+{% include desc atts="att.fretlocation/fret" %}
 
 
 
-The [chordTable]({{ site.baseurl }}/{{ page.version }}/elements/chordTable.html){:.link_odd_elementSpec} element is a container for a set of chord definitions,
-while the [chordDef]({{ site.baseurl }}/{{ page.version }}/elements/chordDef.html){:.link_odd_elementSpec} element defines a single chord. Chord definitions
+
+The {% include link elem="chordTable" %} element is a container for a set of chord definitions,
+while the {% include link elem="chordDef" %} element defines a single chord. Chord definitions
 may be created *a priori* or as the result of analysis of the pitch content
 of the music at hand, for instance, by examination of the notes occurring on the downbeat
 of
 each measure. In this way, the chord definitions serve as a record of the analysis.
 
-Even though it is not required by the schema, an **@xml:id** attribute on [chordDef]({{ site.baseurl }}/{{ page.version }}/elements/chordDef.html){:.link_odd_elementSpec} is necessary to permit the creation of associations between
+Even though it is not required by the schema, an **@xml:id** attribute on {% include link elem="chordDef" %} is necessary to permit the creation of associations between
 harmonic indications in the musical text with the chord defined here. The **@xml:id**
 attribute provides a unique identifier for the chord definition that can be referenced
 by
-the [harm]({{ site.baseurl }}/{{ page.version }}/elements/harm.html){:.link_odd_elementSpec} element's **@chordref** attribute.
+the {% include link elem="harm" %} element's **@chordref** attribute.
 
-Individual pitches of a chord are encoded using [chordMember]({{ site.baseurl }}/{{ page.version }}/elements/chordMember.html){:.link_odd_elementSpec}. The
+Individual pitches of a chord are encoded using {% include link elem="chordMember" %}. The
 **@inth** attribute provides the means for indicating the number of half steps of
 the chord note above the bass note.
 
@@ -56,8 +55,6 @@ equated with a fully spelled-out indication of functional harmony that can be su
 for the harmonic label, say, in an aural rendition:
 
 {% include plainExample.html example="examples/harmony/harmony-sample246.xml" valid="false" version=page.version %}
-
-
 Alternatively, the non-bass chord tones may be indicated, not with pitch names, but
 with
 their intervallic distance above the bass note. Therefore, the example above may also
@@ -65,8 +62,6 @@ be
 encoded:
 
 {% include plainExample.html example="examples/harmony/harmony-sample247.xml" valid="true" version=page.version %}
-
-
 The preceding encoding possibilities provide the detailed information necessary to
 create
 playable chord annotations. For more generic uses, however, the encoding can be taken
@@ -77,4 +72,3 @@ intervals above the bass. Of course, the **@inth** attribute for the bass note i
 should be set to <span class="q">0</span>. For example:
 
 {% include plainExample.html example="examples/harmony/harmony-sample248.xml" valid="true" version=page.version %}
-

@@ -6,8 +6,6 @@ title: "Mensural Notation"
 sectionid: "mensural"
 ---
 
-
-
 This chapter describes the module for encoding mensural notation from the late 13th
 century to
 about 1600. Historically, mensural notation preceded the development of Common Music
@@ -20,7 +18,6 @@ the major exception of *musica ficta*. The pitch is given by the position of the
 on the staff and the current clef as in CMN, and the mensural module introduces no
 modification
 to MEI regarding how pitches are encoded.
-
 
 There are a certain number of differences, however, regarding the representation of
 duration in
@@ -37,7 +34,6 @@ rules must be applied in order to determine the duration of a note. In these cas
 encoding
 both the sign and its actual duration is highy desirable.
 
-
 Another particularity of mensural notation is the use of proportions that are indicated
 by
 numeric proportions or by specific mensuration signs. The proportions indicate that
@@ -50,7 +46,6 @@ The attributes and elements that are necessary for encoding proportions and mens
 signs are
 made available by the module.
 
-
 In mensural notation, notes can also be notated in ligatures that regroup two or more
 notes.
 Ligatures were a legacy from an earlier notation system that were still widely used
@@ -58,24 +53,4 @@ in
 Renaissance music notation. They gradually disappeared during the seventeenth century.
 The
 mensural module provides multiple ways of encoding the ligatures.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

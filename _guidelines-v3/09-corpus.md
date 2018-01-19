@@ -6,8 +6,6 @@ title: "Musical Corpora"
 sectionid: "corpus"
 ---
 
-
-
 The term corpus may refer to any collection of musical data, although it is often
 reserved for collections which have been organized or collected with a particular
 end in view,
@@ -44,8 +42,4 @@ chapters of
 these Guidelines may therefore prove relevant to some aspect of corpus encoding and
 may be used
 in corpora.
-
-
-
-
 

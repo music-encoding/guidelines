@@ -122,216 +122,214 @@ title: "data.ARTICULATION"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Accent (Unicode 1D17B).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stacc"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Accent (Unicode 1D17B).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Staccato (Unicode 1D17C).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ten"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stacc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Staccato (Unicode 1D17C).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tenuto (Unicode 1D17D).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stacciss"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ten"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tenuto (Unicode 1D17D).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Staccatissimo (Unicode 1D17E).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stacciss"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Staccatissimo (Unicode 1D17E).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato (Unicode 1D17F).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc-stacc"</span> <span class="attribute">validUntil=</span><span class="attributevalue">"2018-05-31"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato (Unicode 1D17F).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato + staccato (Unicode 1D180). DEPRECATED; Scheduled for removal after
-                           2018-05-31. Use individual "marc" and "stacc" values.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"spicc"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc-stacc"</span> <span class="attribute">validUntil=</span><span class="attributevalue">"2018-05-31"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato + staccato (Unicode 1D180). DEPRECATED; Scheduled for removal after
+                              2018-05-31. Use individual "marc" and "stacc" values.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Spiccato.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"doit"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"spicc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Spiccato.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by short slide to higher, indeterminate pitch (Unicode
-                           1D185).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"scoop"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"doit"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by short slide to higher, indeterminate pitch (Unicode
+                              1D185).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by short slide from lower, indeterminate pitch (Unicode
-                           1D186).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"rip"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"scoop"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by short slide from lower, indeterminate pitch (Unicode
+                              1D186).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by long slide from lower, often indeterminate pitch; also known
-                           as "squeeze".<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"plop"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"rip"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by long slide from lower, often indeterminate pitch; also known
+                              as "squeeze".<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by "slide" from higher, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fall"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"plop"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note preceded by "slide" from higher, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by short "slide" to lower, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"longfall"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fall"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by short "slide" to lower, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by long "slide" to lower, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"bend"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"longfall"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by long "slide" to lower, indeterminate pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"lip slur" to lower pitch, then return to written pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"flip"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"bend"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"lip slur" to lower pitch, then return to written pitch.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by quick upward rise, then descent in pitch (Unicode
-                           1D187).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"smear"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"flip"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Main note followed by quick upward rise, then descent in pitch (Unicode
+                              1D187).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>(Unicode 1D188).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"shake"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"smear"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>(Unicode 1D188).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Alternation between written pitch and next highest overtone (brass instruments) or
-                           note minor third higher (woodwinds).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dnbow"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"shake"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Alternation between written pitch and next highest overtone (brass instruments) or
+                              note minor third higher (woodwinds).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Down bow (Unicode 1D1AA).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"upbow"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dnbow"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Down bow (Unicode 1D1AA).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Up bow (Unicode 1D1AB).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"harm"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"upbow"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Up bow (Unicode 1D1AB).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Harmonic (Unicode 1D1AC).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"snap"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"harm"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Harmonic (Unicode 1D1AC).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Snap pizzicato (Unicode 1D1AD).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fingernail"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"snap"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Snap pizzicato (Unicode 1D1AD).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Fingernail (Unicode 1D1B3).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ten-stacc"</span> <span class="attribute">validUntil=</span><span class="attributevalue">"2018-05-31"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fingernail"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Fingernail (Unicode 1D1B3).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tenuto + staccato (Unicode 1D182). DEPRECATED; Scheduled for removal after
-                           2018-05-31. Use individual "ten" and "stacc" values.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"damp"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ten-stacc"</span> <span class="attribute">validUntil=</span><span class="attributevalue">"2018-05-31"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tenuto + staccato (Unicode 1D182). DEPRECATED; Scheduled for removal after
+                              2018-05-31. Use individual "ten" and "stacc" values.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Stop harp string from sounding (Unicode 1D1B4).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dampall"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"damp"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Stop harp string from sounding (Unicode 1D1B4).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Stop all harp strings from sounding (Unicode 1D1B5).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"open"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dampall"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Stop all harp strings from sounding (Unicode 1D1B5).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Full (as opposed to stopped) tone.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stop"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"open"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Full (as opposed to stopped) tone.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"muffled" tone.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dbltongue"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stop"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"muffled" tone.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Double tongue (Unicode 1D18A).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"trpltongue"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dbltongue"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Double tongue (Unicode 1D18A).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Triple tongue (Unicode 1D18B).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"heel"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"trpltongue"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Triple tongue (Unicode 1D18B).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Use heel (organ pedal).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"toe"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"heel"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Use heel (organ pedal).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Use toe (organ pedal).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tap"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"toe"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Use toe (organ pedal).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Percussive effect on guitar string(s).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"lhpizz"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tap"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Percussive effect on guitar string(s).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Left-hand pizzicato.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dot"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"lhpizz"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Left-hand pizzicato.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Uninterpreted dot.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stroke"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"dot"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Uninterpreted dot.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Uninterpreted stroke.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/content&gt;</span></div>
-            </div>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"stroke"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Uninterpreted stroke.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>" " contains a deprecated value.</div>
-               <div>" " contains a deprecated value.</div>
+               <div class="schematronText">" " contains a deprecated value.</div>
+               <div class="schematronText">" " contains a deprecated value.</div>
             </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@artic"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(contains(., 'marc-stacc')) and not(contains(., 'ten-stacc'))"</span>&gt;</span>"
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;sch:value-of <span class="attribute">select=</span><span class="attributevalue">"."</span>/&gt;</span></div>" contains a deprecated value.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div>
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@artic.ges"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(contains(., 'marc-stacc')) and not(contains(., 'ten-stacc'))"</span>&gt;</span>"
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;sch:value-of <span class="attribute">select=</span><span class="attributevalue">"."</span>/&gt;</span></div>" contains a deprecated value.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div>
-            </div>
+            <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@artic"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(contains(., 'marc-stacc')) and not(contains(., 'ten-stacc'))"</span>&gt;</span>"
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;sch:value-of <span class="attribute">select=</span><span class="attributevalue">"."</span>/&gt;</span></div>" contains a deprecated value.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@artic.ges"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(contains(., 'marc-stacc')) and not(contains(., 'ten-stacc'))"</span>&gt;</span>"
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;sch:value-of <span class="attribute">select=</span><span class="attributevalue">"."</span>/&gt;</span></div>" contains a deprecated value.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

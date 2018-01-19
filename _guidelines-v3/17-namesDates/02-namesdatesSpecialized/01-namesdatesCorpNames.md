@@ -6,9 +6,8 @@ version: "v3"
 
 
 
+{% include desc elem="corpName" %}
 
-
-{% include specDesc.html version=page.version elem="corpName" atts="" %}
 
 
 
@@ -22,24 +21,19 @@ agency. Organization names typically include some type of indicator or pattern o
 words that
 help identify them as non-personal names.
 
-The [corpName]({{ site.baseurl }}/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec} element is frequently used within the [header]({{ site.baseurl }}/{{ page.version }}/guidelines/header.html "The MEI Header"){:.link_ref} of an MEI document. It is typically found in the [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element:
+The {% include link elem="corpName" %} element is frequently used within the {% include link id="header" %} of an MEI document. It is typically found in the {% include link elem="respStmt" %} element:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample279.xml" valid="true" version=page.version %}
-
 It may also be used wherever it is necessary to mark a corporate name, for example
 when a
 corporation is responsible for a certain event in the history of a musical work:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample280.xml" valid="true" version=page.version %}
-
-
 When it is necessary to provide structure for a name, the separate parts of the name
 may be
-encoded in [corpName]({{ site.baseurl }}/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec} sub-elements, for example:
+encoded in {% include link elem="corpName" %} sub-elements, for example:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample281.xml" valid="true" version=page.version %}
-
-
 Standard designations for corporate bodies can be taken from a controlled vocabulary,
 such
 as the Gemeinsame Normdatei (GND). If a controlled value is used, the list from which

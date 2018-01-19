@@ -31,7 +31,7 @@ title: "titlePart"
                         <div class="attributeDef"><span class="attribute"><strong>@analog</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span>
-                           Value of datatype <span style="font-weight: 500;">string</span>.
+                           Value is plain text.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bibl.html">att.bibl</a></span></div>
                      </td>
                   </tr>
@@ -39,7 +39,7 @@ title: "titlePart"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@auth</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">A name or label associated with a controlled vocabulary or other authoritative source
                               for this element or its content.</span>
-                           Value of datatype <span style="font-weight: 500;">string</span>.
+                           Value is plain text.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.authorized.html">att.authorized</a></span></div>
                      </td>
                   </tr>
@@ -47,7 +47,7 @@ title: "titlePart"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@auth.uri</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">A web-accessible location of the controlled vocabulary or other authoritative source
                               for this element or its content.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.authorized.html">att.authorized</a></span></div>
                      </td>
                   </tr>
@@ -55,7 +55,7 @@ title: "titlePart"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@class</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.classed.html">att.classed</a></span></div>
                      </td>
                   </tr>
@@ -71,7 +71,7 @@ title: "titlePart"
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@copyof</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to an element of which the current element is a copy.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
@@ -79,7 +79,7 @@ title: "titlePart"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@corresp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to point to other elements that correspond to this one in a generic
                               fashion.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
@@ -87,7 +87,7 @@ title: "titlePart"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@facs</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Permits the current element to reference a facsimile surface or image zone which
                               corresponds to it.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a></span></div>
                      </td>
                   </tr>
@@ -97,7 +97,7 @@ title: "titlePart"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span>
-                           Value of datatype <span style="font-weight: 500;">string</span>.
+                           Value is plain text.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.labelled.html">att.labelled</a></span></div>
                      </td>
                   </tr>
@@ -106,14 +106,14 @@ title: "titlePart"
                         <div class="attributeDef"><span class="attribute"><strong>@n</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a numeric designation that indicates an element's position in a sequence
                               of
                               similar elements. Its value must be a non-negative integer.</span>
-                           Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.nInteger.html">att.nInteger</a></span></div>
+                           Value is a positive integer, including 0.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ninteger.html">att.nInteger</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@next</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to point to the next event(s) in a user-defined collection.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
@@ -121,14 +121,14 @@ title: "titlePart"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@nonfiling</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds the number of initial characters (such as those constituting an article or
                               preposition) that should not be used for sorting a title or name.</span>
-                           Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                           Value is a positive integer.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.filing.html">att.filing</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
@@ -137,21 +137,21 @@ title: "titlePart"
                         <div class="attributeDef"><span class="attribute"><strong>@sameas</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to an element that is the same as the current element but is not a literal
                               copy
                               of the current element.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@synch</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to elements that are synchronous with the current element.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@translit</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the transliteration technique used.</span>
-                           Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+                           Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a></span></div>
                      </td>
                   </tr>
@@ -161,14 +161,14 @@ title: "titlePart"
                               scheme or typology that employs single-token labels.</span>
                            Allowed values are:
                            "<span style="font-weight: 500;">alternative</span>" <i>(Alternate title by which the item is also known.)</i>,  "<span style="font-weight: 500;">arrangement</span>" <i>(Arranged statement for music. Analogous to MARC 240 subfield o.)</i>,  "<span style="font-weight: 500;">carrier</span>" <i>(Medium of the carrier. Analogous to MARC 240 subfield h.)</i>,  "<span style="font-weight: 500;">date</span>" <i>(Publication/creation date(s) of work. Analogous to MARC 240 subfield f.)</i>,  "<span style="font-weight: 500;">desc</span>" <i>(Descriptive paraphrase of the work.)</i>,  "<span style="font-weight: 500;">form</span>" <i>(Form subheading. Analogous to MARC 240 subfield k.)</i>,  "<span style="font-weight: 500;">key</span>" <i>(Key for music. Analogous to MARC 240 subfield r.)</i>,  "<span style="font-weight: 500;">language</span>" <i>(Language of a work. Analogous to MARC 240 subfield l (el).)</i>,  "<span style="font-weight: 500;">main</span>" <i>(Main title.)</i>,  "<span style="font-weight: 500;">name</span>" <i>(Name of a part or section of a work. Analogous to MARC 240 subfield p.)</i>,  "<span style="font-weight: 500;">number</span>" <i>(Standard number designation of a work or of a part or section of a work. Analogous
-                              to MARC 240 subfield n.)</i>,  "<span style="font-weight: 500;">perfmedium</span>" <i>(Performance medium. Analogous to MARC 240 subfield m.)</i>,  "<span style="font-weight: 500;">subordinate</span>" <i>(Subtitle.)</i>,  "<span style="font-weight: 500;">translated</span>" <i>(Translated form of title.)</i>,  "<span style="font-weight: 500;">version</span>" <i>(Version. Analogous to MARC 240 subfield s.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/titlePart.html">titlePart</a></span></div>
+                              to MARC 240 subfield n.)</i>,  "<span style="font-weight: 500;">perfmedium</span>" <i>(Performance medium. Analogous to MARC 240 subfield m.)</i>,  "<span style="font-weight: 500;">subordinate</span>" <i>(Subtitle.)</i>,  "<span style="font-weight: 500;">translated</span>" <i>(Translated form of title.)</i>,  "<span style="font-weight: 500;">version</span>" <i>(Version. Analogous to MARC 240 subfield s.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/titlepart.html">titlePart</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@xml:base</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
                               references into absolute URI references.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.basic.html">att.basic</a></span></div>
                      </td>
                   </tr>
@@ -176,7 +176,7 @@ title: "titlePart"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@xml:id</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span>
-                           Value of datatype <span style="font-weight: 500;">ID</span>.
+                           Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a></span></div>
                      </td>
                   </tr>
@@ -187,7 +187,7 @@ title: "titlePart"
                               sub-tags must be documented in a corresponding language element in the MEI header
                               whose id
                               attribute is the same as the language tag's value.</span>
-                           Value of datatype <span style="font-weight: 500;">language</span>.
+                           Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a></span></div>
                      </td>
                   </tr>

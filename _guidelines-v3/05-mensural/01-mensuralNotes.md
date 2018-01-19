@@ -4,10 +4,7 @@ title: "Note and Rest Values"
 version: "v3"
 ---
 
-
-
-When the mensural module is included, **@dur** on [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}, [rest]({{ site.baseurl }}/{{ page.version }}/elements/rest.html){:.link_odd_elementSpec}, and other elements can take the following values:
-
+When the mensural module is included, **@dur** on {% include link elem="note" %}, {% include link elem="rest" %}, and other elements can take the following values:
 
 - maxima
 - longa
@@ -17,7 +14,3 @@ When the mensural module is included, **@dur** on [note]({{ site.baseurl }}/{{ p
 - semiminima
 - fusa
 - semifusa
-
-
-
-

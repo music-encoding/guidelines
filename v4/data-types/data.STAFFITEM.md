@@ -26,21 +26,20 @@ title: "data.STAFFITEM"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;alternate <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.basic.html">data.STAFFITEM.basic</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.cmn.html">data.STAFFITEM.cmn</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.mensural.html">data.STAFFITEM.mensural</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.neumes.html">data.STAFFITEM.neumes</a>"</span></span>/&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/alternate&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/content&gt;</span></div>
-            </div>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;alternate&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.basic.html">data.STAFFITEM.basic</a>"</span></span>/&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.cmn.html">data.STAFFITEM.cmn</a>"</span></span>/&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.mensural.html">data.STAFFITEM.mensural</a>"</span></span>/&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.STAFFITEM.neumes.html">data.STAFFITEM.neumes</a>"</span></span>/&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/alternate&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

@@ -4,14 +4,13 @@ title: "Other Identifying Characteristics"
 version: "v3"
 ---
 
-
-
 Additional information that aids the identification of the work may be encoded using
-[otherChar]({{ site.baseurl }}/{{ page.version }}/elements/otherChar.html){:.link_odd_elementSpec}.
+{% include link elem="otherChar" %}.
 
 
 
-{% include specDesc.html version=page.version elem="otherChar" atts="" %}
+{% include desc elem="otherChar" %}
+
 
 
 

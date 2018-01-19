@@ -4,8 +4,6 @@ title: "Minimal and Recommended Header Information"
 version: "v3"
 ---
 
-
-
 The MEI header allows for the provision of a very large amount of information concerning
 the
 text itself, its source, its encodings, and revisions of it, as well as a wealth of
@@ -44,29 +42,28 @@ look like
 the following example:
 
 {% include plainExample.html example="examples/header/header-sample077.xml" valid="true" version=page.version %}
-
-The only mandatory component of the MEI Header is the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element.
-Within this element, [titleStmt]({{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec} and [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} are
+The only mandatory component of the MEI Header is the {% include link elem="fileDesc" %} element.
+Within this element, {% include link elem="titleStmt" %} and {% include link elem="pubStmt" %} are
 required constituents. Within the title statement, a title is required. Within the
-[pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}, a publisher, distributor, or other agency responsible for the
+{% include link elem="pubStmt" %}, a publisher, distributor, or other agency responsible for the
 file is required.
 
 While not formally required, additional information is recommended for a minimally
 effective
 header. For example, it is recommended that the person or corporate entity responsible
 for the
-creation of the encoding should be specified using [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} within the
-[titleStmt]({{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec} element. It is also recommended that information about the
-source, or sources, of the encoding be included. Each [source]({{ site.baseurl }}/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} element
+creation of the encoding should be specified using {% include link elem="respStmt" %} within the
+{% include link elem="titleStmt" %} element. It is also recommended that information about the
+source, or sources, of the encoding be included. Each {% include link elem="source" %} element
 should contain at the least a loosely structured bibliographic citation that identifies
 the
 source used to construct the MEI file.
 
 Furthermore, If the electronic transcription is a member of a series of publications,
 the
-series title and publisher should be included using the [seriesStmt]({{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec}
+series title and publisher should be included using the {% include link elem="seriesStmt" %}
 element. It is also common for cataloging records to include genre and/or form information,
-here represented by the MEI [classification]({{ site.baseurl }}/{{ page.version }}/elements/classification.html){:.link_odd_elementSpec} element.
+here represented by the MEI {% include link elem="classification" %} element.
 
 We now present the same example header, expanded to include additionally recommended
 information, adequate for most bibliographic purposes, in particular to allow for
@@ -74,4 +71,3 @@ the creation
 of an AACR2-conformant bibliographic record.
 
 {% include plainExample.html example="examples/header/header-sample078.xml" valid="true" version=page.version %}
-

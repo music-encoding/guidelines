@@ -4,13 +4,12 @@ title: "Edition Statement"
 version: "v3"
 ---
 
-
-
-The [editionStmt]({{ site.baseurl }}/{{ page.version }}/elements/editionStmt.html){:.link_odd_elementSpec} element is the second component of the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element. It is optional but recommended when applicable.
+The {% include link elem="editionStmt" %} element is the second component of the {% include link elem="fileDesc" %} element. It is optional but recommended when applicable.
 
 
 
-{% include specDesc.html version=page.version elem="editionStmt" atts="" %}
+{% include desc elem="editionStmt" %}
+
 
 
 
@@ -18,8 +17,9 @@ It contains elements for identifying the edition and those responsible for it:
 
 
 
-{% include specDesc.html version=page.version elem="edition" atts="" %}
-{% include specDesc.html version=page.version elem="respStmt" atts="" %}
+{% include desc elem="edition" %}
+{% include desc elem="respStmt" %}
+
 
 
 
@@ -69,7 +69,7 @@ each later release, though this requirement cannot be enforced.
 Note that all changes in a file, whether or not they are regarded as constituting
 a new
 edition or simply a revision, should be independently noted in the revision description
-section of the file header (see section <a class="link_ptr" title="Revision Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerRevisionDescription">2.4 Revision Description</a>).
+section of the file header (see section {% include link id="headerRevisionDescription" %}).
 
 The edition element should contain phrases describing the edition or version, including
 the
@@ -77,11 +77,11 @@ word 'edition', 'version', or an equivalent term, together with a number or date
 or terms
 indicating difference from other editions such as 'new edition', 'revised edition',
 etc. Any
-dates that occur within the edition statement should be marked with the [date]({{ site.baseurl }}/{{ page.version }}/elements/date.html){:.link_odd_elementSpec} element. The **@n** attribute of the edition element may be used as
+dates that occur within the edition statement should be marked with the {% include link elem="date" %} element. The **@n** attribute of the edition element may be used as
 elsewhere to supply any formal identification (such as a version number) for the
 edition.
 
-One or more [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} elements may also be used to supply statements
+One or more {% include link elem="respStmt" %} elements may also be used to supply statements
 of responsibility for the edition in question. These may refer to individuals or corporate
 bodies and can indicate functions such as that of a reviser, or can name the person
 or body
@@ -91,6 +91,4 @@ edition.
 Some examples follow:
 
 {% include plainExample.html example="examples/header/header-sample029.xml" valid="true" version=page.version %}
-
 {% include plainExample.html example="examples/header/header-sample030.xml" valid="true" version=page.version %}
-

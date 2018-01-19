@@ -4,10 +4,8 @@ title: "Source Description"
 version: "v3"
 ---
 
-
-
-The [sourceDesc]({{ site.baseurl }}/{{ page.version }}/elements/sourceDesc.html){:.link_odd_elementSpec} element is the seventh and final component of the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element. In MEI, [sourceDesc]({{ site.baseurl }}/{{ page.version }}/elements/sourceDesc.html){:.link_odd_elementSpec} is a grouping
-element containing one or more [source]({{ site.baseurl }}/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} elements, each of which records
+The {% include link elem="sourceDesc" %} element is the seventh and final component of the {% include link elem="fileDesc" %} element. In MEI, {% include link elem="sourceDesc" %} is a grouping
+element containing one or more {% include link elem="source" %} elements, each of which records
 details of a source from which the computer file is derived. This might be a printed
 text or
 manuscript, another computer file, an audio or video recording, or a combination of
@@ -18,30 +16,32 @@ created in electronic form.
 
 
 
-{% include specDesc.html version=page.version elem="sourceDesc" atts="" %}
-{% include specDesc.html version=page.version elem="source" atts="" %}
+{% include desc elem="sourceDesc" %}
+{% include desc elem="source" %}
 
 
 
-The content model of the [source]({{ site.baseurl }}/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} element is similar to that of the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} and [work]({{ site.baseurl }}/{{ page.version }}/elements/work.html){:.link_odd_elementSpec} elements. The list below
-reflects the order in which the optional components of [source]({{ site.baseurl }}/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} must
+
+The content model of the {% include link elem="source" %} element is similar to that of the {% include link elem="fileDesc" %} and {% include link elem="work" %} elements. The list below
+reflects the order in which the optional components of {% include link elem="source" %} must
 occur.
 
 
 
-{% include specDesc.html version=page.version elem="identifier" atts="" %}
-{% include specDesc.html version=page.version elem="titleStmt" atts="" %}
-{% include specDesc.html version=page.version elem="editionStmt" atts="" %}
-{% include specDesc.html version=page.version elem="pubStmt" atts="" %}
-{% include specDesc.html version=page.version elem="physDesc" atts="" %}
-{% include specDesc.html version=page.version elem="physLoc" atts="" %}
-{% include specDesc.html version=page.version elem="seriesStmt" atts="" %}
-{% include specDesc.html version=page.version elem="history" atts="" %}
-{% include specDesc.html version=page.version elem="langUsage" atts="" %}
-{% include specDesc.html version=page.version elem="contents" atts="" %}
-{% include specDesc.html version=page.version elem="biblList" atts="" %}
-{% include specDesc.html version=page.version elem="notesStmt" atts="" %}
-{% include specDesc.html version=page.version elem="classification" atts="" %}
+{% include desc elem="identifier" %}
+{% include desc elem="titleStmt" %}
+{% include desc elem="editionStmt" %}
+{% include desc elem="pubStmt" %}
+{% include desc elem="physDesc" %}
+{% include desc elem="physLoc" %}
+{% include desc elem="seriesStmt" %}
+{% include desc elem="history" %}
+{% include desc elem="langUsage" %}
+{% include desc elem="contents" %}
+{% include desc elem="biblList" %}
+{% include desc elem="notesStmt" %}
+{% include desc elem="classification" %}
+
 
 
 
@@ -49,47 +49,42 @@ When the MEI.frbr module is available, the following elements may also appear af
 the
 classification element. Additional information regarding FRBR (Functional Requirements
 for
-Bibliographic Records) can be found at <a class="link_ptr" title="Functional Requirements for Bibliographic Records (FRBR)" href="{{ site.baseurl }}/{{ page.version }}/guidelines/FRBR.html">3 Functional Requirements for Bibliographic Records (FRBR)</a>.
+Bibliographic Records) can be found at {% include link id="FRBR" %}.
 
 
 
-{% include specDesc.html version=page.version elem="itemList" atts="" %}
-{% include specDesc.html version=page.version elem="componentGrp" atts="" %}
-{% include specDesc.html version=page.version elem="relationList" atts="" %}
+{% include desc elem="itemList" %}
+{% include desc elem="componentGrp" %}
+{% include desc elem="relationList" %}
 
 
 
-In the simplest case, the [source]({{ site.baseurl }}/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} element may contain nothing more
+
+In the simplest case, the {% include link elem="source" %} element may contain nothing more
 than a notes statement giving a simple prose description or a brief note stating that
 the
 document has no physical source:
 
 {% include plainExample.html example="examples/header/header-sample043.xml" valid="true" version=page.version %}
-
 {% include plainExample.html example="examples/header/header-sample044.xml" valid="true" version=page.version %}
-
 Alternatively, it may contain a basic bibliographic citation, also in an annotation:
 
 {% include plainExample.html example="examples/header/header-sample045.xml" valid="true" version=page.version %}
-
 However, more structured bibliographic data, such as that in the example below, facilitates
 better machine-processing:
 
 {% include plainExample.html example="examples/header/header-sample046.xml" valid="true" version=page.version %}
-
 A description of more precise capture of dates and date ranges is provided in chapter
-<a class="link_ptr" title="Names and Dates" href="{{ site.baseurl }}/{{ page.version }}/guidelines/namesDates.html">17 Names and Dates</a>.
+{% include link id="namesDates" %}.
 
-The [identifier]({{ site.baseurl }}/{{ page.version }}/elements/identifier.html){:.link_odd_elementSpec} element is provided within [source]({{ site.baseurl }}/{{ page.version }}/elements/source.html){:.link_odd_elementSpec} in order to accommodate identifying strings which cannot be captured by the
+The {% include link elem="identifier" %} element is provided within {% include link elem="source" %} in order to accommodate identifying strings which cannot be captured by the
 **@xml:id** attribute, such as numbers or strings requiring XML markup.
 
-The [titleStmt]({{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec}, [editionStmt]({{ site.baseurl }}/{{ page.version }}/elements/editionStmt.html){:.link_odd_elementSpec}, [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt]({{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec}, and [notesStmt]({{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec}
-elements function in exactly the same way as described in section <a class="link_ptr" title="File Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerFileDescription">2.1 File Description</a> above and <a class="link_ptr" title="Work Description" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerWorkDescription">2.3 Work Description</a> below
+The {% include link elem="titleStmt" %}, {% include link elem="editionStmt" %}, {% include link elem="pubStmt" %}, {% include link elem="seriesStmt" %}, and {% include link elem="notesStmt" %}
+elements function in exactly the same way as described in section {% include link id="headerFileDescription" %} above and {% include link id="headerWorkDescription" %} below
 and will not be covered again here.
 
-If a source of the file is an unpublished manuscript, it is recommended that the [unpub]({{ site.baseurl }}/{{ page.version }}/elements/unpub.html){:.link_odd_elementSpec} element be used as the only content of the source's [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} element. Other identifying information for the manuscript may be
-collected in the [notesStmt]({{ site.baseurl }}/{{ page.version }}/elements/notesStmt.html){:.link_odd_elementSpec} element, as described in section <a class="link_ptr" title="Notes Statement" href="{{ site.baseurl }}/{{ page.version }}/guidelines/header.html#headerNotesStatement">2.1.6 Notes Statement</a>.
+If a source of the file is an unpublished manuscript, it is recommended that the {% include link elem="unpub" %} element be used as the only content of the source's {% include link elem="pubStmt" %} element. Other identifying information for the manuscript may be
+collected in the {% include link elem="notesStmt" %} element, as described in section {% include link id="headerNotesStatement" %}.
 
 {% include plainExample.html example="examples/header/header-sample047.xml" valid="true" version=page.version %}
-
-

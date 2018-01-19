@@ -47,43 +47,42 @@ title: "data.CLEFSHAPE"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"G"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>G clef (Unicode 1D11E).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"GG"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"G"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>G clef (Unicode 1D11E).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Double G clef.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"F"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"GG"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Double G clef.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>F clef (Unicode 1D122).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"C"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"F"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>F clef (Unicode 1D122).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>C clef (Unicode 1D121).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"perc"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"C"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>C clef (Unicode 1D121).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Drum clef (Unicode 1D125 or Unicode 1D126).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"TAB"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"perc"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Drum clef (Unicode 1D125 or Unicode 1D126).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tablature "clef"; i.e. usually "TAB" rendered vertically.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/content&gt;</span></div>
-            </div>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"TAB"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tablature "clef"; i.e. usually "TAB" rendered vertically.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

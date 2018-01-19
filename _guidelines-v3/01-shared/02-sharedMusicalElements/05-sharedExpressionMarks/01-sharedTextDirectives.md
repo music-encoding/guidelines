@@ -4,17 +4,16 @@ title: "Text Directives"
 version: "v3"
 ---
 
-
-
 All of the following elements can be considered text directives; however, MEI uses
 the
-[dir]({{ site.baseurl }}/{{ page.version }}/elements/dir.html){:.link_odd_elementSpec} element specifically for words, abbreviations, numbers, or
+{% include link elem="dir" %} element specifically for words, abbreviations, numbers, or
 symbols specifying or suggesting the manner of performance that are not encoded elsewhere
-using the more specific elements of [tempo]({{ site.baseurl }}/{{ page.version }}/elements/tempo.html){:.link_odd_elementSpec} and [dynam]({{ site.baseurl }}/{{ page.version }}/elements/dynam.html){:.link_odd_elementSpec}.
+using the more specific elements of {% include link elem="tempo" %} and {% include link elem="dynam" %}.
 
 
 
-{% include specDesc.html version=page.version elem="dir" atts="" %}
+{% include desc elem="dir" %}
+
 
 
 
@@ -30,5 +29,4 @@ a
 tstamp2, dur, dur.ges or endid attribute. It is a semantic error not to specify a
 starting
 point attribute.
-
 

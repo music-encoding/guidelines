@@ -4,31 +4,31 @@ title: "Publication, Distribution, etc."
 version: "v3"
 ---
 
-
-
-The [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec} element is the fourth component of the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element and is mandatory.
-
-
-
-{% include specDesc.html version=page.version elem="pubStmt" atts="" %}
+The {% include link elem="pubStmt" %} element is the fourth component of the {% include link elem="fileDesc" %} element and is mandatory.
 
 
 
-It may contain either a single [unpub]({{ site.baseurl }}/{{ page.version }}/elements/unpub.html){:.link_odd_elementSpec} element, indicating that the
+{% include desc elem="pubStmt" %}
+
+
+
+
+It may contain either a single {% include link elem="unpub" %} element, indicating that the
 file has yet to be published, or in the case of published material, one or more elements
-from the [model.pubStmtPart]({{ site.baseurl }}/{{ page.version }}/model-classes/model.pubStmtPart.html){:.link_odd} class. The following elements may be
+from the {% include link att-class="model.pubStmtPart" %} class. The following elements may be
 used to provide details regarding the file's publication and distribution:
 
 
 
-{% include specDesc.html version=page.version elem="address" atts="" %}
-{% include specDesc.html version=page.version elem="availability" atts="" %}
-{% include specDesc.html version=page.version elem="date" atts="" %}
-{% include specDesc.html version=page.version elem="distributor" atts="" %}
-{% include specDesc.html version=page.version elem="identifier" atts="" %}
-{% include specDesc.html version=page.version elem="publisher" atts="" %}
-{% include specDesc.html version=page.version elem="pubPlace" atts="" %}
-{% include specDesc.html version=page.version elem="respStmt" atts="" %}
+{% include desc elem="address" %}
+{% include desc elem="availability" %}
+{% include desc elem="date" %}
+{% include desc elem="distributor" %}
+{% include desc elem="identifier" %}
+{% include desc elem="publisher" %}
+{% include desc elem="pubPlace" %}
+{% include desc elem="respStmt" %}
+
 
 
 
@@ -36,33 +36,31 @@ The publisher is the person or institution by whose authority a given edition of
 file
 is made public. The distributor is the person or institution from whom copies of the
 text
-may be obtained. Use [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} to identify other responsible persons or
+may be obtained. Use {% include link elem="respStmt" %} to identify other responsible persons or
 corporate bodies.
 
-The sub-elements of [availability]({{ site.baseurl }}/{{ page.version }}/elements/availability.html){:.link_odd_elementSpec} should be used to provide detailed
+The sub-elements of {% include link elem="availability" %} should be used to provide detailed
 information regarding access to the MEI file.
 
 
 
-{% include specDesc.html version=page.version elem="accessRestrict" atts="" %}
-{% include specDesc.html version=page.version elem="distributor" atts="" %}
-{% include specDesc.html version=page.version elem="price" atts="" %}
-{% include specDesc.html version=page.version elem="useRestrict" atts="" %}
-{% include specDesc.html version=page.version elem="sysReq" atts="" %}
+{% include desc elem="accessRestrict" %}
+{% include desc elem="distributor" %}
+{% include desc elem="price" %}
+{% include desc elem="useRestrict" %}
+{% include desc elem="sysReq" %}
+
 
 
 
 {% include plainExample.html example="examples/header/header-sample033.xml" valid="true" version=page.version %}
-
 {% include plainExample.html example="examples/header/header-sample034.xml" valid="true" version=page.version %}
-
 Give any other useful information (e.g., dates of collection of data) in an annotation
 within the notes statement, which is described below.
 
-Here, as in the description of intellectual responsibility described above, the [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element may be used to contain all statements of responsibility
+Here, as in the description of intellectual responsibility described above, the {% include link elem="respStmt" %} element may be used to contain all statements of responsibility
 regarding publication and distribution when uniformity is desired regardless of the
 role of
 participants in the publication process:
 
 {% include plainExample.html example="examples/header/header-sample035.xml" valid="true" version=page.version %}
-

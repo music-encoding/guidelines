@@ -4,8 +4,6 @@ title: "General Relationships Between Elements"
 version: "v3"
 ---
 
-
-
 The relationships between event elements, such as note, chord, and rest, are the basic
 material of musical analysis; the attributes described below ensure a closed network
 of these
@@ -15,21 +13,23 @@ the context of a formal analysis, for instance, the attributes presented here ca
 be useful in
 the capture information about the structure of a musical work.
 
-The analysis module offers several attributes in the [att.common.anl]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.anl.html){:.link_odd} class for the description of basic relationships:
+The analysis module offers several attributes in the {% include link att-class="att.common.anl" %} class for the description of basic relationships:
 
 
 
-{% include specDesc.html version=page.version elem="att.common.anl" atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev
+{% include desc atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev
 att.common.anl/sameas att.common.anl/synch" %}
 
 
 
-The [att.alignment]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.alignment.html){:.link_odd} class also contains an attribute for describing
+
+The {% include link att-class="att.alignment" %} class also contains an attribute for describing
 temporal relationships:
 
 
 
-{% include specDesc.html version=page.version elem="att.alignment" atts="att.alignment/when" %}
+{% include desc atts="att.alignment/when" %}
+
 
 
 
@@ -50,34 +50,30 @@ of
 the encoding.
 
 The **@copyof** attribute points to an element of which the current element is a copy.
-It can be used to repeat a note, for example, without encoding the whole [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} element again. The copy is a ‘deep’one; that is, the
+It can be used to repeat a note, for example, without encoding the whole {% include link elem="note" %} element again. The copy is a ‘deep’one; that is, the
 **@copyof** attribute copies all attributes and child elements which belong to the
-copied element, such as the **@dur** and **@oct** attributes of a copied [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec}. The value of the **@copyof** attribute must be a URI, which
+copied element, such as the **@dur** and **@oct** attributes of a copied {% include link elem="note" %}. The value of the **@copyof** attribute must be a URI, which
 usually refers to an element in the current document. The following example demonstrates
 use
 of the **@copyof** attribute:
 
 {% include plainExample.html example="examples/analysis/analysis-sample162.xml" valid="false" version=page.version %}
-
-In this example. the [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} in the second measure has exactly the same
-characteristics as the [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} in the first [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}.
+In this example. the {% include link elem="note" %} in the second measure has exactly the same
+characteristics as the {% include link elem="note" %} in the first {% include link elem="measure" %}.
 
 Using **@copyof** is not limited to copying events. The **@copyof** attribute can
-also be used to copy an entire [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec} or [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec}.
+also be used to copy an entire {% include link elem="measure" %} or {% include link elem="staff" %}.
 When there are many repeated features, the use of the **@copyof** greatly reduces
 encoding effort. The image and the following encoding of the beginning of Schubert's
 *Erlkönig* illustrates the benefit of using the **@copyof**
 attribute.
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"><figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
-</figure>
-{% include plainExample.html example="examples/analysis/analysis-sample163.xml" valid="true" version=page.version %}
-
+</figure>{% include plainExample.html example="examples/analysis/analysis-sample163.xml" valid="true" version=page.version %}
 This example can be reduced further by using **@copyof** inside the initial tuplet to
 represent the repeated chords:
 
 {% include plainExample.html example="examples/analysis/analysis-sample164.xml" valid="true" version=page.version %}
-
 While **@copyof** signifies a duplicate copy of an element, the **@sameas**
 indicates that the current element represents exactly the same entity as the one referenced
 in
@@ -87,9 +83,7 @@ the sharing of one note head between two voices in the first full measure of a c
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"><figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
-</figure>
-{% include plainExample.html example="examples/analysis/analysis-sample165.xml" valid="true" version=page.version %}
-
+</figure>{% include plainExample.html example="examples/analysis/analysis-sample165.xml" valid="true" version=page.version %}
 While **@copyof** and **@sameas** have defined semantics, the **@corresp**
 may be used to create user-defined relationships between elements. The example below
 demonstrates the encoding of a relationship between #note3 and the fermata, even though
@@ -97,10 +91,9 @@ the
 fermata is not placed directly above the note.
 
 {% include plainExample.html example="examples/analysis/analysis-sample166.xml" valid="true" version=page.version %}
-
 The **@corresp** attribute only marks the correspondence between the current element
 and one or more other entities. To describe the nature of the correspondence, one
-must use [annot]({{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec}.
+must use {% include link elem="annot" %}.
 
 The **@next** and **@prev** attributes point to elements which follow or precede
 the current element in some fashion other than that indicated by encoding order. The
@@ -114,9 +107,7 @@ occurs after the pointing element in time, but before it in encoding order:
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"><figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
-</figure>
-{% include plainExample.html example="examples/analysis/analysis-sample167.xml" valid="false" version=page.version %}
-
+</figure>{% include plainExample.html example="examples/analysis/analysis-sample167.xml" valid="false" version=page.version %}
 This attribute may also be useful to clarify a sequence of entites which occurs across
 some
 form of interruption, in this case, notes before and after a system or page break
@@ -124,7 +115,6 @@ where there
 is no custos or direct in the source:
 
 {% include plainExample.html example="examples/analysis/analysis-sample168.xml" valid="true" version=page.version %}
-
 A one-to-many relationship between the current element and the entities being referred
 to can
 be expressed by using a list of space-separated URIs in **@corresp**.
@@ -134,11 +124,7 @@ at the same moment in time, as the current element. It is useful when the encodi
 order
 differs from the order in which entities occur in time.
 
-
-
-
 The **@when** attribute may be used to indicate the point of occurrence of the feature
-bearing this attribute along a time line. Its value must be the ID of a [when]({{ site.baseurl }}/{{ page.version }}/elements/when.html){:.link_odd_elementSpec} element. For more detailed information regarding the use of **@when**,
-please see <a class="link_ptr" title="Performances" href="{{ site.baseurl }}/{{ page.version }}/guidelines/performances.html">18 Performances</a>.
-
+bearing this attribute along a time line. Its value must be the ID of a {% include link elem="when" %} element. For more detailed information regarding the use of **@when**,
+please see {% include link id="performances" %}.
 

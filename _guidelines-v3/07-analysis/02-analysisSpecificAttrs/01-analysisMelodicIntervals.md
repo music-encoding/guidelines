@@ -4,8 +4,6 @@ title: "Melodic Intervals"
 version: "v3"
 ---
 
-
-
 The**@intm** attribute offers several methods for encoding the melodic interval from
 a preceding pitch. First, Parsons Code allows for description of the contour of the
 melody
@@ -19,7 +17,6 @@ The next
 example shows interval relationships indicated by the Parsons Code:
 
 {% include plainExample.html example="examples/analysis/analysis-sample169.xml" valid="true" version=page.version %}
-
 Alternatively, diatonic interval quality and size may be indicated by a letter signifying
 the interval quality (A= augmented, d= diminished, M = major, m = minor, P = perfect)
 followed by a number indicating the size of the interval. The interval direction may
@@ -27,10 +24,8 @@ be
 encoded using a leading plus (+) or minus (-) sign:
 
 {% include plainExample.html example="examples/analysis/analysis-sample170.xml" valid="true" version=page.version %}
-
 As a third option, signed integers may be used to record the difference in half steps
 between the previous pitch and the current one. Decimal values accommodate the description
 of microtonal intervals:
 
 {% include plainExample.html example="examples/analysis/analysis-sample171.xml" valid="true" version=page.version %}
-

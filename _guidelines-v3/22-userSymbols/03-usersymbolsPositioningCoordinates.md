@@ -4,9 +4,3 @@ title: "Positioning and Coordinates"
 version: "v3"
 ---
 
-
-
-
-
-
-

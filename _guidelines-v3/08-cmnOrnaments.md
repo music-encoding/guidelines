@@ -6,8 +6,6 @@ title: "Common Music Notation Ornaments"
 sectionid: "cmnOrnaments"
 ---
 
-
-
 This module includes elements and attributes for the encoding of ornaments typical
 of
 ‘Common Music Notation’ (CMN). Ornaments are formulae of
@@ -33,17 +31,4 @@ symbols and realizations for the ornaments supported by MEI.
 
 The following sections will introduce each element in detail for all types of ornaments
 supported.
-
-
-
-
-
-
-
-
-
-
-
-
-
 

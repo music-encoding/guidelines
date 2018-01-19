@@ -4,8 +4,6 @@ title: "Neume Notation"
 version: "v3"
 ---
 
-
-
  Most neume notation is used to set music to an existing text. The syllable is the
 fundamental unit of structure, with the neumes themselves serving as a means of "sonifying"
 the text. A syllable may be expressed via one or more neumes, with the particular
@@ -30,8 +28,7 @@ notes are simply called "compound" neumes.
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/neumes/parrish_neumes.png" class="img-responsive"><figcaption class="figure-caption">Figure 21. Table 1. Variant neume notation. (From Parrish, "The notation of medieval music,"
       6)
    </figcaption>
-</figure>
-As shown in Table 1, it is possible to have many different styles of neume shapes,
+</figure>As shown in Table 1, it is possible to have many different styles of neume shapes,
 derived
 from local practices of regional groups. In general, these styles are all interpreted
 in a
@@ -40,7 +37,7 @@ styles of
 neume notation differed with regard to rhythm and cadence. This version of the MEI
 neumes
 module does not attempt to encode any rhythmic information present in the neume notation.
-While it may be possible to encode rhythmic values on [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} elements,
+While it may be possible to encode rhythmic values on {% include link elem="note" %} elements,
 this practice is highly discouraged and, if present, should be interpreted as a modern
 transcription not present in the original sources.
 
@@ -55,9 +52,9 @@ information. In some cases the staff lines are not actually drawn on the page, b
 their
 position relative to an imaginary line and initial clef is consistent.
 
-The [syllable]({{ site.baseurl }}/{{ page.version }}/elements/syllable.html){:.link_odd_elementSpec} element is used as the primary organizational element for
-neume notation within a [layer]({{ site.baseurl }}/{{ page.version }}/elements/layer.html){:.link_odd_elementSpec} element. Within [syllable]({{ site.baseurl }}/{{ page.version }}/elements/syllable.html){:.link_odd_elementSpec}, the [syl]({{ site.baseurl }}/{{ page.version }}/elements/syl.html){:.link_odd_elementSpec} element defined in the MEI.shared module is
-used for encoding the textual content, while the [uneume]({{ site.baseurl }}/{{ page.version }}/elements/uneume.html){:.link_odd_elementSpec} and [ineume]({{ site.baseurl }}/{{ page.version }}/elements/ineume.html){:.link_odd_elementSpec} elements are used to encode the neumes themeselves. Within these
+The {% include link elem="syllable" %} element is used as the primary organizational element for
+neume notation within a {% include link elem="layer" %} element. Within {% include link elem="syllable" %}, the {% include link elem="syl" %} element defined in the MEI.shared module is
+used for encoding the textual content, while the {% include link elem="uneume" %} and {% include link elem="ineume" %} elements are used to encode the neumes themeselves. Within these
 neume module elements, other standard MEI mechanisms are available to accommodate,
 for
 example, editorial or critical markup.

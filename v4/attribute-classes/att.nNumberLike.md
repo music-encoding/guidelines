@@ -33,28 +33,27 @@ title: "att.nNumberLike"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"n"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Provides a number-like designation that indicates an element's position in a sequence
-                     of similar elements. May not contain space characters.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"n"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Provides a number-like designation that indicates an element's position in a sequence
+                        of similar elements. May not contain space characters.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>(\p{L}|\p{N}|\p{P}|\p{S})*<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>(\p{L}|\p{N}|\p{P}|\p{S})*<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>Unlike 
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>label<span data-indentation="4" class="element">&lt;/att&gt;</span></div>, 
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> may not contain space characters.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>Unlike 
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>label<span data-indentation="4" class="element">&lt;/att&gt;</span></div>, 
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> may not contain space characters.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

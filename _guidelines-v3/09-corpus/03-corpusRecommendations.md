@@ -4,8 +4,6 @@ title: "Recommendations for the Encoding of Large Corpora"
 version: "v3"
 ---
 
-
-
 These Guidelines include proposals for the identification and encoding of a far greater
 variety of textual features and characteristics than is likely to be either feasible
 or
@@ -31,30 +29,27 @@ convenient to divide the set of elements to be encoded into the following four c
    <tbody>
       <tr>
          <td>required</td>
-         <td> - texts included within the corpus will always encode textual features in this
-            category, should they exist in the text
+         <td> - texts included within the corpus will always encode textual features in this category,
+            should they exist in the text
          </td>
       </tr>
       <tr>
          <td>recommended</td>
-         <td> - textual features in this category will be encoded wherever economically and
-            practically feasible; where present but not encoded, a note in the header should be
-            made.
+         <td> - textual features in this category will be encoded wherever economically and practically
+            feasible; where present but not encoded, a note in the header should be made.
          </td>
       </tr>
       <tr>
          <td>optional</td>
          <td> - textual features in this category may or may not be encoded; no conclusion about
             the absence of such features can be inferred from the absence of the corresponding
-            element
-            in a given text.
+            element in a given text.
          </td>
       </tr>
       <tr>
          <td>proscribed</td>
-         <td> - textual features in this category are deliberately not encoded; they may be
-            transcribed as unmarked up text, or represented as <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> elements, or
-            silently omitted, as appropriate.
+         <td> - textual features in this category are deliberately not encoded; they may be transcribed
+            as unmarked up text, or represented as <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> elements, or silently omitted, as appropriate.
          </td>
       </tr>
    </tbody>

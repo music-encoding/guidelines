@@ -6,20 +6,18 @@ version: "v3"
 
 
 
-
-
-{% include specDesc.html version=page.version elem="persName" atts="" %}
+{% include desc elem="persName" %}
 
 
 
 
-Personal names within an MEI document may simply be marked with the [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element containing a proper noun or proper noun phrase referring to an
+Personal names within an MEI document may simply be marked with the {% include link elem="persName" %} element containing a proper noun or proper noun phrase referring to an
 individual. Personal names, however, often consist of several components, like forenames
 and
 surnames, but also other components, such as inherited or life-time titles of nobility,
 honorific or academic prefixes, military ranks or traditional descriptive phrases.
 These
-components may be marked using [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} sub-elements, the function of
+components may be marked using {% include link elem="name" %} sub-elements, the function of
 which may be indicated using the **@type** attribute. In this case, **@type**
 attribute may take the following values:
 
@@ -54,8 +52,7 @@ attribute may take the following values:
       <tr>
          <td>'namelink' (name link)</td>
          <td> - contains a connecting phrase or link used within a name but not regarded as part
-            of
-            it, such as <em class="mentioned">van der</em> or <em class="mentioned">of</em>.
+            of it, such as <em class="mentioned">van der</em> or <em class="mentioned">of</em>.
          </td>
       </tr>
       <tr>
@@ -65,27 +62,21 @@ attribute may take the following values:
          </td>
       </tr>
    </tbody>
-</table>
-{% include plainExample.html example="examples/namesDates/namesDates-sample289.xml" valid="false" version=page.version %}
-
-
-The [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element is often enclosed in the [respStmt]({{ site.baseurl }}/{{ page.version }}/elements/respStmt.html){:.link_odd_elementSpec} element which may occur within [titleStmt]({{ site.baseurl }}/{{ page.version }}/elements/titleStmt.html){:.link_odd_elementSpec}, [pubStmt]({{ site.baseurl }}/{{ page.version }}/elements/pubStmt.html){:.link_odd_elementSpec}, [seriesStmt]({{ site.baseurl }}/{{ page.version }}/elements/seriesStmt.html){:.link_odd_elementSpec} and [change]({{ site.baseurl }}/{{ page.version }}/elements/change.html){:.link_odd_elementSpec}. This usage of the [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec} element typical looks like
+</table>{% include plainExample.html example="examples/namesDates/namesDates-sample289.xml" valid="false" version=page.version %}
+The {% include link elem="persName" %} element is often enclosed in the {% include link elem="respStmt" %} element which may occur within {% include link elem="titleStmt" %}, {% include link elem="pubStmt" %}, {% include link elem="seriesStmt" %} and {% include link elem="change" %}. This usage of the {% include link elem="persName" %} element typical looks like
 this:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample290.xml" valid="false" version=page.version %}
-
 Apart from the composer or originator of a musical work, however, there could be many
 other
 persons involved in the genesis of a musical work, such as librettists, lyricists,
 arrangers, editors, transcribers, printers, publishers, etc. The special roles of
 these
-persons may be marked using the **@role** attribute on [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec}.
+persons may be marked using the **@role** attribute on {% include link elem="persName" %}.
 For example:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample291.xml" valid="true" version=page.version %}
-
 {% include plainExample.html example="examples/namesDates/namesDates-sample292.xml" valid="true" version=page.version %}
-
 The [Marc code list for
 relators](http://www.loc.gov/marc/relators/relaterm.html){:.link_ref} offers a variety of controlled terms that may serve as values for this use
 of **@role**.
@@ -103,5 +94,3 @@ For
 example:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample293.xml" valid="true" version=page.version %}
-
-

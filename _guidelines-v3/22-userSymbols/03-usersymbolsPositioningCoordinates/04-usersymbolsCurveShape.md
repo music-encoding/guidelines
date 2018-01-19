@@ -4,8 +4,6 @@ title: "Curve Shape"
 version: "v3"
 ---
 
-
-
 If neither a **@bezier** nor **@bulge** attribute is present, the renderer
 determines a suitable shape. However, if **@curvedir** is present, the curve must
 respect the curvature direction specified there.
@@ -20,11 +18,10 @@ curve with two inner control points. The coordinates are given by a space separa
 list,
 first x and y offsets for the first control point, then x and y offsets for the second
 one.
-The x and y offsets are given in staff units (or inside the context of [symbolDef]({{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html){:.link_odd_elementSpec} in abstract units). The offsets for the first inner control point are
+The x and y offsets are given in staff units (or inside the context of {% include link elem="symbolDef" %} in abstract units). The offsets for the first inner control point are
 relative to the start point, the ones for the second inner control point are relative
 to the
 end point.
-
 
 The **@bulge** attribute allows specification of the curve shape by a number of
 interpolation points. The interpolation points are given by their distance from the
@@ -41,7 +38,6 @@ from start
 to end), negative ones to the right.
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/bulge.png" class="img-responsive"><figcaption class="figure-caption">Figure 58. Rendering a bulge attribute with value "-2 1"</figcaption>
-</figure>
-The interpolation algorithm used by the rendering application is implementation
+</figure>The interpolation algorithm used by the rendering application is implementation
 dependent.
 

@@ -4,28 +4,20 @@ title: "Line Rendition"
 version: "v3"
 ---
 
-
-
 The **@form** attribute of lines may take the following values:
-
 
 - dashed
 - dotted
 - solid
-- wavy
-
-These attribute values are only qualitative. Actual dash length and dot and dash spacing
+- wavyThese attribute values are only qualitative. Actual dash length and dot and dash spacing
 are
 implementation dependent.
 
 The **@width** attribute may take the following values:
 
-
 - narrow
 - medium
-- wide
-
-These values are also qualitative, however, they are also relative. That is, 'narrow'
+- wideThese values are also qualitative, however, they are also relative. That is, 'narrow'
 is the
 default value, 'medium' is twice as wide as 'narrow', and 'wide' is twice as wide
 as

@@ -4,14 +4,13 @@ title: "Annotations"
 version: "v3"
 ---
 
-
-
 Annotations are one of the most versatile features of MEI. They are provided using
-the [annot]({{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} element.
+the {% include link elem="annot" %} element.
 
 
 
-{% include specDesc.html version=page.version elem="annot" atts="" %}
+{% include desc elem="annot" %}
+
 
 
 
@@ -23,7 +22,7 @@ of textual features that might occur within an annotation, it may lead to markup
 cannot
 be effectively processed mechanistically.
 
-In all cases, [annot]({{ site.baseurl }}/{{ page.version }}/elements/annot.html){:.link_odd_elementSpec} provides a comment upon a feature of the
+In all cases, {% include link elem="annot" %} provides a comment upon a feature of the
 encoding, but never contains textual transcription. Depending on its context, an annotation
 will deal with either its parent element, or, more usually, with the element(s) specified
 in
@@ -32,5 +31,3 @@ other elements using their **@xml:id** attribute values, as in the following
 example:
 
 {% include plainExample.html example="examples/shared/shared-sample011.xml" valid="true" version=page.version %}
-
-

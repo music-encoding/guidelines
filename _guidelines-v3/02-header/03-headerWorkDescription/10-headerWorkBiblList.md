@@ -6,12 +6,11 @@ version: "v3"
 
 
 
+{% include desc elem="biblList" %}
 
 
-{% include specDesc.html version=page.version elem="biblList" atts="" %}
 
 
-
-The [biblList]({{ site.baseurl }}/{{ page.version }}/elements/biblList.html){:.link_odd_elementSpec} element allows citation of bibliographic evidence
+The {% include link elem="biblList" %} element allows citation of bibliographic evidence
 supporting assertions made within other sub-components of the work description.
 

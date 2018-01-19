@@ -6,13 +6,12 @@ version: "v3"
 
 
 
+{% include desc elem="projectDesc" %}
 
 
-{% include specDesc.html version=page.version elem="projectDesc" atts="" %}
 
 
-
-The [projectDesc]({{ site.baseurl }}/{{ page.version }}/elements/projectDesc.html){:.link_odd_elementSpec} element may be used to describe, in prose, the
+The {% include link elem="projectDesc" %} element may be used to describe, in prose, the
 purpose for which a digital resource was created, together with any other relevant
 information concerning the process by which it was assembled or collected. This is
 of
@@ -25,4 +24,3 @@ another.
 For example:
 
 {% include plainExample.html example="examples/header/header-sample050.xml" valid="true" version=page.version %}
-

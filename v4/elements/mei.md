@@ -33,14 +33,14 @@ title: "mei"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@meiversion</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies a generic MEI version label.</span>
                            Allowed values are:
-                           "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meiVersion.html">att.meiVersion</a></span></div>
+                           "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meiversion.html">att.meiVersion</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@xml:id</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span>
-                           Value of datatype <span style="font-weight: 500;">ID</span>.
+                           Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a></span></div>
                      </td>
                   </tr>
@@ -112,10 +112,10 @@ title: "mei"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>The values in @staff must correspond to @n attribute of a staffDef element.</div>
+               <div class="schematronText">The values in @staff must correspond to @n attribute of a staffDef element.</div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[@staff]"</span>&gt;</span>

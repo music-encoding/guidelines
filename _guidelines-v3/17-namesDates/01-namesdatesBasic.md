@@ -4,25 +4,23 @@ title: "Basic Elements for Names and Dates"
 version: "v3"
 ---
 
-
-
 The basic elements for capturing names and dates are defined in the shared module:
 
 
 
-{% include specDesc.html version=page.version elem="name" atts="" %}
-{% include specDesc.html version=page.version elem="date" atts="" %}
+{% include desc elem="name" %}
+{% include desc elem="date" %}
 
 
 
-The [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element contains the name of an entity that is difficult to
-tag more specifically as a [corpName]({{ site.baseurl }}/{{ page.version }}/elements/corpName.html){:.link_odd_elementSpec}, [geogName]({{ site.baseurl }}/{{ page.version }}/elements/geogName.html){:.link_odd_elementSpec}, [persName]({{ site.baseurl }}/{{ page.version }}/elements/persName.html){:.link_odd_elementSpec}, or [title]({{ site.baseurl }}/{{ page.version }}/elements/title.html){:.link_odd_elementSpec}. In section <a class="link_ptr" title="Names, Dates, Numbers, Abbreviations, and Addresses" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedNamesNumbersDates">1.3.4 Names, Dates, Numbers, Abbreviations, and Addresses</a> it was noted that the [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element
+
+The {% include link elem="name" %} element contains the name of an entity that is difficult to
+tag more specifically as a {% include link elem="corpName" %}, {% include link elem="geogName" %}, {% include link elem="persName" %}, or {% include link elem="title" %}. In section {% include link id="sharedNamesNumbersDates" %} it was noted that the {% include link elem="name" %} element
 may be used in place of the more specific elements when it is not known what kind
 of name is
 being described or when a high degree of precision is not necessary. For example,
-the [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element might be used when it is not clear whether the name "Bach"
-refers to a person or a geographic feature. When name parts are needed, use [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} sub-elements. The recommended values for the **@type** attribute are:
-
+the {% include link elem="name" %} element might be used when it is not clear whether the name "Bach"
+refers to a person or a geographic feature. When name parts are needed, use {% include link elem="name" %} sub-elements. The recommended values for the **@type** attribute are:
 
 <table class="table table-striped">
    <thead>
@@ -49,8 +47,7 @@ refers to a person or a geographic feature. When name parts are needed, use [nam
          <td> - the name of a process or mechanical agent</td>
       </tr>
    </tbody>
-</table>
-The date sub-element is available within [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} in order to record any
+</table>The date sub-element is available within {% include link elem="name" %} in order to record any
 dates associated with the name, for example, creation and dissolution in the case
 of a
 corporate entity or place or birth and death dates in the case of an individual. The
@@ -58,18 +55,16 @@ name of
 the list from which a controlled value is taken, such as the Library of Congress Name
 Authority File (LCNAF), may be recorded using the authority attribute.
 
-Examples of the use of the [name]({{ site.baseurl }}/{{ page.version }}/elements/name.html){:.link_odd_elementSpec} element:
+Examples of the use of the {% include link elem="name" %} element:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample276.xml" valid="false" version=page.version %}
-
-The element [date]({{ site.baseurl }}/{{ page.version }}/elements/date.html){:.link_odd_elementSpec} contains a date in any format, including a date range.
+The element {% include link elem="date" %} contains a date in any format, including a date range.
 A date range may be expressed as textual content or, when intervening punctuation
 is present,
 as a combination of date sub-elements and text.
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample277.xml" valid="false" version=page.version %}
-
-To be more specific about the date, the attributes in the [att.datable]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html){:.link_odd} class can be used:
+To be more specific about the date, the attributes in the {% include link att-class="att.datable" %} class can be used:
 
 
 <table class="table table-striped">
@@ -113,9 +108,7 @@ To be more specific about the date, the attributes in the [att.datable]({{ site.
          </td>
       </tr>
    </tbody>
-</table>
-In the following example, the ambiguous date text "5/3/05" is resolved using the
+</table>In the following example, the ambiguous date text "5/3/05" is resolved using the
 **@isodate** attribute:
 
 {% include plainExample.html example="examples/namesDates/namesDates-sample278.xml" valid="false" version=page.version %}
-

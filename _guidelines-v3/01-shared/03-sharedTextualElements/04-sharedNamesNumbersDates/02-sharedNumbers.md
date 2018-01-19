@@ -4,15 +4,14 @@ title: "Numbers"
 version: "v3"
 ---
 
-
-
-The [num]({{ site.baseurl }}/{{ page.version }}/elements/num.html){:.link_odd_elementSpec} element may be used to identify any numeric information in
+The {% include link elem="num" %} element may be used to identify any numeric information in
 a text. The **@unit** may be used to specify the unit of measurement.
 
 
 
-{% include specDesc.html version=page.version elem="num" atts="" %}
-{% include specDesc.html version=page.version elem="num" atts="att.measurement/unit" %}
+{% include desc elem="num" %}
+{% include desc atts="att.measurement/unit" %}
+
 
 
 

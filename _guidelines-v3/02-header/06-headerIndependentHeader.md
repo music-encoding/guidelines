@@ -4,8 +4,6 @@ title: "Independent Headers"
 version: "v3"
 ---
 
-
-
 Many libraries, repositories, research sites and related institutions collect bibliographic
 and documentary information about machine readable music documents without necessarily
 collecting the music documents themselves. Such institutions may thus want access
@@ -20,6 +18,4 @@ from those
 documents and exchanged as freestanding MEI documents. Headers exchanged independently
 of the
 documents they describe are called independent headers.
-
-
 

@@ -19,7 +19,7 @@
             <xd:p>This XSL generates the website version of the MEI Guidelines, directly from a canonicalized ODD file.</xd:p>
         </xd:desc>
     </xd:doc>
-    <xsl:output indent="true" method="html" suppress-indentation="egx:egXML tei:classes tei:content"/>
+    <xsl:output indent="true" method="html" suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:variable name="plain.version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
     <xd:doc scope="component">
@@ -160,7 +160,7 @@
             </xsl:variable>
             <xsl:variable name="path" select="$outPutFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>
             <xsl:variable name="example"><xsl:apply-templates select="." mode="preserveSpace"/></xsl:variable>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:apply-templates select="$example" mode="cleanup.example"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:apply-templates select="$example" mode="cleanup.example"/></xsl:result-document>
         </xsl:for-each>
         
         <!-- /extract samples -->
@@ -176,30 +176,30 @@
         <xsl:for-each select=".//tei:elementSpec">
             <xsl:variable name="element" select="."/>
             <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$outPutFolder || 'desc/' || $element/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:classSpec">
             <xsl:variable name="class" select="."/>
             <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$outPutFolder || 'desc/' || $class/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:macroSpec">
             <xsl:variable name="macro" select="."/>
             <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$outPutFolder || 'desc/' || $macro/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{$path}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
@@ -212,7 +212,7 @@
                 <xsl:variable name="name" select="@xml:id"/>
                 <xsl:variable name="heading" select="./tei:head[1]/text()"/>
                 <xsl:variable name="headingNo" select="concat(position(),'.')"/>
-                <a class="module" href="{$version}/guidelines/{$name}.html">
+                <a class="module" href="{$version}/guidelines/{lower-case($name)}.html">
                     <span class="no"><xsl:value-of select="$headingNo"/></span>
                     <span class="title"><xsl:value-of select="$heading"/></span></a>
             </xsl:for-each>
@@ -225,7 +225,7 @@
                 <xsl:sort select="@ident" data-type="text"/>
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd_elementSpec chip {substring($name,1,1)}" href="{$version}/elements/{$name}.html"><xsl:value-of select="$heading"/></a>
+                <a class="link_odd_elementSpec chip {substring($name,1,1)}" href="{$version}/elements/{lower-case($name)}.html"><xsl:value-of select="$heading"/></a>
             </xsl:for-each>
         </xsl:variable>
         
@@ -236,7 +236,7 @@
                 <xsl:sort select="@ident" data-type="text"/>
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd_classSpec chip {substring($name,7,1)}" href="{$version}/model-classes/{$name}.html"><xsl:value-of select="$heading"/></a><br/>
+                <a class="link_odd_classSpec chip {substring($name,7,1)}" href="{$version}/model-classes/{lower-case($name)}.html"><xsl:value-of select="$heading"/></a><br/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -247,7 +247,7 @@
                 <xsl:sort select="@ident" data-type="text"/>
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd chip {substring($name,5,1)}" href="{$version}/attribute-classes/{$name}.html"><xsl:value-of select="$heading"/></a><br/>
+                <a class="link_odd chip {substring($name,5,1)}" href="{$version}/attribute-classes/{lower-case($name)}.html"><xsl:value-of select="$heading"/></a><br/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -257,7 +257,7 @@
             <xsl:for-each select="$data.types">
                 <xsl:variable name="name" select="@ident"/>
                 <xsl:variable name="heading" select="$name"/>
-                <a class="link_odd chip {if(starts-with($name,'macro')) then(substring($name,7,1)) else(substring($name,6,1))}" href="{$version}/data-types/{$name}.html"><xsl:value-of select="$heading"/></a><br/>
+                <a class="link_odd chip {if(starts-with($name,'macro')) then(substring($name,7,1)) else(substring($name,6,1))}" href="{$version}/data-types/{lower-case($name)}.html"><xsl:value-of select="$heading"/></a><br/>
             </xsl:for-each>
         </xsl:variable>
         
@@ -265,91 +265,91 @@
          
         <!-- chapter overview -->
         <xsl:result-document href="{$outPutFolder}guidelines.md" omit-xml-declaration="true">---
-            layout: sidebar
-            sidebar: s1
-            title: "Guidelines"
-            version: "<xsl:value-of select="$plain.version"/>"
-            <xsl:call-template name="generateCategoryOverview">
-                <xsl:with-param name="items" select="$chapterLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
-            </xsl:call-template>
-            <xsl:call-template name="processItems">
-                <xsl:with-param name="items" select="$chapters" as="node()*"/>
-                <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
-            </xsl:call-template>
+layout: sidebar
+sidebar: s1
+title: "Guidelines"
+version: "<xsl:value-of select="$plain.version"/>"
+<xsl:call-template name="generateCategoryOverview">
+    <xsl:with-param name="items" select="$chapterLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
+</xsl:call-template>
+<xsl:call-template name="processItems">
+    <xsl:with-param name="items" select="$chapters" as="node()*"/>
+    <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
+</xsl:call-template>
         </xsl:result-document>
         
             <!-- elements overview -->
         <xsl:result-document href="{$outPutFolder}elements.md" omit-xml-declaration="true">---
-            layout: sidebar
-            sidebar: s1
-            title: "Elements"
-            version: "<xsl:value-of select="$plain.version"/>"
-            ---
-            <xsl:call-template name="generateCategoryOverview">
-                <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
-            </xsl:call-template>
-            <xsl:call-template name="processItems">
-                <xsl:with-param name="items" select="$elements" as="node()*"/>
-                <xsl:with-param name="itemLinks" select="$elementLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
-            </xsl:call-template>
+layout: sidebar
+sidebar: s1
+title: "Elements"
+version: "<xsl:value-of select="$plain.version"/>"
+---
+<xsl:call-template name="generateCategoryOverview">
+    <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
+</xsl:call-template>
+<xsl:call-template name="processItems">
+    <xsl:with-param name="items" select="$elements" as="node()*"/>
+    <xsl:with-param name="itemLinks" select="$elementLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
+</xsl:call-template>
         </xsl:result-document>
             
             <!-- model overview -->
         <xsl:result-document href="{$outPutFolder}model-classes.md" omit-xml-declaration="true">---
-            layout: sidebar
-            sidebar: s1
-            title: "Model Classes"
-            version: "<xsl:value-of select="$plain.version"/>"
-            ---
-            <xsl:call-template name="generateCategoryOverview">
-                <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'models'" as="xs:string"/>
-            </xsl:call-template>
-            <xsl:call-template name="processItems">
-                <xsl:with-param name="items" select="$model.classes" as="node()*"/>
-                <xsl:with-param name="itemLinks" select="$modelLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'models'" as="xs:string"/>
-            </xsl:call-template>
+layout: sidebar
+sidebar: s1
+title: "Model Classes"
+version: "<xsl:value-of select="$plain.version"/>"
+---
+<xsl:call-template name="generateCategoryOverview">
+    <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'models'" as="xs:string"/>
+</xsl:call-template>
+<xsl:call-template name="processItems">
+    <xsl:with-param name="items" select="$model.classes" as="node()*"/>
+    <xsl:with-param name="itemLinks" select="$modelLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'models'" as="xs:string"/>
+</xsl:call-template>
         </xsl:result-document>
             
             <!-- attribute overview -->
         <xsl:result-document href="{$outPutFolder}attribute-classes.md" omit-xml-declaration="true">---
-            layout: sidebar
-            sidebar: s1
-            title: "Attribute Classes"
-            version: "<xsl:value-of select="$plain.version"/>"
-            ---
-            <xsl:call-template name="generateCategoryOverview">
-                <xsl:with-param name="items" select="$attLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
-            </xsl:call-template>
-            <xsl:call-template name="processItems">
-                <xsl:with-param name="items" select="$att.classes" as="node()*"/>
-                <xsl:with-param name="itemLinks" select="$attLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
-            </xsl:call-template>
+layout: sidebar
+sidebar: s1
+title: "Attribute Classes"
+version: "<xsl:value-of select="$plain.version"/>"
+---
+<xsl:call-template name="generateCategoryOverview">
+    <xsl:with-param name="items" select="$attLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
+</xsl:call-template>
+<xsl:call-template name="processItems">
+    <xsl:with-param name="items" select="$att.classes" as="node()*"/>
+    <xsl:with-param name="itemLinks" select="$attLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
+</xsl:call-template>
         </xsl:result-document>
             
         <!-- data type overview -->
         <xsl:result-document href="{$outPutFolder}data-types.md" omit-xml-declaration="true">---
-            layout: sidebar
-            sidebar: s1
-            title: "Data Types"
-            version: "<xsl:value-of select="$plain.version"/>"
-            ---
-            <xsl:call-template name="generateCategoryOverview">
-                <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
-            </xsl:call-template>
-            <xsl:call-template name="processItems">
-                <xsl:with-param name="items" select="$data.types" as="node()*"/>
-                <xsl:with-param name="itemLinks" select="$dataLinks" as="node()*"/>
-                <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
-            </xsl:call-template>   
+layout: sidebar
+sidebar: s1
+title: "Data Types"
+version: "<xsl:value-of select="$plain.version"/>"
+---
+<xsl:call-template name="generateCategoryOverview">
+    <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
+</xsl:call-template>
+<xsl:call-template name="processItems">
+    <xsl:with-param name="items" select="$data.types" as="node()*"/>
+    <xsl:with-param name="itemLinks" select="$dataLinks" as="node()*"/>
+    <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
+</xsl:call-template>   
         </xsl:result-document>
         
     </xsl:template>
@@ -494,15 +494,15 @@
                 </xsl:if>
             </xsl:variable>
             
-            <xsl:result-document href="{$outPutFolder || $folderName || '/' || $chapterPrefix || $name}.md" omit-xml-declaration="true">---
-                layout: sidebar
-                sidebar: s1
-                version: "<xsl:value-of select="$plain.version"/>"
-                title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/>"
-                <xsl:if test="$mode = 'chapters'">sectionid: "<xsl:value-of select="$name"/>"</xsl:if>
-                ---
-                
-                <xsl:sequence select="$result"/>
+            <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" omit-xml-declaration="true">---
+layout: sidebar
+sidebar: s1
+version: "<xsl:value-of select="$plain.version"/>"
+title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/>"
+<xsl:if test="$mode = 'chapters'">sectionid: "<xsl:value-of select="$name"/>"</xsl:if>
+---
+
+<xsl:sequence select="$result"/>
                 
             </xsl:result-document>        
                 
@@ -609,13 +609,14 @@
             </xsl:choose>
         </xsl:variable>
         
-        <xsl:result-document href="{$path}" omit-xml-declaration="yes">---
-            sectionid: <xsl:value-of select="$chapter/@xml:id"/>
-            title: "<xsl:value-of select="$chapterNumElem/@head"/>"
-            version: "<xsl:value-of select="$plain.version"/>"
-            ---
-            
-            <xsl:apply-templates select="node()" mode="markdown"/>
+        <xsl:result-document href="{lower-case($path)}" method="html" omit-xml-declaration="yes">---
+sectionid: <xsl:value-of select="$chapter/@xml:id"/>
+title: "<xsl:value-of select="$chapterNumElem/@head"/>"
+version: "<xsl:value-of select="$plain.version"/>"
+---
+
+<xsl:apply-templates select="node()" mode="markdown"/>
+
         </xsl:result-document>
             
     </xsl:template>
@@ -625,6 +626,9 @@
     </xsl:template>
     
     <xsl:template match="tei:div[not(@type = 'div1')]" mode="markdown"/>
+    
+    <xsl:template match="tei:div/text()" mode="markdown"/>
+    <xsl:template match="comment()" priority="1" mode="markdown"/>
     
     <xsl:template match="tei:head">
         
@@ -744,11 +748,7 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="tei:p" mode="markdown">
-        <xsl:apply-templates select="node()" mode="#current"/>
-        <xsl:text>
-        </xsl:text>
-    </xsl:template>
+    <xsl:template match="tei:p" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/><xsl:value-of select="'&#xa; &#xa;'"/></xsl:template>
     
     <xsl:template match="tei:list">
         <xsl:choose>
@@ -803,19 +803,11 @@
         <xsl:choose>
             <xsl:when test="@type = ('bulleted','simple')">
                 <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>
-                <xsl:for-each select="tei:item">
-- <xsl:apply-templates select="node()" mode="#current"/>
-                </xsl:for-each>
-                <xsl:text>
-                </xsl:text>
+                <xsl:for-each select="tei:item"><xsl:variable name="content" as="xs:string*"><xsl:apply-templates select="node()" mode="#current"/></xsl:variable><xsl:choose><xsl:when test="position() gt 1">&#xa;- </xsl:when><xsl:otherwise>- </xsl:otherwise></xsl:choose><xsl:value-of select="normalize-space(string-join($content,' '))"/></xsl:for-each>                
             </xsl:when>
             <xsl:when test="@type = 'ordered'">
                 <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>
-                <xsl:for-each select="tei:item">
-<xsl:value-of select="position()"/>. <xsl:apply-templates select="node()" mode="#current"/>
-                </xsl:for-each>
-                <xsl:text>
-                </xsl:text>
+                <xsl:for-each select="tei:item"><xsl:variable name="content" as="xs:string*"><xsl:apply-templates select="node()" mode="#current"/></xsl:variable><xsl:choose><xsl:when test="position() gt 1">&#xa;. </xsl:when><xsl:otherwise>. </xsl:otherwise></xsl:choose><xsl:value-of select="normalize-space(string-join($content,' '))"/></xsl:for-each>
             </xsl:when>
             <xsl:when test="@type = 'gloss'">
                 <table class="table table-striped">
@@ -838,15 +830,10 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>
-                <xsl:for-each select="tei:item">
-- <xsl:apply-templates select="node()" mode="#current"/>
-                </xsl:for-each>
-                <xsl:text>
-                </xsl:text>
+                <xsl:for-each select="tei:item"><xsl:variable name="content" as="xs:string"><xsl:apply-templates select="node()" mode="#current"/></xsl:variable><xsl:choose><xsl:when test="position() gt 1">&#xa;- </xsl:when><xsl:otherwise>- </xsl:otherwise></xsl:choose><xsl:value-of select="normalize-space(string-join($content,' '))"/></xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
     
     <xsl:template match="tei:gi">
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
@@ -869,7 +856,7 @@
             </xsl:call-template>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="$text = $elements/@ident">[<xsl:value-of select="$text"/>](<xsl:value-of select="$link"/>){:.link_odd_elementSpec}</xsl:when>
+            <xsl:when test="$text = $elements/@ident">{% include link elem="<xsl:value-of select="$text"/>" %}</xsl:when>
             <xsl:otherwise>
                 <xsl:message select="'WARNING: Unable to retrieve definition of element ' || $text || '. No link created. Please check spelling…'"/>
                 <xsl:next-match/>
@@ -923,7 +910,7 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="$text = //tei:classSpec/@ident">[<xsl:value-of select="$text"/>](<xsl:value-of select="$link"/>){:.link_odd}</xsl:when>
+            <xsl:when test="$text = //tei:classSpec/@ident">{% include link att-class="<xsl:value-of select="$text"/>" %}</xsl:when>
             <xsl:otherwise>
                 <xsl:message terminate="no" select="'ERROR: Unable to identify class ' || $text || ' from tei:ident element. No link created.'"/>
                 <span class="ident">
@@ -1028,14 +1015,14 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:specList" mode="markdown">
-        <xsl:apply-templates select="node()" mode="#current"/>
-    
+    <xsl:template match="tei:specList" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/>
+<xsl:text>
+</xsl:text>    
     </xsl:template>
     
     <xsl:template match="tei:specDesc" mode="markdown">
         <xsl:choose>
-            <xsl:when test="not(@atts)">{% include specDesc.html version=page.version elem="<xsl:value-of select="@key"/>" atts="" %}</xsl:when>
+            <xsl:when test="not(@atts)">{% include desc elem="<xsl:value-of select="@key"/>" %}</xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="key" select="@key" as="xs:string"/>
                 <xsl:variable name="spec" select="//tei:*[@ident = $key and not(local-name() = ('schemaSpec','valItem','attDef'))]" as="node()?"/>
@@ -1069,7 +1056,7 @@
                         </xsl:choose>
                     </xsl:for-each>    
                 </xsl:variable>
-                <xsl:if test="count($refs) gt 0">{% include specDesc.html version=page.version elem="<xsl:value-of select="$key"/>" atts="<xsl:value-of select="string-join($refs,' ')"/>" %}</xsl:if>
+                <xsl:if test="count($refs) gt 0">{% include desc atts="<xsl:value-of select="string-join($refs,' ')"/>" %}</xsl:if>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -1102,13 +1089,7 @@
                 <xsl:message terminate="no" select="'ERROR: Could not retrieve chapter with @xml:id ' || $chapter.id || ' (referenced from a //tei:ptr/@target). Please check!'"/>
                 <span class="wrong_ptr"> <xsl:value-of select="@target"/> </span>
             </xsl:when>
-            <xsl:otherwise>
-                
-                <xsl:variable name="base.id" select="if($tocInfo/@level = '1') then($tocInfo/@xml:id || '.html') else($tocInfo/preceding-sibling::*[@level = '1'][1]/@xml:id || '.html')" as="xs:string"/>
-                
-                <a class="link_ptr" title="{$tocInfo/@head}" href="{$version}/guidelines/{$base.id || (if(not($tocInfo/@level = '1')) then('#' || $chapter.id) else())}"><xsl:value-of select="$tocInfo/@number || ' ' || $tocInfo/@head"/></a>        
-                
-            </xsl:otherwise>
+            <xsl:otherwise>{% include link id="<xsl:value-of select="$chapter.id"/>" %}</xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
@@ -1146,7 +1127,7 @@
                     <xsl:when test="exists($chapter)">
                         <xsl:variable name="head" select="string($chapter/tei:head[1]/text())" as="xs:string"/>
                         <xsl:variable name="base.id" select="$chapter/ancestor-or-self::tei:div[@type = 'div1']/@xml:id" as="xs:string"/>
-                        <xsl:variable name="url" select="$version || '/guidelines/' || $base.id || '.html' || (if($base.id = $chapter.id) then() else('#' || $chapter.id))"/>[<xsl:apply-templates select="node()" mode="#current"/>](<xsl:value-of select="$url"/> "<xsl:value-of select="$head"/>"){:.link_ref}</xsl:when>
+                        <xsl:variable name="url" select="$version || '/guidelines/' || $base.id || '.html' || (if($base.id = $chapter.id) then() else('#' || $chapter.id))"/>{% include link id="<xsl:value-of select="$chapter.id"/>" %}</xsl:when>
                     <xsl:otherwise>
                         <span class="ref" data-target="{$chapter.id}"><xsl:apply-templates select="node()" mode="#current"/></span>
                     </xsl:otherwise>
@@ -1486,11 +1467,11 @@
                 </xsl:if>
                 <xsl:for-each select="$elementSpec//tei:constraintSpec">
                     <tr>
-                        <td class="wovenodd-col1"><strong>Constraints</strong></td>
+                        <td class="wovenodd-col1"><strong>Constraint</strong></td>
                         <td class="wovenodd-col2">
                             <div>
                                 <xsl:for-each select=".//sch:assert">
-                                    <div><xsl:value-of select="normalize-space(string-join(.//text(),' '))"/></div>
+                                    <div class="schematronText"><xsl:value-of select="normalize-space(string-join(.//text(),' '))"/></div>
                                 </xsl:for-each>
                             </div>
                             <div class="code" xml:space="preserve" data-lang="Schematron"><code><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></code></div>
@@ -1525,10 +1506,11 @@
     <xsl:function name="local:resolveAttDef" as="node()">
         <xsl:param name="current.att" as="node()"/>
         <xsl:param name="current.class.id" as="xs:string?"/>
+        <xsl:variable name="usage" select="if($current.att/@usage = 'opt') then('optional') else if($current.att/@usage = 'req') then('required') else($current.att/@usage)" as="xs:string?"/>
         
         <div class="attributeDef">
             <span class="attribute"><strong>@<xsl:value-of select="$current.att/@ident"/></strong></span>
-            <span class="attributeUsage">(<xsl:value-of select="if($current.att/@usage = 'opt') then('optional') else if($current.att/@usage = 'req') then('required') else($current.att/@usage)"/>)</span>
+            <xsl:if test="$usage"><span class="attributeUsage">(<xsl:value-of select="$usage"/>)</span></xsl:if>
             <span class="attributeDesc"><xsl:apply-templates select="$current.att/tei:desc/node()"/></span>
             <xsl:choose>
                 <xsl:when test="$current.att/tei:valList">
@@ -1544,13 +1526,16 @@
                     <xsl:variable name="dt" select="$current.att/tei:datatype" as="node()"/>
                     <xsl:choose>
                         <xsl:when test="$dt/@maxOccurs = '1'">
-                            Value conforms to <a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>.
+                            Value conforms to <a class="link_odd_classSpec" href="{$version}/data-types/{lower-case($dt/rng:ref/@name)}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>.
                         </xsl:when>
                         <xsl:when test="$dt/@maxOccurs = '2'">
-                            One or two values from <a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by a space.
+                            One or two values from <a class="link_odd_classSpec" href="{$version}/data-types/{lower-case($dt/rng:ref/@name)}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by a space.
                         </xsl:when>
                         <xsl:when test="$dt/@maxOccurs = 'unbounded'">
-                            One or more values from<a class="link_odd_classSpec" href="{$version}/data-types/{$dt/rng:ref/@name}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by spaces.
+                            One or more values from <a class="link_odd_classSpec" href="{$version}/data-types/{lower-case($dt/rng:ref/@name)}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>, separated by spaces.
+                        </xsl:when>
+                        <xsl:when test="not($dt/@maxOccurs) and not($dt/@minOccurs)">
+                            Value conforms to <a class="link_odd_classSpec" href="{$version}/data-types/{lower-case($dt/rng:ref/@name)}.html"><xsl:value-of select="$dt/rng:ref/@name"/></a>.
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
@@ -1573,6 +1558,39 @@
                         <xsl:when test="count($dt/child::rng:ref) = 1 and $dt/child::rng:ref/@type = 'string'">
                             Value is plain text.
                         </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'string'">
+                            Value is plain text.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'ID'">
+                            Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'decimal'">
+                            Value is a decimal number.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'integer'">
+                            Value is an integer.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'positiveInteger'">
+                            Value is a positive integer.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'nonNegativeInteger'">
+                            Value is a positive integer, including 0.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'language'">
+                            Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'token'">
+                            Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'NMTOKEN'">
+                            Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'duration'">
+                            Value is an <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#duration">ISO duration</a>.
+                        </xsl:when>
+                        <xsl:when test="count($dt/child::rng:data) = 1 and $dt/child::rng:data/@type = 'token' and $dt/child::rng:data/child::rng:param[@name='pattern']">
+                            Value conforms to the pattern "<span style="font-weight: 500;"><xsl:value-of select="$dt//rng:param[@name='pattern']/text()"/></span>".
+                        </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
                             <xsl:message terminate="yes" select="$dt"/>
@@ -1592,7 +1610,7 @@
                             One or more of <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data[1])"/></span>.
                         </xsl:when>
                         <xsl:when test="$dt/rng:list/rng:oneOrMore/rng:data[following-sibling::rng:ref]">
-                            One or more values, each consisting of a sequence of a <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data)"/></span> part, followed by a <a class="link_odd_classSpec" href="{$version}/data-types/{$dt//rng:ref/@name}.html"><xsl:value-of select="$dt//rng:ref/@name"/></a>.
+                            One or more values, each consisting of a sequence of a <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data)"/></span> part, followed by a <a class="link_odd_classSpec" href="{$version}/data-types/{lower-case($dt//rng:ref/@name)}.html"><xsl:value-of select="$dt//rng:ref/@name"/></a>.
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
@@ -1621,6 +1639,9 @@
                         <xsl:when test="count($dt/child::*) = 1 and $dt/rng:text and $dt/@maxOccurs = '1'">
                             Value is plain text.
                         </xsl:when>
+                        <xsl:when test="count($dt/child::*) = 1 and $dt/rng:text and not($dt/@maxOccurs)">
+                            Value is plain text.
+                        </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
                             <xsl:message terminate="no" select="$dt"/>
@@ -1632,7 +1653,7 @@
                 </xsl:otherwise>
             </xsl:choose>
             <span class="attributeClasses">
-                <a class="link_odd" href="{$version}/attribute-classes/{replace($current.class.id,':','---')}.html"><xsl:value-of select="$current.class.id"/></a>
+                <a class="link_odd" href="{$version}/attribute-classes/{lower-case(replace($current.class.id,':','---'))}.html"><xsl:value-of select="$current.class.id"/></a>
             </span>
         </div>
         
@@ -1773,7 +1794,13 @@
                     <tr>
                         <td class="wovenodd-col1"><strong>Declaration</strong></td>
                         <td class="wovenodd-col2">
-                            <div xml:space="preserve" class="pre"><xsl:apply-templates select="$classSpec/tei:classes" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>
+                            
+                            <xsl:variable name="codeBlock">
+                                <xsl:apply-templates select="$classSpec/tei:classes" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates>
+                            </xsl:variable>
+                            <div class="code" xml:space="preserve" data-lang="ODD"><code><xsl:apply-templates select="$codeBlock" mode="removeSpaceInCode"/></code></div>
+                            
+                            <!--<div xml:space="preserve" class="pre"><xsl:apply-templates select="$classSpec/tei:classes" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>-->
                         </td>
                     </tr>
                 </xsl:if>
@@ -1787,14 +1814,14 @@
                 </xsl:if>
                 <xsl:for-each select="$classSpec//tei:constraintSpec">
                     <tr>
-                        <td class="wovenodd-col1"><strong>Constraints</strong></td>
+                        <td class="wovenodd-col1"><strong>Constraint</strong></td>
                         <td class="wovenodd-col2">
                             <div>
                                 <xsl:for-each select=".//sch:assert">
-                                    <div><xsl:value-of select="normalize-space(.//text())"/></div>
+                                    <div class="schematronText"><xsl:value-of select="normalize-space(.//text())"/></div>
                                 </xsl:for-each>
                             </div>
-                            <div xml:space="preserve" class="pre"><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></div>
+                            <div class="code" xml:space="preserve" data-lang="Schematron"><code><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></code></div>
                         </td>
                     </tr>
                 </xsl:for-each>
@@ -1880,10 +1907,20 @@
                         <td class="wovenodd-col1"><strong>Declaration</strong></td>
                         <td class="wovenodd-col2">
                             <xsl:if test="$classSpec/tei:classes">
-                                <div xml:space="preserve" class="pre"><xsl:apply-templates select="$classSpec/tei:classes" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>    
+                                <xsl:variable name="codeBlock">
+                                    <xsl:apply-templates select="$classSpec/tei:classes" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates>
+                                </xsl:variable>
+                                <div class="code" xml:space="preserve" data-lang="ODD"><code><xsl:apply-templates select="$codeBlock" mode="removeSpaceInCode"/></code></div>
+                                
+                                <!--<div xml:space="preserve" class="pre"><xsl:apply-templates select="$classSpec/tei:classes" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>-->    
                             </xsl:if>
                             <xsl:for-each select="$classSpec//tei:attDef">
-                                <div xml:space="preserve" class="pre"><xsl:apply-templates select="." mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>
+                                <xsl:variable name="codeBlock">
+                                    <xsl:apply-templates select="." mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates>
+                                </xsl:variable>
+                                <div class="code" xml:space="preserve" data-lang="ODD"><code><xsl:apply-templates select="$codeBlock" mode="removeSpaceInCode"/></code></div>
+                                
+                                <!--<div xml:space="preserve" class="pre"><xsl:apply-templates select="." mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>-->
                             </xsl:for-each>
                         </td>
                     </tr>
@@ -1898,14 +1935,14 @@
                 </xsl:if>
                 <xsl:for-each select="$classSpec//tei:constraintSpec">
                     <tr>
-                        <td class="wovenodd-col1"><strong>Constraints</strong></td>
+                        <td class="wovenodd-col1"><strong>Constraint</strong></td>
                         <td class="wovenodd-col2">
                             <div>
                                 <xsl:for-each select=".//sch:assert">
-                                    <div><xsl:value-of select="normalize-space(.//text())"/></div>
+                                    <div class="schematronText"><xsl:value-of select="normalize-space(.//text())"/></div>
                                 </xsl:for-each>
                             </div>
-                            <div xml:space="preserve" class="pre"><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></div>
+                            <div class="code" xml:space="preserve" data-lang="Schematron"><code><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></code></div>
                         </td>
                     </tr>
                 </xsl:for-each>
@@ -2043,7 +2080,13 @@
                     <tr>
                         <td class="wovenodd-col1"><strong>Declaration</strong></td>
                         <td class="wovenodd-col2">
-                            <div xml:space="preserve" class="pre"><xsl:apply-templates select="$macroSpec/tei:content" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>
+                            
+                            <xsl:variable name="codeBlock">
+                                <xsl:apply-templates select="$macroSpec/tei:content" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates>
+                            </xsl:variable>
+                            <div class="code" xml:space="preserve" data-lang="ODD"><code><xsl:apply-templates select="$codeBlock" mode="removeSpaceInCode"/></code></div>
+                            
+                            <!--<div xml:space="preserve" class="pre"><xsl:apply-templates select="$macroSpec/tei:content" mode="preserveSpace"><xsl:with-param name="getODD" tunnel="yes" select="true()"/></xsl:apply-templates></div>-->
                         </td>
                     </tr>    
                 </xsl:if>
@@ -2057,14 +2100,14 @@
                 </xsl:if>
                 <xsl:for-each select="$macroSpec//tei:constraintSpec">
                     <tr>
-                        <td class="wovenodd-col1"><strong>Constraints</strong></td>
+                        <td class="wovenodd-col1"><strong>Constraint</strong></td>
                         <td class="wovenodd-col2">
                             <div>
                                 <xsl:for-each select=".//sch:assert">
-                                    <div><xsl:value-of select="normalize-space(string-join(.//text(),' '))"/></div>
+                                    <div class="schematronText"><xsl:value-of select="normalize-space(string-join(.//text(),' '))"/></div>
                                 </xsl:for-each>
                             </div>
-                            <div xml:space="preserve" class="pre"><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></div>
+                            <div class="code" xml:space="preserve" data-lang="Schematron"><code><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></code></div>
                         </td>
                     </tr>
                 </xsl:for-each>
@@ -2525,27 +2568,27 @@
     
     <xsl:template name="linkToElement">
         <xsl:param name="elem" as="xs:string"/>
-        <xsl:value-of select="$version || '/elements/' || $elem || '.html'"/>
+        <xsl:value-of select="$version || '/elements/' || lower-case($elem) || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToChapter">
         <xsl:param name="chapter" as="xs:string"/>
-        <xsl:value-of select="$version || '/guidelines/' || $chapter || '.html'"/>
+        <xsl:value-of select="$version || '/guidelines/' || lower-case($chapter) || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToAttribute">
         <xsl:param name="att" as="xs:string"/>
-        <xsl:value-of select="$version || '/attribute-classes/' || $att || '.html'"/>
+        <xsl:value-of select="$version || '/attribute-classes/' || lower-case($att) || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToModel">
         <xsl:param name="model" as="xs:string"/>
-        <xsl:value-of select="$version || '/model-classes/' || $model || '.html'"/>
+        <xsl:value-of select="$version || '/model-classes/' || lower-case($model) || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToData">
         <xsl:param name="data" as="xs:string"/>
-        <xsl:value-of select="$version || '/data-types/' || $data || '.html'"/>
+        <xsl:value-of select="$version || '/data-types/' || lower-case($data) || '.html'"/>
     </xsl:template>
     
     <xsl:template match="text()" mode="cleanup.example" priority="1"><xsl:value-of select="normalize-space(.)"/></xsl:template>

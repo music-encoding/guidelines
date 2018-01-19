@@ -4,8 +4,6 @@ title: "Tuplets"
 version: "v3"
 ---
 
-
-
 Tuplets indicate a localized change of meter; that is, a given duration in the regular
 meter is divided between a group of notes with irregular (according to the current
 meter)
@@ -26,10 +24,6 @@ The duration of the entire tuplet may be encoded using the usual ‘power of
 **@dots** attribute, if necessary.
 
 {% include plainExample.html example="examples/cmn/cmn-sample134.xml" valid="true" version=page.version %}
-
-
-
-
 Tuplets are often highlighted using brackets above or below the affected notes. The
 presence and position of these brackets can be encoded using the **@bracket.place**
 (above / below) and **@bracket.visible** (true / false) attributes.
@@ -43,31 +37,26 @@ number (the value of **@num**) or a ratio (comprised of **@num** and
 **@numbase**, e.g., "3:2") should be displayed and **@num.visible** indicates
 the general presence of such a number. 
 
-
-
-In addition to [note]({{ site.baseurl }}/{{ page.version }}/elements/note.html){:.link_odd_elementSpec} elements, [tuplet]({{ site.baseurl }}/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} may
-contain other elements, such as [rest]({{ site.baseurl }}/{{ page.version }}/elements/rest.html){:.link_odd_elementSpec} or [space]({{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec},
+In addition to {% include link elem="note" %} elements, {% include link elem="tuplet" %} may
+contain other elements, such as {% include link elem="rest" %} or {% include link elem="space" %},
 to match the content of a source document or an intended rendering. In particular,
-the [beam]({{ site.baseurl }}/{{ page.version }}/elements/beam.html){:.link_odd_elementSpec} element is allowed so that custom beaming may be indicated, e.g., a
+the {% include link elem="beam" %} element is allowed so that custom beaming may be indicated, e.g., a
 septuplet may be divided into a group of three plus a group of four
 notes.
 
-
-
-The [tuplet]({{ site.baseurl }}/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} element may also be used for repetition of the same pitch;
+The {% include link elem="tuplet" %} element may also be used for repetition of the same pitch;
 that is, a single note or chord may be the only content of the tuplet. In some cases,
 optical music recognition software may treat these instances as bowed tremolandi due
 to the
 knowledge of the complete semantics of the notation at the time of recognition. However,
 marking these as tuplets is the recommended practice.
 
-
 In some situations, a tuplet is made up of events in different measures. As this raises
 the
 issue of non-concurrent hierarchies, it is not possible to encode such situations
 with the
-[tuplet]({{ site.baseurl }}/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} element described above. Therefore, MEI offers the [tupletSpan]({{ site.baseurl }}/{{ page.version }}/elements/tupletSpan.html){:.link_odd_elementSpec} element, which is member of the [model.controleventLike]({{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventLike.html){:.link_odd} class. It is nested inside of [measure]({{ site.baseurl }}/{{ page.version }}/elements/measure.html){:.link_odd_elementSpec}, following all the measure's [staff]({{ site.baseurl }}/{{ page.version }}/elements/staff.html){:.link_odd_elementSpec} children. It uses
-the same attributes as [tuplet]({{ site.baseurl }}/{{ page.version }}/elements/tuplet.html){:.link_odd_elementSpec} to describe tuplets, but instead of
+{% include link elem="tuplet" %} element described above. Therefore, MEI offers the {% include link elem="tupletSpan" %} element, which is member of the {% include link att-class="model.controleventLike" %} class. It is nested inside of {% include link elem="measure" %}, following all the measure's {% include link elem="staff" %} children. It uses
+the same attributes as {% include link elem="tuplet" %} to describe tuplets, but instead of
 nesting all affected notes inside itself, it references the **@xml:id** values of all
 affected notes in its **@plist** attribute and the initial and terminal notes of the
 tuplet using **@startid** and **@endid** attributes. This configuration allows
@@ -76,5 +65,3 @@ example of
 such hierarchy-crossing tuplets:
 
 {% include plainExample.html example="examples/cmn/cmn-sample135.xml" valid="true" version=page.version %}
-
-

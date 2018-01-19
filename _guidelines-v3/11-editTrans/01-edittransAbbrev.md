@@ -4,18 +4,12 @@ title: "Abbreviations"
 version: "v3"
 ---
 
-
-
 MEI offers methods for marking abbreviations in prose, as in the following example:
 
 {% include plainExample.html example="examples/editTrans/editTrans-sample207.xml" valid="true" version=page.version %}
-
 or abbreviations in the music itself, as in the following example:
 
 {% include plainExample.html example="examples/editTrans/editTrans-sample208.xml" valid="true" version=page.version %}
-
-
-
 The type attribute may be used to classify the abbreviation according to a convenient
 typology. Sample values include:
 
@@ -62,21 +56,17 @@ typology. Sample values include:
          <td> the abbreviation is for a geographic name.</td>
       </tr>
    </tbody>
-</table>
-
-This tag is the mirror image of the [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} tag (not to be confused with
-the [expansion]({{ site.baseurl }}/{{ page.version }}/elements/expansion.html){:.link_odd_elementSpec} element described in <a class="link_ptr" title="Content of Musical Divisions" href="{{ site.baseurl }}/{{ page.version }}/guidelines/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>).
-Both [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} allow the encoder to
-transcribe an abbreviation and its expansion. In the case of [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec}, the
+</table>This tag is the mirror image of the {% include link elem="expan" %} tag (not to be confused with
+the {% include link elem="expansion" %} element described in {% include link id="sharedMdivContent" %}).
+Both {% include link elem="abbr" %} and {% include link elem="expan" %} allow the encoder to
+transcribe an abbreviation and its expansion. In the case of {% include link elem="abbr" %}, the
 original is transcribed as the content of the element and the expansion as an attribute
 value,
-while [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} reverses this. The choice between the two is up to the user.
+while {% include link elem="expan" %} reverses this. The choice between the two is up to the user.
 For example:
 
 {% include plainExample.html example="examples/editTrans/editTrans-sample209.xml" valid="false" version=page.version %}
-
-
-The [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} tag is not required; if appropriate, the encoder may
+The {% include link elem="abbr" %} tag is not required; if appropriate, the encoder may
 transcribe abbreviations in the source text silently, without tagging them. If abbreviations
 are not transcribed directly but expanded silently, then the MEI header should indicate
 this
@@ -89,10 +79,7 @@ abbreviation.
 When the content of the **@abbr** or **@expan** attributes requires additional
 markup, an attribute cannot be used. In this case, the abbreviated and expanded forms
 must be
-presented within elements. Furthermore, as alternatives to each other, the [abbr]({{ site.baseurl }}/{{ page.version }}/elements/abbr.html){:.link_odd_elementSpec} and [expan]({{ site.baseurl }}/{{ page.version }}/elements/expan.html){:.link_odd_elementSpec} elements must be wrapped by the [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec} element, as described above. The previous example, where the 'o:' in 'pno:' is
+presented within elements. Furthermore, as alternatives to each other, the {% include link elem="abbr" %} and {% include link elem="expan" %} elements must be wrapped by the {% include link elem="choice" %} element, as described above. The previous example, where the 'o:' in 'pno:' is
 written as superscript, would be encoded as:
 
 {% include plainExample.html example="examples/editTrans/editTrans-sample210.xml" valid="true" version=page.version %}
-
-
-

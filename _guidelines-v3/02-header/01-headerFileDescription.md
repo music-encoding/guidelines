@@ -4,8 +4,6 @@ title: "File Description"
 version: "v3"
 ---
 
-
-
 The structure of the bibliographic description of a machine-readable or digital musical
 text
 resembles that of a book, an article, or other kinds of textual objects. The file
@@ -21,39 +19,33 @@ from the same model.
 
 The bibliographic description of an electronic musical text should be supplied by
 the
-mandatory [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element:
+mandatory {% include link elem="fileDesc" %} element:
 
 
 
-{% include specDesc.html version=page.version elem="fileDesc" atts="" %}
+{% include desc elem="fileDesc" %}
 
 
 
-The [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element contains two mandatory and six optional elements,
+
+The {% include link elem="fileDesc" %} element contains two mandatory and six optional elements,
 each of which is described in more detail below. These elements are listed below in
 the order
-in which they must occur within the [fileDesc]({{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html){:.link_odd_elementSpec} element.
+in which they must occur within the {% include link elem="fileDesc" %} element.
 
 
 
-{% include specDesc.html version=page.version elem="titleStmt" atts="" %}
-{% include specDesc.html version=page.version elem="editionStmt" atts="" %}
-{% include specDesc.html version=page.version elem="extent" atts="" %}
-{% include specDesc.html version=page.version elem="pubStmt" atts="" %}
-{% include specDesc.html version=page.version elem="seriesStmt" atts="" %}
-{% include specDesc.html version=page.version elem="notesStmt" atts="" %}
-{% include specDesc.html version=page.version elem="sourceDesc" atts="" %}
+{% include desc elem="titleStmt" %}
+{% include desc elem="editionStmt" %}
+{% include desc elem="extent" %}
+{% include desc elem="pubStmt" %}
+{% include desc elem="seriesStmt" %}
+{% include desc elem="notesStmt" %}
+{% include desc elem="sourceDesc" %}
+
 
 
 
 A complete file description will resemble the following example:
 
 {% include plainExample.html example="examples/header/header-sample019.xml" valid="false" version=page.version %}
-
-
-
-
-
-
-
-

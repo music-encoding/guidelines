@@ -6,9 +6,8 @@ version: "v3"
 
 
 
+{% include desc atts="att.intervalharmonic/inth" %}
 
-
-{% include specDesc.html version=page.version elem="att.intervalharmonic" atts="att.intervalharmonic/inth" %}
 
 
 
@@ -16,12 +15,11 @@ In contrast with **@intm**, which characterizes melodic (sequential) intervals, 
 **@inth** attribute is used to encode the harmonic interval between the current note
 and other pitches occurring at the same moment in time. The notes of interest may
 or may not
-be marked as a [chord]({{ site.baseurl }}/{{ page.version }}/elements/chord.html){:.link_odd_elementSpec}. In the markup below, for example, the values of
+be marked as a {% include link elem="chord" %}. In the markup below, for example, the values of
 **@inth** capture the harmonic intervals between notes distributed across multiple
 staves and layers.
 
 {% include plainExample.html example="examples/analysis/analysis-sample173.xml" valid="true" version=page.version %}
-
 Use of the **@inth** permits detailed specification of intervallic information for
 every note and its function in relation to other simultaneously-occurring notes and
 hence

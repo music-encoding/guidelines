@@ -4,13 +4,11 @@ title: "Back Matter"
 version: "v3"
 ---
 
-
-
 Conventions vary as to which elements are grouped as back matter and which as front.
 For
 example, some books place the table of contents at the front, and others at the back.
 For this
-reason, the content models of the [front]({{ site.baseurl }}/{{ page.version }}/elements/front.html){:.link_odd_elementSpec} and [back]({{ site.baseurl }}/{{ page.version }}/elements/back.html){:.link_odd_elementSpec}
+reason, the content models of the {% include link elem="front" %} and {% include link elem="back" %}
 elements are identical.
 
 The following suggested values may be used for the **@type** attribute on all division
@@ -54,14 +52,12 @@ matter:
          </td>
       </tr>
    </tbody>
-</table>
-No additional elements are proposed for the encoding of back matter at present. Some
+</table>No additional elements are proposed for the encoding of back matter at present. Some
 characteristic examples follow; first, an index (for the case in which a printed index
 is of
 sufficient interest to merit transcription):
 
 {% include plainExample.html example="examples/text/text-sample342.xml" valid="true" version=page.version %}
-
 Note that if the page breaks in the original source have also been explicitly encoded,
 and
 given identifiers, the references to them in the above index can more usefully be
@@ -71,8 +67,6 @@ like
 this:
 
 {% include plainExample.html example="examples/text/text-sample343.xml" valid="true" version=page.version %}
-
 then the last item above might be encoded more usefully in the following form:
 
 {% include plainExample.html example="examples/text/text-sample344.xml" valid="true" version=page.version %}
-

@@ -4,9 +4,7 @@ title: "Images"
 version: "v3"
 ---
 
-
-
-The [graphic]({{ site.baseurl }}/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec} element indicates the location of an inline graphic,
+The {% include link elem="graphic" %} element indicates the location of an inline graphic,
 illustration, or figure. As noted above, there exists a wide variety of different
 graphics
 formats, and the following list is in no way exhaustive. Moreover, inclusion of any
@@ -22,7 +20,6 @@ used
 at the present time, and are likely to remain supported by more than one vendor's
 software:
 
-
 - BMP: Microsoft bitmap format
 - CGM: Computer Graphics Metafile
 - GIF: Graphics Interchange Format
@@ -35,17 +32,11 @@ software:
 - QuickTime: Apple real-time image system
 - SMIL: Synchronized Multimedia Integration Language format
 - SVG: Scalable Vector Graphics format
-- TIFF: Tagged Image File Format
-
-Brief descriptions of all the above are given below. Where possible, current addresses
+- TIFF: Tagged Image File FormatBrief descriptions of all the above are given below. Where possible, current addresses
 or
 other contact information are shown for the originator of each format. Many formal
 standards, especially those promulgated by the ISO and many related national organizations
 (ANSI, DIN, BSI, and many more), are available from those national organizations.
 Addresses
 may be found in any standard organizational directory for the country in question.
-
-
-
-
 

@@ -6,9 +6,8 @@ version: "v3"
 
 
 
+{% include desc elem="incip" %}
 
-
-{% include specDesc.html version=page.version elem="incip" atts="" %}
 
 
 
@@ -23,35 +22,32 @@ The following elements are provided for the inclusion of incipits:
 
 
 
-{% include specDesc.html version=page.version elem="incip" atts="" %}
-{% include specDesc.html version=page.version elem="incipCode" atts="" %}
-{% include specDesc.html version=page.version elem="incipText" atts="" %}
-{% include specDesc.html version=page.version elem="score" atts="" %}
-{% include specDesc.html version=page.version elem="graphic" atts="" %}
+{% include desc elem="incip" %}
+{% include desc elem="incipCode" %}
+{% include desc elem="incipText" %}
+{% include desc elem="score" %}
+{% include desc elem="graphic" %}
 
 
 
-The elements [incipCode]({{ site.baseurl }}/{{ page.version }}/elements/incipCode.html){:.link_odd_elementSpec} and [incipText]({{ site.baseurl }}/{{ page.version }}/elements/incipText.html){:.link_odd_elementSpec} are
+
+The elements {% include link elem="incipCode" %} and {% include link elem="incipText" %} are
 available for the inclusion of coded incipits of music notation and textual incipits,
-respectively. The [incipText]({{ site.baseurl }}/{{ page.version }}/elements/incipText.html){:.link_odd_elementSpec} element should contain only the initial
-performed text of the work, while [incipCode]({{ site.baseurl }}/{{ page.version }}/elements/incipCode.html){:.link_odd_elementSpec} may contain both words and
+respectively. The {% include link elem="incipText" %} element should contain only the initial
+performed text of the work, while {% include link elem="incipCode" %} may contain both words and
 music, depending on the capabilities of the scheme used to encode it. When both music
 and
-text are provided in [incipCode]({{ site.baseurl }}/{{ page.version }}/elements/incipCode.html){:.link_odd_elementSpec}, it may be helpful to repeat the text
-in [incipText]({{ site.baseurl }}/{{ page.version }}/elements/incipText.html){:.link_odd_elementSpec} in order to provide easier access to only the text, for
+text are provided in {% include link elem="incipCode" %}, it may be helpful to repeat the text
+in {% include link elem="incipText" %} in order to provide easier access to only the text, for
 example, for indexing of the text without having to extract it from the coded incipit.
 
-
-Both [incipCode]({{ site.baseurl }}/{{ page.version }}/elements/incipCode.html){:.link_odd_elementSpec} and [incipText]({{ site.baseurl }}/{{ page.version }}/elements/incipText.html){:.link_odd_elementSpec} allow reference to
+Both {% include link elem="incipCode" %} and {% include link elem="incipText" %} allow reference to
 an external file location via the **@target** attribute and specification of the
 internet media type of the external file via the **@mimetype** attribute. It is a
 semantic error not to include one of these attributes.
 
+An MEI-encoded incipit may be captured in the {% include link elem="score" %} element.
 
-An MEI-encoded incipit may be captured in the [score]({{ site.baseurl }}/{{ page.version }}/elements/score.html){:.link_odd_elementSpec} element.
-
-
-In addition, [graphic]({{ site.baseurl }}/{{ page.version }}/elements/graphic.html){:.link_odd_elementSpec} may be used to include an image of an
+In addition, {% include link elem="graphic" %} may be used to include an image of an
 incipit.
-
 

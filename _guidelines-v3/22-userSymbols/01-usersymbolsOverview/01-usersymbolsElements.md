@@ -6,14 +6,13 @@ version: "v3"
 
 
 
+{% include desc elem="anchoredText" %}
+{% include desc elem="curve" %}
+{% include desc elem="line" %}
+{% include desc elem="symbol" %}
+{% include desc elem="symbolDef" %}
+{% include desc elem="symbolTable" %}
 
-
-{% include specDesc.html version=page.version elem="anchoredText" atts="" %}
-{% include specDesc.html version=page.version elem="curve" atts="" %}
-{% include specDesc.html version=page.version elem="line" atts="" %}
-{% include specDesc.html version=page.version elem="symbol" atts="" %}
-{% include specDesc.html version=page.version elem="symbolDef" atts="" %}
-{% include specDesc.html version=page.version elem="symbolTable" atts="" %}
 
 
 

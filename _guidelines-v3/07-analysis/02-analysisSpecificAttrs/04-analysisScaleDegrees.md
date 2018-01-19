@@ -6,9 +6,8 @@ version: "v3"
 
 
 
+{% include desc atts="att.harmonicfunction/deg" %}
 
-
-{% include specDesc.html version=page.version elem="att.harmonicfunction" atts="att.harmonicfunction/deg" %}
 
 
 
@@ -32,4 +31,3 @@ amount
 of chromatic alteration is not indicated.
 
 {% include plainExample.html example="examples/analysis/analysis-sample174.xml" valid="false" version=page.version %}
-

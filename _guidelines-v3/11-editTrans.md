@@ -6,8 +6,6 @@ title: "Editorial Markup"
 sectionid: "editTrans"
 ---
 
-
-
 It is often necessary to render an account of any changes made to a musical text during
 its
 creation (and any subsequent editing) and to accommodate editorial comment necessitated
@@ -22,7 +20,7 @@ The scope of the elements described herein is therefore the description of featu
 relating to
 the genesis, later revision and editorial interpretation of a text. Mechanisms for
 describing
-multiple sources are described in chapter <a class="link_ptr" title="Critical Apparatus" href="{{ site.baseurl }}/{{ page.version }}/guidelines/critApp.html">10 Critical Apparatus</a> of these Guidelines.
+multiple sources are described in chapter {% include link id="critApp" %} of these Guidelines.
 
 The elements described in this chapter may be contained by a wide range of other MEI
 elements
@@ -41,14 +39,13 @@ which the
 encoder wishes to associate with the intervention. Because these requirements are
 common to many
 of the elements discussed in this section, they are provided by an attribute class,
-[att.edit]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.edit.html){:.link_odd}, to which these elements subscribe. Any of the elements
+{% include link att-class="att.edit" %}, to which these elements subscribe. Any of the elements
 discussed here thus may potentially carry the following optional attributes:
 
 
 
-{% include specDesc.html version=page.version elem="att.edit" atts="att.evidence/cert" %}
-{% include specDesc.html version=page.version elem="att.responsibility" atts="att.responsibility/resp" %}
-
+{% include desc atts="att.evidence/cert" %}
+{% include desc atts="att.responsibility/resp" %}
 
 
 
@@ -59,12 +56,13 @@ indicate that their content represents an editorial intervention (or, in some ca
 the lack of
 intervention) of a specific kind. Sometimes, pairs or other meaningful groupings of
 such
-elements can be recorded, then wrapped within the special purpose [choice]({{ site.baseurl }}/{{ page.version }}/elements/choice.html){:.link_odd_elementSpec}
+elements can be recorded, then wrapped within the special purpose {% include link elem="choice" %}
 element:
 
 
 
-{% include specDesc.html version=page.version elem="choice" atts="" %}
+{% include desc elem="choice" %}
+
 
 
 
@@ -76,24 +74,13 @@ dynamically switch between the Urtext ‘view’ of the text and one or more
 ‘views’ of the text after the application of the encoded editorial
 interventions.
 
-Elements which can be combined in this way constitute the [model.choicePart]({{ site.baseurl }}/{{ page.version }}/model-classes/model.choicePart.html){:.link_odd} class. The default members of this class are [sic]({{ site.baseurl }}/{{ page.version }}/elements/sic.html){:.link_odd_elementSpec}, [corr]({{ site.baseurl }}/{{ page.version }}/elements/corr.html){:.link_odd_elementSpec}, [reg]({{ site.baseurl }}/{{ page.version }}/elements/reg.html){:.link_odd_elementSpec}, [orig]({{ site.baseurl }}/{{ page.version }}/elements/orig.html){:.link_odd_elementSpec},
-[unclear]({{ site.baseurl }}/{{ page.version }}/elements/unclear.html){:.link_odd_elementSpec}, [add]({{ site.baseurl }}/{{ page.version }}/elements/add.html){:.link_odd_elementSpec}, and [del]({{ site.baseurl }}/{{ page.version }}/elements/del.html){:.link_odd_elementSpec}; their
+Elements which can be combined in this way constitute the {% include link att-class="model.choicePart" %} class. The default members of this class are {% include link elem="sic" %}, {% include link elem="corr" %}, {% include link elem="reg" %}, {% include link elem="orig" %},
+{% include link elem="unclear" %}, {% include link elem="add" %}, and {% include link elem="del" %}; their
 functions and usage are described in greater detail below.
 
 Three categories of editorial intervention are discussed by the remainder of this
 chapter:
 
-
 - indication or correction of apparent errors;
-- indication of regularization of variant, irregular, non-standard, or eccentric forms;
-and
+- indication of regularization of variant, irregular, non-standard, or eccentric forms; and
 - editorial additions, suppressions, and omissions.
-
-
-
-
-
-
-
-
-

@@ -4,8 +4,6 @@ title: "Module Background"
 version: "v3"
 ---
 
-
-
 Neume encoding in MEI was initially developed as part of the Hildegard von Bingen
 project at
 the University of Tübingen. MEI was chosen as the basic representation format after

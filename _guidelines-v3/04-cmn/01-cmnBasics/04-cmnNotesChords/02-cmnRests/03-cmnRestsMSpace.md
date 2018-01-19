@@ -4,17 +4,12 @@ title: "Empty Measures"
 version: "v3"
 ---
 
-
-
-The [mSpace]({{ site.baseurl }}/{{ page.version }}/elements/mSpace.html){:.link_odd_elementSpec} (<span class="expan">measure space</span>) element is closely
-related to the [space]({{ site.baseurl }}/{{ page.version }}/elements/space.html){:.link_odd_elementSpec} and [mRest]({{ site.baseurl }}/{{ page.version }}/elements/mRest.html){:.link_odd_elementSpec} elements. It
+The {% include link elem="mSpace" %} (<span class="expan">measure space</span>) element is closely
+related to the {% include link elem="space" %} and {% include link elem="mRest" %} elements. It
 is used to explicitly indicate that a layer has no content but that no information
 is
 missing from the encoding.
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/mspace-300-20100514.png" class="img-responsive"><figcaption class="figure-caption">Figure 5. Empty measure</figcaption>
-</figure>
-{% include plainExample.html example="examples/cmn/cmn-sample103.xml" valid="true" version=page.version %}
-
-
+</figure>{% include plainExample.html example="examples/cmn/cmn-sample103.xml" valid="true" version=page.version %}

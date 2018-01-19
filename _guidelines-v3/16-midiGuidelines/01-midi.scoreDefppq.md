@@ -4,24 +4,22 @@ title: "PPQ in scoreDef and staffDef"
 version: "v3"
 ---
 
-
-
-To define the MIDI resolution of a score, the **@ppq** attribute may be used on the [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} element. This value can be used to interpret the values found in
-the **@dur.ges** attribute on elements in the [att.duration.performed]({{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.performed.html){:.link_odd} class.
+To define the MIDI resolution of a score, the **@ppq** attribute may be used on the {% include link elem="scoreDef" %} element. This value can be used to interpret the values found in
+the **@dur.ges** attribute on elements in the {% include link att-class="att.duration.performed" %} class.
 
 
 {% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample269.xml" valid="false" version=page.version %}
 
 
 
-The **@ppq** attribute is also available on the [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} element
+The **@ppq** attribute is also available on the {% include link elem="staffDef" %} element
 in order to aid in the conversion to MEI from other representations that allow a different
 time base for each staff. However, these independent values for **@ppq** are only
 interpretable in terms of a common time base. Therefore, the **@ppq** attribute is
-required on [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec} when the values of **@ppq** on the staff
+required on {% include link elem="scoreDef" %} when the values of **@ppq** on the staff
 definitions differ. In the following example, the values of the **@ppq** attributes on
-the [staffDef]({{ site.baseurl }}/{{ page.version }}/elements/staffDef.html){:.link_odd_elementSpec} elements are all factors of the value of **@ppq**
-attached to [scoreDef]({{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html){:.link_odd_elementSpec}. 
+the {% include link elem="staffDef" %} elements are all factors of the value of **@ppq**
+attached to {% include link elem="scoreDef" %}. 
 
 
 {% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample270.xml" valid="true" version=page.version %}

@@ -4,16 +4,15 @@ title: "Phrase Marks"
 version: "v3"
 ---
 
-
-
 Phrase marks are curved lines placed over or under notes to delineate short sections
 of a
 work that represent a unified melodic idea, analogous to a phrase in literature.
 
 
 
-{% include specDesc.html version=page.version elem="phrase" atts="" %}
-{% include specDesc.html version=page.version elem="slur" atts="" %}
+{% include desc elem="phrase" %}
+{% include desc elem="slur" %}
+
 
 
 
@@ -28,6 +27,6 @@ slur also indicates that the affected notes should be played in a
 
 Even so, it is common for both of these concepts to be referred to generically as
 "slurs". Therefore, unless one is encoding music from a repertoire in which this
-distinction is important, the [slur]({{ site.baseurl }}/{{ page.version }}/elements/slur.html){:.link_odd_elementSpec} element should be preferred over
-[phrase]({{ site.baseurl }}/{{ page.version }}/elements/phrase.html){:.link_odd_elementSpec}.
+distinction is important, the {% include link elem="slur" %} element should be preferred over
+{% include link elem="phrase" %}.
 

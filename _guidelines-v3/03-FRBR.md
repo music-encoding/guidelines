@@ -6,8 +6,6 @@ title: "Functional Requirements for Bibliographic Records (FRBR)"
 sectionid: "FRBR"
 ---
 
-
-
 MEI header information may refer to different levels of description of the encoded
 work: Some
 information may apply the work in all its various forms and realizations, e.g., the
@@ -44,10 +42,8 @@ The IFLA’s FRBR model distinguishes four levels of abstraction, or entities:
       <tr>
          <td>Expression</td>
          <td>An expression is defined as "the intellectual or artistic realization of a work in
-            the
-            form of [...] notation, sound, image, object, movement, etc., or any combination of
-            such
-            forms". Expressions are also abstract entities.
+            the form of [...] notation, sound, image, object, movement, etc., or any combination
+            of such forms". Expressions are also abstract entities.
          </td>
       </tr>
       <tr>
@@ -55,23 +51,18 @@ The IFLA’s FRBR model distinguishes four levels of abstraction, or entities:
          <td>A manifestation is defined as "the physical embodiment of an expression of a work",
             including, for instance, manuscripts, books, sound recordings, films, video recordings,
             CD-ROMs, multimedia kits, etc. The manifestation represents all the physical objects
-            that
-            bear the same characteristics, with respect to both intellectual content and physical
-            form.
+            that bear the same characteristics, with respect to both intellectual content and
+            physical form.
          </td>
       </tr>
       <tr>
          <td>Item</td>
          <td>A single exemplar of a manifestation is called an item, e.g., a specific copy of a
             printed score. With manuscripts, item and manifestation levels are nearly identical.
-            A
-            manuscript may be regarded as a manifestation having only one item.
+            A manuscript may be regarded as a manifestation having only one item.
          </td>
       </tr>
    </tbody>
 </table>
-
-
-
 
 

@@ -1,1 +1,1 @@
-Pattern for pulses per quarter, metrical units, and seconds.
+Pattern for ppq, beats, seconds, etc.

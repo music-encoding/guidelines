@@ -6,8 +6,6 @@ title: "Facsimiles"
 sectionid: "facsimiles"
 ---
 
-
-
 Most often, MEI is used for the preparation of a digital musical text based on an
 existing
 music document, or with the intention of rendering the encoded notation into a document
@@ -19,5 +17,4 @@ Both
 approaches may be combined, so that the encoding of the musical content and digital
 facsimiles
 may add different facets to the same MEI document.
-
 

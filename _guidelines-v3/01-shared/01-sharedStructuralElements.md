@@ -4,8 +4,3 @@ title: "Structural Elements"
 version: "v3"
 ---
 
-
-
-
-
-
