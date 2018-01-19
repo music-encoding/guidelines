@@ -1,0 +1,1 @@
+Font weight (for text) attribute values.

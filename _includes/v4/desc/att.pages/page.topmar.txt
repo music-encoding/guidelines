@@ -1,0 +1,1 @@
+Indicates the amount of whitespace at the top of a page.

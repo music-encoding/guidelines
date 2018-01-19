@@ -1,0 +1,1 @@
+Records the placement of the beam relative to the events it affects.

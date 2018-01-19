@@ -1,0 +1,1 @@
+Indicates major, minor, or other tonality.

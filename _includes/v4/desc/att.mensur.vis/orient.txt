@@ -1,0 +1,1 @@
+Describes the rotation or reflection of the base symbol.

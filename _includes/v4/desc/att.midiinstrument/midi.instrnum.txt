@@ -1,0 +1,1 @@
+Captures the General MIDI instrument number.

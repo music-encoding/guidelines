@@ -1,0 +1,1 @@
+Groups events that completely fill a CMN measure.

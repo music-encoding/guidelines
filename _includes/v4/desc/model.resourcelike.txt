@@ -1,0 +1,1 @@
+Groups non-text components that represent the content of the musical text.

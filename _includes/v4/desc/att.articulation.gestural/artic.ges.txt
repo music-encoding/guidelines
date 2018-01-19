@@ -1,0 +1,1 @@
+Records performed articulation that differs from the written value.

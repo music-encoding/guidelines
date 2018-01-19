@@ -1,0 +1,4 @@
+Indicates that this feature participates in a tuplet. If visual information about
+the
+tuplet needs to be recorded, then a  element should be
+employed.

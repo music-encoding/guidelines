@@ -1,0 +1,1 @@
+Describes the semibreve-minim relationship.

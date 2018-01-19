@@ -1,0 +1,2 @@
+Provides any sub-classification of the notation contained or described by the element,
+additional to that given by its notationtype attribute.

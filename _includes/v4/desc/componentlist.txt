@@ -1,0 +1,1 @@
+Container for intellectual or physical component parts of a bibliographic entity.

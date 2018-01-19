@@ -1,0 +1,1 @@
+Groups elements which form part of a personal name.

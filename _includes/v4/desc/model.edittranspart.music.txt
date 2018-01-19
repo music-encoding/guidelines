@@ -1,0 +1,3 @@
+Groups elements that may appear as part of editorial and transcription elements in
+music
+notation.

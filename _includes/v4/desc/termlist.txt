@@ -1,0 +1,1 @@
+Collection of text phrases which describe a resource.

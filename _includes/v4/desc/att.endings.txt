@@ -1,0 +1,1 @@
+Attributes that record ending style information

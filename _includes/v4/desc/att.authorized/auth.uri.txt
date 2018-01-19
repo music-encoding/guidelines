@@ -1,0 +1,2 @@
+A web-accessible location of the controlled vocabulary or other authoritative source
+for this element or its content.
