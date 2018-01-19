@@ -1,2 +1,0 @@
-(column break) – An empty formatting element that forces text to begin in a new
-column.

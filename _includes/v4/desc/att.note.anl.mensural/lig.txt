@@ -1,1 +1,0 @@
-Indicates this element's participation in a ligature.

@@ -1,2 +1,0 @@
-Provides an example of how automated beaming (including secondary beams) is to be
-performed.

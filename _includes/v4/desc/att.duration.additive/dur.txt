@@ -1,2 +1,0 @@
-When a duration cannot be represented as a single power-of-two value, multiple
-space-separated values that add up to the total duration may be used.

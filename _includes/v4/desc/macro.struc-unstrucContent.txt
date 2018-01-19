@@ -1,1 +1,0 @@
-Provides a choice between structured and unstructured/mixed content.

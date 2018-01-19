@@ -1,3 +1,0 @@
-(support description) – Groups elements describing the physical support material of
-an
-item.

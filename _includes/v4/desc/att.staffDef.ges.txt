@@ -1,1 +1,0 @@
-Gestural domain attributes for staffDef in the CMN repertoire.

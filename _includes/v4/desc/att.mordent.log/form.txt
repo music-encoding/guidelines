@@ -1,3 +1,0 @@
-Records semantic meaning, i.e., intended performance, of the mordent. The
-, , or  attributes may be used
-to specify the appropriate symbol.

@@ -1,1 +1,0 @@
-(layer definition) – Container for layer meta-information.

@@ -1,1 +1,0 @@
-Records horizontal alignment of the page footer.

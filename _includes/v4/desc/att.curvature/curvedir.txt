@@ -1,1 +1,0 @@
-Describes a curve with a generic term indicating the direction of curvature.

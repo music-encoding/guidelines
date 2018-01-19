@@ -1,2 +1,0 @@
-Used to express size in terms other than physical dimensions, such as number of pages,
-records, bytes, physical components, etc.

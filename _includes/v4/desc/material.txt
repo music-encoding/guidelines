@@ -1,3 +1,0 @@
-Contains a word or phrase describing the material of which the object being described
-is
-composed.

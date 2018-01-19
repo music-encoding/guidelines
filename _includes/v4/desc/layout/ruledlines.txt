@@ -1,4 +1,0 @@
-Specifies the number of columns per page. A single number indicates that all pages
-have this number of columns. Two numbers mean that the number of columns per page
-varies
-between the values supplied.

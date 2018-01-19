@@ -1,1 +1,0 @@
-Records the expansion of a text abbreviation.

@@ -1,1 +1,0 @@
-Groups elements related to highlighting which can appear at the phrase-level.

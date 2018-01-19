@@ -1,1 +1,0 @@
-Specifies the starting point of the location in a normalized form.

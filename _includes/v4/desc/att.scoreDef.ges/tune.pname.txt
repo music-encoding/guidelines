@@ -1,1 +1,0 @@
-Holds the pitch name of a tuning reference pitch.

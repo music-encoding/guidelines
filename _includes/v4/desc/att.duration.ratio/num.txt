@@ -1,2 +1,0 @@
-Along with numbase, describes duration as a ratio. num is the first value in the
-ratio, while numbase is the second.

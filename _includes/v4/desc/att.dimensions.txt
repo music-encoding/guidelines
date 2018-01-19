@@ -1,1 +1,0 @@
-Attributes that capture the dimensions of an entity.

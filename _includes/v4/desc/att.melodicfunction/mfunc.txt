@@ -1,1 +1,0 @@
-Describes melodic function using Humdrum **embel syntax.

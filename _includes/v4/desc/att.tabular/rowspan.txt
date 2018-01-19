@@ -1,1 +1,0 @@
-The number of rows spanned by this cell.

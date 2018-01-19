@@ -1,2 +1,0 @@
-Signifies the hand responsible for an action. The value must be the ID of a  element
-declared in the header.

@@ -1,1 +1,0 @@
-(component group) – Container for components of a bibliographic entity.

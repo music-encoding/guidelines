@@ -1,3 +1,0 @@
-(ossia staff) – A staff that holds an alternative passage which may be played instead
-of
-the original material.

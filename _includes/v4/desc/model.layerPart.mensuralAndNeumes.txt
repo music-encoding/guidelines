@@ -1,2 +1,0 @@
-Groups notated events at the layer level that are shared by the mensural and neume
-repertoires.

@@ -1,1 +1,0 @@
-Attributes that describe correction and normalization methods.

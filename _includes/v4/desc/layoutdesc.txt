@@ -1,1 +1,0 @@
-(layout description) – Collects layout descriptions.

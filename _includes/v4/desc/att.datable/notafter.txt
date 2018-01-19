@@ -1,1 +1,0 @@
-Contains an upper boundary for an uncertain date in standard ISO form.

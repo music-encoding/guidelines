@@ -1,2 +1,0 @@
-Number of occurrences in the defined context that have an 
-attribute.

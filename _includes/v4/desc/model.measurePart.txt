@@ -1,1 +1,0 @@
-Groups elements that may appear within a CMN measure.

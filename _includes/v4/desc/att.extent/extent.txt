@@ -1,2 +1,0 @@
-Captures a measurement, count, or description. When extent contains a numeric value,
-use the unit attribute to indicate the measurement unit.

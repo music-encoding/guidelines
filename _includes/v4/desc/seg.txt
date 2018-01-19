@@ -1,2 +1,0 @@
-(arbitrary segment) represents any segmentation of text below the "text component"
-level.

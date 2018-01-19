@@ -1,1 +1,0 @@
-(domains declaration) – Indicates which domains are included in the encoding.

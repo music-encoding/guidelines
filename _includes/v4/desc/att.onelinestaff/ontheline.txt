@@ -1,3 +1,0 @@
-Determines the placement of notes on a 1-line staff. A value of 'true' places all
-notes on the line, while a value of 'false' places stems-up notes above the line and
-stems-down notes below the line.

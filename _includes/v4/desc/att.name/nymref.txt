@@ -1,2 +1,0 @@
-Used to record a pointer to the regularized form of the name elsewhere in the
-document.

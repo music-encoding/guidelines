@@ -1,3 +1,0 @@
-Describes vertical order of items printed below a staff, from closest to farthest
-away
-from the staff.
