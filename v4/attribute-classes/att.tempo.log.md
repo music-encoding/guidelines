@@ -45,7 +45,7 @@ title: "att.tempo.log"
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startId.html">att.startId</a>"</span></span>/&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div></code></div>
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"func"</span>&gt;</span>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"func"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the function of a tempo indication.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      

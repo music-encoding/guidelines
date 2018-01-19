@@ -38,7 +38,7 @@ title: "att.octaveDisplacement"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the amount of octave displacement.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -51,7 +51,7 @@ title: "att.octaveDisplacement"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the direction of octave displacement.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               

@@ -43,7 +43,7 @@ title: "att.chordMember.log"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Holds the number of the string to be played.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"nonNegativeInteger"</span>/&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
@@ -53,7 +53,7 @@ title: "att.chordMember.log"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the location at which a string should be stopped against a fret.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -70,7 +70,7 @@ title: "att.chordMember.log"
                         for the thumb. The values 'x' and 'o' indicate muffled and open strings,
                         respectively.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               

@@ -78,9 +78,7 @@ title: "data.STAFFITEM.cmn"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Beams.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- beamSpan is subsumed within "beam" --&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--&lt;valItem ident="beamSpan"/&gt;--&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"bend"</span>&gt;</span>
                            
@@ -107,9 +105,7 @@ title: "data.STAFFITEM.cmn"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Fingerings.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- fingGrp is subsumed within "fing" --&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--&lt;valItem ident="fingGrp"/&gt;--&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hairpin"</span>&gt;</span>
                            
@@ -151,9 +147,7 @@ title: "data.STAFFITEM.cmn"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Rehearsal marks.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- slur more note-attached than staff-attached? --&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--&lt;valItem ident="slur"/&gt;--&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tie"</span>&gt;</span>
                            
@@ -170,9 +164,7 @@ title: "data.STAFFITEM.cmn"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tuplets.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- tupletSpan is subsumed within "tuplet" --&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--&lt;valItem ident="tupletSpan"/&gt;--&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"turn"</span>&gt;</span>
                            

@@ -37,7 +37,7 @@ title: "att.pages"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Specifies the height of the page; may be expressed in real-world units or staff
                         steps.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -51,7 +51,7 @@ title: "att.pages"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Describes the width of the page; may be expressed in real-world units or staff
                         steps.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -64,7 +64,7 @@ title: "att.pages"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the amount of whitespace at the top of a page.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -77,7 +77,7 @@ title: "att.pages"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the amount of whitespace at the bottom of a page.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -90,7 +90,7 @@ title: "att.pages"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the amount of whitespace at the left side of a page.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -103,7 +103,7 @@ title: "att.pages"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the amount of whitespace at the right side of a page.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -116,7 +116,7 @@ title: "att.pages"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the number of logical pages to be rendered on a single physical page.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -129,7 +129,7 @@ title: "att.pages"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates how the page should be scaled when rendered.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               

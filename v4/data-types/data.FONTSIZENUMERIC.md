@@ -34,7 +34,6 @@ title: "data.FONTSIZENUMERIC"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:except&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- disallow no-value or all-zero patterns --&gt;</span></div>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
                               

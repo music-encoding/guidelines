@@ -75,14 +75,6 @@ title: "data.NOTATIONTYPE"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Neumatic notation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--
-                              &lt;valItem ident="neume.heighted"&gt;
-                              &lt;desc&gt;Heighted neumatic notation&lt;/desc&gt;
-                              &lt;/valItem&gt;
-                              &lt;valItem ident="neume.unheighted"&gt;
-                              &lt;desc&gt;Unheighted neumatic notation&lt;/desc&gt;
-                              &lt;/valItem&gt;
-                              --&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tab"</span>&gt;</span>
                            

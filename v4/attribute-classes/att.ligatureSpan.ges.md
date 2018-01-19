@@ -19,10 +19,7 @@ title: "att.ligatureSpan.ges"
       <tr>
          <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent">
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ligatureSpan.html">ligatureSpan</a> (direct member of att.ligatureSpan.ges)
-               </div>
-            </div>
+            <div class="parent"></div>
          </td>
       </tr>
       <tr>

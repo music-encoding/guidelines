@@ -101,11 +101,10 @@ title: "att.scoreDef.vis"
                         an
                         adjacent staff line.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- px and vu are *not* allowed here because they're not real-world units --&gt;</span></div>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>\d+(\.\d+)?(cm|mm|in|pt|pc)<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>

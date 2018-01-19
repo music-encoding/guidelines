@@ -1363,7 +1363,6 @@ version: "<xsl:value-of select="$plain.version"/>"
                                 <xsl:variable name="macro.parents" select="local:getParents($data.types/descendant-or-self::tei:macroSpec[.//tei:content//rng:ref[@name = $elementSpec/@ident]])" as="node()*"/>
                                 
                                 <xsl:variable name="parents" select="$direct.parents | $class.parents | $macro.parents" as="node()*"/>
-                                <!--<xsl:message select="'INFO: ' || $elementSpec/@ident || ' has ' || count($direct.parents) || ' direct and ' || count($class.parents) ||' class parents.'"/>-->
                                 
                                 <xsl:for-each select="distinct-values($parents/descendant-or-self::tei:elementSpec/@module)">
                                     <xsl:sort select="count($mei.source//tei:moduleSpec[@ident = current()]/preceding::tei:moduleSpec)" data-type="number"/>
@@ -1705,7 +1704,7 @@ version: "<xsl:value-of select="$plain.version"/>"
         
         <xsl:for-each select="$model.classes">
             <xsl:variable name="current.model" select="." as="node()"/>
-            <xsl:variable name="relevant.elements" select="$mei.source//tei:elementSpec[.//tei:memberOf[@key = $current.model/@ident] or .//tei:content//rng:ref[@name = $current.model/@ident]]" as="node()*"/>
+            <xsl:variable name="relevant.elements" select="$mei.source//tei:elementSpec[(:.//tei:memberOf[@key = $current.model/@ident] or :).//tei:content//rng:ref[@name = $current.model/@ident]]" as="node()*"/>
             <!--<xsl:message select="'  INFO: looking for ' || count($relevant.elements) || ' elements in ' || $current.model/@ident"/>-->
             <xsl:sequence select="$relevant.elements"/>
             <xsl:variable name="inheriting.classes" select="$mei.source//tei:classSpec[@type = 'model' and @ident = $current.model//tei:memberOf/@key]" as="node()*"/>
@@ -1939,7 +1938,10 @@ version: "<xsl:value-of select="$plain.version"/>"
                         <td class="wovenodd-col2">
                             <div>
                                 <xsl:for-each select=".//sch:assert">
-                                    <div class="schematronText"><xsl:value-of select="normalize-space(.//text())"/></div>
+                                    <xsl:variable name="schematronText" as="xs:string*">
+                                        <xsl:apply-templates select="child::node()" mode="getSchematronText"/>
+                                    </xsl:variable>
+                                    <div class="schematronText"><xsl:value-of select="normalize-space(string-join($schematronText,' '))"/></div>
                                 </xsl:for-each>
                             </div>
                             <div class="code" xml:space="preserve" data-lang="Schematron"><code><xsl:apply-templates select=".//sch:rule" mode="preserveSpace"/></code></div>
@@ -2128,6 +2130,14 @@ version: "<xsl:value-of select="$plain.version"/>"
         <!-- alternate -->
         
         <!-- valList -->
+    </xsl:template>
+    
+    <xsl:template match="text()" mode="getSchematronText" priority="1">
+        <xsl:next-match/>
+    </xsl:template>
+    
+    <xsl:template match="sch:value-of" mode="getSchematronText">
+        <xsl:value-of select="string(@select)"/>
     </xsl:template>
     
     <!-- generic templates -->

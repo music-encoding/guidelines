@@ -2,19 +2,19 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "componentGrp"
+title: "componentList"
 
 ---
 
 <div class="elementSpec">
-   <h3 id="componentGrp">&lt;componentGrp&gt;</h3>
+   <h3 id="componentList">&lt;componentList&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">(component group) – Container for components of a bibliographic entity.</td>
+         <td colspan="2" class="wovenodd-col2">Container for intellectual or physical component parts of a bibliographic entity.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Module</strong></td>
-         <td class="wovenodd-col2">MEI.frbr</td>
+         <td class="wovenodd-col2">MEI.header</td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
@@ -55,7 +55,7 @@ title: "componentGrp"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span>
-                           Value is plain text.
+                           Value of datatype <span style="font-weight: 500;">string</span>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.labelled.html">att.labelled</a></span></div>
                      </td>
                   </tr>
@@ -63,7 +63,7 @@ title: "componentGrp"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@n</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span>
-                           Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.word.html">data.WORD</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.nnumberlike.html">att.nNumberLike</a></span></div>
                      </td>
                   </tr>
@@ -117,7 +117,7 @@ title: "componentGrp"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@xml:id</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span>
-                           Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                           Value of datatype <span style="font-weight: 500;">ID</span>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a></span></div>
                      </td>
                   </tr>
@@ -173,37 +173,43 @@ title: "componentGrp"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:choice&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
-                                 
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.workLike.html">model.workLike</a>"</span></span>
-                                 /&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:zeroOrMore&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                    
+                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.workLike.html">model.workLike</a>"</span></span>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:zeroOrMore&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                    
+                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.expressionLike.html">model.expressionLike</a>"</span></span>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
-                                 
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.expressionLike.html">model.expressionLike</a>"</span></span>
-                                 /&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:zeroOrMore&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                    
+                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.manifestationLike.html">model.manifestationLike</a>"</span></span>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
-                                 
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.manifestationLike.html">model.manifestationLike</a>"</span></span>
-                                 /&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
-                           
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
-                                 
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.itemLike.html">model.itemLike</a>"</span></span>
-                                 /&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:zeroOrMore&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                    
+                                    <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.itemLike.html">model.itemLike</a>"</span></span>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/rng:choice&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
@@ -211,13 +217,18 @@ title: "componentGrp"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The child elements of this element are treated as parts of the bibliographic entity
-               containing the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>. Although this is an implicit way of
-               expressing FRBR's hasPart / isPartOf-relationships, it avoids this terminology in
+            <p>The child elements of this element are treated as components of the bibliographic
+               entity
+               containing the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentList.html">componentList</a>. Although this is an implicit way of
+               expressing FRBR's hasPart and isPartOf relationships, it avoids this terminology in
                order to
-               prevent confusion with musical terminology. All children of a component must be the
-               same
-               type as its parent: only <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a> children are allowed within <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/item.html">item</a> in <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/item.html">item</a>, etc.
+               prevent confusion with musical terminology. Work, expression, and item components
+               must be
+               the same type as the parent of componentList: <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a> children are
+               allowed within <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a>, etc. Manifestations; i.e., sources, may have
+               either <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/item.html">item</a>components as required to
+               accommodate composite sources (those containing multiple sources) or multi-part sources
+               (those made up of several physical items.
             </p>
          </td>
       </tr>
@@ -225,14 +236,31 @@ title: "componentGrp"
          <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div class="schematronText">Only child elements of the same name as the parent of the componentGrp are allowed.</div>
+               <div class="schematronText">Only child elements of the same name as the parent of the componentList are allowed.</div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:componentGrp"</span>&gt;</span>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:componentList"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"every $i in ./child::mei:*[not(local-name()='head')] satisfies $i/local-name() eq
-                              ./parent::mei:*/local-name()"</span>&gt;</span>Only child elements of the same name as the parent of the componentGrp are
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"every $i in ./child::mei:*[not(local-name()='head')] satisfies              $i/local-name()
+                              eq ./parent::mei:*/local-name()"</span>&gt;</span>Only child elements of the same name as the parent of the componentList are
                         allowed.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
+         <td class="wovenodd-col2">
+            <div>
+               <div class="schematronText">When any child element has a comptype attribute, it is recommended that comptype appear
+                  on all child elements.
+               </div>
+            </div>
+            <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:componentList[mei:*[@comptype]]"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"count(mei:*[@comptype]) = count(mei:*[local-name() ne 'head'])"</span>&gt;</span>When any child
+                        element has a comptype attribute, it is recommended that comptype appear on all child
+                        elements.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>
       </tr>

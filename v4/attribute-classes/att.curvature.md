@@ -43,7 +43,7 @@ title: "att.curvature"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the placement of Bezier control points as a series of pairs of space-separated
                         values; e.g., 19 45 -32 118.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:list&gt;</span>
                            
@@ -67,7 +67,7 @@ title: "att.curvature"
                         as a percentage of the line's length. N.B. An MEI virtual unit (VU) is half the distance
                         between adjacent staff lines.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:list&gt;</span>
                            

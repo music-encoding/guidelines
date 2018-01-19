@@ -77,9 +77,9 @@ title: "att.pedal.log"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the function of the depressed pedal, but not necessarily the text associated
                         with its use. Use the 
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;gi&gt;</span>dir<span data-indentation="3" class="element">&lt;/gi&gt;</span></div> element for such text.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>dir<span data-indentation="3" class="element">&lt;/gi&gt;</span></div> element for such text.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>

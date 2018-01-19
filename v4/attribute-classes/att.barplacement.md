@@ -40,7 +40,7 @@ title: "att.barPlacement"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>States the length of a barline. Must be greater than 0 and less than or equal to (2
                         times number of staff lines) + 2, e.g., between 0 and 12 for a 5-line staff.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>&gt;</span>
                            
@@ -50,7 +50,7 @@ title: "att.barPlacement"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The value of barlinelen must be greater than 0 and less than or equal to (2 times
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The value of barlinelen must be greater than 0 and less than or equal to (2 times
                            number of staff lines) + 2; e.g., 12 on a 5-line staff.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
@@ -59,7 +59,7 @@ title: "att.barPlacement"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the location of a bar line.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -80,7 +80,7 @@ title: "att.barPlacement"
                         the
                         top line of a 5-line staff.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               

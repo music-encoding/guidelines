@@ -49,9 +49,9 @@ title: "att.mordent.log"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records semantic meaning, i.e., intended performance, of the mordent. The
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att&gt;</span>altsym<span data-indentation="3" class="element">&lt;/att&gt;</span></div>, 
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att&gt;</span>glyph.name<span data-indentation="3" class="element">&lt;/att&gt;</span></div>, or 
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att&gt;</span>glyph.num<span data-indentation="3" class="element">&lt;/att&gt;</span></div> attributes may be used
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>altsym<span data-indentation="3" class="element">&lt;/att&gt;</span></div>, 
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>glyph.name<span data-indentation="3" class="element">&lt;/att&gt;</span></div>, or 
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>glyph.num<span data-indentation="3" class="element">&lt;/att&gt;</span></div> attributes may be used
                         to specify the appropriate symbol.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
@@ -77,7 +77,7 @@ title: "att.mordent.log"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>When set to 'true', a double or long mordent, sometimes called a "pincé double",
                         consisting of 5 notes, is indicated.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               

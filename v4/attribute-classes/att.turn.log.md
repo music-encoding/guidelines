@@ -49,7 +49,7 @@ title: "att.turn.log"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>When set to 'true', the turn begins on the second half of the beat.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -61,10 +61,10 @@ title: "att.turn.log"
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records meaning; i.e., intended performance, of the turn. The 
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att&gt;</span>altsym<span data-indentation="3" class="element">&lt;/att&gt;</span></div>,
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>altsym<span data-indentation="3" class="element">&lt;/att&gt;</span></div>,
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att&gt;</span>glyph.name<span data-indentation="3" class="element">&lt;/att&gt;</span></div>, or 
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att&gt;</span>glyph.num<span data-indentation="3" class="element">&lt;/att&gt;</span></div> attributes may be used to specify the
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>glyph.name<span data-indentation="3" class="element">&lt;/att&gt;</span></div>, or 
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>glyph.num<span data-indentation="3" class="element">&lt;/att&gt;</span></div> attributes may be used to specify the
                         appropriate symbol.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>

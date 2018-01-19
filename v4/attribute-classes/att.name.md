@@ -50,7 +50,7 @@ title: "att.name"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Used to record a pointer to the regularized form of the name elsewhere in the
                         document.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
@@ -80,18 +80,18 @@ title: "att.name"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Used to specify further information about the entity referenced by this name, for
                         example, the occupation of a person or the status of a place.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:text/&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>When applicable, values from the MARC relator term list (
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>When applicable, values from the MARC relator term list (
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://www.loc.gov/marc/relators/relaterm.html"</span>&gt;</span>http://www.loc.gov/marc/relators/relaterm.html<span data-indentation="4" class="element">&lt;/ref&gt;</span></div>) or code list (
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://www.loc.gov/marc/relators/relacode.html"</span>&gt;</span>http://www.loc.gov/marc/relators/relacode.html<span data-indentation="4" class="element">&lt;/ref&gt;</span></div>) are recommended for
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>role<span data-indentation="4" class="element">&lt;/att&gt;</span></div>.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>role<span data-indentation="4" class="element">&lt;/att&gt;</span></div>.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
          </td>

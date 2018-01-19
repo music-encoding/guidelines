@@ -92,9 +92,7 @@ title: "data.STAFFITEM.basic"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Ornaments.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- phrase more note-attached than staff-attached? --&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--&lt;valItem ident="phrase"/&gt;--&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"sp"</span>&gt;</span>
                            
