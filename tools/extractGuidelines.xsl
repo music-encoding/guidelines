@@ -19,7 +19,7 @@
             <xd:p>This XSL generates the website version of the MEI Guidelines, directly from a canonicalized ODD file.</xd:p>
         </xd:desc>
     </xd:doc>
-    <xsl:output indent="true" method="html" suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
+    <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:variable name="plain.version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
     <xd:doc scope="component">
@@ -1217,7 +1217,7 @@ version: "<xsl:value-of select="$plain.version"/>"
                 <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="path" select="'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include plainExample.html example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" version=page.version %}
+        <xsl:variable name="path" select="$chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include mei example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" %}
     </xsl:template>
         
     <xsl:template match="tei:table">
