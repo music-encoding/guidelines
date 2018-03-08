@@ -19,7 +19,7 @@
             <xd:p>This XSL generates the website version of the MEI Guidelines, directly from a canonicalized ODD file.</xd:p>
         </xd:desc>
     </xd:doc>
-    <xsl:output indent="true" method="html" suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
+    <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:variable name="plain.version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
     <xd:doc scope="component">
