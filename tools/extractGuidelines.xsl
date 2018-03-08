@@ -1217,7 +1217,7 @@ version: "<xsl:value-of select="$plain.version"/>"
                 <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="path" select="'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include plainExample.html example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" version=page.version %}
+        <xsl:variable name="path" select="$chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include mei example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" %}
     </xsl:template>
         
     <xsl:template match="tei:table">
