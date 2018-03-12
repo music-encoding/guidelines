@@ -1,1 +1,0 @@
-Attributes that identify the reason why an editorial feature is used.

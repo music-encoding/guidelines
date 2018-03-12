@@ -10,7 +10,7 @@ may be grouped using the {% include link elem="subst" %} element. The most commo
 a replacement of portions of the musical text using both the {% include link elem="add" %} and
 {% include link elem="del" %} element, as seen in the following example:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample227.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample227.xml" valid="true" %}
 An intervention closely related to substitution is the restoration of a previously
 deleted
 section. For this purpose MEI offers the {% include link elem="restore" %} element, which may
@@ -20,7 +20,7 @@ The following example illustrates an instance where a lyric which was cancelled 
 later
 restored by overwriting it:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample228.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample228.xml" valid="true" %}
 The **@desc** attribute gives a prose description of the means of restoration. The
 **@cert** attribute signifies the degree of certainty ascribed to the identification
 of the hand of the restoration. The **@type** attribute may be used to indicate the
@@ -38,7 +38,7 @@ of the tint or type of ink, e.g., 'brown' or the writing medium, e.g., 'pencil',
 be
 placed in the **@medium** attribute.
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample229.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample229.xml" valid="true" %}
 The new hand may be identified using the **@new** attribute, while the previous hand
 may be recorded in the **@old** attribute. The **@resp** attribute contains an
 ID reference to an element containing the name of the editor or transcriber responsible

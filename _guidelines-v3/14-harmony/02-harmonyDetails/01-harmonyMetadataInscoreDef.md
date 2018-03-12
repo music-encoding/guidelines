@@ -54,14 +54,14 @@ indications found in the musical text. For example, the harmonic label <span cla
 equated with a fully spelled-out indication of functional harmony that can be substituted
 for the harmonic label, say, in an aural rendition:
 
-{% include plainExample.html example="examples/harmony/harmony-sample246.xml" valid="false" version=page.version %}
+{% include mei example="harmony/harmony-sample246.xml" valid="false" %}
 Alternatively, the non-bass chord tones may be indicated, not with pitch names, but
 with
 their intervallic distance above the bass note. Therefore, the example above may also
 be
 encoded:
 
-{% include plainExample.html example="examples/harmony/harmony-sample247.xml" valid="true" version=page.version %}
+{% include mei example="harmony/harmony-sample247.xml" valid="true" %}
 The preceding encoding possibilities provide the detailed information necessary to
 create
 playable chord annotations. For more generic uses, however, the encoding can be taken
@@ -71,4 +71,4 @@ octave duplications and expressing all chord members, including the bass note, u
 intervals above the bass. Of course, the **@inth** attribute for the bass note itself
 should be set to <span class="q">0</span>. For example:
 
-{% include plainExample.html example="examples/harmony/harmony-sample248.xml" valid="true" version=page.version %}
+{% include mei example="harmony/harmony-sample248.xml" valid="true" %}

@@ -30,7 +30,7 @@ title: "componentGrp"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@label</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
                            Value of datatype <span style="font-weight: 500;">string</span>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -44,8 +44,8 @@ title: "componentGrp"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@xml:base</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
                               references into absolute URI references.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a></span></div>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -159,10 +159,10 @@ title: "componentGrp"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>Only child elements of the same name as the parent of the componentGrp are allowed.</div>
+               <div class="schematronText">Only child elements of the same name as the parent of the componentGrp are allowed.</div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:componentGrp"</span>&gt;</span>

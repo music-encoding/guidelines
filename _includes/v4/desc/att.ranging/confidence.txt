@@ -1,4 +1,0 @@
-Specifies the degree of statistical confidence (between zero and one) that a value
-falls within the range specified by min and max, or the proportion of observed values
-that
-fall within that range.

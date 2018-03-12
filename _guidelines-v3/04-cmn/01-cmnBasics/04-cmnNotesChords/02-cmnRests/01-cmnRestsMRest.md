@@ -12,7 +12,7 @@ The **@cutout** attribute provides for the description of the rendition of the
 ‘cutout’ (the only value allowed), then the complete staff
 including the staff lines will not be rendered for this measure.
 
-{% include plainExample.html example="examples/cmn/cmn-sample101.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample101.xml" valid="true" %}
 It is a semantic error to mix an {% include link elem="mRest" %} with other events in the
 same {% include link elem="layer" %}. However, other ‘control events’,
 such as {% include link elem="fermata" %}, may be used at the same time as {% include link elem="mRest" %}.

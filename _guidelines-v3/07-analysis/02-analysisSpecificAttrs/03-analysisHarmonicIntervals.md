@@ -19,7 +19,7 @@ be marked as a {% include link elem="chord" %}. In the markup below, for example
 **@inth** capture the harmonic intervals between notes distributed across multiple
 staves and layers.
 
-{% include plainExample.html example="examples/analysis/analysis-sample173.xml" valid="true" version=page.version %}
+{% include mei example="analysis/analysis-sample173.xml" valid="true" %}
 Use of the **@inth** permits detailed specification of intervallic information for
 every note and its function in relation to other simultaneously-occurring notes and
 hence

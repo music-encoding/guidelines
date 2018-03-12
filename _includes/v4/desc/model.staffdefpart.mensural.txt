@@ -1,1 +1,0 @@
-Groups elements that may appear in the declaration of staff features.

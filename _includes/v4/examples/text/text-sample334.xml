@@ -1,9 +1,0 @@
-<list xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Ornaments in different languages
-   </head>
-   <li n="English" xml:lang="en">Turn</li>
-   <li n="Italian" xml:lang="it">Gruppetto</li>
-   <li n="French" xml:lang="fr">Gruppetto</li>
-   <li n="German" xml:lang="de">Doppelschlag</li>
-</list>

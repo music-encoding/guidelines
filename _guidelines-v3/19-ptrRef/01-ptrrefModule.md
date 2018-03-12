@@ -51,7 +51,8 @@ The two elements share a set of common attributes that are inherited from the {%
       <tr>
          <td>@xlink:role</td>
          <td> - indicates a property of the entire link. The value of the role attribute must be
-            a URI.
+            a
+            URI.
          </td>
       </tr>
    </tbody>
@@ -61,7 +62,7 @@ framework is described at [http://www.w3.org/TR/xptr-framework/](http://www.w3.o
 from the very simple (a reference to the value of the target element's **@xml:id**
 attribute) to the more complex usage of a full URI with embedded XPointers:
 
-{% include plainExample.html example="examples/ptrRef/ptrRef-sample312.xml" valid="false" version=page.version %}
+{% include mei example="ptrRef/ptrRef-sample312.xml" valid="false" %}
 The **@targettype** attribute allows the target resource to be characterized using any
 convenient classification scheme or typology. This is often useful when the target
 requires
@@ -71,7 +72,7 @@ formatted differently, e.g., the bibliographic citation may result in special ty
 while
 the pointer to the audio file may be used to embed an audio player:
 
-{% include plainExample.html example="examples/ptrRef/ptrRef-sample313.xml" valid="false" version=page.version %}
+{% include mei example="ptrRef/ptrRef-sample313.xml" valid="false" %}
 The **@xlink:actuate** and **@xlink:show** attributes are used in conjunction to
 determine the link's behavior. The attribute **@xlink:actuate** defines whether the
 resolution of a link occurs automatically or must be requested by the user.
@@ -103,8 +104,8 @@ The following values are allowed for the **@xlink:actuate** attribute:
       </tr>
       <tr>
          <td>'none'</td>
-         <td> - traversal behavior is unconstrained; no other markup is provided to determine appropriate
-            behavior
+         <td> - traversal behavior is unconstrained; no other markup is provided to determine
+            appropriate behavior
          </td>
       </tr>
    </tbody>
@@ -148,8 +149,8 @@ values are permitted:
       </tr>
       <tr>
          <td>'none'</td>
-         <td> - traversal behavior is unconstrained; no other markup is provided to determine appropriate
-            behavior
+         <td> - traversal behavior is unconstrained; no other markup is provided to determine
+            appropriate behavior
          </td>
       </tr>
    </tbody>
@@ -163,7 +164,7 @@ The following example illustrates a pointer that results in the automatic creati
 of a new
 window with the content of the target loaded in it:
 
-{% include plainExample.html example="examples/ptrRef/ptrRef-sample314.xml" valid="true" version=page.version %}
+{% include mei example="ptrRef/ptrRef-sample314.xml" valid="true" %}
 The **@xlink:title** and **@xlink:role** attributes describe the meaning of
 resources within the context of a link. The **@xlink:title** attribute is used to label
 or describe a link or resource in a human-readable fashion. The value here is highly
@@ -173,7 +174,7 @@ available to applications used by visually impaired users, or to create a table 
 links, or
 to present help text that appears when a user's mouse hovers over the link.
 
-{% include plainExample.html example="examples/ptrRef/ptrRef-sample315.xml" valid="true" version=page.version %}
+{% include mei example="ptrRef/ptrRef-sample315.xml" valid="true" %}
 The attribute**@ xlink:role** serves a similar function to that of
 **@xlink:title**. Whereas the value of **@xlink:title** may be any string, the
 value of **@xlink:role** must be an absolute URI reference as defined in IETF RFC 3986,
@@ -182,7 +183,7 @@ describes the intended property. When no value is supplied, no particular role v
 is to be
 inferred.
 
-{% include plainExample.html example="examples/ptrRef/ptrRef-sample316.xml" valid="false" version=page.version %}
+{% include mei example="ptrRef/ptrRef-sample316.xml" valid="false" %}
 In the preceding example, the value of the **@xlink:role** attribute may be used to
 re-write the value of **@xlink:title**, depending on the target resource role.
 
@@ -195,9 +196,9 @@ Extension) type defined by the Internet Engineering Task Force in RFC 2046, avai
 at [http://www.ietf.org/rfc/rfc2046.txt](http://www.ietf.org/rfc/rfc2046.txt){:.link_ref}. The
 following are all valid mimetype values:
 
-{% include plainExample.html example="examples/ptrRef/ptrRef-sample317.xml" valid="false" version=page.version %}
+{% include mei example="ptrRef/ptrRef-sample317.xml" valid="false" %}
 The **@mimetype** attribute is particularly useful for documenting the nature of the
 destination when the value of **@target** does not provide a filename extension or when
 the destination is a non-standard file type:
 
-{% include plainExample.html example="examples/ptrRef/ptrRef-sample318.xml" valid="false" version=page.version %}
+{% include mei example="ptrRef/ptrRef-sample318.xml" valid="false" %}

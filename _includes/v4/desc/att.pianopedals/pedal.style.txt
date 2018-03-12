@@ -1,1 +1,0 @@
-Determines whether piano pedal marks should be rendered as lines or as terms.

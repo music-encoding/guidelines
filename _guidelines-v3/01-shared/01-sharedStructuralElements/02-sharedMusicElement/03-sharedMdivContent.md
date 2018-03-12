@@ -23,7 +23,7 @@ not always possible or desirable to automatically derive one view from the other
 In
 addition, separating scores and parts can eliminate a great deal of markup complexity.
 
-{% include plainExample.html example="examples/shared/shared-sample006.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample006.xml" valid="true" %}
 The {% include link elem="score" %} and {% include link elem="parts" %} elements may also be
 employed to accommodate different methods of organizing the markup – with no particular
 presentation implied. In this case, software may render a collection of parts as a
@@ -56,7 +56,7 @@ attribute, available on all the members of the {% include link att-class="model.
 class. The {% include link elem="staffGrp" %} element handles grouping of staves in the score
 context.
 
-{% include plainExample.html example="examples/shared/shared-sample007.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample007.xml" valid="true" %}
 In both score and part views, the {% include link elem="scoreDef" %} element is used to
 describe logical characteristics of the encoded music, such as key signature, the
 sounding
@@ -97,7 +97,7 @@ recursively nested.
 The most common (non-analytical, non-editorial) use of {% include link elem="section" %} and
 {% include link elem="ending" %} elements is illustrated below:
 
-{% include plainExample.html example="examples/shared/shared-sample008.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample008.xml" valid="true" %}
 Within {% include link elem="section" %} elements, several methods of organization are
 possible, depending upon the notational style of the source material and the encoder's
 needs. For example, when the MEI.cmn module is used, the default organization is
@@ -147,4 +147,4 @@ independently of any textual directives, such as "Da capo" or "D.S. al Fine", th
 may be
 present in the document.
 
-{% include plainExample.html example="examples/shared/shared-sample009.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample009.xml" valid="true" %}

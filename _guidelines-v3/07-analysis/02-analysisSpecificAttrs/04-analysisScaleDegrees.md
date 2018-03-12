@@ -30,4 +30,4 @@ minus (-) signs, signifying raised or lowered scale degree, respectively. The ac
 amount
 of chromatic alteration is not indicated.
 
-{% include plainExample.html example="examples/analysis/analysis-sample174.xml" valid="false" version=page.version %}
+{% include mei example="analysis/analysis-sample174.xml" valid="false" %}

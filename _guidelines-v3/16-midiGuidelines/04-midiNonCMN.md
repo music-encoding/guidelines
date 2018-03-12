@@ -12,4 +12,4 @@ notations MIDI controller data is assumed to be associated with the event that i
 follows in the same layer. Thus, a crescendo in mensural notation may be encoded like
 so:
 
-{% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample275.xml" valid="true" version=page.version %}
+{% include mei example="midiGuidelines/midiGuidelines-sample275.xml" valid="true" %}

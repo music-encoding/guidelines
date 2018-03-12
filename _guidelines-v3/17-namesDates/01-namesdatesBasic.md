@@ -57,13 +57,13 @@ Authority File (LCNAF), may be recorded using the authority attribute.
 
 Examples of the use of the {% include link elem="name" %} element:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample276.xml" valid="false" version=page.version %}
+{% include mei example="namesDates/namesDates-sample276.xml" valid="false" %}
 The element {% include link elem="date" %} contains a date in any format, including a date range.
 A date range may be expressed as textual content or, when intervening punctuation
 is present,
 as a combination of date sub-elements and text.
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample277.xml" valid="false" version=page.version %}
+{% include mei example="namesDates/namesDates-sample277.xml" valid="false" %}
 To be more specific about the date, the attributes in the {% include link att-class="att.datable" %} class can be used:
 
 
@@ -111,4 +111,4 @@ To be more specific about the date, the attributes in the {% include link att-cl
 </table>In the following example, the ambiguous date text "5/3/05" is resolved using the
 **@isodate** attribute:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample278.xml" valid="false" version=page.version %}
+{% include mei example="namesDates/namesDates-sample278.xml" valid="false" %}

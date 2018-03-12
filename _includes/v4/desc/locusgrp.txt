@@ -1,3 +1,0 @@
-(locus group) – Groups locations which together form a distinct but discontinuous
-item
-within a manuscript or manuscript part, according to a specific foliation.

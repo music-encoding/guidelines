@@ -1,1 +1,0 @@
-Groups elements that permit declaration of staff group properties.

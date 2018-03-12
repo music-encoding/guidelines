@@ -31,7 +31,7 @@ att.keySigDefault.log/key.sig" %}
 
 The following example describes a score in common time with 3 flats:
 
-{% include plainExample.html example="examples/cmn/cmn-sample093.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample093.xml" valid="true" %}
 Other attributes allow the description of default page and system margins and fonts
 for
 text and music:
@@ -88,7 +88,7 @@ attributes are important for {% include link elem="staffDef" %} elements:
 
 A staff with a tenor clef is encoded as in the following example:
 
-{% include plainExample.html example="examples/cmn/cmn-sample094.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample094.xml" valid="true" %}
 In the case of transposing instruments, the key-related attributes described above
 may be
 used to override the written key expressed in the {% include link elem="scoreDef" %} element. As
@@ -98,7 +98,7 @@ semitones to calculate sounded pitch from written pitch. The piccolo and E♭ cl
 staves
 in the example below utilize these attributes:
 
-{% include plainExample.html example="examples/cmn/cmn-sample095.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample095.xml" valid="true" %}
 There are a number of additional elements that can be used as children of {% include link elem="staffDef" %} in order to describe additional features of the staff, such as the color of
 a clef or a key signature added in a different hand. These elements include:
 

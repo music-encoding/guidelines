@@ -14,7 +14,7 @@ Sometimes, a fermata occurs over a barline to indicate the end of a phrase or se
 In MEI, fermatas may be encoded using an attribute on {% include link elem="note" %}, {% include link elem="chord" %} or {% include link elem="rest" %}. This attribute allows placement
 of a fermata above or below the element to which it's attached.
 
-{% include plainExample.html example="examples/cmn/cmn-sample142.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample142.xml" valid="true" %}
 However, if there is further information about the fermata that should be addressed
 in
 the encoding, MEI offers the {% include link elem="fermata" %} element. This element, which is
@@ -28,4 +28,4 @@ semisquare ("square"). If the fermata should be rendered using some other symbol
 a
 user-defined symbol may be referred to using the **@altsym** attribute.
 
-{% include plainExample.html example="examples/cmn/cmn-sample143.xml" valid="false" version=page.version %}
+{% include mei example="cmn/cmn-sample143.xml" valid="false" %}

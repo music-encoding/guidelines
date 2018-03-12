@@ -24,4 +24,4 @@ been used as the value of @xml:lang attributes elsewhere in the document.
 
 Here is an example of the use of this element:
 
-{% include plainExample.html example="examples/header/header-sample054.xml" valid="false" version=page.version %}
+{% include mei example="header/header-sample054.xml" valid="false" %}

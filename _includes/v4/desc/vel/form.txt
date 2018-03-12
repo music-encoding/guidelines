@@ -1,1 +1,0 @@
-Indicates whether this is note-on or note-off velocity data.

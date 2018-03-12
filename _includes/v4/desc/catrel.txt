@@ -1,1 +1,0 @@
-(category relationship) – Contains the name of a related category.

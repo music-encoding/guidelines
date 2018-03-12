@@ -25,4 +25,4 @@ not integrated into the music notation. In addition, it is common for a poem to 
 a
 title or a header, as is demonstrated by the following example:
 
-{% include plainExample.html example="examples/text/text-sample337.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample337.xml" valid="true" %}

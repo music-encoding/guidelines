@@ -1,1 +1,0 @@
-Attributes used to supply an integer number designation for an element.

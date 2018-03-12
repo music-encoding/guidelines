@@ -22,10 +22,10 @@ The following example illustrates an alteration (the second *brevis*) in
 duration of each note is given as a proportion of a whole note using the **@num** and
 **@numbase**:
 
-{% include plainExample.html example="examples/mensural/mensural-sample154.xml" valid="false" version=page.version %}
+{% include mei example="mensural/mensural-sample154.xml" valid="false" %}
 The following example illustrates an imperfection (the two *longae*) in
 *modus minor perfectus* and *tempus perfectum* with the same
 *longa*-*brevis*-*brevis*-*longa* sequence but
 with an additional *punctus divisionis* between the two *breves*:
 
-{% include plainExample.html example="examples/mensural/mensural-sample155.xml" valid="false" version=page.version %}
+{% include mei example="mensural/mensural-sample155.xml" valid="false" %}

@@ -23,7 +23,7 @@ The duration of the entire tuplet may be encoded using the usual ‘power of
 2’ values, e.g., 1, 2, 4, etc., in the **@dur** attribute, and the
 **@dots** attribute, if necessary.
 
-{% include plainExample.html example="examples/cmn/cmn-sample134.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample134.xml" valid="true" %}
 Tuplets are often highlighted using brackets above or below the affected notes. The
 presence and position of these brackets can be encoded using the **@bracket.place**
 (above / below) and **@bracket.visible** (true / false) attributes.
@@ -64,4 +64,4 @@ tuplets to cross measure boundaries. The following example demonstrates a typica
 example of
 such hierarchy-crossing tuplets:
 
-{% include plainExample.html example="examples/cmn/cmn-sample135.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample135.xml" valid="true" %}

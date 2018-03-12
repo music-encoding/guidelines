@@ -69,78 +69,73 @@ title: "att.typography"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontfam"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Contains the name of a font-family.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontfam"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                           
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTFAMILY.html">data.FONTFAMILY</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontname"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Holds the name of a font.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Contains the name of a font-family.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                           
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTNAME.html">data.FONTNAME</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontsize"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch,
-                     relative terms, e.g., "small", "larger", etc., or percentage values relative to "normal"
-                     size, e.g., "125%". <span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTFAMILY.html">data.FONTFAMILY</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontname"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                           
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTSIZE.html">data.FONTSIZE</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontstyle"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the style of a font, i.e, italic, oblique, or normal.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Holds the name of a font.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                           
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTSTYLE.html">data.FONTSTYLE</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontweight"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Used to indicate bold type.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTNAME.html">data.FONTNAME</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontsize"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                           
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTWEIGHT.html">data.FONTWEIGHT</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch,
+                        relative terms, e.g., "small", "larger", etc., or percentage values relative to "normal"
+                        size, e.g., "125%". <span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTSIZE.html">data.FONTSIZE</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontstyle"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Records the style of a font, i.e, italic, oblique, or normal.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTSTYLE.html">data.FONTSTYLE</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"fontweight"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Used to indicate bold type.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.FONTWEIGHT.html">data.FONTWEIGHT</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

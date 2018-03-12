@@ -1,1 +1,0 @@
-Indicates the upper-left corner x coordinate.

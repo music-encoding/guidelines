@@ -41,7 +41,7 @@ Supplying only the level of encoding required, the MEI header of a single text w
 look like
 the following example:
 
-{% include plainExample.html example="examples/header/header-sample077.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample077.xml" valid="true" %}
 The only mandatory component of the MEI Header is the {% include link elem="fileDesc" %} element.
 Within this element, {% include link elem="titleStmt" %} and {% include link elem="pubStmt" %} are
 required constituents. Within the title statement, a title is required. Within the
@@ -70,4 +70,4 @@ information, adequate for most bibliographic purposes, in particular to allow fo
 the creation
 of an AACR2-conformant bibliographic record.
 
-{% include plainExample.html example="examples/header/header-sample078.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample078.xml" valid="true" %}

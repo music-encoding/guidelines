@@ -11,7 +11,7 @@ another. For these situations, MEI offers the {% include link elem="relatedItem"
 may either point to a different entity using its **@target** attribute, or may hold
 the related item as child. 
 
-{% include plainExample.html example="examples/shared/shared-sample013.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample013.xml" valid="true" %}
  In this example, the nested {% include link elem="relatedItem" %} / {% include link elem="bibl" %}
 provides information about the ‘container’ where the outer {% include link elem="bibl" %} may be found. The kind of relation is expressed using the
 **@rel** attribute. It describes the relationship of the child {% include link elem="bibl" %} to the {% include link elem="relatedItem" %}'s parent {% include link elem="bibl" %}. 

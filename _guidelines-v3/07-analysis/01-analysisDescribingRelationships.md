@@ -57,7 +57,7 @@ usually refers to an element in the current document. The following example demo
 use
 of the **@copyof** attribute:
 
-{% include plainExample.html example="examples/analysis/analysis-sample162.xml" valid="false" version=page.version %}
+{% include mei example="analysis/analysis-sample162.xml" valid="false" %}
 In this example. the {% include link elem="note" %} in the second measure has exactly the same
 characteristics as the {% include link elem="note" %} in the first {% include link elem="measure" %}.
 
@@ -69,11 +69,11 @@ encoding effort. The image and the following encoding of the beginning of Schube
 attribute.
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"><figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
-</figure>{% include plainExample.html example="examples/analysis/analysis-sample163.xml" valid="true" version=page.version %}
+</figure>{% include mei example="analysis/analysis-sample163.xml" valid="true" %}
 This example can be reduced further by using **@copyof** inside the initial tuplet to
 represent the repeated chords:
 
-{% include plainExample.html example="examples/analysis/analysis-sample164.xml" valid="true" version=page.version %}
+{% include mei example="analysis/analysis-sample164.xml" valid="true" %}
 While **@copyof** signifies a duplicate copy of an element, the **@sameas**
 indicates that the current element represents exactly the same entity as the one referenced
 in
@@ -83,14 +83,14 @@ the sharing of one note head between two voices in the first full measure of a c
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"><figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
-</figure>{% include plainExample.html example="examples/analysis/analysis-sample165.xml" valid="true" version=page.version %}
+</figure>{% include mei example="analysis/analysis-sample165.xml" valid="true" %}
 While **@copyof** and **@sameas** have defined semantics, the **@corresp**
 may be used to create user-defined relationships between elements. The example below
 demonstrates the encoding of a relationship between #note3 and the fermata, even though
 the
 fermata is not placed directly above the note.
 
-{% include plainExample.html example="examples/analysis/analysis-sample166.xml" valid="true" version=page.version %}
+{% include mei example="analysis/analysis-sample166.xml" valid="true" %}
 The **@corresp** attribute only marks the correspondence between the current element
 and one or more other entities. To describe the nature of the correspondence, one
 must use {% include link elem="annot" %}.
@@ -107,14 +107,14 @@ occurs after the pointing element in time, but before it in encoding order:
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"><figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
-</figure>{% include plainExample.html example="examples/analysis/analysis-sample167.xml" valid="false" version=page.version %}
+</figure>{% include mei example="analysis/analysis-sample167.xml" valid="false" %}
 This attribute may also be useful to clarify a sequence of entites which occurs across
 some
 form of interruption, in this case, notes before and after a system or page break
 where there
 is no custos or direct in the source:
 
-{% include plainExample.html example="examples/analysis/analysis-sample168.xml" valid="true" version=page.version %}
+{% include mei example="analysis/analysis-sample168.xml" valid="true" %}
 A one-to-many relationship between the current element and the entities being referred
 to can
 be expressed by using a list of space-separated URIs in **@corresp**.

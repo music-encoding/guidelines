@@ -48,4 +48,4 @@ in which they must occur within the {% include link elem="fileDesc" %} element.
 
 A complete file description will resemble the following example:
 
-{% include plainExample.html example="examples/header/header-sample019.xml" valid="false" version=page.version %}
+{% include mei example="header/header-sample019.xml" valid="false" %}

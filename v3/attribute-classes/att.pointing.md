@@ -32,112 +32,107 @@ title: "att.pointing"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"xlink:actuate"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Defines whether a link occurs automatically or must be requested by the user.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"xlink:actuate"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"onLoad"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Defines whether a link occurs automatically or must be requested by the user.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Load the target resource(s) immediately.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"onRequest"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Load the target resource(s) upon user request.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"none"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Do not permit loading of the target resource(s).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"other"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Behavior other than allowed by the other values of this attribute.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"xlink:role"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Characterization of the relationship between resources. The value of the role
-                     attribute must be a URI.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"onLoad"</span>&gt;</span>
                            
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"xlink:show"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Defines how a remote resource is rendered.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"new"</span>&gt;</span>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Load the target resource(s) immediately.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Open in a new window.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"replace"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Load the referenced resource in the same window.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"embed"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Embed the referenced resource at the point of the link.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"none"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Do not permit traversal to the referenced resource.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"other"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Behavior other than permitted by the other values of this attribute.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"target"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Allows the use of one or more previously-undeclared URIs to identify passive
-                     participants in a relationship; that is, the entities pointed "to".<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"onRequest"</span>&gt;</span>
                            
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"targettype"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Characterization of target resource(s) using any convenient classification scheme
-                     or
-                     typology.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Load the target resource(s) upon user request.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"none"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Do not permit loading of the target resource(s).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"other"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Behavior other than allowed by the other values of this attribute.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"xlink:role"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Characterization of the relationship between resources. The value of the role
+                        attribute must be a URI.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"xlink:show"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Defines how a remote resource is rendered.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"new"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Open in a new window.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"replace"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Load the referenced resource in the same window.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"embed"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Embed the referenced resource at the point of the link.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"none"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Do not permit traversal to the referenced resource.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"other"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Behavior other than permitted by the other values of this attribute.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"target"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Allows the use of one or more previously-undeclared URIs to identify passive
+                        participants in a relationship; that is, the entities pointed "to".<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"targettype"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Characterization of target resource(s) using any convenient classification scheme
+                        or
+                        typology.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

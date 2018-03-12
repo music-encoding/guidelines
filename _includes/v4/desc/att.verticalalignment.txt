@@ -1,1 +1,0 @@
-Attributes that describe visual alignment in the vertical dimension.

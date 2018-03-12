@@ -1,1 +1,0 @@
-Gives a maximum estimated value for an approximate measurement.

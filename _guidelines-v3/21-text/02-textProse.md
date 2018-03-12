@@ -23,7 +23,7 @@ Prose text is used for several different purposes within a MEI document, therefo
 {% include link elem="p" %} can occur in many situations. For example, it may be used within
 metadata elements (see {% include link id="header" %}):
 
-{% include plainExample.html example="examples/text/text-sample331.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample331.xml" valid="true" %}
 Alternatively, paragraphs may be part of the document contents (and therefore encoded
 within
 {% include link elem="music" %}), either as {% include link id="textFrontBack" %} or within the music notation. In these cases, a paragraph will likely be
@@ -31,4 +31,4 @@ contained by a {% include link elem="div" %} or other elements containing prose 
 
 The following example shows a paragraph in a preface section:
 
-{% include plainExample.html example="examples/text/text-sample332.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample332.xml" valid="true" %}

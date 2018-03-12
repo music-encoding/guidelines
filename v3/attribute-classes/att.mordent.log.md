@@ -32,59 +32,56 @@ title: "att.mordent.log"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.controlevent.html">att.controlevent</a>"</span></span>/&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startendid.html">att.startendid</a>"</span></span>/&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ornamentaccid.html">att.ornamentaccid</a>"</span></span>/&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Traditionally, the 'normal' mordent is written as a short wavy line with a vertical
-                     line through it and the inverted mordent is written without the vertical line. However,
-                     the meaning of these signs is sometimes reversed. See Read, p. 245-246. Another
-                     attribute in the visual domain would be necessary in order to be completely explicit
-                     about which visual symbol is actually to be rendered.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"inv"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.controlevent.html">att.controlevent</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startendid.html">att.startendid</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ornamentaccid.html">att.ornamentaccid</a>"</span></span>/&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/classes&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Traditionally, the 'normal' mordent is written as a short wavy line with a vertical
+                        line through it and the inverted mordent is written without the vertical line. However,
+                        the meaning of these signs is sometimes reversed. See Read, p. 245-246. Another
+                        attribute in the visual domain would be necessary in order to be completely explicit
+                        about which visual symbol is actually to be rendered.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Inverted mordent, e.g., performed as the principal note, followed by its upper
-                           neighbor, with a return to the principal note.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"norm"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"normal" mordent, e.g., performed as the written note, followed by its lower
-                           neighbor, with a return to the written note.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"long"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>When the long attribute is set to 'yes', a double or long mordent, consisting of 5
-                     notes, is indicated.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"inv"</span>&gt;</span>
                            
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.BOOLEAN.html">data.BOOLEAN</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Inverted mordent, e.g., performed as the principal note, followed by its upper
+                              neighbor, with a return to the principal note.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"norm"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>"normal" mordent, e.g., performed as the written note, followed by its lower
+                              neighbor, with a return to the written note.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"long"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>When the long attribute is set to 'yes', a double or long mordent, consisting of 5
+                        notes, is indicated.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.BOOLEAN.html">data.BOOLEAN</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

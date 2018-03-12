@@ -65,15 +65,15 @@ than a notes statement giving a simple prose description or a brief note stating
 the
 document has no physical source:
 
-{% include plainExample.html example="examples/header/header-sample043.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/header/header-sample044.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample043.xml" valid="true" %}
+{% include mei example="header/header-sample044.xml" valid="true" %}
 Alternatively, it may contain a basic bibliographic citation, also in an annotation:
 
-{% include plainExample.html example="examples/header/header-sample045.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample045.xml" valid="true" %}
 However, more structured bibliographic data, such as that in the example below, facilitates
 better machine-processing:
 
-{% include plainExample.html example="examples/header/header-sample046.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample046.xml" valid="true" %}
 A description of more precise capture of dates and date ranges is provided in chapter
 {% include link id="namesDates" %}.
 
@@ -87,4 +87,4 @@ and will not be covered again here.
 If a source of the file is an unpublished manuscript, it is recommended that the {% include link elem="unpub" %} element be used as the only content of the source's {% include link elem="pubStmt" %} element. Other identifying information for the manuscript may be
 collected in the {% include link elem="notesStmt" %} element, as described in section {% include link id="headerNotesStatement" %}.
 
-{% include plainExample.html example="examples/header/header-sample047.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample047.xml" valid="true" %}

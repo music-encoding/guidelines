@@ -27,11 +27,11 @@ The following example from Carl Maria von Weber's *Der Freischütz* illustrates
 this encoding method:
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/lyrics/ex_lyric.png" class="img-responsive"><figcaption class="figure-caption">Figure 52. Weber, Der Freischütz</figcaption>
-</figure>{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample267.xml" valid="false" version=page.version %}
+</figure>{% include mei example="lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
 In this encoding style, a {% include link elem="syl" %} element with its **@con** attribute
 set to 't' and the following syllable are presumed to be associated with a single
 note. In the
 following example, the first two syllables occur on the first note and the third syllable
 occurs on the second note.
 
-{% include plainExample.html example="examples/lyricsDesc/lyricsDesc-sample268.xml" valid="false" version=page.version %}
+{% include mei example="lyricsDesc/lyricsDesc-sample268.xml" valid="false" %}

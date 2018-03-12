@@ -69,7 +69,7 @@ declare these relations explicitly. In FRBR terms, a manifestation / source is a
 embodiment
 of an expression.
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample085.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample085.xml" valid="true" %}
 Within the {% include link elem="componentGrp" %} element, the order of child elements implicitly
 describes a hasSuccessor/isSuccessorOf relationship between components, i.e. it defines
 a
@@ -77,7 +77,7 @@ certain sequence such as the movements of a work. In other cases, {% include lin
 defined by encoding order or hierarchy. For instance, the hasReproduction/isReproductionOf
 relationship may be used to indicate that one source is a reprint of another.
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample086.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample086.xml" valid="true" %}
 Moreover, the use of {% include link elem="componentGrp" %} implicitly defines a hasPart/isPartOf
 relationship between the componentGrp element’s parent and its child elements. Using
 the {% include link elem="relationList" %} and relation elements to define their relationship, the four
@@ -85,7 +85,7 @@ component works in the "Der Ring des Nibelungen" example above could alternative
 be encoded
 as sibling work elements to the "Ring" work element.
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample087.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample087.xml" valid="true" %}
 Relations may also be used to point to external resources. For instance, each of the
 individual component works of the "Ring" could be encoded in separate files, with
 relations
@@ -93,7 +93,7 @@ pointing to them.
 
 In the file "ring.xml":
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample088.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample088.xml" valid="true" %}
 In the file "rheingold.xml":
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample089.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample089.xml" valid="true" %}

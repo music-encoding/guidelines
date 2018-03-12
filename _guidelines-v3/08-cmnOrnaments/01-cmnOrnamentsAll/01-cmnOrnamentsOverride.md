@@ -20,7 +20,7 @@ example. The section regarding {% include link id="cmnOrnamentsTrills" %} does n
 specific number of alternations between the principal and secondary notes; the encoder,
 however, may specify an exact number in the encoding description.
 
-{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample181.xml" valid="true" version=page.version %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample181.xml" valid="true" %}
 Alternatively, resolutions can be defined on a case-by-case basis by encoding a specific
 resolution using the {% include link elem="choice" %} element. See the section {% include link id="cmnOrnamentsTrillsSpecial" %} below for an example of a specific resolution of a
 trill.

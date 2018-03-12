@@ -1,4 +1,0 @@
-Identifies the foliation scheme in terms of which the location is being specified
-by
-pointing to some foliation element defining it, or to some other equivalent
-resource.

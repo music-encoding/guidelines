@@ -62,7 +62,7 @@ measure can be enabled using the **@multi.number** attribute available on the {%
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
-</figure>{% include plainExample.html example="examples/cmn/cmn-sample152.xml" valid="false" version=page.version %}
+</figure>{% include mei example="cmn/cmn-sample152.xml" valid="false" %}
 The {% include link elem="halfmRpt" %} element represents the incorrect, but frequently
 found, use of the measure repeat (or similar) sign to indicate repetition of half
 of a
@@ -75,7 +75,7 @@ importance. The following example from the beginning of Beethoven's
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"><figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
-</figure>{% include plainExample.html example="examples/cmn/cmn-sample153.xml" valid="false" version=page.version %}
+</figure>{% include mei example="cmn/cmn-sample153.xml" valid="false" %}
 As seen in the example above, it is possible to continuously repeat half measures,
 even
 across barlines.

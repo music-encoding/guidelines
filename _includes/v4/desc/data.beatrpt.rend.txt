@@ -1,1 +1,0 @@
-Visual and performance information for a repeated beat symbol.

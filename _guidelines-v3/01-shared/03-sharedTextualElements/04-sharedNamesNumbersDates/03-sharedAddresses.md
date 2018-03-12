@@ -19,4 +19,4 @@ It is important to note that the {% include link elem="address" %} element does 
 reference to the person or organization whose address is specified. This must be provided
 in a separate element, as in the following example:
 
-{% include plainExample.html example="examples/shared/shared-sample010.xml" valid="false" version=page.version %}
+{% include mei example="shared/shared-sample010.xml" valid="false" %}

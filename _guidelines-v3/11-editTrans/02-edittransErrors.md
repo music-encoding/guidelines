@@ -30,27 +30,27 @@ half note.
 
 An encoder may choose to silently correct the engraver's error:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample212.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample212.xml" valid="true" %}
 or the correction may be made explicit:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample213.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample213.xml" valid="true" %}
 Alternatively, the encoder may simply record the typographic error without correcting
 it,
 either without comment or with a {% include link elem="sic" %} element to indicate the error is
 not a transcription error in the encoding:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample214.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample214.xml" valid="true" %}
 If the encoder elects to record the original source text and provide a correction
 for the
 sake of transparency, both {% include link elem="sic" %} and {% include link elem="corr" %} may be
 used, wrapped in a {% include link elem="choice" %} element. The order of the {% include link elem="sic" %} and {% include link elem="corr" %} elements is not significant:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample215.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample215.xml" valid="true" %}
 An indication of the person or agency responsible for the emendation can be provided
 as
 follows:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample216.xml" valid="false" version=page.version %}
+{% include mei example="editTrans/editTrans-sample216.xml" valid="false" %}
 Here the **@resp** attribute has been used to indicate responsibility for the
 correction. Its value (*#editTrans.JK*) is an example of the pointer
 values discussed in section {% include link id="ptrRef" %}. In this case, the **@resp**
@@ -63,7 +63,7 @@ indicate the degree of editorial confidence in a particular correction, as in th
 following
 example:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample217.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample217.xml" valid="true" %}
 Where, as here, the correction takes the form of amending information present in the
 text
 being encoded, the encoder should use the {% include link elem="corr" %} element. Where the

@@ -11,7 +11,7 @@ the following example, there are three sources, two of which agree on the additi
 of a
 measure, but differ in the content of the added measure:
 
-{% include plainExample.html example="examples/critApp/critApp-sample206.xml" valid="false" version=page.version %}
+{% include mei example="critApp/critApp-sample206.xml" valid="false" %}
 When nesting {% include link elem="app" %} elements, it is important that the value(s) in the
 child {% include link elem="rdg" %} element's **@source** attribute must be a strict subset
 of the ancestor {% include link elem="rdg" %} element's **@source** value.

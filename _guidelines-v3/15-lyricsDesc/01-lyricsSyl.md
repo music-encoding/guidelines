@@ -33,7 +33,8 @@ syllable in a word. It allows the following values:
    <tbody>
       <tr>
          <td>i</td>
-         <td> - Indicates that the current syllable's position is <em class="mentioned">i</em>nitial; that is, at the beginning of a word;
+         <td> - Indicates that the current syllable's position is <em class="mentioned">i</em>nitial; that is, at
+            the beginning of a word;
          </td>
       </tr>
       <tr>
@@ -43,7 +44,8 @@ syllable in a word. It allows the following values:
       </tr>
       <tr>
          <td>t</td>
-         <td> - Indicates that the syllable's position is <em class="mentioned">t</em>erminal; that is, at the end of a word.
+         <td> - Indicates that the syllable's position is <em class="mentioned">t</em>erminal; that is, at the end
+            of a word.
          </td>
       </tr>
    </tbody>
@@ -76,14 +78,14 @@ values:
       </tr>
       <tr>
          <td>u</td>
-         <td> - An <em class="mentioned">u</em>nderscore sign (indicating prologation of the syllable) is used as a connector between
-            syllables;
+         <td> - An <em class="mentioned">u</em>nderscore sign (indicating prologation of the syllable) is used as a
+            connector between syllables;
          </td>
       </tr>
       <tr>
          <td>t</td>
-         <td> - A <em class="mentioned">t</em>ilde is used to indicate elision with the following syllable. This is typically rendered
-            as a small curved line between the syllables.
+         <td> - A <em class="mentioned">t</em>ilde is used to indicate elision with the following syllable. This is
+            typically rendered as a small curved line between the syllables.
          </td>
       </tr>
    </tbody>

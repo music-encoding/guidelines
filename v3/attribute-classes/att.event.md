@@ -50,22 +50,21 @@ title: "att.event"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.musical.html">att.timestamp.musical</a>"</span></span>/&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a>"</span></span>/&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffident</a>"</span></span>/&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                        <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerident.html">att.layerident</a>"</span></span>/&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
-            </div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.musical.html">att.timestamp.musical</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffident</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerident.html">att.layerident</a>"</span></span>/&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/classes&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

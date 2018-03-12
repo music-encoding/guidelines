@@ -18,7 +18,7 @@ This module makes available the following elements for encoding facsimiles:
 These element are used to add a separate subtree to MEI, starting with the {% include link elem="facsimile" %} element inside {% include link elem="music" %}, as seen in the following
 example:
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample230.xml" valid="false" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample230.xml" valid="false" %}
 It is possible to have more than one {% include link elem="facsimile" %} element in this
 location. This is especially useful when multiple sources are encoded in the same
 file using
@@ -27,7 +27,7 @@ case, the **@decls** (declarations) attribute of {% include link elem="facsimile
 used to refer to a source defined in the document's header, as seen in the following
 example:
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample231.xml" valid="false" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample231.xml" valid="false" %}
 Within a {% include link elem="facsimile" %} element, each page of the source is represented by a
 {% include link elem="surface" %} element. Each surface may be assigned an identifying string
 utilizing the **@label** attribute. In addition, it may encapsulate more detailed
@@ -36,7 +36,7 @@ surface may be recorded in abstract terms in the **@ulx**, **@uly**,
 **@lrx**, and **@lry** attributes. For navigation purposes, {% include link elem="surface" %} has a **@startid** attribute that accommodates pointing to the first
 object appearing on this particular writing surface.
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample232.xml" valid="true" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample232.xml" valid="true" %}
 Within {% include link elem="surface" %} elements, one may nest one or more {% include link elem="graphic" %} elements, each providing a reference to an image file that represents the
 writing surface. Multiple {% include link elem="graphic" %} elements are permitted in order to
 accommodate alternative versions (different resolutions or formats, for instance)
@@ -45,13 +45,13 @@ surface image. In spite of changes in resolution or format, all images must cont
 the same
 content, i.e., the entire writing surface.
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample233.xml" valid="true" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample233.xml" valid="true" %}
 The preceding markup will provide the basis for most page-turning applications. Often,
 however, it is desirable to focus attention on particular areas of the graphical
 representation of the surface. The {% include link elem="zone" %} element fulfills this
 purpose:
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample234.xml" valid="true" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample234.xml" valid="true" %}
 The coordinates of each zone *define a space relative to the coordinate space of its
 parent surface*. Note that this is not necessarily the same coordinate space defined
 by the width and height attributes of the graphic that represents the surface. The
@@ -67,7 +67,7 @@ single surface. In the following example, two different images representing the 
 surface
 are provided alongside specification of two zones of interest within the surface:
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample235.xml" valid="true" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample235.xml" valid="true" %}
 A {% include link elem="zone" %} element may contain {% include link elem="figDesc" %} or {% include link elem="graphic" %} elements that provide detailed descriptive information about the
 zone and additional images, e.g., at a different/higher resolution, of the rectangle
 defined
@@ -76,12 +76,12 @@ the use
 of the **@data** attribute, which contains ID references to one more elements in the
 content tree of the MEI file, such as a {% include link elem="note" %}, {% include link elem="measure" %}, etc.
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample236.xml" valid="false" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample236.xml" valid="false" %}
 Conversely, an element in the content may refer to the {% include link elem="facsimile" %}
 subtree using its **@facs** attribute, which is made available by the {% include link att-class="att.facsimile" %} attribute class. The last example could therefore be
 encoded with pointers in the other direction:
 
-{% include plainExample.html example="examples/facsimiles/facsimiles-sample237.xml" valid="false" version=page.version %}
+{% include mei example="facsimiles/facsimiles-sample237.xml" valid="false" %}
 The {% include link elem="pb" %} element defined in the {% include link id="shared" %}
 makes special use of the **@facs** attribute, in that it does not point to a {% include link elem="zone" %}, but a {% include link elem="surface" %} element instead. A {% include link elem="pb" %} marks the beginning of a page, so it can be concluded that all elements
 in the content tree which are encoded between any two {% include link elem="pb" %} elements encode

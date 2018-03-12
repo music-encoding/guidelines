@@ -26,7 +26,7 @@ be accomplished for two sources, both presenting a two-staff score, but with dif
 staff
 order. No further {% include link elem="app" %} element is necessary within the {% include link elem="measure" %} to describe the alternative score order of the sources.
 
-{% include plainExample.html example="examples/critApp/critApp-sample205.xml" valid="true" version=page.version %}
+{% include mei example="critApp/critApp-sample205.xml" valid="true" %}
 when unique values for **@n** on {% include link elem="layerDef" %} and {% include link elem="layer" %} are provided, it is possible to reallocate layers in the same fashion as
 staves.
 

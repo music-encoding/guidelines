@@ -26,7 +26,7 @@ trill.
 The following example demonstrates the encoding of simple trills:
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr.png" class="img-responsive"><figcaption class="figure-caption">Figure 27. Example of simple trills.</figcaption>
-</figure>{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample184.xml" valid="true" version=page.version %}
+</figure>{% include mei example="cmnOrnaments/cmnOrnaments-sample184.xml" valid="true" %}
 It has been specified earlier that it is a semantic error not to encode a starting
 event or
 time stamp for an ornament. This starting point of a trill can be expressed with the
@@ -36,7 +36,7 @@ use of a wavy line extender as shown in this example:
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive"><figcaption class="figure-caption">Figure 28. Example of trills followed by wavy lines.</figcaption>
-</figure>{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample185.xml" valid="false" version=page.version %}
+</figure>{% include mei example="cmnOrnaments/cmnOrnaments-sample185.xml" valid="false" %}
 Chromatic alterations of auxiliary notes are occasionally expressed on the staff using
 small
 notes enclosed in parentheses, as shown in the example below. However, the attribute
@@ -46,7 +46,7 @@ processes.
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive"><figcaption class="figure-caption">Figure 29. Example alterations expressed on the staff.</figcaption>
-</figure>{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample186.xml" valid="true" version=page.version %}
+</figure>{% include mei example="cmnOrnaments/cmnOrnaments-sample186.xml" valid="true" %}
 Some trills may be introduced by a turn or followed by an inverted turn leading to
 the next
 note (see <span class="bibl">Le garzantine, Musica 2003, p. 911</span>). In such cases, the trill is
@@ -60,4 +60,4 @@ grace notes:
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive"><figcaption class="figure-caption">Figure 30. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
-</figure>{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample187.xml" valid="true" version=page.version %}
+</figure>{% include mei example="cmnOrnaments/cmnOrnaments-sample187.xml" valid="true" %}

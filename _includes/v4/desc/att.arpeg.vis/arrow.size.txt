@@ -1,1 +1,0 @@
-Holds the relative size of the arrow symbol.

@@ -1,1 +1,0 @@
-Attributes that identify the layer associated with a distant feature.

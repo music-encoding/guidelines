@@ -11,7 +11,7 @@ instruments <span class="hi">not</span> requiring breath, which allows it to als
 a guide to phrasing. In MEI, breath marks are encoded using the {% include link elem="breath" %} element, which is a member of {% include link att-class="model.controleventLike" %}. It is a semantic error not to specify a starting point
 attribute.
 
-{% include plainExample.html example="examples/cmn/cmn-sample144.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample144.xml" valid="true" %}
 The usual sign for the breath mark is a comma; however, other visual forms of the
 breath
 mark may be indicated using the **@altsym** attribute (see chapter {% include link id="userSymbols" %} for further details).

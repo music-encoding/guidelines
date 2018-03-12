@@ -60,7 +60,7 @@ no title is provided for an expression, distinguishing characteristics must be p
 in
 other elements, such as {% include link elem="perfMedium" %}, as in the following example:
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample079.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample079.xml" valid="true" %}
 Programmatic concatenation of the work title and one or more characteristics of the
 expression can be used to provide identification for the expression. For example,
 the
@@ -72,8 +72,8 @@ descriptive title to the expression, as illustrated below. The carrier of the ma
 is
 often a good source of this kind of descriptive text.
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample080.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/FRBR/FRBR-sample081.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample080.xml" valid="true" %}
+{% include mei example="FRBR/FRBR-sample081.xml" valid="true" %}
 
 
 {% include desc elem="itemList" %}
@@ -87,4 +87,4 @@ can be used to group descriptions of individual items (exemplars) of the parent 
 Just
 like {% include link elem="expressionList" %}, which can only hold {% include link elem="expression" %} sub-components, {% include link elem="itemList" %} may only contain {% include link elem="item" %} elements.
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample082.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample082.xml" valid="true" %}

@@ -22,17 +22,17 @@ harmonic indications of all kinds:
 The {% include link elem="harm" %} element can be used to capture chord labels that consist
 entirely of text:
 
-{% include plainExample.html example="examples/harmony/harmony-sample249.xml" valid="false" version=page.version %}
+{% include mei example="harmony/harmony-sample249.xml" valid="false" %}
 or labels that are chord tablature grids:
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/harmony/A7_5th.gif" class="img-responsive"><figcaption class="figure-caption">Figure 39. Chord grid without label</figcaption>
-</figure>{% include plainExample.html example="examples/harmony/harmony-sample250.xml" valid="true" version=page.version %}
+</figure>{% include mei example="harmony/harmony-sample250.xml" valid="true" %}
 or labels that mix these styles:
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/harmony/A7_1st.gif" class="img-responsive"><figcaption class="figure-caption">Figure 40. Chord grid with label</figcaption>
-</figure>{% include plainExample.html example="examples/harmony/harmony-sample251.xml" valid="true" version=page.version %}
+</figure>{% include mei example="harmony/harmony-sample251.xml" valid="true" %}
 The {% include link elem="harm" %} element must define a point of attachment using one of the
 following attributes: **@startid**, **@tstamp**, **@tstamp.ges** or
 **@tstamp.real**. The most commonly-used of these are **@startid** and

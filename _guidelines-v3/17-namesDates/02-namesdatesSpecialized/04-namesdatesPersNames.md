@@ -52,7 +52,8 @@ attribute may take the following values:
       <tr>
          <td>'namelink' (name link)</td>
          <td> - contains a connecting phrase or link used within a name but not regarded as part
-            of it, such as <em class="mentioned">van der</em> or <em class="mentioned">of</em>.
+            of
+            it, such as <em class="mentioned">van der</em> or <em class="mentioned">of</em>.
          </td>
       </tr>
       <tr>
@@ -62,11 +63,11 @@ attribute may take the following values:
          </td>
       </tr>
    </tbody>
-</table>{% include plainExample.html example="examples/namesDates/namesDates-sample289.xml" valid="false" version=page.version %}
+</table>{% include mei example="namesDates/namesDates-sample289.xml" valid="false" %}
 The {% include link elem="persName" %} element is often enclosed in the {% include link elem="respStmt" %} element which may occur within {% include link elem="titleStmt" %}, {% include link elem="pubStmt" %}, {% include link elem="seriesStmt" %} and {% include link elem="change" %}. This usage of the {% include link elem="persName" %} element typical looks like
 this:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample290.xml" valid="false" version=page.version %}
+{% include mei example="namesDates/namesDates-sample290.xml" valid="false" %}
 Apart from the composer or originator of a musical work, however, there could be many
 other
 persons involved in the genesis of a musical work, such as librettists, lyricists,
@@ -75,8 +76,8 @@ these
 persons may be marked using the **@role** attribute on {% include link elem="persName" %}.
 For example:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample291.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/namesDates/namesDates-sample292.xml" valid="true" version=page.version %}
+{% include mei example="namesDates/namesDates-sample291.xml" valid="true" %}
+{% include mei example="namesDates/namesDates-sample292.xml" valid="true" %}
 The [Marc code list for
 relators](http://www.loc.gov/marc/relators/relaterm.html){:.link_ref} offers a variety of controlled terms that may serve as values for this use
 of **@role**.
@@ -93,4 +94,4 @@ For maximal machine-processability, these three attributes may be used in combin
 For
 example:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample293.xml" valid="true" version=page.version %}
+{% include mei example="namesDates/namesDates-sample293.xml" valid="true" %}

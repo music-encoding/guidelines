@@ -59,8 +59,8 @@ paragraphs)
 drives, DVDs)The use of standard abbreviations for units of quantity is recommended where applicable,
 here as elsewhere (see [http://physics.nist.gov/cuu/Units/binary.html](http://physics.nist.gov/cuu/Units/binary.html){:.link_ref}).
 
-{% include plainExample.html example="examples/header/header-sample031.xml" valid="false" version=page.version %}
+{% include mei example="header/header-sample031.xml" valid="false" %}
 For ease of processability, the use of the **@unit** attribute is recommended, as in
 the following example:
 
-{% include plainExample.html example="examples/header/header-sample032.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample032.xml" valid="true" %}

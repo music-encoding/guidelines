@@ -82,5 +82,6 @@ Three categories of editorial intervention are discussed by the remainder of thi
 chapter:
 
 - indication or correction of apparent errors;
-- indication of regularization of variant, irregular, non-standard, or eccentric forms; and
+- indication of regularization of variant, irregular, non-standard, or eccentric forms;
+and
 - editorial additions, suppressions, and omissions.

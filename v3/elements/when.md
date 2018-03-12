@@ -38,14 +38,14 @@ title: "when"
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@abstype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the kind of values used in the absolute attribute.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.BETYPE.html">data.BETYPE</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.betype.html">data.BETYPE</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@data</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to link metadata elements to one or more data-containing elements.</span>
-                           One or more values from<a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>, separated by spaces.
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datapointing.html">att.datapointing</a></span></div>
                      </td>
                   </tr>
@@ -63,7 +63,7 @@ title: "when"
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@inttype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the kind of values used in the interval attribute.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.BETYPE.html">data.BETYPE</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.betype.html">data.BETYPE</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a></span></div>
                      </td>
                   </tr>
@@ -71,7 +71,7 @@ title: "when"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@label</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a name or label for an element. The value may be any string.</span>
                            Value of datatype <span style="font-weight: 500;">string</span>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -88,7 +88,7 @@ title: "when"
                               should be the ID of another when element within the same parent element. If the since
                               attribute is omitted and the absolute attribute is not specified, then the reference
                               point is understood to be the immediately preceding when element.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/when.html">when</a></span></div>
                      </td>
                   </tr>
@@ -96,8 +96,8 @@ title: "when"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@xml:base</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a base URI reference with which applications can resolve relative URI
                               references into absolute URI references.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.URI.html">data.URI</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonPart.html">att.commonPart</a></span></div>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.commonpart.html">att.commonPart</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -164,14 +164,14 @@ title: "when"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>@since should be present when @interval is used.</div>
-               <div>The value in @since should correspond to the @xml:id attribute of a when element.</div>
-               <div>@inttype should be present when @interval is used.</div>
-               <div>When @interval contains an integer value, @inttype cannot be 'time'.</div>
-               <div>When @interval contains a time value, @inttype must be 'time'.</div>
+               <div class="schematronText">@since should be present when @interval is used.</div>
+               <div class="schematronText">The value in @since should correspond to the @xml:id attribute of a when element.</div>
+               <div class="schematronText">@inttype should be present when @interval is used.</div>
+               <div class="schematronText">When @interval contains an integer value, @inttype cannot be 'time'.</div>
+               <div class="schematronText">When @interval contains a time value, @inttype must be 'time'.</div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:when[@interval]"</span>&gt;</span>
@@ -198,10 +198,10 @@ title: "when"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>When @absolute is present, @abstype should be present or @betype should be present
+               <div class="schematronText">When @absolute is present, @abstype should be present or @betype should be present
                   on an ancestor.
                </div>
             </div>
@@ -215,11 +215,11 @@ title: "when"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>@since attribute should have content.</div>
-               <div>The value in @since should correspond to the @xml:id attribute of a when element.</div>
+               <div class="schematronText">@since attribute should have content.</div>
+               <div class="schematronText">The value in @since should correspond to the @xml:id attribute of a when element.</div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@since"</span>&gt;</span>

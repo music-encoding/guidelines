@@ -1,2 +1,0 @@
-(type description) – Contains a description of the typefaces or other aspects of the
-printing of a printed source.

@@ -53,10 +53,10 @@ paginated sections’
 - language of work and abstract, if not encoded in the {% include link elem=" langUsage
 " %} element, e.g. ‘Text in English with stage directions in French and German’Each such item of information may be tagged using the general-purpose {% include link elem="annot" %} element. Groups of annotations are contained within the {% include link elem="notesStmt" %} element, as in the following example:
 
-{% include plainExample.html example="examples/header/header-sample041.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample041.xml" valid="true" %}
 There are advantages, however, to encoding such information with more precise elements
 elsewhere in the MEI header, when such elements are available. For example, the notes
 above
 might be encoded as follows:
 
-{% include plainExample.html example="examples/header/header-sample042.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample042.xml" valid="true" %}

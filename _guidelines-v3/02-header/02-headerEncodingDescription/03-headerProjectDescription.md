@@ -23,4 +23,4 @@ another.
 
 For example:
 
-{% include plainExample.html example="examples/header/header-sample050.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample050.xml" valid="true" %}

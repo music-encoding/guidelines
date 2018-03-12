@@ -1,1 +1,0 @@
-Indicates the amount of whitespace at the bottom of a page.

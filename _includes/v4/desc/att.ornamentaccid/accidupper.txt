@@ -1,1 +1,0 @@
-Records the written accidental associated with an upper neighboring note.

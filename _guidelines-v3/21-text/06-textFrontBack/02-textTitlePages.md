@@ -29,7 +29,7 @@ The following example shows the encoding of the title page of Vaughan Williams' 
 Wenlock Edge*. Note the use of the {% include link elem="lb" %} element to mark the
 line breaks present in the original.
 
-{% include plainExample.html example="examples/text/text-sample341.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample341.xml" valid="true" %}
 The physical rendition of title page information is often of considerable importance.
 One
 approach to this requirement would be to use the {% include link elem="rend" %} element,

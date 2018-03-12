@@ -109,7 +109,7 @@ When supplied with a **@target** attribute, {% include link elem="bibl" %} may f
 as a hypertext reference to an external electronic resource. In addition, other related
 bibliographic items may be described or referenced using the {% include link elem="relatedItem" %} element.
 
-{% include plainExample.html example="examples/shared/shared-sample012.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample012.xml" valid="true" %}
 Please consult {% include link id="sharedNamesNumbersDates" %} and {% include link id="namesDates" %} for
 more information about recording the names and dates frequently found in bibliographic
 citations.

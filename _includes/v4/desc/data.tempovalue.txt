@@ -1,1 +1,0 @@
-Beats (meter signature denominator) per minute, e.g. 120.

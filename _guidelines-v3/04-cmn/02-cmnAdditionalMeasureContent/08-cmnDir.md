@@ -29,7 +29,7 @@ using the {% include link elem="tempo" %} element, which is a specialized form o
 **@layer** and **@tstamp** attributes are used to ensure correct semantic
 positioning, and **@place** indicates a visual position with respect to the staff.
 
-{% include plainExample.html example="examples/cmn/cmn-sample149.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample149.xml" valid="true" %}
 Rehearsal marks are another specialized kind of directive. Consisting of
 letters, numbers, or a combination of both, rehearsal marks are used in scores and
 corresponding performer parts to identify convenient points to restart rehearsal after
@@ -44,10 +44,10 @@ The following detail from an edition of Hector Berlioz' *Symphonie
 Fantastique* shows a typical example:
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/reh_berlioz.png" class="img-responsive"><figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
-</figure>{% include plainExample.html example="examples/cmn/cmn-sample150.xml" valid="true" version=page.version %}
+</figure>{% include mei example="cmn/cmn-sample150.xml" valid="true" %}
 The following example demonstrates how rehearsal marks often apply to more than one
 staff.
 In this instance, the rehearsal mark is placed above staff 1 and below staves 7 and
 11.
 
-{% include plainExample.html example="examples/cmn/cmn-sample151.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample151.xml" valid="true" %}

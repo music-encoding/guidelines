@@ -40,4 +40,4 @@ document. The parts concerned are accessible at the URLs given as targets of the
 **@date** attribute specifies when the application was employed, in this case June
 6, 2011. Version information for the application should be placed in **@version**.
 
-{% include plainExample.html example="examples/header/header-sample048.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample048.xml" valid="true" %}

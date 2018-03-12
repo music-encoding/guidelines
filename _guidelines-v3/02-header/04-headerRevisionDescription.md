@@ -51,7 +51,7 @@ It is recommended to give changes in reverse chronological order, most recent fi
 
 For example:
 
-{% include plainExample.html example="examples/header/header-sample075.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample075.xml" valid="true" %}
 A slightly shorter form for recording changes is also available when a the date of
 the change
 can be described by a single date in a standard ISO form and when the name of the
@@ -60,4 +60,4 @@ responsible for the change, encoded elsewhere in the header, can be referred to 
 one or more
 URIs given in the **@resp** attribute. For example:
 
-{% include plainExample.html example="examples/header/header-sample076.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample076.xml" valid="true" %}

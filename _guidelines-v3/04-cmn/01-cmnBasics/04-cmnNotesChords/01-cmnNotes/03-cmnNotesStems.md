@@ -63,13 +63,13 @@ for the indication of a stem that joins notes on adjacent staves.
 measure in the image above. The **@stem.with** attribute must occur on all the
 notes or chords attached to the cross-staff stem.
 
-{% include plainExample.html example="examples/cmn/cmn-sample099.xml" valid="false" version=page.version %}
+{% include mei example="cmn/cmn-sample099.xml" valid="false" %}
 Alternatively, the encoder may choose to treat the notes in the lower staff as
 logically belonging to the top staff and to ‘displace’ them using the
 **@staff** attribute on {% include link elem="note" %}. Some use cases, however, may
 require filling the time that those notes would normally occupy using the {% include link elem="space" %} element described in section {% include link id="sharedNoteSpacing" %}. Using this mechanism, the example above could also be encoded like so:
 
-{% include plainExample.html example="examples/cmn/cmn-sample100.xml" valid="false" version=page.version %}
+{% include mei example="cmn/cmn-sample100.xml" valid="false" %}
 The choice between these two methods of representing material that crosses staves
 is
 often software-dependent.

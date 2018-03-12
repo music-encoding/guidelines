@@ -23,13 +23,13 @@ matters as:
 - the underlying population being sampled
 - the object of the sampling procedure usedbut is not restricted to these.
 
-{% include plainExample.html example="examples/header/header-sample051.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample051.xml" valid="true" %}
 It may also include a simple description of any parts of the source text included
 or
 excluded:
 
-{% include plainExample.html example="examples/header/header-sample052.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/header/header-sample053.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample052.xml" valid="true" %}
+{% include mei example="header/header-sample053.xml" valid="true" %}
 A sampling declaration which applies to more than one text or division of a text need
 not
 be repeated in the header of each such text. Instead, the **@decls** attribute of each

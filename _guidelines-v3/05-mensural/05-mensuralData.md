@@ -14,7 +14,7 @@ elements may occur directly within the {% include link elem="section" %} element
 organized into measures first. The organization of events (notes, rests, etc.) within
 the {% include link elem="staff" %} and {% include link elem="layer" %} elements remains unchanged.
 
-{% include plainExample.html example="examples/mensural/mensural-sample158.xml" valid="true" version=page.version %}
+{% include mei example="mensural/mensural-sample158.xml" valid="true" %}
 This feature may also be used to encode measured music without using the {% include link elem="measure" %} element. That is, the same data organization described above may be used, but
 with the addition of barlines, indicated by the {% include link elem="barLine" %} element, for
 those situations where a measure-by-measure organization is not appropriate, for exampe,

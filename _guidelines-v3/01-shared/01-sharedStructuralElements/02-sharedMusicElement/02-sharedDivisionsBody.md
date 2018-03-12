@@ -41,11 +41,11 @@ For example, the encoding of a multi-movement work, such as a symphony, frequent
 have
 the following structure:
 
-{% include plainExample.html example="examples/shared/shared-sample004.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample004.xml" valid="true" %}
 while dramatic works, such as Verdi's opera, *Il Trovatore*, often exhibit a
 more deeply-nested structure:
 
-{% include plainExample.html example="examples/shared/shared-sample005.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample005.xml" valid="true" %}
 Conventionally, in performance the musical structures represented by {% include link elem="mdiv" %} elements are separated by pauses; however, *attacca*,
 *attacca subito*, *seque*, or similar terms are
 sometimes used at the end of an {% include link elem="mdiv" %} to indicate that the next {% include link elem="mdiv" %} should begin immediately after the conclusion of the current one.

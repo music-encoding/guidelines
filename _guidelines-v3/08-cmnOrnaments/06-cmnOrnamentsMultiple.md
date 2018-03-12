@@ -20,4 +20,4 @@ encoded order of the elements, moreover, should correspond to the performed sequ
 which in
 this example is top to bottom: first the turn, then the mordent.
 
-{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample196.xml" valid="true" version=page.version %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample196.xml" valid="true" %}

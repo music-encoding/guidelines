@@ -1,2 +1,0 @@
-Encodes the ending point of an event in terms of musical time, i.e., a count of
-measures plus a beat location.

@@ -19,7 +19,7 @@ For the repetition of a single note or chord, MEI offers the {% include link ele
 musical events within a {% include link elem="layer" %}. It holds exactly one {% include link elem="note" %} or {% include link elem="chord" %} element that is to be repeated.
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 11. Bowed tremolandi</figcaption>
-</figure>{% include plainExample.html example="examples/cmn/cmn-sample138.xml" valid="true" version=page.version %}
+</figure>{% include mei example="cmn/cmn-sample138.xml" valid="true" %}
 The **@measperf** attribute value indicates the exact note values in an aural
 rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The stem modifier
 must
@@ -28,7 +28,7 @@ on the note may disagree with the number of slashes that should be present accor
 to
 the **@measperf** attribute, especially in music manuscripts.
 
-{% include plainExample.html example="examples/cmn/cmn-sample139.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample139.xml" valid="true" %}
 The {% include link elem="bTrem" %} element can be used as shorthand for a tuplet consisting
 of repetitions of a single note or chord. This kind of markup may be the result of
 an
@@ -36,7 +36,7 @@ optical music recognition process in which complete semantics cannot be determin
 *a priori*. When used this way, the **@num** attribute on {% include link elem="bTrem" %} can record a number to be rendered along with the pseudo-tuplet.
 In spite of this capability, the {% include link elem="tuplet" %} element is preferred.
 
-{% include plainExample.html example="examples/cmn/cmn-sample140.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample140.xml" valid="true" %}
 In the case of alternating pitches, MEI offers the {% include link elem="fTrem" %} (fingered
 tremolo) element. While it mostly behaves the same as {% include link elem="bTrem" %}, a
 fingered tremolo requires exactly two child elements, either being a {% include link elem="note" %} or {% include link elem="chord" %}. The **@measperf** attribute value
@@ -47,4 +47,4 @@ indicates the exact note values in an aural rendition of a measured tremolo, i.e
 value indicated by the **@measperf** attribute, especially in manuscript
 sources.
 
-{% include plainExample.html example="examples/cmn/cmn-sample141.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample141.xml" valid="true" %}

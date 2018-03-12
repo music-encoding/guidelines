@@ -28,6 +28,6 @@ für Wilhelm Friedemann Bach*:
 </figure>The ornament for <span class="q">(5) doppelt-cadence</span> could be encoded in the following way, by
 adopting the Unicode code-points defined by the SMuFL standard:
 
-{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" version=page.version %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" %}
 A resolution, or expansion of the ornament can be provided as discussed in {% include link id="cmnOrnamentsTrillsSpecial" %} below.
 

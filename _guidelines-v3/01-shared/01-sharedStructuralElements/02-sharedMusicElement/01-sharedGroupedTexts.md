@@ -28,10 +28,10 @@ might usefully be encoded in this way.
 For example, the overall structure of a collection of songs might be encoded as
 follows:
 
-{% include plainExample.html example="examples/shared/shared-sample002.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample002.xml" valid="true" %}
 A group of musical texts may contain other unitary and grouped texts:
 
-{% include plainExample.html example="examples/shared/shared-sample003.xml" valid="true" version=page.version %}
+{% include mei example="shared/shared-sample003.xml" valid="true" %}
 The {% include link elem="group" %} element may be used to encode any kind of collection in
 which the constituents are regarded by the encoder as works in their own right, such
 as

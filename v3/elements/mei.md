@@ -112,10 +112,10 @@ title: "mei"
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>The values in @staff must correspond to @n attribute of a staffDef element.</div>
+               <div class="schematronText">The values in @staff must correspond to @n attribute of a staffDef element.</div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[@staff]"</span>&gt;</span>

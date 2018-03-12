@@ -1,1 +1,0 @@
-An alpha-numeric string that establishes the identity of the described material.

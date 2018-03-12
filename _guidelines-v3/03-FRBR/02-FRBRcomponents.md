@@ -20,11 +20,11 @@ This allows for a more detailed description than is possible using the core MEI 
 this way, the {% include link elem="componentGrp" %} element may be employed to describe composite
 works, as in the example below:
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample083.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample083.xml" valid="true" %}
 This technique can also be applied when a single intellectual source is comprised
 of multiple
 physical parts. In the following example, the choral parts were published in four
 physically
 separate "signatures":
 
-{% include plainExample.html example="examples/FRBR/FRBR-sample084.xml" valid="true" version=page.version %}
+{% include mei example="FRBR/FRBR-sample084.xml" valid="true" %}

@@ -14,4 +14,4 @@ the syllable "do" is always associated with the pitch "c", while in the
 **@psolfa** attribute is only allowed on {% include link elem="note" %} and {% include link elem="uneume" %} elements. Its value is unconstrained in order to accommodate
 various solmization systems.
 
-{% include plainExample.html example="examples/analysis/analysis-sample176.xml" valid="true" version=page.version %}
+{% include mei example="analysis/analysis-sample176.xml" valid="true" %}

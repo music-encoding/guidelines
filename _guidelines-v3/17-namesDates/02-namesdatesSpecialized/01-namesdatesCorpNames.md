@@ -23,17 +23,17 @@ help identify them as non-personal names.
 
 The {% include link elem="corpName" %} element is frequently used within the {% include link id="header" %} of an MEI document. It is typically found in the {% include link elem="respStmt" %} element:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample279.xml" valid="true" version=page.version %}
+{% include mei example="namesDates/namesDates-sample279.xml" valid="true" %}
 It may also be used wherever it is necessary to mark a corporate name, for example
 when a
 corporation is responsible for a certain event in the history of a musical work:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample280.xml" valid="true" version=page.version %}
+{% include mei example="namesDates/namesDates-sample280.xml" valid="true" %}
 When it is necessary to provide structure for a name, the separate parts of the name
 may be
 encoded in {% include link elem="corpName" %} sub-elements, for example:
 
-{% include plainExample.html example="examples/namesDates/namesDates-sample281.xml" valid="true" version=page.version %}
+{% include mei example="namesDates/namesDates-sample281.xml" valid="true" %}
 Standard designations for corporate bodies can be taken from a controlled vocabulary,
 such
 as the Gemeinsame Normdatei (GND). If a controlled value is used, the list from which

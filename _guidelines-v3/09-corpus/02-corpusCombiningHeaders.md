@@ -31,4 +31,4 @@ the first and last of which share the same encoding description. The second one 
 its own
 encoding description.
 
-{% include plainExample.html example="examples/corpus/corpus-sample198.xml" valid="true" version=page.version %}
+{% include mei example="corpus/corpus-sample198.xml" valid="true" %}

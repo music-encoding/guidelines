@@ -14,7 +14,7 @@ staff, the
 The following example demonstrates the encoding of an inverted mordent over a middle
 C:
 
-{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample179.xml" valid="true" version=page.version %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample179.xml" valid="true" %}
 Alternatively, the relationship of an ornament to a note can be expressed in terms
 of beats
 with the attribute **@tstamp**. If the ornament involves more than one event on the
@@ -27,7 +27,7 @@ following measure is in 2/2, the ornament (in this case, a mordent) is related t
 the note on
 the second beat.
 
-{% include plainExample.html example="examples/cmnOrnaments/cmnOrnaments-sample180.xml" valid="true" version=page.version %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample180.xml" valid="true" %}
 The relationship between an ornament and the notes on staff must always be encoded.
 It is, in
 fact, a semantic error not to specify a starting event or time stamp for an ornament.

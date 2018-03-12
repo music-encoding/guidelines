@@ -1,3 +1,0 @@
-Sets the instrument's position in a stereo field. Values of 0 and 1 both pan left,
-127
-pans right, and 64 pans to the center.

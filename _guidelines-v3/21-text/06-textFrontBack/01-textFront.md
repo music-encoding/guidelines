@@ -32,14 +32,14 @@ characteristic of front matter:
    <tbody>
       <tr>
          <td>'preface' – </td>
-         <td>A foreword or preface addressed to the reader in which the author or publisher explains
-            the content, purpose, or origin of the text. 
+         <td>A foreword or preface addressed to the reader in which the author or publisher
+            explains the content, purpose, or origin of the text. 
          </td>
       </tr>
       <tr>
          <td>'ack' – </td>
-         <td>A formal declaration of acknowledgement by the author in which persons and institutions
-            are thanked for their part in the creation of a text.
+         <td>A formal declaration of acknowledgement by the author in which persons and
+            institutions are thanked for their part in the creation of a text.
          </td>
       </tr>
       <tr>
@@ -69,7 +69,7 @@ may be encoded. The front part begins with a title page, which is presented in s
 {% include link id="textTitlePages" %}, below. This is followed by a dedication and a preface, each of
 which is encoded as a distinct div:
 
-{% include plainExample.html example="examples/text/text-sample338.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample338.xml" valid="true" %}
 The front matter concludes with another {% include link elem="div" %} element, shown in the
 next example, this time containing a table of contents, which contains a {% include link elem="list" %} element (as described in chapter {% include link id="textLists" %}). Note the use of
 the {% include link elem="ptr" %} element to provide page-references: the implication here is
@@ -78,9 +78,9 @@ used for
 the {% include link elem="mdiv" %} elements containing the individual songs. (For a description
 of the {% include link elem="ptr" %} element, see chapter {% include link id="ptrRef" %}.)
 
-{% include plainExample.html example="examples/text/text-sample339.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample339.xml" valid="true" %}
 Alternatively, the pointers in the table of contents might link to the page breaks
 at which
 a song begins, assuming that these have been included in the markup:
 
-{% include plainExample.html example="examples/text/text-sample340.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample340.xml" valid="true" %}

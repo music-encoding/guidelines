@@ -1,1 +1,0 @@
-Attributes that express the relationship between a component and its host.

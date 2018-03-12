@@ -1,1 +1,0 @@
-Attributes that record page-level layout information.

@@ -66,92 +66,88 @@ title: "att.extsym"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"glyphname"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Glyph name.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"glyphname"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>/&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_glyphnameTarget"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Glyph name.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@glyphname"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>/&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_glyphnameTarget"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
                            
-                           <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(normalize-space(.) eq '')"</span>&gt;</span>@glyphname attribute
-                              should have content.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
-                           <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"glyphnum"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B.
-                     SMuFL version 1.18 uses the range U+E000 - U+ECBF.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@glyphname"</span>&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(normalize-space(.) eq '')"</span>&gt;</span>@glyphname attribute
+                                 should have content.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"glyphnum"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>&gt;</span>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- a hexadecimal number in one of two common formats --&gt;</span></div>
-                        
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>(#x|U\+)[A-F0-9]+<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- This rule only checks the length of @glyphnum. More complex constraints are 
-                        needed to display a warning when @glyphnum is outside the range defined by SMuFL.
-                        --&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_glyphnum"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B.
+                        SMuFL version 1.18 uses the range U+E000 - U+ECBF.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[starts-with(@glyphnum, 'U+')]"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>&gt;</span>
                            
-                           <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"string-length(@glyphnum) = 6"</span>&gt;</span>SMuFL version 1.18
-                              uses the range U+E000 - U+ECBF.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
-                           <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
+                           <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- a hexadecimal number in one of two common formats --&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>(#x|U\+)[A-F0-9]+<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- This rule only checks the length of @glyphnum. More complex constraints are 
+                           needed to display a warning when @glyphnum is outside the range defined by SMuFL.
+                           --&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_glyphnum"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[starts-with(@glyphnum, 'U+')]"</span>&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"string-length(@glyphnum) = 6"</span>&gt;</span>SMuFL version 1.18
+                                 uses the range U+E000 - U+ECBF.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>@glyphname attribute should have content.</div>
+               <div class="schematronText">@glyphname attribute should have content.</div>
             </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@glyphname"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(normalize-space(.) eq '')"</span>&gt;</span>@glyphname attribute
-                     should have content.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div>
-            </div>
+            <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@glyphname"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(normalize-space(.) eq '')"</span>&gt;</span>@glyphname attribute
+                        should have content.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>SMuFL version 1.18 uses the range U+E000 - U+ECBF.</div>
+               <div class="schematronText">SMuFL version 1.18 uses the range U+E000 - U+ECBF.</div>
             </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[starts-with(@glyphnum, 'U+')]"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"string-length(@glyphnum) = 6"</span>&gt;</span>SMuFL version 1.18
-                     uses the range U+E000 - U+ECBF.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div>
-            </div>
+            <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[starts-with(@glyphnum, 'U+')]"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"string-length(@glyphnum) = 6"</span>&gt;</span>SMuFL version 1.18
+                        uses the range U+E000 - U+ECBF.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

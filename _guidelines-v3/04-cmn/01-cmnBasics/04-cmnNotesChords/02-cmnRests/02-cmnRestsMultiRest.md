@@ -14,4 +14,4 @@ measures. The various visual forms displayed below are not captured by {% includ
 
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/multirest.png" class="img-responsive"><figcaption class="figure-caption">Figure 4. Forms of multiple measure rests</figcaption>
-</figure>{% include plainExample.html example="examples/cmn/cmn-sample102.xml" valid="true" version=page.version %}
+</figure>{% include mei example="cmn/cmn-sample102.xml" valid="true" %}

@@ -1,1 +1,0 @@
-Permits any XML elements except those from the MEI or SVG namespace.

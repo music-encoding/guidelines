@@ -67,7 +67,7 @@ material
 in another octave. This information can be captured using the **@dis** and
 **@dis.place** attributes on {% include link elem="cpMark" %}.
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample211.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample211.xml" valid="true" %}
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/cpMark_3.png" class="img-responsive"><figcaption class="figure-caption">Figure 38. A transcription of the example above with all shorthand resolved and colored</figcaption>
 </figure>Text used as a copy mark, like the letters in the Weber example, may be encoded as

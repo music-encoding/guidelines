@@ -12,8 +12,8 @@ place should be marked with a {% include link elem="gap" %} element, optionally 
 information about the reason for the omission, its extent, and the person or agency
 responsible for it, as in the following examples:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample221.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/editTrans/editTrans-sample222.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample221.xml" valid="true" %}
+{% include mei example="editTrans/editTrans-sample222.xml" valid="true" %}
 Note that the extent of the gap may be marked precisely using attributes **@unit**
 and **@quantity**, or more descriptively using the **@extent** attribute.
 
@@ -29,7 +29,7 @@ reasons, as for example when transcribing a illegible source. Its **@reason** an
 indicate the cause of uncertainty and the person responsible for the conjectured
 reading.
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample223.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample223.xml" valid="true" %}
 Where the difficulty in transcription arises from an identifiable cause, the
 **@agent** attribute signifies the causative agent. The **@cert** attribute
 signifies the degree of certainty ascribed to the transcription of the text contained
@@ -64,7 +64,7 @@ element.
 The following example demonstrates the use of the {% include link elem="supplied" %} element in
 combination with {% include link elem="gap" %} within {% include link elem="subst" %}:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample224.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample224.xml" valid="true" %}
 When the presumed loss of text arises from an identifiable cause, **@agent**
 signifies the causative agent. When the presumed loss of text arises from action (partial
 deletion, etc.) assignable to an identifiable hand, the **@hand** attribute signifies

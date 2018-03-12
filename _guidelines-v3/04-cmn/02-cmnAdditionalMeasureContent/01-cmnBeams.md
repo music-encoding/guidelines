@@ -19,14 +19,14 @@ notes. MEI provides two elements for the explicit encoding of features joined by
 Use of the {% include link elem="beam" %} element is straightforward. The beamed notes, rests,
 or chords are simply enclosed by the {% include link elem="beam" %} element:
 
-{% include plainExample.html example="examples/cmn/cmn-sample104.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample104.xml" valid="true" %}
 Whereas in music notation every note value shorter than an eighth adds another beam
 (sometimes referred to as ‘secondary beams’), in MEI only one beam
 element is used, no matter the durations of the contained notes. The visual rendition
 of a
 set of beamed notes is presumed to be handled by rendering processes.
 
-{% include plainExample.html example="examples/cmn/cmn-sample105.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample105.xml" valid="true" %}
 From the 19th century onwards, it became quite common to break secondary beams to
 increase
 readability of longer beamed passages. The optional **@breaksec** attribute on {% include link elem="note" %}s and {% include link elem="chord" %}s under the beam may be used to
@@ -35,7 +35,7 @@ attribute. The value of **@breaksec** indicates the number of continuous beams. 
 example:
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 6. Primary and secondary beams</figcaption>
-</figure>{% include plainExample.html example="examples/cmn/cmn-sample106.xml" valid="true" version=page.version %}
+</figure>{% include mei example="cmn/cmn-sample106.xml" valid="true" %}
 In the music of the second half of the 20th century, it is quite common to indicate
 acceleration or deceleration using converging beams as in the image below:
 
@@ -54,8 +54,9 @@ beam, which allows the following values:
       <tr>
          <td>acc</td>
          <td> - The secondary beams start in their usual position and gradually converge until
-            they meet with the primary beam on the last note (or, the first eighth note under
-            the beam). 
+            they
+            meet with the primary beam on the last note (or, the first eighth note under the beam).
+            
          </td>
       </tr>
       <tr>
@@ -73,7 +74,7 @@ beam, which allows the following values:
          <td> - The beam is rendered as usual (default). </td>
       </tr>
    </tbody>
-</table>{% include plainExample.html example="examples/cmn/cmn-sample107.xml" valid="true" version=page.version %}
+</table>{% include mei example="cmn/cmn-sample107.xml" valid="true" %}
 The duration of notes, rests, or chords under a beam which carries the **@rend**
 attribute with a value of 'acc', 'rit', or 'mixed' must be treated specially. The
 first and
@@ -87,7 +88,7 @@ this may be encoded thusly:
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/beamAcc-Rit.png" class="img-responsive"><figcaption class="figure-caption">Figure 7. Accelerando beams</figcaption>
 </figure>
-{% include plainExample.html example="examples/cmn/cmn-sample108.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample108.xml" valid="true" %}
 
 
 
@@ -102,7 +103,7 @@ notes under the beam carry a **@staff** attribute value that contradicts the
 ‘normal’ staff placement indicated by the **@n** attribute on
 their ancestor {% include link elem="staff" %}.
 
-{% include plainExample.html example="examples/cmn/cmn-sample109.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample109.xml" valid="true" %}
 Alternatively, a staff-by-staff methodology may be employed in which the notes are
 encoded
 according to the staff on which they appear. This encoding style requires that each
@@ -114,7 +115,7 @@ time used by the first two notes of the beam must be represented on staff number
 and the
 time taken by the last two notes of the beam must be filled on staff number 2.
 
-{% include plainExample.html example="examples/cmn/cmn-sample110.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample110.xml" valid="true" %}
 Downstream processing needs are the determining factor in the choice between the two
 alternative encoding methods.
 
@@ -127,7 +128,7 @@ of the beam using **@startid** and **@endid** attributes. This configuration
 allows beams to cross measure boundaries. The following example demonstrates a typical
 example of such hierarchy-crossing beams:
 
-{% include plainExample.html example="examples/cmn/cmn-sample111.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample111.xml" valid="true" %}
 In addition to the explicit encoding of beams accommodated by the {% include link elem="beam" %} and {% include link elem="beamSpan" %} elements and the **@beam** attribute,
 MEI allows for specification of default beaming behavior using the following attributes
 on
@@ -145,7 +146,8 @@ on
       <tr>
          <td><span class="att">beam.group</span></td>
          <td> - Provides an example of how automated beaming (including secondary beams) is to
-            be performed.
+            be
+            performed.
          </td>
       </tr>
       <tr>

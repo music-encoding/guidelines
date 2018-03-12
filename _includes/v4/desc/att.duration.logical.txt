@@ -1,1 +1,0 @@
-Attributes that express duration in musical terms.

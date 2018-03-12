@@ -35,5 +35,5 @@ on the {% include link elem="staff" %} element. When, however, not all layers ha
 value of **@metcon** on the measure level can usually be computed based on the values of
 its layer and staff sub-elements.
 
-{% include plainExample.html example="examples/analysis/analysis-sample177.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/analysis/analysis-sample178.xml" valid="true" version=page.version %}
+{% include mei example="analysis/analysis-sample177.xml" valid="true" %}
+{% include mei example="analysis/analysis-sample178.xml" valid="true" %}

@@ -1,2 +1,0 @@
-Describes the relationship between the entities identified by the plist and target
-attributes.

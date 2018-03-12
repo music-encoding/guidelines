@@ -1,1 +1,0 @@
-Formal namespace identifier; that is, a uniform resource identifier (URI).

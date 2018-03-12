@@ -1,2 +1,0 @@
-Records a vertical adjustment of a feature's programmatically-determined start
-point.

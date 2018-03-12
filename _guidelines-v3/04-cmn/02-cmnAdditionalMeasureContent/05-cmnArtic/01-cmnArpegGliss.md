@@ -11,7 +11,7 @@ to describe arpeggios. This element is a member of the {% include link att-class
 **@staff**, **@layer** and **@tstamp** or the **@startid** and
 **@endid** attributes to connect it to the affected chord.
 
-{% include plainExample.html example="examples/cmn/cmn-sample136.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample136.xml" valid="true" %}
 The usual direction for the performance of an arpeggio is from lowest note to highest,
 but this is not always the case. The customary signal of an downward arpeggio is an
 arrowhead added to the bottom of the wavy line. The indication of the presence of
@@ -39,7 +39,7 @@ its direction to distinguish it from the upward arpeggio; therefore, the presenc
 of the
 arrowhead can be implied.
 
-{% include plainExample.html example="examples/cmn/cmn-sample137.xml" valid="false" version=page.version %}
+{% include mei example="cmn/cmn-sample137.xml" valid="false" %}
 A third, and somewhat counter-intuitive, value for **@order**, "nonarp", indicates
 that no arpeggio shall be performed. Normally rendered as a bracket instead of a wavy
 line, this form of arpeggio is used to indicate a non-arpeggiated chord intervening

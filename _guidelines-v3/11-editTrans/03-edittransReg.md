@@ -35,17 +35,17 @@ the
 perspective of current practice by using the {% include link elem="orig" %} element with no
 attributes specified, as follows:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample218.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample218.xml" valid="true" %}
 Alternatively, the encoder may indicate that the clef has been modernized into a G-clef
 by
 using the {% include link elem="reg" %} element with no attributes specified, as follows:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample219.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample219.xml" valid="true" %}
 As another alternative, the encoder may encode both the old and modernized shapes,
 so that
 applications may render both at the reader's will:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample220.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample220.xml" valid="true" %}
 As described above, the **@resp** attribute may be used to specify the agent
 responsible for the regularization.
 

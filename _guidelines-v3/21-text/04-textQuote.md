@@ -19,5 +19,5 @@ typographically distinct from the surrounding text; i.e., surrounded by so-calle
 
 The following examples show the use of {% include link elem="quote" %}.
 
-{% include plainExample.html example="examples/text/text-sample335.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/text/text-sample336.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample335.xml" valid="true" %}
+{% include mei example="text/text-sample336.xml" valid="true" %}

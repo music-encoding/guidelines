@@ -12,7 +12,7 @@ used to provide pictograms of percussion instruments.
 
 <figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/percussion.png" class="img-responsive"><figcaption class="figure-caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
 </figure>
-<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample348.xml" valid="true" version=page.version %}
+<figure class="figure">{% include mei example="userSymbols/userSymbols-sample348.xml" valid="true" %}
    
    <figcaption class="figure-caption">Listing 4. Encoding of above example</figcaption>
 </figure>A number of elements can point to an internally-defined symbol for rendering using
@@ -24,7 +24,7 @@ the
       Volume 12, No. 1 (2006)](www.sscm-jscm.org/v12/no1/gosine.html){:.link_ref}, [figure 3](http://www.sscm-jscm.org/v12/no1/gosine.html#ch10){:.link_ref})
    </figcaption>
 </figure>
-<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample349.xml" valid="true" version=page.version %}
+<figure class="figure">{% include mei example="userSymbols/userSymbols-sample349.xml" valid="true" %}
    
    <figcaption class="figure-caption">Listing 5. Defining two staffs, each using its own treble clef shape</figcaption>
 </figure>Externally-defined symbols may be referenced using a **@glyphname** or
@@ -32,7 +32,7 @@ the
 characters. Other character sets must be treated as internally-defined character sets.
 
 
-<figure class="figure">{% include plainExample.html example="examples/userSymbols/userSymbols-sample350.xml" valid="true" version=page.version %}
+<figure class="figure">{% include mei example="userSymbols/userSymbols-sample350.xml" valid="true" %}
    
    <figcaption class="figure-caption">Listing 6. Use of glyphname and glyphnum attributes</figcaption>
 </figure>

@@ -6,10 +6,10 @@ version: "v3"
 
 MEI offers methods for marking abbreviations in prose, as in the following example:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample207.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample207.xml" valid="true" %}
 or abbreviations in the music itself, as in the following example:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample208.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample208.xml" valid="true" %}
 The type attribute may be used to classify the abbreviation according to a convenient
 typology. Sample values include:
 
@@ -65,7 +65,7 @@ value,
 while {% include link elem="expan" %} reverses this. The choice between the two is up to the user.
 For example:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample209.xml" valid="false" version=page.version %}
+{% include mei example="editTrans/editTrans-sample209.xml" valid="false" %}
 The {% include link elem="abbr" %} tag is not required; if appropriate, the encoder may
 transcribe abbreviations in the source text silently, without tagging them. If abbreviations
 are not transcribed directly but expanded silently, then the MEI header should indicate
@@ -82,4 +82,4 @@ must be
 presented within elements. Furthermore, as alternatives to each other, the {% include link elem="abbr" %} and {% include link elem="expan" %} elements must be wrapped by the {% include link elem="choice" %} element, as described above. The previous example, where the 'o:' in 'pno:' is
 written as superscript, would be encoded as:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample210.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample210.xml" valid="true" %}

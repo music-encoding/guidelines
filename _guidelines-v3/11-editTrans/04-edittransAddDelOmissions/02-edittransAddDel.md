@@ -10,12 +10,12 @@ where material has been added or deleted in the source material.
 The following example demonstrates the usage of {% include link elem="add" %} to mark up a note
 being added to an existing chord:
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample225.xml" valid="true" version=page.version %}
+{% include mei example="editTrans/editTrans-sample225.xml" valid="true" %}
 The next example shows how {% include link elem="del" %} may be used to capture the information
 that two measures have been cancelled. As seen in this example, the **@rend**
 attribute is used to specify the method of deletion.
 
-{% include plainExample.html example="examples/editTrans/editTrans-sample226.xml" valid="false" version=page.version %}
+{% include mei example="editTrans/editTrans-sample226.xml" valid="false" %}
 Additional information for both elements may be specified using attributes. Whereas
 the
 **@hand** attribute marks responsibility for the textual change, the **@resp**

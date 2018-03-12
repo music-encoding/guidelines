@@ -31,65 +31,62 @@ title: "att.origin.timestamp.musical"
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"origin.tstamp"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>encodes the starting point of musical material in terms of musical time, i.e., a
-                     (potentially negative) count of measures plus a beat location.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"origin.tstamp"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                           
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.MEASUREBEATOFFSET.html">data.MEASUREBEATOFFSET</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"origin.tstamp2"</span> <span class="attribute">usage=</span><span class="attributevalue">"rec"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>encodes the ending point of musical material in terms of musical time, i.e., a count
-                     of measures plus a beat location. The values are relative to the measure identified
-                     by
-                     @origin.tstamp.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>encodes the starting point of musical material in terms of musical time, i.e., a
+                        (potentially negative) count of measures plus a beat location.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                           
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.MEASUREBEAT.html">data.MEASUREBEAT</a>"</span></span>
-                           /&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"origin.tstamp2_requires_origin.tstamp"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
-                     
-                     <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                         
-                        <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[@origin.tstamp2]"</span>&gt;</span>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.MEASUREBEATOFFSET.html">data.MEASUREBEATOFFSET</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
+            <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"origin.tstamp2"</span> <span class="attribute">usage=</span><span class="attributevalue">"rec"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>encodes the ending point of musical material in terms of musical time, i.e., a count
+                        of measures plus a beat location. The values are relative to the measure identified
+                        by
+                        @origin.tstamp.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.MEASUREBEAT.html">data.MEASUREBEAT</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"origin.tstamp2_requires_origin.tstamp"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
                            
-                           <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@origin.tstamp"</span>&gt;</span>When @origin.tstamp2 is used @origin.tstamp must
-                              also be present.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
-                           <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
-                        <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
-                     <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div>
-            </div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[@origin.tstamp2]"</span>&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@origin.tstamp"</span>&gt;</span>When @origin.tstamp2 is used @origin.tstamp must
+                                 also be present.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
          </td>
       </tr>
       <tr>
-         <td class="wovenodd-col1"><strong>Constraints</strong></td>
+         <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div>When @origin.tstamp2 is used @origin.tstamp must also be present.</div>
+               <div class="schematronText">When @origin.tstamp2 is used @origin.tstamp must also be present.</div>
             </div>
-            <div xml:space="preserve" class="pre">
-               <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[@origin.tstamp2]"</span>&gt;</span>
-                  
-                  <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@origin.tstamp"</span>&gt;</span>When @origin.tstamp2 is used @origin.tstamp must
-                     also be present.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
-                  <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div>
-            </div>
+            <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:*[@origin.tstamp2]"</span>&gt;</span>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@origin.tstamp"</span>&gt;</span>When @origin.tstamp2 is used @origin.tstamp must
+                        also be present.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                     <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>
       </tr>
    </table>

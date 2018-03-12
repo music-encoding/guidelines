@@ -23,7 +23,7 @@ inline ossia in a separate layer. The following example demonstrates an ossia on
 separate
 staff:
 
-{% include plainExample.html example="examples/cmn/cmn-sample147.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample147.xml" valid="true" %}
 The example above demonstrates that only one of the two {% include link elem="staff" %}
 elements within {% include link elem="ossia" %} has an **@n** attribute. This mechanism
 allows one to distinguish between the "regular" and the "alternative" content: The
@@ -42,4 +42,4 @@ be derived from the value of the **@n** attribute. Alternatively, a separate {% 
 In case of an inline ossia, the whole setup of elements moves down one step in the
 hierarchy, as seen in the following example:
 
-{% include plainExample.html example="examples/cmn/cmn-sample148.xml" valid="true" version=page.version %}
+{% include mei example="cmn/cmn-sample148.xml" valid="true" %}

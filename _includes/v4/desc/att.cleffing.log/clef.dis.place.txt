@@ -1,1 +1,0 @@
-Records the direction of octave displacement to be applied to the clef.

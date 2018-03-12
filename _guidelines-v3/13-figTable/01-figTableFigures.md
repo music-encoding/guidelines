@@ -13,9 +13,9 @@ are
 specified using the {% include link elem="graphic" %} element, whose **@target** attribute
 provides the location of an image. For example:
 
-{% include plainExample.html example="examples/figTable/figTable-sample238.xml" valid="true" version=page.version %}
+{% include mei example="figTable/figTable-sample238.xml" valid="true" %}
 The graphic element may occur multiple times within the markup of the figure in order
 to
 indicate the availablity of different image formats or resolutions:
 
-{% include plainExample.html example="examples/figTable/figTable-sample239.xml" valid="true" version=page.version %}
+{% include mei example="figTable/figTable-sample239.xml" valid="true" %}

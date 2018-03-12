@@ -43,11 +43,11 @@ character and {% include link elem="roleDesc" %} contains a brief description of
 {% include link elem="perfRes" %} element is used to describe the voice range of the
 role.
 
-{% include plainExample.html example="examples/header/header-sample055.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample055.xml" valid="true" %}
 The vocal qualities and associated roles for Beethoven's opera *Fidelio* may
 be encoded as:
 
-{% include plainExample.html example="examples/header/header-sample056.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample056.xml" valid="true" %}
 The {% include link elem="castItem" %} element may also contain:
 
 

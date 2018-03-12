@@ -1,1 +1,0 @@
-Provides an indication of the tuning system, 'just', for example.

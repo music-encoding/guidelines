@@ -22,7 +22,7 @@ item in the
 list is encoded with the {% include link elem="li" %} element. The **@n** can be used to
 record a label for a list item, as in the following example:
 
-{% include plainExample.html example="examples/text/text-sample333.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample333.xml" valid="true" %}
 Occasionally, lists have headers or titles, which can be encoded with {% include link elem="head" %}:
 
-{% include plainExample.html example="examples/text/text-sample334.xml" valid="true" version=page.version %}
+{% include mei example="text/text-sample334.xml" valid="true" %}

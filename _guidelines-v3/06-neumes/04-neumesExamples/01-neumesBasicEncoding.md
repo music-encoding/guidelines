@@ -11,4 +11,4 @@ Information about the staff has been omitted for brevity, but it was originally 
 on a
 5-line staff with two clefs, a "C" and a "F" on lines 5 and 3, respectively.
 
-{% include plainExample.html example="examples/neumes/neumes-sample159.xml" valid="true" version=page.version %}
+{% include mei example="neumes/neumes-sample159.xml" valid="true" %}

@@ -1,1 +1,0 @@
-(speech) – Contains an individual speech in a performance text.

@@ -38,4 +38,4 @@ the following values:
          <td> - depress the pedal half way</td>
       </tr>
    </tbody>
-</table>{% include plainExample.html example="examples/cmn/cmn-sample146.xml" valid="true" version=page.version %}
+</table>{% include mei example="cmn/cmn-sample146.xml" valid="true" %}

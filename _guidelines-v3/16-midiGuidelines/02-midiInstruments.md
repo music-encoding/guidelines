@@ -11,10 +11,10 @@ by the data.MIDINAMES data type. By default, data.MIDINAMES contains General MID
 Instrument
 designations.
 
-{% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample271.xml" valid="true" version=page.version %}
+{% include mei example="midiGuidelines/midiGuidelines-sample271.xml" valid="true" %}
 The **@midi.instrnum** is provided for those cases when an instrument number is needed.
 It must contain valid MIDI values; that is, 0-127. In these cases, a General MIDI
 Instrument
 name is redundant.
 
-{% include plainExample.html example="examples/midiGuidelines/midiGuidelines-sample272.xml" valid="true" version=page.version %}
+{% include mei example="midiGuidelines/midiGuidelines-sample272.xml" valid="true" %}

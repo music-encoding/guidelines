@@ -53,8 +53,8 @@ information regarding access to the MEI file.
 
 
 
-{% include plainExample.html example="examples/header/header-sample033.xml" valid="true" version=page.version %}
-{% include plainExample.html example="examples/header/header-sample034.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample033.xml" valid="true" %}
+{% include mei example="header/header-sample034.xml" valid="true" %}
 Give any other useful information (e.g., dates of collection of data) in an annotation
 within the notes statement, which is described below.
 
@@ -63,4 +63,4 @@ regarding publication and distribution when uniformity is desired regardless of 
 role of
 participants in the publication process:
 
-{% include plainExample.html example="examples/header/header-sample035.xml" valid="true" version=page.version %}
+{% include mei example="header/header-sample035.xml" valid="true" %}
