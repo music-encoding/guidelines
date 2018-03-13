@@ -20,6 +20,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
+    <xsl:output indent="false" method="text" encoding="UTF-8" omit-xml-declaration="true" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="markdown"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:param name="guidelines.version" select="'dev'" as="xs:string"/>
     <xd:doc scope="component">
