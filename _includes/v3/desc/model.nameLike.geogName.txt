@@ -1,1 +1,0 @@
-Groups geographic name elements.

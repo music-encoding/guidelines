@@ -1,1 +1,0 @@
-Name of the organization responsible for the publication of a bibliographic item.

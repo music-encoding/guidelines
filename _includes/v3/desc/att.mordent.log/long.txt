@@ -1,2 +1,0 @@
-When the long attribute is set to 'yes', a double or long mordent, consisting of 5
-notes, is indicated.

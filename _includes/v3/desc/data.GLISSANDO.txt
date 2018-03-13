@@ -1,1 +1,0 @@
-Analytical glissando attribute values.

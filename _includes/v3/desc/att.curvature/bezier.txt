@@ -1,2 +1,0 @@
-Records the placement of Bezier control points as a series of pairs of
-space-separated values; e.g., 19 45 -32 118.

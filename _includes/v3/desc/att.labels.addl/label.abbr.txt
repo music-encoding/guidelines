@@ -1,2 +1,0 @@
-Provides a label for a group of staves on pages after the first page. Usually, this
-label takes an abbreviated form.

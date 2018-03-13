@@ -1,2 +1,0 @@
-Groups elements that are components of a staff in the mensural and neume
-repertoires.

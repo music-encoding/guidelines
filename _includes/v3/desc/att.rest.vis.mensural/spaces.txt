@@ -1,1 +1,0 @@
-States how many spaces are covered by the rest.

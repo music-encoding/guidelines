@@ -1,1 +1,0 @@
-The number of slashes to be rendered for tremolandi.

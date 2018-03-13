@@ -1,1 +1,0 @@
-Provides a container for performers' parts.

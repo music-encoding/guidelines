@@ -1,1 +1,0 @@
-Records the output y coordinate of the stem's attachment point.

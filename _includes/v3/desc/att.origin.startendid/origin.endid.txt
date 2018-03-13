@@ -1,1 +1,0 @@
-indicates the final element in a sequence of events.

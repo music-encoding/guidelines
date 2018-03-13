@@ -1,9 +1,0 @@
-<editionStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <edition>Student's edition,
-      <date>June 1987</date>
-   </edition>
-   <respStmt>
-      <resp>New annotations by</resp>
-      <name>George Brown</name>
-   </respStmt>
-</editionStmt>

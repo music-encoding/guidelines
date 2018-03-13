@@ -1,6 +1,0 @@
-
-<!-- In the facsimile subtree: --><zone xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:id="facsimile.zone2"></zone>
-<!-- somewhere in the content: -->
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" facs="#facsimile.zone2" xml:id="facsimile.measure2">
-   <!-- measure content -->
-</measure>

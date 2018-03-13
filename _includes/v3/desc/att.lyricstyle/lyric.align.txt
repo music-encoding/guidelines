@@ -1,1 +1,0 @@
-Describes the alignment of lyric syllables associated with a note or chord.

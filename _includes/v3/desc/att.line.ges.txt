@@ -1,1 +1,0 @@
-Attributes for describing the performed components of a line.

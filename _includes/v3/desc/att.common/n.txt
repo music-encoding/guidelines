@@ -1,1 +1,0 @@
-Provides a number-like designation for an element.

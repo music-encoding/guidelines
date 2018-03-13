@@ -1,1 +1,0 @@
-Describes the relative size of a feature.

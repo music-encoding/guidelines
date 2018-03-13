@@ -1,2 +1,0 @@
-Specifies the transliteration technique used.
-

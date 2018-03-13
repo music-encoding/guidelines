@@ -1,1 +1,0 @@
-Attributes that identify the layer to which a feature applies.

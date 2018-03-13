@@ -1,7 +1,0 @@
-<perfResList xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <perfRes solo="true">Violin</perfRes>
-   <perfRes>Violin</perfRes>
-   <perfRes>Violin</perfRes>
-   <perfRes>Viola</perfRes>
-   <perfRes>Violoncello</perfRes>
-</perfResList>

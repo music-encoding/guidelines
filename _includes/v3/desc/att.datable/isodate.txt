@@ -1,1 +1,0 @@
-Provides the value of a textual date in standard ISO form.

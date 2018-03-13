@@ -1,4 +1,0 @@
-Allows one to signal to an application whether an element's white space is
-"significant". The behavior of xml:space cascades to all descendant elements, but
-it can
-be turned off locally by setting the xml:space attribute to the value "default".

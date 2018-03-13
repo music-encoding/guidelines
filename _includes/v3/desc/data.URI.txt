@@ -1,1 +1,0 @@
-A Uniform Resource Identifier, see [RFC2396].

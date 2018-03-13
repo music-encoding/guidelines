@@ -1,1 +1,0 @@
-Provides a regularized, authorized value.

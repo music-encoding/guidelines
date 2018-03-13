@@ -1,1 +1,0 @@
-Groups elements containing a bibliographic description.

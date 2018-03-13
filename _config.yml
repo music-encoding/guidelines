@@ -29,7 +29,7 @@ collections:
     
 tipue_search:
   include:
-    collections: [guidelines-v3]
+    collections: [guidelines-dev]
 
 sidebar:  
     - id: s1

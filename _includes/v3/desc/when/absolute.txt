@@ -1,1 +1,0 @@
-Provides an absolute value for the time point.

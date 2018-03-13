@@ -1,1 +1,0 @@
-Provides a mechanism for linking the staff to a staffDef element.

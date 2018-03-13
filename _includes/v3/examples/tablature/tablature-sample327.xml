@@ -1,2 +1,0 @@
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="4" oct="2" pname="a" tab.fret="5" tab.string="6"></note>
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="4" oct="2" pname="a" tab.fret="o" tab.string="5"></note>

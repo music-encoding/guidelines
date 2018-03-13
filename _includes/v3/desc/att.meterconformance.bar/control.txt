@@ -1,5 +1,0 @@
-Indicates whether or not a bar line is "controlling"; that is, if it indicates a
-point of alignment across all the parts. Bar lines within a score are usually
-controlling; that is, they "line up". Bar lines within parts may or may not be
-controlling. When applied to &lt;measure&gt;, this attribute indicates the nature of the
-right barline but not the left.

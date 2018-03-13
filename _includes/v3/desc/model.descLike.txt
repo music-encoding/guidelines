@@ -1,1 +1,0 @@
-Groups elements which provide a description of their parent entity.

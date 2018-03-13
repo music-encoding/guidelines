@@ -1,1 +1,0 @@
-Specifies the symbol used to group a set of staves.

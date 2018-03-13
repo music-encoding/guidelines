@@ -1,1 +1,0 @@
-Indicates the presence of an extension symbol, typically a line.
