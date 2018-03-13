@@ -269,11 +269,11 @@
         <xsl:message select="'INFO: Building multiple HTML fragments for inclusion on music-encoding.org'"/>
          
         <!-- chapter overview -->
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$chapters" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
-</xsl:call-template>
+        <xsl:call-template name="processItems">
+            <xsl:with-param name="items" select="$chapters" as="node()*"/>
+            <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
+            <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
+        </xsl:call-template>
         
             <!-- elements overview -->
         <xsl:result-document href="{$outPutFolder}elements.md" omit-xml-declaration="true">---
