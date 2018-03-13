@@ -1766,7 +1766,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                             <xsl:if test="count($direct.members) gt 0">
                                 <div>
                                     <xsl:for-each select="$direct.members">
-                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{@ident}.html"><xsl:value-of select="@ident"/></a>
+                                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$ident.lowercase}.html"><xsl:value-of select="@ident"/></a>
                                     </xsl:for-each>
                                     <xsl:choose>
                                         <xsl:when test="count($direct.members) = 0"/>
@@ -1848,7 +1849,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                             <xsl:if test="count($direct.members) gt 0">
                                 <div>
                                     <xsl:for-each select="$direct.members">
-                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{@ident}.html"><xsl:value-of select="@ident"/></a>                                                
+                                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$ident.lowercase}.html"><xsl:value-of select="@ident"/></a>                                                
                                         
                                     </xsl:for-each>
                                     <xsl:choose>
