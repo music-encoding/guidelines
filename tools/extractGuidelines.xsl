@@ -352,21 +352,28 @@
         </xsl:result-document>
             
         <!-- data type overview -->
-        <xsl:result-document href="{$outPutFolder}data-types.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Data Types"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$data.types" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$dataLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
-</xsl:call-template>   
+        <xsl:result-document href="{$outPutFolder}data-types.md" format="markdown">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Data Types"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$data.types" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$dataLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
+            </xsl:call-template>   
         </xsl:result-document>
         
     </xsl:template>
