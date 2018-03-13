@@ -518,16 +518,24 @@
                 </xsl:if>
             </xsl:variable>
             
-            <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-version: "<xsl:value-of select="$guidelines.version"/>"
-title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/>"
-<xsl:if test="$mode = 'chapters'">sectionid: "<xsl:value-of select="$name"/>"</xsl:if>
----
-
-<xsl:sequence select="$result"/>
-                
+            <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" format="markdown">
+                <xsl:text>---</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>layout: sidebar</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>sidebar: s1</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>title: "</xsl:text><xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/><xsl:text>"</xsl:text>
+                <xsl:if test="$mode = 'chapters'">
+                    <xsl:text>&#xa;</xsl:text>
+                    <xsl:text>sectionid: "</xsl:text><xsl:value-of select="$name"/><xsl:text>"</xsl:text>
+                </xsl:if>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>---</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:sequence select="$result"/>
             </xsl:result-document>        
                 
         </xsl:for-each>
