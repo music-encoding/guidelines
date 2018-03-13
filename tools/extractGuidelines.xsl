@@ -277,22 +277,29 @@
             <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
         </xsl:call-template>
         
-            <!-- elements overview -->
-        <xsl:result-document href="{$outPutFolder}elements.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Elements"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$elements" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$elementLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
-</xsl:call-template>
+        <!-- elements overview -->
+        <xsl:result-document href="{$outPutFolder}elements.md" format="markdown">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Elements"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$elements" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$elementLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
+            </xsl:call-template>
         </xsl:result-document>
             
             <!-- model overview -->
