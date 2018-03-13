@@ -1,5 +1,5 @@
 <div class="sampleCode" data-lang="{{include.valid}}">
-{% assign file = page.version | append:'/examples/' | append:include.example %}
+{% assign file = page.version | append:'/examples/' | append:include.example | downcase %}
 {% highlight xml %}
 {% include {{ file }} %}
 {% endhighlight %}
