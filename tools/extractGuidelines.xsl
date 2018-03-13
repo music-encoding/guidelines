@@ -1367,7 +1367,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                                         <span class="specChildElements">
                                             <xsl:for-each select="$relevant.element.names">
                                                 <xsl:variable name="current.elem" select="." as="xs:string"/>
-                                                <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$current.elem}.html"><xsl:value-of select="$current.elem"/></a>
+                                                <xsl:variable name="current.elem.lowercase" select="lower-case(.)" as="xs:string"/>
+                                                <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$current.elem.lowercase}.html"><xsl:value-of select="$current.elem"/></a>
                                             </xsl:for-each>
                                         </span>
                                     </div>
@@ -1415,7 +1416,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                                             <span class="specChildElements">
                                                 <xsl:for-each select="$relevant.element.names">
                                                     <xsl:variable name="current.elem" select="." as="xs:string"/>
-                                                    <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$current.elem}.html"><xsl:value-of select="$current.elem"/></a>
+                                                    <xsl:variable name="current.elem.lowercase" select="lower-case(.)" as="xs:string"/>
+                                                    <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$current.elem.lowercase}.html"><xsl:value-of select="$current.elem"/></a>
                                                 </xsl:for-each>
                                             </span>
                                         </div>
