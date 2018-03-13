@@ -24,8 +24,6 @@ plugins:
   - jekyll-redirect-from
 
 collections:
-  guidelines-v3:
-    output: false
   guidelines-dev:
     output: false
     
