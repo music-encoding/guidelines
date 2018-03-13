@@ -301,22 +301,29 @@
             </xsl:call-template>
         </xsl:result-document>
             
-            <!-- model overview -->
-        <xsl:result-document href="{$outPutFolder}model-classes.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Model Classes"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'models'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$model.classes" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$modelLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'models'" as="xs:string"/>
-</xsl:call-template>
+        <!-- model overview -->
+        <xsl:result-document href="{$outPutFolder}model-classes.md" format="markdown">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Model Classes"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'models'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$model.classes" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$modelLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'models'" as="xs:string"/>
+            </xsl:call-template>
         </xsl:result-document>
             
             <!-- attribute overview -->
