@@ -1,0 +1,8 @@
+<ligature xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" form="recta">
+   <note dur="semibrevis" oct="4" pname="d"></note>
+   <note dur="semibrevis" oct="3" pname="g"></note>
+</ligature>
+<ligature xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" form="obliqua">
+   <note dur="semibrevis" oct="3" pname="g"></note>
+   <note dur="semibrevis" oct="4" pname="c"></note>
+</ligature>

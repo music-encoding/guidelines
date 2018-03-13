@@ -1,0 +1,21 @@
+
+<!-- In the document content: --><app xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <rdg source="#critApp.source1">
+      <!-- reading of source 1 -->
+   </rdg>
+   <rdg source="#critApp.source2 #critApp.source3">
+      <!-- reading of sources 2 *and* 3 -->
+   </rdg>
+</app>
+<!-- Earlier in the document header: -->
+<sourceDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <source xml:id="critApp.source1">
+      <!-- bibliographic description of source 1 -->
+   </source>
+   <source xml:id="critApp.source2">
+      <!-- bibliographic description of source 2 -->
+   </source>
+   <source xml:id="critApp.source3">
+      <!-- bibliographic description of source 3 -->
+   </source>
+</sourceDesc>

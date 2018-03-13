@@ -1,0 +1,4 @@
+
+<!-- using the tstamp2 attribute --><dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" place="above" staff="2" tstamp="2.5" tstamp2="1m+1">cresc. poco a poco</dynam>
+<!-- using the endid attribute -->
+<dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" endid="ID_of_ending_note" place="above" staff="2" tstamp="2.5">cresc. poco a poco</dynam>

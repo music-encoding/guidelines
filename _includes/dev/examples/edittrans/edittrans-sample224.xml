@@ -1,0 +1,13 @@
+<beam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <note dur="4" oct="3" pname="c"></note>
+   <note dur="4" oct="3" pname="d"></note>
+   <subst>
+      <gap extent="two eighth notes" reason="missing notes"></gap>
+      <supplied>
+         <note dur="4" oct="3" pname="e"></note>
+         <note dur="4" oct="3" pname="f"></note>
+      </supplied>
+   </subst>
+   <note dur="4" oct="3" pname="g"></note>
+   <note dur="4" oct="3" pname="a"></note>
+</beam>

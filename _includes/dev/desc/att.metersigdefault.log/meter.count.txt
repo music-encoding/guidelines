@@ -1,0 +1,4 @@
+Captures the number of beats in a measure, that is, the top number of the meter
+signature. It must contain a decimal number or an additive expression that evaluates
+to
+a decimal number, such as 2+3.

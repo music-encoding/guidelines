@@ -1,0 +1,13 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1">
+   <staff n="1">
+      <layer>
+         <note dur="4" oct="4" pname="c"></note>
+         <note dur="4" intm="u" oct="4" pname="d"></note>
+         <note dur="4" intm="u" oct="4" pname="e"></note>
+         <note dur="4" intm="u" oct="4" pname="f"></note>
+         <note dur="2" intm="u" oct="4" pname="g"></note>
+         <note dur="2" intm="s" oct="4" pname="g"></note>
+         <note dur="4" intm="d" oct="4" pname="f"></note>
+      </layer>
+   </staff>
+</measure>

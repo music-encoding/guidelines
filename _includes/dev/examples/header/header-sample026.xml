@@ -1,0 +1,12 @@
+<titleStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <title>Symphony No. 5 in C Minor : an electronic transcription</title>
+   <respStmt>
+      <resp>Encoded by</resp>
+      <persName role="encoder">Joe Encoder</persName>
+      <persName role="encoder">Jane Decoder</persName>
+   </respStmt>
+   <respStmt>
+      <resp>Images scanned by</resp>
+      <persName>Ludwig van Ludwig</persName>
+   </respStmt>
+</titleStmt>

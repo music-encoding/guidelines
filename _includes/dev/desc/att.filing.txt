@@ -1,0 +1,1 @@
+Attributes that deal with string filing characteristics.

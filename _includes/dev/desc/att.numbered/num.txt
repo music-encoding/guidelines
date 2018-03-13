@@ -1,0 +1,1 @@
+Records a number or count accompanying a notational feature.

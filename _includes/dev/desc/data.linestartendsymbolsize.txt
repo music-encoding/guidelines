@@ -1,0 +1,1 @@
+Relative size of symbol that may begin/end a line.

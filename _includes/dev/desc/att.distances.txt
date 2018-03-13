@@ -1,0 +1,1 @@
+Attributes that describe distance from the staff.

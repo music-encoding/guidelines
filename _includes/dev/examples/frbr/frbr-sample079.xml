@@ -1,0 +1,21 @@
+<work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <titleStmt>
+      <title>Pavane pour une infante défunte</title>
+   </titleStmt>
+   <expressionList>
+      <expression>
+         <perfMedium>
+            <perfResList>
+               <perfRes>piano</perfRes>
+            </perfResList>
+         </perfMedium>
+      </expression>
+      <expression>
+         <perfMedium>
+            <perfResList>
+               <perfRes>orchestra</perfRes>
+            </perfResList>
+         </perfMedium>
+      </expression>
+   </expressionList>
+</work>

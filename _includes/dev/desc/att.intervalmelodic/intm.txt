@@ -1,0 +1,3 @@
+Encodes the melodic interval from the previous pitch. The value may be a general
+directional indication (u, d, s), an indication of diatonic interval direction, quality,
+and size, or a precise numeric value in half steps.

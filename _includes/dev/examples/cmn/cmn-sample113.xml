@@ -1,0 +1,34 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1">
+   <!-- staff 1 omitted -->
+   <staff n="2">
+      <layer n="1">
+         <chord dur="16"></chord>
+         <beam>
+            <note pname="f" tie="i"></note>
+            <note pname="a" tie="i"></note>
+            <note pname="c" tie="i"></note>
+         </beam>
+         <chord dur="4">
+            <note pname="f" tie="i"></note>
+            <note pname="c" tie="m"></note>
+            <note pname="a" tie="m"></note>
+            <note pname="f" tie="m"></note>
+         </chord>
+      </layer>
+   </staff>
+</measure>
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="2">
+   <!-- staff 1 omitted -->
+   <staff n="2">
+      <layer n="1">
+         <chord dur="16">
+            <note pname="f" tie="t"></note>
+            <note pname="c" tie="t"></note>
+            <note pname="a" tie="t"></note>
+            <note pname="f" tie="t"></note>
+         </chord>
+         <!-- ... -->
+      </layer>
+   </staff>
+</measure>
+<!-- measures 3 and 4 omitted -->

@@ -1,0 +1,9 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1">
+   <staff n="1">
+      <layer n="1">
+         <note dur="2" oct="4" pname="c"></note>
+         <note dur="2" oct="4" pname="c"></note>
+      </layer>
+   </staff>
+   <mordent form="inv" place="below" staff="1" tstamp="2"></mordent>
+</measure>

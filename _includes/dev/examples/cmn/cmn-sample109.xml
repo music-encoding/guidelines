@@ -1,0 +1,10 @@
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="2">
+   <layer>
+      <beam>
+         <note dur="16" oct="3" pname="g"></note>
+         <note pname="b"></note>
+         <note oct="4" pname="d" staff="1"></note>
+         <note pname="f" staff="1"></note>
+      </beam>
+   </layer>
+</staff>

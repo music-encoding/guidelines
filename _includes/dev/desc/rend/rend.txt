@@ -1,0 +1,2 @@
+Captures the appearance of the element's contents using MEI-defined
+descriptors.

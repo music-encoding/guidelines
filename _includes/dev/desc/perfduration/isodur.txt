@@ -1,0 +1,1 @@
+Holds a W3C duration value, e.g., "PT2H34M45.67S".

@@ -1,0 +1,14 @@
+<source xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <titleStmt>
+      <title>[Untitled Bach Manuscript]</title>
+      <respStmt>
+         <persName>Johann Sebastian Bach</persName>
+      </respStmt>
+   </titleStmt>
+   <pubStmt>
+      <unpub></unpub>
+   </pubStmt>
+   <notesStmt>
+      <annot>Manuscript discovered in library stacks, 2012</annot>
+   </notesStmt>
+</source>

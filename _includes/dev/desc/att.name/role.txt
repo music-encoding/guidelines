@@ -1,0 +1,3 @@
+Used to specify further information about the entity referenced by this name, for
+example, the occupation of a person or the status of a place. Use a standard value
+whenever possible.

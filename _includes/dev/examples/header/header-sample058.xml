@@ -1,0 +1,12 @@
+<perfMedium xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <perfResList>
+      <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Orchestration
+      </head>
+      <perfRes>Flute</perfRes>
+      <perfRes>Oboe</perfRes>
+      <perfRes>English Horn</perfRes>
+      <perfRes>2 Horns in D</perfRes>
+      <perfRes>Strings</perfRes>
+   </perfResList>
+</perfMedium>

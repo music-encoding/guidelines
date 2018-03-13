@@ -1,0 +1,4 @@
+Contains a space separated list of references that identify active participants in
+a
+collection/relationship, such as notes under a phrase mark; that is, the entities
+pointed "from".

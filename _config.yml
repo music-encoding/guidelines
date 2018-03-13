@@ -26,7 +26,7 @@ plugins:
 collections:
   guidelines-v3:
     output: false
-  guidelines-v4:
+  guidelines-dev:
     output: false
     
 tipue_search:

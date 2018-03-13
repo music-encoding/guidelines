@@ -1,0 +1,2 @@
+<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="#cit1" targettype="biblioCitation"></ptr>
+<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" target="http://path.to.resource/myAudio.aiff" targettype="audioClip"></ptr>

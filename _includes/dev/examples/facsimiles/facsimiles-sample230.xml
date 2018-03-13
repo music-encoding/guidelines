@@ -1,0 +1,13 @@
+<mei xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <meiHead>
+      <!-- metadata header -->
+   </meiHead>
+   <music>
+      <facsimile>
+         <!-- The facsimile subtree starts here. -->
+      </facsimile>
+      <body>
+         <!-- The encoding of the musical content goes here. -->
+      </body>
+   </music>
+</mei>

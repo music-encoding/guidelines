@@ -1,0 +1,10 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1" right="end">
+   <staff n="1">
+      <layer n="1">
+         <note dur="4" oct="4" pname="c" xml:id="analysis.note1"></note>
+         <note dur="4" oct="4" pname="d" xml:id="analysis.note2"></note>
+         <note dur="2" oct="4" pname="e" xml:id="analysis.note3"></note>
+      </layer>
+   </staff>
+   <fermata corresp="#analysis.note3" place="above" tstamp="4.75"></fermata>
+</measure>

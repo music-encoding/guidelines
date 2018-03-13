@@ -21,7 +21,7 @@
     </xd:doc>
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
-    <xsl:variable name="plain.version" select="'v' || substring-before(//tei:classSpec[@ident = ('att.meiversion','att.meiVersion')]//tei:defaultVal/text(),'.')" as="xs:string"/>
+    <xsl:param name="guidelines.version" select="'dev'" as="xs:string"/>
     <xd:doc scope="component">
         <xd:desc>
             <xd:p>
@@ -68,7 +68,13 @@
         <!-- fill in further MEI version, for which this xsl has been adjusted -->
     </xsl:variable>
     
-    <xsl:variable name="outPutFolder" select="'./' || $plain.version || '/'" as="xs:string"/>
+    <xsl:variable name="outPutFolder" select="'../' || $guidelines.version || '/'" as="xs:string"/>
+    
+    <!-- include folder where to put the examples and desc converted to text snippets -->
+    <xsl:variable name="includeFolder" select="'../_includes/' || $guidelines.version || '/'" as="xs:string"/>
+    
+    <!-- migration folder where to put the TEI text converted to MD -->
+    <xsl:variable name="migrationFolder" select="'../_guidelines-' || $guidelines.version || '/'" as="xs:string"/>
     
     <xsl:variable name="mei.source" select="/" as="node()"/>
     
@@ -139,7 +145,7 @@
     
     <xsl:template match="/">
         
-        <xsl:message terminate="no" select="'INFO: Extracting Guidelines for publication from MEI source (version ' || $plain.version || ')'"/>
+        <xsl:message terminate="no" select="'INFO: Extracting Guidelines for publication from MEI source (version ' || $guidelines.version || ')'"/>
         
         <!--<xsl:if test="not($version = $supported.version)">
             <xsl:message terminate="no" select="'WARNING: This version of MEI is not officially supported. Please check the results carefully.'"/>
@@ -158,7 +164,7 @@
                     <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
-            <xsl:variable name="path" select="$outPutFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>
+            <xsl:variable name="path" select="$includeFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>
             <xsl:variable name="example"><xsl:apply-templates select="." mode="preserveSpace"/></xsl:variable>
             <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:apply-templates select="$example" mode="cleanup.example"/></xsl:result-document>
         </xsl:for-each>
@@ -175,30 +181,30 @@
         
         <xsl:for-each select=".//tei:elementSpec">
             <xsl:variable name="element" select="."/>
-            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
             <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
-                <xsl:variable name="path" select="$outPutFolder || 'desc/' || $element/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
+                <xsl:variable name="path" select="$includeFolder || 'desc/' || $element/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
                 <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:classSpec">
             <xsl:variable name="class" select="."/>
-            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
             <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
-                <xsl:variable name="path" select="$outPutFolder || 'desc/' || $class/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
+                <xsl:variable name="path" select="$includeFolder || 'desc/' || $class/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
                 <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:macroSpec">
             <xsl:variable name="macro" select="."/>
-            <xsl:variable name="path" select="$outPutFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
             <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
-                <xsl:variable name="path" select="$outPutFolder || 'desc/' || $macro/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
+                <xsl:variable name="path" select="$includeFolder || 'desc/' || $macro/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
                 <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
@@ -264,28 +270,18 @@
         <xsl:message select="'INFO: Building multiple HTML fragments for inclusion on music-encoding.org'"/>
          
         <!-- chapter overview -->
-        <xsl:result-document href="{$outPutFolder}guidelines.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Guidelines"
-version: "<xsl:value-of select="$plain.version"/>"
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$chapterLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
-</xsl:call-template>
 <xsl:call-template name="processItems">
     <xsl:with-param name="items" select="$chapters" as="node()*"/>
     <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
     <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
 </xsl:call-template>
-        </xsl:result-document>
         
             <!-- elements overview -->
         <xsl:result-document href="{$outPutFolder}elements.md" omit-xml-declaration="true">---
 layout: sidebar
 sidebar: s1
 title: "Elements"
-version: "<xsl:value-of select="$plain.version"/>"
+version: "<xsl:value-of select="$guidelines.version"/>"
 ---
 <xsl:call-template name="generateCategoryOverview">
     <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
@@ -303,7 +299,7 @@ version: "<xsl:value-of select="$plain.version"/>"
 layout: sidebar
 sidebar: s1
 title: "Model Classes"
-version: "<xsl:value-of select="$plain.version"/>"
+version: "<xsl:value-of select="$guidelines.version"/>"
 ---
 <xsl:call-template name="generateCategoryOverview">
     <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
@@ -321,7 +317,7 @@ version: "<xsl:value-of select="$plain.version"/>"
 layout: sidebar
 sidebar: s1
 title: "Attribute Classes"
-version: "<xsl:value-of select="$plain.version"/>"
+version: "<xsl:value-of select="$guidelines.version"/>"
 ---
 <xsl:call-template name="generateCategoryOverview">
     <xsl:with-param name="items" select="$attLinks" as="node()*"/>
@@ -339,7 +335,7 @@ version: "<xsl:value-of select="$plain.version"/>"
 layout: sidebar
 sidebar: s1
 title: "Data Types"
-version: "<xsl:value-of select="$plain.version"/>"
+version: "<xsl:value-of select="$guidelines.version"/>"
 ---
 <xsl:call-template name="generateCategoryOverview">
     <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
@@ -497,7 +493,7 @@ version: "<xsl:value-of select="$plain.version"/>"
             <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" omit-xml-declaration="true">---
 layout: sidebar
 sidebar: s1
-version: "<xsl:value-of select="$plain.version"/>"
+version: "<xsl:value-of select="$guidelines.version"/>"
 title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/>"
 <xsl:if test="$mode = 'chapters'">sectionid: "<xsl:value-of select="$name"/>"</xsl:if>
 ---
@@ -532,9 +528,7 @@ title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapt
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:body//tei:div[not(@type = 'div1')]" mode="setupFileForMarkdown">
-        
-        <xsl:variable name="relevant.outputFolder" select="$outPutFolder || 'guidelines/'" as="xs:string"/>
+    <xsl:template match="tei:body//tei:div" mode="setupFileForMarkdown">
         
         <xsl:variable name="chapter" select="." as="node()"/>
         <xsl:variable name="chapterNumElem" select="$all.chapters//*:chapter[@xml:id = $chapter/@xml:id]" as="node()?"/>
@@ -549,17 +543,17 @@ title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapt
         <xsl:variable name="path" as="xs:string">
             <xsl:choose>
                 <xsl:when test="$chapterNumElem/@level = '1'">
-                    <xsl:message terminate="yes" select="'This should not have happened'"/>
+                    <xsl:value-of select="$migrationFolder || $chapter.path"/>
                 </xsl:when>
                 <xsl:when test="$chapterNumElem/@level = '2'">
-                    <xsl:value-of select="$relevant.outputFolder || $level1.path || $chapter.path"/>
+                    <xsl:value-of select="$migrationFolder || $level1.path || $chapter.path"/>
                 </xsl:when>
                 <xsl:when test="$chapterNumElem/@level = '3'">
                     <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
                     <xsl:variable name="level2.index" select="local:padNumber2(tokenize($level2.chapter/@number,'\.')[2])" as="xs:string"/>
                     <xsl:variable name="level2.path" select="$level2.index || '-' || $level2.chapter/@xml:id || '/'" as="xs:string"/>
                     
-                    <xsl:value-of select="$relevant.outputFolder || $level1.path || $level2.path || $chapter.path"/>
+                    <xsl:value-of select="$migrationFolder || $level1.path || $level2.path || $chapter.path"/>
                 </xsl:when>
                 <xsl:when test="$chapterNumElem/@level = '4'">
                     <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
@@ -570,7 +564,7 @@ title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapt
                     <xsl:variable name="level3.index" select="local:padNumber2(tokenize($level3.chapter/@number,'\.')[3])" as="xs:string"/>
                     <xsl:variable name="level3.path" select="$level3.index || '-' || $level3.chapter/@xml:id || '/'" as="xs:string"/>
                     
-                    <xsl:value-of select="$relevant.outputFolder || $level1.path || $level2.path || $level3.path || $chapter.path"/>
+                    <xsl:value-of select="$migrationFolder|| $level1.path || $level2.path || $level3.path || $chapter.path"/>
                 </xsl:when>
                 <xsl:when test="$chapterNumElem/@level = '5'">
                     <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
@@ -585,7 +579,7 @@ title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapt
                     <xsl:variable name="level4.index" select="local:padNumber2(tokenize($level4.chapter/@number,'\.')[4])" as="xs:string"/>
                     <xsl:variable name="level4.path" select="$level4.index || '-' || $level4.chapter/@xml:id || '/'" as="xs:string"/>
                     
-                    <xsl:value-of select="$relevant.outputFolder || $level1.path || $level2.path || $level3.path || $level4.path || $chapter.path"/>
+                    <xsl:value-of select="$migrationFolder || $level1.path || $level2.path || $level3.path || $level4.path || $chapter.path"/>
                 </xsl:when>
                 <xsl:when test="$chapterNumElem/@level = '6'">
                     <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
@@ -604,7 +598,7 @@ title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapt
                     <xsl:variable name="level5.index" select="local:padNumber2(tokenize($level5.chapter/@number,'\.')[5])" as="xs:string"/>
                     <xsl:variable name="level5.path" select="$level5.index || '-' || $level5.chapter/@xml:id || '/'" as="xs:string"/>
                     
-                    <xsl:value-of select="$relevant.outputFolder || $level1.path || $level2.path || $level3.path || $level4.path || $level5.path || $chapter.path"/>
+                    <xsl:value-of select="$migrationFolder || $level1.path || $level2.path || $level3.path || $level4.path || $level5.path || $chapter.path"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
@@ -612,7 +606,7 @@ title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapt
         <xsl:result-document href="{lower-case($path)}" method="html" omit-xml-declaration="yes">---
 sectionid: <xsl:value-of select="$chapter/@xml:id"/>
 title: "<xsl:value-of select="$chapterNumElem/@head"/>"
-version: "<xsl:value-of select="$plain.version"/>"
+version: "<xsl:value-of select="$guidelines.version"/>"
 ---
 
 <xsl:apply-templates select="node()" mode="markdown"/>

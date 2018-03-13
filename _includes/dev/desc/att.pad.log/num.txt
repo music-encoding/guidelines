@@ -1,0 +1,2 @@
+Amount of "padding" to be added, in interline units; that is, in units of 1/2 the
+distance between adjacent staff lines.

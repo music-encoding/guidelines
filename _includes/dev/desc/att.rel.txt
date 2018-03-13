@@ -1,0 +1,1 @@
+Attributes specific to bibliographic entity relationships.
