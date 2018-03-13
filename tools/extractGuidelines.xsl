@@ -1341,7 +1341,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                     <td class="wovenodd-col2">
                         <div class="parent">
                             <xsl:for-each select="$elementSpec//tei:memberOf[starts-with(@key,'model.')]">
-                                <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_classSpec" href="{$version}/model-classes/{@key}.html"><xsl:value-of select="@key"/></a>
+                                <xsl:variable name="key.lowercase" select="lower-case(@key)" as="xs:string"/>
+                                <xsl:value-of select="if(position() gt 1) then(' ') else('')"/><a class="link_odd_classSpec" href="{$version}/model-classes/{$key.lowercase}.html"><xsl:value-of select="@key"/></a>
                             </xsl:for-each>
                         </div>
                     </td>
@@ -1743,7 +1744,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                             <xsl:if test="count($direct.members) gt 0">
                                 <div>
                                     <xsl:for-each select="$direct.members">
-                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_classSpec" href="{$version}/model-classes/{@key}.html"><xsl:value-of select="@key"/></a>
+                                        <xsl:variable name="key.lowercase" select="lower-case(@key)" as="xs:string"/>
+                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_classSpec" href="{$version}/model-classes/{$key.lowercase}.html"><xsl:value-of select="@key"/></a>
                                     </xsl:for-each>
                                 </div>
                             </xsl:if>
@@ -1751,7 +1753,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                             <xsl:if test="count($referenced.members) gt 0">
                                 <div>
                                     <xsl:for-each select="$referenced.members">
-                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{@ident}.html"><xsl:value-of select="@ident"/></a>
+                                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$ident.lowercase}.html"><xsl:value-of select="@ident"/></a>
                                     </xsl:for-each>
                                 </div>
                             </xsl:if>
@@ -1850,8 +1853,7 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                                 <div>
                                     <xsl:for-each select="$direct.members">
                                         <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
-                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$ident.lowercase}.html"><xsl:value-of select="@ident"/></a>                                                
-                                        
+                                        <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$ident.lowercase}.html"><xsl:value-of select="@ident"/></a>                                                                    
                                     </xsl:for-each>
                                     <xsl:choose>
                                         <xsl:when test="count($direct.members) = 0"/>
@@ -1962,17 +1964,18 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                 <xsl:when test="count($relevant.elements) gt 0">
                     <div>
                         <xsl:for-each select="$relevant.elements">
-                            <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{@ident}.html"><xsl:value-of select="@ident"/></a>                                    
-                                
+                            <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                            <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/elements/{$ident.lowercase}.html"><xsl:value-of select="@ident"/></a>                                           
                         </xsl:for-each>
-                        <span> (via <a class="link_odd_classSpec" href="{$version}/attribute-classes/{$current.class/@ident}.html"><xsl:value-of select="$current.class/@ident"/></a>)</span>
+                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                        <span> (via <a class="link_odd_classSpec" href="{$version}/attribute-classes/{$current.class/$ident.lowercase}.html"><xsl:value-of select="$current.class/@ident"/></a>)</span>
                         
                     </div>
                 </xsl:when>
                 <xsl:otherwise>
                     <div>
-                        <span><a class="link_odd_classSpec" href="{$version}/attribute-classes/{$current.class/@ident}"><xsl:value-of select="$current.class/@ident"/></a> (no elements directly inheriting from this class)</span>
-                        
+                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                        <span><a class="link_odd_classSpec" href="{$version}/attribute-classes/{$current.class/$ident.lowercase}"><xsl:value-of select="$current.class/@ident"/></a> (no elements directly inheriting from this class)</span>                        
                     </div>
                 </xsl:otherwise>
             </xsl:choose>
@@ -1993,17 +1996,18 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                 <xsl:when test="count($relevant.elements) gt 0">
                     <div>
                         <xsl:for-each select="$relevant.elements">
-                            <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/model-classes/{@ident}.html"><xsl:value-of select="@ident"/></a>                                    
-                            
+                            <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                            <xsl:value-of select="if(position() gt 1) then(', ') else('')"/><a class="link_odd_elementSpec" href="{$version}/model-classes/{$ident.lowercase}.html"><xsl:value-of select="@ident"/></a>                                    
                         </xsl:for-each>
-                        <span> (via <a class="link_odd_classSpec" href="{$version}/model-classes/{$current.class/@ident}.html"><xsl:value-of select="$current.class/@ident"/></a>)</span>
+                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                        <span> (via <a class="link_odd_classSpec" href="{$version}/model-classes/{$current.class/$ident.lowercase}.html"><xsl:value-of select="$current.class/@ident"/></a>)</span>
                         
                     </div>
                 </xsl:when>
                 <xsl:otherwise>
                     <div>
-                        <span><a class="link_odd_classSpec" href="{$version}/model-classes/{$current.class/@ident}.html"><xsl:value-of select="$current.class/@ident"/></a> (no elements directly inheriting from this class)</span>
-                         
+                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                        <span><a class="link_odd_classSpec" href="{$version}/model-classes/{$current.class/$ident.lowercase}.html"><xsl:value-of select="$current.class/@ident"/></a> (no elements directly inheriting from this class)</span>
                     </div>
                 </xsl:otherwise>
             </xsl:choose>
@@ -2045,16 +2049,20 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                                 <xsl:variable name="subref" select="$ref//tei:attDef[.//rng:ref[@name = $macroSpec/@ident]][1]/@ident" as="xs:string?"/>
                                 <xsl:choose>
                                     <xsl:when test="local-name($ref) = 'macroSpec'">
-                                        <a class="link_odd" href="{$version}/data-types/{$ref/@ident}.html"><xsl:value-of select="$ref/@ident"/></a>
+                                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                                        <a class="link_odd" href="{$version}/data-types/{$ref/$ident.lowercase}.html"><xsl:value-of select="$ref/@ident"/></a>
                                     </xsl:when>
                                     <xsl:when test="local-name($ref) = 'classSpec' and $ref/@type = 'atts'">
-                                        <a class="link_odd_classSpec" href="{$version}/attribute-classes/{$ref/@ident}.html"><xsl:value-of select="$ref/@ident"/></a><xsl:value-of select="if($subref) then(' (@' || $subref ||')') else()"/>
+                                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                                        <a class="link_odd_classSpec" href="{$version}/attribute-classes/{$ref/$ident.lowercase}.html"><xsl:value-of select="$ref/@ident"/></a><xsl:value-of select="if($subref) then(' (@' || $subref ||')') else()"/>
                                     </xsl:when>
                                     <xsl:when test="local-name($ref) = 'classSpec' and $ref/@type = 'model'">
-                                        <a class="link_odd_classSpec" href="{$version}/model-classes/{$ref/@ident}.html"><xsl:value-of select="$ref/@ident"/></a><xsl:value-of select="if($subref) then(' (@' || $subref ||')') else()"/>
+                                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                                        <a class="link_odd_classSpec" href="{$version}/model-classes/{$ref/$ident.lowercase}.html"><xsl:value-of select="$ref/@ident"/></a><xsl:value-of select="if($subref) then(' (@' || $subref ||')') else()"/>
                                     </xsl:when>
                                     <xsl:when test="local-name($ref) = 'elementSpec'">
-                                        <a class="link_odd_classSpec" href="{$version}/elements/{$ref/@ident}.html"><xsl:value-of select="$ref/@ident"/></a><xsl:value-of select="if($subref) then('/@' || $subref) else()"/>
+                                        <xsl:variable name="ident.lowercase" select="lower-case(@ident)" as="xs:string"/>
+                                        <a class="link_odd_classSpec" href="{$version}/elements/{$ref/$ident.lowercase}.html"><xsl:value-of select="$ref/@ident"/></a><xsl:value-of select="if($subref) then('/@' || $subref) else()"/>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:message terminate="no" select="'ERROR: Unable to resolve reference to ' || $macroSpec/@ident || ' from a ' || local-name($ref)"/>
@@ -2216,13 +2224,13 @@ version: "<xsl:value-of select="$guidelines.version"/>"
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
     <xsl:template match="tei:memberOf/@key" mode="preserveSpace" priority="2" xml:space="preserve">
         <xsl:choose>
-            <xsl:when test="starts-with(string(.),'att.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/attribute-classes/{string(.)}.html"><xsl:value-of select="normalize-space(string(.))"/></a>"</span></span></xsl:when>
-            <xsl:when test="starts-with(string(.),'model.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/model-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
+            <xsl:when test="starts-with(string(.),'att.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/attribute-classes/{lower-case(string(.))}.html"><xsl:value-of select="normalize-space(string(.))"/></a>"</span></span></xsl:when>
+            <xsl:when test="starts-with(string(.),'model.')"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/model-classes/{lower-case(string(.))}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
             <xsl:otherwise><xsl:message terminate="yes" select="'Dunno how to resolve memberOf reference ' || ."/></xsl:otherwise>
         </xsl:choose></xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
-    <xsl:template match="tei:macroRef/@key" mode="preserveSpace" priority="2" xml:space="preserve"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/data-types/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:template>
+    <xsl:template match="tei:macroRef/@key" mode="preserveSpace" priority="2" xml:space="preserve"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/data-types/{lower-case(string(.))}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:template>
     
     <!-- in order to preserve spacing, it is important that the following template is kept on one line -->
     <xsl:template match="rng:ref/@name" mode="preserveSpace" priority="2" xml:space="preserve">
@@ -2234,9 +2242,9 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                 <xsl:otherwise><xsl:value-of select="'other'"/></xsl:otherwise>
             </xsl:choose></xsl:variable>
         <xsl:choose>
-            <xsl:when test="$target.type = 'element'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/elements/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
-            <xsl:when test="$target.type = 'model'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/model-classes/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
-            <xsl:when test="$target.type = 'macro'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/data-types/{string(.)}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
+            <xsl:when test="$target.type = 'element'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/elements/{lower-case(string(.))}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
+            <xsl:when test="$target.type = 'model'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/model-classes/{lower-case(string(.))}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
+            <xsl:when test="$target.type = 'macro'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<a class="link_odd" href="{$version}/data-types/{lower-case(string(.))}.html"><xsl:value-of select="string(.)"/></a>"</span></span></xsl:when>
             <xsl:when test="$target.type = 'other'"><xsl:value-of select="' '"/><span class="attribute"><xsl:value-of select="local-name()"/>=<span class="attributevalue">"<xsl:value-of select="string(.)"/>"</span></span></xsl:when>
         </xsl:choose>
     </xsl:template>
