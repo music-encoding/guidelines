@@ -327,22 +327,29 @@
             </xsl:call-template>
         </xsl:result-document>
             
-            <!-- attribute overview -->
-        <xsl:result-document href="{$outPutFolder}attribute-classes.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Attribute Classes"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$attLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$att.classes" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$attLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
-</xsl:call-template>
+        <!-- attribute overview -->
+        <xsl:result-document href="{$outPutFolder}attribute-classes.md" format="markdown">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Attribute Classes"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$attLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$att.classes" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$attLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
+            </xsl:call-template>
         </xsl:result-document>
             
         <!-- data type overview -->
