@@ -231,7 +231,7 @@
                 <xsl:variable name="name" select="@xml:id"/>
                 <xsl:variable name="heading" select="./tei:head[1]/text()"/>
                 <xsl:variable name="headingNo" select="concat(position(),'.')"/>
-                <a class="module" href="{$version}/guidelines/{lower-case($name)}.html">
+                <a class="module" href="{$version}/content/{lower-case($name)}.html">
                     <span class="no"><xsl:value-of select="$headingNo"/></span>
                     <span class="title"><xsl:value-of select="$heading"/></span></a>
             </xsl:for-each>
@@ -1179,7 +1179,7 @@
                 
                 <xsl:variable name="base.id" select="if($tocInfo/@level = '1') then($tocInfo/@xml:id) else($tocInfo/preceding-sibling::*[@level = '1'][1]/@xml:id)" as="xs:string"/>
                 
-                <a class="link_ptr" title="{$tocInfo/@head}" href="{$version}/guidelines/{$base.id || (if(not($tocInfo/@level = '1')) then('#' || $chapter.id) else())}"><xsl:value-of select="$tocInfo/@number || ' ' || $tocInfo/@head"/></a>        
+                <a class="link_ptr" title="{$tocInfo/@head}" href="{$version}/content/{$base.id || (if(not($tocInfo/@level = '1')) then('#' || $chapter.id) else())}"><xsl:value-of select="$tocInfo/@number || ' ' || $tocInfo/@head"/></a>        
                     
             </xsl:otherwise>
         </xsl:choose>
@@ -1209,7 +1209,7 @@
                         <xsl:variable name="head" select="string($chapter/tei:head[1]/text())" as="xs:string"/>
                         <xsl:variable name="base.id" select="$chapter/ancestor-or-self::tei:div[@type = 'div1']/@xml:id" as="xs:string"/>
                         
-                        <a class="link_ref" title="{$head}" href="{$version}/guidelines/{$base.id || (if($base.id = $chapter.id) then() else('#' || $chapter.id))}"><xsl:apply-templates select="node()" mode="#current"/></a>
+                        <a class="link_ref" title="{$head}" href="{$version}/content/{$base.id || (if($base.id = $chapter.id) then() else('#' || $chapter.id))}"><xsl:apply-templates select="node()" mode="#current"/></a>
                         
                     </xsl:when>
                     <xsl:otherwise>
@@ -1232,7 +1232,7 @@
                     <xsl:when test="exists($chapter)">
                         <xsl:variable name="head" select="string($chapter/tei:head[1]/text())" as="xs:string"/>
                         <xsl:variable name="base.id" select="$chapter/ancestor-or-self::tei:div[@type = 'div1']/@xml:id" as="xs:string"/>
-                        <xsl:variable name="url" select="$version || '/guidelines/' || $base.id || '.html' || (if($base.id = $chapter.id) then() else('#' || $chapter.id))"/>{% include link id="<xsl:value-of select="$chapter.id"/>" %}</xsl:when>
+                        <xsl:variable name="url" select="$version || '/content/' || $base.id || '.html' || (if($base.id = $chapter.id) then() else('#' || $chapter.id))"/>{% include link id="<xsl:value-of select="$chapter.id"/>" %}</xsl:when>
                     <xsl:otherwise>
                         <span class="ref" data-target="{$chapter.id}"><xsl:apply-templates select="node()" mode="#current"/></span>
                     </xsl:otherwise>
@@ -2696,7 +2696,7 @@
     
     <xsl:template name="linkToChapter">
         <xsl:param name="chapter" as="xs:string"/>
-        <xsl:value-of select="$version || '/guidelines/' || lower-case($chapter) || '.html'"/>
+        <xsl:value-of select="$version || '/content/' || lower-case($chapter) || '.html'"/>
     </xsl:template>
     
     <xsl:template name="linkToAttribute">

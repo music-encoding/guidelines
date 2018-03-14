@@ -8,6 +8,6 @@
     {%- assign chapter = url-parts[2] | slice:3,200 %}
     {%- assign target = chapter | append: ".html#" | append: include.id %}
   {%- endif %}
-  [{{ doc.title }}]({{ site.baseurl }}/{{ page.version }}/guidelines/{{ target }} )
+  [{{ doc.title }}]({{ site.baseurl }}/{{ page.version }}/content/{{ target }} )
   {%- break %}
 {%- endfor %}

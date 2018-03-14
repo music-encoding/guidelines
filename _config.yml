@@ -36,7 +36,7 @@ sidebar:
       content: 
           - id: guidelines
             label: 'Guidelines'
-            url: 'guidelines/'
+            url: 'content/'
           - id: elements
             label: 'Elements'
             url: 'elements.html'
