@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.LINESTARTENDSYMBOL"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.LINESTARTENDSYMBOL">data.LINESTARTENDSYMBOL</h3>
    <table class="wovenodd">

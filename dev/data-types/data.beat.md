@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.BEAT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.BEAT">data.BEAT</h3>
    <table class="wovenodd">

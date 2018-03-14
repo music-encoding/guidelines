@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "fileChar"
-
 ---
-
 <div class="elementSpec">
    <h3 id="fileChar">&lt;fileChar&gt;</h3>
    <table class="wovenodd">

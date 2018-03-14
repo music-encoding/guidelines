@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.TEXTRENDITIONLIST"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.TEXTRENDITIONLIST">data.TEXTRENDITIONLIST</h3>
    <table class="wovenodd">

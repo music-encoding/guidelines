@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.cutout"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.cutout">att.cutout</h3>
    <table class="wovenodd">

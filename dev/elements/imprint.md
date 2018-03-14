@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "imprint"
-
 ---
-
 <div class="elementSpec">
    <h3 id="imprint">&lt;imprint&gt;</h3>
    <table class="wovenodd">

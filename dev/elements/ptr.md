@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "ptr"
-
 ---
-
 <div class="elementSpec">
    <h3 id="ptr">&lt;ptr&gt;</h3>
    <table class="wovenodd">

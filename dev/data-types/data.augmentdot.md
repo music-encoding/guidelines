@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.AUGMENTDOT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.AUGMENTDOT">data.AUGMENTDOT</h3>
    <table class="wovenodd">

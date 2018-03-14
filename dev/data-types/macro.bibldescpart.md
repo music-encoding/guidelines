@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "macro.bibldescPart"
-
 ---
-
 <div class="macroSpec">
    <h3 id="macro.bibldescPart">macro.bibldescPart</h3>
    <table class="wovenodd">

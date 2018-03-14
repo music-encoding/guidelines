@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "clef"
-
 ---
-
 <div class="elementSpec">
    <h3 id="clef">&lt;clef&gt;</h3>
    <table class="wovenodd">

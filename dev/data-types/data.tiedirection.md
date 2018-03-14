@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.TIEDIRECTION"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.TIEDIRECTION">data.TIEDIRECTION</h3>
    <table class="wovenodd">

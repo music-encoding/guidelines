@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.octavedisplacement"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.octavedisplacement">att.octavedisplacement</h3>
    <table class="wovenodd">

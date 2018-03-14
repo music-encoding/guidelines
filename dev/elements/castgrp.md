@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "castGrp"
-
 ---
-
 <div class="elementSpec">
    <h3 id="castGrp">&lt;castGrp&gt;</h3>
    <table class="wovenodd">

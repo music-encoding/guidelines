@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.octavedefault"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.octavedefault">att.octavedefault</h3>
    <table class="wovenodd">

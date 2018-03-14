@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.midivelocity"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.midivelocity">att.midivelocity</h3>
    <table class="wovenodd">

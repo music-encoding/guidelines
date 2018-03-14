@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.regularmethod"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.regularmethod">att.regularmethod</h3>
    <table class="wovenodd">

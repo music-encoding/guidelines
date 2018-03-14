@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "fermata"
-
 ---
-
 <div class="elementSpec">
    <h3 id="fermata">&lt;fermata&gt;</h3>
    <table class="wovenodd">

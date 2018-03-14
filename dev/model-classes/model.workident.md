@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.workIdent"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.workIdent">model.workIdent</h3>
    <table class="wovenodd">

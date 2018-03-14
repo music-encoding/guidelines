@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.duration.default"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.duration.default">att.duration.default</h3>
    <table class="wovenodd">

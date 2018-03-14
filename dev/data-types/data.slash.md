@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.SLASH"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.SLASH">data.SLASH</h3>
    <table class="wovenodd">

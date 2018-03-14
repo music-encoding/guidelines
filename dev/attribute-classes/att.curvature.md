@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.curvature"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.curvature">att.curvature</h3>
    <table class="wovenodd">

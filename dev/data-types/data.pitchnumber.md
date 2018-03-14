@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.PITCHNUMBER"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.PITCHNUMBER">data.PITCHNUMBER</h3>
    <table class="wovenodd">

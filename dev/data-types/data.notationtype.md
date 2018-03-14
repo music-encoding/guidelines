@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.NOTATIONTYPE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.NOTATIONTYPE">data.NOTATIONTYPE</h3>
    <table class="wovenodd">

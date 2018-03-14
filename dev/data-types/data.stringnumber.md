@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.STRINGNUMBER"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.STRINGNUMBER">data.STRINGNUMBER</h3>
    <table class="wovenodd">

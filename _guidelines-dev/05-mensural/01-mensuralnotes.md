@@ -5,6 +5,7 @@ version: "dev"
 ---
 
 When the mensural module is included, **@dur** on {% include link elem="note" %}, {% include link elem="rest" %}, and other elements can take the following values:
+
 - maxima
 - longa
 - brevis

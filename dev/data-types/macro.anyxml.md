@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "macro.anyXML"
-
 ---
-
 <div class="macroSpec">
    <h3 id="macro.anyXML">macro.anyXML</h3>
    <table class="wovenodd">

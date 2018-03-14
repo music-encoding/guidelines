@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.LINEWIDTHTERM"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.LINEWIDTHTERM">data.LINEWIDTHTERM</h3>
    <table class="wovenodd">

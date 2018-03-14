@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.multiRest.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.multiRest.ges">att.multiRest.ges</h3>
    <table class="wovenodd">

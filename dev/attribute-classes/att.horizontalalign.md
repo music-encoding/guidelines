@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.horizontalalign"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.horizontalalign">att.horizontalalign</h3>
    <table class="wovenodd">

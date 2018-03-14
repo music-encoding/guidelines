@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.DEGREES"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.DEGREES">data.DEGREES</h3>
    <table class="wovenodd">

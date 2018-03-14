@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "gap"
-
 ---
-
 <div class="elementSpec">
    <h3 id="gap">&lt;gap&gt;</h3>
    <table class="wovenodd">

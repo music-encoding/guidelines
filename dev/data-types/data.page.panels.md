@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.PAGE.PANELS"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.PAGE.PANELS">data.PAGE.PANELS</h3>
    <table class="wovenodd">

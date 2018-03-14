@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.DURATION.gestural"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.DURATION.gestural">data.DURATION.gestural</h3>
    <table class="wovenodd">

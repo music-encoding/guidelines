@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.ORIENTATION"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.ORIENTATION">data.ORIENTATION</h3>
    <table class="wovenodd">

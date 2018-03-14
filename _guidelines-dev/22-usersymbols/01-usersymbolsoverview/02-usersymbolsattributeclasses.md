@@ -5,4 +5,3 @@ version: "dev"
 ---
 
 No attribute classes are defined in this module.
-

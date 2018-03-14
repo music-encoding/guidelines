@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.PGSCALE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.PGSCALE">data.PGSCALE</h3>
    <table class="wovenodd">

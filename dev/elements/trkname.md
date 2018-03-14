@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "trkName"
-
 ---
-
 <div class="elementSpec">
    <h3 id="trkName">&lt;trkName&gt;</h3>
    <table class="wovenodd">

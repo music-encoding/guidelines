@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "normalization"
-
 ---
-
 <div class="elementSpec">
    <h3 id="normalization">&lt;normalization&gt;</h3>
    <table class="wovenodd">

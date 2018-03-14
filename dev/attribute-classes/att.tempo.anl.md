@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.tempo.anl"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.tempo.anl">att.tempo.anl</h3>
    <table class="wovenodd">

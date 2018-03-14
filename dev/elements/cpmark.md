@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "cpMark"
-
 ---
-
 <div class="elementSpec">
    <h3 id="cpMark">&lt;cpMark&gt;</h3>
    <table class="wovenodd">

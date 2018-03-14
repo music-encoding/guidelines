@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.HORIZONTALALIGNMENT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.HORIZONTALALIGNMENT">data.HORIZONTALALIGNMENT</h3>
    <table class="wovenodd">

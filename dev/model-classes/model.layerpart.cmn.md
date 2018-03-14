@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.layerPart.cmn"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.layerPart.cmn">model.layerPart.cmn</h3>
    <table class="wovenodd">

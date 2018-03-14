@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.FONTSIZENUMERIC"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.FONTSIZENUMERIC">data.FONTSIZENUMERIC</h3>
    <table class="wovenodd">

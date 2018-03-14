@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.reasonident"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.reasonident">att.reasonident</h3>
    <table class="wovenodd">

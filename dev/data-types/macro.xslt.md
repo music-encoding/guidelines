@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "macro.XSLT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="macro.XSLT">macro.XSLT</h3>
    <table class="wovenodd">

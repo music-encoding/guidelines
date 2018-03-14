@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.ENCLOSURE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.ENCLOSURE">data.ENCLOSURE</h3>
    <table class="wovenodd">

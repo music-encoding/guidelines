@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.SCALEDEGREE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.SCALEDEGREE">data.SCALEDEGREE</h3>
    <table class="wovenodd">

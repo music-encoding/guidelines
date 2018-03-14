@@ -5,4 +5,3 @@ version: "dev"
 ---
 
 The module makes available the following components:
-

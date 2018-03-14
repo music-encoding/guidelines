@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "componentGrp"
-
 ---
-
 <div class="elementSpec">
    <h3 id="componentGrp">&lt;componentGrp&gt;</h3>
    <table class="wovenodd">

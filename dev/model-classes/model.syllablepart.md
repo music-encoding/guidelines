@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.syllablePart"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.syllablePart">model.syllablePart</h3>
    <table class="wovenodd">

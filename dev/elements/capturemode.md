@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "captureMode"
-
 ---
-
 <div class="elementSpec">
    <h3 id="captureMode">&lt;captureMode&gt;</h3>
    <table class="wovenodd">

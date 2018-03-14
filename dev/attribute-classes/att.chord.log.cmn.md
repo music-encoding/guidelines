@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.chord.log.cmn"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.chord.log.cmn">att.chord.log.cmn</h3>
    <table class="wovenodd">

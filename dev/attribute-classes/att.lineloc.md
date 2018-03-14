@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.lineloc"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.lineloc">att.lineloc</h3>
    <table class="wovenodd">

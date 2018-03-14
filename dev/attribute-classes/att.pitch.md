@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.pitch"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.pitch">att.pitch</h3>
    <table class="wovenodd">

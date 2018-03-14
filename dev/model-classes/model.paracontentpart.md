@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.paracontentPart"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.paracontentPart">model.paracontentPart</h3>
    <table class="wovenodd">

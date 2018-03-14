@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "postBox"
-
 ---
-
 <div class="elementSpec">
    <h3 id="postBox">&lt;postBox&gt;</h3>
    <table class="wovenodd">

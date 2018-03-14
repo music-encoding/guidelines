@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "perfResList"
-
 ---
-
 <div class="elementSpec">
    <h3 id="perfResList">&lt;perfResList&gt;</h3>
    <table class="wovenodd">

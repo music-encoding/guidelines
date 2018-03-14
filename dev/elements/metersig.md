@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "meterSig"
-
 ---
-
 <div class="elementSpec">
    <h3 id="meterSig">&lt;meterSig&gt;</h3>
    <table class="wovenodd">

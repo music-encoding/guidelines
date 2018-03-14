@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.fermatapresent"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.fermatapresent">att.fermatapresent</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.TEXTRENDITIONPAR"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.TEXTRENDITIONPAR">data.TEXTRENDITIONPAR</h3>
    <table class="wovenodd">

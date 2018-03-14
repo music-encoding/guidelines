@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.curverend"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.curverend">att.curverend</h3>
    <table class="wovenodd">

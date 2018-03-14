@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "physMedium"
-
 ---
-
 <div class="elementSpec">
    <h3 id="physMedium">&lt;physMedium&gt;</h3>
    <table class="wovenodd">

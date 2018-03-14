@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.NOTEHEADMODIFIER.list"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.NOTEHEADMODIFIER.list">data.NOTEHEADMODIFIER.list</h3>
    <table class="wovenodd">

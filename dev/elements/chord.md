@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "chord"
-
 ---
-
 <div class="elementSpec">
    <h3 id="chord">&lt;chord&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.rdgPart.critapp"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.rdgPart.critapp">model.rdgPart.critapp</h3>
    <table class="wovenodd">

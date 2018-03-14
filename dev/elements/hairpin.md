@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "hairpin"
-
 ---
-
 <div class="elementSpec">
    <h3 id="hairpin">&lt;hairpin&gt;</h3>
    <table class="wovenodd">

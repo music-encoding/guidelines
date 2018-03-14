@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.KEYSIGNATURE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.KEYSIGNATURE">data.KEYSIGNATURE</h3>
    <table class="wovenodd">

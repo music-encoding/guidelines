@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.eventLike.measureFilling"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.eventLike.measureFilling">model.eventLike.measureFilling</h3>
    <table class="wovenodd">

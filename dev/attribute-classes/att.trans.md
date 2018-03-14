@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.trans"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.trans">att.trans</h3>
    <table class="wovenodd">

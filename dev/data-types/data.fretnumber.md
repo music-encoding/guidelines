@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.FRETNUMBER"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.FRETNUMBER">data.FRETNUMBER</h3>
    <table class="wovenodd">

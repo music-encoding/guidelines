@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "propValue"
-
 ---
-
 <div class="elementSpec">
    <h3 id="propValue">&lt;propValue&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "useRestrict"
-
 ---
-
 <div class="elementSpec">
    <h3 id="useRestrict">&lt;useRestrict&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.DURATION.additive"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.DURATION.additive">data.DURATION.additive</h3>
    <table class="wovenodd">

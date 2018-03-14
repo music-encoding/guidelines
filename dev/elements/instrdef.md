@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "instrDef"
-
 ---
-
 <div class="elementSpec">
    <h3 id="instrDef">&lt;instrDef&gt;</h3>
    <table class="wovenodd">

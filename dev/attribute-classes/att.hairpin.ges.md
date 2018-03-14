@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.hairpin.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.hairpin.ges">att.hairpin.ges</h3>
    <table class="wovenodd">

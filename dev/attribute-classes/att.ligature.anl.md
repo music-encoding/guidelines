@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.ligature.anl"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.ligature.anl">att.ligature.anl</h3>
    <table class="wovenodd">

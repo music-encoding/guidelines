@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.KEYSIGTOKEN"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.KEYSIGTOKEN">data.KEYSIGTOKEN</h3>
    <table class="wovenodd">

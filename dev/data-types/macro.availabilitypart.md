@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "macro.availabilityPart"
-
 ---
-
 <div class="macroSpec">
    <h3 id="macro.availabilityPart">macro.availabilityPart</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "symProp"
-
 ---
-
 <div class="elementSpec">
    <h3 id="symProp">&lt;symProp&gt;</h3>
    <table class="wovenodd">

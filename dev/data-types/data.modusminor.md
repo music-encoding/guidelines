@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.MODUSMINOR"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.MODUSMINOR">data.MODUSMINOR</h3>
    <table class="wovenodd">

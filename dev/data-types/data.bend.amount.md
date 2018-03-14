@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.BEND.AMOUNT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.BEND.AMOUNT">data.BEND.AMOUNT</h3>
    <table class="wovenodd">

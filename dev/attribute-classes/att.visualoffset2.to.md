@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.visualoffset2.to"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.visualoffset2.to">att.visualoffset2.to</h3>
    <table class="wovenodd">

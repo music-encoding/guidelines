@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.channelized"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.channelized">att.channelized</h3>
    <table class="wovenodd">

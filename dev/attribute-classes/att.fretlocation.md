@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.fretlocation"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.fretlocation">att.fretlocation</h3>
    <table class="wovenodd">

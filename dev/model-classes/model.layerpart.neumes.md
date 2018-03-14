@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.layerPart.neumes"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.layerPart.neumes">model.layerPart.neumes</h3>
    <table class="wovenodd">

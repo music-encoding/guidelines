@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.transcriptionLike"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.transcriptionLike">model.transcriptionLike</h3>
    <table class="wovenodd">

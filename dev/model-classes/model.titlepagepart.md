@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.titlePagePart"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.titlePagePart">model.titlePagePart</h3>
    <table class="wovenodd">

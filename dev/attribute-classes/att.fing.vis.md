@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.fing.vis"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.fing.vis">att.fing.vis</h3>
    <table class="wovenodd">

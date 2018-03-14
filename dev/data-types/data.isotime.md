@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.ISOTIME"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.ISOTIME">data.ISOTIME</h3>
    <table class="wovenodd">

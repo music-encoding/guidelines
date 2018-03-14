@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.TSTAMPOFFSET"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.TSTAMPOFFSET">data.TSTAMPOFFSET</h3>
    <table class="wovenodd">

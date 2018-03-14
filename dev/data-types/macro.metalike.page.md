@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "macro.metaLike.page"
-
 ---
-
 <div class="macroSpec">
    <h3 id="macro.metaLike.page">macro.metaLike.page</h3>
    <table class="wovenodd">

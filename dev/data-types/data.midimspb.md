@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.MIDIMSPB"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.MIDIMSPB">data.MIDIMSPB</h3>
    <table class="wovenodd">

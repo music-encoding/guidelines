@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.INTERVAL.HARMONIC"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.INTERVAL.HARMONIC">data.INTERVAL.HARMONIC</h3>
    <table class="wovenodd">

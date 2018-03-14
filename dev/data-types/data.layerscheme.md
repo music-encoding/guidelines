@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.LAYERSCHEME"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.LAYERSCHEME">data.LAYERSCHEME</h3>
    <table class="wovenodd">

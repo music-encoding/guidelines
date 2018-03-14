@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "symbol"
-
 ---
-
 <div class="elementSpec">
    <h3 id="symbol">&lt;symbol&gt;</h3>
    <table class="wovenodd">

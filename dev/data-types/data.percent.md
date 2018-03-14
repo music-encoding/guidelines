@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.PERCENT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.PERCENT">data.PERCENT</h3>
    <table class="wovenodd">

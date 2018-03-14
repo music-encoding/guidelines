@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.timebase"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.timebase">att.timebase</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "biblScope"
-
 ---
-
 <div class="elementSpec">
    <h3 id="biblScope">&lt;biblScope&gt;</h3>
    <table class="wovenodd">

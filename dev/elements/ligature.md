@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "ligature"
-
 ---
-
 <div class="elementSpec">
    <h3 id="ligature">&lt;ligature&gt;</h3>
    <table class="wovenodd">

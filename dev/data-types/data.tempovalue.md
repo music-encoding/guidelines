@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.TEMPOVALUE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.TEMPOVALUE">data.TEMPOVALUE</h3>
    <table class="wovenodd">

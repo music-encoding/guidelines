@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.STAFFLOC"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.STAFFLOC">data.STAFFLOC</h3>
    <table class="wovenodd">

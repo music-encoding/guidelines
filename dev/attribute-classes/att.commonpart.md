@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.commonPart"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.commonPart">att.commonPart</h3>
    <table class="wovenodd">

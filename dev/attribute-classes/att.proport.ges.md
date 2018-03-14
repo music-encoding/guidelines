@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.proport.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.proport.ges">att.proport.ges</h3>
    <table class="wovenodd">

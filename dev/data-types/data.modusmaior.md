@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.MODUSMAIOR"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.MODUSMAIOR">data.MODUSMAIOR</h3>
    <table class="wovenodd">

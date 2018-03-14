@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.beamSpan.log"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.beamSpan.log">att.beamSpan.log</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.fermata.log"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.fermata.log">att.fermata.log</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "periodName"
-
 ---
-
 <div class="elementSpec">
    <h3 id="periodName">&lt;periodName&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.origin.timestamp.musical"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.origin.timestamp.musical">att.origin.timestamp.musical</h3>
    <table class="wovenodd">

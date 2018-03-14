@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "editor"
-
 ---
-
 <div class="elementSpec">
    <h3 id="editor">&lt;editor&gt;</h3>
    <table class="wovenodd">

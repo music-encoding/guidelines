@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.FONTWEIGHT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.FONTWEIGHT">data.FONTWEIGHT</h3>
    <table class="wovenodd">

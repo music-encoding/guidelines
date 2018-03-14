@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.clefGrp.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.clefGrp.ges">att.clefGrp.ges</h3>
    <table class="wovenodd">

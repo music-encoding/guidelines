@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.meterconformance.bar"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.meterconformance.bar">att.meterconformance.bar</h3>
    <table class="wovenodd">

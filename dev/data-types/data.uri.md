@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.URI"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.URI">data.URI</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "extMeta"
-
 ---
-
 <div class="elementSpec">
    <h3 id="extMeta">&lt;extMeta&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.harmonicfunction"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.harmonicfunction">att.harmonicfunction</h3>
    <table class="wovenodd">

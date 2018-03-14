@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.scoreDef.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.scoreDef.ges">att.scoreDef.ges</h3>
    <table class="wovenodd">

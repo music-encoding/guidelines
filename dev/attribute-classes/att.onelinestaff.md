@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.onelinestaff"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.onelinestaff">att.onelinestaff</h3>
    <table class="wovenodd">

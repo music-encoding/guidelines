@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "incipText"
-
 ---
-
 <div class="elementSpec">
    <h3 id="incipText">&lt;incipText&gt;</h3>
    <table class="wovenodd">

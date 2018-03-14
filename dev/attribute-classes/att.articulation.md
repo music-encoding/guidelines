@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.articulation"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.articulation">att.articulation</h3>
    <table class="wovenodd">

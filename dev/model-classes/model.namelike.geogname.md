@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.nameLike.geogName"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.nameLike.geogName">model.nameLike.geogName</h3>
    <table class="wovenodd">

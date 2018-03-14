@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.expandable"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.expandable">att.expandable</h3>
    <table class="wovenodd">

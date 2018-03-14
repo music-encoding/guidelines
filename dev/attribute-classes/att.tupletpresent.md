@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.tupletpresent"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.tupletpresent">att.tupletpresent</h3>
    <table class="wovenodd">

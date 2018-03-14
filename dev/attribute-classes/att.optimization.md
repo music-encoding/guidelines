@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.optimization"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.optimization">att.optimization</h3>
    <table class="wovenodd">

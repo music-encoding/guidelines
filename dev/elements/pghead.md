@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "pgHead"
-
 ---
-
 <div class="elementSpec">
    <h3 id="pgHead">&lt;pgHead&gt;</h3>
    <table class="wovenodd">

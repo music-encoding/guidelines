@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.COLOR"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.COLOR">data.COLOR</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.FINGER.FRET"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.FINGER.FRET">data.FINGER.FRET</h3>
    <table class="wovenodd">

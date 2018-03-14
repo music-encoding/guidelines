@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.OCTAVE.DIS"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.OCTAVE.DIS">data.OCTAVE.DIS</h3>
    <table class="wovenodd">

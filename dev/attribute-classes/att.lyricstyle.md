@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.lyricstyle"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.lyricstyle">att.lyricstyle</h3>
    <table class="wovenodd">

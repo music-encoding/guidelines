@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.rdgPart.text"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.rdgPart.text">model.rdgPart.text</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.proport.log"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.proport.log">att.proport.log</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.staffDefPart.mensural"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.staffDefPart.mensural">model.staffDefPart.mensural</h3>
    <table class="wovenodd">

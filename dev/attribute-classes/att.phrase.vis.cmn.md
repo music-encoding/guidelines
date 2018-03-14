@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.phrase.vis.cmn"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.phrase.vis.cmn">att.phrase.vis.cmn</h3>
    <table class="wovenodd">

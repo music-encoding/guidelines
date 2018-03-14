@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.MELODICFUNCTION"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.MELODICFUNCTION">data.MELODICFUNCTION</h3>
    <table class="wovenodd">

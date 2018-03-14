@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.STEMDIRECTION.extended"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.STEMDIRECTION.extended">data.STEMDIRECTION.extended</h3>
    <table class="wovenodd">

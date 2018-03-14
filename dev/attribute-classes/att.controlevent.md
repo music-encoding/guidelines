@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.controlevent"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.controlevent">att.controlevent</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "arpeg"
-
 ---
-
 <div class="elementSpec">
    <h3 id="arpeg">&lt;arpeg&gt;</h3>
    <table class="wovenodd">

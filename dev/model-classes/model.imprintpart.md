@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.imprintPart"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.imprintPart">model.imprintPart</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.eventLike.mensural"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.eventLike.mensural">model.eventLike.mensural</h3>
    <table class="wovenodd">

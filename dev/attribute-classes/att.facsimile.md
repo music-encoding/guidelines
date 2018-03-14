@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.facsimile"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.facsimile">att.facsimile</h3>
    <table class="wovenodd">

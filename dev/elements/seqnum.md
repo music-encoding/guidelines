@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "seqNum"
-
 ---
-
 <div class="elementSpec">
    <h3 id="seqNum">&lt;seqNum&gt;</h3>
    <table class="wovenodd">

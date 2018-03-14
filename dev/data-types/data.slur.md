@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.SLUR"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.SLUR">data.SLUR</h3>
    <table class="wovenodd">

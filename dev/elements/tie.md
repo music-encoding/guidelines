@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "tie"
-
 ---
-
 <div class="elementSpec">
    <h3 id="tie">&lt;tie&gt;</h3>
    <table class="wovenodd">

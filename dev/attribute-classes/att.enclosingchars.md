@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.enclosingchars"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.enclosingchars">att.enclosingchars</h3>
    <table class="wovenodd">

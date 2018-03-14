@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.FRBRRELATIONSHIP"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.FRBRRELATIONSHIP">data.FRBRRELATIONSHIP</h3>
    <table class="wovenodd">

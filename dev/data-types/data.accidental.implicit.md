@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.ACCIDENTAL.IMPLICIT"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</h3>
    <table class="wovenodd">

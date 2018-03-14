@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.NMTOKEN"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.NMTOKEN">data.NMTOKEN</h3>
    <table class="wovenodd">

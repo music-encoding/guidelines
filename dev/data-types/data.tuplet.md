@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.TUPLET"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.TUPLET">data.TUPLET</h3>
    <table class="wovenodd">

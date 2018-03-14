@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.duration.ratio"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.duration.ratio">att.duration.ratio</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.multinummeasures"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.multinummeasures">att.multinummeasures</h3>
    <table class="wovenodd">

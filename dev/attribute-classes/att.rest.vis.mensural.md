@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.rest.vis.mensural"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.rest.vis.mensural">att.rest.vis.mensural</h3>
    <table class="wovenodd">

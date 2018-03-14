@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.DURATION.cmn"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.DURATION.cmn">data.DURATION.cmn</h3>
    <table class="wovenodd">

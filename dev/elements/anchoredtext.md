@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "anchoredText"
-
 ---
-
 <div class="elementSpec">
    <h3 id="anchoredText">&lt;anchoredText&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.phrase.anl"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.phrase.anl">att.phrase.anl</h3>
    <table class="wovenodd">

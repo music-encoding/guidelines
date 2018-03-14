@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "multiRest"
-
 ---
-
 <div class="elementSpec">
    <h3 id="multiRest">&lt;multiRest&gt;</h3>
    <table class="wovenodd">

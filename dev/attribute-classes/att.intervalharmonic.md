@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.intervalharmonic"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.intervalharmonic">att.intervalharmonic</h3>
    <table class="wovenodd">

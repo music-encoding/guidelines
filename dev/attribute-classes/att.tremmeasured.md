@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.tremmeasured"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.tremmeasured">att.tremmeasured</h3>
    <table class="wovenodd">

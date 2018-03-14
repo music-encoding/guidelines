@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.keySig.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.keySig.ges">att.keySig.ges</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.color"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.color">att.color</h3>
    <table class="wovenodd">

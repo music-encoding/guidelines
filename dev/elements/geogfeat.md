@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "geogFeat"
-
 ---
-
 <div class="elementSpec">
    <h3 id="geogFeat">&lt;geogFeat&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.duration.additive"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.duration.additive">att.duration.additive</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "grpSym"
-
 ---
-
 <div class="elementSpec">
    <h3 id="grpSym">&lt;grpSym&gt;</h3>
    <table class="wovenodd">

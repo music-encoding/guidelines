@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "genName"
-
 ---
-
 <div class="elementSpec">
    <h3 id="genName">&lt;genName&gt;</h3>
    <table class="wovenodd">

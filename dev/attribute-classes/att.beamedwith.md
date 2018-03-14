@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.beamedwith"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.beamedwith">att.beamedwith</h3>
    <table class="wovenodd">

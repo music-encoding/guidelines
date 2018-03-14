@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.spacing"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.spacing">att.spacing</h3>
    <table class="wovenodd">

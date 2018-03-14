@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.FONTNAME"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.FONTNAME">data.FONTNAME</h3>
    <table class="wovenodd">

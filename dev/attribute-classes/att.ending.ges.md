@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.ending.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.ending.ges">att.ending.ges</h3>
    <table class="wovenodd">

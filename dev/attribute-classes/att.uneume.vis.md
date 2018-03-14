@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.uneume.vis"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.uneume.vis">att.uneume.vis</h3>
    <table class="wovenodd">

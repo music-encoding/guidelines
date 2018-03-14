@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.BEAM"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.BEAM">data.BEAM</h3>
    <table class="wovenodd">

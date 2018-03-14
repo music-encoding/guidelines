@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.mmtempo"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.mmtempo">att.mmtempo</h3>
    <table class="wovenodd">

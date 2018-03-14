@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.IDREF"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.IDREF">data.IDREF</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "trackConfig"
-
 ---
-
 <div class="elementSpec">
    <h3 id="trackConfig">&lt;trackConfig&gt;</h3>
    <table class="wovenodd">

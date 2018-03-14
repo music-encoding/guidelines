@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.CLEFLINE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.CLEFLINE">data.CLEFLINE</h3>
    <table class="wovenodd">

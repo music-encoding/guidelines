@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.METERSIGN"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.METERSIGN">data.METERSIGN</h3>
    <table class="wovenodd">

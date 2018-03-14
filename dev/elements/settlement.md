@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "settlement"
-
 ---
-
 <div class="elementSpec">
    <h3 id="settlement">&lt;settlement&gt;</h3>
    <table class="wovenodd">

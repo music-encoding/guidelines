@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.ornamentLike.cmn"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.ornamentLike.cmn">model.ornamentLike.cmn</h3>
    <table class="wovenodd">

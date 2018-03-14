@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "soundChan"
-
 ---
-
 <div class="elementSpec">
    <h3 id="soundChan">&lt;soundChan&gt;</h3>
    <table class="wovenodd">

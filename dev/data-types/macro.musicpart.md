@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "macro.musicPart"
-
 ---
-
 <div class="macroSpec">
    <h3 id="macro.musicPart">macro.musicPart</h3>
    <table class="wovenodd">

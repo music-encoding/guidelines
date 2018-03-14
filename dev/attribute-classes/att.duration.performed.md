@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.duration.performed"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.duration.performed">att.duration.performed</h3>
    <table class="wovenodd">

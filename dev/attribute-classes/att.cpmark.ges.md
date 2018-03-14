@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.cpMark.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.cpMark.ges">att.cpMark.ges</h3>
    <table class="wovenodd">

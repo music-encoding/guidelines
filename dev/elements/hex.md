@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "hex"
-
 ---
-
 <div class="elementSpec">
    <h3 id="hex">&lt;hex&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.LIGATUREFORM"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.LIGATUREFORM">data.LIGATUREFORM</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.melodicfunction"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.melodicfunction">att.melodicfunction</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.LINEFORM"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.LINEFORM">data.LINEFORM</h3>
    <table class="wovenodd">

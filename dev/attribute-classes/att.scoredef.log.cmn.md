@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.scoreDef.log.cmn"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.scoreDef.log.cmn">att.scoreDef.log.cmn</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "keySig"
-
 ---
-
 <div class="elementSpec">
    <h3 id="keySig">&lt;keySig&gt;</h3>
    <table class="wovenodd">

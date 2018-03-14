@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "addrLine"
-
 ---
-
 <div class="elementSpec">
    <h3 id="addrLine">&lt;addrLine&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.HEADSHAPE.list"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.HEADSHAPE.list">data.HEADSHAPE.list</h3>
    <table class="wovenodd">

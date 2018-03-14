@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.gliss.log"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.gliss.log">att.gliss.log</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "sysReq"
-
 ---
-
 <div class="elementSpec">
    <h3 id="sysReq">&lt;sysReq&gt;</h3>
    <table class="wovenodd">

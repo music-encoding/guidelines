@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.beamSpan.ges"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.beamSpan.ges">att.beamSpan.ges</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "fingerprint"
-
 ---
-
 <div class="elementSpec">
    <h3 id="fingerprint">&lt;fingerprint&gt;</h3>
    <table class="wovenodd">

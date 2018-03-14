@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.BARRENDITION"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.BARRENDITION">data.BARRENDITION</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.regularized"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.regularized">att.regularized</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "halfmRpt"
-
 ---
-
 <div class="elementSpec">
    <h3 id="halfmRpt">&lt;halfmRpt&gt;</h3>
    <table class="wovenodd">

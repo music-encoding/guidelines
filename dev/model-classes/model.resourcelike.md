@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.resourceLike"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.resourceLike">model.resourceLike</h3>
    <table class="wovenodd">

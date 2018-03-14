@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "scoreDef"
-
 ---
-
 <div class="elementSpec">
    <h3 id="scoreDef">&lt;scoreDef&gt;</h3>
    <table class="wovenodd">

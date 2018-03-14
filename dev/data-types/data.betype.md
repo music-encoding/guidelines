@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.BETYPE"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.BETYPE">data.BETYPE</h3>
    <table class="wovenodd">

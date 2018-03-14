@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.hairpin.anl"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.hairpin.anl">att.hairpin.anl</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.harpPedal.vis"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.harpPedal.vis">att.harpPedal.vis</h3>
    <table class="wovenodd">

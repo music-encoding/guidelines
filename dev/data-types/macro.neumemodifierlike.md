@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "macro.neumeModifierLike"
-
 ---
-
 <div class="macroSpec">
    <h3 id="macro.neumeModifierLike">macro.neumeModifierLike</h3>
    <table class="wovenodd">

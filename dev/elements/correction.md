@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "correction"
-
 ---
-
 <div class="elementSpec">
    <h3 id="correction">&lt;correction&gt;</h3>
    <table class="wovenodd">

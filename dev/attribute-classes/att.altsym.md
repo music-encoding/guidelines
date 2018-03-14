@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.altsym"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.altsym">att.altsym</h3>
    <table class="wovenodd">

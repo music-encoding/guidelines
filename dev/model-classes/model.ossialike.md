@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.ossiaLike"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.ossiaLike">model.ossiaLike</h3>
    <table class="wovenodd">

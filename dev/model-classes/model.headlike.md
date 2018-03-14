@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.headLike"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.headLike">model.headLike</h3>
    <table class="wovenodd">

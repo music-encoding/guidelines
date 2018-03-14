@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.MENSURATIONSIGN"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.MENSURATIONSIGN">data.MENSURATIONSIGN</h3>
    <table class="wovenodd">

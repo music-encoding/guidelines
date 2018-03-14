@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.CERTAINTY"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.CERTAINTY">data.CERTAINTY</h3>
    <table class="wovenodd">

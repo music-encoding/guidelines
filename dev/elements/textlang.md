@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "textLang"
-
 ---
-
 <div class="elementSpec">
    <h3 id="textLang">&lt;textLang&gt;</h3>
    <table class="wovenodd">

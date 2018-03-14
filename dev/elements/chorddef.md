@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "chordDef"
-
 ---
-
 <div class="elementSpec">
    <h3 id="chordDef">&lt;chordDef&gt;</h3>
    <table class="wovenodd">

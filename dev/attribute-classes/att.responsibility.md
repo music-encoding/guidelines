@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.responsibility"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.responsibility">att.responsibility</h3>
    <table class="wovenodd">

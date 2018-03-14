@@ -7,4 +7,3 @@ sectionid: "ptrRef"
 ---
 
 This chapter describes the use of elements for linking and referencing.
-

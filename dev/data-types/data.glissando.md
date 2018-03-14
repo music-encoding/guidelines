@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.GLISSANDO"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.GLISSANDO">data.GLISSANDO</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "country"
-
 ---
-
 <div class="elementSpec">
    <h3 id="country">&lt;country&gt;</h3>
    <table class="wovenodd">

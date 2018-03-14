@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.calendared"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.calendared">att.calendared</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.tupletSpan.log"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.tupletSpan.log">att.tupletSpan.log</h3>
    <table class="wovenodd">

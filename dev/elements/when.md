@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "when"
-
 ---
-
 <div class="elementSpec">
    <h3 id="when">&lt;when&gt;</h3>
    <table class="wovenodd">

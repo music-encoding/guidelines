@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.graced"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.graced">att.graced</h3>
    <table class="wovenodd">

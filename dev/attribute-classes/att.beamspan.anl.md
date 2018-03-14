@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.beamSpan.anl"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.beamSpan.anl">att.beamSpan.anl</h3>
    <table class="wovenodd">

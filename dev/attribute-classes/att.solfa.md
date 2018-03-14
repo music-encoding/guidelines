@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.solfa"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.solfa">att.solfa</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "gliss"
-
 ---
-
 <div class="elementSpec">
    <h3 id="gliss">&lt;gliss&gt;</h3>
    <table class="wovenodd">

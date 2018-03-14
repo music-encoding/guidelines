@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.tuplet.anl"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.tuplet.anl">att.tuplet.anl</h3>
    <table class="wovenodd">

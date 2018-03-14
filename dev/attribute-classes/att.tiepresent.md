@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.tiepresent"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.tiepresent">att.tiepresent</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "multiRpt"
-
 ---
-
 <div class="elementSpec">
    <h3 id="multiRpt">&lt;multiRpt&gt;</h3>
    <table class="wovenodd">

@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "model.controleventLike.cmn"
-
 ---
-
 <div class="classSpec model">
    <h3 id="model.controleventLike.cmn">model.controleventLike.cmn</h3>
    <table class="wovenodd">

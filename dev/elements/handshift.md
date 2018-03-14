@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "handShift"
-
 ---
-
 <div class="elementSpec">
    <h3 id="handShift">&lt;handShift&gt;</h3>
    <table class="wovenodd">

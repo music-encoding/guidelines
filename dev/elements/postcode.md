@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "postCode"
-
 ---
-
 <div class="elementSpec">
    <h3 id="postCode">&lt;postCode&gt;</h3>
    <table class="wovenodd">

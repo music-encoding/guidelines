@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "att.joined"
-
 ---
-
 <div class="classSpec att">
    <h3 id="att.joined">att.joined</h3>
    <table class="wovenodd">

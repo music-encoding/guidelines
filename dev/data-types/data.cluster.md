@@ -3,9 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "dev"
 title: "data.CLUSTER"
-
 ---
-
 <div class="macroSpec">
    <h3 id="data.CLUSTER">data.CLUSTER</h3>
    <table class="wovenodd">
