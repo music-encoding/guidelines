@@ -837,6 +837,28 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template match="text()" mode="markdown" priority="1.0">
+        <xsl:choose>
+            <xsl:when test="parent::tei:div">
+                <xsl:analyze-string select="." regex="[\n\s]+">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="''"/>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:when test="ancestor::*[local-name() = ('p', 'item')]">
+                <xsl:analyze-string select="." regex="[\n\s]+">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="' '"/>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                        <xsl:value-of select="."/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:template>
     <xsl:template match="tei:list" mode="markdown">
         <xsl:choose>
             <xsl:when test="@type = ('bulleted','simple')">
