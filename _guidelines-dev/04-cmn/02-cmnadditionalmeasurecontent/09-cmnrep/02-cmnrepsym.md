@@ -16,8 +16,9 @@ upper left and lower right, much like a percent sign. The illustration below con
 the
 most common signs:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/beatrpt-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 14. Beat repeat signs</figcaption>
-</figure>In general, MEI places primary emphasis on the capture of the semantic meaning of
+
+{% include figure img="ExampleImages/beatrpt-20100510.png" caption="Beat repeat signs" %}
+In general, MEI places primary emphasis on the capture of the semantic meaning of
 symbols, not their visual rendition. In this case, the focus is on the material being
 repeated, for example, a beat, a measure, a 2-measure fragment, etc. The following
 elements are provided for this purpose:
@@ -61,8 +62,8 @@ measure in the figure below. Instead, the numbering of repetitions of the writte
 measure can be enabled using the **@multi.number** attribute available on the {% include link elem="scoreDef" %} and {% include link elem="staffDef" %} elements.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/mrpt-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 15. Measure repetition</figcaption>
-</figure>{% include mei example="cmn/cmn-sample152.xml" valid="false" %}
+{% include figure img="ExampleImages/mrpt-20100510.png" caption="Measure repetition" %}
+{% include mei example="cmn/cmn-sample152.xml" valid="false" %}
 The {% include link elem="halfmRpt" %} element represents the incorrect, but frequently
 found, use of the measure repeat (or similar) sign to indicate repetition of half
 of a
@@ -74,8 +75,8 @@ importance. The following example from the beginning of Beethoven's
 *Waldstein* sonata illustrates such usage:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive"><figcaption class="figure-caption">Figure 16. Half-measure repeat</figcaption>
-</figure>{% include mei example="cmn/cmn-sample153.xml" valid="false" %}
+{% include figure img="modules/cmn/halfmRpt_beethoven.png" caption="Half-measure repeat" %}
+{% include mei example="cmn/cmn-sample153.xml" valid="false" %}
 As seen in the example above, it is possible to continuously repeat half measures,
 even
 across barlines.
@@ -84,10 +85,10 @@ The {% include link elem="mRpt2" %} and {% include link elem="multiRpt" %} eleme
 where it is often necessary to abbreviate the notation due to page size limitations.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/mrpt2-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 17. Two-measure repetition</figcaption>
-</figure>
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/multirpt-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 18. Multi-measure repetition</figcaption>
-</figure>The {% include link elem="mRpt2" %} element represents repetition of a 2-measure fragment,
+{% include figure img="ExampleImages/mrpt2-20100510.png" caption="Two-measure repetition" %}
+
+{% include figure img="ExampleImages/multirpt-20100510.png" caption="Multi-measure repetition" %}
+The {% include link elem="mRpt2" %} element represents repetition of a 2-measure fragment,
 while {% include link elem="multiRpt" %} is for repetition of fragments longer than two
 measures. In modern publishing practice, repeats of more than two measures are written
 out

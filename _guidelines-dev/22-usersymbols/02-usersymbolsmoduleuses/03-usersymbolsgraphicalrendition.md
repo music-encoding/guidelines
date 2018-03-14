@@ -10,29 +10,21 @@ example {% include link elem="dir" %} and {% include link elem="tempo" %}, can h
 elements as content. In the following example, the content of {% include link elem="dir" %} is
 used to provide pictograms of percussion instruments.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/percussion.png" class="img-responsive"><figcaption class="figure-caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
-</figure>
-<figure class="figure">{% include mei example="userSymbols/userSymbols-sample348.xml" valid="true" %}
-   
-   <figcaption class="figure-caption">Listing 4. Encoding of above example</figcaption>
-</figure>A number of elements can point to an internally-defined symbol for rendering using
+
+{% include figure img="modules/usersymbols/percussion.png" caption="Indicating percussion instruments using pictograms" %}
+
+{% include figure img="" caption="Encoding of above example" %}
+A number of elements can point to an internally-defined symbol for rendering using
 the
 **@altsym** attribute.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/charpentier.png" class="img-responsive"><figcaption class="figure-caption">Figure 57. Different treble clef renditions as written by Charpentier (source: [Journal of Seventeenth-Century Music,
-      Volume 12, No. 1 (2006)](www.sscm-jscm.org/v12/no1/gosine.html){:.link_ref}, [figure 3](http://www.sscm-jscm.org/v12/no1/gosine.html#ch10){:.link_ref})
-   </figcaption>
-</figure>
-<figure class="figure">{% include mei example="userSymbols/userSymbols-sample349.xml" valid="true" %}
-   
-   <figcaption class="figure-caption">Listing 5. Defining two staffs, each using its own treble clef shape</figcaption>
-</figure>Externally-defined symbols may be referenced using a **@glyphname** or
+{% include figure img="modules/usersymbols/charpentier.png" caption="Different treble clef renditions as written by Charpentier" %}
+
+{% include figure img="" caption="Defining two staffs, each using its own treble clef shape" %}
+Externally-defined symbols may be referenced using a **@glyphname** or
 **@glyphnum** attribute. Both attributes refer to Standard Music Font Layout (SMuFL)
 characters. Other character sets must be treated as internally-defined character sets.
 
 
-<figure class="figure">{% include mei example="userSymbols/userSymbols-sample350.xml" valid="true" %}
-   
-   <figcaption class="figure-caption">Listing 6. Use of glyphname and glyphnum attributes</figcaption>
-</figure>
+{% include figure img="" caption="Use of glyphname and glyphnum attributes" %}

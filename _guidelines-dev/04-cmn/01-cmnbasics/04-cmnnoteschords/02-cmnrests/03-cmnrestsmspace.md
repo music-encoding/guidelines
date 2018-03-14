@@ -11,5 +11,5 @@ is
 missing from the encoding.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/mspace-300-20100514.png" class="img-responsive"><figcaption class="figure-caption">Figure 5. Empty measure</figcaption>
-</figure>{% include mei example="cmn/cmn-sample103.xml" valid="true" %}
+{% include figure img="ExampleImages/mspace-300-20100514.png" caption="Empty measure" %}
+{% include mei example="cmn/cmn-sample103.xml" valid="true" %}

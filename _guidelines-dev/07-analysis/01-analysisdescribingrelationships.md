@@ -68,8 +68,9 @@ encoding effort. The image and the following encoding of the beginning of Schube
 *Erlkönig* illustrates the benefit of using the **@copyof**
 attribute.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="img-responsive"><figcaption class="figure-caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
-</figure>{% include mei example="analysis/analysis-sample163.xml" valid="true" %}
+
+{% include figure img="modules/analysis/Schubert_Erlkonig_Op1_m1.png" caption="First measure of Schubert's Erlkönig" %}
+{% include mei example="analysis/analysis-sample163.xml" valid="true" %}
 This example can be reduced further by using **@copyof** inside the initial tuplet to
 represent the repeated chords:
 
@@ -82,8 +83,8 @@ multiple perspectives, e.g., the same event in two layers. The following example
 the sharing of one note head between two voices in the first full measure of a chorale:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m1-2.png" class="img-responsive"><figcaption class="figure-caption">Figure 23. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 1-2</figcaption>
-</figure>{% include mei example="analysis/analysis-sample165.xml" valid="true" %}
+{% include figure img="modules/analysis/chor003_m1-2.png" caption="Bach Chorale, \"Ach Gott, vom Himmel sieh' darein\", m. 1-2" %}
+{% include mei example="analysis/analysis-sample165.xml" valid="true" %}
 While **@copyof** and **@sameas** have defined semantics, the **@corresp**
 may be used to create user-defined relationships between elements. The example below
 demonstrates the encoding of a relationship between #note3 and the fermata, even though
@@ -106,8 +107,8 @@ voices. In the second measure of the following example, the target of the next a
 occurs after the pointing element in time, but before it in encoding order:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/analysis/chor003_m6-7.png" class="img-responsive"><figcaption class="figure-caption">Figure 24. Bach Chorale, *Ach Gott, vom Himmel sieh' darein*, m. 6-7</figcaption>
-</figure>{% include mei example="analysis/analysis-sample167.xml" valid="false" %}
+{% include figure img="modules/analysis/chor003_m6-7.png" caption="Bach Chorale, \"Ach Gott, vom Himmel sieh' darein\", m. 6-7" %}
+{% include mei example="analysis/analysis-sample167.xml" valid="false" %}
 This attribute may also be useful to clarify a sequence of entites which occurs across
 some
 form of interruption, in this case, notes before and after a system or page break

@@ -58,8 +58,8 @@ available, which adds the optional **@stem.with** attribute to {% include link e
 for the indication of a stem that joins notes on adjacent staves.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/xchord-300.png" class="img-responsive"><figcaption class="figure-caption">Figure 3. Cross-staff chord</figcaption>
-</figure>The following code demonstrates one method of encoding the first chord in the last
+{% include figure img="modules/cmn/xchord-300.png" caption="Cross-staff chord" %}
+The following code demonstrates one method of encoding the first chord in the last
 measure in the image above. The **@stem.with** attribute must occur on all the
 notes or chords attached to the cross-staff stem.
 

@@ -26,8 +26,9 @@ to specify the text's rhythm.
 The following example from Carl Maria von Weber's *Der Freischütz* illustrates
 this encoding method:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/lyrics/ex_lyric.png" class="img-responsive"><figcaption class="figure-caption">Figure 52. Weber, Der Freischütz</figcaption>
-</figure>{% include mei example="lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
+
+{% include figure img="modules/lyrics/ex_lyric.png" caption="Weber, Der Freischütz" %}
+{% include mei example="lyricsDesc/lyricsDesc-sample267.xml" valid="false" %}
 In this encoding style, a {% include link elem="syl" %} element with its **@con** attribute
 set to 't' and the following syllable are presumed to be associated with a single
 note. In the

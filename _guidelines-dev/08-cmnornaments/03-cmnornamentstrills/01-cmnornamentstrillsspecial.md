@@ -15,8 +15,9 @@ The abbreviation "tr" followed by a wavy line spanning multiple notes is sometim
 used to
 indicate multiple trills:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive"><figcaption class="figure-caption">Figure 31. Example of multiple trills.</figcaption>
-</figure>The encoding of this kind of trill may vary depending on the purpose of the encoding.
+
+{% include figure img="modules/cmnOrnaments/ex_tr_multi.png" caption="Example of multiple trills." %}
+The encoding of this kind of trill may vary depending on the purpose of the encoding.
 For
 representation of the source, a single trill is sufficient:
 
@@ -43,10 +44,9 @@ aural
 renditions.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_tr_B.png" class="img-responsive"><figcaption class="figure-caption">Figure 32. Trill transcribed from J.S. Bach's *Klavierbüchlein für Wilhelm Friedemann
-      Bach* (1720)
-   </figcaption>
-</figure>{% include mei example="cmnOrnaments/cmnOrnaments-sample191.xml" valid="true" %}
+{% include figure img="modules/cmnOrnaments/ex_tr_B.png" caption="Trill transcribed from J.S. Bach's \"Klavierbüchlein für Wilhelm Friedemann
+Bach\" (1720)" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample191.xml" valid="true" %}
 Depending on the purpose of the encoding, it may be more convenient to encode the
 regularized text within the stream of events, along with a corresponding choice with
 regard

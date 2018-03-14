@@ -81,7 +81,7 @@
     </docEdition>
     <byline><lb></lb><lb></lb>Prepared and maintained by the Music Encoding Initiative Council<lb></lb><lb></lb><lb></lb><lb></lb>
       <figure rend="center">
-        <graphic url="Images/meilogo.png"></graphic>
+        <graphic url="meilogo.png"></graphic>
       </figure>
       <lb></lb><lb></lb><lb></lb><lb></lb>
     </byline>
@@ -93,10 +93,10 @@
         <table>
           <row>
             <cell>
-              <graphic url="Images/hzonlineart.png"/>
+              <graphic url="hzonlineart.png"/>
             </cell>
             <cell>
-              <graphic url="Images/dfg_logo_schwarz.png"/>
+              <graphic url="dfg_logo_schwarz.png"/>
             </cell>
           </row>
         </table>
@@ -4072,7 +4072,7 @@
             The presence of the <att scheme="TEI">grace</att> attribute indicates a grace note.</p>
           <figure>
             <head>Grace notes</head>
-            <graphic url="Images/modules/cmn/grace-300.png" width="500px"></graphic>
+            <graphic url="modules/cmn/grace-300.png" width="500px"></graphic>
           </figure>
           <p part="N">The encoding of the left-most example would look like this:</p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
@@ -4144,7 +4144,7 @@
             for the indication of a stem that joins notes on adjacent staves.</p>
           <figure>
             <head>Cross-staff chord</head>
-            <graphic url="Images/modules/cmn/xchord-300.png" width="500px"></graphic>
+            <graphic url="modules/cmn/xchord-300.png" width="500px"></graphic>
           </figure>
           <p part="N">The following code demonstrates one method of encoding the first chord in the last
             measure in the image above. The <att scheme="TEI">stem.with</att> attribute must occur on all the
@@ -4238,7 +4238,7 @@
             measures. The various visual forms displayed below are not captured by <gi scheme="MEI">multiRest</gi>, but may be created by rendering software.</p>
           <figure>
             <head>Forms of multiple measure rests</head>
-            <graphic url="Images/ExampleImages/multirest.png" width="500px"></graphic>
+            <graphic url="ExampleImages/multirest.png" width="500px"></graphic>
           </figure>
           <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <staff>
@@ -4256,7 +4256,7 @@
             missing from the encoding.</p>
           <figure>
             <head>Empty measure</head>
-            <graphic url="Images/ExampleImages/mspace-300-20100514.png" width="500px"></graphic>
+            <graphic url="ExampleImages/mspace-300-20100514.png" width="500px"></graphic>
           </figure>
           <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="2">
@@ -4362,7 +4362,7 @@
         example:</p>
       <figure>
         <head>Primary and secondary beams</head>
-        <graphic url="Images/ExampleImages/beam-a-20100510.png" width="500px"></graphic>
+        <graphic url="ExampleImages/beam-a-20100510.png" width="500px"></graphic>
       </figure>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <layer>
@@ -4420,7 +4420,7 @@
         this may be encoded thusly:</p>
       <figure>
         <head>Accelerando beams</head>
-        <graphic url="Images/modules/cmn/beamAcc-Rit.png" width="500px"></graphic>
+        <graphic url="modules/cmn/beamAcc-Rit.png" width="500px"></graphic>
       </figure>
       <p part="N">
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
@@ -4451,7 +4451,7 @@
       <!-- TODO: Cross-staff beaming using @beam.with -->
       <figure>
         <head>Cross-staff beam</head>
-        <graphic height="150px" url="Images/ExampleImages/beam-c-20100510.png"></graphic>
+        <graphic height="150px" url="ExampleImages/beam-c-20100510.png"></graphic>
       </figure>
 
       <p part="N">Beams that connect events on different staves may be encoded in two different ways. First,
@@ -4578,7 +4578,7 @@
         The tie-terminating event may lie in the following measure.</p>
       <figure>
         <head>Ties across barlines</head>
-        <graphic url="Images/modules/cmn/finger-300.png" width="500px"></graphic>
+        <graphic url="modules/cmn/finger-300.png" width="500px"></graphic>
       </figure>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1">
@@ -4661,7 +4661,7 @@
         breath, while a single bow is indicated for string instruments.</p>
       <figure>
         <head>Slurs</head>
-        <graphic height="100px" url="Images/ExampleImages/slur-300-20100514.png"></graphic>
+        <graphic height="100px" url="ExampleImages/slur-300-20100514.png"></graphic>
       </figure>
 
       <p part="N">In MEI, slurs may be encoded in a similar way to ties: <gi scheme="MEI">note</gi> and <gi scheme="MEI">chord</gi> bear a <att scheme="TEI">slur</att> attribute that allows the commencement or
@@ -5167,7 +5167,7 @@
           musical events within a <gi scheme="MEI">layer</gi>. It holds exactly one <gi scheme="MEI">note</gi> or <gi scheme="MEI">chord</gi> element that is to be repeated.</p>
         <figure>
           <head>Bowed tremolandi</head>
-          <graphic url="Images/ExampleImages/btrem-a-20100510.png" width="500px"></graphic>
+          <graphic url="ExampleImages/btrem-a-20100510.png" width="500px"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <bTrem>
@@ -5248,7 +5248,7 @@
           written pitch is represented by the <gi scheme="MEI">octave</gi> element.</p>
         <figure>
           <head>Octave displacement</head>
-          <graphic url="Images/ExampleImages/octave-a-20100510.png" width="500px"></graphic>
+          <graphic url="ExampleImages/octave-a-20100510.png" width="500px"></graphic>
         </figure>
         <p part="N">Its <att scheme="TEI">dis</att> and <att scheme="TEI">dis.place</att> attributes record the amount and direction of
           displacement, respectively. The <att scheme="TEI">rend</att> attribute captures the appearance of the
@@ -5462,7 +5462,7 @@
           Fantastique</title> shows a typical example:</p>
       <figure>
         <head>Rehearsal mark</head>
-        <graphic url="Images/modules/cmn/reh_berlioz.png" width="185px"></graphic>
+        <graphic url="modules/cmn/reh_berlioz.png" width="185px"></graphic>
       </figure>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure>
@@ -5520,7 +5520,7 @@
           most common signs:</p>
         <figure>
           <head>Beat repeat signs</head>
-          <graphic height="400px" url="Images/ExampleImages/beatrpt-20100510.png"></graphic>
+          <graphic height="400px" url="ExampleImages/beatrpt-20100510.png"></graphic>
         </figure>
         <p part="N">In general, MEI places primary emphasis on the capture of the semantic meaning of
           symbols, not their visual rendition. In this case, the focus is on the material being
@@ -5561,7 +5561,7 @@
           measure can be enabled using the <att scheme="TEI">multi.number</att> attribute available on the <gi scheme="MEI">scoreDef</gi> and <gi scheme="MEI">staffDef</gi> elements.</p>
         <figure>
           <head>Measure repetition</head>
-          <graphic height="100px" url="Images/ExampleImages/mrpt-20100510.png"></graphic>
+          <graphic height="100px" url="ExampleImages/mrpt-20100510.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <measure>
@@ -5620,7 +5620,7 @@
             <title>Waldstein</title> sonata illustrates such usage:</p>
         <figure>
           <head>Half-measure repeat</head>
-          <graphic url="Images/modules/cmn/halfmRpt_beethoven.png" width="418px"></graphic>
+          <graphic url="modules/cmn/halfmRpt_beethoven.png" width="418px"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <measure>
@@ -5653,11 +5653,11 @@
           where it is often necessary to abbreviate the notation due to page size limitations.</p>
         <figure>
           <head>Two-measure repetition</head>
-          <graphic height="200px" url="Images/ExampleImages/mrpt2-20100510.png"></graphic>
+          <graphic height="200px" url="ExampleImages/mrpt2-20100510.png"></graphic>
         </figure>
         <figure>
           <head>Multi-measure repetition</head>
-          <graphic height="100px" url="Images/ExampleImages/multirpt-20100510.png"></graphic>
+          <graphic height="100px" url="ExampleImages/multirpt-20100510.png"></graphic>
         </figure>
 
         <p part="N">The <gi scheme="MEI">mRpt2</gi> element represents repetition of a 2-measure fragment,
@@ -6031,7 +6031,7 @@
 
     <figure>
       <head>Recta and obliqua ligatures</head>
-      <graphic url="Images/modules/mensural/ex_ligatures01.png"></graphic>
+      <graphic url="modules/mensural/ex_ligatures01.png"></graphic>
     </figure>
 
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
@@ -6051,7 +6051,7 @@
 
     <figure>
       <head>Ligature with more than two notes with recta and obliqua</head>
-      <graphic url="Images/modules/mensural/ex_ligatures02.png"></graphic>
+      <graphic url="modules/mensural/ex_ligatures02.png"></graphic>
     </figure>
 
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
@@ -6302,7 +6302,7 @@
     <figure>
       <head>Table 1. Variant neume notation. (From Parrish, "The notation of medieval music,"
         6)</head>
-      <graphic url="Images/modules/neumes/parrish_neumes.png"></graphic>
+      <graphic url="modules/neumes/parrish_neumes.png"></graphic>
     </figure>
     <p part="N">As shown in Table 1, it is possible to have many different styles of neume shapes, derived
       from local practices of regional groups. In general, these styles are all interpreted in a
@@ -6531,7 +6531,7 @@
       attribute.</p>
     <figure>
       <head>First measure of Schubert's Erlkönig</head>
-      <graphic url="Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png"></graphic>
+      <graphic url="modules/analysis/Schubert_Erlkonig_Op1_m1.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure>
@@ -6605,8 +6605,8 @@
       multiple perspectives, e.g., the same event in two layers. The following example illustrates
       the sharing of one note head between two voices in the first full measure of a chorale:</p>
     <figure>
-      <head>Bach Chorale, <title>Ach Gott, vom Himmel sieh' darein</title>, m. 1-2</head>
-      <graphic height="200px" url="Images/modules/analysis/chor003_m1-2.png"></graphic>
+      <head>Bach Chorale, "Ach Gott, vom Himmel sieh' darein", m. 1-2</head>
+      <graphic height="200px" url="modules/analysis/chor003_m1-2.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1" xml:id="analysis.m_sc_22">
@@ -6674,8 +6674,8 @@
       voices. In the second measure of the following example, the target of the next attribute
       occurs after the pointing element in time, but before it in encoding order:</p>
     <figure>
-      <head>Bach Chorale, <title>Ach Gott, vom Himmel sieh' darein</title>, m. 6-7</head>
-      <graphic height="200px" url="Images/modules/analysis/chor003_m6-7.png"></graphic>
+      <head>Bach Chorale, "Ach Gott, vom Himmel sieh' darein", m. 6-7</head>
+      <graphic height="200px" url="modules/analysis/chor003_m6-7.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <measure n="6" xml:id="analysis.m_sc_62">
@@ -7238,11 +7238,11 @@
     <p part="N">The attribute <att scheme="TEI">form</att> accepts the following values:</p>
     <list type="gloss">
       <label>norm</label>
-      <item> - usually corresponding to the symbol: <graphic url="Images/modules/cmnOrnaments/lower_mordent.png" width="30px"></graphic>. This mordent is
+      <item> - usually corresponding to the symbol: <graphic url="modules/cmnOrnaments/lower_mordent.png" width="30px"></graphic>. This mordent is
         commonly performed as the principal note, followed by its lower neighbor, with a return to
         the principal note.</item>
       <label>inv</label>
-      <item> - usually corresponding to the symbol: <graphic url="Images/modules/cmnOrnaments/upper_mordent.png" width="30px"></graphic>. This mordent is
+      <item> - usually corresponding to the symbol: <graphic url="modules/cmnOrnaments/upper_mordent.png" width="30px"></graphic>. This mordent is
         commonly performed as the principal note, followed by its upper neighbor, with a return to
         the principal note.</item>
     </list>
@@ -7250,7 +7250,7 @@
     <p part="N">The following example demonstrates the encoding of simple mordents:</p>
     <figure>
       <head>Example of simple mordent</head>
-      <graphic height="100px" url="Images/modules/cmnOrnaments/ex_mordent.png"></graphic>
+      <graphic height="100px" url="modules/cmnOrnaments/ex_mordent.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1">
@@ -7271,7 +7271,7 @@
       example shows the encoding of a long mordent:</p>
     <figure>
       <head>Example of a long mordent</head>
-      <graphic height="100px" url="Images/modules/cmnOrnaments/ex_mordent_l.png"></graphic>
+      <graphic height="100px" url="modules/cmnOrnaments/ex_mordent_l.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1">
@@ -7307,7 +7307,7 @@
     <p part="N">The following example demonstrates the encoding of simple trills:</p>
     <figure>
       <head>Example of simple trills.</head>
-      <graphic url="Images/modules/cmnOrnaments/ex_tr.png"></graphic>
+      <graphic url="modules/cmnOrnaments/ex_tr.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1">
@@ -7334,7 +7334,7 @@
       use of a wavy line extender as shown in this example:</p>
     <figure>
       <head>Example of trills followed by wavy lines.</head>
-      <graphic url="Images/modules/cmnOrnaments/ex_trill_wavy.png"></graphic>
+      <graphic url="modules/cmnOrnaments/ex_trill_wavy.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <scoreDef>
@@ -7367,7 +7367,7 @@
       processes.</p>
     <figure>
       <head>Example alterations expressed on the staff.</head>
-      <graphic url="Images/modules/cmnOrnaments/ex_tr_accid.png"></graphic>
+      <graphic url="modules/cmnOrnaments/ex_tr_accid.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1">
@@ -7391,7 +7391,7 @@
       <head>Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</head>
       <figDesc>Example of trill introduced and concluded by turns expressed as grace notes. From
         Haydn's keyboard sonata in D major.</figDesc>
-      <graphic height="100px" url="Images/modules/cmnOrnaments/ex_tr_grace.png"></graphic>
+      <graphic height="100px" url="modules/cmnOrnaments/ex_tr_grace.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="2" xml:id="cmnOrnaments.d1e412">
@@ -7422,7 +7422,7 @@
         indicate multiple trills:</p>
       <figure>
         <head>Example of multiple trills.</head>
-        <graphic url="Images/modules/cmnOrnaments/ex_tr_multi.png"></graphic>
+        <graphic url="modules/cmnOrnaments/ex_tr_multi.png"></graphic>
       </figure>
       <p part="N">The encoding of this kind of trill may vary depending on the purpose of the encoding. For
         representation of the source, a single trill is sufficient:</p>
@@ -7487,9 +7487,9 @@
         that is, both may be processed by applications that aim to support both visual and aural
         renditions.</p>
       <figure>
-        <head>Trill transcribed from J.S. Bach's <title>Klavierbüchlein für Wilhelm Friedemann
-            Bach</title> (1720)</head>
-        <graphic height="175px" url="Images/modules/cmnOrnaments/ex_tr_B.png"></graphic>
+        <head>Trill transcribed from J.S. Bach's "Klavierbüchlein für Wilhelm Friedemann
+            Bach" (1720)</head>
+        <graphic height="175px" url="modules/cmnOrnaments/ex_tr_B.png"></graphic>
       </figure>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1">
@@ -7576,10 +7576,10 @@
     <p part="N">
       <list type="gloss">
         <label>norm</label>
-        <item> - usually corresponding to the symbol: <graphic url="Images/modules/cmnOrnaments/turn.png" width="30px"></graphic>. This turn is commonly
+        <item> - usually corresponding to the symbol: <graphic url="modules/cmnOrnaments/turn.png" width="30px"></graphic>. This turn is commonly
           performed beginning on a note higher than the principal note.</item>
         <label>inv</label>
-        <item> - usually corresponding to the symbol: <graphic url="Images/modules/cmnOrnaments/inv_turn.png" width="30px"></graphic>. This turn is commonly
+        <item> - usually corresponding to the symbol: <graphic url="modules/cmnOrnaments/inv_turn.png" width="30px"></graphic>. This turn is commonly
           performed beginning on a note lower than the principal note.</item>
       </list>
     </p>
@@ -7587,7 +7587,7 @@
     <p part="N">The following example shows the encoding of a simple turn:</p>
     <figure>
       <head>Example of a simple turn.</head>
-      <graphic url="Images/modules/cmnOrnaments/ex_turn.png"></graphic>
+      <graphic url="modules/cmnOrnaments/ex_turn.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure n="1">
@@ -7614,7 +7614,7 @@
         <att scheme="TEI">startid</att> points to the principal note.</p>
     <figure>
       <head>Delayed turn.</head>
-      <graphic url="Images/modules/cmnOrnaments/ex_turn_d.png"></graphic>
+      <graphic url="modules/cmnOrnaments/ex_turn_d.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure>
@@ -7647,7 +7647,7 @@
     <figure>
       <head>Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm
         Friedemann Bach</head>
-      <graphic height="100px" url="Images/modules/cmnOrnaments/JSBtableofornaments.jpg"></graphic>
+      <graphic height="100px" url="modules/cmnOrnaments/JSBtableofornaments.jpg"></graphic>
     </figure>
     <p part="N">The ornament for <q>(5) doppelt-cadence</q> could be encoded in the following way, by
       adopting the Unicode code-points defined by the SMuFL standard:</p>
@@ -7666,7 +7666,7 @@
       mordent:</p>
     <figure>
       <head>Example of multiple ornaments. From C.P.E. Bach's sonata W.62/1.</head>
-      <graphic height="100px" url="Images/modules/cmnOrnaments/ex_multi_orn.png"></graphic>
+      <graphic height="100px" url="modules/cmnOrnaments/ex_multi_orn.png"></graphic>
     </figure>
     <p part="N">When encoding the example above, both ornaments will be positioned above the same note. The
       encoded order of the elements, moreover, should correspond to the performed sequence, which in
@@ -8352,7 +8352,7 @@
       <figure>
         <head>Copy marks in the first and second violin of C.M.v.Weber's Freischütz, Autograph, Nr.3
           (Walzer), measures 223-231</head>
-        <graphic url="Images/ExampleImages/cpMark_2.png"></graphic>
+        <graphic url="ExampleImages/cpMark_2.png"></graphic>
       </figure>
       <p part="N">In the example above, there are no less than three different copy instructions, which need
         to be encoded with four <gi scheme="MEI">cpMark</gi> elements. First, Weber inserts
@@ -8374,7 +8374,7 @@
       </egXML>
       <figure>
         <head>A transcription of the example above with all shorthand resolved and colored</head>
-        <graphic url="Images/ExampleImages/cpMark_3.png"></graphic>
+        <graphic url="ExampleImages/cpMark_3.png"></graphic>
       </figure>
       <p part="N">Text used as a copy mark, like the letters in the Weber example, may be encoded as content
         of the <gi scheme="MEI">cpMark</gi> element. In the case of non-text marks, the
@@ -9653,7 +9653,7 @@
       <p part="N">or labels that are chord tablature grids:</p>
       <figure>
         <head>Chord grid without label</head>
-        <graphic url="Images/modules/harmony/A7_5th.gif" width="124px"></graphic>
+        <graphic url="modules/harmony/A7_5th.gif" width="124px"></graphic>
       </figure>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm chordref="#harmonychordA" tstamp="1"></harm>
@@ -9661,7 +9661,7 @@
       <p part="N">or labels that mix these styles:</p>
       <figure>
         <head>Chord grid with label</head>
-        <graphic url="Images/modules/harmony/A7_1st.gif" width="124px"></graphic>
+        <graphic url="modules/harmony/A7_1st.gif" width="124px"></graphic>
       </figure>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm chordref="#harmonychordA" rendgrid="gridtext" tstamp="1">A7</harm>
@@ -9694,7 +9694,7 @@
           figured bass:</p>
         <figure>
           <head>Figured bass</head>
-          <graphic url="Images/modules/harmony/figuredBass01.png"></graphic>
+          <graphic url="modules/harmony/figuredBass01.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm place="above" staff="1" tstamp="1">6</harm>
@@ -9716,7 +9716,7 @@
           MUSIC NATURAL SIGN character.</p>
         <figure>
           <head>Figured bass with accidental</head>
-          <graphic url="Images/modules/harmony/figuredBass02.png"></graphic>
+          <graphic url="modules/harmony/figuredBass02.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm place="above" staff="1" tstamp="1">
@@ -9734,7 +9734,7 @@
             <gi scheme="MEI">f</gi> explicitly locates the accidentals:</p>
         <figure>
           <head>Figured bass with chromatically altered figure</head>
-          <graphic url="Images/modules/harmony/figuredBass03.png"></graphic>
+          <graphic url="modules/harmony/figuredBass03.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm place="below">
@@ -9746,7 +9746,7 @@
 
         <figure>
           <head>Figured bass with chromatically altered figures</head>
-          <graphic url="Images/modules/harmony/figuredBass04.png"></graphic>
+          <graphic url="modules/harmony/figuredBass04.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm>
@@ -9765,7 +9765,7 @@
             <q>6/</q> for backslash and slash, respectively, may also be followed:</p>
         <figure>
           <head>Figured bass with chromatically altered figure</head>
-          <graphic url="Images/modules/harmony/figuredBass05.png"></graphic>
+          <graphic url="modules/harmony/figuredBass05.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm>
@@ -9785,7 +9785,7 @@
           example 6 can be represented by the Unicode COMBINING INVERTED BREVE.</p>
         <figure>
           <head>Figured bass with alternative sign</head>
-          <graphic url="Images/modules/harmony/figuredBass06.png"></graphic>
+          <graphic url="modules/harmony/figuredBass06.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <harm tstamp="1">
@@ -9809,7 +9809,7 @@
           is also consistent with other existing figured bass encoding schemes.</p>
         <figure>
           <head>Figured bass repetition </head>
-          <graphic url="Images/modules/harmony/figuredBass07.png"></graphic>
+          <graphic url="modules/harmony/figuredBass07.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <harm tstamp="1.5">
@@ -9825,7 +9825,7 @@
           the following example the dashes on beat 4 and 4.5 are treated as repetition signs:</p>
         <figure>
           <head>Extenders and repetition</head>
-          <graphic url="Images/modules/harmony/figuredBass09.png"></graphic>
+          <graphic url="modules/harmony/figuredBass09.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <harm tstamp="3.5">
@@ -9882,7 +9882,7 @@
           the symbol as it occurs in the encoding source material.</p>
         <figure>
           <head>Figured bass with alternative sign</head>
-          <graphic url="Images/modules/harmony/figuredBass10.png"></graphic>
+          <graphic url="modules/harmony/figuredBass10.png"></graphic>
         </figure>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <!-- Ex. a -->
@@ -10030,7 +10030,7 @@
     <figure>
       <head>Handel, Messiah HWV 56, Halleluja</head>
       <figDesc>Example of a simple encoding of sung text</figDesc>
-      <graphic height="100px" url="Images/modules/lyrics/ex_syl_att.png"></graphic>
+      <graphic height="100px" url="modules/lyrics/ex_syl_att.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="true" xml:space="preserve">
 <measure>
@@ -10113,7 +10113,7 @@
         <att scheme="TEI">xml:lang</att> attribute to differentiate the two languages:</p>
     <figure>
       <head>Example from Wagner's Rheingold with translated text.</head>
-      <graphic url="Images/modules/lyrics/ex_verse_m.png" width="100px"></graphic>
+      <graphic url="modules/lyrics/ex_verse_m.png" width="100px"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <scoreDef>
@@ -10210,7 +10210,7 @@
     <figure>
       <head>Weber, Der Freischütz</head>
       <figDesc>Example of separate vocally performed text encoding</figDesc>
-      <graphic url="Images/modules/lyrics/ex_lyric.png" width="100px"></graphic>
+      <graphic url="modules/lyrics/ex_lyric.png" width="100px"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="false" xml:space="preserve">
 <measure>
@@ -12175,7 +12175,7 @@
       </figure>
       <figure>
         <head>Rendition of the triangle defined above</head>
-        <graphic url="Images/modules/usersymbols/triangle.png"></graphic>
+        <graphic url="modules/usersymbols/triangle.png"></graphic>
       </figure>
       <figure>
         <head>Symbol composed of the symbol defined above and additional graphics primitives</head>
@@ -12188,7 +12188,7 @@
       </figure>
       <figure>
         <head>Rendition of the composite triangle symbol</head>
-        <graphic url="Images/modules/usersymbols/triangleWithStick.png"></graphic>
+        <graphic url="modules/usersymbols/triangleWithStick.png"></graphic>
       </figure>
     </div>
     <div org="uniform" part="N" sample="complete" type="div3" xml:id="usersymbolsSemanticImplications">
@@ -12201,10 +12201,10 @@
       <p part="N">An example usage for <gi scheme="MEI">line</gi> is the visualization of voice leading,
         which is not covered by a specific MEI element.</p>
       <figure xml:id="mignonFigure">
-        <head>Voice leading visualization as found in an Edition Peters print of <title>Album für
-            die Jugend</title> by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
+        <head>Voice leading visualization as found in an Edition Peters print of "Album für
+            die Jugend" by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
           is 10478.)</head>
-        <graphic url="Images/modules/usersymbols/mignon.png"></graphic>
+        <graphic url="modules/usersymbols/mignon.png"></graphic>
       </figure>
       <figure>
         <head>Encoding of the Schumann example</head>
@@ -12250,7 +12250,7 @@
         used to provide pictograms of percussion instruments.</p>
       <figure>
         <head>Indicating percussion instruments using pictograms</head>
-        <graphic url="Images/modules/usersymbols/percussion.png"></graphic>
+        <graphic url="modules/usersymbols/percussion.png"></graphic>
       </figure>
       <figure>
         <head>Encoding of above example</head>
@@ -12311,9 +12311,8 @@
       <p part="N">A number of elements can point to an internally-defined symbol for rendering using the
           <att scheme="TEI">altsym</att> attribute.</p>
       <figure>
-        <head>Different treble clef renditions as written by Charpentier (source: <ref target="www.sscm-jscm.org/v12/no1/gosine.html">Journal of Seventeenth-Century Music,
-            Volume 12, No. 1 (2006)</ref>, <ref target="http://www.sscm-jscm.org/v12/no1/gosine.html#ch10">figure 3</ref>)</head>
-        <graphic url="Images/modules/usersymbols/charpentier.png"></graphic>
+        <head>Different treble clef renditions as written by Charpentier</head>
+        <graphic url="modules/usersymbols/charpentier.png"></graphic>
       </figure>
       <figure>
         <head>Defining two staffs, each using its own treble clef shape</head>
@@ -12450,7 +12449,7 @@
         to end), negative ones to the right.</p>
       <figure>
         <head>Rendering a bulge attribute with value "-2 1"</head>
-        <graphic url="Images/modules/usersymbols/bulge.png"></graphic>
+        <graphic url="modules/usersymbols/bulge.png"></graphic>
       </figure>
       <p part="N">The interpolation algorithm used by the rendering application is implementation
         dependent.</p>
@@ -12523,7 +12522,7 @@
       in Figures 1 and 2.</p>
     <p part="N">
       <figure>
-        <graphic url="Images/dataDictionary/DataDictElement_1.png"></graphic>
+        <graphic url="dataDictionary/DataDictElement_1.png"></graphic>
       </figure>
     </p>
     <list type="gloss">
@@ -12552,7 +12551,7 @@
     </list>
     <p part="N">
       <figure>
-        <graphic url="Images/dataDictionary/DataDictElement_2.png"></graphic>
+        <graphic url="dataDictionary/DataDictElement_2.png"></graphic>
       </figure>
     </p>
     <list type="gloss">
@@ -12602,7 +12601,7 @@
       status; that is, whether they are inherited from another class. In addition, the locations
       ("Available in") in which elements from the class may occur are named.</p>
     <p part="N"><figure>
-        <graphic url="Images/dataDictionary/DataDictModelClass.png"></graphic>
+        <graphic url="dataDictionary/DataDictModelClass.png"></graphic>
       </figure></p>
   </div>
   <div org="uniform" part="N" sample="complete" type="div2" xml:id="DataDictConvAttributes">
@@ -12613,7 +12612,7 @@
       in the class, the elements to which attributes from the class can be applied, and any
       constraints on the attributes’ values</p>
     <p part="N"><figure>
-        <graphic url="Images/dataDictionary/DataDictAttClass.png"></graphic>
+        <graphic url="dataDictionary/DataDictAttClass.png"></graphic>
       </figure></p>
   </div>
   <div org="uniform" part="N" sample="complete" type="div2" xml:id="DataDictConvDatatypes">
@@ -12628,7 +12627,7 @@
       where the datatype is applicable; that is, within the attribute called "intm", and a link to
       more information about the class in which the attribute participates.</p>
     <p part="N"><figure>
-        <graphic url="Images/dataDictionary/DataDictMacro.png"></graphic>
+        <graphic url="dataDictionary/DataDictMacro.png"></graphic>
       </figure>
     </p>
     <p part="N">Some datatypes define an enumerated list of values rather than a range. In some cases only
@@ -12938,7 +12937,7 @@
       </content>
       <remarks>
         <p part="N">
-          <graphic height="50%" url="Images/ExampleImages/accid-20100510.png" width="50%"></graphic>
+          <graphic height="50%" url="ExampleImages/accid-20100510.png" width="50%"></graphic>
         </p>
       </remarks>
     </macroSpec>

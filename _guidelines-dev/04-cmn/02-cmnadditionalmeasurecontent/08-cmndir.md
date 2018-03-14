@@ -43,8 +43,9 @@ rehearsal mark, including the surrounding shape, may be captured using the {% in
 The following detail from an edition of Hector Berlioz' *Symphonie
 Fantastique* shows a typical example:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/reh_berlioz.png" class="img-responsive"><figcaption class="figure-caption">Figure 13. Rehearsal mark</figcaption>
-</figure>{% include mei example="cmn/cmn-sample150.xml" valid="true" %}
+
+{% include figure img="modules/cmn/reh_berlioz.png" caption="Rehearsal mark" %}
+{% include mei example="cmn/cmn-sample150.xml" valid="true" %}
 The following example demonstrates how rehearsal marks often apply to more than one
 staff.
 In this instance, the rehearsal mark is placed above staff 1 and below staves 7 and

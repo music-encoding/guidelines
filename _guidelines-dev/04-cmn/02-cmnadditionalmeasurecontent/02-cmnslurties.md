@@ -51,8 +51,8 @@ a
 The tie-terminating event may lie in the following measure.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/finger-300.png" class="img-responsive"><figcaption class="figure-caption">Figure 9. Ties across barlines</figcaption>
-</figure>{% include mei example="cmn/cmn-sample113.xml" valid="true" %}
+{% include figure img="modules/cmn/finger-300.png" caption="Ties across barlines" %}
+{% include mei example="cmn/cmn-sample113.xml" valid="true" %}
 When **@tie** is used on chords, it functions as a shorthand indication for multiple
 tie markings; that is, a separate tie is drawn for every pitch in the chord that remains
 unchanged in the succeeding chord.
@@ -69,8 +69,8 @@ in one
 breath, while a single bow is indicated for string instruments.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/slur-300-20100514.png" class="img-responsive"><figcaption class="figure-caption">Figure 10. Slurs</figcaption>
-</figure>In MEI, slurs may be encoded in a similar way to ties: {% include link elem="note" %} and {% include link elem="chord" %} bear a **@slur** attribute that allows the commencement or
+{% include figure img="ExampleImages/slur-300-20100514.png" caption="Slurs" %}
+In MEI, slurs may be encoded in a similar way to ties: {% include link elem="note" %} and {% include link elem="chord" %} bear a **@slur** attribute that allows the commencement or
 ending of a slur at this element. The allowed values, however, are slightly different:
 The
 *i*, *m* or *t* are followed by a single digit in the

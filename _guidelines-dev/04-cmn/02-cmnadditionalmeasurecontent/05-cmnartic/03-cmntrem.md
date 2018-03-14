@@ -18,8 +18,9 @@ For the repetition of a single note or chord, MEI offers the {% include link ele
 (bowed tremolo) element, which is a member of the {% include link att-class="model.eventLike" %} class, meaning it is encoded following the normal course of
 musical events within a {% include link elem="layer" %}. It holds exactly one {% include link elem="note" %} or {% include link elem="chord" %} element that is to be repeated.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/btrem-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 11. Bowed tremolandi</figcaption>
-</figure>{% include mei example="cmn/cmn-sample138.xml" valid="true" %}
+
+{% include figure img="ExampleImages/btrem-a-20100510.png" caption="Bowed tremolandi" %}
+{% include mei example="cmn/cmn-sample138.xml" valid="true" %}
 The **@measperf** attribute value indicates the exact note values in an aural
 rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The stem modifier
 must

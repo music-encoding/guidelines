@@ -26,13 +26,13 @@ entirely of text:
 or labels that are chord tablature grids:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/harmony/A7_5th.gif" class="img-responsive"><figcaption class="figure-caption">Figure 39. Chord grid without label</figcaption>
-</figure>{% include mei example="harmony/harmony-sample250.xml" valid="true" %}
+{% include figure img="modules/harmony/A7_5th.gif" caption="Chord grid without label" %}
+{% include mei example="harmony/harmony-sample250.xml" valid="true" %}
 or labels that mix these styles:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/harmony/A7_1st.gif" class="img-responsive"><figcaption class="figure-caption">Figure 40. Chord grid with label</figcaption>
-</figure>{% include mei example="harmony/harmony-sample251.xml" valid="true" %}
+{% include figure img="modules/harmony/A7_1st.gif" caption="Chord grid with label" %}
+{% include mei example="harmony/harmony-sample251.xml" valid="true" %}
 The {% include link elem="harm" %} element must define a point of attachment using one of the
 following attributes: **@startid**, **@tstamp**, **@tstamp.ges** or
 **@tstamp.real**. The most commonly-used of these are **@startid** and

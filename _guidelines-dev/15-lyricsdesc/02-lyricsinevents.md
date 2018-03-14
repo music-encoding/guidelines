@@ -17,8 +17,9 @@ on vocally performed text.
 The following example from Handel's *Messiah* (HWV 56) shows the use of
 **@syl**:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/lyrics/ex_syl_att.png" class="img-responsive"><figcaption class="figure-caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
-</figure>{% include mei example="lyricsDesc/lyricsDesc-sample263.xml" valid="true" %}
+
+{% include figure img="modules/lyrics/ex_syl_att.png" caption="Handel, Messiah HWV 56, Halleluja" %}
+{% include mei example="lyricsDesc/lyricsDesc-sample263.xml" valid="true" %}
 When there are multiple lines of vocally performed text, or the encoder wishes to
 be more
 specific about connectors, etc., the use of {% include link elem="verse" %} and {% include link elem="syl" %} is recommended.
@@ -52,8 +53,8 @@ of the
 **@xml:lang** attribute to differentiate the two languages:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/lyrics/ex_verse_m.png" class="img-responsive"><figcaption class="figure-caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
-</figure>{% include mei example="lyricsDesc/lyricsDesc-sample266.xml" valid="false" %}
+{% include figure img="modules/lyrics/ex_verse_m.png" caption="Example from Wagner's Rheingold with translated text." %}
+{% include mei example="lyricsDesc/lyricsDesc-sample266.xml" valid="false" %}
 Optionally, it is possible to include an {% include link elem="lb" %} element within {% include link elem="verse" %} to explicitly encode line and line group endings. This is
 specifically meant to facilitate karaoke applications.
 

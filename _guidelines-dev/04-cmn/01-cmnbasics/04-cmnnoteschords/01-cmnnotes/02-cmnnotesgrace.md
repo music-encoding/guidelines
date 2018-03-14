@@ -8,8 +8,9 @@ The CMN module adds two optional attributes, **@grace** and
 **@grace.time**, to {% include link elem="note" %} and {% include link elem="chord" %}.
 The presence of the **@grace** attribute indicates a grace note.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/grace-300.png" class="img-responsive"><figcaption class="figure-caption">Figure 2. Grace notes</figcaption>
-</figure>The encoding of the left-most example would look like this:
+
+{% include figure img="modules/cmn/grace-300.png" caption="Grace notes" %}
+The encoding of the left-most example would look like this:
 
 {% include mei example="cmn/cmn-sample098.xml" valid="true" %}
 Grace notes are not counted when determining the measure's conformance to the current

@@ -16,12 +16,9 @@ ties should be encoded using their respective elements, not using {% include lin
 An example usage for {% include link elem="line" %} is the visualization of voice leading,
 which is not covered by a specific MEI element.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/mignon.png" class="img-responsive"><figcaption class="figure-caption">Figure 55. Voice leading visualization as found in an Edition Peters print of *Album für
-      die Jugend* by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
-      is 10478.)
-   </figcaption>
-</figure>
-<figure class="figure">{% include mei example="userSymbols/userSymbols-sample347.xml" valid="true" %}
-   
-   <figcaption class="figure-caption">Listing 3. Encoding of the Schumann example</figcaption>
-</figure>
+
+{% include figure img="modules/usersymbols/mignon.png" caption="Voice leading visualization as found in an Edition Peters print of \"Album für
+die Jugend\" by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
+is 10478.)" %}
+
+{% include figure img="" caption="Encoding of the Schumann example" %}

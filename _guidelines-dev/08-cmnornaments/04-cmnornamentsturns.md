@@ -35,13 +35,13 @@ The attribute **@form** accepts the following values:
    <tbody>
       <tr>
          <td>norm</td>
-         <td> - usually corresponding to the symbol: <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/turn.png" class="graphic">. This turn is commonly
+         <td> - usually corresponding to the symbol: <img src="{{ site.baseurl }}/modules/cmnOrnaments/turn.png" class="graphic">. This turn is commonly
             performed beginning on a note higher than the principal note.
          </td>
       </tr>
       <tr>
          <td>inv</td>
-         <td> - usually corresponding to the symbol: <img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/inv_turn.png" class="graphic">. This turn is commonly
+         <td> - usually corresponding to the symbol: <img src="{{ site.baseurl }}/modules/cmnOrnaments/inv_turn.png" class="graphic">. This turn is commonly
             performed beginning on a note lower than the principal note.
          </td>
       </tr>
@@ -52,8 +52,8 @@ The attribute **@form** accepts the following values:
 The following example shows the encoding of a simple turn:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_turn.png" class="img-responsive"><figcaption class="figure-caption">Figure 33. Example of a simple turn.</figcaption>
-</figure>{% include mei example="cmnOrnaments/cmnOrnaments-sample193.xml" valid="true" %}
+{% include figure img="modules/cmnOrnaments/ex_turn.png" caption="Example of a simple turn." %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample193.xml" valid="true" %}
 Turns can sometimes be performed after the principal note (usually on the second half
 of the
 beat, see <span class="bibl">Read 1979, p. 246</span>) and leading to the following event. To indicate
@@ -68,5 +68,5 @@ demonstrates the encoding of turns with the **@delayed** attribute. Note that th
 **@startid** points to the principal note.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive"><figcaption class="figure-caption">Figure 34. Delayed turn.</figcaption>
-</figure>{% include mei example="cmnOrnaments/cmnOrnaments-sample194.xml" valid="true" %}
+{% include figure img="modules/cmnOrnaments/ex_turn_d.png" caption="Delayed turn." %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample194.xml" valid="true" %}

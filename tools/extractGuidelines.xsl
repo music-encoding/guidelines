@@ -49,7 +49,6 @@
     
     <xsl:param name="imprint.date" select="substring(string(current-date()),1,4)" as="xs:string"/>
     
-    
     <!-- start of processing -->
     
     <xd:doc scope="component">
@@ -1252,12 +1251,8 @@ version: "<xsl:value-of select="$guidelines.version"/>"
     </xsl:template>
     
     <xsl:template match="tei:figure" mode="markdown">
-        
-        <figure class="figure">
-            <xsl:apply-templates select="tei:graphic | egx:egXML" mode="#current"/>
-            <xsl:apply-templates select="tei:head" mode="#current"/>
-        </figure>
-        
+        <xsl:variable name="caption" select="replace(./tei:head/text(),'&quot;', '\\&quot;')"/>
+        {% include figure img="<xsl:value-of select="./tei:graphic/@url"/>" caption="<xsl:value-of select="$caption"/>" %}
     </xsl:template>
     
     <xsl:template match="tei:graphic">

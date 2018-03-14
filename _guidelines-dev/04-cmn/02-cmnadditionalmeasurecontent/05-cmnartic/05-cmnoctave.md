@@ -8,8 +8,9 @@ An indication that a passage should be performed one or more octaves above or be
 its
 written pitch is represented by the {% include link elem="octave" %} element.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/octave-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 12. Octave displacement</figcaption>
-</figure>Its **@dis** and **@dis.place** attributes record the amount and direction of
+
+{% include figure img="ExampleImages/octave-a-20100510.png" caption="Octave displacement" %}
+Its **@dis** and **@dis.place** attributes record the amount and direction of
 displacement, respectively. The **@rend** attribute captures the appearance of the
 continuation line associated with the octave displacement. The starting point of the
 octave displacement may be indicated by either a **@tstamp**, **@tstamp.ges**,

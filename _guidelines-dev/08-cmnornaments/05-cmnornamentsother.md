@@ -22,10 +22,10 @@ or endid attribute. It is a semantic error not to specify a starting point attri
 For example, Johann Sebastian Bach used non-standard ornaments in the *Klavierbüchlein
 für Wilhelm Friedemann Bach*:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive"><figcaption class="figure-caption">Figure 35. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm
-      Friedemann Bach
-   </figcaption>
-</figure>The ornament for <span class="q">(5) doppelt-cadence</span> could be encoded in the following way, by
+
+{% include figure img="modules/cmnOrnaments/JSBtableofornaments.jpg" caption="Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm
+Friedemann Bach" %}
+The ornament for <span class="q">(5) doppelt-cadence</span> could be encoded in the following way, by
 adopting the Unicode code-points defined by the SMuFL standard:
 
 {% include mei example="cmnOrnaments/cmnOrnaments-sample195.xml" valid="true" %}

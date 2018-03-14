@@ -13,8 +13,9 @@ The following example from C.P.E. Bach's sonata W.62/1 shows a turn followed by 
 inverted
 mordent:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmnOrnaments/ex_multi_orn.png" class="img-responsive"><figcaption class="figure-caption">Figure 36. Example of multiple ornaments. From C.P.E. Bach's sonata W.62/1.</figcaption>
-</figure>When encoding the example above, both ornaments will be positioned above the same
+
+{% include figure img="modules/cmnOrnaments/ex_multi_orn.png" caption="Example of multiple ornaments. From C.P.E. Bach's sonata W.62/1." %}
+When encoding the example above, both ornaments will be positioned above the same
 note. The
 encoded order of the elements, moreover, should correspond to the performed sequence,
 which in

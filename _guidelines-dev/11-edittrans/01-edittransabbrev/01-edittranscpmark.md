@@ -44,11 +44,11 @@ be provided when necessary. When neither **@origin.staff** nor
 **@staff** and **@tstamp** attributes; that is, they indicate a strict
 ‘vertical’ or ‘horizontal’ copy.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/cpMark_2.png" class="img-responsive"><figcaption class="figure-caption">Figure 37. Copy marks in the first and second violin of C.M.v.Weber's Freischütz, Autograph,
-      Nr.3
-      (Walzer), measures 223-231
-   </figcaption>
-</figure>In the example above, there are no less than three different copy instructions, which
+
+{% include figure img="ExampleImages/cpMark_2.png" caption="Copy marks in the first and second violin of C.M.v.Weber's Freischütz, Autograph,
+Nr.3
+(Walzer), measures 223-231" %}
+In the example above, there are no less than three different copy instructions, which
 need
 to be encoded with four {% include link elem="cpMark" %} elements. First, Weber inserts
 characters from "a" to "f" in red ink to identify filled measures. Then, he repeats
@@ -69,8 +69,8 @@ in another octave. This information can be captured using the **@dis** and
 
 {% include mei example="editTrans/editTrans-sample211.xml" valid="true" %}
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/cpMark_3.png" class="img-responsive"><figcaption class="figure-caption">Figure 38. A transcription of the example above with all shorthand resolved and colored</figcaption>
-</figure>Text used as a copy mark, like the letters in the Weber example, may be encoded as
+{% include figure img="ExampleImages/cpMark_3.png" caption="A transcription of the example above with all shorthand resolved and colored" %}
+Text used as a copy mark, like the letters in the Weber example, may be encoded as
 content
 of the {% include link elem="cpMark" %} element. In the case of non-text marks, the
 **@altsym**, **@extsym** and **@facs** attributes may be used to refer

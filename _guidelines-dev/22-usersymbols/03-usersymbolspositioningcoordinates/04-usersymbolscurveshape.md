@@ -37,7 +37,8 @@ distance values are drawn to the left of the connection line (left when travelin
 from start
 to end), negative ones to the right.
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/usersymbols/bulge.png" class="img-responsive"><figcaption class="figure-caption">Figure 58. Rendering a bulge attribute with value "-2 1"</figcaption>
-</figure>The interpolation algorithm used by the rendering application is implementation
+
+{% include figure img="modules/usersymbols/bulge.png" caption="Rendering a bulge attribute with value \"-2 1\"" %}
+The interpolation algorithm used by the rendering application is implementation
 dependent.
 

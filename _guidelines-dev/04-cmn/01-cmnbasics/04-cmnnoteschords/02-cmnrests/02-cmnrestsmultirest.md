@@ -13,5 +13,5 @@ numeric value, stored in the **@num** attribute, indicates the number of resting
 measures. The various visual forms displayed below are not captured by {% include link elem="multiRest" %}, but may be created by rendering software.
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/multirest.png" class="img-responsive"><figcaption class="figure-caption">Figure 4. Forms of multiple measure rests</figcaption>
-</figure>{% include mei example="cmn/cmn-sample102.xml" valid="true" %}
+{% include figure img="ExampleImages/multirest.png" caption="Forms of multiple measure rests" %}
+{% include mei example="cmn/cmn-sample102.xml" valid="true" %}

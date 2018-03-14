@@ -34,14 +34,14 @@ encode the breaking of secondary beams *after* the note or chord bearing the
 attribute. The value of **@breaksec** indicates the number of continuous beams. For
 example:
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/beam-a-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 6. Primary and secondary beams</figcaption>
-</figure>{% include mei example="cmn/cmn-sample106.xml" valid="true" %}
+
+{% include figure img="ExampleImages/beam-a-20100510.png" caption="Primary and secondary beams" %}
+{% include mei example="cmn/cmn-sample106.xml" valid="true" %}
 In the music of the second half of the 20th century, it is quite common to indicate
 acceleration or deceleration using converging beams as in the image below:
 
 The encoding of such a beam is accomplished using the **@rend** attribute of the
 beam, which allows the following values:
-
 
 <table class="table table-striped">
    <thead>
@@ -86,15 +86,15 @@ change in the number of secondary beams must carry a **@dur** attribute. Beams l
 this may be encoded thusly:
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/modules/cmn/beamAcc-Rit.png" class="img-responsive"><figcaption class="figure-caption">Figure 7. Accelerando beams</figcaption>
-</figure>
+{% include figure img="modules/cmn/beamAcc-Rit.png" caption="Accelerando beams" %}
+
 {% include mei example="cmn/cmn-sample108.xml" valid="true" %}
 
 
 
 
-<figure class="figure"><img src="{{ site.baseurl }}/Images/ExampleImages/beam-c-20100510.png" class="img-responsive"><figcaption class="figure-caption">Figure 8. Cross-staff beam</figcaption>
-</figure>Beams that connect events on different staves may be encoded in two different ways.
+{% include figure img="ExampleImages/beam-c-20100510.png" caption="Cross-staff beam" %}
+Beams that connect events on different staves may be encoded in two different ways.
 First,
 a single-layer approach may be taken that treats the events lying under the beam as
 logically belonging to the same layer as the initial event but visually
