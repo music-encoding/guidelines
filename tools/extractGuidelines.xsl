@@ -799,7 +799,11 @@
         </p>
     </xsl:template>
     
-    <xsl:template match="tei:p" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/><xsl:value-of select="'&#xa; &#xa;'"/></xsl:template>
+    <xsl:template match="tei:p" mode="markdown">
+        <xsl:value-of select="'&#xa;'"/>
+        <xsl:apply-templates select="node()" mode="#current"/>
+        <xsl:value-of select="'&#xa;'"/>
+    </xsl:template>
     
     <xsl:template match="tei:list">
         <xsl:choose>
