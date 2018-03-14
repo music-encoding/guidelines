@@ -1,4 +1,4 @@
 <figure class="figure">
-  <img src="{{ site.baseurl }}/Images/{{ page.version }}/{{ include.img }}" class="img-responsive"/>
+  <img src="{{ site.baseurl }}/images/{{ page.version }}/{{ include.img }}" class="img-responsive"/>
   <figcaption class="figure-caption">{{ include.caption }}</figcaption>
 </figure>
