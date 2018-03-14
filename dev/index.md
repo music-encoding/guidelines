@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect_to: "dev/guidelines"
+redirect_to: "dev/content"
 ---

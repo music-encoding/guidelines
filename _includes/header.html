@@ -7,6 +7,13 @@
     </div>
     {% include menu.html %}
   </section>
+  {% if page.version == "dev" %}
+  <section class="navbar-section">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
+        Guidelines for the development version of MEI
+    </div>
+  </section>
+  {% endif %}
   <section class="navbar-section">
     <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
       <img src="{{site.style_baseurl}}/pix/twitter.png" alt="Twitter" class="logo"/>

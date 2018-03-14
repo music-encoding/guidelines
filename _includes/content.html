@@ -25,8 +25,10 @@ For each include we had a html header with the appropriate level and a link to t
   <h{{ h }} id="{{ id }}">
       {% for level in levels %}{{ level | split:'-' | first | remove: "0" }}.{% endfor %}
       {{ doc.title }}
+      {% if page.version == "dev" %}
       <a href="https://github.com/{{ site.repository}}/{{ site.github_edit_path }}/{{ doc.path }}"
        target="_blank" class="btn btn-link guidelines-edit">Edit this section</a>
+      {% endif %}
   </h{{ h }}>
 
   {{ doc.content }}
