@@ -20,6 +20,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
+    <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="html" omit-xml-declaration="true"/>
     <xsl:output indent="false" method="text" encoding="UTF-8" omit-xml-declaration="true" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="markdown"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:param name="guidelines.version" select="'dev'" as="xs:string"/>
@@ -278,7 +279,7 @@
         </xsl:call-template>
         
         <!-- elements overview -->
-        <xsl:result-document href="{$outPutFolder}elements.md" format="markdown">
+        <xsl:result-document href="{$outPutFolder}elements.md" format="html">
             <xsl:text>---</xsl:text>
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>layout: sidebar</xsl:text>
@@ -303,7 +304,7 @@
         </xsl:result-document>
             
         <!-- model overview -->
-        <xsl:result-document href="{$outPutFolder}model-classes.md" format="markdown">
+        <xsl:result-document href="{$outPutFolder}model-classes.md" format="html">
             <xsl:text>---</xsl:text>
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>layout: sidebar</xsl:text>
@@ -328,7 +329,7 @@
         </xsl:result-document>
             
         <!-- attribute overview -->
-        <xsl:result-document href="{$outPutFolder}attribute-classes.md" format="markdown">
+        <xsl:result-document href="{$outPutFolder}attribute-classes.md" format="html">
             <xsl:text>---</xsl:text>
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>layout: sidebar</xsl:text>
@@ -353,7 +354,7 @@
         </xsl:result-document>
             
         <!-- data type overview -->
-        <xsl:result-document href="{$outPutFolder}data-types.md" format="markdown">
+        <xsl:result-document href="{$outPutFolder}data-types.md" format="html">
             <xsl:text>---</xsl:text>
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>layout: sidebar</xsl:text>
@@ -519,7 +520,7 @@
                 </xsl:if>
             </xsl:variable>
             
-            <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" format="markdown">
+            <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" format="html">
                 <xsl:text>---</xsl:text>
                 <xsl:text>&#xa;</xsl:text>
                 <xsl:text>layout: sidebar</xsl:text>
