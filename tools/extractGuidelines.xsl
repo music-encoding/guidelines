@@ -1104,6 +1104,7 @@
     </xsl:template>
     
     <xsl:template match="tei:specDesc" mode="markdown">
+        <xsl:text>&#xa;</xsl:text>
         <xsl:choose>
             <xsl:when test="not(@atts)">
                 <xsl:text>{% include desc elem="</xsl:text>
