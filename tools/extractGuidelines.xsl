@@ -20,6 +20,8 @@
         </xd:desc>
     </xd:doc>
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
+    <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="html" omit-xml-declaration="true"/>
+    <xsl:output indent="false" method="text" encoding="UTF-8" omit-xml-declaration="true" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="markdown"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:param name="guidelines.version" select="'dev'" as="xs:string"/>
     <xd:doc scope="component">
@@ -181,30 +183,42 @@
         <xsl:for-each select=".//tei:elementSpec">
             <xsl:variable name="element" select="."/>
             <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+            </xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$includeFolder || 'desc/' || $element/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                    <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+                </xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:classSpec">
             <xsl:variable name="class" select="."/>
             <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+            </xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$includeFolder || 'desc/' || $class/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                    <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+                </xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:macroSpec">
             <xsl:variable name="macro" select="."/>
             <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+            </xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$includeFolder || 'desc/' || $macro/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                    <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+                </xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
@@ -269,82 +283,110 @@
         <xsl:message select="'INFO: Building multiple HTML fragments for inclusion on music-encoding.org'"/>
          
         <!-- chapter overview -->
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$chapters" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
-</xsl:call-template>
+        <xsl:call-template name="processItems">
+            <xsl:with-param name="items" select="$chapters" as="node()*"/>
+            <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
+            <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
+        </xsl:call-template>
         
-            <!-- elements overview -->
-        <xsl:result-document href="{$outPutFolder}elements.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Elements"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$elements" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$elementLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
-</xsl:call-template>
+        <!-- elements overview -->
+        <xsl:result-document href="{$outPutFolder}elements.md" format="html">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Elements"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$elementLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$elements" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$elementLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'elements'" as="xs:string"/>
+            </xsl:call-template>
         </xsl:result-document>
             
-            <!-- model overview -->
-        <xsl:result-document href="{$outPutFolder}model-classes.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Model Classes"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'models'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$model.classes" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$modelLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'models'" as="xs:string"/>
-</xsl:call-template>
+        <!-- model overview -->
+        <xsl:result-document href="{$outPutFolder}model-classes.md" format="html">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Model Classes"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$modelLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'models'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$model.classes" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$modelLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'models'" as="xs:string"/>
+            </xsl:call-template>
         </xsl:result-document>
             
-            <!-- attribute overview -->
-        <xsl:result-document href="{$outPutFolder}attribute-classes.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Attribute Classes"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$attLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$att.classes" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$attLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
-</xsl:call-template>
+        <!-- attribute overview -->
+        <xsl:result-document href="{$outPutFolder}attribute-classes.md" format="html">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Attribute Classes"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$attLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$att.classes" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$attLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'atts'" as="xs:string"/>
+            </xsl:call-template>
         </xsl:result-document>
             
         <!-- data type overview -->
-        <xsl:result-document href="{$outPutFolder}data-types.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-title: "Data Types"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-<xsl:call-template name="generateCategoryOverview">
-    <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
-</xsl:call-template>
-<xsl:call-template name="processItems">
-    <xsl:with-param name="items" select="$data.types" as="node()*"/>
-    <xsl:with-param name="itemLinks" select="$dataLinks" as="node()*"/>
-    <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
-</xsl:call-template>   
+        <xsl:result-document href="{$outPutFolder}data-types.md" format="html">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "Data Types"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:call-template name="generateCategoryOverview">
+                <xsl:with-param name="items" select="$dataLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
+            </xsl:call-template>
+            <xsl:call-template name="processItems">
+                <xsl:with-param name="items" select="$data.types" as="node()*"/>
+                <xsl:with-param name="itemLinks" select="$dataLinks" as="node()*"/>
+                <xsl:with-param name="mode" select="'dataMacros'" as="xs:string"/>
+            </xsl:call-template>   
         </xsl:result-document>
         
     </xsl:template>
@@ -489,16 +531,24 @@ version: "<xsl:value-of select="$guidelines.version"/>"
                 </xsl:if>
             </xsl:variable>
             
-            <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" omit-xml-declaration="true">---
-layout: sidebar
-sidebar: s1
-version: "<xsl:value-of select="$guidelines.version"/>"
-title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/>"
-<xsl:if test="$mode = 'chapters'">sectionid: "<xsl:value-of select="$name"/>"</xsl:if>
----
-
-<xsl:sequence select="$result"/>
-                
+            <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" format="html">
+                <xsl:text>---</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>layout: sidebar</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>sidebar: s1</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>title: "</xsl:text><xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/><xsl:text>"</xsl:text>
+                <xsl:if test="$mode = 'chapters'">
+                    <xsl:text>&#xa;</xsl:text>
+                    <xsl:text>sectionid: "</xsl:text><xsl:value-of select="$name"/><xsl:text>"</xsl:text>
+                </xsl:if>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:text>---</xsl:text>
+                <xsl:text>&#xa;</xsl:text>
+                <xsl:sequence select="$result"/>
             </xsl:result-document>        
                 
         </xsl:for-each>
@@ -602,14 +652,21 @@ title: "<xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapt
             </xsl:choose>
         </xsl:variable>
         
-        <xsl:result-document href="{lower-case($path)}" method="html" omit-xml-declaration="yes">---
-sectionid: <xsl:value-of select="$chapter/@xml:id"/>
-title: "<xsl:value-of select="$chapterNumElem/@head"/>"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-
-<xsl:apply-templates select="node()" mode="markdown"/>
-
+        <xsl:result-document href="{lower-case($path)}" format="markdown">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sectionid: </xsl:text>
+            <xsl:value-of select="$chapter/@xml:id"/>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "</xsl:text>
+            <xsl:value-of select="$chapterNumElem/@head"/>
+            <xsl:text>"&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text>
+            <xsl:value-of select="$guidelines.version"/>
+            <xsl:text>"&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:apply-templates select="node()" mode="markdown"/>
         </xsl:result-document>
             
     </xsl:template>
@@ -741,7 +798,11 @@ version: "<xsl:value-of select="$guidelines.version"/>"
         </p>
     </xsl:template>
     
-    <xsl:template match="tei:p" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/><xsl:value-of select="'&#xa; &#xa;'"/></xsl:template>
+    <xsl:template match="tei:p" mode="markdown">
+        <xsl:value-of select="'&#xa;'"/>
+        <xsl:apply-templates select="node()" mode="#current"/>
+        <xsl:value-of select="'&#xa;'"/>
+    </xsl:template>
     
     <xsl:template match="tei:list">
         <xsl:choose>
@@ -792,15 +853,61 @@ version: "<xsl:value-of select="$guidelines.version"/>"
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template match="text()" mode="markdown" priority="1.0">
+        <xsl:choose>
+            <xsl:when test="parent::tei:div">
+                <xsl:analyze-string select="." regex="[\n\s]+">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="''"/>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:when test="ancestor::*[local-name() = ('p', 'item')]">
+                <xsl:analyze-string select="." regex="[\n\s]+">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="' '"/>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                        <xsl:value-of select="."/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:template>
     <xsl:template match="tei:list" mode="markdown">
+        <xsl:text>&#xa;</xsl:text>
         <xsl:choose>
             <xsl:when test="@type = ('bulleted','simple')">
-                <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>
-                <xsl:for-each select="tei:item"><xsl:variable name="content" as="xs:string*"><xsl:apply-templates select="node()" mode="#current"/></xsl:variable><xsl:choose><xsl:when test="position() gt 1">&#xa;- </xsl:when><xsl:otherwise>- </xsl:otherwise></xsl:choose><xsl:value-of select="normalize-space(string-join($content,' '))"/></xsl:for-each>                
+                <xsl:if test="child::tei:head">
+                    <xsl:text>**</xsl:text>
+                    <xsl:apply-templates select="child::tei:head/node()"/>
+                    <xsl:text>**</xsl:text>
+                    <xsl:text>&#xa;</xsl:text>
+                </xsl:if>
+                <xsl:for-each select="tei:item">
+                    <xsl:choose>
+                        <xsl:when test="position() gt 1">&#xa;- </xsl:when>
+                        <xsl:otherwise>- </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:apply-templates select="node()" mode="#current"></xsl:apply-templates>
+                </xsl:for-each>                
             </xsl:when>
             <xsl:when test="@type = 'ordered'">
-                <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>
-                <xsl:for-each select="tei:item"><xsl:variable name="content" as="xs:string*"><xsl:apply-templates select="node()" mode="#current"/></xsl:variable><xsl:choose><xsl:when test="position() gt 1">&#xa;. </xsl:when><xsl:otherwise>. </xsl:otherwise></xsl:choose><xsl:value-of select="normalize-space(string-join($content,' '))"/></xsl:for-each>
+                <xsl:if test="child::tei:head">
+                    <xsl:text>**</xsl:text>
+                    <xsl:apply-templates select="child::tei:head/node()"/>
+                    <xsl:text>**</xsl:text>
+                    <xsl:text>&#xa;</xsl:text>
+                </xsl:if>
+                <xsl:for-each select="tei:item">
+                    <xsl:variable name="content" as="xs:string*">
+                        <xsl:apply-templates select="node()" mode="#current"/>
+                    </xsl:variable>
+                    <xsl:text>&#xa;</xsl:text>
+                    <xsl:value-of select="position()||'.' || ' '"/>
+                    <xsl:apply-templates select="node()" mode="#current"></xsl:apply-templates><!--                    <xsl:value-of select="normalize-space(string-join($content,' '))"/>-->
+                </xsl:for-each>
             </xsl:when>
             <xsl:when test="@type = 'gloss'">
                 <table class="table table-striped">
@@ -1014,8 +1121,13 @@ version: "<xsl:value-of select="$guidelines.version"/>"
     </xsl:template>
     
     <xsl:template match="tei:specDesc" mode="markdown">
+        <xsl:text>&#xa;</xsl:text>
         <xsl:choose>
-            <xsl:when test="not(@atts)">{% include desc elem="<xsl:value-of select="@key"/>" %}</xsl:when>
+            <xsl:when test="not(@atts)">
+                <xsl:text>{% include desc elem="</xsl:text>
+                <xsl:value-of select="@key"/>
+                <xsl:text>" %}</xsl:text>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="key" select="@key" as="xs:string"/>
                 <xsl:variable name="spec" select="//tei:*[@ident = $key and not(local-name() = ('schemaSpec','valItem','attDef'))]" as="node()?"/>
