@@ -22,6 +22,18 @@ exclude: [tools]
 
 plugins:
   - jekyll-redirect-from
+  
+menu:
+    - id: versions
+      label: 'Guidelines versions'
+      url: ''
+      submenu:
+          - id: dev
+            label: 'Development version'
+            url: 'dev'
+          - id: v3
+            label: 'Version 3.0.0'
+            url: 'dev'
 
 collections:
   guidelines-dev:

@@ -1,7 +1,4 @@
 ---
-layout: default
-title: "Guidelines (work-in-progress)"
+layout: redirect
+redirect_to: "dev/content"
 ---
-# Guidelines
-
-* [Guidelines for the current version (3.0.0)](dev)

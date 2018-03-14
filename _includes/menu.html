@@ -5,14 +5,14 @@
                 {{ entry.label }}
             </a>
         {% else %}
-            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="{{ forloop.index0}}">
+            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="{{ forloop.index0}}">
                 {{ entry.label }} <i class="icon icon-caret"></i>
             </a>
             
             {% for item in entry.submenu %}
             {% if forloop.first %} <ul class="menu"> {% endif %}
                 <li class="menu-item">
-                    <a href="{{entry.url}}{{item.url}}" class="btn btn-link text-left menu-link">
+                    <a href="{{site.baseurl}}/{{entry.url}}{{item.url}}" class="btn btn-link text-left menu-link">
                         {{item.label}}
                     </a>
                 </li>
