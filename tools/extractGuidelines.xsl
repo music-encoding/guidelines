@@ -184,30 +184,42 @@
         <xsl:for-each select=".//tei:elementSpec">
             <xsl:variable name="element" select="."/>
             <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+            </xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$includeFolder || 'desc/' || $element/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                    <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+                </xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:classSpec">
             <xsl:variable name="class" select="."/>
             <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+            </xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$includeFolder || 'desc/' || $class/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                    <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+                </xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select=".//tei:macroSpec">
             <xsl:variable name="macro" select="."/>
             <xsl:variable name="path" select="$includeFolder || 'desc/' || @ident || '.txt'" as="xs:string"/>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+            </xsl:result-document>
             <xsl:for-each select=".//tei:attDef">
                 <xsl:variable name="path" select="$includeFolder || 'desc/' || $macro/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
-                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:value-of select="./tei:desc/text()"/></xsl:result-document>
+                <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
+                    <xsl:apply-templates select="./tei:desc/text()" mode="plain"/>
+                </xsl:result-document>
             </xsl:for-each>
         </xsl:for-each>
         
