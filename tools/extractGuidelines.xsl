@@ -876,8 +876,20 @@
                 </xsl:for-each>                
             </xsl:when>
             <xsl:when test="@type = 'ordered'">
-                <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>
-                <xsl:for-each select="tei:item"><xsl:variable name="content" as="xs:string*"><xsl:apply-templates select="node()" mode="#current"/></xsl:variable><xsl:choose><xsl:when test="position() gt 1">&#xa;. </xsl:when><xsl:otherwise>. </xsl:otherwise></xsl:choose><xsl:value-of select="normalize-space(string-join($content,' '))"/></xsl:for-each>
+                <xsl:if test="child::tei:head">
+                    <xsl:text>**</xsl:text>
+                    <xsl:apply-templates select="child::tei:head/node()"/>
+                    <xsl:text>**</xsl:text>
+                    <xsl:text>&#xa;</xsl:text>
+                </xsl:if>
+                <xsl:for-each select="tei:item">
+                    <xsl:variable name="content" as="xs:string*">
+                        <xsl:apply-templates select="node()" mode="#current"/>
+                    </xsl:variable>
+                    <xsl:text>&#xa;</xsl:text>
+                    <xsl:value-of select="position()||'.' || ' '"/>
+                    <xsl:apply-templates select="node()" mode="#current"></xsl:apply-templates><!--                    <xsl:value-of select="normalize-space(string-join($content,' '))"/>-->
+                </xsl:for-each>
             </xsl:when>
             <xsl:when test="@type = 'gloss'">
                 <table class="table table-striped">
