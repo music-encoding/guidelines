@@ -1105,7 +1105,11 @@
     
     <xsl:template match="tei:specDesc" mode="markdown">
         <xsl:choose>
-            <xsl:when test="not(@atts)">{% include desc elem="<xsl:value-of select="@key"/>" %}</xsl:when>
+            <xsl:when test="not(@atts)">
+                <xsl:text>{% include desc elem="</xsl:text>
+                <xsl:value-of select="@key"/>
+                <xsl:text>" %}</xsl:text>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="key" select="@key" as="xs:string"/>
                 <xsl:variable name="spec" select="//tei:*[@ident = $key and not(local-name() = ('schemaSpec','valItem','attDef'))]" as="node()?"/>
