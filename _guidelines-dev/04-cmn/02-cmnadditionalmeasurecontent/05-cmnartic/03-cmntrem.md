@@ -8,8 +8,8 @@ CMN has two slightly different concepts which are both called tremolo. The first
 
 For the repetition of a single note or chord, MEI offers the {% include link elem="bTrem" %} (bowed tremolo) element, which is a member of the {% include link att-class="model.eventLike" %} class, meaning it is encoded following the normal course of musical events within a {% include link elem="layer" %}. It holds exactly one {% include link elem="note" %} or {% include link elem="chord" %} element that is to be repeated.
 
-        {% include figure img="ExampleImages/btrem-a-20100510.png" caption="Bowed tremolandi" %}
-    {% include mei example="cmn/cmn-sample138.xml" valid="true" %}
+{% include figure img="ExampleImages/btrem-a-20100510.png" caption="Bowed tremolandi" %}
+{% include mei example="cmn/cmn-sample138.xml" valid="true" %}
     
 The **@measperf** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The stem modifier must also be explicity set on the child {% include link elem="note" %} or {% include link elem="chord" %} element for a complete visual representation. The number of slashes present on the note may disagree with the number of slashes that should be present according to the **@measperf** attribute, especially in music manuscripts.
 {% include mei example="cmn/cmn-sample139.xml" valid="true" %}

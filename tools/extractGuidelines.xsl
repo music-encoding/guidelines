@@ -1364,8 +1364,8 @@
     
     <xsl:template match="tei:figure" mode="markdown">
         <xsl:variable name="caption" select="replace(./tei:head/text(),'&quot;', '\\&quot;')"/>
-        {% include figure img="<xsl:value-of select="./tei:graphic/@url"/>" caption="<xsl:value-of select="$caption"/>" %}
-    </xsl:template>
+{% include figure img="<xsl:value-of select="./tei:graphic/@url"/>" caption="<xsl:value-of select="$caption"/>" %}
+</xsl:template>
     
     <xsl:template match="tei:graphic">
         <img src="{$image.prefix||@url}" class="graphic"/>

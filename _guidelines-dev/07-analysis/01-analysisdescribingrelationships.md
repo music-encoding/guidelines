@@ -29,16 +29,16 @@ In this example. the {% include link elem="note" %} in the second measure has ex
 
 Using **@copyof** is not limited to copying events. The **@copyof** attribute can also be used to copy an entire {% include link elem="measure" %} or {% include link elem="staff" %}. When there are many repeated features, the use of the **@copyof** greatly reduces encoding effort. The image and the following encoding of the beginning of Schubert's *Erlkönig* illustrates the benefit of using the **@copyof** attribute.
 
-        {% include figure img="modules/analysis/Schubert_Erlkonig_Op1_m1.png" caption="First measure of Schubert's Erlkönig" %}
-    {% include mei example="analysis/analysis-sample163.xml" valid="true" %}
+{% include figure img="modules/analysis/Schubert_Erlkonig_Op1_m1.png" caption="First measure of Schubert's Erlkönig" %}
+{% include mei example="analysis/analysis-sample163.xml" valid="true" %}
     
 This example can be reduced further by using **@copyof** inside the initial tuplet to represent the repeated chords:
 {% include mei example="analysis/analysis-sample164.xml" valid="true" %}
     
 While **@copyof** signifies a duplicate copy of an element, the **@sameas** indicates that the current element represents exactly the same entity as the one referenced in **@sameas**. Use of **@sameas** is used for describing the same entity from multiple perspectives, e.g., the same event in two layers. The following example illustrates the sharing of one note head between two voices in the first full measure of a chorale:
 
-        {% include figure img="modules/analysis/chor003_m1-2.png" caption="Bach Chorale, \"Ach Gott, vom Himmel sieh' darein\", m. 1-2" %}
-    {% include mei example="analysis/analysis-sample165.xml" valid="true" %}
+{% include figure img="modules/analysis/chor003_m1-2.png" caption="Bach Chorale, \"Ach Gott, vom Himmel sieh' darein\", m. 1-2" %}
+{% include mei example="analysis/analysis-sample165.xml" valid="true" %}
     
 While **@copyof** and **@sameas** have defined semantics, the **@corresp** may be used to create user-defined relationships between elements. The example below demonstrates the encoding of a relationship between #note3 and the fermata, even though the fermata is not placed directly above the note.
 {% include mei example="analysis/analysis-sample166.xml" valid="true" %}
@@ -47,8 +47,8 @@ The **@corresp** attribute only marks the correspondence between the current ele
 
 The **@next** and **@prev** attributes point to elements which follow or precede the current element in some fashion other than that indicated by encoding order. The use of these attributes helps to avoid confusion in the sequence of events, for example, in voice leading across layers or staves, when the encoding reflects the physical arrangement of voices. In the second measure of the following example, the target of the next attribute occurs after the pointing element in time, but before it in encoding order:
 
-        {% include figure img="modules/analysis/chor003_m6-7.png" caption="Bach Chorale, \"Ach Gott, vom Himmel sieh' darein\", m. 6-7" %}
-    {% include mei example="analysis/analysis-sample167.xml" valid="false" %}
+{% include figure img="modules/analysis/chor003_m6-7.png" caption="Bach Chorale, \"Ach Gott, vom Himmel sieh' darein\", m. 6-7" %}
+{% include mei example="analysis/analysis-sample167.xml" valid="false" %}
     
 This attribute may also be useful to clarify a sequence of entites which occurs across some form of interruption, in this case, notes before and after a system or page break where there is no custos or direct in the source:
 {% include mei example="analysis/analysis-sample168.xml" valid="true" %}

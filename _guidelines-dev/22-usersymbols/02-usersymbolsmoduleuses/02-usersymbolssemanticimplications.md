@@ -8,9 +8,8 @@ The graphics primitives and symbols can be used directly in the music to describ
 
 An example usage for {% include link elem="line" %} is the visualization of voice leading, which is not covered by a specific MEI element.
 
-        {% include figure img="modules/usersymbols/mignon.png" caption="Voice leading visualization as found in an Edition Peters print of \"Album für
+{% include figure img="modules/usersymbols/mignon.png" caption="Voice leading visualization as found in an Edition Peters print of \"Album für
             die Jugend\" by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
           is 10478.)" %}
-    
-        {% include figure img="" caption="Encoding of the Schumann example" %}
-    
+
+{% include figure img="" caption="Encoding of the Schumann example" %}

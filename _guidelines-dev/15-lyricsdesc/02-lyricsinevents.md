@@ -10,8 +10,8 @@ Using the **@syl** attribute on notes is the simplest way of encoding vocally pe
 
 The following example from Handel's *Messiah* (HWV 56) shows the use of **@syl**:
 
-        {% include figure img="modules/lyrics/ex_syl_att.png" caption="Handel, Messiah HWV 56, Halleluja" %}
-    {% include mei example="lyricsDesc/lyricsDesc-sample263.xml" valid="true" %}
+{% include figure img="modules/lyrics/ex_syl_att.png" caption="Handel, Messiah HWV 56, Halleluja" %}
+{% include mei example="lyricsDesc/lyricsDesc-sample263.xml" valid="true" %}
     
 When there are multiple lines of vocally performed text, or the encoder wishes to be more specific about connectors, etc., the use of {% include link elem="verse" %} and {% include link elem="syl" %} is recommended.
 
@@ -28,8 +28,8 @@ As it is common practice in written text, it is assumed that a space separates w
     
 When there is more than one line of text, more than one {% include link elem="verse" %} element can be used. The following example from a piano reduction of Wagner's *Rheingold* has two lines of text, with an English translation on the second line. Note the use of the **@xml:lang** attribute to differentiate the two languages:
 
-        {% include figure img="modules/lyrics/ex_verse_m.png" caption="Example from Wagner's Rheingold with translated text." %}
-    {% include mei example="lyricsDesc/lyricsDesc-sample266.xml" valid="false" %}
+{% include figure img="modules/lyrics/ex_verse_m.png" caption="Example from Wagner's Rheingold with translated text." %}
+{% include mei example="lyricsDesc/lyricsDesc-sample266.xml" valid="false" %}
     
 Optionally, it is possible to include an {% include link elem="lb" %} element within {% include link elem="verse" %} to explicitly encode line and line group endings. This is specifically meant to facilitate karaoke applications.
 

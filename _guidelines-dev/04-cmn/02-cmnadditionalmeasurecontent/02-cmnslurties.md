@@ -16,8 +16,8 @@ This attribute allows three values:
 ValueDescriptioni (initial) - Marks the start of a tiem (medial) - Marks a participant in a tie other than the first or lastt (terminal) - Marks the end of a tie
 The scope of the **@tie** attribute is the musical {% include link elem="layer" %}; that is, a tie started in one layer may only be ended by a subsequent musical event with a **@tie** attribute with an *m* or *t* value in the same layer. The tie-terminating event may lie in the following measure.
 
-        {% include figure img="modules/cmn/finger-300.png" caption="Ties across barlines" %}
-    {% include mei example="cmn/cmn-sample113.xml" valid="true" %}
+{% include figure img="modules/cmn/finger-300.png" caption="Ties across barlines" %}
+{% include mei example="cmn/cmn-sample113.xml" valid="true" %}
     
 When **@tie** is used on chords, it functions as a shorthand indication for multiple tie markings; that is, a separate tie is drawn for every pitch in the chord that remains unchanged in the succeeding chord.
 {% include mei example="cmn/cmn-sample114.xml" valid="true" %}
@@ -27,8 +27,8 @@ This is equivalent to the following, more verbose version:
     
 A slur is a curved line that connects a group of notes of different pitch. It normally indicates that an instrument-specific performance technique should be applied to the affected notes. For example, in notation for winds, the notes should be played in one breath, while a single bow is indicated for string instruments.
 
-        {% include figure img="ExampleImages/slur-300-20100514.png" caption="Slurs" %}
-    
+{% include figure img="ExampleImages/slur-300-20100514.png" caption="Slurs" %}
+
 In MEI, slurs may be encoded in a similar way to ties: {% include link elem="note" %} and {% include link elem="chord" %} bear a **@slur** attribute that allows the commencement or ending of a slur at this element. The allowed values, however, are slightly different: The *i*, *m* or *t* are followed by a single digit in the range 1 to 6, as in the following example:
 {% include mei example="cmn/cmn-sample116.xml" valid="true" %}
     

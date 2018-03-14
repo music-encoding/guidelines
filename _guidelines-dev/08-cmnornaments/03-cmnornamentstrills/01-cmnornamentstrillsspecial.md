@@ -8,8 +8,8 @@ Symbols and abbreviations for trills have changed and evolved considerably throu
 
 The abbreviation "tr" followed by a wavy line spanning multiple notes is sometimes used to indicate multiple trills:
 
-        {% include figure img="modules/cmnOrnaments/ex_tr_multi.png" caption="Example of multiple trills." %}
-    
+{% include figure img="modules/cmnOrnaments/ex_tr_multi.png" caption="Example of multiple trills." %}
+
 The encoding of this kind of trill may vary depending on the purpose of the encoding. For representation of the source, a single trill is sufficient:
 {% include mei example="cmnOrnaments/cmnOrnaments-sample188.xml" valid="true" %}
     
@@ -23,9 +23,9 @@ Another situation that requires disambiguation of an ornament's name and its pot
 
 In the example below, the child elements of {% include link elem="choice" %}; that is, {% include link elem="orig" %} and {% include link elem="reg" %}, represent non-exclusive options; that is, both may be processed by applications that aim to support both visual and aural renditions.
 
-        {% include figure img="modules/cmnOrnaments/ex_tr_B.png" caption="Trill transcribed from J.S. Bach's \"Klavierbüchlein für Wilhelm Friedemann
+{% include figure img="modules/cmnOrnaments/ex_tr_B.png" caption="Trill transcribed from J.S. Bach's \"Klavierbüchlein für Wilhelm Friedemann
             Bach\" (1720)" %}
-    {% include mei example="cmnOrnaments/cmnOrnaments-sample191.xml" valid="true" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample191.xml" valid="true" %}
     
 Depending on the purpose of the encoding, it may be more convenient to encode the regularized text within the stream of events, along with a corresponding choice with regard to the existence of the trill marking, as in the following example:
 {% include mei example="cmnOrnaments/cmnOrnaments-sample192.xml" valid="true" %}

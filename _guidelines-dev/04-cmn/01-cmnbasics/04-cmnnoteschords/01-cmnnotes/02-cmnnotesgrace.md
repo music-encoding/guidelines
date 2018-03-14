@@ -6,8 +6,8 @@ version: "dev"
 
 The CMN module adds two optional attributes, **@grace** and **@grace.time**, to {% include link elem="note" %} and {% include link elem="chord" %}. The presence of the **@grace** attribute indicates a grace note.
 
-        {% include figure img="modules/cmn/grace-300.png" caption="Grace notes" %}
-    
+{% include figure img="modules/cmn/grace-300.png" caption="Grace notes" %}
+
 The encoding of the left-most example would look like this:
 {% include mei example="cmn/cmn-sample098.xml" valid="true" %}
     

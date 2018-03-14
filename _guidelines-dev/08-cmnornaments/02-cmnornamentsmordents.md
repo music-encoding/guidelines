@@ -23,11 +23,11 @@ ValueDescriptionnorm - usually corresponding to the symbol: . This mordent is
         the principal note.
 The following example demonstrates the encoding of simple mordents:
 
-        {% include figure img="modules/cmnOrnaments/ex_mordent.png" caption="Example of simple mordent" %}
-    {% include mei example="cmnOrnaments/cmnOrnaments-sample182.xml" valid="true" %}
+{% include figure img="modules/cmnOrnaments/ex_mordent.png" caption="Example of simple mordent" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample182.xml" valid="true" %}
     
 Occasionally, mordents can be longer, employing five notes instead of three. The **@long** attribute can be used to identify mordents of this type. The following example shows the encoding of a long mordent:
 
-        {% include figure img="modules/cmnOrnaments/ex_mordent_l.png" caption="Example of a long mordent" %}
-    {% include mei example="cmnOrnaments/cmnOrnaments-sample183.xml" valid="true" %}
+{% include figure img="modules/cmnOrnaments/ex_mordent_l.png" caption="Example of a long mordent" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample183.xml" valid="true" %}
     
