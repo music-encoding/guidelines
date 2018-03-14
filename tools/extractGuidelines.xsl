@@ -859,6 +859,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template match="tei:list" mode="markdown">
+        <xsl:text>&#xa;</xsl:text>
         <xsl:choose>
             <xsl:when test="@type = ('bulleted','simple')">
                 <xsl:if test="child::tei:head">
