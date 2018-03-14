@@ -6,8 +6,8 @@
   {% assign levels = levels | shift %}
 
   {% if levels.size < 2 %}
-<p>
-    <a href="{{ doc.sectionid }}.html">
+<p class="mainToc">
+    <a href="{{ doc.sectionid | downcase }}.html">
       {% for level in levels %}
       {% assign l = level | split:'-' | first | slice:0,1 %}
       {% if l == "0" %}{% assign l = level | split:'-' | first | slice:1,2 %}
