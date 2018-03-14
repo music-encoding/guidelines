@@ -11,12 +11,12 @@ var tipuesearch = {"pages": [
   {%- for doc in documents -%}
   
     {%- assign url-parts = doc.url | split:'/' %}
-    {%- assign target = doc.sectionid | append: ".html" %}
+    {%- assign target = doc.sectionid | downcase | append: ".html" %}
     {%- if url-parts.size > 3 %}
       {%- assign chapter = url-parts[2] | slice:3,200 %}
-      {%- assign target = chapter | append: ".html#" | append: doc.sectionid %}
+      {%- assign target = chapter | downcase | append: ".html#" | append: doc.sectionid %}
     {%- endif %}
-    {%- capture url %}{{ site.baseurl }}/{{ doc.version }}/guidelines/{{ target }}{%- endcapture %}
+    {%- capture url %}{{ site.baseurl }}/{{ doc.version }}/content/{{ target }}{%- endcapture %}
   
     {%- assign tags = doc.tags | uniq -%}
     {%- assign categories = doc.categories | uniq -%}
