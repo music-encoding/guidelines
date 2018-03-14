@@ -639,14 +639,21 @@
             </xsl:choose>
         </xsl:variable>
         
-        <xsl:result-document href="{lower-case($path)}" method="html" omit-xml-declaration="yes">---
-sectionid: <xsl:value-of select="$chapter/@xml:id"/>
-title: "<xsl:value-of select="$chapterNumElem/@head"/>"
-version: "<xsl:value-of select="$guidelines.version"/>"
----
-
-<xsl:apply-templates select="node()" mode="markdown"/>
-
+        <xsl:result-document href="{lower-case($path)}" format="markdown">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sectionid: </xsl:text>
+            <xsl:value-of select="$chapter/@xml:id"/>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "</xsl:text>
+            <xsl:value-of select="$chapterNumElem/@head"/>
+            <xsl:text>"&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text>
+            <xsl:value-of select="$guidelines.version"/>
+            <xsl:text>"&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:apply-templates select="node()" mode="markdown"/>
         </xsl:result-document>
             
     </xsl:template>
