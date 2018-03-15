@@ -1,7 +1,7 @@
 ---
 sectionid: lyricsSyl
 title: "Lyric Syllables"
-version: "dev"
+version: "v3"
 ---
 
 By ‘lyric syllable’, these guidelines mean a word or portion of a word that is to be performed vocally. Each syllable is encoded with the {% include link elem="syl" %} element, with which it is also possible to specify the position of the syllable in a word, the type of connectors between syllables, alignment adjustments, and the formatting for each syllable. These are the key components:

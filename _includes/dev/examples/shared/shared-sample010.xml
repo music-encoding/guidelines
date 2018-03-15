@@ -1,0 +1,6 @@
+<corpName xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">Universität Paderborn</corpName>
+<address xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <addrLine>Warburger Straße 100</addrLine>
+   <addrLine>33098 Paderborn</addrLine>
+   <addrLine>Germany</addrLine>
+</address>

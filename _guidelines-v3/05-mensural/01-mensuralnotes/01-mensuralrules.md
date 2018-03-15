@@ -1,7 +1,7 @@
 ---
 sectionid: mensuralRules
 title: "Actual Duration with Alterations and Imperfections"
-version: "dev"
+version: "v3"
 ---
 
 In ternary divisions, the dichotomy between the duration sign of the notes and their actual duration requires specific attention. The rules of mensural notation can require the alteration or the imperfection of a note; that is, an increase or reduction in its performed duration. In these cases, if the encoding is intended to be suitable for more than just graphically representing the notation, encoding only the duration of the sign can quickly become insufficient. It that case, it is recommended to encode the sign in the **@dur** attribute and its performed duration using the **@num** and **@numbase** attributes.

@@ -1,7 +1,7 @@
 ---
 sectionid: sharedScoreAndParts
 title: "Score and Parts"
-version: "dev"
+version: "v3"
 ---
 
 The following elements are provided for the capture of scores and parts:

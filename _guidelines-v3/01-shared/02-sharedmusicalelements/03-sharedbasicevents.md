@@ -1,7 +1,7 @@
 ---
 sectionid: sharedBasicEvents
 title: "Basic Music Events"
-version: "dev"
+version: "v3"
 ---
 
 The basic features of music notation are represented by the following elements:

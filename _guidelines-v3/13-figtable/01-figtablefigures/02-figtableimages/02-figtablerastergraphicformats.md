@@ -1,7 +1,7 @@
 ---
 sectionid: figTableRasterGraphicFormats
 title: "Raster Graphic Formats"
-version: "dev"
+version: "v3"
 ---
 
 ValueDescriptionPNG: Portable Network Graphics format - PNG is a non-proprietary raster format currently widely available. It provides an

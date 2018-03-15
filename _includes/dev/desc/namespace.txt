@@ -1,0 +1,3 @@
+Supplies the formal name of the namespace to which the elements documented by its
+children
+belong.

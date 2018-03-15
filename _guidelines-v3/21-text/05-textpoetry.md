@@ -1,7 +1,7 @@
 ---
 sectionid: textPoetry
 title: "Poetry"
-version: "dev"
+version: "v3"
 ---
 
 This {% include link elem="lg" %} (line group) element is used generically to encode any section of text that is organized as a group of lines. Following the recommendations of the Text Encoding Initiative, it is recommended to use it, along with the following elements, for marking up poetry:

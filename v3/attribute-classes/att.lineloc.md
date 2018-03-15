@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "att.lineloc"
 ---
 <div class="classSpec att">

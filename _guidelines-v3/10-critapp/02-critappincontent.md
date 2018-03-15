@@ -1,7 +1,7 @@
 ---
 sectionid: critAppInContent
 title: "Variants in Musical Content"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="app" %} element may be used to accommodate textual variation at nearly any point in a musical text. For example, it may be used to indicate minor differences such as stem directions:

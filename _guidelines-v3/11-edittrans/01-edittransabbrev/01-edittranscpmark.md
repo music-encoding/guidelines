@@ -1,7 +1,7 @@
 ---
 sectionid: edittranscpMark
 title: " Instructions"
-version: "dev"
+version: "v3"
 ---
 
 Many musical scores make use of various kinds of shorthand notation which omit some parts of the score that have already been written elsewhere. Typical exampleS for this are symbols that indicate repetition of the preceding measure or beat. In MEI, these symbols can be encoded using the {% include link elem="mRpt" %} and {% include link elem="beatRpt" %} elements respectively. Often, similar graphical symbols (often one or two slashes, "//") are used to mean that the current staff should have the same or similar content as another staff.

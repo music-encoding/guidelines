@@ -1,7 +1,7 @@
 ---
 sectionid: textDivisions
 title: "Organizing Text into Divisions"
-version: "dev"
+version: "v3"
 ---
 
 Text can be organized in different parts, for example in chapters or sections. The {% include link elem="div" %} element is used to encode such structural divisions.

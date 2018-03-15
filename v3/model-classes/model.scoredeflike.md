@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "model.scoreDefLike"
 ---
 <div class="classSpec model">

@@ -1,0 +1,1 @@
+Institution, agency, or individual which holds a bibliographic item.

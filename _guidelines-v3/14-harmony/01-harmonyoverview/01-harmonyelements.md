@@ -1,7 +1,7 @@
 ---
 sectionid: harmonyElements
 title: "Elements"
-version: "dev"
+version: "v3"
 ---
 
 The following elements are provided by the harmony module:

@@ -1,0 +1,3 @@
+Attributes that record a performed (as opposed to notated) time stamp for the end
+of an
+event.

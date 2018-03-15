@@ -1,0 +1,1 @@
+Controls how the num:numbase ratio is to be displayed.

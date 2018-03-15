@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsPositioning
 title: "Positioning"
-version: "dev"
+version: "v3"
 ---
 
 An element may be positioned using either absolute or relative coordinates. If absolute start point coordinates are specified using **@x**/**@y** coordinates (or their relatives **@x2**/**@y2** for endpoints) they take precedence over relative positions specified by **@ho**/**@vo**/**@to** (or **@startho**/**@startvo**/**@startto**). Analogously, **@x2**/**@y2** override **@endho****@endvo**/**@endto**.

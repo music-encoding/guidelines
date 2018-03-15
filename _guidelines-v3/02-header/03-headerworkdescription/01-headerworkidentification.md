@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkIdentification
 title: "Work Identification"
-version: "dev"
+version: "v3"
 ---
 
 The following elements provide minimal identifying information for the intellectual work:

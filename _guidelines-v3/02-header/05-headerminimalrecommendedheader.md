@@ -1,7 +1,7 @@
 ---
 sectionid: headerMinimalRecommendedHeader
 title: "Minimal and Recommended Header Information"
-version: "dev"
+version: "v3"
 ---
 
 The MEI header allows for the provision of a very large amount of information concerning the text itself, its source, its encodings, and revisions of it, as well as a wealth of descriptive information, such as the languages it uses and the situation(s) in which it was produced, together with the setting and identity of participants within it. This diversity and richness reflects the diversity of uses to which it is envisaged that electronic texts conforming to these Guidelines will be put. It is emphatically not intended that all of the elements described above should be present in every MEI Header.

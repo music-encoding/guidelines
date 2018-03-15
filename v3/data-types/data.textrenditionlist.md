@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "data.TEXTRENDITIONLIST"
 ---
 <div class="macroSpec">

@@ -1,7 +1,7 @@
 ---
 sectionid: corpusRecommendations
 title: "Recommendations for the Encoding of Large Corpora"
-version: "dev"
+version: "v3"
 ---
 
 These Guidelines include proposals for the identification and encoding of a far greater variety of textual features and characteristics than is likely to be either feasible or desirable in any one corpus, however large and ambitious. For most large-scale corpus projects, it will therefore be necessary to determine a subset of recommended elements appropriate to the anticipated needs of the project; these mechanisms include the ability to exclude selected element types, add new element types, and change the names of existing elements.

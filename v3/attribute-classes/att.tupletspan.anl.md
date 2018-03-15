@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "att.tupletSpan.anl"
 ---
 <div class="classSpec att">

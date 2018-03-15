@@ -1,7 +1,7 @@
 ---
 sectionid: critAppInDefs
 title: "Variants in Score Definitions"
-version: "dev"
+version: "v3"
 ---
 
 In addition to its use for differentiation of the musical content of multiple sources, {% include link elem="app" %} may also be utilized to describe the layout of different scores, even when the musical content itself remains the same. An example of this is two sources that have the same content, but a different ordering of staves on which the content is written. By definition, the order of staves is derived from the order of {% include link elem="staffDef" %} elements in {% include link elem="scoreDef" %}, not from the order of {% include link elem="staff" %} elements within a {% include link elem="measure" %}. The {% include link elem="staff" %} element in a measure points to its corresponding {% include link elem="staffDef" %} using either 1) the same value for **@n** on both elements, or 2) a value in **@def** which is an explicit reference to a particular {% include link elem="staffDef" %} using its **@xml:id** value.

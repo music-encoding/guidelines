@@ -1,0 +1,2 @@
+Used to indicate visual appearance. Do not confuse this with the musical term 'color'
+as used in pre-CMN notation.

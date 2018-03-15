@@ -1,7 +1,7 @@
 ---
 sectionid: headerAssociatingMetadataAndData
 title: "Associating Metadata and Data"
-version: "dev"
+version: "v3"
 ---
 
 In the MEI header, the **@data** attribute may be used to associate metadata with related notational elements.

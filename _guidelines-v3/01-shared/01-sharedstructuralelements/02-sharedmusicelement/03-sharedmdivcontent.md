@@ -1,7 +1,7 @@
 ---
 sectionid: sharedMdivContent
 title: "Content of Musical Divisions"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="mdiv" %} element may contain one or both of two possible views: score and parts.

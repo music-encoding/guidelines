@@ -1,7 +1,7 @@
 ---
 sectionid: figTableCaptionsDescriptions
 title: "Figure Captions and Descriptions"
-version: "dev"
+version: "v3"
 ---
 
 The element {% include link elem="caption" %} may be used to transcribe (or supply) a title or descriptive heading for the graphic itself, as in the following example:

@@ -1,0 +1,2 @@
+Number of dots required for a gestural duration when different from that of the
+written duration.

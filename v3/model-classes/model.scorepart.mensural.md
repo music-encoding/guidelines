@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "model.scorePart.mensural"
 ---
 <div class="classSpec model">

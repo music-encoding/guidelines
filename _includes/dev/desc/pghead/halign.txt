@@ -1,0 +1,1 @@
+Records horizontal alignment of the page header.

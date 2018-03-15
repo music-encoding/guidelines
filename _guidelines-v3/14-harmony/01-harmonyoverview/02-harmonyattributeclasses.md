@@ -1,7 +1,7 @@
 ---
 sectionid: harmonyAttributeClasses
 title: "Attribute Classes"
-version: "dev"
+version: "v3"
 ---
 
 The harmony module contains the following attribute classes:

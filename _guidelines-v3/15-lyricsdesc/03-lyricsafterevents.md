@@ -1,7 +1,7 @@
 ---
 sectionid: lyricsAfterEvents
 title: "Vocally Performed Text Encoded Separately"
-version: "dev"
+version: "v3"
 ---
 
 Vocally performed text may also be encoded separately from the notes with the {% include link elem="lyrics" %} element. These are the main components:

@@ -1,7 +1,7 @@
 ---
 sectionid: cmnNotesBasic
 title: "Basic Usage of Notes in CMN"
-version: "dev"
+version: "v3"
 ---
 
 In CMN, notes are determined by three basic parameters:

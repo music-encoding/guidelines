@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkBiblList
 title: "Bibliographic Evidence"
-version: "dev"
+version: "v3"
 ---
 
   

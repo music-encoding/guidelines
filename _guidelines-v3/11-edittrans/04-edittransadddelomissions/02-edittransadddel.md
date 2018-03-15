@@ -1,7 +1,7 @@
 ---
 sectionid: edittransAddDel
 title: "Additions and Deletions"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="add" %} and {% include link elem="del" %} elements may be used to record where material has been added or deleted in the source material.

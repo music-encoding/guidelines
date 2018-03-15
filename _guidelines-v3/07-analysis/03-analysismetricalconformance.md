@@ -1,7 +1,7 @@
 ---
 sectionid: analysisMetricalConformance
 title: "Metrical Conformance"
-version: "dev"
+version: "v3"
 ---
 
 It is often helpful to record whether a given staff, layer, or measure obeys the meter established for it. The following attributes are provided for this purpose:

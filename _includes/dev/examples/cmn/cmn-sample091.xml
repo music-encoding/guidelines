@@ -1,0 +1,11 @@
+<staffDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3" xml:id="cmn_staffDef1"></staffDef>
+<!-- later in the file: -->
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" def="#cmn_staffDef1">
+   <!-- @def refers to staffDef with this identifier -->
+   <!-- staff content -->
+</staff>
+<!-- or: -->
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3">
+   <!-- @n refers to staffDef with this numeric label -->
+   <!-- staff content -->
+</staff>

@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOrnamentsTrills
 title: "Trills"
-version: "dev"
+version: "v3"
 ---
 
 Trills are a type of ornament that consists of a rapid alternation of a note with one a semitone or tone above. A trill is encoded with the {% include link elem="trill" %} element and its attributes:

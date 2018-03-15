@@ -1,7 +1,7 @@
 ---
 sectionid: analysisHarmonicIntervals
 title: "Harmonic Intervals"
-version: "dev"
+version: "v3"
 ---
 
   

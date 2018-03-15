@@ -1,7 +1,7 @@
 ---
 sectionid: figTablePhotographicAndMotionVideoFormats
 title: "Photographic and Motion Video Formats"
-version: "dev"
+version: "v3"
 ---
 
 ValueDescriptionJPEG: Joint Photographic Experts Group - This format is sponsored by CCITT and by ISO. It is ISO/IEC Draft International

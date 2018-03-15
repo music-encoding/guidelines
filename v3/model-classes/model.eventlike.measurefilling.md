@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "model.eventLike.measureFilling"
 ---
 <div class="classSpec model">

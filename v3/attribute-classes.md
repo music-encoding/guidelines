@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 title: "Attribute Classes"
-version: "dev"
+version: "v3"
 ---
 <div>
    <h3 class="widget-title">MEI Attribute Classes</h3>

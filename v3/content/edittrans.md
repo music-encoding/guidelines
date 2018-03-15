@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 title: "Editorial Markup"
-version: "dev"
+version: "v3"
 section: "/11-edittrans"
 ---
 {% include content.html version=page.version section=page.section %}

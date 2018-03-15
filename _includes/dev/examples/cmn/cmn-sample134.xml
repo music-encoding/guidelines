@@ -1,0 +1,8 @@
+<layer xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <tuplet dur="2" num="3" numbase="2">
+      <note dur="4" oct="4" pname="g"></note>
+      <note accid="s" dur="4" oct="4" pname="f"></note>
+      <note dur="4" oct="4" pname="g"></note>
+   </tuplet>
+   <note dur="2" oct="4" pname="d"></note>
+</layer>

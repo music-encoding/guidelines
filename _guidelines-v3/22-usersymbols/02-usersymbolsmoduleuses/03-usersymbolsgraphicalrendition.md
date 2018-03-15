@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsGraphicalRendition
 title: "Defining a Specific Graphical Rendition for a Semantic Element"
-version: "dev"
+version: "v3"
 ---
 
 Usersymbols can define the rendition of different elements in two ways. Some elements, for example {% include link elem="dir" %} and {% include link elem="tempo" %}, can have user symbol elements as content. In the following example, the content of {% include link elem="dir" %} is used to provide pictograms of percussion instruments.

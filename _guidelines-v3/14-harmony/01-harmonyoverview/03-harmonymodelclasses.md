@@ -1,7 +1,7 @@
 ---
 sectionid: harmonyModelClasses
 title: "Model Classes"
-version: "dev"
+version: "v3"
 ---
 
 The following model classes are enabled by the harmony module:

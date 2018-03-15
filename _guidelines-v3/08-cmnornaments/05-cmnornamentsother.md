@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOrnamentsOther
 title: "Other Ornaments"
-version: "dev"
+version: "v3"
 ---
 
 CMN ornaments that are not mordents, trills, or turns can be encoded with a generic {% include link elem="ornam" %}.

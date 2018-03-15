@@ -1,7 +1,7 @@
 ---
 sectionid: harmonyMetadataInscoreDef
 title: "Interpreted Chord Data in scoreDef"
-version: "dev"
+version: "v3"
 ---
 
 An harmonic label, such as "7", may occur many times throughout an MEI instance. Where the goal is diplomatic transcription, simply recording the uninterpreted label is sufficient. Recording the precise meaning of such a label requires storing an interpretation. But, including the interpretation at every point of occurrence of the label would swell the size of the file and complicate the markup for those users who are not interested in the interpretation. Therefore, MEI separates the encoding of harmonic labels from the encoding of the interpretation of those labels.

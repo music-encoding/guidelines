@@ -1,7 +1,7 @@
 ---
 sectionid: figTableVectorGraphicFormats
 title: "Vector Graphic Formats"
-version: "dev"
+version: "v3"
 ---
 
 ValueDescriptionCGM: Computer Graphics Metafile - This vector graphics format is specified by an ISO standard, ISO 8632:1987,

@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOrnamentsOverride
 title: "Overriding Default Resolutions"
-version: "dev"
+version: "v3"
 ---
 
 The symbols and sounded resolutions suggested for each ornament in this chapter are to be considered defaults. Nevertheless, because of the great historical and geographical variance in the notation of ornaments, the encoder is given methods to override the default resolutions.

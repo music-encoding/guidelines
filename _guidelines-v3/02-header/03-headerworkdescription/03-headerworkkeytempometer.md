@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkKeyTempoMeter
 title: "Key, Tempo, and Meter"
-version: "dev"
+version: "v3"
 ---
 
 The attributes key, tempo, and meter are often helpful for identifying a musical work when it does not have a distinctive title.

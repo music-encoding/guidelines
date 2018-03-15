@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "data.DURATION.additive"
 ---
 <div class="macroSpec">

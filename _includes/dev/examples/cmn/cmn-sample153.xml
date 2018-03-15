@@ -1,0 +1,28 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <staff n="1">
+      <!-- omitted -->
+   </staff>
+   <staff n="2">
+      <layer n="1">
+         <!-- omitted -->
+      </layer>
+      <layer n="2">
+         <chord dur="2" stem.mod="1slash">
+            <note oct="2" pname="g"></note>
+            <note oct="1" pname="b"></note>
+         </chord>
+         <halfmRpt></halfmRpt>
+      </layer>
+   </staff>
+</measure>
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <staff n="1">
+      <!-- omitted -->
+   </staff>
+   <staff n="2">
+      <layer n="2">
+         <halfmRpt></halfmRpt>
+         <halfmRpt></halfmRpt>
+      </layer>
+   </staff>
+</measure>

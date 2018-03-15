@@ -1,7 +1,7 @@
 ---
 sectionid: sharedDivisionsBody
 title: "Divisions of the Body"
-version: "dev"
+version: "v3"
 ---
 
 This section describes sub-division of the body of a musical text. Front and back matter are described in chapter {% include link id="text" %}.

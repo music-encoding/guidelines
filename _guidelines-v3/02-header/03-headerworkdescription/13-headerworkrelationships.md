@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkRelationships
 title: "Work Relationships"
-version: "dev"
+version: "v3"
 ---
 
 When the FRBR (Functional Requirements for Bibliographic Records) module is available, the following elements may be used within {% include link elem="work" %} to describe relationships between the work being described and other works or between the work and expressions of it:

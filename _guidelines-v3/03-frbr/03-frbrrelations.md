@@ -1,7 +1,7 @@
 ---
 sectionid: FRBRrelations
 title: "FRBR Relationships"
-version: "dev"
+version: "v3"
 ---
 
 FRBR defines a number of terms that describe how the basic entities relate to each other. MEI provides the following elements for this purpose.

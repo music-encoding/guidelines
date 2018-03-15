@@ -1,7 +1,7 @@
 ---
 sectionid: cmnReDef
 title: "Redefinition of Score Parameters"
-version: "dev"
+version: "v3"
 ---
 
 Sometimes it is necessary to provide the parameters of a score or a staff with new values. For example. a score may change keys, gain or lose staves, use different layout settings at any point, etc. Likewise, a staff may change its clef, gain or lose layers, or become invisible, and so on. To accommodate these circumstances, in CMN {% include link elem="staffDef" %} is allowed to occur in the following locations:

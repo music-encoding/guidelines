@@ -1,0 +1,1 @@
+Arbitrary MIDI data in hexadecimal form.

@@ -1,7 +1,7 @@
 ---
 sectionid: analysisScaleDegrees
 title: "Scale Degrees"
-version: "dev"
+version: "v3"
 ---
 
   

@@ -1,7 +1,7 @@
 ---
 sectionid: sharedBibliographicCitations
 title: "Bibliographic Citations and References"
-version: "dev"
+version: "v3"
 ---
 
 The following element is used in the encoding of bibliographic citations and references:

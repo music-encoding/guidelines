@@ -1,7 +1,7 @@
 ---
 sectionid: cmnFermata
 title: "Fermata"
-version: "dev"
+version: "v3"
 ---
 
 A very common feature of music notation from the CMN period is the so-called ‘fermata’. It is usually written as a dot above or below an arc. It may stand above or below the staff it affects. If this symbol is used, its ‘open’ side always faces the staff. A fermata indicates that the note or rest under it should be held longer than its written duration would normally require. Sometimes, a fermata occurs over a barline to indicate the end of a phrase or section.

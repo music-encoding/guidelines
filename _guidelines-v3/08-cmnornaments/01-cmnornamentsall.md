@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOrnamentsAll
 title: "Encoding Common To All Ornaments"
-version: "dev"
+version: "v3"
 ---
 
 When encoding CMN, ornaments should be encoded within a {% include link elem="measure" %}, following the {% include link elem="staff" %} elements, and connected to events on the staff via attributes. The **@startid** attribute is used to refer to the **@xml:id** of the starting note. Additionally, if the ornament involves more than one events on the staff, the **@endid** attribute can be used to anchor the ornament to a concluding event.

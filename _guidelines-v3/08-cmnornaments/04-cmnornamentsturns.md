@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOrnamentsTurns
 title: "Turns"
-version: "dev"
+version: "v3"
 ---
 
 A turn is an ornament that typically consists of four notes: the upper neighbor of the principal note, the principal note, the lower neighbor, and the principal note again.

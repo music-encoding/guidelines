@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsCurveShape
 title: "Curve Shape"
-version: "dev"
+version: "v3"
 ---
 
 If neither a **@bezier** nor **@bulge** attribute is present, the renderer determines a suitable shape. However, if **@curvedir** is present, the curve must respect the curvature direction specified there.

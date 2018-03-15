@@ -1,7 +1,7 @@
 ---
 sectionid: headerPhysicalDescription
 title: "Physical Description of the File"
-version: "dev"
+version: "v3"
 ---
 
 The third component of the fileDesc is a description of the physical qualities of the file. The {% include link elem="extent" %} element is provided for this purpose.

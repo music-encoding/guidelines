@@ -1,0 +1,1 @@
+Measurement of the horizontal dimension of an entity.

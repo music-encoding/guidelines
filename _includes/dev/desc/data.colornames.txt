@@ -1,0 +1,2 @@
+List of SVG-recognized color keyword names described at
+https://www.w3.org/TR/SVG/types.html#ColorKeywords.

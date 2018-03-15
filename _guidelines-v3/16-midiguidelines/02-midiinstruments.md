@@ -1,7 +1,7 @@
 ---
 sectionid: midiInstruments
 title: "Recording General MIDI Instrumentation"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="instrDef" %} element can be used to record MIDI instrument names or numbers using the **@midi.instrname** and **@midi.instrnum** attributes. The **@midi.instrname** attribute must contain an instrument name from the list provided by the data.MIDINAMES data type. By default, data.MIDINAMES contains General MIDI Instrument designations.

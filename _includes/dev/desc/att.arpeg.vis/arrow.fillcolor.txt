@@ -1,0 +1,1 @@
+Captures the fill color of the arrow if different from the line color.

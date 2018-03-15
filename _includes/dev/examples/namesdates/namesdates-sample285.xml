@@ -1,0 +1,10 @@
+<corpName xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" authURI="http://d-nb.info/gnd" authority="GND" dbkey="2007744-0">German Research Foundation</corpName>
+<address xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+   <addrLine>Kennedyallee 40</addrLine>
+   <addrLine>53175
+      <geogName authURI="www.getty.edu/research/tools/vocabularies/tgn" authority="TGN" dbkey="7005090">Bonn</geogName>
+   </addrLine>
+   <addrLine>
+      <geogName authURI="www.getty.edu/research/tools/vocabularies/tgn" authority="TGN" dbkey="7000084">Germany</geogName>
+   </addrLine>
+</address>

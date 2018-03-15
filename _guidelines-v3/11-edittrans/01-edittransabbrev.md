@@ -1,7 +1,7 @@
 ---
 sectionid: edittransAbbrev
 title: "Abbreviations"
-version: "dev"
+version: "v3"
 ---
 
 MEI offers methods for marking abbreviations in prose, as in the following example:

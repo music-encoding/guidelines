@@ -1,7 +1,7 @@
 ---
 sectionid: sharedMusicElement
 title: "Music Element"
-version: "dev"
+version: "v3"
 ---
 
 MEI texts may be regarded either as unitary; that is, forming an organic whole, or as composite; that is, consisting of several components which are in some important sense independent of each other. The distinction is not always entirely obvious. For example, a collection of songs might be regarded as a single item in some circumstances, or as a number of distinct items in others. In such borderline cases, the encoder must choose whether to treat the text as unitary or composite; each option may have advantages and disadvantages.

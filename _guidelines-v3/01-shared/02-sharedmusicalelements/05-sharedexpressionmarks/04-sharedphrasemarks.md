@@ -1,7 +1,7 @@
 ---
 sectionid: sharedPhraseMarks
 title: "Phrase Marks"
-version: "dev"
+version: "v3"
 ---
 
 Phrase marks are curved lines placed over or under notes to delineate short sections of a work that represent a unified melodic idea, analogous to a phrase in literature.

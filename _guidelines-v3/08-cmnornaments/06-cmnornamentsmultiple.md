@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOrnamentsMultiple
 title: "Ornaments in Combinations"
-version: "dev"
+version: "v3"
 ---
 
 Particularly in baroque keyboard music, but also in the early classical period, various combinations of ornaments can be found. Despite being written vertically above the same note, they are to be performed in sequence.

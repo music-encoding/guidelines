@@ -1,7 +1,7 @@
 ---
 sectionid: cmnTuplets
 title: "Tuplets"
-version: "dev"
+version: "v3"
 ---
 
 Tuplets indicate a localized change of meter; that is, a given duration in the regular meter is divided between a group of notes with irregular (according to the current meter) rhythmic values. The most common tuplet is a so-called ‘triplet’, in which three notes take the time normally occupied by two.

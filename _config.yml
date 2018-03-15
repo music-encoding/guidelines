@@ -18,7 +18,7 @@ github_edit_path: "blob/master"
 # Build settings
 markdown: kramdown
 
-exclude: [tools]
+exclude: [tools, dev]
 
 plugins:
   - jekyll-redirect-from
@@ -39,7 +39,7 @@ versions:
     v3: "3.0.0"
 
 collections:
-  guidelines-dev:
+  guidelines-v3:
     output: false
 
 sidebar:  

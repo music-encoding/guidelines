@@ -1,0 +1,2 @@
+Encodes the target note when its pitch differs from the pitch at which the custos
+appears.

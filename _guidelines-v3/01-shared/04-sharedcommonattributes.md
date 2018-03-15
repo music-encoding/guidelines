@@ -1,7 +1,7 @@
 ---
 sectionid: sharedCommonAttributes
 title: "Common Attributes"
-version: "dev"
+version: "v3"
 ---
 
 The following attributes, provided by the {% include link att-class="att.common" %} attribute class, are available on nearly all elements in an MEI encoding. They provide the means to identify, label, and access elements in MEI-encoded files.

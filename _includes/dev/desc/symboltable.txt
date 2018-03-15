@@ -1,0 +1,1 @@
+Contains a set of user-defined symbols.

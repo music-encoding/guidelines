@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 title: "Guidelines"
-version: "dev"
+version: "v3"
 ---
 <h1>Guidelines ({{ site.versions[page.version] }})</h1>
 

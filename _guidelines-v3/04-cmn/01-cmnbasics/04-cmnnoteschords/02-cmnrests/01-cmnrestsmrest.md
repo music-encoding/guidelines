@@ -1,7 +1,7 @@
 ---
 sectionid: cmnRestsMRest
 title: "Measure Rests"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="mRest" %} (measure rest) element is used to indicate a complete measure rest, independent from the meter of the current {% include link elem="measure" %}.

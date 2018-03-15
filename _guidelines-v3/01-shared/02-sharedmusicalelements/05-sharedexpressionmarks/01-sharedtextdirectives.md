@@ -1,7 +1,7 @@
 ---
 sectionid: sharedTextDirectives
 title: "Text Directives"
-version: "dev"
+version: "v3"
 ---
 
 All of the following elements can be considered text directives; however, MEI uses the {% include link elem="dir" %} element specifically for words, abbreviations, numbers, or symbols specifying or suggesting the manner of performance that are not encoded elsewhere using the more specific elements of {% include link elem="tempo" %} and {% include link elem="dynam" %}.

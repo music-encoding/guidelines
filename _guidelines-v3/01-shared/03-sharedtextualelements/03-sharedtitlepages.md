@@ -1,7 +1,7 @@
 ---
 sectionid: sharedTitlePages
 title: "Transcription of Titlepages"
-version: "dev"
+version: "v3"
 ---
 
 A specialized element is furnished for the capture of titlepage information.

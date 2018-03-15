@@ -1,7 +1,7 @@
 ---
 sectionid: FRBRcomponents
 title: "Component Parts in MEI"
-version: "dev"
+version: "v3"
 ---
 
 Each of the four MEI elements corresponding to FRBR entities may contain a list of constituent parts. All four entities utilize the same element:

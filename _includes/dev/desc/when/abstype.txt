@@ -1,0 +1,1 @@
+Specifies the kind of values used in the absolute attribute.

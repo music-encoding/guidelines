@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "User-defined Symbols"
 sectionid: "userSymbols"
 ---

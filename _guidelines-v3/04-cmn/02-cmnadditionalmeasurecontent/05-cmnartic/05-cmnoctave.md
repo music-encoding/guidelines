@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOctave
 title: "Octave Shift"
-version: "dev"
+version: "v3"
 ---
 
 An indication that a passage should be performed one or more octaves above or below its written pitch is represented by the {% include link elem="octave" %} element.

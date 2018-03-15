@@ -1,0 +1,1 @@
+Gives a minimum estimated value for an approximate measurement.

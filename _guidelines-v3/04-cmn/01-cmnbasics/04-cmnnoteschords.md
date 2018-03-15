@@ -1,5 +1,5 @@
 ---
 sectionid: cmnNotesChords
 title: "Notes, Chords and Rests in CMN"
-version: "dev"
+version: "v3"
 ---

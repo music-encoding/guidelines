@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkDescription
 title: "Work Description"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="workDesc" %} element is the third major subdivision of the MEI Header. It is an optional element, the purpose of which is to enable the recording of information characterizing various descriptive aspects of the abstract work.

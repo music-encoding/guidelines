@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkCast
 title: "Cast Lists"
-version: "dev"
+version: "v3"
 ---
 
 A cast list is a specialized form of list, conventionally found at the start or end of a dramatic work, usually listing all the speaking/singing and non-speaking/singing roles in the play, often with additional description (‘Cataplasma, a maker of Periwigges and Attires’) or the name of an actor or actress (‘Old Lady Squeamish. Mrs Rutter’).

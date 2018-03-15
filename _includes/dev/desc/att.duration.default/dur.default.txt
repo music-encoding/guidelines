@@ -1,0 +1,3 @@
+Contains a default duration in those situations when the first note, rest, chord,
+etc.
+in a measure does not have a duration specified.

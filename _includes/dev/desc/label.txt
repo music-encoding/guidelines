@@ -1,0 +1,3 @@
+A container for document text that identifies the feature to which it is attached.
+For a
+"tool tip" or other generated label, use the  attribute.

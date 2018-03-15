@@ -1,0 +1,30 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="6">
+   <staff n="1">
+      <layer n="1">
+         <rest dur="4" xml:id="userSymbols.r1"></rest>
+         <beam>
+            <note dur="8" oct="4" pname="c" xml:id="userSymbols.n1"></note>
+            <note dur="8" oct="4" pname="e" xml:id="userSymbols.n2"></note>
+         </beam>
+         <beam>
+            <note dur="8" oct="4" pname="g" xml:id="userSymbols.n3"></note>
+            <note dur="8" oct="4" pname="e" xml:id="userSymbols.n4"></note>
+            <note dur="8" oct="4" pname="b" xml:id="userSymbols.n5"></note>
+            <note dur="8" oct="4" pname="g" xml:id="userSymbols.n6"></note>
+         </beam>
+         <slur curvedir="above" endid="#userSymbols.n6" startid="#userSymbols.n1"></slur>
+      </layer>
+      <layer n="2">
+         <rest dur="4"></rest>
+         <note dur="2" next="#userSymbols.n9" oct="4" pname="c" stem.dir="down" xml:id="userSymbols.n7"></note>
+      </layer>
+   </staff>
+   <staff n="2">
+      <layer n="1">
+         <note dots="1" dur="2" oct="2" pname="g" xml:id="userSymbols.n8"></note>
+         <note dur="4" oct="3" pname="b" prev="#userSymbols.n7         #userSymbols.n8" xml:id="userSymbols.n9"></note>
+         <slur curvedir="above" endid="#userSymbols.n9" startid="#userSymbols.n8"></slur>
+      </layer>
+   </staff>
+   <line endid="#userSymbols.n9" rend="dotted" startid="#userSymbols.n7"></line>
+</measure>

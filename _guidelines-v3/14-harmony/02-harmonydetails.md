@@ -1,7 +1,7 @@
 ---
 sectionid: harmonyDetails
 title: "Indications of Harmony"
-version: "dev"
+version: "v3"
 ---
 
 On the most basic level, chords in the musical text can be encoded using the {% include link elem="chord" %} element:

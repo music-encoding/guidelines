@@ -1,7 +1,7 @@
 ---
 sectionid: headerIndependentHeaderDefinition
 title: "Definition and Principles for Encoders"
-version: "dev"
+version: "v3"
 ---
 
 An independent header is an MEI metadata header that can be exchanged as an independent document between libraries, archives, collections, projects, and individuals.

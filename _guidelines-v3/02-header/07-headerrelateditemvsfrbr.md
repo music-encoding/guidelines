@@ -1,7 +1,7 @@
 ---
 sectionid: headerRelatedItemVsFRBR
 title: "RelatedItem vs. FRBR"
-version: "dev"
+version: "v3"
 ---
 
  MEI offers two related concepts for capturing relations between bibliographic items. The model of {% include link elem="relatedItem" %}, as described in chapter {% include link id="sharedRelatedItemDesc" %} of these Guidelines, is derived from MODS v3.4 (see documentation [here](http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#relateditem){:.link_ref}). Its purpose in MEI is to encode bibliographic references between mostly "secondary" material, like reviews, articles, and so on. It may be used to provide cross-references between information encoded in different places of the header. 

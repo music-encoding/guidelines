@@ -1,7 +1,7 @@
 ---
 sectionid: midi.scoreDefppq
 title: "PPQ in scoreDef and staffDef"
-version: "dev"
+version: "v3"
 ---
 
 To define the MIDI resolution of a score, the **@ppq** attribute may be used on the {% include link elem="scoreDef" %} element. This value can be used to interpret the values found in the **@dur.ges** attribute on elements in the {% include link att-class="att.duration.performed" %} class.

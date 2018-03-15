@@ -1,7 +1,7 @@
 ---
 sectionid: critAppElements
 title: "General Usage"
-version: "dev"
+version: "v3"
 ---
 
 The following elements are defined in the critApp Module:

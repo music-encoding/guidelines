@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkLanguage
 title: "Language Usage"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="langUsage" %} element is used within the {% include link elem="workDesc" %} element to describe the languages, sublanguages, dialects, etc. represented within a work. It contains one or more {% include link elem="language" %} elements, each of which provides information about a single language.

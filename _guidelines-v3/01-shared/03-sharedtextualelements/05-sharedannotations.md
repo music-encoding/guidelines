@@ -1,7 +1,7 @@
 ---
 sectionid: sharedAnnotations
 title: "Annotations"
-version: "dev"
+version: "v3"
 ---
 
 Annotations are one of the most versatile features of MEI. They are provided using the {% include link elem="annot" %} element.

@@ -1,7 +1,7 @@
 ---
 sectionid: figTableImages
 title: "Images"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="graphic" %} element indicates the location of an inline graphic, illustration, or figure. As noted above, there exists a wide variety of different graphics formats, and the following list is in no way exhaustive. Moreover, inclusion of any format in this list should not be taken as indicating endorsement by the MEI of this format or any products associated with it. Some of the formats listed here are proprietary to a greater or lesser extent and cannot therefore be regarded as standards in any meaningful sense. They are, however, widely used by many different vendors. The following formats are widely used at the present time, and are likely to remain supported by more than one vendor's software:

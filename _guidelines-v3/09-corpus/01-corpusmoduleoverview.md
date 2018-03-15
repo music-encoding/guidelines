@@ -1,7 +1,7 @@
 ---
 sectionid: corpusModuleOverview
 title: "Corpus Module Overview"
-version: "dev"
+version: "v3"
 ---
 
 The meiCorpus module defines a single element:

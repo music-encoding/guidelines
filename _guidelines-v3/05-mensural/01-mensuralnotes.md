@@ -1,7 +1,7 @@
 ---
 sectionid: mensuralNotes
 title: "Note and Rest Values"
-version: "dev"
+version: "v3"
 ---
 
 When the mensural module is included, **@dur** on {% include link elem="note" %}, {% include link elem="rest" %}, and other elements can take the following values:

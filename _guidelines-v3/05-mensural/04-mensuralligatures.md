@@ -1,7 +1,7 @@
 ---
 sectionid: mensuralLigatures
 title: "Ligatures"
-version: "dev"
+version: "v3"
 ---
 
 Ligatures can be encoded using the {% include link elem="ligature" %} element. The **@form** attribute is available for specifying if the ligature is recta or obliqua.

@@ -1,7 +1,7 @@
 ---
 sectionid: neumesNotation
 title: "Neume Notation"
-version: "dev"
+version: "v3"
 ---
 
  Most neume notation is used to set music to an existing text. The syllable is the fundamental unit of structure, with the neumes themselves serving as a means of "sonifying" the text. A syllable may be expressed via one or more neumes, with the particular neume shape chosen depending on the pitch contour that is being employed and the desired interpretation. For example, two pitches in rising succession might be encoded as a "podatus" (sometimes also called a "pes"), or it might be encoded as two separate punctums, depending on whether it should be sung smoothly connected or with a slight amount of space between the notes.

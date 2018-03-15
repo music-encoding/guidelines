@@ -1,7 +1,7 @@
 ---
 sectionid: headerSeriesStatement
 title: "Series Statement"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="seriesStmt" %} element is the fifth component of the {% include link elem="fileDesc" %} element and is optional.

@@ -1,7 +1,7 @@
 ---
 sectionid: ptrRefDifference
 title: "Difference between Pointers and References"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="ptr" %} element is an empty linking element that uses only attributes to provide for movement from one place to another. Unlike the {% include link elem="ref" %} element, it cannot contain text or sub-elements to describe the referenced object. Its primary function is simply to point to another location. The next example shows targets that are page numbers; or more precisely, the targets are page break elements bearing these identifiers:

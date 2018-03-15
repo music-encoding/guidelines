@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 title: "Data Types"
-version: "dev"
+version: "v3"
 ---
 <div>
    <h3 class="widget-title">MEI Data Types and Macros</h3>

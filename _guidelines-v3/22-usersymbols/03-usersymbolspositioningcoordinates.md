@@ -1,5 +1,5 @@
 ---
 sectionid: usersymbolsPositioningCoordinates
 title: "Positioning and Coordinates"
-version: "dev"
+version: "v3"
 ---

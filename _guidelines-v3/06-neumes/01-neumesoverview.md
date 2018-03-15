@@ -1,7 +1,7 @@
 ---
 sectionid: neumesOverview
 title: "Overview of the Neumes Module"
-version: "dev"
+version: "v3"
 ---
 
 The module described in this chapter makes available the following components:

@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect_to: "dev/content"
+redirect_to: "v3/content"
 ---

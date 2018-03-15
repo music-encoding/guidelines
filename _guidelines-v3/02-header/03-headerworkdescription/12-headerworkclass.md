@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkClass
 title: "Classification"
-version: "dev"
+version: "v3"
 ---
 
 The next component of the core {% include link elem="workDesc" %} element is the {% include link elem="classification" %} element. This element is used to classify a musical text according to one or more of the following methods:

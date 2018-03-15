@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsReusableSymbols
 title: "Defining Reusable Symbols"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="symbolDef" %} element uses SVG markup or the aforementioned graphic primitives to describe a symbol. A symbol definition may also use symbols defined by other {% include link elem="symbolDef" %} elements by employing the {% include link elem="symbol" %} element.

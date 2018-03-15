@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v3"
 title: "Vocal Text"
 sectionid: "lyricsDesc"
 ---

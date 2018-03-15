@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkHistory
 title: "Work History"
-version: "dev"
+version: "v3"
 ---
 
 The following elements are provided to capture the history of a musical work:

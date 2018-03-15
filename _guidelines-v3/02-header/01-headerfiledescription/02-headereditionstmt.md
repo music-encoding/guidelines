@@ -1,7 +1,7 @@
 ---
 sectionid: headerEditionstmt
 title: "Edition Statement"
-version: "dev"
+version: "v3"
 ---
 
 The {% include link elem="editionStmt" %} element is the second component of the {% include link elem="fileDesc" %} element. It is optional but recommended when applicable.
