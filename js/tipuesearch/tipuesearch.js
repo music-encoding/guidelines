@@ -6,6 +6,10 @@ Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
 
+/* 
+ Modified version for the MEI guidelines
+ */
+
 
 (function($) {
 

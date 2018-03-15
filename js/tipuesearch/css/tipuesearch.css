@@ -11,21 +11,21 @@ http://www.tipue.com/search
 
 #tipue_search_input
 {
-  color: #333;
-  max-width: 210px;
+	color: #333;
+ 	max-width: 210px;
 	padding: 17px;
 	border: 1px solid #e3e3e3;
 	border-radius: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-  box-shadow: none; 
+	box-shadow: none; 
 	outline: 0;
 	margin: 0;
 }
 .tipue_search_icon
 {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 }
 .tipue_search_left
 {
@@ -34,14 +34,14 @@ http://www.tipue.com/search
 }
 .tipue_search_right
 {
-  float: left;
+	float: left;
 }
 
 /* search results */
 
 #tipue_search_content
 {
-  max-width: 750px;
+	max-width: 750px;
 	margin-bottom: 35px;
 }
 #tipue_search_results_count
@@ -53,12 +53,12 @@ http://www.tipue.com/search
 }
 #tipue_search_warning a
 {
-  color: #5396ea;
-  text-decoration: none;
+	color: #5396ea;
+	text-decoration: none;
 }
 #tipue_search_warning a:hover
 {
-  color: #555;  
+	color: #555;  
 }
 .tipue_search_content_title
 {   
@@ -83,9 +83,9 @@ http://www.tipue.com/search
 }
 .tipue_search_content_text
 {
-  word-wrap: break-word;
-  hyphens: auto;
-  margin-top: 5px;
+	word-wrap: break-word;
+	hyphens: auto;
+	margin-top: 5px;
 }
 .tipue_search_content_bold
 {
@@ -93,12 +93,12 @@ http://www.tipue.com/search
 
 .tipue_search_related_title
 {
-  margin: 26px 0 7px 0;
+	margin: 26px 0 7px 0;
 }
 
 #tipue_search_foot
 {
-  margin: 51px 0 21px 0;
+	margin: 51px 0 21px 0;
 }
 #tipue_search_foot_boxes
 {
@@ -116,9 +116,9 @@ http://www.tipue.com/search
 #tipue_search_foot_boxes li a
 {
 	padding: 10px 17px 11px 17px;
-  background-color: #fff;
-  border: 1px solid #e3e3e3;
-  border-radius: 1px;
+	background-color: #fff;
+	border: 1px solid #e3e3e3;
+	border-radius: 1px;
 	color: #333;
 	margin-right: 7px;
 	text-decoration: none;
@@ -127,15 +127,15 @@ http://www.tipue.com/search
 #tipue_search_foot_boxes li.current
 {
 	padding: 10px 17px 11px 17px;
-  background: #f6f6f6;
-  border: 1px solid #e3e3e3;
-  border-radius: 1px;
+	background: #f6f6f6;
+	border: 1px solid #e3e3e3;
+	border-radius: 1px;
 	color: #333;
 	margin-right: 7px;
 	text-align: center;
 }
 #tipue_search_foot_boxes li a:hover
 {
-  background: #f6f6f6;
+	background: #f6f6f6;
 }
 
