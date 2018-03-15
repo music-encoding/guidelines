@@ -8,13 +8,10 @@ The structure of the bibliographic description of a machine-readable or digital 
 
 The bibliographic description of an electronic musical text should be supplied by the mandatory {% include link elem="fileDesc" %} element:
 
-  
 {% include desc elem="fileDesc" %} 
- 
 
 The {% include link elem="fileDesc" %} element contains two mandatory and six optional elements, each of which is described in more detail below. These elements are listed below in the order in which they must occur within the {% include link elem="fileDesc" %} element.
 
-  
 {% include desc elem="titleStmt" %} 
 {% include desc elem="editionStmt" %} 
 {% include desc elem="extent" %} 
@@ -22,8 +19,7 @@ The {% include link elem="fileDesc" %} element contains two mandatory and six op
 {% include desc elem="seriesStmt" %} 
 {% include desc elem="notesStmt" %} 
 {% include desc elem="sourceDesc" %} 
- 
 
 A complete file description will resemble the following example:
+
 {% include mei example="header/header-sample019.xml" valid="false" %}
-    

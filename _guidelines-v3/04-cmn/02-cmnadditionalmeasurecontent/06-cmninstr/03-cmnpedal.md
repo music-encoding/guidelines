@@ -8,5 +8,16 @@ Music for piano also often includes indications of the use of pedals. In MEI, th
 
 The meaning of the mark is captured using the **@dir** attribute, which provides the following values:
 
-ValueDescriptiondown - depress the pedalup - release the pedalbounce - release, then immediately depress the pedal againhalf - depress the pedal half way{% include mei example="cmn/cmn-sample146.xml" valid="true" %}
-    
+{:.gloss}
+**down**: depress the pedal
+
+{:.gloss}
+**up**: release the pedal
+
+{:.gloss}
+**bounce**: release, then immediately depress the pedal again
+
+{:.gloss}
+**half**: depress the pedal half way
+
+{% include mei example="cmn/cmn-sample146.xml" valid="true" %}

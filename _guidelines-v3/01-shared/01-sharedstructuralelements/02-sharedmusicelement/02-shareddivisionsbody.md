@@ -10,15 +10,15 @@ The body of a unitary musical text may contain one or more discrete, linear segm
 
 The following element is used to identify musical subdivisions. As a member of the class att.typed, the {% include link elem="mdiv" %} element has attributes which can be used to classify it according to a two-tier hierarchy.
 
-  
 {% include desc elem="mdiv" %} 
 {% include desc atts="att.typed/type att.typed/subtype" %} 
- 
 
 To accommodate "divisions within divisions", an {% include link elem="mdiv" %} element may contain additional {% include link elem="mdiv" %} sub-elements nested to any level required. For example, the encoding of a multi-movement work, such as a symphony, frequently have the following structure:
+
 {% include mei example="shared/shared-sample004.xml" valid="true" %}
-    
+
 while dramatic works, such as Verdi's opera, *Il Trovatore*, often exhibit a more deeply-nested structure:
+
 {% include mei example="shared/shared-sample005.xml" valid="true" %}
-    
+
 Conventionally, in performance the musical structures represented by {% include link elem="mdiv" %} elements are separated by pauses; however, *attacca*, *attacca subito*, *seque*, or similar terms are sometimes used at the end of an {% include link elem="mdiv" %} to indicate that the next {% include link elem="mdiv" %} should begin immediately after the conclusion of the current one. These terms have no effect, however, on the logical segmentation of musical content using {% include link elem="mdiv" %} elements.  

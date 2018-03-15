@@ -6,9 +6,7 @@ version: "v3"
 
 The third component of the fileDesc is a description of the physical qualities of the file. The {% include link elem="extent" %} element is provided for this purpose.
 
-  
 {% include desc elem="extent" %} 
- 
 
 The {% include link elem="extent" %} element describes the approximate size of a text as stored on some carrier medium, whether digital or non-digital, specified in any convenient units.
 
@@ -27,8 +25,9 @@ Although it is equally system-dependent, some measure of the size of the compute
 - in terms of any convenient logical units (for example, words or sentences, citations, paragraphs)
 - in terms of any convenient physical units (for example, compact discs, removable hard drives, DVDs)
 The use of standard abbreviations for units of quantity is recommended where applicable, here as elsewhere (see [http://physics.nist.gov/cuu/Units/binary.html](http://physics.nist.gov/cuu/Units/binary.html){:.link_ref}).
+
 {% include mei example="header/header-sample031.xml" valid="false" %}
-    
+
 For ease of processability, the use of the **@unit** attribute is recommended, as in the following example:
+
 {% include mei example="header/header-sample032.xml" valid="true" %}
-    

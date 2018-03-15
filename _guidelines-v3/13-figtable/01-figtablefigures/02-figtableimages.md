@@ -19,4 +19,5 @@ The {% include link elem="graphic" %} element indicates the location of an inlin
 - SMIL: Synchronized Multimedia Integration Language format
 - SVG: Scalable Vector Graphics format
 - TIFF: Tagged Image File Format
+
 Brief descriptions of all the above are given below. Where possible, current addresses or other contact information are shown for the originator of each format. Many formal standards, especially those promulgated by the ISO and many related national organizations (ANSI, DIN, BSI, and many more), are available from those national organizations. Addresses may be found in any standard organizational directory for the country in question.

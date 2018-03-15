@@ -8,7 +8,6 @@ An harmonic label, such as "7", may occur many times throughout an MEI instance.
 
 The following elements enable the creation and re-use of interpreted chord data:
 
-  
 {% include desc elem="chordTable" %} 
 {% include desc elem="chordDef" %} 
 {% include desc atts="chordDef/pos" %} 
@@ -16,7 +15,6 @@ The following elements enable the creation and re-use of interpreted chord data:
 {% include desc atts="att.intervalharmonic/inth chordMember/fing att.fretlocation/fret" %} 
 {% include desc elem="barre" %} 
 {% include desc atts="att.fretlocation/fret" %} 
- 
 
 The {% include link elem="chordTable" %} element is a container for a set of chord definitions, while the {% include link elem="chordDef" %} element defines a single chord. Chord definitions may be created *a priori* or as the result of analysis of the pitch content of the music at hand, for instance, by examination of the notes occurring on the downbeat of each measure. In this way, the chord definitions serve as a record of the analysis.
 
@@ -24,12 +22,11 @@ Even though it is not required by the schema, an **@xml:id** attribute on {% inc
 
 Individual pitches of a chord are encoded using {% include link elem="chordMember" %}. The **@inth** attribute provides the means for indicating the number of half steps of the chord note above the bass note.
 
-These simple resources allow for the detailed specification and interpretation of harmonic indications found in the musical text. For example, the harmonic label A can be equated with a fully spelled-out indication of functional harmony that can be substituted for the harmonic label, say, in an aural rendition:
-{% include mei example="harmony/harmony-sample246.xml" valid="false" %}
-    
+These simple resources allow for the detailed specification and interpretation of harmonic indications found in the musical text. For example, the harmonic label A can be equated with a fully spelled-out indication of functional harmony that can be substituted for the harmonic label, say, in an aural rendition:{% include mei example="harmony/harmony-sample246.xml" valid="false" %}
+
 Alternatively, the non-bass chord tones may be indicated, not with pitch names, but with their intervallic distance above the bass note. Therefore, the example above may also be encoded:
 {% include mei example="harmony/harmony-sample247.xml" valid="true" %}
-    
+
 The preceding encoding possibilities provide the detailed information necessary to create playable chord annotations. For more generic uses, however, the encoding can be taken one step further; that is, it can be reduced to its minimum intervallic content by eliminating octave duplications and expressing all chord members, including the bass note, using intervals above the bass. Of course, the **@inth** attribute for the bass note itself should be set to 0. For example:
+
 {% include mei example="harmony/harmony-sample248.xml" valid="true" %}
-    

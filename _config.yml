@@ -31,7 +31,7 @@ menu:
           - id: dev
             url: 'dev'
           - id: v3
-            url: 'dev'
+            url: 'v3'
 
 versions:
     dev: "development version"

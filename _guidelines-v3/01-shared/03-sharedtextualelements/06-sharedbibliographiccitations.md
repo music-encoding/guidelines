@@ -6,13 +6,10 @@ version: "v3"
 
 The following element is used in the encoding of bibliographic citations and references:
 
-  
 {% include desc elem="bibl" %} 
- 
 
 The {% include link elem="bibl" %} element may contain a mix of text and more specific elements, including the following:
 
-  
 {% include desc elem="arranger" %} 
 {% include desc elem="author" %} 
 {% include desc elem="composer" %} 
@@ -41,7 +38,6 @@ The {% include link elem="bibl" %} element may contain a mix of text and more sp
 {% include desc elem="repository" %} 
 {% include desc elem="physLoc" %} 
 {% include desc elem="relatedItem" %} 
- 
 
 These elements fall into the following categories: 
 - identification of the bibliographic entity and those responsible for its intellectual content
@@ -63,5 +59,5 @@ Annotation of the bibliographic citation and the provision of other pertinent de
 
 When supplied with a **@target** attribute, {% include link elem="bibl" %} may function as a hypertext reference to an external electronic resource. In addition, other related bibliographic items may be described or referenced using the {% include link elem="relatedItem" %} element.
 {% include mei example="shared/shared-sample012.xml" valid="true" %}
-    
+
 Please consult {% include link id="sharedNamesNumbersDates" %} and {% include link id="namesDates" %} for more information about recording the names and dates frequently found in bibliographic citations.

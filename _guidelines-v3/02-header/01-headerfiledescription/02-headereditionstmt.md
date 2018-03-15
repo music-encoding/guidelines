@@ -6,16 +6,12 @@ version: "v3"
 
 The {% include link elem="editionStmt" %} element is the second component of the {% include link elem="fileDesc" %} element. It is optional but recommended when applicable.
 
-  
 {% include desc elem="editionStmt" %} 
- 
 
 It contains elements for identifying the edition and those responsible for it:
 
-  
 {% include desc elem="edition" %} 
 {% include desc elem="respStmt" %} 
- 
 
 For printed texts, the term ‘edition’ applies to the set of all the identical copies of an item produced from one master copy and issued by a particular publishing agency or a group of such agencies. A change in the identity of the distributing body or bodies does not normally constitute a change of edition, while a change in the master copy does.
 
@@ -32,6 +28,6 @@ The edition element should contain phrases describing the edition or version, in
 One or more {% include link elem="respStmt" %} elements may also be used to supply statements of responsibility for the edition in question. These may refer to individuals or corporate bodies and can indicate functions such as that of a reviser, or can name the person or body responsible for the provision of supplementary matter, of appendices, etc., in a new edition.
 
 Some examples follow:
+
 {% include mei example="header/header-sample029.xml" valid="true" %}
-    {% include mei example="header/header-sample030.xml" valid="true" %}
-    
+{% include mei example="header/header-sample030.xml" valid="true" %}

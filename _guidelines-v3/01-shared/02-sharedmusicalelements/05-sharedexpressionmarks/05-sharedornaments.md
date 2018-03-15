@@ -6,9 +6,7 @@ version: "v3"
 
 Ornaments are formulae of embellishment that can be realized by adding supplementary notes to one or more notes of the melody.
 
-  
 {% include desc elem="ornam" %} 
- 
 
 MEI provides a generic element for encoding an ornament symbol that is not a mordent, turn, or trill. For those common CMN ornaments, please refer to {% include link id="cmnOrnaments" %}.
 

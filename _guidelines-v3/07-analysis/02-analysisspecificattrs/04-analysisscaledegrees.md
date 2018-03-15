@@ -4,9 +4,7 @@ title: "Scale Degrees"
 version: "v3"
 ---
 
-  
 {% include desc atts="att.harmonicfunction/deg" %} 
- 
 
 The **@deg** attribute can be used to represent key-dependent scale-degree information for music in major or minor keys.
 
@@ -16,4 +14,3 @@ Melodic approach can be indicated by a leading caret (^) or lowercase v, represe
 
 Chromatic alteration of the scale degree can be represented using a trailing plus (+) or minus (-) signs, signifying raised or lowered scale degree, respectively. The actual amount of chromatic alteration is not indicated.
 {% include mei example="analysis/analysis-sample174.xml" valid="false" %}
-    

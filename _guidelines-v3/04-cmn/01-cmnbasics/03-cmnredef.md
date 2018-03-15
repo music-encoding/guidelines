@@ -10,8 +10,10 @@ Sometimes it is necessary to provide the parameters of a score or a staff with n
 - within the content of a {% include link elem="measure" %},
 - between measures; that is, directly within {% include link elem="section" %} and {% include link elem="ending" %} elements, and
 - between sections and endings; that is, directly within a {% include link elem="score" %} or {% include link elem="part" %} element.
+
 In addition, {% include link elem="scoreDef" %} is allowed to occur:
 
 - within sections and endings; that is, inside {% include link elem="section" %} and {% include link elem="ending" %} elements; and 
 - between sections and endings; that is, directly within a {% include link elem="score" %} or {% include link elem="part" %}.
+
 The possibility also exists to include {% include link elem="scoreDef" %} and {% include link elem="staffDef" %} in staves and layers when the mei-all schema is in use; however, this practice is not recommended for the CMN repertoire.

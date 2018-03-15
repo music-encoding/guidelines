@@ -910,23 +910,14 @@
                 </xsl:for-each>
             </xsl:when>
             <xsl:when test="@type = 'gloss'">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <xsl:for-each select="tei:label">
-                            <tr>
-                                <td><xsl:apply-templates select="node()"/></td>
-                                <td><xsl:apply-templates select="following-sibling::tei:item[1]/node()"/></td>
-                            </tr>
-                        </xsl:for-each>
-                    </tbody>
-                </table>
-                
+                <xsl:for-each select="tei:label">
+                    <xsl:text>{:.gloss}&#xa;**</xsl:text>
+                    <xsl:apply-templates select="node()"/>
+                    <xsl:text>**: </xsl:text>
+                    <xsl:apply-templates select="following-sibling::tei:item[1]/node()"/>
+                    <xsl:text>&#xa;</xsl:text>
+                    <xsl:text>&#xa;</xsl:text>
+                </xsl:for-each> 
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>

@@ -6,12 +6,10 @@ version: "v3"
 
 The following elements are provided to capture the history of a musical work:
 
-  
 {% include desc elem="creation" %} 
 {% include desc elem="history" %} 
 {% include desc elem="eventList" %} 
 {% include desc elem="event" %} 
- 
 
 The {% include link elem="creation" %} element is intended to contain a brief, machine-processable statement of the circumstances of the work's creation. Its content is limited to text and the {% include link elem="date" %} and {% include link elem="geogName" %} elements.
 
