@@ -38,10 +38,6 @@ menu:
 collections:
   guidelines-dev:
     output: false
-    
-tipue_search:
-  include:
-    collections: [guidelines-dev]
 
 sidebar:  
     - id: s1

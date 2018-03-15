@@ -10,12 +10,14 @@ var tipuesearch = {"pages": [
 {%- endif %}
 {%- capture url %}{{ site.baseurl }}/{{ doc.version }}/content/{{ target }}{%- endcapture %}
 
+{%- assign to_remove = ' xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron"' -%}
+
 {%- assign tags = doc.tags | uniq -%}
 {%- assign categories = doc.categories | uniq -%}
 {%- assign taxonomies = tags | concat: categories | uniq -%}
 {
   "title": {{ doc.title | smartify | strip_html | normalize_whitespace | jsonify }},
-  "text": {{ doc.content | strip_html | normalize_whitespace | jsonify }},
+  "text": {{ doc.content | strip_html | remove: to_remove | normalize_whitespace | jsonify }},
   "tags": {{ taxonomies | join: " " | normalize_whitespace | jsonify }},
   "url": {{ url | jsonify }},
 }{%- unless forloop.last -%},{%- endunless -%}
