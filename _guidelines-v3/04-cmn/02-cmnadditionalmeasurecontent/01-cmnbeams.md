@@ -25,16 +25,16 @@ In the music of the second half of the 20th century, it is quite common to indic
 The encoding of such a beam is accomplished using the **@rend** attribute of the beam, which allows the following values:
 
 {:.gloss}
-**acc**:  The secondary beams start in their usual position and gradually converge until they meet with the primary beam on the last note (or, the first eighth note under the beam). 
+**acc**: The secondary beams start in their usual position and gradually converge until they meet with the primary beam on the last note (or, the first eighth note under the beam). 
 
 {:.gloss}
-**rit**:  The secondary beams gradually diverge until they reach their regular distance. 
+**rit**: The secondary beams gradually diverge until they reach their regular distance. 
 
 {:.gloss}
-**mixed**:  The secondary beams diverge and converge arbitrarily.
+**mixed**: The secondary beams diverge and converge arbitrarily.
 
 {:.gloss}
-**norm**:  The beam is rendered as usual (default). 
+**norm**: The beam is rendered as usual (default). 
 
 {% include mei example="cmn/cmn-sample107.xml" valid="true" %}
 
