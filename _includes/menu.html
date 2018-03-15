@@ -13,7 +13,7 @@
             {% if forloop.first %} <ul class="menu"> {% endif %}
                 <li class="menu-item">
                     <a href="{{site.baseurl}}/{{entry.url}}{{item.url}}" class="btn btn-link text-left menu-link">
-                        {{item.label}}
+                        {{site.versions[item.id]}}
                     </a>
                 </li>
                 {% if forloop.last %} </ul> {% endif %}

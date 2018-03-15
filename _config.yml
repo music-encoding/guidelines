@@ -29,11 +29,14 @@ menu:
       url: ''
       submenu:
           - id: dev
-            label: 'Development version'
             url: 'dev'
           - id: v3
-            label: 'Version 3.0.0'
             url: 'dev'
+
+versions:
+    dev: "development version"
+    current: "v3"
+    v3: "3.0.0"
 
 collections:
   guidelines-dev:
