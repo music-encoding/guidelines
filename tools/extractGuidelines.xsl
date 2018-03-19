@@ -46,7 +46,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:param name="image.prefix" as="xs:string">
-        <xsl:value-of select="'{{ site.baseurl }}/'"/>
+        <xsl:value-of select="'{{ site.baseurl }}/images/{{ page.version }}/'"/>
     </xsl:param>
     
     <xsl:param name="imprint.date" select="substring(string(current-date()),1,4)" as="xs:string"/>

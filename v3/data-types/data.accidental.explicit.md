@@ -201,7 +201,7 @@ title: "data.ACCIDENTAL.EXPLICIT"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>
-               <img src="{{ site.baseurl }}/ExampleImages/accid-20100510.png" class="graphic">
+               <img src="{{ site.baseurl }}/images/{{ page.version }}/ExampleImages/accid-20100510.png" class="graphic">
                
             </p>
          </td>
