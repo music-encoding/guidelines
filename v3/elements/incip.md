@@ -253,10 +253,10 @@ title: "incip"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incipText.html">incipText</a> element may be used to capture a text incipit, while
+            <p>The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/inciptext.html">incipText</a> element may be used to capture a text incipit, while
                <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/score.html">score</a> is available to provide an MEI-encoded musical incipit.
                Images of an incipit may be referenced using the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a> element. An
-               incipit encoded in a text format other than MEI may be placed in the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incipCode.html">incipCode</a> element.
+               incipit encoded in a text format other than MEI may be placed in the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incipcode.html">incipCode</a> element.
             </p>
          </td>
       </tr>

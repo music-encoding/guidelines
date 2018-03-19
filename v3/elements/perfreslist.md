@@ -235,7 +235,7 @@ title: "perfResList"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The function of instrumentalists or vocalists is represented by the choice of <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfRes.html">perfRes</a> and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfResList.html">perfResList</a> child elements.
+            <p>The function of instrumentalists or vocalists is represented by the choice of <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfres.html">perfRes</a> and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfreslist.html">perfResList</a> child elements.
                Arrangements are coded for the medium of the work being described, not for the original
                medium.
             </p>

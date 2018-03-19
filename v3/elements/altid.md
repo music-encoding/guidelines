@@ -153,7 +153,7 @@ title: "altId"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>One or the other of <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/altId.html">altId</a> or the <span class="att">id</span> attribute on <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a> is required when applicable.
+            <p>One or the other of <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/altid.html">altId</a> or the <span class="att">id</span> attribute on <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a> is required when applicable.
             </p>
          </td>
       </tr>

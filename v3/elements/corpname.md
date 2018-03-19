@@ -336,7 +336,7 @@ title: "corpName"
             <p>Examples of corporate entities include names of associations, institutions, business
                firms, non-profit enterprises, governments, government agencies, projects, programs,
                religious bodies, churches, conferences, athletic contests, exhibitions, expeditions,
-               fairs, and ships. Usually, secondary name parts are encoded in <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corpName.html">corpName</a> sub-elements. The name of the list from which a controlled value is taken
+               fairs, and ships. Usually, secondary name parts are encoded in <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corpname.html">corpName</a> sub-elements. The name of the list from which a controlled value is taken
                may be recorded using the <span class="att">authority</span> attribute.This element is modelled on an element in the Encoded Archival Description
                (EAD)
                standard.

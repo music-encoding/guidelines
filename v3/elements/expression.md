@@ -278,7 +278,7 @@ title: "expression"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfDuration.html">perfDuration</a> element captures the <em class="mentioned">intended
+            <p>The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfduration.html">perfDuration</a> element captures the <em class="mentioned">intended
                   duration</em> of the expression, while <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extent.html">extent</a> records scope of
                the expression in other terms, such as number of pages, measures, etc.
             </p>

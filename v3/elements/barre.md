@@ -128,7 +128,7 @@ title: "barre"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The <span class="att">startid</span> and <span class="att">endid</span> attributes are used to indicate the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a> elements on which the barre starts and finishes
+            <p>The <span class="att">startid</span> and <span class="att">endid</span> attributes are used to indicate the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordmember.html">chordMember</a> elements on which the barre starts and finishes
                respectively. The fret at which the barre should be created is recorded by the
                <span class="att">fret</span> attribute.
             </p>

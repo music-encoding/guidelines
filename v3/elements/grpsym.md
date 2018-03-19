@@ -321,7 +321,7 @@ title: "grpSym"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>This element provides an alternative to the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffGrp.html">staffGrp</a> element's
+            <p>This element provides an alternative to the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffgrp.html">staffGrp</a> element's
                <span class="att">symbol</span> attribute. It may be used when exact placement or editorial details
                for the grouping symbol must be recorded.
             </p>

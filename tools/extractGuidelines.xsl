@@ -930,7 +930,7 @@
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
         <xsl:choose>
             <xsl:when test="$text = $elements/@ident">
-                <a class="link_odd_elementSpec" href="{$version}/elements/{$text}.html"><xsl:value-of select="$text"/></a>
+                <a class="link_odd_elementSpec" href="{$version}/elements/{lower-case($text)}.html"><xsl:value-of select="$text"/></a>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:message select="'WARNING: Unable to retrieve definition of element ' || $text || '. No link created. Please check spelling…'"/>

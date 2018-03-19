@@ -286,7 +286,7 @@ title: "beam"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>For beams that cross the bar line, use the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/beamSpan.html">beamSpan</a> element.
+            <p>For beams that cross the bar line, use the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/beamspan.html">beamSpan</a> element.
                Secondary beams may be broken explicitly using the <span class="att">breaksec</span> attribute on the
                notes or chords under the beam. Automated beaming, as opposed to explicitly marked
                beams,

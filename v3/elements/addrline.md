@@ -164,7 +164,7 @@ title: "addrLine"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>
-               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/addrLine.html">addrLine</a> may be repeated as many times as necessary to enter all
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/addrline.html">addrLine</a> may be repeated as many times as necessary to enter all
                lines of an address.This element is modelled on an element in the Text Encoding Initiative
                (TEI) and Encoded
                Archival Description (EAD) standards.

@@ -221,13 +221,13 @@ title: "eventList"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a> contains <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a> elements that
+            <p>An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a> contains <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a> elements that
                capture a brief description of the associated event, including dates and locations
                where
-               the event took place. An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a> describes events associated with
-               a work when it appears in the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a> element or events associated
+               the event took place. An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a> describes events associated with
+               a work when it appears in the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workdesc.html">workDesc</a> element or events associated
                with the custodial history of a given copy of a source for the encoding when it appears
-               within the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html">relatedItem</a> elements. The
+               within the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relateditem.html">relatedItem</a> elements. The
                <span class="att">type</span> attribute may be used to distinguish between event lists with different
                functions, such as a list of events in the compositional process and a list of performance
                dates.

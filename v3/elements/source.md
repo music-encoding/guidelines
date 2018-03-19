@@ -286,7 +286,7 @@ title: "source"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>Multiple <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physDesc.html">physDesc</a> sub-elements may be used to describe the
+            <p>Multiple <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a> sub-elements may be used to describe the
                physically separate parts of a single source. The <span class="att">data</span> attribute may be used to
                reference one or more features that occur in this particular source. A URI referencing
                a

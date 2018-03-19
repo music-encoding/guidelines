@@ -179,7 +179,7 @@ title: "physMedium"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>All materials may be described in a single <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physMedium.html">physMedium</a> element or
+            <p>All materials may be described in a single <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physmedium.html">physMedium</a> element or
                multiple elements may be used, one for each medium.This element is modelled on an
                element in the Encoded Archival Description (EAD)
                standard.

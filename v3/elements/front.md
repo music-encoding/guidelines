@@ -170,7 +170,7 @@ title: "front"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>
-               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlePage.html">titlePage</a> may be used to transcribe the item's title page. Other
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepage.html">titlePage</a> may be used to transcribe the item's title page. Other
                front matter structures, such as a preface, dedication, or table of contents, may
                be
                encoded as textual divisions; that is, as <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> elements, with an

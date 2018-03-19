@@ -313,7 +313,7 @@ title: "ending"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a> element is allowed as a sub-element so that an ending
+            <p>The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a> element is allowed as a sub-element so that an ending
                may have its own meta-data without the overhead of child <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a>
                elements. <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> sub-elements are not allowed within ending in order to
                avoid collisions with the brackets that are usually displayed over endings. Endings

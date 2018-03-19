@@ -273,9 +273,9 @@ title: "layer"
          <td class="wovenodd-col2">
             <p>The term 'layer' is used instead of 'voice' in order to avoid confusion between 'voice'
                and 'voice leading' and 'voicing'. The <span class="att">def</span> attribute may be used to create a
-               connection with a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> element where logical and visual
+               connection with a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerdef.html">layerDef</a> element where logical and visual
                information about the layer is recorded. Alternatively, the <span class="att">n</span> attribute may be
-               used as a reference to a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerDef.html">layerDef</a> element with the same value in its
+               used as a reference to a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerdef.html">layerDef</a> element with the same value in its
                <span class="att">n</span> attribute. If neither <span class="att">def</span> nor <span class="att">n</span> attributes are
                present, then encoding order of the layers is presumed to match the encoding order
                of the

@@ -318,7 +318,7 @@ title: "barLine"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>This element is provided for repertoires, such as mensural notation, that lack measures.
-               Because the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/barLine.html">barLine</a> element's attributes, from which the logical and
+               Because the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/barline.html">barLine</a> element's attributes, from which the logical and
                visual characteristics of the bar line can be discerned, largely duplicate those of
                measure, the use of barLine is not necessary within <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a> elements
                in CMN.

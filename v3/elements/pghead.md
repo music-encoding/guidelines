@@ -214,7 +214,7 @@ title: "pgHead"
                printed music. It may also be used for similarly formatted material in manuscripts.
                When
                used within <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a>, it records a temporary suspension of the pattern of
-               page headers established by the use of <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgHead.html">pgHead</a> within a previous <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoreDef.html">scoreDef</a>. Auto-generated page numbers may be indicated with a
+               page headers established by the use of <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pghead.html">pgHead</a> within a previous <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a>. Auto-generated page numbers may be indicated with a
                processing instruction. The pgHead, pgHead2, pgFoot, and pgFoot2 elements should <span class="hi">*not*</span> be used to encode textual notes/annotations.
             </p>
          </td>

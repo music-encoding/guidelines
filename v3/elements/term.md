@@ -193,7 +193,7 @@ title: "term"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>The <span class="att">classcode</span> attribute may be used to link the term to a terminological
-               source given in a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classCode.html">classCode</a> element. The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/term.html">term</a>
+               source given in a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classcode.html">classCode</a> element. The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/term.html">term</a>
                element may include other <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/term.html">term</a> elements in order to allow the
                creation of coordinated terms; i.e., terms created from a combination of other,
                independent terms.This element is modelled on an element in the Text Encoding Initiative

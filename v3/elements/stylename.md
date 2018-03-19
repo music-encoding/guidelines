@@ -334,7 +334,7 @@ title: "styleName"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>Do not confuse this element with the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/periodName.html">periodName</a> element. The name
+            <p>Do not confuse this element with the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/periodname.html">periodName</a> element. The name
                of the list from which a controlled value is taken may be recorded using the
                <span class="att">authority</span> attribute.
             </p>

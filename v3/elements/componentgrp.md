@@ -146,7 +146,7 @@ title: "componentGrp"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>The child elements of this element are treated as parts of the bibliographic entity
-               containing the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentGrp.html">componentGrp</a>. Although this is an implicit way of
+               containing the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentgrp.html">componentGrp</a>. Although this is an implicit way of
                expressing FRBR's hasPart / isPartOf-relationships, it avoids this terminology in
                order to
                prevent confusion with musical terminology. All children of a component must be the

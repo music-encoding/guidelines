@@ -533,7 +533,7 @@ title: "cpMark"
                other indications intended to result in filling gaps in the score with material written
                elsewhere. It is recommended to capture the position of the indication itself with
                the
-               attributes @tstamp and @staff. The area to be filled should contain <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/space.html">space</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mSpace.html">mSpace</a> elements. The material to be used to fill
+               attributes @tstamp and @staff. The area to be filled should contain <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/space.html">space</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mspace.html">mSpace</a> elements. The material to be used to fill
                the gap can be identified by the attributes @origin.tstamp, @origin.tstamp2,
                @origin.staff, and @origin.layer. If @origin.tstamp2 is not provided, a duration similar
                to that of the local omission (as encoded in the combination of @tstamp and @tstamp2)

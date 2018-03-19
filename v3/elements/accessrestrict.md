@@ -158,7 +158,7 @@ title: "accessRestrict"
          <td class="wovenodd-col2">
             <p>May indicate the nature of restrictions or the lack of restrictions. Do not confuse
                this
-               element with <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/useRestrict.html">useRestrict</a> (usage restrictions), which captures
+               element with <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/userestrict.html">useRestrict</a> (usage restrictions), which captures
                information about limitations on the <span class="hi">use</span> of material, such as those
                afforded by copyright.This element is modelled on an element in the Encoded Archival
                Description (EAD)

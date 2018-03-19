@@ -375,7 +375,7 @@ title: "symbol"
                element using the <span class="att">startid</span> attribute. Attributes in the att.visualoffset class
                may be used to record horizontal, vertical, or time offsets from the absolute coordinates
                or from the location of the referenced element. The <span class="att">ref</span> attribute must contain
-               the id of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html">symbolDef</a> element. The <span class="att">scale</span> attribute
+               the id of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element. The <span class="att">scale</span> attribute
                indicates that the printed output must be scaled by the specified percentage.
             </p>
          </td>

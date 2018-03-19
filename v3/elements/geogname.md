@@ -334,7 +334,7 @@ title: "geogName"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>Examples include Black Forest; Baltimore, Maryland; and Quartier Latin, Paris. Geographic
-               name parts can be encoded using <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/geogName.html">geogName</a> sub-elements. For greater
+               name parts can be encoded using <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/geogname.html">geogName</a> sub-elements. For greater
                specificity, however, use <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/district.html">district</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/settlement.html">settlement</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/region.html">region</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/country.html">country</a>, and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bloc.html">bloc</a> sub-elements. The name of the list from which a controlled value
                is taken, such as the Thesaurus of Geographic Names (TGN), may be recorded using the
                <span class="att">authority</span> attribute.This element is modelled on an element in the Encoded Archival Description

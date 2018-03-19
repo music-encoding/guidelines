@@ -338,7 +338,7 @@ title: "persName"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>Parts of a personal name may be captured using <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persName.html">persName</a>
+            <p>Parts of a personal name may be captured using <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persname.html">persName</a>
                sub-elements. For greater specificity, however, use foreName, famName, genName, addName,
                genName, nameLink, and roleName elements. The name of the list from which a controlled
                value for persName is taken may be recorded using the <span class="att">authority</span> attribute.This element is modelled on an element in the Encoded Archival Description

@@ -124,7 +124,7 @@ title: "chordDef"
          <td class="wovenodd-col2">
             <p>An <span class="att">xml:id</span> attribute, while not required by the schema, is needed so that <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a> elements can reference a particular chord definition. The
                <span class="att">pos</span> (position) attribute is provided in order to create displayable chord
-               tablature grids. <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordMember.html">chordMember</a> sub-elements record the individual
+               tablature grids. <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordmember.html">chordMember</a> sub-elements record the individual
                pitches of the chord. <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/barre.html">barre</a> sub-elements may be used when a single
                finger is used to stop multiple strings.
             </p>

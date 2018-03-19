@@ -190,7 +190,7 @@ title: "soundChan"
                of the recording medium, i.e., 2-track monophonic recordings. In this example, the
                soundChan element should record the fact that there is a single output channel, while
                the
-               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/trackConfig.html">trackConfig</a> element should capture the existence of two physical
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/trackconfig.html">trackConfig</a> element should capture the existence of two physical
                tracks. This element is analogous to MARC field 344 subfield g.
             </p>
          </td>

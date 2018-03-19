@@ -269,8 +269,8 @@ title: "staff"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>The <span class="att">def</span> attribute may be used to create a connection with a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a> element where logical and visual information about the staff is recorded.
-               Alternatively, the <span class="att">n</span> attribute may be used as a reference to a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffDef.html">staffDef</a> element with the same value in its <span class="att">n</span> attribute. If neither
+            <p>The <span class="att">def</span> attribute may be used to create a connection with a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a> element where logical and visual information about the staff is recorded.
+               Alternatively, the <span class="att">n</span> attribute may be used as a reference to a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a> element with the same value in its <span class="att">n</span> attribute. If neither
                <span class="att">def</span> nor <span class="att">n</span> attributes are present, then the encoding order of the
                staves is presumed to match the encoding order of the staff defintions.
             </p>
