@@ -9,11 +9,11 @@
   {% if doc.url contains include.section and levels.size > 1 and levels.size < 4 %}
 
     <a class="level-{{levels.size - 1}}" href="{{ site.baseurl}}{{ doc.sectionid | prepend: '#' | prepend: page.url }}">
-        {% for level in levels %}
-        {% assign l = level | split:'-' | first | slice:0,1 %}
-        {% if l == "0" %}{% assign l = level | split:'-' | first | slice:1,2 %}
-        {% else %}{% assign l = level | split:'-' | first | slice:0,2 %}{% endif %}
-        {{ l }}.{% endfor %} {{ doc.title }}
+        {%- for level in levels -%}
+        {%- assign l = level | split:'-' | first | slice:0,1 -%}
+        {%- if l == "0" %}{% assign l = level | split:'-' | first | slice:1,2 -%}
+        {%- else %}{% assign l = level | split:'-' | first | slice:0,2 %}{% endif -%}
+        {{ l }}.{%- endfor -%}{{ " " }}{{ doc.title }}
     </a>
   {% endif %}
 
