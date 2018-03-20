@@ -14,6 +14,6 @@ The **@bulge** attribute allows specification of the curve shape by a number of 
 
 The interpolation points are calculated as follows: If **@bulge** provides *n* distance values, the connection line is divided into *n+1* subsegments of equal length. The interpolation points are found by drawing a perpendicular line of the respective length at each subsegment joint. Positive distance values are drawn to the left of the connection line (left when traveling from start to end), negative ones to the right.
 
-{% include figure img="Images/modules/usersymbols/bulge.png" caption="Rendering a bulge attribute with value \"-2 1\"" %}
+{% include figure img="modules/usersymbols/bulge.png" caption="Rendering a bulge attribute with value \"-2 1\"" %}
 
 The interpolation algorithm used by the rendering application is implementation dependent.

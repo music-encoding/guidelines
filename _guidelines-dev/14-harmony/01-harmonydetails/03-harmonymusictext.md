@@ -13,12 +13,12 @@ The {% include link elem="harm" %} element can be used to capture chord labels t
 
 or labels that are chord tablature grids:
 
-{% include figure img="Images/modules/harmony/A7_5th.gif" caption="Chord grid without label" %}
+{% include figure img="modules/harmony/A7_5th.gif" caption="Chord grid without label" %}
 {% include mei example="harmony/harmony-sample264.xml" valid="" %}
 
 or labels that mix these styles:
 
-{% include figure img="Images/modules/harmony/A7_1st.gif" caption="Chord grid with label" %}
+{% include figure img="modules/harmony/A7_1st.gif" caption="Chord grid with label" %}
 {% include mei example="harmony/harmony-sample265.xml" valid="" %}
 
 The {% include link elem="harm" %} element must define a point of attachment using one of the following attributes: **@startid**, **@tstamp**, **@tstamp.ges** or **@tstamp.real**. The most commonly-used of these are **@startid** and **@tstamp**.

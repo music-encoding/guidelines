@@ -8,7 +8,7 @@ Most neume notation is used to set music to an existing text. The syllable is th
 
 There are a limited number of possiblities for the most popular musical contours. In general, groups of two to four notes are given unique names, assigned depending on their contour. A "clivis" would be two joined descending notes, while a "podatus" is two joined ascending notes. Table 1 shows most of the named neume shapes. Neume groups of more than four notes are simply called "compound" neumes.
 
-{% include figure img="Images/modules/neumes/parrish_neumes.png" caption="Table 1. Variant neume notation. (From Parrish, \"The notation of medieval music,\" 6)" %}
+{% include figure img="modules/neumes/parrish_neumes.png" caption="Table 1. Variant neume notation. (From Parrish, \"The notation of medieval music,\" 6)" %}
 
 As shown in Table 1, it is possible to have many different styles of neume shapes, derived from local practices of regional groups. In general, these styles are all interpreted in a similar fashion; however, there is evidence that the performance practice of some styles of neume notation differed with regard to rhythm and cadence. This version of the MEI neumes module does not attempt to encode any rhythmic information present in the neume notation. While it may be possible to encode rhythmic values on {% include link elem="note" %} elements, this practice is highly discouraged and, if present, should be interpreted as a modern transcription not present in the original sources.
 

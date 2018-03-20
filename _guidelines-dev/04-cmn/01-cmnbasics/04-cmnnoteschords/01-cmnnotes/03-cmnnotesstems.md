@@ -34,7 +34,7 @@ The **@stem.mod** attibute is normally used in accordance with practices describ
 
 The CMN module makes the {% include link att="att.stems.cmn" %} attribute class available, which adds the optional **@stem.with** attribute to {% include link elem="note" %} and {% include link elem="chord" %}. The attribute **@stem.with** allows for the indication of a stem that joins notes on adjacent staves.
 
-{% include figure img="Images/modules/cmn/xchord-300.png" caption="Cross-staff chord" %}
+{% include figure img="modules/cmn/xchord-300.png" caption="Cross-staff chord" %}
 
 The following code demonstrates one method of encoding the first chord in the last measure in the image above. The **@stem.with** attribute must occur on all the notes or chords attached to the cross-staff stem.
 

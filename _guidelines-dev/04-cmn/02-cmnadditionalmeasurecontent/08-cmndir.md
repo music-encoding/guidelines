@@ -16,7 +16,7 @@ Rehearsal marks are another specialized kind of directive. Consisting of letters
 
 The following detail from an edition of Hector Berlioz' *Symphonie Fantastique* shows a typical example:
 
-{% include figure img="Images/modules/cmn/reh_berlioz.png" caption="Rehearsal mark" %}
+{% include figure img="modules/cmn/reh_berlioz.png" caption="Rehearsal mark" %}
 {% include mei example="cmn/cmn-sample160.xml" valid="" %}
 
 The following example demonstrates how rehearsal marks often apply to more than one staff. In this instance, the rehearsal mark is placed above staff 1 and below staves 7 and 11.

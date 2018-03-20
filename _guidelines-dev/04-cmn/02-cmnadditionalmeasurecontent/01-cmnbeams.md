@@ -19,7 +19,7 @@ Whereas in music notation every note value shorter than an eighth adds another b
 
 From the 19th century onwards, it became quite common to break secondary beams to increase readability of longer beamed passages. The optional **@breaksec** attribute on {% include link elem="note" %}s and {% include link elem="chord" %}s under the beam may be used to encode the breaking of secondary beams *after* the note or chord bearing the attribute. The value of **@breaksec** indicates the number of continuous beams. For example:
 
-{% include figure img="Images/ExampleImages/beam-a-20100510.png" caption="Primary and secondary beams" %}
+{% include figure img="ExampleImages/beam-a-20100510.png" caption="Primary and secondary beams" %}
 {% include mei example="cmn/cmn-sample108.xml" valid="" %}
 
 In the music of the second half of the 20th century, it is quite common to indicate acceleration or deceleration using converging beams as in the image below:
@@ -42,9 +42,9 @@ The encoding of such a beam is accomplished using the **@rend** attribute of the
 
 The duration of notes, rests, or chords under a beam which carries the **@rend** attribute with a value of 'acc', 'rit', or 'mixed' must be treated specially. The first and last contained elements must specify a duration which matches the number of beams displayed at the point of these events. In the case of a 'mixed' beam, each event at the point of change in the number of secondary beams must carry a **@dur** attribute. Beams like this may be encoded thusly:
 
-{% include figure img="Images/modules/cmn/beamAcc-Rit.png" caption="Accelerando beams" %}
+{% include figure img="modules/cmn/beamAcc-Rit.png" caption="Accelerando beams" %}
 {% include mei example="cmn/cmn-sample110.xml" valid="" %}
-{% include figure img="Images/ExampleImages/beam-c-20100510.png" caption="Cross-staff beam" %}
+{% include figure img="ExampleImages/beam-c-20100510.png" caption="Cross-staff beam" %}
 
 Beams that connect events on different staves may be encoded in two different ways. First, a single-layer approach may be taken that treats the events lying under the beam as logically belonging to the same layer as the initial event but visually ‘displaced’ to an adjacent staff. In the example below, the last two notes under the beam carry a **@staff** attribute value that contradicts the ‘normal’ staff placement indicated by the **@n** attribute on their ancestor {% include link elem="staff" %}.
 

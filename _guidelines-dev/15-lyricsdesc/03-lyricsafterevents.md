@@ -13,7 +13,7 @@ Since this element is separated from the encoding of the notes, it must be assoc
 
 The following example from Carl Maria von Weber's *Der Freischütz* illustrates this encoding method:
 
-{% include figure img="Images/modules/lyrics/ex_lyric.png" caption="Weber, Der Freischütz" %}
+{% include figure img="modules/lyrics/ex_lyric.png" caption="Weber, Der Freischütz" %}
 {% include mei example="lyricsDesc/lyricsDesc-sample284.xml" valid="feasible" %}
 
 In this encoding style, a {% include link elem="syl" %} element with its **@con** attribute set to 't' and the following syllable are presumed to be associated with a single note. In the following example, the first two syllables occur on the first note and the third syllable occurs on the second note.
