@@ -2992,7 +2992,7 @@
   Collections Services. Washington, D.C.: Library of Congress, Cataloging Distribution
   Service, 1993- .</classCode>
 </egXML>
-      <p>The <att>classcode</att> attribute may be used on each term element to make reference, by
+      <p>The <att>term</att> attribute may be used on each term element to make reference, by
         means of an identifier, to the classification scheme from which it is drawn.</p>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
 <classification>
@@ -3005,7 +3005,7 @@
   </termList>
 </classification>
 </egXML>
-      <p>Alternatively, <att>classcode</att> may be used on <gi scheme="MEI">termList</gi> when all
+      <p>Alternatively, <att>term</att> may be used on <gi scheme="MEI">termList</gi> when all
         the contained terms come from the same source.</p>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
 <classification>
@@ -3911,7 +3911,7 @@
       <p>
         <specList>
           <specDesc atts="meter.count meter.unit" key="att.meterSigDefault.log"></specDesc>
-          <specDesc atts="meter.sym" key="att.meterSigDefault.vis"></specDesc>
+          <specDesc atts="meter.sym" key="att.meterSigDefault.log"></specDesc>
           <specDesc atts="key.pname key.accid key.mode key.sig" key="att.keySigDefault.log"></specDesc>
         </specList>
       </p>
@@ -6510,10 +6510,10 @@
       relations and provide the opportunity to record data useful for common analytical tasks. In
       the context of a formal analysis, for instance, the attributes presented here can be useful in
       the capture information about the structure of a musical work.</p>
-    <p>The analysis module offers several attributes in the <ident type="class">att.common.anl</ident> class for the description of basic relationships:</p>
+    <p>The analysis module offers several attributes in the <ident type="class">att.linking</ident> class for the description of basic relationships:</p>
     <p>
       <specList>
-        <specDesc atts="copyof corresp next prev sameas synch" key="att.common.anl"></specDesc>
+        <specDesc atts="copyof corresp next prev sameas synch" key="att.linking"></specDesc>
       </specList>
     </p>
     <p>The <ident type="class">att.alignment</ident> class also contains an attribute for describing
@@ -10314,7 +10314,7 @@
   <div type="div2" xml:id="midi.scoreDefppq">
     <head>PPQ in scoreDef and staffDef</head>
     <p>To define the MIDI resolution of a score, the <att>ppq</att> attribute may be used on the <gi scheme="MEI">scoreDef</gi> element. This value can be used to interpret the values found in
-      the <att>dur.ges</att> attribute on elements in the <ident type="class">att.duration.performed</ident> class.</p>
+      the <att>dur.ges</att> attribute on elements in the <ident type="class">att.duration.gestural</ident> class.</p>
     <p>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" valid="feasible" xml:space="preserve">
 <scoreDef key.sig="1f" meter.count="4" meter.sym="common" meter.unit="4" ppq="48">
