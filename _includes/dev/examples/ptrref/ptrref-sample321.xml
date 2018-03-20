@@ -1,4 +1,4 @@
-<repository xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<repository>
    <ref target="http://path.to.target/repo1.xml">
       <title>...</title>
       <address>

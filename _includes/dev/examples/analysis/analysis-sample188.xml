@@ -1,4 +1,4 @@
-<chord xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chord xmlns:xi="http://www.w3.org/2001/XInclude">
    <note dur="2" oct="5" pclass="2" pname="d"></note>
    <note accid="ss" dur="4" pclass="2" pname="c"></note>
    <note accid="ff" dur="1" pclass="2" pname="e"></note>

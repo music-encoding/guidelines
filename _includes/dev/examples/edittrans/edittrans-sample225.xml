@@ -1,4 +1,4 @@
-<cpMark xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" origin.tstamp="-6m+1" staff="8" tstamp="1" tstamp2="5m+4">a. b. c. d. e. f. g.</cpMark>
-<cpMark xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" origin.tstamp="-6m+1" staff="9" tstamp="1" tstamp2="5m+4">a. b. c. d. e. f. g.</cpMark>
-<cpMark xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" origin.staff="8" staff="9" tstamp="1.5" tstamp2="1m+3.5">unis:</cpMark>
-<cpMark xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" dis="8" dis.place="below" origin.staff="8" staff="9" tstamp="2" tstamp2="2m+3.5">in 8va</cpMark>
+<cpMark xmlns:xi="http://www.w3.org/2001/XInclude" origin.tstamp="-6m+1" staff="8" tstamp="1" tstamp2="5m+4">a. b. c. d. e. f. g.</cpMark>
+<cpMark xmlns:xi="http://www.w3.org/2001/XInclude" origin.tstamp="-6m+1" staff="9" tstamp="1" tstamp2="5m+4">a. b. c. d. e. f. g.</cpMark>
+<cpMark xmlns:xi="http://www.w3.org/2001/XInclude" origin.staff="8" staff="9" tstamp="1.5" tstamp2="1m+3.5">unis:</cpMark>
+<cpMark xmlns:xi="http://www.w3.org/2001/XInclude" dis="8" dis.place="below" origin.staff="8" staff="9" tstamp="2" tstamp2="2m+3.5">in 8va</cpMark>

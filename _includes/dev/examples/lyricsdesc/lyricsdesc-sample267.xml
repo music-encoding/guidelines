@@ -1,4 +1,4 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure>
    <staff n="1">
       <layer n="1">
          <note dots="1" dur="4" oct="3" pname="a">
@@ -16,7 +16,7 @@
       </verse>
    </lyrics>
 </measure>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure>
    <staff n="1">
       <layer n="1">
          <note dots="1" dur="2" oct="3" pname="g" tie="i"></note>
@@ -28,7 +28,7 @@
       </verse>
    </lyrics>
 </measure>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure>
    <staff n="1">
       <layer n="1">
          <note dots="1" dur="2" oct="3" pname="g" tie="t"></note>

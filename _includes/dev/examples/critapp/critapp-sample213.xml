@@ -1,5 +1,5 @@
 
-<!-- In the document content: --><app xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- In the document content: --><app xmlns:xi="http://www.w3.org/2001/XInclude">
    <rdg source="#critApp.source1">
       <!-- reading of source 1 -->
    </rdg>

@@ -1,4 +1,4 @@
-<performance xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<performance>
    <recording begin="00:00:00.00" betype="time" end="00:03:06.54">
       <!-- a section of interest -->
       <clip begin="00:00:00.00" betype="time" end="00:00:41.00"></clip>

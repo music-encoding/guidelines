@@ -1,4 +1,4 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<measure xmlns:xi="http://www.w3.org/2001/XInclude">
    <!-- staves omitted -->
    <pedal dir="down" staff="2" tstamp="1"></pedal>
 </measure>

@@ -1,1 +1,1 @@
-<staffDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G"></staffDef>
+<staffDef xmlns:xi="http://www.w3.org/2001/XInclude" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G"></staffDef>

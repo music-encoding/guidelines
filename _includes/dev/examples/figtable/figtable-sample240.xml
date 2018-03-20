@@ -1,4 +1,4 @@
-<fig xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<fig>
    <caption>Grace notes</caption>
    <graphic target="../samples/snippets/mei2012-30shortexamples/beam-grace/grace-300.png"></graphic>
 </fig>

@@ -1,4 +1,4 @@
-<choice xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<choice xmlns:xi="http://www.w3.org/2001/XInclude">
    <orig>
       <trill place="above" staff="1" tstamp="1" tstamp2="0m+4"></trill>
    </orig>

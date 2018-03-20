@@ -1,4 +1,4 @@
-<extMeta xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<extMeta xmlns:xi="http://www.w3.org/2001/XInclude">
    <!-- MARC (Machine-Readable Cataloging) title info -->
    <datafield xmlns="http://www.loc.gov/MARC21/slim" ind1="1" ind2="0" tag="245">
       <subfield code="a">Simple dreams :</subfield>

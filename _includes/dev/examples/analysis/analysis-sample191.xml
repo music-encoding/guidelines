@@ -1,5 +1,5 @@
 
-<!-- in 2/4 --><measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" metcon="false" n="1">
+<!-- in 2/4 --><measure xmlns:xi="http://www.w3.org/2001/XInclude" metcon="false" n="1">
    <staff n="1">
       <layer metcon="i">
          <note dur="4" oct="4" pname="f"></note>

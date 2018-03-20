@@ -1,1 +1,1 @@
-<fermata xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" form="inv" place="above" shape="square" staff="2" tstamp="4"></fermata>
+<fermata xmlns:xi="http://www.w3.org/2001/XInclude" form="inv" place="above" shape="square" staff="2" tstamp="4"></fermata>

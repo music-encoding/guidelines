@@ -1,4 +1,4 @@
-<scoreDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<scoreDef xmlns:xi="http://www.w3.org/2001/XInclude">
    <symbolTable>
       <symbolDef xml:id="userSymbols.clefA">
          <curve bezier="-1.2 0.1 -0.9 -0.8" endho="1.1" endvo="6.6" startho="1.2" startvo=" 4   "></curve>

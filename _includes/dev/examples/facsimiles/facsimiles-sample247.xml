@@ -1,11 +1,11 @@
-<facsimile xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude">
    <surface>
       <graphic height="2000" target="image1.jpg" unit="px" width="3000"></graphic>
       <graphic height="1000" target="image1smaller.jpg" unit="px" width="1500"></graphic>
       <graphic height="200" target="image1smallest.png" unit="px" width="300"></graphic>
    </surface>
 </facsimile>
-<facsimile xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<facsimile xmlns:xi="http://www.w3.org/2001/XInclude">
    <surface>
       <graphic height="297" target="source1.pdf#page=1" unit="mm" width="210"></graphic>
    </surface>

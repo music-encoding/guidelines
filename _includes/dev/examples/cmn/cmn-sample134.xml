@@ -1,2 +1,2 @@
 
-<!-- tstamp attribute indicates starting point, endid attribute marks the end --><dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" endid="ID of last note" place="above" staff="2" tstamp="2.5">cresc. poco a poco</dynam>
+<!-- tstamp attribute indicates starting point, endid attribute marks the end --><dynam xmlns:xi="http://www.w3.org/2001/XInclude" endid="ID of last note" place="above" staff="2" tstamp="2.5">cresc. poco a poco</dynam>

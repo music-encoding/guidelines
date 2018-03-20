@@ -1,1 +1,1 @@
-<beamSpan xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" endid="#note4" plist="#note1 #note2 #note3 #note4" startid="#note1"></beamSpan>
+<beamSpan xmlns:xi="http://www.w3.org/2001/XInclude" endid="#note4" plist="#note1 #note2 #note3 #note4" startid="#note1"></beamSpan>

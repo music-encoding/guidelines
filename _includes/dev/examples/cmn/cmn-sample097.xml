@@ -1,4 +1,4 @@
-<scoreDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" meter.count="6" meter.unit="8">
+<scoreDef xmlns:xi="http://www.w3.org/2001/XInclude" meter.count="6" meter.unit="8">
    <staffGrp>
       <!-- Piccolo sounds 12 semitones higher than written (and encoded in MEI). -->
       <staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="4f" label="Piccolo" label.abbr="Picc." lines="5" n="1" trans.diat="0" trans.semi="12" xml:id="cmn.P1"></staffDef>

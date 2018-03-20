@@ -1,4 +1,4 @@
-<midi xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" layer="1" staff="1">
+<midi xmlns:xi="http://www.w3.org/2001/XInclude" layer="1" staff="1">
    <cc num="7" tstamp=".5" val="50"></cc>
    <cc num="64" tstamp=".5" val="64"></cc>
 </midi>

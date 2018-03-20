@@ -1,4 +1,4 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<measure xmlns:xi="http://www.w3.org/2001/XInclude">
    <staff n="1">
       <layer n="1">
          <note dur="2" oct="4" pname="d" stem.with="below"></note>

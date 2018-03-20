@@ -1,10 +1,10 @@
-<performance xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<performance xmlns:xi="http://www.w3.org/2001/XInclude">
    <recording begin="00:00:00.00" betype="time" end="00:07:00.00" n="mov1" startid="#performance.m1_1">
       <avFile mimetype="audio/aiff" target="fullpiece.aiff"></avFile>
    </recording>
 </performance>
 <!-- ... -->
-<body xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<body xmlns:xi="http://www.w3.org/2001/XInclude">
    <mdiv>
       <score>
          <section>
