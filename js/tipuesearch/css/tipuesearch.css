@@ -1,6 +1,6 @@
 
 /*
-Tipue Search 6.1
+Based on Tipue Search 6.1
 Copyright (c) 2017 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
@@ -8,11 +8,10 @@ http://www.tipue.com/search
 
 /* search box */
 
-
 #tipue_search_input
 {
 	color: #333;
- 	max-width: 210px;
+	max-width: 210px;
 	padding: 17px;
 	border: 1px solid #e3e3e3;
 	border-radius: 0;
@@ -46,6 +45,8 @@ http://www.tipue.com/search
 }
 #tipue_search_results_count
 {
+	font-size: 120%;
+	font-weight: bold;
 }
 #tipue_search_warning
 {
@@ -72,8 +73,8 @@ http://www.tipue.com/search
 }
 .tipue_search_content_url
 {
-   word-wrap: break-word;
-   hyphens: auto;
+	word-wrap: break-word;
+	hyphens: auto;
 }
 .tipue_search_content_url a, .tipue_search_related_text a
 {
