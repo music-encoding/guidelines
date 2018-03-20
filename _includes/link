@@ -1,5 +1,5 @@
 {%- if include.elem %}
-  [{{ include.elem }}]({{ site.baseurl }}/{{ page.version }}/elements/{{ include.elem }}.html){:.link_odd_elementSpec}
+  [{{ include.elem }}]({{ site.baseurl }}/{{ page.version }}/elements/{{ include.elem | downcase }}.html){:.link_odd_elementSpec}
 {%- elsif include.att-class %}
-  [{{ include.att-class }}]({{ site.baseurl }}/{{ page.version }}/attribute-classes/{{ include.att-class }}.html)
+  [{{ include.att-class }}]({{ site.baseurl }}/{{ page.version }}/attribute-classes/{{ include.att-class | downcase }}.html)
 {%- else %}{% include link-section id=include.id %}{%- endif %}
