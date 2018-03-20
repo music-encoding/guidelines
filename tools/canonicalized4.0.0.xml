@@ -4320,8 +4320,8 @@
       <p>MEI offers multiple ways of defining onsets and offsets of timed musical events such as
         notes and slurs. The most common and most musician-friendly approach to this is through the
         use of a combination of the attributes <att>tstamp</att> and <att>dur</att>, which are made
-        available by the attribute classes <ident type="class">att.timestamp.musical</ident>
-        (inherited by <ident type="class">att.controlevent</ident>) and <ident type="class">att.duration.musical</ident>, both from the shared module.</p>
+        available by the attribute classes <ident type="class">att.timestamp.logical</ident>
+        (inherited by <ident type="class">att.controlEvent</ident>) and <ident type="class">att.timestamp2.logical</ident>, both from the shared module.</p>
       <p>The <term>timestamp</term> (<att>tstamp</att>) of a musical event is calculated in relation
         to the meter of the current measure and resembles the so-called <soCalled>beat</soCalled>
         position. In a common time measure with four quarter notes, the timestamp of each quarter
