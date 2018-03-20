@@ -1,4 +1,4 @@
-<chord xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<chord>
    <note dur="4" oct="4" pname="c"></note>
    <note dur="4" oct="4" pname="e"></note>
    <note dur="4" oct="4" pname="g"></note>

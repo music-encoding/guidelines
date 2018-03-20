@@ -1,2 +1,2 @@
-<dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" layer="1" staff="1">p</dynam>
-<dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" layer="2" staff="1">mf</dynam>
+<dynam layer="1" staff="1">p</dynam>
+<dynam layer="2" staff="1">mf</dynam>

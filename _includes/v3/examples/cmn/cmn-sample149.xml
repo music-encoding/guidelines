@@ -1,4 +1,4 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1">
+<measure n="1">
    <!-- all staves omitted -->
    <tempo place="above" staff="1" tstamp="1">Allegro moderato</tempo>
 </measure>

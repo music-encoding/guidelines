@@ -1,4 +1,4 @@
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="longa" num="6" numbase="1"></note>
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="brevis" num="2" numbase="1"></note>
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="brevis" num="4" numbase="1"></note>
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="longa" num="6" numbase="1"></note>
+<note dur="longa" num="6" numbase="1"></note>
+<note dur="brevis" num="2" numbase="1"></note>
+<note dur="brevis" num="4" numbase="1"></note>
+<note dur="longa" num="6" numbase="1"></note>

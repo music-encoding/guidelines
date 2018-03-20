@@ -1,11 +1,11 @@
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="1">
+<harm tstamp="1">
    <fb>
       <f>̑</f>
       <f extender="true">5</f>
       <f altsym="combo2plus">2+</f>
    </fb>
 </harm>
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="3">
+<harm tstamp="3">
    <fb>
       <f>3</f>
    </fb>

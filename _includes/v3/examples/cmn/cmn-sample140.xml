@@ -1,3 +1,3 @@
-<bTrem xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" num="3">
+<bTrem num="3">
    <note dur="4" oct="4" pname="g" stem.mod="3slash"></note>
 </bTrem>

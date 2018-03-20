@@ -1,4 +1,4 @@
-<surface xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" lrx="3000" lry="2000" ulx="0" uly="0">
+<surface lrx="3000" lry="2000" ulx="0" uly="0">
    <graphic height="2000" target="image1.jpg" unit="px" width="3000"></graphic>
    <zone lrx="370" lry="410" ulx="300" uly="200"></zone>
    <zone lrx="439" lry="410" ulx="367" uly="200"></zone>

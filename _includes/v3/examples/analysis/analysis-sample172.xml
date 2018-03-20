@@ -1,4 +1,4 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="2">
+<measure n="2">
    <staff n="1">
       <layer>
          <chord dur="4" stem.dir="up" xml:id="analysis.chord1">
@@ -10,7 +10,7 @@
       </layer>
    </staff>
 </measure>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3">
+<measure n="3">
    <staff n="1">
       <layer>
          <chord dur="4" stem.dir="up" xml:id="analysis.chord2">

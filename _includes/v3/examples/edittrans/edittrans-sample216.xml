@@ -1,5 +1,5 @@
 
-<!-- … --><chord xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<!-- … --><chord>
    <note dur="4" oct="4" pname="c"></note>
    <note dur="4" oct="4" pname="e"></note>
    <choice>
@@ -13,6 +13,6 @@
    <note dur="4" oct="4" pname="a"></note>
 </chord>
 <!-- within the header for this document: -->
-<respStmt xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<respStmt>
    <name role="editor" xml:id="editTrans.JK">Johannes Kepper</name>
 </respStmt>

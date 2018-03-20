@@ -1,4 +1,4 @@
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1">
+<staff n="1">
    <layer n="1">
       <chord dur="2">
          <note oct="4" pname="d"></note>
@@ -8,7 +8,7 @@
       <!-- following content -->
    </layer>
 </staff>
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="2">
+<staff n="2">
    <layer n="1">
       <!-- the time used by the notes on staff 2 filled with non-sounding "space" -->
       <space dur="2"></space>

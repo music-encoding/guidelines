@@ -1,4 +1,4 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure>
    <staff>
       <layer>
          <beam>
@@ -15,21 +15,21 @@
       </layer>
    </staff>
 </measure>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure>
    <staff>
       <layer>
          <mRpt></mRpt>
       </layer>
    </staff>
 </measure>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure>
    <staff>
       <layer>
          <mRpt></mRpt>
       </layer>
    </staff>
 </measure>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure>
    <staff>
       <layer>
          <mRpt></mRpt>

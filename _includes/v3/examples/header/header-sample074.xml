@@ -1,4 +1,4 @@
-<classification xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<classification>
    <classCode authURI="http://www.loc.gov" authority="Library of Congress" xml:id="header.LCSH2"></classCode>
    <classCode authURI="http://www.loc.gov/aba/cataloging/classification/lcco/lcco_m.pdf" authority="Library of Congress" xml:id="header.LoC_lcco2"></classCode>
    <termList classcode="#header.LCSH2">

@@ -1,4 +1,4 @@
-<beam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<beam>
    <note dur="4" oct="3" pname="c"></note>
    <note dur="4" oct="3" pname="d"></note>
    <subst>

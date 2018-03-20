@@ -1,4 +1,4 @@
-<app xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<app>
    <rdg seq="1" source="#critApp.sourceA">
       <!-- material in source 1 -->
    </rdg>

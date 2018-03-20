@@ -1,2 +1,2 @@
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="2" oct="4" pname="f" tie="i"></note>
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dots="1" dur="4" oct="4" pname="f" tie="t"></note>
+<note dur="2" oct="4" pname="f" tie="i"></note>
+<note dots="1" dur="4" oct="4" pname="f" tie="t"></note>

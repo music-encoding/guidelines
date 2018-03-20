@@ -1,5 +1,5 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron"></measure>
-<app xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<measure></measure>
+<app>
    <rdg source="#critApp.source1"></rdg>
    <rdg source="#critApp.source2 critApp.#source3">
       <!-- whereas source1 omits it, source2 and source3 have an additional measure -->
@@ -20,4 +20,4 @@
       </measure>
    </rdg>
 </app>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron"></measure>
+<measure></measure>

@@ -1,3 +1,3 @@
-<facsimile xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<facsimile>
    <surface label="page 1" lrx="2000" lry="3000" startid="#measure1" ulx="0" uly="0"></surface>
 </facsimile>
