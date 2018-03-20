@@ -6853,7 +6853,7 @@
       specific attributes on certain musical elements:</p>
     <p>
       <specList>
-        <specDesc atts="inth" key=""></specDesc>
+        <specDesc atts="inth" key="att.intervalHarmonic"></specDesc>
         <specDesc atts="intm" key="att.intervallicDesc"></specDesc>
         <specDesc atts="mfunc" key="att.melodicFunction"></specDesc>
         <specDesc atts="deg" key="att.harmonicFunction"></specDesc>
@@ -6971,7 +6971,7 @@
       <head>Harmonic Intervals</head>
       <p>
         <specList>
-          <specDesc atts="inth" key="att.intervalharmonic"></specDesc>
+          <specDesc atts="inth" key="att.intervalHarmonic"></specDesc>
         </specList>
       </p>
       <p>In contrast with <att>intm</att>, which characterizes melodic (sequential) intervals, the
