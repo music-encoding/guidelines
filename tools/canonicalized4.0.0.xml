@@ -12569,7 +12569,6 @@
       <head>Elements</head>
       <p>
         <specList>
-          <specDesc key="timeline"></specDesc>
           <specDesc key="when"></specDesc>
         </specList>
       </p>
@@ -12595,10 +12594,10 @@
   </div>
   <div type="div2" xml:id="linkalignExamples">
     <head>Linking and Alignment Examples</head>
-    <p>The <gi scheme="MEI">timeline</gi> element contains a reference to an external file using the
+<!--    <p>The <gi scheme="MEI">timeline</gi> element contains a reference to an external file using the
         <att>avref</att> attribute. The path to this external file may be a location on a hard disk
       or a URL. The <att>origin</att> attribute specifies the <gi scheme="MEI">when</gi> element
-      corresponding to the beginning of the timeline.</p>
+      corresponding to the beginning of the timeline.</p>-->
     <p>The <gi scheme="MEI">when</gi> element specifies timestamped locations on the referenced
       media file. These may be defined using either an absolute time stamp (specified in ISO 24-hour
       time format, HH:MM:SS.ss), or using a combination of the <att>interval</att>,
