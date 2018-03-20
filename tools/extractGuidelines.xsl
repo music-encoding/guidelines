@@ -1001,7 +1001,12 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="$text = //tei:classSpec/@ident">{% include link att-class="<xsl:value-of select="$text"/>" %}</xsl:when>
+            <xsl:when test="$text = //tei:classSpec/@ident">
+                <xsl:choose>
+                    <xsl:when test="starts-with($text, 'att.')">{% include link att="<xsl:value-of select="$text"/>" %}</xsl:when>
+                    <xsl:otherwise>{% include link model="<xsl:value-of select="$text"/>" %}</xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:message terminate="no" select="'ERROR: Unable to identify class ' || $text || ' from tei:ident element. No link created.'"/>
                 <span class="ident">
