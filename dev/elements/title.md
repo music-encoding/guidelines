@@ -285,23 +285,33 @@ title: "title"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;choice&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:text/&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:text/&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/macro.titlepart.html">macro.titlePart</a>"</span></span>
                                  /&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editlike.html">model.editLike</a>"</span></span>
                                  /&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.transcriptionlike.html">model.transcriptionLike</a>"</span></span>
                                  /&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepart.html">titlePart</a>"</span></span>
-                                 /&gt;</span></div><span data-indentation="3" class="element">&lt;/choice&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                                 /&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
@@ -318,7 +328,7 @@ title: "title"
                desc (descriptive title). The <span class="att">type</span> attribute is provided for convenience in
                analysing titles and processing them according to their type; where such specialized
                processing is not necessary, there is no need for such analysis, and the entire title,
-               including subtitles and any parallel titles, may be enclosed within a single <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a> element. Title parts may be encoded in <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlePart.html">titlePart</a> sub-elements. The name of the list from which a controlled value is taken
+               including subtitles and any parallel titles, may be enclosed within a single <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a> element. Title parts may be encoded in <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepart.html">titlePart</a> sub-elements. The name of the list from which a controlled value is taken
                may be recorded using the <span class="att">auth</span> attribute. The number of initial characters (such
                as those constituting an article or preposition) that should not be used for sorting
                a title

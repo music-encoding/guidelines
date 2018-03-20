@@ -1,17 +1,27 @@
-<work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
    <titleStmt>
-      <title>Sonata No. 2</title>
+      <title>Pavane pour une infante défunte</title>
    </titleStmt>
    <expressionList>
       <expression>
          <titleStmt>
-            <title>Live recording at Carnegie Hall</title>
+            <title>Version for piano</title>
          </titleStmt>
+         <perfMedium>
+            <perfResList>
+               <perfRes>piano</perfRes>
+            </perfResList>
+         </perfMedium>
       </expression>
       <expression>
          <titleStmt>
-            <title>Studio recording</title>
+            <title>Version for orchestra</title>
          </titleStmt>
+         <perfMedium>
+            <perfResList>
+               <perfRes>orchestra</perfRes>
+            </perfResList>
+         </perfMedium>
       </expression>
    </expressionList>
 </work>

@@ -30,7 +30,7 @@ title: "cpMark"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@altsym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
                               an
-                              ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html">symbolDef</a> element elsewhere in the document.</span>
+                              ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element elsewhere in the document.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altSym</a></span></div>
                      </td>
@@ -581,19 +581,28 @@ title: "cpMark"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;choice&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:text/&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:text/&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraselike.limited.html">model.textPhraseLike.limited</a>"</span></span>
                                  /&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editlike.html">model.editLike</a>"</span></span>
                                  /&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.transcriptionlike.html">model.transcriptionLike</a>"</span></span>
-                                 /&gt;</span></div><span data-indentation="3" class="element">&lt;/choice&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                                 /&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
@@ -601,11 +610,11 @@ title: "cpMark"
          <td class="wovenodd-col1"><strong>Examples</strong></td>
          <td class="wovenodd-col2">
             <div class="code" xml:space="preserve"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;cpMark <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"5m+4"</span> <span class="attribute">staff=</span><span class="attributevalue">"8"</span> <span class="attribute">origin.tstamp=</span><span class="attributevalue">"-6m+1"</span>&gt;</span>a. b. c. d. e. f. g.<span data-indentation="1" class="element">&lt;/cpMark&gt;</span></div></code></div>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;cpMark <span class="attribute">origin.tstamp=</span><span class="attributevalue">"-6m+1"</span> <span class="attribute">staff=</span><span class="attributevalue">"8"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"5m+4"</span>&gt;</span>a. b. c. d. e. f. g.<span data-indentation="1" class="element">&lt;/cpMark&gt;</span></div></code></div>
             <div class="code" xml:space="preserve"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;cpMark <span class="attribute">tstamp=</span><span class="attributevalue">"1.5"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"1m+3.5"</span> <span class="attribute">staff=</span><span class="attributevalue">"9"</span> <span class="attribute">origin.staff=</span><span class="attributevalue">"8"</span>&gt;</span>unis:<span data-indentation="1" class="element">&lt;/cpMark&gt;</span></div></code></div>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;cpMark <span class="attribute">origin.staff=</span><span class="attributevalue">"8"</span> <span class="attribute">staff=</span><span class="attributevalue">"9"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"1.5"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"1m+3.5"</span>&gt;</span>unis:<span data-indentation="1" class="element">&lt;/cpMark&gt;</span></div></code></div>
             <div class="code" xml:space="preserve"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;cpMark <span class="attribute">tstamp=</span><span class="attributevalue">"2"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"2m+3.5"</span> <span class="attribute">staff=</span><span class="attributevalue">"9"</span> <span class="attribute">origin.staff=</span><span class="attributevalue">"8"</span> <span class="attribute">dis=</span><span class="attributevalue">"8"</span> <span class="attribute">dis.place=</span><span class="attributevalue">"below"</span>&gt;</span>in 8va<span data-indentation="1" class="element">&lt;/cpMark&gt;</span></div></code></div>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;cpMark <span class="attribute">dis=</span><span class="attributevalue">"8"</span> <span class="attribute">dis.place=</span><span class="attributevalue">"below"</span> <span class="attribute">origin.staff=</span><span class="attributevalue">"8"</span> <span class="attribute">staff=</span><span class="attributevalue">"9"</span> <span class="attribute">tstamp=</span><span class="attributevalue">"2"</span> <span class="attribute">tstamp2=</span><span class="attributevalue">"2m+3.5"</span>&gt;</span>in 8va<span data-indentation="1" class="element">&lt;/cpMark&gt;</span></div></code></div>
          </td>
       </tr>
       <tr>
@@ -615,7 +624,7 @@ title: "cpMark"
                other indications intended to result in filling gaps in the score with material written
                elsewhere. It is recommended to capture the position of the indication itself with
                the
-               attributes <span class="att">tstamp</span> and <span class="att">staff</span>. The area to be filled should contain <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/space.html">space</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mSpace.html">mSpace</a> elements. The material to be used
+               attributes <span class="att">tstamp</span> and <span class="att">staff</span>. The area to be filled should contain <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/space.html">space</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mspace.html">mSpace</a> elements. The material to be used
                to fill the gap can be identified by the attributes <span class="att">origin.tstamp</span>,
                <span class="att">origin.tstamp2</span>, <span class="att">origin.staff</span>, and <span class="att">origin.layer</span>. If
                <span class="att">origin.tstamp2</span> is not provided, a duration similar to that of the local

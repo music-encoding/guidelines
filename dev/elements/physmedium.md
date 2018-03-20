@@ -233,58 +233,117 @@ title: "physMedium"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;choice&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;group&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;zeroOrMore&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:choice&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:group&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:zeroOrMore&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a>"</span></span>
-                                    /&gt;</span></div><span data-indentation="4" class="element">&lt;/zeroOrMore&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;choice&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;zeroOrMore&gt;</span><div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:zeroOrMore&gt;</span>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/p.html">p</a>"</span></span>
-                                       /&gt;</span></div><span data-indentation="5" class="element">&lt;/zeroOrMore&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;group&gt;</span><div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                       /&gt;</span></div>
+                                 <span data-indentation="5" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:group&gt;</span>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/bindingdesc.html">bindingDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/decodesc.html">decoDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/adddesc.html">addDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/scriptdesc.html">scriptDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/sealdesc.html">sealDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/typedesc.html">typeDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/supportdesc.html">supportDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;optional&gt;</span><div class="indent7 indent"><span data-indentation="7" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:optional&gt;</span>
+                                    
+                                    <div class="indent7 indent"><span data-indentation="7" class="element">&lt;rng:ref
                                           
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/layoutdesc.html">layoutDesc</a>"</span></span>
-                                          /&gt;</span></div><span data-indentation="6" class="element">&lt;/optional&gt;</span></div><span data-indentation="5" class="element">&lt;/group&gt;</span></div><span data-indentation="4" class="element">&lt;/choice&gt;</span></div><span data-indentation="3" class="element">&lt;/group&gt;</span></div>
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;zeroOrMore&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;choice&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:text/&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                                          /&gt;</span></div>
+                                    <span data-indentation="6" class="element">&lt;/rng:optional&gt;</span></div>
+                                 <span data-indentation="5" class="element">&lt;/rng:group&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:group&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:text/&gt;</span></div>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.textphraselike.limited.html">model.textPhraseLike.limited</a>"</span></span>
-                                    /&gt;</span></div><span data-indentation="4" class="element">&lt;/choice&gt;</span></div><span data-indentation="3" class="element">&lt;/zeroOrMore&gt;</span></div><span data-indentation="2" class="element">&lt;/choice&gt;</span></div>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:choice&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>All materials may be described in a single <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physMedium.html">physMedium</a> element or
+            <p>All materials may be described in a single <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physmedium.html">physMedium</a> element or
                multiple elements may be used, one for each medium.This element is modelled on elements
                in the Encoded Archival Description (EAD)
                standard.

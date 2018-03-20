@@ -37,7 +37,7 @@ title: "att.lyricStyle"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>"</span></span>
                               /&gt;</span></div>
@@ -50,7 +50,7 @@ title: "att.lyricStyle"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontfamily.html">data.FONTFAMILY</a>"</span></span>
                               /&gt;</span></div>
@@ -63,7 +63,7 @@ title: "att.lyricStyle"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontname.html">data.FONTNAME</a>"</span></span>
                               /&gt;</span></div>
@@ -76,7 +76,7 @@ title: "att.lyricStyle"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsize.html">data.FONTSIZE</a>"</span></span>
                               /&gt;</span></div>
@@ -89,7 +89,7 @@ title: "att.lyricStyle"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontstyle.html">data.FONTSTYLE</a>"</span></span>
                               /&gt;</span></div>
@@ -102,7 +102,7 @@ title: "att.lyricStyle"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontweight.html">data.FONTWEIGHT</a>"</span></span>
                               /&gt;</span></div>

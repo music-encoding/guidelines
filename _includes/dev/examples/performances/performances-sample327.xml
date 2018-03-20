@@ -1,0 +1,12 @@
+<performance xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <recording begin="00:00:00.00" betype="time" end="00:05:21.00">
+      <!-- Exposition -->
+      <clip begin="00:00:00.00" betype="time" end="00:01:41.00"></clip>
+      <!-- Development -->
+      <clip begin="00:01:41.00" betype="time" end="00:03:14.00"></clip>
+      <!-- Recapitulation -->
+      <clip begin="00:03:14.00" betype="time" end="00:04:28.00"></clip>
+      <!-- Coda -->
+      <clip begin="00:04:28.00" betype="time" end="00:05:21.00"></clip>
+   </recording>
+</performance>

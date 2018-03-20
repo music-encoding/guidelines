@@ -1,6 +1,6 @@
-<sourceDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<sourceDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
    <source xml:id="header.s1">
-      <identifier>1</identifier>
+      <identifier>s1</identifier>
       <titleStmt>
          <title>Sonata in B-flat major,
             <identifier>Wq. 62/1 (H.2)</identifier>

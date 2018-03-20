@@ -1,2 +1,20 @@
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="2" oct="4" pname="f" tie="i"></note>
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dots="1" dur="4" oct="4" pname="f" tie="t"></note>
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <staff n="1">
+      <layer>
+         <beam beam.with="below">
+            <space dur="8"></space>
+            <note oct="4" pname="d"></note>
+            <note pname="f"></note>
+         </beam>
+      </layer>
+   </staff>
+   <staff n="2">
+      <layer>
+         <beam beam.with="above">
+            <note dur="16" oct="3" pname="g"></note>
+            <note pname="b"></note>
+            <space dur="8"></space>
+         </beam>
+      </layer>
+   </staff>
+</measure>

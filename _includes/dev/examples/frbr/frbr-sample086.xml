@@ -1,10 +1,8 @@
-<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <pubStmt>
-      <publisher>Horneman &amp; Erslev</publisher>
-      <pubPlace>Copenhagen</pubPlace>
-      <date isodate="1874">1874</date>
-   </pubStmt>
+<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <titleStmt>
+      <title>Score, first edition</title>
+   </titleStmt>
    <relationList>
-      <relation rel="isReproductionOf" target="#source.printed_choral_parts"></relation>
+      <relation rel="isEmbodimentOf" target="#version_for_orchestra"></relation>
    </relationList>
 </source>

@@ -221,20 +221,26 @@ title: "change"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;optional&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/respstmt.html">respStmt</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/optional&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:ref
                            
                            <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/changedesc.html">changeDesc</a>"</span></span>
                            /&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;optional&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.datelike.html">model.dateLike</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/optional&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
@@ -270,7 +276,7 @@ title: "change"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@isodate or mei:date"</span>&gt;</span>The date of the change must be recorded in an
                         isodate attribute or date element.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@resp or mei:respStmt[mei:name or mei:corpName or mei:persName]"</span> <span class="attribute">role=</span><span class="attributevalue">"warning"</span>&gt;</span>It is recommended that the agent responsible for the change be recorded
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"@resp or mei:respStmt[mei:name or mei:corpName or mei:persName]"</span>&gt;</span>It is recommended that the agent responsible for the change be recorded
                         in a resp attribute or in a name, corpName, or persName element in the respStmt
                         element.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>

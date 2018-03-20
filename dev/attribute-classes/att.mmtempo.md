@@ -42,7 +42,7 @@ title: "att.mmTempo"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tempovalue.html">data.TEMPOVALUE</a>"</span></span>
                               /&gt;</span></div>
@@ -55,7 +55,7 @@ title: "att.mmTempo"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a>"</span></span>
                               /&gt;</span></div>
@@ -68,7 +68,7 @@ title: "att.mmTempo"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.augmentdot.html">data.AUGMENTDOT</a>"</span></span>
                               /&gt;</span></div>

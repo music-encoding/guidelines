@@ -1,8 +1,16 @@
-
-<!-- tstamp attribute indicates starting point, dur attribute marks the end --><dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" place="above" staff="2" tstamp="2.5" tstamp2="1m+1">cresc. poco a poco</dynam>
-<!-- tstamp attribute indicates starting point, endid attribute marks the end -->
-<dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" endid="ID of last note" place="above" staff="2" tstamp="2.5">cresc. poco a poco</dynam>
-<!-- startid attribute indicates starting point, tstamp2 attribute marks the end -->
-<dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" place="above" staff="2" startid="ID_of_starting_note" tstamp2="1m+1">cresc. poco a poco</dynam>
-<!-- startid attribute indicates starting point, endid attribute marks the end -->
-<dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" endid="ID_of_ending_note" place="above" staff="2" startid="ID_of_starting_note">cresc. poco a poco</dynam>
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <staff n="1">
+      <!-- content omitted -->
+   </staff>
+   <staff n="2">
+      <layer n="1">
+         <note dur="2" oct="4" pname="c" stem.mod="2slash"></note>
+         <note dur="2" oct="4" pname="e" stem.mod="2slash"></note>
+      </layer>
+      <layer n="2">
+         <!-- content omitted -->
+      </layer>
+   </staff>
+   <dynam layer="1" place="above" staff="2" tstamp="1">p</dynam>
+   <dynam layer="1" place="above" staff="2" tstamp="2.5">cresc. poco a poco</dynam>
+</measure>

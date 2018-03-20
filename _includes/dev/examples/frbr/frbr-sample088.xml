@@ -1,13 +1,45 @@
-<workDesc xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <work>
+<workDesc xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <work xml:id="theRing">
       <titleStmt>
          <title>Der Ring des Nibelungen</title>
       </titleStmt>
       <relationList>
-         <relation rel="hasPart" target="rheingold.xml"></relation>
-         <relation rel="hasPart" target="walkuere.xml"></relation>
-         <relation rel="hasPart" target="siegfried.xml"></relation>
-         <relation rel="hasPart" target="goetterdaemmerung.xml"></relation>
+         <relation rel="hasPart" target="#rheingold"></relation>
+         <relation rel="hasPart" target="#walkuere"></relation>
+         <relation rel="hasPart" target="#siegfried"></relation>
+         <relation rel="hasPart" target="#goetterdaemmerung"></relation>
+      </relationList>
+   </work>
+   <work xml:id="rheingold">
+      <titleStmt>
+         <title>Das Rheingold</title>
+      </titleStmt>
+      <relationList>
+         <relation rel="isPartOf" target="#theRing"></relation>
+      </relationList>
+   </work>
+   <work xml:id="walkuere">
+      <titleStmt>
+         <title>Die Walküre</title>
+      </titleStmt>
+      <relationList>
+         <relation rel="isPartOf" target="#theRing"></relation>
+      </relationList>
+   </work>
+   <work xml:id="siegfried">
+      <titleStmt>
+         <title>Siegfried</title>
+      </titleStmt>
+      <relationList>
+         <relation rel="isPartOf" target="#theRing"></relation>
+      </relationList>
+   </work>
+   <work xml:id="goetterdaemmerung">
+      <titleStmt>
+         <title>Götterdämmerung</title>
+      </titleStmt>
+      <relationList>
+         <relation rel="isPartOf" target="#theRing"></relation>
       </relationList>
    </work>
 </workDesc>

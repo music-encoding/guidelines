@@ -229,7 +229,7 @@ title: "trackConfig"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:ref
                            
                            <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/macro.struc-unstruccontent.html">macro.struc-unstrucContent</a>"</span></span>
                            /&gt;</span></div>
@@ -244,7 +244,7 @@ title: "trackConfig"
                the recording medium, i.e., 2-track monophonic recordings. In this example, the trackConfig
                element should record the fact that there are two physical tracks on the sound medium,
                while
-               the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/soundChan.html">soundChan</a> element should be used to state that there is a single
+               the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/soundchan.html">soundChan</a> element should be used to state that there is a single
                output channel. This element may be mapped to MARC field 344 subfield e or subfield
                f as
                appropriate.

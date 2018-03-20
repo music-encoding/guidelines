@@ -37,7 +37,7 @@ title: "att.keySig.log"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.keyfifths.html">data.KEYFIFTHS</a>"</span></span>
                               /&gt;</span></div>
@@ -52,7 +52,7 @@ title: "att.keySig.log"
                p. 143,
                ex. 9-39), and key signatures with unorthodox placement of the accidentals (Read,
                p. 141)
-               can be encoded using the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/keySig.html">keySig</a> element.
+               can be encoded using the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/keysig.html">keySig</a> element.
             </p>
          </td>
       </tr>

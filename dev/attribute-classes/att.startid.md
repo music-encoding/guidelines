@@ -33,6 +33,7 @@ title: "att.startId"
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gliss.html">gliss</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.gliss.log.html">att.gliss.log</a>)</span></div>
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hairpin.html">hairpin</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.hairpin.log.html">att.hairpin.log</a>)</span></div>
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harppedal.html">harpPedal</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.harppedal.log.html">att.harpPedal.log</a>)</span></div>
+               <div><span><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ligaturespan.log">att.ligatureSpan.log</a> (no elements directly inheriting from this class)</span></div>
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lv.log.html">att.lv.log</a>)</span></div>
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.octave.log.html">att.octave.log</a>)</span></div>
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pedal.html">pedal</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pedal.log.html">att.pedal.log</a>)</span></div>
@@ -79,7 +80,7 @@ title: "att.startId"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>"</span></span>
                               /&gt;</span></div>

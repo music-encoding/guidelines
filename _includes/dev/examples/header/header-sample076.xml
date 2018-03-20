@@ -1,5 +1,20 @@
-<change xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" isodate="2011-10-21" n="3" resp="#KR #MH">
-   <changeDesc>
-      <p>Cleaned up MEI file automatically using ppq.xsl.</p>
-   </changeDesc>
-</change>
+<revisionDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <change n="4">
+      <respStmt>
+         <persName>KR</persName>
+      </respStmt>
+      <changeDesc>
+         <p>Cleaned up MEI file automatically using Header.xsl.</p>
+      </changeDesc>
+      <date isodate="2011-12-01"></date>
+   </change>
+   <change n="3">
+      <respStmt>
+         <persName>KR</persName>
+      </respStmt>
+      <changeDesc>
+         <p>Cleaned up MEI file automatically using ppq.xsl.</p>
+      </changeDesc>
+      <date isodate="2011-10-21"></date>
+   </change>
+</revisionDesc>

@@ -191,7 +191,7 @@ title: "availability"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:ref
                            
                            <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/macro.availabilitypart.html">macro.availabilityPart</a>"</span></span>
                            /&gt;</span></div>
@@ -201,7 +201,7 @@ title: "availability"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>When used within the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html">fileDesc</a> element, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a> indicates access to the MEI-encoded document itself.This element is modelled on elements
+            <p>When used within the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/filedesc.html">fileDesc</a> element, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a> indicates access to the MEI-encoded document itself.This element is modelled on elements
                in the Text Encoding Initiative (TEI) and Encoded
                Archival Description (EAD) standards.
             </p>

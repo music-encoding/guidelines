@@ -1,8 +1,27 @@
-
-<!-- Fifth scale degree in the prevailing scale --><note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="5"></note>
-<!-- Augmented 5th -->
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="5+"></note>
-<!-- Lowered 6 scale degree approached from below -->
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="^6-"></note>
-<!-- Leading tone approached from above -->
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" deg="v7"></note>
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <staff n="1">
+      <layer>
+         <mRest></mRest>
+      </layer>
+   </staff>
+   <staff n="2">
+      <layer>
+         <tuplet num="3" num.visible="true" xml:id="analysis.tup5">
+            <chord dur="8" xml:id="analysis.t1c1">
+               <note oct="3" pname="g"></note>
+               <note oct="4" pname="g"></note>
+            </chord>
+            <chord copyof="#analysis.t1c1"></chord>
+            <chord copyof="#analysis.t1c1"></chord>
+         </tuplet>
+         <tuplet copyof="#analysis.tup5" xml:id="analysis.tup6"></tuplet>
+         <tuplet copyof="#analysis.tup5" xml:id="analysis.tup7"></tuplet>
+         <tuplet copyof="#analysis.tup5" xml:id="analysis.tup8"></tuplet>
+      </layer>
+   </staff>
+   <staff n="3">
+      <layer>
+         <mRest></mRest>
+      </layer>
+   </staff>
+</measure>

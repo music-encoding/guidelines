@@ -1,4 +1,4 @@
-<classCode xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" authURI="http://www.loc.gov/aba/cataloging/classification/lcco/lcco_m.pdf" xml:id="header.LoC_lccoC">Library of Congress subject headings. Prepared by the Cataloging Policy and Support
+<classCode xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" authURI="http://www.loc.gov/aba/cataloging/classification/lcco/lcco_m.pdf" xml:id="header.LoC_lccoC">Library of Congress subject headings. Prepared by the Cataloging Policy and Support
    Office, Collections Services. Washington, D.C.: Library of Congress, Cataloging Distribution
    Service, 1993- .
 </classCode>

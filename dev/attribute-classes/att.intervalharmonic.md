@@ -20,6 +20,7 @@ title: "att.intervalHarmonic"
             <div class="parent">
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chordmember.html">chordMember</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.chordmember.anl.html">att.chordMember.anl</a>)</span></div>
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.harm.anl.html">att.harm.anl</a>)</span></div>
+               <div><span><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervallicdesc">att.intervallicDesc</a> (no elements directly inheriting from this class)</span></div>
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ambitus.html">ambitus</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ambitus.anl.html">att.ambitus.anl</a>)</span></div>
             </div>
          </td>
@@ -38,7 +39,7 @@ title: "att.intervalHarmonic"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.interval.harmonic.html">data.INTERVAL.HARMONIC</a>"</span></span>
                               /&gt;</span></div>

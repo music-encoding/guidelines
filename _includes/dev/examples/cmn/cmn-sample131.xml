@@ -1,1 +1,2 @@
-<dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" endid="#note4" place="above" plist="#note1 #note2   #note3 #note4" staff="2" startid="#note1">cresc. poco a poco</dynam>
+
+<!-- using the tstamp2 attribute --><dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" place="above" staff="2" tstamp="2.5" tstamp2="1m+1">cresc. poco a poco</dynam>

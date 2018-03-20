@@ -43,8 +43,15 @@ title: "att.curvature"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;list&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;oneOrMore&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div><span data-indentation="4" class="element">&lt;/oneOrMore&gt;</span></div><span data-indentation="3" class="element">&lt;/list&gt;</span></div>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:list&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:oneOrMore&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:oneOrMore&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:list&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
@@ -60,11 +67,18 @@ title: "att.curvature"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;list&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;oneOrMore&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:list&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:oneOrMore&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.percent.html">data.PERCENT</a>"</span></span>
-                                    /&gt;</span></div><span data-indentation="4" class="element">&lt;/oneOrMore&gt;</span></div><span data-indentation="3" class="element">&lt;/list&gt;</span></div>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:oneOrMore&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:list&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
             <div class="code" xml:space="preserve" data-lang="ODD"><code>

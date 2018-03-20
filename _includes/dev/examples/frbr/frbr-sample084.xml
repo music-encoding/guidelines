@@ -1,44 +1,27 @@
-<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:id="source.printed_choral_parts">
+<work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
    <titleStmt>
-      <title>Printed choral parts</title>
+      <title>Der Ring des Nibelungen</title>
    </titleStmt>
-   <pubStmt>
-      <publisher>Horneman &amp; Erslev</publisher>
-      <pubPlace>Copenhagen</pubPlace>
-      <date isodate="1871">1871</date>
-   </pubStmt>
    <componentGrp>
-      <source>
+      <work>
          <titleStmt>
-            <title>Soprani</title>
+            <title>Das Rheingold</title>
          </titleStmt>
-         <physDesc>
-            <extent unit="pages">4</extent>
-         </physDesc>
-      </source>
-      <source>
+      </work>
+      <work>
          <titleStmt>
-            <title>Alti</title>
+            <title>Die Walküre</title>
          </titleStmt>
-         <physDesc>
-            <extent unit="pages">4</extent>
-         </physDesc>
-      </source>
-      <source>
+      </work>
+      <work>
          <titleStmt>
-            <title>Tenori</title>
+            <title>Siegfried</title>
          </titleStmt>
-         <physDesc>
-            <extent unit="pages">6</extent>
-         </physDesc>
-      </source>
-      <source>
+      </work>
+      <work>
          <titleStmt>
-            <title>Bassi</title>
+            <title>Götterdämmerung</title>
          </titleStmt>
-         <physDesc>
-            <extent unit="pages">6</extent>
-         </physDesc>
-      </source>
+      </work>
    </componentGrp>
-</source>
+</work>

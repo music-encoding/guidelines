@@ -1,21 +1,17 @@
-<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
    <titleStmt>
-      <title>Trois trios pour le piano-forte violon, et violoncelle</title>
+      <title>Sonata No. 2</title>
    </titleStmt>
-   <itemList>
-      <item label="Copy at Stanford">
-         <physLoc>
-            <repository>
-               <corpName>Stanford University Library</corpName>
-            </repository>
-         </physLoc>
-      </item>
-      <item label="Copy at Dresden">
-         <physLoc>
-            <repository>
-               <corpName>Dresden, Sächsische Landesbibliothek - Staats- und Universitätsbibliothek</corpName>
-            </repository>
-         </physLoc>
-      </item>
-   </itemList>
-</source>
+   <expressionList>
+      <expression>
+         <titleStmt>
+            <title>Live recording at Carnegie Hall</title>
+         </titleStmt>
+      </expression>
+      <expression>
+         <titleStmt>
+            <title>Studio recording</title>
+         </titleStmt>
+      </expression>
+   </expressionList>
+</work>

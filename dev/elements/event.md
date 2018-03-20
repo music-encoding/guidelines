@@ -291,41 +291,76 @@ title: "event"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;choice&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;zeroOrMore&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;choice&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:choice&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- data-like organization --&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventpart.html">model.eventPart</a>"</span></span>
                                     /&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a>"</span></span>
                                     /&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a>"</span></span>
-                                    /&gt;</span></div><span data-indentation="4" class="element">&lt;/choice&gt;</span></div><span data-indentation="3" class="element">&lt;/zeroOrMore&gt;</span></div>
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;zeroOrMore&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;choice&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- free-form organization --&gt;</span></div>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:zeroOrMore&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="comment">&lt;!-- model.listLike is expanded here in order to disallow biblList,
+                                    castList, and eventList --&gt;</span></div>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.plike.html">model.pLike</a>"</span></span>
                                     /&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.tablelike.html">model.tableLike</a>"</span></span>
                                     /&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/list.html">list</a>"</span></span>
-                                    /&gt;</span></div><span data-indentation="4" class="element">&lt;/choice&gt;</span></div><span data-indentation="3" class="element">&lt;/zeroOrMore&gt;</span></div><span data-indentation="2" class="element">&lt;/choice&gt;</span></div>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:choice&gt;</span></div>
                      
+                     <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- biblList may occur in either organizational approach, but must come at the end
+                           --&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>

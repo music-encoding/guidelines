@@ -1,0 +1,19 @@
+<list xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" form="ordered">
+   <li>On Wenlock Edge
+      <ref target="#song1-p1">1</ref>
+   </li>
+   <li>From Far, From Eve and Morning
+      <ref target="#song2-p15">15</ref>
+   </li>
+   <!-- .... -->
+</list>
+<!-- Later in the document -->
+<mdiv xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" type="song">
+   <pb xml:id="song1-p1"></pb>
+   <!-- .... -->
+</mdiv>
+<mdiv xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" type="song">
+   <pb xml:id="song2-p15"></pb>
+   <!-- .... -->
+</mdiv>
+<!-- .... -->

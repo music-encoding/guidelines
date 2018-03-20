@@ -224,7 +224,7 @@ title: "useRestrict"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:ref
                            
                            <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/macro.struc-unstruccontent.html">macro.struc-unstrucContent</a>"</span></span>
                            /&gt;</span></div>
@@ -235,12 +235,12 @@ title: "useRestrict"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>
-               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/useRestrict.html">useRestrict</a> may indicate limitations imposed by an owner, repository,
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/userestrict.html">useRestrict</a> may indicate limitations imposed by an owner, repository,
                or legal statute (for example, copyright law) regarding the reproduction, publication,
                or
                quotation of the item. It may also indicate the absence of restrictions, such as when
                rights
-               have been ceded to the public domain. Do not confuse this element with the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/accessRestrict.html">accessRestrict</a> element, which holds information about conditions affecting the
+               have been ceded to the public domain. Do not confuse this element with the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/accessrestrict.html">accessRestrict</a> element, which holds information about conditions affecting the
                availability of the material.This element is modelled on an element in the Encoded
                Archival Description (EAD)
                standard.

@@ -1,27 +1,21 @@
-<work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
    <titleStmt>
-      <title>Der Ring des Nibelungen</title>
+      <title>Trois trios pour le piano-forte violon, et violoncelle</title>
    </titleStmt>
-   <componentGrp>
-      <work>
-         <titleStmt>
-            <title>Das Rheingold</title>
-         </titleStmt>
-      </work>
-      <work>
-         <titleStmt>
-            <title>Die Walküre</title>
-         </titleStmt>
-      </work>
-      <work>
-         <titleStmt>
-            <title>Siegfried</title>
-         </titleStmt>
-      </work>
-      <work>
-         <titleStmt>
-            <title>Götterdämmerung</title>
-         </titleStmt>
-      </work>
-   </componentGrp>
-</work>
+   <itemList>
+      <item label="Copy at Stanford">
+         <physLoc>
+            <repository>
+               <corpName>Stanford University Library</corpName>
+            </repository>
+         </physLoc>
+      </item>
+      <item label="Copy at Dresden">
+         <physLoc>
+            <repository>
+               <corpName>Dresden, Sächsische Landesbibliothek - Staats- und Universitätsbibliothek</corpName>
+            </repository>
+         </physLoc>
+      </item>
+   </itemList>
+</source>

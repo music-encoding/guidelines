@@ -103,7 +103,7 @@ title: "meiHead"
       <tr>
          <td class="wovenodd-col1"><strong>Member of</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"></div>
+            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.startlike.header.html">model.startLike.header</a></div>
          </td>
       </tr>
       <tr>
@@ -146,38 +146,55 @@ title: "meiHead"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meiversion.html">att.meiVersion</a>"</span></span>/&gt;</span></div>
                      
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.startlike.header.html">model.startLike.header</a>"</span></span>/&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/altid.html">altId</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:ref
                            
                            <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/filedesc.html">fileDesc</a>"</span></span>
                            /&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;optional&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingdesc.html">encodingDesc</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/optional&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;optional&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/workdesc.html">workDesc</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/optional&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/extmeta.html">extMeta</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;optional&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/revisiondesc.html">revisionDesc</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/optional&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
@@ -190,7 +207,7 @@ title: "meiHead"
                This
                information is often essential in a machine-readable environment. Five sub-elements
                must be
-               encoded in the following order: <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/altId.html">altId</a>(optional), <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fileDesc.html">fileDesc</a>(required), <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingDesc.html">encodingDesc</a>(optional), <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a>(optional), and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/revisionDesc.html">revisionDesc</a>(optional). These elements
+               encoded in the following order: <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/altid.html">altId</a>(optional), <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/filedesc.html">fileDesc</a>(required), <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingdesc.html">encodingDesc</a>(optional), <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workdesc.html">workDesc</a>(optional), and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/revisiondesc.html">revisionDesc</a>(optional). These elements
                and their sub-elements provide: a unique identifier for the MEI file, bibliographic
                information about the MEI file and its sources, information about the encoding process,
                information about the creation of the work being encoded, and statements regarding

@@ -1,13 +1,12 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <staff n="1">
-      <layer>
-         <note dur="4" oct="5" pname="c"></note>
-         <note dur="4" oct="4" pname="f"></note>
-         <note dur="4" oct="4" pname="g"></note>
-         <note dur="4" oct="4" pname="c"></note>
-      </layer>
-   </staff>
-   <slur></slur>
-   <tempo></tempo>
-   <dynam></dynam>
-</measure>
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <layer>
+      <note dur="2" oct="4" pname="g" slur="i1"></note>
+      <note dur="8" oct="4" pname="a" slur="m1 i2"></note>
+      <note dur="8" oct="4" pname="g" slur="m1 t2"></note>
+      <note accid="s" dur="4" oct="4" pname="f" slur="t1"></note>
+   </layer>
+   <layer>
+      <note dots="1" dur="2" oct="3" pname="b" slur="i1"></note>
+      <note dur="4" oct="4" pname="d" slur="t1"></note>
+   </layer>
+</staff>

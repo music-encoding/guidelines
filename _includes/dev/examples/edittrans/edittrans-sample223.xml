@@ -1,5 +1,9 @@
-<note xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" dur="4" oct="4" pname="c">
-   <unclear reason="ink blot">
-      <artic artic="acc"></artic>
-   </unclear>
-</note>
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <!-- using abbr -->
+   <p>... the next passage shall be performed in<abbr expan="piano">pno:</abbr>...
+   </p>
+   <!-- using expan -->
+   <p>... the next passage shall be performed in
+      <expan abbr="pno:">piano</expan>...
+   </p>
+</div>

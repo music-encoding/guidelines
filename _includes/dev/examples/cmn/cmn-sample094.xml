@@ -1,1 +1,13 @@
-<staffDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G"></staffDef>
+<section xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="cmn_staffDef1">
+   <staff def="#cmn_staffDef1">
+      <layer def="#cmn_layerDef1">
+         <!-- layer content -->
+      </layer>
+   </staff>
+   <!-- OR: -->
+   <staff n="3">
+      <layer n="1">
+         <!-- layer content -->
+      </layer>
+   </staff>
+</section>

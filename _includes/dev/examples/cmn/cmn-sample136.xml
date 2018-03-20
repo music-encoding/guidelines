@@ -1,16 +1,2 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <staff n="1">
-      <!-- content omitted -->
-   </staff>
-   <staff n="2">
-      <layer>
-         <note dur="4"></note>
-         <note dur="4"></note>
-         <chord dur="4">
-            <!-- notes omitted -->
-         </chord>
-         <note></note>
-      </layer>
-   </staff>
-   <arpeg staff="2" tstamp="3"></arpeg>
-</measure>
+
+<!-- startid attribute indicates starting point, endid attribute marks the end --><dynam xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" endid="ID_of_ending_note" place="above" staff="2" startid="ID_of_starting_note">cresc. poco a poco</dynam>

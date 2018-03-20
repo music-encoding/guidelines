@@ -28,7 +28,7 @@ title: "symbol"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@altsym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
                               an
-                              ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html">symbolDef</a> element elsewhere in the document.</span>
+                              ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element elsewhere in the document.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altSym</a></span></div>
                      </td>
@@ -355,7 +355,7 @@ title: "symbol"
                be used to record horizontal, vertical, or time offsets from the absolute coordinates
                or
                from the location of the referenced element. The <span class="att">ref</span> attribute must contain the
-               id of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbolDef.html">symbolDef</a> element. The <span class="att">scale</span> attribute indicates
+               id of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element. The <span class="att">scale</span> attribute indicates
                that the printed output must be scaled by the specified percentage.
             </p>
          </td>

@@ -1,11 +1,18 @@
-<staffDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3" xml:id="cmn_staffDef1"></staffDef>
-<!-- later in the file: -->
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" def="#cmn_staffDef1">
-   <!-- @def refers to staffDef with this identifier -->
-   <!-- staff content -->
-</staff>
-<!-- or: -->
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3">
-   <!-- @n refers to staffDef with this numeric label -->
-   <!-- staff content -->
-</staff>
+<section xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <measure n="1">
+      <staff n="1">
+         <layer>
+            <chord dur="1">
+               <note oct="5" pname="c"></note>
+               <note oct="4" pname="g"></note>
+               <note oct="4" pname="e"></note>
+            </chord>
+         </layer>
+      </staff>
+      <staff n="2">
+         <layer>
+            <note dur="1" oct="3" pname="c"></note>
+         </layer>
+      </staff>
+   </measure>
+</section>

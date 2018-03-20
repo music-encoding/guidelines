@@ -1,0 +1,18 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <staff n="1">
+      <!-- content omitted -->
+   </staff>
+   <staff n="2">
+      <ossia>
+         <layer n="1">
+            <!-- original content in regular layer -->
+         </layer>
+         <layer>
+            <!-- alternative content in separate layer -->
+         </layer>
+      </ossia>
+   </staff>
+   <staff n="3">
+      <!-- content omitted -->
+   </staff>
+</measure>

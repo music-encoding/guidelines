@@ -1,11 +1,9 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="1">
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" n="1">
    <staff n="1">
       <layer n="1">
-         <note dur="4" oct="5" pname="g" stem.dir="down"></note>
-         <note dur="4" oct="5" pname="d" stem.dir="down"></note>
-         <note dur="4" oct="5" pname="e" stem.dir="down"></note>
-         <note dur="4" oct="5" pname="c" stem.dir="down"></note>
+         <note dur="2" oct="4" pname="c"></note>
+         <note dur="2" oct="4" pname="c"></note>
       </layer>
    </staff>
-   <turn form="norm" staff="1" tstamp="1"></turn>
+   <mordent form="inv" place="below" staff="1" tstamp="2"></mordent>
 </measure>

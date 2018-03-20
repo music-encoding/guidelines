@@ -537,10 +537,13 @@ title: "slur"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/curve.html">curve</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
@@ -601,9 +604,9 @@ title: "slur"
                            @ho or @startho or @endho or @to or @startto or @endto or @vo or @startvo or @endvo
                            or              @x or @y or @x2 or @y2]]"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not(@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or   
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(@bezier or @bulge or @curvedir or @lform or @lwidth or @ho or @startho or   
                               @endho or @to or @startto or @endto or @vo or @startvo or @endvo or @x or @y or @x2
-                              or @y2)"</span> <span class="attribute">role=</span><span class="attributevalue">"warning"</span>&gt;</span>The visual attributes of the slur (@bezier, @bulge, @curvedir, @lform,
+                              or @y2)"</span>&gt;</span>The visual attributes of the slur (@bezier, @bulge, @curvedir, @lform,
                         @lwidth, @ho, @startho, @endho, @to, @startto, @endto, @vo, @startvo, @endvo, @x,
                         @y,
                         @x2, and @y2) will be overridden by visual attributes of the contained curve

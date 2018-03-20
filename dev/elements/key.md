@@ -211,7 +211,7 @@ title: "key"
          <td class="wovenodd-col2">
             <p>This element is used exclusively within bibliographic descriptions. Do not confuse
                this
-               element with <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/keySig.html">keySig</a>, which is used within the body of an MEI file to
+               element with <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/keysig.html">keySig</a>, which is used within the body of an MEI file to
                record this data.
             </p>
          </td>

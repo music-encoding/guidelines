@@ -140,6 +140,7 @@ title: "data.ACCIDENTAL.WRITTEN"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Natural + sharp; used to cancel preceding double sharp.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
+                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- su, sd, fu, fd are equivalent to usual symbols plus an arrow (Gould, p. 95)--&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"su"</span>&gt;</span>
                            
@@ -171,6 +172,7 @@ title: "data.ACCIDENTAL.WRITTEN"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Natural note lowered by quarter tone (natural modified by arrow).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
+                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- 1qf, 3qf, 1qs, 3qs represent fixed symbols (Gould, p. 96) --&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"1qf"</span>&gt;</span>
                            
@@ -199,7 +201,7 @@ title: "data.ACCIDENTAL.WRITTEN"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>
-               <img src="{{ site.baseurl }}/Images/ExampleImages/accid-20100510.png" class="graphic">
+               <img src="{{ site.baseurl }}/images/{{ page.version }}/Images/ExampleImages/accid-20100510.png" class="graphic">
                
             </p>
          </td>

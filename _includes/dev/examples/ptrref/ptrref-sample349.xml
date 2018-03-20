@@ -1,0 +1,10 @@
+<list xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <li>
+      <!-- item description -->
+      <ptr target="#p123"></ptr>
+   </li>
+   <li>
+      <!-- item description -->
+      <ptr target="#p124"></ptr>
+   </li>
+</list>

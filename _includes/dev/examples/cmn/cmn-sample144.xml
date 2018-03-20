@@ -1,9 +1,2 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <staff n="1">
-      <layer>
-         <note dur="2" oct="3" pname="g" syl="Wald,"></note>
-         <note dur="4" oct="3" pname="c" syl="so"></note>
-      </layer>
-   </staff>
-   <breath staff="1" tstamp="1.5"></breath>
-</measure>
+
+<!-- downward arpeggio with arrow added to visual symbol --><arpeg xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" arrow="true" order="down" staff="2" tstamp="3"></arpeg>

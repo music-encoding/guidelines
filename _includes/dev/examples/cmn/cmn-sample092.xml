@@ -1,15 +1,11 @@
-<staffDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3" xml:id="cmn_staffDef1">
-   <layerDef n="1" xml:id="cmn_layerDef1"></layerDef>
-</staffDef>
+<staffDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" n="3" xml:id="cmn_staffDef1"></staffDef>
 <!-- later in the file: -->
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" def="#cmn_staffDef1">
-   <layer def="#cmn_layerDef1">
-      <!-- layer content -->
-   </layer>
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" def="#cmn_staffDef1">
+   <!-- @def refers to staffDef with this identifier -->
+   <!-- staff content -->
 </staff>
-<!-- OR: -->
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3">
-   <layer n="1">
-      <!-- layer content -->
-   </layer>
+<!-- or: -->
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" n="3">
+   <!-- @n refers to staffDef with this numeric label -->
+   <!-- staff content -->
 </staff>

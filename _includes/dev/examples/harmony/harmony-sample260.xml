@@ -1,19 +1,10 @@
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="3.5">
-   <fb>
-      <f>♭3</f>
-      <f>6</f>
-      <f>5</f>
-   </fb>
-</harm>
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="4">
-   <fb>
-      <f>-</f>
-      <f>♯3</f>
-   </fb>
-</harm>
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="4.5">
-   <fb>
-      <f>7</f>
-      <f>-</f>
-   </fb>
-</harm>
+
+<!-- Chord defined in scoreDef --><chordDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="harmonychordA">
+   <chordMember oct="2" pname="a"></chordMember>
+   <chordMember oct="3" pname="e"></chordMember>
+   <chordMember accid.ges="s" oct="4" pname="c"></chordMember>
+   <chordMember oct="4" pname="e"></chordMember>
+   <chordMember oct="4" pname="a"></chordMember>
+</chordDef>
+<!-- Later in musical text -->
+<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" chordref="#harmonychordA" tstamp="1">A</harm>

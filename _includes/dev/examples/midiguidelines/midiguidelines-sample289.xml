@@ -1,0 +1,16 @@
+<scoreDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" key.sig="1f" meter.count="4" meter.sym="common" meter.unit="4" ppq="48">
+   <staffGrp>
+      <staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="midi.P5">
+         <instrDef midi.instrnum="41"></instrDef>
+      </staffDef>
+      <staffDef clef.line="2" clef.shape="G" lines="5" n="2" xml:id="midi.P6">
+         <instrDef midi.instrnum="41"></instrDef>
+      </staffDef>
+      <staffDef clef.line="3" clef.shape="C" lines="5" n="3" xml:id="midi.P7">
+         <instrDef midi.instrnum="42"></instrDef>
+      </staffDef>
+      <staffDef clef.line="4" clef.shape="F" lines="5" n="3" xml:id="midi.P8">
+         <instrDef midi.instrnum="43"></instrDef>
+      </staffDef>
+   </staffGrp>
+</scoreDef>

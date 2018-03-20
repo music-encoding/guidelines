@@ -1,0 +1,16 @@
+<mdiv xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <score>
+      <scoreDef>
+         <timeline avref="http://example.com/mediafile.mp3" origin="linkAlign.e2t1w1">
+            <when absolute="00:00:00.0" xml:id="linkAlign.e2t2w1"></when>
+            <when interval="0:01.0" inttype="time" since="linkAlign.e2t2w1" xml:id="linkAlign.e2t2w2"></when>
+            <when interval="128" inttype="midi" since="linkAlign.e2t2w2" xml:id="linkAlign.e2t2w3"></when>
+         </timeline>
+      </scoreDef>
+      <section>
+         <measure when="linkAlign.e2t2w1" xml:id="linkAlign.e2m1"></measure>
+         <measure when="linkAlign.e2t2w2" xml:id="linkAlign.e2m2"></measure>
+         <measure when="linkAlign.e2t2w3" xml:id="linkAlign.e2m3"></measure>
+      </section>
+   </score>
+</mdiv>

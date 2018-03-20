@@ -1,0 +1,12 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <staff n="1">
+      <layer n="1">
+         <note dots="1" dur="4" oct="5" pname="g" stem.dir="down" tie="i"></note>
+         <beam>
+            <note dots="1" dur="16" oct="5" pname="g" stem.dir="down" tie="t"></note>
+            <note dur="32" oct="5" pname="a" stem.dir="down"></note>
+         </beam>
+      </layer>
+   </staff>
+   <turn accidlower="s" place="above" staff="1" tstamp="2.75"></turn>
+</measure>

@@ -1,17 +1,7 @@
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="3.5">
-   <fb>
-      <f>♭3</f>
-      <f extender="true">6</f>
-      <f>5</f>
-   </fb>
-</harm>
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="4">
-   <fb>
-      <f extender="true">♯3</f>
-   </fb>
-</harm>
-<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" tstamp="4.5">
-   <fb>
-      <f>7</f>
-   </fb>
-</harm>
+<chordDef xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="harmonychordA2">
+   <chordMember oct="2" pname="a"></chordMember>
+   <chordMember inth="7"></chordMember>
+   <chordMember inth="16"></chordMember>
+   <chordMember inth="19"></chordMember>
+   <chordMember inth="24"></chordMember>
+</chordDef>

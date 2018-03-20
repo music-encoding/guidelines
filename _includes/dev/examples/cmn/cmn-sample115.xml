@@ -1,14 +1,37 @@
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <layer>
-      <chord dur="4">
-         <note pname="f" tie="i"></note>
-         <note pname="c" tie="i"></note>
-         <note pname="a" tie="i"></note>
-      </chord>
-      <chord dur="4">
-         <note pname="f" tie="t"></note>
-         <note pname="c" tie="t"></note>
-         <note pname="a" tie="t"></note>
-      </chord>
-   </layer>
-</staff>
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" n="1">
+   <!-- staff 1 omitted -->
+   <staff n="2">
+      <layer n="1">
+         <chord dur="16">
+            <note oct="2" pname="f"></note>
+            <note oct="1" pname="f"></note>
+         </chord>
+         <beam>
+            <note oct="2" pname="f" tie="i"></note>
+            <note oct="2" pname="a" tie="i"></note>
+            <note oct="3" pname="c" tie="i"></note>
+         </beam>
+         <chord dur="4">
+            <note oct="3" pname="f" tie="i"></note>
+            <note oct="3" pname="c" tie="m"></note>
+            <note oct="2" pname="a" tie="m"></note>
+            <note oct="2" pname="f" tie="m"></note>
+         </chord>
+      </layer>
+   </staff>
+</measure>
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" n="2">
+   <!-- staff 1 omitted -->
+   <staff n="2">
+      <layer n="1">
+         <chord dur="16">
+            <note oct="3" pname="f" tie="t"></note>
+            <note oct="3" pname="c" tie="t"></note>
+            <note oct="2" pname="a" tie="t"></note>
+            <note oct="2" pname="f" tie="t"></note>
+         </chord>
+         <!-- ... -->
+      </layer>
+   </staff>
+</measure>
+<!-- measures 3 and 4 omitted -->

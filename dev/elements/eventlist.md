@@ -190,59 +190,92 @@ title: "eventList"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;group&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;optional&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;choice&gt;</span><div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:group&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- an organizing data element; when not present, the list is a simple list of event
+                                 descriptions --&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:optional&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:choice&gt;</span>
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a>"</span></span>
                                        /&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.addresslike.html">model.addressLike</a>"</span></span>
                                        /&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.datelike.html">model.dateLike</a>"</span></span>
                                        /&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.namelike.agent.html">model.nameLike.agent</a>"</span></span>
                                        /&gt;</span></div>
-                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref
+                                 
+                                 <div class="indent6 indent"><span data-indentation="6" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.namelike.geogname.html">model.nameLike.geogName</a>"</span></span>
-                                       /&gt;</span></div><span data-indentation="5" class="element">&lt;/choice&gt;</span></div><span data-indentation="4" class="element">&lt;/optional&gt;</span></div>
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;choice&gt;</span><div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                                       /&gt;</span></div>
+                                 <span data-indentation="5" class="element">&lt;/rng:choice&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:optional&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- an event description or a nested group of events --&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:choice&gt;</span>
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a>"</span></span>
                                     /&gt;</span></div>
-                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;ref
+                              
+                              <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                     
                                     <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a>"</span></span>
-                                    /&gt;</span></div><span data-indentation="4" class="element">&lt;/choice&gt;</span></div><span data-indentation="3" class="element">&lt;/group&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                                    /&gt;</span></div>
+                              <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:group&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      
+                     <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- at the very end, a list of citations --&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
                               <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a>"</span></span>
-                              /&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a> contains <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a> elements that
+            <p>An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a> contains <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a> elements that
                capture a brief description of the associated event, including dates and locations
                where the
-               event took place. An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventList.html">eventList</a> describes events associated with a work
-               when it appears in the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workDesc.html">workDesc</a> element or events associated with the
+               event took place. An <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a> describes events associated with a work
+               when it appears in the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/workdesc.html">workDesc</a> element or events associated with the
                custodial history of a given copy of a source for the encoding when it appears within
                the
-               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html">relatedItem</a> elements. The
+               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relateditem.html">relatedItem</a> elements. The
                <span class="att">type</span> attribute may be used to distinguish between event lists with different
                functions, such as a list of events in the compositional process and a list of performance
                dates.

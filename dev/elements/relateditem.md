@@ -119,7 +119,7 @@ title: "relatedItem"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@rel</strong></span><span class="attributeUsage">(required)</span><span class="attributeDesc">Describes the relationship between the entity identified by the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html">relatedItem</a> element and the resource described in the parent element, i.e., <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relatedItem.html">relatedItem</a>.</span>
+                        <div class="attributeDef"><span class="attribute"><strong>@rel</strong></span><span class="attributeUsage">(required)</span><span class="attributeDesc">Describes the relationship between the entity identified by the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relateditem.html">relatedItem</a> element and the resource described in the parent element, i.e., <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relateditem.html">relatedItem</a>.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.modsrelationship.html">data.MODSRELATIONSHIP</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/relateditem.html">relatedItem</a></span></div>
                      </td>
@@ -260,10 +260,19 @@ title: "relatedItem"
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;zeroOrMore&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;choice&gt;</span><div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
                                  <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.bibllike.html">model.biblLike</a>"</span></span>
-                                 /&gt;</span></div><span data-indentation="3" class="element">&lt;/choice&gt;</span></div><span data-indentation="2" class="element">&lt;/zeroOrMore&gt;</span></div>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- ptr/ref children aren't necessary as relatedItem is a member of att.pointing.
+                                 --&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>

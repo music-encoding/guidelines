@@ -1,0 +1,21 @@
+<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <harm tstamp="3.5">
+      <fb>
+         <f>♭3</f>
+         <f>6</f>
+         <f>5</f>
+      </fb>
+   </harm>
+   <harm tstamp="4">
+      <fb>
+         <f>-</f>
+         <f>♯3</f>
+      </fb>
+   </harm>
+   <harm tstamp="4.5">
+      <fb>
+         <f>7</f>
+         <f>-</f>
+      </fb>
+   </harm>
+</measure>

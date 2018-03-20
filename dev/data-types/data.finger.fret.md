@@ -34,16 +34,20 @@ title: "data.FINGER.FRET"
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;choice&gt;</span><div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"positiveInteger"</span>&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:choice&gt;</span>
+                        
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"positiveInteger"</span>&gt;</span>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"minInclusive"</span>&gt;</span>1<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"maxInclusive"</span>&gt;</span>4<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>
+                        
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"token"</span>&gt;</span>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:param <span class="attribute">name=</span><span class="attributevalue">"pattern"</span>&gt;</span>x|o|t<span data-indentation="4" class="element">&lt;/rng:param&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div><span data-indentation="2" class="element">&lt;/choice&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:data&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:choice&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>

@@ -1,0 +1,16 @@
+<mei xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <meiHead>
+      <fileDesc>
+         <sourceDesc>
+            <source xml:id="facsimile.source1">
+               <!-- description of source -->
+            </source>
+         </sourceDesc>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <facsimile decls="#facsimile.source1">
+         <!-- facsimile content -->
+      </facsimile>
+   </music>
+</mei>

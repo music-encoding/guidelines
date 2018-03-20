@@ -1,16 +1,6 @@
-<section xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <measure>
-      <!-- … -->
-   </measure>
-   <measure>
-      <!-- … -->
-   </measure><del rend="strikethrough">
-      <measure>
-         <!-- … -->
-      </measure>
-      <measure>
-         <!-- … -->
-      </measure></del><measure>
-      <!-- … -->
-   </measure>
-</section>
+<chord xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <note dur="4" oct="4" pname="c"></note>
+   <note dur="4" oct="4" pname="e"></note>
+   <note dur="4" oct="4" pname="g"></note>
+   <note dur="4" oct="4" pname="a"></note>
+</chord>

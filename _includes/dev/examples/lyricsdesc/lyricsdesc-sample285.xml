@@ -1,0 +1,14 @@
+<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <layer>
+      <note dur="2" oct="3" pname="g"></note>
+      <note dur="2" oct="3" pname="f"></note>
+   </layer>
+</staff>
+<!-- later -->
+<lyrics xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" staff="1">
+   <verse>
+      <syl con="t" wordpos="t">re</syl>
+      <syl wordpos="i">il</syl>
+      <syl wordpos="i">pet</syl>
+   </verse>
+</lyrics>

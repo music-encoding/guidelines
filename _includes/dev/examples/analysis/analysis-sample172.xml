@@ -1,23 +1,16 @@
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="2">
-   <staff n="1">
-      <layer>
-         <chord dur="4" stem.dir="up" xml:id="analysis.chord1">
-            <note dur="4" mfunc="ct" oct="4" pname="f" xml:id="analysis.m2e1"></note>
-            <note dur="4" mfunc="ct" oct="4" pname="a" xml:id="analysis.m2e2"></note>
-            <note dur="4" mfunc="ct" oct="5" pname="c" xml:id="analysis.m2e3"></note>
-         </chord>
-         <note accid="f" dur="4" mfunc="ln" oct="4" pname="b" stem.dir="down" xml:id="analysis.m2e4"></note>
-      </layer>
-   </staff>
-</measure>
-<measure xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" n="3">
-   <staff n="1">
-      <layer>
-         <chord dur="4" stem.dir="up" xml:id="analysis.chord2">
-            <note dur="4" mfunc="ct" oct="4" pname="c" xml:id="analysis.m3e5"></note>
-            <note dur="4" mfunc="ct" oct="4" pname="e" xml:id="analysis.m3e6"></note>
-            <note dur="4" mfunc="ct" oct="4" pname="g" xml:id="analysis.m3e7"></note>
-         </chord>
-      </layer>
-   </staff>
-</measure>
+<section xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <measure n="1">
+      <staff n="1">
+         <layer>
+            <note dur="4" oct="4" pname="g" xml:id="analysis.note1_1"></note>
+         </layer>
+      </staff>
+   </measure>
+   <measure n="2">
+      <staff n="1">
+         <layer>
+            <note copyof="#analysis.note1_1"></note>
+         </layer>
+      </staff>
+   </measure>
+</section>

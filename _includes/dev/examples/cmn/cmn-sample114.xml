@@ -1,14 +1,4 @@
-<staff xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <layer>
-      <chord dur="4" tie="i">
-         <note pname="f"></note>
-         <note pname="c"></note>
-         <note pname="a"></note>
-      </chord>
-      <chord dur="4" tie="t">
-         <note pname="f"></note>
-         <note pname="c"></note>
-         <note pname="a"></note>
-      </chord>
-   </layer>
-</staff>
+<layer xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <note dur="2" oct="4" pname="f" tie="i"></note>
+   <note dots="1" dur="4" oct="4" pname="f" tie="t"></note>
+</layer>

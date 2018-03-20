@@ -1,0 +1,7 @@
+<harm xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <fb>
+      <f>6⃥</f>
+      <!-- or -->
+      <f>6\</f>
+   </fb>
+</harm>
