@@ -2081,7 +2081,7 @@
       <p>
         <specList>
           <specDesc key="itemList"></specDesc>
-          <specDesc key="componentGrp"></specDesc>
+          <specDesc key="componentList"></specDesc>
           <specDesc key="relationList"></specDesc>
         </specList>
       </p>
@@ -2965,7 +2965,7 @@
         <specList>
           <specDesc key="termList"></specDesc>
           <specDesc key="term"></specDesc>
-          <specDesc key="classCode"></specDesc>
+          <specDesc key="classDecls"></specDesc>
         </specList>
       </p>
       <p>The <gi scheme="MEI">termList</gi> element categorizes an individual text by supplying a
@@ -2975,7 +2975,7 @@
         minor; in others, the list has an organized substructure of its own. No recommendations are
         made here as to which method is to be preferred. Wherever possible, such terms should be
         taken from a recognized source.</p>
-      <p>The <gi scheme="MEI">classCode</gi> element offers the possibility of capturing a
+      <p>The <gi scheme="MEI">classDecls</gi> element offers the possibility of capturing a
         bibliographic citation and/or a URI at which the classification scheme or information about
         it may be found.</p>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -3030,7 +3030,7 @@
       <p>
         <specList>
           <specDesc key="expressionList"></specDesc>
-          <specDesc key="componentGrp"></specDesc>
+          <specDesc key="componentList"></specDesc>
           <specDesc key="relationList"></specDesc>
         </specList>
       </p>
@@ -3537,12 +3537,12 @@
       constituent parts. All four entities utilize the same element:</p>
     <p>
       <specList>
-        <specDesc key="componentGrp"></specDesc>
+        <specDesc key="componentList"></specDesc>
       </specList>
     </p>
     <p>However, the child elements of a component group must be the same type as the group's parent.
-      This allows for a more detailed description than is possible using the core MEI <gi scheme="MEI">contents</gi> element. For example, a work element’s <gi scheme="MEI">componentGrp</gi> element can only contain <gi scheme="MEI">work</gi> elements, etc. In
-      this way, the <gi scheme="MEI">componentGrp</gi> element may be employed to describe composite
+      This allows for a more detailed description than is possible using the core MEI <gi scheme="MEI">contents</gi> element. For example, a work element’s <gi scheme="MEI">componentList</gi> element can only contain <gi scheme="MEI">work</gi> elements, etc. In
+      this way, the <gi scheme="MEI">componentList</gi> element may be employed to describe composite
       works, as in the example below:</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
 <work xmlns="http://www.music-encoding.org/ns/mei">
@@ -3685,7 +3685,7 @@
   </relationList>
 </source>
     </egXML>
-    <p>Within the <gi scheme="MEI">componentGrp</gi> element, the order of child elements implicitly
+    <p>Within the <gi scheme="MEI">componentList</gi> element, the order of child elements implicitly
       describes a hasSuccessor/isSuccessorOf relationship between components, i.e. it defines a
       certain sequence such as the movements of a work. In other cases, <gi scheme="MEI">relation</gi> elements may be needed to explicitly encode relationships not otherwise
       defined by encoding order or hierarchy. For instance, the hasReproduction/isReproductionOf
@@ -3702,8 +3702,8 @@
   </relationList>
 </source>
     </egXML>
-    <p>Moreover, the use of <gi scheme="MEI">componentGrp</gi> implicitly defines a hasPart/isPartOf
-      relationship between the componentGrp element’s parent and its child elements. Using the <gi scheme="MEI">relationList</gi> and relation elements to define their relationship, the four
+    <p>Moreover, the use of <gi scheme="MEI">componentList</gi> implicitly defines a hasPart/isPartOf
+      relationship between the componentList element’s parent and its child elements. Using the <gi scheme="MEI">relationList</gi> and relation elements to define their relationship, the four
       component works in the "Der Ring des Nibelungen" example above could alternatively be encoded
       as sibling work elements to the "Ring" work element.</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -6307,8 +6307,7 @@
     <p>
       <specList>
         <specDesc key="syllable"></specDesc>
-        <specDesc key="ineume"></specDesc>
-        <specDesc key="uneume"></specDesc>
+        <specDesc key="nc"></specDesc>
       </specList>
     </p>
   </div>
@@ -6359,7 +6358,7 @@
       position relative to an imaginary line and initial clef is consistent.</p>
     <p>The <gi scheme="MEI">syllable</gi> element is used as the primary organizational element for
       neume notation within a <gi scheme="MEI">layer</gi> element. Within <gi scheme="MEI">syllable</gi>, the <gi scheme="MEI">syl</gi> element defined in the MEI.shared module is
-      used for encoding the textual content, while the <gi scheme="MEI">uneume</gi> and <gi scheme="MEI">ineume</gi> elements are used to encode the neumes themeselves. Within these
+      used for encoding the textual content, while the <gi scheme="MEI">nc</gi> and <gi scheme="MEI">nc</gi> elements are used to encode the neumes themeselves. Within these
       neume module elements, other standard MEI mechanisms are available to accommodate, for
       example, editorial or critical markup.</p>
   </div>
@@ -7081,7 +7080,7 @@
         major scale are do, re, mi, fa, so, la and ti. In the <soCalled>fixed-do</soCalled> system,
         the syllable "do" is always associated with the pitch "c", while in the
           <soCalled>movable-do</soCalled> system, "do" is associated with the tonic note. The
-          <att>psolfa</att> attribute is only allowed on <gi scheme="MEI">note</gi> and <gi scheme="MEI">uneume</gi> elements. Its value is unconstrained in order to accommodate
+          <att>psolfa</att> attribute is only allowed on <gi scheme="MEI">note</gi> and <gi scheme="MEI">nc</gi> elements. Its value is unconstrained in order to accommodate
         various solmization systems.</p>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
 <measure>
@@ -10196,11 +10195,11 @@
 
   <div type="div2" xml:id="lyricsAfterEvents">
     <head>Vocally Performed Text Encoded Separately</head>
-    <p>Vocally performed text may also be encoded separately from the notes with the <gi scheme="MEI">lyrics</gi> element. These are the main components:</p>
+    <p>Vocally performed text may also be encoded separately from the notes with the <gi scheme="MEI">lg</gi> element. These are the main components:</p>
 
     <p><specList>
-        <specDesc key="lyrics"></specDesc>
-        <specDesc atts="staff layer" key="lyrics"></specDesc>
+        <specDesc key="lg"></specDesc>
+        <specDesc atts="staff layer" key="lg"></specDesc>
       </specList></p>
 
     <p>Since this element is separated from the encoding of the notes, it must be associated with a
