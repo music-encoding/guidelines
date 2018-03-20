@@ -1,9 +1,9 @@
 
-<!-- within the header for this document: --><respStmt xmlns:xi="http://www.w3.org/2001/XInclude">
+<!-- within the header for this document: --><respStmt>
    <name role="editor" xml:id="editTrans.JK">Johannes Kepper</name>
 </respStmt>
 <!-- … -->
-<chord xmlns:xi="http://www.w3.org/2001/XInclude">
+<chord>
    <note dur="4" oct="4" pname="c"></note>
    <note dur="4" oct="4" pname="e"></note>
    <choice>

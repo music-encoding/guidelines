@@ -1,1 +1,1 @@
-<ptr xmlns:xi="http://www.w3.org/2001/XInclude" target="http://path.to.resource/myAudio.aiff" targettype="audioClip"></ptr>
+<ptr target="http://path.to.resource/myAudio.aiff" targettype="audioClip"></ptr>

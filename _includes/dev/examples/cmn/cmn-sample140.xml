@@ -1,4 +1,4 @@
-<layer xmlns:xi="http://www.w3.org/2001/XInclude">
+<layer>
    <tuplet dur="2" num="3" numbase="2">
       <note dur="4" oct="4" pname="g"></note>
       <note accid="s" dur="4" oct="4" pname="f"></note>

@@ -1,4 +1,4 @@
-<chordDef xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="harmonychordA2">
+<chordDef xml:id="harmonychordA2">
    <chordMember oct="2" pname="a"></chordMember>
    <chordMember inth="7"></chordMember>
    <chordMember inth="16"></chordMember>

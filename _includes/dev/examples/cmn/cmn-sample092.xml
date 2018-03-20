@@ -1,11 +1,11 @@
-<staffDef xmlns:xi="http://www.w3.org/2001/XInclude" n="3" xml:id="cmn_staffDef1"></staffDef>
+<staffDef n="3" xml:id="cmn_staffDef1"></staffDef>
 <!-- later in the file: -->
-<staff xmlns:xi="http://www.w3.org/2001/XInclude" def="#cmn_staffDef1">
+<staff def="#cmn_staffDef1">
    <!-- @def refers to staffDef with this identifier -->
    <!-- staff content -->
 </staff>
 <!-- or: -->
-<staff xmlns:xi="http://www.w3.org/2001/XInclude" n="3">
+<staff n="3">
    <!-- @n refers to staffDef with this numeric label -->
    <!-- staff content -->
 </staff>

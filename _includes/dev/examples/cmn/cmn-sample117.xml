@@ -1,4 +1,4 @@
-<staff xmlns:xi="http://www.w3.org/2001/XInclude">
+<staff>
    <layer>
       <chord dur="4">
          <note pname="f" tie="i"></note>

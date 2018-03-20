@@ -1,4 +1,4 @@
-<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="source.printed_choral_parts">
+<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:id="source.printed_choral_parts">
    <titleStmt>
       <title>Printed choral parts</title>
    </titleStmt>

@@ -1,4 +1,4 @@
-<performance xmlns:xi="http://www.w3.org/2001/XInclude">
+<performance>
    <recording>
       <clip begin="00:00:00.00" betype="time" end="00:07:00.00" n="mov1">
          <avFile mimetype="audio/aiff" target="movement01.aiff"></avFile>

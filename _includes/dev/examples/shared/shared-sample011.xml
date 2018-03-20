@@ -1,5 +1,5 @@
-<note xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="shared.someInterestingNote"></note>
+<note xml:id="shared.someInterestingNote"></note>
 <!-- elsewhere in the document: -->
-<annot xmlns:xi="http://www.w3.org/2001/XInclude" plist="#shared.someInterestingNote">
+<annot plist="#shared.someInterestingNote">
    <!-- additional information about this note -->
 </annot>

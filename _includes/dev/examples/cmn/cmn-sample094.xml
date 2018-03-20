@@ -1,4 +1,4 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="cmn_staffDef1">
+<section xml:id="cmn_staffDef1">
    <staff def="#cmn_staffDef1">
       <layer def="#cmn_layerDef1">
          <!-- layer content -->

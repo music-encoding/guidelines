@@ -1,9 +1,9 @@
-<scoreDef xmlns:xi="http://www.w3.org/2001/XInclude">
+<scoreDef>
    <staffGrp>
       <staffDef clef.line="4" clef.shape="F" key.sig="4s" lines="5" n="1"></staffDef>
    </staffGrp>
 </scoreDef>
-<section xmlns:xi="http://www.w3.org/2001/XInclude">
+<section>
    <measure>
       <staff n="1">
          <layer n="1">

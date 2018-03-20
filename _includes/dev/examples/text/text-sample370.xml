@@ -1,4 +1,4 @@
-<list xmlns:xi="http://www.w3.org/2001/XInclude" form="ordered">
+<list form="ordered">
    <li>On Wenlock Edge
       <ref target="#song1-p1">1</ref>
    </li>
@@ -8,11 +8,11 @@
    <!-- .... -->
 </list>
 <!-- Later in the document -->
-<mdiv xmlns:xi="http://www.w3.org/2001/XInclude" type="song">
+<mdiv type="song">
    <pb xml:id="song1-p1"></pb>
    <!-- .... -->
 </mdiv>
-<mdiv xmlns:xi="http://www.w3.org/2001/XInclude" type="song">
+<mdiv type="song">
    <pb xml:id="song2-p15"></pb>
    <!-- .... -->
 </mdiv>

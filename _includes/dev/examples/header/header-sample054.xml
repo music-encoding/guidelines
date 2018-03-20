@@ -1,9 +1,9 @@
-<langUsage xmlns:xi="http://www.w3.org/2001/XInclude">
+<langUsage>
    <language xml:id="fr-CA">Québecois</language>
    <language xml:id="en-CA">Canadian English</language>
    <language xml:id="en-GB">British English</language>
 </langUsage>
 <!-- Later in the document -->
-<verse xmlns:xi="http://www.w3.org/2001/XInclude" n="1" xml:lang="fr-CA"></verse>
-<verse xmlns:xi="http://www.w3.org/2001/XInclude" n="2" xml:lang="en-CA"></verse>
-<verse xmlns:xi="http://www.w3.org/2001/XInclude" n="3" xml:lang="en-GB"></verse>
+<verse n="1" xml:lang="fr-CA"></verse>
+<verse n="2" xml:lang="en-CA"></verse>
+<verse n="3" xml:lang="en-GB"></verse>

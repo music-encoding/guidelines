@@ -1,4 +1,4 @@
-<staff xmlns:xi="http://www.w3.org/2001/XInclude" n="2">
+<staff n="2">
    <layer>
       <beam>
          <note dur="16" oct="3" pname="g"></note>

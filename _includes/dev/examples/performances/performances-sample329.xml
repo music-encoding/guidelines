@@ -1,4 +1,4 @@
-<performance xmlns:xi="http://www.w3.org/2001/XInclude">
+<performance>
    <recording begin="00:00:00.00" betype="time" end="00:05:21.00">
       <avFile mimetype="audio/aiff" target="BeethovenOp14N2-Mov1.aiff"></avFile>
       <!-- Exposition -->
@@ -8,7 +8,7 @@
    </recording>
 </performance>
 <!-- ... -->
-<body xmlns:xi="http://www.w3.org/2001/XInclude">
+<body>
    <mdiv>
       <score>
          <section>

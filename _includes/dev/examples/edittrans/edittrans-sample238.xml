@@ -1,4 +1,4 @@
-<beam xmlns:xi="http://www.w3.org/2001/XInclude">
+<beam>
    <note dur="4" oct="3" pname="c"></note>
    <note dur="4" oct="3" pname="d"></note>
    <subst>

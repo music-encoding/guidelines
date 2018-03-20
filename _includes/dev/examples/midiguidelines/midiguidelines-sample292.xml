@@ -1,4 +1,4 @@
-<staff xmlns:xi="http://www.w3.org/2001/XInclude">
+<staff>
    <layer>
       <midi>
          <cc num="7" val="50"></cc>

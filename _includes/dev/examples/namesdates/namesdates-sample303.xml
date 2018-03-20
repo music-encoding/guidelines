@@ -1,4 +1,4 @@
-<annot xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">Holmes and Watson live at
+<annot xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">Holmes and Watson live at
    <street>
       <num>221</num>Baker St.
    </street>in

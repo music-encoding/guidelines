@@ -1,4 +1,4 @@
-<app xmlns:xi="http://www.w3.org/2001/XInclude">
+<app>
    <rdg seq="1" source="#critApp.sourceA">
       <!-- material in source 1 -->
    </rdg>

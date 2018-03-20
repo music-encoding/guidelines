@@ -1,4 +1,4 @@
-<performance xmlns:xi="http://www.w3.org/2001/XInclude">
+<performance>
    <recording begin="00:00:00.00" betype="time" end="00:03:06.54">
       <!-- a section of interest -->
       <clip begin="00:00:00.00" betype="time" end="00:00:41.00"></clip>

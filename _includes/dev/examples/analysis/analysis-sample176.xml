@@ -1,4 +1,4 @@
-<measure xmlns:xi="http://www.w3.org/2001/XInclude" n="1" right="end">
+<measure n="1" right="end">
    <staff n="1">
       <layer n="1">
          <note dur="4" oct="4" pname="c" xml:id="analysis.note1"></note>

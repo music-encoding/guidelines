@@ -1,4 +1,4 @@
-<scoreDef xmlns:xi="http://www.w3.org/2001/XInclude" key.sig="1f" meter.count="4" meter.sym="common" meter.unit="4" ppq="48">
+<scoreDef key.sig="1f" meter.count="4" meter.sym="common" meter.unit="4" ppq="48">
    <staffGrp>
       <staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="midi.P5">
          <instrDef midi.instrname="Violin"></instrDef>

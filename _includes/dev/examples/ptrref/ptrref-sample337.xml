@@ -1,2 +1,2 @@
 
-<!-- relative URL --><ptr xmlns:xi="http://www.w3.org/2001/XInclude" target="myFile.xml"></ptr>
+<!-- relative URL --><ptr target="myFile.xml"></ptr>

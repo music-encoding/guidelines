@@ -1,4 +1,4 @@
-<repository xmlns:xi="http://www.w3.org/2001/XInclude">
+<repository>
    <ref target="http://path.to.target/repo1.xml">
       <title>...</title>
       <address>

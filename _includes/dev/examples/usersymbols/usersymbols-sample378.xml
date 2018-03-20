@@ -1,4 +1,4 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude">
+<section>
    <scoreDef meter.count="4" meter.unit="4">
       <symbolTable>
          <symbolDef xml:id="userSymbols.triangleSymbol1">

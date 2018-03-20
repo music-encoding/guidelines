@@ -1,4 +1,4 @@
-<measure xmlns:xi="http://www.w3.org/2001/XInclude" n="1">
+<measure n="1">
    <!-- staff 1 omitted -->
    <staff n="2">
       <layer n="1">
@@ -20,7 +20,7 @@
       </layer>
    </staff>
 </measure>
-<measure xmlns:xi="http://www.w3.org/2001/XInclude" n="2">
+<measure n="2">
    <!-- staff 1 omitted -->
    <staff n="2">
       <layer n="1">

@@ -1,4 +1,4 @@
-<castList xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude">
+<castList xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
    <castItem>
       <role>Ursula</role>
       <roleDesc>Queen of the Britons</roleDesc>
