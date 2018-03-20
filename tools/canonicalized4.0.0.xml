@@ -10942,8 +10942,8 @@
           <specDesc key="famName"></specDesc>
           <specDesc key="foreName"></specDesc>
           <specDesc key="genName"></specDesc>
-          <specDesc key="nameLike"></specDesc>
           <specDesc key="roleName"></specDesc>
+          <specDesc key="model.nameLike"></specDesc>
         </specList>
       </p>
       <p>For example,</p>
