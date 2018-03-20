@@ -6640,7 +6640,7 @@
       multiple perspectives, e.g., the same event in two layers. The following example illustrates
       the sharing of one note head between two voices in the first full measure of a chorale:</p>
     <figure>
-      <head>Bach Chorale, <title>Ach Gott, vom Himmel sieh' darein</title>, m. 1-2</head>
+      <head>Bach Chorale, Ach Gott, vom Himmel sieh' darein, m. 1-2</head>
       <graphic height="200px" url="Images/modules/analysis/chor003_m1-2.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -6709,7 +6709,7 @@
       voices. In the second measure of the following example, the target of the next attribute
       occurs after the pointing element in time, but before it in encoding order:</p>
     <figure>
-      <head>Bach Chorale, <title>Ach Gott, vom Himmel sieh' darein</title>, m. 6-7</head>
+      <head>Bach Chorale, Ach Gott, vom Himmel sieh' darein, m. 6-7</head>
       <graphic height="200px" url="Images/modules/analysis/chor003_m6-7.png"></graphic>
     </figure>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -7531,8 +7531,8 @@
         that is, both may be processed by applications that aim to support both visual and aural
         renditions.</p>
       <figure>
-        <head>Trill transcribed from J.S. Bach's <title>Klavierbüchlein für Wilhelm Friedemann
-            Bach</title> (1720)</head>
+        <head>Trill transcribed from J.S. Bach's Klavierbüchlein für Wilhelm Friedemann
+            Bach (1720)</head>
         <graphic height="175px" url="Images/modules/cmnOrnaments/ex_tr_B.png"></graphic>
       </figure>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -12249,8 +12249,8 @@
       <p>An example usage for <gi scheme="MEI">line</gi> is the visualization of voice leading,
         which is not covered by a specific MEI element.</p>
       <figure xml:id="mignonFigure">
-        <head>Voice leading visualization as found in an Edition Peters print of <title>Album für
-            die Jugend</title> by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
+        <head>Voice leading visualization as found in an Edition Peters print of Album für
+            die Jugend by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number
           is 10478.)</head>
         <graphic url="Images/modules/usersymbols/mignon.png"></graphic>
       </figure>
@@ -12359,8 +12359,8 @@
       <p>A number of elements can point to an internally-defined symbol for rendering using the
           <att>altsym</att> attribute.</p>
       <figure>
-        <head>Different treble clef renditions as written by Charpentier (source: <ref target="www.sscm-jscm.org/v12/no1/gosine.html">Journal of Seventeenth-Century Music,
-            Volume 12, No. 1 (2006)</ref>, <ref target="http://www.sscm-jscm.org/v12/no1/gosine.html#ch10">figure 3</ref>)</head>
+        <head>Different treble clef renditions as written by Charpentier (source: Journal of Seventeenth-Century Music,
+            Volume 12, No. 1 (2006), figure 3)</head>
         <graphic url="Images/modules/usersymbols/charpentier.png"></graphic>
       </figure>
       <figure>
