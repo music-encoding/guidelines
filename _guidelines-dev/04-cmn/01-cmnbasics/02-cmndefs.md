@@ -6,29 +6,24 @@ version: "dev"
 
 When encoding a score in CMN, MEI relies on the following elements from the {% include link id="shared" %} module:
 
-  
-{% include desc elem="scoreDef" %} 
-{% include desc elem="staffGrp" %} 
-{% include desc elem="staffDef" %} 
-{% include desc elem="layerDef" %} 
- 
+{% include desc elem="scoreDef" %}
+{% include desc elem="staffGrp" %}
+{% include desc elem="staffDef" %}
+{% include desc elem="layerDef" %}
 
 A {% include link elem="scoreDef" %} element is used to specify the common parameters of a score, e.g., key and meter. The most important attributes for this purpose are:
 
-  
-{% include desc atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %} 
-{% include desc atts="att.meterSigDefault.log/meter.sym" %} 
-{% include desc atts="att.keySigDefault.log/key.sig" %} 
- 
+{% include desc atts="att.meterSigDefault.log/meter.count att.meterSigDefault.log/meter.unit" %}
+{% include desc atts="att.meterSigDefault.log/meter.sym" %}
+{% include desc atts="att.keySigDefault.log/key.sig" %}
 
 The following example describes a score in common time with 3 flats:
+
 {% include mei example="cmn/cmn-sample095.xml" valid="" %}
-    
+
 Other attributes allow the description of default page and system margins and fonts for text and music:
 
-  
-{% include desc atts="att.pages/page.width att.pages/page.height att.pages/page.leftmar att.pages/page.topmar att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar att.systems/system.topmar att.systems/system.rightmar att.textStyle/text.name att.textStyle/text.fam att.textStyle/text.size att.notationStyle/music.name att.notationStyle/music.size att.lyricStyle/lyric.name att.lyricStyle/lyric.fam att.lyricStyle/lyric.size" %} 
- 
+{% include desc atts="att.pages/page.width att.pages/page.height att.pages/page.leftmar att.pages/page.topmar att.pages/page.rightmar att.pages/page.botmar att.systems/system.leftmar att.systems/system.topmar att.systems/system.rightmar att.textStyle/text.name att.textStyle/text.fam att.textStyle/text.size att.notationStyle/music.name att.notationStyle/music.size att.lyricStyle/lyric.name att.lyricStyle/lyric.fam att.lyricStyle/lyric.size" %}
 
 There are other attributes that allow the specification of many further details of a score. These are available from the element definitions accessible at {% include link elem="scoreDef" %}, {% include link elem="staffDef" %}, {% include link elem="staffGrp" %} and {% include link elem="layerDef" %}.
 
@@ -42,27 +37,25 @@ The order of {% include link elem="staffDef" %} elements within {% include link 
 
 In addition to the parameters inherited from {% include link elem="scoreDef" %}, the following attributes are important for {% include link elem="staffDef" %} elements:
 
-  
-{% include desc atts="att.cleffing.log/clef.line att.cleffing.log/clef.shape att.cleffing.log/clef.dis att.cleffing.log/clef.dis.place" %} 
- 
+{% include desc atts="att.cleffing.log/clef.line att.cleffing.log/clef.shape att.cleffing.log/clef.dis att.cleffing.log/clef.dis.place" %}
 
 A staff with a tenor clef is encoded as in the following example:
+
 {% include mei example="cmn/cmn-sample096.xml" valid="" %}
-    
+
 In the case of transposing instruments, the key-related attributes described above may be used to override the written key expressed in the {% include link elem="scoreDef" %} element. As a basic principle, MEI always captures written pitches, so the **@trans.diat** and **@trans.semi** attributes may be used to indicate the number of diatonic steps and semitones to calculate sounded pitch from written pitch. The piccolo and E♭ clarinet staves in the example below utilize these attributes:
+
 {% include mei example="cmn/cmn-sample097.xml" valid="" %}
-    
+
 There are a number of additional elements that can be used as children of {% include link elem="staffDef" %} in order to describe additional features of the staff, such as the color of a clef or a key signature added in a different hand. These elements include:
 
-  
-{% include desc elem="clef" %} 
-{% include desc elem="clefGrp" %} 
-{% include desc elem="keySig" %} 
-{% include desc elem="keyAccid" %} 
-{% include desc elem="label" %} 
-{% include desc elem="meterSig" %} 
-{% include desc elem="meterSigGrp" %} 
- 
+{% include desc elem="clef" %}
+{% include desc elem="clefGrp" %}
+{% include desc elem="keySig" %}
+{% include desc elem="keyAccid" %}
+{% include desc elem="label" %}
+{% include desc elem="meterSig" %}
+{% include desc elem="meterSigGrp" %}
 
 With the exception of {% include link elem="label" %}, these elements may also occur within the flow of musical events captured in a {% include link elem="layer" %}, since they are members of {% include link model="model.eventLike" %}. In the layer context they function as milestones and affect all following content assigned to the layer (even in subsequent measures) until their information is again overridden either by the same element bearing different information or a {% include link elem="staffDef" %} or {% include link elem="scoreDef" %}. In this context, it is also possible to combine them with the elements described in chapters {% include link id="critApp" %} and {% include link id="editTrans" %} of these Guidelines.
 

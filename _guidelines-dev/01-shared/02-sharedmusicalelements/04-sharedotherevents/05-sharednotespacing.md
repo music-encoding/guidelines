@@ -6,10 +6,7 @@ version: "dev"
 
 The following elements provide control over the horizontal spacing of notational events, such as notes, chords, rests, etc.:
 
-  
-{% include desc elem="space" %} 
- 
- 
+{% include desc elem="space" %}
 
 In this context, the term ‘space’ is used to mean whitespace that is required to meaningfully align multiple voices in a multi-voice texture. In DARMS these were referred to as ‘push codes’. The {% include link elem="space" %} element is most often used when a new voice appears on a staff mid-measure.
 

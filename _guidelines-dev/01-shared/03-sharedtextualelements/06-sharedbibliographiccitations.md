@@ -6,42 +6,38 @@ version: "dev"
 
 The following element is used in the encoding of bibliographic citations and references:
 
-  
-{% include desc elem="bibl" %} 
- 
+{% include desc elem="bibl" %}
 
 The {% include link elem="bibl" %} element may contain a mix of text and more specific elements, including the following:
 
-  
-{% include desc elem="annot" %} 
-{% include desc elem="arranger" %} 
-{% include desc elem="author" %} 
-{% include desc elem="biblScope" %} 
-{% include desc elem="composer" %} 
-{% include desc elem="creation" %} 
-{% include desc elem="date" %} 
-{% include desc elem="distributor" %} 
-{% include desc elem="edition" %} 
-{% include desc elem="editor" %} 
-{% include desc elem="extent" %} 
-{% include desc elem="funder" %} 
-{% include desc elem="genre" %} 
-{% include desc elem="identifier" %} 
-{% include desc elem="imprint" %} 
-{% include desc elem="librettist" %} 
-{% include desc elem="lyricist" %} 
-{% include desc elem="physLoc" %} 
-{% include desc elem="publisher" %} 
-{% include desc elem="pubPlace" %} 
-{% include desc elem="recipient" %} 
-{% include desc elem="relatedItem" %} 
-{% include desc elem="repository" %} 
-{% include desc elem="respStmt" %} 
-{% include desc elem="series" %} 
-{% include desc elem="sponsor" %} 
-{% include desc elem="textLang" %} 
-{% include desc elem="title" %} 
- 
+{% include desc elem="annot" %}
+{% include desc elem="arranger" %}
+{% include desc elem="author" %}
+{% include desc elem="biblScope" %}
+{% include desc elem="composer" %}
+{% include desc elem="creation" %}
+{% include desc elem="date" %}
+{% include desc elem="distributor" %}
+{% include desc elem="edition" %}
+{% include desc elem="editor" %}
+{% include desc elem="extent" %}
+{% include desc elem="funder" %}
+{% include desc elem="genre" %}
+{% include desc elem="identifier" %}
+{% include desc elem="imprint" %}
+{% include desc elem="librettist" %}
+{% include desc elem="lyricist" %}
+{% include desc elem="physLoc" %}
+{% include desc elem="publisher" %}
+{% include desc elem="pubPlace" %}
+{% include desc elem="recipient" %}
+{% include desc elem="relatedItem" %}
+{% include desc elem="repository" %}
+{% include desc elem="respStmt" %}
+{% include desc elem="series" %}
+{% include desc elem="sponsor" %}
+{% include desc elem="textLang" %}
+{% include desc elem="title" %}
 
 These elements fall into the following categories: 
 - identification of the bibliographic entity and those responsible for its intellectual content
@@ -62,6 +58,7 @@ The physical characteristics of the cited item may be described using the {% inc
 Annotation of the bibliographic citation and the provision of other pertinent details are addressed by several elements. Commentary on the bibliographic item or citation is accommodated by the {% include link elem="annot" %} and {% include link elem="creation" %} elements. The {% include link elem="annot" %} element is provided for generic comments, while {% include link elem="creation" %} is intended to hold information about the context of the creation of the cited item. Terms by which the bibliographic item can be classified may be placed in {% include link elem="genre" %}. For letters and other correspondence, {% include link elem="recipient" %} captures the name of the person or organization to whom the item was addressed. The natural language(s) of the item may be recorded in one or more {% include link elem="textLang" %} elements. Finally, a holding institution may be documented using the {% include link elem="repository" %} element directly within {% include link elem="bibl" %}, but {% include link elem="physLoc" %} should be used whenever possible as a grouping mechanism for location and shelfmark information. To identify sub-units of the holding institution, {% include link elem="repository" %} sub-elements may be used. The name of the list from which a controlled value for the agency name is taken may be recorded using the **@authority** attribute.
 
 When supplied with a **@target** attribute, {% include link elem="bibl" %} may function as a hypertext reference to an external electronic resource. In addition, other related bibliographic items may be described or referenced using the {% include link elem="relatedItem" %} element.
+
 {% include mei example="shared/shared-sample012.xml" valid="" %}
-    
+
 Please consult {% include link id="sharedNamesNumbersDates" %} and {% include link id="namesDates" %} for more information about recording the names and dates frequently found in bibliographic citations.

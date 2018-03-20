@@ -10,13 +10,11 @@ In addition to repetition at the section level, CMN includes a number of differe
 
 In general, MEI places primary emphasis on the capture of the semantic meaning of symbols, not their visual rendition. In this case, the focus is on the material being repeated, for example, a beat, a measure, a 2-measure fragment, etc. The following elements are provided for this purpose:
 
-  
-{% include desc elem="beatRpt" %} 
-{% include desc elem="halfmRpt" %} 
-{% include desc elem="mRpt" %} 
-{% include desc elem="mRpt2" %} 
-{% include desc elem="multiRpt" %} 
- 
+{% include desc elem="beatRpt" %}
+{% include desc elem="halfmRpt" %}
+{% include desc elem="mRpt" %}
+{% include desc elem="mRpt2" %}
+{% include desc elem="multiRpt" %}
 
 The {% include link elem="beatRpt" %} element is used to represent a single repeated beat. Its visual rendition can be recorded using the **@rend** attribute. This attribute indicates the number of slashes required to render the appropriate repeat symbol, which, as demonstrated in the preceding figure, depends on the rhythmic content of the beat being repeated. When a beat that consists of a single note or chord is repeated, the repetition sign is typically rendered as a single thick, slanting slash; therefore, the value '1' should be used. The following values should be used when the beat is divided into even notes: 4ths or 8ths=1, 16ths=2, 32nds=3, 64ths=4, 128ths=5. When the beat is comprised of mixed duration values, the symbol is always rendered as 2 slashes and 2 dots.
 
@@ -26,18 +24,17 @@ The {% include link elem="mRpt" %} element is available for repetition of an ent
 
 {% include figure img="Images/ExampleImages/mrpt-20100510.png" caption="Measure repetition" %}
 {% include mei example="cmn/cmn-sample162.xml" valid="" %}
-    
+
 The {% include link elem="halfmRpt" %} element represents the incorrect, but frequently found, use of the measure repeat (or similar) sign to indicate repetition of half of a measure. This practice mostly occurs in hand-written notation and usually involves the repetition of the second half of a measure in duple time. This element is necessary because the function of the symbol, not the visual symbol itself, is of primary importance. The following example from the beginning of Beethoven's *Waldstein* sonata illustrates such usage:
 
 {% include figure img="Images/modules/cmn/halfmRpt_beethoven.png" caption="Half-measure repeat" %}
 {% include mei example="cmn/cmn-sample163.xml" valid="" %}
-    
+
 As seen in the example above, it is possible to continuously repeat half measures, even across barlines.
 
 The {% include link elem="mRpt2" %} and {% include link elem="multiRpt" %} elements (like the {% include link elem="multiRest" %} element) never occur in scores, only in performer parts, where it is often necessary to abbreviate the notation due to page size limitations.
 
 {% include figure img="Images/ExampleImages/mrpt2-20100510.png" caption="Two-measure repetition" %}
-
 {% include figure img="Images/ExampleImages/multirpt-20100510.png" caption="Multi-measure repetition" %}
 
 The {% include link elem="mRpt2" %} element represents repetition of a 2-measure fragment, while {% include link elem="multiRpt" %} is for repetition of fragments longer than two measures. In modern publishing practice, repeats of more than two measures are written out using repeat signs. This element is provided, however, for handling non-standard practices often found in manuscripts. The **@num** attribute on {% include link elem="multiRpt" %} records the number of preceding measures to be repeated.

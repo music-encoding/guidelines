@@ -6,13 +6,11 @@ version: "dev"
 
 The following elements are available for the representation of the outermost structure of an MEI document:
 
-  
-{% include desc elem="mei" %} 
-{% include desc atts="att.meiVersion/meiversion" %} 
-{% include desc elem="meiCorpus" %} 
-{% include desc elem="meiHead" %} 
-{% include desc elem="music" %} 
- 
+{% include desc elem="mei" %}
+{% include desc atts="att.meiVersion/meiversion" %}
+{% include desc elem="meiCorpus" %}
+{% include desc elem="meiHead" %}
+{% include desc elem="music" %}
 
 A typical MEI document contains an {% include link elem="mei" %} element, which in turn contains metadata, represented by an {% include link elem="meiHead" %} element, and the musical text itself, represented by a {% include link elem="music" %} element. The {% include link elem="meiHead" %} element, formally declared in the MEI.header module, is described in chapter {% include link id="header" %}.
 

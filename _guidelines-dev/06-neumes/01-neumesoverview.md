@@ -6,7 +6,5 @@ version: "dev"
 
 The module described in this chapter makes available the following components:
 
-  
-{% include desc elem="syllable" %} 
-{% include desc elem="nc" %} 
- 
+{% include desc elem="syllable" %}
+{% include desc elem="nc" %}

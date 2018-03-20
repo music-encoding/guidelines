@@ -8,4 +8,3 @@ The {% include link elem="multiRest" %} (multiple measure rest) element is used 
 
 {% include figure img="Images/ExampleImages/multirest.png" caption="Forms of multiple measure rests" %}
 {% include mei example="cmn/cmn-sample104.xml" valid="" %}
-    

@@ -6,8 +6,6 @@ version: "dev"
 
 The following elements are regarded as events primarily because they sometimes occur independently of any associated notes, rests, or chords, especially in mensural and neume repertoires.
 
-  
-{% include desc elem="accid" %} 
-{% include desc elem="artic" %} 
-{% include desc elem="dot" %} 
- 
+{% include desc elem="accid" %}
+{% include desc elem="artic" %}
+{% include desc elem="dot" %}

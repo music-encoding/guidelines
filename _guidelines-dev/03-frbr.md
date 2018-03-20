@@ -12,30 +12,14 @@ However, when the FRBR module is available more detailed descriptions are possib
 
 The IFLA’s FRBR model distinguishes four levels of abstraction, or entities:
 
+{:.gloss}
+**Work**: FRBR defines a work as a "distinct intellectual or artistic creation", an abstract entity because there is no single material object one can point to as the work.
 
 {:.gloss}
-**Work**: FRBR defines a work as a "distinct intellectual or artistic creation", an abstract
-entity because there is no single material object one can point to as the work.
+**Expression**: An expression is defined as "the intellectual or artistic realization of a work in the form of [...] notation, sound, image, object, movement, etc., or any combination of such forms". Expressions are also abstract entities.
 
 {:.gloss}
-**Expression**: An expression is defined as "the intellectual or artistic realization of a work in
-the
-form of [...] notation, sound, image, object, movement, etc., or any combination of
-such
-forms". Expressions are also abstract entities.
+**Manifestation**: A manifestation is defined as "the physical embodiment of an expression of a work", including, for instance, manuscripts, books, sound recordings, films, video recordings, CD-ROMs, multimedia kits, etc. The manifestation represents all the physical objects that bear the same characteristics, with respect to both intellectual content and physical form.
 
 {:.gloss}
-**Manifestation**: A manifestation is defined as "the physical embodiment of an expression of a work",
-including, for instance, manuscripts, books, sound recordings, films, video recordings,
-CD-ROMs, multimedia kits, etc. The manifestation represents all the physical objects
-that
-bear the same characteristics, with respect to both intellectual content and physical
-form.
-
-{:.gloss}
-**Item**: A single exemplar of a manifestation is called an item, e.g., a specific copy of a
-printed score. With manuscripts, item and manifestation levels are nearly identical.
-A
-manuscript may be regarded as a manifestation having only one item.
-
- 
+**Item**: A single exemplar of a manifestation is called an item, e.g., a specific copy of a printed score. With manuscripts, item and manifestation levels are nearly identical. A manuscript may be regarded as a manifestation having only one item.

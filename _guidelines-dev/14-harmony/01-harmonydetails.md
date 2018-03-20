@@ -6,9 +6,7 @@ version: "dev"
 
 On the most basic level, chords in the musical text can be encoded using the {% include link elem="chord" %} element:
 
-  
-{% include desc elem="chord" %} 
- 
+{% include desc elem="chord" %}
 
 Additional information on the use of the {% include link elem="chord" %} element is available in {% include link id="sharedBasicEvents" %} and {% include link id="cmnNotesChords" %}.
 

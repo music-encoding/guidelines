@@ -10,10 +10,10 @@ This element allows the encoder to represent ornaments as textual strings (e.g. 
 
 For example, Johann Sebastian Bach used non-standard ornaments in the *Klavierbüchlein für Wilhelm Friedemann Bach*:
 
-{% include figure img="Images/modules/cmnOrnaments/JSBtableofornaments.jpg" caption="Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm
-        Friedemann Bach" %}
+{% include figure img="Images/modules/cmnOrnaments/JSBtableofornaments.jpg" caption="Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm Friedemann Bach" %}
 
 The ornament for (5) doppelt-cadence could be encoded in the following way, by adopting the Unicode code-points defined by the SMuFL standard:
+
 {% include mei example="cmnOrnaments/cmnOrnaments-sample208.xml" valid="" %}
-    
+
 A resolution, or expansion of the ornament can be provided as discussed in {% include link id="cmnOrnamentsTrillsSpecial" %} below.

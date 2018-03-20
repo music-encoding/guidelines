@@ -8,4 +8,3 @@ The {% include link elem="mSpace" %} (measure space) element is closely related 
 
 {% include figure img="Images/ExampleImages/mspace-300-20100514.png" caption="Empty measure" %}
 {% include mei example="cmn/cmn-sample105.xml" valid="" %}
-    
