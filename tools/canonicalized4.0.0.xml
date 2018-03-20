@@ -2270,7 +2270,7 @@
         <item>
           <specDesc key="correction"></specDesc>
           <specDesc atts="corrlevel" key="correction"></specDesc>
-          <specDesc atts="method" key="att.regularmethod"></specDesc>
+          <specDesc atts="method" key="att.regularMethod"></specDesc>
           <p>Was the text corrected during or after data capture? If so, were corrections made
             silently or are they marked using the tags described in chapter <ptr target="#editTrans"></ptr>? What principles have been adopted with respect to omissions, truncations, dubious
             corrections, alternate readings, false starts, repetitions, etc.?</p></item>
@@ -2283,7 +2283,7 @@
         <label>normalization</label>
         <item>
           <specDesc key="normalization"></specDesc>
-          <specDesc atts="method" key="att.regularmethod"></specDesc>
+          <specDesc atts="method" key="att.regularMethod"></specDesc>
           <p>Was the text normalized, for example by regularizing any non-standard enharmonic
             spellings, etc.? If so, were normalizations performed silently or are they marked using
             the tags described in chapter <ptr target="#editTrans"></ptr> ? What authority was used for
@@ -3820,7 +3820,7 @@
       <p>Arguably, the most important element of the CMN module is the <gi scheme="MEI">measure</gi>
         element. It is used as a structural unit inside <gi scheme="MEI">section</gi> elements and
         acts as a container for <soCalled>events</soCalled> from the <ident type="class">model.eventLike</ident> class, such as notes, chords and rests as well as
-          <soCalled>control events</soCalled> from the <ident type="class">model.controleventLike</ident> class, such as slurs and indications of dynamics.</p>
+          <soCalled>control events</soCalled> from the <ident type="class">model.controlEventLike</ident> class, such as slurs and indications of dynamics.</p>
       <p>The following example demonstrates the use of the <gi scheme="MEI">measure</gi>
         element:</p>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -4335,7 +4335,7 @@
         time).</p>
       <p>For expressing durations, MEI offers the <att>dur</att> attribute. This attribute is
         described in section <ptr target="#cmnNotesBasic"></ptr>.</p>
-      <p>For <soCalled>spanning</soCalled> elements like slurs, which are members of the <ident type="class">model.controleventLike</ident> class, it is often more intuitive to record
+      <p>For <soCalled>spanning</soCalled> elements like slurs, which are members of the <ident type="class">model.controlEventLike</ident> class, it is often more intuitive to record
         two timestamps – one for the onset of the event and one for its termination. Because the
         termination of the event may be in a succeeding measure, the second timestamp
           (<att>tstamp2</att>) has a slightly different datatype than the one marking the initiation
@@ -4884,7 +4884,7 @@
       </egXML>
 
       <p>By convention, <gi scheme="MEI">dynam</gi> elements, like <gi scheme="MEI">slur</gi> and
-        other elements belonging to the <ident type="class">model.controleventLike</ident> class,
+        other elements belonging to the <ident type="class">model.controlEventLike</ident> class,
         are encoded at the end of the <gi scheme="MEI">measure</gi> to which they belong. This
         requires <gi scheme="MEI">dynam</gi> to be assigned to a certain <gi scheme="MEI">staff</gi>
         using the <att>staff</att> attribute, whose value refers to the target element's
@@ -4993,7 +4993,7 @@
       <p>In addition to verbal instructions, Common Music Notation uses graphical symbols to
         indicate <soCalled>continuous</soCalled> dynamics. These <term>crescendo</term> and
           <term>decrescendo</term> (or <term>diminuendo</term>) symbols are encoded in MEI using the
-          <gi scheme="MEI">hairpin</gi> element. It also is a member of the <ident type="class">model.controleventLike</ident> class, which means it too is used just before the close of
+          <gi scheme="MEI">hairpin</gi> element. It also is a member of the <ident type="class">model.controlEventLike</ident> class, which means it too is used just before the close of
         a <gi scheme="MEI">measure</gi> element, following the encoding of all staves. The required
         attribute <att>form</att> specifies the direction of the symbol by taking one of two
         possible values: <emph>cres</emph> (growing louder) or <emph>dim</emph> (getting
@@ -5079,7 +5079,7 @@
 
       <p>In some situations, a tuplet is made up of events in different measures. As this raises the
         issue of non-concurrent hierarchies, it is not possible to encode such situations with the
-          <gi scheme="MEI">tuplet</gi> element described above. Therefore, MEI offers the <gi scheme="MEI">tupletSpan</gi> element, which is member of the <ident type="class">model.controleventLike</ident> class. It is nested inside of <gi scheme="MEI">measure</gi>, following all the measure's <gi scheme="MEI">staff</gi> children. It uses
+          <gi scheme="MEI">tuplet</gi> element described above. Therefore, MEI offers the <gi scheme="MEI">tupletSpan</gi> element, which is member of the <ident type="class">model.controlEventLike</ident> class. It is nested inside of <gi scheme="MEI">measure</gi>, following all the measure's <gi scheme="MEI">staff</gi> children. It uses
         the same attributes as <gi scheme="MEI">tuplet</gi> to describe tuplets, but instead of
         nesting all affected notes inside itself, it references the <att>xml:id</att> values of all
         affected notes in its <att>plist</att> attribute and the initial and terminal notes of the
@@ -5114,7 +5114,7 @@
         <p>In CMN, the notes of a chord are sometimes performed successively rather than
           simultaneously. This behavior, called <term>arpeggiation</term>, is normally indicated
           using a wavy line preceding the chord. MEI offers the <gi scheme="MEI">arpeg</gi> element
-          to describe arpeggios. This element is a member of the <ident type="class">model.controleventLike</ident> class and, like other members of this class, uses the
+          to describe arpeggios. This element is a member of the <ident type="class">model.controlEventLike</ident> class and, like other members of this class, uses the
             <att>staff</att>, <att>layer</att> and <att>tstamp</att> or the <att>startid</att> and
             <att>endid</att> attributes to connect it to the affected chord.</p>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -5198,7 +5198,7 @@
           visual appearance of a glissando, which MEI encodes as <gi scheme="MEI">gliss</gi>, is
           normally a line connecting the two most distant notes in the glissando.</p>
 
-        <p>The <gi scheme="MEI">gliss</gi> element is a member of the <ident type="class">model.controleventLike</ident> class and therefore, like other control events, it
+        <p>The <gi scheme="MEI">gliss</gi> element is a member of the <ident type="class">model.controlEventLike</ident> class and therefore, like other control events, it
           occurs inside a measure after the staves and uses its <att>staff</att>, <att>layer</att>,
             <att>tstamp</att>, <att>tstamp2</att>, <att>startid</att> and <att>endid</att>
           attributes to connect it to the affected notes or chords. It is a semantic error not to
@@ -5299,7 +5299,7 @@
         </egXML>
         <p>However, if there is further information about the fermata that should be addressed in
           the encoding, MEI offers the <gi scheme="MEI">fermata</gi> element. This element, which is
-          a member of the <ident type="class">model.controleventLike</ident> class and therefore
+          a member of the <ident type="class">model.controlEventLike</ident> class and therefore
           requires the use of such attributes as <att>staff</att>, <att>layer</att>,
             <att>tstamp</att> and <att>startid</att>, allows specification of the orientation of the
           fermata using its <att>form</att> attribute. In addition, the <att>shape</att> attribute
@@ -5345,7 +5345,7 @@
           or singer may breathe. It is sometimes also used to indicate a short pause or break for
           instruments <emph>not</emph> requiring breath, which allows it to also serve as a guide to
           phrasing. In MEI, breath marks are encoded using the <gi scheme="MEI">breath</gi> element,
-          which is a member of <ident type="class">model.controleventLike</ident>. It is a semantic
+          which is a member of <ident type="class">model.controlEventLike</ident>. It is a semantic
           error not to specify a starting point attribute.</p>
         <!-- TODO: Add schematron rule enforcing tstamp or startid on breath. -->
         <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -5371,7 +5371,7 @@
           letter pitches (in the order of the pedals from left to right) or in a diagrammatic
           fashion, such as the form invented by Carlos Salzedo.</p>
         <p>In MEI, harp pedal settings are encoded using the <gi scheme="MEI">harpPedal</gi>
-          element. It is a member of the <ident type="class">model.controleventLike</ident> class
+          element. It is a member of the <ident type="class">model.controlEventLike</ident> class
           and is therefore placed within <gi scheme="MEI">measure</gi>, following all <gi scheme="MEI">staff</gi> children. The <att>staff</att> and <att>layer</att> attributes
           may be used to assign it to a certain <gi scheme="MEI">staff</gi> or <gi scheme="MEI">layer</gi>. Either a <att>tstamp</att> or <att>startid</att> attribute must be used to
           indicate the placement within the measure (see <ptr target="#cmnTstamp"></ptr> and <ptr target="#ptrRef"></ptr> for further details about those linking mechanisms).</p>
@@ -5396,7 +5396,7 @@
         <head>Piano Pedal</head>
         <p>Music for piano also often includes indications of the use of pedals. In MEI, these
           symbols are encoded using the <gi scheme="MEI">pedal</gi> element. As a member of the
-            <ident type="class">model.controleventLike</ident> class, it is located within <gi scheme="MEI">measure</gi> and refers to a staff, layer and timestamp using the
+            <ident type="class">model.controlEventLike</ident> class, it is located within <gi scheme="MEI">measure</gi> and refers to a staff, layer and timestamp using the
             <att>staff</att>, <att>layer</att> and <att>tstamp</att> attributes. Alternatively, the
             <att>startid</att> attribute may be used to identify a <gi scheme="MEI">note</gi> or <gi scheme="MEI">chord</gi> to which the mark should be assigned.</p>
         <p>The meaning of the mark is captured using the <att>dir</att> attribute, which provides
@@ -5515,7 +5515,7 @@
         capture the exact position, spelling, or other features of the label as found in the
         underlying source material. In these cases, an element is necessary.</p>
       <p>Labels which address the tempo at which the music should be performed should be encoded
-        using the <gi scheme="MEI">tempo</gi> element, which is a specialized form of <gi scheme="MEI">dir</gi>. <gi scheme="MEI">tempo</gi> is a member of the <ident type="class">model.controleventLike</ident> class and as such occurs as a child of <gi scheme="MEI">measure</gi>, following all <gi scheme="MEI">staff</gi> children. Its <att>staff</att>,
+        using the <gi scheme="MEI">tempo</gi> element, which is a specialized form of <gi scheme="MEI">dir</gi>. <gi scheme="MEI">tempo</gi> is a member of the <ident type="class">model.controlEventLike</ident> class and as such occurs as a child of <gi scheme="MEI">measure</gi>, following all <gi scheme="MEI">staff</gi> children. Its <att>staff</att>,
           <att>layer</att> and <att>tstamp</att> attributes are used to ensure correct semantic
         positioning, and <att>place</att> indicates a visual position with respect to the staff.</p>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:space="preserve">
@@ -5944,7 +5944,7 @@
       <head>Model Classes</head>
       <p>
         <specList>
-          <specDesc key="model.controleventLike.cmn"/>
+          <specDesc key="model.controlEventLike.cmn"/>
           <specDesc key="model.eventLike.cmn"/>
           <specDesc key="model.eventLike.measureFilling"/>
           <specDesc key="model.layerPart.cmn"/>
@@ -6854,11 +6854,11 @@
       specific attributes on certain musical elements:</p>
     <p>
       <specList>
-        <specDesc atts="inth" key="att.intervalharmonic"></specDesc>
-        <specDesc atts="intm" key="att.intervallicdesc"></specDesc>
-        <specDesc atts="mfunc" key="att.melodicfunction"></specDesc>
-        <specDesc atts="deg" key="att.harmonicfunction"></specDesc>
-        <specDesc atts="pclass" key="att.pitchclass"></specDesc>
+        <specDesc atts="inth" key=""></specDesc>
+        <specDesc atts="intm" key="att.intervallicDesc"></specDesc>
+        <specDesc atts="mfunc" key="att.melodicFunction"></specDesc>
+        <specDesc atts="deg" key="att.harmonicFunction"></specDesc>
+        <specDesc atts="pclass" key="att.pitchClass"></specDesc>
         <specDesc atts="psolfa" key="att.solfa"></specDesc>
       </specList>
     </p>
@@ -7006,7 +7006,7 @@
       <head>Scale Degrees</head>
       <p>
         <specList>
-          <specDesc atts="deg" key="att.harmonicfunction"></specDesc>
+          <specDesc atts="deg" key="att.harmonicFunction"></specDesc>
         </specList>
       </p>
       <p>The <att>deg</att> attribute can be used to represent key-dependent scale-degree
@@ -7103,8 +7103,8 @@
       established for it. The following attributes are provided for this purpose:</p>
     <p>
       <specList>
-        <specDesc atts="metcon" key="att.meterconformance"></specDesc>
-        <specDesc atts="metcon" key="att.meterconformance.bar"></specDesc>
+        <specDesc atts="metcon" key="att.meterConformance"></specDesc>
+        <specDesc atts="metcon" key="att.meterConformance.bar"></specDesc>
       </specList>
     </p>
     <p>When used on <gi scheme="MEI">staff</gi> or <gi scheme="MEI">layer</gi> elements, the
@@ -7270,7 +7270,7 @@
       <specList>
         <specDesc key="mordent"></specDesc>
         <specDesc atts="form long" key="mordent"></specDesc>
-        <specDesc atts="accidlower accidupper" key="att.ornamentaccid"></specDesc>
+        <specDesc atts="accidlower accidupper" key="att.ornamentAccid"></specDesc>
       </specList>
     </p>
 
@@ -7339,7 +7339,7 @@
     <p>
       <specList>
         <specDesc key="trill"></specDesc>
-        <specDesc atts="accidlower accidupper" key="att.ornamentaccid"></specDesc>
+        <specDesc atts="accidlower accidupper" key="att.ornamentAccid"></specDesc>
       </specList>
     </p>
 
@@ -7610,7 +7610,7 @@
     <p>
       <specList>
         <specDesc atts="form delayed" key="turn"></specDesc>
-        <specDesc atts="accidlower accidupper" key="att.ornamentaccid"></specDesc>
+        <specDesc atts="accidlower accidupper" key="att.ornamentAccid"></specDesc>
       </specList>
     </p>
 
@@ -8620,7 +8620,7 @@
       <specList>
         <specDesc key="gap"></specDesc>
         <specDesc key="unclear"></specDesc>
-        <specDesc atts="reason" key="att.reasonident"></specDesc>
+        <specDesc atts="reason" key="att.reasonIdent"></specDesc>
         <specDesc key="add"></specDesc>
         <specDesc key="del"></specDesc>
       </specList>
@@ -11084,12 +11084,12 @@
       performed work. See <ptr target="#headerWorkMedium"></ptr> for more details.</p>
 
     <p>The <gi scheme="MEI">recording</gi> element identifies a single recording event taking place
-      within an absolute temporal space. The class att.mediabounds contains attributes that can be
+      within an absolute temporal space. The class att.mediaBounds contains attributes that can be
       used to define this space:</p>
 
     <p>
       <specList>
-        <specDesc atts="begin end betype" key="att.mediabounds"></specDesc>
+        <specDesc atts="begin end betype" key="att.mediaBounds"></specDesc>
       </specList>
     </p>
 
