@@ -32,7 +32,7 @@ The **@stem.mod** attribute accommodates various stem modifiers found in the CMN
 
 The **@stem.mod** attibute is normally used in accordance with practices described in section {% include link id="cmnTrem" %}.
 
-The CMN module makes the {% include link att-class="att.stems.cmn" %} attribute class available, which adds the optional **@stem.with** attribute to {% include link elem="note" %} and {% include link elem="chord" %}. The attribute **@stem.with** allows for the indication of a stem that joins notes on adjacent staves.
+The CMN module makes the {% include link att="stems.cmn" %} attribute class available, which adds the optional **@stem.with** attribute to {% include link elem="note" %} and {% include link elem="chord" %}. The attribute **@stem.with** allows for the indication of a stem that joins notes on adjacent staves.
 
 {% include figure img="modules/cmn/xchord-300.png" caption="Cross-staff chord" %}
 

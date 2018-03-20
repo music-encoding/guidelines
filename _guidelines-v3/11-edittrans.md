@@ -12,7 +12,7 @@ The scope of the elements described herein is therefore the description of featu
 
 The elements described in this chapter may be contained by a wide range of other MEI elements and, in turn, may contain a variety of elements. The encoder must assume responsibility for the appropriateness of the markup; that is, a great many combinations of editorial and transcriptional markup are technically possible, but care must be taken to see that the encoding does not contravene the rationale of these Guidelines.
 
-For most of the elements discussed here, some encoders may wish to indicate both a responsibility; that is, a coded value indicating the person or agency responsible for making the editorial intervention in question, and an indication of the degree of certainty which the encoder wishes to associate with the intervention. Because these requirements are common to many of the elements discussed in this section, they are provided by an attribute class, {% include link att-class="att.edit" %}, to which these elements subscribe. Any of the elements discussed here thus may potentially carry the following optional attributes:
+For most of the elements discussed here, some encoders may wish to indicate both a responsibility; that is, a coded value indicating the person or agency responsible for making the editorial intervention in question, and an indication of the degree of certainty which the encoder wishes to associate with the intervention. Because these requirements are common to many of the elements discussed in this section, they are provided by an attribute class, {% include link att="edit" %}, to which these elements subscribe. Any of the elements discussed here thus may potentially carry the following optional attributes:
 
 {% include desc atts="att.evidence/cert" %} 
 {% include desc atts="att.responsibility/resp" %} 
@@ -23,7 +23,7 @@ Many of the elements discussed here can be used in two ways. Their primary purpo
 
 Wrapping elements this way enables the encoder to represent, for example, a text in its ‘original’, uncorrected form alongside the same text in one or more ‘edited’ forms. Making use of this style of representation, software may dynamically switch between the Urtext ‘view’ of the text and one or more ‘views’ of the text after the application of the encoded editorial interventions.
 
-Elements which can be combined in this way constitute the {% include link att-class="model.choicePart" %} class. The default members of this class are {% include link elem="sic" %}, {% include link elem="corr" %}, {% include link elem="reg" %}, {% include link elem="orig" %}, {% include link elem="unclear" %}, {% include link elem="add" %}, and {% include link elem="del" %}; their functions and usage are described in greater detail below.
+Elements which can be combined in this way constitute the {% include link model="choicePart" %} class. The default members of this class are {% include link elem="sic" %}, {% include link elem="corr" %}, {% include link elem="reg" %}, {% include link elem="orig" %}, {% include link elem="unclear" %}, {% include link elem="add" %}, and {% include link elem="del" %}; their functions and usage are described in greater detail below.
 
 Three categories of editorial intervention are discussed by the remainder of this chapter:
 

@@ -40,7 +40,7 @@ A {% include link elem="zone" %} element may contain {% include link elem="figDe
 
 {% include mei example="facsimiles/facsimiles-sample236.xml" valid="false" %}
 
-Conversely, an element in the content may refer to the {% include link elem="facsimile" %} subtree using its **@facs** attribute, which is made available by the {% include link att-class="att.facsimile" %} attribute class. The last example could therefore be encoded with pointers in the other direction:
+Conversely, an element in the content may refer to the {% include link elem="facsimile" %} subtree using its **@facs** attribute, which is made available by the {% include link att="facsimile" %} attribute class. The last example could therefore be encoded with pointers in the other direction:
 
 {% include mei example="facsimiles/facsimiles-sample237.xml" valid="false" %}
 

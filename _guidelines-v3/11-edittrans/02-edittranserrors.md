@@ -31,7 +31,7 @@ An indication of the person or agency responsible for the emendation can be prov
 
 {% include mei example="editTrans/editTrans-sample216.xml" valid="false" %}
 
-Here the **@resp** attribute has been used to indicate responsibility for the correction. Its value (*#editTrans.JK*) is an example of the pointer values discussed in section {% include link id="ptrRef" %}. In this case, the **@resp** attribute points to a {% include link elem="name" %} element within the metadata header, but any element might be indicated in this way, if the correction has been taken from some other source. The **@resp** attribute is available for all elements which are members of the {% include link att-class="att.responsibility" %} class. The {% include link att-class="att.edit" %} class makes available a **@cert** attribute,which may be used to indicate the degree of editorial confidence in a particular correction, as in the following example:
+Here the **@resp** attribute has been used to indicate responsibility for the correction. Its value (*#editTrans.JK*) is an example of the pointer values discussed in section {% include link id="ptrRef" %}. In this case, the **@resp** attribute points to a {% include link elem="name" %} element within the metadata header, but any element might be indicated in this way, if the correction has been taken from some other source. The **@resp** attribute is available for all elements which are members of the {% include link att="responsibility" %} class. The {% include link att="edit" %} class makes available a **@cert** attribute,which may be used to indicate the degree of editorial confidence in a particular correction, as in the following example:
 
 {% include mei example="editTrans/editTrans-sample217.xml" valid="true" %}
 

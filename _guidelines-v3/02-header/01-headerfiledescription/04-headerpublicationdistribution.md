@@ -8,7 +8,7 @@ The {% include link elem="pubStmt" %} element is the fourth component of the {% 
 
 {% include desc elem="pubStmt" %} 
 
-It may contain either a single {% include link elem="unpub" %} element, indicating that the file has yet to be published, or in the case of published material, one or more elements from the {% include link att-class="model.pubStmtPart" %} class. The following elements may be used to provide details regarding the file's publication and distribution:
+It may contain either a single {% include link elem="unpub" %} element, indicating that the file has yet to be published, or in the case of published material, one or more elements from the {% include link model="pubStmtPart" %} class. The following elements may be used to provide details regarding the file's publication and distribution:
 
 {% include desc elem="address" %} 
 {% include desc elem="availability" %} 

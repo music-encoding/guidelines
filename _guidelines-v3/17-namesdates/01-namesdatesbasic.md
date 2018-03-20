@@ -33,7 +33,7 @@ The element {% include link elem="date" %} contains a date in any format, includ
 
 {% include mei example="namesDates/namesDates-sample277.xml" valid="false" %}
 
-To be more specific about the date, the attributes in the {% include link att-class="att.datable" %} class can be used:
+To be more specific about the date, the attributes in the {% include link att="datable" %} class can be used:
 
 {:.gloss}
 **startdate**: contains the starting point of a date range in standard ISO form

@@ -6,11 +6,11 @@ version: "v3"
 
 The relationships between event elements, such as note, chord, and rest, are the basic material of musical analysis; the attributes described below ensure a closed network of these relations and provide the opportunity to record data useful for common analytical tasks. In the context of a formal analysis, for instance, the attributes presented here can be useful in the capture information about the structure of a musical work.
 
-The analysis module offers several attributes in the {% include link att-class="att.common.anl" %} class for the description of basic relationships:
+The analysis module offers several attributes in the {% include link att="common.anl" %} class for the description of basic relationships:
 
 {% include desc atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev att.common.anl/sameas att.common.anl/synch" %} 
 
-The {% include link att-class="att.alignment" %} class also contains an attribute for describing temporal relationships:
+The {% include link att="alignment" %} class also contains an attribute for describing temporal relationships:
 
 {% include desc atts="att.alignment/when" %} 
 

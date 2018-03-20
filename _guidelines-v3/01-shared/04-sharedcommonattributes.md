@@ -4,7 +4,7 @@ title: "Common Attributes"
 version: "v3"
 ---
 
-The following attributes, provided by the {% include link att-class="att.common" %} attribute class, are available on nearly all elements in an MEI encoding. They provide the means to identify, label, and access elements in MEI-encoded files.
+The following attributes, provided by the {% include link att="common" %} attribute class, are available on nearly all elements in an MEI encoding. They provide the means to identify, label, and access elements in MEI-encoded files.
 
 {% include desc atts="att.common/n" %} 
 {% include desc atts="att.id/xml---id" %} 

@@ -6,7 +6,7 @@ version: "v3"
 
 An element is a ‘link’ when it has an attribute whose value is a reference to the ID of one or more other elements. The links discussed in this chapter are the {% include link elem="ptr" %} and the {% include link elem="ref" %} elements. These elements indicate an association between themselves (or one of their ancestors) and one or more other entities, either inside the same document or elsewhere. An association between two elements in the same document is said to be an ‘internal’ link, while an association that involves an entity outside the current document is called an ‘external’ link. However, either element can be used for either purpose.
 
-The two elements share a set of common attributes that are inherited from the {% include link att-class="att.pointing" %} class:
+The two elements share a set of common attributes that are inherited from the {% include link att="pointing" %} class:
 
 {:.gloss}
 **@target**: allows the use of one or more previously-undeclared URIs to identify an external electronic object.
@@ -85,7 +85,7 @@ The attribute**@ xlink:role** serves a similar function to that of **@xlink:titl
 
 In the preceding example, the value of the **@xlink:role** attribute may be used to re-write the value of **@xlink:title**, depending on the target resource role.
 
-In addition to the attributes in the {% include link att-class="att.pointing" %} class, the **@mimetype** attribute is also available on {% include link elem="ptr" %} and {% include link elem="ref" %}. The function of the **@mimetype** attribute is similar to that of **@targettype** in that they both allow classification of the destination. Unlike **@targettype**, however, **@mimetype** explicitly defines the destination type using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail Extension) type defined by the Internet Engineering Task Force in RFC 2046, available at [http://www.ietf.org/rfc/rfc2046.txt](http://www.ietf.org/rfc/rfc2046.txt){:.link_ref}. The following are all valid mimetype values:
+In addition to the attributes in the {% include link att="pointing" %} class, the **@mimetype** attribute is also available on {% include link elem="ptr" %} and {% include link elem="ref" %}. The function of the **@mimetype** attribute is similar to that of **@targettype** in that they both allow classification of the destination. Unlike **@targettype**, however, **@mimetype** explicitly defines the destination type using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail Extension) type defined by the Internet Engineering Task Force in RFC 2046, available at [http://www.ietf.org/rfc/rfc2046.txt](http://www.ietf.org/rfc/rfc2046.txt){:.link_ref}. The following are all valid mimetype values:
 
 {% include mei example="ptrRef/ptrRef-sample317.xml" valid="false" %}
 
