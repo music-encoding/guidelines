@@ -201,19 +201,6 @@
         
         <!-- /extract desc -->
         
-        <!-- chapters -->
-        <xsl:message select="'INFO: Resolving ' || count($chapters) || ' chapters.'"/>
-        <xsl:variable name="chapterLinks" as="node()*">
-            <xsl:for-each select="$chapters">
-                <xsl:variable name="name" select="@xml:id"/>
-                <xsl:variable name="heading" select="./tei:head[1]/text()"/>
-                <xsl:variable name="headingNo" select="concat(position(),'.')"/>
-                <a class="module" href="{$version}/content/{lower-case($name)}.html">
-                    <span class="no"><xsl:value-of select="$headingNo"/></span>
-                    <span class="title"><xsl:value-of select="$heading"/></span></a>
-            </xsl:for-each>
-        </xsl:variable>
-        
         <!-- elements -->
         <xsl:message select="'INFO: Resolving ' || count($elements) || ' elements.'"/>
         <xsl:variable name="elementLinks" as="node()*">
