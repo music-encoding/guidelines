@@ -76,8 +76,6 @@
     
     <xsl:variable name="mei.source" select="/" as="node()"/>
     
-    <xsl:variable name="chapters" select="//tei:body//tei:div[@type = 'div1']" as="node()*"/>
-    
     <xsl:variable name="all.chapters" as="node()*">
         <chapters>
             <xsl:for-each select="//tei:body/tei:div">
