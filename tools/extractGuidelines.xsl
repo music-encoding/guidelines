@@ -261,13 +261,6 @@
         </xsl:variable>
         
         <xsl:message select="'INFO: Building multiple HTML fragments for inclusion on music-encoding.org'"/>
-         
-        <!-- chapter overview -->
-        <xsl:call-template name="processItems">
-            <xsl:with-param name="items" select="$chapters" as="node()*"/>
-            <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
-            <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
-        </xsl:call-template>
         
         <!-- elements overview -->
         <xsl:result-document href="{$outPutFolder}elements.md" format="html">
@@ -470,7 +463,7 @@
         </xsl:if>
         
         <xsl:for-each select="$items">
-            <xsl:variable name="name" select="if($mode = 'chapters') then(@xml:id) else(@ident)" as="xs:string"/>
+            <xsl:variable name="name" select="@ident" as="xs:string"/>
             
             <xsl:variable name="result" as="node()+">
                 <xsl:choose>
@@ -486,9 +479,6 @@
             
             <xsl:variable name="folderName" as="xs:string">
                 <xsl:choose>
-                    <xsl:when test="$mode = 'chapters'">
-                        <xsl:value-of select="'guidelines'"/>
-                    </xsl:when>
                     <xsl:when test="$mode = 'elements'">
                         <xsl:value-of select="'elements'"/>
                     </xsl:when>
@@ -505,10 +495,6 @@
             </xsl:variable>
             
             <xsl:variable name="chapterPrefix" as="xs:string?">
-                <xsl:if test="$mode = 'chapters'">
-                    <xsl:variable name="chapterElem" select="$all.chapters//*:chapter[@xml:id = $name]" as="node()"/>
-                    <xsl:value-of select="local:padNumber2($chapterElem/@number) || '-'"/>
-                </xsl:if>
             </xsl:variable>
             
             <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" format="html">
