@@ -74,9 +74,6 @@
     <!-- include folder where to put the examples and desc converted to text snippets -->
     <xsl:variable name="includeFolder" select="'../_includes/' || $guidelines.version || '/'" as="xs:string"/>
     
-    <!-- migration folder where to put the TEI text converted to MD -->
-    <xsl:variable name="migrationFolder" select="'../_guidelines-' || $guidelines.version || '/'" as="xs:string"/>
-    
     <xsl:variable name="mei.source" select="/" as="node()"/>
     
     <xsl:variable name="chapters" select="//tei:body//tei:div[@type = 'div1']" as="node()*"/>
