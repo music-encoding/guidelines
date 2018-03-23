@@ -372,16 +372,6 @@
         <div>
             
             <xsl:choose>
-                <xsl:when test="$mode = 'chapters'">
-                    <h3 class="widget-title">Table of Contents</h3>
-                    <div class="textwidget">
-                        <ul class="guidelinesList">
-                            <xsl:for-each select="$items">
-                                <li><xsl:copy-of select="."/></li>
-                            </xsl:for-each>
-                        </ul>
-                    </div>
-                </xsl:when>
                 <xsl:when test="$mode = ('elements','models','atts')">
                     <h3 class="widget-title">
                         <xsl:choose>
