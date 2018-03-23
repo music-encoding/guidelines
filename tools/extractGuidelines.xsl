@@ -478,7 +478,7 @@
                 <xsl:text>&#xa;</xsl:text>
                 <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
                 <xsl:text>&#xa;</xsl:text>
-                <xsl:text>title: "</xsl:text><xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/><xsl:text>"</xsl:text>
+                <xsl:text>title: "</xsl:text><xsl:value-of select="$name"/><xsl:text>"</xsl:text>
                 <xsl:if test="$mode = 'chapters'">
                     <xsl:text>&#xa;</xsl:text>
                     <xsl:text>sectionid: "</xsl:text><xsl:value-of select="$name"/><xsl:text>"</xsl:text>
