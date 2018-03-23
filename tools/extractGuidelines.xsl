@@ -147,12 +147,6 @@
             <xsl:message terminate="no" select="'WARNING: This version of MEI is not officially supported. Please check the results carefully.'"/>
         </xsl:if>-->
         
-        <!-- extract subChapters -->
-        <xsl:for-each select=".//tei:div[not(@type = 'div1')]">
-            <xsl:apply-templates select="." mode="setupFileForMarkdown"/>
-        </xsl:for-each>
-        <!-- /extract subChapters -->
-        
         <!-- extract desc -->
         
         <xsl:for-each select=".//tei:elementSpec">
