@@ -65,7 +65,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:variable name="supported.version" as="xs:string+">
-        <xsl:value-of select="'3.0.0'"/>
+        <xsl:value-of select="'dev'"/>
         <!-- fill in further MEI version, for which this xsl has been adjusted -->
     </xsl:variable>
     
