@@ -152,26 +152,6 @@
             <xsl:message terminate="no" select="'WARNING: This version of MEI is not officially supported. Please check the results carefully.'"/>
         </xsl:if>-->
         
-        
-        <!-- extract samples -->
-        
-        <xsl:for-each select=".//egx:egXML">
-            <xsl:variable name="chapter" select="ancestor::tei:div[last()]/@xml:id"/>
-            <xsl:variable name="pos" select="count(preceding::egx:egXML)"/>
-            <xsl:variable name="posLink">
-                <xsl:choose>
-                    <xsl:when test="$pos lt 10"><xsl:value-of select="'00' || $pos"/></xsl:when>
-                    <xsl:when test="$pos lt 100"><xsl:value-of select="'0' || $pos"/></xsl:when>
-                    <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
-                </xsl:choose>
-            </xsl:variable>
-            <xsl:variable name="path" select="$includeFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>
-            <xsl:variable name="example"><xsl:apply-templates select="." mode="preserveSpace"/></xsl:variable>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:apply-templates select="$example" mode="cleanup.example"/></xsl:result-document>
-        </xsl:for-each>
-        
-        <!-- /extract samples -->
-        
         <!-- extract subChapters -->
         <xsl:for-each select=".//tei:div[not(@type = 'div1')]">
             <xsl:apply-templates select="." mode="setupFileForMarkdown"/>
