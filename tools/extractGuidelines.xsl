@@ -2210,8 +2210,6 @@
         <xsl:value-of select="$version || '/data-types/' || lower-case($data) || '.html'"/>
     </xsl:template>
     
-    <xsl:template match="text()" mode="cleanup.example" priority="1"><xsl:value-of select="normalize-space(.)"/></xsl:template>
-    
     <xsl:function name="local:padNumber2" as="xs:string">
         <xsl:param name="number" as="xs:string"/>
         <xsl:choose>
