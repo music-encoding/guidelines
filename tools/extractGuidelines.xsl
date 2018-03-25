@@ -432,15 +432,7 @@
             <xsl:variable name="name" select="@ident" as="xs:string"/>
             
             <xsl:variable name="result" as="node()+">
-                <xsl:choose>
-                    <xsl:when test="$mode = 'chapters'">
-                        <xsl:apply-templates select="." mode="markdown"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:apply-templates select="."/>
-                    </xsl:otherwise>
-                </xsl:choose>
-                
+                <xsl:apply-templates select="."/>
             </xsl:variable>
             
             <xsl:variable name="folderName" as="xs:string">
