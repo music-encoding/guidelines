@@ -21,7 +21,6 @@
     </xd:doc>
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="html" omit-xml-declaration="true"/>
-    <xsl:output indent="false" method="text" encoding="UTF-8" omit-xml-declaration="true" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="markdown"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
     <xsl:param name="guidelines.version" select="'dev'" as="xs:string"/>
     <xd:doc scope="component">
@@ -65,7 +64,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:variable name="supported.version" as="xs:string+">
-        <xsl:value-of select="'3.0.0'"/>
+        <xsl:value-of select="'dev'"/>
         <!-- fill in further MEI version, for which this xsl has been adjusted -->
     </xsl:variable>
     
@@ -74,12 +73,7 @@
     <!-- include folder where to put the examples and desc converted to text snippets -->
     <xsl:variable name="includeFolder" select="'../_includes/' || $guidelines.version || '/'" as="xs:string"/>
     
-    <!-- migration folder where to put the TEI text converted to MD -->
-    <xsl:variable name="migrationFolder" select="'../_guidelines-' || $guidelines.version || '/'" as="xs:string"/>
-    
     <xsl:variable name="mei.source" select="/" as="node()"/>
-    
-    <xsl:variable name="chapters" select="//tei:body//tei:div[@type = 'div1']" as="node()*"/>
     
     <xsl:variable name="all.chapters" as="node()*">
         <chapters>
@@ -152,32 +146,6 @@
             <xsl:message terminate="no" select="'WARNING: This version of MEI is not officially supported. Please check the results carefully.'"/>
         </xsl:if>-->
         
-        
-        <!-- extract samples -->
-        
-        <xsl:for-each select=".//egx:egXML">
-            <xsl:variable name="chapter" select="ancestor::tei:div[last()]/@xml:id"/>
-            <xsl:variable name="pos" select="count(preceding::egx:egXML)"/>
-            <xsl:variable name="posLink">
-                <xsl:choose>
-                    <xsl:when test="$pos lt 10"><xsl:value-of select="'00' || $pos"/></xsl:when>
-                    <xsl:when test="$pos lt 100"><xsl:value-of select="'0' || $pos"/></xsl:when>
-                    <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
-                </xsl:choose>
-            </xsl:variable>
-            <xsl:variable name="path" select="$includeFolder || 'examples/' || $chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>
-            <xsl:variable name="example"><xsl:apply-templates select="." mode="preserveSpace"/></xsl:variable>
-            <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes"><xsl:apply-templates select="$example" mode="cleanup.example"/></xsl:result-document>
-        </xsl:for-each>
-        
-        <!-- /extract samples -->
-        
-        <!-- extract subChapters -->
-        <xsl:for-each select=".//tei:div[not(@type = 'div1')]">
-            <xsl:apply-templates select="." mode="setupFileForMarkdown"/>
-        </xsl:for-each>
-        <!-- /extract subChapters -->
-        
         <!-- extract desc -->
         
         <xsl:for-each select=".//tei:elementSpec">
@@ -224,19 +192,6 @@
         
         <!-- /extract desc -->
         
-        <!-- chapters -->
-        <xsl:message select="'INFO: Resolving ' || count($chapters) || ' chapters.'"/>
-        <xsl:variable name="chapterLinks" as="node()*">
-            <xsl:for-each select="$chapters">
-                <xsl:variable name="name" select="@xml:id"/>
-                <xsl:variable name="heading" select="./tei:head[1]/text()"/>
-                <xsl:variable name="headingNo" select="concat(position(),'.')"/>
-                <a class="module" href="{$version}/content/{lower-case($name)}.html">
-                    <span class="no"><xsl:value-of select="$headingNo"/></span>
-                    <span class="title"><xsl:value-of select="$heading"/></span></a>
-            </xsl:for-each>
-        </xsl:variable>
-        
         <!-- elements -->
         <xsl:message select="'INFO: Resolving ' || count($elements) || ' elements.'"/>
         <xsl:variable name="elementLinks" as="node()*">
@@ -281,13 +236,6 @@
         </xsl:variable>
         
         <xsl:message select="'INFO: Building multiple HTML fragments for inclusion on music-encoding.org'"/>
-         
-        <!-- chapter overview -->
-        <xsl:call-template name="processItems">
-            <xsl:with-param name="items" select="$chapters" as="node()*"/>
-            <xsl:with-param name="itemLinks" select="$chapterLinks" as="node()*"/>
-            <xsl:with-param name="mode" select="'chapters'" as="xs:string"/>
-        </xsl:call-template>
         
         <!-- elements overview -->
         <xsl:result-document href="{$outPutFolder}elements.md" format="html">
@@ -399,16 +347,6 @@
         <div>
             
             <xsl:choose>
-                <xsl:when test="$mode = 'chapters'">
-                    <h3 class="widget-title">Table of Contents</h3>
-                    <div class="textwidget">
-                        <ul class="guidelinesList">
-                            <xsl:for-each select="$items">
-                                <li><xsl:copy-of select="."/></li>
-                            </xsl:for-each>
-                        </ul>
-                    </div>
-                </xsl:when>
                 <xsl:when test="$mode = ('elements','models','atts')">
                     <h3 class="widget-title">
                         <xsl:choose>
@@ -490,25 +428,14 @@
         </xsl:if>
         
         <xsl:for-each select="$items">
-            <xsl:variable name="name" select="if($mode = 'chapters') then(@xml:id) else(@ident)" as="xs:string"/>
+            <xsl:variable name="name" select="@ident" as="xs:string"/>
             
             <xsl:variable name="result" as="node()+">
-                <xsl:choose>
-                    <xsl:when test="$mode = 'chapters'">
-                        <xsl:apply-templates select="." mode="markdown"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:apply-templates select="."/>
-                    </xsl:otherwise>
-                </xsl:choose>
-                
+                <xsl:apply-templates select="."/>
             </xsl:variable>
             
             <xsl:variable name="folderName" as="xs:string">
                 <xsl:choose>
-                    <xsl:when test="$mode = 'chapters'">
-                        <xsl:value-of select="'guidelines'"/>
-                    </xsl:when>
                     <xsl:when test="$mode = 'elements'">
                         <xsl:value-of select="'elements'"/>
                     </xsl:when>
@@ -525,10 +452,6 @@
             </xsl:variable>
             
             <xsl:variable name="chapterPrefix" as="xs:string?">
-                <xsl:if test="$mode = 'chapters'">
-                    <xsl:variable name="chapterElem" select="$all.chapters//*:chapter[@xml:id = $name]" as="node()"/>
-                    <xsl:value-of select="local:padNumber2($chapterElem/@number) || '-'"/>
-                </xsl:if>
             </xsl:variable>
             
             <xsl:result-document href="{$outPutFolder || $folderName || '/' || lower-case($chapterPrefix) || lower-case($name)}.md" format="html">
@@ -540,7 +463,7 @@
                 <xsl:text>&#xa;</xsl:text>
                 <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
                 <xsl:text>&#xa;</xsl:text>
-                <xsl:text>title: "</xsl:text><xsl:value-of select="if($mode = 'chapters') then($all.chapters//*:chapter[@xml:id = $name]/@head) else($name)"/><xsl:text>"</xsl:text>
+                <xsl:text>title: "</xsl:text><xsl:value-of select="$name"/><xsl:text>"</xsl:text>
                 <xsl:if test="$mode = 'chapters'">
                     <xsl:text>&#xa;</xsl:text>
                     <xsl:text>sectionid: "</xsl:text><xsl:value-of select="$name"/><xsl:text>"</xsl:text>
@@ -576,109 +499,6 @@
             <xsl:apply-templates select="node()" mode="#current"/>
         </div>
     </xsl:template>
-    
-    <xsl:template match="tei:body//tei:div" mode="setupFileForMarkdown">
-        
-        <xsl:variable name="chapter" select="." as="node()"/>
-        <xsl:variable name="chapterNumElem" select="$all.chapters//*:chapter[@xml:id = $chapter/@xml:id]" as="node()?"/>
-        
-        <xsl:variable name="chapter.index" select="local:padNumber2(tokenize($chapterNumElem/@number,'\.')[last()])" as="xs:string"/>
-        <xsl:variable name="chapter.path" select="$chapter.index || '-' || $chapter/@xml:id || '.md'" as="xs:string"/>
-        
-        <xsl:variable name="level1.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '1'][1]" as="node()"/>
-        <xsl:variable name="level1.index" select="local:padNumber2($level1.chapter/@number)" as="xs:string"/>
-        <xsl:variable name="level1.path" select="$level1.index || '-' || $level1.chapter/@xml:id || '/'" as="xs:string"/>
-        
-        <xsl:variable name="path" as="xs:string">
-            <xsl:choose>
-                <xsl:when test="$chapterNumElem/@level = '1'">
-                    <xsl:value-of select="$migrationFolder || $chapter.path"/>
-                </xsl:when>
-                <xsl:when test="$chapterNumElem/@level = '2'">
-                    <xsl:value-of select="$migrationFolder || $level1.path || $chapter.path"/>
-                </xsl:when>
-                <xsl:when test="$chapterNumElem/@level = '3'">
-                    <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
-                    <xsl:variable name="level2.index" select="local:padNumber2(tokenize($level2.chapter/@number,'\.')[2])" as="xs:string"/>
-                    <xsl:variable name="level2.path" select="$level2.index || '-' || $level2.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:value-of select="$migrationFolder || $level1.path || $level2.path || $chapter.path"/>
-                </xsl:when>
-                <xsl:when test="$chapterNumElem/@level = '4'">
-                    <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
-                    <xsl:variable name="level2.index" select="local:padNumber2(tokenize($level2.chapter/@number,'\.')[2])" as="xs:string"/>
-                    <xsl:variable name="level2.path" select="$level2.index || '-' || $level2.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:variable name="level3.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '3'][1]" as="node()"/>
-                    <xsl:variable name="level3.index" select="local:padNumber2(tokenize($level3.chapter/@number,'\.')[3])" as="xs:string"/>
-                    <xsl:variable name="level3.path" select="$level3.index || '-' || $level3.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:value-of select="$migrationFolder|| $level1.path || $level2.path || $level3.path || $chapter.path"/>
-                </xsl:when>
-                <xsl:when test="$chapterNumElem/@level = '5'">
-                    <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
-                    <xsl:variable name="level2.index" select="local:padNumber2(tokenize($level2.chapter/@number,'\.')[2])" as="xs:string"/>
-                    <xsl:variable name="level2.path" select="$level2.index || '-' || $level2.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:variable name="level3.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '3'][1]" as="node()"/>
-                    <xsl:variable name="level3.index" select="local:padNumber2(tokenize($level3.chapter/@number,'\.')[3])" as="xs:string"/>
-                    <xsl:variable name="level3.path" select="$level3.index || '-' || $level3.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:variable name="level4.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '4'][1]" as="node()"/>
-                    <xsl:variable name="level4.index" select="local:padNumber2(tokenize($level4.chapter/@number,'\.')[4])" as="xs:string"/>
-                    <xsl:variable name="level4.path" select="$level4.index || '-' || $level4.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:value-of select="$migrationFolder || $level1.path || $level2.path || $level3.path || $level4.path || $chapter.path"/>
-                </xsl:when>
-                <xsl:when test="$chapterNumElem/@level = '6'">
-                    <xsl:variable name="level2.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '2'][1]" as="node()"/>
-                    <xsl:variable name="level2.index" select="local:padNumber2(tokenize($level2.chapter/@number,'\.')[2])" as="xs:string"/>
-                    <xsl:variable name="level2.path" select="$level2.index || '-' || $level2.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:variable name="level3.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '3'][1]" as="node()"/>
-                    <xsl:variable name="level3.index" select="local:padNumber2(tokenize($level3.chapter/@number,'\.')[3])" as="xs:string"/>
-                    <xsl:variable name="level3.path" select="$level3.index || '-' || $level3.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:variable name="level4.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '4'][1]" as="node()"/>
-                    <xsl:variable name="level4.index" select="local:padNumber2(tokenize($level4.chapter/@number,'\.')[4])" as="xs:string"/>
-                    <xsl:variable name="level4.path" select="$level4.index || '-' || $level4.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:variable name="level5.chapter" select="$chapterNumElem/preceding-sibling::*:chapter[@level = '5'][1]" as="node()"/>
-                    <xsl:variable name="level5.index" select="local:padNumber2(tokenize($level5.chapter/@number,'\.')[5])" as="xs:string"/>
-                    <xsl:variable name="level5.path" select="$level5.index || '-' || $level5.chapter/@xml:id || '/'" as="xs:string"/>
-                    
-                    <xsl:value-of select="$migrationFolder || $level1.path || $level2.path || $level3.path || $level4.path || $level5.path || $chapter.path"/>
-                </xsl:when>
-            </xsl:choose>
-        </xsl:variable>
-        
-        <xsl:result-document href="{lower-case($path)}" format="markdown">
-            <xsl:text>---</xsl:text>
-            <xsl:text>&#xa;</xsl:text>
-            <xsl:text>sectionid: </xsl:text>
-            <xsl:value-of select="$chapter/@xml:id"/>
-            <xsl:text>&#xa;</xsl:text>
-            <xsl:text>title: "</xsl:text>
-            <xsl:value-of select="$chapterNumElem/@head"/>
-            <xsl:text>"&#xa;</xsl:text>
-            <xsl:text>version: "</xsl:text>
-            <xsl:value-of select="$guidelines.version"/>
-            <xsl:text>"&#xa;</xsl:text>
-            <xsl:text>---</xsl:text>
-            <xsl:text>&#xa;</xsl:text>
-            <xsl:apply-templates select="node()" mode="markdown"/>
-        </xsl:result-document>
-            
-    </xsl:template>
-    
-    <xsl:template match="tei:div[@type = 'div1']" mode="markdown">
-        <xsl:apply-templates select="node()" mode="#current"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:div[not(@type = 'div1')]" mode="markdown"/>
-    
-    <xsl:template match="tei:div/text()" mode="markdown"/>
-    <xsl:template match="comment()" priority="1" mode="markdown"/>
     
     <xsl:template match="tei:head">
         
@@ -736,72 +556,10 @@
         
     </xsl:template>
     
-    <xsl:template match="tei:head" mode="markdown">
-        
-        <xsl:choose>
-            <xsl:when test="parent::tei:div">
-                <xsl:variable name="div.id" select="parent::tei:div/@xml:id" as="xs:string?"/>
-                <xsl:choose>
-                    <xsl:when test="ancestor::tei:front">
-                        # <xsl:value-of select="text()"/>
-                        
-                    </xsl:when>
-                    <xsl:when test="ancestor::tei:back">
-                        <xsl:variable name="level" select="number(substring-after(parent::tei:div/@type,'div')) + 1"/>
-                        <xsl:element name="h{$level}">
-                            <xsl:attribute name="id" select="$div.id"/>
-                            <span class="headingNumber"></span>
-                            <span class="head"><xsl:value-of select="text()"/></span>
-                        </xsl:element>
-                    </xsl:when>
-                    <xsl:when test="exists($div.id)">
-                        <xsl:variable name="tocInfo" select="$all.chapters/*[@xml:id = $div.id]" as="node()?"/>
-                        
-                        <xsl:if test="not($tocInfo)">
-                            <xsl:message terminate="yes" select="'ERROR: Unable to find chapter ' || $div.id || ' in $all.chapters'"/>
-                        </xsl:if>
-                        
-                        <!-- automatically inserted by jekyll -->
-                        <!--<xsl:element name="h{$tocInfo/@level}">
-                            <xsl:attribute name="id" select="$div.id"/>
-                            <span class="headingNumber"><xsl:value-of select="$tocInfo/@number"/> </span>
-                            <span class="head"><xsl:value-of select="text()"/></span>
-                        </xsl:element>-->
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:message select="'WARNING: Heading _' || text() || '_ has no @xml:id, and cannot be referenced therefore. Numbering will be incorrect as well. Please fix!'"/>
-                        <h4>
-                            <span class="head"><xsl:value-of select="text()"/></span>
-                        </h4>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:when test="parent::tei:figure and parent::tei:figure/tei:graphic">
-                <figcaption class="figure-caption">Figure <xsl:value-of select="count(preceding::tei:figure[./tei:graphic]) + 1"/>. <xsl:apply-templates select="node()" mode="#current"/></figcaption>
-            </xsl:when>
-            <xsl:when test="parent::tei:figure and parent::tei:figure/egx:egXML">
-                <figcaption class="figure-caption">Listing <xsl:value-of select="count(preceding::tei:figure[./egx:egXML]) + 1"/>. <xsl:apply-templates select="node()" mode="#current"/></figcaption>
-            </xsl:when>
-            <xsl:when test="parent::tei:figure">
-                <xsl:message terminate="no" select="'WARNING: Not rendering tei:head in tei:figure, because there is no apparent element to which it belongs. Content: ' || text()"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:message terminate="no" select="'ERROR: This should not have happened'"/>
-            </xsl:otherwise>
-        </xsl:choose>
-        
-    </xsl:template>
-    
     <xsl:template match="tei:p">
         <p>
             <xsl:apply-templates select="node()" mode="#current"/>
         </p>
-    </xsl:template>
-    
-    <xsl:template match="tei:p" mode="markdown">
-        <xsl:value-of select="'&#xa;'"/>
-        <xsl:apply-templates select="node()" mode="#current"/>
-        <xsl:value-of select="'&#xa;'"/>
     </xsl:template>
     
     <xsl:template match="tei:list">
@@ -853,101 +611,12 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="text()" mode="markdown" priority="1.0">
-        <xsl:choose>
-            <xsl:when test="parent::tei:div">
-                <xsl:analyze-string select="." regex="[\n\s]+">
-                    <xsl:matching-substring>
-                        <xsl:value-of select="''"/>
-                    </xsl:matching-substring>
-                </xsl:analyze-string>
-            </xsl:when>
-            <xsl:when test="ancestor::*[local-name() = ('p', 'item')]">
-                <xsl:analyze-string select="." regex="[\n\s]+">
-                    <xsl:matching-substring>
-                        <xsl:value-of select="' '"/>
-                    </xsl:matching-substring>
-                    <xsl:non-matching-substring>
-                        <xsl:value-of select="."/>
-                    </xsl:non-matching-substring>
-                </xsl:analyze-string>
-            </xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="tei:list" mode="markdown">
-        <xsl:text>&#xa;</xsl:text>
-        <xsl:choose>
-            <xsl:when test="@type = ('bulleted','simple')">
-                <xsl:if test="child::tei:head">
-                    <xsl:text>**</xsl:text>
-                    <xsl:apply-templates select="child::tei:head/node()"/>
-                    <xsl:text>**</xsl:text>
-                    <xsl:text>&#xa;</xsl:text>
-                </xsl:if>
-                <xsl:for-each select="tei:item">
-                    <xsl:choose>
-                        <xsl:when test="position() gt 1">&#xa;- </xsl:when>
-                        <xsl:otherwise>- </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:apply-templates select="node()" mode="#current"></xsl:apply-templates>
-                </xsl:for-each>                
-            </xsl:when>
-            <xsl:when test="@type = 'ordered'">
-                <xsl:if test="child::tei:head">
-                    <xsl:text>**</xsl:text>
-                    <xsl:apply-templates select="child::tei:head/node()"/>
-                    <xsl:text>**</xsl:text>
-                    <xsl:text>&#xa;</xsl:text>
-                </xsl:if>
-                <xsl:for-each select="tei:item">
-                    <xsl:variable name="content" as="xs:string*">
-                        <xsl:apply-templates select="node()" mode="#current"/>
-                    </xsl:variable>
-                    <xsl:text>&#xa;</xsl:text>
-                    <xsl:value-of select="position()||'.' || ' '"/>
-                    <xsl:apply-templates select="node()" mode="#current"></xsl:apply-templates><!--                    <xsl:value-of select="normalize-space(string-join($content,' '))"/>-->
-                </xsl:for-each>
-            </xsl:when>
-            <xsl:when test="@type = 'gloss'">
-                <xsl:for-each select="tei:label">
-                    <xsl:text>{:.gloss}&#xa;**</xsl:text>
-                    <xsl:apply-templates select="node()"/>
-                    <xsl:text>**: </xsl:text>
-                    <xsl:apply-templates select="following-sibling::tei:item[1]/node()"/>
-                    <xsl:text>&#xa;</xsl:text>
-                    <xsl:text>&#xa;</xsl:text>
-                </xsl:for-each> 
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:if test="child::tei:head">**<xsl:apply-templates select="child::tei:head/node()"/>**</xsl:if>
-                <xsl:for-each select="tei:item"><xsl:variable name="content" as="xs:string"><xsl:apply-templates select="node()" mode="#current"/></xsl:variable><xsl:choose><xsl:when test="position() gt 1">&#xa;- </xsl:when><xsl:otherwise>- </xsl:otherwise></xsl:choose><xsl:value-of select="normalize-space(string-join($content,' '))"/></xsl:for-each>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
     <xsl:template match="tei:gi">
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
         <xsl:choose>
             <xsl:when test="$text = $elements/@ident">
                 <a class="link_odd_elementSpec" href="{$version}/elements/{lower-case($text)}.html"><xsl:value-of select="$text"/></a>
             </xsl:when>
-            <xsl:otherwise>
-                <xsl:message select="'WARNING: Unable to retrieve definition of element ' || $text || '. No link created. Please check spelling…'"/>
-                <xsl:next-match/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="tei:gi" mode="markdown">
-        <xsl:variable name="text" select="string(text())" as="xs:string"/>
-        <xsl:variable name="link">
-            <xsl:call-template name="linkToElement">
-                <xsl:with-param name="elem" select="$text"/>
-            </xsl:call-template>
-        </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="$text = $elements/@ident">{% include link elem="<xsl:value-of select="$text"/>" %}</xsl:when>
             <xsl:otherwise>
                 <xsl:message select="'WARNING: Unable to retrieve definition of element ' || $text || '. No link created. Please check spelling…'"/>
                 <xsl:next-match/>
@@ -974,38 +643,6 @@
                     </xsl:choose>
                 </xsl:variable>
                 <a class="link_odd" href="{$link}"><xsl:value-of select="$text"/></a>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:message terminate="no" select="'ERROR: Unable to identify class ' || $text || ' from tei:ident element. No link created.'"/>
-                <span class="ident">
-                    <xsl:apply-templates select="node()" mode="#current"/>
-                </span>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template match="tei:ident[@type = 'class']" mode="markdown">
-        <xsl:variable name="text" select="string(text())" as="xs:string"/>
-        <xsl:variable name="link">
-            <xsl:choose>
-                <xsl:when test="starts-with($text,'model.')">
-                    <xsl:call-template name="linkToModel">
-                        <xsl:with-param name="model" select="$text"/>
-                    </xsl:call-template>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:call-template name="linkToAttribute">
-                        <xsl:with-param name="att" select="$text"/>
-                    </xsl:call-template>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="$text = //tei:classSpec/@ident">
-                <xsl:choose>
-                    <xsl:when test="starts-with($text, 'att.')">{% include link att="<xsl:value-of select="$text"/>" %}</xsl:when>
-                    <xsl:otherwise>{% include link model="<xsl:value-of select="$text"/>" %}</xsl:otherwise>
-                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:message terminate="no" select="'ERROR: Unable to identify class ' || $text || ' from tei:ident element. No link created.'"/>
@@ -1111,57 +748,6 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="tei:specList" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/>
-<xsl:text>
-</xsl:text>    
-    </xsl:template>
-    
-    <xsl:template match="tei:specDesc" mode="markdown">
-        <xsl:text>&#xa;</xsl:text>
-        <xsl:choose>
-            <xsl:when test="not(@atts)">
-                <xsl:text>{% include desc elem="</xsl:text>
-                <xsl:value-of select="@key"/>
-                <xsl:text>" %}</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:variable name="key" select="@key" as="xs:string"/>
-                <xsl:variable name="spec" select="//tei:*[@ident = $key and not(local-name() = ('schemaSpec','valItem','attDef'))]" as="node()?"/>
-                <xsl:if test="not($spec)">
-                    <xsl:message select="."></xsl:message>
-                    <xsl:message terminate="yes" select="$key"/>
-                </xsl:if>
-                <xsl:variable name="specDesc" select="." as="node()"/>
-                <xsl:variable name="refs" as="xs:string*">
-                    <xsl:for-each select="tokenize(normalize-space(@atts),' ')">
-                        <xsl:variable name="current.att" select="." as="xs:string"/>
-                        <xsl:choose>
-                            <!-- attributes directly defined at the element -->
-                            <xsl:when test="$spec//tei:attDef[@ident = $current.att]">
-                                <xsl:variable name="name" select="replace($current.att,':','---')" as="xs:string"/>
-                                <xsl:value-of select="$key || '/' || $name"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:variable name="attributes" select="local:getAttributes($spec)" as="node()*"/>
-                                <xsl:variable name="name" select="$attributes/descendant-or-self::*:div[*:span[@class='attribute']/*:strong/text() = '@' || $current.att]//*:span[@class = 'attributeClasses']/*:a/text()" as="xs:string?"/>
-                                
-                                <xsl:choose>
-                                    <xsl:when test="string-length($name) gt 0">
-                                        <xsl:value-of select="$name || '/' || replace($current.att,':','---')"/>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <xsl:message select="'  [WARNING] Unable to retrieve attribute ' || $current.att || ' from ' || $key"/>
-                                    </xsl:otherwise>
-                                </xsl:choose>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each>    
-                </xsl:variable>
-                <xsl:if test="count($refs) gt 0">{% include desc atts="<xsl:value-of select="string-join($refs,' ')"/>" %}</xsl:if>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
     <xsl:template match="tei:ptr">
         
         <xsl:variable name="chapter.id" select="replace(@target,'#','')" as="xs:string"/>
@@ -1180,20 +766,6 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <xsl:template match="tei:ptr" mode="markdown">
-        
-        <xsl:variable name="chapter.id" select="replace(@target,'#','')" as="xs:string"/>
-        <xsl:variable name="tocInfo" select="$all.chapters/*[@xml:id = $chapter.id]" as="node()?"/>
-        <xsl:choose>
-            <xsl:when test="not($tocInfo)">
-                <xsl:message terminate="no" select="'ERROR: Could not retrieve chapter with @xml:id ' || $chapter.id || ' (referenced from a //tei:ptr/@target). Please check!'"/>
-                <span class="wrong_ptr"> <xsl:value-of select="@target"/> </span>
-            </xsl:when>
-            <xsl:otherwise>{% include link id="<xsl:value-of select="$chapter.id"/>" %}</xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
     
     <xsl:template match="tei:ref">
         <xsl:choose>
@@ -1219,58 +791,24 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:ref" mode="markdown">
-        <xsl:choose>
-            <xsl:when test="starts-with(@target,'#')">
-                <xsl:variable name="chapter.id" select="replace(@target,'#','')" as="xs:string"/>
-                <xsl:variable name="chapter" select="//tei:div[@xml:id = $chapter.id]" as="node()?"/>
-                <xsl:choose>
-                    <xsl:when test="exists($chapter)">
-                        <xsl:variable name="head" select="string($chapter/tei:head[1]/text())" as="xs:string"/>
-                        <xsl:variable name="base.id" select="$chapter/ancestor-or-self::tei:div[@type = 'div1']/@xml:id" as="xs:string"/>
-                        <xsl:variable name="url" select="$version || '/content/' || $base.id || '.html' || (if($base.id = $chapter.id) then() else('#' || $chapter.id))"/>{% include link id="<xsl:value-of select="$chapter.id"/>" %}</xsl:when>
-                    <xsl:otherwise>
-                        <span class="ref" data-target="{$chapter.id}"><xsl:apply-templates select="node()" mode="#current"/></span>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>[<xsl:apply-templates select="node()" mode="#current"/>](<xsl:value-of select="@target"/>){:.link_ref}</xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    
     <xsl:template match="tei:foreign">
         <span class="foreign"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
     
-    <xsl:template match="tei:foreign" mode="markdown">*<xsl:apply-templates select="node()" mode="#current"/>*</xsl:template>
-    
-    <xsl:template match="comment()" mode="markdown" priority="2"/>
-    
     <xsl:template match="tei:att">
         <span class="att"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
-    
-    <xsl:template match="tei:att" mode="markdown">**@<xsl:apply-templates select="node()" mode="#current"/>**</xsl:template>
     
     <!-- todo: this should be done with CSS! -->
     <xsl:template match="tei:soCalled">
         <xsl:value-of select="'‘'"/><xsl:apply-templates select="node()" mode="#current"/><xsl:value-of select="'’'"/>
     </xsl:template>
     
-    <xsl:template match="tei:soCalled" mode="markdown">‘<xsl:apply-templates select="node()" mode="#current"/>’</xsl:template>
-    
     <xsl:template match="tei:title">
         <span class="titlem"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
     
-    <xsl:template match="tei:title" mode="markdown">*<xsl:apply-templates select="node()" mode="#current"/>*</xsl:template>
-    
     <xsl:template match="tei:bibl">
-        <span class="bibl"><xsl:apply-templates select="node()" mode="#current"/></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:bibl" mode="markdown">
         <span class="bibl"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
     
@@ -1278,13 +816,7 @@
         <span class="term"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
     
-    <xsl:template match="tei:term" mode="markdown"><xsl:apply-templates select="node()" mode="#current"/></xsl:template>
-    
     <xsl:template match="tei:mentioned">
-        <span class="mentioned"><xsl:apply-templates select="node()" mode="#current"/></span>
-    </xsl:template>
-    
-    <xsl:template match="tei:mentioned" mode="markdown">
         <span class="mentioned"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
     
@@ -1292,13 +824,7 @@
         <em class="mentioned"><xsl:apply-templates select="node()" mode="#current"/></em>
     </xsl:template>
     
-    <xsl:template match="tei:emph" mode="markdown">*<xsl:apply-templates select="node()" mode="#current"/>*</xsl:template>
-    
     <xsl:template match="tei:exemplum">
-        <xsl:apply-templates select="node()" mode="#current"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:exemplum" mode="markdown">
         <xsl:apply-templates select="node()" mode="#current"/>
     </xsl:template>
     
@@ -1308,27 +834,12 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="egx:egXML" mode="markdown">
-        <xsl:variable name="chapter" select="ancestor::tei:div[last()]/@xml:id"/>
-        <xsl:variable name="pos" select="count(preceding::egx:egXML)"/>
-        <xsl:variable name="posLink">
-            <xsl:choose>
-                <xsl:when test="$pos lt 10"><xsl:value-of select="'00' || $pos"/></xsl:when>
-                <xsl:when test="$pos lt 100"><xsl:value-of select="'0' || $pos"/></xsl:when>
-                <xsl:otherwise><xsl:value-of select="$pos"/></xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        <xsl:variable name="path" select="$chapter || '/' || $chapter || '-sample' || $posLink || '.xml'"/>{% include mei example="<xsl:value-of select="$path"/>" valid="<xsl:value-of select="@valid"/>" %}
-    </xsl:template>
-        
     <xsl:template match="tei:table">
         <xsl:message select="'WARNING: There is still a tei:table, which is probably incorrect. If not, improve this stylesheet.'"/>
         <!--<table>
             
         </table>-->
     </xsl:template>
-    
-    <xsl:template match="tei:table" mode="markdown"/>
     
     <!-- todo -->
     <!--<xsl:template match="tei:row">
@@ -1349,8 +860,6 @@
         <span class="formula"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
     
-    <xsl:template match="tei:formula" mode="markdown">*<xsl:apply-templates select="node()" mode="#current"/>*</xsl:template>
-    
     <xsl:template match="tei:figure">
         <figure class="figure">
             <xsl:apply-templates select="tei:graphic | egx:egXML" mode="#current"/>
@@ -1358,17 +867,8 @@
         </figure>
     </xsl:template>
     
-    <xsl:template match="tei:figure" mode="markdown">
-        <xsl:variable name="caption" select="replace(./tei:head/text(),'&quot;', '\\&quot;')"/>
-{% include figure img="<xsl:value-of select="./tei:graphic/@url"/>" caption="<xsl:value-of select="$caption"/>" %}
-</xsl:template>
-    
     <xsl:template match="tei:graphic">
         <img src="{$image.prefix||@url}" class="graphic"/>
-    </xsl:template>
-    
-    <xsl:template match="tei:graphic" mode="markdown">
-        <img src="{$image.prefix||@url}" class="img-responsive"/>
     </xsl:template>
     
     <!-- ___________________________ -->
@@ -2709,8 +2209,6 @@
         <xsl:param name="data" as="xs:string"/>
         <xsl:value-of select="$version || '/data-types/' || lower-case($data) || '.html'"/>
     </xsl:template>
-    
-    <xsl:template match="text()" mode="cleanup.example" priority="1"><xsl:value-of select="normalize-space(.)"/></xsl:template>
     
     <xsl:function name="local:padNumber2" as="xs:string">
         <xsl:param name="number" as="xs:string"/>
