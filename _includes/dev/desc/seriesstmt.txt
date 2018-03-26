@@ -1,2 +1,1 @@
-(series statement) – Groups information about the series, if any, to which a publication
-belongs.
+(series statement) – Groups information about the series, if any, to which a publication belongs.

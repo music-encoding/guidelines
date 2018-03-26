@@ -1,2 +1,1 @@
-Indicates the delimiter used to mark the portions of text that are to be
-stacked.
+Indicates the delimiter used to mark the portions of text that are to be stacked.

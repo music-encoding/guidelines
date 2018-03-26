@@ -1,2 +1,1 @@
-Contains an individual descriptive category in a user-defined taxonomy, possibly nested
-within a superordinate category.
+Contains an individual descriptive category in a user-defined taxonomy, possibly nested within a superordinate category.

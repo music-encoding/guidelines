@@ -1,5 +1,1 @@
-Defines the class of user for which the work is intended, as defined by age group
-(e.g.,
-children, young adults, adults, etc.), educational level (e.g., primary, secondary,
-etc.), or
-other categorization.
+Defines the class of user for which the work is intended, as defined by age group (e.g., children, young adults, adults, etc.), educational level (e.g., primary, secondary, etc.), or other categorization.

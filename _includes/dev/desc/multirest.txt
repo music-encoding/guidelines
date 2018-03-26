@@ -1,2 +1,1 @@
-(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
-found in performer parts.
+(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently found in performer parts.

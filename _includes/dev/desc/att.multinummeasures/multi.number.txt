@@ -1,2 +1,1 @@
-Indicates whether programmatically calculated counts of multiple measures of rest
-(mRest) and whole measure repeats (mRpt) in parts should be rendered.
+Indicates whether programmatically calculated counts of multiple measures of rest (mRest) and whole measure repeats (mRpt) in parts should be rendered.

@@ -1,2 +1,1 @@
-Records the color of the mensuration sign. Do not confuse this with the musical term
-'color' as used in pre-CMN notation.
+Records the color of the mensuration sign. Do not confuse this with the musical term 'color' as used in pre-CMN notation.

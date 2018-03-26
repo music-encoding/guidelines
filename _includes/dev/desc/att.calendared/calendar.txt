@@ -1,2 +1,1 @@
-Indicates the calendar system to which a date belongs, for example, Gregorian, Julian,
-Roman, Mosaic, Revolutionary, Islamic, etc.
+Indicates the calendar system to which a date belongs, for example, Gregorian, Julian, Roman, Mosaic, Revolutionary, Islamic, etc.

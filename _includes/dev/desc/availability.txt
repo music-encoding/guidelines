@@ -1,2 +1,1 @@
-Groups elements that describe the availability of and access to a bibliographic item,
-including an MEI-encoded document.
+Groups elements that describe the availability of and access to a bibliographic item, including an MEI-encoded document.

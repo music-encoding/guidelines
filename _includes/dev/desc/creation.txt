@@ -1,5 +1,1 @@
-Non-bibliographic details of the creation of an intellectual entity, in narrative
-form,
-such as the date, place, and circumstances of its composition. More detailed information
-may
-be captured within the history element.
+Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element.

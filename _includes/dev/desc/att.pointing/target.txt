@@ -1,2 +1,1 @@
-Identifies passive participants in a relationship; that is, the entities pointed
-"to".
+Identifies passive participants in a relationship; that is, the entities pointed "to".

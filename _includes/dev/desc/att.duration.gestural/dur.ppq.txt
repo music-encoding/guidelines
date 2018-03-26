@@ -1,2 +1,1 @@
-Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML
-divisions.
+Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML divisions.

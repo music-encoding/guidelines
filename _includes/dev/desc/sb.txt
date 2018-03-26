@@ -1,3 +1,1 @@
-(system break) – An empty formatting element that forces musical notation to begin
-on a
-new line.
+(system break) – An empty formatting element that forces musical notation to begin on a new line.

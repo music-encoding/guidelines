@@ -1,2 +1,1 @@
-Where the measurement summarizes more than one observation or a range of values,
-supplies the minimum value observed.
+Where the measurement summarizes more than one observation or a range of values, supplies the minimum value observed.

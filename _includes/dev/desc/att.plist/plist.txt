@@ -1,5 +1,1 @@
-When the target attribute is present, plist identifies the active participants; that
-is, those entities pointed "from", in a relationship with the specified target(s).
-When
-the target attribute is not present, it identifies participants in a mutual
-relationship.
+When the target attribute is present, plist identifies the active participants; that is, those entities pointed "from", in a relationship with the specified target(s). When the target attribute is not present, it identifies participants in a mutual relationship.

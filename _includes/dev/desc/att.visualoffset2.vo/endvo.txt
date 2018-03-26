@@ -1,2 +1,1 @@
-Records a vertical adjustment of a feature's programmatically-determined end
-point.
+Records a vertical adjustment of a feature's programmatically-determined end point.

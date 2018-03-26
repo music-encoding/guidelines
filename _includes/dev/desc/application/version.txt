@@ -1,2 +1,1 @@
-Supplies a version number for an application, independent of its identifier or display
-name.
+Supplies a version number for an application, independent of its identifier or display name.

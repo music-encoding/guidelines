@@ -1,2 +1,1 @@
-Indication of melodic function, i.e., anticipation, lower neighbor, escape tone,
-etc.
+Indication of melodic function, i.e., anticipation, lower neighbor, escape tone, etc.

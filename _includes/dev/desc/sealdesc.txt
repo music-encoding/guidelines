@@ -1,3 +1,1 @@
-(seal description) – Describes the seals or similar external attachments applied to
-an
-item.
+(seal description) – Describes the seals or similar external attachments applied to an item.

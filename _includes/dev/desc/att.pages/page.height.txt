@@ -1,2 +1,1 @@
-Specifies the height of the page; may be expressed in real-world units or staff
-steps.
+Specifies the height of the page; may be expressed in real-world units or staff steps.

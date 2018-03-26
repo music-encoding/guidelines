@@ -1,2 +1,1 @@
-Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-upon other events, such as notes or rests, for their existence.
+Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend upon other events, such as notes or rests, for their existence.

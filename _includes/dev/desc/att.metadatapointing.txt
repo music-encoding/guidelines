@@ -1,2 +1,1 @@
-Provides attributes for elements which may be associated with particular contextual
-elements within the header.
+Provides attributes for elements which may be associated with particular contextual elements within the header.

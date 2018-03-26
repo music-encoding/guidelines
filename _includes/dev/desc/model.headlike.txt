@@ -1,3 +1,1 @@
-Groups elements used to provide a heading at the start of a text division or other
-markup
-component.
+Groups elements used to provide a heading at the start of a text division or other markup component.

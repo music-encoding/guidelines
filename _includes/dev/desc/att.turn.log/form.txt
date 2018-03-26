@@ -1,3 +1,1 @@
-Records meaning; i.e., intended performance, of the turn. The ,
-, or  attributes may be used to specify the
-appropriate symbol.
+Records meaning; i.e., intended performance, of the turn. The , , or  attributes may be used to specify the appropriate symbol.

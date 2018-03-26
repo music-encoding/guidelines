@@ -1,2 +1,1 @@
-(symbol property) – Provides a name and value for some property of the parent
-symbol.
+(symbol property) – Provides a name and value for some property of the parent symbol.

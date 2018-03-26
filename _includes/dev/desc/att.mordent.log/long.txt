@@ -1,2 +1,1 @@
-When set to 'true', a double or long mordent, sometimes called a "pincé double",
-consisting of 5 notes, is indicated.
+When set to 'true', a double or long mordent, sometimes called a "pincé double", consisting of 5 notes, is indicated.

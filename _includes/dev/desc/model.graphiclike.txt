@@ -1,2 +1,1 @@
-Groups elements that indicate the location of an inline graphic, illustration, or
-figure.
+Groups elements that indicate the location of an inline graphic, illustration, or figure.

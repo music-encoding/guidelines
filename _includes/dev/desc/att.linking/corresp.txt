@@ -1,2 +1,1 @@
-Used to point to other elements that correspond to this one in a generic
-fashion.
+Used to point to other elements that correspond to this one in a generic fashion.

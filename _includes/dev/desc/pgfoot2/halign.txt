@@ -1,2 +1,1 @@
-Records horizontal alignment of the page footer. Use multiple values to capture an
-alternating pattern.
+Records horizontal alignment of the page footer. Use multiple values to capture an alternating pattern.

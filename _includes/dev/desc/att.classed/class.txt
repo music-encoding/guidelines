@@ -1,2 +1,1 @@
-Contains one or more URIs which denote classification terms that apply to the entity
-bearing this attribute.
+Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.

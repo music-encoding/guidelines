@@ -1,2 +1,1 @@
-Records the amount of detuning. The decimal values should be rendered as a fraction
-(or an integer plus a fraction) along with the bend symbol.
+Records the amount of detuning. The decimal values should be rendered as a fraction (or an integer plus a fraction) along with the bend symbol.

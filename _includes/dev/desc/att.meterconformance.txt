@@ -1,2 +1,1 @@
-Attributes that provide information about a structure's conformance to the prevailing
-meter.
+Attributes that provide information about a structure's conformance to the prevailing meter.

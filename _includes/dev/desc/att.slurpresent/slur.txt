@@ -1,3 +1,1 @@
-Indicates that this element participates in a slur. If visual information about the
-slur needs to be recorded, then a  element should be
-employed.
+Indicates that this element participates in a slur. If visual information about the slur needs to be recorded, then a  element should be employed.

@@ -1,3 +1,1 @@
-Type of values used in the begin/end attributes. The begin and end attributes can
-only
-be interpreted meaningfully in conjunction with this attribute.
+Type of values used in the begin/end attributes. The begin and end attributes can only be interpreted meaningfully in conjunction with this attribute.

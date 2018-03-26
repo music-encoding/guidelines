@@ -1,5 +1,1 @@
-Indicates that this element has an attached ornament. If visual information about
-the
-ornament is needed, then one of the elements that represents an ornament (mordent,
-trill,
-or turn) should be employed.
+Indicates that this element has an attached ornament. If visual information about the ornament is needed, then one of the elements that represents an ornament (mordent, trill, or turn) should be employed.

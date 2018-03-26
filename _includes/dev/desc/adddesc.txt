@@ -1,3 +1,1 @@
-(addition description) – Provides a description of significant additions found within
-an
-item, such as marginalia or other annotations.
+(addition description) – Provides a description of significant additions found within an item, such as marginalia or other annotations.

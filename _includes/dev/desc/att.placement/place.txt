@@ -1,2 +1,1 @@
-Captures the placement of the item with respect to the staff with which it is
-associated.
+Captures the placement of the item with respect to the staff with which it is associated.

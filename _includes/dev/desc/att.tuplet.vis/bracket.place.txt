@@ -1,2 +1,1 @@
-Used to state where a tuplet bracket will be placed in relation to the note
-heads.
+Used to state where a tuplet bracket will be placed in relation to the note heads.

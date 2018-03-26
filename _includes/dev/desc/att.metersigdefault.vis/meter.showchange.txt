@@ -1,2 +1,1 @@
-Determines whether a new meter signature should be displayed when the meter signature
-changes.
+Determines whether a new meter signature should be displayed when the meter signature changes.

@@ -1,2 +1,1 @@
-Indicates the final element in a sequence of events to which the feature
-applies.
+Indicates the final element in a sequence of events to which the feature applies.

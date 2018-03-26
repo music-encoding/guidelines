@@ -1,3 +1,1 @@
-A positive or negative offset from the value given in the tstamp attribute in terms
-of
-musical time, i.e., beats[.fractional beat part].
+A positive or negative offset from the value given in the tstamp attribute in terms of musical time, i.e., beats[.fractional beat part].

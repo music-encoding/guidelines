@@ -1,2 +1,1 @@
-Records information concerning the process by which an item was acquired by the holding
-institution.
+Records information concerning the process by which an item was acquired by the holding institution.

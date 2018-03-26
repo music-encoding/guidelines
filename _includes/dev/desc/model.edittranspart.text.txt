@@ -1,2 +1,1 @@
-Groups elements that may appear as part of editorial and transcription elements in
-prose.
+Groups elements that may appear as part of editorial and transcription elements in prose.

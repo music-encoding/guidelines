@@ -1,2 +1,1 @@
-Provides a default value for the font family name of text (other than lyrics) when
-this information is not provided on the individual elements.
+Provides a default value for the font family name of text (other than lyrics) when this information is not provided on the individual elements.

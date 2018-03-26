@@ -1,2 +1,1 @@
-Characterization of the relationship between resources. The value of the role
-attribute must be a URI.
+Characterization of the relationship between resources. The value of the role attribute must be a URI.

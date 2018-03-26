@@ -1,2 +1,1 @@
-Indicates if a feature should be rendered when the notation is presented graphically
-or sounded when it is presented in an aural form.
+Indicates if a feature should be rendered when the notation is presented graphically or sounded when it is presented in an aural form.

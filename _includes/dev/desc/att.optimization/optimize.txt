@@ -1,2 +1,1 @@
-Indicates whether staves without notes, rests, etc. should be displayed. When the
-value is 'true', empty staves are displayed.
+Indicates whether staves without notes, rests, etc. should be displayed. When the value is 'true', empty staves are displayed.

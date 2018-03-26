@@ -1,2 +1,1 @@
-Contains classification of the notation contained or described by the element bearing
-this attribute.
+Contains classification of the notation contained or described by the element bearing this attribute.

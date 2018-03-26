@@ -1,2 +1,1 @@
-Characterizes the textual division in some sense, using any convenient classification
-scheme or typology that employs single-token labels.
+Characterizes the textual division in some sense, using any convenient classification scheme or typology that employs single-token labels.

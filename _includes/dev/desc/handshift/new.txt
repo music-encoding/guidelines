@@ -1,2 +1,1 @@
-Identifies the new hand. The value must contain the ID of a hand element given
-elsewhere in the document.
+Identifies the new hand. The value must contain the ID of a hand element given elsewhere in the document.

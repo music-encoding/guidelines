@@ -1,2 +1,1 @@
-In the case of cross-staff beams, the beam.with attribute is used to indicate which
-staff the beam is connected to; that is, the staff above or the staff below.
+In the case of cross-staff beams, the beam.with attribute is used to indicate which staff the beam is connected to; that is, the staff above or the staff below.

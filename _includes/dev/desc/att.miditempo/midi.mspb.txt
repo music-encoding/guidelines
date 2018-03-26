@@ -1,4 +1,1 @@
-Records the number of microseconds per *quarter note*. In MIDI, a beat is always
-defined as a quarter note, *not the numerator of the time signature or the metronomic
-indication*. At 120 quarter notes per minute, each quarter note will last 500,000
-microseconds.
+Records the number of microseconds per *quarter note*. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*. At 120 quarter notes per minute, each quarter note will last 500,000 microseconds.

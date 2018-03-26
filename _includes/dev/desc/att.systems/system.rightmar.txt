@@ -1,2 +1,1 @@
-Describes the amount of whitespace at the right system margin relative to
-page.rightmar.
+Describes the amount of whitespace at the right system margin relative to page.rightmar.

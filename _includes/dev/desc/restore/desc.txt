@@ -1,2 +1,1 @@
-Provides a description of the means of restoration, 'stet' or 'strike-down', for
-example.
+Provides a description of the means of restoration, 'stet' or 'strike-down', for example.

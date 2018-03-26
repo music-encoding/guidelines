@@ -1,2 +1,1 @@
-Provides a description of the relationship between the current and the target
-categories.
+Provides a description of the relationship between the current and the target categories.

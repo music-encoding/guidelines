@@ -1,3 +1,1 @@
-Indicates whether hash marks should be rendered between systems. See Read, p. 436,
-ex.
-26-3.
+Indicates whether hash marks should be rendered between systems. See Read, p. 436, ex. 26-3.
