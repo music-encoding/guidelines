@@ -879,7 +879,7 @@
     </xsl:template>
     
     <xsl:template match="tei:graphic">
-        <img src="{$image.prefix||@url}" class="graphic"/>
+        <img src="{$image.prefix||@url}" class="graphic img-responsive"/>
     </xsl:template>
     
     <!-- ___________________________ -->

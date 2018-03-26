@@ -201,7 +201,7 @@ title: "data.ACCIDENTAL.WRITTEN"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>
-               <img src="{{ site.baseurl }}/images/{{ page.version }}/Images/ExampleImages/accid-20100510.png" class="graphic">
+               <img src="{{ site.baseurl }}/images/{{ page.version }}/Images/ExampleImages/accid-20100510.png" class="graphic img-responsive">
                
             </p>
          </td>
