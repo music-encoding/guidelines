@@ -138,6 +138,17 @@
         </xsl:for-each>
     </xsl:variable>
     
+    <xsl:template match="text()" mode="plain" priority="1.0">
+        <xsl:analyze-string select="." regex="[\n\s]+">
+            <xsl:matching-substring>
+                <xsl:value-of select="' '"/>
+            </xsl:matching-substring>
+            <xsl:non-matching-substring>
+                <xsl:apply-templates select="."/>
+            </xsl:non-matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
     <xsl:template match="/">
         
         <xsl:message terminate="no" select="'INFO: Extracting Guidelines for publication from MEI source (version ' || $guidelines.version || ')'"/>
