@@ -4,7 +4,7 @@ title: "Document Elements"
 version: "dev"
 ---
 
-The following elements are available for the representation of the outermost structure of an MEI document:
+The following elements are available for the representation of the outermost structure of an MEI Mensural document:
 
 {% include desc elem="mei" %}
 {% include desc atts="att.meiVersion/meiversion" %}
