@@ -1,64 +1,52 @@
 <layer>
    <syllable>
-      <syl n="initial">
-         <rend color="red">O</rend>
+      <syl n= "initial">
+         <rend color= "red"> O </rend>
       </syl>
-      <uneume name="porrectus">
-         <note oct="3" pname="e"></note>
-         <note oct="3" pname="d"></note>
-         <note oct="3" pname="e"></note>
-      </uneume>
+      <neume>
+         <nc oct= "3" pname= "c"/>
+         <nc intm="d" oct= "2" pname= "b"/>
+         <nc intm="u" oct= "3" pname= "c"/>
+      </neume>
    </syllable>
    <syllable>
-      <syl>splen_</syl>
-      <uneume name="clivis">
-         <note oct="3" pname="g"></note>
-         <note oct="3" pname="e"></note>
-      </uneume>
-      <uneume name="pes">
-         <note oct="3" pname="d"></note>
-         <note oct="3" pname="e"></note>
-      </uneume>
+      <syl>splen_ </syl>
+      <neume>
+         <nc oct= "3" pname= "g"/>
+         <nc oct= "3" pname= "e"/>
+      </neume>
+      <neume>
+         <nc oct= "3" pname= "d"/>
+         <nc oct= "3" pname= "f"/>
+      </neume>
    </syllable>
    <syllable>
-      <syl>di_</syl>
-      <ineume name="climacus">
-         <uneume name="virga">
-            <note oct="3" pname="f"></note>
-         </uneume>
-         <uneume name="punctum">
-            <note oct="3" pname="d"></note>
-         </uneume>
-         <uneume name="punctum">
-            <note oct="3" pname="c"></note>
-         </uneume>
-      </ineume>
+      <syl>di_ </syl>
+      <neume>
+         <nc tilt= "n" oct= "3" pname= "f"/>
+         <nc tilt="se" con= "g" oct= "3" pname= "d"/>
+         <nc tilt="se" con= "g" oct= "3" pname= "c"/>
+      </neume>
    </syllable>
    <syllable>
-      <syl>dis_</syl>
-      <uneume name="virga">
-         <note oct="3" pname="e"></note>
-      </uneume>
+      <syl>dis_ </syl>
+      <neume>
+         <nc tilt="n" oct= "3" pname= "e"/>
+      </neume>
    </syllable>
    <syllable>
-      <syl>si_</syl>
-      <ineume name="scandicus">
-         <uneume name="punctum">
-            <note oct="2" pname="a"></note>
-         </uneume>
-         <uneume name="punctum">
-            <note oct="2" pname="b"></note>
-         </uneume>
-         <uneume name="virga">
-            <note oct="3" pname="c"></note>
-         </uneume>
-      </ineume>
+      <syl>si_ </syl>
+      <neume>
+         <nc oct= "2" pname= "a"/>
+         <nc con= "g" oct= "2" pname= "b"/>
+         <nc con= "g" tilt= "n" oct= "3" pname= "d"/>
+      </neume>
    </syllable>
    <syllable>
-      <syl>ma</syl>
-      <uneume name="clivis">
-         <note oct="2" pname="b"></note>
-         <note oct="2" pname="a"></note>
-      </uneume>
+      <syl>ma </syl>
+      <neume>
+         <nc oct= "2" pname= "b"/>
+         <nc oct= "2" pname= "a"/>
+      </neume>
    </syllable>
 </layer>
