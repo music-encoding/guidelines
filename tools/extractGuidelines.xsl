@@ -1288,6 +1288,9 @@
             <xsl:when test="$data/@type = 'positiveInteger' and $data/rng:param[@name = 'maxInclusive']">
                 a positive integer no larger than <xsl:value-of select="$data/rng:param/text()"/>
             </xsl:when>
+            <xsl:when test="$data/@type = 'positiveInteger' and $data/rng:param[@name = 'minInclusive']">
+                a positive integer no smaller than <xsl:value-of select="$data/rng:param/text()" />
+            </xsl:when>
             <xsl:when test="$data/@type = 'nonNegativeInteger' and $data/rng:param[@name = 'maxInclusive']">
                 a non-negative integer no larger than <xsl:value-of select="$data/rng:param/text()"/>
             </xsl:when>
