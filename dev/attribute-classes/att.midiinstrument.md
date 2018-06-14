@@ -32,7 +32,8 @@ title: "att.midiInstrument"
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"midi.instrnum"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Captures the General MIDI instrument number.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Captures the General MIDI instrument number. Use an integer for a 0-based value. An
+                        integer preceded by "in" indicates a 1-based value.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
@@ -58,15 +59,15 @@ title: "att.midiInstrument"
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"midi.pan"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Sets the instrument's position in a stereo field. Values of 0 and 1 both pan left,
-                        127
-                        pans right, and 64 pans to the center.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan
+                        left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values
+                        pan to the right, negative ones to the left. 0% is centered.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>"</span></span>
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>"</span></span>
                               /&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
@@ -102,7 +103,7 @@ title: "att.midiInstrument"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>"</span></span>
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>"</span></span>
                               /&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>

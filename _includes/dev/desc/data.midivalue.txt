@@ -1,1 +1,1 @@
-MIDI values in the following range.
+Generic MIDI value. One-based values must be followed by a lower-case letter "o".

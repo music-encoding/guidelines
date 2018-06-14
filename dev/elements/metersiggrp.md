@@ -61,7 +61,7 @@ title: "meterSigGrp"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@func</strong></span><span class="attributeUsage">(required)</span><span class="attributeDesc">Function of the meter signature group.</span>
                            Allowed values are:
-                           "<span style="font-weight: 500;">alternating</span>" <i>(Meter signatures appear in alternating measures.)</i>,  "<span style="font-weight: 500;">interchanging</span>" <i>(Meter signatures are interchangeable, e.g. 3/4 and 6/8.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>(Meter signatures with different unit values are used to express a complex metrical
+                           "<span style="font-weight: 500;">alternating</span>" <i>(Meter signatures apply to alternating measures.)</i>,  "<span style="font-weight: 500;">interchanging</span>" <i>(Meter signatures are interchangeable, e.g. 3/4 and 6/8.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>(Meter signatures with different unit values are used to express a complex metrical
                               pattern that is not expressible using traditional means, such as 2/4+1/8.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.metersiggrp.log.html">att.meterSigGrp.log</a></span></div>
                      </td>
                   </tr>

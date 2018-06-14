@@ -8,7 +8,7 @@ title: "volta"
    <h3 id="volta">&lt;volta&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2"></td>
+         <td colspan="2" class="wovenodd-col2">Sung text for a specific iteration of a repeated section of music.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Module</strong></td>
@@ -343,6 +343,15 @@ title: "volta"
                               /&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
+         </td>
+      </tr>
+      <tr>
+         <td class="wovenodd-col1"><strong>Remarks</strong></td>
+         <td class="wovenodd-col2">
+            <p>The volta element is intended for those cases where the musical notation is repeated,
+               but
+               the accompanying lyrics are not.
+            </p>
          </td>
       </tr>
    </table>

@@ -38,6 +38,9 @@ title: "att.instrDef.ges"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiInstrument</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.soundlocation.html">att.soundLocation</a>"</span></span>/&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div></code></div>
          </td>
       </tr>

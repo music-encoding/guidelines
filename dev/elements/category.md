@@ -262,7 +262,7 @@ title: "category"
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:category"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"@xml:id"</span>&gt;</span>To be addressable, the category element must
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@xml:id"</span> <span class="attribute">role=</span><span class="attributevalue">"warning"</span>&gt;</span>To be addressable, the category element must
                         have an xml:id attribute.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>

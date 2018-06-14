@@ -28,6 +28,8 @@ title: "data.STAFFITEM.cmn"
                <dd>Beams.</dd>
                <dt>bend</dt>
                <dd>Bend indications.</dd>
+               <dt>bracketSpan</dt>
+               <dd>Bracket indicators, e.g., for a transcribed ligature.</dd>
                <dt>breath</dt>
                <dd>Breath marks.</dd>
                <dt>cpMark</dt>
@@ -40,8 +42,6 @@ title: "data.STAFFITEM.cmn"
                <dd>Hairpins.</dd>
                <dt>harpPedal</dt>
                <dd>Harp pedals.</dd>
-               <dt>ligatureSpan</dt>
-               <dd>Ligature indicators.</dd>
                <dt>lv</dt>
                <dd>Laissez vibrer/open tie marks.</dd>
                <dt>mordent</dt>
@@ -85,6 +85,11 @@ title: "data.STAFFITEM.cmn"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Bend indications.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"bracketSpan"</span>&gt;</span>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Bracket indicators, e.g., for a transcribed ligature.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"breath"</span>&gt;</span>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Breath marks.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
@@ -117,11 +122,6 @@ title: "data.STAFFITEM.cmn"
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"harpPedal"</span>&gt;</span>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Harp pedals.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ligatureSpan"</span>&gt;</span>
-                           
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Ligature indicators.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"lv"</span>&gt;</span>
