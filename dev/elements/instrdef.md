@@ -26,6 +26,13 @@ title: "instrDef"
                <tbody>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@azimuth</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">The lateral or left-to-right plane.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.soundlocation.html">att.soundLocation</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@class</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
@@ -49,6 +56,13 @@ title: "instrDef"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@elevation</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">The above-to-below axis.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.soundlocation.html">att.soundLocation</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@label</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures text to be used to generate a label for the element to which it's attached,
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
@@ -67,7 +81,7 @@ title: "instrDef"
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@midi.duty</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the 'on' part of the duty cycle as a percentage of a note's duration.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.percent.html">data.PERCENT</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a></span></div>
                      </td>
                   </tr>
@@ -80,17 +94,18 @@ title: "instrDef"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@midi.instrnum</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the General MIDI instrument number.</span>
+                        <div class="attributeDef"><span class="attribute"><strong>@midi.instrnum</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the General MIDI instrument number. Use an integer for a 0-based value. An
+                              integer preceded by "in" indicates a 1-based value.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiInstrument</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@midi.pan</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the instrument's position in a stereo field. Values of 0 and 1 both pan left,
-                              127
-                              pans right, and 64 pans to the center.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                        <div class="attributeDef"><span class="attribute"><strong>@midi.pan</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan
+                              left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values
+                              pan to the right, negative ones to the left. 0% is centered.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiInstrument</a></span></div>
                      </td>
                   </tr>
@@ -111,7 +126,7 @@ title: "instrDef"
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@midi.port</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the MIDI port value.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a></span></div>
                      </td>
                   </tr>
@@ -125,7 +140,7 @@ title: "instrDef"
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@midi.volume</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the instrument's volume.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiInstrument</a></span></div>
                      </td>
                   </tr>

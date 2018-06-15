@@ -39,7 +39,7 @@ title: "att.meterSigGrp.log"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"alternating"</span>&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Meter signatures appear in alternating measures.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Meter signatures apply to alternating measures.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"interchanging"</span>&gt;</span>

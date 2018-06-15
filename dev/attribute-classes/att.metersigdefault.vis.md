@@ -33,7 +33,7 @@ title: "att.meterSigDefault.vis"
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
          <td class="wovenodd-col2">
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"meter.rend"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"meter.form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Contains an indication of how the meter signature should be rendered.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
@@ -63,8 +63,8 @@ title: "att.meterSigDefault.vis"
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"meter.showchange"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Determines whether a new meter signature should be displayed when the meter signature
-                        changes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Determines whether the old meter signature should be displayed when the meter
+                        signature changes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;datatype&gt;</span>
                         
