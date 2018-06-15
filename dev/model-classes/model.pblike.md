@@ -8,7 +8,7 @@ title: "model.pbLike"
    <h3 id="model.pbLike">model.pbLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">Groups page break-like elements.</td>
+         <td colspan="2" class="wovenodd-col2">Groups page beginning-like elements.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Module</strong></td>

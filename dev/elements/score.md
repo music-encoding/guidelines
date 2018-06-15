@@ -257,7 +257,7 @@ title: "score"
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
             <p>Since the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a> element is optional, a score may consist entirely
-               of page breaks, each of which points to a page image. <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> elements are
+               of page beginnings, each of which points to a page image. <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a> elements are
                allowed preceding and following sections of music data in order to accommodate blocks
                of
                explanatory text.

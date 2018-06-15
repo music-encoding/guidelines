@@ -8,7 +8,9 @@ title: "pb"
    <h3 id="pb">&lt;pb&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">(page break) – An empty formatting element that forces text to begin on a new page.</td>
+         <td colspan="2" class="wovenodd-col2">(page beginning) – An empty formatting element that forces text to begin on a new
+            page.
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Module</strong></td>
@@ -279,8 +281,8 @@ title: "pb"
                source. It need not be an integer, e.g., 'iv', or 'p17-3'. The logical page number
                can be
                calculated by counting previous <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a> ancestor elements. When used in a
-               score context, a page break implies an accompanying system break.This element is modelled
-               on an element in the Text Encoding Initiative (TEI) standard.
+               score context, a page beginning implies an accompanying system beginning.This element
+               is modelled on an element in the Text Encoding Initiative (TEI) standard.
             </p>
          </td>
       </tr>
