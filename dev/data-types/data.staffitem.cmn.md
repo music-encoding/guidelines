@@ -29,7 +29,7 @@ title: "data.STAFFITEM.cmn"
                <dt>bend</dt>
                <dd>Bend indications.</dd>
                <dt>bracketSpan</dt>
-               <dd>Bracket indicators, e.g., for a transcribed ligature.</dd>
+               <dd>Brackets, e.g., for transcribed ligatures.</dd>
                <dt>breath</dt>
                <dd>Breath marks.</dd>
                <dt>cpMark</dt>
@@ -39,17 +39,17 @@ title: "data.STAFFITEM.cmn"
                <dt>fing</dt>
                <dd>Fingerings.</dd>
                <dt>hairpin</dt>
-               <dd>Hairpins.</dd>
+               <dd>Hairpin dynamics.</dd>
                <dt>harpPedal</dt>
                <dd>Harp pedals.</dd>
                <dt>lv</dt>
-               <dd>Laissez vibrer/open tie marks.</dd>
+               <dd>Laissez vibrer indications, sometimes called "open ties".</dd>
                <dt>mordent</dt>
                <dd>Mordents.</dd>
                <dt>octave</dt>
                <dd>Octaviation marks.</dd>
                <dt>pedal</dt>
-               <dd>Piano pedals.</dd>
+               <dd>Piano pedal marks.</dd>
                <dt>reh</dt>
                <dd>Rehearsal marks.</dd>
                <dt>tie</dt>
@@ -87,7 +87,7 @@ title: "data.STAFFITEM.cmn"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"bracketSpan"</span>&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Bracket indicators, e.g., for a transcribed ligature.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Brackets, e.g., for transcribed ligatures.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"breath"</span>&gt;</span>
@@ -116,7 +116,7 @@ title: "data.STAFFITEM.cmn"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"hairpin"</span>&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Hairpins.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Hairpin dynamics.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"harpPedal"</span>&gt;</span>
@@ -126,7 +126,7 @@ title: "data.STAFFITEM.cmn"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"lv"</span>&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Laissez vibrer/open tie marks.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Laissez vibrer indications, sometimes called "open ties".<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"mordent"</span>&gt;</span>
@@ -141,7 +141,7 @@ title: "data.STAFFITEM.cmn"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"pedal"</span>&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Piano pedals.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Piano pedal marks.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"reh"</span>&gt;</span>
@@ -149,7 +149,7 @@ title: "data.STAFFITEM.cmn"
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Rehearsal marks.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- slur more note-attached than staff-attached? --&gt;</span></div>
+                        <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- more note-attached than staff-attached? --&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--&lt;valItem ident="slur"/&gt;--&gt;</span></div>
                         
