@@ -8,7 +8,9 @@ title: "lb"
    <h3 id="lb">&lt;lb&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">(line break) – An empty formatting element that forces text to begin on a new line.</td>
+         <td colspan="2" class="wovenodd-col2">(line beginning) – An empty formatting element that forces text to begin on a new
+            line.
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Module</strong></td>
@@ -53,13 +55,6 @@ title: "lb"
                               corresponds to it.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a></span></div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@func</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">States whether the line break follows a single line or a line group.</span>
-                           Allowed values are:
-                           "<span style="font-weight: 500;">line</span>" <i>(Follows a verse line.)</i>,  "<span style="font-weight: 500;">group</span>" <i>(Follows a group of verse lines.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/lb.html">lb</a></span></div>
                      </td>
                   </tr>
                   <tr>

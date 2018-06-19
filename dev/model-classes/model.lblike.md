@@ -8,7 +8,7 @@ title: "model.lbLike"
    <h3 id="model.lbLike">model.lbLike</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">Groups elements that function like line breaks.</td>
+         <td colspan="2" class="wovenodd-col2">Groups elements that function like line beginnings.</td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Module</strong></td>

@@ -1,1 +1,1 @@
-Groups page break-like elements.
+Groups page beginning-like elements.

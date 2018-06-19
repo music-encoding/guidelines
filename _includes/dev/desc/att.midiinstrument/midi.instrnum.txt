@@ -1,1 +1,1 @@
-Captures the General MIDI instrument number.
+Captures the General MIDI instrument number. Use an integer for a 0-based value. An integer preceded by "in" indicates a 1-based value.

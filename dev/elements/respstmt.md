@@ -240,8 +240,8 @@ title: "respStmt"
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:respStmt[not(ancestor::mei:change)]"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"(mei:resp and (mei:name or mei:corpName or mei:persName)) or              count(mei:*[@role])
-                              = count(mei:*) and count(mei:*) &gt; 0"</span>&gt;</span>At least one element pair (a resp element and a name-like element) is
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"(mei:resp and (mei:name or mei:corpName or mei:persName)) or              count(mei:*[@role])
+                              = count(mei:*) and count(mei:*) &gt; 0"</span> <span class="attribute">role=</span><span class="attributevalue">"warning"</span>&gt;</span>At least one element pair (a resp element and a name-like element) is
                         recommended. Alternatively, each name-like element may have a @role
                         attribute.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div><span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>

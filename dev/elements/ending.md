@@ -101,6 +101,19 @@ title: "ending"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@lsegs</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the number of segments into which a dashed, dotted, or wavy line may be
+                              divided; a pair of space-separated values (minimum and maximum, respectively) provides
+                              a
+                              range between which a rendering system-supplied value may fall, while a single value
+                              indicates a fixed amount of space; that is, the minimum and maximum values are
+                              equal.</span>
+                           One or two values of datatype <span style="font-weight: 500;">
+                              a positive integer no smaller than 2</span>, separated by a space.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.lineRend.base</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@lstartsym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Symbol rendered at start of line.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.lineRend</a></span></div>

@@ -52,7 +52,7 @@ title: "att.channelized"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.percent.html">data.PERCENT</a>"</span></span>
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>"</span></span>
                               /&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
@@ -65,7 +65,7 @@ title: "att.channelized"
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
                               
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>"</span></span>
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>"</span></span>
                               /&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/datatype&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>

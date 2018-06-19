@@ -8,7 +8,7 @@ title: "cb"
    <h3 id="cb">&lt;cb&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">(column break) – An empty formatting element that forces text to begin in a new
+         <td colspan="2" class="wovenodd-col2">(column beginning) – An empty formatting element that forces text to begin in a new
             column.
          </td>
       </tr>
@@ -215,7 +215,7 @@ title: "cb"
          <td class="wovenodd-col1"><strong>Constraint</strong></td>
          <td class="wovenodd-col2">
             <div>
-               <div class="schematronText">Column break must be preceded by a colLayout element.</div>
+               <div class="schematronText">Column beginning must be preceded by a colLayout element.</div>
                <div class="schematronText">The value of @n should be less than or equal to the value of @cols ( ) of the preceding
                   colLayout element.
                </div>
@@ -225,7 +225,7 @@ title: "cb"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"totalColumns"</span> <span class="attribute">value=</span><span class="attributevalue">"preceding::mei:colLayout[1]/@cols"</span>/&gt;</span></div>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"preceding::mei:colLayout"</span>&gt;</span>Column break must be preceded by a
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"preceding::mei:colLayout"</span>&gt;</span>Column beginning must be preceded by a
                         colLayout element.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@n &lt;= $totalColumns"</span>&gt;</span>The value of @n should be less than or equal

@@ -37,7 +37,13 @@ title: "att.proport.vis"
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altSym</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extSym</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffloc.html">att.staffLoc</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a>"</span></span>/&gt;</span></div>
