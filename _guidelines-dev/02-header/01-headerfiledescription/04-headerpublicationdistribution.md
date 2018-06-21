@@ -29,11 +29,11 @@ The sub-elements of {% include link elem="availability" %} should be used to pro
 {% include desc elem="sysReq" %}
 {% include desc elem="useRestrict" %}
 
-{% include mei example="header/header-sample033.xml" valid="" %}
-{% include mei example="header/header-sample034.xml" valid="" %}
+{% include mei example="header/header-sample033.mei" valid="" %}
+{% include mei example="header/header-sample034.mei" valid="" %}
 
 Give any other useful information (e.g., dates of collection of data) in an annotation within the notes statement, which is described below.
 
 Here, as in the description of intellectual responsibility described above, the {% include link elem="respStmt" %} element may be used to contain all statements of responsibility regarding publication and distribution when uniformity is desired regardless of the role of participants in the publication process:
 
-{% include mei example="header/header-sample035.xml" valid="" %}
+{% include mei example="header/header-sample035.mei" valid="" %}

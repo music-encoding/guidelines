@@ -17,18 +17,18 @@ This is particularly true of information about file-type although library-orient
 Although it is equally system-dependent, some measure of the size of the computer file may be of use for cataloging and other practical purposes. Because the measurement and expression of file size is fraught with difficulties, only very general recommendations are possible; the element {% include link elem="extent" %} should contain a phrase indicating the size or approximate size of the computer file in one of the following ways:
 
 - in bytes of a specified length (e.g. ‘4000 bytes’)
-- as falling within a range of values, for example: 
+- as falling within a range of values, for example:
 - less than 1 Mb
 - between 1 Mb and 5 Mb
 - between 6 Mb and 10 Mb
-- over 10 Mb 
+- over 10 Mb
 - in terms of any convenient logical units (for example, words or sentences, citations, paragraphs)
 - in terms of any convenient physical units (for example, compact discs, removable hard drives, DVDs)
 
 The use of standard abbreviations for units of quantity is recommended where applicable, here as elsewhere (see [http://physics.nist.gov/cuu/Units/binary.html](http://physics.nist.gov/cuu/Units/binary.html){:.link_ref}).
 
-{% include mei example="header/header-sample031.xml" valid="" %}
+{% include mei example="header/header-sample031.mei" valid="" %}
 
 For ease of processability, the use of the **@unit** attribute is recommended, as in the following example:
 
-{% include mei example="header/header-sample032.xml" valid="" %}
+{% include mei example="header/header-sample032.mei" valid="" %}

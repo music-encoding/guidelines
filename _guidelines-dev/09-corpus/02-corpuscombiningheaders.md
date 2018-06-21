@@ -10,4 +10,4 @@ The {% include link elem="titleStmt" %} for a corpus text is understood to be pr
 
 For example, the following markup shows the structure of a corpus consisting of three texts, the first and last of which share the same encoding description. The second one has its own encoding description.
 
-{% include mei example="corpus/corpus-sample211.xml" valid="" %}
+{% include mei example="corpus/corpus-sample211.mei" valid="" %}

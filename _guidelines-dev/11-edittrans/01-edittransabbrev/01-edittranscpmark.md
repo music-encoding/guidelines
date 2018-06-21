@@ -18,7 +18,7 @@ In the example above, there are no less than three different copy instructions, 
 
 The second and third shorthand indications are written in the second violin (lower staff). Here, Weber writes "unis.[ono]", silently omitting the reference to the first violin. His next shorthand ("in 8va") additionally instructs the copyist to double the written material in another octave. This information can be captured using the **@dis** and **@dis.place** attributes on {% include link elem="cpMark" %}.
 
-{% include mei example="editTrans/editTrans-sample225.xml" valid="true" %}
+{% include mei example="editTrans/editTrans-sample225.mei" valid="true" %}
 {% include figure img="ExampleImages/cpMark_3.png" caption="A transcription of the example above with all shorthand resolved and colored" %}
 
 Text used as a copy mark, like the letters in the Weber example, may be encoded as content of the {% include link elem="cpMark" %} element. In the case of non-text marks, the **@altsym**, **@extsym** and **@facs** attributes may be used to refer to a graphical surrogate.

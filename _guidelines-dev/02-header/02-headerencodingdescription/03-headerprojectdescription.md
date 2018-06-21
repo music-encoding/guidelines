@@ -10,4 +10,4 @@ The {% include link elem="projectDesc" %} element may be used to describe, in pr
 
 For example:
 
-{% include mei example="header/header-sample050.xml" valid="" %}
+{% include mei example="header/header-sample050.mei" valid="" %}

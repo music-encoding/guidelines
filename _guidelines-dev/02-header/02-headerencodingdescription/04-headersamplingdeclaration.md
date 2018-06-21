@@ -15,11 +15,11 @@ The {% include link elem="samplingDecl" %} element should include information ab
 - the underlying population being sampled
 - the object of the sampling procedure used but is not restricted to these.
 
-{% include mei example="header/header-sample051.xml" valid="" %}
+{% include mei example="header/header-sample051.mei" valid="" %}
 
 It may also include a simple description of any parts of the source text included or excluded:
 
-{% include mei example="header/header-sample052.xml" valid="" %}
-{% include mei example="header/header-sample053.xml" valid="" %}
+{% include mei example="header/header-sample052.mei" valid="" %}
+{% include mei example="header/header-sample053.mei" valid="" %}
 
 A sampling declaration which applies to more than one text or division of a text need not be repeated in the header of each such text. Instead, the **@decls** attribute of each text (or subdivision of the text) to which the sampling declaration applies may be used to supply a cross-reference to it, as further described in section {% include link id="headerAssociatingMetadataAndData" %}.

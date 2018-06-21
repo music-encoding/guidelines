@@ -18,4 +18,4 @@ Each {% include link elem="application" %} element identifies the current state 
 
 The following example shows how these elements might be used to record the fact that version 1.5 of an application called ‘Music Markup Tool’ has an interest in two parts of a document. The parts concerned are accessible at the URLs given as targets of the two {% include link elem="ptr" %} elements. When used on {% include link elem="application" %}, the **@date** attribute specifies when the application was employed, in this case June 6, 2011. Version information for the application should be placed in **@version**.
 
-{% include mei example="header/header-sample048.xml" valid="" %}
+{% include mei example="header/header-sample048.mei" valid="" %}

@@ -8,8 +8,8 @@ In ternary divisions, the dichotomy between the duration sign of the notes and t
 
 The following example illustrates an alteration (the second *brevis*) in *modus minor perfectus* and *tempus imperfectum*. The performed duration of each note is given as a proportion of a whole note using the **@num** and **@numbase**:
 
-{% include mei example="mensural/mensural-sample164.xml" valid="" %}
+{% include mei example="mensural/mensural-sample164.mei" valid="" %}
 
 The following example illustrates an imperfection (the two *longae*) in *modus minor perfectus* and *tempus perfectum* with the same *longa*-*brevis*-*brevis*-*longa* sequence but with an additional *punctus divisionis* between the two *breves*:
 
-{% include mei example="mensural/mensural-sample165.xml" valid="" %}
+{% include mei example="mensural/mensural-sample165.mei" valid="" %}

@@ -11,7 +11,7 @@ Using the **@syl** attribute on notes is the simplest way of encoding vocally pe
 The following example from Handel's *Messiah* (HWV 56) shows the use of **@syl**:
 
 {% include figure img="modules/lyrics/ex_syl_att.png" caption="Handel, Messiah HWV 56, Halleluja" %}
-{% include mei example="lyricsDesc/lyricsDesc-sample280.xml" valid="" %}
+{% include mei example="lyricsDesc/lyricsDesc-sample280.mei" valid="" %}
 
 When there are multiple lines of vocally performed text, or the encoder wishes to be more specific about connectors, etc., the use of {% include link elem="verse" %} and {% include link elem="syl" %} is recommended.
 
@@ -19,16 +19,16 @@ When there are multiple lines of vocally performed text, or the encoder wishes t
 
 The following example from Handel's *Messiah* (HWV 56) shows the use of {% include link elem="verse" %}:
 
-{% include mei example="lyricsDesc/lyricsDesc-sample281.xml" valid="" %}
+{% include mei example="lyricsDesc/lyricsDesc-sample281.mei" valid="" %}
 
 As it is common practice in written text, it is assumed that a space separates words. Many vocal texts, however, introduce elisions and connect two syllables into one unit. For example, the vocal text from Mozart's *Don Giovanni* sung by Don Giovanni in Finale II, Ho fermo il core in petto introduces an elision between the word fermo and il and between core and in. An elision can be indicated by placing both syllables within the same {% include link elem="note" %} and setting the {% include link elem="syl" %} element's **@con** attribute value to 't':
 
-{% include mei example="lyricsDesc/lyricsDesc-sample282.xml" valid="" %}
+{% include mei example="lyricsDesc/lyricsDesc-sample282.mei" valid="" %}
 
 When there is more than one line of text, more than one {% include link elem="verse" %} element can be used. The following example from a piano reduction of Wagner's *Rheingold* has two lines of text, with an English translation on the second line. Note the use of the **@xml:lang** attribute to differentiate the two languages:
 
 {% include figure img="modules/lyrics/ex_verse_m.png" caption="Example from Wagner's Rheingold with translated text." %}
-{% include mei example="lyricsDesc/lyricsDesc-sample283.xml" valid="feasible" %}
+{% include mei example="lyricsDesc/lyricsDesc-sample283.mei" valid="feasible" %}
 
 Optionally, it is possible to include an {% include link elem="lb" %} element within {% include link elem="verse" %} to explicitly encode line and line group endings. This is specifically meant to facilitate karaoke applications.
 

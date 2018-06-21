@@ -19,14 +19,14 @@ The {% include link elem="termList" %} element categorizes an individual text by
 
 The {% include link elem="classDecls" %} element offers the possibility of capturing a bibliographic citation and/or a URI at which the classification scheme or information about it may be found.
 
-{% include mei example="header/header-sample070.xml" valid="" %}
-{% include mei example="header/header-sample071.xml" valid="" %}
-{% include mei example="header/header-sample072.xml" valid="" %}
+{% include mei example="header/header-sample070.mei" valid="" %}
+{% include mei example="header/header-sample071.mei" valid="" %}
+{% include mei example="header/header-sample072.mei" valid="" %}
 
 The **@term** attribute may be used on each term element to make reference, by means of an identifier, to the classification scheme from which it is drawn.
 
-{% include mei example="header/header-sample073.xml" valid="" %}
+{% include mei example="header/header-sample073.mei" valid="" %}
 
 Alternatively, **@term** may be used on {% include link elem="termList" %} when all the contained terms come from the same source.
 
-{% include mei example="header/header-sample074.xml" valid="" %}
+{% include mei example="header/header-sample074.mei" valid="" %}

@@ -13,4 +13,4 @@ A {% include link elem="language" %} element may be supplied for each different 
 
 Here is an example of the use of this element:
 
-{% include mei example="header/header-sample054.xml" valid="feasible" %}
+{% include mei example="header/header-sample054.mei" valid="feasible" %}

@@ -12,22 +12,22 @@ The value of the **@xml:id** attribute serves as an identifier for an element an
 
 The **@xml:id** attribute may take values similar to the following:
 
-{% include mei example="shared/shared-sample014.xml" valid="" %}
+{% include mei example="shared/shared-sample014.mei" valid="" %}
 
 This is an example of an incorrectly-formulated **@xml:id** value:
 
-{% include mei example="shared/shared-sample015.xml" valid="false" %}
+{% include mei example="shared/shared-sample015.mei" valid="false" %}
 
 The **@label** and **@n** attributes both serve a labeling function; however, they differ in the values they allow. The **@n** attribute must be a single token, while **@label** may contain a string value that includes spaces. This makes **@label** useful for the capture of free-text labels, but a name or number specified with **@n** may be easier to process.
 
-{% include mei example="shared/shared-sample016.xml" valid="" %}
+{% include mei example="shared/shared-sample016.mei" valid="" %}
 
 When a reference to an external entity is not a complete URI, the **@xml:base** attribute can record a value against which it can be resolved into a complete, or absolute, location.
 
-{% include mei example="shared/shared-sample017.xml" valid="" %}
+{% include mei example="shared/shared-sample017.mei" valid="" %}
 
 The value of **@xml:base** can be inherited from an ancestor. In the following example, the values of the graphic elements' **@target** attribute can be completed by the xml:base value specified for the {% include link elem="facsimile" %} element:
 
-{% include mei example="shared/shared-sample018.xml" valid="" %}
+{% include mei example="shared/shared-sample018.mei" valid="" %}
 
 See [http://www.w3.org/TR/xmlbase/](http://www.w3.org/TR/xmlbase/){:.link_ref} for more details on xml:base.

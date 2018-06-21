@@ -17,8 +17,8 @@ Critical editions and collections of works often contain extensive text, such as
 
 The overall structure of a single musical text is:
 
-{% include mei example="shared/shared-sample000.xml" valid="" %}
+{% include mei example="shared/shared-sample000.mei" valid="" %}
 
 The top-level structure of a composite musical text made up of two unitary musical texts is:
 
-{% include mei example="shared/shared-sample001.xml" valid="" %}
+{% include mei example="shared/shared-sample001.mei" valid="" %}

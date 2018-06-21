@@ -10,5 +10,5 @@ It is common, in many types of texts, to find quotations. A quotation is typical
 
 The following examples show the use of {% include link elem="quote" %}.
 
-{% include mei example="text/text-sample365.xml" valid="" %}
-{% include mei example="text/text-sample366.xml" valid="" %}
+{% include mei example="text/text-sample365.mei" valid="" %}
+{% include mei example="text/text-sample366.mei" valid="" %}

@@ -22,11 +22,11 @@ A {% include link elem="castItem" %} element may contain any mixture of text and
 
 In the following example, {% include link elem="role" %} provides the name of the dramatic character and {% include link elem="roleDesc" %} contains a brief description of the role. The {% include link elem="perfRes" %} element is used to describe the voice range of the role.
 
-{% include mei example="header/header-sample055.xml" valid="" %}
+{% include mei example="header/header-sample055.mei" valid="" %}
 
 The vocal qualities and associated roles for Beethoven's opera *Fidelio* may be encoded as:
 
-{% include mei example="header/header-sample056.xml" valid="" %}
+{% include mei example="header/header-sample056.mei" valid="" %}
 
 The {% include link elem="castItem" %} element may also contain:
 

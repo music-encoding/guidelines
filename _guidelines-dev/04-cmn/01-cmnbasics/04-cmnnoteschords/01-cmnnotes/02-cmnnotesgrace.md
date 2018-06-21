@@ -10,7 +10,7 @@ The CMN module adds two optional attributes, **@grace** and **@grace.time**, to 
 
 The encoding of the left-most example would look like this:
 
-{% include mei example="cmn/cmn-sample100.xml" valid="" %}
+{% include mei example="cmn/cmn-sample100.mei" valid="" %}
 
 Grace notes are not counted when determining the measure's conformance to the current time signature. Therefore, the **@dur** attribute records only the *written* rhythmic value of the grace note. The time necessary for the performance of grace notes can be unspecified, calculated based on taking time from other non-grace notes, or specified precisely using the **@dur.ges** attribute.
 

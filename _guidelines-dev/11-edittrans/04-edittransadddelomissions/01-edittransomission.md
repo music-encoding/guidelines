@@ -6,8 +6,8 @@ version: "dev"
 
 Encoders may choose to omit parts of the source for reasons ranging from illegibility, (making transcription difficult or impossible), to editorial policy, e.g., systematic exclusion of poetry or prose from an encoding. The full details of the policy decisions concerned should be documented in the MEI header (see section {% include link id="headerEncodingDescription" %}). Each place in the text at which omission has taken place should be marked with a {% include link elem="gap" %} element, optionally with further information about the reason for the omission, its extent, and the person or agency responsible for it, as in the following examples:
 
-{% include mei example="editTrans/editTrans-sample235.xml" valid="" %}
-{% include mei example="editTrans/editTrans-sample236.xml" valid="" %}
+{% include mei example="editTrans/editTrans-sample235.mei" valid="" %}
+{% include mei example="editTrans/editTrans-sample236.mei" valid="" %}
 
 Note that the extent of the gap may be marked precisely using attributes **@unit** and **@quantity**, or more descriptively using the **@extent** attribute.
 
@@ -15,7 +15,7 @@ Unlike TEI, MEI does not offer a *desc* element for further description of the r
 
 The {% include link elem="unclear" %} element is used to mark passages in the original which cannot be read with confidence, or about which the transcriber is uncertain for other reasons, as for example when transcribing a illegible source. Its **@reason** and **@resp** attributes are used, as with the {% include link elem="gap" %} element, to indicate the cause of uncertainty and the person responsible for the conjectured reading.
 
-{% include mei example="editTrans/editTrans-sample237.xml" valid="" %}
+{% include mei example="editTrans/editTrans-sample237.mei" valid="" %}
 
 Where the difficulty in transcription arises from an identifiable cause, the **@agent** attribute signifies the causative agent. The **@cert** attribute signifies the degree of certainty ascribed to the transcription of the text contained within the {% include link elem="unclear" %} element. Where the difficulty in transcription arises from action (partial deletion, etc.) assignable to an identifiable hand, the **@hand** attribute may record the hand responsible for the action.
 
@@ -25,6 +25,6 @@ Sometimes the editor provides information not present in the source material. Th
 
 The following example demonstrates the use of the {% include link elem="supplied" %} element in combination with {% include link elem="gap" %} within {% include link elem="subst" %}:
 
-{% include mei example="editTrans/editTrans-sample238.xml" valid="" %}
+{% include mei example="editTrans/editTrans-sample238.mei" valid="" %}
 
 When the presumed loss of text arises from an identifiable cause, **@agent** signifies the causative agent. When the presumed loss of text arises from action (partial deletion, etc.) assignable to an identifiable hand, the **@hand** attribute signifies the hand responsible for the action. The **@reason** attribute indicates why the text has to be supplied, e.g. 'overbinding', 'faded ink', 'lost folio', 'omitted in original', etc. The **@source** attribute contains the source of the supplied text. The editor(s) responsible for supplied material may be recorded in the **@resp** attribute. The value of **@resp** must point to one or more identifiers declared in the document header. The **@cert** attribute signifies the degree of certainty ascribed to the supplied material.

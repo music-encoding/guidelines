@@ -27,11 +27,11 @@ The date sub-element is available within {% include link elem="name" %} in order
 
 Examples of the use of the {% include link elem="name" %} element:
 
-{% include mei example="namesDates/namesDates-sample293.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample293.mei" valid="" %}
 
 The element {% include link elem="date" %} contains a date in any format, including a date range. A date range may be expressed as textual content or, when intervening punctuation is present, as a combination of date sub-elements and text.
 
-{% include mei example="namesDates/namesDates-sample294.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample294.mei" valid="" %}
 
 To be more specific about the date, the attributes in the {% include link att="att.datable" %} class can be used:
 
@@ -58,4 +58,4 @@ To be more specific about the date, the attributes in the {% include link att="a
 
 In the following example, the ambiguous date text "5/3/05" is resolved using the **@isodate** attribute:
 
-{% include mei example="namesDates/namesDates-sample295.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample295.mei" valid="" %}
