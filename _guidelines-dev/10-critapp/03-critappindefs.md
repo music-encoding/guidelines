@@ -8,7 +8,7 @@ In addition to its use for differentiation of the musical content of multiple so
 
 When using the first of these two approaches, it is possible to point dynamically to the correct staff definition for a given source. The following example demonstrates how this can be accomplished for two sources, both presenting a two-staff score, but with differing staff order. No further {% include link elem="app" %} element is necessary within the {% include link elem="measure" %} to describe the alternative score order of the sources.
 
-{% include mei example="critApp/critApp-sample219.xml" valid="" %}
+{% include mei example="critApp/critApp-sample219.mei" valid="" %}
 
 When unique values for **@n** on {% include link elem="layerDef" %} and {% include link elem="layer" %} are provided, it is possible to reallocate layers in the same fashion as staves.
 

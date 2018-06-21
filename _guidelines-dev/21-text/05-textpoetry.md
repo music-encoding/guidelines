@@ -12,4 +12,4 @@ This {% include link elem="lg" %} (line group) element is used generically to en
 
 Because {% include link elem="lg" %} groups verses, it can be used to encode additional stanzas not integrated into the music notation. In addition, it is common for a poem to include a title or a header, as is demonstrated by the following example:
 
-{% include mei example="text/text-sample367.xml" valid="" %}
+{% include mei example="text/text-sample367.mei" valid="" %}

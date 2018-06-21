@@ -17,8 +17,8 @@ It is recommended to give changes in reverse chronological order, most recent fi
 
 For example:
 
-{% include mei example="header/header-sample076.xml" valid="" %}
+{% include mei example="header/header-sample076.mei" valid="" %}
 
 A slightly shorter form for recording changes is also available when a the date of the change can be described by a single date in a standard ISO form and when the name of the agent(s) responsible for the change, encoded elsewhere in the header, can be referred to by one or more URIs given in the **@resp** attribute. For example:
 
-{% include mei example="header/header-sample077.xml" valid="" %}
+{% include mei example="header/header-sample077.mei" valid="" %}

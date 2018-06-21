@@ -6,7 +6,7 @@ version: "dev"
 
 The {% include link elem="editorialDecl" %} element is used to provide details of the editorial practices applied during the encoding of a musical text.
 
-It may contain a prose description only, or one or more of a set of specialized elements; that is, members of the MEI model.editorialDeclPart class. 
+It may contain a prose description only, or one or more of a set of specialized elements; that is, members of the MEI model.editorialDeclPart class.
 
 Some of these policy elements carry attributes to support automated processing of certain well-defined editorial decisions; all of them contain a prose description of the editorial principles adopted with respect to the particular feature concerned. Examples of the kinds of questions which these descriptions are intended to answer are given in the list below.
 
@@ -27,6 +27,6 @@ Some of these policy elements carry attributes to support automated processing o
 
 Experience shows that a full record should be kept of decisions relating to editorial principles and encoding practice, both for future users of the text and for the project which produced the text in the first instance. Any information about the editorial principles applied not falling under one of the above headings may be recorded as additional prose following the special-use elements.
 
-{% include mei example="header/header-sample049.xml" valid="" %}
+{% include mei example="header/header-sample049.mei" valid="" %}
 
 An editorial practices declaration which applies to more than one text or division of a text need not be repeated in the header of each text or division. Instead, the **@decls** attribute of each text (or subdivision of the text) to which it applies may be used to supply a cross-reference to a single declaration encoded in the header.

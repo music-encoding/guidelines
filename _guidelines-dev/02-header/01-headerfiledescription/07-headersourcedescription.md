@@ -33,16 +33,16 @@ When the MEI.frbr module is available, the following elements may also appear af
 
 In the simplest case, the {% include link elem="source" %} element may contain nothing more than a notes statement giving a simple prose description or a brief note stating that the document has no physical source:
 
-{% include mei example="header/header-sample043.xml" valid="" %}
-{% include mei example="header/header-sample044.xml" valid="" %}
+{% include mei example="header/header-sample043.mei" valid="" %}
+{% include mei example="header/header-sample044.mei" valid="" %}
 
 Alternatively, it may contain a basic bibliographic citation, also in an annotation:
 
-{% include mei example="header/header-sample045.xml" valid="" %}
+{% include mei example="header/header-sample045.mei" valid="" %}
 
 However, more structured bibliographic data, such as that in the example below, facilitates better machine-processing:
 
-{% include mei example="header/header-sample046.xml" valid="" %}
+{% include mei example="header/header-sample046.mei" valid="" %}
 
 A description of more precise capture of dates and date ranges is provided in chapter {% include link id="namesDates" %}.
 
@@ -52,4 +52,4 @@ The {% include link elem="titleStmt" %}, {% include link elem="editionStmt" %}, 
 
 If a source of the file is an unpublished manuscript, it is recommended that the {% include link elem="unpub" %} element be used as the only content of the source's {% include link elem="pubStmt" %} element. Other identifying information for the manuscript may be collected in the {% include link elem="notesStmt" %} element, as described in section {% include link id="headerNotesStatement" %}.
 
-{% include mei example="header/header-sample047.xml" valid="" %}
+{% include mei example="header/header-sample047.mei" valid="" %}

@@ -10,9 +10,9 @@ The amount of encoding in a header will depend both on the nature and the intend
 
 Supplying only the level of encoding required, the MEI header of a single text will look like the following example:
 
-{% include mei example="header/header-sample078.xml" valid="" %}
+{% include mei example="header/header-sample078.mei" valid="" %}
 
-The only mandatory component of the MEI Header is the {% include link elem="fileDesc" %} element. Within this element, {% include link elem="titleStmt" %} and {% include link elem="pubStmt" %} are required constituents. Within the title statement, a title is required. Within the 
+The only mandatory component of the MEI Header is the {% include link elem="fileDesc" %} element. Within this element, {% include link elem="titleStmt" %} and {% include link elem="pubStmt" %} are required constituents. Within the title statement, a title is required. Within the
 {% include link elem="pubStmt" %}, a publisher, distributor, or other agency responsible for the file is required.
 
 While not formally required, additional information is recommended for a minimally effective header. For example, it is recommended that the person or corporate entity responsible for the creation of the encoding should be specified using {% include link elem="respStmt" %} within the {% include link elem="titleStmt" %} element. It is also recommended that information about the source, or sources, of the encoding be included. Each {% include link elem="source" %} element should contain at the least a loosely structured bibliographic citation that identifies the source used to construct the MEI file.
@@ -21,4 +21,4 @@ Furthermore, If the electronic transcription is a member of a series of publicat
 
 We now present the same example header, expanded to include additionally recommended information, adequate for most bibliographic purposes, in particular to allow for the creation of an AACR2-conformant bibliographic record.
 
-{% include mei example="header/header-sample079.xml" valid="" %}
+{% include mei example="header/header-sample079.mei" valid="" %}

@@ -12,10 +12,10 @@ Examples of composite texts which may be represented using the {% include link e
 
 For example, the overall structure of a collection of songs might be encoded as follows:
 
-{% include mei example="shared/shared-sample002.xml" valid="" %}
+{% include mei example="shared/shared-sample002.mei" valid="" %}
 
 A group of musical texts may contain other unitary and grouped texts:
 
-{% include mei example="shared/shared-sample003.xml" valid="" %}
+{% include mei example="shared/shared-sample003.mei" valid="" %}
 
 The {% include link elem="group" %} element may be used to encode any kind of collection in which the constituents are regarded by the encoder as works in their own right, such as *ad hoc* single- or multiple-composer collections or anthologies of works not originally conceived of as a single composition.

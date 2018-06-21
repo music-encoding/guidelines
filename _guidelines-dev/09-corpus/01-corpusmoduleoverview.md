@@ -10,7 +10,7 @@ The meiCorpus module defines a single element:
 
 The {% include link elem="meiCorpus" %} element is intended for the encoding of corpora, though it may also be useful in encoding any collection of disparate materials. The individual samples in the corpus are encoded as separate {% include link elem="mei" %} elements, and the entire corpus is enclosed in an {% include link elem="meiCorpus" %} element. Each sample has the usual structure for a {% include link elem="mei" %} document, comprising an {% include link elem="meiHead" %} followed by a {% include link elem="music" %} element. The corpus, too, has a corpus-level {% include link elem="meiHead" %} element, in which the corpus as a whole, and encoding practices common to multiple samples may be described. The overall structure of an MEI-conformant corpus is thus:
 
-{% include mei example="corpus/corpus-sample210.xml" valid="" %}
+{% include mei example="corpus/corpus-sample210.mei" valid="" %}
 
 This two-level structure allows for metadata to be specified at the corpus level, at the individual text level, or at both. However, metadata which relates to the whole corpus rather than to its individual components should be removed from the individual component metadata and included only in the {% include link elem="meiHead" %} element prefixed to the whole.
 

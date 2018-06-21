@@ -8,12 +8,12 @@ version: "dev"
 
 Personal names within an MEI document may simply be marked with the {% include link elem="persName" %} element containing a proper noun or proper noun phrase referring to an individual. For example:
 
-{% include mei example="namesDates/namesDates-sample311.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample311.mei" valid="" %}
 
 Apart from the composer or originator of a musical work, there could be many other persons involved in the genesis of a musical work, such as librettists, lyricists, arrangers, editors, transcribers, printers, publishers, etc. In addition, sometimes a single individual may have multiple functions with regard to a musical work, e.g. composer and librettist. The **@role** attribute on {% include link elem="persName" %} may be used to capture a person's responsibility. For example:
 
-{% include mei example="namesDates/namesDates-sample312.xml" valid="" %}
-{% include mei example="namesDates/namesDates-sample313.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample312.mei" valid="" %}
+{% include mei example="namesDates/namesDates-sample313.mei" valid="" %}
 
 The [Marc code list for relators](http://www.loc.gov/marc/relators/relaterm.html){:.link_ref} offers a variety of controlled terms that may serve as values for this use of **@role**.
 
@@ -48,15 +48,15 @@ However, the recommended practice is to employ the following sub-elements provid
 
 For example,
 
-{% include mei example="namesDates/namesDates-sample314.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample314.mei" valid="" %}
 
 In the case of individuals with more than one forename, it is often sufficient to place all given names within a single foreName element:
 
-{% include mei example="namesDates/namesDates-sample315.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample315.mei" valid="" %}
 
 However, the advantage of marking names with specific name part elements instead of nested persName elements, is that it becomes possible to use the **@type** attribute to distinguish between multiple instances of the same generic name component. The following example indicates the function of each of the given names of Wolfgang Mozart:
 
-{% include mei example="namesDates/namesDates-sample316.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample316.mei" valid="" %}
 
 The use of a controlled list, such as the Gemeinsame Normdatei (GND) or the Library of Congress Name Authorities, is recommended for names, especially those occurring within the metadata header. When a controlled value is used, information about the the value should be recorded. The following attributes are provided for this purpose:
 
@@ -66,4 +66,4 @@ The use of a controlled list, such as the Gemeinsame Normdatei (GND) or the Libr
 
 For maximal machine-processability, these three attributes may be used in combination. For example:
 
-{% include mei example="namesDates/namesDates-sample317.xml" valid="" %}
+{% include mei example="namesDates/namesDates-sample317.mei" valid="" %}

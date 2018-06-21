@@ -24,12 +24,12 @@ Individual pitches of a chord are encoded using {% include link elem="chordMembe
 
 These simple resources allow for the detailed specification and interpretation of harmonic indications found in the musical text. For example, the harmonic label A can be equated with a fully spelled-out indication of functional harmony that can be substituted for the harmonic label, say, in an aural rendition:
 
-{% include mei example="harmony/harmony-sample260.xml" valid="feasible" %}
+{% include mei example="harmony/harmony-sample260.mei" valid="feasible" %}
 
 Alternatively, the non-bass chord tones may be indicated, not with pitch names, but with their intervallic distance above the bass note. Therefore, the example above may also be encoded:
 
-{% include mei example="harmony/harmony-sample261.xml" valid="" %}
+{% include mei example="harmony/harmony-sample261.mei" valid="" %}
 
 The preceding encoding possibilities provide the detailed information necessary to create playable chord annotations. For more generic uses, however, the encoding can be taken one step further; that is, it can be reduced to its minimum intervallic content by eliminating octave duplications and expressing all chord members, including the bass note, using intervals above the bass. Of course, the **@inth** attribute for the bass note itself should be set to 0. For example:
 
-{% include mei example="harmony/harmony-sample262.xml" valid="" %}
+{% include mei example="harmony/harmony-sample262.mei" valid="" %}

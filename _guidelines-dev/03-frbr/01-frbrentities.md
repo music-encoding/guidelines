@@ -17,7 +17,7 @@ The {% include link elem="work" %} element has an optional child element to hold
 
 {% include desc elem="expressionList" %}
 
-As {% include link elem="expressionList" %} is a container element for descriptions of different expressions of the same work, it may contain only 
+As {% include link elem="expressionList" %} is a container element for descriptions of different expressions of the same work, it may contain only
 
 {% include link elem="expression" %} elements.
 
@@ -28,15 +28,15 @@ The content model of {% include link elem="expression" %} is similar to that of 
 
 Since expressions, like works, are abstractions, their titles are often nebulous. Usually, however, the title of an expression is the same as the work it represents. When the relationship between a work and an expression is encoded hierarchically, the expression’s title element may be omitted with the assumption that it will be inherited from the work. If no title is provided for an expression, distinguishing characteristics must be provided in other elements, such as {% include link elem="perfMedium" %}, as in the following example:
 
-{% include mei example="FRBR/FRBR-sample080.xml" valid="" %}
+{% include mei example="FRBR/FRBR-sample080.mei" valid="" %}
 
 Programmatic concatenation of the work title and one or more characteristics of the expression can be used to provide identification for the expression. For example, the expressions above may be identified by "Pavane pour une infante défunte (piano)" and "Pavane pour une infante défunte (orchestra)". In some cases, it may be helpful to assign a descriptive title to the expression, as illustrated below. The carrier of the manifestation is often a good source of this kind of descriptive text.
 
-{% include mei example="FRBR/FRBR-sample081.xml" valid="" %}
-{% include mei example="FRBR/FRBR-sample082.xml" valid="" %}
+{% include mei example="FRBR/FRBR-sample081.mei" valid="" %}
+{% include mei example="FRBR/FRBR-sample082.mei" valid="" %}
 
 The itemList element provides functionality similar to that of expressionList; that is, it can be used to group descriptions of individual items (exemplars) of the parent source. Just like {% include link elem="expressionList" %}, which can only hold {% include link elem="expression" %} sub-components, {% include link elem="itemList" %} may only contain {% include link elem="item" %} elements.
 
 {% include desc elem="itemList" %}
 {% include desc elem="item" %}
-{% include mei example="FRBR/FRBR-sample083.xml" valid="" %}
+{% include mei example="FRBR/FRBR-sample083.mei" valid="" %}

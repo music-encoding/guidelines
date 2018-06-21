@@ -22,4 +22,4 @@ The {% include link elem="fileDesc" %} element contains two mandatory and six op
 
 A complete file description will resemble the following example:
 
-{% include mei example="header/header-sample019.xml" valid="feasible" %}
+{% include mei example="header/header-sample019.mei" valid="feasible" %}

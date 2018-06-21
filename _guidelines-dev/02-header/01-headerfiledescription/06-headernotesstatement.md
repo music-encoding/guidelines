@@ -24,8 +24,8 @@ Nevertheless, the {% include link elem="notesStmt" %} element may be used to rec
 
 Each such item of information may be tagged using the general-purpose {% include link elem="annot" %} element. Groups of annotations are contained within the {% include link elem="notesStmt" %} element, as in the following example:
 
-{% include mei example="header/header-sample041.xml" valid="" %}
+{% include mei example="header/header-sample041.mei" valid="" %}
 
 There are advantages, however, to encoding such information with more precise elements elsewhere in the MEI header, when such elements are available. For example, the notes above might be encoded as follows:
 
-{% include mei example="header/header-sample042.xml" valid="" %}
+{% include mei example="header/header-sample042.mei" valid="" %}

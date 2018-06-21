@@ -16,14 +16,14 @@ Consider this traditional soprano clef appearing somewhere in the course of a mu
 
 An encoder may choose to preserve this original clef, but flag it as nonstandard from the perspective of current practice by using the {% include link elem="orig" %} element with no attributes specified, as follows:
 
-{% include mei example="editTrans/editTrans-sample232.xml" valid="" %}
+{% include mei example="editTrans/editTrans-sample232.mei" valid="" %}
 
 Alternatively, the encoder may indicate that the clef has been modernized into a G-clef by using the {% include link elem="reg" %} element with no attributes specified, as follows:
 
-{% include mei example="editTrans/editTrans-sample233.xml" valid="" %}
+{% include mei example="editTrans/editTrans-sample233.mei" valid="" %}
 
 As another alternative, the encoder may encode both the old and modernized shapes, so that applications may render both at the reader's will:
 
-{% include mei example="editTrans/editTrans-sample234.xml" valid="" %}
+{% include mei example="editTrans/editTrans-sample234.mei" valid="" %}
 
 As described above, the **@resp** attribute may be used to specify the agent responsible for the regularization.

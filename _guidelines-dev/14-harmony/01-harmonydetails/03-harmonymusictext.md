@@ -9,17 +9,17 @@ With regard to indications of harmony, MEI attempts to strike a balance between 
 {% include desc atts="att.extender/extender att.harm.vis/rendgrid" %}
 
 The {% include link elem="harm" %} element can be used to capture chord labels that consist entirely of text:
-{% include mei example="harmony/harmony-sample263.xml" valid="" %}
+{% include mei example="harmony/harmony-sample263.mei" valid="" %}
 
 or labels that are chord tablature grids:
 
 {% include figure img="modules/harmony/A7_5th.gif" caption="Chord grid without label" %}
-{% include mei example="harmony/harmony-sample264.xml" valid="" %}
+{% include mei example="harmony/harmony-sample264.mei" valid="" %}
 
 or labels that mix these styles:
 
 {% include figure img="modules/harmony/A7_1st.gif" caption="Chord grid with label" %}
-{% include mei example="harmony/harmony-sample265.xml" valid="" %}
+{% include mei example="harmony/harmony-sample265.mei" valid="" %}
 
 The {% include link elem="harm" %} element must define a point of attachment using one of the following attributes: **@startid**, **@tstamp**, **@tstamp.ges** or **@tstamp.real**. The most commonly-used of these are **@startid** and **@tstamp**.
 

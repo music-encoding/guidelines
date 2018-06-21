@@ -29,5 +29,5 @@ One or more {% include link elem="respStmt" %} elements may also be used to supp
 
 Some examples follow:
 
-{% include mei example="header/header-sample029.xml" valid="" %}
-{% include mei example="header/header-sample030.xml" valid="" %}
+{% include mei example="header/header-sample029.mei" valid="" %}
+{% include mei example="header/header-sample030.mei" valid="" %}
