@@ -11,7 +11,7 @@
           <note dur="4" oct="4" pname="f" stem.dir="up"/>
           <note dur="4" oct="5" pname="d" stem.dir="down"/>
           <note dur="4" oct="5" pname="d" stem.dir="down"/>
-          <note dur="4" oct="5" pname="g" stem.dir="up"/>
+          <note dur="4" oct="4" pname="g" stem.dir="up"/>
         </layer>
       </staff>
       <trill place="above" staff="1" tstamp="1" tstamp2="2"/>
