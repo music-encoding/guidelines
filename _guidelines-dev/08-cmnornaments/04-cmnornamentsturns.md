@@ -16,10 +16,10 @@ It is recommended, but not required, to use the attribute **@form** to encode th
 The attribute **@form** accepts the following values:
 
 {:.gloss}
-**upper**: usually corresponding to the symbol: ![turn](/images/dev/modules/cmnOrnaments/turn.png). This turn is commonly performed beginning on a note higher than the principal note.
+**upper**: usually corresponding to the symbol: ![turn](/guidelines/images/dev/modules/cmnOrnaments/turn.png). This turn is commonly performed beginning on a note higher than the principal note.
 
 {:.gloss}
-**lower**: usually corresponding to the symbol: ![turn](/images/dev/modules/cmnOrnaments/inv_turn.png). This turn is commonly performed beginning on a note lower than the principal note.
+**lower**: usually corresponding to the symbol: ![turn](/guidelines/images/dev/modules/cmnOrnaments/inv_turn.png). This turn is commonly performed beginning on a note lower than the principal note.
 
 The following example shows the encoding of a simple turn:
 
