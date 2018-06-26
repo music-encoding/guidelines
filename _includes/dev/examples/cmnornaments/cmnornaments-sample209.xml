@@ -1,0 +1,20 @@
+<measure n="3">
+   <staff n="1">
+      <layer n="1">
+         <note dur="8" grace="unknown" oct="5" pname="f" stem.dir="up"></note>
+         <note dur="4" oct="5" pname="e" stem.dir="down" xml:id="cmnOrnaments.co_m_1_n1"></note>
+         <beam>
+            <note dur="16" oct="5" pname="d" stem.dir="up"></note>
+            <note accid="s" dur="16" oct="4" pname="f" stem.dir="up"></note>
+            <note dur="16" oct="4" pname="g" stem.dir="up"></note>
+            <note dur="16" oct="5" pname="e" stem.dir="up"></note>
+         </beam>
+         <note dur="8" grace="unknown" oct="5" pname="d" stem.dir="up"></note>
+         <note dur="4" oct="5" pname="c" stem.dir="up" xml:id="cmnOrnaments.co_m_1_n2"></note>
+      </layer>
+   </staff>
+   <turn form="norm" staff="1" startid="#co_m_1_n1"></turn>
+   <mordent form="inv" staff="1" startid="#co_1_m_n1"></mordent>
+   <turn form="norm" staff="1" startid="#co_m_1_n2"></turn>
+   <mordent form="inv" staff="1" startid="#co_m_1_n2"></mordent>
+</measure>

@@ -1,9 +1,0 @@
-<measure n="1">
-  <staff n="1">
-    <layer n="1">
-      <note dur="2" oct="4" pname="c"/>
-      <note dur="2" oct="4" pname="c"/>
-    </layer>
-  </staff>
-  <mordent form="inv" place="below" staff="1" tstamp="2"/>
-</measure>
