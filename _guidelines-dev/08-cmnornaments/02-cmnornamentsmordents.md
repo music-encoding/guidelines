@@ -15,17 +15,17 @@ It is recommended, but not required, to use the attribute **@form** to encode th
 The attribute **@form** accepts the following values:
 
 {:.gloss}
-**norm**: usually corresponding to the symbol: . This mordent is commonly performed as the principal note, followed by its lower neighbor, with a return to the principal note.
+**upper**: usually corresponding to the symbol: ![mordent](/images/dev/modules/cmnOrnaments/upper_mordent.png). This mordent is commonly performed as the principal note, followed by its upper neighbor, with a return to the principal note.
 
 {:.gloss}
-**inv**: usually corresponding to the symbol: . This mordent is commonly performed as the principal note, followed by its upper neighbor, with a return to the principal note.
+**lower**: usually corresponding to the symbol: ![mordent](/images/dev/modules/cmnOrnaments/lower_mordent.png). This mordent is commonly performed as the principal note, followed by its lower neighbor, with a return to the principal note.
 
 The following example demonstrates the encoding of simple mordents:
 
 {% include figure img="modules/cmnOrnaments/ex_mordent.png" caption="Example of simple mordent" %}
-{% include mei example="cmnOrnaments/cmnOrnaments-sample195.xml" valid="" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample195.txt" valid="" %}
 
 Occasionally, mordents can be longer, employing five notes instead of three. The **@long** attribute can be used to identify mordents of this type. The following example shows the encoding of a long mordent:
 
 {% include figure img="modules/cmnOrnaments/ex_mordent_l.png" caption="Example of a long mordent" %}
-{% include mei example="cmnOrnaments/cmnOrnaments-sample196.xml" valid="" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample196.txt" valid="" %}

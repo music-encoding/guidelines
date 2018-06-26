@@ -12,4 +12,4 @@ The following example from C.P.E. Bach's sonata W.62/1 shows a turn followed by 
 
 When encoding the example above, both ornaments will be positioned above the same note. The encoded order of the elements, moreover, should correspond to the performed sequence, which in this example is top to bottom: first the turn, then the mordent.
 
-{% include mei example="cmnOrnaments/cmnOrnaments-sample209.xml" valid="" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample209.txt" valid="" %}
