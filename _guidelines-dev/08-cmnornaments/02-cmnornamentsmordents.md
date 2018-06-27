@@ -15,10 +15,10 @@ It is recommended, but not required, to use the attribute **@form** to encode th
 The attribute **@form** accepts the following values:
 
 {:.gloss}
-**upper**: usually corresponding to the symbol: ![mordent](/guidelines/images/dev/modules/cmnOrnaments/upper_mordent.png). This mordent is commonly performed as the principal note, followed by its upper neighbor, with a return to the principal note.
+**upper**: usually corresponding to the symbol: {% include smufl code="E56C" %}. This mordent is commonly performed as the principal note, followed by its upper neighbor, with a return to the principal note.
 
 {:.gloss}
-**lower**: usually corresponding to the symbol: ![mordent](/guidelines/images/dev/modules/cmnOrnaments/lower_mordent.png). This mordent is commonly performed as the principal note, followed by its lower neighbor, with a return to the principal note.
+**lower**: usually corresponding to the symbol: {% include smufl code="E56D" %}. This mordent is commonly performed as the principal note, followed by its lower neighbor, with a return to the principal note.
 
 The following example demonstrates the encoding of simple mordents:
 
