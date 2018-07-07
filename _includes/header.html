@@ -1,31 +1,29 @@
 <header class="navbar">
-  <section class="navbar-section">
-    <div class="navbar-brand">
-      <a href="{{ site.style_baseurl }}/">
-        <img src="{{site.style_baseurl}}/pix/meilogo-inverted.png" />
-      </a>
-    </div>
+  <div class="navbar-section">
+    <a class="navbar-brand" href="{{ site.style_baseurl }}/">
+      <img src="{{site.style_baseurl}}/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
     {% include menu.html %}
-  </section>
+  </div>
   {% if page.version == "dev" %}
-  <section class="navbar-section">
-    <div class="fixed toast toast-warning text-center guidelines-warning">
+  <div class="navbar-section">
+    <div class="toast toast-warning text-center guidelines-warning">
         Guidelines for the development version of MEI
     </div>
-  </section>
+  </div>
   {% elsif page.version != site.versions.current %}
-  <section class="navbar-section">
-    <div class="fixed toast toast-warning text-center guidelines-warning">
+  <div class="navbar-section">
+    <div class="toast toast-warning text-center guidelines-warning">
         Guidelines for an older version of MEI ({{ site.versions[page.version] }})
     </div>
-  </section>
+  </div>
   {% endif %}
-  <section class="navbar-section">
+  <div class="navbar-section">
     <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
       <img src="{{site.style_baseurl}}/pix/twitter.png" alt="Twitter" class="logo"/>
     </a>
     <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
       <img src="{{site.style_baseurl}}/pix/github.png" alt="GitHub" class="logo"/>
     </a>
-  </section>
-</header> 
+  </div>
+</header>
