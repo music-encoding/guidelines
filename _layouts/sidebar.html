@@ -2,42 +2,39 @@
 layout: default
 ---
 <div class="columns">
-    
+
     <div class="column col-8">
 
         <div id="tipue_search_content"></div>
-        
+
         {{ content }}
-        
+
     </div>
     <div class="column col-4">
-        
+
         <form action="{{ page.url | relative_url }}">
-          <div class="tipue_search_left">
-              <img src="{{ site.baseurl }}/js/tipuesearch/search.png" class="tipue_search_icon">
+          <div class="tipue_search_group">
+            <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">⚲</div></button>
           </div>
-          <div class="tipue_search_right">
-              <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
-          <div style="clear: both;"></div>
         </form>
 
         <div class="divider"></div>
-        
+
         {% for sb in site.sidebar %}
             {% if page.sidebar == sb.id %}
-        
+
                 {% for s in sb.content %}
-                
+
                     {% if forloop.first %} <ul class="nav"> {% endif %}
                     <li class="nav-item">
                         <a href="{{ site.baseurl}}/{{ page.version }}/{{s.url}}">{{s.label}}</a>
                     </li>
-                        
+
                     {% if forloop.last %} </ul> {% endif %}
                 {% endfor %}
             {% endif %}
         {% endfor %}
-        
+
         <div class="divider"></div>
 
         {% include sectionToc.html version=page.version section=page.section %}
