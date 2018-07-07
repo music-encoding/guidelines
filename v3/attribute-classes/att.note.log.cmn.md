@@ -24,7 +24,19 @@ title: "att.note.log.cmn"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@beam</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates that this event is "under a beam".</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.beam.html">data.BEAM</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.beamed.html">att.beamed</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@lv</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the attachment of an l.v. (laissez vibrer) sign to this element.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lvpresent.html">att.lvpresent</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@ornam</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates that this element has an attached ornament. If visual information about
+                  the ornament is needed, then one of the elements that represents an ornament (mordent,
+                  trill, or turn) should be employed.</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ornam.cmn.html">data.ORNAM.cmn</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ornam.html">att.ornam</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

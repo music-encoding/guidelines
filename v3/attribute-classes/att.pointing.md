@@ -25,7 +25,27 @@ title: "att.pointing"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@target</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Allows the use of one or more previously-undeclared URIs to identify passive
+                  participants in a relationship; that is, the entities pointed "to".</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@targettype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Characterization of target resource(s) using any convenient classification scheme
+                  or
+                  typology.</span>
+               Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@xlink:actuate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Defines whether a link occurs automatically or must be requested by the user.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">onLoad</span>" <i>(Load the target resource(s) immediately.)</i>,  "<span style="font-weight: 500;">onRequest</span>" <i>(Load the target resource(s) upon user request.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(Do not permit loading of the target resource(s).)</i>,  "<span style="font-weight: 500;">other</span>" <i>(Behavior other than allowed by the other values of this attribute.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@xlink:role</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Characterization of the relationship between resources. The value of the role
+                  attribute must be a URI.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@xlink:show</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Defines how a remote resource is rendered.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">new</span>" <i>(Open in a new window.)</i>,  "<span style="font-weight: 500;">replace</span>" <i>(Load the referenced resource in the same window.)</i>,  "<span style="font-weight: 500;">embed</span>" <i>(Embed the referenced resource at the point of the link.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(Do not permit traversal to the referenced resource.)</i>,  "<span style="font-weight: 500;">other</span>" <i>(Behavior other than permitted by the other values of this attribute.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pointing.html">att.pointing</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

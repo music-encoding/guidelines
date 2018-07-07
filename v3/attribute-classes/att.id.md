@@ -27,7 +27,13 @@ title: "att.id"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@xml:id</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Regularizes the naming of an element and thus facilitates building links between it
+                  and other resources. Each id attribute within a document must have a unique
+                  value.</span>
+               Value of datatype <span style="font-weight: 500;">ID</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.id.html">att.id</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

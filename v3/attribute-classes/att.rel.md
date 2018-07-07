@@ -25,7 +25,13 @@ title: "att.rel"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@rel</strong></span><span class="attributeUsage">(required)</span><span class="attributeDesc">Describes the relationship between the current entity and the target entity. The
+                  values follow FRBR (see
+                  http://www.ifla.org/files/assets/cataloguing/frbr/frbr_2008.pdf).</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.frbrrelationship.html">data.FRBRRELATIONSHIP</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rel.html">att.rel</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

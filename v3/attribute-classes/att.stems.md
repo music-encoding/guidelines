@@ -27,7 +27,32 @@ title: "att.stems"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@stem.dir</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the direction of a stem.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemdirection.html">data.STEMDIRECTION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@stem.len</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the stem length.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@stem.mod</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes any stem "modifiers"; that is, symbols rendered on the stem, such as tremolo
+                  or Sprechstimme indicators.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemmodifier.html">data.STEMMODIFIER</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@stem.pos</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the position of the stem in relation to the note head(s).</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemposition.html">data.STEMPOSITION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@stem.with</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains an indication of which staff a note or chord that logically belongs to the
+                  current staff should be visually placed on; that is, the one above or the one
+                  below.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.otherstaff.html">data.OTHERSTAFF</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.cmn.html">att.stems.cmn</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@stem.x</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the output x coordinate of the stem's attachment point.</span>
+               Value of datatype <span style="font-weight: 500;">decimal</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@stem.y</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the output y coordinate of the stem's attachment point.</span>
+               Value of datatype <span style="font-weight: 500;">decimal</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

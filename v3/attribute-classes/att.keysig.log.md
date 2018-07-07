@@ -25,7 +25,31 @@ title: "att.keySig.log"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@accid</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures a written accidental.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.explicit.html">data.ACCIDENTAL.EXPLICIT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.html">att.accidental</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@mode</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates major, minor, or other tonality.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mode.html">data.MODE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keysig.log.html">att.keySig.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@pname</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains a written pitch name.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.pitchname.html">data.PITCHNAME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitch.html">att.pitch</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@sig</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates where the key lies in the circle of fifths.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.keysignature.html">data.KEYSIGNATURE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keysig.log.html">att.keySig.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@sig.mixed</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Mixed key signatures, e.g. those consisting of a mixture of flats and sharps (Read,
+                  p. 143, ex. 9-39), and key signatures with unorthodox placement of the accidentals
+                  (Read, p. 141) must be indicated by setting the key.sig attribute to 'mixed' and
+                  providing explicit key signature information in the key.sig.mixed attribute or in
+                  the
+                  &lt;keySig&gt; element. It is intended that key.sig.mixed contain a series of tokens
+                  with each token containing pitch name, accidental, and octave, such as 'a4 c5s e5f'
+                  that
+                  indicate what key accidentals should be rendered and where they should be placed.</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.keysigtoken.html">data.KEYSIGTOKEN</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.keysig.log.html">att.keySig.log</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

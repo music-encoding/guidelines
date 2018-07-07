@@ -27,7 +27,13 @@ title: "att.tupletpresent"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@tuplet</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates that this feature participates in a tuplet. If visual information about
+                  the tuplet needs to be recorded, then a &lt;tuplet&gt; element should be
+                  employed.</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tuplet.html">data.TUPLET</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tupletpresent.html">att.tupletpresent</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

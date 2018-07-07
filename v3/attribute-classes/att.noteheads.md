@@ -24,7 +24,33 @@ title: "att.noteheads"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@head.color</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the overall color of a notehead.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@head.fill</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes how/if the notehead is filled.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fill.html">data.FILL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@head.fillcolor</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the fill color of a notehead if different from the overall note
+                  color.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@head.mod</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records any additional symbols applied to the notehead.</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.noteheadmodifier.html">data.NOTEHEADMODIFIER</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@head.rotation</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes rotation applied to the basic notehead shape. A positive value rotates the
+                  notehead in a counter-clockwise fashion, while negative values produce clockwise
+                  rotation.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.rotation.html">data.ROTATION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@head.shape</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to override the head shape normally used for the given duration.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.headshape.html">data.HEADSHAPE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@head.visible</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates if a feature should be rendered when the notation is presented graphically
+                  or sounded when it is presented in an aural form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.noteheads.html">att.noteheads</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

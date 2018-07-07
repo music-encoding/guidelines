@@ -24,7 +24,14 @@ title: "att.note.ges.tablature"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@tab.fret</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the fret at which a string should be stopped.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fretnumber.html">data.FRETNUMBER</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.tablature.html">att.note.ges.tablature</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tab.string</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records which string is to be played.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stringnumber.html">data.STRINGNUMBER</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.tablature.html">att.note.ges.tablature</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

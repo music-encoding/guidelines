@@ -25,7 +25,36 @@ title: "att.uneume.log"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@form</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a subclass or functional label for the neume.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uneumeform.html">data.UNEUMEFORM</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.uneume.log.html">att.uneume.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@layer</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Identifies the layer to which a feature applies.</span>
+               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerident.html">att.layerident</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@name</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the name of the neume.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uneumename.html">data.UNEUMENAME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.uneume.log.html">att.uneume.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@staff</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Signifies the staff on which a notated event occurs or to which a control event
+                  applies. Mandatory when applicable.</span>
+               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffident</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@syl</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds an associated sung text syllable.</span>
+               Value of datatype <span style="font-weight: 500;">string</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.syltext.html">att.syltext</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the onset time in terms of musical time, i.e.,
+                  beats[.fractional_beat_part].</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.beat.html">data.BEAT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.musical.html">att.timestamp.musical</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp.ges</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures performed onset time in several forms; that is, ppq (MIDI clicks and
+                  MusicXML 'divisions'), Humdrum **recip values, beats, seconds, or mensural duration
+                  values.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp.real</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to record the onset time in terms of ISO time.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isotime.html">data.ISOTIME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

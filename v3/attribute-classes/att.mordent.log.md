@@ -25,7 +25,67 @@ title: "att.mordent.log"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@accidlower</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the written accidental associated with a lower neighboring note.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.explicit.html">data.ACCIDENTAL.EXPLICIT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ornamentaccid.html">att.ornamentaccid</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@accidupper</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the written accidental associated with an upper neighboring note.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.explicit.html">data.ACCIDENTAL.EXPLICIT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ornamentaccid.html">att.ornamentaccid</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@endid</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the final element in a sequence of events to which the feature
+                  applies.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startendid.html">att.startendid</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@evaluate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the intended meaning when a participant in a relationship is itself a
+                  pointer.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">all</span>" <i>(If an element pointed to is itself a pointer, then the target of that pointer
+                  will be taken, and so on, until an element is found which is not a pointer.)</i>,  "<span style="font-weight: 500;">one</span>" <i>(If an element pointed to is itself a pointer, then its target (whether a pointer
+                  or not) is taken as the target of this pointer.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(No further evaluation of targets is carried out beyond that needed to find the
+                  element(s) specified in plist or target attribute.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.targeteval.html">att.targeteval</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@form</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Traditionally, the 'normal' mordent is written as a short wavy line with a vertical
+                  line through it and the inverted mordent is written without the vertical line. However,
+                  the meaning of these signs is sometimes reversed. See Read, p. 245-246. Another
+                  attribute in the visual domain would be necessary in order to be completely explicit
+                  about which visual symbol is actually to be rendered.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">inv</span>" <i>(Inverted mordent, e.g., performed as the principal note, followed by its upper
+                  neighbor, with a return to the principal note.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>("normal" mordent, e.g., performed as the written note, followed by its lower
+                  neighbor, with a return to the written note.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mordent.log.html">att.mordent.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@layer</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Identifies the layer to which a feature applies.</span>
+               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerident.html">att.layerident</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@long</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">When the long attribute is set to 'yes', a double or long mordent, consisting of 5
+                  notes, is indicated.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mordent.log.html">att.mordent.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@plist</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains a space separated list of references that identify active participants in
+                  a
+                  collection/relationship, such as notes under a phrase mark; that is, the entities
+                  pointed "from".</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.plist.html">att.plist</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@staff</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Signifies the staff on which a notated event occurs or to which a control event
+                  applies. Mandatory when applicable.</span>
+               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffident</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@startid</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds a reference to the first element in a sequence of events to which the feature
+                  applies.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startid.html">att.startid</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the onset time in terms of musical time, i.e.,
+                  beats[.fractional_beat_part].</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.beat.html">data.BEAT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.musical.html">att.timestamp.musical</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp.ges</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures performed onset time in several forms; that is, ppq (MIDI clicks and
+                  MusicXML 'divisions'), Humdrum **recip values, beats, seconds, or mensural duration
+                  values.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp.real</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to record the onset time in terms of ISO time.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isotime.html">data.ISOTIME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.performed.html">att.timestamp.performed</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

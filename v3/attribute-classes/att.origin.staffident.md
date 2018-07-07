@@ -24,7 +24,12 @@ title: "att.origin.staffident"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@origin.staff</strong></span><span class="attributeUsage">(rec)</span><span class="attributeDesc">signifies the staff on which referenced notation occurs. Defaults to the same value
+                  as the local staff. Mandatory when applicable.</span>
+               One or more of <span style="font-weight: 500;">positiveInteger</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.origin.staffident.html">att.origin.staffident</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

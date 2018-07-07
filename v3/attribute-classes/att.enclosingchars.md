@@ -32,7 +32,13 @@ title: "att.enclosingchars"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@enclose</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the characters often used to mark accidentals, articulations, and sometimes
+                  notes as having a cautionary or editorial function. For an example of cautionary
+                  accidentals enclosed in parentheses, see Read, p. 131, ex. 9-14.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.enclosure.html">data.ENCLOSURE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.enclosingchars.html">att.enclosingchars</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

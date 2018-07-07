@@ -22,7 +22,7 @@
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item"/>
     <xsl:output indent="true" method="html" saxon:suppress-indentation="egx:egXML tei:classes tei:content tei:list tei:item" name="html" omit-xml-declaration="true"/>
     <xsl:param name="version" select="'{{ site.baseurl }}/{{ page.version }}'" as="xs:string"/>
-    <xsl:param name="guidelines.version" select="'dev'" as="xs:string"/>
+    <xsl:param name="guidelines.version" select="'v3'" as="xs:string"/>
     <xd:doc scope="component">
         <xd:desc>
             <xd:p>
@@ -1505,7 +1505,12 @@
                             <!-- get attributes derived from attribute classes -->
                             <xsl:sequence select="local:getAttributes($classSpec)"/>
                         </xsl:variable>
-                        <xsl:variable name="attribute.names" select="distinct-values($attributes/descendant-or-self::span[@class = 'attribute']/string(text()))" as="xs:string*"/>
+                        
+                        <xsl:variable name="attribute.names" select="distinct-values($attributes/descendant-or-self::span[@class = 'attribute']//string(text()))" as="xs:string*"/>
+                        
+                        <xsl:message select="'ATT ' || $classSpec/@ident || ': ' || count($attributes) || ': ' || string-join($attribute.names,', ')"/>
+                        <xsl:message select="$attributes"/>
+                        <xsl:message select="'\n\n'"></xsl:message>
                         
                         <xsl:for-each select="$attribute.names">
                             <xsl:sort select="." data-type="text"/>
@@ -1513,7 +1518,7 @@
                             <xsl:if test="count($attributes/descendant-or-self::div[span[@class='attribute']/text() = $current.att]) gt 1">
                                 <xsl:message select="'INFO: attribute ' || $current.att || ' specified multiple times on class ' || $classSpec/@ident"/>
                             </xsl:if>
-                            <xsl:sequence select="($attributes/descendant-or-self::div[span[@class='attribute']/text() = $current.att])[1]"/>
+                            <xsl:sequence select="($attributes/descendant-or-self::div[span[@class='attribute']//text() = $current.att])[1]"/>
                         </xsl:for-each>
                         
                     </td>

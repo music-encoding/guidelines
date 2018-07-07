@@ -27,7 +27,19 @@ title: "att.meterSigDefault.vis"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@meter.rend</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains an indication of how the meter signature should be rendered.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">num</span>" <i>(Show only the number of beats.)</i>,  "<span style="font-weight: 500;">denomsym</span>" <i>(The lower number in the meter signature is replaced by a note symbol.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>(Meter signature rendered using traditional numeric values.)</i>,  "<span style="font-weight: 500;">invis</span>" <i>(Meter signature not rendered.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.metersigdefault.vis.html">att.meterSigDefault.vis</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@meter.showchange</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Determines whether a new meter signature should be displayed when the meter
+                  signature changes.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.metersigdefault.vis.html">att.meterSigDefault.vis</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@meter.sym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
+                  'C' for common time or 'C' with a slash for cut time.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.metersign.html">data.METERSIGN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.metersigdefault.vis.html">att.meterSigDefault.vis</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
