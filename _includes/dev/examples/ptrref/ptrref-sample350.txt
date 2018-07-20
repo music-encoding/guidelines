@@ -1,0 +1,1 @@
+<graphic mimetype="image/png" target="myPic.png"></graphic>
