@@ -7,13 +7,13 @@
   </div>
   {% if page.version == "dev" %}
   <div class="navbar-section">
-    <div class="toast toast-warning text-center guidelines-warning">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
         Guidelines for the development version of MEI
     </div>
   </div>
   {% elsif page.version != site.versions.current %}
   <div class="navbar-section">
-    <div class="toast toast-warning text-center guidelines-warning">
+    <div class="fixed toast toast-warning text-center guidelines-warning">
         Guidelines for an older version of MEI ({{ site.versions[page.version] }})
     </div>
   </div>
