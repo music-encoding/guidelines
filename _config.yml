@@ -2,7 +2,7 @@
 title: MEI Guidelines
 email: info@music-encoding.org
 baseurl: "/guidelines" 
-url: "http://guidelines.music-encoding.org"
+url: "https://music-encoding.org/guidelines"
 style_baseurl: "https://music-encoding.github.io"
 #style_baseurl: "http://localhost:4001"
 twitter_username: music-encoding
