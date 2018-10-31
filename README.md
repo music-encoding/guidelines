@@ -22,7 +22,9 @@ Create a new branch for your changes on your local Git repository. You should ma
 
 ### Step 3: Install Jekyll
 
-Run `bundle install` in your directory. This will install all of the requirements for running the site locally.
+Run `bundle install` in your directory. This will install all of the requirements for running the site locally. 
+
+Windows user should check out this step-by-step guide to setting up Jekyll on Windows: http://jekyll-windows.juthilo.com/
 
 ### Step 4. Run the Jekyll server
 
