@@ -25,7 +25,12 @@ title: "att.staffGroupingSym"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@symbol</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the symbol used to group a set of staves.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">brace</span>" <i>(Curved symbol, i.e., {.)</i>,  "<span style="font-weight: 500;">bracket</span>" <i>(Square symbol, i.e., [, but with curved/angled top and bottom segments.)</i>,  "<span style="font-weight: 500;">bracketsq</span>" <i>(Square symbol, i.e., [, with horizontal top and bottom segments.)</i>,  "<span style="font-weight: 500;">line</span>" <i>(Line symbol, i.e., |, (wide) line without top and bottom curved/horizontal
+                  segments.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(Grouping symbol missing.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffgroupingsym.html">att.staffGroupingSym</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

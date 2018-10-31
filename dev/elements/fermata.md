@@ -142,6 +142,14 @@ title: "fermata"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@follows</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">points to one or more events in a user-defined collection that are known to be
+                              predecessors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@fontfam</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains the name of a font-family.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontfamily.html">data.FONTFAMILY</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a></span></div>
@@ -270,10 +278,10 @@ title: "fermata"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@partstaff</strong></span><span class="attributeUsage">(rec)</span><span class="attributeDesc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                        <div class="attributeDef"><span class="attribute"><strong>@partstaff</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
                               feature should occur on every staff.</span>
                            One or more values of datatype <span style="font-weight: 500;">
-                              a string matching the following regular expression: "(%all|\d+(-\d+)?(,\d+(-\d+)?)*)"
+                              a string matching the following regular expression: "(%all|\d+(-\d+)?)"
                               </span>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.partident.html">att.partIdent</a></span></div>
                      </td>
@@ -299,9 +307,27 @@ title: "fermata"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@precedes</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to one or more events in a user-defined collection that are known to be
+                              successors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@resp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                              editing, or encoding. Its value must point to one or more identifiers declared in
+                              the
+                              document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -506,8 +532,8 @@ title: "fermata"
                "upright", i.e., has the curve or bracket above the dot, or inverted, i.e., has the
                curve or
                bracket below the dot. Other visual forms of a fermata may be indicated via the
-               <span class="att">altsym</span> attribute. The starting point of the fermata may be indicated by either
-               a <span class="att">startid</span>, <span class="att">tstamp</span>, <span class="att">tstamp.ges</span>, or <span class="att">tstamp.real</span>
+               <span class="att">altsym</span> attribute. The starting point of the fermata may be indicated by either a
+               <span class="att">startid</span>, <span class="att">tstamp</span>, <span class="att">tstamp.ges</span>, or <span class="att">tstamp.real</span>
                attribute. It is a semantic error not to specify a starting point attribute.
             </p>
          </td>

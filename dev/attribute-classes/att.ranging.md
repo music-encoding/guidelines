@@ -27,7 +27,28 @@ title: "att.ranging"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@atleast</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Gives a minimum estimated value for an approximate measurement.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ranging.html">att.ranging</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@atmost</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Gives a maximum estimated value for an approximate measurement.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ranging.html">att.ranging</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@confidence</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the degree of statistical confidence (between zero and one) that a value
+                  falls within the range specified by min and max, or the proportion of observed values
+                  that
+                  fall within that range.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.confidence.html">data.CONFIDENCE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ranging.html">att.ranging</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@max</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Where the measurement summarizes more than one observation or a range of values,
+                  supplies the maximum value observed.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ranging.html">att.ranging</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@min</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Where the measurement summarizes more than one observation or a range of values,
+                  supplies the minimum value observed.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ranging.html">att.ranging</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

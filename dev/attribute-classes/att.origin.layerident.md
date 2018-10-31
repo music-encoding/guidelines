@@ -24,7 +24,11 @@ title: "att.origin.layerIdent"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@origin.layer</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">identifies the layer on which referenced notation occurs.</span>
+               One or more of <span style="font-weight: 500;">positiveInteger</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.origin.layerident.html">att.origin.layerIdent</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

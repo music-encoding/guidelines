@@ -17,7 +17,7 @@ title: "data.MODSRELATIONSHIP"
       <tr>
          <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.relationship.html">data.RELATIONSHIP</a>, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relateditem.html">relatedItem</a>/@rel
+            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relateditem.html">relatedItem</a>/@rel
             </div>
          </td>
       </tr>

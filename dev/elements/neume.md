@@ -66,14 +66,11 @@ title: "neume"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@deg</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures scale degree information using Humdrum **deg syntax -- an optional indicator
-                              of melodic approach (^ = ascending approach, v = descending approach), a scale degree
-                              value (1 = tonic ... 7 = leading tone), and an optional indication of chromatic
-                              alteration, "1", "v7", "^1", or "v5+", for example. The amount of chromatic alternation
-                              is
-                              not indicated.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.scaledegree.html">data.SCALEDEGREE</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.harmonicfunction.html">att.harmonicFunction</a></span></div>
+                        <div class="attributeDef"><span class="attribute"><strong>@enclose</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the characters often used to mark accidentals, articulations, and sometimes
+                              notes as having a cautionary or editorial function. For an example of cautionary
+                              accidentals enclosed in parentheses, see Read, p. 131, ex. 9-14.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.enclosure.html">data.ENCLOSURE</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.enclosingchars.html">att.enclosingChars</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -82,6 +79,14 @@ title: "neume"
                               corresponds to it.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@follows</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">points to one or more events in a user-defined collection that are known to be
+                              predecessors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -154,28 +159,12 @@ title: "neume"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@hispanicloop</strong></span><span class="attributeDesc"></span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.vis.html">att.neume.vis</a></span></div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@ho</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a horizontal adjustment to a feature's programmatically-determined location
                               in
                               terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
                               staff lines.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualOffset.ho</a></span></div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@intm</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the melodic interval from the previous pitch. The value may be a general
-                              directional indication (u, d, s, etc.), an indication of diatonic interval direction,
-                              quality, and size, or a precise numeric value in half steps.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.interval.melodic.html">data.INTERVAL.MELODIC</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalmelodic.html">att.intervalMelodic</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -204,13 +193,6 @@ title: "neume"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@mfunc</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes melodic function using Humdrum **embel syntax.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.melodicfunction.html">data.MELODICFUNCTION</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.melodicfunction.html">att.melodicFunction</a></span></div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@n</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.word.html">data.WORD</a>.
@@ -226,6 +208,14 @@ title: "neume"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@precedes</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to one or more events in a user-defined collection that are known to be
+                              successors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
@@ -233,11 +223,12 @@ title: "neume"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@psolfa</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
-                              Do
-                              system.</span>
-                           Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.solfa.html">att.solfa</a></span></div>
+                        <div class="attributeDef"><span class="attribute"><strong>@resp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                              editing, or encoding. Its value must point to one or more identifiers declared in
+                              the
+                              document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -247,13 +238,6 @@ title: "neume"
                               of the current element.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@significativeletters</strong></span><span class="attributeDesc"></span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.vis.html">att.neume.vis</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -280,14 +264,6 @@ title: "neume"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@tstamp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part],
-                              as expressed in the written time signature.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.beat.html">data.BEAT</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp.logical.html">att.timestamp.logical</a></span></div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@tstamp.ges</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part],
                               as expressed in the written time signature.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.beat.html">data.BEAT</a>.
@@ -305,8 +281,8 @@ title: "neume"
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@type</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Designation which characterizes the element in some sense, using any convenient
                               classification scheme or typology that employs single-token labels.</span>
-                           One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a></span></div>
+                           Allowed values are:
+                           "<span style="font-weight: 500;">apostropha</span>" ,  "<span style="font-weight: 500;">bistropha</span>" ,  "<span style="font-weight: 500;">climacus</span>" ,  "<span style="font-weight: 500;">clivis</span>" ,  "<span style="font-weight: 500;">oriscus</span>" ,  "<span style="font-weight: 500;">pes</span>" ,  "<span style="font-weight: 500;">pessubpunctis</span>" ,  "<span style="font-weight: 500;">porrectus</span>" ,  "<span style="font-weight: 500;">porrectusflexus</span>" ,  "<span style="font-weight: 500;">pressusmaior</span>" ,  "<span style="font-weight: 500;">pressusmaior</span>" ,  "<span style="font-weight: 500;">pressusminor</span>" ,  "<span style="font-weight: 500;">pressusminor</span>" ,  "<span style="font-weight: 500;">punctum</span>" ,  "<span style="font-weight: 500;">quilisma</span>" ,  "<span style="font-weight: 500;">scandicus</span>" ,  "<span style="font-weight: 500;">strophicus</span>" ,  "<span style="font-weight: 500;">torculus</span>" ,  "<span style="font-weight: 500;">torculusresupinus</span>" ,  "<span style="font-weight: 500;">tristropha</span>" ,  "<span style="font-weight: 500;">virga</span>" ,  "<span style="font-weight: 500;">virgastrata</span>" <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/neume.html">neume</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -391,8 +367,7 @@ title: "neume"
             <div class="specChildren">
                <div class="specChild"><span class="specChildModule">MEI.critapp</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/app.html">app</a></span></div>
                <div class="specChild"><span class="specChildModule">MEI.edittrans</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/handshift.html">handShift</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/subst.html">subst</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span></div>
-               <div class="specChild"><span class="specChildModule">MEI.lyrics</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/refrain.html">refrain</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/verse.html">verse</a></span></div>
-               <div class="specChild"><span class="specChildModule">MEI.neumes</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/nc.html">nc</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.neumes</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/episema.html">episema</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hispantick.html">hispanTick</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/nc.html">nc</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ncgrp.html">ncGrp</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/signiflet.html">signifLet</a></span></div>
             </div>
          </td>
       </tr>
@@ -403,22 +378,37 @@ title: "neume"
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a>"</span></span>/&gt;</span></div>
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.basic.html">att.basic</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.classed.html">att.classed</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.facsimile.html">att.facsimile</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.labelled.html">att.labelled</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.nnumberlike.html">att.nNumberLike</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.anl.html">att.neume.anl</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.ges.html">att.neume.ges</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.log.html">att.neume.log</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.vis.html">att.neume.vis</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.ges.html">att.neume.ges</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.neume.anl.html">att.neume.anl</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventlike.neumes.html">model.eventLike.neumes</a>"</span></span>/&gt;</span></div>
@@ -428,16 +418,6 @@ title: "neume"
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
-                           
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
-                                 
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/nc.html">nc</a>"</span></span>
-                                 /&gt;</span></div>
-                           
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
-                                 
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/macro.neumemodifierlike.html">macro.neumeModifierLike</a>"</span></span>
-                                 /&gt;</span></div>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
@@ -451,12 +431,17 @@ title: "neume"
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.transcriptionlike.html">model.transcriptionLike</a>"</span></span>
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.neumemodifierlike.html">model.neumeModifierLike</a>"</span></span>
                                  /&gt;</span></div>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
                                  
-                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.verselike.html">model.verseLike</a>"</span></span>
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.neumepart.html">model.neumePart</a>"</span></span>
+                                 /&gt;</span></div>
+                           
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.transcriptionlike.html">model.transcriptionLike</a>"</span></span>
                                  /&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>

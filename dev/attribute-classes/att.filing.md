@@ -26,7 +26,12 @@ title: "att.filing"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@nonfiling</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds the number of initial characters (such as those constituting an article or
+                  preposition) that should not be used for sorting a title or name.</span>
+               Value is a positive integer.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.filing.html">att.filing</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

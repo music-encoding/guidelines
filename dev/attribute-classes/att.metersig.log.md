@@ -25,7 +25,23 @@ title: "att.meterSig.log"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@count</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the number of beats in a measure, that is, the top number of the meter
+                  signature. It must contain a decimal number or an additive expression that evaluates
+                  to a
+                  decimal number, such as 2+3.</span>
+               Value is plain text.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.metersig.log.html">att.meterSig.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@sym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the use of a meter symbol instead of a numeric meter signature, that is,
+                  'C'
+                  for common time or 'C' with a slash for cut time.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.metersign.html">data.METERSIGN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.metersig.log.html">att.meterSig.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@unit</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains the number indicating the beat unit, that is, the bottom number of the meter
+                  signature.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.metersig.log.html">att.meterSig.log</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

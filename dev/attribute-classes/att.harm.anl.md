@@ -25,7 +25,17 @@ title: "att.harm.anl"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@form</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates to what degree the harmonic label is supported by the notation.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">explicit</span>" <i>(The notation contains all the notes necessary for the harmonic label, e.g., the
+                  notes "D F♯ A" for the harmonic label "D".)</i>,  "<span style="font-weight: 500;">implied</span>" <i>(The harmonic label relies on notes implied, but not actually present, in the
+                  notation, e.g., the notes "D F♯ C" for the harmonic label "D7". The note "A" is
+                  missing from the notation, but can be implied.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.harm.anl.html">att.harm.anl</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@inth</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the harmonic interval between pitches occurring at the same time.</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.interval.harmonic.html">data.INTERVAL.HARMONIC</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.intervalharmonic.html">att.intervalHarmonic</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

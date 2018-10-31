@@ -25,7 +25,16 @@ title: "att.whitespace"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@xml:space</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Allows one to signal to an application whether an element's white space is
+                  "significant". The behavior of xml:space cascades to all descendant elements, but
+                  it can
+                  be turned off locally by setting the xml:space attribute to the value "default".</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">default</span>" <i>(Allows the application to handle white space as necessary. Not including an
+                  xml:space attribute produces the same result as using the default value.)</i>,  "<span style="font-weight: 500;">preserve</span>" <i>(Instructs the application to maintain white space "as-is", suggesting that it
+                  might have meaning.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.whitespace.html">att.whitespace</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

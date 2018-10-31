@@ -36,7 +36,59 @@ title: "att.scoreDef.ges"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@midi.bpm</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
+                  as a quarter note, *not the numerator of the time signature or the metronomic
+                  indication*.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midibpm.html">data.MIDIBPM</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.miditempo.html">att.midiTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.channel</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a MIDI channel value.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.duty</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the 'on' part of the duty cycle as a percentage of a note's duration.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.percent.limited.html">data.PERCENT.LIMITED</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.mspb</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
+                  defined as a quarter note, *not the numerator of the time signature or the metronomic
+                  indication*. At 120 quarter notes per minute, each quarter note will last 500,000
+                  microseconds.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midimspb.html">data.MIDIMSPB</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.miditempo.html">att.midiTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.port</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the MIDI port value.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.track</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the MIDI track.</span>
+               Value is a positive integer.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@mm</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                  minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
+                  or
+                  midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
+                  of the
+                  time signature or the metronomic indication*.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tempovalue.html">data.TEMPOVALUE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@mm.dots</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the number of augmentation dots required by a dotted metronome unit.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.augmentdot.html">data.AUGMENTDOT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@mm.unit</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the metronomic unit.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@ppq</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the number of pulses (sometimes referred to as ticks or divisions) per
+                  quarter note. Unlike MIDI, MEI permits different values for a score and individual
+                  staves.</span>
+               Value is a positive integer.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timebase.html">att.timeBase</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tune.Hz</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds a value for cycles per second, i.e., Hertz, for a tuning reference pitch.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.scoredef.ges.html">att.scoreDef.ges</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tune.pname</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds the pitch name of a tuning reference pitch.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.pitchname.html">data.PITCHNAME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.scoredef.ges.html">att.scoreDef.ges</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tune.temper</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides an indication of the tuning system, 'just', for example.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.temperament.html">data.TEMPERAMENT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.scoredef.ges.html">att.scoreDef.ges</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

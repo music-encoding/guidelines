@@ -25,7 +25,50 @@ title: "att.name"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@auth</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">A name or label associated with a controlled vocabulary or other authoritative source
+                  for this element or its content.</span>
+               Value is plain text.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.authorized.html">att.authorized</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@auth.uri</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">A web-accessible location of the controlled vocabulary or other authoritative source
+                  of identification or definition for this element or its content. This attribute may
+                  contain a complete URI or a partial URI which is completed by the value of the codedval
+                  attribute.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.authorized.html">att.authorized</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@codedval</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">A value that represents or identifies other data. Often, it is a primary key in the
+                  database or a unique value in the coded list identified by the <span class="att">auth</span> or
+                  <span class="att">auth.uri</span> attributes.</span>
+               One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.canonical.html">att.canonical</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@enddate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains the end point of a date range in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@isodate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides the value of a textual date in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@nonfiling</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds the number of initial characters (such as those constituting an article or
+                  preposition) that should not be used for sorting a title or name.</span>
+               Value is a positive integer.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.filing.html">att.filing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@notafter</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains an upper boundary for an uncertain date in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@notbefore</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@nymref</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to record a pointer to the regularized form of the name elsewhere in the
+                  document.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.name.html">att.name</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@role</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to specify further information about the entity referenced by this name, for
+                  example, the occupation of a person or the status of a place.</span>
+               Value is plain text.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.name.html">att.name</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@startdate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains the starting point of a date range in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

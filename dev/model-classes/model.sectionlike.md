@@ -19,7 +19,7 @@ title: "model.sectionLike"
          <td class="wovenodd-col2">
             <div class="parent">
                <div><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorepart.html">model.scorePart</a>, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionpart.html">model.sectionPart</a></div>
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a></div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/metamark.html">metaMark</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a></div>
             </div>
          </td>
       </tr>

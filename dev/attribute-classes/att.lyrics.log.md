@@ -25,7 +25,27 @@ title: "att.lyrics.log"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@layer</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Identifies the layer to which a feature applies.</span>
+               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.layerident.html">att.layerIdent</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@part</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the part in which the current feature should appear. Use '%all' when the
+                  feature should occur in every part.</span>
+               One or more values of datatype <span style="font-weight: 500;">
+                  a string matching the following regular expression: "(%all|#[\i][\c]+)"
+                  </span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.partident.html">att.partIdent</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@partstaff</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                  feature should occur on every staff.</span>
+               One or more values of datatype <span style="font-weight: 500;">
+                  a string matching the following regular expression: "(%all|\d+(-\d+)?)"
+                  </span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.partident.html">att.partIdent</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@staff</strong></span><span class="attributeUsage">(rec)</span><span class="attributeDesc">Signifies the staff on which a notated event occurs or to which a control event
+                  applies. Mandatory when applicable.</span>
+               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffIdent</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

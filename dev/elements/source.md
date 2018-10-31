@@ -8,9 +8,8 @@ title: "source"
    <h3 id="source">&lt;source&gt;</h3>
    <table class="wovenodd">
       <tr>
-         <td colspan="2" class="wovenodd-col2">A bibliographic description of a source used in the creation of the electronic file
-            or the
-            physical embodiment of an expression of a work.
+         <td colspan="2" class="wovenodd-col2">A bibliographic description of a source used in the creation of the electronic
+            file.
          </td>
       </tr>
       <tr>
@@ -47,7 +46,9 @@ title: "source"
                   <tr>
                      <td>
                         <div class="attributeDef"><span class="attribute"><strong>@auth.uri</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">A web-accessible location of the controlled vocabulary or other authoritative source
-                              for this element or its content.</span>
+                              of identification or definition for this element or its content. This attribute may
+                              contain a complete URI or a partial URI which is completed by the value of the codedval
+                              attribute.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.authorized.html">att.authorized</a></span></div>
                      </td>
@@ -112,6 +113,14 @@ title: "source"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@follows</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">points to one or more events in a user-defined collection that are known to be
+                              predecessors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@label</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures text to be used to generate a label for the element to which it's attached,
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
@@ -137,6 +146,14 @@ title: "source"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@precedes</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to one or more events in a user-defined collection that are known to be
+                              successors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
@@ -147,6 +164,16 @@ title: "source"
                         <div class="attributeDef"><span class="attribute"><strong>@recordtype</strong></span><span class="attributeDesc"></span>
                            Allowed values are:
                            "<span style="font-weight: 500;">a</span>" <i>(Language material.)</i>,  "<span style="font-weight: 500;">c</span>" <i>(Notated music.)</i>,  "<span style="font-weight: 500;">d</span>" <i>(Manuscript notated music.)</i>,  "<span style="font-weight: 500;">e</span>" <i>(Non-manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">f</span>" <i>(Manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">g</span>" <i>(Projected medium.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Nonmusical sound recording.)</i>,  "<span style="font-weight: 500;">j</span>" <i>(Musical sound recording.)</i>,  "<span style="font-weight: 500;">k</span>" <i>(Two-dimensional nonprojectable graphic.)</i>,  "<span style="font-weight: 500;">m</span>" <i>(Computer file.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Kit.)</i>,  "<span style="font-weight: 500;">p</span>" <i>(Mixed materials.)</i>,  "<span style="font-weight: 500;">r</span>" <i>(Three-dimensional artifact or naturally occurring object.)</i>,  "<span style="font-weight: 500;">t</span>" <i>(Manuscript language material. )</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.recordtype.html">att.recordType</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@resp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                              editing, or encoding. Its value must point to one or more identifiers declared in
+                              the
+                              document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -235,7 +262,7 @@ title: "source"
       <tr>
          <td class="wovenodd-col1"><strong>Member of</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.manifestationlike.html">model.manifestationLike</a></div>
+            <div class="parent"></div>
          </td>
       </tr>
       <tr>
@@ -243,7 +270,7 @@ title: "source"
          <td class="wovenodd-col2">
             <div class="parent">
                <div class="specChildren">
-                  <div class="specChild"><span class="specChildModule">MEI.header</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentlist.html">componentList</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span></div>
+                  <div class="specChild"><span class="specChildModule">MEI.header</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span></div>
                </div>
             </div>
          </td>
@@ -252,10 +279,8 @@ title: "source"
          <td class="wovenodd-col1"><strong>May contain</strong></td>
          <td class="wovenodd-col2">
             <div class="specChildren">
-               <div class="specChild"><span class="specChildModule">MEI.frbr</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/itemlist.html">itemList</a></span></div>
-               <div class="specChild"><span class="specChildModule">MEI.header</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentlist.html">componentList</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classification.html">classification</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extmeta.html">extMeta</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/history.html">history</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/langusage.html">langUsage</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/notesstmt.html">notesStmt</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seriesstmt.html">seriesStmt</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span></div>
                <div class="specChild"><span class="specChildModule">MEI.msDesc</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locus.html">locus</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locusgrp.html">locusGrp</a></span></div>
-               <div class="specChild"><span class="specChildModule">MEI.shared</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/creation.html">creation</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physloc.html">physLoc</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a></span></div>
+               <div class="specChild"><span class="specChildModule">MEI.shared</span><span class="specChildElements"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/biblstruct.html">biblStruct</a> <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span></div>
             </div>
          </td>
       </tr>
@@ -288,9 +313,6 @@ title: "source"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.targeteval.html">att.targetEval</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.manifestationlike.html">model.manifestationLike</a>"</span></span>/&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/classes&gt;</span></div>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
@@ -320,111 +342,13 @@ title: "source"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.identifierlike.html">model.identifierLike</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:ref
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                            
-                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/macro.bibldescpart.html">macro.bibldescPart</a>"</span></span>
-                           /&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/creation.html">creation</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/history.html">history</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/langusage.html">langUsage</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/notesstmt.html">notesStmt</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/classification.html">classification</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/itemlist.html">itemList</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/componentlist.html">componentList</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:optional&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a>"</span></span>
-                              /&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/rng:optional&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:zeroOrMore&gt;</span>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
-                              
-                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/extmeta.html">extMeta</a>"</span></span>
-                              /&gt;</span></div>
+                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:ref
+                                 
+                                 <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.bibllike.html">model.biblLike</a>"</span></span>
+                                 /&gt;</span></div>
+                           <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
                         <span data-indentation="2" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
@@ -432,13 +356,10 @@ title: "source"
       <tr>
          <td class="wovenodd-col1"><strong>Remarks</strong></td>
          <td class="wovenodd-col2">
-            <p>In the file description context, this element contains, or references via its
-               <span class="att">target</span> attribute, a description of a source used in the creation of the
-               electronic file. In the context of a work or expression description, it contains,
-               or
-               references, a description of a physical embodiment of an expression of a work; i.e.,
-               a
-               manifestation.The <span class="att">data</span> attribute may be used to reference one or more musical features found
+            <p>This element contains, or references via its <span class="att">target</span> attribute, a description of
+               a source used in the creation of the electronic file. For description of a physical
+               embodiment of an expression of a work use the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestation.html">manifestation</a>
+               element.The <span class="att">data</span> attribute may be used to reference one or more musical features found
                in the content of this particular source.This element is modelled on elements in the
                Text Encoding Initiative (TEI) and Encoded
                Archival Description (EAD) standards.
@@ -450,7 +371,9 @@ title: "source"
          <td class="wovenodd-col2">
             <div>
                <div class="schematronText">@target attribute should have content.</div>
-               <div class="schematronText">The value in @target should correspond to the @xml:id attribute of a source element.</div>
+               <div class="schematronText">Each value in @target should correspond to the @xml:id attribute of a source or manifestation
+                  element or be an external URI.
+               </div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:source/@target"</span>&gt;</span>
@@ -459,8 +382,8 @@ title: "source"
                         have content.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"every $i in tokenize(., '\s+') satisfies substring($i,2)=//mei:*[local-name()   
-                              eq 'source']/@xml:id"</span>&gt;</span>The value in @target should correspond to the @xml:id attribute of a source
-                        element.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                              eq 'source' or local-name() eq 'manifestation']/@xml:id or matches($i, '^([a-z]+://|\.{1,2}/)')"</span>&gt;</span>Each value in @target should correspond to the @xml:id attribute of a source or
+                        manifestation element or be an external URI.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>
       </tr>

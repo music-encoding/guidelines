@@ -25,7 +25,22 @@ title: "att.mmTempo"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@mm</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                  minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
+                  or
+                  midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
+                  of the
+                  time signature or the metronomic indication*.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tempovalue.html">data.TEMPOVALUE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@mm.dots</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the number of augmentation dots required by a dotted metronome unit.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.augmentdot.html">data.AUGMENTDOT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@mm.unit</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the metronomic unit.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

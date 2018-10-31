@@ -40,10 +40,6 @@ title: "data.ARTICULATION"
                <dd>Staccatissimo (Unicode 1D17E).</dd>
                <dt>marc</dt>
                <dd>Marcato (Unicode 1D17F).</dd>
-               <dt>marc-stacc</dt>
-               <dd>Marcato + staccato (Unicode 1D180). DEPRECATED; Scheduled for removal after
-                  2018-05-31. Use individual "marc" and "stacc" values.
-               </dd>
                <dt>spicc</dt>
                <dd>Spiccato.</dd>
                <dt>doit</dt>
@@ -86,10 +82,6 @@ title: "data.ARTICULATION"
                <dd>Snap pizzicato (Unicode 1D1AD).</dd>
                <dt>fingernail</dt>
                <dd>Fingernail (Unicode 1D1B3).</dd>
-               <dt>ten-stacc</dt>
-               <dd>Tenuto + staccato (Unicode 1D182). DEPRECATED; Scheduled for removal after
-                  2018-05-31. Use individual "ten" and "stacc" values.
-               </dd>
                <dt>damp</dt>
                <dd>Stop harp string from sounding (Unicode 1D1B4).</dd>
                <dt>dampall</dt>
@@ -148,12 +140,6 @@ title: "data.ARTICULATION"
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc"</span>&gt;</span>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato (Unicode 1D17F).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"marc-stacc"</span> <span class="attribute">validUntil=</span><span class="attributevalue">"2018-05-31"</span>&gt;</span>
-                           
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Marcato + staccato (Unicode 1D180). DEPRECATED; Scheduled for removal after
-                              2018-05-31. Use individual "marc" and "stacc" values.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"spicc"</span>&gt;</span>
@@ -239,12 +225,6 @@ title: "data.ARTICULATION"
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fingernail"</span>&gt;</span>
                            
                            <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Fingernail (Unicode 1D1B3).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                        
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ten-stacc"</span> <span class="attribute">validUntil=</span><span class="attributevalue">"2018-05-31"</span>&gt;</span>
-                           
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Tenuto + staccato (Unicode 1D182). DEPRECATED; Scheduled for removal after
-                              2018-05-31. Use individual "ten" and "stacc" values.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                            <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
                         
                         <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"damp"</span>&gt;</span>

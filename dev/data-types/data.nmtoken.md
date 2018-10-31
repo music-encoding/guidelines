@@ -19,7 +19,7 @@ title: "data.NMTOKEN"
       <tr>
          <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.headshape.html">data.HEADSHAPE</a>, <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.placement.html">data.PLACEMENT</a>, <a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.relationship.html">data.RELATIONSHIP</a>, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/attusage.html">attUsage</a>/@name, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/namespace.html">namespace</a>/@prefix, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tagusage.html">tagUsage</a>/@name
+            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/attusage.html">attUsage</a>/@name, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/namespace.html">namespace</a>/@prefix, <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tagusage.html">tagUsage</a>/@name
             </div>
          </td>
       </tr>

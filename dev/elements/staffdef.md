@@ -35,17 +35,27 @@ title: "staffDef"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@barlinelen</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">States the length of a barline. Must be greater than 0 and less than or equal to (2
-                              times number of staff lines) + 2, e.g., between 0 and 12 for a 5-line staff.</span>
+                        <div class="attributeDef"><span class="attribute"><strong>@bar.len</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">States the length of barlines in virtual units. The value must be greater than 0 and
+                              is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
+                              for a
+                              5-line staff.</span>
                            Value is a decimal number.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barplacement.html">att.barPlacement</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barring.html">att.barring</a></span></div>
                      </td>
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@barplace</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the location of a bar line.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barplace.html">data.BARPLACE</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barplacement.html">att.barPlacement</a></span></div>
+                        <div class="attributeDef"><span class="attribute"><strong>@bar.method</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the method of barring.</span>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barring.html">att.barring</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@bar.place</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Denotes the staff location of bar lines, if the length is non-standard; that is, not
+                              equal to 2 times (the number of staff lines - 1).</span>
+                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffloc.html">data.STAFFLOC</a>.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barring.html">att.barring</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -193,6 +203,14 @@ title: "staffDef"
                         <div class="attributeDef"><span class="attribute"><strong>@dynam.dist</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the default distance from the staff for dynamic marks.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.distances.html">att.distances</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@follows</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">points to one or more events in a user-defined collection that are known to be
+                              predecessors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -572,6 +590,14 @@ title: "staffDef"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@precedes</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to one or more events in a user-defined collection that are known to be
+                              successors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
@@ -609,6 +635,16 @@ title: "staffDef"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@resp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                              editing, or encoding. Its value must point to one or more identifiers declared in
+                              the
+                              document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@sameas</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to an element that is the same as the current element but is not a literal
                               copy
                               of the current element.</span>
@@ -639,9 +675,9 @@ title: "staffDef"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@spacing</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the absolute distance (as opposed to the relative distances recorded in <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a> elements) between this staff and the preceding one in the
-                              same system. This value is meaningless for the first staff in a system since the
-                              spacing.system attribute indicates the spacing between systems.</span>
+                        <div class="attributeDef"><span class="attribute"><strong>@spacing</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the absolute distance (as opposed to the relative distances recorded in <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a> elements) between this staff and the preceding one in the same
+                              system. This value is meaningless for the first staff in a system since the spacing.system
+                              attribute indicates the spacing between systems.</span>
                            Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffdef.vis.html">att.staffDef.vis</a></span></div>
                      </td>
@@ -658,22 +694,7 @@ title: "staffDef"
                         <div class="attributeDef"><span class="attribute"><strong>@tab.strings</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a *written* pitch and octave for each open string or course of
                               strings.</span>
                            One or more values conforming to the pattern "<span style="font-weight: 500;">[a-g][0-9](s|f|ss|x|ff|xs|sx|ts|tf|n|nf|ns|su|sd|fu|fd|nu|nd|1qf|3qf|1qs|3qs)?([a-g][0-9](s|f|ss|x|ff|xs|sx|ts|tf|n|nf|ns|su|sd|fu|fd|nu|nd|1qf|3qf|1qs|3qs)?)*</span>".
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffdef.ges.tablature.html">att.staffDef.ges.tablature</a></span></div>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@taktplace</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">If takt bar lines are to be used, then the taktplace attribute may be used to denote
-                              the staff location of the shortened bar line. The location may include staff lines,
-                              spaces, and the spaces directly above and below the staff. The value ranges between
-                              0
-                              (just below the staff) to 2 * number of staff lines (directly above the staff). For
-                              example, on a 5-line staff the lines would be numbered 1,3,5,7, and 9 while the spaces
-                              would be numbered 0,2,4,6,8,10. For example, a value of '9' puts the bar line through
-                              the
-                              top line of a 5-line staff.</span>
-                           Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffloc.html">data.STAFFLOC</a>.
-                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.barplacement.html">att.barPlacement</a></span></div>
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stringtab.tuning.html">att.stringtab.tuning</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -847,6 +868,9 @@ title: "staffDef"
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ninteger.html">att.nInteger</a>"</span></span>/&gt;</span></div>
+                     
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
+                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a>"</span></span>/&gt;</span></div>
                      
                      <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
                            <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a>"</span></span>/&gt;</span></div>

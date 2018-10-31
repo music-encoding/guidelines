@@ -25,7 +25,26 @@ title: "att.lyricStyle"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@lyric.align</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the alignment of lyric syllables associated with a note or chord.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricStyle</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@lyric.fam</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the font family default value for lyrics.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontfamily.html">data.FONTFAMILY</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricStyle</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@lyric.name</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the font name default value for lyrics.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontname.html">data.FONTNAME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricStyle</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@lyric.size</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the default font size value for lyrics.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsize.html">data.FONTSIZE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricStyle</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@lyric.style</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the default font style value for lyrics.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontstyle.html">data.FONTSTYLE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricStyle</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@lyric.weight</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the default font weight value for lyrics.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontweight.html">data.FONTWEIGHT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lyricstyle.html">att.lyricStyle</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

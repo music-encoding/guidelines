@@ -18,14 +18,19 @@ title: "att.componentType"
          <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> (direct member of att.componentType)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestation.html">manifestation</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/analytic.html">analytic</a> (direct members of att.componentType)
                </div>
             </div>
          </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@comptype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc"></span>
+               Allowed values are:
+               "<span style="font-weight: 500;">constituent</span>" <i>(A physical and logical part of entity.)</i>,  "<span style="font-weight: 500;">boundwith</span>" <i>(A physical, but not logical component of the entity, usually included as part of
+                  the binding process.)</i>,  "<span style="font-weight: 500;">separated</span>" <i>(A logical component of the entity physically held elsewhere.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.componenttype.html">att.componentType</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

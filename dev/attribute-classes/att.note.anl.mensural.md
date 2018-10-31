@@ -24,7 +24,11 @@ title: "att.note.anl.mensural"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@lig</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates this element's participation in a ligature.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">recta</span>" ,  "<span style="font-weight: 500;">obliqua</span>" <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.anl.mensural.html">att.note.anl.mensural</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

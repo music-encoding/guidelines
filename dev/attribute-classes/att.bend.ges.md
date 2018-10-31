@@ -25,7 +25,19 @@ title: "att.bend.ges"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@amount</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the amount of detuning. The decimal values should be rendered as a fraction
+                  (or an integer plus a fraction) along with the bend symbol.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.bend.amount.html">data.BEND.AMOUNT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.bend.ges.html">att.bend.ges</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp2.ges</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the ending point of an event, i.e., a count of measures plus a beat location
+                  in the ending measure.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurebeat.html">data.MEASUREBEAT</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp2.gestural.html">att.timestamp2.gestural</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@tstamp2.real</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the ending point of an event in terms of ISO time.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isotime.html">data.ISOTIME</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp2.gestural.html">att.timestamp2.gestural</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

@@ -24,7 +24,11 @@ title: "att.rest.vis.mensural"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@spaces</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">States how many spaces are covered by the rest.</span>
+               Value is a positive integer.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rest.vis.mensural.html">att.rest.vis.mensural</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

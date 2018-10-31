@@ -24,7 +24,7 @@ title: "data.FINGER.FRET"
       <tr>
          <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.chordmember.log.html">att.chordMember.log</a> (@fing)
+            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stringtab.html">att.stringtab</a> (@tab.fing)
             </div>
          </td>
       </tr>

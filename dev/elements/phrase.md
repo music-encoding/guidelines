@@ -188,6 +188,14 @@ title: "phrase"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@follows</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">points to one or more events in a user-defined collection that are known to be
+                              predecessors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@ho</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a horizontal adjustment to a feature's programmatically-determined location
                               in
                               terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
@@ -266,10 +274,10 @@ title: "phrase"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@partstaff</strong></span><span class="attributeUsage">(rec)</span><span class="attributeDesc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                        <div class="attributeDef"><span class="attribute"><strong>@partstaff</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
                               feature should occur on every staff.</span>
                            One or more values of datatype <span style="font-weight: 500;">
-                              a string matching the following regular expression: "(%all|\d+(-\d+)?(,\d+(-\d+)?)*)"
+                              a string matching the following regular expression: "(%all|\d+(-\d+)?)"
                               </span>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.partident.html">att.partIdent</a></span></div>
                      </td>
@@ -287,9 +295,27 @@ title: "phrase"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@precedes</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to one or more events in a user-defined collection that are known to be
+                              successors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@resp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                              editing, or encoding. Its value must point to one or more identifiers declared in
+                              the
+                              document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -565,12 +591,11 @@ title: "phrase"
                The starting point of the phrase/slur may be indicated by either a <span class="att">startid</span>,
                <span class="att">tstamp</span>, <span class="att">tstamp.ges</span>, or <span class="att">tstamp.real</span> attribute, while the
                ending point may be recorded by either a <span class="att">dur</span>, <span class="att">dur.ges</span>,
-               <span class="att">endid</span>, or <span class="att">tstamp2</span> attribute. It is a semantic error not to specify
-               one starting and one ending type of attribute. Either <span class="att">place</span>, <span class="att">bulge</span>, or
-               <span class="att">bezier</span> attributes may be used to record the curvature of the phrase/slur. The
-               <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/slur.html">slur</a> and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tie.html">tie</a> elements may be used instead of
-               the slur.* and tie.* attributes provided on <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a> and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a> elements when 1) they are required by software, or 2) multiple, alternative
-               slurs are needed.
+               <span class="att">endid</span>, or <span class="att">tstamp2</span> attribute. It is a semantic error not to specify one
+               starting and one ending type of attribute. Either <span class="att">place</span>, <span class="att">bulge</span>, or
+               <span class="att">bezier</span> attributes may be used to record the curvature of the phrase/slur. The <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/slur.html">slur</a> and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tie.html">tie</a> elements may be used instead of the
+               slur.* and tie.* attributes provided on <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a> and <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a> elements when 1) they are required by software, or 2) multiple, alternative slurs
+               are needed.
             </p>
          </td>
       </tr>

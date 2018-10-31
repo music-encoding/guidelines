@@ -25,7 +25,19 @@ title: "att.midiTempo"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@midi.bpm</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the number of *quarter notes* per minute. In MIDI, a beat is always defined
+                  as a quarter note, *not the numerator of the time signature or the metronomic
+                  indication*.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midibpm.html">data.MIDIBPM</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.miditempo.html">att.midiTempo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.mspb</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the number of microseconds per *quarter note*. In MIDI, a beat is always
+                  defined as a quarter note, *not the numerator of the time signature or the metronomic
+                  indication*. At 120 quarter notes per minute, each quarter note will last 500,000
+                  microseconds.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midimspb.html">data.MIDIMSPB</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.miditempo.html">att.midiTempo</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

@@ -27,7 +27,12 @@ title: "att.meterConformance"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@metcon</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the relationship between the content of a staff or layer and the prevailing
+                  meter.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">c</span>" <i>(Complete; i.e., conformant with the prevailing meter.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Incomplete; i.e., not enough beats.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Overfull; i.e., too many beats.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterconformance.html">att.meterConformance</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

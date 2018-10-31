@@ -26,7 +26,7 @@ title: "model.resourceLike"
          <td class="wovenodd-col1"><strong>Members</strong></td>
          <td class="wovenodd-col2">
             <div class="parent">
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/performance.html">performance</a> (direct members of model.resourceLike)
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gendesc.html">genDesc</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/performance.html">performance</a> (direct members of model.resourceLike)
                </div>
             </div>
          </td>

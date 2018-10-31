@@ -24,8 +24,7 @@ title: "data.FRETNUMBER.limited"
       <tr>
          <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.chordmember.log.html">att.chordMember.log</a> (@fret)
-            </div>
+            <div class="parent"></div>
          </td>
       </tr>
       <tr>

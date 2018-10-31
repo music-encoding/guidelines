@@ -17,7 +17,7 @@ title: "data.PERCENT.LIMITED.SIGNED"
       <tr>
          <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a></div>
+            <div class="parent"></div>
          </td>
       </tr>
       <tr>

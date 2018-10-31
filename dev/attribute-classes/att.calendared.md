@@ -25,7 +25,12 @@ title: "att.calendared"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@calendar</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the calendar system to which a date belongs, for example, Gregorian, Julian,
+                  Roman, Mosaic, Revolutionary, Islamic, etc.</span>
+               Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.calendared.html">att.calendared</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

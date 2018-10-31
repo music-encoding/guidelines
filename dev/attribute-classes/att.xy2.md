@@ -39,7 +39,14 @@ title: "att.xy2"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@x2</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the optional 2nd x coordinate.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy2.html">att.xy2</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@y2</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes the optional 2nd y coordinate.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy2.html">att.xy2</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

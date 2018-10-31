@@ -163,6 +163,14 @@ title: "hairpin"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@follows</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">points to one or more events in a user-defined collection that are known to be
+                              predecessors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@form</strong></span><span class="attributeUsage">(required)</span><span class="attributeDesc">Captures the visual rendition and function of the hairpin; that is, whether it
                               indicates an increase or a decrease in volume.</span>
                            Allowed values are:
@@ -205,12 +213,14 @@ title: "hairpin"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@lsegs</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the number of segments into which a dashed, dotted, or wavy line may be
-                              divided; a pair of space-separated values (minimum and maximum, respectively) provides
-                              a
-                              range between which a rendering system-supplied value may fall, while a single value
-                              indicates a fixed amount of space; that is, the minimum and maximum values are
-                              equal.</span>
+                        <div class="attributeDef"><span class="attribute"><strong>@lsegs</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the number of segments into which a dashed or dotted line may be divided,
+                              or
+                              the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                              maximum, respectively) provides a range between which a rendering system-supplied
+                              value
+                              may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                              and
+                              maximum values are equal.</span>
                            One or two values of datatype <span style="font-weight: 500;">
                               a positive integer no smaller than 2</span>, separated by a space.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.lineRend.base</a></span></div>
@@ -266,10 +276,10 @@ title: "hairpin"
                   </tr>
                   <tr>
                      <td>
-                        <div class="attributeDef"><span class="attribute"><strong>@partstaff</strong></span><span class="attributeUsage">(rec)</span><span class="attributeDesc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
+                        <div class="attributeDef"><span class="attribute"><strong>@partstaff</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Signifies the part staff on which a notated feature occurs. Use '%all' when the
                               feature should occur on every staff.</span>
                            One or more values of datatype <span style="font-weight: 500;">
-                              a string matching the following regular expression: "(%all|\d+(-\d+)?(,\d+(-\d+)?)*)"
+                              a string matching the following regular expression: "(%all|\d+(-\d+)?)"
                               </span>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.partident.html">att.partIdent</a></span></div>
                      </td>
@@ -295,9 +305,27 @@ title: "hairpin"
                   </tr>
                   <tr>
                      <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@precedes</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to one or more events in a user-defined collection that are known to be
+                              successors of the current element.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
                         <div class="attributeDef"><span class="attribute"><strong>@prev</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Points to the previous event(s) in a user-defined collection.</span>
                            One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                            <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linking.html">att.linking</a></span></div>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="attributeDef"><span class="attribute"><strong>@resp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the agent(s) responsible for some aspect of the text's transcription,
+                              editing, or encoding. Its value must point to one or more identifiers declared in
+                              the
+                              document header.</span>
+                           One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
+                           <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.responsibility.html">att.responsibility</a></span></div>
                      </td>
                   </tr>
                   <tr>
@@ -576,10 +604,10 @@ title: "hairpin"
                <em class="mentioned">textual</em> dynamics, such as 'p', 'mf', or 'cres. poco a poco', the <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dynam.html">dynam</a> element should be used. The starting point of the hairpin marking
                may be indicated by either a <span class="att">startid</span>, <span class="att">tstamp</span>, <span class="att">tstamp.ges</span>,
                or <span class="att">tstamp.real</span> attribute, while the ending point may be recorded by either a
-               <span class="att">dur</span>, <span class="att">dur.ges</span>, <span class="att">endid</span>, or <span class="att">tstamp2</span> attribute. It
-               is a semantic error not to specify one starting and one ending type of attribute.
-               MIDI
-               values associated with the graphical dynamic sign may be recorded in the <span class="att">val</span> and
+               <span class="att">dur</span>, <span class="att">dur.ges</span>, <span class="att">endid</span>, or <span class="att">tstamp2</span> attribute. It is
+               a semantic error not to specify one starting and one ending type of attribute. MIDI
+               values
+               associated with the graphical dynamic sign may be recorded in the <span class="att">val</span> and
                <span class="att">val2</span> attributes.
             </p>
          </td>

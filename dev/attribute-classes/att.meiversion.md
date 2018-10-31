@@ -25,7 +25,11 @@ title: "att.meiVersion"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@meiversion</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies a generic MEI version label.</span>
+               Allowed values are:
+               "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meiversion.html">att.meiVersion</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

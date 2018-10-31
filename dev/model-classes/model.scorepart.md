@@ -28,7 +28,7 @@ title: "model.scorePart"
             <div class="parent">
                <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ending.html">ending</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.endinglike.html">model.endingLike</a>)</span></div>
                <div><span><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorepart.mensuralandneumes.html">model.scorePart.mensuralAndNeumes</a> (no elements directly inheriting from this class)</span></div>
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ending.html">ending</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/section.html">section</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionlike.html">model.sectionLike</a>)</span></div>
+               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/metamark.html">metaMark</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ending.html">ending</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/section.html">section</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionlike.html">model.sectionLike</a>)</span></div>
             </div>
          </td>
       </tr>

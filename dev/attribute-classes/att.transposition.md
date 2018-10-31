@@ -26,7 +26,16 @@ title: "att.transposition"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@trans.diat</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the amount of diatonic pitch shift, e.g., C to C♯ = 0, C to D♭ = 1, necessary
+                  to calculate the sounded pitch from the written one.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.transposition.html">att.transposition</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@trans.semi</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the amount of pitch shift in semitones, e.g., C to C♯ = 1, C to D♭ = 1,
+                  necessary to calculate the sounded pitch from the written one.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.transposition.html">att.transposition</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

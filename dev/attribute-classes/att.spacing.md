@@ -24,7 +24,25 @@ title: "att.spacing"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@spacing.packexp</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes a note's spacing relative to its time value.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.spacing.html">att.spacing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@spacing.packfact</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the note spacing of output.</span>
+               Value is a decimal number.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.spacing.html">att.spacing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@spacing.staff</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the minimum amount of space between adjacent staves in the same system;
+                  measured from the bottom line of the staff above to the top line of the staff
+                  below.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.spacing.html">att.spacing</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@spacing.system</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the space between adjacent systems; a pair of space-separated values
+                  (minimum and maximum, respectively) provides a range between which a rendering
+                  system-supplied value may fall, while a single value indicates a fixed amount of space;
+                  that is, the minimum and maximum values are equal.</span>
+               One or two values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>, separated by a space.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.spacing.html">att.spacing</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

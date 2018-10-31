@@ -1,0 +1,1 @@
+(structured bibliographic citation) – Contains a bibliographic citation in which bibliographic sub-elements must appear in a specified order.

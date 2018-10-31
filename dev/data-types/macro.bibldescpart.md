@@ -19,7 +19,7 @@ title: "macro.bibldescPart"
       <tr>
          <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a></div>
+            <div class="parent"><a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestation.html">manifestation</a></div>
          </td>
       </tr>
       <tr>

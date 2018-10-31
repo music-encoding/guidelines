@@ -27,7 +27,20 @@ title: "att.coordinated"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@lrx</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the lower-right corner x coordinate.</span>
+               Value is a positive integer, including 0.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.coordinated.html">att.coordinated</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@lry</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the lower-left corner x coordinate.</span>
+               Value is a positive integer, including 0.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.coordinated.html">att.coordinated</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@ulx</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the upper-left corner x coordinate.</span>
+               Value is a positive integer, including 0.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.coordinated.html">att.coordinated</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@uly</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the upper-left corner y coordinate.</span>
+               Value is a positive integer, including 0.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.coordinated.html">att.coordinated</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

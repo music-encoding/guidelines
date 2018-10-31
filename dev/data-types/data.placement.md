@@ -27,14 +27,23 @@ title: "data.PLACEMENT"
             <div class="code" xml:space="preserve" data-lang="ODD"><code>
                   <div class="indent1 indent"><span data-indentation="1" class="element">&lt;content&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;alternate&gt;</span>
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;rng:choice&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.html">data.STAFFREL</a>"</span></span>/&gt;</span></div>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.html">data.STAFFREL</a>"</span></span>
+                              /&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.nonstaffplace.html">data.NONSTAFFPLACE</a>"</span></span>/&gt;</span></div>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.nonstaffplace.html">data.NONSTAFFPLACE</a>"</span></span>
+                              /&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.nmtoken.html">data.NMTOKEN</a>"</span></span>/&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/alternate&gt;</span></div>
+                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:ref
+                              
+                              <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.nmtoken.html">data.NMTOKEN</a>"</span></span>
+                              /&gt;</span></div>
+                        <span data-indentation="2" class="element">&lt;/rng:choice&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/content&gt;</span></div></code></div>
          </td>
       </tr>
@@ -45,12 +54,11 @@ title: "data.PLACEMENT"
                <div class="schematronText">Other values not permitted when 'above', 'below', 'between' or 'within' is present.</div>
             </div>
             <div class="code" xml:space="preserve" data-lang="Schematron"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@place[matches(., 'above') or matches(., 'below')              or matches(., 'between')
-                           or matches(., 'within')]"</span>&gt;</span>
+                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@place"</span>&gt;</span>
                      
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"matches(normalize-space(.), '^above$') or                matches(normalize-space(.),
-                              '^below$') or                matches(normalize-space(.), '^between$') or         
-                              matches(normalize-space(.), '^within$')"</span>&gt;</span>Other values not permitted when 'above', 'below', 'between' or 'within' is
+                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not((some $token in tokenize(normalize-space(.),' ') satisfies              $token
+                              =('below','above','between','within')) and count(tokenize(normalize-space(.),' '))
+                              gt 1)"</span>&gt;</span>Other values not permitted when 'above', 'below', 'between' or 'within' is
                         present.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                      <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
          </td>

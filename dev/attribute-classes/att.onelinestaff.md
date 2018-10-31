@@ -25,7 +25,13 @@ title: "att.oneLineStaff"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@ontheline</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Determines the placement of notes on a 1-line staff. A value of 'true' places all
+                  notes on the line, while a value of 'false' places stems-up notes above the line and
+                  stems-down notes below the line.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.onelinestaff.html">att.oneLineStaff</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

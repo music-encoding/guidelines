@@ -17,7 +17,7 @@ title: "data.HEADSHAPE.list"
       <tr>
          <td class="wovenodd-col1"><strong>Used by</strong></td>
          <td class="wovenodd-col2">
-            <div class="parent"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.headshape.html">data.HEADSHAPE</a></div>
+            <div class="parent"></div>
          </td>
       </tr>
       <tr>
