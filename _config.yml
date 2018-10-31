@@ -28,18 +28,25 @@ menu:
       label: 'Guidelines versions'
       url: ''
       submenu:
-          - id: dev
-            url: 'dev'
+          #- id: dev
+            #url: 'dev'
+          - id: v4
+            url: 'v4'
           - id: v3
             url: 'v3'
 
 versions:
+    current: "v4"
+    editable: "v4"
+    # names
     dev: "development version"
-    current: "v3"
     v3: "3.0.0"
+    v4: "4.0.0"
 
 collections:
-  guidelines-dev:
+  #guidelines-dev:
+    #output: false
+  guidelines-v4:
     output: false
   guidelines-v3:
     output: false
