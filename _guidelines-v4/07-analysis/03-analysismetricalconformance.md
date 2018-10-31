@@ -13,5 +13,5 @@ When used on {% include link elem="staff" %} or {% include link elem="layer" %} 
 
 In the first example below, the layer, staff, and measure all match the prevailing meter. In the second example, however, the first layer does not comply with the meter, making the staff containing it and measure as a whole non-compliant. When there is a single layer or when all the layers on a staff agree with each other, metrical compliance can be indicated on the {% include link elem="staff" %} element. When, however, not all layers have the same value for **@metcon**, then it is necessary to omit **@metcon** at the staff level. The value of **@metcon** on the measure level can usually be computed based on the values of its layer and staff sub-elements.
 
-{% include mei example="analysis/analysis-sample190.xml" valid="" %}
-{% include mei example="analysis/analysis-sample191.xml" valid="" %}
+{% include mei example="analysis/analysis-sample190.txt" valid="" %}
+{% include mei example="analysis/analysis-sample191.txt" valid="" %}
