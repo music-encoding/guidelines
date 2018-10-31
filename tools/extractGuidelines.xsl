@@ -1237,6 +1237,9 @@
                         <xsl:when test="$dt/rng:choice[count(child::*) = 1]">
                             Value must conform to <span style="font-weight: 500;"><xsl:sequence select="local:resolveData($dt//rng:data[1])"/></span>.                            
                         </xsl:when>
+                        <xsl:when test="$dt/rng:choice[count(child::*) = 2 and rng:ref[@name = 'data.BOOLEAN'] and rng:value]">
+                            Value must conform to <span style="font-weight: 500;">data.BOOLEAN</span> or <span style="font-weight: 500;"><xsl:value-of select="$dt/rng:choice/rng:value/text()"/></span>.                            
+                        </xsl:when>
                         <xsl:otherwise>
                             <xsl:message select="'ERROR: Unable to resolve the following datatype on attribute ' || $current.att/@ident"/>
                             <xsl:message terminate="yes" select="$dt"/>
