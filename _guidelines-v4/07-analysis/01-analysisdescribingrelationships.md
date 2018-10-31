@@ -31,7 +31,7 @@ In this example. the {% include link elem="note" %} in the second measure has ex
 
 Using **@copyof** is not limited to copying events. The **@copyof** attribute can also be used to copy an entire {% include link elem="measure" %} or {% include link elem="staff" %}. When there are many repeated features, the use of the **@copyof** greatly reduces encoding effort. The image and the following encoding of the beginning of Schubert's *Erlkönig* illustrates the benefit of using the **@copyof** attribute.
 
-{% include figure img="modules/analysis/Schubert_Erlkonig_Op1_m1.png" caption="First measure of Schubert's Erlkönig" %}
+{% include figure img="modules/analysis/schubert_erlkonig_op1_m1.png" caption="First measure of Schubert's Erlkönig" %}
 {% include mei example="analysis/analysis-sample173.txt" valid="" %}
 
 This example can be reduced further by using **@copyof** inside the initial tuplet to represent the repeated chords:
