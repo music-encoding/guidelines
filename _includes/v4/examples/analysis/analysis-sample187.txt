@@ -1,0 +1,2 @@
+
+<!-- Leading tone approached from above --><note deg="v7"/>
