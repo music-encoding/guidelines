@@ -8,11 +8,11 @@ The relationships between event elements, such as note, chord, and rest, are the
 
 The analysis module offers several attributes in the {% include link att="common.anl" %} class for the description of basic relationships:
 
-{% include desc atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev att.common.anl/sameas att.common.anl/synch" %} 
+{% include desc atts="att.common.anl/copyof att.common.anl/corresp att.common.anl/next att.common.anl/prev att.common.anl/sameas att.common.anl/synch" %}
 
 The {% include link att="alignment" %} class also contains an attribute for describing temporal relationships:
 
-{% include desc atts="att.alignment/when" %} 
+{% include desc atts="att.alignment/when" %}
 
 These attributes accommodate the encoding of linkages between the element carrying the attribute and one or more other elements. All of them use URIs to establish the connection. While the examples below illustrate relationships between musical events, their use is not restricted to musical events. On the contrary, these attributes can be used to capture information about relations between any elements.
 
@@ -26,7 +26,7 @@ In this example. the {% include link elem="note" %} in the second measure has ex
 
 Using **@copyof** is not limited to copying events. The **@copyof** attribute can also be used to copy an entire {% include link elem="measure" %} or {% include link elem="staff" %}. When there are many repeated features, the use of the **@copyof** greatly reduces encoding effort. The image and the following encoding of the beginning of Schubert's *Erlkönig* illustrates the benefit of using the **@copyof** attribute.
 
-{% include figure img="modules/analysis/Schubert_Erlkonig_Op1_m1.png" caption="First measure of Schubert's Erlkönig" %}
+{% include figure img="modules/analysis/schubert_erlkonig_op1_m1.png" caption="First measure of Schubert's Erlkönig" %}
 {% include mei example="analysis/analysis-sample163.xml" valid="true" %}
 
 This example can be reduced further by using **@copyof** inside the initial tuplet to represent the repeated chords:
