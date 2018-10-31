@@ -17,7 +17,7 @@ A typical MEI document contains an {% include link elem="mei" %} element, which 
 Other variations on this basic form are also available for the representation of:
 
 - a collection of related MEI-encoded texts, each with its own metadata, known as a corpus;
-- a document that contain only metadata, known as an independent or stand-alone header;
+- a document that contains only metadata, known as an independent or stand-alone header;
 - music notation markup without metadata, typically intended to be embedded within another kind of markup, such as TEI.
 
 Further information regarding the organization and encoding of music corpora is given in chapter {% include link id="corpus" %}. Stand-alone headers are more fully described in chapter {% include link id="headerIndependentHeader" %}.
