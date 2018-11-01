@@ -14,7 +14,7 @@ Melodic approach can be indicated by a leading caret (^) or lowercase v, represe
 
 Chromatic alteration of the scale degree can be represented using a trailing plus (+) or minus (-) signs, signifying raised or lowered scale degree, respectively. The actual amount of chromatic alteration is not indicated.
 
-{% include mei example="analysis/analysis-sample184.xml" valid="" %}
-{% include mei example="analysis/analysis-sample185.xml" valid="" %}
-{% include mei example="analysis/analysis-sample186.xml" valid="" %}
-{% include mei example="analysis/analysis-sample187.xml" valid="" %}
+{% include mei example="analysis/analysis-sample184.txt" valid="" %}
+{% include mei example="analysis/analysis-sample185.txt" valid="" %}
+{% include mei example="analysis/analysis-sample186.txt" valid="" %}
+{% include mei example="analysis/analysis-sample187.txt" valid="" %}
