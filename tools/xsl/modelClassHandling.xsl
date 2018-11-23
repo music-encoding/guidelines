@@ -21,6 +21,123 @@
         </xd:desc>
     </xd:doc>
     
+    <xsl:function name="tools:getModelMemberFacet" as="node()">
+        <xsl:param name="object" as="node()"/>
+        <div class="facet memberships">
+            <div class="label">Member of</div>
+            <div class="statement memberships">
+                <xsl:variable name="memberships" select="$object//tei:memberOf[starts-with(@key,'model.')]" as="node()*"/>
+                <xsl:for-each select="$memberships">
+                    <xsl:variable name="key" select="@key" as="xs:string"/>
+                    <xsl:variable name="model.desc" select="normalize-space(string-join($model.classes/self::tei:classSpec[@ident = $key]/tei:desc/text(),' '))" as="xs:string"/>
+                    <div class="memberOf">
+                        <a class="link_odd_classSpec" href="{tools:linkToModelClass($key)}"><xsl:value-of select="@key"/></a>
+                        <span class="groupDesc"><xsl:value-of select="$model.desc"/></span>
+                    </div>
+                </xsl:for-each>
+                <xsl:if test="count($memberships) = 0">
+                    <div class="memberOf">
+                        <span class="groupDesc">(<xsl:value-of select="$object/@ident"/> isn't member of any model class)</span>
+                    </div>
+                </xsl:if>
+            </div>
+        </div>
+    </xsl:function>
+    
+    <xsl:function name="tools:getChildsByModel" as="node()*">
+        <xsl:param name="object" as="node()"/>
+        
+        <xsl:variable name="is.element" select="local-name($object) = 'elementSpec'" as="xs:boolean"/>
+        <xsl:variable name="ident" select="if($is.element) then('direct children') else($object/@ident)" as="xs:string"/>
+        <xsl:variable name="desc" select="if($is.element) then('') else('(' || $object/@module || ') ' || normalize-space(string-join($object/tei:desc/text(),' ')))" as="xs:string"/>
+        
+        <xsl:variable name="relevant.elements" as="node()*">
+            <xsl:choose>
+                <xsl:when test="$is.element">
+                    <xsl:sequence select="$elements/self::tei:elementSpec[@ident = $object//tei:content//rng:ref[not(starts-with(@name,'model.'))]/@name]"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:sequence select="$elements/self::tei:elementSpec[.//tei:memberOf[@key = $object/@ident]]"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:if test="not($is.element) or count($relevant.elements) gt 0">
+            <xsl:variable name="content" as="node()*">
+                <xsl:for-each select="$relevant.elements">
+                    <xsl:sort select="@ident" data-type="text"/>
+                    <xsl:variable name="current.elem" select="@ident" as="xs:string"/>
+                    <xsl:variable name="desc" select="normalize-space(string-join(./tei:desc//text(),' '))" as="xs:string"/>
+                    <div class="elementDef def">
+                        <span class="ident element" title="{$desc}">
+                            <a class="link_odd_elementSpec" href="{tools:linkToElement($current.elem)}"><xsl:value-of select="$current.elem"/></a>
+                        </span>
+                        <span class="elementDesc desc">
+                            <xsl:apply-templates select="$object/tei:desc" mode="parse.odd"/>
+                        </span>
+                    </div>
+                </xsl:for-each>
+                <xsl:if test="not($is.element)">
+                    <xsl:variable name="inheriting.models" select="$model.classes/self::tei:classSpec[.//tei:memberOf/@key = $object/@ident]" as="node()*"/>
+                    <xsl:for-each select="$inheriting.models">
+                        <xsl:sequence select="tools:getChildsByModel(.)"/>    
+                    </xsl:for-each>
+                </xsl:if>
+            </xsl:variable>
+            <xsl:sequence select="tools:getClassBox($ident,$desc,$content,(if($is.element) then('direct') else('')))"/>
+        </xsl:if>
+        
+        <xsl:if test="$is.element">
+            <xsl:variable name="inheriting.models" select="$model.classes/self::tei:classSpec[@ident = $object//tei:content//rng:ref[starts-with(@name,'model.')]/@name]" as="node()*"/>
+            <xsl:for-each select="$inheriting.models">
+                <xsl:sequence select="tools:getChildsByModel(.)"/>    
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:function>
+    
+    <xsl:function name="tools:getParentsByModel" as="node()*">
+        <xsl:param name="object" as="node()"/>
+        <xsl:variable name="is.element" select="local-name($object) = 'elementSpec'" as="xs:boolean"/>
+        
+        <xsl:variable name="direct.parents" select="$elements/self::tei:elementSpec[.//tei:content//rng:ref[@name = $object/@ident]]" as="node()*"/>
+        
+        <xsl:variable name="ident" select="if($is.element) then('elements having ' || $object/@ident || ' as direct children') else($object/@ident)" as="xs:string"/>
+        <xsl:variable name="desc" select="if($is.element) then('') else('(' || $object/@module || ') ' || normalize-space(string-join($object/tei:desc/text(),' ')))" as="xs:string"/>
+        <xsl:variable name="content" as="node()*">
+            <xsl:for-each select="$direct.parents">
+                <xsl:sort select="@ident" data-type="text"/>
+                <xsl:variable name="current.elem" select="@ident" as="xs:string"/>
+                <xsl:variable name="desc" select="normalize-space(string-join(./tei:desc//text(),' '))" as="xs:string"/>
+                <div class="elementDef def">
+                    <span class="ident element" title="{$desc}">
+                        <a class="link_odd_elementSpec" href="{tools:linkToElement($current.elem)}"><xsl:value-of select="$current.elem"/></a>
+                    </span>
+                    <span class="elementDesc desc">
+                        <xsl:apply-templates select="$object/tei:desc" mode="parse.odd"/>
+                    </span>
+                </div>
+            </xsl:for-each>
+            <xsl:if test="not($is.element)">
+                <xsl:variable name="ancestor.models" select="$model.classes/self::tei:classSpec[@ident = $object//tei:memberOf/@key]" as="node()*"/>
+                <xsl:for-each select="$ancestor.models">
+                    <xsl:sequence select="tools:getParentsByModel(.)"/>    
+                </xsl:for-each>    
+            </xsl:if>            
+        </xsl:variable>
+        
+        <xsl:if test="not($is.element) or count($direct.parents) gt 0">
+            <xsl:sequence select="tools:getClassBox($ident,$desc,$content,'')"/>
+        </xsl:if>
+        
+        <xsl:if test="$is.element">
+            <xsl:variable name="ancestor.models" select="$model.classes/self::tei:classSpec[@ident = $object//tei:memberOf/@key]" as="node()*"/>
+            <xsl:for-each select="$ancestor.models">
+                <xsl:sequence select="tools:getParentsByModel(.)"/>    
+            </xsl:for-each>    
+        </xsl:if>      
+        
+        
+    </xsl:function>
+    
     <xsl:function name="tools:handleChilds" as="node()*">
         <xsl:param name="element" as="node()"/>
         
@@ -78,11 +195,10 @@
             <xsl:for-each select="$member.elements">
                 <xsl:sort select="@ident" data-type="text"/>
                 <xsl:variable name="current.elem" select="@ident" as="xs:string"/>
-                <xsl:variable name="current.elem.lowercase" select="lower-case($current.elem)" as="xs:string"/>
                 <xsl:variable name="desc" select="normalize-space(string-join(tei:desc//text(),' '))" as="xs:string"/>
                 <div class="elementDef">
                     <span class="ident element" title="{$desc}">
-                        <a class="link_odd_elementSpec" href="{$version}/elements/{$current.elem.lowercase}.html"><xsl:value-of select="$current.elem"/></a>
+                        <a class="link_odd_elementSpec" href="{tools:linkToElement($current.elem)}"><xsl:value-of select="$current.elem"/></a>
                     </span>
                     <span class="elementDesc">
                         <xsl:apply-templates select="$elements/self::tei:elementSpec[@ident = $current.elem]/tei:desc" mode="parse.odd"/>

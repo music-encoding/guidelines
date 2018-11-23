@@ -49,6 +49,7 @@
     <xsl:include href="xsl/datatypeHandling.xsl"/>
     <xsl:include href="xsl/macrogroupHandling.xsl"/>
     <xsl:include href="xsl/parseOdd.xsl"/>
+    <xsl:include href="xsl/javascript.xsl"/>
     
     <xd:doc scope="component">
         <xd:desc>

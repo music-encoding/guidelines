@@ -139,7 +139,7 @@
     </xsl:template>
     
     <!-- the following templates are used to support the unicode "reverse solidus overlay" character (u20E5) -->
-    <xsl:template match="tei:p[following-sibling::*[1][local-name() = 'figure'][child::tei:graphic/@url = 'Images/modules/harmony/figuredBass05.png']]/text()" priority="1">
+    <xsl:template match="tei:p[following-sibling::*[1][local-name() = 'figure'][child::tei:graphic/@url = 'Images/modules/harmony/figuredBass05.png']]/text()" mode="parse.odd" priority="1">
         <xsl:choose>
             <xsl:when test="contains(.,'⃥')">
                 <xsl:value-of select="substring-before(.,'⃥')"/><span class="reverseSolidus">⃥</span><xsl:value-of select="substring-after(.,'⃥')"/>
@@ -160,7 +160,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:gi">
+    <xsl:template match="tei:gi" mode="parse.odd">
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
         <xsl:choose>
             <xsl:when test="$text = $elements/@ident">
@@ -172,19 +172,19 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:ident[@type = 'class']">
+    <xsl:template match="tei:ident[@type = 'class']" mode="parse.odd">
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
         <xsl:choose>
             <xsl:when test="$text = //tei:classSpec/@ident">
                 <xsl:variable name="link">
                     <xsl:choose>
                         <xsl:when test="starts-with($text,'model.')">
-                            <xsl:call-template name="linkToModel">
+                            <xsl:call-template name="linkToModelClass">
                                 <xsl:with-param name="model" select="$text"/>
                             </xsl:call-template>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:call-template name="linkToAttribute">
+                            <xsl:call-template name="linkToAttributeClass">
                                 <xsl:with-param name="att" select="$text"/>
                             </xsl:call-template>
                         </xsl:otherwise>
@@ -200,16 +200,16 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:att">
+    <xsl:template match="tei:att" mode="parse.odd">
         <span class="att"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
-    <xsl:template match="tei:emph">
+    <xsl:template match="tei:emph" mode="parse.odd">
         <em class="mentioned"><xsl:apply-templates select="node()" mode="#current"/></em>
     </xsl:template>
-    <xsl:template match="tei:term">
+    <xsl:template match="tei:term" mode="parse.odd">
         <span class="term"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
-    <xsl:template match="tei:val">
+    <xsl:template match="tei:val" mode="parse.odd">
         <span class="val"><xsl:apply-templates select="node()" mode="#current"/></span>
     </xsl:template>
     

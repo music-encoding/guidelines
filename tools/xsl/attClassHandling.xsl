@@ -21,19 +21,66 @@
         </xd:desc>
     </xd:doc>
     
+    <xsl:function name="tools:getAttributesFacet" as="node()">
+        <xsl:param name="object" as="node()"/>
+        
+        <xsl:variable name="attributes.by.class" as="node()*">
+            <xsl:sequence select="tools:handleAttributes($object)"/>
+        </xsl:variable>
+        <xsl:variable name="attributes.compact" as="node()*">
+            <xsl:for-each select="$attributes.by.class//descendant-or-self::div[@class = 'attributeDef def']">
+                <xsl:sort select="./span[@class='ident attribute']/text()" data-type="text"/>
+                <xsl:if test="position() gt 1">
+                    <xsl:value-of select="', '"/>
+                </xsl:if>
+                <xsl:sequence select="./span[@class='ident attribute']"/>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="attributes.full" as="node()*">
+            <xsl:for-each select="$attributes.by.class//descendant-or-self::div[@class = 'attributeDef def']">
+                <xsl:sort select="./span[@class='ident attribute']/text()" data-type="text"/>
+                <xsl:sequence select="."/>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="attributes.by.module" as="node()*">
+            <xsl:for-each select="distinct-values($attributes.by.class//descendant-or-self::div[@class = 'attributeDef def']/@data-module)">
+                <xsl:sort select="." data-type="text"/>
+                <xsl:variable name="current.module" select="." as="xs:string"/>
+                <xsl:variable name="desc" select="normalize-space(string-join($mei.source//tei:moduleSpec[@ident = $current.module]/tei:desc/text(),' '))" as="xs:string"/>
+                <xsl:variable name="content" as="node()*">
+                    <xsl:for-each select="$attributes.by.class//descendant-or-self::div[@class = 'attributeDef def'][@data-module = $current.module]">
+                        <xsl:sort select="./span[@class='ident attribute']/text()" data-type="text"/>
+                        <xsl:sequence select="."/>
+                    </xsl:for-each>
+                </xsl:variable>
+                
+                <xsl:sequence select="tools:getClassBox($current.module,$desc,$content,'')"/>
+                
+            </xsl:for-each>
+        </xsl:variable>
+        
+        <xsl:variable name="contents" as="node()+">
+            <tab id="compact" label="compact"><xsl:sequence select="$attributes.compact"/></tab>
+            <tab id="full" label="full definition"><xsl:sequence select="$attributes.full"/></tab>
+            <tab id="class" label="by class"><xsl:sequence select="$attributes.by.class"/></tab>
+            <tab id="module" label="by module"><xsl:sequence select="$attributes.by.module"/></tab>
+        </xsl:variable>
+        
+        <xsl:sequence select="tools:getTabbedFacet('attributes','Attributes',$contents)"/>
+        
+    </xsl:function>
+    
     <xsl:function name="tools:handleAttributes" as="node()*">
         <xsl:param name="current.element" as="node()"/>
         
         <xsl:if test="$current.element//tei:attDef">
-            <div class="attributes direct class" data-module="{$current.element/@module}">
-                <div class="classHeading">
-                    <label class="groupLabel">direct childs</label>
-                </div>
+            <xsl:variable name="content" as="node()*">
                 <xsl:for-each select="$current.element//tei:attDef">
                     <xsl:variable name="current.att" select="." as="node()"/>
                     <xsl:sequence select="tools:resolveAttDef($current.att,$current.element/@module)"/>
                 </xsl:for-each>
-            </div>
+            </xsl:variable>
+            <xsl:sequence select="tools:getClassBox('direct childs','',$content,'direct')"/>
         </xsl:if>
         
         <xsl:sequence select="for $attClass in $current.element//tei:memberOf[starts-with(@key,'att.')]/@key return tools:resolveAttClass($attClass, $current.element/@ident)"/>
@@ -45,17 +92,17 @@
         <xsl:param name="parent" as="xs:string"/>
         <xsl:variable name="att.class" select="$att.classes[@ident = $class.name]" as="node()"/>
         
-        <div class="attributes class" data-ident="{$att.class/@ident}" data-parent="{$parent}" data-module="{$att.class/@module}">
-            <div class="classHeading">
-                <label class="groupLabel"><xsl:value-of select="$att.class/@ident"/></label>
-                <span class="groupDesc"><xsl:value-of select="'(' || $att.class/@module || ') ' || normalize-space(string-join($att.class/tei:desc/text(),' '))"/></span>
-            </div>
+        <xsl:variable name="desc" select="'(' || $att.class/@module || ') ' || normalize-space(string-join($att.class/tei:desc/text(),' '))" as="xs:string"/>
+        <xsl:variable name="content" as="node()*">
             <xsl:for-each select="$att.class//tei:attDef">
                 <xsl:variable name="current.att" select="." as="node()"/>
                 <xsl:sequence select="tools:resolveAttDef($current.att,$att.class/@module)"/>
             </xsl:for-each>
             <xsl:sequence select="for $inherited.class in $att.class//tei:memberOf[starts-with(@key,'att.')]/@key return tools:resolveAttClass($inherited.class,$class.name)"/>
-        </div>
+        </xsl:variable>
+        
+        <xsl:sequence select="tools:getClassBox($class.name,$desc,$content,'')"/>
+        
     </xsl:function>
     
     <xsl:function name="tools:resolveAttDef" as="node()">
@@ -63,15 +110,15 @@
         <xsl:param name="module" as="xs:string"/>
         <xsl:variable name="usage" select="if($current.att/@usage = 'opt') then('optional') else if($current.att/@usage = 'req') then('required') else($current.att/@usage)" as="xs:string?"/>
         <xsl:variable name="desc" as="node()*">
-            <xsl:apply-templates select="$current.att/tei:desc/node()"/>
+            <xsl:apply-templates select="$current.att/tei:desc/node()" mode="parse.odd"/>
         </xsl:variable>
         
-        <div class="attributeDef" data-ident="{$current.att/@ident}" data-module="{$module}">
+        <div class="attributeDef def" data-module="{$module}">
             <span class="ident attribute" title="{normalize-space(string-join($desc/descendant-or-self::text(),' '))}"><xsl:value-of select="$current.att/@ident"/></span>
             <xsl:if test="$usage">
                 <span class="attributeUsage">(<xsl:value-of select="$usage"/>)</span>
             </xsl:if>
-            <span class="attributeDesc"><xsl:sequence select="$desc"/></span>
+            <span class="attributeDesc desc"><xsl:sequence select="$desc"/></span>
             <span class="attributeValues">
                 <xsl:choose>
                     <xsl:when test="$current.att/tei:valList">
