@@ -89,9 +89,9 @@
         
         <xsl:message select="'INFO: $output.folder is ' || $output.folder || ', $includes.folder is ' || $includes.folder"/>
         
-        <!-- handling of elements -->
-        <xsl:for-each select="$mei.source//tei:elementSpec">
-            <xsl:variable name="element" select="."/>
+        <!-- handling of all specs -->
+        <xsl:for-each select="$elements | $att.classes | $model.classes | $data.types | $macro.groups">
+            <xsl:variable name="object" select="."/>
             
             <!-- create desc snippet in _includes for inclusion in guidelines -->
             <xsl:variable name="path" select="$includes.folder || 'desc/' || @ident || '.txt'" as="xs:string"/>
@@ -101,17 +101,37 @@
             
             <!-- create desc snippets in _includes for all directly defined attributes -->
             <xsl:for-each select=".//tei:attDef">
-                <xsl:variable name="path" select="$includes.folder || 'desc/' || $element/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
+                <xsl:variable name="path" select="$includes.folder || 'desc/' || $object/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
                 <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
                     <xsl:apply-templates select="./tei:desc/node()" mode="plain"/>
                 </xsl:result-document>
             </xsl:for-each>
             
+            <!-- create the spec page for each element -->
             <xsl:call-template name="processObject">
-                <xsl:with-param name="object" select="$element"/>
+                <xsl:with-param name="object" select="$object"/>
             </xsl:call-template>
         </xsl:for-each>
         
+        <xsl:call-template name="createOverviewPage">
+            <xsl:with-param name="objects" select="$elements"/>
+        </xsl:call-template>
+        
+        <xsl:call-template name="createOverviewPage">
+            <xsl:with-param name="objects" select="$att.classes"/>
+        </xsl:call-template>
+        
+        <xsl:call-template name="createOverviewPage">
+            <xsl:with-param name="objects" select="$model.classes"/>
+        </xsl:call-template>
+        
+        <xsl:call-template name="createOverviewPage">
+            <xsl:with-param name="objects" select="$data.types"/>
+        </xsl:call-template>
+        
+        <xsl:call-template name="createOverviewPage">
+            <xsl:with-param name="objects" select="$macro.groups"/>
+        </xsl:call-template>
         
         
     </xsl:template>

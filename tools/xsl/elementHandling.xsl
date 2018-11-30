@@ -71,8 +71,6 @@
         <xsl:variable name="macro.parents" select="tools:getParents($macro.groups/self::tei:macroSpec[.//tei:content//rng:ref[@name = $object/@ident]])" as="node()*"/>
         <xsl:variable name="parents" select="$direct.parents | $class.parents | $macro.parents" as="node()*"/>
         
-        
-        
         <xsl:variable name="parents.compact" as="node()*">
             <xsl:for-each select="$parents/self::tei:elementSpec">
                 <xsl:sort select="@ident" data-type="text"/>

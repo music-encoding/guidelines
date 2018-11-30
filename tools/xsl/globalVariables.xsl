@@ -26,14 +26,6 @@
     <xsl:variable name="model.classes" select="$mei.source//tei:classSpec[@type = 'model']" as="node()*"/>
     <xsl:variable name="data.types" select="$mei.source//tei:macroSpec[@type = 'dt']" as="node()*"/>
     <xsl:variable name="macro.groups" select="$mei.source//tei:macroSpec[@type = 'pe']" as="node()*"/>
-    <xsl:variable name="links.to.elements" as="node()*">
-        <xsl:for-each select="$elements">
-            <xsl:sort select="@ident" data-type="text"/>
-            <xsl:variable name="ident" select="@ident"/>
-            <a class="link_odd_elementSpec chip {substring($ident,1,1)}" href="{tools:linkToElement($ident)}"><xsl:value-of select="$ident"/></a>
-        </xsl:for-each>
-    </xsl:variable>
-    
     
     <xsl:variable name="guidelines.references">
         <xsl:variable name="file.path" select="substring-before(document-uri(),'/tools/')"/>
@@ -76,9 +68,26 @@
                     </xsl:matching-substring>
                 </xsl:analyze-string>
             </xsl:variable>
+            <xsl:variable name="att.classes" as="xs:string*">
+                <xsl:analyze-string select="$file" regex="% include (desc|link) atts=&quot;([a-zA-Z\d\./-_]+)&quot; %">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="regex-group(2)"/>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:variable>
+            <xsl:variable name="att.class.desc" as="xs:string*">
+                <xsl:analyze-string select="$file" regex="% include desc atts=&quot;([a-zA-Z\d\./-_]+)&quot; %">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="regex-group(1)"/>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:variable>
             
             <xsl:for-each select="distinct-values($elements)">
                 <ref ident="{.}" link="{$link}" type="element" chapter="{$chapter.num} {$title}" sortnum="{$sort.num}" desc="{if(. = $elements.with.desc) then('true') else('false')}"/>
+            </xsl:for-each>
+            <xsl:for-each select="distinct-values($att.classes)">
+                <ref ident="{if(contains(.,'/')) then(substring-before(.,'/')) else(.)}" link="{$link}" type="att.class" chapter="{$chapter.num} {$title}" sortnum="{$sort.num}" desc="{if(. = $att.class.desc) then('true') else('false')}"/>
             </xsl:for-each>
             <!--<xsl:message select="$link || ' has ' || count(distinct-values($elements)) || ' links: ' || string-join(distinct-values($elements),', ')"/>-->
         </xsl:for-each>

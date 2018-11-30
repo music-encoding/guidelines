@@ -162,6 +162,100 @@
         </div>
     </xsl:function>
     
+    <xsl:template name="createOverviewPage">
+        <xsl:param name="objects" as="node()*"/>
+        
+        <!-- identifies type of object -->
+        <xsl:variable name="settings" as="node()">
+            <xsl:choose>
+                <xsl:when test="local-name($objects[1]) = 'elementSpec'">
+                    <settings mode="elements" class="element" initial="1" filename="{$output.folder}elements.md" label="Elements"/>
+                </xsl:when>
+                <xsl:when test="local-name($objects[1]) = 'classSpec' and $objects[1]/@type = 'atts'">
+                    <settings mode="class.atts" class="attribute" initial="5" filename="{$output.folder}attribute-classes.md" label="Attribute Classes"/>
+                </xsl:when>
+                <xsl:when test="local-name($objects[1]) = 'classSpec' and $objects[1]/@type = 'model'">
+                    <settings mode="class.model" class="model" initial="7" filename="{$output.folder}model-classes.md" label="Model Classes"/>
+                </xsl:when>
+                <xsl:when test="local-name($objects[1]) = 'macroSpec' and $objects[1]/@type = 'dt'">
+                    <settings mode="macro.dt" class="datatype" initial="6" filename="{$output.folder}data-types.md" label="Data Types"/>
+                </xsl:when>
+                <xsl:when test="local-name($objects[1]) = 'macroSpec' and $objects[1]/@type = 'pe'">
+                    <settings mode="macro.pe" class="macro" initial="7" filename="{$output.folder}macro-groups.md" label="Macro Groups"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="idents" select="$objects/self::tei:*/@ident" as="xs:string*"/>
+        <xsl:variable name="initials" select="distinct-values(for $ident in $idents return lower-case(substring($ident,xs:integer($settings//@initial),1)))" as="xs:string*"/>
+        <xsl:variable name="links" as="node()*">
+            <xsl:for-each select="$idents">
+                <xsl:variable name="link" as="xs:string">
+                    <xsl:choose>
+                        <xsl:when test="$settings//@mode = 'elements'">
+                            <xsl:value-of select="tools:linkToElement(.)"/>
+                        </xsl:when>
+                        <xsl:when test="$settings//@mode = 'class.atts'">
+                            <xsl:value-of select="tools:linkToAttributeClass(.)"/>
+                        </xsl:when>
+                        <xsl:when test="$settings//@mode = 'class.model'">
+                            <xsl:value-of select="tools:linkToModelClass(.)"/>
+                        </xsl:when>
+                        <xsl:when test="$settings//@mode = 'macro.dt'">
+                            <xsl:value-of select="tools:linkToDatatype(.)"/>
+                        </xsl:when>
+                        <xsl:when test="$settings//@mode = 'macro.pe'">
+                            <xsl:value-of select="tools:linkToMacroGroup(.)"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <a class="overviewLink {$settings//@class}" data-initial="{lower-case(substring(.,xs:integer($settings//@initial),1))}" data-ident="{.}" href="{$link}"><xsl:value-of select="."/></a>    
+            </xsl:for-each>
+        </xsl:variable>
+        
+        <xsl:result-document href="{$settings//@filename}" format="html">
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>layout: sidebar</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>sidebar: s1</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>title: "</xsl:text><xsl:value-of select="$settings//@label"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>version: "</xsl:text><xsl:value-of select="$guidelines.version"/><xsl:text>"</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>---</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <div>
+                <h3><xsl:value-of select="$settings//@label"/></h3>
+                <div class="letterSelection">
+                    <ul class="pagination">
+                        <xsl:for-each select="$initials">
+                            <xsl:sort select="." data-type="text"/>
+                            <li class="page-item">
+                                <a href="#letterFacet_{.}"><xsl:value-of select="."/></a>
+                            </li>    
+                        </xsl:for-each>         
+                    </ul>
+                </div>
+                <xsl:for-each select="$initials">
+                    <xsl:sort select="." data-type="text"/>
+                    <xsl:variable name="current.letter" select="." as="xs:string"/>
+                    <div class="facet letter overview" id="letterFacet_{$current.letter}">
+                        <div class="label"><xsl:value-of select="$current.letter"/></div>
+                        <div class="statement compact list">
+                            <xsl:for-each select="$links[@data-initial = $current.letter]">
+                                <xsl:sort select="lower-case(@data-ident)" data-type="text"/>
+                                <xsl:sequence select="."/>
+                            </xsl:for-each>
+                        </div>
+                    </div>
+                </xsl:for-each>
+            </div>
+        </xsl:result-document>
+        
+    </xsl:template>
+    
     <!-- setting consistent style for various links -->
     <xsl:template name="linkToElement" as="xs:string">
         <xsl:param name="element" as="xs:string"/>
