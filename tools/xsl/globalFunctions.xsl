@@ -299,7 +299,7 @@
     </xsl:template>
     <xsl:function name="tools:linkToMacroGroup" as="xs:string">
         <xsl:param name="datatype" as="xs:string"/>
-        <xsl:value-of select="$version || '/data-types/' || lower-case($datatype) || '.html'"/>
+        <xsl:value-of select="$version || '/macro-groups/' || lower-case($datatype) || '.html'"/>
     </xsl:function>
     
     

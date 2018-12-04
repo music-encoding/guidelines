@@ -144,15 +144,20 @@
             </xsl:for-each>
         </xsl:variable>
         <xsl:variable name="childs" select="$direct.childs | $class.childs | $macro.childs" as="node()*"/>
+        <xsl:variable name="allows.anyXML" select="exists($object/tei:content/rng:element[rng:anyName and rng:zeroOrMore/rng:attribute/rng:anyName and rng:zeroOrMore//rng:text and rng:zeroOrMore//rng:ref[@name = $object/@ident]])" as="xs:boolean"/>
+        <xsl:variable name="allows.text" select="xs:boolean(not($allows.anyXML) and exists($object/tei:content//rng:text))" as="xs:boolean"/>
         
         <xsl:choose>
-            <xsl:when test="count($childs) gt 0">
+            <xsl:when test="count($childs) gt 0 or $allows.text">
                 <xsl:variable name="childs.compact" as="node()*">
+                    <xsl:if test="$allows.text">
+                        <span class="ident textualContent" title="textual content">textual content</span>
+                    </xsl:if>
                     <xsl:for-each select="$childs/self::tei:elementSpec">
                         <xsl:sort select="@ident" data-type="text"/>
                         <xsl:variable name="current.elem" select="@ident" as="xs:string"/>
                         <xsl:variable name="desc" select="normalize-space(string-join(tei:desc//text(),' '))" as="xs:string"/>
-                        <xsl:if test="position() gt 1">
+                        <xsl:if test="position() gt 1 or $allows.text">
                             <xsl:value-of select="', '"/>
                         </xsl:if>
                         <span class="ident element" title="{$desc}">
@@ -160,8 +165,22 @@
                         </span>
                     </xsl:for-each>
                 </xsl:variable>
-                <xsl:variable name="childs.by.class" select="tools:getChildsByModel($object)" as="node()*"/>
+                <xsl:variable name="childs.by.class" as="node()*">
+                    <xsl:if test="$allows.text">
+                        <div class="textualContent" title="textual content">
+                            textual content
+                        </div>
+                    </xsl:if>
+                    <xsl:sequence select="tools:getChildsByModel($object)"/>
+                </xsl:variable>
                 <xsl:variable name="childs.by.module" as="node()*">
+                    
+                    <xsl:if test="$allows.text">
+                        <div class="textualContent" title="textual content">
+                            textual content
+                        </div>
+                    </xsl:if>
+                    
                     <xsl:for-each select="distinct-values($childs/self::tei:elementSpec/@module)">
                         <xsl:sort select="." data-type="text"/>
                         <xsl:variable name="current.module" select="." as="xs:string"/>
@@ -170,11 +189,12 @@
                         <xsl:variable name="ident" select="$current.module" as="xs:string"/>
                         <xsl:variable name="desc" select="normalize-space(string-join($mei.source//tei:moduleSpec[@ident = $current.module]/tei:desc/text(),' '))" as="xs:string"/>
                         <xsl:variable name="content" as="node()*">
+                            
                             <xsl:for-each select="$relevant.element.names">
                                 <xsl:sort select="." data-type="text"/>
                                 <xsl:variable name="current.elem" select="." as="xs:string"/>
                                 
-                                <div class="elementRef">
+                                <div class="elementRef" title="{$current.elem}">
                                     <a class="link_odd_elementSpec" href="{tools:linkToElement($current.elem)}"><xsl:value-of select="$current.elem"/></a>
                                     <span class="elementDesc">
                                         <xsl:apply-templates select="$elements/self::tei:elementSpec[@ident = $current.elem]/tei:desc" mode="parse.odd"/>
@@ -196,11 +216,21 @@
                 
                 <xsl:sequence select="tools:getTabbedFacet('mayContain','May Contain',$contents)"/>        
             </xsl:when>
-            <xsl:otherwise>
+            <xsl:when test="$allows.anyXML">
                 <div class="facet mayContain" id="mayContain">
                     <div class="label">May Contain</div>
                     <div class="statement text">
-                        – <span class="emptyStatement">(<em>&lt;<xsl:value-of select="$object/@ident"/>/&gt; may not have child elements</em>)</span>
+                        any XML element, with any attribute <span class="emptyStatement">(<em><xsl:value-of select="$object/@ident"/> is self-nested</em>)</span>
+                    </div>
+                </div>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="prefix" select="if(local-name($object) = 'elementSpec') then('&lt;') else('')" as="xs:string"/>
+                <xsl:variable name="postfix" select="if(local-name($object) = 'elementSpec') then('&gt;') else('')" as="xs:string"/>
+                <div class="facet mayContain" id="mayContain">
+                    <div class="label">May Contain</div>
+                    <div class="statement text">
+                        – <span class="emptyStatement">(<em><xsl:value-of select="$prefix || $object/@ident || $postfix"/> may not have child elements</em>)</span>
                     </div>
                 </div>
             </xsl:otherwise>

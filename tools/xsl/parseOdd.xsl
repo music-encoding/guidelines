@@ -133,9 +133,10 @@
     <!-- remove attributes for macroSpec's ODD -->
     <xsl:template match="tei:macroSpec//@ns | tei:macroSpec//@predeclare | tei:macroSpec//@status | tei:macroSpec//@autoPrefix" mode="preserveSpace" priority="2">
         <xsl:param name="getODD" tunnel="yes" as="xs:boolean?"/>
-        <!--<xsl:if test="not($getODD) or $getODD = false()">
+        <!-- keep it if it's macro.anyXML -->
+        <xsl:if test="parent::rng:nsName and ancestor::rng:element">
             <xsl:next-match/>
-        </xsl:if>-->
+        </xsl:if>
     </xsl:template>
     
     <!-- the following templates are used to support the unicode "reverse solidus overlay" character (u20E5) -->

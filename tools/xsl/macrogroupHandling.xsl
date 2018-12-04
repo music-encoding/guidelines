@@ -21,4 +21,48 @@
         </xd:desc>
     </xd:doc>
     
+    <xd:doc scope="component">
+        <xd:desc>This template resolves Macro Groups (Parameter entities)</xd:desc>
+    </xd:doc>
+    <xsl:template match="tei:macroSpec[@type = 'pe']" mode="parse.odd">
+        <xsl:variable name="macro.group" select="." as="node()"/>
+        <div class="macrogroupSpec">
+            <h3 id="{$macro.group/@ident}"><xsl:value-of select="$macro.group/@ident"/></h3>
+            <div class="specs">
+                <div class="desc">
+                    <xsl:apply-templates select="$macro.group/tei:desc/node()" mode="#current"/>
+                    <xsl:variable name="refs" select="$guidelines.references/descendant-or-self::*:ref[@ident = $macro.group/@ident]" as="node()*"/>
+                    <xsl:if test="count($refs) gt 0">
+                        <div class="chapterLinksBox">
+                            <xsl:for-each select="$refs">
+                                <xsl:sort select="@sortnum" data-type="text"/>
+                                <a class="chapterLink{if(@desc='true') then(' desc') else()}" href="{@link}"><xsl:value-of select="@chapter"/></a><xsl:if test="position() lt count($refs)">,</xsl:if>
+                            </xsl:for-each>
+                        </div>
+                    </xsl:if>
+                </div>
+                
+                <xsl:sequence select="tools:getModuleFacet($macro.group/@module)"/>
+                
+                <xsl:sequence select="tools:getContainingParentsFacet($macro.group)"/>
+                
+                <xsl:sequence select="tools:getContainedChildsFacet($macro.group)"/>
+                
+                <xsl:sequence select="tools:getRemarksFacet($macro.group)"/>
+                
+                <xsl:sequence select="tools:getSchematronFacet($macro.group)"/>
+                
+                <xsl:sequence select="tools:getDeclarationFacet($macro.group)"/>
+                
+            </div>
+            <xsl:sequence select="tools:getJavascriptForTabs()"/>
+        </div>
+    </xsl:template>
+    
+    <!--<xsl:function name="tools:getMacroGroupParentsFacet" as="node()">
+        <xsl:param name="macro.group" as="node()"/>
+        
+        
+    </xsl:function>-->
+    
 </xsl:stylesheet>
