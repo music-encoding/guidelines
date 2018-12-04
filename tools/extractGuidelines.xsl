@@ -186,7 +186,7 @@
                     <xsl:value-of select="'data-types/'"/>
                 </xsl:when>
                 <xsl:when test="$type = 'macro.pe'">
-                    <xsl:value-of select="'data-types/'"/>
+                    <xsl:value-of select="'macro-groups/'"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
