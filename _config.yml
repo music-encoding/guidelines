@@ -69,3 +69,6 @@ sidebar:
           - id: datatypes
             label: 'Data Types'
             url: 'data-types.html'
+          - id: datatypes
+            label: 'Macro Groups'
+            url: 'macro-groups.html'
