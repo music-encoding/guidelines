@@ -226,7 +226,7 @@
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>---</xsl:text>
             <xsl:text>&#xa;</xsl:text>
-            <div>
+            <div class="specPage overview">
                 <h3><xsl:value-of select="$settings//@label"/></h3>
                 <div class="letterSelection">
                     <ul class="pagination">

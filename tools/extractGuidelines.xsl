@@ -204,7 +204,9 @@
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>---</xsl:text>
             <xsl:text>&#xa;</xsl:text>
-            <xsl:apply-templates select="$object" mode="parse.odd"/>
+            <div class="specPage">
+                <xsl:apply-templates select="$object" mode="parse.odd"/> 
+            </div>
         </xsl:result-document>
         
     </xsl:template>
