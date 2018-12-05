@@ -159,10 +159,6 @@
         
         <xsl:variable name="allows.text" select="exists($object//tei:content//rng:text)" as="xs:boolean"/>
         
-        <xsl:if test="$allows.text">
-            <xsl:message select="$object/@ident || ' allows text'"></xsl:message>
-        </xsl:if>
-        
         <xsl:variable name="relevant.elements" as="node()*">
             <xsl:choose>
                 <xsl:when test="$is.element">
