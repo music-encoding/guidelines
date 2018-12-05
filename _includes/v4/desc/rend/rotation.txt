@@ -1,1 +1,2 @@
-A positive value for rotation rotates the text in a counter-clockwise fashion, while negative values produce clockwise rotation.
+A positive value for rotation rotates the text in a counter-clockwise fashion, while
+          negative values produce clockwise rotation.

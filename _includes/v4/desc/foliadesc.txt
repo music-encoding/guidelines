@@ -1,1 +1,2 @@
-Describes the order of folia and bifolia making up the text block of a manuscript or print.
+Describes the order of folia and bifolia making up the text block of a manuscript or
+      print.

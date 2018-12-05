@@ -1,1 +1,2 @@
-Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.
+Used to assign a sequence number related to the order in which the encoded features
+          carrying this attribute are believed to have occurred.

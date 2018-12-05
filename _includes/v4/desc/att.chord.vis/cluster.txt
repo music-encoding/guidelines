@@ -1,1 +1,3 @@
-Indicates a single, alternative note head should be displayed instead of individual note heads. The highest and lowest notes of the chord usually indicate the upper and lower boundaries of the cluster note head.
+Indicates a single, alternative note head should be displayed instead of individual
+          note heads. The highest and lowest notes of the chord usually indicate the upper and lower
+          boundaries of the cluster note head.

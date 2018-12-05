@@ -1,1 +1,2 @@
-Denotes the staff location of bar lines, if the length is non-standard; that is, not equal to 2 times (the number of staff lines - 1).
+Denotes the staff location of bar lines, if the length is non-standard; that is, not
+          equal to 2 times (the number of staff lines - 1).

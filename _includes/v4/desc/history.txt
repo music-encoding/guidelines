@@ -1,1 +1,2 @@
-Provides a container for information about the history of a resource other than the circumstances of its creation.
+Provides a container for information about the history of a resource other than the
+      circumstances of its creation.

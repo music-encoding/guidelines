@@ -1,1 +1,2 @@
-Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.
+Designation which characterizes the element in some sense, using any convenient
+          classification scheme or typology that employs single-token labels.

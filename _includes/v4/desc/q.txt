@@ -1,1 +1,3 @@
-(quoted) – Contains material which is distinguished from the surrounding phrase-level text using quotation marks or a similar method. Use  for block-level quotations.
+(quoted) – Contains material which is distinguished from the surrounding phrase-level text
+      using quotation marks or a similar method. Use quote for block-level
+      quotations.

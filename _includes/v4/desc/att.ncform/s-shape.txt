@@ -1,1 +1,3 @@
-Direction of the initial direction for an s-shaped pen stroke; i.e., "w" for the standard letter S, "e" for its mirror image, "s" for the letter S turned 90-degrees anti-clockwise, and "n" for its mirror image.
+Direction of the initial direction for an s-shaped pen stroke; i.e., "w" for the
+          standard letter S, "e" for its mirror image, "s" for the letter S turned 90-degrees
+          anti-clockwise, and "n" for its mirror image.

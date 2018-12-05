@@ -1,1 +1,2 @@
-Length of the pen stroke relative to the previous component within the same neume; this attribute should not be used for the first component of a neume.
+Length of the pen stroke relative to the previous component within the same neume;
+          this attribute should not be used for the first component of a neume.

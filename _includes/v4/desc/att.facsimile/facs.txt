@@ -1,1 +1,2 @@
-Permits the current element to reference a facsimile surface or image zone which corresponds to it.
+Permits the current element to reference a facsimile surface or image zone which
+          corresponds to it.

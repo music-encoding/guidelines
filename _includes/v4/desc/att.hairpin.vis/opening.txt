@@ -1,1 +1,2 @@
-Specifies the distance between the lines at the open end of a hairpin dynamic mark.
+Specifies the distance between the lines at the open end of a hairpin dynamic
+          mark.

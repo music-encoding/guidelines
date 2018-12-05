@@ -1,1 +1,2 @@
-Records a timestamp adjustment of a feature's programmatically-determined location in terms of musical time; that is, beats.
+Records a timestamp adjustment of a feature's programmatically-determined location in
+          terms of musical time; that is, beats.

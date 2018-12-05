@@ -1,1 +1,2 @@
-"Convenience" datatype that permits combining enumerated values with a user-supplied name.
+"Convenience" datatype that permits combining enumerated values with a user-supplied
+      name.

@@ -1,1 +1,2 @@
-Indicates the performed duration represented by the beatRpt symbol; expressed in time signature denominator units.
+Indicates the performed duration represented by the beatRpt symbol; expressed in time
+          signature denominator units.

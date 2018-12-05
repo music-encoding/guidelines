@@ -1,1 +1,2 @@
-A reference to a  element positioned on the outer verso side of a (folded) sheet.
+A reference to a surface element positioned on the outer verso
+          side of a (folded) sheet.

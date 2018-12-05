@@ -1,1 +1,2 @@
-(work list) – Grouping mechanism for information describing non-bibliographic aspects of a text.
+(work list) – Grouping mechanism for information describing non-bibliographic aspects of a
+      text.

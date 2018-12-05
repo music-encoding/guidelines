@@ -1,1 +1,2 @@
-Signifies the causative agent of damage, illegibility, or other loss of original text.
+Signifies the causative agent of damage, illegibility, or other loss of original
+          text.

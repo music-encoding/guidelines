@@ -1,1 +1,2 @@
-Records where bar lines are drawn. The value 'staff' describes the traditional placement of bar lines.
+Records where bar lines are drawn. The value 'staff' describes the traditional placement
+      of bar lines.
