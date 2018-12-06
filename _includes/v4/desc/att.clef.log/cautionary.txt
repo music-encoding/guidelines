@@ -1,1 +1,2 @@
-Records the function of the clef. A "cautionary" clef does not change the following pitches.
+Records the function of the clef. A "cautionary" clef does not change the following
+          pitches.

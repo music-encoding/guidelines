@@ -1,1 +1,2 @@
-The web-accessible location of the controlled vocabulary from which the value of  or  is taken.
+The web-accessible location of the controlled vocabulary from which the value of
+            glyph.name or glyph.num is taken.

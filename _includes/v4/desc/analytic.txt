@@ -1,1 +1,2 @@
-(analytic level) – Contains bibliographic elements describing an item (e.g. an article or poem) published within a monograph or journal and not as an independent publication.
+(analytic level) – Contains bibliographic elements describing an item (e.g. an article or
+      poem) published within a monograph or journal and not as an independent publication.

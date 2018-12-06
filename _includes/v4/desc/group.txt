@@ -1,1 +1,3 @@
-Contains a composite musical text, grouping together a sequence of distinct musical texts (or groups of such musical texts) which are regarded as a unit for some purpose, for example, the collected works of a composer.
+Contains a composite musical text, grouping together a sequence of distinct musical texts
+      (or groups of such musical texts) which are regarded as a unit for some purpose, for example,
+      the collected works of a composer.

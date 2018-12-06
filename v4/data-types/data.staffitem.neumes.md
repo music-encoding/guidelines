@@ -4,21 +4,81 @@ sidebar: s1
 version: "v4"
 title: "data.STAFFITEM.neumes"
 ---
-<div class="macroSpec">
-   <h3 id="data.STAFFITEM.neumes">data.STAFFITEM.neumes</h3>
-   <table class="wovenodd">
-      <tr>
-         <td colspan="2" class="wovenodd-col2">Items in the Neume repertoire that may be printed near a staff.</td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Module</strong></td>
-         <td class="wovenodd-col2">MEI.neumes</td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Used by</strong></td>
-         <td class="wovenodd-col2">
-            <div class="parent"></div>
-         </td>
-      </tr>
-   </table>
+<div class="specPage">
+   <div class="datatypeSpec">
+      <h3 id="data.STAFFITEM.neumes">data.STAFFITEM.neumes</h3>
+      <div class="specs">
+         <div class="desc">Items in the Neume repertoire that may be printed near a staff.</div>
+         <div class="facet module">
+            <div class="label">Module</div>
+            <div class="statement text">MEI.neumes</div>
+         </div>
+         <div class="facet usedBy" id="usedBy">
+            <div class="label">Used by</div>
+            <div class="statement list">
+               – <span class="emptyStatement">(<em>&lt;data.STAFFITEM.neumes/&gt; is not used on any attribute</em>)</span></div>
+         </div>
+         <div class="facet declaration">
+            <div class="label">Declaration</div>
+            <div class="statement declaration">
+               <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">ident=</span><span class="attributevalue">"data.STAFFITEM.neumes"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.neumes"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Items in the Neume repertoire that may be printed near a staff.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
+            </div>
+         </div>
+      </div><script type="text/javascript">
+            
+            var tabbedFacets = document.querySelectorAll('.facet ul.tab');
+            
+            var tabClick = function(e) {
+                var style = e.target.getAttribute('data-display');
+                var facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                setTabs(facetId,style)
+            }
+            
+            for(var facetUl of tabbedFacets) {
+                var facetElem = facetUl.parentNode.parentNode;
+                var facetId = facetElem.id;
+                var storageName = 'meiSpecs_' + facetId + '_display';
+                var defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                
+                if(localStorage.getItem(storageName) === null) {
+                    setTabs(facetElem.id,defaultValue);
+                } else {
+                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                }
+                
+                var tabs = facetUl.querySelectorAll('.tab-item a');
+                
+                for(var tab of tabs) {
+                    tab.addEventListener('click',tabClick);
+                }
+                
+            }
+            
+            function setTabs(facetId,style) {
+                
+                var storageName = 'meiSpecs_' + facetId + '_display';
+                localStorage.setItem(storageName,style);
+                
+                var facetElem = document.getElementById(facetId);
+                
+                var oldTab = facetElem.querySelector('.displayTab.active');
+                oldTab.classList.remove('active');
+                
+                var newTab = document.getElementById(facetId + '_' + style + '_tab');
+                newTab.classList.add('active');
+                
+                var oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                oldBox.classList.remove('active');
+                oldBox.style.display = 'none';
+                
+                var newBox = document.getElementById(facetId + '_tabbedContent_' + style);
+                newBox.classList.add('active');
+                newBox.style.display = 'block';
+                
+            }
+        </script></div>
 </div>

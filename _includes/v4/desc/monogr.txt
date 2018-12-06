@@ -1,1 +1,2 @@
-(monograph level) – Contains bibliographic elements describing an item, for example, a published book or journal, score, recording, or an unpublished manuscript.
+(monograph level) – Contains bibliographic elements describing an item, for example, a
+      published book or journal, score, recording, or an unpublished manuscript.

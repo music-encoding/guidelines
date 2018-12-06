@@ -1,1 +1,2 @@
-encodes the starting point of musical material in terms of musical time, i.e., a (potentially negative) count of measures plus a beat location.
+encodes the starting point of musical material in terms of musical time, i.e., a
+          (potentially negative) count of measures plus a beat location.

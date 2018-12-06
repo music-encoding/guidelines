@@ -1,1 +1,2 @@
-Attributes used to associate MEI features with corresponding glyphs in an externally-defined standard such as SMuFL.
+Attributes used to associate MEI features with corresponding glyphs in an
+      externally-defined standard such as SMuFL.

@@ -1,1 +1,3 @@
-Records the absolute distance (as opposed to the relative distances recorded in  elements) between this staff and the preceding one in the same system. This value is meaningless for the first staff in a system since the spacing.system attribute indicates the spacing between systems.
+Records the absolute distance (as opposed to the relative distances recorded in scoreDef elements) between this staff and the preceding one in the same
+          system. This value is meaningless for the first staff in a system since the spacing.system
+          attribute indicates the spacing between systems.

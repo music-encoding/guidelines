@@ -1,1 +1,5 @@
-Captures scale degree information using Humdrum **deg syntax -- an optional indicator of melodic approach (^ = ascending approach, v = descending approach), a scale degree value (1 = tonic ... 7 = leading tone), and an optional indication of chromatic alteration, "1", "v7", "^1", or "v5+", for example. The amount of chromatic alternation is not indicated.
+Captures scale degree information using Humdrum **deg syntax -- an optional indicator
+          of melodic approach (^ = ascending approach, v = descending approach), a scale degree
+          value (1 = tonic ... 7 = leading tone), and an optional indication of chromatic
+          alteration, "1", "v7", "^1", or "v5+", for example. The amount of chromatic alternation is
+          not indicated.

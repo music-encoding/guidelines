@@ -1,1 +1,3 @@
-Indicates the number of pulses (sometimes referred to as ticks or divisions) per quarter note. Unlike MIDI, MEI permits different values for a score and individual staves.
+Indicates the number of pulses (sometimes referred to as ticks or divisions) per
+          quarter note. Unlike MIDI, MEI permits different values for a score and individual
+          staves.

@@ -1,1 +1,2 @@
-Where the measurement summarizes more than one observation or a range of values, supplies the maximum value observed.
+Where the measurement summarizes more than one observation or a range of values,
+          supplies the maximum value observed.

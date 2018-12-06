@@ -1,1 +1,2 @@
-Short, project-defined name for the material composing the majority of the support.
+Short, project-defined name for the material composing the majority of the
+          support.

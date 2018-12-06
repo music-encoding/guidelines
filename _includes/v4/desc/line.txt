@@ -1,1 +1,2 @@
-A visual line that cannot be represented by a more specific; i.e., semantic, element.
+A visual line that cannot be represented by a more specific; i.e., semantic,
+      element.

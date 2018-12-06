@@ -1,1 +1,2 @@
-Contains a reference to a  element elsewhere in the document.
+Contains a reference to a chordDef element elsewhere in the
+          document.
