@@ -7,7 +7,7 @@
       <pubPlace>Copenhagen</pubPlace>
       <date isodate="1871">1871</date>
    </pubStmt>
-   <componentGrp>
+   <componentList>
       <source>
          <titleStmt>
             <title>Soprani</title>
@@ -40,5 +40,5 @@
             <extent unit="pages">6</extent>
          </physDesc>
       </source>
-   </componentGrp>
+   </componentList>
 </source>
