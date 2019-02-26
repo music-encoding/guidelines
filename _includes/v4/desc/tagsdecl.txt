@@ -1,1 +1,2 @@
-(tagging declaration) – Provides detailed information about the tagging applied to a document.
+(tagging declaration) – Provides detailed information about the tagging applied to a
+      document.

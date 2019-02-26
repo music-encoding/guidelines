@@ -1,1 +1,2 @@
-A single "word" that contains only letters, digits, punctuation characters, or symbols. It cannot contain whitespace.
+A single "word" that contains only letters, digits, punctuation characters, or symbols. It
+      cannot contain whitespace.

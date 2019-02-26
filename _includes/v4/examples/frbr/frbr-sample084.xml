@@ -2,7 +2,7 @@
    <titleStmt>
       <title>Der Ring des Nibelungen</title>
    </titleStmt>
-   <componentGrp>
+   <componentList>
       <work>
          <titleStmt>
             <title>Das Rheingold</title>
@@ -23,5 +23,5 @@
             <title>Götterdämmerung</title>
          </titleStmt>
       </work>
-   </componentGrp>
+   </componentList>
 </work>

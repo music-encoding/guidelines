@@ -1,1 +1,3 @@
-Records semantic meaning, i.e., intended performance, of the mordent. The , , or  attributes may be used to specify the appropriate symbol.
+Records semantic meaning, i.e., intended performance, of the mordent. The
+            altsym, glyph.name, or glyph.num attributes may be used
+          to specify the appropriate symbol.

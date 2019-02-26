@@ -1,1 +1,2 @@
-Describes the symbols typically used to indicate breaks between syllables and their functions.
+Describes the symbols typically used to indicate breaks between syllables and their
+          functions.

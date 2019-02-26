@@ -1,1 +1,2 @@
-Groups elements for editorial interventions that may be useful both in transcribing and in authoring processes.
+Groups elements for editorial interventions that may be useful both in transcribing and in
+      authoring processes.

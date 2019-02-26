@@ -4,139 +4,448 @@ sidebar: s1
 version: "v4"
 title: "att.fingGrp.vis"
 ---
-<div class="classSpec att">
-   <h3 id="att.fingGrp.vis">att.fingGrp.vis</h3>
-   <table class="wovenodd">
-      <tr>
-         <td colspan="2" class="wovenodd-col2">Visual domain attributes.</td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Module</strong></td>
-         <td class="wovenodd-col2">MEI.visual</td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Members</strong></td>
-         <td class="wovenodd-col2">
-            <div class="parent">
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/finggrp.html">fingGrp</a> (direct member of att.fingGrp.vis)
+<div class="specPage">
+   <div class="attClassSpec">
+      <h3 id="att.fingGrp.vis">att.fingGrp.vis</h3>
+      <div class="specs">
+         <div class="desc">Visual domain attributes.</div>
+         <div class="facet module">
+            <div class="label">Module</div>
+            <div class="statement text">MEI.visual</div>
+         </div>
+         <div class="facet attributes" id="attributes">
+            <div class="label">Attributes</div>
+            <div class="statement classes list">
+               <ul class="tab">
+                  <li class="tab-item"><a data-display="compact" id="attributes_compact_tab" href="#attributes" class="displayTab active">compact</a></li>
+                  <li class="tab-item"><a data-display="full" id="attributes_full_tab" href="#attributes" class="displayTab">full definition</a></li>
+                  <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
+                  <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
+               </ul>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span>, <span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span>, <span class="ident attribute" title="Records a horizontal adjustment to a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span>, <span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span>, <span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span>, <span class="ident attribute" title="Describes the line style of a line.">lform</span>, <span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span>, <span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span>, <span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span>, <span class="ident attribute" title="Width of a line.">lwidth</span>, <span class="ident attribute" title="">orient</span>, <span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span>, <span class="ident attribute" title="Records a timestamp adjustment of a feature's programmatically-determined location in terms of musical time; that is, beats.">to</span>, <span class="ident attribute" title="Records the vertical adjustment of a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span>, <span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span>, <span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span></div>
+               <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
+                  <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
+                        an
+                        ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element elsewhere in the document.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records a horizontal adjustment to a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature's programmatically-determined location
+                        in
+                        terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
+                        staff lines.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                        or
+                        the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                        maximum, respectively) provides a range between which a rendering system-supplied
+                        value
+                        may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                        and
+                        maximum values are equal.</span><span class="attributeValues">
+                        One or two values of datatype <span style="font-weight: 500;">
+                           a positive integer no smaller than 2</span>, separated by a space.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="">orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        Allowed values are:
+                        "<span style="font-weight: 500;">horiz</span>" <i>(Combination expressed horizontally, as for brass instruments.)</i>,  "<span style="font-weight: 500;">vert</span>" <i>(Combination expressed vertically, as for woodwind instruments or piano.)</i></span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the placement of the item with respect to the staff with which it is
+                        associated.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.html">data.STAFFREL</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records a timestamp adjustment of a feature's programmatically-determined location in terms of musical time; that is, beats.">to</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a timestamp adjustment of a feature's programmatically-determined location
+                        in
+                        terms of musical time; that is, beats.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the vertical adjustment of a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature's programmatically-determined location
+                        in
+                        terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
+                        staff lines.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
+                        necessary to record the placement of a feature in a facsimile image, use the facs
+                        attribute.</span><span class="attributeValues">
+                        Value is a decimal number.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
+                        necessary to record the placement of a feature in a facsimile image, use the facs
+                        attribute.</span><span class="attributeValues">
+                        Value is a decimal number.
+                        </span></div>
+               </div>
+               <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
+                  <div class="classBox direct" title="direct childs">
+                     <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="">orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                              Allowed values are:
+                              "<span style="font-weight: 500;">horiz</span>" <i>(Combination expressed horizontally, as for brass instruments.)</i>,  "<span style="font-weight: 500;">vert</span>" <i>(Combination expressed vertically, as for woodwind instruments or piano.)</i></span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="att.altSym">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altSym</a></label><span class="classDesc">(MEI.usersymbols) Attributes supplying pointers to user-defined symbols.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
+                              an
+                              ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element elsewhere in the document.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="att.extender">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extender.html">att.extender</a></label><span class="classDesc">(MEI.shared) Attributes that describe extension symbols, typically lines. Members
+                           of this class are also typically members of the att.lineRend class.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
+                        <div class="classBox" title="att.lineRend">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.lineRend</a></label><span class="classDesc">(MEI.shared) Attributes that record the visual rendition of lines.</span></div>
+                           <div class="classContent">
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
+                                    </span></div>
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
+                                    </span></div>
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
+                                    </span></div>
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
+                                    </span></div>
+                              <div class="classBox" title="att.lineRend.base">
+                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.lineRend.base</a></label><span class="classDesc">(MEI.shared) Attributes that record the basic visual rendition of lines.</span></div>
+                                 <div class="classContent">
+                                    <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                                          Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
+                                          </span></div>
+                                    <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                                          or
+                                          the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                                          maximum, respectively) provides a range between which a rendering system-supplied
+                                          value
+                                          may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                                          and
+                                          maximum values are equal.</span><span class="attributeValues">
+                                          One or two values of datatype <span style="font-weight: 500;">
+                                             a positive integer no smaller than 2</span>, separated by a space.
+                                          </span></div>
+                                    <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                                          Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
+                                          </span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="att.placement">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a></label><span class="classDesc">(MEI.shared) Attributes capturing placement information.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the placement of the item with respect to the staff with which it is
+                              associated.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.html">data.STAFFREL</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="att.visualOffset">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.html">att.visualOffset</a></label><span class="classDesc">(MEI.shared) Visual offset attributes. Some items may have their location recorded
+                           in terms of offsets from their programmatically-determined location. The ho attribute
+                           records the horizontal offset while vo records the vertical. The to attribute holds
+                           a timestamp offset, the most common use of which is as an alternative to the ho attribute.</span></div>
+                     <div class="classContent">
+                        <div class="classBox" title="att.visualOffset.ho">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualOffset.ho</a></label><span class="classDesc">(MEI.shared) Horizontal offset attributes.</span></div>
+                           <div class="classContent">
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records a horizontal adjustment to a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature's programmatically-determined location
+                                    in
+                                    terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
+                                    staff lines.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+                                    </span></div>
+                           </div>
+                        </div>
+                        <div class="classBox" title="att.visualOffset.to">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.to.html">att.visualOffset.to</a></label><span class="classDesc">(MEI.shared) Horizontal offset attributes specified in terms of time.</span></div>
+                           <div class="classContent">
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records a timestamp adjustment of a feature's programmatically-determined location in terms of musical time; that is, beats.">to</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a timestamp adjustment of a feature's programmatically-determined location
+                                    in
+                                    terms of musical time; that is, beats.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
+                                    </span></div>
+                           </div>
+                        </div>
+                        <div class="classBox" title="att.visualOffset.vo">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.vo.html">att.visualOffset.vo</a></label><span class="classDesc">(MEI.shared) Vertical offset attributes.</span></div>
+                           <div class="classContent">
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the vertical adjustment of a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature's programmatically-determined location
+                                    in
+                                    terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
+                                    staff lines.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+                                    </span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="att.xy">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a></label><span class="classDesc">(MEI.shared) Output coordinate attributes. Some elements may have their exact rendered
+                           *output* coordinates recorded. x and y attributes indicate where to place the rendered
+                           output. Recording the coordinates of a feature in a facsimile requires the use of
+                           the facs attribute.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
+                              necessary to record the placement of a feature in a facsimile image, use the facs
+                              attribute.</span><span class="attributeValues">
+                              Value is a decimal number.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
+                              necessary to record the placement of a feature in a facsimile image, use the facs
+                              attribute.</span><span class="attributeValues">
+                              Value is a decimal number.
+                              </span></div>
+                     </div>
+                  </div>
+               </div>
+               <div id="attributes_tabbedContent_module" class="facetTabbedContent module">
+                  <div class="classBox" title="MEI.shared">
+                     <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the presence of an extension symbol, typically a line.">extender</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the presence of an extension symbol, typically a line.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records a horizontal adjustment to a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">ho</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a horizontal adjustment to a feature's programmatically-determined location
+                              in
+                              terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
+                              staff lines.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Symbol rendered at end of line.">lendsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at end of line.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the relative size of the line-end symbol.">lendsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-end symbol.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the line style of a line.">lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the line style of a line.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the number of segments into which a dashed or dotted line may be divided, or the number of &#34;peaks&#34; of a wavy line; a pair of space-separated values (minimum and maximum, respectively) provides a range between which a rendering system-supplied value may fall, while a single value indicates a fixed amount of space; that is, the minimum and maximum values are equal.">lsegs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the number of segments into which a dashed or dotted line may be divided,
+                              or
+                              the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
+                              maximum, respectively) provides a range between which a rendering system-supplied
+                              value
+                              may fall, while a single value indicates a fixed amount of space; that is, the minimum
+                              and
+                              maximum values are equal.</span><span class="attributeValues">
+                              One or two values of datatype <span style="font-weight: 500;">
+                                 a positive integer no smaller than 2</span>, separated by a space.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Symbol rendered at start of line.">lstartsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Symbol rendered at start of line.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the relative size of the line-start symbol.">lstartsym.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the relative size of the line-start symbol.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Width of a line.">lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Width of a line.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures the placement of the item with respect to the staff with which it is associated.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the placement of the item with respect to the staff with which it is
+                              associated.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.html">data.STAFFREL</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records a timestamp adjustment of a feature's programmatically-determined location in terms of musical time; that is, beats.">to</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a timestamp adjustment of a feature's programmatically-determined location
+                              in
+                              terms of musical time; that is, beats.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the vertical adjustment of a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature's programmatically-determined location
+                              in
+                              terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
+                              staff lines.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
+                              necessary to record the placement of a feature in a facsimile image, use the facs
+                              attribute.</span><span class="attributeValues">
+                              Value is a decimal number.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
+                              necessary to record the placement of a feature in a facsimile image, use the facs
+                              attribute.</span><span class="attributeValues">
+                              Value is a decimal number.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="MEI.usersymbols">
+                     <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc">User-defined symbols component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
+                              an
+                              ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element elsewhere in the document.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="MEI.visual">
+                     <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="">orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                              Allowed values are:
+                              "<span style="font-weight: 500;">horiz</span>" <i>(Combination expressed horizontally, as for brass instruments.)</i>,  "<span style="font-weight: 500;">vert</span>" <i>(Combination expressed vertically, as for woodwind instruments or piano.)</i></span></div>
+                     </div>
+                  </div>
                </div>
             </div>
-         </td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2">
-            <div class="attributeDef"><span class="attribute"><strong>@altsym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
-                  an
-                  ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element elsewhere in the document.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altSym</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@extender</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the presence of an extension symbol, typically a line.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extender.html">att.extender</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@ho</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a horizontal adjustment to a feature's programmatically-determined location
-                  in
-                  terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                  staff lines.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.ho.html">att.visualOffset.ho</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@lendsym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Symbol rendered at end of line.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.lineRend</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@lendsym.size</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds the relative size of the line-end symbol.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.lineRend</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@lform</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the line style of a line.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.lineRend.base</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@lsegs</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Describes the number of segments into which a dashed or dotted line may be divided,
-                  or
-                  the number of "peaks" of a wavy line; a pair of space-separated values (minimum and
-                  maximum, respectively) provides a range between which a rendering system-supplied
-                  value
-                  may fall, while a single value indicates a fixed amount of space; that is, the minimum
-                  and
-                  maximum values are equal.</span>
-               One or two values of datatype <span style="font-weight: 500;">
-                  a positive integer no smaller than 2</span>, separated by a space.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.lineRend.base</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@lstartsym</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Symbol rendered at start of line.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linestartendsymbol.html">data.LINESTARTENDSYMBOL</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.lineRend</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@lstartsym.size</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Holds the relative size of the line-start symbol.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsizescale.html">data.FONTSIZESCALE</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.html">att.lineRend</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@lwidth</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Width of a line.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.linerend.base.html">att.lineRend.base</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@orient</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc"></span>
-               Allowed values are:
-               "<span style="font-weight: 500;">horiz</span>" <i>(Combination expressed horizontally, as for brass instruments.)</i>,  "<span style="font-weight: 500;">vert</span>" <i>(Combination expressed vertically, as for woodwind instruments or piano.)</i><span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.finggrp.vis.html">att.fingGrp.vis</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@place</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Captures the placement of the item with respect to the staff with which it is
-                  associated.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.html">data.STAFFREL</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@to</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a timestamp adjustment of a feature's programmatically-determined location
-                  in
-                  terms of musical time; that is, beats.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.to.html">att.visualOffset.to</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@vo</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the vertical adjustment of a feature's programmatically-determined location
-                  in
-                  terms of staff interline distance; that is, in units of 1/2 the distance between adjacent
-                  staff lines.</span>
-               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.vo.html">att.visualOffset.vo</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@x</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes an x coordinate for a feature in an output coordinate system. When it is
-                  necessary to record the placement of a feature in a facsimile image, use the facs
-                  attribute.</span>
-               Value is a decimal number.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a></span></div>
-            <div class="attributeDef"><span class="attribute"><strong>@y</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Encodes a y coordinate for a feature in an output coordinate system. When it is
-                  necessary to record the placement of a feature in a facsimile image, use the facs
-                  attribute.</span>
-               Value is a decimal number.
-               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a></span></div>
-         </td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Declaration</strong></td>
-         <td class="wovenodd-col2">
-            <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classes&gt;</span>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altSym</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extender.html">att.extender</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.html">att.visualOffset</a>"</span></span>/&gt;</span></div>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;memberOf
-                           <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a>"</span></span>/&gt;</span></div>
-                     <span data-indentation="1" class="element">&lt;/classes&gt;</span></div></code></div>
-            <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                  <div class="indent1 indent"><span data-indentation="1" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"orient"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                     
-                     <div class="indent2 indent"><span data-indentation="2" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+         </div>
+         <div class="facet availableAt" id="availableAt">
+            <div class="label">Available at</div>
+            <div class="statement classes list">
+               <ul class="tab">
+                  <li class="tab-item"><a data-display="compact" id="availableAt_compact_tab" href="#availableAt" class="displayTab active">compact</a></li>
+                  <li class="tab-item"><a data-display="class" id="availableAt_class_tab" href="#availableAt" class="displayTab">by class</a></li>
+                  <li class="tab-item"><a data-display="module" id="availableAt_module_tab" href="#availableAt" class="displayTab">by module</a></li>
+               </ul>
+               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(finger group)– A group of individual fingers in a fingering indication."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/finggrp.html">fingGrp</a></span></div>
+               <div id="availableAt_tabbedContent_class" class="facetTabbedContent class">
+                  <div class="classBox" title="att.fingGrp.vis">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.finggrp.vis.html">att.fingGrp.vis</a></label><span class="classDesc"></span></div>
+                     <div class="classContent">
+                        <div class="elementRef" data-module="MEI.fingering"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/finggrp.html">fingGrp</a><span class="elementDesc">(finger group)– A group of individual fingers in a fingering indication.</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div id="availableAt_tabbedContent_module" class="facetTabbedContent module">
+                  <div class="classBox" title="MEI.fingering">
+                     <div class="classHeading"><label class="classLabel">MEI.fingering</label><span class="classDesc"></span></div>
+                     <div class="classContent">
+                        <div class="elementRef" data-module="MEI.fingering"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/finggrp.html">fingGrp</a><span class="elementDesc">(finger group)– A group of individual fingers in a fingering indication.</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="facet declaration">
+            <div class="label">Declaration</div>
+            <div class="statement declaration">
+               <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"att.fingGrp.vis"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.visual"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"horiz"</span>&gt;</span>
-                           
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Combination expressed horizontally, as for brass instruments.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Visual domain attributes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"vert"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                            
-                           <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Combination expressed vertically, as for woodwind instruments or piano.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                           <span data-indentation="3" class="element">&lt;/valItem&gt;</span></div>
-                        <span data-indentation="2" class="element">&lt;/valList&gt;</span></div>
-                     <span data-indentation="1" class="element">&lt;/attDef&gt;</span></div></code></div>
-         </td>
-      </tr>
-   </table>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.altsym.html">att.altSym</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extender.html">att.extender</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset.html">att.visualOffset</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.xy.html">att.xy</a>"</span></span>/&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"orient"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"horiz"</span>&gt;</span>
+                                    
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>Combination expressed horizontally, as for brass instruments.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                    <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"vert"</span>&gt;</span>
+                                    
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>Combination expressed vertically, as for woodwind instruments or piano.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                    <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/valList&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
+                        <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+            </div>
+         </div>
+      </div><script type="text/javascript">
+            
+            var tabbedFacets = document.querySelectorAll('.facet ul.tab');
+            
+            var tabClick = function(e) {
+                var style = e.target.getAttribute('data-display');
+                var facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                setTabs(facetId,style)
+            }
+            
+            for(var facetUl of tabbedFacets) {
+                var facetElem = facetUl.parentNode.parentNode;
+                var facetId = facetElem.id;
+                var storageName = 'meiSpecs_' + facetId + '_display';
+                var defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                
+                if(localStorage.getItem(storageName) === null) {
+                    setTabs(facetElem.id,defaultValue);
+                } else {
+                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                }
+                
+                var tabs = facetUl.querySelectorAll('.tab-item a');
+                
+                for(var tab of tabs) {
+                    tab.addEventListener('click',tabClick);
+                }
+                
+            }
+            
+            function setTabs(facetId,style) {
+                
+                var storageName = 'meiSpecs_' + facetId + '_display';
+                localStorage.setItem(storageName,style);
+                
+                var facetElem = document.getElementById(facetId);
+                
+                var oldTab = facetElem.querySelector('.displayTab.active');
+                oldTab.classList.remove('active');
+                
+                var newTab = document.getElementById(facetId + '_' + style + '_tab');
+                newTab.classList.add('active');
+                
+                var oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                oldBox.classList.remove('active');
+                oldBox.style.display = 'none';
+                
+                var newBox = document.getElementById(facetId + '_tabbedContent_' + style);
+                newBox.classList.add('active');
+                newBox.style.display = 'block';
+                
+            }
+        </script></div>
 </div>

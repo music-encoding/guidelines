@@ -1,1 +1,3 @@
-Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values pan to the right, negative ones to the left. 0% is centered.
+Sets the instrument's position in a stereo field. MIDI values of 0 and 1 both pan
+          left, 127 or 128 pans right, and 63 or 64 pans to the center. Positve percentage values
+          pan to the right, negative ones to the left. 0% is centered.

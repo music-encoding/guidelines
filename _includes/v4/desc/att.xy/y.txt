@@ -1,1 +1,3 @@
-Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.
+Encodes a y coordinate for a feature in an output coordinate system. When it is
+          necessary to record the placement of a feature in a facsimile image, use the facs
+          attribute.

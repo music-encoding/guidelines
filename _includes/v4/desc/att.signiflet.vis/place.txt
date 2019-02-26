@@ -1,1 +1,2 @@
-Captures the placement of the sequence of characters with respect to the neume or neume component with which it is associated.
+Captures the placement of the sequence of characters with respect to the neume or
+          neume component with which it is associated.

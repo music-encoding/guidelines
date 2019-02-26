@@ -4,34 +4,130 @@ sidebar: s1
 version: "v4"
 title: "model.choicePart"
 ---
-<div class="classSpec model">
-   <h3 id="model.choicePart">model.choicePart</h3>
-   <table class="wovenodd">
-      <tr>
-         <td colspan="2" class="wovenodd-col2">Groups elements that may appear as part of the content of a choice element.</td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Module</strong></td>
-         <td class="wovenodd-col2">MEI.edittrans</td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Available in</strong></td>
-         <td class="wovenodd-col2">
-            <div class="parent">
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a></div>
-            </div>
-         </td>
-      </tr>
-      <tr>
-         <td class="wovenodd-col1"><strong>Members</strong></td>
-         <td class="wovenodd-col2">
-            <div class="parent">
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a> (direct members of model.choicePart)
+<div class="specPage">
+   <div class="modelClassSpec">
+      <h3 id="model.choicePart">model.choicePart</h3>
+      <div class="specs">
+         <div class="desc">Groups elements that may appear as part of the content of a choice element.</div>
+         <div class="facet module">
+            <div class="label">Module</div>
+            <div class="statement text">MEI.edittrans</div>
+         </div>
+         <div class="facet containedBy" id="containedBy">
+            <div class="label">Contained by</div>
+            <div class="statement classes list">
+               <ul class="tab">
+                  <li class="tab-item"><a data-display="compact" id="containedBy_compact_tab" href="#containedBy" class="displayTab active">compact</a></li>
+                  <li class="tab-item"><a data-display="class" id="containedBy_class_tab" href="#containedBy" class="displayTab">by class</a></li>
+                  <li class="tab-item"><a data-display="module" id="containedBy_module_tab" href="#containedBy" class="displayTab">by module</a></li>
+               </ul>
+               <div id="containedBy_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a></span></div>
+               <div id="containedBy_tabbedContent_class" class="facetTabbedContent class">
+                  <div class="classBox" title="model.choicePart">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.choicepart.html">model.choicePart</a></label><span class="classDesc">(MEI.edittrans) Groups elements that may appear as part of the content of a choice
+                           element.</span></div>
+                     <div class="classContent">
+                        <div class="elementDef def"><span class="ident element" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a></span><span class="elementDesc desc">Groups elements that may appear as part of the content of a choice element.</span></div>
+                     </div>
+                  </div>
                </div>
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/attacca.html">attacca</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/beam.html">beam</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/gracegrp.html">graceGrp</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/measure.html">measure</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/olayer.html">oLayer</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ostaff.html">oStaff</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/tuplet.html">tuplet</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/lem.html">lem</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/rdg.html">rdg</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/stagedir.html">stageDir</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/abbr.html">abbr</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/add.html">add</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/choice.html">choice</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/corr.html">corr</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/cpmark.html">cpMark</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/damage.html">damage</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/del.html">del</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/expan.html">expan</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/metamark.html">metaMark</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/orig.html">orig</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/reg.html">reg</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/restore.html">restore</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/sic.html">sic</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/subst.html">subst</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/supplied.html">supplied</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/unclear.html">unclear</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/td.html">td</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/th.html">th</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/fing.html">fing</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/finggrp.html">fingGrp</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/f.html">f</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/fb.html">fb</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/harm.html">harm</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/contentitem.html">contentItem</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ligature.html">ligature</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/addname.html">addName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/bloc.html">bloc</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/corpname.html">corpName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/country.html">country</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/district.html">district</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/famname.html">famName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/forename.html">foreName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/genname.html">genName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/geogfeat.html">geogFeat</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/geogname.html">geogName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/namelink.html">nameLink</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/periodname.html">periodName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/persname.html">persName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/postbox.html">postBox</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/postcode.html">postCode</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/region.html">region</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/rolename.html">roleName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/settlement.html">settlement</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/street.html">street</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/stylename.html">styleName</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/nc.html">nc</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ncgrp.html">ncGrp</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/neume.html">neume</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/signiflet.html">signifLet</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/syllable.html">syllable</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/addrline.html">addrLine</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/annot.html">annot</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/caption.html">caption</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/chord.html">chord</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/desc.html">desc</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/dir.html">dir</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/dynam.html">dynam</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ending.html">ending</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/head.html">head</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/identifier.html">identifier</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/label.html">label</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/labelabbr.html">labelAbbr</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/layer.html">layer</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/name.html">name</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/note.html">note</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/num.html">num</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/ornam.html">ornam</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/part.html">part</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/pgfoot.html">pgFoot</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/pgfoot2.html">pgFoot2</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/pghead.html">pgHead</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/pghead2.html">pgHead2</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/rend.html">rend</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/rest.html">rest</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/score.html">score</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/section.html">section</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/speaker.html">speaker</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/staff.html">staff</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/syl.html">syl</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/tempo.html">tempo</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/title.html">title</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/titlepart.html">titlePart</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/l.html">l</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/li.html">li</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/seg.html">seg</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/anchoredtext.html">anchoredText</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editlike.html">model.editLike</a>)</span></div>
-               <div><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/abbr.html">abbr</a>, <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/expan.html">expan</a><span> (via <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editoriallike.html">model.editorialLike</a>)</span></div>
+               <div id="containedBy_tabbedContent_module" class="facetTabbedContent module">
+                  <div class="classBox" title="MEI.edittrans">
+                     <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc">Editorial and transcriptional component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a><span class="elementDesc">Groups a number of alternative encodings for the same point in a text.</span></div>
+                     </div>
+                  </div>
+               </div>
             </div>
-         </td>
-      </tr>
-   </table>
+         </div>
+         <div class="facet members" id="members">
+            <div class="label">Members</div>
+            <div class="statement classes list">
+               <ul class="tab">
+                  <li class="tab-item"><a data-display="compact" id="members_compact_tab" href="#members" class="displayTab active">compact</a></li>
+                  <li class="tab-item"><a data-display="module" id="members_module_tab" href="#members" class="displayTab">by module</a></li>
+               </ul>
+               <div id="members_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a></span>, <span class="ident element" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a></span>, <span class="ident element" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a></span>, <span class="ident element" title="Contains apparently incorrect or inaccurate material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a></span>, <span class="ident element" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span></div>
+               <div id="members_tabbedContent_module" class="facetTabbedContent module">
+                  <div class="classBox" title="MEI.edittrans">
+                     <div class="classHeading"><label class="classLabel">MEI.edittrans</label><span class="classDesc">Editorial and transcriptional component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a><span class="elementDesc">(correction) – Contains the correct form of an apparent erroneous passage.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a><span class="elementDesc">(original) – Contains material which is marked as following the original, rather than
+                              being normalized or corrected.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a><span class="elementDesc">(regularization) – Contains material which has been regularized or normalized in some
+                              sense.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a><span class="elementDesc">Contains apparently incorrect or inaccurate material.</span></div>
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a><span class="elementDesc">Contains material that cannot be transcribed with certainty because it is illegible
+                              or
+                              inaudible in the source.</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="facet declaration">
+            <div class="label">Declaration</div>
+            <div class="statement declaration">
+               <div class="code" xml:space="preserve" data-lang="ODD"><code>
+                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.choicePart"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.edittrans"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span>&gt;</span>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Groups elements that may appear as part of the content of a choice element.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
+            </div>
+         </div>
+      </div><script type="text/javascript">
+            
+            var tabbedFacets = document.querySelectorAll('.facet ul.tab');
+            
+            var tabClick = function(e) {
+                var style = e.target.getAttribute('data-display');
+                var facetId = e.target.parentNode.parentNode.parentNode.parentNode.id;
+                setTabs(facetId,style)
+            }
+            
+            for(var facetUl of tabbedFacets) {
+                var facetElem = facetUl.parentNode.parentNode;
+                var facetId = facetElem.id;
+                var storageName = 'meiSpecs_' + facetId + '_display';
+                var defaultValue = facetUl.children[0].children[0].getAttribute('data-display');
+                
+                if(localStorage.getItem(storageName) === null) {
+                    setTabs(facetElem.id,defaultValue);
+                } else {
+                    setTabs(facetElem.id,localStorage.getItem(storageName));
+                }
+                
+                var tabs = facetUl.querySelectorAll('.tab-item a');
+                
+                for(var tab of tabs) {
+                    tab.addEventListener('click',tabClick);
+                }
+                
+            }
+            
+            function setTabs(facetId,style) {
+                
+                var storageName = 'meiSpecs_' + facetId + '_display';
+                localStorage.setItem(storageName,style);
+                
+                var facetElem = document.getElementById(facetId);
+                
+                var oldTab = facetElem.querySelector('.displayTab.active');
+                oldTab.classList.remove('active');
+                
+                var newTab = document.getElementById(facetId + '_' + style + '_tab');
+                newTab.classList.add('active');
+                
+                var oldBox = facetElem.querySelector('.active.facetTabbedContent');
+                oldBox.classList.remove('active');
+                oldBox.style.display = 'none';
+                
+                var newBox = document.getElementById(facetId + '_tabbedContent_' + style);
+                newBox.classList.add('active');
+                newBox.style.display = 'block';
+                
+            }
+        </script></div>
 </div>

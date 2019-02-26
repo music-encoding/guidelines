@@ -1,1 +1,2 @@
-Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.
+Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part],
+          as expressed in the written time signature.

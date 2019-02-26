@@ -1,1 +1,2 @@
-Captures the visual rendition and function of the hairpin; that is, whether it indicates an increase or a decrease in volume.
+Captures the visual rendition and function of the hairpin; that is, whether it
+          indicates an increase or a decrease in volume.

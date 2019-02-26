@@ -6,7 +6,13 @@ are encouraged.
 
 ## Contributing
 
-If you wish to contribute changes to the Guidelines, you can edit the files directly on GitHub. The text of the Guidelines is written in a dialect of [Markdown](https://kramdown.gettalong.org/quickref.html). To contribute, find the file you wish to change in this repository and click the 'edit' button in the top right. You will be able to change the text online. Once finished, you can commit your changes, which will then alert the editors of the Guidelines that you wish to have your contribution accepted. The editors will review your changes and, if acceptable, will accept your changes into the Guidelines.
+If you wish to contribute changes to the Guidelines, you can edit the files directly on GitHub. The text of the Guidelines is written in a dialect of [Markdown](https://kramdown.gettalong.org/quickref.html).
+
+In the guidelines you will see links to "Edit this section". Clicking on this will open up an editor in GitHub, where you will be able to click on the 'pencil' to edit the text of the section. When you are finished, you can then "Propose a file change," where you can write a brief summary of your changes and their motivations, and then "Create a Pull Request," which will alert the MEI Technical Team of your proposed change. If there are any questions or problems with your suggested change, a discussion can happen on the Pull Request, and then it will be merged into the Guidelines.
+
+In some cases you will see special markup that will create automatic links between the documentation and the Elements list, or pull in sample snippets of XML. If you need help with this Markdown, the Technical Team will be happy to help.
+
+For complex contributions, you may wish to get the documentation running on your local machine, and submit a larger Pull Request. This will be explained in the next section.
 
 ## Editing the Guidelines locally
 

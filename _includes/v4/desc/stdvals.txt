@@ -1,1 +1,2 @@
-(standard values) – Specifies the format used when standardized date or number values are supplied.
+(standard values) – Specifies the format used when standardized date or number values are
+      supplied.

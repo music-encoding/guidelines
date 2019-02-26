@@ -1,1 +1,3 @@
-Contains a string that uniquely identifies an item, such as those constructed by combining groups of characters transcribed from specified pages of a printed item or a file's checksum.
+Contains a string that uniquely identifies an item, such as those constructed by combining
+      groups of characters transcribed from specified pages of a printed item or a file's
+      checksum.

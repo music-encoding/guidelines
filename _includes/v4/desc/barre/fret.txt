@@ -1,1 +1,3 @@
-Records the location at which the strings should be stopped against a fret in a fretboard diagram. This may or may not be the same as the actual location on the fretboard of the instrument in performance.
+Records the location at which the strings should be stopped against a fret in a
+          fretboard diagram. This may or may not be the same as the actual location on the fretboard
+          of the instrument in performance.

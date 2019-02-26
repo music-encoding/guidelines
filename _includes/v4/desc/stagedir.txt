@@ -1,1 +1,2 @@
-(stage direction) – Contains any kind of stage direction within a dramatic text or fragment.
+(stage direction) – Contains any kind of stage direction within a dramatic text or
+      fragment.

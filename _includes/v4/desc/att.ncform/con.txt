@@ -1,1 +1,2 @@
-Connection to the previous component within the same neume; this attribute should not be used for the first component of a neume.
+Connection to the previous component within the same neume; this attribute should not
+          be used for the first component of a neume.

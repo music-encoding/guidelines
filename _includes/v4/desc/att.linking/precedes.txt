@@ -1,1 +1,2 @@
-Points to one or more events in a user-defined collection that are known to be successors of the current element.
+Points to one or more events in a user-defined collection that are known to be
+          successors of the current element.

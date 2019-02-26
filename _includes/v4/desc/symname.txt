@@ -1,1 +1,2 @@
-(symbol name) – Contains the name of a symbol, expressed following Unicode conventions.
+(symbol name) – Contains the name of a symbol, expressed following Unicode
+      conventions.
