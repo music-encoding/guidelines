@@ -42,7 +42,32 @@ title: "att.visualoffset2"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@endho</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the horizontal adjustment of a feature's programmatically-determined end
+                  point.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.ho.html">att.visualoffset2.ho</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@endto</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a timestamp adjustment of a feature's programmatically-determined end
+                  point.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.to.html">att.visualoffset2.to</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@endvo</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a vertical adjustment of a feature's programmatically-determined end
+                  point.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.vo.html">att.visualoffset2.vo</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@startho</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records the horizontal adjustment of a feature's programmatically-determined start
+                  point.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.ho.html">att.visualoffset2.ho</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@startto</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a timestamp adjustment of a feature's programmatically-determined start
+                  point.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.to.html">att.visualoffset2.to</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@startvo</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records a vertical adjustment of a feature's programmatically-determined start
+                  point.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementrel.html">data.MEASUREMENTREL</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visualoffset2.vo.html">att.visualoffset2.vo</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

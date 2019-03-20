@@ -1,2 +1,0 @@
-Contains a specialized form of heading or label, giving the name of one or more speakers
-in a dramatic text or fragment.

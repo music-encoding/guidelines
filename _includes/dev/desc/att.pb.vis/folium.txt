@@ -1,2 +1,0 @@
-States the side of a leaf (as in a manuscript) on which the content following the
- element occurs.

@@ -29,7 +29,12 @@ title: "att.canonical"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@codedval</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">a value that represents or identifies the element content. May serve as a primary
+                  key in a web-accessible database identified by the authURI attribute.</span>
+               One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.canonical.html">att.canonical</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

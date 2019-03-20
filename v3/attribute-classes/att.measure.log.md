@@ -37,7 +37,27 @@ title: "att.measure.log"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@control</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates whether or not a bar line is "controlling"; that is, if it indicates a
+                  point of alignment across all the parts. Bar lines within a score are usually
+                  controlling; that is, they "line up". Bar lines within parts may or may not be
+                  controlling. When applied to &lt;measure&gt;, this attribute indicates the nature of the
+                  right barline but not the left.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterconformance.bar.html">att.meterconformance.bar</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@left</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the visual rendition of the left bar line. It is present here only for
+                  facilitation of translation from legacy encodings which use it. Usually, it can be
+                  safely ignored.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barrendition.html">data.BARRENDITION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.measure.log.html">att.measure.log</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@metcon</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the relationship between the content of a measure and the prevailing
+                  meter.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.meterconformance.bar.html">att.meterconformance.bar</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@right</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the function of the right bar line and is structurally important.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barrendition.html">data.BARRENDITION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.measure.log.html">att.measure.log</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

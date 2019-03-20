@@ -2,7 +2,7 @@
 title: MEI Guidelines
 email: info@music-encoding.org
 baseurl: "/guidelines" 
-url: "http://guidelines.music-encoding.org"
+url: "https://music-encoding.org/guidelines"
 style_baseurl: "https://music-encoding.github.io"
 #style_baseurl: "http://localhost:4001"
 twitter_username: music-encoding
@@ -28,18 +28,25 @@ menu:
       label: 'Guidelines versions'
       url: ''
       submenu:
-          - id: dev
-            url: 'dev'
+          #- id: dev
+            #url: 'dev'
+          - id: v4
+            url: 'v4'
           - id: v3
             url: 'v3'
 
 versions:
+    current: "v4"
+    editable: "v4"
+    # names
     dev: "development version"
-    current: "v3"
     v3: "3.0.0"
+    v4: "4.0.0"
 
 collections:
-  guidelines-dev:
+  #guidelines-dev:
+    #output: false
+  guidelines-v4:
     output: false
   guidelines-v3:
     output: false
@@ -62,3 +69,6 @@ sidebar:
           - id: datatypes
             label: 'Data Types'
             url: 'data-types.html'
+          - id: datatypes
+            label: 'Macro Groups'
+            url: 'macro-groups.html'

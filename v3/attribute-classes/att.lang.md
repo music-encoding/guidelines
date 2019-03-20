@@ -25,7 +25,21 @@ title: "att.lang"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@translit</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Specifies the transliteration technique used.
+                  
+                  <!--There is no standard list of transliteration schemes.-->
+                  </span>
+               Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@xml:lang</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Identifies the language of the element's content. The values for this attribute are
+                  language 'tags' as defined in BCP 47. All language tags that make use of private use
+                  sub-tags must be documented in a corresponding language element in the MEI header
+                  whose
+                  id attribute is the same as the language tag's value.</span>
+               Value of datatype <span style="font-weight: 500;">language</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lang.html">att.lang</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

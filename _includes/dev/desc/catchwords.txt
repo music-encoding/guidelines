@@ -1,2 +1,0 @@
-Describes the system used to ensure correct ordering of the quires making up an item,
-typically by means of annotations at the foot of the page.

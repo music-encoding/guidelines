@@ -24,7 +24,14 @@ title: "att.lineloc"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@line</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the line upon which a feature stands. The value must be in the range
+                  between 1 and the number of lines on the staff. The numbering of lines starts with
+                  the
+                  lowest line of the staff.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.clefline.html">data.CLEFLINE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lineloc.html">att.lineloc</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

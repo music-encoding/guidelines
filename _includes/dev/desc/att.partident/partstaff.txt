@@ -1,2 +1,0 @@
-Signifies the part staff on which a notated feature occurs. Use '%all' when the
-feature should occur on every staff.

@@ -1,0 +1,3 @@
+Specifies the minimum amount of space between adjacent staves in the same system;
+          measured from the bottom line of the staff above to the top line of the staff
+          below.

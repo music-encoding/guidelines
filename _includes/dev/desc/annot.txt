@@ -1,3 +1,0 @@
-(annotation) – Provides a statement explaining the text or indicating the basis for
-an
-assertion.

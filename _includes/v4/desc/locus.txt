@@ -1,0 +1,2 @@
+Defines a location within a manuscript or manuscript component, usually as a (possibly
+      discontinuous) sequence of folio references.

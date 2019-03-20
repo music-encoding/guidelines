@@ -25,7 +25,16 @@ title: "att.typed"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@subtype</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provide any sub-classification for the element, additional to that given by its type
+                  attribute.</span>
+               Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@type</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Characterizes the element in some sense, using any convenient classification scheme
+                  or typology.</span>
+               Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typed.html">att.typed</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

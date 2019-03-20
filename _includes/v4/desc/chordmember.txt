@@ -1,0 +1,1 @@
+An individual pitch in a chord defined by a chordDef element.

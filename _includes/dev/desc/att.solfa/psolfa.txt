@@ -1,3 +1,0 @@
-Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
-Do
-system.

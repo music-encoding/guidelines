@@ -1,2 +1,0 @@
-Attributes that provide information about a measure's conformance to the prevailing
-meter.

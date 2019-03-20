@@ -1,0 +1,2 @@
+Records horizontal alignment of the page header. Use multiple values to capture an
+          alternating pattern.

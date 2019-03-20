@@ -1,0 +1,3 @@
+Contains an indication of which staff a note or chord that logically belongs to the
+          current staff should be visually placed on; that is, the one above or the one
+          below.

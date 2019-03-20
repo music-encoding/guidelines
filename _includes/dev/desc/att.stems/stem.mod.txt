@@ -1,2 +1,0 @@
-Encodes any stem "modifiers"; that is, symbols rendered on the stem, such as tremolo
-or Sprechstimme indicators.

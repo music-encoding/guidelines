@@ -25,7 +25,11 @@ title: "att.extent"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@extent</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Indicates the extent of damage or omission.</span>
+               Value of datatype <span style="font-weight: 500;">string</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extent.html">att.extent</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

@@ -1,0 +1,13 @@
+<measure n="2">
+  <staff n="1">
+    <layer n="1">
+      <note accid.ges="s" dur="32" grace="unacc" oct="6" pname="c" stem.dir="up" xml:id="d1e414"/>
+      <note dur="2" oct="5" pname="b" stem.dir="down" xml:id="d1e432"/>
+      <beam>
+        <note dur="32" grace="unacc" oct="5" pname="a" stem.dir="up"/>
+        <note dur="32" grace="unacc" oct="5" pname="b" stem.dir="up"/>
+      </beam>
+    </layer>
+  </staff>
+  <trill ho="+1" place="above" staff="1" tstamp="1" tstamp2="2.5" vo="6.5"/>
+</measure>

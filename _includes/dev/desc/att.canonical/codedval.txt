@@ -1,3 +1,0 @@
-A value that represents or identifies other data. Often, it is a primary key in the
-database or a unique value in the coded list identified by the  or
- attributes.

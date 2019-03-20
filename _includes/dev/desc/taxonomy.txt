@@ -1,2 +1,0 @@
-Defines a typology either implicitly, by means of a bibliographic citation, or explicitly
-by a structured taxonomy.

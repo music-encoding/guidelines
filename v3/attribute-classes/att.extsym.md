@@ -59,7 +59,17 @@ title: "att.extsym"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@glyphname</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Glyph name.</span>
+               Value of datatype <span style="font-weight: 500;">string</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extsym</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@glyphnum</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B.
+                  SMuFL version 1.18 uses the range U+E000 - U+ECBF.</span>
+               Value of datatype <span style="font-weight: 500;">
+                  a string matching the following regular expression: "(#x|U\+)[A-F0-9]+"
+                  </span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extsym</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

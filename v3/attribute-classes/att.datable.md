@@ -26,7 +26,23 @@ title: "att.datable"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@enddate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains the end point of a date range in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@isodate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides the value of a textual date in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@notafter</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains an upper boundary for an uncertain date in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@notbefore</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains a lower boundary, in standard ISO form, for an uncertain date.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@startdate</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains the starting point of a date range in standard ISO form.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.datable.html">att.datable</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

@@ -26,7 +26,20 @@ title: "att.duration.default"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@dur.default</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Contains a default duration in those situations when the first note, rest, chord,
+                  etc. in a measure does not have a duration specified.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.default.html">att.duration.default</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@num.default</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Along with numbase.default, describes the default duration as a ratio. num.default
+                  is the first value in the ratio.</span>
+               Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.default.html">att.duration.default</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@numbase.default</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Along with num.default, describes the default duration as a ratio. numbase.default
+                  is the second value in the ratio.</span>
+               Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.default.html">att.duration.default</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

@@ -1,1 +1,0 @@
-Describes the relationship between the entity identified by the  element and the resource described in the parent element, i.e., ,  or .

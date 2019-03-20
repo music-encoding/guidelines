@@ -1,0 +1,3 @@
+Describes rotation applied to the basic notehead shape. A positive value rotates the
+          notehead in a counter-clockwise fashion, while negative values produce clockwise
+          rotation.

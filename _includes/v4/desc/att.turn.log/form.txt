@@ -1,0 +1,3 @@
+Records meaning; i.e., intended performance, of the turn. The altsym,
+            glyph.name, or glyph.num attributes may be used to specify the
+          appropriate symbol.

@@ -25,7 +25,21 @@ title: "att.midiinstrument"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@midi.instrname</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Provides a General MIDI label for the MIDI instrument.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midinames.html">data.MIDINAMES</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiinstrument</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.instrnum</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the MIDI instrument number.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiinstrument</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.pan</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the instrument's position in a stereo field. Values of 0 and 1 both pan left,
+                  127 pans right, and 64 pans to the center.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiinstrument</a></span></div>
+            <div class="attributeDef"><span class="attribute"><strong>@midi.volume</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Sets the instrument's volume.</span>
+               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.midiinstrument.html">att.midiinstrument</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>

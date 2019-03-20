@@ -2,21 +2,16 @@
 
   <div class="container">
     <div class="columns institutions">
-      <div class="column col-6 text-right">
+      <div class="column col-12 text-center">
         <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
           <img src="{{site.style_baseurl}}/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
-        </a>
-      </div>
-      <div class="column col-6">
-        <a class="institutionsLink" target="_blank" href="https://www.library.virginia.edu/">
-          <img src="{{site.style_baseurl}}/pix/uva-libraries-white.png" alt="University of Virginia Library" />
         </a>
       </div>
     </div>
   </div>
   <div class="text-center">
     <a class="footerLinks" href="{{site.style_baseurl}}/">Home</a> | <a class="footerLinks" href="mailto:{{site.email}}">Contact</a><br/>
-    <small>© {{site.title}} {{ "now" | date: "%Y" }}</small>
+    <small>© {{site.title}} {{ "now" | date: "%Y" }}</small><small>{% if page.version %} | {% include {{ page.version | append:'/build.txt' }} %}{% endif %}</small>
   </div>
-  
+
 </footer>

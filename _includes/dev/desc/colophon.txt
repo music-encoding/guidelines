@@ -1,2 +1,0 @@
-Contains a statement providing information regarding the date, place, agency, or reason
-for production of the item.

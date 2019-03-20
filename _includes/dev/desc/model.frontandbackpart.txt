@@ -1,3 +1,0 @@
-Groups elements that may appear as part of auxiliary material preceding or following
-the
-text proper.

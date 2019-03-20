@@ -1,2 +1,0 @@
-Indicates the nature of the evidence supporting the reliability or accuracy of the
-intervention or interpretation.

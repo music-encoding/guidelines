@@ -1,0 +1,2 @@
+(binding) – Contains a description of one binding, i.e. type of covering, boards, etc.
+      applied to an item.

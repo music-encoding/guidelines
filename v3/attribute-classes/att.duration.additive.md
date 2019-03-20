@@ -43,7 +43,16 @@ title: "att.duration.additive"
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Attributes</strong></td>
-         <td class="wovenodd-col2"></td>
+         <td class="wovenodd-col2">
+            <div class="attributeDef"><span class="attribute"><strong>@dur</strong></span><span class="attributeUsage">(optional)</span><span class="attributeDesc">Records duration using optionally dotted, relative durational values provided by the
+                  data.DURATION datatype. When the duration is "irrational", as is sometimes the case
+                  with
+                  tuplets, multiple space-separated values that add up to the total duration may be
+                  used.
+                  When dotted values are present, the dots attribute must be ignored.</span>
+               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.additive.html">data.DURATION.additive</a>, separated by spaces.
+               <span class="attributeClasses"><a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.additive.html">att.duration.additive</a></span></div>
+         </td>
       </tr>
       <tr>
          <td class="wovenodd-col1"><strong>Declaration</strong></td>
