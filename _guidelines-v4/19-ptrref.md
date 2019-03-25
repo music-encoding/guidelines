@@ -6,4 +6,6 @@ title: "Pointers and References"
 sectionid: "ptrRef"
 ---
 
+{% include version-warning %}
+
 This chapter describes the use of elements for linking and referencing.
