@@ -6,6 +6,8 @@ title: "Functional Requirements for Bibliographic Records (FRBR)"
 sectionid: "FRBR"
 ---
 
+{% include version-warning %}
+
 MEI header information may refer to different levels of description of the encoded work: Some information may apply the work in all its various forms and realizations, e.g., the name of its composer. Other information may describe a certain version of the work, or a source such as the printed first edition, or only a single copy of that source. Core MEI limits the header information to two such levels of description: work and source, respectively.
 
 However, when the FRBR module is available more detailed descriptions are possible. With certain limitations, mainly due to the musical nature of the works encoded in MEI, the FRBR module adapts the Functional Requirements for Bibliographic Records (FRBR) as recommended by the International Federation of Library Associations and Institutions (IFLA) [[http://www.ifla.org/publications/functional-requirements-for-bibliographic-records](http://www.ifla.org/publications/functional-requirements-for-bibliographic-records){:.link_ref}].
