@@ -4,7 +4,7 @@ title: "PPQ in scoreDef and staffDef"
 version: "v4"
 ---
 
-To define the MIDI resolution of a score, the **@ppq** attribute may be used on the {% include link elem="scoreDef" %} element. This value can be used to interpret the values found in the **@dur.ges** attribute on elements in the {% include link att="att.duration.gestural" %} class.
+To define the MIDI resolution of a score, the **@ppq** attribute may be used on the {% include link elem="scoreDef" %} element. This value can be used to interpret the values found in the **@dur.ges** attribute on elements in the {% include link att="duration.gestural" %} class.
 
 {% include mei example="midiGuidelines/midiGuidelines-sample286.xml" valid="feasible" %}
 

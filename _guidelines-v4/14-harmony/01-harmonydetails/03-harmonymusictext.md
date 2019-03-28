@@ -25,4 +25,4 @@ The {% include link elem="harm" %} element must define a point of attachment usi
 
 The **@dur** attribute encodes the logical and visual duration of the harmony. Please note that the **@dur** attribute here is not a true duration, but rather a time stamp for the end point of the harmony.
 
-Precise placement of the harmonic label can be controlled through the use of attributes in the {% include link att="att.harm.vis" %} attribute class.
+Precise placement of the harmonic label can be controlled through the use of attributes in the {% include link att="harm.vis" %} attribute class.
