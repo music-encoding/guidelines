@@ -6,6 +6,4 @@ title: "Introduction"
 sectionid: "cmnintro"
 ---
 
-{% include version-warning %}
-
-This is a placeholder that needs to be filled.
+This chapter is supposed to frame the repertoire target by the module, i.e. what is Common Music Notation?

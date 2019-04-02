@@ -1,6 +1,6 @@
 ---
 sectionid: sharedTextualElements
-title: "Shared Textual Elements"
+title: "Basic Text Features"
 version: "v4"
 ---
 

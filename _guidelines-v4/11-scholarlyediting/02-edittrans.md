@@ -6,8 +6,6 @@ title: "Editorial Markup"
 sectionid: "editTrans"
 ---
 
-{% include version-warning %}
-
 It is often necessary to render an account of any changes made to a musical text during its creation (and any subsequent editing) and to accommodate editorial comment necessitated by an editorial process. The elements and attributes described in this chapter may be used to record such editorial interventions, whether made by the composer, the copyists of the manuscript, the editor of a earlier edition used as a copy text, or the current encoder/editor.
 
 The scope of the elements described herein is therefore the description of features relating to the genesis, later revision and editorial interpretation of a text. Mechanisms for describing multiple sources are described in chapter {% include link id="critApp" %} of these Guidelines.

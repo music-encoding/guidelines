@@ -6,6 +6,4 @@ title: "About these Guidelines"
 sectionid: "about"
 ---
 
-{% include version-warning %}
-
-This is a placeholder that needs to be filled.
+This chapter is supposed to introduce the purpose and use of these Guidelines. It will also hold a list of all authors.

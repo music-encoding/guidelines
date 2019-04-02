@@ -6,6 +6,4 @@ title: "Basic Concepts of MEI"
 sectionid: "basicConcepts"
 ---
 
-{% include version-warning %}
-
-This is a placeholder that needs to be filled.
+This chapter is intended to explain basic concepts of MEI, like events vs. controlevents.
