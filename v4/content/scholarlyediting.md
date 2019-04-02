@@ -1,8 +1,8 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Repertoire: Common Music Notation"
+title: "Scholarly Editing with MEI"
 version: "v4"
-section: "/04-cmn"
+section: "/11-scholarlyediting"
 ---
 {% include content.html version=page.version section=page.section %}

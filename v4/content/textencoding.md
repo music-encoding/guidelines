@@ -1,8 +1,8 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Repertoire: Common Music Notation"
+title: "Text Encoding"
 version: "v4"
-section: "/04-cmn"
+section: "/09-textencoding"
 ---
 {% include content.html version=page.version section=page.section %}

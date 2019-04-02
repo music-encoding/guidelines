@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Neume Notation"
+title: "Repertoire: Neume Notation"
 version: "v4"
 section: "/06-neumes"
 ---

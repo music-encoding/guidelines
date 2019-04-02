@@ -1,8 +1,8 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Tablature Notation"
+title: "Repertoire: String Tablature"
 version: "v4"
-section: "/20-tablature"
+section: "/07-tablature"
 ---
 {% include content.html version=page.version section=page.section %}
