@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Tablature Notation"
+title: "Repertoire: String Tablature"
 sectionid: "tablature"
 ---
 

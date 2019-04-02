@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Shared Elements, Models, and Attributes"
+title: "Shared Concepts in MEI"
 sectionid: "shared"
 ---
 
