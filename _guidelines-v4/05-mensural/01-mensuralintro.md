@@ -2,8 +2,8 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Analysis Markup and Harmonies"
-sectionid: "analysisHarm"
+title: "Introduction"
+sectionid: "mensuralintro"
 ---
 
 {% include version-warning %}

@@ -2,8 +2,8 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Linking Data"
-sectionid: "linkingData"
+title: "Scholarly Editing with MEI"
+sectionid: "scholarlyediting"
 ---
 
 {% include version-warning %}

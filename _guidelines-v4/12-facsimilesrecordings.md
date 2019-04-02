@@ -3,7 +3,7 @@ layout: sidebar
 sidebar: s1
 version: "v4"
 title: "Facsimiles and Recordings"
-sectionid: "facsimilesRecordings"
+sectionid: "facsimilesrecordings"
 ---
 
 {% include version-warning %}

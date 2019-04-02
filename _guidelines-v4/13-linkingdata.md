@@ -2,8 +2,8 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Lyrics and Performance Directions"
-sectionid: "lyricsPerfDir"
+title: "Linking Data"
+sectionid: "linkingdata"
 ---
 
 {% include version-warning %}

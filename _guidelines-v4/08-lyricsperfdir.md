@@ -2,8 +2,8 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Introduction"
-sectionid: "mensuralIntro"
+title: "Lyrics and Performance Directions"
+sectionid: "lyricsperfdir"
 ---
 
 {% include version-warning %}

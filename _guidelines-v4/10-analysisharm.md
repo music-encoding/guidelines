@@ -2,8 +2,8 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Scholarly Editing with MEI"
-sectionid: "scholarlyEditing"
+title: "Analysis Markup and Harmonies"
+sectionid: "analysisharm"
 ---
 
 {% include version-warning %}
