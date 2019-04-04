@@ -1,8 +1,8 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Repertoire: Common Music Notation"
+title: "Integrating MEI with other Standards and Formats"
 version: "v4"
-section: "/04-cmn"
+section: "/14-integration"
 ---
 {% include content.html version=page.version section=page.section %}

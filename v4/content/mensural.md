@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Mensural Notation"
+title: "Repertoire: Mensural Notation"
 version: "v4"
 section: "/05-mensural"
 ---

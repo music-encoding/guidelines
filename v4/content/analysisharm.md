@@ -1,8 +1,8 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Repertoire: Common Music Notation"
+title: "Analysis Markup and Harmonies"
 version: "v4"
-section: "/04-cmn"
+section: "/10-analysisharm"
 ---
 {% include content.html version=page.version section=page.section %}

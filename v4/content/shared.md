@@ -1,8 +1,8 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Shared Elements, Models, and Attributes"
+title: "Shared Concepts in MEI"
 version: "v4"
-section: "/01-shared"
+section: "/02-shared"
 ---
 {% include content.html version=page.version section=page.section %}
