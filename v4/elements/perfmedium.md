@@ -11,7 +11,7 @@ title: "perfMedium"
          <div class="desc">(performance medium) – Indicates the number and character of the performing forces
             used in
             a musical composition.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkMedium">2.3.7 Performance Medium</a>,<a class="chapterLink" href="/guidelines/v4/content/frbr.html#FRBRentities">3.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkMedium">3.1.3.7 Performance Medium</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

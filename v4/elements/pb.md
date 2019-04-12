@@ -10,7 +10,7 @@ title: "pb"
       <div class="specs">
          <div class="desc">(page beginning) – An empty formatting element that forces text to begin on a new
             page.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/facsimiles.html#facsimileElements">12.1 Elements of the Facsimile Module</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

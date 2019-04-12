@@ -11,7 +11,7 @@ title: "abbr"
          <div class="desc">(abbreviation) – A generic element for 1) a shortened form of a word, including an
             acronym
             or 2) a shorthand notation.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransAbbrev">11.1 Abbreviations</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittranscpMark">11.1.1  Instructions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransAbbrev">11.2.1 Abbreviations</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittranscpMark">11.2.1.1  Instructions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

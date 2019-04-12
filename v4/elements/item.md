@@ -9,7 +9,7 @@ title: "item"
       <h3 id="item">&lt;item&gt;</h3>
       <div class="specs">
          <div class="desc">Single instance or exemplar of a source/manifestation.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRentities">3.1 FRBR Entities in MEI</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textLists">21.3 Lists</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textLists">9.1.3 Lists</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

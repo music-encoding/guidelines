@@ -9,7 +9,7 @@ title: "att.harmonicFunction"
       <h3 id="att.harmonicFunction">att.harmonicFunction</h3>
       <div class="specs">
          <div class="desc">Attributes describing the harmonic function of a single pitch.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysis.html#analysisSpecificAttrs">7.2 Event-Specific Analytical Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/analysis.html#analysisScaleDegrees">7.2.4 Scale Degrees</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#analysisSpecificAttrs">10.1.2 Event-Specific Analytical Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#analysisScaleDegrees">10.1.2.4 Scale Degrees</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "att.chordDef.log"
       <h3 id="att.chordDef.log">att.chordDef.log</h3>
       <div class="specs">
          <div class="desc">Logical domain attributes.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/harmony.html#harmonyMetadataInscoreDef">14.1.1 Interpreted Chord Data in scoreDef</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#harmonyMetadataInscoreDef">10.2.1.1 Interpreted Chord Data in scoreDef</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

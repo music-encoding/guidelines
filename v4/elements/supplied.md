@@ -9,7 +9,7 @@ title: "supplied"
       <h3 id="supplied">&lt;supplied&gt;</h3>
       <div class="specs">
          <div class="desc">Contains material supplied by the transcriber or editor for any reason.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/neumes.html#neumesSuppliedNotes">6.4.3 Supplied Notes</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransErrors">11.2 Apparent Errors</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransOmission">11.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransAddDel">11.4.2 Additions and Deletions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/neumes.html#neumesSuppliedNotes">6.4.3 Supplied Notes</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransErrors">11.2.2 Apparent Errors</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransOmission">11.2.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDel">11.2.4.2 Additions and Deletions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

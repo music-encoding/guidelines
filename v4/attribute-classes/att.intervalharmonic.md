@@ -9,7 +9,7 @@ title: "att.intervalHarmonic"
       <h3 id="att.intervalHarmonic">att.intervalHarmonic</h3>
       <div class="specs">
          <div class="desc">Attributes that describe harmonic intervals.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysis.html#analysisSpecificAttrs">7.2 Event-Specific Analytical Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/analysis.html#analysisHarmonicIntervals">7.2.3 Harmonic Intervals</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#analysisSpecificAttrs">10.1.2 Event-Specific Analytical Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#analysisHarmonicIntervals">10.1.2.3 Harmonic Intervals</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

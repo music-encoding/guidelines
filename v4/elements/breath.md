@@ -10,7 +10,7 @@ title: "breath"
       <div class="specs">
          <div class="desc">(breath mark) – An indication of a point at which the performer on an instrument requiring
             breath (including the voice) may breathe.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBreath">4.2.6.1 Breath Marks</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBreath">4.3.6.1 Breath Marks</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

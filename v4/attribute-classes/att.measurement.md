@@ -9,7 +9,7 @@ title: "att.measurement"
       <h3 id="att.measurement">att.measurement</h3>
       <div class="specs">
          <div class="desc">Attributes that record the unit of measurement in which a value is expressed.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedNumbers">1.3.4.2 Numbers</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedNumbers">8.1.4.2 Numbers</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

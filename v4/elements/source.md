@@ -10,7 +10,7 @@ title: "source"
       <div class="specs">
          <div class="desc">A bibliographic description of a source used in the creation of the electronic
             file.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerMinimalRecommendedHeader">2.6 Minimal and Recommended Header Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRentities">3.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.6 Minimal and Recommended Header Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

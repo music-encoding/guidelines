@@ -9,7 +9,7 @@ title: "imprint"
       <h3 id="imprint">&lt;imprint&gt;</h3>
       <div class="specs">
          <div class="desc">Information relating to the publication or distribution of a bibliographic item.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

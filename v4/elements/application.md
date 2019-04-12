@@ -10,7 +10,7 @@ title: "application"
       <div class="specs">
          <div class="desc">Provides information about an application which has acted upon the current
             document.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerApplicationInformation">2.2.1 Application Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerApplicationInformation">2.2.1 Application Information</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerApplicationInformation">3.1.2.1 Application Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerApplicationInformation">3.1.2.1 Application Information</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "identifier"
       <h3 id="identifier">&lt;identifier&gt;</h3>
       <div class="specs">
          <div class="desc">An alpha-numeric string that establishes the identity of the described material.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerPublicationDistribution">2.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSeriesStatement">2.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkIdentification">2.3.1 Work Identification</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkIdentification">3.1.3.1 Work Identification</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

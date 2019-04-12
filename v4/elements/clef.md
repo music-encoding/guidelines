@@ -11,7 +11,7 @@ title: "clef"
          <div class="desc">Indication of the exact location of a particular note on the staff and, therefore,
             the
             other notes as well.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">1.2.1 Score and Parts</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedOtherEvents">1.2.4 Other events</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedKeySignaturesAndClefs">1.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkIncipit">2.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.1.2 Defining Score Parameters for CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsPositioning">22.3.3 Positioning</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedOtherEvents">2.2.4 Other events</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedKeySignaturesAndClefs">2.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsPositioning">2.4.3.3 Positioning</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

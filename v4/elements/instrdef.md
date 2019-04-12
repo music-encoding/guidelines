@@ -9,7 +9,7 @@ title: "instrDef"
       <h3 id="instrDef">&lt;instrDef&gt;</h3>
       <div class="specs">
          <div class="desc">(instrument definition) – MIDI instrument declaration.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/midiguidelines.html#midiInstruments">16.2 Recording General MIDI Instrumentation</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/integration.html#midiInstruments">14.5.2 Recording General MIDI Instrumentation</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

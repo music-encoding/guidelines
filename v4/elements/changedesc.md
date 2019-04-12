@@ -9,7 +9,7 @@ title: "changeDesc"
       <h3 id="changeDesc">&lt;changeDesc&gt;</h3>
       <div class="specs">
          <div class="desc">(change description) – Description of a revision of the MEI file.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedParagraphs">1.3.1 Paragraphs</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerRevisionDescription">2.5 Revision Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerRevisionDescription">3.1.5 Revision Description</a>,<a class="chapterLink" href="/guidelines/v4/content/lyricsperfdir.html#sharedParagraphs">8.1.1 Paragraphs</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

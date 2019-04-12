@@ -9,7 +9,7 @@ title: "graphic"
       <h3 id="graphic">&lt;graphic&gt;</h3>
       <div class="specs">
          <div class="desc">Indicates the location of an inline graphic.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkIncipit">2.3.2 Incipits</a>,<a class="chapterLink" href="/guidelines/v4/content/facsimiles.html#facsimileElements">12.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableFigures">13.1 Figures</a>,<a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableImages">13.1.2 Images</a>,<a class="chapterLink" href="/guidelines/v4/content/ptrref.html#ptrRefDifference">19.1.1 Difference between Pointers and References</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableFigures">9.2.1 Figures</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableImages">9.2.1.2 Images</a>,<a class="chapterLink" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/v4/content/linkingdata.html#ptrRefDifference">13.1.1.1 Difference between Pointers and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

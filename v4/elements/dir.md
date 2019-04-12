@@ -15,7 +15,7 @@ title: "dir"
             staves, but not on the staff — that is not encoded elsewhere in more specific elements,
             like
             <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dynam.html">dynam</a>.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedTextDirectives">1.2.5.1 Text Directives</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDir">4.2.8 Directions and Rehearsal marks</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2 Elements Without Semantic Implications</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsGraphicalRendition">22.2.3 Defining a Specific Graphical Rendition for a Semantic Element</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedTextDirectives">2.2.5.1 Text Directives</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsSemanticImplications">2.4.2.2 Elements Without Semantic Implications</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsGraphicalRendition">2.4.2.3 Defining a Specific Graphical Rendition for a Semantic Element</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDir">4.3.8 Directions and Rehearsal marks</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

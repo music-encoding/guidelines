@@ -10,7 +10,7 @@ title: "meterSigGrp"
       <div class="specs">
          <div class="desc">(meter signature group) – Used to capture alternating, interchanging, and mixed meter
             signatures.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.1.2 Defining Score Parameters for CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "tie"
       <div class="specs">
          <div class="desc">An indication that two notes of the same pitch form a single note with their combined
             rhythmic values.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnSlurTies">4.2.2 Ties, Slurs and Phrase Marks</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

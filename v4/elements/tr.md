@@ -11,7 +11,7 @@ title: "tr"
          <div class="desc">(table row) – A formatting element that contains one or more cells (intersection of
             a row
             and a column) in a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/table.html">table</a>.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/figtable.html#&#34;figTable&#34;">13 Figures and Tables</a>,<a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableTableRows">13.2.1 Rows</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/textencoding.html#&#34;figTable&#34;">9.2 Figures and Tables</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableTableRows">9.2.2.1 Rows</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

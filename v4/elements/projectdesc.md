@@ -12,7 +12,7 @@ title: "projectDesc"
             which
             the electronic file was encoded, funding agencies, etc. together with any other relevant
             information concerning the process by which it was assembled or collected.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerEncodingDescription">2.2 Encoding Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerProjectDescription">2.2.3 Project Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerProjectDescription">3.1.2.3 Project Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

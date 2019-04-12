@@ -10,7 +10,7 @@ title: "gliss"
       <div class="specs">
          <div class="desc">(glissando) – A continuous or sliding movement from one pitch to another, usually
             indicated by a straight or wavy line.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.2.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnArpegGliss">4.2.5.1 Arpeggio and Glissando</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2 Elements Without Semantic Implications</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsSemanticImplications">2.4.2.2 Elements Without Semantic Implications</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnArpegGliss">4.3.5.1 Arpeggio and Glissando</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

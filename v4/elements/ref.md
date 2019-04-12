@@ -11,7 +11,7 @@ title: "ref"
          <div class="desc">(reference) – Defines a traversible reference to another location. May contain text
             and
             sub-elements that describe the destination.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/ptrref.html#ptrrefModule">19.1 Links</a>,<a class="chapterLink" href="/guidelines/v4/content/ptrref.html#ptrRefDifference">19.1.1 Difference between Pointers and References</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/linkingdata.html#ptrrefModule">13.1.1 Links</a>,<a class="chapterLink" href="/guidelines/v4/content/linkingdata.html#ptrRefDifference">13.1.1.1 Difference between Pointers and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

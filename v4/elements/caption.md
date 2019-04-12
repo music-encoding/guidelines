@@ -9,7 +9,7 @@ title: "caption"
       <h3 id="caption">&lt;caption&gt;</h3>
       <div class="specs">
          <div class="desc">A label which accompanies an illustration or a table.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableCaptionsDescriptions">13.1.1 Figure Captions and Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

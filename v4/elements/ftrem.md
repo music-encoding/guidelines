@@ -10,7 +10,7 @@ title: "fTrem"
       <div class="specs">
          <div class="desc">(fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
             between a note and a chord) that are (usually) farther apart than a major second.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.2.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTrem">4.2.5.3 Tremolandi</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

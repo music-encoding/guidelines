@@ -16,7 +16,7 @@ title: "edition"
             either the same publisher/distributor or another publisher/distributor (e.g. large
             print
             edition, British edition, etc.).
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerEditionstmt">2.1.2 Edition Statement</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerEditionstmt">3.1.1.2 Edition Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

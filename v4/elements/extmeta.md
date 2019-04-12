@@ -9,7 +9,7 @@ title: "extMeta"
       <h3 id="extMeta">&lt;extMeta&gt;</h3>
       <div class="specs">
          <div class="desc">(extended metadata) – Provides a container element for non-MEI metadata formats.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#&#34;header&#34;">2 The MEI Header</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerExtendedMetadata">2.4 Other Metadata</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerExtendedMetadata">3.1.4 Other Metadata</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

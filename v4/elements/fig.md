@@ -11,7 +11,7 @@ title: "fig"
          <div class="desc">(figure) – Groups elements representing or containing graphic information such as
             an
             illustration or figure.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableFigures">13.1 Figures</a>,<a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableCaptionsDescriptions">13.1.1 Figure Captions and Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableFigures">9.2.1 Figures</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

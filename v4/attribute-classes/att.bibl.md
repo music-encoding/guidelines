@@ -9,7 +9,7 @@ title: "att.bibl"
       <h3 id="att.bibl">att.bibl</h3>
       <div class="specs">
          <div class="desc">Bibliographic attributes.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerBiblAnalog">2.8 Header Elements and their Relationship to Other Bibliographic Standards</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerBiblAnalog">3.1.8 Header Elements and their Relationship to Other Bibliographic Standards</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

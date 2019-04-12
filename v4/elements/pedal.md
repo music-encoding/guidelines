@@ -9,7 +9,7 @@ title: "pedal"
       <h3 id="pedal">&lt;pedal&gt;</h3>
       <div class="specs">
          <div class="desc">Piano pedal mark.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnPedal">4.2.6.3 Piano Pedal</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnPedal">4.3.6.3 Piano Pedal</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

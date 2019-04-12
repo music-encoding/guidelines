@@ -13,7 +13,7 @@ title: "work"
             specifically its history, language use, and high-level musical attributes (e.g., key,
             tempo,
             meter, medium of performance, and intended duration).
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkDescription">2.3 Work Description</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkRelationships">2.3.13 Work Relationships</a>,<a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRentities">3.1 FRBR Entities in MEI</a>,<a class="chapterLink" href="/guidelines/v4/content/frbr.html#FRBRcomponents">3.2 Component Parts in FRBR</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkRelationships">3.1.3.13 Work Relationships</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRcomponents">3.2.2 Component Parts in FRBR</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

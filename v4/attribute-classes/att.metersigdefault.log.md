@@ -10,7 +10,7 @@ title: "att.meterSigDefault.log"
       <div class="specs">
          <div class="desc">Used by staffDef and scoreDef to provide default values for attributes in the logical
             domain related to meter signature.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.1.2 Defining Score Parameters for CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

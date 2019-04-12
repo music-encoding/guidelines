@@ -11,7 +11,7 @@ title: "relatedItem"
          <div class="desc">(related item) – Contains or references another bibliographic item which is related
             to the
             present one.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedRelatedItemDesc">1.3.7 Related Items</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedRelatedItemDesc">1.3.7 Related Items</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerRelatedItemVsFRBR">2.9 RelatedItem vs. FRBR</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerRelatedItemVsFRBR">3.1.9 RelatedItem vs. FRBR</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a>,<a class="chapterLink" href="/guidelines/v4/content/lyricsperfdir.html#sharedRelatedItemDesc">8.1.7 Related Items</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedRelatedItemDesc">8.1.7 Related Items</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

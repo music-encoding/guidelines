@@ -11,7 +11,7 @@ title: "periodName"
          <div class="desc">(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
             Style
             period'.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/namesdates.html#&#34;namesDates&#34;">17 Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesPeriodNames">17.2.3 Time Period Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/textencoding.html#&#34;namesDates&#34;">9.3 Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesPeriodNames">9.3.2.3 Time Period Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "artic"
       <h3 id="artic">&lt;artic&gt;</h3>
       <div class="specs">
          <div class="desc">(articulation) – An indication of how to play a note or chord.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedAccidentalsArticulations">1.2.4.3 Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnArtic">4.2.5 Articulation and Performance Instructions in CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedAccidentalsArticulations">2.2.4.3 Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

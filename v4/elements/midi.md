@@ -9,7 +9,7 @@ title: "midi"
       <h3 id="midi">&lt;midi&gt;</h3>
       <div class="specs">
          <div class="desc">Container for elements that contain information useful when generating MIDI output.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/midiguidelines.html#midiData">16.3 Recording MIDI Event Data</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/integration.html#midiData">14.5.3 Recording MIDI Event Data</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

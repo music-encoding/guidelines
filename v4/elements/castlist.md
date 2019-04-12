@@ -9,7 +9,7 @@ title: "castList"
       <h3 id="castList">&lt;castList&gt;</h3>
       <div class="specs">
          <div class="desc">Contains a single cast list or dramatis personae.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkMedium">2.3.7 Performance Medium</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkCast">2.3.7.1 Cast Lists</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkMedium">3.1.3.7 Performance Medium</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkCast">3.1.3.7.1 Cast Lists</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "rend"
       <div class="specs">
          <div class="desc">(render) – A formatting element indicating special visual rendering, e.g., bold or
             italicized, of a text word or phrase.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedTextRendition">1.3.2 Text Rendition</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDir">4.2.8 Directions and Rehearsal marks</a>,<a class="chapterLink" href="/guidelines/v4/content/text.html#textTitlePages">21.6.2 Title Pages</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDir">4.3.8 Directions and Rehearsal marks</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedTextRendition">8.1.2 Text Rendition</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#textTitlePages">9.1.6.2 Title Pages</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

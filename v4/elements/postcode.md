@@ -10,7 +10,7 @@ title: "postCode"
       <div class="specs">
          <div class="desc">(postal code) contains a numerical or alphanumeric code used as part of a postal address
             to simplify sorting or delivery of mail.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesGeogNames">17.2.2 Geographic Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesGeogNames">9.3.2.2 Geographic Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

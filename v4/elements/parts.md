@@ -9,7 +9,7 @@ title: "parts"
       <h3 id="parts">&lt;parts&gt;</h3>
       <div class="specs">
          <div class="desc">Provides a container for performers' parts.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">1.2.1 Score and Parts</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "harm"
       <div class="specs">
          <div class="desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
             analysis, figured bass.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/harmony.html#harmonyMetadataInscoreDef">14.1.1 Interpreted Chord Data in scoreDef</a>,<a class="chapterLink" href="/guidelines/v4/content/harmony.html#harmonyMusicText">14.1.3 Indications of Harmony in the Music Text</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#harmonyMetadataInscoreDef">10.2.1.1 Interpreted Chord Data in scoreDef</a>,<a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#harmonyMusicText">10.2.1.3 Indications of Harmony in the Music Text</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

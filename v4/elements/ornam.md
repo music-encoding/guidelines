@@ -9,7 +9,7 @@ title: "ornam"
       <h3 id="ornam">&lt;ornam&gt;</h3>
       <div class="specs">
          <div class="desc">An element indicating an ornament that is not a mordent, turn, or trill. 
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedOrnaments">1.2.5.5 Ornaments</a>,<a class="chapterLink" href="/guidelines/v4/content/cmnornaments.html#cmnOrnamentsOther">8.5 Other Ornaments</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedOrnaments">2.2.5.5 Ornaments</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOrnamentsOther">4.4.5 Other Ornaments</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

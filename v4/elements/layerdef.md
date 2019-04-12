@@ -9,7 +9,7 @@ title: "layerDef"
       <h3 id="layerDef">&lt;layerDef&gt;</h3>
       <div class="specs">
          <div class="desc">(layer definition) – Container for layer meta-information.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">1.2.1 Score and Parts</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnMeasures">4.1.1 The Role of the Measure Element</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.1.2 Defining Score Parameters for CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBeams">4.2.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/critapp.html#critAppInDefs">10.3 Variants in Score Definitions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnMeasures">4.2.1 The Role of the Measure Element</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBeams">4.3.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#critAppInDefs">11.1.3 Variants in Score Definitions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

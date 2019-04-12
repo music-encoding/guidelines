@@ -11,7 +11,7 @@ title: "funder"
          <div class="desc">Names of individuals, institutions, or organizations responsible for funding. Funders
             provide financial support for a project; they are distinct from sponsors, who provide
             intellectual support and authority.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerTitleStatement">2.1.1 Title Statement</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

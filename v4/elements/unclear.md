@@ -11,7 +11,7 @@ title: "unclear"
          <div class="desc">Contains material that cannot be transcribed with certainty because it is illegible
             or
             inaudible in the source.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#&#34;editTrans&#34;">11 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#edittransAddDelOmissions">11.4 Additions, Deletions, and Omissions</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransOmission">11.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#&#34;editTrans&#34;">11.2 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransOmission">11.2.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

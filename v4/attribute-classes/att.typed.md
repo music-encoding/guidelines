@@ -9,7 +9,7 @@ title: "att.typed"
       <h3 id="att.typed">att.typed</h3>
       <div class="specs">
          <div class="desc">Attributes which can be used to classify features.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDivisionsBody">1.1.2.2 Divisions of the Body</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDivisionsBody">2.1.2.2 Divisions of the Body</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

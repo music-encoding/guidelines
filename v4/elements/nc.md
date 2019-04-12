@@ -10,7 +10,7 @@ title: "nc"
       <div class="specs">
          <div class="desc">Sign representing a single pitched event, although the exact pitch may not be
             known.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/neumes.html#neumesOverview">6.1 Overview of the Neumes Module</a>,<a class="chapterLink" href="/guidelines/v4/content/neumes.html#neumesNotation">6.3 Neume Notation</a>,<a class="chapterLink" href="/guidelines/v4/content/analysis.html#analysisSolmization">7.2.6 Solmization</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/neumes.html#neumesOverview">6.1 Overview of the Neumes Module</a>,<a class="chapterLink" href="/guidelines/v4/content/neumes.html#neumesNotation">6.3 Neume Notation</a>,<a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#analysisSolmization">10.1.2.6 Solmization</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

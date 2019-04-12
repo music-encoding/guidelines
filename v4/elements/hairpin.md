@@ -11,7 +11,7 @@ title: "hairpin"
          <div class="desc">Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
             &lt;
             and &gt;.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDynam">4.2.3 Dynamics in CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDynam">4.3.3 Dynamics in CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

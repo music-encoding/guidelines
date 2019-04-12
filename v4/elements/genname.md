@@ -10,7 +10,7 @@ title: "genName"
       <div class="specs">
          <div class="desc">(generational name component) – Contains a name component used to distinguish otherwise
             similar names on the basis of the relative ages or generations of the persons named.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesPersNames">17.2.4 Personal Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesPersNames">9.3.2.4 Personal Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

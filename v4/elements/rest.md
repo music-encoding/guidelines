@@ -9,7 +9,7 @@ title: "rest"
       <h3 id="rest">&lt;rest&gt;</h3>
       <div class="specs">
          <div class="desc">A non-sounding event found in the source being transcribed.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBasicEvents">1.2.3 Basic Music Events</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRests">4.1.4.2 Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.2.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnFermata">4.2.5.4 Fermata</a>,<a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralNotes">5.1 Note and Rest Values</a>,<a class="chapterLink" href="/guidelines/v4/content/linkalign.html#linkalignExamples">23.2 Linking and Alignment Examples</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRests">4.2.4.2 Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnFermata">4.3.5.4 Fermata</a>,<a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralNotes">5.2 Note and Rest Values</a>,<a class="chapterLink" href="/guidelines/v4/content/linkingdata.html#linkalignExamples">13.2.2 Linking and Alignment Examples</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

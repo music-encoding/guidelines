@@ -11,7 +11,7 @@ title: "styleName"
          <div class="desc">(style name) – A label for a characteristic style of writing or performance, such
             as
             'bebop' or 'rock-n-roll'.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/namesdates.html#&#34;namesDates&#34;">17 Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesStyleNames">17.2.5 Style Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/textencoding.html#&#34;namesDates&#34;">9.3 Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesStyleNames">9.3.2.5 Style Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

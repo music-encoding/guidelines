@@ -10,7 +10,7 @@ title: "reg"
       <div class="specs">
          <div class="desc">(regularization) – Contains material which has been regularized or normalized in some
             sense.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmnornaments.html#cmnOrnamentsTrillsSpecial">8.3.1 Special Cases</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#&#34;editTrans&#34;">11 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#edittransReg">11.3 Regularization and Normalization</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOrnamentsTrillsSpecial">4.4.3.1 Special Cases</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#&#34;editTrans&#34;">11.2 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransReg">11.2.3 Regularization and Normalization</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

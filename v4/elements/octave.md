@@ -11,7 +11,7 @@ title: "octave"
          <div class="desc">An indication that a passage should be performed one or more octaves above or below
             its
             written pitch.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.2.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOctave">4.2.5.5 Octave Shift</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOctave">4.3.5.5 Octave Shift</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

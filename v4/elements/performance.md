@@ -9,7 +9,7 @@ title: "performance"
       <h3 id="performance">&lt;performance&gt;</h3>
       <div class="specs">
          <div class="desc">A presentation of one or more musical works.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/performances.html#perfElements">18.1 Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

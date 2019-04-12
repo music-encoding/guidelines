@@ -10,7 +10,7 @@ title: "arpeg"
       <div class="specs">
          <div class="desc">(arpeggiation) – Indicates that the notes of a chord are to be performed successively
             rather than simultaneously, usually from lowest to highest. Sometimes called a "roll".
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.2.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnArpegGliss">4.2.5.1 Arpeggio and Glissando</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnArpegGliss">4.3.5.1 Arpeggio and Glissando</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

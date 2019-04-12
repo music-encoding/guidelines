@@ -10,7 +10,7 @@ title: "roleName"
       <div class="specs">
          <div class="desc">(role name) – Contains a name component which indicates that the referent has a particular
             role or position in society, such as an official title or rank.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesPersNames">17.2.4 Personal Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesPersNames">9.3.2.4 Personal Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

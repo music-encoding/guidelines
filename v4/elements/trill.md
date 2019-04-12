@@ -10,7 +10,7 @@ title: "trill"
       <div class="specs">
          <div class="desc">Rapid alternation of a note with another (usually at the interval of a second
             above).
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmnornaments.html#cmnOrnamentsTrills">8.3 Trills</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnOrnamentsTrills">4.4.3 Trills</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

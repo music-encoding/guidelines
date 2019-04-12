@@ -9,7 +9,7 @@ title: "incip"
       <h3 id="incip">&lt;incip&gt;</h3>
       <div class="specs">
          <div class="desc">(incipit) – The opening music and/or words of a musical or textual work.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkIncipit">2.3.2 Incipits</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

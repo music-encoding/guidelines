@@ -11,7 +11,7 @@ title: "music"
          <div class="desc">Contains a single musical text of any kind, whether unitary or composite, for example,
             an
             etude, opera, song cycle, symphony, or anthology of piano solos.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">1.1.1 Document Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMusicElement">1.1.2 Music Element</a>,<a class="chapterLink" href="/guidelines/v4/content/corpus.html#corpusModuleOverview">9.1 Corpus Module Overview</a>,<a class="chapterLink" href="/guidelines/v4/content/facsimiles.html#facsimileElements">12.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/v4/content/performances.html#perfElements">18.1 Overview</a>,<a class="chapterLink" href="/guidelines/v4/content/text.html#textProse">21.2 Paragraphs</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMusicElement">2.1.2 Music Element</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#corpusModuleOverview">3.4.1 Corpus Module Overview</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#textProse">9.1.2 Paragraphs</a>,<a class="chapterLink" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -57,7 +57,7 @@ title: "music"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                        "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.word.html">data.WORD</a>.
@@ -212,7 +212,7 @@ title: "music"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                      </div>
                   </div>
                   <div class="classBox" title="att.metadataPointing">
@@ -261,7 +261,7 @@ title: "music"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.word.html">data.WORD</a>.

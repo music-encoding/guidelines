@@ -9,7 +9,7 @@ title: "att.melodicFunction"
       <h3 id="att.melodicFunction">att.melodicFunction</h3>
       <div class="specs">
          <div class="desc">Attributes describing melodic function.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysis.html#analysisSpecificAttrs">7.2 Event-Specific Analytical Information</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#analysisSpecificAttrs">10.1.2 Event-Specific Analytical Information</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

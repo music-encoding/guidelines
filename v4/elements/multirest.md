@@ -10,7 +10,7 @@ title: "multiRest"
       <div class="specs">
          <div class="desc">(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
             found in performer parts.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnRests">4.1.4.2 Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRestsMultiRest">4.1.4.2.2 Multiple-Measure Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRepSym">4.2.9.2 Measure-Level Repetition Symbols</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnRests">4.2.4.2 Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRestsMultiRest">4.2.4.2.2 Multiple-Measure Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRepSym">4.3.9.2 Measure-Level Repetition Symbols</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

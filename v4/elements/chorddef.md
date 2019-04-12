@@ -9,7 +9,7 @@ title: "chordDef"
       <h3 id="chordDef">&lt;chordDef&gt;</h3>
       <div class="specs">
          <div class="desc">(chord definition) – Chord tablature definition.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/harmony.html#harmonyMetadataInscoreDef">14.1.1 Interpreted Chord Data in scoreDef</a>,<a class="chapterLink" href="/guidelines/v4/content/harmony.html#harmonyTablatureGrids">14.1.2 Chord Tablature Grids</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#harmonyMetadataInscoreDef">10.2.1.1 Interpreted Chord Data in scoreDef</a>,<a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#harmonyTablatureGrids">10.2.1.2 Chord Tablature Grids</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

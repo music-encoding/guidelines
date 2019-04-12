@@ -11,7 +11,7 @@ title: "head"
          <div class="desc">(heading) – Contains any heading, for example, the title of a section of text, or
             the
             heading of a list.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkInstrumentation">2.3.7.2 Instrumentation</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textDivisions">21.1 Organizing Text into Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textLists">21.3 Lists</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textPoetry">21.5 Poetry</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkInstrumentation">3.1.3.7.2 Instrumentation</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textDivisions">9.1.1 Organizing Text into Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textLists">9.1.3 Lists</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textPoetry">9.1.5 Poetry</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

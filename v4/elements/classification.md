@@ -9,7 +9,7 @@ title: "classification"
       <h3 id="classification">&lt;classification&gt;</h3>
       <div class="specs">
          <div class="desc">Groups information which describes the nature or topic of an entity.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkClass">2.3.12 Classification</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerMinimalRecommendedHeader">2.6 Minimal and Recommended Header Information</a>,<a class="chapterLink" href="/guidelines/v4/content/namesdates.html#namesdatesStyleNames">17.2.5 Style Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkClass">3.1.3.12 Classification</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.6 Minimal and Recommended Header Information</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#namesdatesStyleNames">9.3.2.5 Style Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

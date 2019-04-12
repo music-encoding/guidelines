@@ -10,7 +10,7 @@ title: "langUsage"
       <div class="specs">
          <div class="desc">(language usage) – Groups elements describing the languages, sub-languages, dialects,
             etc., represented within the encoded resource.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#headerNotesStatement">2.1.6 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkLanguage">2.3.6 Language Usage</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkLanguage">3.1.3.6 Language Usage</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -11,7 +11,7 @@ title: "quote"
          <div class="desc">(quoted material) – Contains a paragraph-like block of text attributed to an external
             source, normally set off from the surrounding text by spacing or other typographic
             distinction.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableCaptionsDescriptions">13.1.1 Figure Captions and Descriptions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textQuote">21.4 Quotation</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textTitlePages">21.6.2 Title Pages</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textQuote">9.1.4 Quotation</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textTitlePages">9.1.6.2 Title Pages</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

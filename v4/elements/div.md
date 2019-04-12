@@ -10,7 +10,7 @@ title: "div"
       <div class="specs">
          <div class="desc">(division) – Major structural division of text, such as a preface, chapter or
             section.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkHistory">2.3.5 Work History</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textDivisions">21.1 Organizing Text into Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textDivisions">21.1 Organizing Text into Divisions</a>,<a class="chapterLink" href="/guidelines/v4/content/text.html#textProse">21.2 Paragraphs</a>,<a class="chapterLink" href="/guidelines/v4/content/text.html#textFront">21.6.1 Front Matter</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkHistory">3.1.3.5 Work History</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textDivisions">9.1.1 Organizing Text into Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textDivisions">9.1.1 Organizing Text into Divisions</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#textProse">9.1.2 Paragraphs</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#textFront">9.1.6.1 Front Matter</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

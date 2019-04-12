@@ -9,7 +9,7 @@ title: "table"
       <h3 id="table">&lt;table&gt;</h3>
       <div class="specs">
          <div class="desc">Contains text displayed in tabular form.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableCaptionsDescriptions">13.1.1 Figure Captions and Descriptions</a>,<a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableTables">13.2 Tables</a>,<a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableTableRows">13.2.1 Rows</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textTitlePages">21.6.2 Title Pages</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textTitlePages">9.1.6.2 Title Pages</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableTables">9.2.2 Tables</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableTableRows">9.2.2.1 Rows</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

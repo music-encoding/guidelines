@@ -11,7 +11,7 @@ title: "beam"
          <div class="desc">A container for a series of explicitly beamed events that begins and ends entirely
             within
             a measure.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnBeams">4.2.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.2.4 Tuplets</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnBeams">4.3.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

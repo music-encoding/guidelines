@@ -9,7 +9,7 @@ title: "title"
       <h3 id="title">&lt;title&gt;</h3>
       <div class="specs">
          <div class="desc">Title of a bibliographic entity.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerTitleStatement">2.1.1 Title Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSeriesStatement">2.1.5 Series Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/namesdates.html#namesdatesBasic">17.1 Basic Elements for Names and Dates</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#namesdatesBasic">9.3.1 Basic Elements for Names and Dates</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "harpPedal"
       <h3 id="harpPedal">&lt;harpPedal&gt;</h3>
       <div class="specs">
          <div class="desc">(harp pedal) – Harp pedal diagram.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnHarp">4.2.6.2 Harp Pedals</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnHarp">4.3.6.2 Harp Pedals</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

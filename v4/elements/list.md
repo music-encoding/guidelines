@@ -10,7 +10,7 @@ title: "list"
       <div class="specs">
          <div class="desc">A formatting element that contains a series of items separated from one another and
             arranged in a linear, often vertical, sequence.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableCaptionsDescriptions">13.1.1 Figure Captions and Descriptions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textLists">21.3 Lists</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textLists">21.3 Lists</a>,<a class="chapterLink" href="/guidelines/v4/content/text.html#textFront">21.6.1 Front Matter</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textTitlePages">21.6.2 Title Pages</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textLists">9.1.3 Lists</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textLists">9.1.3 Lists</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#textFront">9.1.6.1 Front Matter</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textTitlePages">9.1.6.2 Title Pages</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

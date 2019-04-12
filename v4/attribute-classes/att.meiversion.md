@@ -9,7 +9,7 @@ title: "att.meiVersion"
       <h3 id="att.meiVersion">att.meiVersion</h3>
       <div class="specs">
          <div class="desc">Attributes that record the version of MEI in use.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">1.1.1 Document Elements</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -28,7 +28,7 @@ title: "att.meiVersion"
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                        "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox direct" title="direct childs">
@@ -36,7 +36,7 @@ title: "att.meiVersion"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                      </div>
                   </div>
                </div>
@@ -46,7 +46,7 @@ title: "att.meiVersion"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                      </div>
                   </div>
                </div>
@@ -123,13 +123,18 @@ title: "att.meiVersion"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Specifies a generic MEI version label.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;defaultVal&gt;</span>4.0.0<span data-indentation="4" class="element">&lt;/defaultVal&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;defaultVal&gt;</span>4.0.1<span data-indentation="4" class="element">&lt;/defaultVal&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"4.0.0"</span>&gt;</span>
                                     
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>This version of MEI.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>First release of MEI 4<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                    <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"4.0.1"</span>&gt;</span>
+                                    
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>Bugfix Release 4.0.1<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                     <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valList&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>

@@ -11,7 +11,7 @@ title: "samplingDecl"
          <div class="desc">(sampling declaration) – Contains a prose description of the rationale and methods
             used in
             sampling texts in the creation of a corpus or collection.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerEncodingDescription">2.2 Encoding Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSamplingDeclaration">2.2.4 Sampling Declaration</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSamplingDeclaration">3.1.2.4 Sampling Declaration</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

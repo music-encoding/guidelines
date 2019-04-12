@@ -11,7 +11,7 @@ title: "figDesc"
          <div class="desc">(figure description) – Contains a brief prose description of the appearance or content
             of
             a graphic figure, for use when documenting an image without displaying it.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/facsimiles.html#facsimileElements">12.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableCaptionsDescriptions">13.1.1 Figure Captions and Descriptions</a>,<a class="chapterLink" href="/guidelines/v4/content/text.html#textProse">21.2 Paragraphs</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/textencoding.html#textProse">9.1.2 Paragraphs</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a>,<a class="chapterLink" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

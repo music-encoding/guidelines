@@ -9,7 +9,7 @@ title: "change"
       <h3 id="change">&lt;change&gt;</h3>
       <div class="specs">
          <div class="desc">Individual change within the revision description.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerRevisionDescription">2.5 Revision Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerRevisionDescription">3.1.5 Revision Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

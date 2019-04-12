@@ -11,7 +11,7 @@ title: "appInfo"
          <div class="desc">(application information) – Groups information about applications which have acted
             upon
             the MEI file.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerEncodingDescription">2.2 Encoding Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

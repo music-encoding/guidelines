@@ -9,7 +9,7 @@ title: "keyAccid"
       <h3 id="keyAccid">&lt;keyAccid&gt;</h3>
       <div class="specs">
          <div class="desc">(key accidental) – Accidental in a key signature.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">1.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedKeySignaturesAndClefs">1.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.1.2 Defining Score Parameters for CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedKeySignaturesAndClefs">2.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

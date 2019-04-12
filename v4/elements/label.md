@@ -11,7 +11,7 @@ title: "label"
          <div class="desc">A container for document text that identifies the feature to which it is attached.
             For a
             "tool tip" or other generated label, use the <span class="att">label</span> attribute.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">1.2.1 Score and Parts</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkContents">2.3.9 Work Contents</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.1.2 Defining Score Parameters for CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkContents">3.1.3.9 Work Contents</a>,<a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

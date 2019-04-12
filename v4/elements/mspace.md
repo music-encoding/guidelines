@@ -9,7 +9,7 @@ title: "mSpace"
       <h3 id="mSpace">&lt;mSpace&gt;</h3>
       <div class="specs">
          <div class="desc">(measure space) – A measure containing only empty space in any meter.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnRests">4.1.4.2 Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRestsMSpace">4.1.4.2.3 Empty Measures</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittranscpMark">11.1.1  Instructions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnRests">4.2.4.2 Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRestsMSpace">4.2.4.2.3 Empty Measures</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittranscpMark">11.2.1.1  Instructions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
