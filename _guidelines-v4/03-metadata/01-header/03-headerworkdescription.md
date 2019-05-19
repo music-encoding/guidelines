@@ -4,11 +4,11 @@ title: "Work Description"
 version: "v4"
 ---
 
-The {% include link elem="workDesc" %} element is the third major subdivision of the MEI Header. It is an optional element, the purpose of which is to enable the recording of information characterizing various descriptive aspects of the abstract work.
+The {% include link elem="workList" %} element is the third major subdivision of the MEI Header. It is an optional element, the purpose of which is to enable the recording of information characterizing various descriptive aspects of the abstract work.
 
-{% include desc elem="workDesc" %}
+{% include desc elem="workList" %}
 
-Within {% include link elem="workDesc" %}, the {% include link elem="work" %} element is used to hold information for each resource being described.
+Within {% include link elem="workList" %}, the {% include link elem="work" %} element is used to hold information for each resource being described.
 
 {% include desc elem="work" %}
 

@@ -4,7 +4,7 @@ title: "Classification"
 version: "v4"
 ---
 
-The next component of the core {% include link elem="workDesc" %} element is the {% include link elem="classification" %} element. This element is used to classify a musical text according to one or more of the following methods:
+The next component of the core {% include link elem="workList" %} element is the {% include link elem="classification" %} element. This element is used to classify a musical text according to one or more of the following methods:
 
 - by reference to a recognized international classification scheme such as the Dewey Decimal Classification, the Universal Decimal Classification, the Colon Classification, the Library of Congress Classification, or any other system widely used in library and documentation work
 - by providing a set of keywords, as provided, for example, by British Library or Library of Congress Cataloguing in Publication data.
