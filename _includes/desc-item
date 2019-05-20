@@ -7,9 +7,9 @@
     <div class="tile-content">
         <div class="tile-title">
             {% if include.att %}
-                @{{ include.att | split: '/' | last }}
+                <a href="{{ site.baseurl }}/{{ include.version }}/attribute-classes/{{ include.att | split: '/' | first | downcase }}.html">@{{ include.att | split: '/' | last }}</a>
             {% else %}  
-                {{ include.elem }}
+                <a href="{{ site.baseurl }}/{{ include.version }}/elements/{{ include.elem | downcase }}.html">{{ include.elem }}</a>
             {% endif %}
         </div>
         <div class="tile-subtitle text-gray">
