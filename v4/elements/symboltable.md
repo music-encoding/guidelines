@@ -9,7 +9,7 @@ title: "symbolTable"
       <h3 id="symbolTable">&lt;symbolTable&gt;</h3>
       <div class="specs">
          <div class="desc">Contains a set of user-defined symbols.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/usersymbols.html#usersymbolsElements">22.1.1 Elements</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#usersymbolsElements">2.4.1.1 Elements</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

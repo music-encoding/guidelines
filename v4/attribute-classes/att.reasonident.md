@@ -9,7 +9,7 @@ title: "att.reasonIdent"
       <h3 id="att.reasonIdent">att.reasonIdent</h3>
       <div class="specs">
          <div class="desc">Attributes that identify the reason why an editorial feature is used.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#edittransAddDelOmissions">11.4 Additions, Deletions, and Omissions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

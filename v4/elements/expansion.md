@@ -10,7 +10,7 @@ title: "expansion"
       <div class="specs">
          <div class="desc">Indicates how a section may be programmatically expanded into its 'through-composed'
             form.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRepStruct">4.2.9.1 Structural Repetition</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransAbbrev">11.1 Abbreviations</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRepStruct">4.3.9.1 Structural Repetition</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransAbbrev">11.2.1 Abbreviations</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

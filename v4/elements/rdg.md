@@ -9,7 +9,7 @@ title: "rdg"
       <h3 id="rdg">&lt;rdg&gt;</h3>
       <div class="specs">
          <div class="desc">(reading) – Contains a single reading within a textual variation.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/critapp.html#critAppElements">10.1 General Usage</a>,<a class="chapterLink" href="/guidelines/v4/content/critapp.html#critAppInContent">10.2 Variants in Musical Content</a>,<a class="chapterLink" href="/guidelines/v4/content/critapp.html#critAppNesting">10.4 Nesting Apparati</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#critAppElements">11.1.1 General Usage</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#critAppInContent">11.1.2 Variants in Musical Content</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#critAppNesting">11.1.4 Nesting Apparati</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

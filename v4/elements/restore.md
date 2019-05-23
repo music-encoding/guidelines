@@ -11,7 +11,7 @@ title: "restore"
          <div class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
             or
             authorial marking or instruction.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransSubst">11.4.3 Substitutions, Restorations, and Handshifts</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "availability"
       <div class="specs">
          <div class="desc">Groups elements that describe the availability of and access to a bibliographic item,
             including an MEI-encoded document.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerPublicationDistribution">2.1.4 Publication, Distribution, etc.</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "meterSig"
       <h3 id="meterSig">&lt;meterSig&gt;</h3>
       <div class="specs">
          <div class="desc">(meter signature) – Written meter signature.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.1.2 Defining Score Parameters for CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "tupletSpan"
       <div class="specs">
          <div class="desc">(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
             that extend across bar lines.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.2.4 Tuplets</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

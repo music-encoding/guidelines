@@ -9,7 +9,7 @@ title: "expression"
       <h3 id="expression">&lt;expression&gt;</h3>
       <div class="specs">
          <div class="desc">Intellectual or artistic realization of a work.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRentities">3.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

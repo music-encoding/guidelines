@@ -9,7 +9,7 @@ title: "eventList"
       <h3 id="eventList">&lt;eventList&gt;</h3>
       <div class="specs">
          <div class="desc">Contains historical information given as a sequence of significant past events.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkHistory">2.3.5 Work History</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkHistory">3.1.3.5 Work History</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

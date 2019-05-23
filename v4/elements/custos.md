@@ -11,7 +11,7 @@ title: "custos"
          <div class="desc">Symbol placed at the end of a line of music to indicate the first note of the next
             line.
             Sometimes called a "direct".
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBarlines">1.2.4.2 Bar Lines and Custos Signs</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBarlines">2.2.4.2 Bar Lines and Custos Signs</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

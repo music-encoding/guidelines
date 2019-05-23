@@ -10,7 +10,7 @@ title: "lb"
       <div class="specs">
          <div class="desc">(line beginning) – An empty formatting element that forces text to begin on a new
             line.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/lyricsdesc.html#lyricsInEvents">15.2 Vocally Performed Text Encoded Within Notes</a>,<a class="chapterLink" href="/guidelines/v4/content/text.html#textTitlePages">21.6.2 Title Pages</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/lyricsperfdir.html#lyricsInEvents">8.2.2 Vocally Performed Text Encoded Within Notes</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#textTitlePages">9.1.6.2 Title Pages</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

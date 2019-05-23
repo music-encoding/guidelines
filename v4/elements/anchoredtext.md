@@ -11,7 +11,7 @@ title: "anchoredText"
          <div class="desc">Container for text that is fixed to a particular page location, regardless of changes
             made
             to the layout of the measures around it.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/usersymbols.html#usersymbolsElements">22.1.1 Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsModuleUses">22.2 Uses of the Usersymbols Module</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsSemanticImplications">22.2.2 Elements Without Semantic Implications</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#usersymbolsElements">2.4.1.1 Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsModuleUses">2.4.2 Uses of the Usersymbols Module</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsSemanticImplications">2.4.2.2 Elements Without Semantic Implications</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

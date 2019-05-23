@@ -11,7 +11,7 @@ title: "verse"
          <div class="desc">Division of a poem or song lyrics, sometimes having a fixed length, meter or rhyme
             scheme;
             a stanza.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/lyricsdesc.html#lyricsInEvents">15.2 Vocally Performed Text Encoded Within Notes</a>,<a class="chapterLink" href="/guidelines/v4/content/lyricsdesc.html#lyricsAfterEvents">15.3 Vocally Performed Text Encoded Separately</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#lyricsInEvents">8.2.2 Vocally Performed Text Encoded Within Notes</a>,<a class="chapterLink" href="/guidelines/v4/content/lyricsperfdir.html#lyricsAfterEvents">8.2.3 Vocally Performed Text Encoded Separately</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "space"
       <div class="specs">
          <div class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
             combined duration of the events equals the number of beats in the measure.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedNoteSpacing">1.2.4.5 Event Spacing</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnNotesStems">4.1.4.1.3 Stem Modifications</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRestsMSpace">4.1.4.2.3 Empty Measures</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBeams">4.2.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.2.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittranscpMark">11.1.1  Instructions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedNoteSpacing">2.2.4.5 Event Spacing</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnNotesStems">4.2.4.1.3 Stem Modifications</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRestsMSpace">4.2.4.2.3 Empty Measures</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBeams">4.3.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittranscpMark">11.2.1.1  Instructions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

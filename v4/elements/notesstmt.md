@@ -11,7 +11,7 @@ title: "notesStmt"
          <div class="desc">(notes statement)– Collects any notes providing information about a text additional
             to
             that recorded in other parts of the bibliographic description.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerFileDescription">2.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerNotesStatement">2.1.6 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkNotes">2.3.11 Notes Statement</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkNotes">3.1.3.11 Notes Statement</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

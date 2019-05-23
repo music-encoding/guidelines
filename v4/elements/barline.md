@@ -11,7 +11,7 @@ title: "barLine"
          <div class="desc">Vertical line drawn through one or more staves that divides musical notation into
             metrical
             units.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMdivContent">1.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBarlines">1.2.4.2 Bar Lines and Custos Signs</a>,<a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralData">5.5 Music Data Organization</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBarlines">2.2.4.2 Bar Lines and Custos Signs</a>,<a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralData">5.6 Music Data Organization</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

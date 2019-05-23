@@ -9,7 +9,7 @@ title: "addrLine"
       <h3 id="addrLine">&lt;addrLine&gt;</h3>
       <div class="specs">
          <div class="desc">(address line) – Single line of a postal address.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedAddresses">1.3.4.3 Addresses</a>,<a class="chapterLink" href="/guidelines/v4/content/namesdates.html#namesdatesGeogNames">17.2.2 Geographic Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedAddresses">8.1.4.3 Addresses</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#namesdatesGeogNames">9.3.2.2 Geographic Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

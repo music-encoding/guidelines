@@ -9,7 +9,7 @@ title: "relation"
       <h3 id="relation">&lt;relation&gt;</h3>
       <div class="specs">
          <div class="desc">Describes a relationship or linkage amongst entities.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRrelations">3.3 FRBR Relationships</a>,<a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRrelations">3.3 FRBR Relationships</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRrelations">3.2.3 FRBR Relationships</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRrelations">3.2.3 FRBR Relationships</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

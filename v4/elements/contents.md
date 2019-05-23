@@ -9,7 +9,7 @@ title: "contents"
       <h3 id="contents">&lt;contents&gt;</h3>
       <div class="specs">
          <div class="desc">List of the material contained within a resource.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSeriesStatement">2.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkContents">2.3.9 Work Contents</a>,<a class="chapterLink" href="/guidelines/v4/content/frbr.html#FRBRcomponents">3.2 Component Parts in FRBR</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkContents">3.1.3.9 Work Contents</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRcomponents">3.2.2 Component Parts in FRBR</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

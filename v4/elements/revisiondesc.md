@@ -11,7 +11,7 @@ title: "revisionDesc"
          <div class="desc">(revision description) – Container for information about alterations that have been
             made
             to an MEI file.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#&#34;header&#34;">2 The MEI Header</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerRevisionDescription">2.5 Revision Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerRevisionDescription">3.1.5 Revision Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

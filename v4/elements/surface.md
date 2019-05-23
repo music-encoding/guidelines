@@ -12,7 +12,7 @@ title: "surface"
             one or more graphic representations of that space, and rectangular zones of interest
             within
             it.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/facsimiles.html#facsimileElements">12.1 Elements of the Facsimile Module</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "editorialDecl"
       <div class="specs">
          <div class="desc">(editorial declaration) – Used to provide details of editorial principles and practices
             applied during the encoding of musical text.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerEncodingDescription">2.2 Encoding Description</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerEditorialPrinciples">2.2.2 Declaration of Editorial Principles</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerEditorialPrinciples">3.1.2.2 Declaration of Editorial Principles</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

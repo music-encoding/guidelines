@@ -9,7 +9,7 @@ title: "corr"
       <h3 id="corr">&lt;corr&gt;</h3>
       <div class="specs">
          <div class="desc">(correction) – Contains the correct form of an apparent erroneous passage.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#&#34;editTrans&#34;">11 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#edittransErrors">11.2 Apparent Errors</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransAddDel">11.4.2 Additions and Deletions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#&#34;editTrans&#34;">11.2 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransErrors">11.2.2 Apparent Errors</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDel">11.2.4.2 Additions and Deletions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

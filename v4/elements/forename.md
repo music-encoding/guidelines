@@ -9,7 +9,7 @@ title: "foreName"
       <h3 id="foreName">&lt;foreName&gt;</h3>
       <div class="specs">
          <div class="desc">Contains a forename, given or baptismal name.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesPersNames">17.2.4 Personal Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesPersNames">9.3.2.4 Personal Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "seriesStmt"
       <div class="specs">
          <div class="desc">(series statement) – Groups information about the series, if any, to which a publication
             belongs.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerFileDescription">2.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSeriesStatement">2.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerMinimalRecommendedHeader">2.6 Minimal and Recommended Header Information</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.6 Minimal and Recommended Header Information</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

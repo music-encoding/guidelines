@@ -9,7 +9,7 @@ title: "pad"
       <h3 id="pad">&lt;pad&gt;</h3>
       <div class="specs">
          <div class="desc">(padding) – An indication of extra visual space between notational elements.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedNoteSpacing">1.2.4.5 Event Spacing</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedNoteSpacing">2.2.4.5 Event Spacing</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

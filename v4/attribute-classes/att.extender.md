@@ -11,7 +11,7 @@ title: "att.extender"
          <div class="desc">Attributes that describe extension symbols, typically lines. Members of this class
             are
             also typically members of the att.lineRend class.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/harmony.html#harmonyFigbass">14.1.3.1 Figured Bass</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#harmonyFigbass">10.2.1.3.1 Figured Bass</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

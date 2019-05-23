@@ -11,7 +11,7 @@ title: "beamSpan"
          <div class="desc">(beam span) – Alternative element for explicitly encoding beams, particularly those
             which
             extend across bar lines.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnBeams">4.2.1 Beams</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnBeams">4.3.1 Beams</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

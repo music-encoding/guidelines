@@ -10,7 +10,7 @@ title: "att.responsibility"
       <div class="specs">
          <div class="desc">Attributes capturing information regarding responsibility for some aspect of the text's
             creation, transcription, editing, or encoding.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#&#34;editTrans&#34;">11 Editorial Markup</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#&#34;editTrans&#34;">11.2 Editorial Markup</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

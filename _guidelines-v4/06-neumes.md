@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 version: "v4"
-title: "Neume Notation"
+title: "Repertoire: Neume Notation"
 sectionid: "neumes"
 ---
 

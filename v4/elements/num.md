@@ -9,7 +9,7 @@ title: "num"
       <h3 id="num">&lt;num&gt;</h3>
       <div class="specs">
          <div class="desc">(number) – Numeric information in any form.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedNumbers">1.3.4.2 Numbers</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedNumbers">8.1.4.2 Numbers</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

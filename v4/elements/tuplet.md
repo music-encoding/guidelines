@@ -11,7 +11,7 @@ title: "tuplet"
          <div class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
             for
             example, three notes in the time normally occupied by two or nine in the time of five.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.2.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTrem">4.2.5.3 Tremolandi</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

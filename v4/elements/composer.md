@@ -9,7 +9,7 @@ title: "composer"
       <h3 id="composer">&lt;composer&gt;</h3>
       <div class="specs">
          <div class="desc">The name of the creator of the intellectual content of a musical work.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerTitleStatement">2.1.1 Title Statement</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

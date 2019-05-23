@@ -9,7 +9,7 @@ title: "slur"
       <h3 id="slur">&lt;slur&gt;</h3>
       <div class="specs">
          <div class="desc">Indication of 1) a "unified melodic idea" or 2) performance technique.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedPhraseMarks">1.2.5.4 Phrase Marks</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnSlurTies">4.2.2 Ties, Slurs and Phrase Marks</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDynam">4.2.3 Dynamics in CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedPhraseMarks">2.2.5.4 Phrase Marks</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDynam">4.3.3 Dynamics in CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

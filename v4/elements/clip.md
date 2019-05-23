@@ -11,7 +11,7 @@ title: "clip"
          <div class="desc">Defines a time segment of interest within a recording or within a digital audio or
             video
             file.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/performances.html#perfElements">18.1 Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

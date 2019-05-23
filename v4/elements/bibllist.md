@@ -9,7 +9,7 @@ title: "biblList"
       <h3 id="biblList">&lt;biblList&gt;</h3>
       <div class="specs">
          <div class="desc">List of bibliographic references.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkBiblList">2.3.10 Bibliographic Evidence</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkBiblList">3.1.3.10 Bibliographic Evidence</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "termList"
       <h3 id="termList">&lt;termList&gt;</h3>
       <div class="specs">
          <div class="desc">Collection of text phrases which describe a resource.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkClass">2.3.12 Classification</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkClass">3.1.3.12 Classification</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

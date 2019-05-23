@@ -12,7 +12,7 @@ title: "mordent"
             a
             step below, but sometimes a step above. 
             
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmnornaments.html#cmnOrnamentsMordents">8.2 Mordents</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnOrnamentsMordents">4.4.2 Mordents</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

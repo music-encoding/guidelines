@@ -11,7 +11,7 @@ title: "meiCorpus"
          <div class="desc">(MEI corpus) – A group of related MEI documents, consisting of a header for the group,
             and
             one or more <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a> elements, each with its own complete header.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">1.1.1 Document Elements</a>,<a class="chapterLink desc" href="/guidelines/v4/content/corpus.html#corpusModuleOverview">9.1 Corpus Module Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#corpusModuleOverview">3.4.1 Corpus Module Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -51,7 +51,7 @@ title: "meiCorpus"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                        "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.word.html">data.WORD</a>.
@@ -206,7 +206,7 @@ title: "meiCorpus"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                      </div>
                   </div>
                </div>
@@ -237,7 +237,7 @@ title: "meiCorpus"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.word.html">data.WORD</a>.

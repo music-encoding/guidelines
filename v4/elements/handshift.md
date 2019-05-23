@@ -10,7 +10,7 @@ title: "handShift"
       <div class="specs">
          <div class="desc">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
             writing style, ink or character of the document hand.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransSubst">11.4.3 Substitutions, Restorations, and Handshifts</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

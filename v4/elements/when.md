@@ -11,7 +11,7 @@ title: "when"
          <div class="desc">Indicates a point in time either absolutely (using the absolute attribute), or relative
             to
             another when element (using the since, interval and inttype attributes).
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/analysis.html#analysisDescribingRelationships">7.1 General Relationships Between Elements</a>,<a class="chapterLink desc" href="/guidelines/v4/content/performances.html#perfElements">18.1 Overview</a>,<a class="chapterLink desc" href="/guidelines/v4/content/linkalign.html#linkalignElements">23.1.1 Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/linkalign.html#linkalignExamples">23.2 Linking and Alignment Examples</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#analysisDescribingRelationships">10.1.1 General Relationships Between Elements</a>,<a class="chapterLink desc" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a>,<a class="chapterLink desc" href="/guidelines/v4/content/linkingdata.html#linkalignElements">13.2.1.1 Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/linkingdata.html#linkalignExamples">13.2.2 Linking and Alignment Examples</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

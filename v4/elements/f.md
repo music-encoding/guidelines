@@ -9,7 +9,7 @@ title: "f"
       <h3 id="f">&lt;f&gt;</h3>
       <div class="specs">
          <div class="desc">(figure) – Single element of a figured bass indication.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/harmony.html#harmonyFigbass">14.1.3.1 Figured Bass</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#harmonyFigbass">10.2.1.3.1 Figured Bass</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

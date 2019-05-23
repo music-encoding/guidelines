@@ -9,7 +9,7 @@ title: "body"
       <h3 id="body">&lt;body&gt;</h3>
       <div class="specs">
          <div class="desc">Contains the whole of a single musical text, excluding any front or back matter.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedMusicElement">1.1.2 Music Element</a>,<a class="chapterLink" href="/guidelines/v4/content/performances.html#perfElements">18.1 Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedMusicElement">2.1.2 Music Element</a>,<a class="chapterLink" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

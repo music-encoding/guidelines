@@ -9,7 +9,7 @@ title: "symbolDef"
       <h3 id="symbolDef">&lt;symbolDef&gt;</h3>
       <div class="specs">
          <div class="desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/usersymbols.html#usersymbolsElements">22.1.1 Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsModuleUses">22.2 Uses of the Usersymbols Module</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsReusableSymbols">22.2.1 Defining Reusable Symbols</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsPositioning">22.3.3 Positioning</a>,<a class="chapterLink" href="/guidelines/v4/content/usersymbols.html#usersymbolsCurveShape">22.3.4 Curve Shape</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#usersymbolsElements">2.4.1.1 Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsModuleUses">2.4.2 Uses of the Usersymbols Module</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsReusableSymbols">2.4.2.1 Defining Reusable Symbols</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsPositioning">2.4.3.3 Positioning</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsCurveShape">2.4.3.4 Curve Shape</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "ossia"
       <div class="specs">
          <div class="desc">Captures original notation and a differently notated version *present in
             the source being transcribed*.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOssia">4.2.7 Ossia</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOssia">4.3.7 Ossia</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

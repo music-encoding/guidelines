@@ -10,7 +10,7 @@ title: "postBox"
       <div class="specs">
          <div class="desc">(postal box or post office box) contains a number or other identifier for some postal
             delivery point other than a street address.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesGeogNames">17.2.2 Geographic Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesGeogNames">9.3.2.2 Geographic Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

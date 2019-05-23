@@ -9,7 +9,7 @@ title: "damage"
       <h3 id="damage">&lt;damage&gt;</h3>
       <div class="specs">
          <div class="desc">Contains an area of damage to the physical medium.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransOmission">11.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransOmission">11.2.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

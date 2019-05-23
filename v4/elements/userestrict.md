@@ -11,7 +11,7 @@ title: "useRestrict"
          <div class="desc">(usage restrictions) – Container for information about the conditions that affect
             use of a
             bibliographic item after access has been granted.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerPublicationDistribution">2.1.4 Publication, Distribution, etc.</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "unpub"
       <div class="specs">
          <div class="desc">(unpublished) – Used to explicitly indicate that a bibliographic resource is
             unpublished.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#headerPublicationDistribution">2.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

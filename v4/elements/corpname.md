@@ -10,7 +10,7 @@ title: "corpName"
       <div class="specs">
          <div class="desc">(corporate name) – Identifies an organization or group of people that acts as a single
             entity.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedNames">1.3.4.1 Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerTitleStatement">2.1.1 Title Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/namesdates.html#&#34;namesDates&#34;">17 Names and Dates</a>,<a class="chapterLink" href="/guidelines/v4/content/namesdates.html#namesdatesBasic">17.1 Basic Elements for Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/v4/content/namesdates.html#namesdatesCorpNames">17.2.1 Corporate Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/lyricsperfdir.html#sharedNames">8.1.4.1 Names and Dates</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#&#34;namesDates&#34;">9.3 Names and Dates</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#namesdatesBasic">9.3.1 Basic Elements for Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#namesdatesCorpNames">9.3.2.1 Corporate Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

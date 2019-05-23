@@ -13,7 +13,7 @@ title: "lg"
             however, it is most often used for a group of verse lines functioning as a formal
             unit, e.g. a
             stanza, refrain, verse paragraph, etc.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/figtable.html#figTableCaptionsDescriptions">13.1.1 Figure Captions and Descriptions</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsdesc.html#lyricsAfterEvents">15.3 Vocally Performed Text Encoded Separately</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textPoetry">21.5 Poetry</a>,<a class="chapterLink desc" href="/guidelines/v4/content/text.html#textTitlePages">21.6.2 Title Pages</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#lyricsAfterEvents">8.2.3 Vocally Performed Text Encoded Separately</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textPoetry">9.1.5 Poetry</a>,<a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textTitlePages">9.1.6.2 Title Pages</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

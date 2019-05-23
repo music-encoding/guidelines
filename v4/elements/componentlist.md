@@ -9,7 +9,7 @@ title: "componentList"
       <h3 id="componentList">&lt;componentList&gt;</h3>
       <div class="specs">
          <div class="desc">Container for intellectual or physical component parts of a bibliographic entity.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkRelationships">2.3.13 Work Relationships</a>,<a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRcomponents">3.2 Component Parts in FRBR</a>,<a class="chapterLink" href="/guidelines/v4/content/frbr.html#FRBRrelations">3.3 FRBR Relationships</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkRelationships">3.1.3.13 Work Relationships</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRcomponents">3.2.2 Component Parts in FRBR</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRrelations">3.2.3 FRBR Relationships</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

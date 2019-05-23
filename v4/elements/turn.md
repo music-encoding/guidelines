@@ -11,7 +11,7 @@ title: "turn"
          <div class="desc">An ornament consisting of four notes — the upper neighbor of the written note, the
             written
             note, the lower neighbor, and the written note.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmnornaments.html#cmnOrnamentsTurns">8.4 Turns</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOrnamentsTurns">4.4.4 Turns</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

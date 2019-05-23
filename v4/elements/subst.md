@@ -11,7 +11,7 @@ title: "subst"
          <div class="desc">(substitution) – Groups transcriptional elements when the combination is to be regarded
             as
             a single intervention in the text.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransOmission">11.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransSubst">11.4.3 Substitutions, Restorations, and Handshifts</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransOmission">11.2.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

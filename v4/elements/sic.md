@@ -9,7 +9,7 @@ title: "sic"
       <h3 id="sic">&lt;sic&gt;</h3>
       <div class="specs">
          <div class="desc">Contains apparently incorrect or inaccurate material.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#&#34;editTrans&#34;">11 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#edittransErrors">11.2 Apparent Errors</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#&#34;editTrans&#34;">11.2 Editorial Markup</a>,<a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransErrors">11.2.2 Apparent Errors</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

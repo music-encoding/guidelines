@@ -10,7 +10,7 @@ title: "meiHead"
       <div class="specs">
          <div class="desc">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
             MEI-conformant text.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">1.1.1 Document Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#&#34;header&#34;">2 The MEI Header</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerNotesStatement">2.1.6 Notes Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerIndependentHeaderDefinition">2.7.1 Definition and Principles for Encoders</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerBiblAnalog">2.8 Header Elements and their Relationship to Other Bibliographic Standards</a>,<a class="chapterLink" href="/guidelines/v4/content/cmnornaments.html#cmnOrnamentsOverride">8.1.1 Overriding Default Resolutions</a>,<a class="chapterLink" href="/guidelines/v4/content/corpus.html#corpusModuleOverview">9.1 Corpus Module Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerIndependentHeaderDefinition">3.1.7.1 Definition and Principles for Encoders</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerBiblAnalog">3.1.8 Header Elements and their Relationship to Other Bibliographic Standards</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#corpusModuleOverview">3.4.1 Corpus Module Overview</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOrnamentsOverride">4.4.1.1 Overriding Default Resolutions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -40,7 +40,7 @@ title: "meiHead"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                        "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
                         editing, or encoding. Its value must point to one or more identifiers declared in
                         the
@@ -143,7 +143,7 @@ title: "meiHead"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                      </div>
                   </div>
                   <div class="classBox" title="att.responsibility">
@@ -187,7 +187,7 @@ title: "meiHead"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
                               editing, or encoding. Its value must point to one or more identifiers declared in
                               the

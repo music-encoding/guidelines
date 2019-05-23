@@ -11,7 +11,7 @@ title: "del"
          <div class="desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
             as
             superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/edittrans.html#&#34;editTrans&#34;">11 Editorial Markup</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransErrors">11.2 Apparent Errors</a>,<a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#edittransAddDelOmissions">11.4 Additions, Deletions, and Omissions</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransAddDel">11.4.2 Additions and Deletions</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransSubst">11.4.3 Substitutions, Restorations, and Handshifts</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#&#34;editTrans&#34;">11.2 Editorial Markup</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransErrors">11.2.2 Apparent Errors</a>,<a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDel">11.2.4.2 Additions and Deletions</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

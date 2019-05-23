@@ -10,7 +10,7 @@ title: "grpSym"
       <div class="specs">
          <div class="desc">(group symbol) – A brace or bracket used to group two or more staves of a score or
             part.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">1.2.1 Score and Parts</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

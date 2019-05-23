@@ -11,7 +11,7 @@ title: "mei"
          <div class="desc">Contains a single MEI-conformant document, consisting of an MEI header and a musical
             text,
             either in isolation or as part of an meiCorpus element.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">1.1.1 Document Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/corpus.html#corpusModuleOverview">9.1 Corpus Module Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#corpusModuleOverview">3.4.1 Corpus Module Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -30,7 +30,7 @@ title: "mei"
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                        "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
                         editing, or encoding. Its value must point to one or more identifiers declared in
                         the
@@ -57,7 +57,7 @@ title: "mei"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                      </div>
                   </div>
                   <div class="classBox" title="att.responsibility">
@@ -79,7 +79,7 @@ title: "mei"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">4.0.0</span>" <i>(This version of MEI.)</i></span></div>
+                              "<span style="font-weight: 500;">4.0.0</span>" <i>(First release of MEI 4)</i>,  "<span style="font-weight: 500;">4.0.1</span>" <i>(Bugfix Release 4.0.1)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
                               editing, or encoding. Its value must point to one or more identifiers declared in
                               the

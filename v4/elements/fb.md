@@ -11,7 +11,7 @@ title: "fb"
          <div class="desc">(figured bass) – Symbols added to a bass line that indicate harmony. Used to improvise
             a
             chordal accompaniment. Sometimes called Generalbass, thoroughbass, or basso continuo.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/harmony.html#harmonyFigbass">14.1.3.1 Figured Bass</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#harmonyFigbass">10.2.1.3.1 Figured Bass</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

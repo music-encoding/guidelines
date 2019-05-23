@@ -10,7 +10,7 @@ title: "att.meterConformance"
       <div class="specs">
          <div class="desc">Attributes that provide information about a structure's conformance to the prevailing
             meter.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysis.html#analysisMetricalConformance">7.3 Metrical Conformance</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#analysisMetricalConformance">10.1.3 Metrical Conformance</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

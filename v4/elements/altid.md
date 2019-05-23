@@ -13,7 +13,7 @@ title: "altId"
             the meiHead element's id attribute, for example because the identifier does not fit
             the
             definition of an XML id or because multiple identifiers are needed.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/header.html#&#34;header&#34;">2 The MEI Header</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerNotesStatement">2.1.6 Notes Statement</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

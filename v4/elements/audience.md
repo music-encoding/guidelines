@@ -13,7 +13,7 @@ title: "audience"
             children, young adults, adults, etc.), educational level (e.g., primary, secondary,
             etc.), or
             other categorization.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkAudience">2.3.8 Audience and Context</a>,<a class="chapterLink" href="/guidelines/v4/content/frbr.html#FRBRentities">3.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkAudience">3.1.3.8 Audience and Context</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

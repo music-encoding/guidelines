@@ -9,7 +9,7 @@ title: "l"
       <h3 id="l">&lt;l&gt;</h3>
       <div class="specs">
          <div class="desc">(line of text) – Contains a single line of text within a line group.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/text.html#textPoetry">21.5 Poetry</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/textencoding.html#textPoetry">9.1.5 Poetry</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

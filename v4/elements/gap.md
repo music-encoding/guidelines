@@ -11,7 +11,7 @@ title: "gap"
          <div class="desc">Indicates a point where material has been omitted in a transcription, whether as part
             of
             sampling practice or for editorial reasons described in the MEI header.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/edittrans.html#edittransAddDelOmissions">11.4 Additions, Deletions, and Omissions</a>,<a class="chapterLink" href="/guidelines/v4/content/edittrans.html#edittransOmission">11.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransOmission">11.2.4.1 Omissions, Unclear Readings, Damage, and Supplied Readings</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

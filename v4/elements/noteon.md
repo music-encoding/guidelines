@@ -9,7 +9,7 @@ title: "noteOn"
       <h3 id="noteOn">&lt;noteOn&gt;</h3>
       <div class="specs">
          <div class="desc">MIDI note-on event.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/midiguidelines.html#midiData">16.3 Recording MIDI Event Data</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/integration.html#midiData">14.5.3 Recording MIDI Event Data</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

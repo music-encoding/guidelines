@@ -9,7 +9,7 @@ title: "att.alignment"
       <h3 id="att.alignment">att.alignment</h3>
       <div class="specs">
          <div class="desc">Temporal alignment attributes.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysis.html#analysisDescribingRelationships">7.1 General Relationships Between Elements</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/analysisharm.html#analysisDescribingRelationships">10.1.1 General Relationships Between Elements</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

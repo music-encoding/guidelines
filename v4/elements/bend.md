@@ -11,7 +11,7 @@ title: "bend"
          <div class="desc">A variation in pitch (often micro-tonal) upwards or downwards during the course of
             a
             note.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.2.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBend">4.2.5.2 Bend</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBend">4.3.5.2 Bend</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

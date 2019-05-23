@@ -9,7 +9,7 @@ title: "recording"
       <h3 id="recording">&lt;recording&gt;</h3>
       <div class="specs">
          <div class="desc">A recorded performance.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/performances.html#perfElements">18.1 Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

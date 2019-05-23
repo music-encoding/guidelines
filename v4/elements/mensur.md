@@ -11,7 +11,7 @@ title: "mensur"
          <div class="desc">(mensuration) – Collects information about the metrical relationship between a note
             value
             and the next smaller value; that is, either triple or duple.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralSigns">5.2 Mensuration Signs</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralSigns">5.3 Mensuration Signs</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

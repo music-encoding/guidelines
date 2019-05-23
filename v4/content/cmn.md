@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-title: "Common Music Notation"
+title: "Repertoire: Common Music Notation"
 version: "v4"
 section: "/04-cmn"
 ---

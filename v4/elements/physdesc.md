@@ -13,7 +13,7 @@ title: "physDesc"
             handling of physical materials, such as their dimension, quantity, color, style, and
             technique
             of creation.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedTitlePages">1.3.3 Transcription of Titlepages</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/lyricsperfdir.html#sharedTitlePages">8.1.3 Transcription of Titlepages</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

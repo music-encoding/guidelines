@@ -9,7 +9,7 @@ title: "zone"
       <h3 id="zone">&lt;zone&gt;</h3>
       <div class="specs">
          <div class="desc">Defines an area of interest within a surface or graphic file.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/facsimiles.html#facsimileElements">12.1 Elements of the Facsimile Module</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

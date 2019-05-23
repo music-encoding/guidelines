@@ -12,7 +12,7 @@ title: "physLoc"
             bibliographic item, such as the repository in which it is located and its shelf mark(s),
             and
             its previous locations.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerSourceDescription">2.1.7 Source Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

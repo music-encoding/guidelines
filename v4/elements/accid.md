@@ -9,7 +9,7 @@ title: "accid"
       <h3 id="accid">&lt;accid&gt;</h3>
       <div class="specs">
          <div class="desc">(accidental) – Records a temporary alteration to the pitch of a note.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedAccidentalsArticulations">1.2.4.3 Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedAccidentalsArticulations">2.2.4.3 Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

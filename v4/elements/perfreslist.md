@@ -9,7 +9,7 @@ title: "perfResList"
       <h3 id="perfResList">&lt;perfResList&gt;</h3>
       <div class="specs">
          <div class="desc">Several instrumental or vocal resources treated as a group.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkIncipit">2.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkMedium">2.3.7 Performance Medium</a>,<a class="chapterLink" href="/guidelines/v4/content/header.html#headerWorkInstrumentation">2.3.7.2 Instrumentation</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkMedium">3.1.3.7 Performance Medium</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkInstrumentation">3.1.3.7.2 Instrumentation</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

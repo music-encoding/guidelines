@@ -10,7 +10,7 @@ title: "extent"
       <div class="specs">
          <div class="desc">Used to express size in terms other than physical dimensions, such as number of pages,
             records, bytes, physical components, etc.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedBibliographicCitations">1.3.6 Bibliographic Citations and References</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerFileDescription">2.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerPhysicalDescription">2.1.3 Physical Description of the File</a>,<a class="chapterLink desc" href="/guidelines/v4/content/frbr.html#FRBRentities">3.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerPhysicalDescription">3.1.1.3 Physical Description of the File</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

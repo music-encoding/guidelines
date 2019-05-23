@@ -11,7 +11,7 @@ title: "castItem"
          <div class="desc">Contains a single entry within a cast list, describing either a single role or a list
             of
             non-speaking roles.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/header.html#headerWorkCast">2.3.7.1 Cast Lists</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkCast">3.1.3.7.1 Cast Lists</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
