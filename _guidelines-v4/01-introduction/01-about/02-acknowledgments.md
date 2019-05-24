@@ -1,6 +1,4 @@
 ---
-layout: sidebar
-sidebar: s1
 version: "v4"
 title: "Acknowledgments"
 sectionid: "acknowledgments"
@@ -12,9 +10,9 @@ Grateful acknowledgment is given to the following institutions for their generou
 
 The Text Encoding Initiative is also owed a special debt of gratitude. In addition to providing much of the inspiration for MEI, the TEI organization supplied funding for the MEI Technical Group in its efforts to adopt ODD. The editors of these Guidelines are grateful for those of the TEI, which provided a stellar exemplar and from which we have borrowed shamelessly.
 
-MEI has been a community-driven effort for more than a decade, and many individuals have provided significant and much-appreciated commitments of time and energy to the development of MEI: Nikolaos Beer; Benjamin W. Bohl; Margrethe Bue; Donald Byrd; Irmlind Capelle; Giuliano Di Bacco; Norbert Dubowy; Richard Freedman; Ichiro Fujinaga; Andrew Hankinson; Maja Hartwig; Kristin Herold; Johannes Kepper; Zoltán Kömíves; David Lewis; Urs Liska; Erin Mayhood; Stefan Morent; Stefan Münnich; Daniel Pitti; Laurent Pugin; Klaus Rettinghaus; Kristina Richts; Daniel Röwenstrunk; Perry Roland; Craig Sapp; Agnes Seipelt; Eleanor Selfridge-Field; Christine Siegert; Peter Stadler; Axel Teich Geertinger; Joachim Veit; Raffaele Viglianti; Thomas Weber; and Sonia Wronkowska.
+MEI has been a community-driven effort for more than a decade, and many individuals have provided significant and much-appreciated commitments of time and energy to the development of MEI: Nikolaos Beer; Vincent Besson; Benjamin W. Bohl; Margrethe Bue; Donald Byrd; Irmlind Capelle; Tim Crawford; David A. Day; Giuliano Di Bacco; Norbert Dubowy; Richard Freedman; Ichiro Fujinaga; Andrew Hankinson; Maja Hartwig; Kristin Herold; Franz Kelnreiter; Johannes Kepper; Robert Klugseder; Zoltán Kömíves; David Lewis; Urs Liska; Elsa De Luca; Erin Mayhood; Stefan Morent; Stefan Münnich; Markus Neuwirth; Kevin Page; Daniel Pitti; Laurent Pugin; Klaus Rettinghaus; Kristina Richts; Daniel Röwenstrunk; Perry Roland; Craig Sapp; Agnes Seipelt; Eleanor Selfridge-Field; Christine Siegert; Peter Stadler; Axel Teich Geertinger; Martha Thomae; Joachim Veit; Raffaele Viglianti; Thomas Weber; and Sonia Wronkowska.
 
-Thanks to Bernhard R. Appel; J. Stephen Downie; Oliver Huck; Fotis Jannidis; and Frans Wiering for providing expertise on a wide range of topics related to music notation modelling.
+Thanks to Bernhard R. Appel; Richard Chesser; Morgan Cundiff; J. Stephen Downie; Oliver Huck; Fotis Jannidis; John Rink; Federica Riva; Frans Wiering and Barbara Wiermann for providing expertise on a wide range of topics related to music notation modelling.
 
 Also thanks to Syd Bauman, Terry Catapano, and Sebastian Rahtz for their invaluable problem-solving assistance during the development of the 2010 RNG schema. Thanks to Sebastian Rahtz and James Cummings of the Text Encoding Initiative (TEI) for their help with making ODD work with MEI, their assistance in more closely aligning MEI and TEI, and their quick responses to questions and Roma bug reports.
 
