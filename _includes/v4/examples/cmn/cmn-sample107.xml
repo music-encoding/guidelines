@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <layer>
-   <!--...-->
-   <beam>
-      <note dur="16"></note>
-      <note dur="32"></note>
-      <note dur="32"></note>
-      <note dots="1" dur="16"></note>
-      <note dur="32"></note>
-   </beam>
-   <!-- ...-->
+  <!-- … -->
+  <beam>
+    <note dur="16"/>
+    <note dur="32"/>
+    <note dur="32"/>
+    <note dots="1" dur="16"/>
+    <note dur="32"/>
+  </beam>
+  <!-- … -->
 </layer>

@@ -1,40 +1,40 @@
 <section>
-   <measure>
-      <staff>
-         <layer>
-            <beam>
-               <note dur="8" oct="4" pname="f"></note>
-               <note dur="16" pname="a"></note>
-               <note oct="5" pname="c"></note>
-               <note dur="8" oct="4" pname="a"></note>
-            </beam>
-            <beam>
-               <note dur="8" oct="5" pname="c"></note>
-               <note oct="4" pname="a"></note>
-               <note pname="g"></note>
-            </beam>
-         </layer>
-      </staff>
-   </measure>
-   <measure>
-      <staff>
-         <layer>
-            <mRpt></mRpt>
-         </layer>
-      </staff>
-   </measure>
-   <measure>
-      <staff>
-         <layer>
-            <mRpt></mRpt>
-         </layer>
-      </staff>
-   </measure>
-   <measure>
-      <staff>
-         <layer>
-            <mRpt></mRpt>
-         </layer>
-      </staff>
-   </measure>
+  <measure>
+    <staff>
+      <layer>
+        <beam>
+          <note dur="8" oct="4" pname="f"/>
+          <note dur="16" pname="a"/>
+          <note oct="5" pname="c"/>
+          <note dur="8" oct="4" pname="a"/>
+        </beam>
+        <beam>
+          <note dur="8" oct="5" pname="c"/>
+          <note oct="4" pname="a"/>
+          <note pname="g"/>
+        </beam>
+      </layer>
+    </staff>
+  </measure>
+  <measure>
+    <staff>
+      <layer>
+        <mRpt/>
+      </layer>
+    </staff>
+  </measure>
+  <measure>
+    <staff>
+      <layer>
+        <mRpt/>
+      </layer>
+    </staff>
+  </measure>
+  <measure>
+    <staff>
+      <layer>
+        <mRpt/>
+      </layer>
+    </staff>
+  </measure>
 </section>
