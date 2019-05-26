@@ -4,7 +4,7 @@ title: "The Role of the Measure Element"
 version: "v4"
 ---
 
-Arguably, the most important element of the CMN module is the {% include link elem="measure" %} element. It is used as a structural unit inside {% include link elem="section" %} elements and acts as a container for ‘events’ from the {% include link model="model.eventLike" %} class, such as notes, chords and rests as well as ‘control events’ from the {% include link model="model.controlEventLike" %} class, such as slurs and indications of dynamics.
+Arguably, the most important element of the CMN module is the {% include link elem="measure" %} element. It is used as a structural unit inside {% include link elem="section" %} elements and acts as a container for ‘events’ from the {% include link model="eventLike" %} class, such as notes, chords and rests as well as ‘control events’ from the {% include link model="controlEventLike" %} class, such as slurs and indications of dynamics.
 
 The following example demonstrates the use of the {% include link elem="measure" %} element:
 
