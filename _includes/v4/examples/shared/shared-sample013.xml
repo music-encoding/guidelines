@@ -7,7 +7,7 @@
    </creation>
    <physLoc>
       <repository>
-         <identifier authURI="http://www.rism.info/" authority="RISM">DK-Kk</identifier>
+         <identifier auth.uri="http://www.rism.info/" auth="RISM">DK-Kk</identifier>
       </repository>
       <identifier>CNA IAc</identifier>
    </physLoc>
