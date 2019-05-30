@@ -21,6 +21,6 @@ The second and third shorthand indications are written in the second violin (low
 {% include mei example="editTrans/editTrans-sample225.xml" valid="true" %}
 {% include figure img="ExampleImages/cpMark_3.png" caption="A transcription of the example above with all shorthand resolved and colored" %}
 
-Text used as a copy mark, like the letters in the Weber example, may be encoded as content of the {% include link elem="cpMark" %} element. In the case of non-text marks, the **@altsym**, **@extsym** and **@facs** attributes may be used to refer to a graphical surrogate.
+Text used as a copy mark, like the letters in the Weber example, may be encoded as content of the {% include link elem="cpMark" %} element. In the case of non-text marks, the **@altsym** and **@facs** attributes may be used to refer to a graphical surrogate.
 
 Depending on the purpose of the encoding, the omitted parts in the score may be filled with {% include link elem="space" %} and {% include link elem="mSpace" %} elements of appropriate duration or silently overwritten with the content that the {% include link elem="cpMark" %} identifies. Also, these two options may be combined through the use a {% include link elem="choice" %} element whose {% include link elem="abbr" %} and {% include link elem="expan" %} children explicitly encode a transcription of the original ‘gap’ (in abbr) and the result of the insertion of the indicated material (in expan).

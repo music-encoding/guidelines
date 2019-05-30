@@ -2,10 +2,10 @@
    <!-- preceding notes -->
    <app>
       <rdg source="#critApp.source1">
-         <note dur="2" oct="4" pname="b" stem.dir="down"></note>
+         <note dur="2" oct="4" pname="b" stem.dir="down"/>
       </rdg>
       <rdg source="#critApp.source2">
-         <note dur="2" oct="4" pname="b" stem.dir="up"></note>
+         <note dur="2" oct="4" pname="b" stem.dir="up"/>
       </rdg>
    </app>
    <!-- following notes -->

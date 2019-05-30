@@ -23,7 +23,7 @@ Many of the elements discussed here can be used in two ways. Their primary purpo
 
 Wrapping elements this way enables the encoder to represent, for example, a text in its ‘original’, uncorrected form alongside the same text in one or more ‘edited’ forms. Making use of this style of representation, software may dynamically switch between the Urtext ‘view’ of the text and one or more ‘views’ of the text after the application of the encoded editorial interventions.
 
-Elements which can be combined in this way constitute the {% include link model="model.choicePart" %} class. The default members of this class are {% include link elem="sic" %}, {% include link elem="corr" %}, {% include link elem="reg" %}, {% include link elem="orig" %}, {% include link elem="unclear" %}, {% include link elem="add" %}, and {% include link elem="del" %}; their functions and usage are described in greater detail below.
+Elements which can be combined in this way constitute the {% include link model="choicePart" %} class. The default members of this class are {% include link elem="sic" %}, {% include link elem="corr" %}, {% include link elem="reg" %}, {% include link elem="orig" %}, {% include link elem="unclear" %}, {% include link elem="abbr" %}, and {% include link elem="expan" %}; their functions and usage are described in greater detail below.
 
 Three categories of editorial intervention are discussed by the remainder of this chapter:
 

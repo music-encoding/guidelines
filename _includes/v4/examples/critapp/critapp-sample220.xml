@@ -1,7 +1,7 @@
 <section>
-   <measure></measure>
+   <measure>…</measure>
    <app>
-      <rdg source="#critApp.source1"></rdg>
+      <rdg source="#critApp.source1"/>
       <rdg source="#critApp.source2 critApp.#source3">
          <!-- whereas source1 omits it, source2 and source3 have an additional measure -->
          <measure>
@@ -10,10 +10,10 @@
                   <app>
                      <!-- while source2 provides a measure rest, source3 has a whole note -->
                      <rdg source="#critApp.source2">
-                        <mRest></mRest>
+                        <mRest/>
                      </rdg>
                      <rdg source="#critApp.source3">
-                        <note dur="1" oct="3" pname="g"></note>
+                        <note dur="1" oct="3" pname="g"/>
                      </rdg>
                   </app>
                </layer>
@@ -21,5 +21,5 @@
          </measure>
       </rdg>
    </app>
-   <measure></measure>
+   <measure>…</measure>
 </section>
