@@ -7,7 +7,7 @@
       </titleStmt>
       <pubStmt>
          <respStmt>
-            <corpName authURI="http://d-nb.info/gnd" authority="GND" codedval="5115204-6">Musikwissenschaftliches Seminar &lt;Detmold&gt;</corpName>
+            <corpName auth.uri="http://d-nb.info/gnd" auth="GND" codedval="5115204-6">Musikwissenschaftliches Seminar &lt;Detmold&gt;</corpName>
          </respStmt>
       </pubStmt>
    </fileDesc>

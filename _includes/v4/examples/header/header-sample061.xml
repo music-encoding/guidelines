@@ -1,9 +1,7 @@
 <perfMedium xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
    <perfResList>
       <perfResList>
-         <head>
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Woodwinds
-         </head>
+         <head>Woodwinds</head>
          <perfRes codedval="wa" count="2">2 Flutes
             <perfRes codedval="wz">(2. piccolo)</perfRes>
          </perfRes>

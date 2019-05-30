@@ -14,23 +14,23 @@ Within {% include link elem="workList" %}, the {% include link elem="work" %} el
 
 All the components of {% include link elem="work" %} are optional, but they must occur in the following order:
 
-1. identifier
-2. titleStmt
-3. incip
-4. key
-5. mensuration
-6. meter
-7. tempo
-8. otherChar
-9. history
-10. langUsage
-11. perfMedium
-12. audience
-13. contents
-14. context
-15. biblList
-16. notesStmt
-17. classification
+1. {% include link elem="identifier" %}
+2. {% include link elem="titleStmt" %}
+3. {% include link elem="incip" %}
+4. {% include link elem="key" %}
+5. {% include link elem="mensuration" %}
+6. {% include link elem="meter" %}
+7. {% include link elem="tempo" %}
+8. {% include link elem="otherChar" %}
+9. {% include link elem="history" %}
+10.{% include link elem="langUsage" %} 
+11.{% include link elem="perfMedium" %} 
+12.{% include link elem="audience" %} 
+13.{% include link elem="contents" %} 
+14.{% include link elem="context" %} 
+15.{% include link elem="biblList" %} 
+16.{% include link elem="notesStmt" %} 
+17.{% include link elem="classification" %} 
 
 These work description components may be classed into two groups based on their function: 
 

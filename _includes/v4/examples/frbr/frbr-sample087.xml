@@ -1,4 +1,4 @@
-<source xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<manifestation xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
    <pubStmt>
       <publisher>Horneman &amp; Erslev</publisher>
       <pubPlace>Copenhagen</pubPlace>
@@ -7,4 +7,4 @@
    <relationList>
       <relation rel="isReproductionOf" target="#source.printed_choral_parts"></relation>
    </relationList>
-</source>
+</manifestation>

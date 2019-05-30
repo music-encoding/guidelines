@@ -4,14 +4,14 @@ title: "FRBR Entities in MEI"
 version: "v4"
 ---
 
-When the FRBR module is available, MEI offers four elements corresponding to the FRBR entities:
+With the FRBR module, MEI offers four elements corresponding to the FRBR "Group 1" entities:
 
 {% include desc elem="work" %}
 {% include desc elem="expression" %}
-{% include desc elem="source" %}
+{% include desc elem="manifestation" %}
 {% include desc elem="item" %}
 
-The names of the MEI entities generally follow those of FRBR: the {% include link elem="work" %} element is a container for description at the FRBR "work" level, {% include link elem="expression" %} is for description at the FRBR "expression" level, and {% include link elem="item" %} holds FRBR "item" level description. The {% include link elem="source" %} element, however, is the MEI equivalent to FRBR "manifestation" level description. The name "source" is used because it is both shorter and more familiar than "manifestation" to users of existing bibliographic markup schemes.
+The names of the MEI entities follow those of FRBR: the {% include link elem="work" %} element is a container for description at the FRBR "work" level, {% include link elem="expression" %} is for description at the FRBR "expression" level, {% include link elem="manifestation" %} contains "manifestation" level description, and {% include link elem="item" %} holds FRBR "item" level description. Please note: Until MEI 3.0.0, the {% include link elem="source" %} element in {% include link elem="sourceDesc" %} was used for manifestation-level descriptions.
 
 The {% include link elem="work" %} element has an optional child element to hold the expression elements:
 

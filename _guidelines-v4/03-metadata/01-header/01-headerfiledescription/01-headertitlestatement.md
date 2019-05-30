@@ -14,6 +14,7 @@ The title statement contains the title given to the electronic work, together wi
 {% include desc elem="arranger" %}
 {% include desc elem="author" %}
 {% include desc elem="composer" %}
+{% include desc elem="contributor" %}
 {% include desc elem="editor" %}
 {% include desc elem="funder" %}
 {% include desc elem="librettist" %}
