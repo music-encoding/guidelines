@@ -31,9 +31,4 @@ All the components of {% include link elem="work" %} are optional, but they must
 15. {% include link elem="context" %} 
 16. {% include link elem="biblList" %} 
 17. {% include link elem="notesStmt" %} 
-18. {% include link elem="classification" %} 
-
-These work description components may be classed into two groups based on their function: 
-
-- identification of the work: identifier, titleStmt, incip, key, mensuration, meter, tempo, otherChar
-- contextual information for the work: history, langUsage, perfMedium, audience, contents, context, biblList, notesStmt, classification 
+18. {% include link elem="classification" %}
