@@ -46,6 +46,6 @@ The content of the {% include link elem="item" %} is quite similar to {% include
 {% include desc elem="relationList" %}
 {% include desc elem="extMeta" %}
 
-Many of these elements are already described in chapter 3.1 {% include link id="fileDesc" %}, especially in 3.1.3 {% include link id="workDesc" %}. 
+Many of these elements are already described in chapter 3.1 {% include link id="header" %}, especially in 3.1.3 {% include link id="headerWorkDescription" %}. 
 
 [To do: Add description of the contents of availability, physDesc, and physLoc]
