@@ -11,7 +11,7 @@
       <sic>
          <note dur="2" oct="4" pname="g"/>
       </sic>
-      <corr resp="#JK">
+      <corr resp="#editTrans.JK">
          <note dur="4" oct="4" pname="g"/>
       </corr>
    </choice>
