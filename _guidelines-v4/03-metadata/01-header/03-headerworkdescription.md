@@ -15,22 +15,23 @@ Within {% include link elem="workList" %}, the {% include link elem="work" %} el
 All the components of {% include link elem="work" %} are optional, but they must occur in the following order:
 
 1. {% include link elem="identifier" %}
-2. {% include link elem="titleStmt" %}
-3. {% include link elem="incip" %}
-4. {% include link elem="key" %}
-5. {% include link elem="mensuration" %}
-6. {% include link elem="meter" %}
-7. {% include link elem="tempo" %}
-8. {% include link elem="otherChar" %}
-9. {% include link elem="history" %}
-10.{% include link elem="langUsage" %} 
-11.{% include link elem="perfMedium" %} 
-12.{% include link elem="audience" %} 
-13.{% include link elem="contents" %} 
-14.{% include link elem="context" %} 
-15.{% include link elem="biblList" %} 
-16.{% include link elem="notesStmt" %} 
-17.{% include link elem="classification" %} 
+2. {% include link elem="title" %}
+3. Responsibility-like elements including {% include link elem="composer" %}, {% include link elem="lyricist" %}, {% include link elem="contributor" %} and others
+4. {% include link elem="incip" %}
+5. {% include link elem="key" %}
+6. {% include link elem="mensuration" %}
+7. {% include link elem="meter" %}
+8. {% include link elem="tempo" %}
+9. {% include link elem="otherChar" %}
+10. {% include link elem="history" %}
+11. {% include link elem="langUsage" %} 
+12. {% include link elem="perfMedium" %} 
+13. {% include link elem="audience" %} 
+14. {% include link elem="contents" %} 
+15. {% include link elem="context" %} 
+16. {% include link elem="biblList" %} 
+17. {% include link elem="notesStmt" %} 
+18. {% include link elem="classification" %} 
 
 These work description components may be classed into two groups based on their function: 
 
