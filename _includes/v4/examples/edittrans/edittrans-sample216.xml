@@ -1,16 +1,17 @@
 
-<!-- … --><chord>
-   <note dur="4" oct="4" pname="c"></note>
-   <note dur="4" oct="4" pname="e"></note>
+<!-- … -->
+<chord>
+   <note dur="4" oct="4" pname="c"/>
+   <note dur="4" oct="4" pname="e"/>
    <choice>
       <sic>
-         <note dur="2" oct="4" pname="g"></note>
+         <note dur="2" oct="4" pname="g"/>
       </sic>
       <corr resp="#JK">
-         <note dur="4" oct="4" pname="g"></note>
+         <note dur="4" oct="4" pname="g"/>
       </corr>
    </choice>
-   <note dur="4" oct="4" pname="a"></note>
+   <note dur="4" oct="4" pname="a"/>
 </chord>
 <!-- within the header for this document: -->
 <respStmt>

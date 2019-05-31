@@ -1,8 +1,8 @@
 <chord>
-   <note pname="c"></note>
-   <note pname="e"></note>
-   <note pname="g"></note>
+   <note pname="c"/>
+   <note pname="e"/>
+   <note pname="g"/>
    <add>
-      <note accid="f" pname="b"></note>
+      <note accid="f" pname="b"/>
    </add>
 </chord>
