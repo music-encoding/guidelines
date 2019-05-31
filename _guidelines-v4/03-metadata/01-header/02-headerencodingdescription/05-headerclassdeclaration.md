@@ -8,7 +8,6 @@ The {% include link elem="classDecls" %} element allows the declaration of gener
 
 - by reference to a recognized international classification scheme such as the Dewey Decimal Classification, the Universal Decimal Classification, the Colon Classification, the Library of Congress Classification, or any other system widely used in library and documentation work
 - by providing a set of keywords, as provided, for example, by British Library or Library of Congress Cataloguing in Publication data, or as defined by the encoder.
- 
 
 {% include desc elem="classDecls" %}
 
