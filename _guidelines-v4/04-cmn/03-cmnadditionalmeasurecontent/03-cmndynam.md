@@ -7,7 +7,7 @@ version: "v4"
 Common Music Notation provides two different methodologies for expressing the volume of a note, phrase, section, etc. The first is a verbal instruction providing such information in human language, possibly in an abbreviated form. An example is the word *piano*, indicating a quiet volume, often abbreviated as *p*. In MEI, verbal instructions like this are encoded using the {% include link elem="dynam" %} element from the Shared module (see chapter {% include link id="shared" %}):
 {% include mei example="cmn/cmn-sample125.xml" valid="" %}
 
-By convention, {% include link elem="dynam" %} elements, like {% include link elem="slur" %} and other elements belonging to the {% include link model="model.controlEventLike" %} class, are encoded at the end of the {% include link elem="measure" %} to which they belong. This requires {% include link elem="dynam" %} to be assigned to a certain {% include link elem="staff" %} using the **@staff** attribute, whose value refers to the target element's **@n** attribute. In the absence of other information, all layers within the staff are assumed to have the same dynamic marking.
+By convention, {% include link elem="dynam" %} elements, like {% include link elem="slur" %} and other elements belonging to the {% include link model="controlEventLike" %} class, are encoded at the end of the {% include link elem="measure" %} to which they belong. This requires {% include link elem="dynam" %} to be assigned to a certain {% include link elem="staff" %} using the **@staff** attribute, whose value refers to the target element's **@n** attribute. In the absence of other information, all layers within the staff are assumed to have the same dynamic marking.
 
 {% include mei example="cmn/cmn-sample126.xml" valid="" %}
 
@@ -45,7 +45,7 @@ All musical elements affected by the {% include link elem="dynam" %} may be expl
 
 It is recommended that the list of references in **@plist** include all participants in the dynamic marking, including the first and last notes as in the preceding example, even though they are duplicated by **@startid** and **@endid** attributes.
 
-In addition to verbal instructions, Common Music Notation uses graphical symbols to indicate ‘continuous’ dynamics. These crescendo and decrescendo (or diminuendo) symbols are encoded in MEI using the {% include link elem="hairpin" %} element. It also is a member of the {% include link model="model.controlEventLike" %} class, which means it too is used just before the close of a {% include link elem="measure" %} element, following the encoding of all staves. The required attribute **@form** specifies the direction of the symbol by taking one of two possible values: *cres* (growing louder) or *dim* (getting softer).
+In addition to verbal instructions, Common Music Notation uses graphical symbols to indicate ‘continuous’ dynamics. These crescendo and decrescendo (or diminuendo) symbols are encoded in MEI using the {% include link elem="hairpin" %} element. It also is a member of the {% include link model="controlEventLike" %} class, which means it too is used just before the close of a {% include link elem="measure" %} element, following the encoding of all staves. The required attribute **@form** specifies the direction of the symbol by taking one of two possible values: *cres* (growing louder) or *dim* (getting softer).
 
 {% include mei example="cmn/cmn-sample138.xml" valid="" %}
 

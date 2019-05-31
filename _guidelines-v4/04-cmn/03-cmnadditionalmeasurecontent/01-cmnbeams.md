@@ -24,23 +24,23 @@ From the 19th century onwards, it became quite common to break secondary beams t
 
 In the music of the second half of the 20th century, it is quite common to indicate acceleration or deceleration using converging beams as in the image below:
 
-The encoding of such a beam is accomplished using the **@rend** attribute of the beam, which allows the following values:
+The encoding of such a beam is accomplished using the **@form** attribute of the beam, which allows the following values:
 
 {:.gloss}
-**acc**: The secondary beams start in their usual position and gradually converge until they meet with the primary beam on the last note (or, the first eighth note under the beam). 
+**acc**: The secondary beams start in their usual position and gradually converge until they meet with the primary beam on the last note (or, the first eighth note under the beam).
 
 {:.gloss}
-**rit**: The secondary beams gradually diverge until they reach their regular distance. 
+**rit**: The secondary beams gradually diverge until they reach their regular distance.
 
 {:.gloss}
 **mixed**: The secondary beams diverge and converge arbitrarily.
 
 {:.gloss}
-**norm**: The beam is rendered as usual (default). 
+**norm**: The beam is rendered as usual (default).
 
 {% include mei example="cmn/cmn-sample109.xml" valid="" %}
 
-The duration of notes, rests, or chords under a beam which carries the **@rend** attribute with a value of 'acc', 'rit', or 'mixed' must be treated specially. The first and last contained elements must specify a duration which matches the number of beams displayed at the point of these events. In the case of a 'mixed' beam, each event at the point of change in the number of secondary beams must carry a **@dur** attribute. Beams like this may be encoded thusly:
+The duration of notes, rests, or chords under a beam which carries the **@form** attribute with a value of 'acc', 'rit', or 'mixed' must be treated specially. The first and last contained elements must specify a duration which matches the number of beams displayed at the point of these events. In the case of a 'mixed' beam, each event at the point of change in the number of secondary beams must carry a **@dur** attribute. Beams like this may be encoded thusly:
 
 {% include figure img="modules/cmn/beamAcc-Rit.png" caption="Accelerando beams" %}
 {% include mei example="cmn/cmn-sample110.xml" valid="" %}
