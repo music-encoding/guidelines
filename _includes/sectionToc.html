@@ -1,6 +1,6 @@
 {% assign c-label = include.version | prepend:'guidelines-' %}
 {% assign c = site.collections | where: "label", c-label | first %}
-<p class="sectionToc">
+<p class="sectionToc sticky">
 {% for doc in c.docs %}
   {% assign filename = doc.url | split:'/' | last | split:'-' | first %}
   {% assign levels = doc.relative_path | split: '/' %}
