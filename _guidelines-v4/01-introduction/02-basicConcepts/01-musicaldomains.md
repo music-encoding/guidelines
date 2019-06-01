@@ -4,7 +4,7 @@ title: "Musical Domains"
 sectionid: "musicalDomains"
 ---
 
-The term "music" has many different notions, ranging from audible sounds over written performance instructions or transcriptions of such events to conceptual rulesets that establish different theories of what music is, and what is allowed in music. In 1965, Milton Babbitt distinguished between _graphemic_, _acoustic_ and _auditory_ aspects of music (Babbitt, Milton: _The Use of Computers in Musicological Research_, in: _Perspectives of New Music_ 3/2 (1965), p. 74–83).
+The term "music" has many different notions, ranging from audible sounds over written performance instructions or transcriptions of such events to conceptual rulesets that establish different theories of what music is, and what is allowed in music. In 1965, Milton Babbitt distinguished between _graphemic_, _acoustic_ and _auditory_ aspects of music (Babbitt, Milton: _The Use of Computers in Musicological Research_, in: _Perspectives of New Music_ 3/2 (1965), p. 76).
 
 Various music encoding formats took up this distinction, most notably SMDL, the _Standard Music Description Language_ (ISO/IEC DIS 10743). While the format itself was hardly ever used for its impractical implementation details, parts of its design certainly influenced the development of other formats, including MEI. In a documentation draft ([http://xml.coverpages.org/smdl10743-pdf.gz, p.5](http://xml.coverpages.org/smdl10743-pdf.gz){:target='\_blank'}), SMDL identifies four different _musical domains_:
 
