@@ -41,7 +41,7 @@ versions:
     # names
     dev: "development version"
     v3: "3.0.0"
-    v4: "4.0.0"
+    v4: "4.0.1"
 
 collections:
   #guidelines-dev:
