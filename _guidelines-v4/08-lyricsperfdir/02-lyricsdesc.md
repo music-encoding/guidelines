@@ -6,7 +6,7 @@ title: "Vocal Text"
 sectionid: "lyricsDesc"
 ---
 
-This chapter describes how to encode words and syllables in vocal notation. This text is typically written under a staff to indicate the text to be vocally performed. As such, this text should not be confused with other text on the score, for which see {% include link id="sharedTextualElements" %} and {% include link id="text" %}
+This chapter describes how to encode words and syllables in vocal notation. This text is typically written under a staff to indicate the text to be vocally performed. As such, this text should not be confused with other text on the score, for which see {% include link id="sharedTextualElements" %} and {% include link id="text" %} - do anything
 
 These guidelines suggest two methods for encoding text in vocal notation: encoding syllables as {% include link id="lyricsInEvents" %} and encoding performed text as {% include link id="lyricsAfterEvents" %} after the notes (and other staff events) either within {% include link elem="layer" %} elements or within {% include link elem="measure" %} elements when available (for example in a Common Music Notation context). Each method may be more convenient depending on the source text and on the textual phenomena that the encoding intends to record.
 
