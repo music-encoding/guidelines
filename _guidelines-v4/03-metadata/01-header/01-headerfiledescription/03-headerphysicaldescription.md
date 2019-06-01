@@ -29,6 +29,8 @@ The use of standard abbreviations for units of quantity is recommended where app
 
 {% include mei example="header/header-sample031.xml" valid="" %}
 
-For ease of processability, the use of the **@unit** attribute is recommended, as in the following example:
+For ease of processability, the use of the **@unit** attribute is recommended whenever possible, as in the following example:
 
 {% include mei example="header/header-sample032.xml" valid="" %}
+
+The **@unit** attribute is restricted to certain values: "byte" (Byte), "char" (Character), "cm" (Centimeter), "deg" (Degree), "in" (Inch), "issue" (Serial issue), "ft" (Foot), "m" (Meter), "mm" (Millimeter), "page" (Page), "pc" (Pica), "pt" (Point), "px" (Pixel), "rad" (Radian), "record" (Record), "vol" (Serial volume), and "vu" (MEI virtual unit).

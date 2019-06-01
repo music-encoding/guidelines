@@ -35,7 +35,7 @@ Since relations are bidirectional, they may be defined on both entities involved
 
 Some of these relationships are already implicitly expressed by the MEI structural model: FRBR defines an expression entity as a realization of a work, but as this relation is implied by the expressionList element’s child relationship to its parent work element, the hasRealization/isRealizationOf relation does not need to be explicitly declared. Likewise, it is not necessary to specify by means of relation elements that an item is an exemplar of the source described by its parent source element. This resembles the FRBR model, which allows 1:n relationships both between works and expressions, and between manifestations and items.
 
-However, as FRBR allows n:n relations between expressions and manifestations (in MEI: sources), a hierarchical model based on the strucutre of XML is clearly insufficient to express all possible expression / manifestation combinations. It is therefore required to declare these relations explicitly. In FRBR terms, a manifestation / source is an embodiment of an expression.
+However, as FRBR allows n:n relations between expressions and manifestations (in MEI: sources), a hierarchical model based on the structure of XML is clearly insufficient to express all possible expression / manifestation combinations. It is therefore required to declare these relations explicitly. In FRBR terms, a manifestation / source is an embodiment of an expression.
 
 {% include mei example="FRBR/FRBR-sample086.xml" valid="" %}
 
