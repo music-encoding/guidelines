@@ -4,7 +4,7 @@ title: "Neume Notation"
 version: "v4"
 ---
 
-Most neume notation is used to set music to an existing text. The syllable is the fundamental unit of structure, with the neumes themselves serving as a means of "sonifying" the text. A syllable may be expressed via one or more neumes, with the particular neume shape chosen depending on the pitch contour that is being employed and the desired interpretation. For example, two pitches in rising succession might be encoded as a "podatus" (sometimes also called a "pes"), or it might be encoded as two separate punctums, depending on whether it should be sung smoothly connected or with a slight amount of space between the notes.
+
 
 There are a limited number of possiblities for the most popular musical contours. In general, groups of two to four notes are given unique names, assigned depending on their contour. A "clivis" would be two joined descending notes, while a "podatus" is two joined ascending notes. Table 1 shows most of the named neume shapes. Neume groups of more than four notes are simply called "compound" neumes.
 
