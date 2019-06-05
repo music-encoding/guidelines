@@ -20,7 +20,7 @@ Most neume notation is used to set music to an existing text. The {% include lin
 {% include link elem="signifLet" %}
 : element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
 
-{% include figure img="modules/neumes/signiLeft.png" %}
+{% include figure img="modules/neumes/signifLet.jpg" %}
 
 {% include link elem="episema" %}
 : to indicate an episema
@@ -30,12 +30,12 @@ Most neume notation is used to set music to an existing text. The {% include lin
 {% include link elem="division" %}
 : to indicate pause between neumes
 
-{% include figure img="modules/neumes/division.png" %}
+{% include figure img="modules/neumes/division.jpg" %}
 
 {% include link elem="custos" %}
 : to indicate a custos
 
-{% include figure img="modules/neumes/custos.png" %}
+{% include figure img="modules/neumes/custos.jpg" %}
 
 {% include link elem="ncGrp" %}
 : to indicate multiple {% include link elem="nc" %}s
@@ -43,7 +43,7 @@ Most neume notation is used to set music to an existing text. The {% include lin
 {% include link elem="syllable" %}
 : for text
 
-{% include figure img="modules/neumes/syllable.png" %}
+{% include figure img="modules/neumes/syllable.jpg" %}
 
 {% include link elem="hispanTick" %}
 : to indicate Hispanic ticks
@@ -58,7 +58,7 @@ Most neume notation is used to set music to an existing text. The {% include lin
 {% include link elem="oriscus" %}
 : to indicate an oriscus
 
-{% include figure img="modules/neumes/oriscus.png" %}
+{% include figure img="modules/neumes/oriscus.jpg" %}
 
 {% include link elem="liquescent" %}
 : to indicate a liquescent
