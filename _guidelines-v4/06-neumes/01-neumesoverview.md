@@ -37,7 +37,7 @@ Here in Table 1 are more examples:
 |---------------------+---------------------+---------------------|
 | Name            | Image      |        Encoding |
 |-----------------|:-----------|:---------------:|
-| **One pitch A**  |  ![One pitch](/images/v4/modules/neumes/one-pitch-ex-a.png "Logo Title Text 1") | `<neume> <nc pname="c" oct="3" /> </neume>` |
+| **One pitch A**  |  ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-a.png "One pitch A") | `<neume> <nc pname="c" oct="3" /> </neume>` |
 |-----------------+------------+-----------------|
 | **One pitch B**     |            |`<neume> <nc pname="c" oct="4" tilt="s" /> </neume>`|
 |                 |            |                 |
