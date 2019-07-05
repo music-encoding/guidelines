@@ -23,7 +23,7 @@ The {% include link elem="syllable" %} element is used as the primary organizati
 {% include figure img="modules/neumes/NEUME-non-con.png" %} (non-connected)
 
 {% include link elem="nc" %} 
-: the neume component element is a single-pitched event, although the exact pitch may not be known.
+: neume component is a single-pitched event, although the exact pitch may not be known.
 
 {% include figure img="modules/neumes/nc-example-1.png" %}
 
