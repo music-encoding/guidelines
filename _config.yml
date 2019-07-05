@@ -3,7 +3,7 @@ title: MEI Guidelines
 email: info@music-encoding.org
 baseurl: "/guidelines" 
 url: "https://ddmal.github.io/guidelines"
-style_baseurl: "https://ddmal.github.io/guidelines"
+style_baseurl: "https://music-encoding.github.io"
 #style_baseurl: "http://localhost:4001"
 twitter_username: music-encoding
 github: [metadata]
