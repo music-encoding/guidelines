@@ -1,8 +1,8 @@
 <syllable>
    <syl>so_</syl>
-   <uneume name="pes" xml:id="neumes.d13">
+   <neume type="pes" xml:id="neumes.d13">
       <supplied>
-         <note oct="3" pname="g"></note>
+         <nc oct="3" pname="g"/>
       </supplied>
-   </uneume>
+   </neume>
 </syllable>
