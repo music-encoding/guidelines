@@ -1,5 +1,5 @@
 <bifolium>
-  <patch attached.to="inner.verso" x="3cm" y="2cm" attached.by="glue">
+  <patch attached.to="inner.verso" x="1cm" y="12cm" attached.by="glue">
     <folium width="8cm" height="2cm"/>
   </patch>
 </bifolium>
