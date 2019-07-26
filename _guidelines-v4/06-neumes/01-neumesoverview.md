@@ -1,3 +1,9 @@
+---
+sectionid: neumesOverview
+title: "Overview of the Neumes Module"
+version: "v4"
+regenerate: true
+---
 # 6. Repertoire: Neume Notation
 
 
@@ -8,15 +14,16 @@ The MEI Neume Module represents the community’s attempt to create a standardiz
 
 The following four elements are the fundamental components of the Neumes Module:
 
-**syllable**
+{% include desc elem="syllable" %}
 Neume notation can be thought of as "neumed text". Therefore, the syllable element provides high-level organization in this repertoire.
-**syl**
+{% include desc elem="syl" %}
 (syllable) – Individual lyric syllable.
-**neume**
+{% include desc elem="neume" %}
 Sign representing one or more musical pitches.
 **nc**
 Sign representing a single pitched event, although the exact pitch may not be known.
-
+{% include desc elem="nc" %}
+Sign representing a single pitched event, although the exact pitch may not be known.
 
 Most neume notation is used to set music to an existing text. The syllable is the fundamental unit of structure, with the neumes themselves serving as a means of “sonifying” the text. A syllable may be expressed via one or more neumes, with the particular neume shape chosen depending on the pitch contour that is being employed and the desired interpretation. The syllable element is used as the primary organizational element for neume notation within a layer element. Within syllable, the syl element defined in the MEI.shared module is used for encoding the textual content, while the neume and nc elements are used to encode the neumes themselves. Within these neume module elements, other standard MEI mechanisms are available to accommodate, for example, editorial or critical markup.
 
