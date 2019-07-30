@@ -73,9 +73,8 @@ The following examples show how the current MEI Neume Module works when applied 
 |---------------------+---------------------+---------------------|
 | Name            | Image      |        Encoding |
 |-----------------|:-----------|:---------------:|
-| **LIQUESCENT – EXAMPLE A Staff notation**  |  ![Liquescent-A](/guidelines/images/modules/neumes/LIQUESCENT–ExampleA.png) | `<neume> <nc pname="f" oct="4" tilt="n" /> <liquescent curl="c" /> </neume>` |
+| **LIQUESCENT – EXAMPLE A Staff notation**  |  ![Liquescent-A](/guidelines/images/v4/modules/neumes/LIQUESCENT–ExampleA.png "Example A") | `<neume> <nc pname="f" oct="4" tilt="n" /> <liquescent curl="c" /> </neume>` |
 |-----------------+------------+-----------------|
-| **LIQUESCENT – EXAMPLE B Aquitanian notation**     |  ![Liquescent-B](/guidelines/images/modules/neumes/LIQUESCENT-ExampleB.png) |`<neume> <nc />
-<liquescent intm="u" /> <nc tilt="ne" intm="u" /> </neume>`|
+| **LIQUESCENT – EXAMPLE B Aquitanian notation**     |  ![Liquescent-B](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png "Example B") |`<neume> <nc /> <liquescent intm="u" /> <nc tilt="ne" intm="u" /> </neume>`|
 |-----------------+------------+-----------------|
 
