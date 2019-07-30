@@ -79,6 +79,23 @@ Most neume notation is used to set music to an existing text. The syllable is th
 
 {% include desc atts="att.nc.log/oct" %} {[0-9] | unknown} (octave number)
 
+{% include desc atts="att.intervalMelodic/intm" %} (interval melodic; relative to the previous {% include link elem="nc" %}) {u | d | s | n | su | sd} (u = up, d = down, s = same, n = neutral/unknown, su = same or higher (but not lower), sd = same or lower (but not higher)). In addition, diatonic intervals (distance on the staff, regardless of the scale) can be indicated, by adding an “S” after a positive or negative single-digit integer, e.g., “-2S” would mean two diatonic steps below (a major or minor third below).
+
+{% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) {% include figure img="modules/neumes/nc-example-1.png" %}(gapped) {% include figure img="modules/neumes/nc-example-2.png" %} (looped) {% include figure img="modules/neumes/nc-example-3.png" %}(extended) 
+
+{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) {% include figure img="modules/neumes/curve.png" %}
+
+{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) {% include figure img="modules/neumes/angled.png" %}
+
+{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) {% include figure img="modules/neumes/hooked.png" %}  
+
+{% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature
+
+{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous  {% include link elem="nc" %} this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) {% include figure img="modules/neumes/rellenS.png" %} {% include figure img="modules/neumes/rellenL.png" %} 
+
+{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) {% include figure img="modules/neumes/tilt.png" %}   
+
+{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) {% include figure img="modules/neumes/s-shape.png" %} 
 
 
 
@@ -89,25 +106,3 @@ Most neume notation is used to set music to an existing text. The syllable is th
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-There are a limited number of possiblities for the most popular musical contours. In general, groups of two to four notes are given unique names, assigned depending on their contour. A "clivis" would be two joined descending notes, while a "podatus" is two joined ascending notes. Table 1 shows most of the named neume shapes. Neume groups of more than four notes are simply called "compound" neumes.
-
-{% include figure img="modules/neumes/parrish_neumes.png" caption="Table 1. Variant neume notation. (From Parrish, \"The notation of medieval music,\" 6)" %}
-
-As shown in Table 1, it is possible to have many different styles of neume shapes, derived from local practices of regional groups. In general, these styles are all interpreted in a similar fashion; however, there is evidence that the performance practice of some styles of neume notation differed with regard to rhythm and cadence. This version of the MEI neumes module does not attempt to encode any rhythmic information present in the neume notation. While it may be possible to encode rhythmic values on {% include link elem="note" %} elements, this practice is highly discouraged and, if present, should be interpreted as a modern transcription not present in the original sources.
-
-Neume notation existed before the invention of the staff. Staffless neume notation ("adiastemtic", "cheironomic" or "in campo aperto") existed primarily as a mnemonic device, reminding performers of the contour of the melody but lacking any absolute pitch information. These neumes were written above the text. With the invention of the staff lines and the clef, "heightened" or "diastematic" neume notation could be used to provide exact interval information. In some cases the staff lines are not actually drawn on the page, but their position relative to an imaginary line and initial clef is consistent.
-
-The {% include link elem="syllable" %} element is used as the primary organizational element for neume notation within a {% include link elem="layer" %} element. Within {% include link elem="syllable" %}, the {% include link elem="syl" %} element defined in the MEI.shared module is used for encoding the textual content, while the {% include link elem="neume" %} and {% include link elem="nc" %} elements are used to encode the neumes themeselves. Within these neume module elements, other standard MEI mechanisms are available to accommodate, for example, editorial or critical markup.
