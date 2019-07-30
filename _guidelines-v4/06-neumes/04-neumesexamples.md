@@ -1,7 +1,85 @@
 ---
 sectionid: neumesExamples
-title: "Examples"
+title: "6.4 Samples of MEI encodings"
 version: "v4"
 ---
 
-Some of these examples are excerpts from works of Hildegard von Bingen, with the encoding performed by Stefan Morent and Gregor Schräder.
+#### Basic Encoding – Syllable 
+
+The first example illustrates the most basic encoding of neume notation. Encoded here is the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively. The encoding was performed by Stefan Morent and Gregor Schräder.
+
+{% include figure img="modules/neumes/O-splendidissima.png" %}
+
+<layer>
+   <syllable>
+      <syl n="initial">
+         <rend color="red"> O </rend>
+      </syl>
+      <neume>
+         <nc oct="3" pname="c"/>
+         <nc intm="d" oct="2" pname="b"/>
+         <nc intm="u" oct="3" pname="c"/>
+      </neume>
+   </syllable>
+   <syllable>
+      <syl>splen_ </syl>
+      <neume>
+         <nc oct="3" pname="g"/>
+         <nc oct="3" pname="e"/>
+      </neume>
+      <neume>
+         <nc oct="3" pname="d"/>
+         <nc oct="3" pname="f"/>
+      </neume>
+   </syllable>
+   <syllable>
+      <syl>di_ </syl>
+      <neume>
+         <nc tilt="n" oct="3" pname="f"/>
+         <nc tilt="se" con="g" oct="3" pname="d"/>
+         <nc tilt="se" con="g" oct="3" pname="c"/>
+      </neume>
+   </syllable>
+   <syllable>
+      <syl>dis_ </syl>
+      <neume>
+         <nc tilt="n" oct="3" pname="e"/>
+      </neume>
+   </syllable>
+   <syllable>
+      <syl>si_ </syl>
+      <neume>
+         <nc oct="2" pname="a"/>
+         <nc con="g" oct="2" pname="b"/>
+         <nc con="g" tilt="n" oct="3" pname="d"/>
+      </neume>
+   </syllable>
+   <syllable>
+      <syl>ma </syl>
+      <neume>
+         <nc oct="2" pname="b"/>
+         <nc oct="2" pname="a"/>
+      </neume>
+   </syllable>
+</layer>
+
+
+#### Basic Encoding – Neumes
+
+The following examples show how the current MEI Neume Module works when applied to staff notation, St Gall, Old Hispanic, and Aquitanian notation.
+
+
+
+|---------------------+---------------------+---------------------|
+| Name            | Image      |        Encoding |
+|-----------------|:-----------|:---------------:|
+| **LIQUESCENT – EXAMPLE A Staff notation**  |  {% include figure img="modules/neumes/LIQUESCENT–ExampleA.png" %} | `<neume> <nc pname=“f” oct=“4” tilt=“n” /> <liquescent curl=“c” /> </neume>` |
+|-----------------+------------+-----------------|
+| **LIQUESCENT – EXAMPLE B Aquitanian notation**     |  {% include figure img="modules/neumes/LIQUESCENT-ExampleB" %} |`<neume> <nc />
+<liquescent intm=“u” /> <nc tilt=“ne” intm=“u” /> </neume>`|
+|=================+============+=================|
+
+
+ 
+
+
