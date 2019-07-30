@@ -51,14 +51,8 @@ Here in Table 1 are more examples:
 |-----------------|:-----------|:---------------:|
 | **One pitch A**  |  ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-a.png "One pitch A") | `<neume> <nc pname="c" oct="3" /> </neume>` |
 |-----------------+------------+-----------------|
-| **One pitch B**     |            |`<neume> <nc pname="c" oct="4" tilt="s" /> </neume>`|
+| **One pitch B**     |   ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-b.png "One pitch B")          |`<neume> <nc pname="c" oct="4" tilt="s" /> </neume>`|
 |                 |            |                 |
 |=================+============+=================|
-| **Quilisma**        |            |                 |
+| **Quilisma**        |    ![Quilisma](/guidelines/images/v4/modules/neumes/quilisma.png "Quilisma")         |      `<neume> <nc pname=“d” oct=“4” /> <quilisma pname=“e” oct=“4” /> <nc pname=“f” oct=“4” /> <nc pname=“e” oct=“4” /> </neume>` 
 |-----------------+------------+-----------------|
-
-
-
-
-
-{% include figure img="modules/neumes/table-1.png" %} 
