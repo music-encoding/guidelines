@@ -1,6 +1,6 @@
 ---
 sectionid: neumesBackground
-title: "Module Background"
+title: "6.2 Module Background"
 version: "v4"
 ---
 
