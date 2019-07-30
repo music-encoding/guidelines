@@ -99,4 +99,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include desc atts="att.liquescent.vis/looped" %} {true | false} (true if the curve is closed)  
 
 
-Note: Other articulation marks such as ictus, circulus, semicirculus, accentus, and other fonts in [SMuFL](https://www.smufl.org/fonts/) can be encoded using: glyph.auth, glyph.name, glyph.num, and glyph.uri
+
+
+#### Note:
+Other articulation marks such as ictus, circulus, semicirculus, accentus, and other fonts in [SMuFL](https://www.smufl.org/fonts/) can be encoded using: glyph.auth, glyph.name, glyph.num, and glyph.uri
