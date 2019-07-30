@@ -1,6 +1,6 @@
 ---
 sectionid: neumesNotation
-title: "Neume Notation and MEI"
+title: "6.3 Neume Notation and MEI"
 version: "v4"
 ---
 
