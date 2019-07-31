@@ -17,21 +17,21 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 #### Elements:
 
 {% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
-{% include figure img="modules/neumes/signifLet.jpg" %}
+{% include figure img="modules/neumes/signifLet.png" %}
 
 {% include link elem="episema" %}: to indicate an episema
 {% include figure img="modules/neumes/episema.png" %}
 
 {% include link elem="division" %}: to indicate pause between neumes
-{% include figure img="modules/neumes/division.jpg" %}
+{% include figure img="modules/neumes/division.png" %}
 
 {% include link elem="custos" %}: to indicate a custos
-{% include figure img="modules/neumes/custos.jpg" %}
+{% include figure img="modules/neumes/custos.png" %}
 
 {% include link elem="ncGrp" %}: to indicate multiple {% include link elem="nc" %}s
 
 {% include link elem="syllable" %}: for text
-{% include figure img="modules/neumes/syllable.jpg" %}
+{% include figure img="modules/neumes/syllable.png" %}
 
 {% include link elem="hispanTick" %}: to indicate Hispanic ticks
 {% include figure img="modules/neumes/hispanTick.png" %}
@@ -40,7 +40,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include figure img="modules/neumes/quilisma.png" %}
 
 {% include link elem="oriscus" %}: to indicate an oriscus
-{% include figure img="modules/neumes/oriscus.jpg" %}
+{% include figure img="modules/neumes/oriscus.png" %}
 
 {% include link elem="liquescent" %}: to indicate a liquescent
 {% include figure img="modules/neumes/liquescent.png" %}
@@ -79,7 +79,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 #### Significative letters attribute: 
 
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right }(the location of the letters relative to the {% include desc elem="neume" %} / {% include desc elem="syl" %} 
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include desc elem="neume" %} / {% include desc elem="syl" %} 
 
 #### Hispan tick attributes: 
 
