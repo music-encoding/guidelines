@@ -56,7 +56,12 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 {% include desc atts="att.intervalMelodic/intm" %} (interval melodic; relative to the previous {% include link elem="nc" %}) {u | d | s | n | su | sd} (u = up, d = down, s = same, n = neutral/unknown, su = same or higher (but not lower), sd = same or lower (but not higher)). In addition, diatonic intervals (distance on the staff, regardless of the scale) can be indicated, by adding an “S” after a positive or negative single-digit integer, e.g., “-2S” would mean two diatonic steps below (a major or minor third below)
 
-{% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) {% include figure img="modules/neumes/gapped.png" %} (gapped) {% include figure img="modules/neumes/looped.png" %} (looped) {% include figure img="modules/neumes/extended.png" %} (extended) 
+{% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) 
+{% include figure img="modules/neumes/gapped.png" %} 
+(gapped)
+{% include figure img="modules/neumes/looped.png" %}
+(looped)
+{% include figure img="modules/neumes/extended.png" %} (extended) 
 
 {% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) {% include figure img="modules/neumes/curve.png" %}
 
