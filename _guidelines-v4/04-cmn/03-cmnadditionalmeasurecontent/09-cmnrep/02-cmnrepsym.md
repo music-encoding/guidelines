@@ -23,12 +23,12 @@ In addition to its indication of a repeated beat, the beatRpt element is sometim
 The {% include link elem="mRpt" %} element is available for repetition of an entire measure. Like {% include link elem="mRest" %}, it must be the sole child of {% include link elem="layer" %}, no other events should be used. The **@n** attribute of {% include link elem="mRpt" %} should not be used to record the number displayed above the measure in the figure below. Instead, the numbering of repetitions of the written-out measure can be enabled using the **@multi.number** attribute available on the {% include link elem="scoreDef" %} and {% include link elem="staffDef" %} elements.
 
 {% include figure img="ExampleImages/mrpt-20100510.png" caption="Measure repetition" %}
-{% include mei example="cmn/cmn-sample162.xml" valid="" %}
+{% include mei example="cmn/cmn-sample162.txt" valid="" %}
 
 The {% include link elem="halfmRpt" %} element represents the incorrect, but frequently found, use of the measure repeat (or similar) sign to indicate repetition of half of a measure. This practice mostly occurs in hand-written notation and usually involves the repetition of the second half of a measure in duple time. This element is necessary because the function of the symbol, not the visual symbol itself, is of primary importance. The following example from the beginning of Beethoven's *Waldstein* sonata illustrates such usage:
 
 {% include figure img="modules/cmn/halfmRpt_beethoven.png" caption="Half-measure repeat" %}
-{% include mei example="cmn/cmn-sample163.xml" valid="" %}
+{% include mei example="cmn/cmn-sample163.txt" valid="" %}
 
 As seen in the example above, it is possible to continuously repeat half measures, even across barlines.
 

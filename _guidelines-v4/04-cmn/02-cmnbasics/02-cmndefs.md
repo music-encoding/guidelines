@@ -19,7 +19,7 @@ A {% include link elem="scoreDef" %} element is used to specify the common param
 
 The following example describes a score in common time with 3 flats:
 
-{% include mei example="cmn/cmn-sample095.xml" valid="" %}
+{% include mei example="cmn/cmn-sample095.txt" valid="" %}
 
 Other attributes allow the description of default page and system margins and fonts for text and music:
 
@@ -41,11 +41,11 @@ In addition to the parameters inherited from {% include link elem="scoreDef" %},
 
 A staff with a tenor clef is encoded as in the following example:
 
-{% include mei example="cmn/cmn-sample096.xml" valid="" %}
+{% include mei example="cmn/cmn-sample096.txt" valid="" %}
 
 In the case of transposing instruments, the key-related attributes described above may be used to override the written key expressed in the {% include link elem="scoreDef" %} element. As a basic principle, MEI always captures written pitches, so the **@trans.diat** and **@trans.semi** attributes may be used to indicate the number of diatonic steps and semitones to calculate sounded pitch from written pitch. The piccolo and E♭ clarinet staves in the example below utilize these attributes:
 
-{% include mei example="cmn/cmn-sample097.xml" valid="" %}
+{% include mei example="cmn/cmn-sample097.txt" valid="" %}
 
 There are a number of additional elements that can be used as children of {% include link elem="staffDef" %} in order to describe additional features of the staff, such as the color of a clef or a key signature added in a different hand. These elements include:
 

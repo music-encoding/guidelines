@@ -6,16 +6,16 @@ version: "v4"
 
 In CMN, the notes of a chord are sometimes performed successively rather than simultaneously. This behavior, called arpeggiation, is normally indicated using a wavy line preceding the chord. MEI offers the {% include link elem="arpeg" %} element to describe arpeggios. This element is a member of the {% include link model="controlEventLike" %} class and, like other members of this class, uses the **@staff**, **@layer** and **@tstamp** or the **@startid** and **@endid** attributes to connect it to the affected chord.
 
-{% include mei example="cmn/cmn-sample142.xml" valid="" %}
+{% include mei example="cmn/cmn-sample142.txt" valid="" %}
 
 The usual direction for the performance of an arpeggio is from lowest note to highest, but this is not always the case. The customary signal of an downward arpeggio is an arrowhead added to the bottom of the wavy line. The indication of the presence of an arrowhead and the direction of the arpeggio are handled separately, however. The **@arrow** attribute indicates the presence of an arrowhead in the arpeggiation sign, while the **@order** attribute records the preferred sequence of notes.
 
 The following examples illustrate various ways in which the arrow and order attributes may be employed. The default visual rendition and performance are assumed in the absence of both attributes, while the typical downward arpeggio is indicated by the presence of both attributes. The last two possibilities occur less frequently, but are sometimes appropriate: The presence of the arrow attribute without the order attribute may be used in those cases where the arrowhead is redundant but is added to the symbol for the sake of consistency or when the direction of successive arpeggios changes frequently. The last possibility, an order attribute without an arrow attribute, is ambiguous; however, it can be used as an encoding shortcut since a downward arpeggio must have a visual indication of its direction to distinguish it from the upward arpeggio; therefore, the presence of the arrowhead can be implied.
 
-{% include mei example="cmn/cmn-sample143.xml" valid="" %}
-{% include mei example="cmn/cmn-sample144.xml" valid="" %}
-{% include mei example="cmn/cmn-sample145.xml" valid="" %}
-{% include mei example="cmn/cmn-sample146.xml" valid="" %}
+{% include mei example="cmn/cmn-sample143.txt" valid="" %}
+{% include mei example="cmn/cmn-sample144.txt" valid="" %}
+{% include mei example="cmn/cmn-sample145.txt" valid="" %}
+{% include mei example="cmn/cmn-sample146.txt" valid="" %}
 
 A third, and somewhat counter-intuitive, value for **@order**, "nonarp", indicates that no arpeggio shall be performed. Normally rendered as a bracket instead of a wavy line, this form of arpeggio is used to indicate a non-arpeggiated chord intervening in a sequence of arpeggiated ones. This is common in music for the harp, where arpeggiation is the usual method of performing chords and deviation from the norm must be explicitly indicated.
 

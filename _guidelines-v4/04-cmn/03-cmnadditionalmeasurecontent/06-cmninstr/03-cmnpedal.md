@@ -20,4 +20,4 @@ The meaning of the mark is captured using the **@dir** attribute, which provides
 {:.gloss}
 **half**: depress the pedal half way
 
-{% include mei example="cmn/cmn-sample156.xml" valid="" %}
+{% include mei example="cmn/cmn-sample156.txt" valid="" %}
