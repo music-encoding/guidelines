@@ -40,7 +40,7 @@ Sign representing one or more musical pitches. As such, a {% include link elem="
 
 
 
-Examples (see rows 1-3 in the Table):
+Examples (see also rows 1-3 in the Table):
 
 |---------------------+---------------------+---------------------|
 | Name            | Image      |        Encoding |
