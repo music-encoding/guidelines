@@ -99,15 +99,14 @@ The following examples show how the current MEI Neume Module works when applied 
 |-----------------+------------+-----------------|
 | **EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Extended](/guidelines/images/v4/modules/neumes/extended.png "Extended") |`<neume> <nc tilt="n" /> <nc curve="c" con="e" tilt="s" rellen="s" intm="d" / > </neume>`|
 |-----------------+------------+-----------------|
-| **RELATIVE LENGTH – EXAMPLE A Old Hispanic notation**     |  ![Relative-length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |`<neume> <nc tilt="ne" /> <nc tilt="se" rellen="s" intm="d" /> </neume>`|
+| **RELATIVE LENGTH – EXAMPLE A Old Hispanic notation**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |`<neume> <nc tilt="ne" /> <nc tilt="se" rellen="s" intm="d" /> </neume>`|
 |-----------------+------------+-----------------|
-| **RELATIVE LENGTH – EXAMPLE B Old Hispanic notation**     |  ![Relative-length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |`<neume> <nc tilt="ne" /> <nc tilt="se" rellen="l" intm="d" /> </neume>`|
+| **RELATIVE LENGTH – EXAMPLE B Old Hispanic notation**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |`<neume> <nc tilt="ne" /> <nc tilt="se" rellen="l" intm="d" /> </neume>`|
 |-----------------+------------+-----------------|
-| **LIQUESCENT – EXAMPLE B Aquitanian notation**     |  ![Liquescent-B](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png "Example B") |`<neume> <nc /> <liquescent intm="u" /> <nc tilt="ne" intm="u" /> </neume>`|
+| **HOOK – EXAMPLE Old Hispanic notation**     |  ![Hook](/guidelines/images/v4/modules/neumes/hooked.png "Hook") |`<neume> <nc tilt="ne" /> <nc tilt="se" hooked="true" rellen="s" intm="d" /> </neume>`|
 |-----------------+------------+-----------------|
-| **LIQUESCENT – EXAMPLE B Aquitanian notation**     |  ![Liquescent-B](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png "Example B") |`<neume> <nc /> <liquescent intm="u" /> <nc tilt="ne" intm="u" /> </neume>`|
+| **SIGNIFICATIVE LETTERS St Gall notation**     |  ![Significative-Letters](/guidelines/images/v4/modules/neumes/signifLet.png "Significative Letters") |`<neume> <nc tilt="ne"> <signifLet place="ne" > c </signifLet > </nc > <nc con="g" rellen="s" intm="d" /> <nc con="g" tilt="e" rellen="l" intm="d" /> </neume>`|
 |-----------------+------------+-----------------|
-| **LIQUESCENT – EXAMPLE B Aquitanian notation**     |  ![Liquescent-B](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png "Example B") |`<neume> <nc /> <liquescent intm="u" /> <nc tilt="ne" intm="u" /> </neume>`|
+| **HISPAN TICK Old Hispanic notation**     |  ![HispanTick](/guidelines/images/v4/modules/neumes/hispanTick.png "Hispan tick") |`<neume> <nc curve="a" /> <nc tilt="n" intm="u" > <hispanTick tilt="n" place="nw" /> </nc> </neume>`|
 |-----------------+------------+-----------------|
-
 
