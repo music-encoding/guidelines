@@ -14,5 +14,8 @@ The encoding description may contain elements taken from the model.encodingPart 
 {% include desc elem="editorialDecl" %}
 {% include desc elem="projectDesc" %}
 {% include desc elem="samplingDecl" %}
+{% include desc elem="domainsDecl" %}
+{% include desc elem="tagsDecl" %}
+{% include desc elem="classDecls" %}
 
 Each of these elements is further described in the appropriate section below.

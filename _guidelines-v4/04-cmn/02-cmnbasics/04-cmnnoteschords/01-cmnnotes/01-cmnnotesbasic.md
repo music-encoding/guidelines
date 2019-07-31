@@ -20,22 +20,16 @@ The usual CMN-specific values for **@dur** are:
 
 {:.gloss}
 **1**: whole note
-
 {:.gloss}
 **2**: half note
-
 {:.gloss}
 **4**: quarter note
-
 {:.gloss}
 **8**: eighth note
-
 {:.gloss}
 **16**: sixteenth note
-
 {:.gloss}
-**…**: 
-
+**…**
 {:.gloss}
 **2048**: 2048th note
 
@@ -43,7 +37,6 @@ Additionally, the following two values borrowed from mensural notation are allow
 
 {:.gloss}
 **breve**: double whole
-
 {:.gloss}
 **long**: quadruple whole
 

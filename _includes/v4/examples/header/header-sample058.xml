@@ -1,8 +1,6 @@
 <perfMedium>
    <perfResList>
-      <head>
-         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Orchestration
-      </head>
+      <head>Orchestration</head>
       <perfRes>Flute</perfRes>
       <perfRes>Oboe</perfRes>
       <perfRes>English Horn</perfRes>

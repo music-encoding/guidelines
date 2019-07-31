@@ -1,27 +1,17 @@
 <work xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-   <titleStmt>
-      <title>Der Ring des Nibelungen</title>
-   </titleStmt>
+   <title>Der Ring des Nibelungen</title>
    <componentList>
       <work>
-         <titleStmt>
-            <title>Das Rheingold</title>
-         </titleStmt>
+         <title>Das Rheingold</title>
       </work>
       <work>
-         <titleStmt>
-            <title>Die Walküre</title>
-         </titleStmt>
+         <title>Die Walküre</title>
       </work>
       <work>
-         <titleStmt>
-            <title>Siegfried</title>
-         </titleStmt>
+         <title>Siegfried</title>
       </work>
       <work>
-         <titleStmt>
-            <title>Götterdämmerung</title>
-         </titleStmt>
+         <title>Götterdämmerung</title>
       </work>
    </componentList>
 </work>
