@@ -1,6 +1,6 @@
 ---
 sectionid: neumesExamples
-title: "6.4 Samples of MEI encodings"
+title: "Samples of MEI encodings"
 version: "v4"
 ---
 
