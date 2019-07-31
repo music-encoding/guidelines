@@ -61,7 +61,8 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 (gapped)
 {% include figure img="modules/neumes/looped.png" %}
 (looped)
-{% include figure img="modules/neumes/extended.png" %} (extended) 
+{% include figure img="modules/neumes/extended.png" %} 
+(extended) 
 
 {% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) {% include figure img="modules/neumes/curve.png" %}
 
@@ -71,7 +72,8 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 {% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature
 
-{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) {% include figure img="modules/neumes/rellenS.png" %} {% include figure img="modules/neumes/rellenL.png" %} 
+{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) {% include figure img="modules/neumes/rellenS.png" %} 
+{% include figure img="modules/neumes/rellenL.png" %} 
 
 {% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) {% include figure img="modules/neumes/tilt.png" %}   
 
@@ -102,7 +104,6 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include desc atts="att.liquescent.vis/curve" %} {a | c} (anticlockwise, clockwise) 
 
 {% include desc atts="att.liquescent.vis/looped" %} {true | false} (true if the curve is closed)  
-
 
 
 
