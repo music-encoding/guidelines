@@ -30,7 +30,7 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 | Example 1 | Example 2 | Example 3 |
 |:---------:|:---------:|:---------:|
-|  ![nc-1](/images/v4/modules/neumes/nc-example-1.png)  |  ![nc-2](/images/v4/modules/neumes/nc-example-2.png)  |  ![nc-3](/images/v4/modules/neumes/nc-example-3.png)  |
+|  ![nc-1](/images/v4/modules/neumes/nc-example-1.png)  |  ![nc-2](/guidelines/images/v4/modules/neumes/nc-example-2.png)  |  ![nc-3](/images/v4/modules/neumes/nc-example-3.png)  |
 
 
 {% include desc elem="neume" %}
@@ -38,21 +38,21 @@ Sign representing one or more musical pitches. As such, a {% include link elem="
 
 | Connected | Non-connected | 
 |:---------:|:---------:|
-|  ![Connected](/images/v4/modules/neumes/NEUME-con.png)  |  ![Non-connected](/images/v4/modules/neumes/NEUME-non-con.png)  |
+|  ![Connected](/guidelines/images/v4/modules/neumes/NEUME-con.png)  |  ![Non-connected](/images/v4/modules/neumes/NEUME-non-con.png)  |
 
 
 #### Examples (see also rows 1-3 in the Table):
 
 |-----------+----------|
 |:---------:|:---------|
-| **One pitch - Example A Staff notation** | ![One pitch](/images/v4/modules/neumes/one-pitch-ex-a.png) | 
+| **One pitch - Example A Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-a.png) | 
 
 {% include mei example="neumes/neumes-sample-6-01-01.xml" valid="" %}
 
 
 |-----------+----------|
 |:---------:|:---------|
-| **One pitch - Example B Staff notation** | ![One pitch](/images/v4/modules/neumes/one-pitch-ex-b.png) | 
+| **One pitch - Example B Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-b.png) | 
 
 {% include mei example="neumes/neumes-sample-6-01-02.xml" valid="" %}
 
@@ -60,7 +60,7 @@ Sign representing one or more musical pitches. As such, a {% include link elem="
 
 |-----------+----------|
 |:---------:|:---------|
-| **Quilisma Staff notation** | ![Quilisma](/images/v4/modules/neumes/quilisma.png) |
+| **Quilisma Staff notation** | ![Quilisma](/guidelines/images/v4/modules/neumes/quilisma.png) |
 
 {% include mei example="neumes/neumes-sample-6-01-03.xml" valid="" %}
 
