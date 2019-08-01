@@ -30,7 +30,7 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 | Example 1 | Example 2 | Example 3 |
 |:---------:|:---------:|:---------:|
-|  ![nc-1](/images/v4/modules/neumes/nc-example-1.png)  |  ![nc-2](/guidelines/images/v4/modules/neumes/nc-example-2.png)  |  ![nc-3](/images/v4/modules/neumes/nc-example-3.png)  |
+|  ![nc-1](/guidelines/images/v4/modules/neumes/nc-example-1.png)  |  ![nc-2](/guidelines/images/v4/modules/neumes/nc-example-2.png)  |  ![nc-3](/guidelines/images/v4/modules/neumes/nc-example-3.png)  |
 
 
 {% include desc elem="neume" %}
@@ -38,7 +38,7 @@ Sign representing one or more musical pitches. As such, a {% include link elem="
 
 | Connected | Non-connected | 
 |:---------:|:---------:|
-|  ![Connected](/guidelines/images/v4/modules/neumes/NEUME-con.png)  |  ![Non-connected](/images/v4/modules/neumes/NEUME-non-con.png)  |
+|  ![Connected](/guidelines/images/v4/modules/neumes/NEUME-con.png)  |  ![Non-connected](/guidelines/images/v4/modules/neumes/NEUME-non-con.png)  |
 
 
 #### Examples (see also rows 1-3 in the Table):
