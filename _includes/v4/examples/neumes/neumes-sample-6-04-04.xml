@@ -1,6 +1,6 @@
 <neume>
     <nc pname="a" oct="4" tilt="s" >
-        <episema form="h" place="n" />
+        <episema form="h" place="n"/>
     </nc>
-    <nc pname="g" oct="4" />
+    <nc pname="g" oct="4"/>
 </neume>
