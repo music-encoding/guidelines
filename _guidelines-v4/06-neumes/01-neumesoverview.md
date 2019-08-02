@@ -39,7 +39,8 @@ Sign representing one or more musical pitches. As such, a {% include link elem="
 
 
 
-#### Examples (see also rows 1-3 and following samples in the Table):
+
+#### Examples (see also rows 1-3 and following neumes in the Table):
 
 |-----------+----------|
 |:---------:|:---------|
