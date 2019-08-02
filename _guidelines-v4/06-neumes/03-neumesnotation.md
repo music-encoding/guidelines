@@ -8,7 +8,34 @@ There are four main challenges in encoding Western European early music. The fir
 
 _What do these challenges entail for modern encoders?_
 
-Firstly, sometimes we have to deal with written signs whose meaning is obscure to us and, while we can infer the meaning of some of those signs from the study of later manuscripts with the same melodies and a more precise notation, in other cases we need to turn to music palaeographers who examine the recurrence of those written signs and the context where they were used; by analysing scribal hands in particular manuscripts, palaeographers can often work out if a written sign is a meaningless scribal variant or a graphical feature conveying musical meaning to the medieval reader. Secondly, since a neume shape could either mirror on the page the aural event or bear some other musical meaning attached by convention, the encoding sometimes relies on the visual level (when the shape graphically represents the sound) or on the semantic level, and this distinction has to be made on a case-by-case basis. Moreover, since the same written sign could have multiple interpretations according to the style of notation where it was employed, it is crucial to be aware of the conventions of each regional notational alphabet in order to capture the musical information conveyed by that sign in the contexts where it is found (see {% include figure img="modules/neumes/Example1.png" %} and {% include figure img="modules/neumes/Example2.png" %}. A further complication is that while the music encoding aims to narrow down and capture the meaning of the neumes in a logical and coherent system, occasionally the significance of some neumes is under debate (e.g., {% include link elem="quilisma" %}) and, despite its aim for accuracy, the encoding must remain open for future interpretations.
+Firstly, sometimes we have to deal with written signs whose meaning is obscure to us and, while we can infer the meaning of some of those signs from the study of later manuscripts with the same melodies and a more precise notation, in other cases we need to turn to music palaeographers who examine the recurrence of those written signs and the context where they were used; by analysing scribal hands in particular manuscripts, palaeographers can often work out if a written sign is a meaningless scribal variant or a graphical feature conveying musical meaning to the medieval reader. Secondly, since a neume shape could either mirror on the page the aural event or bear some other musical meaning attached by convention, the encoding sometimes relies on the visual level (when the shape graphically represents the sound) or on the semantic level, and this distinction has to be made on a case-by-case basis. Moreover, since the same written sign could have multiple interpretations according to the style of notation where it was employed, it is crucial to be aware of the conventions of each regional notational alphabet in order to capture the musical information conveyed by that sign in the contexts where it is found.
+
+See two examples of a neume found in different regional styles that cannot be captured with the same encoding:
+
+![Neume 1](/guidelines/images/v4/modules/neumes/Example1.png "Neume 1")  
+
+**St Gall Notation** Oriscus (one-note ornamental neume) 
+
+{% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
+
+**Old Hispanic Notation**: Two-note downward melodic gesture
+
+{% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
+
+![Neume 2](/guidelines/images/v4/modules/neumes/Example2.png "Neume 2") 
+
+**Aquitanan Notation** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
+
+{% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
+
+**Old Hispanic Notation** Four-note neutral-low-high-low melodic gesture
+
+{% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
+
+
+
+A further complication is that while the music encoding aims to narrow down and capture the meaning of the neumes in a logical and coherent system, occasionally the significance of some neumes is under debate (e.g., {% include link elem="quilisma" %}) and, despite its aim for accuracy, the encoding must remain open for future interpretations.
+
 From all these challenges has arisen the need for an early music encoding standardisation, that is, a set of rules that work for the description of any neume across all early notations regardless of the different methodologies applied to the study of individual notations and their idiosyncrasies. 
 
 Broadly speaking, Western early notations belong to two categories. On one side we have notations where two or more notes were represented by a single pen-stroke, while on the other side there are notations where the notes are graphically separated by means of discrete dots or short pen-strokes; these distinctions have been described even within single notational styles as interrupted neumes `<ineume>` or uninterrupted `<uneume>` (Morent & Schräder 2008; Morent 2011; MEI Guidelines, 6: Neume Notation, version 3.0), and now as gapped or not gapped (Behrendt, Bain, & Helsen 2017; MEI Guidelines, 6: Neume Notation, version 4.0). To date, the MEI Neume Module has been tested mainly on stroke notations (St. Gall, Old Hispanic, etc.), but also on Aquitanian point-notation. 
