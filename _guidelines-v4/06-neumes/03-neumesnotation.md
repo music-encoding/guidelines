@@ -108,7 +108,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 #### Significative letters attribute: 
 
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include desc elem="neume" %} / {% include desc elem="syl" %} 
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or {% include link elem="nc" %} %} 
 
 #### Hispan tick attributes: 
 
