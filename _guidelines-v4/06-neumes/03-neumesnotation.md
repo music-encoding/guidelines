@@ -12,8 +12,7 @@ Firstly, sometimes we have to deal with written signs whose meaning is obscure t
 
 See two examples of a neume found in different regional styles that cannot be captured with the same encoding:
 
-Example 1: 
-{% include figure img="modules/neumes/oriscus2.png" %}
+Example 1: {% include figure img="modules/neumes/oriscus2.png" %}
 
 **St Gall Notation** Oriscus (one-note ornamental neume) 
 
@@ -24,9 +23,7 @@ Example 1:
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
 
 
-Example 2: 
-{% include figure img="modules/neumes/Mneume.png" %}
-
+Example 2: {% include figure img="modules/neumes/Mneume.png" %}
 
 **Aquitanan Notation** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
 
@@ -35,23 +32,6 @@ Example 2:
 **Old Hispanic Notation** Four-note neutral-low-high-low melodic gesture
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
-
-
-
-
-
-
-
-
-
-![Neume 1](/guidelines/images/v4/modules/neumes/Example1.png "Neume 1")  
-
-
-![Neume 2](/guidelines/images/v4/modules/neumes/Example2.png "Neume 2") 
-
-
-
-
 
 
 A further complication is that while the music encoding aims to narrow down and capture the meaning of the neumes in a logical and coherent system, occasionally the significance of some neumes is under debate (e.g., {% include link elem="quilisma" %}) and, despite its aim for accuracy, the encoding must remain open for future interpretations.
