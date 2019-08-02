@@ -10,58 +10,8 @@ The first example illustrates the most basic encoding of neume notation. Encoded
 
 {% include figure img="modules/neumes/O-splendidissima.png" %}
 
-<layer>
-   <syllable>
-      <syl n="initial">
-         <rend color="red"> O </rend>
-      </syl>
-      <neume>
-         <nc oct="3" pname="e"/>
-         <nc intm="d" oct="2" pname="d"/>
-         <nc intm="u" oct="3" pname="e"/>
-      </neume>
-   </syllable>
-   <syllable>
-      <syl>splen_ </syl>
-      <neume>
-         <nc oct="3" pname="g"/>
-         <nc oct="3" pname="e"/>
-      </neume>
-      <neume>
-         <nc oct="3" pname="d"/>
-         <nc oct="3" pname="e"/>
-      </neume>
-   </syllable>
-   <syllable>
-      <syl>di_ </syl>
-      <neume>
-         <nc tilt="n" oct="3" pname="f"/>
-         <nc tilt="se" con="g" oct="3" pname="d"/>
-         <nc tilt="se" con="g" oct="3" pname="c"/>
-      </neume>
-   </syllable>
-   <syllable>
-      <syl>dis_ </syl>
-      <neume>
-         <nc tilt="n" oct="3" pname="e"/>
-      </neume>
-   </syllable>
-   <syllable>
-      <syl>si_ </syl>
-      <neume>
-         <nc oct="2" pname="a"/>
-         <nc con="g" oct="2" pname="b"/>
-         <nc con="g" tilt="n" oct="3" pname="c"/>
-      </neume>
-   </syllable>
-   <syllable>
-      <syl>ma </syl>
-      <neume>
-         <nc oct="2" pname="b"/>
-         <nc oct="2" pname="a"/>
-      </neume>
-   </syllable>
-</layer>
+{% include mei example="neumes/neumes-sample169.xml" valid="" %}
+
 
 
 #### Basic Encoding – Neumes
