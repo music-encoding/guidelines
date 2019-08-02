@@ -12,7 +12,8 @@ Firstly, sometimes we have to deal with written signs whose meaning is obscure t
 
 See two examples of a neume found in different regional styles that cannot be captured with the same encoding:
 
-![Neume 1](/guidelines/images/v4/modules/neumes/Example1.png "Neume 1")  
+Example 1: 
+{% include figure img="modules/neumes/oriscus2.png" %}
 
 **St Gall Notation** Oriscus (one-note ornamental neume) 
 
@@ -22,7 +23,10 @@ See two examples of a neume found in different regional styles that cannot be ca
 
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
 
-![Neume 2](/guidelines/images/v4/modules/neumes/Example2.png "Neume 2") 
+
+Example 2: 
+{% include figure img="modules/neumes/Mneume.png" %}
+
 
 **Aquitanan Notation** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
 
@@ -31,6 +35,22 @@ See two examples of a neume found in different regional styles that cannot be ca
 **Old Hispanic Notation** Four-note neutral-low-high-low melodic gesture
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
+
+
+
+
+
+
+
+
+
+![Neume 1](/guidelines/images/v4/modules/neumes/Example1.png "Neume 1")  
+
+
+![Neume 2](/guidelines/images/v4/modules/neumes/Example2.png "Neume 2") 
+
+
+
 
 
 
@@ -116,7 +136,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 #### Significative letters attribute: 
 
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or {% include link elem="nc" %} %} 
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include desc elem="neume" %} or the {% include desc elem="syl" %} 
 
 #### Old Hispanic tick attributes: 
 
