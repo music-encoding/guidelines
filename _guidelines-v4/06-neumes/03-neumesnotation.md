@@ -136,19 +136,19 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 #### Significative letters attribute: 
 
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include desc elem="neume" %} or the {% include desc elem="syl" %} 
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
 
 #### Old Hispanic tick attributes: 
 
 {% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke)
 
-{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
+{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
 
 #### Episema attributes: 
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
 
-{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
+{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
 
 #### Quilisma attribute: 
 
