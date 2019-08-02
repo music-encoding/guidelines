@@ -11,7 +11,7 @@ The MEI Neumes Module represents the community’s attempt to create a standardi
 
 The following four elements are the fundamental components of the Neumes Module:
 
- Therefore, the {% include desc elem="syllable" %} element provides high-level organization in this repertoire.
+{% include desc elem="syllable" %} This element provides high-level organization in this repertoire.
 
 {% include desc elem="syl" %}
 
