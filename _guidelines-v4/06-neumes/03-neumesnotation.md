@@ -4,7 +4,7 @@ title: "Neume Notation and MEI"
 version: "v4"
 ---
 
-There are four main challenges in encoding Western European early music. The first relates to the fact that early notation was just a mnemonic aid that helped the readers to recall the music they already knew by heart and, as such, it conveys only partial musical information (Bain, Behrendt, & Helsen 2014; Helsen, Behrendt, & Bain 2017). Indeed, it is only with the invention of staff lines in the eleventh century that the system of musical transmission gradually changed, relying more on the written record rather than on orality. The second challenge refers to the existence of different regional styles of early notation; early-music manuscripts display a great graphical variety of musical signs, which include both neumes and extra-notational elements conveying musical information. Thirdly, some of those regional notational styles occasionally share graphically similar shapes; these similar shapes within the different notational styles are understood by modern scholars to represent the same, a similar or even a _different_ musical meaning. Finally, while on occasion the neume shapes appear to mirror graphically the musical characteristics of the sound being represented (e.g., pen-stroke going up = rising melody), in many instances it is generally understood that the meaning attached to the neumes (or the extra-notational elements) may not be so straight-forward, but instead was ruled by conventions shared by the people who knew orally the musical repertory being fixed in written form by means of notation. 
+There are four main challenges in encoding Western European early music. The first relates to the fact that early notation was just a mnemonic aid that helped the readers to recall the music they already knew by heart and, as such, it conveys only partial musical information (Bain, Behrendt, & Helsen 2014; Helsen, Behrendt, & Bain 2017). Indeed, it is only with the invention of staff lines in the eleventh century that the system of musical transmission gradually changed, relying more on the written record rather than on orality. The second challenge refers to the existence of different regional styles of early notation; early-music manuscripts display a great graphical variety of musical signs, which include both neumes and other notational elements conveying further musical information (e.g., significative letters, Old Hispanic ticks etc.). Thirdly, some of those regional notational styles occasionally share graphically similar shapes; these similar shapes within the different notational styles are understood by modern scholars to represent the same, a similar, or even a _different_ musical meaning. Finally, while on occasion the neume shapes appear to mirror graphically the musical characteristics of the sound being represented (e.g., pen-stroke going up = rising melody), in many instances it is generally understood that the meaning attached to the neumes (or the other notational elements) may not be so straight-forward, but instead was ruled by conventions shared by the people who knew orally the musical repertory being fixed in written form by means of notation. 
 
 _What do these challenges entail for modern encoders?_
 
@@ -60,7 +60,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include link elem="syllable" %}: for text
 {% include figure img="modules/neumes/syllable.png" %}
 
-{% include link elem="hispanTick" %}: to indicate Hispanic ticks
+{% include link elem="hispanTick" %}: to indicate Old Hispanic ticks
 {% include figure img="modules/neumes/hispanTick.png" %}
 
 {% include link elem="quilisma" %}: to indicate a quilisma
@@ -70,7 +70,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include figure img="modules/neumes/oriscus.png" %}
 
 {% include link elem="liquescent" %}: to indicate a liquescent
-{% include figure img="modules/neumes/liquescent.png" %}
+{% include figure img="modules/neumes/LIQUESCENT–ExampleA.png" %}
 
 {% include link elem="strophicus" %}: to indicate a strophicus
 {% include figure img="modules/neumes/strophicus.png" %}
@@ -91,26 +91,34 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include figure img="modules/neumes/extended.png" %} 
 (extended) 
 
-{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) {% include figure img="modules/neumes/curve.png" %}
+{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) 
+{% include figure img="modules/neumes/curve.png" %}
 
-{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) {% include figure img="modules/neumes/angled.png" %}
+{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
+{% include figure img="modules/neumes/angled.png" %}
 
-{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) {% include figure img="modules/neumes/hooked.png" %}  
+{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
+{% include figure img="modules/neumes/hooked.png" %}  
 
 {% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature
 
-{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) {% include figure img="modules/neumes/rellenS.png" %} 
+{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) 
+
+{% include figure img="modules/neumes/rellenS.png" %} 
+
 {% include figure img="modules/neumes/rellenL.png" %} 
 
-{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) {% include figure img="modules/neumes/tilt.png" %}   
+{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) 
+{% include figure img="modules/neumes/tilt.png" %}   
 
-{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) {% include figure img="modules/neumes/s-shape.png" %} 
+{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
+{% include figure img="modules/neumes/s-shape.png" %} 
 
 #### Significative letters attribute: 
 
 {% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or {% include link elem="nc" %} %} 
 
-#### Hispan tick attributes: 
+#### Old Hispanic tick attributes: 
 
 {% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke)
 
@@ -120,7 +128,10 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
 
-{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
+{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the  neume or nc with which it is associated)
+
+elements
+the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
 
 #### Quilisma attribute: 
 
