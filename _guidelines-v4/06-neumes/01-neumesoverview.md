@@ -13,7 +13,7 @@ The following four elements are the fundamental components of the Neumes Module:
 
 {% include desc elem="syllable" %}
 
-It provides high-level organization in this repertoire.
+Neume notation can be thought of as "neumed text". Therefore, the syllable element provides high-level organization in this repertoire.
 
 {% include desc elem="syl" %}
 
