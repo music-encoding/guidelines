@@ -91,26 +91,32 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include figure img="modules/neumes/extended.png" %} 
 (extended) 
 
-{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) {% include figure img="modules/neumes/curve.png" %}
+{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) 
+{% include figure img="modules/neumes/curve.png" %}
 
-{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) {% include figure img="modules/neumes/angled.png" %}
+{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
+{% include figure img="modules/neumes/angled.png" %}
 
-{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) {% include figure img="modules/neumes/hooked.png" %}  
+{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
+{% include figure img="modules/neumes/hooked.png" %}  
 
 {% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature
 
 {% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) 
+
 {% include figure img="modules/neumes/rellenS.png" %} 
 
 {% include figure img="modules/neumes/rellenL.png" %} 
 
-{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) {% include figure img="modules/neumes/tilt.png" %}   
+{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) 
+{% include figure img="modules/neumes/tilt.png" %}   
 
-{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) {% include figure img="modules/neumes/s-shape.png" %} 
+{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
+{% include figure img="modules/neumes/s-shape.png" %} 
 
 #### Significative letters attribute: 
 
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include desc elem="neume" %} / {% include desc elem="syl" %} 
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include desc elem="neume" %} or the {% include desc elem="syl" %} 
 
 #### Old Hispanic tick attributes: 
 
@@ -122,7 +128,10 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
 
-{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
+{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the  neume or nc with which it is associated)
+
+elements
+the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
 
 #### Quilisma attribute: 
 
