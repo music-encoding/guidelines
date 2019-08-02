@@ -6,7 +6,7 @@ version: "v4"
 
 #### Basic Encoding – Syllable 
 
-The first example illustrates the most basic encoding of neume notation. Encoded here is the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively. The encoding was performed by Stefan Morent and Gregor Schräder.
+The first example illustrates the most basic encoding of neume notation. Encoded here is the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively.
 
 {% include figure img="modules/neumes/O-splendidissima.png" %}
 
@@ -16,9 +16,9 @@ The first example illustrates the most basic encoding of neume notation. Encoded
          <rend color="red"> O </rend>
       </syl>
       <neume>
-         <nc oct="3" pname="c"/>
-         <nc intm="d" oct="2" pname="b"/>
-         <nc intm="u" oct="3" pname="c"/>
+         <nc oct="3" pname="e"/>
+         <nc intm="d" oct="2" pname="d"/>
+         <nc intm="u" oct="3" pname="e"/>
       </neume>
    </syllable>
    <syllable>
@@ -29,7 +29,7 @@ The first example illustrates the most basic encoding of neume notation. Encoded
       </neume>
       <neume>
          <nc oct="3" pname="d"/>
-         <nc oct="3" pname="f"/>
+         <nc oct="3" pname="e"/>
       </neume>
    </syllable>
    <syllable>
@@ -51,7 +51,7 @@ The first example illustrates the most basic encoding of neume notation. Encoded
       <neume>
          <nc oct="2" pname="a"/>
          <nc con="g" oct="2" pname="b"/>
-         <nc con="g" tilt="n" oct="3" pname="d"/>
+         <nc con="g" tilt="n" oct="3" pname="c"/>
       </neume>
    </syllable>
    <syllable>
