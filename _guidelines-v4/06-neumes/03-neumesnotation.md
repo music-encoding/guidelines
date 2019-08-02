@@ -70,7 +70,7 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include figure img="modules/neumes/oriscus.png" %}
 
 {% include link elem="liquescent" %}: to indicate a liquescent
-{% include figure img="modules/neumes/liquescent.png" %}
+{% include figure img="modules/neumes/LIQUESCENT–ExampleA.png" %}
 
 {% include link elem="strophicus" %}: to indicate a strophicus
 {% include figure img="modules/neumes/strophicus.png" %}
