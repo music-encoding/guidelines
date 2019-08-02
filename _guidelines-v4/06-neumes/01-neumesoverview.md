@@ -38,6 +38,7 @@ Sign representing one or more musical pitches. As such, a {% include link elem="
 |  ![Connected](/guidelines/images/v4/modules/neumes/NEUME-con.png)  |  ![Non-connected](/guidelines/images/v4/modules/neumes/NEUME-non-con.png)  |
 
 
+
 #### Examples (see also rows 1-3 and following samples in the Table):
 
 |-----------+----------|
