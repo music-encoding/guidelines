@@ -85,7 +85,7 @@ The following examples show how the current MEI Neume Module works when applied 
 |-----------------+------------+-----------------|
 | **EPISEMA - EXAMPLE C St Gall notation, Pes quadratus episema**     |  ![Episema-C](/guidelines/images/v4/modules/neumes/episemaC.png "Example C") |`<neume> <nc tilt="se" /> <nc intm="u" tilt="ne" rellen="l" > <episema form="h" place="ne" /> </nc> /neume>`|
 |-----------------+------------+-----------------|
-| **EPISEMA - EXAMPLE D St Gall notation, Pes quassus episema**     |  ![Episema-D](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleD.png "Example D") |`<neume> <nc s-shaped="w" /> <nc intm="u" tilt="ne" rellen="l" > <episema form="v" place="ne" /> </nc> </neume>`|
+| **EPISEMA - EXAMPLE D St Gall notation, Pes quassus episema**     |  ![Episema-D](/guidelines/images/v4/modules/neumes/episemaD.png "Example D") |`<neume> <nc s-shaped="w" /> <nc intm="u" tilt="ne" rellen="l" > <episema form="v" place="ne" /> </nc> </neume>`|
 |-----------------+------------+-----------------|
 | **S-SHAPE – EXAMPLE A Old Hispanic notation**     |  ![S-shape-A](/guidelines/images/v4/modules/neumes/s-shape.png "Example A") |`<neume> <nc s-shape="s" /> </neume>`|
 |-----------------+------------+-----------------|
