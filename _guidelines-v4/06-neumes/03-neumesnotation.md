@@ -142,16 +142,13 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 {% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke)
 
-{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include desc elem="neume" %} / {% include desc elem="syl" %} 
+{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
 
 #### Episema attributes: 
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
 
-{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the  neume or nc with which it is associated)
-
-elements
-the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
+{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include desc elem="neume" %} or {% include desc elem="nc" %} with which it is associated)
 
 #### Quilisma attribute: 
 
