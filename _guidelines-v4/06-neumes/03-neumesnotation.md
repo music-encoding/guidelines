@@ -240,7 +240,7 @@ see the {% include link elem="strophicus" %} example above
 {% include figure img="modules/neumes/s-shapeA.png" %} 
 
 <neume>
-     <nc s-shape=“s” />
+     <nc s-shape="s"/>
 </neume>
 
 
@@ -248,10 +248,8 @@ see the {% include link elem="strophicus" %} example above
 {% include figure img="modules/neumes/s-shapeB.png" %} 
 
 <neume>
-     <oriscus s-shaped=“w” />
+     <oriscus s-shaped="w"/>
 </neume>
-
-
 
 
 
@@ -270,16 +268,52 @@ see the {% include link elem="strophicus" %} example above
 | **Episema - Staff notation** | ![Episema](/guidelines/images/v4/modules/neumes/episema.png) | 
 
 <neume>
-     <nc pname=“a” oct=“4” tilt=“s” >
-        <episema form=“h” place=“n” />
+     <nc pname="a" oct="4" tilt="s">
+        <episema form="h" place="n"/>
      </nc>
-     <nc pname=“g” oct=“4” />
+     <nc pname="g" oct="4"/>
 </neume>
 
 
 
 
+|-----------+----------|
+|:---------:|:---------|
+| **Episema - St Gall notation** | ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png) | 
 
+<neume>
+     <nc curved="a"/>
+     <nc intm="u" tilt="ne" rellen="l">
+        <episema form="h" place="ne"/>
+     </nc>
+</neume>
+
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Episema - St Gall notation** | ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png) | 
+
+<neume>
+     <nc tilt="se"/>
+     <nc intm="u" tilt="ne" rellen="l">
+        <episema form="h" place="ne"/>
+     </nc>
+</neume>
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Episema - St Gall notation** | ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png) | 
+
+<neume>
+     <nc s-shaped="w"/>
+     <nc intm="u" tilt="ne" rellen="l">
+        <episema form="v" place="ne"/>
+     </nc>
+</neume>
 
 
 
