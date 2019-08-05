@@ -110,8 +110,8 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include figure img="modules/neumes/strophicusNEW.png" %}
 
 <neume>
-     <nc pname="c" oct="4" tilt="n" ligatured="true"/>
-     <nc pname="a" oct="3" ligatured="true"/>
+     <nc pname="c" oct="4" tilt="n" ligated="true"/>
+     <nc pname="a" oct="3" ligated="true"/>
      <nc pname="c" oct="4" 
      <strophicus pname="c" oct="4"/>
      <strophicus pname="c" oct="4"/> 
@@ -154,7 +154,7 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 
 <neume>
      <nc tilt="n"/>
-     <nc curve="c" con="e" tilt="s" rellen="s" intm="d"/ >
+     <nc curve="c" con="e" tilt="s" rellen="s" intm="d"/>
 </neume>
 
 
@@ -183,7 +183,6 @@ has a similar shape but the neumatic connection is not extended
 {% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
 {% include figure img="modules/neumes/angled.png" %}
 
-
 <neume>
      <nc tilt="e"/>
      <nc angled="u" intm="u"/>
@@ -193,23 +192,67 @@ has a similar shape but the neumatic connection is not extended
 
 
 
-
 {% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
 {% include figure img="modules/neumes/hooked.png" %}  
 
+<neume>
+     <nc tilt="ne"/>
+     <nc tilt="se" hooked="true" rellen="s" intm="d"/>
+</neume>
+
+
 {% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature
+see the {% include link elem="strophicus" %} example above
+
+
 
 {% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) 
 
 {% include figure img="modules/neumes/rellenS.png" %} 
 
+<neume>
+     <nc tilt="ne"/>
+     <nc tilt="se" rellen="s" intm="d"/>
+</neume>
+
+
 {% include figure img="modules/neumes/rellenL.png" %} 
+
+<neume>
+     <nc tilt="ne"/>
+     <nc tilt="se" rellen="l" intm="d"/>
+</neume>
+
+
+
+
 
 {% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) 
 {% include figure img="modules/neumes/tilt.png" %}   
 
+<neume>
+<nc tilt="ne"/>
+</neume>
+
+
+
 {% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
-{% include figure img="modules/neumes/s-shape.png" %} 
+{% include figure img="modules/neumes/s-shapeA.png" %} 
+
+<neume>
+     <nc s-shape=“s” />
+</neume>
+
+
+
+{% include figure img="modules/neumes/s-shapeB.png" %} 
+
+<neume>
+     <oriscus s-shaped=“w” />
+</neume>
+
+
+
 
 
 
@@ -232,6 +275,10 @@ has a similar shape but the neumatic connection is not extended
      </nc>
      <nc pname=“g” oct=“4” />
 </neume>
+
+
+
+
 
 
 
