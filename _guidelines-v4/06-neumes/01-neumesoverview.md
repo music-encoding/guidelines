@@ -61,17 +61,4 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 </neume>
 
 
-|-----------+----------|
-|:---------:|:---------|
-| **Strophicus** | ![Strophicus](/guidelines/images/v4/modules/neumes/strophicus.png) | 
-
-<neume>
-     <nc pname=“c” oct=“4” />
-     <nc pname=“d” oct=“4” />
-     <strophicus pname=“c” oct=“4” />
-     <strophicus pname=“c” oct=“4” /> 
-</neume>
-
-
-
 
