@@ -37,7 +37,7 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 | Example 1 | Example 2 | Example 3 |
 |:---------:|:---------:|:---------:|
-|  ![nc-1](/guidelines/images/v4/modules/neumes/nc-example-1.png)  |  ![nc-2](/guidelines/images/v4/modules/neumes/nc-example-2.png)  |  ![nc-3](/guidelines/images/v4/modules/neumes/nc-example-3.png)  |
+|  ![nc-1](/guidelines/images/v4/modules/neumes/NC-rhombusNEW.png)  |  ![nc-2](/guidelines/images/v4/modules/neumes/NC-squareNEW.png)  |  ![nc-3](/guidelines/images/v4/modules/neumes/NC-squaretailNEW.png)  |
 
 
 
