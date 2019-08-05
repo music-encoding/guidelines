@@ -28,6 +28,7 @@ Example 2:
 {% include figure img="modules/neumes/Mneume.png" %}
 
 **Old Hispanic Notation** Four-note neutral-low-high-low melodic gesture
+{% include figure img="modules/neumes/MneumeOH.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
 
