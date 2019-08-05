@@ -10,11 +10,11 @@ _What do these challenges entail for modern encoders?_
 
 Firstly, sometimes we have to deal with written signs whose meaning is obscure to us and, while we can infer the meaning of some of those signs from the study of later manuscripts with the same melodies and a more precise notation, in other cases we need to turn to music palaeographers who examine the recurrence of those written signs and the context where they were used; by analysing scribal hands in particular manuscripts, palaeographers can often work out if a written sign is a meaningless scribal variant or a graphical feature conveying musical meaning to the medieval reader. Secondly, since a neume shape could either mirror on the page the aural event or bear some other musical meaning attached by convention, the encoding sometimes relies on the visual level (when the shape graphically represents the sound) or on the semantic level, and this distinction has to be made on a case-by-case basis. Moreover, since the same written sign could have multiple interpretations according to the style of notation where it was employed, it is crucial to be aware of the conventions of each regional notational alphabet in order to capture the musical information conveyed by that sign in the contexts where it is found.
 
-See two examples of a neume found in different regional styles that cannot be captured with the same encoding:
+See two examples of shapes found in different regional styles that are not captured with the same encoding:
 
 **Example 1:** 
 
-**St Gall Notation** Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called 'salicus' in the literature).  
+**St Gall Notation** Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called _salicus_ in the literature).
 {% include figure img="modules/neumes/salicus.png" %}
 
 <neume>
@@ -50,7 +50,9 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 
 #### Elements:
-In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
+In addition to  neume and 
+
+{% include desc elem="neume" %} and {% include desc elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
 {% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
 {% include figure img="modules/neumes/signifLet.png" %}
