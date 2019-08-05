@@ -50,12 +50,17 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 
 #### Elements:
+In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
 {% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
 {% include figure img="modules/neumes/signifLet.png" %}
 
+(see MEI encoding of {% include link elem="signifLet" %} in the following section)
+
 {% include link elem="episema" %}: to indicate an episema
 {% include figure img="modules/neumes/episema.png" %}
+
+(see MEI encoding of {% include link elem="episema" %} in the following section)
 
 {% include link elem="division" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %}
@@ -63,25 +68,48 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include link elem="custos" %}: to indicate a custos
 {% include figure img="modules/neumes/custos.png" %}
 
-{% include link elem="ncGrp" %}: to indicate multiple {% include link elem="nc" %}s
 
-{% include link elem="syllable" %}: for text
-{% include figure img="modules/neumes/syllable.png" %}
+
+{% include link elem="ncGrp" %}: to indicate multiple {% include link elem="nc" %}s
 
 {% include link elem="hispanTick" %}: to indicate Old Hispanic ticks
 {% include figure img="modules/neumes/hispanTick.png" %}
 
+(see MEI encoding of {% include link elem="hispanTick" %} in the following section)
+
 {% include link elem="quilisma" %}: to indicate a quilisma
 {% include figure img="modules/neumes/quilisma.png" %}
+
+(see MEI encoding of {% include link elem="quilisma" %} in the following section)
 
 {% include link elem="oriscus" %}: to indicate an oriscus
 {% include figure img="modules/neumes/oriscus.png" %}
 
+
+
+
 {% include link elem="liquescent" %}: to indicate a liquescent
 {% include figure img="modules/neumes/LIQUESCENT–ExampleA.png" %}
 
+(see MEI encoding in the following section)
+
 {% include link elem="strophicus" %}: to indicate a strophicus
 {% include figure img="modules/neumes/strophicus.png" %}
+
+|-----------+----------|
+|:---------:|:---------|
+| **Strophicus** | ![Strophicus](/guidelines/images/v4/modules/neumes/strophicus.png) | 
+
+<neume>
+     <nc pname=“c” oct=“4” />
+     <nc pname=“d” oct=“4” />
+     <strophicus pname=“c” oct=“4” />
+     <strophicus pname=“c” oct=“4” /> 
+</neume>
+
+
+
+
 
 #### Neume component attributes: 
 
