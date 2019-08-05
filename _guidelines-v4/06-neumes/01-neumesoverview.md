@@ -41,11 +41,10 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 
 #### Examples: 
-(see also rows 1-3 and following neumes in the Table)
 
 |-----------+----------|
 |:---------:|:---------|
-| **One pitch - Example A Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png) | 
+| **One pitch - Staff notation Example A** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png) | 
 
 <neume>
     <nc pname="f" oct="3"/> 
@@ -54,7 +53,7 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 |-----------+----------|
 |:---------:|:---------|
-| **One pitch - Example B Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png) | 
+| **One pitch - Staff notation Example B** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png) | 
 
 <neume>
     <nc pname="c" oct="3"/> 
@@ -67,4 +66,46 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 {% include mei example="neumes/neumes-sample-6-01-03.xml" valid="" %}
 
-{% include figure img="modules/neumes/Table-Rows1-7.png" %} 
+
+|-----------+----------|
+|:---------:|:---------|
+| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/liquescentSN.png) | 
+
+<neume>
+    <nc pname="a" oct="3"/> 
+</neume>
+
+|-----------+----------|
+|:---------:|:---------|
+| **Liquescent - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png) | 
+
+<neume>
+     <nc />
+     <liquescent intm=“u” />
+     <nc tilt=“ne” intm=“u” />
+</neume>
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Strophicus** | ![Strophicus](/guidelines/images/v4/modules/neumes/strophicus.png) | 
+
+<neume>
+     <nc pname=“c” oct=“4” />
+     <nc pname=“d” oct=“4” />
+     <strophicus pname=“c” oct=“4” />
+     <strophicus pname=“c” oct=“4” /> 
+</neume>
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Episema - Staff notation** | ![Episema](/guidelines/images/v4/modules/neumes/episema.png) | 
+
+<neume>
+     <nc pname=“a” oct=“4” tilt=“s” >
+        <episema form=“h” place=“n” />
+     </nc>
+     <nc pname=“g” oct=“4” />
+</neume>
