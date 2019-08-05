@@ -14,8 +14,8 @@ See two examples of a neume found in different regional styles that cannot be ca
 
 Example 1: 
 
-**St Gall Notation** Oriscus (one-note ornamental neume) 
-{% include figure img="modules/neumes/NLneumeOH.png" %}
+**St Gall Notation** Oriscus (one-note ornamental neume). In the example the oriscus is the middle note of the three-note raising gesture ('salicus').  
+{% include figure img="modules/neumes/salicus.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
 
