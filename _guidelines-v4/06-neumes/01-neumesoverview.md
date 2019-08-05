@@ -60,23 +60,24 @@ Sign representing a single pitched event, although the exact pitch may not be kn
     <nc pname="c" oct="3"/> 
 </neume>
 
-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-
 
 |-----------+----------|
 |:---------:|:---------|
-| **Two pitches - Staff notation** | ![Two pitches](/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png) | 
+| **Two pitches - Staff notation** | ![Two pitches](/guidelines/images/v4/modules/neumes/two-pitchesSN.png) | 
 
 <neume>
-    <nc pname="f" oct="3"/> 
+    <nc pname="e" oct="3" tilt="n"/> 
+    <nc pname="c" oct="3"/>
 </neume>
 
 
 |-----------+----------|
 |:---------:|:---------|
-| **Three pitches - Staff notation** | ![Three pitches](/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png) | 
+| **Three pitches - Staff notation** | ![Three pitches](/guidelines/images/v4/modules/neumes/three-pitchesSN.png) | 
 
 <neume>
-    <nc pname="f" oct="3"/> 
+    <nc pname="a" oct="3"/> 
+    <nc pname="b" oct="3"/> 
+    <nc pname="g" oct="3" tilt="se" con="g"/>
+    <nc pname="f" oct="3" tilt="se" con="g"/>
 </neume>
-
