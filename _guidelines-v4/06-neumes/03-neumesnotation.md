@@ -77,7 +77,7 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 
 
 {% include link elem="liquescent" %}: to indicate a liquescent
-{% include figure img="modules/neumes/LIQUESCENT–ExampleA.png" %}
+{% include figure img="modules/neumes/liquescent2NEW.png" %}
 
 (see MEI encoding in the following section)
 
@@ -107,11 +107,7 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 
 
 {% include link elem="strophicus" %}: to indicate a strophicus
-{% include figure img="modules/neumes/strophicus.png" %}
-
-|-----------+----------|
-|:---------:|:---------|
-| **Strophicus** | ![Strophicus](/guidelines/images/v4/modules/neumes/strophicusNEW.png) | 
+{% include figure img="modules/neumes/strophicusNEW.png" %}
 
 <neume>
      <nc pname="c" oct="4" tilt="n" ligatured="true"/>
@@ -134,10 +130,44 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) 
 {% include figure img="modules/neumes/gapped.png" %} 
 (gapped)
+
+<neume>
+     <nc tilt=“e” />
+     <nc con=“g” tilt=“n” rellen=“l” intm=“u” />
+</neume>
+
+
+
 {% include figure img="modules/neumes/looped.png" %}
 (looped)
+
+<neume>
+     <nc s-shape=“s” />
+     <nc con=“l” tilt=“ne” intm=“u” />
+</neume>
+
+
+
+
 {% include figure img="modules/neumes/extended.png" %} 
 (extended) 
+
+<neume>
+     <nc tilt=“n />
+     <nc curve=“c” con=“e” tilt=“s” rellen=“s” intm=“d” / >
+</neume>
+
+
+Nota bene: this neume 
+{% include figure img="modules/neumes/non-extended.png" %}
+has a similar shape but the neumatic connection is not extended
+
+<neume>
+     <nc tilt=“n” />
+     <nc curve=“c” tilt=“s” rellen=“s” intm=“d” />
+</neume>
+
+
 
 {% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) 
 {% include figure img="modules/neumes/curve.png" %}
