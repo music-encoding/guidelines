@@ -20,6 +20,7 @@ Neume notation can be thought of as "neumed text". Therefore, the syllable eleme
 {% include desc elem="syl" %}
 
 (syllable) – Individual lyric syllable.
+{% include figure img="modules/neumes/syllable.png" %}
 
 {% include desc elem="neume" %}
 Sign representing one or more musical pitches. As such, a {% include link elem="neume" %} consists of one or more {% include link elem="nc" %} element(s): 
