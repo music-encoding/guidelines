@@ -94,14 +94,14 @@
             <xsl:variable name="object" select="."/>
             
             <!-- create desc snippet in _includes for inclusion in guidelines -->
-            <xsl:variable name="path" select="$includes.folder || 'desc/' || @ident || '.txt'" as="xs:string"/>
+            <xsl:variable name="path" select="$includes.folder || 'desc/desc_' || @ident || '.txt'" as="xs:string"/>
             <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
                 <xsl:apply-templates select="./tei:desc/node()" mode="plain"/>
             </xsl:result-document>
             
             <!-- create desc snippets in _includes for all directly defined attributes -->
             <xsl:for-each select=".//tei:attDef">
-                <xsl:variable name="path" select="$includes.folder || 'desc/' || $object/@ident || '/' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
+                <xsl:variable name="path" select="$includes.folder || 'desc/' || $object/@ident || '/desc_' || replace(@ident,':','---') || '.txt'" as="xs:string"/>
                 <xsl:result-document href="{lower-case($path)}" omit-xml-declaration="yes">
                     <xsl:apply-templates select="./tei:desc/node()" mode="plain"/>
                 </xsl:result-document>

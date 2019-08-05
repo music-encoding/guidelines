@@ -13,9 +13,10 @@
             {% endif %}
         </div>
         <div class="tile-subtitle text-gray">
-            {% assign file = include.version | append:'/desc/' | append:include.elem | append:'.txt' | downcase %}
+            {% assign file = include.version | append:'/desc/desc_' | append:include.elem | append:'.txt' | downcase %}
             {% if include.att %}
-                {% assign file = include.version | append:'/desc/' | append:include.att | append:'.txt' | downcase %}
+                {% assign filename = include.att | replace: '/', '/desc_' %}
+                {% assign file = include.version | append:'/desc/' | append:filename | append:'.txt' | downcase %}
             {% endif %}
             {% include {{ file | replace: ':', '---' }} %}</div>
     </div>
