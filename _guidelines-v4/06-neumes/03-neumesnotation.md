@@ -55,52 +55,72 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include link elem="custos" %}: to indicate a custos
 {% include figure img="modules/neumes/custos.png" %}
 
+
+
 {% include link elem="division" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %}
+
+
 
 {% include link elem="episema" %}: to indicate an episema
 {% include figure img="modules/neumes/episema.png" %}
 
 (see MEI encoding of {% include link elem="episema" %} in the following section)
 
+
+
 {% include link elem="hispanTick" %}: to indicate Old Hispanic ticks
 {% include figure img="modules/neumes/hispanTick.png" %}
 
 (see MEI encoding of {% include link elem="hispanTick" %} in the following section)
+
+
 
 {% include link elem="liquescent" %}: to indicate a liquescent
 {% include figure img="modules/neumes/LIQUESCENT–ExampleA.png" %}
 
 (see MEI encoding in the following section)
 
+
+
 {% include link elem="ncGrp" %}: to indicate multiple {% include link elem="nc" %}s
+
+
 
 {% include link elem="oriscus" %}: to indicate an oriscus
 {% include figure img="modules/neumes/oriscus.png" %}
+
+
 
 {% include link elem="quilisma" %}: to indicate a quilisma
 {% include figure img="modules/neumes/quilisma.png" %}
 
 (see MEI encoding of {% include link elem="quilisma" %} in the following section)
 
+
+
 {% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
 {% include figure img="modules/neumes/signifLet.png" %}
 
 (see MEI encoding of {% include link elem="signifLet" %} in the following section)
+
+
 
 {% include link elem="strophicus" %}: to indicate a strophicus
 {% include figure img="modules/neumes/strophicus.png" %}
 
 |-----------+----------|
 |:---------:|:---------|
-| **Strophicus** | ![Strophicus](/guidelines/images/v4/modules/neumes/strophicus.png) | 
+| **Strophicus** | ![Strophicus](/guidelines/images/v4/modules/neumes/strophicusNEW.png) | 
 
 <neume>
-     <nc pname=“c” oct=“4” />
-     <nc pname=“d” oct=“4” />
-     <strophicus pname=“c” oct=“4” />
-     <strophicus pname=“c” oct=“4” /> 
+     <nc pname="c" oct="4" tilt="n" ligatured="true"/>
+     <nc pname="a" oct="3" ligatured="true"/>
+     <nc pname="c" oct="4" 
+     <strophicus pname="c" oct="4"/>
+     <strophicus pname="c" oct="4"/> 
 </neume>
+
 
 
 #### Neume component attributes: 
@@ -144,23 +164,6 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 
 
 
-
-#### Significative letters attribute: 
-
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
-
-
-
-
-#### Old Hispanic tick attributes: 
-
-{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke)
-
-{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
-
-
-
-
 #### Episema attributes: 
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
@@ -180,21 +183,6 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
      </nc>
      <nc pname=“g” oct=“4” />
 </neume>
-
-
-
-
-#### Quilisma attribute: 
-
-{% include desc atts="att.quilisma.vis/waves" %} {2 | 3 | 4} the number of quilisma waves
-
-
-
-|-----------+----------|
-|:---------:|:---------|
-| **Quilisma Staff notation** | ![Quilisma](/guidelines/images/v4/modules/neumes/quilisma.png) |
-
-{% include mei example="neumes/neumes-sample-6-01-03.xml" valid="" %}
 
 
 
@@ -225,6 +213,48 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
      <liquescent intm=“u” />
      <nc tilt=“ne” intm=“u” />
 </neume>
+
+
+
+
+
+
+#### Old Hispanic tick attributes: 
+
+{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke)
+
+{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
+
+
+
+
+
+
+
+#### Quilisma attribute: 
+
+{% include desc atts="att.quilisma.vis/waves" %} {2 | 3 | 4} the number of quilisma waves
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Quilisma Staff notation** | ![Quilisma](/guidelines/images/v4/modules/neumes/quilisma.png) |
+
+{% include mei example="neumes/neumes-sample-6-01-03.xml" valid="" %}
+
+
+
+
+
+
+
+#### Significative letters attribute: 
+
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
+
+
+
 
 
 
