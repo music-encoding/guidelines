@@ -328,24 +328,31 @@ see the {% include link elem="strophicus" %} example above
 
 |-----------+----------|
 |:---------:|:---------|
-| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/liquescentSN.png) | 
+| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
 
 <neume>
-    <nc pname="a" oct="3"/> 
+    <nc pname="b" oct="3"/>
+    <liquescent curl="a"/>
 </neume>
+    
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/iquescent1NEW.png) | 
+
+<neume>
+    <nc pname="c" oct="4" tilt="n"/>
+    <liquescent curl="c"/>
+</neume>
+
 
 |-----------+----------|
 |:---------:|:---------|
 | **Liquescent - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png) | 
 
-<neume>
-     <nc />
-     <liquescent intm=“u” />
-     <nc tilt=“ne” intm=“u” />
-</neume>
-
-
-
+{% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
 
 
 
@@ -355,9 +362,15 @@ see the {% include link elem="strophicus" %} example above
 
 {% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
 
+{% include figure img="modules/neumes/hispanTick.png" %}
 
 
-
+<neume>
+     <nc curve="a"/>
+     <nc tilt="n" intm="u">
+        <hispanTick tilt="n" place="nw"/>
+     </nc>
+</neume>
 
 
 
@@ -384,7 +397,16 @@ see the {% include link elem="strophicus" %} example above
 {% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
 
 
+{% include figure img="modules/neumes/signifLet.png" %}
 
+
+<neume>
+     <nc tilt="ne">
+        <signifLet place="ne"> c </signifLet >
+     </nc >
+     <nc con="g" rellen="s" intm="d"/>
+     <nc con="g" tilt="e" rellen="l" intm="d"/>
+</neume>
 
 
 
