@@ -45,16 +45,18 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 |-----------+----------|
 |:---------:|:---------|
-| **One pitch - Example A Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-a.png) | 
+| **One pitch - Example A Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png) | 
 
-{% include mei example="neumes/neumes-sample-6-01-01.xml" valid="" %}
+<neume>
+    <nc pname="f" oct="3"/> 
+</neume>
 
 
 |-----------+----------|
 |:---------:|:---------|
-| **One pitch - Example B Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-b.png) | 
+| **One pitch - Example B Staff notation** | ![One pitch](/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png) | 
 
-{% include mei example="neumes/neumes-sample-6-01-02.xml" valid="" %}
+
 
 
 
