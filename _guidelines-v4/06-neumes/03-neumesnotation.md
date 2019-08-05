@@ -13,21 +13,19 @@ Firstly, sometimes we have to deal with written signs whose meaning is obscure t
 See two examples of a neume found in different regional styles that cannot be captured with the same encoding:
 
 Example 1: 
-{% include figure img="modules/neumes/oriscus2.png" %}
 
 **St Gall Notation** Oriscus (one-note ornamental neume) 
-{% include figure img="modules/neumes/NLneumeOH.png.png" %}
+{% include figure img="modules/neumes/NLneumeOH.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
 
 **Old Hispanic Notation**: Two-note downward melodic gesture
-{% include figure img="modules/neumes/NLneumeOH.png.png" %}
+{% include figure img="modules/neumes/NLneumeOH.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
 
 
 Example 2: 
-{% include figure img="modules/neumes/Mneume.png" %}
 
 **Old Hispanic Notation** Four-note neutral-low-high-low melodic gesture
 {% include figure img="modules/neumes/MneumeOH.png" %}
