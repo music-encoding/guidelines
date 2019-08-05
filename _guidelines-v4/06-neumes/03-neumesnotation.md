@@ -12,12 +12,16 @@ Firstly, sometimes we have to deal with written signs whose meaning is obscure t
 
 See two examples of a neume found in different regional styles that cannot be captured with the same encoding:
 
-Example 1: 
+**Example 1:** 
 
 **St Gall Notation** Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called 'salicus' in the literature).  
 {% include figure img="modules/neumes/salicus.png" %}
 
-{% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
+<neume>
+     <nc/> 
+     <oriscus/> 
+     <nc tilt="ne" intm="u"/> 
+</neume>
 
 **Old Hispanic Notation**: Two-note downward melodic gesture
 {% include figure img="modules/neumes/NLneumeOH.png" %}
@@ -25,7 +29,7 @@ Example 1:
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
 
 
-Example 2: 
+**Example 2:** 
 
 **Old Hispanic Notation** Four-note neutral-low-high-low melodic gesture
 {% include figure img="modules/neumes/MneumeOH.png" %}
@@ -118,9 +122,15 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 {% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
 {% include figure img="modules/neumes/s-shape.png" %} 
 
+
+
+
 #### Significative letters attribute: 
 
 {% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
+
+
+
 
 #### Old Hispanic tick attributes: 
 
@@ -128,21 +138,74 @@ Broadly speaking, Western early notations belong to two categories. On one side 
 
 {% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
 
+
+
+
 #### Episema attributes: 
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
 
 {% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
 
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Episema - Staff notation** | ![Episema](/guidelines/images/v4/modules/neumes/episema.png) | 
+
+<neume>
+     <nc pname=“a” oct=“4” tilt=“s” >
+        <episema form=“h” place=“n” />
+     </nc>
+     <nc pname=“g” oct=“4” />
+</neume>
+
+
+
+
 #### Quilisma attribute: 
 
 {% include desc atts="att.quilisma.vis/waves" %} {2 | 3 | 4} the number of quilisma waves
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Quilisma Staff notation** | ![Quilisma](/guidelines/images/v4/modules/neumes/quilisma.png) |
+
+{% include mei example="neumes/neumes-sample-6-01-03.xml" valid="" %}
+
+
+
 
 #### Liquescent attributes: 
 
 {% include desc atts="att.liquescent.vis/curve" %} {a | c} (anticlockwise, clockwise) 
 
 {% include desc atts="att.liquescent.vis/looped" %} {true | false} (true if the curve is closed)  
+
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/liquescentSN.png) | 
+
+<neume>
+    <nc pname="a" oct="3"/> 
+</neume>
+
+|-----------+----------|
+|:---------:|:---------|
+| **Liquescent - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png) | 
+
+<neume>
+     <nc />
+     <liquescent intm=“u” />
+     <nc tilt=“ne” intm=“u” />
+</neume>
+
 
 
 
