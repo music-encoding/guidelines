@@ -16,10 +16,12 @@ Example 1:
 {% include figure img="modules/neumes/oriscus2.png" %}
 
 **St Gall Notation** Oriscus (one-note ornamental neume) 
+{% include figure img="modules/neumes/NLneumeOH.png.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
 
 **Old Hispanic Notation**: Two-note downward melodic gesture
+{% include figure img="modules/neumes/NLneumeOH.png.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
 
