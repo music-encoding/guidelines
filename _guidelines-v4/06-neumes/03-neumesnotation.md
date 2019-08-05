@@ -132,8 +132,8 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 (gapped)
 
 <neume>
-     <nc tilt=“e” />
-     <nc con=“g” tilt=“n” rellen=“l” intm=“u” />
+     <nc tilt="e"/>
+     <nc con="g" tilt="n" rellen="l" intm="u"/>
 </neume>
 
 
@@ -142,8 +142,8 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 (looped)
 
 <neume>
-     <nc s-shape=“s” />
-     <nc con=“l” tilt=“ne” intm=“u” />
+     <nc s-shape="s"/>
+     <nc con="l" tilt="ne" intm="u"/>
 </neume>
 
 
@@ -153,8 +153,8 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 (extended) 
 
 <neume>
-     <nc tilt=“n />
-     <nc curve=“c” con=“e” tilt=“s” rellen=“s” intm=“d” / >
+     <nc tilt="n"/>
+     <nc curve="c" con="e" tilt="s" rellen="s" intm="d"/ >
 </neume>
 
 
@@ -163,8 +163,8 @@ Nota bene: this neume
 has a similar shape but the neumatic connection is not extended
 
 <neume>
-     <nc tilt=“n” />
-     <nc curve=“c” tilt=“s” rellen=“s” intm=“d” />
+     <nc tilt="n"/>
+     <nc curve="c" tilt="s" rellen="s" intm="d"/>
 </neume>
 
 
@@ -172,8 +172,27 @@ has a similar shape but the neumatic connection is not extended
 {% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) 
 {% include figure img="modules/neumes/curve.png" %}
 
+<neume>
+     <nc curve="c"/>
+     <nc con="g" curve="a" intm="s"/>
+</neume>
+
+
+
+
 {% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
 {% include figure img="modules/neumes/angled.png" %}
+
+
+<neume>
+     <nc tilt="e"/>
+     <nc angled="u" intm="u"/>
+     <nc angled="u" intm="u"/>
+     <nc tilt="n" rellen="l" intm="u"/>
+</neume>
+
+
+
 
 {% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
 {% include figure img="modules/neumes/hooked.png" %}  
