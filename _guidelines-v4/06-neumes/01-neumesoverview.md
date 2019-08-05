@@ -62,32 +62,6 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 |-----------+----------|
 |:---------:|:---------|
-| **Quilisma Staff notation** | ![Quilisma](/guidelines/images/v4/modules/neumes/quilisma.png) |
-
-{% include mei example="neumes/neumes-sample-6-01-03.xml" valid="" %}
-
-
-|-----------+----------|
-|:---------:|:---------|
-| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/liquescentSN.png) | 
-
-<neume>
-    <nc pname="a" oct="3"/> 
-</neume>
-
-|-----------+----------|
-|:---------:|:---------|
-| **Liquescent - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png) | 
-
-<neume>
-     <nc />
-     <liquescent intm=“u” />
-     <nc tilt=“ne” intm=“u” />
-</neume>
-
-
-|-----------+----------|
-|:---------:|:---------|
 | **Strophicus** | ![Strophicus](/guidelines/images/v4/modules/neumes/strophicus.png) | 
 
 <neume>
@@ -99,13 +73,4 @@ Sign representing a single pitched event, although the exact pitch may not be kn
 
 
 
-|-----------+----------|
-|:---------:|:---------|
-| **Episema - Staff notation** | ![Episema](/guidelines/images/v4/modules/neumes/episema.png) | 
 
-<neume>
-     <nc pname=“a” oct=“4” tilt=“s” >
-        <episema form=“h” place=“n” />
-     </nc>
-     <nc pname=“g” oct=“4” />
-</neume>
