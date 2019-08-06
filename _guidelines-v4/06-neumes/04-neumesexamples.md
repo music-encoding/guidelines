@@ -47,24 +47,23 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 
 
 {% include link elem="oriscus" %}: to indicate an oriscus
-{% include figure img="modules/neumes/oriscus.png" %}
+
+| :-: | :- |
+| **ORISCUS - Square notation**     |  ![Oriscus1](/guidelines/images/v4/modules/neumes/oriscus.png "Oriscus1") |
+
+<neume>
+     <oriscus pname="g" oct="3"/>/> 
+</neume>
 
 
 | :-: | :- |
-| **ORISCUS - Square notation**     |  ![Looped](/guidelines/images/v4/modules/neumes/looped.png "Looped") |
-
-
-
-
-{% include figure img="modules/neumes/salicus.png" %}
+| **ORISCUS - St Gall notation**     |  ![Oriscus2](/guidelines/images/v4/modules/neumes/salicus.png "Oriscus2") |
 
 <neume>
      <nc/> 
      <oriscus/> 
      <nc tilt="ne" intm="u"/> 
 </neume>
-
-
 
 
 
