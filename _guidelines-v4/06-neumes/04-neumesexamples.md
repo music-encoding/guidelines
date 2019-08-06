@@ -13,7 +13,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 
 
-{% include link elem="division" %}: to indicate pause between neumes
+{% include link elem="mdiv" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %}
 
 
