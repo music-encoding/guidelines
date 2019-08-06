@@ -24,21 +24,21 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include link elem="episema" %}: to indicate an episema
 {% include figure img="modules/neumes/episema.png" %}
 
-(see MEI encoding of {% include link elem="episema" %} in the following section)
+(see MEI encoding of {% include link elem="episema" %} below)
 
 
 
 {% include link elem="hispanTick" %}: to indicate Old Hispanic ticks
 {% include figure img="modules/neumes/hispanTick.png" %}
 
-(see MEI encoding of {% include link elem="hispanTick" %} in the following section)
+(see MEI encoding of {% include link elem="hispanTick" %} below)
 
 
 
 {% include link elem="liquescent" %}: to indicate a liquescent
 {% include figure img="modules/neumes/liquescent2NEW.png" %}
 
-(see MEI encoding in the following section)
+(see MEI encoding of {% include link elem="liquescent" %} neumes below)
 
 
 
@@ -50,18 +50,35 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include figure img="modules/neumes/oriscus.png" %}
 
 
+| :-: | :- |
+| **ORISCUS - Square notation**     |  ![Looped](/guidelines/images/v4/modules/neumes/looped.png "Looped") |
+
+
+
+
+{% include figure img="modules/neumes/salicus.png" %}
+
+<neume>
+     <nc/> 
+     <oriscus/> 
+     <nc tilt="ne" intm="u"/> 
+</neume>
+
+
+
+
 
 {% include link elem="quilisma" %}: to indicate a quilisma
 {% include figure img="modules/neumes/quilisma.png" %}
 
-(see MEI encoding of {% include link elem="quilisma" %} in the following section)
+(see MEI encoding of {% include link elem="quilisma" %} below)
 
 
 
 {% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
 {% include figure img="modules/neumes/signifLet.png" %}
 
-(see MEI encoding of {% include link elem="signifLet" %} in the following section)
+(see MEI encoding of {% include link elem="signifLet" %} below)
 
 
 
@@ -92,20 +109,20 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) 
 
 | :-: | :- |
-| **GAPPED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Gapped](/guidelines/images/v4/modules/neumes/gapped.png "Gapped") |
+| **GAPPED CONNECTION - Old Hispanic notation**     |  ![Gapped](/guidelines/images/v4/modules/neumes/gapped.png "Gapped") |
 
 {% include mei example="neumes/neumes-sample-6-04-10.xml" valid="" %}
 
 
 
 | :-: | :- |
-| **LOOPED CONNECTION - EXAMPLE Old Hispanic notationn**     |  ![Looped](/guidelines/images/v4/modules/neumes/looped.png "Looped") |
+| **LOOPED CONNECTION - Old Hispanic notation**     |  ![Looped](/guidelines/images/v4/modules/neumes/looped.png "Looped") |
 
 {% include mei example="neumes/neumes-sample-6-04-11.xml" valid="" %}
 
 
 | :-: | :- |
-| **EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Extended](/guidelines/images/v4/modules/neumes/extended.png "Extended") |
+| **EXTENDED CONNECTION - Old Hispanic notation**     |  ![Extended](/guidelines/images/v4/modules/neumes/extended.png "Extended") |
 
 {% include mei example="neumes/neumes-sample-6-04-13.xml" valid="" %}
 
@@ -114,7 +131,7 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 
 
 | :-: | :- |
-| **NON-EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Non-extended](/guidelines/images/v4/modules/neumes/non-extended.png "Non-extended connection") |
+| **NON-EXTENDED CONNECTION - Old Hispanic notation**     |  ![Non-extended](/guidelines/images/v4/modules/neumes/non-extended.png "Non-extended connection") |
 
 {% include mei example="neumes/neumes-sample-6-04-12.xml" valid="" %}
 
@@ -147,7 +164,7 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 {% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
 
 | :-: | :- |
-| **HOOK – EXAMPLE Old Hispanic notation**     |  ![Hook](/guidelines/images/v4/modules/neumes/hooked.png "Hook") |
+| **HOOK – Old Hispanic notation**     |  ![Hook](/guidelines/images/v4/modules/neumes/hooked.png "Hook") |
 
 {% include mei example="neumes/neumes-sample-6-04-16.xml" valid="" %}
 
@@ -162,12 +179,12 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 | :-: | :- |
-| **RELATIVE LENGTH – EXAMPLE A Old Hispanic notation**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
+| **RELATIVE LENGTH – Old Hispanic notation Ex. A**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
 
 {% include mei example="neumes/neumes-sample-6-04-14.xml" valid="" %}
 
 | :-: | :- |
-| **RELATIVE LENGTH – EXAMPLE B Old Hispanic notation**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |
+| **RELATIVE LENGTH – Old Hispanic notation Ex. B**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |
 
 {% include mei example="neumes/neumes-sample-6-04-15.xml" valid="" %}
 
@@ -189,12 +206,12 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
 
 | :-: | :- |
-| **S-SHAPE – EXAMPLE A Old Hispanic notation**     |  ![S-shape-A](/guidelines/images/v4/modules/neumes/s-shapeA.png "Example A") |
+| **S-SHAPE – Old Hispanic notation**     |  ![S-shape-A](/guidelines/images/v4/modules/neumes/s-shapeA.png "Example A") |
 
 {% include mei example="neumes/neumes-sample-6-04-08.xml" valid="" %}
 
 | :-: | :- |
-| **S-SHAPE – EXAMPLE B St Gall notation**     |  ![S-shape-B](/guidelines/images/v4/modules/neumes/s-shapeB.png "Example B") |
+| **S-SHAPE – St Gall notation**     |  ![S-shape-B](/guidelines/images/v4/modules/neumes/s-shapeB.png "Example B") |
 
 {% include mei example="neumes/neumes-sample-6-04-09.xml" valid="" %}
 
@@ -215,17 +232,17 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include mei example="neumes/neumes-sample-6-04-04.xml" valid="" %}
 
 | :-: | :- |
-| **EPISEMA - St Gall notation Ex. 1**     |  ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png "Example B") |
+| **EPISEMA - St Gall notation Ex. A**     |  ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png "Example B") |
 
 {% include mei example="neumes/neumes-sample-6-04-05.xml" valid="" %}
 
 | :-: | :- |
-| **EPISEMA - St Gall notation Ex. 2**     |  ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png "Example C") |
+| **EPISEMA - St Gall notation Ex. B**     |  ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png "Example C") |
 
 {% include mei example="neumes/neumes-sample-6-04-06.xml" valid="" %}
 
 | :-: | :- |
-| **EPISEMA - St Gall notation Ex. 3**     |  ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png "Example D") |
+| **EPISEMA - St Gall notation Ex. C**     |  ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png "Example D") |
 
 {% include mei example="neumes/neumes-sample-6-04-07.xml" valid="" %}
 
@@ -242,7 +259,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 |-----------+----------|
 |:---------:|:---------|
-| **LIQUESCENT - Staff notation Ex. 1** | ![Liquescent1](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
+| **LIQUESCENT - Staff notation Ex. A** | ![Liquescent.Ex.A](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
 
 <neume>
     <nc pname="b" oct="3"/>
@@ -254,7 +271,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 |-----------+----------|
 |:---------:|:---------|
-| **LIQUESCENT - Staff notation Ex. 2** | ![Liquescent2](/guidelines/images/v4/modules/neumes/liquescent1NEW.png) | 
+| **LIQUESCENT - Staff notation Ex. B** | ![Liquescent.Ex.B](/guidelines/images/v4/modules/neumes/liquescent1NEW.png) | 
 
 <neume>
     <nc pname="c" oct="4" tilt="n"/>
@@ -354,6 +371,8 @@ Samples of MEI of St Gall notation are taken from the winter volume of the so-ca
 Samples of MEI of Old Hispanic notation are taken from the ‘León Antiphoner’ [E-L MS 8](https://bvpb.mcu.es/es/catalogo_imagenes/grupo.cmd?path=26408).
 
 Samples of MEI of Aquitanian notation are taken from sources on the [Portuguese Early Music Database](pemdatabase.eu).
+
+
 
 #### Bibliographic References
 
