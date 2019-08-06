@@ -6,6 +6,336 @@ version: "v4"
 
 
 
+
+
+#### Elements:
+In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
+
+{% include link elem="custos" %}: to indicate a custos
+{% include figure img="modules/neumes/custos.png" %}
+
+
+
+{% include link elem="division" %}: to indicate pause between neumes
+{% include figure img="modules/neumes/division.png" %}
+
+
+
+{% include link elem="episema" %}: to indicate an episema
+{% include figure img="modules/neumes/episema.png" %}
+
+(see MEI encoding of {% include link elem="episema" %} in the following section)
+
+
+
+{% include link elem="hispanTick" %}: to indicate Old Hispanic ticks
+{% include figure img="modules/neumes/hispanTick.png" %}
+
+(see MEI encoding of {% include link elem="hispanTick" %} in the following section)
+
+
+
+{% include link elem="liquescent" %}: to indicate a liquescent
+{% include figure img="modules/neumes/liquescent2NEW.png" %}
+
+(see MEI encoding in the following section)
+
+
+
+{% include link elem="ncGrp" %}: to indicate multiple {% include link elem="nc" %}s
+
+
+
+{% include link elem="oriscus" %}: to indicate an oriscus
+{% include figure img="modules/neumes/oriscus.png" %}
+
+
+
+{% include link elem="quilisma" %}: to indicate a quilisma
+{% include figure img="modules/neumes/quilisma.png" %}
+
+(see MEI encoding of {% include link elem="quilisma" %} in the following section)
+
+
+
+{% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
+{% include figure img="modules/neumes/signifLet.png" %}
+
+(see MEI encoding of {% include link elem="signifLet" %} in the following section)
+
+
+
+{% include link elem="strophicus" %}: to indicate a strophicus
+{% include figure img="modules/neumes/strophicusNEW.png" %}
+
+
+<neume>
+     <nc pname="c" oct="4" tilt="n" ligated="true"/>
+     <nc pname="a" oct="3" ligated="true"/>
+     <nc pname="c" oct="4" 
+     <strophicus pname="c" oct="4"/>
+     <strophicus pname="c" oct="4"/> 
+</neume>
+
+
+
+
+
+#### Neume component attributes: 
+
+{% include desc atts="att.nc.log/pname" %} {[a-g] | unknown} (pitch name)
+
+{% include desc atts="att.nc.log/oct" %} {[0-9] | unknown} (octave number)
+
+{% include desc atts="att.intervalMelodic/intm" %} (interval melodic; relative to the previous {% include link elem="nc" %}) {u | d | s | n | su | sd} (u = up, d = down, s = same, n = neutral/unknown, su = same or higher (but not lower), sd = same or lower (but not higher)). In addition, diatonic intervals (distance on the staff, regardless of the scale) can be indicated, by adding an “S” after a positive or negative single-digit integer, e.g., “-2S” would mean two diatonic steps below (a major or minor third below)
+
+{% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) 
+
+| :-: | :- |
+| **GAPPED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Gapped](/guidelines/images/v4/modules/neumes/gapped.png "Gapped") |
+
+{% include mei example="neumes/neumes-sample-6-04-10.xml" valid="" %}
+
+
+
+| :-: | :- |
+| **LOOPED CONNECTION - EXAMPLE Old Hispanic notationn**     |  ![Looped](/guidelines/images/v4/modules/neumes/looped.png "Looped") |
+
+{% include mei example="neumes/neumes-sample-6-04-11.xml" valid="" %}
+
+
+| :-: | :- |
+| **EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Extended](/guidelines/images/v4/modules/neumes/extended.png "Extended") |
+
+{% include mei example="neumes/neumes-sample-6-04-13.xml" valid="" %}
+
+
+Nota bene: the following neume has a similar shape but the neumatic connection is not extended
+
+
+| :-: | :- |
+| **NON-EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Non-extended](/guidelines/images/v4/modules/neumes/non-extended.png "Non-extended connection") |
+
+{% include mei example="neumes/neumes-sample-6-04-12.xml" valid="" %}
+
+
+
+
+{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) 
+{% include figure img="modules/neumes/curve.png" %}
+
+<neume>
+     <nc curve="c"/>
+     <nc con="g" curve="a" intm="s"/>
+</neume>
+
+
+
+
+{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
+{% include figure img="modules/neumes/angled.png" %}
+
+<neume>
+     <nc tilt="e"/>
+     <nc angled="u" intm="u"/>
+     <nc angled="u" intm="u"/>
+     <nc tilt="n" rellen="l" intm="u"/>
+</neume>
+
+
+
+{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
+
+| :-: | :- |
+| **HOOK – EXAMPLE Old Hispanic notation**     |  ![Hook](/guidelines/images/v4/modules/neumes/hooked.png "Hook") |
+
+{% include mei example="neumes/neumes-sample-6-04-16.xml" valid="" %}
+
+
+{% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature.
+See the encoding of the {% include link elem="strophicus" %} example, above.
+
+
+
+{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) 
+
+
+
+| :-: | :- |
+| **RELATIVE LENGTH – EXAMPLE A Old Hispanic notation**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
+
+{% include mei example="neumes/neumes-sample-6-04-14.xml" valid="" %}
+
+| :-: | :- |
+| **RELATIVE LENGTH – EXAMPLE B Old Hispanic notation**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |
+
+{% include mei example="neumes/neumes-sample-6-04-15.xml" valid="" %}
+
+
+
+
+
+{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) 
+
+| :-: | :- |
+| **TILT – Old Hispanic / St Gall notation**     |  ![Tilt](/guidelines/images/v4/modules/neumes/tilt.png "Tilt") |
+
+<neume>
+     <nc tilt="ne"/>
+</neume>
+
+
+
+{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
+
+| :-: | :- |
+| **S-SHAPE – EXAMPLE A Old Hispanic notation**     |  ![S-shape-A](/guidelines/images/v4/modules/neumes/s-shapeA.png "Example A") |
+
+{% include mei example="neumes/neumes-sample-6-04-08.xml" valid="" %}
+
+| :-: | :- |
+| **S-SHAPE – EXAMPLE B St Gall notation**     |  ![S-shape-B](/guidelines/images/v4/modules/neumes/s-shapeB.png "Example B") |
+
+{% include mei example="neumes/neumes-sample-6-04-09.xml" valid="" %}
+
+
+
+#### Episema attributes: 
+
+{% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
+
+{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
+
+
+
+
+| :-: | :- |
+| **EPISEMA – Staff notation**     |  ![Episema-A](/guidelines/images/v4/modules/neumes/episema.png "Example A") |
+
+{% include mei example="neumes/neumes-sample-6-04-04.xml" valid="" %}
+
+| :-: | :- |
+| **EPISEMA - St Gall notation Ex. 1**     |  ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png "Example B") |
+
+{% include mei example="neumes/neumes-sample-6-04-05.xml" valid="" %}
+
+| :-: | :- |
+| **EPISEMA - St Gall notation Ex. 2**     |  ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png "Example C") |
+
+{% include mei example="neumes/neumes-sample-6-04-06.xml" valid="" %}
+
+| :-: | :- |
+| **EPISEMA - St Gall notation Ex. 3**     |  ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png "Example D") |
+
+{% include mei example="neumes/neumes-sample-6-04-07.xml" valid="" %}
+
+
+
+#### Liquescent attributes: 
+
+{% include desc atts="att.liquescent.vis/curve" %} {a | c} (anticlockwise, clockwise) 
+
+{% include desc atts="att.liquescent.vis/looped" %} {true | false} (true if the curve is closed)  
+
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **LIQUESCENT - Staff notation Ex. 1** | ![Liquescent1](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
+
+<neume>
+    <nc pname="b" oct="3"/>
+    <liquescent curl="a"/>
+</neume>
+    
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **LIQUESCENT - Staff notation Ex. 2** | ![Liquescent2](/guidelines/images/v4/modules/neumes/liquescent1NEW.png) | 
+
+<neume>
+    <nc pname="c" oct="4" tilt="n"/>
+    <liquescent curl="c"/>
+</neume>
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **LIQUESCENT - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png) | 
+
+{% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
+
+
+
+#### Old Hispanic tick attributes: 
+
+{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke)
+
+{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
+
+
+| :-: | :- |
+| **HISPAN TICK - Old Hispanic notation, see left arrow**     |  ![HispanTick](/guidelines/images/v4/modules/neumes/hispanTick.png "Hispan tick") |
+
+
+{% include mei example="neumes/neumes-sample-6-04-18.xml" valid="" %}
+
+
+
+
+#### Quilisma attribute: 
+
+{% include desc atts="att.quilisma.vis/waves" %} {2 | 3 | 4} the number of quilisma waves
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **QUILISMA - Staff notation** | ![Quilisma](/guidelines/images/v4/modules/neumes/quilisma.png) |
+
+{% include mei example="neumes/neumes-sample-6-01-03.xml" valid="" %}
+
+
+
+|-----------+----------|
+|:---------:|:---------|
+| **QUILISMA - Old Hispanic notation** | ![Quilisma2](/guidelines/images/v4/modules/neumes/quilismaOH.png) |
+
+<neume>
+<nc >
+   <quilisma waves="2"/>
+</nc>
+<nc tilt="n" intm="u"/>
+<nc tilt="se" rellen="l" intm="d"/>
+</neume>
+
+
+
+#### Significative letters attribute: 
+
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
+
+
+| :-: | :- |
+| **SIGNIFICATIVE LETTERS - St Gall notation**     |  ![Significative-Letters](/guidelines/images/v4/modules/neumes/signifLet.png "Significative Letters") |
+
+{% include mei example="neumes/neumes-sample-6-04-17.xml" valid="" %}
+
+
+
+
+#### Note:
+Other articulation marks such as ictus, circulus, semicirculus, accentus, and other fonts in [SMuFL](https://www.smufl.org/fonts/) can be encoded using: glyph.auth, glyph.name, glyph.num, and glyph.uri
+
+
+
+
+
+
+
 #### Basic Encoding – Syllable 
 
 The following example illustrates the most basic encoding of neume notation. Encoded here is the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively.
