@@ -4,66 +4,15 @@ title: "Samples of MEI encodings"
 version: "v4"
 ---
 
+
+
 #### Basic Encoding – Syllable 
 
-The first example illustrates the most basic encoding of neume notation. Encoded here is the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively.
+The following example illustrates the most basic encoding of neume notation. Encoded here is the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively.
 
 {% include figure img="modules/neumes/O-splendidissima.png" %}
 
 {% include mei example="neumes/neumes-sample169.xml" valid="" %}
-
-
-
-#### Basic Encoding – Neumes
-
-The following examples show how the current MEI Neume Module works when applied to staff notation, St Gall, Old Hispanic, and Aquitanian notation (see rows 4-21 in the Table).
-
-
-| :-: | :- |
-| **LIQUESCENT – EXAMPLE A Staff notation**  |  ![Liquescent-A](/guidelines/images/v4/modules/neumes/LIQUESCENT–ExampleA.png "Example A") | 
-
-{% include mei example="neumes/neumes-sample-6-04-01.xml" valid="" %}
-
-| :-: | :- |
-| **LIQUESCENT – EXAMPLE B Aquitanian notation**     |  ![Liquescent-B](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png "Example B") |
-
-{% include mei example="neumes/neumes-sample-6-04-02.xml" valid="" %}
-
-| :-: | :- |
-| **STROPHICUS – EXAMPLE Staff notation**     |  ![Strophicus](/guidelines/images/v4/modules/neumes/strophicus.png "Strophicus") |
-
-{% include mei example="neumes/neumes-sample-6-04-03.xml" valid="" %}
-
-| :-: | :- |
-| **EPISEMA – EXAMPLE A Staff notation**     |  ![Episema-A](/guidelines/images/v4/modules/neumes/episema.png "Example A") |
-
-{% include mei example="neumes/neumes-sample-6-04-04.xml" valid="" %}
-
-| :-: | :- |
-| **EPISEMA - EXAMPLE B St Gall notation, Pes rotundus episema**     |  ![Episema-B](/guidelines/images/v4/modules/neumes/episemaB.png "Example B") |
-
-{% include mei example="neumes/neumes-sample-6-04-05.xml" valid="" %}
-
-| :-: | :- |
-| **EPISEMA - EXAMPLE C St Gall notation, Pes quadratus episema**     |  ![Episema-C](/guidelines/images/v4/modules/neumes/episemaC.png "Example C") |
-
-{% include mei example="neumes/neumes-sample-6-04-06.xml" valid="" %}
-
-| :-: | :- |
-| **EPISEMA - EXAMPLE D St Gall notation, Pes quassus episema**     |  ![Episema-D](/guidelines/images/v4/modules/neumes/episemaD.png "Example D") |
-
-{% include mei example="neumes/neumes-sample-6-04-07.xml" valid="" %}
-
-| :-: | :- |
-| **S-SHAPE – EXAMPLE A Old Hispanic notation**     |  ![S-shape-A](/guidelines/images/v4/modules/neumes/s-shape.png "Example A") |
-
-{% include mei example="neumes/neumes-sample-6-04-08.xml" valid="" %}
-
-| :-: | :- |
-| **S-SHAPE – EXAMPLE B St Gall notation**     |  ![S-shape-B](/guidelines/images/v4/modules/neumes/s-shapeB.png "Example B") |
-
-{% include mei example="neumes/neumes-sample-6-04-09.xml" valid="" %}
-
 
 
 
