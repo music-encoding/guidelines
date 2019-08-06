@@ -387,7 +387,7 @@ Helsen, Kate, Inga Behrendt, and Jennifer Bain. 2017. “[A Morphology of Mediev
 
 MEI Guidelines, 6: Neume Notation [Guidelines for MEI 3.0.0](https://music-encoding.org/guidelines/v3/content/neumes.html).
 
-MEI Guidelines, 6: Neume Notation [Guidelines for MEI 4.0.0](https://music-encoding.org/guidelines/v4/content/neumes.html) introducing {% include desc elem="nc" %} as “neume component”.
+MEI Guidelines, 6: Neume Notation [Guidelines for MEI 4.0.0](https://music-encoding.org/guidelines/v4/content/neumes.html) introducing    {% include link elem="nc" %} as “neume component”.   
 
 Morent, Stefan and Gregor Schräder. 2008. Demo: [MEI Neumes Viewer Hildegard](http://www.dimused.uni-tuebingen.de/hildegard/?SCREEN=1560x686).
 
