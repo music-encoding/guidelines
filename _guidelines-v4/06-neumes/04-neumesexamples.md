@@ -49,7 +49,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 | **ORISCUS - Square notation**     |  ![Oriscus1](/guidelines/images/v4/modules/neumes/oriscus.png "Oriscus1") |
 
 <neume>
-     <oriscus pname="g" oct="3"/>/> 
+     <oriscus pname="g" oct="3"/>
 </neume>
 
 
@@ -79,8 +79,6 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 
 {% include link elem="strophicus" %}: to indicate a strophicus
-
-
 
 | :-: | :- |
 | **STROPHICUS - Square notation**     |  ![Strophicus](/guidelines/images/v4/modules/neumes/strophicusNEW.png "Strophicus") |
@@ -126,7 +124,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 {% include mei example="neumes/neumes-sample-6-04-13.xml" valid="" %}
 
 
-Nota bene: the following neume has a similar shape but the neumatic connection is not extended
+Nota bene: the following neume has a similar shape but the neumatic connection is _not_ extended
 
 
 | :-: | :- |
@@ -138,7 +136,9 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 
 
 {% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) 
-{% include figure img="modules/neumes/curve.png" %}
+
+| :-: | :- |
+| **CURVE - Old Hispanic notation**     |  ![Curve](/guidelines/images/v4/modules/neumes/curve.png "Curve") |
 
 <neume>
      <nc curve="c"/>
@@ -149,7 +149,10 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 
 
 {% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
-{% include figure img="modules/neumes/angled.png" %}
+
+
+| :-: | :- |
+| **ANGLED - Old Hispanic notation**     |  ![Angled](/guidelines/images/v4/modules/neumes/angled.png "Angled") |
 
 <neume>
      <nc tilt="e"/>
@@ -223,8 +226,6 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
 
 
-
-
 | :-: | :- |
 | **EPISEMA – Staff notation**     |  ![Episema-A](/guidelines/images/v4/modules/neumes/episema.png "Example A") |
 
@@ -252,7 +253,6 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include desc atts="att.liquescent.vis/curve" %} {a | c} (anticlockwise, clockwise) 
 
 {% include desc atts="att.liquescent.vis/looped" %} {true | false} (true if the curve is closed)  
-
 
 
 
