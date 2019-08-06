@@ -280,7 +280,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 |-----------+----------|
 |:---------:|:---------|
-| **Episema - St Gall notation** | ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png) | 
+| **Episema - St Gall notation Ex. 1** | ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png) | 
 
 <neume>
      <nc curved="a"/>
@@ -294,7 +294,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 |-----------+----------|
 |:---------:|:---------|
-| **Episema - St Gall notation** | ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png) | 
+| **Episema - St Gall notation Ex. 2** | ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png) | 
 
 <neume>
      <nc tilt="se"/>
@@ -307,7 +307,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 |-----------+----------|
 |:---------:|:---------|
-| **Episema - St Gall notation** | ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png) | 
+| **Episema - St Gall notation Ex. 3** | ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png) | 
 
 <neume>
      <nc s-shaped="w"/>
