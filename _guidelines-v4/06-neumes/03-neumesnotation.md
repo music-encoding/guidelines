@@ -14,7 +14,7 @@ See two examples of shapes found in different regional styles that are not captu
 
 **Example 1:** 
 
-**St Gall Notation** Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called _salicus_ in the literature).
+**St Gall notation** Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called _salicus_ in the literature).
 {% include figure img="modules/neumes/salicus.png" %}
 
 <neume>
@@ -23,7 +23,7 @@ See two examples of shapes found in different regional styles that are not captu
      <nc tilt="ne" intm="u"/> 
 </neume>
 
-**Old Hispanic Notation**: Two-note downward melodic gesture
+**Old Hispanic notation**: Two-note downward melodic gesture
 {% include figure img="modules/neumes/NLneumeOH.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
@@ -31,12 +31,12 @@ See two examples of shapes found in different regional styles that are not captu
 
 **Example 2:** 
 
-**Old Hispanic Notation** Four-note neutral-low-high-low melodic gesture
+**Old Hispanic notation** Four-note neutral-low-high-low melodic gesture
 {% include figure img="modules/neumes/MneumeOH.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
 
-**Aquitanan Notation** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
+**Aquitanian notation** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
 {% include figure img="modules/neumes/LIQUESCENT-ExampleB.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
