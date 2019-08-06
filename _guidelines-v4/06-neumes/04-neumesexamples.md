@@ -5,11 +5,8 @@ version: "v4"
 ---
 
 
-
-
-
 #### Elements:
-In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
+In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
 {% include link elem="custos" %}: to indicate a custos
 {% include figure img="modules/neumes/custos.png" %}
@@ -82,7 +79,11 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 
 
 {% include link elem="strophicus" %}: to indicate a strophicus
-{% include figure img="modules/neumes/strophicusNEW.png" %}
+
+
+
+| :-: | :- |
+| **STROPHICUS - Square notation**     |  ![Strophicus](/guidelines/images/v4/modules/neumes/strophicusNEW.png "Strophicus") |
 
 
 <neume>
@@ -92,7 +93,6 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
      <strophicus pname="c" oct="4"/>
      <strophicus pname="c" oct="4"/> 
 </neume>
-
 
 
 
