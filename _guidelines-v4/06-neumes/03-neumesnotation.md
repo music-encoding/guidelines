@@ -128,45 +128,34 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include desc atts="att.intervalMelodic/intm" %} (interval melodic; relative to the previous {% include link elem="nc" %}) {u | d | s | n | su | sd} (u = up, d = down, s = same, n = neutral/unknown, su = same or higher (but not lower), sd = same or lower (but not higher)). In addition, diatonic intervals (distance on the staff, regardless of the scale) can be indicated, by adding an “S” after a positive or negative single-digit integer, e.g., “-2S” would mean two diatonic steps below (a major or minor third below)
 
 {% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) 
-{% include figure img="modules/neumes/gapped.png" %} 
-(gapped)
 
-<neume>
-     <nc tilt="e"/>
-     <nc con="g" tilt="n" rellen="l" intm="u"/>
-</neume>
+| :-: | :- |
+| **GAPPED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Gapped](/guidelines/images/v4/modules/neumes/gapped.png "Gapped") |
+
+{% include mei example="neumes/neumes-sample-6-04-10.xml" valid="" %}
 
 
 
-{% include figure img="modules/neumes/looped.png" %}
-(looped)
+| :-: | :- |
+| **LOOPED CONNECTION - EXAMPLE Old Hispanic notationn**     |  ![Looped](/guidelines/images/v4/modules/neumes/looped.png "Looped") |
 
-<neume>
-     <nc s-shape="s"/>
-     <nc con="l" tilt="ne" intm="u"/>
-</neume>
+{% include mei example="neumes/neumes-sample-6-04-11.xml" valid="" %}
 
 
+| :-: | :- |
+| **EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Extended](/guidelines/images/v4/modules/neumes/extended.png "Extended") |
+
+{% include mei example="neumes/neumes-sample-6-04-13.xml" valid="" %}
 
 
-{% include figure img="modules/neumes/extended.png" %} 
-(extended) 
-
-<neume>
-     <nc tilt="n"/>
-     <nc curve="c" con="e" tilt="s" rellen="s" intm="d"/>
-</neume>
+Nota bene: the following neume has a similar shape but the neumatic connection is not extended
 
 
-Nota bene: this neume 
-{% include figure img="modules/neumes/non-extended.png" %}
+| :-: | :- |
+| **NON-EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Non-extended](/guidelines/images/v4/modules/neumes/non-extended.png "Non-extended connection") |
 
-has a similar shape but the neumatic connection is not extended
+{% include mei example="neumes/neumes-sample-6-04-12.xml" valid="" %}
 
-<neume>
-     <nc tilt="n"/>
-     <nc curve="c" tilt="s" rellen="s" intm="d"/>
-</neume>
 
 
 
@@ -363,15 +352,13 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 {% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
 
-{% include figure img="modules/neumes/hispanTick.png" %}
+
+| :-: | :- |
+| **HISPAN TICK - Old Hispanic notation, see left arrow**     |  ![HispanTick](/guidelines/images/v4/modules/neumes/hispanTick.png "Hispan tick") |
 
 
-<neume>
-     <nc curve="a"/>
-     <nc tilt="n" intm="u">
-        <hispanTick tilt="n" place="nw"/>
-     </nc>
-</neume>
+{% include mei example="neumes/neumes-sample-6-04-18.xml" valid="" %}
+
 
 
 
@@ -408,16 +395,10 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
 
 
-{% include figure img="modules/neumes/signifLet.png" %}
+| :-: | :- |
+| **SIGNIFICATIVE LETTERS St Gall notation**     |  ![Significative-Letters](/guidelines/images/v4/modules/neumes/signifLet.png "Significative Letters") |
 
-
-<neume>
-     <nc tilt="ne">
-        <signifLet place="ne"> c </signifLet >
-     </nc >
-     <nc con="g" rellen="s" intm="d"/>
-     <nc con="g" tilt="e" rellen="l" intm="d"/>
-</neume>
+{% include mei example="neumes/neumes-sample-6-04-17.xml" valid="" %}
 
 
 
