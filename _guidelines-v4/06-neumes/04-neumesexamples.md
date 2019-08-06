@@ -64,25 +64,9 @@ The following examples show how the current MEI Neume Module works when applied 
 
 {% include mei example="neumes/neumes-sample-6-04-09.xml" valid="" %}
 
-| :-: | :- |
-| **GAPPED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Gapped](/guidelines/images/v4/modules/neumes/gapped.png "Gapped") |
 
-{% include mei example="neumes/neumes-sample-6-04-10.xml" valid="" %}
 
-| :-: | :- |
-| **LOOPED CONNECTION - EXAMPLE Old Hispanic notationn**     |  ![Looped](/guidelines/images/v4/modules/neumes/looped.png "Looped") |
 
-{% include mei example="neumes/neumes-sample-6-04-11.xml" valid="" %}
-
-| :-: | :- |
-| **NON-EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Non-extended](/guidelines/images/v4/modules/neumes/non-extended.png "Non-extended connection") |
-
-{% include mei example="neumes/neumes-sample-6-04-12.xml" valid="" %}
-
-| :-: | :- |
-| **EXTENDED CONNECTION - EXAMPLE Old Hispanic notation**     |  ![Extended](/guidelines/images/v4/modules/neumes/extended.png "Extended") |
-
-{% include mei example="neumes/neumes-sample-6-04-13.xml" valid="" %}
 
 | :-: | :- |
 | **RELATIVE LENGTH – EXAMPLE A Old Hispanic notation**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
@@ -99,23 +83,6 @@ The following examples show how the current MEI Neume Module works when applied 
 
 {% include mei example="neumes/neumes-sample-6-04-16.xml" valid="" %}
 
-| :-: | :- |
-| **SIGNIFICATIVE LETTERS St Gall notation**     |  ![Significative-Letters](/guidelines/images/v4/modules/neumes/signifLet.png "Significative Letters") |
-
-{% include mei example="neumes/neumes-sample-6-04-17.xml" valid="" %}
-
-| :-: | :- |
-| **HISPAN TICK Old Hispanic notation**     |  ![HispanTick](/guidelines/images/v4/modules/neumes/hispanTick.png "Hispan tick") |
-
-
-{% include mei example="neumes/neumes-sample-6-04-18.xml" valid="" %}
-
-
-{% include figure img="modules/neumes/Table-Rows1-7.png" %}
-
-{% include figure img="modules/neumes/Table-Rows8-14.png" %}
-
-{% include figure img="modules/neumes/Table-Rows15-21.png" %}
 
 
 
