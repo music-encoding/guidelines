@@ -183,12 +183,11 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 
 
 {% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
-{% include figure img="modules/neumes/hooked.png" %}  
 
-<neume>
-     <nc tilt="ne"/>
-     <nc tilt="se" hooked="true" rellen="s" intm="d"/>
-</neume>
+| :-: | :- |
+| **HOOK – EXAMPLE Old Hispanic notation**     |  ![Hook](/guidelines/images/v4/modules/neumes/hooked.png "Hook") |
+
+{% include mei example="neumes/neumes-sample-6-04-16.xml" valid="" %}
 
 
 {% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature.
@@ -198,20 +197,21 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 {% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) 
 
-{% include figure img="modules/neumes/rellenS.png" %} 
-
-<neume>
-     <nc tilt="ne"/>
-     <nc tilt="se" rellen="s" intm="d"/>
-</neume>
 
 
-{% include figure img="modules/neumes/rellenL.png" %} 
+| :-: | :- |
+| **RELATIVE LENGTH – EXAMPLE A Old Hispanic notation**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
 
-<neume>
-     <nc tilt="ne"/>
-     <nc tilt="se" rellen="l" intm="d"/>
-</neume>
+{% include mei example="neumes/neumes-sample-6-04-14.xml" valid="" %}
+
+| :-: | :- |
+| **RELATIVE LENGTH – EXAMPLE B Old Hispanic notation**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |
+
+{% include mei example="neumes/neumes-sample-6-04-15.xml" valid="" %}
+
+
+
+
 
 
 
