@@ -389,7 +389,17 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 
+|-----------+----------|
+|:---------:|:---------|
+| **Quilisma Old Hispanic notation** | ![Quilisma2](/guidelines/images/v4/modules/neumes/quilismaOH.png) |
 
+<neume>
+<nc >
+   <quilisma waves="2"/>
+</nc>
+<nc tilt="n" intm="u"/>
+<nc tilt="se" rellen="l" intm="d"/>
+</neume>
 
 
 
