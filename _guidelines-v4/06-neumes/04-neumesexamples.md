@@ -68,24 +68,6 @@ The following examples show how the current MEI Neume Module works when applied 
 
 
 
-| :-: | :- |
-| **RELATIVE LENGTH – EXAMPLE A Old Hispanic notation**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
-
-{% include mei example="neumes/neumes-sample-6-04-14.xml" valid="" %}
-
-| :-: | :- |
-| **RELATIVE LENGTH – EXAMPLE B Old Hispanic notation**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |
-
-{% include mei example="neumes/neumes-sample-6-04-15.xml" valid="" %}
-
-| :-: | :- |
-| **HOOK – EXAMPLE Old Hispanic notation**     |  ![Hook](/guidelines/images/v4/modules/neumes/hooked.png "Hook") |
-
-{% include mei example="neumes/neumes-sample-6-04-16.xml" valid="" %}
-
-
-
-
 #### Manuscripts
 
 Samples of MEI of St Gall notation are taken from the winter volume of the so-called ‘Hartker Antiphonary’ [CH-SGs Cod. Sang. 390](https://www.e-codices.unifr.ch/en/list/one/csg/0359).
