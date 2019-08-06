@@ -42,9 +42,7 @@ See two examples of shapes found in different regional styles that are not captu
 {% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
 
 
-A further complication is that while the music encoding aims to narrow down and capture the meaning of the neumes in a logical and coherent system, occasionally the significance of some neumes is under debate (e.g., {% include link elem="quilisma" %}) and, despite its aim for accuracy, the encoding must remain open for future interpretations.
-
-From all these challenges has arisen the need for an early music encoding standardisation, that is, a set of rules that work for the description of any neume across all early notations regardless of the different methodologies applied to the study of individual notations and their idiosyncrasies. 
+A further complication is that while the music encoding aims to narrow down and capture the meaning of the neumes in a logical and coherent system, occasionally the significance of some neumes is under debate (e.g., {% include link elem="quilisma" %}) and, despite its aim for accuracy, the encoding must remain open for future interpretations. From all these challenges has arisen the need for an early music encoding standardisation, that is, a set of rules that work for the description of any neume across all early notations regardless of the different methodologies applied to the study of individual notations and their idiosyncrasies. 
 
 Broadly speaking, Western early notations belong to two categories. On one side we have notations where two or more notes were represented by a single pen-stroke, while on the other side there are notations where the notes are graphically separated by means of discrete dots or short pen-strokes; these distinctions have been described even within single notational styles as interrupted neumes `<ineume>` or uninterrupted `<uneume>` (Morent & Schräder 2008; Morent 2011; MEI Guidelines, 6: Neume Notation, version 3.0), and now as gapped or not gapped (Behrendt, Bain, & Helsen 2017; MEI Guidelines, 6: Neume Notation, version 4.0). To date, the MEI Neume Module has been tested mainly on stroke notations (St. Gall, Old Hispanic, etc.), but also on Aquitanian point-notation. 
 
@@ -109,6 +107,7 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 {% include link elem="strophicus" %}: to indicate a strophicus
 {% include figure img="modules/neumes/strophicusNEW.png" %}
 
+
 <neume>
      <nc pname="c" oct="4" tilt="n" ligated="true"/>
      <nc pname="a" oct="3" ligated="true"/>
@@ -116,6 +115,7 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
      <strophicus pname="c" oct="4"/>
      <strophicus pname="c" oct="4"/> 
 </neume>
+
 
 
 
@@ -160,6 +160,7 @@ In addition to {% include desc elem="neume" %} and {% include desc elem="nc" %} 
 
 Nota bene: this neume 
 {% include figure img="modules/neumes/non-extended.png" %}
+
 has a similar shape but the neumatic connection is not extended
 
 <neume>
@@ -201,8 +202,8 @@ has a similar shape but the neumatic connection is not extended
 </neume>
 
 
-{% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature
-see the {% include link elem="strophicus" %} example above
+{% include desc atts="att.ncForm/ligated" %} {true | false} if this {% include link elem="nc" %} is part of a ligature.
+See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 
@@ -328,7 +329,7 @@ see the {% include link elem="strophicus" %} example above
 
 |-----------+----------|
 |:---------:|:---------|
-| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
+| **Liquescent - Staff notation Ex. 1** | ![Liquescent1](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
 
 <neume>
     <nc pname="b" oct="3"/>
@@ -340,7 +341,7 @@ see the {% include link elem="strophicus" %} example above
 
 |-----------+----------|
 |:---------:|:---------|
-| **Liquescent - Staff notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/iquescent1NEW.png) | 
+| **Liquescent - Staff notation Ex. 2** | ![Liquescent2](/guidelines/images/v4/modules/neumes/liquescent1NEW.png) | 
 
 <neume>
     <nc pname="c" oct="4" tilt="n"/>
