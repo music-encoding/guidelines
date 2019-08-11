@@ -42,7 +42,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 <custos pname="a" oct= "4"/>
 
-Nota bene: in Custos Example 4 we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
+Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
 
 {% include link elem="mdiv" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %}
