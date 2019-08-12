@@ -203,26 +203,26 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 | :-: | :- |
 | **CUSTOS - Late Aquitanian notation**     |  ![Custos2](/guidelines/images/v4/modules/neumes/custos.EX2.png "Custos2") |
 
- <custos pname= "c" oct="4"/>  
+{% include mei example="neumes/neumes-sample-6-04-27.xml" valid="" %}
 
 
 | :-: | :- |
 | **CUSTOS - Aquitanian notation**     |  ![Custos3](/guidelines/images/v4/modules/neumes/custos.EX3.png "Custos3") |
 
-<custos loc="+3" />
-
+{% include mei example="neumes/neumes-sample-6-04-28.xml" valid="" %}
 
 
 | :-: | :- |
 | **CUSTOS - Aquitanian notation**     |  ![Custos4](/guidelines/images/v4/modules/neumes/custos.EX4.png "Custos4") |
 
-<custos loc="0" />
+{% include mei example="neumes/neumes-sample-6-04-29.xml" valid="" %}
 
 
 | :-: | :- |
 | **CUSTOS - Aquitanian notation**     |  ![Custos5](/guidelines/images/v4/modules/neumes/custos.EX5.png "Custos5") |
 
-<custos pname="a" oct= "4"/>
+{% include mei example="neumes/neumes-sample-6-04-30.xml" valid="" %}
+
 
 Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
 
