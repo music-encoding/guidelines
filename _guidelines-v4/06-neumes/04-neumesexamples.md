@@ -70,7 +70,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 {% include link elem="strophicus" %}: to indicate a strophicus
 
 | :-: | :- |
-| **STROPHICUS - Square notation**     |  ![Strophicus](/guidelines/images/v4/modules/neumes/strophicusNEW.png "Strophicus") |
+| **STROPHICUS - Square notation**     |  <img src="/guidelines/images/v4/modules/neumes/strophicusNEW.png" alt="Strophicus" width="200"> |
 
 
 {% include mei example="neumes/neumes-sample-6-04-02.xml" valid="" %}
@@ -270,7 +270,7 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 
 |-----------+----------|
 |:---------:|:---------|
-| **LIQUESCENT - Staff notation Ex. A** | ![Liquescent.Ex.A](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
+| **LIQUESCENT - Staff notation Ex. A** | <img src="/guidelines/images/v4/modules/neumes/liquescent2NEW.png" width="200"> | 
 
 {% include mei example="neumes/neumes-sample-6-04-31.xml" valid="" %}
 
@@ -298,7 +298,7 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 
 
 | :-: | :- |
-| **HISPAN TICK - Old Hispanic notation, see left arrow**     |  ![HispanTick](/guidelines/images/v4/modules/neumes/hispanTick.png "Hispan tick") |
+| **HISPAN TICK - Old Hispanic notation, see left arrow**     |  <img src="/guidelines/images/v4/modules/neumes/hispanTick.png" alt="Hispan tick" width="200"> |
 
 
 {% include mei example="neumes/neumes-sample-6-04-18.xml" valid="" %}
@@ -334,7 +334,7 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 
 
 | :-: | :- |
-| **SIGNIFICATIVE LETTERS - St Gall notation**     |  ![Significative-Letters](/guidelines/images/v4/modules/neumes/signifLet.png "Significative Letters") |
+| **SIGNIFICATIVE LETTERS - St Gall notation**     |  <img src="/guidelines/images/v4/modules/neumes/signifLet.png" alt="Significative Letters" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-17.xml" valid="" %}
 
