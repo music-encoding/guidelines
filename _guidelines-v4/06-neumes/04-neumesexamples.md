@@ -130,13 +130,7 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 | :-: | :- |
 | **ANGLED - Old Hispanic notation**     |  ![Angled](/guidelines/images/v4/modules/neumes/angled.png "Angled") |
 
-<neume>
-     <nc tilt="e"/>
-     <nc angled="u" intm="u"/>
-     <nc angled="u" intm="u"/>
-     <nc tilt="n" rellen="l" intm="u"/>
-</neume>
-
+{% include mei example="neumes/neumes-sample-6-04-23.xml" valid="" %}
 
 
 {% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
