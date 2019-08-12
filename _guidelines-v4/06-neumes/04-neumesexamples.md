@@ -200,7 +200,9 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 | :-: | :- |
-| **CUSTOS - Late Aquitanian notation**     |  ![Custos2](/guidelines/images/v4/modules/neumes/custos.EX2.png "Custos2") |
+| **CUSTOS - Late Aquitanian notation**     |  ![Custos2](/guidelines/images/v4/modules/neumes/custos.EX2.png "Custos2" ) |
+
+| **CUSTOS - Late Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX2.png" alt="Custos2"  width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-27.xml" valid="" %}
 
