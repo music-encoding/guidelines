@@ -200,27 +200,26 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 | :-: | :- |
-| **CUSTOS - Late Aquitanian notation**     |  ![Custos2](/guidelines/images/v4/modules/neumes/custos.EX2.png "Custos2" ) |
-
 | **CUSTOS - Late Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX2.png" alt="Custos2"  width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-27.xml" valid="" %}
 
 
 | :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  ![Custos3](/guidelines/images/v4/modules/neumes/custos.EX3.png "Custos3") |
+| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX3.png" alt="Custos3" width="200"> |
+
+| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX3.png" alt="Custos3" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-28.xml" valid="" %}
 
 
 | :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  ![Custos4](/guidelines/images/v4/modules/neumes/custos.EX4.png "Custos4") |
+| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX4.png" alt="Custos4" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-29.xml" valid="" %}
 
-
 | :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  ![Custos5](/guidelines/images/v4/modules/neumes/custos.EX5.png "Custos5") |
+| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX5.png" alt="Custos5" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-30.xml" valid="" %}
 
