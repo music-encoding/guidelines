@@ -51,13 +51,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 | :-: | :- |
 | **ORISCUS - St Gall notation**     |  ![Oriscus2](/guidelines/images/v4/modules/neumes/salicus.png "Oriscus2") |
 
-<neume>
-     <nc/> 
-     <oriscus/> 
-     <nc tilt="ne" intm="u"/> 
-</neume>
-
-
+{% include mei example="neumes/neumes-sample-6-04-21.xml" valid="" %}
 
 {% include link elem="quilisma" %}: to indicate a quilisma
 {% include figure img="modules/neumes/quilisma.png" %}
