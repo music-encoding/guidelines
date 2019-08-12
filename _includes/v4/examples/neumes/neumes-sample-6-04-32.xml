@@ -1,7 +1,4 @@
 <neume>
-    <nc >
-        <quilisma waves="2"/>
-    </nc>
-    <nc tilt="n" intm="u"/>
-    <nc tilt="se" rellen="l" intm="d"/>
+    <nc pname="c" oct="4" tilt="n"/>
+    <liquescent curl="c"/>
 </neume>
