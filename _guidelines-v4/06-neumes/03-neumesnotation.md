@@ -17,11 +17,7 @@ See two examples of shapes found in different regional styles that are not captu
 **St Gall notation** Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called _salicus_ in the literature).
 {% include figure img="modules/neumes/salicus.png" %}
 
-<neume>
-     <nc/> 
-     <oriscus/> 
-     <nc tilt="ne" intm="u"/> 
-</neume>
+{% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
 
 **Old Hispanic notation**: Two-note downward melodic gesture
 {% include figure img="modules/neumes/NLneumeOH.png" %}
