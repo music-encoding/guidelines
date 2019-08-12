@@ -1,5 +1,7 @@
 <neume>
-    <nc/>
-    <liquescent intm="u"/>
-    <nc tilt="ne" intm="u"/>
+     <nc pname="c" oct="4" tilt="n" ligated="true"/>
+     <nc pname="a" oct="3" ligated="true"/>
+     <nc pname="c" oct="4" >
+     <strophicus pname="c" oct="4"/>
+     <strophicus pname="c" oct="4"/> 
 </neume>

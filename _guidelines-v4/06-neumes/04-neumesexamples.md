@@ -75,17 +75,6 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 {% include mei example="neumes/neumes-sample-6-04-02.xml" valid="" %}
 
-<neume>
-     <nc pname="c" oct="4" tilt="n" ligated="true"/>
-     <nc pname="a" oct="3" ligated="true"/>
-     <nc pname="c" oct="4" 
-     <strophicus pname="c" oct="4"/>
-     <strophicus pname="c" oct="4"/> 
-</neume>
-
-
-
-
 #### Neume component attributes: 
 
 {% include desc atts="att.nc.log/pname" %} {[a-g] | unknown} (pitch name)
