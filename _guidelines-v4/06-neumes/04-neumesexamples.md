@@ -46,12 +46,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 | :-: | :- |
 | **ORISCUS - Square notation**     |  ![Oriscus1](/guidelines/images/v4/modules/neumes/oriscus.png "Oriscus1") |
 
-<neume>
-     <nc/> 
-     <oriscus/> 
-     <nc tilt="ne" intm="u"/> 
-</neume>
-
+{% include mei example="neumes/neumes-sample-6-04-20.xml" valid="" %}
 
 | :-: | :- |
 | **ORISCUS - St Gall notation**     |  ![Oriscus2](/guidelines/images/v4/modules/neumes/salicus.png "Oriscus2") |
@@ -83,6 +78,8 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 | :-: | :- |
 | **STROPHICUS - Square notation**     |  ![Strophicus](/guidelines/images/v4/modules/neumes/strophicusNEW.png "Strophicus") |
 
+
+{% include mei example="neumes/neumes-sample-6-04-02.xml" valid="" %}
 
 <neume>
      <nc pname="c" oct="4" tilt="n" ligated="true"/>
