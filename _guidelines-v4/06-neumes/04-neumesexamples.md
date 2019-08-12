@@ -188,10 +188,9 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 #### Custos attributes: 
 
-	@pname https://music-encoding.org/guidelines/v4/data-types/data.pitchname.html  
-	@oct https://music-encoding.org/guidelines/v4/attribute-classes/att.octave.html  
-	@loc https://music-encoding.org/guidelines/v4/data-types/data.staffloc.html
-
+{% include desc atts="att.pitch/pname" %}
+{% include desc atts="att.octave/oct" %}
+{% include desc atts="att.staffLoc/loc" %}
 
 
 | :-: | :- |
