@@ -47,7 +47,9 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 | **ORISCUS - Square notation**     |  ![Oriscus1](/guidelines/images/v4/modules/neumes/oriscus.png "Oriscus1") |
 
 <neume>
-     <oriscus pname="g" oct="3"/>
+     <nc/> 
+     <oriscus/> 
+     <nc tilt="ne" intm="u"/> 
 </neume>
 
 
