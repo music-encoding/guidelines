@@ -272,22 +272,14 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 |:---------:|:---------|
 | **LIQUESCENT - Staff notation Ex. A** | ![Liquescent.Ex.A](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) | 
 
-<neume>
-    <nc pname="b" oct="3"/>
-    <liquescent curl="a"/>
-</neume>
-    
-
+{% include mei example="neumes/neumes-sample-6-04-31.xml" valid="" %}
 
 
 |-----------+----------|
 |:---------:|:---------|
 | **LIQUESCENT - Staff notation Ex. B** | ![Liquescent.Ex.B](/guidelines/images/v4/modules/neumes/liquescent1NEW.png) | 
 
-<neume>
-    <nc pname="c" oct="4" tilt="n"/>
-    <liquescent curl="c"/>
-</neume>
+{% include mei example="neumes/neumes-sample-6-04-32.xml" valid="" %}
 
 
 |-----------+----------|
@@ -332,13 +324,7 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 |:---------:|:---------|
 | **QUILISMA - Old Hispanic notation** | ![Quilisma2](/guidelines/images/v4/modules/neumes/quilismaOH.png) |
 
-<neume>
-<nc >
-   <quilisma waves="2"/>
-</nc>
-<nc tilt="n" intm="u"/>
-<nc tilt="se" rellen="l" intm="d"/>
-</neume>
+{% include mei example="neumes/neumes-sample-6-01-33.xml" valid="" %}
 
 
 
