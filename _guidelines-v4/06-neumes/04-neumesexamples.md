@@ -9,40 +9,7 @@ version: "v4"
 In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
 {% include link elem="custos" %}: to indicate a custos
-
-
-| :-: | :- |
-| **CUSTOS - Staff notation**     |  ![Custos1](/guidelines/images/v4/modules/neumes/custos.EX1.png "Custos1") |
-
- <custos pname= "f" oct="3"/> 
-
-
-| :-: | :- |
-| **CUSTOS - Late Aquitanian notation**     |  ![Custos2](/guidelines/images/v4/modules/neumes/custos.EX2.png "Custos2") |
-
- <custos pname= "c" oct="4"/>  
-
-
-
-| :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  ![Custos3](/guidelines/images/v4/modules/neumes/custos.EX3.png "Custos3") |
-
-<custos loc="+3" />
-
-
-
-| :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  ![Custos4](/guidelines/images/v4/modules/neumes/custos.EX4.png "Custos4") |
-
-<custos loc="0" />
-
-
-| :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  ![Custos5](/guidelines/images/v4/modules/neumes/custos.EX5.png "Custos5") |
-
-<custos pname="a" oct= "4"/>
-
-Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
+(see MEI encoding of {% include link elem="custos" %} below)
 
 {% include link elem="mdiv" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %}
@@ -247,6 +214,52 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 | **S-SHAPE – St Gall notation**     |  ![S-shape-B](/guidelines/images/v4/modules/neumes/s-shapeB.png "Example B") |
 
 {% include mei example="neumes/neumes-sample-6-04-09.xml" valid="" %}
+
+
+
+#### Custos attributes: 
+
+	@pname https://music-encoding.org/guidelines/v4/data-types/data.pitchname.html  
+	@oct https://music-encoding.org/guidelines/v4/attribute-classes/att.octave.html  
+	@loc https://music-encoding.org/guidelines/v4/data-types/data.staffloc.html
+
+
+
+| :-: | :- |
+| **CUSTOS - Staff notation**     |  ![Custos1](/guidelines/images/v4/modules/neumes/custos.EX1.png "Custos1") |
+
+ <custos pname= "f" oct="3"/> 
+
+
+| :-: | :- |
+| **CUSTOS - Late Aquitanian notation**     |  ![Custos2](/guidelines/images/v4/modules/neumes/custos.EX2.png "Custos2") |
+
+ <custos pname= "c" oct="4"/>  
+
+
+
+| :-: | :- |
+| **CUSTOS - Aquitanian notation**     |  ![Custos3](/guidelines/images/v4/modules/neumes/custos.EX3.png "Custos3") |
+
+<custos loc="+3" />
+
+
+
+| :-: | :- |
+| **CUSTOS - Aquitanian notation**     |  ![Custos4](/guidelines/images/v4/modules/neumes/custos.EX4.png "Custos4") |
+
+<custos loc="0" />
+
+
+| :-: | :- |
+| **CUSTOS - Aquitanian notation**     |  ![Custos5](/guidelines/images/v4/modules/neumes/custos.EX5.png "Custos5") |
+
+<custos pname="a" oct= "4"/>
+
+Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
+
+
+
 
 
 
