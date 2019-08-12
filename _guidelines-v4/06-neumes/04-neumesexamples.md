@@ -324,7 +324,7 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 |:---------:|:---------|
 | **QUILISMA - Old Hispanic notation** | ![Quilisma2](/guidelines/images/v4/modules/neumes/quilismaOH.png) |
 
-{% include mei example="neumes/neumes-sample-6-01-33.xml" valid="" %}
+{% include mei example="neumes/neumes-sample-6-04-33.xml" valid="" %}
 
 
 
