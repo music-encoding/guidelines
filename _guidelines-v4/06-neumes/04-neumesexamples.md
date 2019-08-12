@@ -120,12 +120,8 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 | :-: | :- |
 | **CURVE - Old Hispanic notation**     |  ![Curve](/guidelines/images/v4/modules/neumes/curve.png "Curve") |
 
-<neume>
-     <nc curve="c"/>
-     <nc con="g" curve="a" intm="s"/>
-</neume>
 
-
+{% include mei example="neumes/neumes-sample-6-04-22.xml" valid="" %}
 
 
 {% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
