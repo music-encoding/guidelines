@@ -169,10 +169,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 | :-: | :- |
 | **TILT – Old Hispanic / St Gall notation**     |  ![Tilt](/guidelines/images/v4/modules/neumes/tilt.png "Tilt") |
 
-<neume>
-     <nc tilt="ne"/>
-</neume>
-
+{% include mei example="neumes/neumes-sample-6-04-25.xml" valid="" %}
 
 
 {% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
@@ -200,14 +197,13 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 | :-: | :- |
 | **CUSTOS - Staff notation**     |  ![Custos1](/guidelines/images/v4/modules/neumes/custos.EX1.png "Custos1") |
 
- <custos pname= "f" oct="3"/> 
+{% include mei example="neumes/neumes-sample-6-04-26.xml" valid="" %}
 
 
 | :-: | :- |
 | **CUSTOS - Late Aquitanian notation**     |  ![Custos2](/guidelines/images/v4/modules/neumes/custos.EX2.png "Custos2") |
 
  <custos pname= "c" oct="4"/>  
-
 
 
 | :-: | :- |
