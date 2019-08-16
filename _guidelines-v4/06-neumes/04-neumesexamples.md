@@ -46,7 +46,11 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 | :-: | :- |
 | **ORISCUS - Square notation**     |  ![Oriscus1](/guidelines/images/v4/modules/neumes/oriscus.png "Oriscus1") |
 
-{% include mei example="neumes/neumes-sample-6-04-20.xml" valid="" %}
+
+<neume>
+      <nc oct="3" pname="g" ncsign="oriscus" />
+</neume>
+
 
 | :-: | :- |
 | **ORISCUS - St Gall notation**     |  ![Oriscus2](/guidelines/images/v4/modules/neumes/salicus.png "Oriscus2") |
