@@ -8,8 +8,7 @@ version: "v4"
 #### Elements:
 In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
-{% include link elem="custos" %}: to indicate a custos
-(see MEI encoding of {% include link elem="custos" %} below)
+{% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below)
 
 {% include link elem="mdiv" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %}
