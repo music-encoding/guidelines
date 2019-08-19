@@ -1,6 +1,6 @@
 <neume>
-     <nc tilt="e"/>
-     <nc angled="u" intm="u"/>
-     <nc angled="u" intm="u"/>
-     <nc tilt="n" rellen="l" intm="u"/>
+  <nc tilt="e"/>
+  <nc angled="u" intm="u"/>
+  <nc angled="u" intm="u"/>
+  <nc tilt="n" rellen="l" intm="u"/>
 </neume>

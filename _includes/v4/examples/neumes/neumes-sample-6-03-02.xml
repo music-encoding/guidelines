@@ -1,4 +1,4 @@
-<neume> 
-    <nc tilt="ne"/>
-    <nc curve="c" tilt="sw" intm="d">
+<neume>
+  <nc tilt="ne"/>
+  <nc curve="c" tilt="sw" intm="d"/>
 </neume>
