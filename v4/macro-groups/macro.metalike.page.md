@@ -26,7 +26,8 @@ title: "macro.metaLike.page"
                   <div class="classBox" title="macro.metaLike.page">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/macro-groups/macro.metalike.page.html">macro.metaLike.page</a></label><span class="classDesc">(MEI.shared) Groups elements that contain meta-data about a single page.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(page beginning) – An empty formatting element that forces text to begin on a new page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a></span><span class="elementDesc desc">Groups elements that contain meta-data about a single page.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(page beginning) – An empty formatting element that forces text to begin on a new page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a></span><span class="elementDesc desc">(page beginning) – An empty formatting element that forces text to begin on a new
+                              page.</span></div>
                      </div>
                   </div>
                </div>
@@ -54,9 +55,14 @@ title: "macro.metaLike.page"
                   <div class="classBox" title="macro.metaLike.page">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/macro-groups/macro.metalike.page.html">macro.metaLike.page</a></label><span class="classDesc">(MEI.shared) Groups elements that contain meta-data about a single page.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(page description) – Contains a brief prose description of the appearance or description of the content of a physical page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgdesc.html">pgDesc</a></span><span class="elementDesc desc">Groups elements that contain meta-data about a single page.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(page footer) – A running footer on the first page. Also, used to temporarily override a running footer on individual pages."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgfoot.html">pgFoot</a></span><span class="elementDesc desc">Groups elements that contain meta-data about a single page.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(page header) – A running header on the first page. Also, used to temporarily override a running header on individual pages."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pghead.html">pgHead</a></span><span class="elementDesc desc">Groups elements that contain meta-data about a single page.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(page description) – Contains a brief prose description of the appearance or description of the content of a physical page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgdesc.html">pgDesc</a></span><span class="elementDesc desc">(page description) – Contains a brief prose description of the appearance or description
+                              of the content of a physical page.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(page footer) – A running footer on the first page. Also, used to temporarily override a running footer on individual pages."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pgfoot.html">pgFoot</a></span><span class="elementDesc desc">(page footer) – A running footer on the first page. Also, used to temporarily override
+                              a
+                              running footer on individual pages.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(page header) – A running header on the first page. Also, used to temporarily override a running header on individual pages."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pghead.html">pgHead</a></span><span class="elementDesc desc">(page header) – A running header on the first page. Also, used to temporarily override
+                              a
+                              running header on individual pages.</span></div>
                      </div>
                   </div>
                </div>

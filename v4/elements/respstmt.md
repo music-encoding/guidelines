@@ -11,7 +11,7 @@ title: "respStmt"
          <div class="desc">(responsibility statement) – Transcription of text that names one or more individuals,
             groups, or in rare cases, mechanical processes, responsible for creation, realization,
             production, funding, or distribution of the intellectual or artistic content.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerEditionstmt">3.1.1.2 Edition Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerRevisionDescription">3.1.5 Revision Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.6 Minimal and Recommended Header Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#namesdatesCorpNames">9.3.2.1 Corporate Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerEditionstmt">3.1.1.2 Edition Statement</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerRevisionDescription">3.1.6 Revision Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.8 Minimal and Recommended Header Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a>,<a class="chapterLink" href="/guidelines/v4/content/textencoding.html#namesdatesCorpNames">9.3.2.1 Corporate Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -31,7 +31,7 @@ title: "respStmt"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -56,7 +56,7 @@ title: "respStmt"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -96,7 +96,7 @@ title: "respStmt"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -115,7 +115,7 @@ title: "respStmt"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -128,7 +128,7 @@ title: "respStmt"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -213,7 +213,7 @@ title: "respStmt"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -244,7 +244,7 @@ title: "respStmt"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -265,7 +265,7 @@ title: "respStmt"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -305,7 +305,7 @@ title: "respStmt"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -334,53 +334,53 @@ title: "respStmt"
                   <div class="classBox" title="elements having respStmt as direct children">
                      <div class="classHeading"><label class="classLabel">elements having respStmt as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(analytic level) – Contains bibliographic elements describing an item (e.g. an article or poem) published within a monograph or journal and not as an independent publication."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/analytic.html">analytic</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Individual change within the revision description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/change.html">change</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(edition designation) – A word or text phrase that indicates a difference in either content or form between the item being described and a related item previously issued by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by either the same publisher/distributor or another publisher/distributor (e.g. large print edition, British edition, etc.)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/edition.html">edition</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Describes a distinctive state in the textual development of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/genstate.html">genState</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Information relating to the publication or distribution of a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/imprint.html">imprint</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(monograph level) – Contains bibliographic elements describing an item, for example, a published book or journal, score, recording, or an unpublished manuscript."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/monogr.html">monogr</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains information about the serial publication in which a bibliographic item has appeared."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/series.html">series</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(series statement) – Groups information about the series, if any, to which a publication belongs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seriesstmt.html">seriesStmt</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(analytic level) – Contains bibliographic elements describing an item (e.g. an article or poem) published within a monograph or journal and not as an independent publication."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/analytic.html">analytic</a></span><span class="elementDesc desc">(analytic level) – Contains bibliographic elements describing an item (e.g. an article
+                              or
+                              poem) published within a monograph or journal and not as an independent publication.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Individual change within the revision description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/change.html">change</a></span><span class="elementDesc desc">Individual change within the revision description.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(edition designation) – A word or text phrase that indicates a difference in either content or form between the item being described and a related item previously issued by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by either the same publisher/distributor or another publisher/distributor (e.g. large print edition, British edition, etc.)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/edition.html">edition</a></span><span class="elementDesc desc">(edition designation) – A word or text phrase that indicates a difference in either
+                              content or form between the item being described and a related item previously issued
+                              by the
+                              same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously
+                              issued by
+                              either the same publisher/distributor or another publisher/distributor (e.g. large
+                              print
+                              edition, British edition, etc.).</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">(edition statement) – Container for meta-data pertaining to a particular edition of
+                              the
+                              material being described.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a distinctive state in the textual development of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/genstate.html">genState</a></span><span class="elementDesc desc">Describes a distinctive state in the textual development of a work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Information relating to the publication or distribution of a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/imprint.html">imprint</a></span><span class="elementDesc desc">Information relating to the publication or distribution of a bibliographic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(monograph level) – Contains bibliographic elements describing an item, for example, a published book or journal, score, recording, or an unpublished manuscript."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/monogr.html">monogr</a></span><span class="elementDesc desc">(monograph level) – Contains bibliographic elements describing an item, for example,
+                              a
+                              published book or journal, score, recording, or an unpublished manuscript.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains information about the serial publication in which a bibliographic item has appeared."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/series.html">series</a></span><span class="elementDesc desc">Contains information about the serial publication in which a bibliographic item has
+                              appeared.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(series statement) – Groups information about the series, if any, to which a publication belongs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seriesstmt.html">seriesStmt</a></span><span class="elementDesc desc">(series statement) – Groups information about the series, if any, to which a publication
+                              belongs.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.pubStmtPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.pubstmtpart.html">model.pubStmtPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of the publication statement
                            for a bibliographic item.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">Groups elements that may appear as part of the publication statement for a bibliographic
-                              item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">(publication statement) – Container for information regarding the publication or
+                              distribution of a bibliographic item, including the publisher's name and address,
+                              the date of
+                              publication, and other relevant details.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.respLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.resplike.html">model.respLike</a></label><span class="classDesc">(MEI.shared) Groups elements that are used to indicate intellectual or other significant
                            responsibility, for example within a bibliographic citation.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">Groups elements that are used to indicate intellectual or other significant
-                              responsibility, for example within a bibliographic citation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">(title statement) – Container for title and responsibility meta-data.</span></div>
                         <div class="classBox" title="model.biblPart">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblpart.html">model.biblPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a bibliographic description.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">Groups elements that may appear as part of a bibliographic description.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                                    which
+                                    the sub-components may or may not be explicitly marked.</span></div>
                            </div>
                         </div>
                      </div>
@@ -450,28 +450,26 @@ title: "respStmt"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Proper noun or noun phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(responsibility) – A phrase describing the nature of intellectual responsibility."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/resp.html">resp</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
-                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
-                              production, funding, or distribution of the intellectual or artistic content.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Proper noun or noun phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a></span><span class="elementDesc desc">Proper noun or noun phrase.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(responsibility) – A phrase describing the nature of intellectual responsibility."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/resp.html">resp</a></span><span class="elementDesc desc">(responsibility) – A phrase describing the nature of intellectual responsibility.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.nameLike.agent">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.namelike.agent.html">model.nameLike.agent</a></label><span class="classDesc">(MEI.namesdates) Groups elements which contain names of individuals or corporate bodies.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(corporate name) – Identifies an organization or group of people that acts as a single entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corpname.html">corpName</a></span><span class="elementDesc desc">Groups elements which contain names of individuals or corporate bodies.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persname.html">persName</a></span><span class="elementDesc desc">Groups elements which contain names of individuals or corporate bodies.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(corporate name) – Identifies an organization or group of people that acts as a single entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corpname.html">corpName</a></span><span class="elementDesc desc">(corporate name) – Identifies an organization or group of people that acts as a single
+                              entity.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persname.html">persName</a></span><span class="elementDesc desc">(personal name) – Designation for an individual, including any or all of that individual's
+                              forenames, surnames, honorific titles, and added names.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.headLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                            or other markup component.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                              the
+                              heading of a list.</span></div>
                      </div>
                   </div>
                </div>
@@ -523,8 +521,8 @@ title: "respStmt"
                      <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                            <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:respStmt[not(ancestor::mei:change)]"</span>&gt;</span>
                               
-                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"(mei:resp and (mei:name or mei:corpName or mei:persName)) or              count(mei:*[@role])
-                                       = count(mei:*) and count(mei:*) &gt; 0"</span> <span class="attribute">role=</span><span class="attributevalue">"warning"</span>&gt;</span>At least one element pair (a resp element and a name-like element) is
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"(mei:resp and (mei:name or mei:corpName or mei:persName)) or              count(mei:*[@role])
+                                       = count(mei:*) and count(mei:*) &gt; 0"</span>&gt;</span>At least one element pair (a resp element and a name-like element) is
                                  recommended. Alternatively, each name-like element may have a @role
                                  attribute.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                               <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
@@ -598,8 +596,8 @@ title: "respStmt"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:respStmt[not(ancestor::mei:change)]"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"(mei:resp and (mei:name or mei:corpName or mei:persName)) or              count(mei:*[@role])
-                                          = count(mei:*) and count(mei:*) &gt; 0"</span> <span class="attribute">role=</span><span class="attributevalue">"warning"</span>&gt;</span>At least one element pair (a resp element and a name-like element) is
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"(mei:resp and (mei:name or mei:corpName or mei:persName)) or              count(mei:*[@role])
+                                          = count(mei:*) and count(mei:*) &gt; 0"</span>&gt;</span>At least one element pair (a resp element and a name-like element) is
                                     recommended. Alternatively, each name-like element may have a @role
                                     attribute.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
@@ -608,7 +606,7 @@ title: "respStmt"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

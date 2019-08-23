@@ -26,7 +26,7 @@ title: "mdiv"
                </ul>
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates that the performance of the next musical division should begin immediately following this one.">attacca</span>, <span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span>, <span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span>, <span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span>, <span class="ident attribute" title="Identifies one or more metadata elements (other than classification terms) within the header, which are understood to apply to the element bearing this attribute and its content.">decls</span>, <span class="ident attribute" title="Permits the current element to reference a facsimile surface or image zone which corresponds to it.">facs</span>, <span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span>, <span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span>, <span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span>, <span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span>, <span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span>, <span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span>, <span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span>, <span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span>, <span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span>, <span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span>, <span class="ident attribute" title="when Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a element elsewhere in the document.">when</span>, <span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span>, <span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next musical division should begin immediately following this one.">attacca</span><span class="attributeDesc desc">Indicates that the performance of the next musical division should begin immediately
+                  <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next musical division should begin immediately following this one.">attacca</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that the performance of the next musical division should begin immediately
                         following this one.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
@@ -59,7 +59,7 @@ title: "mdiv"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -104,7 +104,7 @@ title: "mdiv"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -123,7 +123,7 @@ title: "mdiv"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -136,7 +136,7 @@ title: "mdiv"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -244,7 +244,7 @@ title: "mdiv"
                   <div class="classBox" title="att.mdiv.ges">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mdiv.ges.html">att.mdiv.ges</a></label><span class="classDesc">(MEI.gestural) Gestural domain attributes.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next musical division should begin immediately following this one.">attacca</span><span class="attributeDesc desc">Indicates that the performance of the next musical division should begin immediately
+                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next musical division should begin immediately following this one.">attacca</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that the performance of the next musical division should begin immediately
                               following this one.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
@@ -283,7 +283,7 @@ title: "mdiv"
                   <div class="classBox" title="MEI.gestural">
                      <div class="classHeading"><label class="classLabel">MEI.gestural</label><span class="classDesc">Gestural component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next musical division should begin immediately following this one.">attacca</span><span class="attributeDesc desc">Indicates that the performance of the next musical division should begin immediately
+                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next musical division should begin immediately following this one.">attacca</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that the performance of the next musical division should begin immediately
                               following this one.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
@@ -327,7 +327,7 @@ title: "mdiv"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -367,7 +367,7 @@ title: "mdiv"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -394,8 +394,8 @@ title: "mdiv"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.mdivlike.html">model.mdivLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to represent generic structural divisions of music
                            notation.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Groups elements used to represent generic structural divisions of music notation.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">Groups elements used to represent generic structural divisions of music notation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Contains the whole of a single musical text, excluding any front or back matter.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">(musical division) – Contains a subdivision of the body of a musical text.</span></div>
                      </div>
                   </div>
                </div>
@@ -424,19 +424,19 @@ title: "mdiv"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.mdivlike.html">model.mdivLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to represent generic structural divisions of music
                            notation.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">Groups elements used to represent generic structural divisions of music notation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">(musical division) – Contains a subdivision of the body of a musical text.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.partsLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.partslike.html">model.partsLike</a></label><span class="classDesc">(MEI.shared) Groups elements that collect separate performer parts.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Provides a container for performers' parts."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a></span><span class="elementDesc desc">Groups elements that collect separate performer parts.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Provides a container for performers' parts."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a></span><span class="elementDesc desc">Provides a container for performers' parts.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.scoreLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorelike.html">model.scoreLike</a></label><span class="classDesc">(MEI.shared) Groups elements that represent a score.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Full score view of the musical content."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/score.html">score</a></span><span class="elementDesc desc">Groups elements that represent a score.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Full score view of the musical content."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/score.html">score</a></span><span class="elementDesc desc">Full score view of the musical content.</span></div>
                      </div>
                   </div>
                </div>
@@ -542,7 +542,7 @@ title: "mdiv"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>mdiv<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element may contain one or both of 2 possible views of the
                               music. The score view is the traditional full and open score while the parts view
                               contains

@@ -25,10 +25,10 @@ title: "att.ranging"
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Gives a minimum estimated value for an approximate measurement.">atleast</span>, <span class="ident attribute" title="Gives a maximum estimated value for an approximate measurement.">atmost</span>, <span class="ident attribute" title="Specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.">confidence</span>, <span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the maximum value observed.">max</span>, <span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the minimum value observed.">min</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Gives a minimum estimated value for an approximate measurement.">atleast</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Gives a minimum estimated value for an approximate measurement.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Gives a maximum estimated value for an approximate measurement.">atmost</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Gives a maximum estimated value for an approximate measurement.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.">confidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the degree of statistical confidence (between zero and one) that a value
                         falls within the range specified by min and max, or the proportion of observed values
@@ -38,11 +38,11 @@ title: "att.ranging"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the maximum value observed.">max</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Where the measurement summarizes more than one observation or a range of values,
                         supplies the maximum value observed.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the minimum value observed.">min</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Where the measurement summarizes more than one observation or a range of values,
                         supplies the minimum value observed.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -50,18 +50,18 @@ title: "att.ranging"
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Gives a minimum estimated value for an approximate measurement.">atleast</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Gives a minimum estimated value for an approximate measurement.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Gives a maximum estimated value for an approximate measurement.">atmost</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Gives a maximum estimated value for an approximate measurement.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the minimum value observed.">min</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Where the measurement summarizes more than one observation or a range of values,
                               supplies the minimum value observed.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the maximum value observed.">max</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Where the measurement summarizes more than one observation or a range of values,
                               supplies the maximum value observed.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.">confidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the degree of statistical confidence (between zero and one) that a value
                               falls within the range specified by min and max, or the proportion of observed values
@@ -77,10 +77,10 @@ title: "att.ranging"
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Gives a minimum estimated value for an approximate measurement.">atleast</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Gives a minimum estimated value for an approximate measurement.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Gives a maximum estimated value for an approximate measurement.">atmost</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Gives a maximum estimated value for an approximate measurement.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the degree of statistical confidence (between zero and one) that a value falls within the range specified by min and max, or the proportion of observed values that fall within that range.">confidence</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the degree of statistical confidence (between zero and one) that a value
                               falls within the range specified by min and max, or the proportion of observed values
@@ -90,11 +90,11 @@ title: "att.ranging"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the maximum value observed.">max</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Where the measurement summarizes more than one observation or a range of values,
                               supplies the maximum value observed.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Where the measurement summarizes more than one observation or a range of values, supplies the minimum value observed.">min</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Where the measurement summarizes more than one observation or a range of values,
                               supplies the minimum value observed.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>
@@ -237,13 +237,13 @@ title: "att.ranging"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Groups attributes that describe a numerical range.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"atleast"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Gives a minimum estimated value for an approximate measurement.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -253,7 +253,7 @@ title: "att.ranging"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Gives a maximum estimated value for an approximate measurement.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -264,7 +264,7 @@ title: "att.ranging"
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Where the measurement summarizes more than one observation or a range of values,
                                  supplies the minimum value observed.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -275,7 +275,7 @@ title: "att.ranging"
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Where the measurement summarizes more than one observation or a range of values,
                                  supplies the maximum value observed.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -288,7 +288,7 @@ title: "att.ranging"
                                  that
                                  fall within that range.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

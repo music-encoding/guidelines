@@ -30,177 +30,126 @@ title: "model.headLike"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                            or other markup component.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(application information) – Groups information about applications which have acted upon the MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/appinfo.html">appInfo</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a formal list or prose description of topics addressed."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/argument.html">argument</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="List of bibliographic references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Groups information which describes the nature or topic of an entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classdecls.html">classDecls</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Groups information which describes the nature or topic of an entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classification.html">classification</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Container for intellectual or physical component parts of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentlist.html">componentList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="List of the material contained within a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="States how and under what circumstances corrections have been made in the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/correction.html">correction</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/creation.html">creation</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a dedicatory statement."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dedication.html">dedication</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(division) – Major structural division of text, such as a preface, chapter or section."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(editorial declaration) – Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editorialdecl.html">editorialDecl</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(encoding description) – Documents the relationship between an electronic file and the source or sources from which it was derived as well as applications used in the encoding/editing process."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingdesc.html">encodingDesc</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a free-text event description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains historical information given as a sequence of significant past events."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Intellectual or artistic realization of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expression.html">expression</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Gathers bibliographic expression entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expressionlist.html">expressionList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Container for one or more hand elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/handlist.html">handList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Provides a container for information about the history of a resource other than the circumstances of its creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/history.html">history</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(incipit) – The opening music and/or words of a musical or textual work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Opening words of a musical composition."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/inciptext.html">incipText</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Single instance or exemplar of a source/manifestation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/item.html">item</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Gathers bibliographic item entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/itemlist.html">itemList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(language usage) – Groups elements describing the languages, sub-languages, dialects, etc., represented within the encoded resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/langusage.html">langUsage</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A formatting element that contains a series of items separated from one another and arranged in a linear, often vertical, sequence."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/list.html">list</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A bibliographic description of a physical embodiment of an expression of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestation.html">manifestation</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A container for the descriptions of physical embodiments of an expression of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestationlist.html">manifestationList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates the extent of normalization or regularization of the original source carried out in converting it to electronic form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/normalization.html">normalization</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(notes statement)– Collects any notes providing information about a text additional to that recorded in other parts of the bibliographic description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/notesstmt.html">notesStmt</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(performance medium) – Indicates the number and character of the performing forces used in a musical composition."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfmedium.html">perfMedium</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Several instrumental or vocal resources treated as a group."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfreslist.html">perfResList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(physical location) – Groups information about the current physical location of a bibliographic item, such as the repository in which it is located and its shelf mark(s), and its previous locations."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physloc.html">physLoc</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="The cost of access to a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/price.html">price</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(project description) – Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/projectdesc.html">projectDesc</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="The record of ownership or custodianship of an item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/provenance.html">provenance</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Gathers relation elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(responsibility statement) – Transcription of text that names one or more individuals, groups, or in rare cases, mechanical processes, responsible for creation, realization, production, funding, or distribution of the intellectual or artistic content."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/respstmt.html">respStmt</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(revision description) – Container for information about alterations that have been made to an MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/revisiondesc.html">revisionDesc</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(sampling declaration) – Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/samplingdecl.html">samplingDecl</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Describes the principles according to which the musical text has been segmented, for example into movements, sections, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/segmentation.html">segmentation</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(series statement) – Groups information about the series, if any, to which a publication belongs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seriesstmt.html">seriesStmt</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A bibliographic description of a source used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(source description) – A container for the descriptions of the source(s) used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(standard values) – Specifies the format used when standardized date or number values are supplied."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stdvals.html">stdVals</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(tagging declaration) – Provides detailed information about the tagging applied to a document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tagsdecl.html">tagsDecl</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/taxonomy.html">taxonomy</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Collection of text phrases which describe a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/termlist.html">termList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a transcription of the title page of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepage.html">titlePage</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes (e.g., key, tempo, meter, medium of performance, and intended duration)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(work list) – Grouping mechanism for information describing non-bibliographic aspects of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/worklist.html">workList</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">(annotation) – Provides a statement explaining the text or indicating the basis for
+                              an
+                              assertion.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(application information) – Groups information about applications which have acted upon the MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/appinfo.html">appInfo</a></span><span class="elementDesc desc">(application information) – Groups information about applications which have acted
+                              upon
+                              the MEI file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a formal list or prose description of topics addressed."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/argument.html">argument</a></span><span class="elementDesc desc">Contains a formal list or prose description of topics addressed.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="List of bibliographic references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a></span><span class="elementDesc desc">List of bibliographic references.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">Contains a single cast list or dramatis personae.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Groups information which describes the nature or topic of an entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classdecls.html">classDecls</a></span><span class="elementDesc desc">Groups information which describes the nature or topic of an entity.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Groups information which describes the nature or topic of an entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classification.html">classification</a></span><span class="elementDesc desc">Groups information which describes the nature or topic of an entity.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Container for intellectual or physical component parts of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentlist.html">componentList</a></span><span class="elementDesc desc">Container for intellectual or physical component parts of a bibliographic entity.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="List of the material contained within a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a></span><span class="elementDesc desc">List of the material contained within a resource.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="States how and under what circumstances corrections have been made in the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/correction.html">correction</a></span><span class="elementDesc desc">States how and under what circumstances corrections have been made in the text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Non-bibliographic details of the creation of an intellectual entity, in narrative form, such as the date, place, and circumstances of its composition. More detailed information may be captured within the history element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/creation.html">creation</a></span><span class="elementDesc desc">Non-bibliographic details of the creation of an intellectual entity, in narrative
+                              form,
+                              such as the date, place, and circumstances of its composition. More detailed information
+                              may
+                              be captured within the history element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a dedicatory statement."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dedication.html">dedication</a></span><span class="elementDesc desc">Contains a dedicatory statement.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(division) – Major structural division of text, such as a preface, chapter or section."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/div.html">div</a></span><span class="elementDesc desc">(division) – Major structural division of text, such as a preface, chapter or
+                              section.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">(edition statement) – Container for meta-data pertaining to a particular edition of
+                              the
+                              material being described.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(editorial declaration) – Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editorialdecl.html">editorialDecl</a></span><span class="elementDesc desc">(editorial declaration) – Used to provide details of editorial principles and practices
+                              applied during the encoding of musical text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(encoding description) – Documents the relationship between an electronic file and the source or sources from which it was derived as well as applications used in the encoding/editing process."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/encodingdesc.html">encodingDesc</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
+                              the
+                              source or sources from which it was derived as well as applications used in the
+                              encoding/editing process.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a free-text event description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a></span><span class="elementDesc desc">Contains a free-text event description.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains historical information given as a sequence of significant past events."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a></span><span class="elementDesc desc">Contains historical information given as a sequence of significant past events.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Intellectual or artistic realization of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expression.html">expression</a></span><span class="elementDesc desc">Intellectual or artistic realization of a work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Gathers bibliographic expression entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expressionlist.html">expressionList</a></span><span class="elementDesc desc">Gathers bibliographic expression entities.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Container for one or more hand elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/handlist.html">handList</a></span><span class="elementDesc desc">Container for one or more hand elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Provides a container for information about the history of a resource other than the circumstances of its creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/history.html">history</a></span><span class="elementDesc desc">Provides a container for information about the history of a resource other than the
+                              circumstances of its creation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(incipit) – The opening music and/or words of a musical or textual work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a></span><span class="elementDesc desc">(incipit) – The opening music and/or words of a musical or textual work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Opening words of a musical composition."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/inciptext.html">incipText</a></span><span class="elementDesc desc">Opening words of a musical composition.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Single instance or exemplar of a source/manifestation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/item.html">item</a></span><span class="elementDesc desc">Single instance or exemplar of a source/manifestation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Gathers bibliographic item entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/itemlist.html">itemList</a></span><span class="elementDesc desc">Gathers bibliographic item entities.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(language usage) – Groups elements describing the languages, sub-languages, dialects, etc., represented within the encoded resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/langusage.html">langUsage</a></span><span class="elementDesc desc">(language usage) – Groups elements describing the languages, sub-languages, dialects,
+                              etc., represented within the encoded resource.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a></span><span class="elementDesc desc">(line group) – May be used for any section of text that is organized as a group of
+                              lines;
+                              however, it is most often used for a group of verse lines functioning as a formal
+                              unit, e.g. a
+                              stanza, refrain, verse paragraph, etc.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A formatting element that contains a series of items separated from one another and arranged in a linear, often vertical, sequence."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/list.html">list</a></span><span class="elementDesc desc">A formatting element that contains a series of items separated from one another and
+                              arranged in a linear, often vertical, sequence.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A bibliographic description of a physical embodiment of an expression of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestation.html">manifestation</a></span><span class="elementDesc desc">A bibliographic description of a physical embodiment of an expression of a work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A container for the descriptions of physical embodiments of an expression of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestationlist.html">manifestationList</a></span><span class="elementDesc desc">A container for the descriptions of physical embodiments of an expression of a
+                              work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates the extent of normalization or regularization of the original source carried out in converting it to electronic form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/normalization.html">normalization</a></span><span class="elementDesc desc">Indicates the extent of normalization or regularization of the original source carried
+                              out
+                              in converting it to electronic form.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(notes statement)– Collects any notes providing information about a text additional to that recorded in other parts of the bibliographic description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/notesstmt.html">notesStmt</a></span><span class="elementDesc desc">(notes statement)– Collects any notes providing information about a text additional
+                              to
+                              that recorded in other parts of the bibliographic description.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(performance medium) – Indicates the number and character of the performing forces used in a musical composition."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfmedium.html">perfMedium</a></span><span class="elementDesc desc">(performance medium) – Indicates the number and character of the performing forces
+                              used in
+                              a musical composition.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Several instrumental or vocal resources treated as a group."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfreslist.html">perfResList</a></span><span class="elementDesc desc">Several instrumental or vocal resources treated as a group.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">(physical description) – Container for information about the appearance, construction,
+                              or
+                              handling of physical materials, such as their dimension, quantity, color, style, and
+                              technique
+                              of creation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(physical location) – Groups information about the current physical location of a bibliographic item, such as the repository in which it is located and its shelf mark(s), and its previous locations."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physloc.html">physLoc</a></span><span class="elementDesc desc">(physical location) – Groups information about the current physical location of a
+                              bibliographic item, such as the repository in which it is located and its shelf mark(s),
+                              and
+                              its previous locations.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="The cost of access to a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/price.html">price</a></span><span class="elementDesc desc">The cost of access to a bibliographic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(project description) – Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/projectdesc.html">projectDesc</a></span><span class="elementDesc desc">(project description) – Project-level meta-data describing the aim or purpose for
+                              which
+                              the electronic file was encoded, funding agencies, etc. together with any other relevant
+                              information concerning the process by which it was assembled or collected.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="The record of ownership or custodianship of an item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/provenance.html">provenance</a></span><span class="elementDesc desc">The record of ownership or custodianship of an item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">(publication statement) – Container for information regarding the publication or
+                              distribution of a bibliographic item, including the publisher's name and address,
+                              the date of
+                              publication, and other relevant details.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Gathers relation elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a></span><span class="elementDesc desc">Gathers relation elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(responsibility statement) – Transcription of text that names one or more individuals, groups, or in rare cases, mechanical processes, responsible for creation, realization, production, funding, or distribution of the intellectual or artistic content."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/respstmt.html">respStmt</a></span><span class="elementDesc desc">(responsibility statement) – Transcription of text that names one or more individuals,
+                              groups, or in rare cases, mechanical processes, responsible for creation, realization,
+                              production, funding, or distribution of the intellectual or artistic content.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(revision description) – Container for information about alterations that have been made to an MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/revisiondesc.html">revisionDesc</a></span><span class="elementDesc desc">(revision description) – Container for information about alterations that have been
+                              made
+                              to an MEI file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(sampling declaration) – Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/samplingdecl.html">samplingDecl</a></span><span class="elementDesc desc">(sampling declaration) – Contains a prose description of the rationale and methods
+                              used in
+                              sampling texts in the creation of a corpus or collection.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes the principles according to which the musical text has been segmented, for example into movements, sections, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/segmentation.html">segmentation</a></span><span class="elementDesc desc">Describes the principles according to which the musical text has been segmented, for
+                              example into movements, sections, etc.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(series statement) – Groups information about the series, if any, to which a publication belongs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seriesstmt.html">seriesStmt</a></span><span class="elementDesc desc">(series statement) – Groups information about the series, if any, to which a publication
+                              belongs.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A bibliographic description of a source used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a></span><span class="elementDesc desc">A bibliographic description of a source used in the creation of the electronic
+                              file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(source description) – A container for the descriptions of the source(s) used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span><span class="elementDesc desc">(source description) – A container for the descriptions of the source(s) used in the
+                              creation of the electronic file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(standard values) – Specifies the format used when standardized date or number values are supplied."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stdvals.html">stdVals</a></span><span class="elementDesc desc">(standard values) – Specifies the format used when standardized date or number values
+                              are
+                              supplied.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(tagging declaration) – Provides detailed information about the tagging applied to a document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tagsdecl.html">tagsDecl</a></span><span class="elementDesc desc">(tagging declaration) – Provides detailed information about the tagging applied to
+                              a
+                              document.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/taxonomy.html">taxonomy</a></span><span class="elementDesc desc">Defines a typology either implicitly, by means of a bibliographic citation, or explicitly
+                              by a structured taxonomy.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Collection of text phrases which describe a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/termlist.html">termList</a></span><span class="elementDesc desc">Collection of text phrases which describe a resource.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a transcription of the title page of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepage.html">titlePage</a></span><span class="elementDesc desc">Contains a transcription of the title page of a text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">(title statement) – Container for title and responsibility meta-data.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes (e.g., key, tempo, meter, medium of performance, and intended duration)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a></span><span class="elementDesc desc">Provides a detailed description of a work — a distinct intellectual or artistic creation
+                              —
+                              specifically its history, language use, and high-level musical attributes (e.g., key,
+                              tempo,
+                              meter, medium of performance, and intended duration).</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(work list) – Grouping mechanism for information describing non-bibliographic aspects of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/worklist.html">workList</a></span><span class="elementDesc desc">(work list) – Grouping mechanism for information describing non-bibliographic aspects
+                              of a
+                              text.</span></div>
                      </div>
                   </div>
                </div>

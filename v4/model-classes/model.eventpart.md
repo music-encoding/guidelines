@@ -27,7 +27,7 @@ title: "model.eventPart"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.eventpart.html">model.eventPart</a></label><span class="classDesc">(MEI.header) Groups elements that may be used to provide a structured description
                            of an event.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a free-text event description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a></span><span class="elementDesc desc">Groups elements that may be used to provide a structured description of an event.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a free-text event description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/event.html">event</a></span><span class="elementDesc desc">Contains a free-text event description.</span></div>
                      </div>
                   </div>
                </div>
@@ -66,7 +66,7 @@ title: "model.eventPart"
             <div class="label">Declaration</div>
             <div class="statement declaration">
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.eventPart"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.header"</span>&gt;</span>
+                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.eventPart"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.header"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span>&gt;</span>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Groups elements that may be used to provide a structured description of an event.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>

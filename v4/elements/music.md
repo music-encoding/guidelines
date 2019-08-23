@@ -53,7 +53,7 @@ title: "music"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                         Allowed values are:
@@ -96,7 +96,7 @@ title: "music"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -115,7 +115,7 @@ title: "music"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -128,7 +128,7 @@ title: "music"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -257,7 +257,7 @@ title: "music"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies a generic MEI version label.">meiversion</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies a generic MEI version label.</span><span class="attributeValues">
                               Allowed values are:
@@ -300,7 +300,7 @@ title: "music"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -326,12 +326,14 @@ title: "music"
                   <div class="classBox" title="elements having music as direct children">
                      <div class="classHeading"><label class="classLabel">elements having music as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a composite musical text, grouping together a sequence of distinct musical texts (or groups of such musical texts) which are regarded as a unit for some purpose, for example, the collected works of a composer."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/group.html">group</a></span><span class="elementDesc desc">Contains a single musical text of any kind, whether unitary or composite, for example,
-                              an
-                              etude, opera, song cycle, symphony, or anthology of piano solos.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a single MEI-conformant document, consisting of an MEI header and a musical text, either in isolation or as part of an meiCorpus element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a></span><span class="elementDesc desc">Contains a single musical text of any kind, whether unitary or composite, for example,
-                              an
-                              etude, opera, song cycle, symphony, or anthology of piano solos.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a composite musical text, grouping together a sequence of distinct musical texts (or groups of such musical texts) which are regarded as a unit for some purpose, for example, the collected works of a composer."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/group.html">group</a></span><span class="elementDesc desc">Contains a composite musical text, grouping together a sequence of distinct musical
+                              texts
+                              (or groups of such musical texts) which are regarded as a unit for some purpose, for
+                              example,
+                              the collected works of a composer.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a single MEI-conformant document, consisting of an MEI header and a musical text, either in isolation or as part of an meiCorpus element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a></span><span class="elementDesc desc">Contains a single MEI-conformant document, consisting of an MEI header and a musical
+                              text,
+                              either in isolation or as part of an meiCorpus element.</span></div>
                      </div>
                   </div>
                </div>
@@ -366,26 +368,35 @@ title: "music"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.resourcelike.html">model.resourceLike</a></label><span class="classDesc">(MEI.shared) Groups non-text components that represent the content of the musical
                            text.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a representation of a written source in the form of a set of images rather than as transcribed or encoded text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a></span><span class="elementDesc desc">Groups non-text components that represent the content of the musical text.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(genetic description) - Bundles information about the textual development of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gendesc.html">genDesc</a></span><span class="elementDesc desc">Groups non-text components that represent the content of the musical text.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A presentation of one or more musical works."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/performance.html">performance</a></span><span class="elementDesc desc">Groups non-text components that represent the content of the musical text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a representation of a written source in the form of a set of images rather than as transcribed or encoded text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a></span><span class="elementDesc desc">Contains a representation of a written source in the form of a set of images rather
+                              than
+                              as transcribed or encoded text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(genetic description) - Bundles information about the textual development of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gendesc.html">genDesc</a></span><span class="elementDesc desc">(genetic description) - Bundles information about the textual development of a
+                              work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A presentation of one or more musical works."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/performance.html">performance</a></span><span class="elementDesc desc">A presentation of one or more musical works.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="macro.musicPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/macro-groups/macro.musicpart.html">macro.musicPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of the music element.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Groups elements that may appear as part of the music element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a composite musical text, grouping together a sequence of distinct musical texts (or groups of such musical texts) which are regarded as a unit for some purpose, for example, the collected works of a composer."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/group.html">group</a></span><span class="elementDesc desc">Groups elements that may appear as part of the music element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Contains the whole of a single musical text, excluding any front or back matter.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a composite musical text, grouping together a sequence of distinct musical texts (or groups of such musical texts) which are regarded as a unit for some purpose, for example, the collected works of a composer."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/group.html">group</a></span><span class="elementDesc desc">Contains a composite musical text, grouping together a sequence of distinct musical
+                              texts
+                              (or groups of such musical texts) which are regarded as a unit for some purpose, for
+                              example,
+                              the collected works of a composer.</span></div>
                         <div class="classBox" title="model.backLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.backlike.html">model.backLike</a></label><span class="classDesc">(MEI.text) Groups elements that may contain back matter.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">Groups elements that may contain back matter.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">(back matter) – Contains any appendixes, advertisements, indexes, etc. following the
+                                    main
+                                    body of a musical text.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.frontLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.frontlike.html">model.frontLike</a></label><span class="classDesc">(MEI.text) Groups elements that may contain front matter.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">Groups elements that may contain front matter.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">(front matter) – Bundles prefatory text found before the start of the musical text.</span></div>
                            </div>
                         </div>
                      </div>

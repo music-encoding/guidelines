@@ -26,7 +26,8 @@ title: "model.persNamePart"
                   <div class="classBox" title="model.persNamePart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.persnamepart.html">model.persNamePart</a></label><span class="classDesc">(MEI.namesdates) Groups elements which form part of a personal name.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persname.html">persName</a></span><span class="elementDesc desc">Groups elements which form part of a personal name.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persname.html">persName</a></span><span class="elementDesc desc">(personal name) – Designation for an individual, including any or all of that individual's
+                              forenames, surnames, honorific titles, and added names.</span></div>
                      </div>
                   </div>
                </div>

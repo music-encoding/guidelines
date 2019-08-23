@@ -26,7 +26,9 @@ title: "macro.musicPart"
                   <div class="classBox" title="macro.musicPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/macro-groups/macro.musicpart.html">macro.musicPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of the music element.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a></span><span class="elementDesc desc">Groups elements that may appear as part of the music element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a></span><span class="elementDesc desc">Contains a single musical text of any kind, whether unitary or composite, for example,
+                              an
+                              etude, opera, song cycle, symphony, or anthology of piano solos.</span></div>
                      </div>
                   </div>
                </div>
@@ -55,18 +57,24 @@ title: "macro.musicPart"
                   <div class="classBox" title="macro.musicPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/macro-groups/macro.musicpart.html">macro.musicPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of the music element.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Groups elements that may appear as part of the music element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a composite musical text, grouping together a sequence of distinct musical texts (or groups of such musical texts) which are regarded as a unit for some purpose, for example, the collected works of a composer."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/group.html">group</a></span><span class="elementDesc desc">Groups elements that may appear as part of the music element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Contains the whole of a single musical text, excluding any front or back matter.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a composite musical text, grouping together a sequence of distinct musical texts (or groups of such musical texts) which are regarded as a unit for some purpose, for example, the collected works of a composer."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/group.html">group</a></span><span class="elementDesc desc">Contains a composite musical text, grouping together a sequence of distinct musical
+                              texts
+                              (or groups of such musical texts) which are regarded as a unit for some purpose, for
+                              example,
+                              the collected works of a composer.</span></div>
                         <div class="classBox" title="model.backLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.backlike.html">model.backLike</a></label><span class="classDesc">(MEI.text) Groups elements that may contain back matter.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">Groups elements that may contain back matter.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">(back matter) – Contains any appendixes, advertisements, indexes, etc. following the
+                                    main
+                                    body of a musical text.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.frontLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.frontlike.html">model.frontLike</a></label><span class="classDesc">(MEI.text) Groups elements that may contain front matter.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">Groups elements that may contain front matter.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">(front matter) – Bundles prefatory text found before the start of the musical text.</span></div>
                            </div>
                         </div>
                      </div>

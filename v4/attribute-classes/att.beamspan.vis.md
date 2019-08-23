@@ -44,7 +44,7 @@ title: "att.beamSpan.vis"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -84,7 +84,7 @@ title: "att.beamSpan.vis"
                                     Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                                    Value is a decimal number.
+                                    Value of datatype <span style="font-weight: 500;">decimal</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -108,7 +108,7 @@ title: "att.beamSpan.vis"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>
