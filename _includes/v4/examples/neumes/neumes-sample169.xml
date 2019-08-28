@@ -5,8 +5,8 @@
     </syl>
     <neume>
       <nc oct="3" pname="c"/>
-      <nc intm="d" oct="2" pname="b"/>
-      <nc intm="u" oct="3" pname="c"/>
+      <nc oct="2" pname="b"/>
+      <nc oct="3" pname="c"/>
     </neume>
   </syllable>
   <syllable>
