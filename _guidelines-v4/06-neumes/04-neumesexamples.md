@@ -10,8 +10,8 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 {% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below)
 
-{% include link elem="mdiv" %}: to indicate pause between neumes
-{% include figure img="modules/neumes/division.png" %}
+<!-- {% include link elem="mdiv" %}: to indicate pause between neumes
+{% include figure img="modules/neumes/division.png" %} -->
 
 
 
