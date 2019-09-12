@@ -53,7 +53,7 @@ title: "data.ACCIDENTAL.WRITTEN"
             <div class="label">Remarks</div>
             <div class="statement remarks">
                <p>
-                  
+                  {% include figure img="ExampleImages/accid-20100510.png" caption="" %}
                   
                </p>
             </div>
