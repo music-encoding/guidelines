@@ -20,6 +20,10 @@ title: "data.MODSRELATIONSHIP"
                   <div class="classHeading"><label class="classLabel">Elements</label><span class="classDesc">These local attributes use data.MODSRELATIONSHIP</span></div>
                   <div class="classContent"><span class="ident element" data-ident="relatedItem" data-module="MEI.shared" title="(related item) – Contains or references another bibliographic item which is related to the present one."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/elements/relateditem.html">&lt;relatedItem&gt;</a></span></div>
                </div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.MODSRELATIONSHIP</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.RELATIONSHIP" data-module="MEI" title="General-purpose relationships"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.relationship.html">data.RELATIONSHIP</a></span></div>
+               </div>
             </div>
          </div>
          <div class="facet allowedValues" id="allowedValues">

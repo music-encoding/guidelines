@@ -16,7 +16,11 @@ title: "data.NOTEHEADMODIFIER.list"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
-               – <span class="emptyStatement">(<em>&lt;data.NOTEHEADMODIFIER.list/&gt; is not used on any attribute</em>)</span></div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.NOTEHEADMODIFIER.list</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.NOTEHEADMODIFIER" data-module="MEI" title="Captures any notehead &#34;modifiers&#34;; that is, symbols added to the notehead, such as slashes, lines, text, and enclosures, etc."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.noteheadmodifier.html">data.NOTEHEADMODIFIER</a></span></div>
+               </div>
+            </div>
          </div>
          <div class="facet allowedValues" id="allowedValues">
             <div class="label">Allowed Values</div>

@@ -20,6 +20,10 @@ title: "data.HEXNUM"
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.HEXNUM</span></div>
                   <div class="classContent"><span class="ident attclass" data-ident="att.extSym" data-module="MEI.externalsymbols"><a class="classLink" title="Attributes used to associate MEI features with corresponding glyphs in an externally-defined standard such as SMuFL." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extSym</a>/<span title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">@glyph.num</span></span></div>
                </div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.HEXNUM</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.HEADSHAPE" data-module="MEI" title="Note head shapes."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.headshape.html">data.HEADSHAPE</a></span></div>
+               </div>
             </div>
          </div>
          <div class="facet declaration">
