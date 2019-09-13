@@ -8,32 +8,27 @@ version: "v4"
 #### Examples: 
 
 | :-: | :- |
-| **One pitch - Staff notation Example A** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch" width="200"> |
+| **One pitch - Staff notation Example A** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch"> |
 
 {% include mei example="neumes/neumes-sample-6-03-05.xml" valid="" %}
 
 
 | :-: | :- |
-| **One pitch - Staff notation Example B** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch" width="200"> |
+| **One pitch - Staff notation Example B** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch"> |
 
 {% include mei example="neumes/neumes-sample-6-03-06.xml" valid="" %}
 
 
 | :-: | :- |
-| **Two pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/two-pitchesSN.png" alt="Two pitches" width="200"> |
+| **Two pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/two-pitchesSN.png" alt="Two pitches"> |
 
-
-![Two pitches](/guidelines/images/v4/modules/neumes/two-pitchesSN.png) | 
-
-{% include figure img="modules/neumes/two-pitchesSN.png" %}
 {% include mei example="neumes/neumes-sample-6-03-07.xml" valid="" %}
 
 
 
 | :-: | :- |
-| **Three pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/three-pitchesSN.png" alt="Three pitches" width="200"> |
+| **Three pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/three-pitchesSN.png" alt="Three pitches"> |
 
-{% include figure img="modules/neumes/three-pitchesSN.png" %}
 {% include mei example="neumes/neumes-sample-6-03-08.xml" valid="" %}
 
 
