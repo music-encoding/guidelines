@@ -7,7 +7,7 @@ version: "v4"
 
 #### Elements:
 
-{% include link elem="neume" %} and {% include link elem="nc" %} are the most common elements used in the neume module. In the following examples we can see how these elements 
+{% include link elem="neume" %} and {% include link elem="nc" %} are the most common elements used in the MEI Neumes module. In the following examples we can see how these elements 
 are used to describe sung gestures of 1, 2, and 4 notes in square notation.  
 
 | :-: | :- |
