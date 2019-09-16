@@ -6,7 +6,37 @@ version: "v4"
 
 
 #### Elements:
-In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are commonly used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
+
+{% include link elem="neume" %} and {% include link elem="nc" %} are the most common elements used in the neume module. In the following examples we can see how these elements 
+are used to describe sung gestures of 1, 2, and 4 notes in square notation.  
+
+| :-: | :- |
+| **One pitch - Staff notation Example A** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch"> |
+
+{% include mei example="neumes/neumes-sample-6-03-05.xml" valid="" %}
+
+
+| :-: | :- |
+| **One pitch - Staff notation Example B** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch"> |
+
+{% include mei example="neumes/neumes-sample-6-03-06.xml" valid="" %}
+
+
+| :-: | :- |
+| **Two pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/two-pitchesSN.png" alt="Two pitches"> |
+
+{% include mei example="neumes/neumes-sample-6-03-07.xml" valid="" %}
+
+
+
+| :-: | :- |
+| **Four pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/four-pitchesSN.png" alt="Four pitches"> |
+
+{% include mei example="neumes/neumes-sample-6-03-08.xml" valid="" %}
+
+
+
+In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
 {% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below)
 

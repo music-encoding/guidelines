@@ -4,34 +4,6 @@ title: "Neume Notation and MEI"
 version: "v4"
 ---
 
-
-#### Examples: 
-
-| :-: | :- |
-| **One pitch - Staff notation Example A** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch"> |
-
-{% include mei example="neumes/neumes-sample-6-03-05.xml" valid="" %}
-
-
-| :-: | :- |
-| **One pitch - Staff notation Example B** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch"> |
-
-{% include mei example="neumes/neumes-sample-6-03-06.xml" valid="" %}
-
-
-| :-: | :- |
-| **Two pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/two-pitchesSN.png" alt="Two pitches"> |
-
-{% include mei example="neumes/neumes-sample-6-03-07.xml" valid="" %}
-
-
-
-| :-: | :- |
-| **Three pitches - Staff notation** | <img src="/guidelines/images/v4/modules/neumes/three-pitchesSN.png" alt="Three pitches"> |
-
-{% include mei example="neumes/neumes-sample-6-03-08.xml" valid="" %}
-
-
 There are four main challenges in encoding Western European early music. The first relates to the fact that early notation was just a mnemonic aid that helped the readers to recall the music they already knew by heart and, as such, it conveys only partial musical information (Bain, Behrendt, & Helsen 2014; Helsen, Behrendt, & Bain 2017). Indeed, it is only with the invention of staff lines in the eleventh century that the system of musical transmission gradually changed, relying more on the written record rather than on orality. The second challenge refers to the existence of different regional styles of early notation; early-music manuscripts display a great graphical variety of musical signs, which include both neumes and other notational elements conveying further musical information (e.g., significative letters, Old Hispanic ticks etc.). Thirdly, some of those regional notational styles occasionally share graphically similar shapes; these similar shapes within the different notational styles are understood by modern scholars to represent the same, a similar, or even a _different_ musical meaning. Finally, while on occasion the neume shapes appear to mirror graphically the musical characteristics of the sound being represented (e.g., pen-stroke going up = rising melody), in many instances it is generally understood that the meaning attached to the neumes (or the other notational elements) may not be so straight-forward, but instead was ruled by conventions shared by the people who knew orally the musical repertory being fixed in written form by means of notation. 
 
 _What do these challenges entail for modern encoders?_
