@@ -22,18 +22,18 @@ From the 19th century onwards, it became quite common to break secondary beams t
 {% include figure img="ExampleImages/beam-a-20100510.png" caption="Primary and secondary beams" %}
 {% include mei example="cmn/cmn-sample108.txt" valid="" %}
 
-In the music of the second half of the 20th century, it is quite common to indicate acceleration or deceleration using converging beams as in the image below:
+In the music of the second half of the 20th century, it is quite common to indicate acceleration or deceleration using converging (feathered) beams as in the image below:
 
 The encoding of such a beam is accomplished using the **@form** attribute of the beam, which allows the following values:
 
 {:.gloss}
-**acc**: The secondary beams start in their usual position and gradually converge until they meet with the primary beam on the last note (or, the first eighth note under the beam).
+**acc**: Beams gradually diverge.
 
 {:.gloss}
-**rit**: The secondary beams gradually diverge until they reach their regular distance.
+**rit**: Beams gradually converge (into one).
 
 {:.gloss}
-**mixed**: The secondary beams diverge and converge arbitrarily.
+**mixed**: Beams diverge and converge arbitrarily.
 
 {:.gloss}
 **norm**: The beam is rendered as usual (default).
@@ -42,7 +42,7 @@ The encoding of such a beam is accomplished using the **@form** attribute of the
 
 The duration of notes, rests, or chords under a beam which carries the **@form** attribute with a value of 'acc', 'rit', or 'mixed' must be treated specially. The first and last contained elements must specify a duration which matches the number of beams displayed at the point of these events. In the case of a 'mixed' beam, each event at the point of change in the number of secondary beams must carry a **@dur** attribute. Beams like this may be encoded thusly:
 
-{% include figure img="modules/cmn/beamAcc-Rit.png" caption="Accelerando beams" %}
+{% include figure img="modules/cmn/beamAcc-Rit.png" caption="Feathered beaming" %}
 {% include mei example="cmn/cmn-sample110.txt" valid="" %}
 {% include figure img="ExampleImages/beam-c-20100510.png" caption="Cross-staff beam" %}
 
