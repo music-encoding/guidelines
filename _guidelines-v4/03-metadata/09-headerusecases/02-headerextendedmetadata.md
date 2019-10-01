@@ -1,6 +1,6 @@
 ---
 sectionid: headerExtendedMetadata
-title: "Other Metadata"
+title: "Including non-MEI Metadata in MEI files"
 version: "v4"
 ---
 
@@ -8,7 +8,7 @@ The following element is provided to accommodate non-MEI metadata:
 
 {% include desc elem="extMeta" %}
 
-The {% include link elem="extMeta" %} element may contain text and any number of well-formed XML fragments, XML comments, and CDATA sections, except for MEI markup, which is prohibited. The document element of each fragment must explicitly declare its namespace.
+The {% include link elem="extMeta" %} element may be contained by {% include link elem="expression" %}, {% include link elem="item" %}, {% include link elem="manifestation" %}, {% include link elem="work" %} and {% include link elem="meiHead" %} elements. It may include text and any number of well-formed XML fragments, XML comments, and CDATA sections, except for MEI markup, which is prohibited. The document element of each fragment must explicitly declare its namespace.
 
 {% include mei example="header/header-sample075.xml" valid="" %}
 
