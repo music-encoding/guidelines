@@ -26,9 +26,11 @@ title: "model.scoreLike"
                   <div class="classBox" title="model.scoreLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.scorelike.html">model.scoreLike</a></label><span class="classDesc">(MEI.shared) Groups elements that represent a score.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">Groups elements that represent a score.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(incipit) – The opening music and/or words of a musical or textual work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a></span><span class="elementDesc desc">Groups elements that represent a score.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">Groups elements that represent a score.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">(figure) – Groups elements representing or containing graphic information such as
+                              an
+                              illustration or figure.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(incipit) – The opening music and/or words of a musical or textual work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/incip.html">incip</a></span><span class="elementDesc desc">(incipit) – The opening music and/or words of a musical or textual work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">(musical division) – Contains a subdivision of the body of a musical text.</span></div>
                      </div>
                   </div>
                </div>

@@ -25,10 +25,10 @@ title: "att.tabular"
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="The number of columns spanned by this cell.">colspan</span>, <span class="ident attribute" title="The number of rows spanned by this cell.">rowspan</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.figtable"><span class="ident attribute" title="The number of columns spanned by this cell.">colspan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The number of columns spanned by this cell.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.figtable"><span class="ident attribute" title="The number of rows spanned by this cell.">rowspan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The number of rows spanned by this cell.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -36,10 +36,10 @@ title: "att.tabular"
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.figtable"><span class="ident attribute" title="The number of columns spanned by this cell.">colspan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The number of columns spanned by this cell.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.figtable"><span class="ident attribute" title="The number of rows spanned by this cell.">rowspan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The number of rows spanned by this cell.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -49,10 +49,10 @@ title: "att.tabular"
                      <div class="classHeading"><label class="classLabel">MEI.figtable</label><span class="classDesc">Figures and tables component declarations.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.figtable"><span class="ident attribute" title="The number of columns spanned by this cell.">colspan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The number of columns spanned by this cell.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.figtable"><span class="ident attribute" title="The number of rows spanned by this cell.">rowspan</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The number of rows spanned by this cell.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -102,13 +102,13 @@ title: "att.tabular"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes shared by table cells.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"colspan"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>The number of columns spanned by this cell.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"positiveInteger"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -118,7 +118,7 @@ title: "att.tabular"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>The number of rows spanned by this cell.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"positiveInteger"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>

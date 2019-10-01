@@ -35,16 +35,16 @@ title: "att.trans"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="hand Signifies the hand responsible for an action. The value must be the ID of a element declared in the header.">hand</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the hand responsible for an action. The value must be the ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hand.html">hand</a> element declared in the header.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
+                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
                         an
                         ad-hoc modification; that is, one which does not interrupt the writing process.</span><span class="attributeValues">
                         Value must conform to <span style="font-weight: 500;">data.BOOLEAN</span> or <span style="font-weight: 500;">unknown</span>.                            
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
                         carrying this attribute are believed to have occurred.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                </div>
@@ -52,12 +52,12 @@ title: "att.trans"
                   <div class="classBox" title="att.geneticState">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.geneticstate.html">att.geneticState</a></label><span class="classDesc">(MEI.genetic) Attributes that pertain to a genetic state.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
                               an
                               ad-hoc modification; that is, one which does not interrupt the writing process.</span><span class="attributeValues">
                               Value must conform to <span style="font-weight: 500;">data.BOOLEAN</span> or <span style="font-weight: 500;">unknown</span>.                            
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                      </div>
@@ -87,7 +87,7 @@ title: "att.trans"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
                               carrying this attribute are believed to have occurred.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -96,12 +96,12 @@ title: "att.trans"
                   <div class="classBox" title="MEI.genetic">
                      <div class="classHeading"><label class="classLabel">MEI.genetic</label><span class="classDesc">Genetic encoding component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
                               an
                               ad-hoc modification; that is, one which does not interrupt the writing process.</span><span class="attributeValues">
                               Value must conform to <span style="font-weight: 500;">data.BOOLEAN</span> or <span style="font-weight: 500;">unknown</span>.                            
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                      </div>
@@ -120,7 +120,7 @@ title: "att.trans"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
                               carrying this attribute are believed to have occurred.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>

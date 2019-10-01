@@ -31,7 +31,7 @@ title: "att.staffDef.vis.cmn"
                         Allowed values are:
                         "<span style="font-weight: 500;">acc</span>" <i>(Beam lines grow farther apart from left to right.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>(Beam lines grow closer together from left to right.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>(Beam lines are equally-spaced over the entire length of the beam.)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures beam slope.">beam.slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures beam slope.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Determines whether piano pedal marks should be rendered as lines or as terms.">pedal.style</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether piano pedal marks should be rendered as lines or as terms.</span><span class="attributeValues">
                         Allowed values are:
@@ -42,16 +42,16 @@ title: "att.staffDef.vis.cmn"
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Describes the enclosing shape for rehearsal marks.">reh.enclose</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the enclosing shape for rehearsal marks.</span><span class="attributeValues">
                         Allowed values are:
                         "<span style="font-weight: 500;">box</span>" <i>(Enclosed by box.)</i>,  "<span style="font-weight: 500;">circle</span>" <i>(Enclosed by circle.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(No enclosing shape.)</i></span></div>
-                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lform</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lwidth</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lform</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lwidth</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
                         </span></div>
                </div>
@@ -67,7 +67,7 @@ title: "att.staffDef.vis.cmn"
                               Allowed values are:
                               "<span style="font-weight: 500;">acc</span>" <i>(Beam lines grow farther apart from left to right.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>(Beam lines grow closer together from left to right.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>(Beam lines are equally-spaced over the entire length of the beam.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures beam slope.">beam.slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures beam slope.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>
@@ -95,10 +95,10 @@ title: "att.staffDef.vis.cmn"
                   <div class="classBox" title="att.slurRend">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slurrend.html">att.slurRend</a></label><span class="classDesc">(MEI.cmn) Attributes that describe the rendition of slurs.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lform</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lwidth</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
                               </span></div>
                      </div>
@@ -106,10 +106,10 @@ title: "att.staffDef.vis.cmn"
                   <div class="classBox" title="att.tieRend">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tierend.html">att.tieRend</a></label><span class="classDesc">(MEI.cmn) Attributes that describe the rendition of ties.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lform</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lwidth</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
                               </span></div>
                      </div>
@@ -128,16 +128,16 @@ title: "att.staffDef.vis.cmn"
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Describes the enclosing shape for rehearsal marks.">reh.enclose</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the enclosing shape for rehearsal marks.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">box</span>" <i>(Enclosed by box.)</i>,  "<span style="font-weight: 500;">circle</span>" <i>(Enclosed by circle.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(No enclosing shape.)</i></span></div>
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lform</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lwidth</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">slur.lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lform</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lform</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.lineform.html">data.LINEFORM</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lwidth</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="">tie.lwidth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a>.
                               </span></div>
                      </div>
@@ -152,7 +152,7 @@ title: "att.staffDef.vis.cmn"
                               Allowed values are:
                               "<span style="font-weight: 500;">acc</span>" <i>(Beam lines grow farther apart from left to right.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>(Beam lines grow closer together from left to right.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>(Beam lines are equally-spaced over the entire length of the beam.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures beam slope.">beam.slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures beam slope.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>

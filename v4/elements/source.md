@@ -10,7 +10,7 @@ title: "source"
       <div class="specs">
          <div class="desc">A bibliographic description of a source used in the creation of the electronic
             file.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.6 Minimal and Recommended Header Information</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.8 Minimal and Recommended Header Information</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -30,11 +30,11 @@ title: "source"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                         for this element or its content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                         of identification or definition for this element or its content. This attribute may
@@ -80,7 +80,7 @@ title: "source"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -96,7 +96,7 @@ title: "source"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the previous event(s) in a user-defined collection.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="">recordtype</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="">recordtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                         Allowed values are:
                         "<span style="font-weight: 500;">a</span>" <i>(Language material.)</i>,  "<span style="font-weight: 500;">c</span>" <i>(Notated music.)</i>,  "<span style="font-weight: 500;">d</span>" <i>(Manuscript notated music.)</i>,  "<span style="font-weight: 500;">e</span>" <i>(Non-manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">f</span>" <i>(Manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">g</span>" <i>(Projected medium.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Nonmusical sound recording.)</i>,  "<span style="font-weight: 500;">j</span>" <i>(Musical sound recording.)</i>,  "<span style="font-weight: 500;">k</span>" <i>(Two-dimensional nonprojectable graphic.)</i>,  "<span style="font-weight: 500;">m</span>" <i>(Computer file.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Kit.)</i>,  "<span style="font-weight: 500;">p</span>" <i>(Mixed materials.)</i>,  "<span style="font-weight: 500;">r</span>" <i>(Three-dimensional artifact or naturally occurring object.)</i>,  "<span style="font-weight: 500;">t</span>" <i>(Manuscript language material. )</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the agent(s) responsible for some aspect of the text's transcription,
@@ -120,7 +120,7 @@ title: "source"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Characterization of target resource(s) using any convenient classification scheme or typology.">targettype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Characterization of target resource(s) using any convenient classification scheme
                         or
                         typology.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                         classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -142,7 +142,7 @@ title: "source"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -161,7 +161,7 @@ title: "source"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -174,7 +174,7 @@ title: "source"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -258,7 +258,7 @@ title: "source"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                               for this element or its content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                               of identification or definition for this element or its content. This attribute may
@@ -285,7 +285,7 @@ title: "source"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -327,7 +327,7 @@ title: "source"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Characterization of target resource(s) using any convenient classification scheme or typology.">targettype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Characterization of target resource(s) using any convenient classification scheme
                               or
                               typology.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -335,7 +335,7 @@ title: "source"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.recordtype.html">att.recordType</a></label><span class="classDesc">(MEI.header) Attributes that define the characteristics and components of the bibliographic
                            description.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="">recordtype</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="">recordtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">a</span>" <i>(Language material.)</i>,  "<span style="font-weight: 500;">c</span>" <i>(Notated music.)</i>,  "<span style="font-weight: 500;">d</span>" <i>(Manuscript notated music.)</i>,  "<span style="font-weight: 500;">e</span>" <i>(Non-manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">f</span>" <i>(Manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">g</span>" <i>(Projected medium.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Nonmusical sound recording.)</i>,  "<span style="font-weight: 500;">j</span>" <i>(Musical sound recording.)</i>,  "<span style="font-weight: 500;">k</span>" <i>(Two-dimensional nonprojectable graphic.)</i>,  "<span style="font-weight: 500;">m</span>" <i>(Computer file.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Kit.)</i>,  "<span style="font-weight: 500;">p</span>" <i>(Mixed materials.)</i>,  "<span style="font-weight: 500;">r</span>" <i>(Three-dimensional artifact or naturally occurring object.)</i>,  "<span style="font-weight: 500;">t</span>" <i>(Manuscript language material. )</i></span></div>
                      </div>
@@ -357,7 +357,7 @@ title: "source"
                   <div class="classBox" title="MEI.header">
                      <div class="classHeading"><label class="classLabel">MEI.header</label><span class="classDesc">Metadata header component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="">recordtype</span><span class="attributeDesc desc"></span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="">recordtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc"></span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">a</span>" <i>(Language material.)</i>,  "<span style="font-weight: 500;">c</span>" <i>(Notated music.)</i>,  "<span style="font-weight: 500;">d</span>" <i>(Manuscript notated music.)</i>,  "<span style="font-weight: 500;">e</span>" <i>(Non-manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">f</span>" <i>(Manuscript cartographic material.)</i>,  "<span style="font-weight: 500;">g</span>" <i>(Projected medium.)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Nonmusical sound recording.)</i>,  "<span style="font-weight: 500;">j</span>" <i>(Musical sound recording.)</i>,  "<span style="font-weight: 500;">k</span>" <i>(Two-dimensional nonprojectable graphic.)</i>,  "<span style="font-weight: 500;">m</span>" <i>(Computer file.)</i>,  "<span style="font-weight: 500;">o</span>" <i>(Kit.)</i>,  "<span style="font-weight: 500;">p</span>" <i>(Mixed materials.)</i>,  "<span style="font-weight: 500;">r</span>" <i>(Three-dimensional artifact or naturally occurring object.)</i>,  "<span style="font-weight: 500;">t</span>" <i>(Manuscript language material. )</i></span></div>
                      </div>
@@ -377,11 +377,11 @@ title: "source"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                               for this element or its content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                               of identification or definition for this element or its content. This attribute may
@@ -423,7 +423,7 @@ title: "source"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -460,7 +460,7 @@ title: "source"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Characterization of target resource(s) using any convenient classification scheme or typology.">targettype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Characterization of target resource(s) using any convenient classification scheme
                               or
                               typology.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                               classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -482,7 +482,7 @@ title: "source"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -508,8 +508,8 @@ title: "source"
                   <div class="classBox" title="elements having source as direct children">
                      <div class="classHeading"><label class="classLabel">elements having source as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(source description) – A container for the descriptions of the source(s) used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span><span class="elementDesc desc">A bibliographic description of a source used in the creation of the electronic
-                              file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(source description) – A container for the descriptions of the source(s) used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span><span class="elementDesc desc">(source description) – A container for the descriptions of the source(s) used in the
+                              creation of the electronic file.</span></div>
                      </div>
                   </div>
                </div>
@@ -537,26 +537,30 @@ title: "source"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Defines a location within a manuscript or manuscript component, usually as a (possibly discontinuous) sequence of folio references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locus.html">locus</a></span><span class="elementDesc desc">A bibliographic description of a source used in the creation of the electronic
-                              file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(locus group) – Groups locations which together form a distinct but discontinuous item within a manuscript or manuscript part, according to a specific foliation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locusgrp.html">locusGrp</a></span><span class="elementDesc desc">A bibliographic description of a source used in the creation of the electronic
-                              file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Defines a location within a manuscript or manuscript component, usually as a (possibly discontinuous) sequence of folio references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locus.html">locus</a></span><span class="elementDesc desc">Defines a location within a manuscript or manuscript component, usually as a (possibly
+                              discontinuous) sequence of folio references.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(locus group) – Groups locations which together form a distinct but discontinuous item within a manuscript or manuscript part, according to a specific foliation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locusgrp.html">locusGrp</a></span><span class="elementDesc desc">(locus group) – Groups locations which together form a distinct but discontinuous
+                              item
+                              within a manuscript or manuscript part, according to a specific foliation.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.biblLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.bibllike.html">model.biblLike</a></label><span class="classDesc">(MEI.shared) Groups elements containing a bibliographic description.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">Groups elements containing a bibliographic description.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(structured bibliographic citation) – Contains a bibliographic citation in which bibliographic sub-elements must appear in a specified order."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/biblstruct.html">biblStruct</a></span><span class="elementDesc desc">Groups elements containing a bibliographic description.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                              which
+                              the sub-components may or may not be explicitly marked.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(structured bibliographic citation) – Contains a bibliographic citation in which bibliographic sub-elements must appear in a specified order."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/biblstruct.html">biblStruct</a></span><span class="elementDesc desc">(structured bibliographic citation) – Contains a bibliographic citation in which
+                              bibliographic sub-elements must appear in a specified order.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.headLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                            or other markup component.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                              the
+                              heading of a list.</span></div>
                      </div>
                   </div>
                </div>
@@ -722,21 +726,21 @@ title: "source"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element contains, or references via its 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>target<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute, a description of
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element contains, or references via its 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>target<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute, a description of
                               a source used in the creation of the electronic file. For description of a physical
                               embodiment of an expression of a work use the 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>manifestation<span data-indentation="4" class="element">&lt;/gi&gt;</span></div>
                               element.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>data<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to reference one or more musical features found
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>data<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to reference one or more musical features found
                               in the content of this particular source.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on elements in the Text Encoding Initiative (TEI) and Encoded
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on elements in the Text Encoding Initiative (TEI) and Encoded
                               Archival Description (EAD) standards.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>

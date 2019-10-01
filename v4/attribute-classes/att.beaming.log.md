@@ -29,7 +29,7 @@ title: "att.beaming.log"
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Provides an example of how automated beaming (including secondary beams) is to be performed.">beam.group</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an example of how automated beaming (including secondary beams) is to be
                         performed.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Indicates whether automatically-drawn beams should include rests shorter than a quarter note duration.">beam.rests</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether automatically-drawn beams should include rests shorter than a
                         quarter note duration.</span><span class="attributeValues">
@@ -42,7 +42,7 @@ title: "att.beaming.log"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Provides an example of how automated beaming (including secondary beams) is to be performed.">beam.group</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an example of how automated beaming (including secondary beams) is to be
                               performed.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Indicates whether automatically-drawn beams should include rests shorter than a quarter note duration.">beam.rests</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether automatically-drawn beams should include rests shorter than a
                               quarter note duration.</span><span class="attributeValues">
@@ -57,7 +57,7 @@ title: "att.beaming.log"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Provides an example of how automated beaming (including secondary beams) is to be performed.">beam.group</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an example of how automated beaming (including secondary beams) is to be
                               performed.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Indicates whether automatically-drawn beams should include rests shorter than a quarter note duration.">beam.rests</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether automatically-drawn beams should include rests shorter than a
                               quarter note duration.</span><span class="attributeValues">
@@ -159,14 +159,14 @@ title: "att.beaming.log"
                            in the
                            logical domain related to beaming.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"beam.group"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Provides an example of how automated beaming (including secondary beams) is to be
                                  performed.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -177,7 +177,7 @@ title: "att.beaming.log"
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates whether automatically-drawn beams should include rests shorter than a
                                  quarter note duration.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -189,10 +189,10 @@ title: "att.beaming.log"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute can be used to set a default beaming pattern to be used
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute can be used to set a default beaming pattern to be used
                               when no beaming is indicated at the event level. 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> must contain a
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> must contain a
                               comma-separated list of time values that add up to a measure, e.g., in 4/4 time '4,4,4,4'
                               indicates each quarter note worth of shorter notes would be beamed together. Parentheses
                               can
@@ -200,16 +200,16 @@ title: "att.beaming.log"
                               9/8 meter
                               indicates one outer beam per measure with secondary beams broken at each dotted quarter
                               duration, while a measure of 16th notes in 4/4 with 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> equal to
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> equal to
                               '(4,4),(4,4)' will result in a primary beam covering all the notes and secondary beams
                               for
                               each group of 4 notes. This beaming "directive" can be overridden by using 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>beam<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> elements. If neither 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>beam<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> elements or the
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute is used, then no beaming is rendered. Beaming can be
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute is used, then no beaming is rendered. Beaming can be
                               explicitly 'turned off' by setting 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> to an empty string.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> to an empty string.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
             </div>

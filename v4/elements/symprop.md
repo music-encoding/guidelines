@@ -45,7 +45,7 @@ title: "symProp"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -85,7 +85,7 @@ title: "symProp"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -104,7 +104,7 @@ title: "symProp"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -117,7 +117,7 @@ title: "symProp"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -220,7 +220,7 @@ title: "symProp"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -260,7 +260,7 @@ title: "symProp"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -286,8 +286,7 @@ title: "symProp"
                   <div class="classBox" title="elements having symProp as direct children">
                      <div class="classHeading"><label class="classLabel">elements having symProp as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(symbol definition) – Declaration of an individual symbol in a symbolTable."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a></span><span class="elementDesc desc">(symbol property) – Provides a name and value for some property of the parent
-                              symbol.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(symbol definition) – Declaration of an individual symbol in a symbolTable."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a></span><span class="elementDesc desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></div>
                      </div>
                   </div>
                </div>
@@ -314,10 +313,8 @@ title: "symProp"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(property name) – Name of a property of the symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/propname.html">propName</a></span><span class="elementDesc desc">(symbol property) – Provides a name and value for some property of the parent
-                              symbol.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(property value) – A single property value."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/propvalue.html">propValue</a></span><span class="elementDesc desc">(symbol property) – Provides a name and value for some property of the parent
-                              symbol.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(property name) – Name of a property of the symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/propname.html">propName</a></span><span class="elementDesc desc">(property name) – Name of a property of the symbol.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(property value) – A single property value."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/propvalue.html">propValue</a></span><span class="elementDesc desc">(property value) – A single property value.</span></div>
                      </div>
                   </div>
                </div>

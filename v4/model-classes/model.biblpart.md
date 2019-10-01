@@ -26,7 +26,9 @@ title: "model.biblPart"
                   <div class="classBox" title="model.biblPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblpart.html">model.biblPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a bibliographic description.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">Groups elements that may appear as part of a bibliographic description.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                              which
+                              the sub-components may or may not be explicitly marked.</span></div>
                      </div>
                   </div>
                </div>

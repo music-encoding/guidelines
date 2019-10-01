@@ -16,7 +16,11 @@ title: "data.TEXTRENDITIONLIST"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
-               – <span class="emptyStatement">(<em>&lt;data.TEXTRENDITIONLIST/&gt; is not used on any attribute</em>)</span></div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.TEXTRENDITIONLIST</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.TEXTRENDITION" data-module="MEI" title="Text rendition values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.textrendition.html">data.TEXTRENDITION</a></span></div>
+               </div>
+            </div>
          </div>
          <div class="facet allowedValues" id="allowedValues">
             <div class="label">Allowed Values</div>

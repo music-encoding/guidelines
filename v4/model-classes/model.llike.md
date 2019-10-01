@@ -26,8 +26,12 @@ title: "model.lLike"
                   <div class="classBox" title="model.lLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.llike.html">model.lLike</a></label><span class="classDesc">(MEI.text) Groups elements representing metrical components such as verse lines.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a></span><span class="elementDesc desc">Groups elements representing metrical components such as verse lines.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(speech) – Contains an individual speech in a performance text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sp.html">sp</a></span><span class="elementDesc desc">Groups elements representing metrical components such as verse lines.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a></span><span class="elementDesc desc">(line group) – May be used for any section of text that is organized as a group of
+                              lines;
+                              however, it is most often used for a group of verse lines functioning as a formal
+                              unit, e.g. a
+                              stanza, refrain, verse paragraph, etc.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(speech) – Contains an individual speech in a performance text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sp.html">sp</a></span><span class="elementDesc desc">(speech) – Contains an individual speech in a performance text.</span></div>
                      </div>
                   </div>
                </div>

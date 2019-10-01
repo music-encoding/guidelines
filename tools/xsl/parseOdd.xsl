@@ -161,6 +161,12 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template match="tei:graphic" mode="parse.odd">
+        
+        <xsl:value-of select="'{% include figure img=&quot;' || @url || '&quot; caption=&quot;&quot; %}'"/>
+        
+    </xsl:template>
+    
     <xsl:template match="tei:gi" mode="parse.odd">
         <xsl:variable name="text" select="string(text())" as="xs:string"/>
         <xsl:choose>

@@ -100,7 +100,7 @@ title: "data.INTERVAL.MELODIC"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;list&gt;</span>
                                  
@@ -120,7 +120,7 @@ title: "data.INTERVAL.MELODIC"
                                  <span data-indentation="4" class="element">&lt;/list&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;list&gt;</span>
                                  
@@ -150,7 +150,7 @@ title: "data.INTERVAL.MELODIC"
                                  <span data-indentation="4" class="element">&lt;/list&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;list&gt;</span>
                                  

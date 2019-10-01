@@ -30,12 +30,10 @@ title: "model.frontAndBackPart"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.frontandbackpart.html">model.frontAndBackPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of auxiliary material preceding
                            or following the text proper.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">Groups elements that may appear as part of auxiliary material preceding or following
-                              the
-                              text proper.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">Groups elements that may appear as part of auxiliary material preceding or following
-                              the
-                              text proper.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">(back matter) – Contains any appendixes, advertisements, indexes, etc. following the
+                              main
+                              body of a musical text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">(front matter) – Bundles prefatory text found before the start of the musical text.</span></div>
                      </div>
                   </div>
                </div>

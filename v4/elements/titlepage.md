@@ -29,7 +29,7 @@ title: "titlePage"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -54,7 +54,7 @@ title: "titlePage"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -85,7 +85,7 @@ title: "titlePage"
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                         classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -97,14 +97,14 @@ title: "titlePage"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the language of the element's content. The values for this attribute are language 'tags' as defined in BCP 47. All language tags that make use of private use sub-tags must be documented in a corresponding language element in the MEI header whose id attribute is the same as the language tag's value.">xml:lang</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the language of the element's content. The values for this attribute are
                         language 'tags' as defined in BCP 47. All language tags that make use of private use
                         sub-tags must be documented in a corresponding language element in the MEI header
                         whose id
                         attribute is the same as the language tag's value.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                        Value of datatype <span style="font-weight: 500;">language</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -123,7 +123,7 @@ title: "titlePage"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -136,7 +136,7 @@ title: "titlePage"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -221,7 +221,7 @@ title: "titlePage"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -243,10 +243,10 @@ title: "titlePage"
                               sub-tags must be documented in a corresponding language element in the MEI header
                               whose id
                               attribute is the same as the language tag's value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                              Value of datatype <span style="font-weight: 500;">language</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -267,7 +267,7 @@ title: "titlePage"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -288,7 +288,7 @@ title: "titlePage"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -319,7 +319,7 @@ title: "titlePage"
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                               classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -331,14 +331,14 @@ title: "titlePage"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the language of the element's content. The values for this attribute are language 'tags' as defined in BCP 47. All language tags that make use of private use sub-tags must be documented in a corresponding language element in the MEI header whose id attribute is the same as the language tag's value.">xml:lang</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the language of the element's content. The values for this attribute are
                               language 'tags' as defined in BCP 47. All language tags that make use of private use
                               sub-tags must be documented in a corresponding language element in the MEI header
                               whose id
                               attribute is the same as the language tag's value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                              Value of datatype <span style="font-weight: 500;">language</span>.
                               </span></div>
                      </div>
                   </div>
@@ -368,20 +368,21 @@ title: "titlePage"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.frontandbackpart.html">model.frontAndBackPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of auxiliary material preceding
                            or following the text proper.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">Groups elements that may appear as part of auxiliary material preceding or following
-                              the
-                              text proper.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">Groups elements that may appear as part of auxiliary material preceding or following
-                              the
-                              text proper.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(back matter) – Contains any appendixes, advertisements, indexes, etc. following the main body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/back.html">back</a></span><span class="elementDesc desc">(back matter) – Contains any appendixes, advertisements, indexes, etc. following the
+                              main
+                              body of a musical text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(front matter) – Bundles prefatory text found before the start of the musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/front.html">front</a></span><span class="elementDesc desc">(front matter) – Bundles prefatory text found before the start of the musical text.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.physDescPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.physdescpart.html">model.physDescPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of the physical description of
                            a bibliographic item.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">Groups elements that may appear as part of the physical description of a bibliographic
-                              item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">(physical description) – Container for information about the appearance, construction,
+                              or
+                              handling of physical materials, such as their dimension, quantity, color, style, and
+                              technique
+                              of creation.</span></div>
                      </div>
                   </div>
                </div>
@@ -422,61 +423,78 @@ title: "titlePage"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.transcriptionlike.html">model.transcriptionLike</a></label><span class="classDesc">(MEI.edittrans) Groups elements used for editorial transcription of pre-existing source
                            materials.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Marks the beginning of a passage written in a new hand, or of a change in the scribe, writing style, ink or character of the document hand."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/handshift.html">handShift</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains apparently incorrect or inaccurate material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">(addition) – Marks an addition to the text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a></span><span class="elementDesc desc">(correction) – Contains the correct form of an apparent erroneous passage.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Contains an area of damage to the physical medium.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+                              as
+                              superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a></span><span class="elementDesc desc">Indicates a point where material has been omitted in a transcription, whether as part
+                              of
+                              sampling practice or for editorial reasons described in the MEI header.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Marks the beginning of a passage written in a new hand, or of a change in the scribe, writing style, ink or character of the document hand."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/handshift.html">handShift</a></span><span class="elementDesc desc">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
+                              writing style, ink or character of the document hand.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a></span><span class="elementDesc desc">(original) – Contains material which is marked as following the original, rather than
+                              being normalized or corrected.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a></span><span class="elementDesc desc">(regularization) – Contains material which has been regularized or normalized in some
+                              sense.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                              or
+                              authorial marking or instruction.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains apparently incorrect or inaccurate material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a></span><span class="elementDesc desc">Contains apparently incorrect or inaccurate material.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a></span><span class="elementDesc desc">Contains material supplied by the transcriber or editor for any reason.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span><span class="elementDesc desc">Contains material that cannot be transcribed with certainty because it is illegible
+                              or
+                              inaudible in the source.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.figureLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.figurelike.html">model.figureLike</a></label><span class="classDesc">(MEI.figtable) Groups elements representing or containing graphic information such
                            as an illustration or figure.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">Groups elements representing or containing graphic information such as an illustration
-                              or
-                              figure.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">(figure) – Groups elements representing or containing graphic information such as
+                              an
+                              illustration or figure.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.headLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                            or other markup component.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                              the
+                              heading of a list.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.imprintPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.imprintpart.html">model.imprintPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a bibliographic imprint.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Person or agency, other than a publisher, from which access (including electronic access) to a bibliographic entity may be obtained."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/distributor.html">distributor</a></span><span class="elementDesc desc">Groups elements that may appear as part of a bibliographic imprint.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(publication place) – Name of the place where a bibliographic item was published."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubplace.html">pubPlace</a></span><span class="elementDesc desc">Groups elements that may appear as part of a bibliographic imprint.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Name of the organization responsible for the publication of a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/publisher.html">publisher</a></span><span class="elementDesc desc">Groups elements that may appear as part of a bibliographic imprint.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Person or agency, other than a publisher, from which access (including electronic access) to a bibliographic entity may be obtained."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/distributor.html">distributor</a></span><span class="elementDesc desc">Person or agency, other than a publisher, from which access (including electronic
+                              access)
+                              to a bibliographic entity may be obtained.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(publication place) – Name of the place where a bibliographic item was published."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubplace.html">pubPlace</a></span><span class="elementDesc desc">(publication place) – Name of the place where a bibliographic item was published.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Name of the organization responsible for the publication of a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/publisher.html">publisher</a></span><span class="elementDesc desc">Name of the organization responsible for the publication of a bibliographic item.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.milestoneLike.text">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestonelike.text.html">model.milestoneLike.text</a></label><span class="classDesc">(MEI.shared) Groups milestone-style elements found in text.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(column beginning) – An empty formatting element that forces text to begin in a new column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cb.html">cb</a></span><span class="elementDesc desc">Groups milestone-style elements found in text.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(column layout) – An empty formatting element that signals the start of columnar layout."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/collayout.html">colLayout</a></span><span class="elementDesc desc">Groups milestone-style elements found in text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(column beginning) – An empty formatting element that forces text to begin in a new column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cb.html">cb</a></span><span class="elementDesc desc">(column beginning) – An empty formatting element that forces text to begin in a new
+                              column.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(column layout) – An empty formatting element that signals the start of columnar layout."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/collayout.html">colLayout</a></span><span class="elementDesc desc">(column layout) – An empty formatting element that signals the start of columnar
+                              layout.</span></div>
                         <div class="classBox" title="model.lbLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.lblike.html">model.lbLike</a></label><span class="classDesc">(MEI.shared) Groups elements that function like line beginnings.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(line beginning) – An empty formatting element that forces text to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a></span><span class="elementDesc desc">Groups elements that function like line beginnings.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(line beginning) – An empty formatting element that forces text to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a></span><span class="elementDesc desc">(line beginning) – An empty formatting element that forces text to begin on a new
+                                    line.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.pbLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.pblike.html">model.pbLike</a></label><span class="classDesc">(MEI.shared) Groups page beginning-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(page beginning) – An empty formatting element that forces text to begin on a new page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a></span><span class="elementDesc desc">Groups page beginning-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(page beginning) – An empty formatting element that forces text to begin on a new page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a></span><span class="elementDesc desc">(page beginning) – An empty formatting element that forces text to begin on a new
+                                    page.</span></div>
                            </div>
                         </div>
                      </div>
@@ -487,34 +505,41 @@ title: "titlePage"
                         <div class="classBox" title="model.tableLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.tablelike.html">model.tableLike</a></label><span class="classDesc">(MEI.figtable) Groups table-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Contains text displayed in tabular form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/table.html">table</a></span><span class="elementDesc desc">Groups table-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains text displayed in tabular form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/table.html">table</a></span><span class="elementDesc desc">Contains text displayed in tabular form.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.pLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.plike.html">model.pLike</a></label><span class="classDesc">(MEI.shared) Groups paragraph-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/p.html">p</a></span><span class="elementDesc desc">Groups paragraph-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/p.html">p</a></span><span class="elementDesc desc">(paragraph) – One or more text phrases that form a logical prose passage.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.lgLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.lglike.html">model.lgLike</a></label><span class="classDesc">(MEI.text) Groups elements that have a line-grouping function.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a></span><span class="elementDesc desc">Groups elements that have a line-grouping function.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(line group) – May be used for any section of text that is organized as a group of lines; however, it is most often used for a group of verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lg.html">lg</a></span><span class="elementDesc desc">(line group) – May be used for any section of text that is organized as a group of
+                                    lines;
+                                    however, it is most often used for a group of verse lines functioning as a formal
+                                    unit, e.g. a
+                                    stanza, refrain, verse paragraph, etc.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.listLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.listlike.html">model.listLike</a></label><span class="classDesc">(MEI.text) Groups list-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="List of bibliographic references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a></span><span class="elementDesc desc">Groups list-like elements.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">Groups list-like elements.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Contains historical information given as a sequence of significant past events."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a></span><span class="elementDesc desc">Groups list-like elements.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="A formatting element that contains a series of items separated from one another and arranged in a linear, often vertical, sequence."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/list.html">list</a></span><span class="elementDesc desc">Groups list-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="List of bibliographic references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibllist.html">biblList</a></span><span class="elementDesc desc">List of bibliographic references.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">Contains a single cast list or dramatis personae.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains historical information given as a sequence of significant past events."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/eventlist.html">eventList</a></span><span class="elementDesc desc">Contains historical information given as a sequence of significant past events.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A formatting element that contains a series of items separated from one another and arranged in a linear, often vertical, sequence."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/list.html">list</a></span><span class="elementDesc desc">A formatting element that contains a series of items separated from one another and
+                                    arranged in a linear, often vertical, sequence.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.quoteLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.quotelike.html">model.quoteLike</a></label><span class="classDesc">(MEI.text) Groups elements used to directly contain quotations.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(quoted material) – Contains a paragraph-like block of text attributed to an external source, normally set off from the surrounding text by spacing or other typographic distinction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/quote.html">quote</a></span><span class="elementDesc desc">Groups elements used to directly contain quotations.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(quoted material) – Contains a paragraph-like block of text attributed to an external source, normally set off from the surrounding text by spacing or other typographic distinction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/quote.html">quote</a></span><span class="elementDesc desc">(quoted material) – Contains a paragraph-like block of text attributed to an external
+                                    source, normally set off from the surrounding text by spacing or other typographic
+                                    distinction.</span></div>
                            </div>
                         </div>
                      </div>
@@ -522,69 +547,94 @@ title: "titlePage"
                   <div class="classBox" title="model.titlePagePart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlepagepart.html">model.titlePagePart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a title page transcription.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(access restriction) – Describes the conditions that affect the accessibility of material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/accessrestrict.html">accessRestrict</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a formal list or prose description of topics addressed."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/argument.html">argument</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Groups elements that describe the availability of and access to a bibliographic item, including an MEI-encoded document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains the primary statement of responsibility given for a work on its title page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/byline.html">byline</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="List of the material contained within a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a dedicatory statement."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dedication.html">dedication</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a quotation, anonymous or attributed, appearing on a title page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/epigraph.html">epigraph</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a formal statement authorizing the publication of a work, sometimes required to appear on a title page or its verso."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/imprimatur.html">imprimatur</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Information relating to the publication or distribution of a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/imprint.html">imprint</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(performance duration) – Used to express the duration of performance of printed or manuscript music or the playing time for a sound recording, videorecording, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfduration.html">perfDuration</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(performance medium) – Indicates the number and character of the performing forces used in a musical composition."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfmedium.html">perfMedium</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(plate number) – Designation assigned to a resource by a music publisher, usually printed at the bottom of each page, and sometimes appearing also on the title page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/platenum.html">plateNum</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="The cost of access to a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/price.html">price</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains information about the serial publication in which a bibliographic item has appeared."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/series.html">series</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(system requirements) – System requirements for using the electronic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sysreq.html">sysReq</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a subsection or division of the title of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepart.html">titlePart</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(usage restrictions) – Container for information about the conditions that affect use of a bibliographic item after access has been granted."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/userestrict.html">useRestrict</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(access restriction) – Describes the conditions that affect the accessibility of material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/accessrestrict.html">accessRestrict</a></span><span class="elementDesc desc">(access restriction) – Describes the conditions that affect the accessibility of
+                              material.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a formal list or prose description of topics addressed."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/argument.html">argument</a></span><span class="elementDesc desc">Contains a formal list or prose description of topics addressed.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Groups elements that describe the availability of and access to a bibliographic item, including an MEI-encoded document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a></span><span class="elementDesc desc">Groups elements that describe the availability of and access to a bibliographic item,
+                              including an MEI-encoded document.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains the primary statement of responsibility given for a work on its title page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/byline.html">byline</a></span><span class="elementDesc desc">Contains the primary statement of responsibility given for a work on its title
+                              page.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="List of the material contained within a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contents.html">contents</a></span><span class="elementDesc desc">List of the material contained within a resource.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a dedicatory statement."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dedication.html">dedication</a></span><span class="elementDesc desc">Contains a dedicatory statement.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a quotation, anonymous or attributed, appearing on a title page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/epigraph.html">epigraph</a></span><span class="elementDesc desc">Contains a quotation, anonymous or attributed, appearing on a title page.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a formal statement authorizing the publication of a work, sometimes required to appear on a title page or its verso."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/imprimatur.html">imprimatur</a></span><span class="elementDesc desc">Contains a formal statement authorizing the publication of a work, sometimes required
+                              to
+                              appear on a title page or its verso.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Information relating to the publication or distribution of a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/imprint.html">imprint</a></span><span class="elementDesc desc">Information relating to the publication or distribution of a bibliographic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(performance duration) – Used to express the duration of performance of printed or manuscript music or the playing time for a sound recording, videorecording, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfduration.html">perfDuration</a></span><span class="elementDesc desc">(performance duration) – Used to express the duration of performance of printed or
+                              manuscript music or the playing time for a sound recording, videorecording, etc.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(performance medium) – Indicates the number and character of the performing forces used in a musical composition."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfmedium.html">perfMedium</a></span><span class="elementDesc desc">(performance medium) – Indicates the number and character of the performing forces
+                              used in
+                              a musical composition.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(plate number) – Designation assigned to a resource by a music publisher, usually printed at the bottom of each page, and sometimes appearing also on the title page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/platenum.html">plateNum</a></span><span class="elementDesc desc">(plate number) – Designation assigned to a resource by a music publisher, usually
+                              printed
+                              at the bottom of each page, and sometimes appearing also on the title page.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="The cost of access to a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/price.html">price</a></span><span class="elementDesc desc">The cost of access to a bibliographic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains information about the serial publication in which a bibliographic item has appeared."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/series.html">series</a></span><span class="elementDesc desc">Contains information about the serial publication in which a bibliographic item has
+                              appeared.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(system requirements) – System requirements for using the electronic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sysreq.html">sysReq</a></span><span class="elementDesc desc">(system requirements) – System requirements for using the electronic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a subsection or division of the title of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepart.html">titlePart</a></span><span class="elementDesc desc">Contains a subsection or division of the title of a bibliographic entity.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(usage restrictions) – Container for information about the conditions that affect use of a bibliographic item after access has been granted."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/userestrict.html">useRestrict</a></span><span class="elementDesc desc">(usage restrictions) – Container for information about the conditions that affect
+                              use of a
+                              bibliographic item after access has been granted.</span></div>
                         <div class="classBox" title="model.dateLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.datelike.html">model.dateLike</a></label><span class="classDesc">(MEI.shared) Groups elements containing date expressions.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="A string identifying a point in time or the time period between two such points."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a></span><span class="elementDesc desc">Groups elements containing date expressions.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A string identifying a point in time or the time period between two such points."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a></span><span class="elementDesc desc">A string identifying a point in time or the time period between two such points.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.editionLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editionlike.html">model.editionLike</a></label><span class="classDesc">(MEI.shared) Groups elements containing bibliographic edition information.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(edition designation) – A word or text phrase that indicates a difference in either content or form between the item being described and a related item previously issued by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by either the same publisher/distributor or another publisher/distributor (e.g. large print edition, British edition, etc.)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/edition.html">edition</a></span><span class="elementDesc desc">Groups elements containing bibliographic edition information.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(edition designation) – A word or text phrase that indicates a difference in either content or form between the item being described and a related item previously issued by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously issued by either the same publisher/distributor or another publisher/distributor (e.g. large print edition, British edition, etc.)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/edition.html">edition</a></span><span class="elementDesc desc">(edition designation) – A word or text phrase that indicates a difference in either
+                                    content or form between the item being described and a related item previously issued
+                                    by the
+                                    same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously
+                                    issued by
+                                    either the same publisher/distributor or another publisher/distributor (e.g. large
+                                    print
+                                    edition, British edition, etc.).</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.identifierLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.identifierlike.html">model.identifierLike</a></label><span class="classDesc">(MEI.shared) Groups identifier-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a></span><span class="elementDesc desc">Groups identifier-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a></span><span class="elementDesc desc">An alpha-numeric string that establishes the identity of the described material.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.respLikePart">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.resplikepart.html">model.respLikePart</a></label><span class="classDesc">(MEI.shared) Groups elements that delineate particular responsibilities as opposed
                                  to the respStmt element that provides for generic statements of responsibility.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="A person or organization who transcribes a musical composition, usually for a different medium from that of the original; in an arrangement the musical substance remains essentially unchanged."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/arranger.html">arranger</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="The name of the creator of the intellectual content of a non-musical, literary work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/author.html">author</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="The name of the creator of the intellectual content of a musical work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/composer.html">composer</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Names of individuals, institutions, or organizations responsible for contributions to the intellectual content of a work, where the specialized elements for authors, editors, etc. do not suffice or do not apply."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contributor.html">contributor</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="The name of the individual(s), institution(s) or organization(s) acting in an editorial capacity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editor.html">editor</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Names of individuals, institutions, or organizations responsible for funding. Funders provide financial support for a project; they are distinct from sponsors, who provide intellectual support and authority."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/funder.html">funder</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Person or organization who is a writer of the text of an opera, oratorio, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/librettist.html">librettist</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Person or organization who is a writer of the text of a song."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lyricist.html">lyricist</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Names of sponsoring individuals, organizations or institutions. Sponsors give their intellectual authority to a project; they are to be distinguished from funders, who provide the funding but do not necessarily take intellectual responsibility."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sponsor.html">sponsor</a></span><span class="elementDesc desc">Groups elements that delineate particular responsibilities as opposed to the respStmt
-                                    element that provides for generic statements of responsibility.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A person or organization who transcribes a musical composition, usually for a different medium from that of the original; in an arrangement the musical substance remains essentially unchanged."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/arranger.html">arranger</a></span><span class="elementDesc desc">A person or organization who transcribes a musical composition, usually for a different
+                                    medium from that of the original; in an arrangement the musical substance remains
+                                    essentially
+                                    unchanged.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="The name of the creator of the intellectual content of a non-musical, literary work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/author.html">author</a></span><span class="elementDesc desc">The name of the creator of the intellectual content of a non-musical, literary
+                                    work.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="The name of the creator of the intellectual content of a musical work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/composer.html">composer</a></span><span class="elementDesc desc">The name of the creator of the intellectual content of a musical work.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Names of individuals, institutions, or organizations responsible for contributions to the intellectual content of a work, where the specialized elements for authors, editors, etc. do not suffice or do not apply."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/contributor.html">contributor</a></span><span class="elementDesc desc">Names of individuals, institutions, or organizations responsible for contributions
+                                    to the
+                                    intellectual content of a work, where the specialized elements for authors, editors,
+                                    etc. do
+                                    not suffice or do not apply.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="The name of the individual(s), institution(s) or organization(s) acting in an editorial capacity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editor.html">editor</a></span><span class="elementDesc desc">The name of the individual(s), institution(s) or organization(s) acting in an editorial
+                                    capacity.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Names of individuals, institutions, or organizations responsible for funding. Funders provide financial support for a project; they are distinct from sponsors, who provide intellectual support and authority."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/funder.html">funder</a></span><span class="elementDesc desc">Names of individuals, institutions, or organizations responsible for funding. Funders
+                                    provide financial support for a project; they are distinct from sponsors, who provide
+                                    intellectual support and authority.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Person or organization who is a writer of the text of an opera, oratorio, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/librettist.html">librettist</a></span><span class="elementDesc desc">Person or organization who is a writer of the text of an opera, oratorio, etc.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Person or organization who is a writer of the text of a song."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lyricist.html">lyricist</a></span><span class="elementDesc desc">Person or organization who is a writer of the text of a song.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Names of sponsoring individuals, organizations or institutions. Sponsors give their intellectual authority to a project; they are to be distinguished from funders, who provide the funding but do not necessarily take intellectual responsibility."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sponsor.html">sponsor</a></span><span class="elementDesc desc">Names of sponsoring individuals, organizations or institutions. Sponsors give their
+                                    intellectual authority to a project; they are to be distinguished from funders, who
+                                    provide
+                                    the funding but do not necessarily take intellectual responsibility.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.titleLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlelike.html">model.titleLike</a></label><span class="classDesc">(MEI.shared) Groups elements that denote the name of a bibliographic item.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Title of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a></span><span class="elementDesc desc">Groups elements that denote the name of a bibliographic item.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Title of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a></span><span class="elementDesc desc">Title of a bibliographic entity.</span></div>
                            </div>
                         </div>
                      </div>
@@ -826,14 +876,14 @@ title: "titlePage"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element may be used within the 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element may be used within the 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>physDesc<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element when no other
                               transcription is provided.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in Encoded Archival Description (EAD) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in Encoded Archival Description (EAD) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

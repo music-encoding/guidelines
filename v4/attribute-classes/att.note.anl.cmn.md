@@ -54,7 +54,7 @@ title: "att.note.anl.cmn"
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slur.html">data.SLUR</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds an associated sung text syllable.">syl</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds an associated sung text syllable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="tie Indicates that this element participates in a tie. If visual information about the tie needs to be recorded, then a element should be employed.">tie</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that this element participates in a tie. If visual information about the
                         tie
@@ -134,7 +134,7 @@ title: "att.note.anl.cmn"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.syltext.html">att.sylText</a></label><span class="classDesc">(MEI.shared) Attributes that hold associated sung text syllables.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds an associated sung text syllable.">syl</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds an associated sung text syllable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -204,7 +204,7 @@ title: "att.note.anl.cmn"
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slur.html">data.SLUR</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds an associated sung text syllable.">syl</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds an associated sung text syllable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="tie Indicates that this element participates in a tie. If visual information about the tie needs to be recorded, then a element should be employed.">tie</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that this element participates in a tie. If visual information about the
                               tie

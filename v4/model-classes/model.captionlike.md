@@ -30,12 +30,10 @@ title: "model.captionLike"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.captionlike.html">model.captionLike</a></label><span class="classDesc">(MEI.shared) Groups elements that contain the text of a caption or other text displayed
                            along with a figure.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">Groups elements that contain the text of a caption or other text displayed along with
-                              a
-                              figure.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains text displayed in tabular form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/table.html">table</a></span><span class="elementDesc desc">Groups elements that contain the text of a caption or other text displayed along with
-                              a
-                              figure.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">(figure) – Groups elements representing or containing graphic information such as
+                              an
+                              illustration or figure.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains text displayed in tabular form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/table.html">table</a></span><span class="elementDesc desc">Contains text displayed in tabular form.</span></div>
                      </div>
                   </div>
                </div>

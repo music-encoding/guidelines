@@ -227,7 +227,7 @@
     <xsl:function name="tools:resolveAttDef" as="node()">
         <xsl:param name="current.att" as="node()"/>
         <xsl:param name="module" as="xs:string"/>
-        <xsl:variable name="usage" select="if($current.att/@usage = 'opt') then('optional') else if($current.att/@usage = 'req') then('required') else($current.att/@usage)" as="xs:string?"/>
+        <xsl:variable name="usage" select="if($current.att/@usage = 'opt') then('optional') else if($current.att/@usage = 'req') then('required') else if($current.att/@usage = 'rec') then('recommended') else($current.att/@usage)" as="xs:string?"/>
         <xsl:variable name="desc" as="node()*">
             <xsl:apply-templates select="$current.att/tei:desc/node()" mode="parse.odd"/>
         </xsl:variable>

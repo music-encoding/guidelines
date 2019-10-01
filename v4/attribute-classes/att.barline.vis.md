@@ -38,7 +38,7 @@ title: "att.barLine.vis"
                         Allowed values are:
                         "<span style="font-weight: 500;">smufl</span>" <i>(Standard Music Font Layout.)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.externalsymbols"><span class="ident attribute" title="Glyph name.">glyph.name</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Glyph name.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.externalsymbols"><span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">glyph.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B. SMuFL
                         version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues">
@@ -52,7 +52,8 @@ title: "att.barLine.vis"
                         is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                         for a
                         5-line staff.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">
+                           a decimal number larger than 0</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the method of barring.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -76,7 +77,8 @@ title: "att.barLine.vis"
                               is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                               for a
                               5-line staff.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number larger than 0</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the method of barring.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -114,7 +116,7 @@ title: "att.barLine.vis"
                               Allowed values are:
                               "<span style="font-weight: 500;">smufl</span>" <i>(Standard Music Font Layout.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.externalsymbols"><span class="ident attribute" title="Glyph name.">glyph.name</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Glyph name.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.externalsymbols"><span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">glyph.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B. SMuFL
                               version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues">
@@ -153,7 +155,7 @@ title: "att.barLine.vis"
                               Allowed values are:
                               "<span style="font-weight: 500;">smufl</span>" <i>(Standard Music Font Layout.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.externalsymbols"><span class="ident attribute" title="Glyph name.">glyph.name</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Glyph name.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.externalsymbols"><span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">glyph.num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Numeric glyph reference in hexadecimal notation, e.g. "#xE000" or "U+E000". N.B. SMuFL
                               version 1.18 uses the range U+E000 - U+ECBF.</span><span class="attributeValues">
@@ -198,7 +200,8 @@ title: "att.barLine.vis"
                               is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                               for a
                               5-line staff.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number larger than 0</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the method of barring.">method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -268,7 +271,7 @@ title: "att.barLine.vis"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.width.html">att.width</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"len"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -277,7 +280,7 @@ title: "att.barLine.vis"
                                  for a
                                  5-line staff.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>&gt;</span>
                                     
@@ -287,7 +290,7 @@ title: "att.barLine.vis"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>This attribute is ignored if the value of the style attribute is "mensur".<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This attribute is ignored if the value of the style attribute is "mensur".<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
@@ -295,7 +298,7 @@ title: "att.barLine.vis"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Records the method of barring.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -308,7 +311,7 @@ title: "att.barLine.vis"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Denotes the staff location of the bar line if its length is non-standard.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -318,7 +321,7 @@ title: "att.barLine.vis"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>The location may include staff lines, the spaces between the lines, and the spaces
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The location may include staff lines, the spaces between the lines, and the spaces
                                     directly above and below the staff. The value ranges between 0 (just below the staff)
                                     to
                                     2 * number of staff lines (directly above the staff). For example, on a 5-line staff
@@ -327,7 +330,7 @@ title: "att.barLine.vis"
                                     4, 6,
                                     8, and 10. So, a value of '9' puts the bar line through the top line of the staff.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>This attribute is ignored if the value of the style attribute is "mensur".<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This attribute is ignored if the value of the style attribute is "mensur".<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>

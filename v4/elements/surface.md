@@ -57,13 +57,13 @@ title: "surface"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-right corner x coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -102,10 +102,10 @@ title: "surface"
                         One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner y coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                         references into absolute URI references.</span><span class="attributeValues">
@@ -113,7 +113,7 @@ title: "surface"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -132,7 +132,7 @@ title: "surface"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -145,7 +145,7 @@ title: "surface"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -229,16 +229,16 @@ title: "surface"
                            coordinate system.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner y coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-right corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -304,13 +304,13 @@ title: "surface"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-right corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -349,10 +349,10 @@ title: "surface"
                               One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner y coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                               references into absolute URI references.</span><span class="attributeValues">
@@ -360,7 +360,7 @@ title: "surface"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -386,10 +386,9 @@ title: "surface"
                   <div class="classBox" title="elements having surface as direct children">
                      <div class="classHeading"><label class="classLabel">elements having surface as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a representation of a written source in the form of a set of images rather than as transcribed or encoded text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a></span><span class="elementDesc desc">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
-                              one or more graphic representations of that space, and rectangular zones of interest
-                              within
-                              it.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a representation of a written source in the form of a set of images rather than as transcribed or encoded text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/facsimile.html">facsimile</a></span><span class="elementDesc desc">Contains a representation of a written source in the form of a set of images rather
+                              than
+                              as transcribed or encoded text.</span></div>
                      </div>
                   </div>
                </div>
@@ -418,27 +417,23 @@ title: "surface"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Defines an area of interest within a surface or graphic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/zone.html">zone</a></span><span class="elementDesc desc">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
-                              one or more graphic representations of that space, and rectangular zones of interest
-                              within
-                              it.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Defines an area of interest within a surface or graphic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/zone.html">zone</a></span><span class="elementDesc desc">Defines an area of interest within a surface or graphic file.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.figDescLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.figdesclike.html">model.figDescLike</a></label><span class="classDesc">(MEI.figtable) Groups elements that provide a brief prose description of the appearance
                            or content of a graphic figure.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(figure description) – Contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/figdesc.html">figDesc</a></span><span class="elementDesc desc">Groups elements that provide a brief prose description of the appearance or content
-                              of a
-                              graphic figure.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(figure description) – Contains a brief prose description of the appearance or content of a graphic figure, for use when documenting an image without displaying it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/figdesc.html">figDesc</a></span><span class="elementDesc desc">(figure description) – Contains a brief prose description of the appearance or content
+                              of
+                              a graphic figure, for use when documenting an image without displaying it.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.graphicLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.graphiclike.html">model.graphicLike</a></label><span class="classDesc">(MEI.figtable) Groups elements that indicate the location of an inline graphic, illustration,
                            or figure.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Indicates the location of an inline graphic."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a></span><span class="elementDesc desc">Groups elements that indicate the location of an inline graphic, illustration, or
-                              figure.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates the location of an inline graphic."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a></span><span class="elementDesc desc">Indicates the location of an inline graphic.</span></div>
                      </div>
                   </div>
                </div>
@@ -528,17 +523,17 @@ title: "surface"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>Scalable Vector Graphics (SVG) markup may be used when allowed by the graphicLike
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>Scalable Vector Graphics (SVG) markup may be used when allowed by the graphicLike
                               model.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>startid<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to hold a reference to the first feature
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>startid<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to hold a reference to the first feature
                               occurring on this surface.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

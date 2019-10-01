@@ -24,7 +24,7 @@ title: "att.origin.staffIdent"
                </ul>
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
                         as
                         the local staff. Mandatory when applicable.</span><span class="attributeValues">
                         One or more of <span style="font-weight: 500;">positiveInteger</span>.
@@ -34,7 +34,7 @@ title: "att.origin.staffIdent"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
                               as
                               the local staff. Mandatory when applicable.</span><span class="attributeValues">
                               One or more of <span style="font-weight: 500;">positiveInteger</span>.
@@ -46,7 +46,7 @@ title: "att.origin.staffIdent"
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
                               as
                               the local staff. Mandatory when applicable.</span><span class="attributeValues">
                               One or more of <span style="font-weight: 500;">positiveInteger</span>.
@@ -98,7 +98,7 @@ title: "att.origin.staffIdent"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes for identifying the staff associated with a distant feature.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"origin.staff"</span> <span class="attribute">usage=</span><span class="attributevalue">"rec"</span>&gt;</span>
                               
@@ -106,7 +106,7 @@ title: "att.origin.staffIdent"
                                  as
                                  the local staff. Mandatory when applicable.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:list&gt;</span>
                                     

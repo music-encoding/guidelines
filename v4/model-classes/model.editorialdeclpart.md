@@ -30,9 +30,8 @@ title: "model.editorialDeclPart"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editorialdeclpart.html">model.editorialDeclPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of a description of the editorial
                            process applied to the encoding of notation.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(editorial declaration) – Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editorialdecl.html">editorialDecl</a></span><span class="elementDesc desc">Groups elements that may appear as part of a description of the editorial process
-                              applied
-                              to the encoding of notation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(editorial declaration) – Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editorialdecl.html">editorialDecl</a></span><span class="elementDesc desc">(editorial declaration) – Used to provide details of editorial principles and practices
+                              applied during the encoding of musical text.</span></div>
                      </div>
                   </div>
                </div>
