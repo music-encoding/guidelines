@@ -45,13 +45,13 @@ title: "symbolDef"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-right corner x coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -86,10 +86,10 @@ title: "symbolDef"
                         One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner y coordinate.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                         references into absolute URI references.</span><span class="attributeValues">
@@ -97,7 +97,7 @@ title: "symbolDef"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -116,7 +116,7 @@ title: "symbolDef"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -129,7 +129,7 @@ title: "symbolDef"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -213,16 +213,16 @@ title: "symbolDef"
                            coordinate system.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner y coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-right corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -250,13 +250,13 @@ title: "symbolDef"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-right corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -291,10 +291,10 @@ title: "symbolDef"
                               One or more values of datatype <span style="font-weight: 500;">NMTOKEN</span>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner y coordinate.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                               references into absolute URI references.</span><span class="attributeValues">
@@ -302,7 +302,7 @@ title: "symbolDef"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -328,7 +328,7 @@ title: "symbolDef"
                   <div class="classBox" title="elements having symbolDef as direct children">
                      <div class="classHeading"><label class="classLabel">elements having symbolDef as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a set of user-defined symbols."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboltable.html">symbolTable</a></span><span class="elementDesc desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a set of user-defined symbols."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboltable.html">symbolTable</a></span><span class="elementDesc desc">Contains a set of user-defined symbols.</span></div>
                      </div>
                   </div>
                </div>
@@ -355,24 +355,33 @@ title: "symbolDef"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Indicates the location of an inline graphic."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a></span><span class="elementDesc desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="One or more characters which are related to the parent symbol in some respect, as specified by the type attribute."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mapping.html">mapping</a></span><span class="elementDesc desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(symbol name) – Contains the name of a symbol, expressed following Unicode conventions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symname.html">symName</a></span><span class="elementDesc desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(symbol property) – Provides a name and value for some property of the parent symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symprop.html">symProp</a></span><span class="elementDesc desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates the location of an inline graphic."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/graphic.html">graphic</a></span><span class="elementDesc desc">Indicates the location of an inline graphic.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="One or more characters which are related to the parent symbol in some respect, as specified by the type attribute."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mapping.html">mapping</a></span><span class="elementDesc desc">One or more characters which are related to the parent symbol in some respect, as
+                              specified by the type attribute.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(symbol name) – Contains the name of a symbol, expressed following Unicode conventions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symname.html">symName</a></span><span class="elementDesc desc">(symbol name) – Contains the name of a symbol, expressed following Unicode
+                              conventions.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(symbol property) – Provides a name and value for some property of the parent symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symprop.html">symProp</a></span><span class="elementDesc desc">(symbol property) – Provides a name and value for some property of the parent
+                              symbol.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.annotLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.annotlike.html">model.annotLike</a></label><span class="classDesc">(MEI.shared) Groups annotation-like elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">Groups annotation-like elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">(annotation) – Provides a statement explaining the text or indicating the basis for
+                              an
+                              assertion.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.graphicPrimitiveLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.graphicprimitivelike.html">model.graphicPrimitiveLike</a></label><span class="classDesc">(MEI.usersymbols) Groups elements that function as drawing primitives.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/anchoredtext.html">anchoredText</a></span><span class="elementDesc desc">Groups elements that function as drawing primitives.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A curved line that cannot be represented by a more specific element, such as a slur."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/curve.html">curve</a></span><span class="elementDesc desc">Groups elements that function as drawing primitives.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A visual line that cannot be represented by a more specific; i.e., semantic, element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/line.html">line</a></span><span class="elementDesc desc">Groups elements that function as drawing primitives.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/anchoredtext.html">anchoredText</a></span><span class="elementDesc desc">Container for text that is fixed to a particular page location, regardless of changes
+                              made
+                              to the layout of the measures around it.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A curved line that cannot be represented by a more specific element, such as a slur."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/curve.html">curve</a></span><span class="elementDesc desc">A curved line that cannot be represented by a more specific element, such as a
+                              slur.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A visual line that cannot be represented by a more specific; i.e., semantic, element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/line.html">line</a></span><span class="elementDesc desc">A visual line that cannot be represented by a more specific; i.e., semantic,
+                              element.</span></div>
                      </div>
                   </div>
                </div>
@@ -464,7 +473,6 @@ title: "symbolDef"
                                     /&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- Use either SVG or MEI elements to "draw" the symbol --&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                               
@@ -509,7 +517,7 @@ title: "symbolDef"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>Like a chord table, a symbolTable may be shared between MEI instances through the
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>Like a chord table, a symbolTable may be shared between MEI instances through the
                               use of an
                               external parsed entity containing the symbolTable to be shared.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>

@@ -29,8 +29,10 @@ title: "model.pubStmtPart"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.pubstmtpart.html">model.pubStmtPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of the publication statement
                            for a bibliographic item.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">Groups elements that may appear as part of the publication statement for a bibliographic
-                              item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">(publication statement) – Container for information regarding the publication or
+                              distribution of a bibliographic item, including the publisher's name and address,
+                              the date of
+                              publication, and other relevant details.</span></div>
                      </div>
                   </div>
                </div>

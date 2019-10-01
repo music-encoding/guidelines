@@ -29,7 +29,7 @@ title: "typeDesc"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -50,7 +50,7 @@ title: "typeDesc"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -81,7 +81,7 @@ title: "typeDesc"
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                         classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -93,14 +93,14 @@ title: "typeDesc"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the language of the element's content. The values for this attribute are language 'tags' as defined in BCP 47. All language tags that make use of private use sub-tags must be documented in a corresponding language element in the MEI header whose id attribute is the same as the language tag's value.">xml:lang</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the language of the element's content. The values for this attribute are
                         language 'tags' as defined in BCP 47. All language tags that make use of private use
                         sub-tags must be documented in a corresponding language element in the MEI header
                         whose id
                         attribute is the same as the language tag's value.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                        Value of datatype <span style="font-weight: 500;">language</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -119,7 +119,7 @@ title: "typeDesc"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -132,7 +132,7 @@ title: "typeDesc"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -217,7 +217,7 @@ title: "typeDesc"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -229,10 +229,10 @@ title: "typeDesc"
                               sub-tags must be documented in a corresponding language element in the MEI header
                               whose id
                               attribute is the same as the language tag's value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                              Value of datatype <span style="font-weight: 500;">language</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -244,7 +244,7 @@ title: "typeDesc"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -265,7 +265,7 @@ title: "typeDesc"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -296,7 +296,7 @@ title: "typeDesc"
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                               classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -308,14 +308,14 @@ title: "typeDesc"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the language of the element's content. The values for this attribute are language 'tags' as defined in BCP 47. All language tags that make use of private use sub-tags must be documented in a corresponding language element in the MEI header whose id attribute is the same as the language tag's value.">xml:lang</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the language of the element's content. The values for this attribute are
                               language 'tags' as defined in BCP 47. All language tags that make use of private use
                               sub-tags must be documented in a corresponding language element in the MEI header
                               whose id
                               attribute is the same as the language tag's value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                              Value of datatype <span style="font-weight: 500;">language</span>.
                               </span></div>
                      </div>
                   </div>
@@ -343,8 +343,11 @@ title: "typeDesc"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.physdescpart.html">model.physDescPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of the physical description of
                            a bibliographic item.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">Groups elements that may appear as part of the physical description of a bibliographic
-                              item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">(physical description) – Container for information about the appearance, construction,
+                              or
+                              handling of physical materials, such as their dimension, quantity, color, style, and
+                              technique
+                              of creation.</span></div>
                      </div>
                   </div>
                </div>
@@ -383,12 +386,13 @@ title: "typeDesc"
                            textual content
                            
                         </div>
-                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(type description) – Contains a description of the typefaces or other aspects of the
-                              printing of a printed source.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/p.html">p</a></span><span class="elementDesc desc">(type description) – Contains a description of the typefaces or other aspects of the
-                              printing of a printed source.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(type note) – Describes a particular font or other significant typographic feature of a printed resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/typenote.html">typeNote</a></span><span class="elementDesc desc">(type description) – Contains a description of the typefaces or other aspects of the
-                              printing of a printed source.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                              the
+                              heading of a list.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/p.html">p</a></span><span class="elementDesc desc">(paragraph) – One or more text phrases that form a logical prose passage.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(type note) – Describes a particular font or other significant typographic feature of a printed resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/typenote.html">typeNote</a></span><span class="elementDesc desc">(type note) – Describes a particular font or other significant typographic feature
+                              of a
+                              printed resource.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.textPhraseLike.limited">
@@ -396,62 +400,78 @@ title: "typeDesc"
                            phrases. This class is equivalent to the model.textPhraseLike class without the pb
                            element.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Entity to whom a creative work is formally offered."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dedicatee.html">dedicatee</a></span><span class="elementDesc desc">Groups textual elements that occur at the level of individual words or phrases. This
-                              class
-                              is equivalent to the model.textPhraseLike class without the pb element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Information about the physical size of an entity; usually includes numerical data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dimensions.html">dimensions</a></span><span class="elementDesc desc">Groups textual elements that occur at the level of individual words or phrases. This
-                              class
-                              is equivalent to the model.textPhraseLike class without the pb element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Used to express size in terms other than physical dimensions, such as number of pages, records, bytes, physical components, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extent.html">extent</a></span><span class="elementDesc desc">Groups textual elements that occur at the level of individual words or phrases. This
-                              class
-                              is equivalent to the model.textPhraseLike class without the pb element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(arbitrary segment) represents any segmentation of text below the &#34;text component&#34; level."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seg.html">seg</a></span><span class="elementDesc desc">Groups textual elements that occur at the level of individual words or phrases. This
-                              class
-                              is equivalent to the model.textPhraseLike class without the pb element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A reference to a previously defined symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbol.html">symbol</a></span><span class="elementDesc desc">Groups textual elements that occur at the level of individual words or phrases. This
-                              class
-                              is equivalent to the model.textPhraseLike class without the pb element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Keyword or phrase which describes a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/term.html">term</a></span><span class="elementDesc desc">Groups textual elements that occur at the level of individual words or phrases. This
-                              class
-                              is equivalent to the model.textPhraseLike class without the pb element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Entity to whom a creative work is formally offered."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dedicatee.html">dedicatee</a></span><span class="elementDesc desc">Entity to whom a creative work is formally offered.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Information about the physical size of an entity; usually includes numerical data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dimensions.html">dimensions</a></span><span class="elementDesc desc">Information about the physical size of an entity; usually includes numerical data.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Used to express size in terms other than physical dimensions, such as number of pages, records, bytes, physical components, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extent.html">extent</a></span><span class="elementDesc desc">Used to express size in terms other than physical dimensions, such as number of pages,
+                              records, bytes, physical components, etc.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(arbitrary segment) represents any segmentation of text below the &#34;text component&#34; level."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seg.html">seg</a></span><span class="elementDesc desc">(arbitrary segment) represents any segmentation of text below the "text component"
+                              level.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A reference to a previously defined symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbol.html">symbol</a></span><span class="elementDesc desc">A reference to a previously defined symbol.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Keyword or phrase which describes a resource."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/term.html">term</a></span><span class="elementDesc desc">Keyword or phrase which describes a resource.</span></div>
                         <div class="classBox" title="model.figureLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.figurelike.html">model.figureLike</a></label><span class="classDesc">(MEI.figtable) Groups elements representing or containing graphic information such
                                  as an illustration or figure.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">Groups elements representing or containing graphic information such as an illustration
-                                    or
-                                    figure.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(figure) – Groups elements representing or containing graphic information such as an illustration or figure."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fig.html">fig</a></span><span class="elementDesc desc">(figure) – Groups elements representing or containing graphic information such as
+                                    an
+                                    illustration or figure.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.msInline">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.msinline.html">model.msInline</a></label><span class="classDesc">(MEI.msDesc) Groups elements that may appear inline when the msdesc module is active.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Describes the system used to ensure correct ordering of the quires making up an item, typically by means of annotations at the foot of the page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/catchwords.html">catchwords</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Contains a string that uniquely identifies an item, such as those constructed by combining groups of characters transcribed from specified pages of a printed item or a file's checksum."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fingerprint.html">fingerprint</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Contains a heraldic formula or phrase, typically found as part of a blazon, coat of arms, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/heraldry.html">heraldry</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Defines a location within a manuscript or manuscript component, usually as a (possibly discontinuous) sequence of folio references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locus.html">locus</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(locus group) – Groups locations which together form a distinct but discontinuous item within a manuscript or manuscript part, according to a specific foliation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locusgrp.html">locusGrp</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(second folio) – Marks the word or words taken from a fixed point in a codex (typically the beginning of the second leaf) in order to provide a unique identifier for the item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/secfolio.html">secFolio</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Provides a description of the leaf or quire signatures found within a codex."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/signatures.html">signatures</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Contains a word or phrase describing an official mark indicating ownership, genuineness, validity, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stamp.html">stamp</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Contains a description of a watermark or similar device."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/watermark.html">watermark</a></span><span class="elementDesc desc">Groups elements that may appear inline when the msdesc module is active.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Describes the system used to ensure correct ordering of the quires making up an item, typically by means of annotations at the foot of the page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/catchwords.html">catchwords</a></span><span class="elementDesc desc">Describes the system used to ensure correct ordering of the quires making up an item,
+                                    typically by means of annotations at the foot of the page.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a string that uniquely identifies an item, such as those constructed by combining groups of characters transcribed from specified pages of a printed item or a file's checksum."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fingerprint.html">fingerprint</a></span><span class="elementDesc desc">Contains a string that uniquely identifies an item, such as those constructed by combining
+                                    groups of characters transcribed from specified pages of a printed item or a file's
+                                    checksum.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a heraldic formula or phrase, typically found as part of a blazon, coat of arms, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/heraldry.html">heraldry</a></span><span class="elementDesc desc">Contains a heraldic formula or phrase, typically found as part of a blazon, coat of
+                                    arms,
+                                    etc.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Defines a location within a manuscript or manuscript component, usually as a (possibly discontinuous) sequence of folio references."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locus.html">locus</a></span><span class="elementDesc desc">Defines a location within a manuscript or manuscript component, usually as a (possibly
+                                    discontinuous) sequence of folio references.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(locus group) – Groups locations which together form a distinct but discontinuous item within a manuscript or manuscript part, according to a specific foliation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/locusgrp.html">locusGrp</a></span><span class="elementDesc desc">(locus group) – Groups locations which together form a distinct but discontinuous
+                                    item
+                                    within a manuscript or manuscript part, according to a specific foliation.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(second folio) – Marks the word or words taken from a fixed point in a codex (typically the beginning of the second leaf) in order to provide a unique identifier for the item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/secfolio.html">secFolio</a></span><span class="elementDesc desc">(second folio) – Marks the word or words taken from a fixed point in a codex (typically
+                                    the beginning of the second leaf) in order to provide a unique identifier for the
+                                    item.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Provides a description of the leaf or quire signatures found within a codex."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/signatures.html">signatures</a></span><span class="elementDesc desc">Provides a description of the leaf or quire signatures found within a codex.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a word or phrase describing an official mark indicating ownership, genuineness, validity, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stamp.html">stamp</a></span><span class="elementDesc desc">Contains a word or phrase describing an official mark indicating ownership, genuineness,
+                                    validity, etc.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a description of a watermark or similar device."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/watermark.html">watermark</a></span><span class="elementDesc desc">Contains a description of a watermark or similar device.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.addressPart">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.addresspart.html">model.addressPart</a></label><span class="classDesc">(MEI.namesdates) Groups elements used as part of a physical address.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(postal box or post office box) contains a number or other identifier for some postal delivery point other than a street address."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postbox.html">postBox</a></span><span class="elementDesc desc">Groups elements used as part of a physical address.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(postal code) contains a numerical or alphanumeric code used as part of a postal address to simplify sorting or delivery of mail."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postcode.html">postCode</a></span><span class="elementDesc desc">Groups elements used as part of a physical address.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="full street address including any name or number identifying a building as well as the name of the street or route on which it is located."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/street.html">street</a></span><span class="elementDesc desc">Groups elements used as part of a physical address.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(postal box or post office box) contains a number or other identifier for some postal delivery point other than a street address."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postbox.html">postBox</a></span><span class="elementDesc desc">(postal box or post office box) contains a number or other identifier for some postal
+                                    delivery point other than a street address.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(postal code) contains a numerical or alphanumeric code used as part of a postal address to simplify sorting or delivery of mail."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/postcode.html">postCode</a></span><span class="elementDesc desc">(postal code) contains a numerical or alphanumeric code used as part of a postal address
+                                    to simplify sorting or delivery of mail.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="full street address including any name or number identifying a building as well as the name of the street or route on which it is located."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/street.html">street</a></span><span class="elementDesc desc">full street address including any name or number identifying a building as well as
+                                    the
+                                    name of the street or route on which it is located.</span></div>
                               <div class="classBox" title="model.geogNamePart">
                                  <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.geognamepart.html">model.geogNamePart</a></label><span class="classDesc">(MEI.namesdates) Groups elements which form part of a geographic name.</span></div>
                                  <div class="classContent">
-                                    <div class="elementDef def"><span class="ident element" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bloc.html">bloc</a></span><span class="elementDesc desc">Groups elements which form part of a geographic name.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/country.html">country</a></span><span class="elementDesc desc">Groups elements which form part of a geographic name.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/district.html">district</a></span><span class="elementDesc desc">Groups elements which form part of a geographic name.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(geographical feature name) – Contains a common noun identifying a geographical feature."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/geogfeat.html">geogFeat</a></span><span class="elementDesc desc">Groups elements which form part of a geographic name.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/region.html">region</a></span><span class="elementDesc desc">Groups elements which form part of a geographic name.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/settlement.html">settlement</a></span><span class="elementDesc desc">Groups elements which form part of a geographic name.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains the name of a geopolitical unit consisting of two or more nation states or countries."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bloc.html">bloc</a></span><span class="elementDesc desc">Contains the name of a geopolitical unit consisting of two or more nation states or
+                                          countries.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/country.html">country</a></span><span class="elementDesc desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or
+                                          commonwealth, larger than or administratively superior to a region and smaller than
+                                          a
+                                          bloc.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/district.html">district</a></span><span class="elementDesc desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+                                          or
+                                          other administrative or geographic unit.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(geographical feature name) – Contains a common noun identifying a geographical feature."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/geogfeat.html">geogFeat</a></span><span class="elementDesc desc">(geographical feature name) – Contains a common noun identifying a geographical
+                                          feature.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/region.html">region</a></span><span class="elementDesc desc">Contains the name of an administrative unit such as a state, province, or county,
+                                          larger
+                                          than a settlement, but smaller than a country.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains the name of a settlement such as a city, town, or village identified as a single geopolitical or administrative unit."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/settlement.html">settlement</a></span><span class="elementDesc desc">Contains the name of a settlement such as a city, town, or village identified as a
+                                          single
+                                          geopolitical or administrative unit.</span></div>
                                  </div>
                               </div>
                            </div>
@@ -459,77 +479,86 @@ title: "typeDesc"
                         <div class="classBox" title="model.nameLike.label">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.namelike.label.html">model.nameLike.label</a></label><span class="classDesc">(MEI.namesdates) Groups elements that serve as stylistic labels.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(period name) – A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/periodname.html">periodName</a></span><span class="elementDesc desc">Groups elements that serve as stylistic labels.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(style name) – A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stylename.html">styleName</a></span><span class="elementDesc desc">Groups elements that serve as stylistic labels.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(period name) – A label that describes a period of time, such as 'Baroque' or '3rd Style period'."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/periodname.html">periodName</a></span><span class="elementDesc desc">(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
+                                    Style
+                                    period'.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(style name) – A label for a characteristic style of writing or performance, such as 'bebop' or 'rock-n-roll'."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stylename.html">styleName</a></span><span class="elementDesc desc">(style name) – A label for a characteristic style of writing or performance, such
+                                    as
+                                    'bebop' or 'rock-n-roll'.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.locrefLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.locreflike.html">model.locrefLike</a></label><span class="classDesc">(MEI.ptrref) Groups elements used for purposes of location and reference.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(pointer) – Defines a traversible pointer to another location, using only attributes to describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ptr.html">ptr</a></span><span class="elementDesc desc">Groups elements used for purposes of location and reference.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(reference) – Defines a traversible reference to another location. May contain text and sub-elements that describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ref.html">ref</a></span><span class="elementDesc desc">Groups elements used for purposes of location and reference.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(pointer) – Defines a traversible pointer to another location, using only attributes to describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ptr.html">ptr</a></span><span class="elementDesc desc">(pointer) – Defines a traversible pointer to another location, using only attributes
+                                    to
+                                    describe the destination.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(reference) – Defines a traversible reference to another location. May contain text and sub-elements that describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ref.html">ref</a></span><span class="elementDesc desc">(reference) – Defines a traversible reference to another location. May contain text
+                                    and
+                                    sub-elements that describe the destination.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.addressLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.addresslike.html">model.addressLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to represent a postal address.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Contains a postal address, for example of a publisher, an organization, or an individual."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/address.html">address</a></span><span class="elementDesc desc">Groups elements used to represent a postal address.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a postal address, for example of a publisher, an organization, or an individual."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/address.html">address</a></span><span class="elementDesc desc">Contains a postal address, for example of a publisher, an organization, or an
+                                    individual.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.annotLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.annotlike.html">model.annotLike</a></label><span class="classDesc">(MEI.shared) Groups annotation-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">Groups annotation-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">(annotation) – Provides a statement explaining the text or indicating the basis for
+                                    an
+                                    assertion.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.biblLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.bibllike.html">model.biblLike</a></label><span class="classDesc">(MEI.shared) Groups elements containing a bibliographic description.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">Groups elements containing a bibliographic description.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(structured bibliographic citation) – Contains a bibliographic citation in which bibliographic sub-elements must appear in a specified order."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/biblstruct.html">biblStruct</a></span><span class="elementDesc desc">Groups elements containing a bibliographic description.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                                    which
+                                    the sub-components may or may not be explicitly marked.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(structured bibliographic citation) – Contains a bibliographic citation in which bibliographic sub-elements must appear in a specified order."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/biblstruct.html">biblStruct</a></span><span class="elementDesc desc">(structured bibliographic citation) – Contains a bibliographic citation in which
+                                    bibliographic sub-elements must appear in a specified order.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.dateLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.datelike.html">model.dateLike</a></label><span class="classDesc">(MEI.shared) Groups elements containing date expressions.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="A string identifying a point in time or the time period between two such points."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a></span><span class="elementDesc desc">Groups elements containing date expressions.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A string identifying a point in time or the time period between two such points."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a></span><span class="elementDesc desc">A string identifying a point in time or the time period between two such points.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.dimLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.dimlike.html">model.dimLike</a></label><span class="classDesc">(MEI.shared) Groups elements which describe a measurement forming part of the physical
                                  dimensions of an object.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Description of a measurement taken through a three-dimensional object."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/depth.html">depth</a></span><span class="elementDesc desc">Groups elements which describe a measurement forming part of the physical dimensions
-                                    of an
-                                    object.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(dimension) – Any single dimensional specification."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dim.html">dim</a></span><span class="elementDesc desc">Groups elements which describe a measurement forming part of the physical dimensions
-                                    of an
-                                    object.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Description of the vertical size of an object."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/height.html">height</a></span><span class="elementDesc desc">Groups elements which describe a measurement forming part of the physical dimensions
-                                    of an
-                                    object.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Description of the horizontal size of an object."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/width.html">width</a></span><span class="elementDesc desc">Groups elements which describe a measurement forming part of the physical dimensions
-                                    of an
-                                    object.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Description of a measurement taken through a three-dimensional object."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/depth.html">depth</a></span><span class="elementDesc desc">Description of a measurement taken through a three-dimensional object.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(dimension) – Any single dimensional specification."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dim.html">dim</a></span><span class="elementDesc desc">(dimension) – Any single dimensional specification.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Description of the vertical size of an object."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/height.html">height</a></span><span class="elementDesc desc">Description of the vertical size of an object.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Description of the horizontal size of an object."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/width.html">width</a></span><span class="elementDesc desc">Description of the horizontal size of an object.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.editorialLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editoriallike.html">model.editorialLike</a></label><span class="classDesc">(MEI.shared) Groups editorial intervention elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/abbr.html">abbr</a></span><span class="elementDesc desc">Groups editorial intervention elements.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(expansion) – Contains the expansion of an abbreviation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expan.html">expan</a></span><span class="elementDesc desc">Groups editorial intervention elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/abbr.html">abbr</a></span><span class="elementDesc desc">(abbreviation) – A generic element for 1) a shortened form of a word, including an
+                                    acronym
+                                    or 2) a shorthand notation.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(expansion) – Contains the expansion of an abbreviation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expan.html">expan</a></span><span class="elementDesc desc">(expansion) – Contains the expansion of an abbreviation.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.identifierLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.identifierlike.html">model.identifierLike</a></label><span class="classDesc">(MEI.shared) Groups identifier-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a></span><span class="elementDesc desc">Groups identifier-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a></span><span class="elementDesc desc">An alpha-numeric string that establishes the identity of the described material.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.lbLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.lblike.html">model.lbLike</a></label><span class="classDesc">(MEI.shared) Groups elements that function like line beginnings.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(line beginning) – An empty formatting element that forces text to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a></span><span class="elementDesc desc">Groups elements that function like line beginnings.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(line beginning) – An empty formatting element that forces text to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a></span><span class="elementDesc desc">(line beginning) – An empty formatting element that forces text to begin on a new
+                                    line.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.measurementLike">
@@ -538,7 +567,7 @@ title: "typeDesc"
                               <div class="classBox" title="model.numLike">
                                  <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.numlike.html">model.numLike</a></label><span class="classDesc">(MEI.shared) Groups elements that denote a number or a quantity.</span></div>
                                  <div class="classContent">
-                                    <div class="elementDef def"><span class="ident element" title="(number) – Numeric information in any form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/num.html">num</a></span><span class="elementDesc desc">Groups elements that denote a number or a quantity.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(number) – Numeric information in any form."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/num.html">num</a></span><span class="elementDesc desc">(number) – Numeric information in any form.</span></div>
                                  </div>
                               </div>
                            </div>
@@ -546,12 +575,14 @@ title: "typeDesc"
                         <div class="classBox" title="model.nameLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.namelike.html">model.nameLike</a></label><span class="classDesc">(MEI.shared) Groups elements that contain names.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Proper noun or noun phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a></span><span class="elementDesc desc">Groups elements that contain names.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Proper noun or noun phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a></span><span class="elementDesc desc">Proper noun or noun phrase.</span></div>
                               <div class="classBox" title="model.nameLike.agent">
                                  <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.namelike.agent.html">model.nameLike.agent</a></label><span class="classDesc">(MEI.namesdates) Groups elements which contain names of individuals or corporate bodies.</span></div>
                                  <div class="classContent">
-                                    <div class="elementDef def"><span class="ident element" title="(corporate name) – Identifies an organization or group of people that acts as a single entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corpname.html">corpName</a></span><span class="elementDesc desc">Groups elements which contain names of individuals or corporate bodies.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persname.html">persName</a></span><span class="elementDesc desc">Groups elements which contain names of individuals or corporate bodies.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(corporate name) – Identifies an organization or group of people that acts as a single entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corpname.html">corpName</a></span><span class="elementDesc desc">(corporate name) – Identifies an organization or group of people that acts as a single
+                                          entity.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(personal name) – Designation for an individual, including any or all of that individual's forenames, surnames, honorific titles, and added names."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/persname.html">persName</a></span><span class="elementDesc desc">(personal name) – Designation for an individual, including any or all of that individual's
+                                          forenames, surnames, honorific titles, and added names.</span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="model.nameLike.place">
@@ -560,14 +591,15 @@ title: "typeDesc"
                                     <div class="classBox" title="model.nameLike.geogName">
                                        <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.namelike.geogname.html">model.nameLike.geogName</a></label><span class="classDesc">(MEI.namesdates) Groups geographic name elements.</span></div>
                                        <div class="classContent">
-                                          <div class="elementDef def"><span class="ident element" title="(geographic name) – The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/geogname.html">geogName</a></span><span class="elementDesc desc">Groups geographic name elements.</span></div>
+                                          <div class="elementDef def"><span class="ident element" title="(geographic name) – The proper noun designation for a place, natural feature, or political jurisdiction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/geogname.html">geogName</a></span><span class="elementDesc desc">(geographic name) – The proper noun designation for a place, natural feature, or political
+                                                jurisdiction.</span></div>
                                        </div>
                                     </div>
                                     <div class="classBox" title="model.repositoryLike">
                                        <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.repositorylike.html">model.repositoryLike</a></label><span class="classDesc">(MEI.shared) Groups elements that denote a corporate entity that holds a bibliographic
                                              item.</span></div>
                                        <div class="classContent">
-                                          <div class="elementDef def"><span class="ident element" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/repository.html">repository</a></span><span class="elementDesc desc">Groups elements that denote a corporate entity that holds a bibliographic item.</span></div>
+                                          <div class="elementDef def"><span class="ident element" title="Institution, agency, or individual which holds a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/repository.html">repository</a></span><span class="elementDesc desc">Institution, agency, or individual which holds a bibliographic item.</span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -577,27 +609,31 @@ title: "typeDesc"
                         <div class="classBox" title="model.relationLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.relationlike.html">model.relationLike</a></label><span class="classDesc">(MEI.shared) Collects elements that express a relationship.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Describes a relationship or linkage amongst entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relation.html">relation</a></span><span class="elementDesc desc">Collects elements that express a relationship.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Gathers relation elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a></span><span class="elementDesc desc">Collects elements that express a relationship.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Describes a relationship or linkage amongst entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relation.html">relation</a></span><span class="elementDesc desc">Describes a relationship or linkage amongst entities.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Gathers relation elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a></span><span class="elementDesc desc">Gathers relation elements.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.rendLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.rendlike.html">model.rendLike</a></label><span class="classDesc">(MEI.shared) Groups elements that mark typographical features.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a></span><span class="elementDesc desc">Groups elements that mark typographical features.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(stacked text) – An inline table with a single column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stack.html">stack</a></span><span class="elementDesc desc">Groups elements that mark typographical features.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a></span><span class="elementDesc desc">(render) – A formatting element indicating special visual rendering, e.g., bold or
+                                    italicized, of a text word or phrase.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(stacked text) – An inline table with a single column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stack.html">stack</a></span><span class="elementDesc desc">(stacked text) – An inline table with a single column.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.titleLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlelike.html">model.titleLike</a></label><span class="classDesc">(MEI.shared) Groups elements that denote the name of a bibliographic item.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Title of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a></span><span class="elementDesc desc">Groups elements that denote the name of a bibliographic item.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Title of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/title.html">title</a></span><span class="elementDesc desc">Title of a bibliographic entity.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.qLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.qlike.html">model.qLike</a></label><span class="classDesc">(MEI.text) Groups elements related to highlighting which can appear at the phrase-level.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(quoted) – Contains material which is distinguished from the surrounding phrase-level text using quotation marks or a similar method. Use quote for block-level quotations."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/q.html">q</a></span><span class="elementDesc desc">Groups elements related to highlighting which can appear at the phrase-level.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(quoted) – Contains material which is distinguished from the surrounding phrase-level text using quotation marks or a similar method. Use quote for block-level quotations."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/q.html">q</a></span><span class="elementDesc desc">(quoted) – Contains material which is distinguished from the surrounding phrase-level
+                                    text
+                                    using quotation marks or a similar method. Use <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/quote.html">quote</a> for block-level
+                                    quotations.</span></div>
                            </div>
                         </div>
                      </div>
@@ -844,7 +880,7 @@ title: "typeDesc"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

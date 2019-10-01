@@ -33,7 +33,7 @@ title: "altId"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -54,7 +54,7 @@ title: "altId"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -94,7 +94,7 @@ title: "altId"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -113,7 +113,7 @@ title: "altId"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -126,7 +126,7 @@ title: "altId"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -211,7 +211,7 @@ title: "altId"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -223,7 +223,7 @@ title: "altId"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -244,7 +244,7 @@ title: "altId"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -284,7 +284,7 @@ title: "altId"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -310,16 +310,10 @@ title: "altId"
                   <div class="classBox" title="elements having altId as direct children">
                      <div class="classHeading"><label class="classLabel">elements having altId as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains an individual descriptive category in a user-defined taxonomy, possibly nested within a superordinate category."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/category.html">category</a></span><span class="elementDesc desc">(alternative identifier) – May contain a bibliographic identifier that does not fit
-                              within
-                              the meiHead element's id attribute, for example because the identifier does not fit
-                              the
-                              definition of an XML id or because multiple identifiers are needed.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">(alternative identifier) – May contain a bibliographic identifier that does not fit
-                              within
-                              the meiHead element's id attribute, for example because the identifier does not fit
-                              the
-                              definition of an XML id or because multiple identifiers are needed.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains an individual descriptive category in a user-defined taxonomy, possibly nested within a superordinate category."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/category.html">category</a></span><span class="elementDesc desc">Contains an individual descriptive category in a user-defined taxonomy, possibly nested
+                              within a superordinate category.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
+                              MEI-conformant text.</span></div>
                      </div>
                   </div>
                </div>
@@ -353,14 +347,16 @@ title: "altId"
                   <div class="classBox" title="model.lbLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.lblike.html">model.lbLike</a></label><span class="classDesc">(MEI.shared) Groups elements that function like line beginnings.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(line beginning) – An empty formatting element that forces text to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a></span><span class="elementDesc desc">Groups elements that function like line beginnings.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(line beginning) – An empty formatting element that forces text to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lb.html">lb</a></span><span class="elementDesc desc">(line beginning) – An empty formatting element that forces text to begin on a new
+                              line.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.rendLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.rendlike.html">model.rendLike</a></label><span class="classDesc">(MEI.shared) Groups elements that mark typographical features.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a></span><span class="elementDesc desc">Groups elements that mark typographical features.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(stacked text) – An inline table with a single column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stack.html">stack</a></span><span class="elementDesc desc">Groups elements that mark typographical features.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rend.html">rend</a></span><span class="elementDesc desc">(render) – A formatting element indicating special visual rendering, e.g., bold or
+                              italicized, of a text word or phrase.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(stacked text) – An inline table with a single column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stack.html">stack</a></span><span class="elementDesc desc">(stacked text) – An inline table with a single column.</span></div>
                      </div>
                   </div>
                </div>
@@ -433,9 +429,9 @@ title: "altId"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>One or the other of 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>One or the other of 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>altId<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> or the 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>id<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute on 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>id<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute on 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>mei<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> is required when applicable.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>

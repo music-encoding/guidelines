@@ -26,7 +26,7 @@ title: "model.symbolTableLike"
                   <div class="classBox" title="model.symbolTableLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.symboltablelike.html">model.symbolTableLike</a></label><span class="classDesc">(MEI.usersymbols) Groups elements that group symbol definitions.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(score definition) – Container for score meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a></span><span class="elementDesc desc">Groups elements that group symbol definitions.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(score definition) – Container for score meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a></span><span class="elementDesc desc">(score definition) – Container for score meta-information.</span></div>
                      </div>
                   </div>
                </div>

@@ -27,7 +27,7 @@ title: "handList"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -48,7 +48,7 @@ title: "handList"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -88,7 +88,7 @@ title: "handList"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -107,7 +107,7 @@ title: "handList"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -120,7 +120,7 @@ title: "handList"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -205,7 +205,7 @@ title: "handList"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -217,7 +217,7 @@ title: "handList"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -238,7 +238,7 @@ title: "handList"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -278,7 +278,7 @@ title: "handList"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -306,8 +306,11 @@ title: "handList"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.physdescpart.html">model.physDescPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of the physical description of
                            a bibliographic item.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">Groups elements that may appear as part of the physical description of a bibliographic
-                              item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(physical description) – Container for information about the appearance, construction, or handling of physical materials, such as their dimension, quantity, color, style, and technique of creation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/physdesc.html">physDesc</a></span><span class="elementDesc desc">(physical description) – Container for information about the appearance, construction,
+                              or
+                              handling of physical materials, such as their dimension, quantity, color, style, and
+                              technique
+                              of creation.</span></div>
                      </div>
                   </div>
                </div>
@@ -338,17 +341,19 @@ title: "handList"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Defines a distinct scribe or handwriting style."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hand.html">hand</a></span><span class="elementDesc desc">Container for one or more hand elements.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A container for document text that identifies the feature to which it is attached. For a &#34;tool tip&#34; or other generated label, use the label attribute."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/label.html">label</a></span><span class="elementDesc desc">Container for one or more hand elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Defines a distinct scribe or handwriting style."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hand.html">hand</a></span><span class="elementDesc desc">Defines a distinct scribe or handwriting style.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A container for document text that identifies the feature to which it is attached. For a &#34;tool tip&#34; or other generated label, use the label attribute."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/label.html">label</a></span><span class="elementDesc desc">A container for document text that identifies the feature to which it is attached.
+                              For a
+                              "tool tip" or other generated label, use the <span class="att">label</span> attribute.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.headLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                            or other markup component.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                              the
+                              heading of a list.</span></div>
                      </div>
                   </div>
                </div>
@@ -464,7 +469,7 @@ title: "handList"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

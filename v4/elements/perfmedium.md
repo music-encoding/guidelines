@@ -11,7 +11,7 @@ title: "perfMedium"
          <div class="desc">(performance medium) – Indicates the number and character of the performing forces
             used in
             a musical composition.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkMedium">3.1.3.7 Performance Medium</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerWorkMedium">3.1.3.7 Performance Medium</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -31,11 +31,11 @@ title: "perfMedium"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                         for this element or its content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                         of identification or definition for this element or its content. This attribute may
@@ -67,7 +67,7 @@ title: "perfMedium"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -107,7 +107,7 @@ title: "perfMedium"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -126,7 +126,7 @@ title: "perfMedium"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -139,7 +139,7 @@ title: "perfMedium"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -223,7 +223,7 @@ title: "perfMedium"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                               for this element or its content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                               of identification or definition for this element or its content. This attribute may
@@ -250,7 +250,7 @@ title: "perfMedium"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -262,11 +262,11 @@ title: "perfMedium"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                               for this element or its content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                               of identification or definition for this element or its content. This attribute may
@@ -298,7 +298,7 @@ title: "perfMedium"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -338,7 +338,7 @@ title: "perfMedium"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -364,18 +364,18 @@ title: "perfMedium"
                   <div class="classBox" title="elements having perfMedium as direct children">
                      <div class="classHeading"><label class="classLabel">elements having perfMedium as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Intellectual or artistic realization of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expression.html">expression</a></span><span class="elementDesc desc">(performance medium) – Indicates the number and character of the performing forces
-                              used in
-                              a musical composition.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes (e.g., key, tempo, meter, medium of performance, and intended duration)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a></span><span class="elementDesc desc">(performance medium) – Indicates the number and character of the performing forces
-                              used in
-                              a musical composition.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Intellectual or artistic realization of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expression.html">expression</a></span><span class="elementDesc desc">Intellectual or artistic realization of a work.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Provides a detailed description of a work — a distinct intellectual or artistic creation — specifically its history, language use, and high-level musical attributes (e.g., key, tempo, meter, medium of performance, and intended duration)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/work.html">work</a></span><span class="elementDesc desc">Provides a detailed description of a work — a distinct intellectual or artistic creation
+                              —
+                              specifically its history, language use, and high-level musical attributes (e.g., key,
+                              tempo,
+                              meter, medium of performance, and intended duration).</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.titlePagePart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlepagepart.html">model.titlePagePart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a title page transcription.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a transcription of the title page of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepage.html">titlePage</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a transcription of the title page of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepage.html">titlePage</a></span><span class="elementDesc desc">Contains a transcription of the title page of a text.</span></div>
                      </div>
                   </div>
                </div>
@@ -418,27 +418,25 @@ title: "perfMedium"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">(performance medium) – Indicates the number and character of the performing forces
-                              used in
-                              a musical composition.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Several instrumental or vocal resources treated as a group."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfreslist.html">perfResList</a></span><span class="elementDesc desc">(performance medium) – Indicates the number and character of the performing forces
-                              used in
-                              a musical composition.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">Contains a single cast list or dramatis personae.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Several instrumental or vocal resources treated as a group."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfreslist.html">perfResList</a></span><span class="elementDesc desc">Several instrumental or vocal resources treated as a group.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.annotLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.annotlike.html">model.annotLike</a></label><span class="classDesc">(MEI.shared) Groups annotation-like elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">Groups annotation-like elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">(annotation) – Provides a statement explaining the text or indicating the basis for
+                              an
+                              assertion.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.headLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                            or other markup component.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                              the
+                              heading of a list.</span></div>
                      </div>
                   </div>
                </div>
@@ -534,7 +532,7 @@ title: "perfMedium"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span> Arrangements are coded for the medium of the work being described, not for the original
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span> Arrangements are coded for the medium of the work being described, not for the original
                               medium.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>

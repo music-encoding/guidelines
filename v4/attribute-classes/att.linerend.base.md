@@ -307,13 +307,13 @@ title: "att.lineRend.base"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that record the basic visual rendition of lines.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"lform"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Describes the line style of a line.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -322,10 +322,6 @@ title: "att.lineRend.base"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- @llength not necessary:
-                                 @llength implies we know the direction of the vector which we 
-                                 can't know without establishing an end point, which in turn makes
-                                 @llength redundant. --&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"lsegs"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -338,7 +334,7 @@ title: "att.lineRend.base"
                                  and
                                  maximum values are equal.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">maxOccurs=</span><span class="attributevalue">"2"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"2"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"positiveInteger"</span>&gt;</span>
                                     
@@ -363,7 +359,7 @@ title: "att.lineRend.base"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Width of a line.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -372,14 +368,6 @@ title: "att.lineRend.base"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- Possible addition:
-                                 &lt;attDef ident="lwaveheight" usage="opt"&gt;
-                                 &lt;desc&gt;Captures the height of peaks of a wavy line.&lt;/desc&gt;
-                                 &lt;datatype&gt;
-                                 &lt;rng:ref name="data.MEASUREMENT"/&gt;
-                                 &lt;/datatype&gt;
-                                 &lt;/attDef&gt;
-                                 --&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
             </div>

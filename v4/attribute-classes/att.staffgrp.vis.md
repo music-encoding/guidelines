@@ -28,7 +28,8 @@ title: "att.staffGrp.vis"
                         is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                         for a
                         5-line staff.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">
+                           a decimal number larger than 0</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the method of barring.">bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -67,7 +68,8 @@ title: "att.staffGrp.vis"
                               is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                               for a
                               5-line staff.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number larger than 0</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the method of barring.">bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -105,7 +107,8 @@ title: "att.staffGrp.vis"
                               is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                               for a
                               5-line staff.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number larger than 0</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the method of barring.">bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -183,14 +186,14 @@ title: "att.staffGrp.vis"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.visibility.html">att.visibility</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"bar.thru"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates whether bar lines go across the space between staves (true) or are only
                                  drawn across the lines of each staff (false).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -200,7 +203,7 @@ title: "att.staffGrp.vis"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>This attribute is ignored when the bar.method attribute's value is "mensur" or
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This attribute is ignored when the bar.method attribute's value is "mensur" or
                                     "takt".<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>

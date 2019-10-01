@@ -29,12 +29,13 @@ title: "model.respLike"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.resplike.html">model.respLike</a></label><span class="classDesc">(MEI.shared) Groups elements that are used to indicate intellectual or other significant
                            responsibility, for example within a bibliographic citation.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">Groups elements that are used to indicate intellectual or other significant
-                              responsibility, for example within a bibliographic citation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">(title statement) – Container for title and responsibility meta-data.</span></div>
                         <div class="classBox" title="model.biblPart">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblpart.html">model.biblPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a bibliographic description.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">Groups elements that may appear as part of a bibliographic description.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                                    which
+                                    the sub-components may or may not be explicitly marked.</span></div>
                            </div>
                         </div>
                      </div>

@@ -89,13 +89,13 @@ title: "att.annot.vis"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Visual domain attributes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"place"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Location of the annotation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

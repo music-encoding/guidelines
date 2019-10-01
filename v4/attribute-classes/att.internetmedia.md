@@ -28,7 +28,7 @@ title: "att.internetMedia"
                         should be a valid MIME media type defined by the Internet Engineering Task Force in
                         RFC
                         2046.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -39,7 +39,7 @@ title: "att.internetMedia"
                               should be a valid MIME media type defined by the Internet Engineering Task Force in
                               RFC
                               2046.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -52,7 +52,7 @@ title: "att.internetMedia"
                               should be a valid MIME media type defined by the Internet Engineering Task Force in
                               RFC
                               2046.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -127,7 +127,7 @@ title: "att.internetMedia"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes which record the type of an electronic resource.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"mimetype"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -136,7 +136,7 @@ title: "att.internetMedia"
                                  RFC
                                  2046.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>

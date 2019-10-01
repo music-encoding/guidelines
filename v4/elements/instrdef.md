@@ -51,7 +51,7 @@ title: "instrDef"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a MIDI channel value.">midi.channel</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a MIDI channel value.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midichannel.html">data.MIDICHANNEL</a>.
@@ -72,7 +72,7 @@ title: "instrDef"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument name.">midi.patchname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument name.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument number.">midi.patchnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument number.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
@@ -81,7 +81,7 @@ title: "instrDef"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's volume.">midi.volume</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's volume.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
@@ -124,7 +124,7 @@ title: "instrDef"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -143,7 +143,7 @@ title: "instrDef"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -156,7 +156,7 @@ title: "instrDef"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -255,7 +255,7 @@ title: "instrDef"
                                     Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
-                                    Value is a positive integer.
+                                    Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -275,7 +275,7 @@ title: "instrDef"
                                     Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument name.">midi.patchname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument name.</span><span class="attributeValues">
-                                    Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                                    Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument number.">midi.patchnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument number.</span><span class="attributeValues">
                                     Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
@@ -341,7 +341,7 @@ title: "instrDef"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument name.">midi.patchname</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument name.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Records a non-General MIDI patch/instrument number.">midi.patchnum</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a non-General MIDI patch/instrument number.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue.html">data.MIDIVALUE</a>.
@@ -350,7 +350,7 @@ title: "instrDef"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the MIDI track.">midi.track</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the MIDI track.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.midi"><span class="ident attribute" title="Sets the instrument's volume.">midi.volume</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Sets the instrument's volume.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a>.
@@ -379,7 +379,7 @@ title: "instrDef"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -419,7 +419,7 @@ title: "instrDef"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -445,10 +445,10 @@ title: "instrDef"
                   <div class="classBox" title="model.instrDefLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.instrdeflike.html">model.instrDefLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to declare a MIDI instrument.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(instrument group) – Collects MIDI instrument definitions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/instrgrp.html">instrGrp</a></span><span class="elementDesc desc">Groups elements used to declare a MIDI instrument.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(layer definition) – Container for layer meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerdef.html">layerDef</a></span><span class="elementDesc desc">Groups elements used to declare a MIDI instrument.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">Groups elements used to declare a MIDI instrument.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(staff group) – A group of bracketed or braced staves."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffgrp.html">staffGrp</a></span><span class="elementDesc desc">Groups elements used to declare a MIDI instrument.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(instrument group) – Collects MIDI instrument definitions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/instrgrp.html">instrGrp</a></span><span class="elementDesc desc">(instrument group) – Collects MIDI instrument definitions.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(layer definition) – Container for layer meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/layerdef.html">layerDef</a></span><span class="elementDesc desc">(layer definition) – Container for layer meta-information.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">(staff definition) – Container for staff meta-information.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(staff group) – A group of bracketed or braced staves."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffgrp.html">staffGrp</a></span><span class="elementDesc desc">(staff group) – A group of bracketed or braced staves.</span></div>
                      </div>
                   </div>
                </div>
@@ -522,7 +522,7 @@ title: "instrDef"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element provides a starting or default instrument declaration for a staff, a
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element provides a starting or default instrument declaration for a staff, a
                               group of
                               staves, or a layer. Following scoreDef, staffDef, layerDef, or MIDI prog elements
                               may then

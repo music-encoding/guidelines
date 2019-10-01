@@ -22,6 +22,10 @@ title: "data.NMTOKEN"
                   <div class="classHeading"><label class="classLabel">Elements</label><span class="classDesc">These local attributes use data.NMTOKEN</span></div>
                   <div class="classContent"><span class="ident element" data-ident="attUsage" data-module="MEI.header" title="Documents the usage of a specific attribute of the element."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/elements/attusage.html">&lt;attUsage&gt;</a></span><span class="ident element" data-ident="namespace" data-module="MEI.header" title="Supplies the formal name of the namespace to which the elements documented by its children belong."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/elements/namespace.html">&lt;namespace&gt;</a></span><span class="ident element" data-ident="tagUsage" data-module="MEI.header" title="Documents the usage of a specific element within the document."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/elements/tagusage.html">&lt;tagUsage&gt;</a></span></div>
                </div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.NMTOKEN</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.HEADSHAPE" data-module="MEI" title="Note head shapes."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.headshape.html">data.HEADSHAPE</a></span><span class="ident datatype" data-ident="data.PLACEMENT" data-module="MEI" title="Location information."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.placement.html">data.PLACEMENT</a></span><span class="ident datatype" data-ident="data.RELATIONSHIP" data-module="MEI" title="General-purpose relationships"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.relationship.html">data.RELATIONSHIP</a></span></div>
+               </div>
             </div>
          </div>
          <div class="facet declaration">

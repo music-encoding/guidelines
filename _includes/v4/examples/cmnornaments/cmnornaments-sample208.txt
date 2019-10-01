@@ -1,1 +1,4 @@
-<ornam tstamp="1">&amp;#xe5c0;</ornam>
+<ornam tstamp="1">
+  <symbol glyph.auth="smufl" glyph.num="#xE5C0"
+    glyph.name="ornamentPrecompDoubleCadenceLowerPrefix"/>
+</ornam>

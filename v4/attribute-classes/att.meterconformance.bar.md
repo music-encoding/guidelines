@@ -144,14 +144,14 @@ title: "att.meterConformance.bar"
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that provide information about a measure's conformance to the prevailing
                            meter.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"metcon"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the relationship between the content of a measure and the prevailing
                                  meter.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -171,7 +171,7 @@ title: "att.meterConformance.bar"
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>measure<span data-indentation="5" class="element">&lt;/gi&gt;</span></div>, this attribute indicates the nature of the right barline
                                  but not the left.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

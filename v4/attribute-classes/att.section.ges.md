@@ -24,7 +24,7 @@ title: "att.section.ges"
                </ul>
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates that the performance of the next section should begin immediately following this one.">attacca</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next section should begin immediately following this one.">attacca</span><span class="attributeDesc desc">Indicates that the performance of the next section should begin immediately following
+                  <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next section should begin immediately following this one.">attacca</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that the performance of the next section should begin immediately following
                         this one.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
@@ -33,7 +33,7 @@ title: "att.section.ges"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next section should begin immediately following this one.">attacca</span><span class="attributeDesc desc">Indicates that the performance of the next section should begin immediately following
+                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next section should begin immediately following this one.">attacca</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that the performance of the next section should begin immediately following
                               this one.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
@@ -44,7 +44,7 @@ title: "att.section.ges"
                   <div class="classBox" title="MEI.gestural">
                      <div class="classHeading"><label class="classLabel">MEI.gestural</label><span class="classDesc">Gestural component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next section should begin immediately following this one.">attacca</span><span class="attributeDesc desc">Indicates that the performance of the next section should begin immediately following
+                        <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates that the performance of the next section should begin immediately following this one.">attacca</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that the performance of the next section should begin immediately following
                               this one.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
@@ -88,14 +88,14 @@ title: "att.section.ges"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Gestural domain attributes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"attacca"</span>&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"attacca"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates that the performance of the next section should begin immediately following
                                  this one.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

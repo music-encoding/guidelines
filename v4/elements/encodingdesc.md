@@ -32,7 +32,7 @@ title: "encodingDesc"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -53,7 +53,7 @@ title: "encodingDesc"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -93,7 +93,7 @@ title: "encodingDesc"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -112,7 +112,7 @@ title: "encodingDesc"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -125,7 +125,7 @@ title: "encodingDesc"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -210,7 +210,7 @@ title: "encodingDesc"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -222,7 +222,7 @@ title: "encodingDesc"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -243,7 +243,7 @@ title: "encodingDesc"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -283,7 +283,7 @@ title: "encodingDesc"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -309,10 +309,8 @@ title: "encodingDesc"
                   <div class="classBox" title="elements having encodingDesc as direct children">
                      <div class="classHeading"><label class="classLabel">elements having encodingDesc as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
+                              MEI-conformant text.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.headerPart">
@@ -344,43 +342,32 @@ title: "encodingDesc"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(application information) – Groups information about applications which have acted upon the MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/appinfo.html">appInfo</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Groups information which describes the nature or topic of an entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classdecls.html">classDecls</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(domains declaration) – Indicates which domains are included in the encoding."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/domainsdecl.html">domainsDecl</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(editorial declaration) – Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editorialdecl.html">editorialDecl</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(project description) – Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/projectdesc.html">projectDesc</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(sampling declaration) – Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/samplingdecl.html">samplingDecl</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(tagging declaration) – Provides detailed information about the tagging applied to a document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tagsdecl.html">tagsDecl</a></span><span class="elementDesc desc">(encoding description) – Documents the relationship between an electronic file and
-                              the
-                              source or sources from which it was derived as well as applications used in the
-                              encoding/editing process.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(application information) – Groups information about applications which have acted upon the MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/appinfo.html">appInfo</a></span><span class="elementDesc desc">(application information) – Groups information about applications which have acted
+                              upon
+                              the MEI file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Groups information which describes the nature or topic of an entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/classdecls.html">classDecls</a></span><span class="elementDesc desc">Groups information which describes the nature or topic of an entity.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(domains declaration) – Indicates which domains are included in the encoding."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/domainsdecl.html">domainsDecl</a></span><span class="elementDesc desc">(domains declaration) – Indicates which domains are included in the encoding.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(editorial declaration) – Used to provide details of editorial principles and practices applied during the encoding of musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editorialdecl.html">editorialDecl</a></span><span class="elementDesc desc">(editorial declaration) – Used to provide details of editorial principles and practices
+                              applied during the encoding of musical text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(project description) – Project-level meta-data describing the aim or purpose for which the electronic file was encoded, funding agencies, etc. together with any other relevant information concerning the process by which it was assembled or collected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/projectdesc.html">projectDesc</a></span><span class="elementDesc desc">(project description) – Project-level meta-data describing the aim or purpose for
+                              which
+                              the electronic file was encoded, funding agencies, etc. together with any other relevant
+                              information concerning the process by which it was assembled or collected.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(sampling declaration) – Contains a prose description of the rationale and methods used in sampling texts in the creation of a corpus or collection."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/samplingdecl.html">samplingDecl</a></span><span class="elementDesc desc">(sampling declaration) – Contains a prose description of the rationale and methods
+                              used in
+                              sampling texts in the creation of a corpus or collection.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(tagging declaration) – Provides detailed information about the tagging applied to a document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tagsdecl.html">tagsDecl</a></span><span class="elementDesc desc">(tagging declaration) – Provides detailed information about the tagging applied to
+                              a
+                              document.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.headLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                            or other markup component.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                              markup
-                              component.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                              the
+                              heading of a list.</span></div>
                      </div>
                   </div>
                </div>
@@ -516,7 +503,7 @@ title: "encodingDesc"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

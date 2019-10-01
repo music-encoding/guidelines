@@ -1353,12 +1353,12 @@ title: "data.MIDINAMES"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>Instrument names are taken from the list at 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>Instrument names are taken from the list at 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://www.midi.org/techspecs/gm1sound.php"</span>&gt;</span>http://www.midi.org/techspecs/gm1sound.php<span data-indentation="4" class="element">&lt;/ref&gt;</span></div>. <span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>MEI uses 0-based program numbers.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>MEI uses 0-based program numbers.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>Percussion sounds are available when the MIDI channel is set to "10".<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>Percussion sounds are available when the MIDI channel is set to "10".<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
             </div>

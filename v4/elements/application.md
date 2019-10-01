@@ -52,7 +52,7 @@ title: "application"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -97,7 +97,7 @@ title: "application"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="Supplies a version number for an application, independent of its identifier or display name.">version</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Supplies a version number for an application, independent of its identifier or display
                         name.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a base URI reference with which applications can resolve relative URI
                         references into absolute URI references.</span><span class="attributeValues">
@@ -105,7 +105,7 @@ title: "application"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -114,7 +114,7 @@ title: "application"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="Supplies a version number for an application, independent of its identifier or display name.">version</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Supplies a version number for an application, independent of its identifier or display
                               name.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -133,7 +133,7 @@ title: "application"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -146,7 +146,7 @@ title: "application"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -252,7 +252,7 @@ title: "application"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.header"><span class="ident attribute" title="Supplies a version number for an application, independent of its identifier or display name.">version</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Supplies a version number for an application, independent of its identifier or display
                               name.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -284,7 +284,7 @@ title: "application"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -333,7 +333,7 @@ title: "application"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -359,8 +359,9 @@ title: "application"
                   <div class="classBox" title="elements having application as direct children">
                      <div class="classHeading"><label class="classLabel">elements having application as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(application information) – Groups information about applications which have acted upon the MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/appinfo.html">appInfo</a></span><span class="elementDesc desc">Provides information about an application which has acted upon the current
-                              document.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(application information) – Groups information about applications which have acted upon the MEI file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/appinfo.html">appInfo</a></span><span class="elementDesc desc">(application information) – Groups information about applications which have acted
+                              upon
+                              the MEI file.</span></div>
                      </div>
                   </div>
                </div>
@@ -389,21 +390,24 @@ title: "application"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Proper noun or noun phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a></span><span class="elementDesc desc">Provides information about an application which has acted upon the current
-                              document.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Proper noun or noun phrase."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/name.html">name</a></span><span class="elementDesc desc">Proper noun or noun phrase.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.locrefLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.locreflike.html">model.locrefLike</a></label><span class="classDesc">(MEI.ptrref) Groups elements used for purposes of location and reference.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(pointer) – Defines a traversible pointer to another location, using only attributes to describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ptr.html">ptr</a></span><span class="elementDesc desc">Groups elements used for purposes of location and reference.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(reference) – Defines a traversible reference to another location. May contain text and sub-elements that describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ref.html">ref</a></span><span class="elementDesc desc">Groups elements used for purposes of location and reference.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(pointer) – Defines a traversible pointer to another location, using only attributes to describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ptr.html">ptr</a></span><span class="elementDesc desc">(pointer) – Defines a traversible pointer to another location, using only attributes
+                              to
+                              describe the destination.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(reference) – Defines a traversible reference to another location. May contain text and sub-elements that describe the destination."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ref.html">ref</a></span><span class="elementDesc desc">(reference) – Defines a traversible reference to another location. May contain text
+                              and
+                              sub-elements that describe the destination.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.pLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.plike.html">model.pLike</a></label><span class="classDesc">(MEI.shared) Groups paragraph-like elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/p.html">p</a></span><span class="elementDesc desc">Groups paragraph-like elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(paragraph) – One or more text phrases that form a logical prose passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/p.html">p</a></span><span class="elementDesc desc">(paragraph) – One or more text phrases that form a logical prose passage.</span></div>
                      </div>
                   </div>
                </div>
@@ -483,14 +487,14 @@ title: "application"
                               <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"version"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Supplies a version number for an application, independent of its identifier or display
                                  name.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -499,7 +503,7 @@ title: "application"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

@@ -33,7 +33,7 @@ title: "att.rest.vis"
                         following this note/chord. The value of the attribute records the number of beams
                         which
                         should remain unbroken.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
                         as used in pre-CMN notation.</span><span class="attributeValues">
@@ -77,7 +77,7 @@ title: "att.rest.vis"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.pitchname.html">data.PITCHNAME</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="States how many spaces are covered by the rest.">spaces</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States how many spaces are covered by the rest.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records a timestamp adjustment of a feature's programmatically-determined location in terms of musical time; that is, beats.">to</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a timestamp adjustment of a feature's programmatically-determined location
                         in
@@ -93,12 +93,12 @@ title: "att.rest.vis"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
                         necessary to record the placement of a feature in a facsimile image, use the facs
                         attribute.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
                         necessary to record the placement of a feature in a facsimile image, use the facs
                         attribute.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -142,7 +142,7 @@ title: "att.rest.vis"
                                     following this note/chord. The value of the attribute records the number of beams
                                     which
                                     should remain unbroken.</span><span class="attributeValues">
-                                    Value is a positive integer.
+                                    Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -152,7 +152,7 @@ title: "att.rest.vis"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.rest.vis.mensural.html">att.rest.vis.mensural</a></label><span class="classDesc">(MEI.mensural) Visual domain attributes.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="States how many spaces are covered by the rest.">spaces</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States how many spaces are covered by the rest.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -246,12 +246,12 @@ title: "att.rest.vis"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>
@@ -264,7 +264,7 @@ title: "att.rest.vis"
                               following this note/chord. The value of the attribute records the number of beams
                               which
                               should remain unbroken.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -272,7 +272,7 @@ title: "att.rest.vis"
                      <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="States how many spaces are covered by the rest.">spaces</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States how many spaces are covered by the rest.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -334,12 +334,12 @@ title: "att.rest.vis"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>

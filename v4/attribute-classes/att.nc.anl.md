@@ -46,7 +46,7 @@ title: "att.nc.anl"
                   <div class="attributeDef def" data-module="MEI.analytical"><span class="ident attribute" title="Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable Do system.">psolfa</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
                         Do
                         system.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -95,7 +95,7 @@ title: "att.nc.anl"
                         <div class="attributeDef def" data-module="MEI.analytical"><span class="ident attribute" title="Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable Do system.">psolfa</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
                               Do
                               system.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -126,7 +126,7 @@ title: "att.nc.anl"
                         <div class="attributeDef def" data-module="MEI.analytical"><span class="ident attribute" title="Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable Do system.">psolfa</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
                               Do
                               system.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>

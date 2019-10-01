@@ -27,7 +27,7 @@ title: "att.chordDef.log"
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Records fret position.">tab.pos</span>, <span class="ident attribute" title="Provides a *written* pitch and octave for each open string or course of strings.">tab.strings</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.stringtab"><span class="ident attribute" title="Records fret position.">tab.pos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records fret position.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.stringtab"><span class="ident attribute" title="Provides a *written* pitch and octave for each open string or course of strings.">tab.strings</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a *written* pitch and octave for each open string or course of
                         strings.</span><span class="attributeValues">
@@ -39,7 +39,7 @@ title: "att.chordDef.log"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stringtab.position.html">att.stringtab.position</a></label><span class="classDesc">(MEI.stringtab) String tablature position information.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.stringtab"><span class="ident attribute" title="Records fret position.">tab.pos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records fret position.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -58,7 +58,7 @@ title: "att.chordDef.log"
                      <div class="classHeading"><label class="classLabel">MEI.stringtab</label><span class="classDesc">Tablature component declarations.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.stringtab"><span class="ident attribute" title="Records fret position.">tab.pos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records fret position.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.stringtab"><span class="ident attribute" title="Provides a *written* pitch and octave for each open string or course of strings.">tab.strings</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a *written* pitch and octave for each open string or course of
                               strings.</span><span class="attributeValues">

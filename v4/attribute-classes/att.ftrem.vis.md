@@ -25,10 +25,11 @@ title: "att.fTrem.vis"
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates the number of beams present.">beams</span>, <span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span>, <span class="ident attribute" title="Records the amount of separation between floating beams and stems.">float.gap</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number of beams present.">beams</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of beams present.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">
+                           a positive integer between 1 and 6</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of "floating" beams, i.e., those not attached to stems.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the amount of separation between floating beams and stems.">float.gap</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of separation between floating beams and stems.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
@@ -39,10 +40,11 @@ title: "att.fTrem.vis"
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number of beams present.">beams</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of beams present.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a positive integer between 1 and 6</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of "floating" beams, i.e., those not attached to stems.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the amount of separation between floating beams and stems.">float.gap</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of separation between floating beams and stems.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
@@ -55,10 +57,11 @@ title: "att.fTrem.vis"
                      <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number of beams present.">beams</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of beams present.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a positive integer between 1 and 6</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of "floating" beams, i.e., those not attached to stems.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the amount of separation between floating beams and stems.">float.gap</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of separation between floating beams and stems.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
@@ -129,13 +132,13 @@ title: "att.fTrem.vis"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Visual domain attributes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"beams"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the number of beams present.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"positiveInteger"</span>&gt;</span>
                                     
@@ -150,7 +153,7 @@ title: "att.fTrem.vis"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Captures the number of "floating" beams, i.e., those not attached to stems.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"nonNegativeInteger"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
@@ -172,7 +175,7 @@ title: "att.fTrem.vis"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Records the amount of separation between floating beams and stems.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

@@ -45,7 +45,7 @@ title: "noteOff"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -90,7 +90,7 @@ title: "noteOff"
                         of the current element.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                         applies. Mandatory when applicable.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                         </span></div>
@@ -118,7 +118,7 @@ title: "noteOff"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -137,7 +137,7 @@ title: "noteOff"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -150,7 +150,7 @@ title: "noteOff"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -260,7 +260,7 @@ title: "noteOff"
                         <div class="classBox" title="att.staffIdent">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffIdent</a></label><span class="classDesc">(MEI.shared) Attributes for identifying the staff associated with the current feature.</span></div>
                            <div class="classContent">
-                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                     applies. Mandatory when applicable.</span><span class="attributeValues">
                                     One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                     </span></div>
@@ -342,7 +342,7 @@ title: "noteOff"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -384,7 +384,7 @@ title: "noteOff"
                               of the current element.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                               applies. Mandatory when applicable.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                               </span></div>
@@ -405,7 +405,7 @@ title: "noteOff"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -431,7 +431,7 @@ title: "noteOff"
                   <div class="classBox" title="elements having noteOff as direct children">
                      <div class="classHeading"><label class="classLabel">elements having noteOff as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a></span><span class="elementDesc desc">MIDI note-off event.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a></span><span class="elementDesc desc">Container for elements that contain information useful when generating MIDI output.</span></div>
                      </div>
                   </div>
                </div>

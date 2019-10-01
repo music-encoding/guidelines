@@ -31,7 +31,7 @@ title: "castItem"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -56,7 +56,7 @@ title: "castItem"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -87,7 +87,7 @@ title: "castItem"
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                         classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -99,14 +99,14 @@ title: "castItem"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the language of the element's content. The values for this attribute are language 'tags' as defined in BCP 47. All language tags that make use of private use sub-tags must be documented in a corresponding language element in the MEI header whose id attribute is the same as the language tag's value.">xml:lang</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the language of the element's content. The values for this attribute are
                         language 'tags' as defined in BCP 47. All language tags that make use of private use
                         sub-tags must be documented in a corresponding language element in the MEI header
                         whose id
                         attribute is the same as the language tag's value.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                        Value of datatype <span style="font-weight: 500;">language</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -125,7 +125,7 @@ title: "castItem"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -138,7 +138,7 @@ title: "castItem"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -223,7 +223,7 @@ title: "castItem"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -245,10 +245,10 @@ title: "castItem"
                               sub-tags must be documented in a corresponding language element in the MEI header
                               whose id
                               attribute is the same as the language tag's value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                              Value of datatype <span style="font-weight: 500;">language</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -269,7 +269,7 @@ title: "castItem"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -290,7 +290,7 @@ title: "castItem"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -321,7 +321,7 @@ title: "castItem"
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies the transliteration technique used.">translit</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies the transliteration technique used.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                               classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -333,14 +333,14 @@ title: "castItem"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the language of the element's content. The values for this attribute are language 'tags' as defined in BCP 47. All language tags that make use of private use sub-tags must be documented in a corresponding language element in the MEI header whose id attribute is the same as the language tag's value.">xml:lang</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the language of the element's content. The values for this attribute are
                               language 'tags' as defined in BCP 47. All language tags that make use of private use
                               sub-tags must be documented in a corresponding language element in the MEI header
                               whose id
                               attribute is the same as the language tag's value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#language">language</a>.
+                              Value of datatype <span style="font-weight: 500;">language</span>.
                               </span></div>
                      </div>
                   </div>
@@ -366,12 +366,8 @@ title: "castItem"
                   <div class="classBox" title="elements having castItem as direct children">
                      <div class="classHeading"><label class="classLabel">elements having castItem as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(cast group) – Groups one or more individual castItem elements within a cast list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castgrp.html">castGrp</a></span><span class="elementDesc desc">Contains a single entry within a cast list, describing either a single role or a list
-                              of
-                              non-speaking roles.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">Contains a single entry within a cast list, describing either a single role or a list
-                              of
-                              non-speaking roles.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(cast group) – Groups one or more individual castItem elements within a cast list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castgrp.html">castGrp</a></span><span class="elementDesc desc">(cast group) – Groups one or more individual castItem elements within a cast list.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a single cast list or dramatis personae."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/castlist.html">castList</a></span><span class="elementDesc desc">Contains a single cast list or dramatis personae.</span></div>
                      </div>
                   </div>
                </div>
@@ -407,18 +403,11 @@ title: "castItem"
                            textual content
                            
                         </div>
-                        <div class="elementDef def"><span class="ident element" title="Name of an actor appearing within a cast list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/actor.html">actor</a></span><span class="elementDesc desc">Contains a single entry within a cast list, describing either a single role or a list
-                              of
-                              non-speaking roles.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(performance resource) – Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfres.html">perfRes</a></span><span class="elementDesc desc">Contains a single entry within a cast list, describing either a single role or a list
-                              of
-                              non-speaking roles.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Name of a dramatic role, as given in a cast list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/role.html">role</a></span><span class="elementDesc desc">Contains a single entry within a cast list, describing either a single role or a list
-                              of
-                              non-speaking roles.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(role description) – Describes a character's role in a drama."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/roledesc.html">roleDesc</a></span><span class="elementDesc desc">Contains a single entry within a cast list, describing either a single role or a list
-                              of
-                              non-speaking roles.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Name of an actor appearing within a cast list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/actor.html">actor</a></span><span class="elementDesc desc">Name of an actor appearing within a cast list.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(performance resource) – Name of an instrument on which a performer plays, a performer's voice range, or a standard performing ensemble designation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/perfres.html">perfRes</a></span><span class="elementDesc desc">(performance resource) – Name of an instrument on which a performer plays, a performer's
+                              voice range, or a standard performing ensemble designation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Name of a dramatic role, as given in a cast list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/role.html">role</a></span><span class="elementDesc desc">Name of a dramatic role, as given in a cast list.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(role description) – Describes a character's role in a drama."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/roledesc.html">roleDesc</a></span><span class="elementDesc desc">(role description) – Describes a character's role in a drama.</span></div>
                      </div>
                   </div>
                </div>
@@ -509,7 +498,7 @@ title: "castItem"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on an element in the Text Encoding Initiative (TEI) standard.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

@@ -39,7 +39,7 @@ title: "mei"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -48,7 +48,7 @@ title: "mei"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -88,7 +88,7 @@ title: "mei"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -114,9 +114,9 @@ title: "mei"
                   <div class="classBox" title="elements having mei as direct children">
                      <div class="classHeading"><label class="classLabel">elements having mei as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(MEI corpus) – A group of related MEI documents, consisting of a header for the group, and one or more mei elements, each with its own complete header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meicorpus.html">meiCorpus</a></span><span class="elementDesc desc">Contains a single MEI-conformant document, consisting of an MEI header and a musical
-                              text,
-                              either in isolation or as part of an meiCorpus element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(MEI corpus) – A group of related MEI documents, consisting of a header for the group, and one or more mei elements, each with its own complete header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meicorpus.html">meiCorpus</a></span><span class="elementDesc desc">(MEI corpus) – A group of related MEI documents, consisting of a header for the group,
+                              and
+                              one or more <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a> elements, each with its own complete header.</span></div>
                      </div>
                   </div>
                </div>
@@ -145,12 +145,11 @@ title: "mei"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">Contains a single MEI-conformant document, consisting of an MEI header and a musical
-                              text,
-                              either in isolation or as part of an meiCorpus element.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a></span><span class="elementDesc desc">Contains a single MEI-conformant document, consisting of an MEI header and a musical
-                              text,
-                              either in isolation or as part of an meiCorpus element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
+                              MEI-conformant text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a></span><span class="elementDesc desc">Contains a single musical text of any kind, whether unitary or composite, for example,
+                              an
+                              etude, opera, song cycle, symphony, or anthology of piano solos.</span></div>
                      </div>
                   </div>
                </div>
@@ -258,7 +257,7 @@ title: "mei"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>mei<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element defines an instance of a document encoded with the
                               MEI schema. It is the document element for a single document containing a header and
                               data.

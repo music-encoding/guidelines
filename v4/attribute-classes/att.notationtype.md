@@ -26,7 +26,7 @@ title: "att.notationType"
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI"><span class="ident attribute" title="Provides any sub-classification of the notation contained or described by the element, additional to that given by its notationtype attribute.">notationsubtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides any sub-classification of the notation contained or described by the element,
                         additional to that given by its notationtype attribute.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI"><span class="ident attribute" title="Contains classification of the notation contained or described by the element bearing this attribute.">notationtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains classification of the notation contained or described by the element bearing
                         this attribute.</span><span class="attributeValues">
@@ -43,7 +43,7 @@ title: "att.notationType"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI"><span class="ident attribute" title="Provides any sub-classification of the notation contained or described by the element, additional to that given by its notationtype attribute.">notationsubtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides any sub-classification of the notation contained or described by the element,
                               additional to that given by its notationtype attribute.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -54,7 +54,7 @@ title: "att.notationType"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI"><span class="ident attribute" title="Provides any sub-classification of the notation contained or described by the element, additional to that given by its notationtype attribute.">notationsubtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides any sub-classification of the notation contained or described by the element,
                               additional to that given by its notationtype attribute.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI"><span class="ident attribute" title="Contains classification of the notation contained or described by the element bearing this attribute.">notationtype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains classification of the notation contained or described by the element bearing
                               this attribute.</span><span class="attributeValues">
@@ -129,14 +129,14 @@ title: "att.notationType"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that provide for classification of notation.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"notationtype"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Contains classification of the notation contained or described by the element bearing
                                  this attribute.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -150,7 +150,7 @@ title: "att.notationType"
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Provides any sub-classification of the notation contained or described by the element,
                                  additional to that given by its notationtype attribute.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>

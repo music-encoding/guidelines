@@ -39,7 +39,7 @@ title: "att.line.log"
                            be taken, and so on, until an element is found which is not a pointer.)</i>,  "<span style="font-weight: 500;">one</span>" <i>(If an element pointed to is itself a pointer, then its target (whether a pointer
                            or not) is taken as the target of this pointer.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(No further evaluation of targets is carried out beyond that needed to find the
                            element(s) specified in plist or target attribute.)</i></span></div>
-                  <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the line.">func</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Indicates the function of the line.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the line.">func</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Indicates the function of the line.</span><span class="attributeValues">
                         Allowed values are:
                         "<span style="font-weight: 500;">coloration</span>" <i>(Indicates coloration in material transcribed from a source originally in mensural
                            notation.)</i>,  "<span style="font-weight: 500;">ligature</span>" <i>(Marks a ligature in material transcribed from a source originally in mensural
@@ -66,7 +66,7 @@ title: "att.line.log"
                         relationship.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                         applies. Mandatory when applicable.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                         </span></div>
@@ -99,7 +99,7 @@ title: "att.line.log"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the line.">func</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Indicates the function of the line.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the line.">func</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Indicates the function of the line.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">coloration</span>" <i>(Indicates coloration in material transcribed from a source originally in mensural
                                  notation.)</i>,  "<span style="font-weight: 500;">ligature</span>" <i>(Marks a ligature in material transcribed from a source originally in mensural
@@ -161,7 +161,7 @@ title: "att.line.log"
                         <div class="classBox" title="att.staffIdent">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffIdent</a></label><span class="classDesc">(MEI.shared) Attributes for identifying the staff associated with the current feature.</span></div>
                            <div class="classContent">
-                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                     applies. Mandatory when applicable.</span><span class="attributeValues">
                                     One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                     </span></div>
@@ -305,7 +305,7 @@ title: "att.line.log"
                               relationship.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                               applies. Mandatory when applicable.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                               </span></div>
@@ -326,7 +326,7 @@ title: "att.line.log"
                   <div class="classBox" title="MEI.usersymbols">
                      <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc">User-defined symbols component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the line.">func</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Indicates the function of the line.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the line.">func</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Indicates the function of the line.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">coloration</span>" <i>(Indicates coloration in material transcribed from a source originally in mensural
                                  notation.)</i>,  "<span style="font-weight: 500;">ligature</span>" <i>(Marks a ligature in material transcribed from a source originally in mensural
@@ -388,13 +388,13 @@ title: "att.line.log"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.timestamp2.logical.html">att.timestamp2.logical</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"func"</span> <span class="attribute">usage=</span><span class="attributevalue">"rec"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the function of the line.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>

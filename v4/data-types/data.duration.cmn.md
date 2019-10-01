@@ -20,6 +20,10 @@ title: "data.DURATION.cmn"
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.DURATION.cmn</span></div>
                   <div class="classContent"><span class="ident attclass" data-ident="att.tremMeasured" data-module="MEI.cmn"><a class="classLink" title="Attributes that describe measured tremolandi." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tremmeasured.html">att.tremMeasured</a>/<span title="The performed duration of an individual note in a measured tremolo.">@unitdur</span></span></div>
                </div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.DURATION.cmn</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.DURATION" data-module="MEI" title="Logical, that is, written, duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a></span><span class="ident datatype" data-ident="data.DURATION.gestural" data-module="MEI" title="Performed duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a></span></div>
+               </div>
             </div>
          </div>
          <div class="facet allowedValues" id="allowedValues">

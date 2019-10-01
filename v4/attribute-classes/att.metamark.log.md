@@ -52,7 +52,7 @@ title: "att.metaMark.log"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="hand Signifies the hand responsible for an action. The value must be the ID of a element declared in the header.">hand</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Signifies the hand responsible for an action. The value must be the ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hand.html">hand</a> element declared in the header.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
+                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
                         an
                         ad-hoc modification; that is, one which does not interrupt the writing process.</span><span class="attributeValues">
                         Value must conform to <span style="font-weight: 500;">data.BOOLEAN</span> or <span style="font-weight: 500;">unknown</span>.                            
@@ -81,13 +81,13 @@ title: "att.metaMark.log"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
                         carrying this attribute are believed to have occurred.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="source manifestation Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a or element located in the document header.">source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                         reading. Each value should correspond to the ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestation.html">manifestation</a>element located in the document header.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                         applies. Mandatory when applicable.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                         </span></div>
@@ -95,7 +95,7 @@ title: "att.metaMark.log"
                         applies.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part],
@@ -178,7 +178,7 @@ title: "att.metaMark.log"
                         <div class="classBox" title="att.staffIdent">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffIdent</a></label><span class="classDesc">(MEI.shared) Attributes for identifying the staff associated with the current feature.</span></div>
                            <div class="classContent">
-                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                     applies. Mandatory when applicable.</span><span class="attributeValues">
                                     One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                     </span></div>
@@ -287,12 +287,12 @@ title: "att.metaMark.log"
                         <div class="classBox" title="att.geneticState">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.geneticstate.html">att.geneticState</a></label><span class="classDesc">(MEI.genetic) Attributes that pertain to a genetic state.</span></div>
                            <div class="classContent">
-                              <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
+                              <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
                                     an
                                     ad-hoc modification; that is, one which does not interrupt the writing process.</span><span class="attributeValues">
                                     Value must conform to <span style="font-weight: 500;">data.BOOLEAN</span> or <span style="font-weight: 500;">unknown</span>.                            
                                     </span></div>
-                              <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
+                              <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
                                     One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                                     </span></div>
                            </div>
@@ -322,7 +322,7 @@ title: "att.metaMark.log"
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
                                     carrying this attribute are believed to have occurred.</span><span class="attributeValues">
-                                    Value is a positive integer.
+                                    Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -333,12 +333,12 @@ title: "att.metaMark.log"
                   <div class="classBox" title="MEI.genetic">
                      <div class="classHeading"><label class="classLabel">MEI.genetic</label><span class="classDesc">Genetic encoding component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="The @instant attribute is syntactic sugar for classifying a scribal intervention as an ad-hoc modification; that is, one which does not interrupt the writing process.">instant</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The @instant attribute is syntactic sugar for classifying a scribal intervention as
                               an
                               ad-hoc modification; that is, one which does not interrupt the writing process.</span><span class="attributeValues">
                               Value must conform to <span style="font-weight: 500;">data.BOOLEAN</span> or <span style="font-weight: 500;">unknown</span>.                            
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="Points to the genetic state that results from this modification.">state</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to the genetic state that results from this modification.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
                      </div>
@@ -427,13 +427,13 @@ title: "att.metaMark.log"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to assign a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.">seq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to assign a sequence number related to the order in which the encoded features
                               carrying this attribute are believed to have occurred.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="source manifestation Contains a list of one or more pointers indicating the sources which attest to a given reading. Each value should correspond to the ID of a or element located in the document header.">source</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a list of one or more pointers indicating the sources which attest to a given
                               reading. Each value should correspond to the ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/source.html">source</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestation.html">manifestation</a>element located in the document header.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                               applies. Mandatory when applicable.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                               </span></div>

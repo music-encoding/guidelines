@@ -18,7 +18,11 @@ title: "data.NCNAME"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
-               – <span class="emptyStatement">(<em>&lt;data.NCNAME/&gt; is not used on any attribute</em>)</span></div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.NCNAME</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.MIDIVALUE_NAME" data-module="MEI" title="data.MIDIVALUE or data.NCName values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a></span></div>
+               </div>
+            </div>
          </div>
          <div class="facet declaration">
             <div class="label">Declaration</div>

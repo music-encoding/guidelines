@@ -38,17 +38,23 @@ title: "att.note.ges"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration as a count of units provided in the time signature denominator.">dur.metrical</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as a count of units provided in the time signature denominator.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">
+                           a decimal number matching the pattern "\d+(\.\d+)?"
+                           </span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML divisions.">dur.ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML
                         divisions.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration in seconds, e.g. '1.732'.">dur.real</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration in seconds, e.g. '1.732'.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">
+                           a decimal number matching the pattern "\d+(\.\d+)?"
+                           </span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration as an optionally dotted Humdrum *recip value.">dur.recip</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as an optionally dotted Humdrum *recip value.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                        Value of datatype <span style="font-weight: 500;">
+                           a string matching the following regular expression: "\d+(\.)*"
+                           </span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates an extreme, indefinite performed pitch.">extremis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates an extreme, indefinite performed pitch.</span><span class="attributeValues">
                         Allowed values are:
@@ -60,11 +66,11 @@ title: "att.note.ges"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase, describes duration as a ratio. num is the first value in the
                         ratio, while numbase is the second.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
                         while numbase is the second.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Records performed octave information that differs from the written value.">oct.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records performed octave information that differs from the written value.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.octave.html">data.OCTAVE</a>.
@@ -139,17 +145,23 @@ title: "att.note.ges"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.augmentdot.html">data.AUGMENTDOT</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration as a count of units provided in the time signature denominator.">dur.metrical</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as a count of units provided in the time signature denominator.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number matching the pattern "\d+(\.\d+)?"
+                                 </span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML divisions.">dur.ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML
                               divisions.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration in seconds, e.g. '1.732'.">dur.real</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration in seconds, e.g. '1.732'.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number matching the pattern "\d+(\.\d+)?"
+                                 </span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration as an optionally dotted Humdrum *recip value.">dur.recip</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as an optionally dotted Humdrum *recip value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a string matching the following regular expression: "\d+(\.)*"
+                                 </span>.
                               </span></div>
                      </div>
                   </div>
@@ -179,11 +191,11 @@ title: "att.note.ges"
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase, describes duration as a ratio. num is the first value in the
                                     ratio, while numbase is the second.</span><span class="attributeValues">
-                                    Value is a positive integer.
+                                    Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
                                     while numbase is the second.</span><span class="attributeValues">
-                                    Value is a positive integer.
+                                    Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -226,17 +238,23 @@ title: "att.note.ges"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration as a count of units provided in the time signature denominator.">dur.metrical</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as a count of units provided in the time signature denominator.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number matching the pattern "\d+(\.\d+)?"
+                                 </span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML divisions.">dur.ppq</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration recorded as pulses-per-quarter note, e.g. MIDI clicks or MusicXML
                               divisions.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration in seconds, e.g. '1.732'.">dur.real</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration in seconds, e.g. '1.732'.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number matching the pattern "\d+(\.\d+)?"
+                                 </span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Duration as an optionally dotted Humdrum *recip value.">dur.recip</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Duration as an optionally dotted Humdrum *recip value.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#token">token</a>.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a string matching the following regular expression: "\d+(\.)*"
+                                 </span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Indicates an extreme, indefinite performed pitch.">extremis</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates an extreme, indefinite performed pitch.</span><span class="attributeValues">
                               Allowed values are:
@@ -270,11 +288,11 @@ title: "att.note.ges"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase, describes duration as a ratio. num is the first value in the
                               ratio, while numbase is the second.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
                               while numbase is the second.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -396,7 +414,7 @@ title: "att.note.ges"
                               <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"extremis"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -417,16 +435,16 @@ title: "att.note.ges"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>On a wind instrument, the "highest note possible" depends on the player's abilities.
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>On a wind instrument, the "highest note possible" depends on the player's abilities.
                                     On
                                     a string instrument, the "lowest note possible" depends on how much a string is
                                     de-tuned; that is, loosened using the tuning peg. Use of the 
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>pname<span data-indentation="6" class="element">&lt;/att&gt;</span></div> and
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>pname<span data-indentation="6" class="element">&lt;/att&gt;</span></div> and
                                     
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>oct<span data-indentation="6" class="element">&lt;/att&gt;</span></div> or 
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>ploc<span data-indentation="6" class="element">&lt;/att&gt;</span></div> and 
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>oloc<span data-indentation="6" class="element">&lt;/att&gt;</span></div> or 
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>loc<span data-indentation="6" class="element">&lt;/att&gt;</span></div> attributes is
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>oct<span data-indentation="6" class="element">&lt;/att&gt;</span></div> or 
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>ploc<span data-indentation="6" class="element">&lt;/att&gt;</span></div> and 
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>oloc<span data-indentation="6" class="element">&lt;/att&gt;</span></div> or 
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>loc<span data-indentation="6" class="element">&lt;/att&gt;</span></div> attributes is
                                     necessary to record the written pitch and octave of the symbol for this note.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
@@ -435,7 +453,7 @@ title: "att.note.ges"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Records performed octave information that differs from the written value.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -448,7 +466,7 @@ title: "att.note.ges"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Contains a performed pitch name that differs from the written value.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -461,7 +479,7 @@ title: "att.note.ges"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Holds a pitch-to-number mapping, a base-40 or MIDI note number, for example.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

@@ -16,7 +16,11 @@ title: "data.STAFFREL.extended"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
-               – <span class="emptyStatement">(<em>&lt;data.STAFFREL.extended/&gt; is not used on any attribute</em>)</span></div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.STAFFREL.extended</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.STAFFREL" data-module="MEI" title="Location of musical material relative to a staff."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.html">data.STAFFREL</a></span></div>
+               </div>
+            </div>
          </div>
          <div class="facet allowedValues" id="allowedValues">
             <div class="label">Allowed Values</div>

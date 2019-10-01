@@ -26,8 +26,9 @@ title: "model.manifestationLike"
                   <div class="classBox" title="model.manifestationLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.manifestationlike.html">model.manifestationLike</a></label><span class="classDesc">(MEI.frbr) Collects FRBR manifestation-like elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Container for intellectual or physical component parts of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentlist.html">componentList</a></span><span class="elementDesc desc">Collects FRBR manifestation-like elements.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A container for the descriptions of physical embodiments of an expression of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestationlist.html">manifestationList</a></span><span class="elementDesc desc">Collects FRBR manifestation-like elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Container for intellectual or physical component parts of a bibliographic entity."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/componentlist.html">componentList</a></span><span class="elementDesc desc">Container for intellectual or physical component parts of a bibliographic entity.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A container for the descriptions of physical embodiments of an expression of a work."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/manifestationlist.html">manifestationList</a></span><span class="elementDesc desc">A container for the descriptions of physical embodiments of an expression of a
+                              work.</span></div>
                      </div>
                   </div>
                </div>
@@ -70,7 +71,7 @@ title: "model.manifestationLike"
             <div class="label">Declaration</div>
             <div class="statement declaration">
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.manifestationLike"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.frbr"</span>&gt;</span>
+                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.manifestationLike"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.frbr"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span>&gt;</span>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Collects FRBR manifestation-like elements.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>

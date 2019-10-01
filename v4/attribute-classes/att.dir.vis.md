@@ -88,7 +88,7 @@ title: "att.dir.vis"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a label for members of a vertically aligned group.">vgrp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a label for members of a vertically aligned group.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the vertical adjustment of a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature's programmatically-determined location
                         in
@@ -99,12 +99,12 @@ title: "att.dir.vis"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
                         necessary to record the placement of a feature in a facsimile image, use the facs
                         attribute.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
                         necessary to record the placement of a feature in a facsimile image, use the facs
                         attribute.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">decimal</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -169,7 +169,7 @@ title: "att.dir.vis"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.verticalgroup.html">att.verticalGroup</a></label><span class="classDesc">(MEI.shared) Attributes that record grouping of vertically aligned elements.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a label for members of a vertically aligned group.">vgrp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a label for members of a vertically aligned group.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -249,12 +249,12 @@ title: "att.dir.vis"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>
@@ -327,7 +327,7 @@ title: "att.dir.vis"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tstampoffset.html">data.TSTAMPOFFSET</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a label for members of a vertically aligned group.">vgrp</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a label for members of a vertically aligned group.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the vertical adjustment of a feature's programmatically-determined location in terms of staff interline distance; that is, in units of 1/2 the distance between adjacent staff lines.">vo</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the vertical adjustment of a feature's programmatically-determined location
                               in
@@ -338,12 +338,12 @@ title: "att.dir.vis"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes an x coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">x</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes an x coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes a y coordinate for a feature in an output coordinate system. When it is necessary to record the placement of a feature in a facsimile image, use the facs attribute.">y</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes a y coordinate for a feature in an output coordinate system. When it is
                               necessary to record the placement of a feature in a facsimile image, use the facs
                               attribute.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">decimal</span>.
                               </span></div>
                      </div>
                   </div>

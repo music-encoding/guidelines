@@ -50,7 +50,7 @@ title: "att.cpMark.log"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="identifies the layer on which referenced notation occurs.">origin.layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">identifies the layer on which referenced notation occurs.</span><span class="attributeValues">
                         One or more of <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
                         as
                         the local staff. Mandatory when applicable.</span><span class="attributeValues">
                         One or more of <span style="font-weight: 500;">positiveInteger</span>.
@@ -62,7 +62,7 @@ title: "att.cpMark.log"
                         (potentially negative) count of measures plus a beat location.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurebeatoffset.html">data.MEASUREBEATOFFSET</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
                         of measures plus a beat location. The values are relative to the measure identified
                         by
                         <span class="att">origin.tstamp</span>.</span><span class="attributeValues">
@@ -87,7 +87,7 @@ title: "att.cpMark.log"
                         relationship.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                         applies. Mandatory when applicable.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                         </span></div>
@@ -172,7 +172,7 @@ title: "att.cpMark.log"
                         <div class="classBox" title="att.staffIdent">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffident.html">att.staffIdent</a></label><span class="classDesc">(MEI.shared) Attributes for identifying the staff associated with the current feature.</span></div>
                            <div class="classContent">
-                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                              <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                                     applies. Mandatory when applicable.</span><span class="attributeValues">
                                     One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                                     </span></div>
@@ -221,7 +221,7 @@ title: "att.cpMark.log"
                               (potentially negative) count of measures plus a beat location.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurebeatoffset.html">data.MEASUREBEATOFFSET</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
                               of measures plus a beat location. The values are relative to the measure identified
                               by
                               <span class="att">origin.tstamp</span>.</span><span class="attributeValues">
@@ -232,7 +232,7 @@ title: "att.cpMark.log"
                   <div class="classBox" title="att.origin.staffIdent">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.origin.staffident.html">att.origin.staffIdent</a></label><span class="classDesc">(MEI.shared) Attributes for identifying the staff associated with a distant feature.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
                               as
                               the local staff. Mandatory when applicable.</span><span class="attributeValues">
                               One or more of <span style="font-weight: 500;">positiveInteger</span>.
@@ -352,7 +352,7 @@ title: "att.cpMark.log"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="identifies the layer on which referenced notation occurs.">origin.layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">identifies the layer on which referenced notation occurs.</span><span class="attributeValues">
                               One or more of <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="signifies the staff on which referenced notation occurs. Defaults to the same value as the local staff. Mandatory when applicable.">origin.staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">signifies the staff on which referenced notation occurs. Defaults to the same value
                               as
                               the local staff. Mandatory when applicable.</span><span class="attributeValues">
                               One or more of <span style="font-weight: 500;">positiveInteger</span>.
@@ -364,7 +364,7 @@ title: "att.cpMark.log"
                               (potentially negative) count of measures plus a beat location.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurebeatoffset.html">data.MEASUREBEATOFFSET</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
                               of measures plus a beat location. The values are relative to the measure identified
                               by
                               <span class="att">origin.tstamp</span>.</span><span class="attributeValues">
@@ -389,7 +389,7 @@ title: "att.cpMark.log"
                               relationship.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                               applies. Mandatory when applicable.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                               </span></div>

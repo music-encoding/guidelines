@@ -24,17 +24,17 @@ title: "att.staffItems"
                </ul>
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">aboveorder</span>, <span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">beloworder</span>, <span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">betweenorder</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">aboveorder</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                         away
                         from the staff.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">beloworder</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                         away
                         from the staff.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">betweenorder</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                         </span></div>
                </div>
@@ -42,17 +42,17 @@ title: "att.staffItems"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">aboveorder</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                               away
                               from the staff.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">beloworder</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                               away
                               from the staff.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">betweenorder</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                               </span></div>
                      </div>
@@ -62,17 +62,17 @@ title: "att.staffItems"
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">aboveorder</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed above a staff, from closest to farthest away from the staff.">aboveorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed above a staff, from closest to farthest
                               away
                               from the staff.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">beloworder</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed below a staff, from closest to farthest away from the staff.">beloworder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed below a staff, from closest to farthest
                               away
                               from the staff.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">betweenorder</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes vertical order of items printed between staves, from top to bottom.">betweenorder</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes vertical order of items printed between staves, from top to bottom.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffitem.html">data.STAFFITEM</a>, separated by spaces.
                               </span></div>
                      </div>
@@ -127,15 +127,15 @@ title: "att.staffItems"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that describe items printed near (above, below, or between) staves<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"aboveorder"</span>&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"aboveorder"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Describes vertical order of items printed above a staff, from closest to farthest
                                  away
                                  from the staff.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -144,13 +144,13 @@ title: "att.staffItems"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"beloworder"</span>&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"beloworder"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Describes vertical order of items printed below a staff, from closest to farthest
                                  away
                                  from the staff.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -159,11 +159,11 @@ title: "att.staffItems"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"betweenorder"</span>&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"betweenorder"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Describes vertical order of items printed between staves, from top to bottom.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"unbounded"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

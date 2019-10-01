@@ -71,7 +71,7 @@ title: "clip"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -115,7 +115,7 @@ title: "clip"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -134,7 +134,7 @@ title: "clip"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -147,7 +147,7 @@ title: "clip"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -323,7 +323,7 @@ title: "clip"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -367,7 +367,7 @@ title: "clip"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -393,12 +393,8 @@ title: "clip"
                   <div class="classBox" title="elements having clip as direct children">
                      <div class="classHeading"><label class="classLabel">elements having clip as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(audio/video file) – References an external digital audio or video file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/avfile.html">avFile</a></span><span class="elementDesc desc">Defines a time segment of interest within a recording or within a digital audio or
-                              video
-                              file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A recorded performance."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/recording.html">recording</a></span><span class="elementDesc desc">Defines a time segment of interest within a recording or within a digital audio or
-                              video
-                              file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(audio/video file) – References an external digital audio or video file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/avfile.html">avFile</a></span><span class="elementDesc desc">(audio/video file) – References an external digital audio or video file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A recorded performance."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/recording.html">recording</a></span><span class="elementDesc desc">A recorded performance.</span></div>
                      </div>
                   </div>
                </div>
@@ -426,12 +422,10 @@ title: "clip"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(audio/video file) – References an external digital audio or video file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/avfile.html">avFile</a></span><span class="elementDesc desc">Defines a time segment of interest within a recording or within a digital audio or
-                              video
-                              file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates a point in time either absolutely (using the absolute attribute), or relative to another when element (using the since, interval and inttype attributes)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/when.html">when</a></span><span class="elementDesc desc">Defines a time segment of interest within a recording or within a digital audio or
-                              video
-                              file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(audio/video file) – References an external digital audio or video file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/avfile.html">avFile</a></span><span class="elementDesc desc">(audio/video file) – References an external digital audio or video file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates a point in time either absolutely (using the absolute attribute), or relative to another when element (using the since, interval and inttype attributes)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/when.html">when</a></span><span class="elementDesc desc">Indicates a point in time either absolutely (using the absolute attribute), or relative
+                              to
+                              another when element (using the since, interval and inttype attributes).</span></div>
                      </div>
                   </div>
                </div>
@@ -541,7 +535,7 @@ title: "clip"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is analogous to the 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is analogous to the 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>zone<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element in the facsimile
                               module.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>

@@ -27,7 +27,7 @@ title: "att.nInteger"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                         of
                         similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                        Value is a positive integer, including 0.
+                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -37,7 +37,7 @@ title: "att.nInteger"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                               of
                               similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -49,7 +49,7 @@ title: "att.nInteger"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                               of
                               similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                              Value is a positive integer, including 0.
+                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -120,7 +120,7 @@ title: "att.nInteger"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes used to supply an integer number designation for an element.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"n"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -128,7 +128,7 @@ title: "att.nInteger"
                                  of
                                  similar elements. Its value must be a non-negative integer.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"nonNegativeInteger"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
