@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Fingered tremolos</title>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt/>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure>
+              <staff n="1">
+                <layer n="1">
+                  <fTrem unitdur="32">
+                    <note pname="f" oct="4" dur="1"/>
+                    <note pname="a" oct="4" dur="1"/>
+                  </fTrem>
+                  <fTrem unitdur="32">
+                    <note pname="f" oct="4" dur="2"/>
+                    <note pname="a" oct="4" dur="2"/>
+                  </fTrem>
+                  <fTrem unitdur="32">
+                    <note pname="f" oct="4" dur="4"/>
+                    <note pname="a" oct="4" dur="4"/>
+                  </fTrem>
+                  <fTrem unitdur="32">
+                    <note pname="f" oct="4" dur="8"/>
+                    <note pname="a" oct="4" dur="8"/>
+                  </fTrem>
+                  <fTrem unitdur="32">
+                    <note pname="f" oct="4" dur="16"/>
+                    <note pname="a" oct="4" dur="16"/>
+                  </fTrem>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv n="2">
+        <score>
+          <scoreDef meter.count="2" meter.unit="4" key.sig="1f">
+            <staffGrp>
+              <staffDef n="1" clef.line="4" clef.shape="F" lines="5"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <fTrem beams="3">
+                    <note pname="d" oct="3" dur="2"/>
+                    <note pname="d" oct="4" dur="2"/>
+                  </fTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="2">
+              <staff n="1">
+                <layer n="1">
+                  <fTrem beams="3" beams.float="1">
+                    <note pname="d" oct="3" dur="2"/>
+                    <note pname="d" oct="4" dur="2"/>
+                  </fTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="3">
+              <staff n="1">
+                <layer n="1">
+                  <fTrem beams="3" beams.float="2">
+                    <note pname="d" oct="3" dur="2"/>
+                    <note pname="d" oct="4" dur="2"/>
+                  </fTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="4">
+              <staff n="1">
+                <layer n="1">
+                  <fTrem beams="3" beams.float="3" float.gap="1">
+                    <note pname="d" oct="3" dur="2"/>
+                    <note pname="d" oct="4" dur="2"/>
+                  </fTrem>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

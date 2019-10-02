@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Octave shifts</title>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt/>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="2" oct="6" pname="e"/>
+                  <beam>
+                    <note dur="8" oct="6" pname="f"/>
+                    <note dur="8" oct="6" pname="a"/>
+                    <note dur="8" oct="6" pname="g"/>
+                    <note dur="8" oct="6" pname="b"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="dbl">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="1" oct="7" pname="c"/>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="2" oct="5" pname="e" xml:id="o1s"/>
+                  <beam>
+                    <note dur="8" oct="5" pname="f"/>
+                    <note dur="8" oct="5" pname="a"/>
+                    <note dur="8" oct="5" pname="g"/>
+                    <note dur="8" oct="5" pname="b"/>
+                  </beam>
+                </layer>
+              </staff>
+              <octave startid="#o1s" endid="#o1e" dis="8" dis.place="above">8va</octave>
+            </measure>
+            <measure n="4" right="dbl">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="1" oct="6" pname="c" xml:id="o1e"/>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="2" oct="4" pname="e" xml:id="o2s"/>
+                  <beam>
+                    <note dur="8" oct="4" pname="f"/>
+                    <note dur="8" oct="4" pname="a"/>
+                    <note dur="8" oct="4" pname="g"/>
+                    <note dur="8" oct="4" pname="b"/>
+                  </beam>
+                </layer>
+              </staff>
+              <octave startid="#o2s" endid="#o2e" dis="15" dis.place="above">15ma</octave>
+            </measure>
+            <measure n="4" right="end">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="1" oct="5" pname="c" xml:id="o2e"/>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv n="2">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" clef.line="4" clef.shape="F" lines="5"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="2" oct="1" pname="a"/>
+                  <note dur="4" oct="1" pname="g"/>
+                  <note dur="4" oct="1" pname="f"/>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="dbl">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="4" oct="1" pname="e"/>
+                  <note dur="4" oct="1" pname="f"/>
+                  <note dur="2" oct="1" pname="g"/>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="2" oct="2" pname="a" xml:id="o3s"/>
+                  <note dur="4" oct="2" pname="g"/>
+                  <note dur="4" oct="2" pname="f"/>
+                </layer>
+              </staff>
+              <octave startid="#o3s" endid="#o3e" dis="8" dis.place="below">8ba</octave>
+            </measure>
+            <measure right="dbl">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="4" oct="2" pname="e"/>
+                  <note dur="4" oct="2" pname="f"/>
+                  <note dur="2" oct="2" pname="g" xml:id="o3e"/>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="2" oct="3" pname="a" xml:id="o4s"/>
+                  <note dur="4" oct="3" pname="g"/>
+                  <note dur="4" oct="3" pname="f"/>
+                </layer>
+              </staff>
+              <octave startid="#o4s" endid="#o4e" dis="15" dis.place="below">15ba</octave>
+            </measure>
+            <measure right="end">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="4" oct="3" pname="e"/>
+                  <note dur="4" oct="3" pname="f"/>
+                  <note dur="2" oct="3" pname="g" xml:id="o4e"/>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
