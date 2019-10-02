@@ -1,4 +1,4 @@
 <fTrem unitdur="32">
-  <note dur="4" oct="4" pname="g"/>
-  <note dur="4" oct="4" pname="c"/>
+  <note pname="f" oct="4" dur="4"/>
+  <note pname="a" oct="4" dur="4"/>
 </fTrem>
