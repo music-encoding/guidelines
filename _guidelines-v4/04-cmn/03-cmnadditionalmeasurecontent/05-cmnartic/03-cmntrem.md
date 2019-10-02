@@ -27,5 +27,11 @@ The {% include link elem="bTrem" %} element can be used as shorthand for a tuple
 
 {% include mei example="cmn/cmn-sample149.txt" valid="true" %}
 
-In the case of alternating pitches, MEI offers the {% include link elem="fTrem" %} (fingered tremolo) element. While it mostly behaves the same as {% include link elem="bTrem" %}, a fingered tremolo requires exactly two child elements, either being a {% include link elem="note" %} or {% include link elem="chord" %}. The **@unitdur** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., 4ths, 8ths, 16ths, etc. The number of beams present in the source is captured by the **@beams** attribute. The number of beams present may disagree with the rhythmic value indicated by the **@unitdur** attribute, especially in manuscript sources.
+In the case of alternating pitches, MEI offers the {% include link elem="fTrem" %} (fingered tremolo) element. While it mostly behaves the same as {% include link elem="bTrem" %}, a fingered tremolo requires exactly two child elements, either being a {% include link elem="note" %} or {% include link elem="chord" %}. The **@unitdur** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., 4ths, 8ths, 16ths, etc. The number of beams present in the source is captured by the **@beams** attribute.
+
 {% include mei example="cmn/cmn-sample150.txt" valid="true" %}
+{% include figure img="ExampleImages/fingered_tremolos.1.png" caption="Fingered tremolos" %}
+
+Similar to {% include link elem="bTrem" %}, here the number of beams present may disagree with the rhythmic value indicated by the **@unitdur** attribute, especially in manuscript sources. The number of so-called "floating" beams, which are not attached to stems, may be encoded in the **@beams.float** attribute.
+
+{% include figure img="ExampleImages/fingered_tremolos.2.png" caption="Tremolos with floating beams" %}
