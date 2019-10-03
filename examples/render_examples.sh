@@ -1,5 +1,4 @@
-#--        MEILER         --#
-#--  simple render script --#
+#--simple rendering script--#
 #--        v0.0.1         --#
 #--                       --#
 #--     programmed by     --#
