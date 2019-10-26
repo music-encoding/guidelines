@@ -1,6 +1,14 @@
-<div class="sampleCode" data-lang="{{include.valid}}">
-{% assign file = page.version | append:'/examples/' | append:include.example | downcase %}
-{% highlight xml %}
-{% include {{ file }} %}
-{% endhighlight %}
-</div>
+{% assign file =  'mei/' | append:page.version | append:'/' | append:include.example | downcase %}
+{% assign id = "now" | date: "%N" | prepend:'id_'  %}
+{% assign vrvId =  id | append:'_vrv' %}
+<pre><code class="xml" id="{{ id }}"></code></pre>
+<div id="{{ vrvId }}"></div>
+<script type="text/javascript">
+    $.get( "{{ site.baseurl }}/{{ file }}" , function( data ) {
+        {% if include.encoding != false %}
+        document.getElementById('{{ id }}').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('{{ id }}'));
+        {% endif %}
+        renderVerovio(data, '{{ vrvId }}');
+    });
+</script>
