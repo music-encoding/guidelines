@@ -9,5 +9,3 @@ Tempo marks are indications through words, abbreviations, or specific metronome 
 {% include desc elem="tempo" %}
 
 {% include verovio example="tempo-01.mei" %}
-
-{% include verovio example="tempo-01.mei" encoding=false %}
