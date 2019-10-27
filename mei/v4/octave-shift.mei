@@ -33,6 +33,7 @@
                 clef.line="2"/>
             </staffGrp>
           </scoreDef>
+          <?edit-start?>
           <section xml:id="section-0000000188413402" label="feature-example">
             <measure xml:id="measure-0000000244285762" n="1">
               <staff xml:id="staff-0000001860717740" n="1">
@@ -165,6 +166,7 @@
               </staff>
             </measure>
           </section>
+          <?edit-end?>
         </score>
       </mdiv>
     </body>
