@@ -21,7 +21,7 @@
 var vrvToolkit = new verovio.toolkit();
 var verovioOptions = {
     pageHeight: 1000,
-    pageWidth: 4200,
+    pageWidth: 1696,
     adjustPageHeight: 1,
     breaks: 'auto',
     noHeader: 1,
@@ -30,7 +30,8 @@ var verovioOptions = {
     pageMarginLeft: 0,
     pageMarginRight: 0,
     pageMarginTop: 0,
-    scale: 50
+    scale: 50,
+    svgViewBox: 1
 };
 // strings that identify certain positions in XML file
 var editSnippetStartString = '<?edit-start?>';
