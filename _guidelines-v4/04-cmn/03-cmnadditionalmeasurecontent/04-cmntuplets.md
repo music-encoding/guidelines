@@ -10,7 +10,7 @@ The relation of the tuplet to the underlying meter is specified using the **@num
 
 The duration of the entire tuplet may be encoded using the usual ‘power of 2’ values, e.g., 1, 2, 4, etc., in the **@dur** attribute if necessary.
 
-{% include mei example="cmn/cmn-sample140.xml" valid="" %}
+{% include verovio example="tuplet-01.mei" %}
 
 Tuplets are often highlighted using brackets above or below the affected notes. The presence and position of these brackets can be encoded using the **@bracket.place** (above / below) and **@bracket.visible** (true / false) attributes.
 
