@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Spanning beams</title>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt/>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure right="single">
+              <staff n="1">
+                <layer>
+                  <beam>
+                    <note dur="16" oct="5" pname="d"/>
+                    <note dur="16" oct="4" pname="e"/>
+                    <note dur="16" oct="4" pname="b"/>
+                    <note dur="16" oct="5" pname="f"/>
+                    <note dur="16" oct="4" pname="c"/>
+                    <note dur="16" oct="4" pname="a"/>
+                    <note dur="16" oct="4" pname="g"/>
+                    <note dur="16" oct="5" pname="c"/>
+                  </beam>
+                  <note dur="16" oct="5" pname="d" stem.dir="down" xml:id="beamedNote1"/>
+                  <note dur="16" oct="4" pname="e" stem.dir="down" xml:id="beamedNote2"/>
+                  <note dur="16" oct="4" pname="b" stem.dir="down" xml:id="beamedNote3"/>
+                  <note dur="16" oct="5" pname="f" stem.dir="down" xml:id="beamedNote4"/>
+                </layer>
+              </staff>
+              <beamSpan startid="#beamedNote1" endid="#beamedNote8" plist="#beamedNote1 #beamedNote2 #beamedNote3 #beamedNote4 #beamedNote5 #beamedNote6 #beamedNote7 #beamedNote8"/>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="16" oct="4" pname="c" stem.dir="down" xml:id="beamedNote5"/>
+                  <note dur="16" oct="4" pname="a" stem.dir="down" xml:id="beamedNote6"/>
+                  <note dur="16" oct="4" pname="g" stem.dir="down" xml:id="beamedNote7"/>
+                  <note dur="16" oct="5" pname="c" stem.dir="down" xml:id="beamedNote8"/>
+                  <beam>
+                    <note dur="16" oct="5" pname="d"/>
+                    <note dur="16" oct="4" pname="e"/>
+                    <note dur="16" oct="4" pname="b"/>
+                    <note dur="16" oct="5" pname="f"/>
+                    <note dur="16" oct="4" pname="c"/>
+                    <note dur="16" oct="4" pname="a"/>
+                    <note dur="16" oct="4" pname="g"/>
+                    <note dur="16" oct="5" pname="c"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
