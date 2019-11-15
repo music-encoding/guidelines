@@ -1,8 +1,10 @@
 {% assign file =  'mei/' | append:page.version | append:'/' | append:include.example | downcase %}
 {% assign id = "now" | date: "%N" | prepend:'id_'  %}
 {% assign vrvId =  id | append:'_vrv' %}
-<pre><code class="xml" id="{{ id }}"></code></pre>
 <div id="{{ vrvId }}"></div>
+{% if include.encoding != false %}
+<pre><code class="xml" id="{{ id }}"></code></pre>
+{% endif %}
 <script type="text/javascript">
     $.get( "{{ site.baseurl }}/{{ file }}" , function( data ) {
         {% if include.encoding != false %}

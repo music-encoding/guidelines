@@ -8,7 +8,7 @@
   <staff n="3">
     <!-- content omitted -->
   </staff>
-  <reh place="above" staff="1" tstamp="1">
+  <reh place="above" staff="1">
     <rend rend="box">37</rend>
   </reh>
 </measure>
