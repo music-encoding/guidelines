@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/Users/mthomae/Downloads/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Example of 'augmentation'</title>
+            </titleStmt>
+            <pubStmt>
+                <date>2019-11-15</date>
+            </pubStmt>
+            <notesStmt>
+                <annot>The bottom staff, together with the dotted barlines, is used here to help visualizing the durational values of the notes in the upper staff.</annot>
+            </notesStmt>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef>
+                        <staffGrp>
+                            <staffDef n="1" label="voice" notationtype="mensural.white" modusminor="2" tempus="2" lines="5"/>
+                            <staffDef n="2" label="reference" notationtype="mensural.white" modusminor="2" tempus="2" lines="5"/>
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <staff n="1">
+                            <?edit-start?>
+                            <layer>
+                                <note dur="longa" num="2" numbase="3"/>
+                                <dot form="aug"/>
+                                <barLine form="dashed"/>
+                                <note dur="brevis"/>
+                                <barLine form="dashed"/>
+                            </layer>
+                            <?edit-end?>
+                        </staff>
+                        <staff n="2">
+                            <layer>
+                                <note dur="brevis" pname="a" oct="4"/>
+                                <note dur="brevis" pname="a" oct="4"/>
+                                <note dur="brevis" pname="a" oct="4"/>
+                                <barLine form="dashed"/>
+                                <note dur="brevis" pname="a" oct="4"/>
+                                <barLine form="dashed"/>
+                            </layer>
+                        </staff>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

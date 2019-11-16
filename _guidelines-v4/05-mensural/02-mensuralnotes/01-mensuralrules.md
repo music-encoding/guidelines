@@ -12,16 +12,16 @@ In ternary divisions, the dichotomy between the duration sign of the notes and t
 | Alteration    |   1  |    2     |
 
 
-The following example illustrates an alteration (the second *brevis*) in *modus minor perfectus*. Only the modified note (the *altered brevis*) uses the **@num** and **@numbase** attributes.
+The following example illustrates an **alteration** (the second *brevis*) in *modus minor perfectus*. Only the modified note (the *altered brevis*) uses the **@num** and **@numbase** attributes.
 
-{% include mei example="mensural/mensural-sample164.xml" valid="" %}
-{% include figure img="modules/mensural/ex_alteration.png" caption="Example of alteration in modus minor perfectus. The 'voice' staff renders the notes encoded above. The 'reference' staff, together with the thin red barlines, are shown here to help visualizing the relative values of the notes in the 'voice' staff. Notice that the second brevis has doubled its regular value, it has been altered, unlike the first one." %}
+{% include verovio example="Alteration.mei" encoding=true %}
+**Description:** Example of alteration in modus minor perfectus. The 'voice' staff renders the notes encoded above. The 'reference' staff, together with the dotted barlines, are shown here to help visualizing the relative values of the notes in the 'voice' staff. Notice that the second brevis has doubled its regular value, it has been altered, unlike the first one.
 
 
-The following example illustrates an imperfection (the two *longae*) in *modus minor perfectus* with the same *longa*-*brevis*-*brevis*-*longa* sequence but with an additional *dot of division* between the two *breves*. Once again, only the modified notes (the imperfected longae) use the **@num** and **@numbase** attributes (compare with the previous example in which both longae are perfect, keeping the duration indicated by the mensuration).
+The following example illustrates an **imperfection** (the two *longae*) in *modus minor perfectus* with the same *longa*-*brevis*-*brevis*-*longa* sequence but with an additional *dot of division* between the two *breves*. Once again, only the modified notes (the imperfected longae) use the **@num** and **@numbase** attributes (compare with the previous example in which both longae are perfect, keeping the duration indicated by the mensuration).
 
-{% include mei example="mensural/mensural-sample165.xml" valid="" %}
-{% include figure img="modules/mensural/ex_imperfection.png" caption="Example of imperfection in modus minor perfectus. The 'voice' staff renders the notes encoded above. The 'reference' staff, together with the thin red barlines, are shown here to help visualizing the relative values of the notes in the 'voice' staff. Notice that the longae have been imperfected here have been imperected, unlike the previous example in which they kept the perfect value indicated by the mensuraton." %}
+{% include verovio example="Imperfection.mei" encoding=true %}
+**Description:** Example of imperfection in modus minor perfectus. The 'voice' staff renders the notes encoded above. The 'reference' staff, together with the dotted barlines, are shown here to help visualizing the relative values of the notes in the 'voice' staff. Notice that here the longae have been imperfected, unlike the previous example in which they kept the perfect value indicated by the mensuraton.
 
 As a short comment, in imperfect mensurations notes can also be modified from their default duration by the presence of a *dot of augmentation*. The effect of the dot of augmentation is also encoded using the **@num** and **@numbase** attributes within the {% include link elem="note" %} or {% include link elem="rest" %} elements.
 
@@ -31,7 +31,7 @@ As a short comment, in imperfect mensurations notes can also be modified from th
 
 The following example in *modus minor imperfectus* illustrates the use of a dot of augmentation following the *longa*.
 
-{% include mei example="mensural/mensural-sample165B.xml" valid="" %}
-{% include figure img="modules/mensural/ex_augmentation.png" caption="Example of augmentation in modus minor imperfectus. The 'voice' staff renders the notes encoded above. The 'reference' staff, together with the thin red barlines, are shown here to help visualizing the relative values of the notes in the 'voice' staff. Notice that the longae, which is supposed to be imperfect according to the mensuration, has a perfect value due to the augmentation dot." %}
+{% include verovio example="Augmentation.mei" encoding=true %}
+**Description:** Example of augmentation in modus minor imperfectus. The 'voice' staff renders the notes encoded above. The 'reference' staff, together with the dotted barlines, are shown here to help visualizing the relative values of the notes in the 'voice' staff. Notice that the longa, which is supposed to be imperfect according to the mensuration, has a perfect value due to the augmentation dot.
 
-All modifications in the default duration of the note (the one given by the mensuration) can be encoded using the @num and @numbase pair of attributes regardless of the type of modifiction, whether it is a context-related modification (e.g., imperfection and alteration) or a non-context-related modification (e.g., dots of augmentation and coloration).
+In summary, all modifications in the default duration of a note (the one given by the mensuration) can be encoded using the @num and @numbase pair of attributes regardless of the type of modification, whether it is a context-related modification (e.g., imperfection and alteration) or a non-context-related modification (e.g., dots of augmentation and coloration).
