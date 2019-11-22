@@ -11,13 +11,13 @@ version: "v4"
 are used to describe sung gestures of 1, 2, and 4 notes in square notation.  
 
 | :-: | :- |
-| **One pitch - Staff notation Example A** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch"> |
+| **One pitch - Staff notation. Example A** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-aNEW.png" alt="One pitch"> |
 
 {% include mei example="neumes/neumes-sample-6-03-05.xml" valid="" %}
 
 
 | :-: | :- |
-| **One pitch - Staff notation Example B** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch"> |
+| **One pitch - Staff notation. Example B** | <img src="/guidelines/images/v4/modules/neumes/one-pitch-ex-bNEW.png" alt="One pitch"> |
 
 {% include mei example="neumes/neumes-sample-6-03-06.xml" valid="" %}
 
@@ -180,12 +180,12 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 | :-: | :- |
-| **RELATIVE LENGTH – Old Hispanic notation Ex. A**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
+| **RELATIVE LENGTH – Old Hispanic notation. Example A**     |  ![Relative-Length-A](/guidelines/images/v4/modules/neumes/rellenA.png "Example A") |
 
 {% include mei example="neumes/neumes-sample-6-04-14.xml" valid="" %}
 
 | :-: | :- |
-| **RELATIVE LENGTH – Old Hispanic notation Ex. B**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |
+| **RELATIVE LENGTH – Old Hispanic notation. Example B**     |  ![Relative-Length-B](/guidelines/images/v4/modules/neumes/rellenL.png "Example B") |
 
 {% include mei example="neumes/neumes-sample-6-04-15.xml" valid="" %}
 
@@ -237,7 +237,6 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 | :-: | :- |
 | **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX3.png" alt="Custos3" width="200"> |
 
-| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX3.png" alt="Custos3" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-28.xml" valid="" %}
 
@@ -248,12 +247,12 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include mei example="neumes/neumes-sample-6-04-29.xml" valid="" %}
 
 | :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.EX5.png" alt="Custos5" width="200"> |
+| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos-and-lozenged-punctum.png.png" alt="Custos5" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-30.xml" valid="" %}
 
 
-Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
+Nota bene: in the last example we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
 
 
 
@@ -273,17 +272,17 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 {% include mei example="neumes/neumes-sample-6-04-04.xml" valid="" %}
 
 | :-: | :- |
-| **EPISEMA - St Gall notation Ex. A**     |  ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png "Example B") |
+| **EPISEMA - St Gall notation. Example A**     |  ![Pes rotundus episema](/guidelines/images/v4/modules/neumes/episemaB.png "Example B") |
 
 {% include mei example="neumes/neumes-sample-6-04-05.xml" valid="" %}
 
 | :-: | :- |
-| **EPISEMA - St Gall notation Ex. B**     |  ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png "Example C") |
+| **EPISEMA - St Gall notation. Example B**     |  ![Pes quadratus episema](/guidelines/images/v4/modules/neumes/episemaC.png "Example C") |
 
 {% include mei example="neumes/neumes-sample-6-04-06.xml" valid="" %}
 
 | :-: | :- |
-| **EPISEMA - St Gall notation Ex. C**     |  ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png "Example D") |
+| **EPISEMA - St Gall notation. Example C**     |  ![Pes quassus episema](/guidelines/images/v4/modules/neumes/episemaD.png "Example D") |
 
 {% include mei example="neumes/neumes-sample-6-04-07.xml" valid="" %}
 
@@ -299,14 +298,14 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 
 |-----------+----------|
 |:---------:|:---------|
-| **LIQUESCENT - Staff notation Ex. A** | <img src="/guidelines/images/v4/modules/neumes/liquescent2NEW.png" width="200"> | 
+| **LIQUESCENT - Staff notation. Example A** | ![Liquescent.Ex.A.](/guidelines/images/v4/modules/neumes/liquescent2NEW.png) |
 
 {% include mei example="neumes/neumes-sample-6-04-31.xml" valid="" %}
 
 
 |-----------+----------|
 |:---------:|:---------|
-| **LIQUESCENT - Staff notation Ex. B** | ![Liquescent.Ex.B](/guidelines/images/v4/modules/neumes/liquescent1NEW.png) | 
+| **LIQUESCENT - Staff notation. Example B** | ![Liquescent.Ex.B](/guidelines/images/v4/modules/neumes/liquescent1NEW.png) | 
 
 {% include mei example="neumes/neumes-sample-6-04-32.xml" valid="" %}
 
@@ -327,8 +326,7 @@ Nota bene: in Ex. 5 we can read the exact pitch because the lozenged punctum sig
 
 
 | :-: | :- |
-| **HISPAN TICK - Old Hispanic notation, see left arrow**     |  <img src="/guidelines/images/v4/modules/neumes/hispanTick.png" alt="Hispan tick" width="200"> |
-
+| **HISPAN TICK - Old Hispanic notation.** The following encoding refers to the neumes signalled by the red arrows. |  <img src="/guidelines/images/v4/modules/neumes/hispanTick.png" alt="Hispan tick" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-18.xml" valid="" %}
 
@@ -392,30 +390,31 @@ The following example illustrates the most basic encoding of neume notation. Enc
 
 #### Manuscripts
 
-Samples of MEI of St Gall notation are taken from the winter volume of the so-called ‘Hartker Antiphonary’ [CH-SGs Cod. Sang. 390](https://www.e-codices.unifr.ch/en/list/one/csg/0359).
+Samples of MEI of St Gall notation are taken from the winter volume of the so-called ”Hartker Antiphonary” [CH-SGs Cod. Sang. 390](https://www.e-codices.unifr.ch/en/list/one/csg/0359).
 
-Samples of MEI of Old Hispanic notation are taken from the ‘León Antiphoner’ [E-L MS 8](https://bvpb.mcu.es/es/catalogo_imagenes/grupo.cmd?path=26408).
+Samples of MEI of Old Hispanic notation are taken from the ”León Antiphoner” [E-L MS 8](https://bvpb.mcu.es/es/catalogo_imagenes/grupo.cmd?path=26408).
 
-Samples of MEI of Aquitanian notation are taken from sources on the [Portuguese Early Music Database](pemdatabase.eu).
+Samples of MEI of Aquitanian notation are taken from sources on the [Portuguese Early Music Database](http://pemdatabase.eu).
 
 
 
 #### Bibliographic References
 
-Bain, Jennifer, Inga Behrendt, and Kate Helsen. 2014. “Linienlose Neumen und ihre Repräsentation mit MEI Schema, Herausforderungen in der Arbeit im Optical Neume Recognition Project (ONRP).” _Digitale Rekonstruktionen mittelalterlicher Bibliotheken_. Edited by Sabine Philippi and Philipp Vanscheidt. _Trierer Beiträge zu den historischen Kulturwissenschaften_ 12: 119–132.
+Bain, Jennifer, Inga Behrendt, and Kate Helsen. 2014. “Linienlose Neumen und ihre Repräsentation mit MEI Schema, Herausforderungen in der Arbeit im Optical Neume Recognition Project (ONRP).” _Digitale Rekonstruktionen mittelalterlicher Bibliotheken_. Edited by Sabine Philippi and Philipp Vanscheidt. _Trierer Beiträge zu den historischen Kulturwissenschaften_ 12: 119–32.
 
-Behrendt, Inga, Jennifer Bain, and Kate Helsen. 2017. “MEI Kodierung der frühesten Notation in linienlosen Neumen.” _Kodikologie und Paläographie im Digitalen Zeitalter 4 / Codicology and Palaeography in the Digital Age_. Vol. 4. Edited by Hannah Busch, Franz Fischer, and Patrick Sahle, with the cooperation of Philip Hegel and Celiz Krause, Norderstedt 2016. Köln: Institut für Dokumentologie und Editorik e.V, 2017, 281–296.
+Behrendt, Inga, Jennifer Bain, and Kate Helsen. 2017. “MEI Kodierung der frühesten Notation in linienlosen Neumen.” _Kodikologie und Paläographie im Digitalen Zeitalter 4 / Codicology and Palaeography in the Digital Age_. Vol. 4. Edited by Hannah Busch, Franz Fischer, and Patrick Sahle, with the cooperation of Philip Hegel and Celiz Krause, Norderstedt 2016. Köln: Institut für Dokumentologie und Editorik e.V, 2017, 281–96.
 
-De Luca, E.; Bain, J.; Behrendt, I.; Fujinaga, I.; Helsen, K.; Ignesti, A.; Lacoste, D.; Long, S., [Cantus Ultimus’ MEI Neume Module and its Interoperability Across Chant Notations](https://music-encoding.org/conference/2019/abstracts_mec2019/MEI%202019_De%20Luca%20et%20alii.pdf). Paper proposal accepted for presentation at the Music Encoding Conference. University of Vienna, 29/5-1/6/2019.
+Elsa De Luca, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti, Debra Lacoste, and Sarah Long. 2019. [”Cantus Ultimus’ MEI Neume Module and its Interoperability Across Chant Notations”](https://music-encoding.org/conference/2019/abstracts_mec2019/MEI%202019_De%20Luca%20et%20alii.pdf). Music Encoding Conference, Vienna.
 
-Helsen, K.; Bain, J.; Behrendt, De Luca, E.; Fujinaga, I.; Ignesti, A.; Lacoste, D.; Long, S.) “A neume by any other name…”: Considering Neumes described in MEI. Panel Discussion. _Cantus Planus_. Linnaeus University, Växjö, Sweden, 7-12/8.
+De Luca, Elsa, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti, Debra Lacoste, and Sarah Long. “Capturing Early Notations in MEI: The Case of Old Hispanic Neumes”. _Musiktheorie-Zeitschrift für Musikwissenschaft 2_, 2019: 229-49. 
+
 
 Helsen, Kate, Inga Behrendt, and Jennifer Bain. 2017. “[A Morphology of Medieval Notations in the Optical Neume Recognition Project](https://hrcak.srce.hr/index.php?show=clanak&id_clanak_jezik=284211).” _Arti musices: Croatian Musicological Review_ 48/2: 241–266.
 
 MEI Guidelines, 6: Neume Notation [Guidelines for MEI 3.0.0](https://music-encoding.org/guidelines/v3/content/neumes.html).
 
-MEI Guidelines, 6: Neume Notation [Guidelines for MEI 4.0.0](https://music-encoding.org/guidelines/v4/content/neumes.html) introducing    {% include link elem="nc" %} as “neume component”.   
+MEI Guidelines, 6: Neume Notation [Guidelines for MEI 4.0.0](https://music-encoding.org/guidelines/v4/content/neumes.html) introducing {% include link elem="nc" %} as “neume component”.   
 
 Morent, Stefan and Gregor Schräder. 2008. Demo: [MEI Neumes Viewer Hildegard](http://www.dimused.uni-tuebingen.de/hildegard/?SCREEN=1560x686).
 
-Morent, Stefan. 2011. “Digitalisierungskonzepte für Neumen-Notationen - die Projekte TüBingen und e-sequence.” _Perspektiven Digitaler Musikedition. Die Tonkunst_ 3: 277–283.
+Morent, Stefan. 2011. “Digitalisierungskonzepte für Neumen-Notationen - die Projekte TüBingen und e-sequence.” _Perspektiven Digitaler Musikedition. Die Tonkunst_ 3: 277–83.
