@@ -4,9 +4,9 @@
       <rend color="red">O</rend>
     </syl>
     <neume>
-      <nc oct="3" pname="c"/>
-      <nc oct="2" pname="b"/>
-      <nc oct="3" pname="c"/>
+      <nc oct="3" pname="e"/>
+      <nc oct="2" pname="d"/>
+      <nc oct="3" pname="e"/>
     </neume>
   </syllable>
   <syllable>
@@ -17,7 +17,7 @@
     </neume>
     <neume>
       <nc oct="3" pname="d"/>
-      <nc oct="3" pname="f"/>
+      <nc oct="3" pname="e"/>
     </neume>
   </syllable>
   <syllable>
@@ -39,7 +39,7 @@
     <neume>
       <nc oct="2" pname="a"/>
       <nc con="g" oct="2" pname="b"/>
-      <nc con="g" tilt="n" oct="3" pname="d"/>
+      <nc con="g" tilt="n" oct="3" pname="c"/>
     </neume>
   </syllable>
   <syllable>
