@@ -38,39 +38,39 @@ are used to describe sung gestures of 1, 2, and 4 notes in square notation.
 
 In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
-{% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below)
+{% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below).
 
 <!-- {% include link elem="mdiv" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %} -->
 
 
 
-{% include link elem="episema" %}: to indicate an episema
+{% include link elem="episema" %}: to indicate an episema.
 {% include figure img="modules/neumes/episema.png" %}
 
 (see MEI encoding of {% include link elem="episema" %} below)
 
 
 
-{% include link elem="hispanTick" %}: to indicate Old Hispanic ticks
+{% include link elem="hispanTick" %}: to indicate Old Hispanic ticks.
 {% include figure img="modules/neumes/hispanTick.png" %}
 
 (see MEI encoding of {% include link elem="hispanTick" %} below)
 
 
 
-{% include link elem="liquescent" %}: to indicate a liquescent
+{% include link elem="liquescent" %}: to indicate a liquescent.
 {% include figure img="modules/neumes/liquescent2NEW.png" %}
 
 (see MEI encoding of {% include link elem="liquescent" %} neumes below)
 
 
 
-{% include link elem="ncGrp" %}: to indicate multiple {% include link elem="nc" %}s
+{% include link elem="ncGrp" %}: to indicate multiple {% include link elem="nc" %}s.
 
 
 
-{% include link elem="oriscus" %}: to indicate an oriscus
+{% include link elem="oriscus" %}: to indicate an oriscus.
 
 | :-: | :- |
 | **ORISCUS - Square notation**     |  ![Oriscus1](/guidelines/images/v4/modules/neumes/oriscus.png "Oriscus1") |
@@ -82,18 +82,13 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 {% include mei example="neumes/neumes-sample-6-04-21.xml" valid="" %}
 
-{% include link elem="quilisma" %}: to indicate a quilisma
+{% include link elem="quilisma" %}: to indicate a quilisma (see MEI encoding of {% include link elem="quilisma" %} below).
+
 {% include figure img="modules/neumes/quilisma.png" %}
 
-(see MEI encoding of {% include link elem="quilisma" %} below)
+{% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %} (see MEI encoding of {% include link elem="signifLet" %} below).
 
-
-
-{% include link elem="signifLet" %}: element indicates significative letter(s) attached to a {% include link elem="neume" %} or a {% include link elem="nc" %}
 {% include figure img="modules/neumes/signifLet.png" %}
-
-(see MEI encoding of {% include link elem="signifLet" %} below)
-
 
 
 {% include link elem="strophicus" %}: to indicate a strophicus
@@ -112,7 +107,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 {% include desc atts="att.intervalMelodic/intm" %} (interval melodic; relative to the previous {% include link elem="nc" %}) {u | d | s | n | su | sd} (u = up, d = down, s = same, n = neutral/unknown, su = same or higher (but not lower), sd = same or lower (but not higher)). In addition, diatonic intervals (distance on the staff, regardless of the scale) can be indicated, by adding an “S” after a positive or negative single-digit integer, e.g., “-2S” would mean two diatonic steps below (a major or minor third below)
 
-{% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %} ) 
+{% include desc atts="att.ncForm/con" %} {g | l | e} (gapped, looped, extended) (connection to the previous  {% include link elem="nc" %} within the same {% include link elem="neume" %}). 
 
 | :-: | :- |
 | **GAPPED CONNECTION - Old Hispanic notation**     |  ![Gapped](/guidelines/images/v4/modules/neumes/gapped.png "Gapped") |
@@ -133,7 +128,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 {% include mei example="neumes/neumes-sample-6-04-13.xml" valid="" %}
 
 
-Nota bene: the following neume has a similar shape but the neumatic connection is _not_ extended
+Nota bene: the following neume has a similar shape but the neumatic connection is _not_ extended.
 
 
 | :-: | :- |
@@ -144,7 +139,7 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 
 
 
-{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve) 
+{% include desc atts="att.ncForm/curve" %} {a | c} (anticlockwise, clockwise) (pen stroke either anticlockwise or clockwise curve).
 
 | :-: | :- |
 | **CURVE - Old Hispanic notation**     |  ![Curve](/guidelines/images/v4/modules/neumes/curve.png "Curve") |
@@ -153,7 +148,7 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 {% include mei example="neumes/neumes-sample-6-04-22.xml" valid="" %}
 
 
-{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction) 
+{% include desc atts="att.ncForm/angled" %} {true | false} (pen stroke with a sharp corner; sudden change in the pen direction).
 
 
 | :-: | :- |
@@ -162,7 +157,7 @@ Nota bene: the following neume has a similar shape but the neumatic connection i
 {% include mei example="neumes/neumes-sample-6-04-23.xml" valid="" %}
 
 
-{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}) 
+{% include desc atts="att.ncForm/hooked" %} {true | false} (pen stroke extension found at the end of a {% include link elem="neume" %}).
 
 | :-: | :- |
 | **HOOK – Old Hispanic notation**     |  ![Hook](/guidelines/images/v4/modules/neumes/hooked.png "Hook") |
@@ -175,7 +170,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 
-{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}) 
+{% include desc atts="att.ncForm/rellen" %} {s | l} (shorter, longer) (the relative length of the pen stroke compared to the previous {% include link elem="nc" %}, this is optional and to be used only if necessary; it should not be used for the first {% include link elem="nc" %} within a {% include link elem="neume" %}).
 
 
 
@@ -193,7 +188,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 
 
 
-{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke) 
+{% include desc atts="att.ncForm/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke).
 
 | :-: | :- |
 | **TILT – Old Hispanic / St Gall notation**     |  ![Tilt](/guidelines/images/v4/modules/neumes/tilt.png "Tilt") |
@@ -201,7 +196,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include mei example="neumes/neumes-sample-6-04-25.xml" valid="" %}
 
 
-{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”) 
+{% include desc atts="att.ncForm/s-shape" %} {n | e | s | w} (s-shaped pen stroke: north, east, south, west; the direction of the initial pen stroke, i.e., the standard letter S is “w”, its mirror shape is “e”, the letter S turned 90-degrees anti-clockwise on its side is “s”, and its mirror shape is “n”).
 
 | :-: | :- |
 | **S-SHAPE – Old Hispanic notation**     |  ![S-shape-A](/guidelines/images/v4/modules/neumes/s-shapeA.png "Example A") |
@@ -261,9 +256,9 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 
 #### Episema attributes: 
 
-{% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal)
+{% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal).
 
-{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
+{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated).
 
 
 | :-: | :- |
@@ -290,9 +285,9 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 
 #### Liquescent attributes: 
 
-{% include desc atts="att.liquescent.vis/curve" %} {a | c} (anticlockwise, clockwise) 
+{% include desc atts="att.liquescent.vis/curve" %} {a | c} (anticlockwise, clockwise).
 
-{% include desc atts="att.liquescent.vis/looped" %} {true | false} (true if the curve is closed)  
+{% include desc atts="att.liquescent.vis/looped" %} {true | false} (true if the curve is closed).
 
 
 
@@ -320,9 +315,9 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 
 #### Old Hispanic tick attributes: 
 
-{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke)
+{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen stroke).
 
-{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated)
+{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated).
 
 
 | :-: | :- |
@@ -335,7 +330,7 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 
 #### Quilisma attribute: 
 
-{% include desc atts="att.quilisma.vis/waves" %} {2 | 3 | 4} the number of quilisma waves
+{% include desc atts="att.quilisma.vis/waves" %} {2 | 3 | 4} the number of quilisma waves; only used in non-staff notations.
 
 
 
@@ -357,7 +352,7 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 
 #### Significative letters attribute: 
 
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %} 
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %}.
 
 
 | :-: | :- |
@@ -369,7 +364,7 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 
 
 #### Note:
-Other articulation marks such as ictus, circulus, semicirculus, accentus, and other fonts in [SMuFL](https://www.smufl.org/fonts/) can be encoded using: glyph.auth, glyph.name, glyph.num, and glyph.uri
+Other articulation marks such as ictus, circulus, semicirculus, accentus, and other fonts in [SMuFL](https://www.smufl.org/fonts/) can be encoded using: glyph.auth, glyph.name, glyph.num, and glyph.uri.
 
 
 
@@ -404,7 +399,7 @@ Bain, Jennifer, Inga Behrendt, and Kate Helsen. 2014. “Linienlose Neumen und i
 
 Behrendt, Inga, Jennifer Bain, and Kate Helsen. 2017. “MEI Kodierung der frühesten Notation in linienlosen Neumen.” _Kodikologie und Paläographie im Digitalen Zeitalter 4 / Codicology and Palaeography in the Digital Age_. Vol. 4. Edited by Hannah Busch, Franz Fischer, and Patrick Sahle, with the cooperation of Philip Hegel and Celiz Krause, Norderstedt 2016. Köln: Institut für Dokumentologie und Editorik e.V, 2017, 281–96.
 
-Elsa De Luca, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti, Debra Lacoste, and Sarah Long. 2019. [”Cantus Ultimus’ MEI Neume Module and its Interoperability Across Chant Notations”](https://music-encoding.org/conference/2019/abstracts_mec2019/MEI%202019_De%20Luca%20et%20alii.pdf). Music Encoding Conference, Vienna.
+De Luca, Elsa, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti, Debra Lacoste, and Sarah Long. 2019. [”Cantus Ultimus’ MEI Neume Module and its Interoperability Across Chant Notations”](https://music-encoding.org/conference/2019/abstracts_mec2019/MEI%202019_De%20Luca%20et%20alii.pdf). Music Encoding Conference, Vienna.
 
 De Luca, Elsa, Jennifer Bain, Inga Behrendt, Ichiro Fujinaga, Kate Helsen, Alessandra Ignesti, Debra Lacoste, and Sarah Long. “Capturing Early Notations in MEI: The Case of Old Hispanic Neumes”. _Musiktheorie-Zeitschrift für Musikwissenschaft 2_, 2019: 229-49. 
 

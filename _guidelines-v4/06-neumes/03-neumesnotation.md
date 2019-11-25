@@ -19,7 +19,7 @@ See two examples of shapes found in different regional styles that are not captu
 
 {% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
 
-**Old Hispanic notation**: Two-note downward melodic gesture
+**Old Hispanic notation**: Two-note downward melodic gesture.
 {% include figure img="modules/neumes/NLneumeOH.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
@@ -27,12 +27,12 @@ See two examples of shapes found in different regional styles that are not captu
 
 **Example 2:** 
 
-**Old Hispanic notation** Four-note neutral-low-high-low melodic gesture
+**Old Hispanic notation:** Four-note neutral-low-high-low melodic gesture
 {% include figure img="modules/neumes/MneumeOH.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
 
-**Aquitanian notation** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
+**Aquitanian notation:** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
 {% include figure img="modules/neumes/LIQUESCENT-ExampleB.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
