@@ -36,7 +36,7 @@ are used to describe sung gestures of 1, 2, and 4 notes in square notation.
 
 
 
-In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
+In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module: {% include link elem="custos" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, {% include link elem="liquescent" %}, {% include link elem="ncGrp" %}, {% include link elem="oriscus" %}, {% include link elem="quilisma" %}, {% include link elem="signifLet" %}, {% include link elem="strophicus" %}. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
 {% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below).
 
