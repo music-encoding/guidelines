@@ -309,8 +309,7 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 |:---------:|:---------|
 | **LIQUESCENT - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png) | 
 
-{% include mei example="neumes/neumes-sample-6-04-33.xml" valid="" %}
-
+{% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
 
 
 #### Old Hispanic tick attributes: 
