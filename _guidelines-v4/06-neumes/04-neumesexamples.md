@@ -321,7 +321,7 @@ Nota bene: in the last example we can read the exact pitch because the lozenged 
 
 
 | :-: | :- |
-| **HISPAN TICK - Old Hispanic notation.** The following encoding refers to the neumes signalled by the red arrows. |  <img src="/guidelines/images/v4/modules/neumes/hispanTick.png" alt="Hispan tick" width="200"> |
+| **HISPAN TICK - Old Hispanic notation.** The following encoding refers to the neume signalled by the arrow on the left. |  <img src="/guidelines/images/v4/modules/neumes/hispanTick.png" alt="Hispan tick" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-18.xml" valid="" %}
 
