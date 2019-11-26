@@ -242,7 +242,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include mei example="neumes/neumes-sample-6-04-29.xml" valid="" %}
 
 | :-: | :- |
-| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos.and.lozenge.png" alt="Custos5" width="200"> |
+| **CUSTOS - Aquitanian notation**     |  <img src="/guidelines/images/v4/modules/neumes/custos-and-lozenged-punctum.png" alt="Custos5" width="200"> |
 
 {% include mei example="neumes/neumes-sample-6-04-30.xml" valid="" %}
 
