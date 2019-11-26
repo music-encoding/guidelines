@@ -32,7 +32,7 @@ See two examples of shapes found in different regional styles that are not captu
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
 
-**Aquitanian notation:** Liquescent _virga_ (ornamental note being part of a three-note rising neume)
+**Aquitanian notation:** Three-note rising neume with intermediate liquescence
 {% include figure img="modules/neumes/LIQUESCENT-ExampleB.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
