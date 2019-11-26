@@ -99,6 +99,7 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 {% include mei example="neumes/neumes-sample-6-04-02.xml" valid="" %}
 
+
 #### Neume component attributes: 
 
 {% include desc atts="att.nc.log/pname" %} {[a-g] | unknown} (pitch name)
