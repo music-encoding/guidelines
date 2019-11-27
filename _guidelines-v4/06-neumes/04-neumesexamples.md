@@ -45,24 +45,23 @@ In addition to {% include link elem="neume" %} and {% include link elem="nc" %} 
 
 
 
-{% include link elem="episema" %}: to indicate an episema.
+{% include link elem="episema" %}: to indicate an episema (see MEI encoding of {% include link elem="episema" %} below).
 {% include figure img="modules/neumes/episema.png" %}
 
-(see MEI encoding of {% include link elem="episema" %} below)
 
 
 
-{% include link elem="hispanTick" %}: to indicate Old Hispanic ticks.
+
+{% include link elem="hispanTick" %}: to indicate Old Hispanic ticks (see MEI encoding of {% include link elem="hispanTick" %} below).
 {% include figure img="modules/neumes/hispanTick.png" %}
 
-(see MEI encoding of {% include link elem="hispanTick" %} below)
 
 
 
-{% include link elem="liquescent" %}: to indicate a liquescent.
+
+{% include link elem="liquescent" %}: to indicate a liquescent (see MEI encoding of {% include link elem="liquescent" %} neumes below).
 {% include figure img="modules/neumes/liquescent2NEW.png" %}
 
-(see MEI encoding of {% include link elem="liquescent" %} neumes below)
 
 
 
