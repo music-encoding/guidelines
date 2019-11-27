@@ -12,7 +12,7 @@ Firstly, sometimes we have to deal with written signs whose meaning is obscure t
 
 See two examples of shapes found in different regional styles that are not captured with the same encoding:
 
-**Example 1:** 
+**Example 1** 
 
 **St Gall notation** Oriscus (one-note ornamental neume). The oriscus is the middle note of a three-note raising gesture (commonly called _salicus_ in the literature).
 {% include figure img="modules/neumes/salicus.png" %}
@@ -25,7 +25,7 @@ See two examples of shapes found in different regional styles that are not captu
 {% include mei example="neumes/neumes-sample-6-03-02.xml" valid="" %}
 
 
-**Example 2:** 
+**Example 2** 
 
 **Old Hispanic notation:** Four-note neutral-low-high-low melodic gesture
 {% include figure img="modules/neumes/MneumeOH.png" %}
