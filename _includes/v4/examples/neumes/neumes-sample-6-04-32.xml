@@ -1,4 +1,3 @@
 <neume>
-  <nc pname="c" oct="4" tilt="n"/>
-  <liquescent curve="c"/>
+  <liquescent curve="c" pname="c" oct="4" tilt="n"/>
 </neume>
