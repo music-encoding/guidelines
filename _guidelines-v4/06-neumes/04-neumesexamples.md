@@ -351,7 +351,7 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 #### Significative letters attribute: 
 
-{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } (the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %}.
+{% include desc atts="att.signifLet.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right } the location of the letters relative to the {% include link elem="neume" %} or the {% include link elem="syl" %}.
 
 
 | :-: | :- |
