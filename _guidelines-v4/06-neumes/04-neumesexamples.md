@@ -247,7 +247,7 @@ See the encoding of the {% include link elem="strophicus" %} example, above.
 {% include mei example="neumes/neumes-sample-6-04-30.xml" valid="" %}
 
 
-Nota bene: in the last example we can read the exact pitch because the lozenged punctum signals the lower note of the semitone E-F. Thus, this piece is in 4th mode.
+Nota bene: in the last example we can read the exact pitch of the custos because the lozenged punctum (placed one step below the line) signals the lower note of the semitone E-F. This information, combined with the identification of the finalis of the piece, allows us to decipher the mode of the piece, which is the 4th.
 
 
 
