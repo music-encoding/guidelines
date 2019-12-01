@@ -524,6 +524,9 @@
     <xsl:if test="not(@notationtype) and @clef.shape = 'TAB'">
       <xsl:text>Tab</xsl:text>
     </xsl:if>
+    <xsl:if test="not(@clef.shape) and @lines = '1'">
+      <xsl:text>Rhythmic</xsl:text>
+    </xsl:if>
     <xsl:value-of select="concat('Staff = &quot;staff ',$staffNumber,'&quot;&#32;')" />
     <xsl:if test="@scale or @label or @label.abbr or child::mei:label or ((position() = 1) and (count(ancestor::mei:staffGrp) &gt; 1) and ancestor::mei:scoreDef/@ending.rend = 'grouped')">
       <xsl:text>\with { </xsl:text>
