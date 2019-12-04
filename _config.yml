@@ -2,7 +2,7 @@
 title: MEI Guidelines
 email: info@music-encoding.org
 baseurl: "/guidelines" 
-url: "https://ddmal.github.io/guidelines"
+url: "https://music-encoding.org/guidelines"
 style_baseurl: "https://music-encoding.github.io"
 #style_baseurl: "http://localhost:4001"
 twitter_username: music-encoding
@@ -10,7 +10,7 @@ github: [metadata]
 
 
 # Github repository used for Github edit button.
-repository: "ddmal/guidelines"
+repository: "music-encoding/guidelines"
 
 # path fragment to get to branch for files on github:
 github_edit_path: "blob/master"

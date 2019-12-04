@@ -1,5 +1,7 @@
 <neume>
-  <quilisma waves= "2"/>
+  <nc>
+    <quilisma waves= "2"/>
+  </nc>
   <nc tilt= "n" intm= "u"/>
-  <nc tilt= "se" rellen= "long" intm= "d"/>
+  <nc tilt= "se" rellen= "l" intm= "d"/>
 </neume>

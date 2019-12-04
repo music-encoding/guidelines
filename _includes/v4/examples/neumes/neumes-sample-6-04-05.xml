@@ -1,6 +1,6 @@
 <neume>
-  <nc curved="a"/>
+  <nc curve="a"/>
   <nc intm="u" tilt="ne" rellen="l">
-    <episema form="h" place="ne"/>
+    <episema form="h" place="above-right"/>
   </nc>
 </neume>
