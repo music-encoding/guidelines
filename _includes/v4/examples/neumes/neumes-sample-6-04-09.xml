@@ -1,3 +1,5 @@
 <neume>
-  <oriscus s-shaped="w"/>
+  <nc s-shape="w">
+  <oriscus/>
+  </nc>
 </neume>

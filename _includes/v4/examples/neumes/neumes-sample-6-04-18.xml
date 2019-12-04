@@ -1,6 +1,6 @@
 <neume>
   <nc curve="a"/>
   <nc tilt="n" intm="u">
-    <hispanTick tilt="n" place="nw"/>
+    <hispanTick tilt="n" place="above-right"/>
   </nc>
 </neume>

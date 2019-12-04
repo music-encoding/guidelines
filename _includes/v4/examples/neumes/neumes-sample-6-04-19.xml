@@ -1,3 +1,5 @@
 <neume>
-  <oriscus oct="3" pname="g"/>
+  <nc oct="3" pname="g">
+    <oriscus/>
+  </nc>
 </neume>
