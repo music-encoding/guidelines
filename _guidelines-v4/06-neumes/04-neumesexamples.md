@@ -36,7 +36,7 @@ are used to describe sung gestures of 1, 2, and 4 notes in square notation.
 
 
 
-In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module: {% include link elem="custos" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, {% include link elem="liquescent" %}, {% include link elem="ncGrp" %}, {% include link elem="oriscus" %}, {% include link elem="quilisma" %}, {% include link elem="signifLet" %}, {% include link elem="strophicus" %}. Note that {% include link elem="nc" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, and {% include link elem="signifLet" %} are {% include link elem="neume" %} elements. Instead {% include link elem="oriscus" %}, {% include link elem="liquescent" %}, {% include link elem="quilisma" %}, and {% include link elem="strophicus" %} are elements that must be part of a {% include link elem="nc" %} element. The {% include link elem="custos" %} is an element that is encoded inside the `syllable` element. Furthermore, there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
+In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module: {% include link elem="custos" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, {% include link elem="liquescent" %}, {% include link elem="ncGrp" %}, {% include link elem="oriscus" %}, {% include link elem="quilisma" %}, {% include link elem="signifLet" %}, {% include link elem="strophicus" %}. Note that {% include link elem="nc" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, and {% include link elem="signifLet" %} are {% include link elem="neume" %} elements. Instead {% include link elem="oriscus" %}, {% include link elem="liquescent" %}, {% include link elem="quilisma" %}, and {% include link elem="strophicus" %} are elements that must be part of a {% include link elem="nc" %} element. The {% include link elem="custos" %} is an element that is encoded inside the {% include link elem="syl" %} element. Furthermore, there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
 {% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below). 
 
@@ -258,7 +258,7 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal).
 
-{% include desc atts="att.episema.vis/place" %} This attribute signals the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. {above | below | left | right | above-left | above-right | below-left | below-right}.
+{% include desc atts="att.episema.vis/place" %} This attribute signals the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. {above | below | left | right | above-left | above-right | below-left | below-right}
 
 
 | :-: | :- |
