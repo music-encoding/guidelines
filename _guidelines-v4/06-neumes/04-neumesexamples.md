@@ -38,7 +38,7 @@ are used to describe sung gestures of 1, 2, and 4 notes in square notation.
 
 In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module: {% include link elem="custos" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, {% include link elem="liquescent" %}, {% include link elem="ncGrp" %}, {% include link elem="oriscus" %}, {% include link elem="quilisma" %}, {% include link elem="signifLet" %}, {% include link elem="strophicus" %}. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
-{% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below).
+{% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below). Nota bene: the custos is an element that is encoded inside the syllable element.
 
 <!-- {% include link elem="mdiv" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %} -->
@@ -258,7 +258,7 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal).
 
-{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated).
+{% include desc atts="att.episema.vis/place" %} The place attribute values are position-based {above | below | left | right | above-left | above-right | below-left | below-right}. This attribute signals the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated.
 
 
 | :-: | :- |
@@ -314,9 +314,9 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 #### Old Hispanic tick attributes: 
 
-{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen-stroke).
+{% include desc atts="att.hispanTick.vis/tilt" %} The tilt attribute values are cardinal points indicating the direction of the pen-stroke{n | ne | e | se | s | sw | w | nw} (north, northeast, etc.).
 
-{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated).
+{% include desc atts="att.hispanTick.vis/place" %} The place attribute indicates the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. The place attribute values are position-based {above | below | left | right | above-left | above-right | below-left | below-right}.
 
 
 | :-: | :- |
