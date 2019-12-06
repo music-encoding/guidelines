@@ -258,7 +258,7 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal).
 
-{% include desc atts="att.episema.vis/place" %} This attribute signals the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. {above | below | left | right | above-left | above-right | below-left | below-right}
+{% include desc atts="att.episema.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right}  signals the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. 
 
 
 | :-: | :- |
@@ -314,9 +314,9 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 #### Old Hispanic tick attributes: 
 
-{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (These values are cardinal points indicating the direction of the pen-stroke, e.g. north, northeast, etc.
+{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} indicates the direction of the pen-stroke, e.g. north, northeast, etc.
 
-{% include desc atts="att.hispanTick.vis/place" %} This attribute indicates the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated {above | below | left | right | above-left | above-right | below-left | below-right}
+{% include desc atts="att.hispanTick.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right}  indicates the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. 
 
 
 | :-: | :- |
