@@ -10,7 +10,7 @@ In CMN, notes are determined by three basic parameters:
 - octave (using **@oct**)
 - duration (using **@dur**)
 A typical note, in this case a quarter note C4, is therefore encoded like so:
-{% include mei example="cmn/cmn-sample098.xml" valid="" %}
+{% include mei example="cmn/cmn-sample098.txt" valid="" %}
 
 Because these attributes may not be required in all situations (such as **@dur** for the notes of a chord), processing software should anticipate retrieving the information that would have been provided by missing attributes from a preceding note or {% include link elem="chord" %} parent in the same {% include link elem="layer" %}. Only information from **@pname**, **@oct** and **@dur** attributes can be gathered in this fashion. No other attributes can be treated this way.
 
@@ -44,4 +44,4 @@ Please note that their mensural counterparts bear different names in order to cl
 
 Dotted durational values are accommodated by the **@dots** attribute, which records the number of written augmentation dots. Thus, a dotted quarter note is represented as in the following example:
 
-{% include mei example="cmn/cmn-sample099.xml" valid="" %}
+{% include mei example="cmn/cmn-sample099.txt" valid="" %}

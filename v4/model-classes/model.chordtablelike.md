@@ -26,7 +26,7 @@ title: "model.chordTableLike"
                   <div class="classBox" title="model.chordTableLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.chordtablelike.html">model.chordTableLike</a></label><span class="classDesc">(MEI.harmony) Groups elements that group playable chord definitions.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(score definition) – Container for score meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a></span><span class="elementDesc desc">Groups elements that group playable chord definitions.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(score definition) – Container for score meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a></span><span class="elementDesc desc">(score definition) – Container for score meta-information.</span></div>
                      </div>
                   </div>
                </div>

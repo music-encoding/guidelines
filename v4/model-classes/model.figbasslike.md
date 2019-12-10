@@ -26,7 +26,8 @@ title: "model.figbassLike"
                   <div class="classBox" title="model.figbassLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.figbasslike.html">model.figbassLike</a></label><span class="classDesc">(MEI.harmony) Groups elements that record figured bass.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a></span><span class="elementDesc desc">Groups elements that record figured bass.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a></span><span class="elementDesc desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+                              analysis, figured bass.</span></div>
                      </div>
                   </div>
                </div>

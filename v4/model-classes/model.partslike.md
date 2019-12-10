@@ -26,7 +26,7 @@ title: "model.partsLike"
                   <div class="classBox" title="model.partsLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.partslike.html">model.partsLike</a></label><span class="classDesc">(MEI.shared) Groups elements that collect separate performer parts.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">Groups elements that collect separate performer parts.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">(musical division) – Contains a subdivision of the body of a musical text.</span></div>
                      </div>
                   </div>
                </div>

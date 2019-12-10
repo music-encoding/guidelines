@@ -28,7 +28,7 @@ title: "att.origin.timestamp.logical"
                         (potentially negative) count of measures plus a beat location.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurebeatoffset.html">data.MEASUREBEATOFFSET</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
                         of measures plus a beat location. The values are relative to the measure identified
                         by
                         <span class="att">origin.tstamp</span>.</span><span class="attributeValues">
@@ -43,7 +43,7 @@ title: "att.origin.timestamp.logical"
                               (potentially negative) count of measures plus a beat location.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurebeatoffset.html">data.MEASUREBEATOFFSET</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
                               of measures plus a beat location. The values are relative to the measure identified
                               by
                               <span class="att">origin.tstamp</span>.</span><span class="attributeValues">
@@ -60,7 +60,7 @@ title: "att.origin.timestamp.logical"
                               (potentially negative) count of measures plus a beat location.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurebeatoffset.html">data.MEASUREBEATOFFSET</a>.
                               </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="origin.tstamp encodes the ending point of musical material in terms of musical time, i.e., a count of measures plus a beat location. The values are relative to the measure identified by .">origin.tstamp2</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">encodes the ending point of musical material in terms of musical time, i.e., a count
                               of measures plus a beat location. The values are relative to the measure identified
                               by
                               <span class="att">origin.tstamp</span>.</span><span class="attributeValues">
@@ -137,14 +137,14 @@ title: "att.origin.timestamp.logical"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that identify a musical range in terms of musical time.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"origin.tstamp"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>encodes the starting point of musical material in terms of musical time, i.e., a
                                  (potentially negative) count of measures plus a beat location.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -159,9 +159,9 @@ title: "att.origin.timestamp.logical"
                                  of measures plus a beat location. The values are relative to the measure identified
                                  by
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;att&gt;</span>origin.tstamp<span data-indentation="5" class="element">&lt;/att&gt;</span></div>.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>origin.tstamp<span data-indentation="5" class="element">&lt;/att&gt;</span></div>.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        

@@ -24,7 +24,7 @@ title: "att.anchoredText.log"
                </ul>
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates the function of the text.">func</span>, <span class="ident attribute" title="Holds a reference to the first element in a sequence of events to which the feature applies.">startid</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the text.">func</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Indicates the function of the text.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the text.">func</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Indicates the function of the text.</span><span class="attributeValues">
                         Allowed values are:
                         "<span style="font-weight: 500;">unknown</span>" <i>(The function of the text is unknown.)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds a reference to the first element in a sequence of events to which the feature applies.">startid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a reference to the first element in a sequence of events to which the feature
@@ -36,7 +36,7 @@ title: "att.anchoredText.log"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the text.">func</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Indicates the function of the text.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the text.">func</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Indicates the function of the text.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">unknown</span>" <i>(The function of the text is unknown.)</i></span></div>
                      </div>
@@ -64,7 +64,7 @@ title: "att.anchoredText.log"
                   <div class="classBox" title="MEI.usersymbols">
                      <div class="classHeading"><label class="classLabel">MEI.usersymbols</label><span class="classDesc">User-defined symbols component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the text.">func</span><span class="attributeUsage">(rec)</span><span class="attributeDesc desc">Indicates the function of the text.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="Indicates the function of the text.">func</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Indicates the function of the text.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">unknown</span>" <i>(The function of the text is unknown.)</i></span></div>
                      </div>
@@ -117,13 +117,13 @@ title: "att.anchoredText.log"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startid.html">att.startId</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"func"</span> <span class="attribute">usage=</span><span class="attributevalue">"rec"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the function of the text.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"NMTOKEN"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>

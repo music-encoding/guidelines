@@ -34,7 +34,7 @@ title: "att.chord.vis.cmn"
                         following this note/chord. The value of the attribute records the number of beams
                         which
                         should remain unbroken.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -45,7 +45,7 @@ title: "att.chord.vis.cmn"
                               following this note/chord. The value of the attribute records the number of beams
                               which
                               should remain unbroken.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -58,7 +58,7 @@ title: "att.chord.vis.cmn"
                               following this note/chord. The value of the attribute records the number of beams
                               which
                               should remain unbroken.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>

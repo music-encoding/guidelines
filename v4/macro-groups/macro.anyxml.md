@@ -26,7 +26,7 @@ title: "macro.anyXML"
                   <div class="classBox" title="macro.anyXML">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/macro-groups/macro.anyxml.html">macro.anyXML</a></label><span class="classDesc">(MEI.shared) Permits any XML elements except those from the MEI or SVG namespace.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(extended metadata) – Provides a container element for non-MEI metadata formats."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extmeta.html">extMeta</a></span><span class="elementDesc desc">Permits any XML elements except those from the MEI or SVG namespace.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(extended metadata) – Provides a container element for non-MEI metadata formats."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extmeta.html">extMeta</a></span><span class="elementDesc desc">(extended metadata) – Provides a container element for non-MEI metadata formats.</span></div>
                      </div>
                   </div>
                </div>

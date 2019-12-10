@@ -9,3 +9,5 @@ The following elements are regarded as events primarily because they sometimes o
 {% include desc elem="accid" %}
 {% include desc elem="artic" %}
 {% include desc elem="dot" %}
+
+{% include verovio example="accid-03.mei" %}

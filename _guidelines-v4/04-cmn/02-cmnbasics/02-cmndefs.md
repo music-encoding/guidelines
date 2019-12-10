@@ -19,7 +19,7 @@ A {% include link elem="scoreDef" %} element is used to specify the common param
 
 The following example describes a score in common time with 3 flats:
 
-{% include mei example="cmn/cmn-sample095.xml" valid="" %}
+{% include mei example="cmn/cmn-sample095.txt" valid="" %}
 
 Other attributes allow the description of default page and system margins and fonts for text and music:
 
@@ -27,9 +27,9 @@ Other attributes allow the description of default page and system margins and fo
 
 There are other attributes that allow the specification of many further details of a score. These are available from the element definitions accessible at {% include link elem="scoreDef" %}, {% include link elem="staffDef" %}, {% include link elem="staffGrp" %} and {% include link elem="layerDef" %}.
 
-When content is provided for {% include link elem="scoreDef" %}, it must contain a {% include link elem="staffGrp" %} element. This element is used to gather individual staves and other staff groups. This is useful for collecting instrumental or vocal groups in a large score, such as woodwinds, brasses, etc., and for assigning a shared label to the group, using the **@label** and **@label.abbr** attributes. The {% include link elem="staffGrp" %} element is also used for the two staves of a grand staff. The **@barthru** attribute on {% include link elem="staffGrp" %} allows one to specify whether barlines are drawn across the space between staves of that group or only on the staves themselves.
+When content is provided for {% include link elem="scoreDef" %}, it must contain a {% include link elem="staffGrp" %} element. This element is used to gather individual staves and other staff groups. This is useful for collecting instrumental or vocal groups in a large score, such as woodwinds, brasses, etc., and for assigning a shared label to the group, using the {% include link elem="label" %} and {% include link elem="labelAbbr" %} subelements. The {% include link elem="staffGrp" %} element is also used for the two staves of a grand staff. The **@barthru** attribute on {% include link elem="staffGrp" %} allows one to specify whether barlines are drawn across the space between staves of that group or only on the staves themselves.
 
-A {% include link elem="staffDef" %} element is used to describe an individual staff of a {% include link elem="score" %} or performer {% include link elem="part" %}. It bears most of the attributes described above, including **@label** and **@label.abbr** for providing staff labels for the first and subsequent pages.
+A {% include link elem="staffDef" %} element is used to describe an individual staff of a {% include link elem="score" %} or performer {% include link elem="part" %}. It bears most of the attributes described above. The {% include link elem="label" %} and {% include link elem="labelAbbr" %} subelements may be used for providing staff labels for the first and subsequent systems.
 
 Every {% include link elem="staffDef" %} must have an **@n** attribute with an integer as its value. The first occurence of a {% include link elem="staffDef" %} with a given number must also indicate the number of staff lines via the **@lines** attribute.
 
@@ -41,11 +41,11 @@ In addition to the parameters inherited from {% include link elem="scoreDef" %},
 
 A staff with a tenor clef is encoded as in the following example:
 
-{% include mei example="cmn/cmn-sample096.xml" valid="" %}
+{% include mei example="cmn/cmn-sample096.txt" valid="" %}
 
 In the case of transposing instruments, the key-related attributes described above may be used to override the written key expressed in the {% include link elem="scoreDef" %} element. As a basic principle, MEI always captures written pitches, so the **@trans.diat** and **@trans.semi** attributes may be used to indicate the number of diatonic steps and semitones to calculate sounded pitch from written pitch. The piccolo and E♭ clarinet staves in the example below utilize these attributes:
 
-{% include mei example="cmn/cmn-sample097.xml" valid="" %}
+{% include mei example="cmn/cmn-sample097.txt" valid="" %}
 
 There are a number of additional elements that can be used as children of {% include link elem="staffDef" %} in order to describe additional features of the staff, such as the color of a clef or a key signature added in a different hand. These elements include:
 

@@ -54,7 +54,7 @@ title: "bifolium"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -108,7 +108,7 @@ title: "bifolium"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -127,7 +127,7 @@ title: "bifolium"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -140,7 +140,7 @@ title: "bifolium"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -317,7 +317,7 @@ title: "bifolium"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -363,7 +363,7 @@ title: "bifolium"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -389,10 +389,12 @@ title: "bifolium"
                   <div class="classBox" title="model.bifoliumLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.bifoliumlike.html">model.bifoliumLike</a></label><span class="classDesc">(MEI.header) Collects bifoliumlike elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Describes a folded sheet of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bifolium.html">bifolium</a></span><span class="elementDesc desc">Collects bifoliumlike elements.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A cutout is a section of a document sheet that has been removed and is now missing."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cutout.html">cutout</a></span><span class="elementDesc desc">Collects bifoliumlike elements.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Describes the order of folia and bifolia making up the text block of a manuscript or print."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/foliadesc.html">foliaDesc</a></span><span class="elementDesc desc">Collects bifoliumlike elements.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Describes a physical writing surface attached to the original document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/patch.html">patch</a></span><span class="elementDesc desc">Collects bifoliumlike elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a folded sheet of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bifolium.html">bifolium</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A cutout is a section of a document sheet that has been removed and is now missing."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cutout.html">cutout</a></span><span class="elementDesc desc">A cutout is a section of a document sheet that has been removed and is now missing.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes the order of folia and bifolia making up the text block of a manuscript or print."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/foliadesc.html">foliaDesc</a></span><span class="elementDesc desc">Describes the order of folia and bifolia making up the text block of a manuscript
+                              or
+                              print.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a physical writing surface attached to the original document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/patch.html">patch</a></span><span class="elementDesc desc">Describes a physical writing surface attached to the original document.</span></div>
                      </div>
                   </div>
                </div>
@@ -424,30 +426,36 @@ title: "bifolium"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">(addition) – Marks an addition to the text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Contains an area of damage to the physical medium.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+                              as
+                              superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a></span><span class="elementDesc desc">Indicates a point where material has been omitted in a transcription, whether as part
+                              of
+                              sampling practice or for editorial reasons described in the MEI header.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                              or
+                              authorial marking or instruction.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.bifoliumLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.bifoliumlike.html">model.bifoliumLike</a></label><span class="classDesc">(MEI.header) Collects bifoliumlike elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Describes a folded sheet of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bifolium.html">bifolium</a></span><span class="elementDesc desc">Collects bifoliumlike elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a folded sheet of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bifolium.html">bifolium</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.foliumLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.foliumlike.html">model.foliumLike</a></label><span class="classDesc">(MEI.header) Collects foliumlike elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Describes a single leaf of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/folium.html">folium</a></span><span class="elementDesc desc">Collects foliumlike elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a single leaf of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/folium.html">folium</a></span><span class="elementDesc desc">Describes a single leaf of paper.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.paperModLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.papermodlike.html">model.paperModLike</a></label><span class="classDesc">(MEI.header) Groups elements dealing with modifications of document pages.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="A cutout is a section of a document sheet that has been removed and is now missing."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cutout.html">cutout</a></span><span class="elementDesc desc">Groups elements dealing with modifications of document pages.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Describes a physical writing surface attached to the original document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/patch.html">patch</a></span><span class="elementDesc desc">Groups elements dealing with modifications of document pages.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A cutout is a section of a document sheet that has been removed and is now missing."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cutout.html">cutout</a></span><span class="elementDesc desc">A cutout is a section of a document sheet that has been removed and is now missing.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a physical writing surface attached to the original document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/patch.html">patch</a></span><span class="elementDesc desc">Describes a physical writing surface attached to the original document.</span></div>
                      </div>
                   </div>
                </div>

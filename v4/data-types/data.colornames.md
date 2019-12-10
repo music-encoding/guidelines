@@ -18,7 +18,11 @@ title: "data.COLORNAMES"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
-               – <span class="emptyStatement">(<em>&lt;data.COLORNAMES/&gt; is not used on any attribute</em>)</span></div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.COLORNAMES</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.COLOR" data-module="MEI" title="A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal AARRGGBB, 3) CSS RGB, 4) CSS RGBA, 5) HSL, 6) HSLA, or 7) HTML 4.01 color name."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a></span></div>
+               </div>
+            </div>
          </div>
          <div class="facet allowedValues" id="allowedValues">
             <div class="label">Allowed Values</div>

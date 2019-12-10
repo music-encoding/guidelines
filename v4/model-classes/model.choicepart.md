@@ -27,7 +27,7 @@ title: "model.choicePart"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.choicepart.html">model.choicePart</a></label><span class="classDesc">(MEI.edittrans) Groups elements that may appear as part of the content of a choice
                            element.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a></span><span class="elementDesc desc">Groups elements that may appear as part of the content of a choice element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a></span><span class="elementDesc desc">Groups a number of alternative encodings for the same point in a text.</span></div>
                      </div>
                   </div>
                </div>

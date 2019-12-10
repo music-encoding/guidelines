@@ -26,7 +26,8 @@ title: "model.chordPart"
                   <div class="classBox" title="model.chordPart">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.chordpart.html">model.chordPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of the content of a chord element.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a></span><span class="elementDesc desc">Groups elements that may appear as part of the content of a chord element.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A simultaneous sounding of two or more notes in the same layer *with the same duration*."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/chord.html">chord</a></span><span class="elementDesc desc">A simultaneous sounding of two or more notes in the same layer *with the same
+                              duration*.</span></div>
                      </div>
                   </div>
                </div>

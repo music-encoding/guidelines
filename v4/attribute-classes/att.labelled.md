@@ -28,7 +28,7 @@ title: "att.labelled"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -39,7 +39,7 @@ title: "att.labelled"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -52,7 +52,7 @@ title: "att.labelled"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -1847,7 +1847,7 @@ title: "att.labelled"
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
                      <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"att.labelled"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.shared"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"label"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -1856,22 +1856,22 @@ title: "att.labelled"
                                  "tool tip" or prefatory text, for example. Should not be used to record document
                                  content.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span> 
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>label<span data-indentation="6" class="element">&lt;/att&gt;</span></div> is used to provide a display label for an element's contents, for
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span> 
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>label<span data-indentation="6" class="element">&lt;/att&gt;</span></div> is used to provide a display label for an element's contents, for
                                     example in the form of a "tool tip" or as the "name" when the element's contents are
                                     treated as the "value" in a "name-value pair". Unlike 
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>n<span data-indentation="6" class="element">&lt;/att&gt;</span></div>, 
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>label<span data-indentation="6" class="element">&lt;/att&gt;</span></div> may
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="6" class="element">&lt;/att&gt;</span></div>, 
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>label<span data-indentation="6" class="element">&lt;/att&gt;</span></div> may
                                     contain space characters.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>Don't confuse this attribute with the 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>Don't confuse this attribute with the 
                                     <div class="indent6 indent"><span data-indentation="6" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>label<span data-indentation="6" class="element">&lt;/gi&gt;</span></div> element, which
                                     records document content.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>

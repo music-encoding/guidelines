@@ -53,7 +53,7 @@ title: "data.ACCIDENTAL.WRITTEN"
             <div class="label">Remarks</div>
             <div class="statement remarks">
                <p>
-                  
+                  {% include figure img="ExampleImages/accid-20100510.png" caption="" %}
                   
                </p>
             </div>
@@ -130,7 +130,6 @@ title: "data.ACCIDENTAL.WRITTEN"
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural + sharp; used to cancel preceding double sharp.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- su, sd, fu, fd are equivalent to usual symbols plus an arrow (Gould, p. 95)--&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"su"</span>&gt;</span>
                                  
@@ -162,7 +161,6 @@ title: "data.ACCIDENTAL.WRITTEN"
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural note lowered by quarter tone (natural modified by arrow).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- 1qf, 3qf, 1qs, 3qs represent fixed symbols (Gould, p. 96) --&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"1qf"</span>&gt;</span>
                                  
@@ -188,9 +186,9 @@ title: "data.ACCIDENTAL.WRITTEN"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;graphic <span class="attribute">url=</span><span class="attributevalue">"ExampleImages/accid-20100510.png"</span> <span class="attribute">height=</span><span class="attributevalue">"50%"</span> <span class="attribute">width=</span><span class="attributevalue">"50%"</span>/&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;graphic <span class="attribute">height=</span><span class="attributevalue">"50%"</span> <span class="attribute">url=</span><span class="attributevalue">"ExampleImages/accid-20100510.png"</span> <span class="attribute">width=</span><span class="attributevalue">"50%"</span>/&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>

@@ -30,12 +30,11 @@ title: "model.figDescLike"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.figdesclike.html">model.figDescLike</a></label><span class="classDesc">(MEI.figtable) Groups elements that provide a brief prose description of the appearance
                            or content of a graphic figure.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Defines a writing surface in terms of a rectangular coordinate space, optionally grouping one or more graphic representations of that space, and rectangular zones of interest within it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/surface.html">surface</a></span><span class="elementDesc desc">Groups elements that provide a brief prose description of the appearance or content
-                              of a
-                              graphic figure.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Defines an area of interest within a surface or graphic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/zone.html">zone</a></span><span class="elementDesc desc">Groups elements that provide a brief prose description of the appearance or content
-                              of a
-                              graphic figure.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Defines a writing surface in terms of a rectangular coordinate space, optionally grouping one or more graphic representations of that space, and rectangular zones of interest within it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/surface.html">surface</a></span><span class="elementDesc desc">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
+                              one or more graphic representations of that space, and rectangular zones of interest
+                              within
+                              it.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Defines an area of interest within a surface or graphic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/zone.html">zone</a></span><span class="elementDesc desc">Defines an area of interest within a surface or graphic file.</span></div>
                      </div>
                   </div>
                </div>

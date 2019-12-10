@@ -188,7 +188,7 @@
                             <a class="link_odd_elementSpec" href="{tools:linkToElement($current.elem)}"><xsl:value-of select="$current.elem"/></a>
                         </span>
                         <span class="elementDesc desc">
-                            <xsl:apply-templates select="$object/tei:desc" mode="parse.odd"/>
+                            <xsl:apply-templates select="./tei:desc" mode="parse.odd"/>
                         </span>
                     </div>
                 </xsl:for-each>
@@ -236,7 +236,7 @@
                         <a class="link_odd_elementSpec" href="{tools:linkToElement($current.elem)}"><xsl:value-of select="$current.elem"/></a>
                     </span>
                     <span class="elementDesc desc">
-                        <xsl:apply-templates select="$object/tei:desc" mode="parse.odd"/>
+                        <xsl:apply-templates select="./tei:desc" mode="parse.odd"/>
                     </span>
                 </div>
             </xsl:for-each>

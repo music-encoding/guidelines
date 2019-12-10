@@ -38,10 +38,10 @@ The CMN module makes the {% include link att="stems.cmn" %} attribute class avai
 
 The following code demonstrates one method of encoding the first chord in the last measure in the image above. The **@stem.with** attribute must occur on all the notes or chords attached to the cross-staff stem.
 
-{% include mei example="cmn/cmn-sample101.xml" valid="" %}
+{% include mei example="cmn/cmn-sample101.txt" valid="" %}
 
 Alternatively, the encoder may choose to treat the notes in the lower staff as logically belonging to the top staff and to ‘displace’ them using the **@staff** attribute on {% include link elem="note" %}. Some use cases, however, may require filling the time that those notes would normally occupy using the {% include link elem="space" %} element described in section {% include link id="sharedNoteSpacing" %}. Using this mechanism, the example above could also be encoded like so:
 
-{% include mei example="cmn/cmn-sample102.xml" valid="" %}
+{% include mei example="cmn/cmn-sample102.txt" valid="" %}
 
 The choice between these two methods of representing material that crosses staves is often software-dependent.

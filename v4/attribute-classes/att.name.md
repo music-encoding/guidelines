@@ -26,7 +26,7 @@ title: "att.name"
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                         for this element or its content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                         of identification or definition for this element or its content. This attribute may
@@ -47,7 +47,7 @@ title: "att.name"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the number of initial characters (such as those constituting an article or preposition) that should not be used for sorting a title or name.">nonfiling</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the number of initial characters (such as those constituting an article or
                         preposition) that should not be used for sorting a title or name.</span><span class="attributeValues">
-                        Value is a positive integer.
+                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains an upper boundary for an uncertain date in standard ISO form.">notafter</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains an upper boundary for an uncertain date in standard ISO form.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
@@ -86,7 +86,7 @@ title: "att.name"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                               for this element or its content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                               of identification or definition for this element or its content. This attribute may
@@ -132,7 +132,7 @@ title: "att.name"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the number of initial characters (such as those constituting an article or preposition) that should not be used for sorting a title or name.">nonfiling</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the number of initial characters (such as those constituting an article or
                               preposition) that should not be used for sorting a title or name.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                      </div>
                   </div>
@@ -143,7 +143,7 @@ title: "att.name"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A name or label associated with a controlled vocabulary or other authoritative source for this element or its content.">auth</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A name or label associated with a controlled vocabulary or other authoritative source
                               for this element or its content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="A web-accessible location of the controlled vocabulary or other authoritative source of identification or definition for this element or its content. This attribute may contain a complete URI or a partial URI which is completed by the value of the codedval attribute.">auth.uri</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">A web-accessible location of the controlled vocabulary or other authoritative source
                               of identification or definition for this element or its content. This attribute may
@@ -164,7 +164,7 @@ title: "att.name"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the number of initial characters (such as those constituting an article or preposition) that should not be used for sorting a title or name.">nonfiling</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the number of initial characters (such as those constituting an article or
                               preposition) that should not be used for sorting a title or name.</span><span class="attributeValues">
-                              Value is a positive integer.
+                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains an upper boundary for an uncertain date in standard ISO form.">notafter</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains an upper boundary for an uncertain date in standard ISO form.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isodate.html">data.ISODATE</a>.
@@ -357,14 +357,14 @@ title: "att.name"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.filing.html">att.filing</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"nymref"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Used to record a pointer to the regularized form of the name elsewhere in the
                                  document.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -394,18 +394,18 @@ title: "att.name"
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Used to specify further information about the entity referenced by this name, for
                                  example, the occupation of a person or the status of a place.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:text/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>When applicable, values from the MARC relator term list (
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>When applicable, values from the MARC relator term list (
                                     <div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://www.loc.gov/marc/relators/relaterm.html"</span>&gt;</span>http://www.loc.gov/marc/relators/relaterm.html<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>) or code list (
                                     <div class="indent6 indent"><span data-indentation="6" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"http://www.loc.gov/marc/relators/relacode.html"</span>&gt;</span>http://www.loc.gov/marc/relators/relacode.html<span data-indentation="6" class="element">&lt;/ref&gt;</span></div>) are recommended for
                                     
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att&gt;</span>role<span data-indentation="6" class="element">&lt;/att&gt;</span></div>.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>role<span data-indentation="6" class="element">&lt;/att&gt;</span></div>.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
