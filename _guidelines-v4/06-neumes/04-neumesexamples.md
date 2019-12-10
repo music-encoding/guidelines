@@ -36,9 +36,9 @@ are used to describe sung gestures of 1, 2, and 4 notes in square notation.
 
 
 
-In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module: {% include link elem="custos" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, {% include link elem="liquescent" %}, {% include link elem="ncGrp" %}, {% include link elem="oriscus" %}, {% include link elem="quilisma" %}, {% include link elem="signifLet" %}, {% include link elem="strophicus" %}. Note that there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
+In addition to {% include link elem="neume" %} and {% include link elem="nc" %} the following elements are also frequently used in the MEI Neumes Module: {% include link elem="custos" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, {% include link elem="liquescent" %}, {% include link elem="ncGrp" %}, {% include link elem="oriscus" %}, {% include link elem="quilisma" %}, {% include link elem="signifLet" %}, {% include link elem="strophicus" %}. Note that {% include link elem="nc" %}, {% include link elem="episema" %}, {% include link elem="hispanTick" %}, and {% include link elem="signifLet" %} are {% include link elem="neume" %} elements. Instead {% include link elem="oriscus" %}, {% include link elem="liquescent" %}, {% include link elem="quilisma" %}, and {% include link elem="strophicus" %} are elements that must be part of a {% include link elem="nc" %} element. The {% include link elem="custos" %} is an element that is encoded inside the {% include link elem="syl" %} element. Furthermore, there are many other elements such as Editorial and Metadata elements that are not specific to Neumes and are not listed here.
 
-{% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below).
+{% include link elem="custos" %}: to indicate a symbol placed at the end of a line of music to indicate the first note of the next line. Sometimes called a "direct" (see MEI encoding of {% include link elem="custos" %} below). 
 
 <!-- {% include link elem="mdiv" %}: to indicate pause between neumes
 {% include figure img="modules/neumes/division.png" %} -->
@@ -258,7 +258,7 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 {% include desc atts="att.episema.vis/form" %} {v | h} (whether it is vertical or horizontal).
 
-{% include desc atts="att.episema.vis/place" %} {n | ne | e | se | s | sw | w | nw} (the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated).
+{% include desc atts="att.episema.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right}  signals the placement of the episema with respect to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. 
 
 
 | :-: | :- |
@@ -314,9 +314,9 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 #### Old Hispanic tick attributes: 
 
-{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the direction of the pen-stroke).
+{% include desc atts="att.hispanTick.vis/tilt" %} {n | ne | e | se | s | sw | w | nw} indicates the direction of the pen-stroke, e.g. north, northeast, etc.
 
-{% include desc atts="att.hispanTick.vis/place" %} {n | ne | e | se | s | sw | w | nw} (north, northeast, etc.) (the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated).
+{% include desc atts="att.hispanTick.vis/place" %} {above | below | left | right | above-left | above-right | below-left | below-right}  indicates the location of the tick relative to the {% include link elem="neume" %} or {% include link elem="nc" %} with which it is associated. 
 
 
 | :-: | :- |
@@ -372,8 +372,7 @@ Other articulation marks such as ictus, circulus, semicirculus, accentus, and ot
 
 
 #### Basic Encoding – Syllable 
-
-The following example illustrates the most basic encoding of neume notation. Encoded here is the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively.
+The following example illustrates the MEI encoding of the opening of Hildegarde’s “O Splendidissima Gemma” with the text “O splendidissima”. This example provides the basic MEI skeleton to have a valid MEI file and it may be used for reference for scholars willing to start encoding early music (and its text) in MEI. Information about the {% include link elem="staff" %} has been omitted for brevity, but it was originally encoded on a 5-line staff with two clefs, a “C” and a “F” on lines 5 and 3, respectively.
 
 {% include figure img="modules/neumes/O-splendidissima.png" %}
 
