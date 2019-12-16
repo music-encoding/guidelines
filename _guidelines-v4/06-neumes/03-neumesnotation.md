@@ -32,10 +32,10 @@ See two examples of shapes found in different regional styles that are not captu
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
 
-**Aquitanian notation:** Three-note rising neume with liquescence on the second note.
+**Aquitanian notation:** Three-note rising neume with oriscus on the second note.
 {% include figure img="modules/neumes/LIQUESCENT-ExampleB.png" %}
 
-{% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
+{% include mei example="neumes/neumes-sample-6-03-01.xml" valid="" %}
 
 
 A further complication is that while the music encoding aims to narrow down and capture the meaning of the neumes in a logical and coherent system, occasionally the significance of some neumes is under debate (e.g., {% include link elem="quilisma" %}) and, despite its aim for accuracy, the encoding must remain open for future interpretations. From all these challenges has arisen the need for an early music encoding standardisation, that is, a set of rules that work for the description of any neume across all early notations regardless of the different methodologies applied to the study of individual notations and their idiosyncrasies. 

@@ -307,7 +307,7 @@ Nota bene: in the last example we can read the exact pitch of the custos because
 
 |-----------+----------|
 |:---------:|:---------|
-| **LIQUESCENT - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/LIQUESCENT-ExampleB.png) | 
+| **LIQUESCENT - Aquitanian notation** | ![Liquescent](/guidelines/images/v4/modules/neumes/Aquitanian_liquescent.png) | 
 
 {% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
 
