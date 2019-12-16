@@ -32,7 +32,7 @@ See two examples of shapes found in different regional styles that are not captu
 
 {% include mei example="neumes/neumes-sample-6-03-04.xml" valid="" %}
 
-**Aquitanian notation:** Three-note rising neume with liquescence on the second note.
+**Aquitanian notation:** Three-note rising neume with oriscus on the second note.
 {% include figure img="modules/neumes/LIQUESCENT-ExampleB.png" %}
 
 {% include mei example="neumes/neumes-sample-6-03-03.xml" valid="" %}
