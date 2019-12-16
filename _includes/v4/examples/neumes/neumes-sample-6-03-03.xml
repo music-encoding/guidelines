@@ -1,6 +1,5 @@
 <neume>
-  <nc>
-    <oriscus/>
+  <nc curve="c">
+    <liquescent/>
   </nc>
-  <nc tilt="ne" intm="u"/>
 </neume>
