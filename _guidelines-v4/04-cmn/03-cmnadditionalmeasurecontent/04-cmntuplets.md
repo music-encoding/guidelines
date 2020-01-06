@@ -8,6 +8,9 @@ Tuplets indicate a localized change of meter; that is, a given duration in the r
 
 The relation of the tuplet to the underlying meter is specified using the **@num** and **@numbase** attributes, where **@num** specifies the number of replacing notes and **@numbase** specifies the number of notes *of the same duration* to be replaced. For example, when three eighth notes replace one quarter note in common time, **@num** takes a value of "3", whereas **@numbase** reads "2", because a quarter note in common time is normally divided into two eighths. When three quarters replace two in the same meter, **@numbase** also reads "2". The combination of these attributes may be read as "3 in the time of 2" in either case.
 
+{% include figure img="ExampleImages/tuplets.1.png" caption="Tuplets example" %}
+{% include mei example="cmn/cmn-tuplets01.txt" valid="" %}
+
 The duration of the entire tuplet may be encoded using the usual ‘power of 2’ values, e.g., 1, 2, 4, etc., in the **@dur** attribute if necessary.
 
 {% include mei example="cmn/cmn-sample140.txt" valid="" %}
