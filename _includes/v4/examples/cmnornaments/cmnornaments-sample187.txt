@@ -9,5 +9,5 @@
       </beam>
     </layer>
   </staff>
-  <trill ho="+1" place="above" staff="1" tstamp="1" tstamp2="2.5" vo="6.5"/>
+  <trill ho="+1" place="above" staff="1" tstamp="1" tstamp2="3" vo="6.5"/>
 </measure>
