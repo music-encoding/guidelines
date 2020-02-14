@@ -15,6 +15,6 @@ A number of elements can point to an internally-defined symbol for rendering usi
 
 {% include figure img="" caption="Defining two staffs, each using its own treble clef shape" %}
 
-Externally-defined symbols may be referenced using a **@glyphname** or **@glyphnum** attribute. Both attributes refer to Standard Music Font Layout (SMuFL) characters. Other character sets must be treated as internally-defined character sets.
+Externally-defined symbols may be referenced using a **@glyph.name** or **@glyph.num** attribute from the {% include link att="extSym" %} attribute class. Both attributes refer to Standard Music Font Layout (SMuFL) characters, if not specified differently by the **@glyph.auth** and **glyph.uri** attributes.
 
-{% include figure img="" caption="Use of glyphname and glyphnum attributes" %}
+{% include figure img="" caption="Use of glyph.name and glyph.num attributes" %}
