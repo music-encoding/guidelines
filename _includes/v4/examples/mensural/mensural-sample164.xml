@@ -1,6 +1,6 @@
 <layer>
-   <note dur="longa"></note>
-   <note dur="brevis"></note>
-   <note dur="brevis" num="1" numbase="2"></note>
-   <note dur="longa"></note>
+   <note dur="longa"/>
+   <note dur="brevis"/>
+   <note dur="brevis" dur.quality="altera"/>
+   <note dur="longa"/>
 </layer>

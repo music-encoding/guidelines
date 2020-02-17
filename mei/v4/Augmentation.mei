@@ -28,7 +28,7 @@
                         <staff n="1">
                             <?edit-start?>
                             <layer>
-                                <note dur="longa" num="2" numbase="3"/>
+                                <note dur="longa" dur.quality="perfecta" num="2" numbase="3"/>
                                 <dot form="aug"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>

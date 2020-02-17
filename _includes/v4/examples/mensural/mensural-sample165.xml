@@ -1,7 +1,11 @@
 <layer>
-   <note dur="longa" num="3" numbase="2"></note>
-   <note dur="brevis"></note>
-   <dot form="div"></dot>
-   <note dur="brevis"></note>
-   <note dur="longa" num="3" numbase="2"></note>
+    <note dur="longa"/>
+    <note dur="semibrevis"/>
+    <note dur="semibrevis"/>
+    <note dur="semibrevis"/>
+    <dot form="div"/>
+    <note dur="semibrevis"/>
+    <note dur="semibrevis" dur.quality="major"/>
+    <note dur="brevis"/>
+    <note dur="longa" dur.quality="duplex"/>
 </layer>

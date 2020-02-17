@@ -28,13 +28,13 @@
                         <staff n="1">
                             <?edit-start?>
                             <layer>
-                                <note dur="longa"/>
+                                <note dur="longa" dur.quality="perfecta"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>
                                 <barLine form="dashed"/>
-                                <note dur="brevis" num="1" numbase="2"/>
+                                <note dur="brevis" dur.quality="altera" num="1" numbase="2"/>
                                 <barLine form="dashed"/>
-                                <note dur="longa"/>
+                                <note dur="longa" dur.quality="perfecta"/>
                                 <barLine form="dashed"/>
                             </layer>
                             <?edit-end?>
