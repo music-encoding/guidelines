@@ -18,7 +18,7 @@ The last three values are to be used exclusively in *Ars antiqua* mensural notat
 The following example illustrates an **alteration** (the second *brevis*) in *modus minor perfectus*. Notice that the second brevis has doubled its regular value, it has been altered, unlike the first one.
 {% include verovio example="Alteration.mei" encoding=true %}
 
-It is possible to omit the dur.quality attribute in a note when the performed duration of the note is the default value provided by the mensuration. In this case, the longas are perfect, just as the mensuration (perfect modus minor) indicates. Therefore, the @dur.quality attribute can be omitted for the two longas.
+It is possible to omit the **@dur.quality** attribute in a note when the performed duration of the note is the default value provided by the mensuration. In this case, the longas are perfect, just as the mensuration (perfect modus minor) indicates. Therefore, the **@dur.quality** attribute can be omitted for the two longas.
 {% include mei example="mensural/mensural-sample164.xml" valid="" %}
 The same will apply to the examples that follow.
 
@@ -33,5 +33,5 @@ The following example in *modus minor imperfectus* illustrates the use of a dot 
 
 Finally, the following example illustrates the **@dur.quality** values related to the *Ars antiqua* style, for *modus minor perfectus*:
 {% include verovio example="Ars_antiqua.mei" encoding=true %}
-An alternative encoding---removing the @dur.quality attributes for notes which lengths are not modified from their default values (i.e., the perfect long and the minor semibreves)---would be:
+An alternative encoding---removing the **@dur.quality** attributes for notes which lengths are not modified from their default values (i.e., the perfect long and the minor semibreves)---would be:
 {% include mei example="mensural/mensural-sample165.xml" valid="" %}
