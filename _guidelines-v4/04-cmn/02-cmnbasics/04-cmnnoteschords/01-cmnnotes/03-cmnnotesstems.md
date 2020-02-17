@@ -46,9 +46,9 @@ Alternatively, the encoder may choose to treat the notes in the lower staff as l
 
 The choice between these two methods of representing material that crosses staves is often software-dependent.
 
-Whereas **@stem.with** can be used to define stems that connect notes across different staffs (cross-staff chords) **@stem.sameas** is meant for describing a stem that connects two notes pertaining to different layers within the same staff. 
+Whereas **@stem.with** can be used to define stems that connect notes across different staves (cross-staff chords) **@stem.sameas** is meant for describing a stem that connects two notes pertaining to different layers within the same staff. 
 
-The typical scanario for **@stem.sameas** is orchestral scores where two wind instruments are notated on one single staff. The notes have normally individual stems pointing in opposite directions. However, it is common engraving practice that notes of the same duration are often stemmed together between the parts or layers. The following example demonstrates this practice in the wind instruments (bassoons and trumpets in meas. 1 - 3, horns in meas. 3)
+The typical scenario for **@stem.sameas** is orchestral scores where two wind instruments are notated on one single staff. Normally, the notes have individual stems pointing in opposite directions. However, it is common engraving practice that notes of the same duration are often stemmed together between the parts encoded in separate layers. The following example demonstrates this practice in the wind instruments (bassoons and trumpets in meas. 1 - 3, horns in meas. 3)
 
 {% include figure img="modules/cmn/K543_m1-3_exc.png" caption="Shared stems" %}
  
