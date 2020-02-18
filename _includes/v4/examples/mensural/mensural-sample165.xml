@@ -1,4 +1,5 @@
 <layer>
+    <mensur modusminor="3" tempus="3"/>
     <note dur="longa"/>
     <note dur="semibrevis"/>
     <note dur="semibrevis"/>

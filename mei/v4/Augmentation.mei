@@ -20,14 +20,15 @@
                 <score>
                     <scoreDef>
                         <staffGrp>
-                            <staffDef n="1" label="voice" notationtype="mensural.white" modusminor="2" tempus="2" lines="5"/>
-                            <staffDef n="2" label="reference" notationtype="mensural.white" modusminor="2" tempus="2" lines="5"/>
+                            <staffDef n="1" label="voice" notationtype="mensural.white" lines="5"/>
+                            <staffDef n="2" label="reference" notationtype="mensural.white" lines="5"/>
                         </staffGrp>
                     </scoreDef>
                     <section>
                         <staff n="1">
                             <?edit-start?>
                             <layer>
+                                <mensur modusminor="2" tempus="2"/>
                                 <note dur="longa" dur.quality="perfecta" num="2" numbase="3"/>
                                 <dot form="aug"/>
                                 <barLine form="dashed"/>
@@ -38,6 +39,7 @@
                         </staff>
                         <staff n="2">
                             <layer>
+                                <mensur modusminor="2" tempus="2"/>
                                 <note dur="brevis" pname="a" oct="4"/>
                                 <note dur="brevis" pname="a" oct="4"/>
                                 <note dur="brevis" pname="a" oct="4"/>
