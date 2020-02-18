@@ -11,5 +11,5 @@
       </graceGrp>
     </layer>
   </staff>
-  <trill place="above" staff="1" tstamp="1" tstamp2="2.5" vo="6.5"/>
+  <trill place="above" staff="1" tstamp="1" tstamp2="3" vo="6.5"/>
 </measure>
