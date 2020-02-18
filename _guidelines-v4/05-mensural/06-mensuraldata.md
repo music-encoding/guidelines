@@ -8,4 +8,4 @@ The data organization based on {% include link elem="measure" %} elements that u
 
 {% include mei example="mensural/mensural-sample168.xml" valid="" %}
 
-This feature may also be used to encode measured music without using the {% include link elem="measure" %} element. That is, the same data organization described above may be used, but with the addition of barlines, indicated by the {% include link elem="barLine" %} element, for those situations where a measure-by-measure organization is not appropriate, for exampe, when measures are not coincident in all the staves of a score.
+This feature may also be used to encode measured music without using the {% include link elem="measure" %} element. That is, the same data organization described above may be used, but with the addition of barlines, indicated by the {% include link elem="barLine" %} element, for those situations where a measure-by-measure organization is not appropriate, for example, when measures are not coincident in all the staves of a score.
