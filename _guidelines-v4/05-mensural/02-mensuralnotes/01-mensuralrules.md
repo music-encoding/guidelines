@@ -5,12 +5,20 @@ version: "v4"
 ---
 
 In ternary divisions, the dichotomy between the duration sign of the notes and their actual duration requires specific attention. The rules of mensural notation can require the alteration or the imperfection of a note; that is, an increase or reduction in its performed duration. In these cases, if the encoding is intended to be suitable for more than just graphically representing the notation, encoding only the duration sign becomes insufficient. In that case, in addition to encoding the duration sign in the **@dur** attribute, it is recommended to encode its performed duration in the **@dur.quality** attribute. The **@dur.quality** attribute indicates the length of a note in mensural notation, using values in compliance with the original terminology:
-- perfecta
-- imperfecta
-- altera
-- maior
-- minor
-- duplex
+
+{:.gloss}
+**perfecta:** Three times the duration of the note in the next smaller degree
+{:.gloss}
+**imperfecta:** Two times the duration of the note in the next smaller degree
+{:.gloss}
+**altera:** Twice the original duration of the note (only usable in perfect mensurations)
+{:.gloss}
+**minor:** Category of a regular semibrevis in Ars antiqua, equivalent to a third of a brevis
+{:.gloss}
+**maior:** Category of an altered semibrevis in Ars antiqua, equivalent to two minor semibrevis
+{:.gloss}
+**duplex:** One of the three categories of a longa in Ars antiqua ('duplex', 'perfecta', and 'imperfecta')
+{:.gloss}
 
 The last three values are to be used exclusively in *Ars antiqua* mensural notation, where "maior" and "minor" refer to types of semibreves, and "duplex" refers to a type of longa. Examples of each of these six values are presented below. In these examples, the ‘voice’ staff renders the notes in the code snippet, and the ‘reference’ staff, together with the dotted barlines, are shown to help to visualize the relative values of the notes in the ‘voice’ staff.
 
