@@ -6,7 +6,7 @@
     <note dur="semibrevis"/>
     <dot form="div"/>
     <note dur="semibrevis"/>
-    <note dur="semibrevis" dur.quality="major"/>
+    <note dur="semibrevis" dur.quality="maior"/>
     <note dur="brevis"/>
     <note dur="longa" dur.quality="duplex"/>
 </layer>
