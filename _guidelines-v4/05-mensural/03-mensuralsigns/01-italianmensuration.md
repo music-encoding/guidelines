@@ -8,4 +8,4 @@ The division of the breve in Italian mensural notation can be encoded using the 
 
 <!-- Later on (when approved in the schema) add the bracketed-and-percentage-expression: include desc atts="att.mensural.shared/divisio" -->
 
-The Italian mensuration signs can be encoded in the **@sign** attribute as well, with the values: ".t." for ternaria, ".q." for quaternaria, ".si." and ".i." for senaria imperfecta, ".sp." and ".p." for senaria perfecta, ".o." for octonaria, ".n." for novenaria, and ".d." for duodenaria. And the additional values for senaria gallica, ".sg." and ".g.", and senaria ytalica, ".sy." and ".y."
+The Italian mensuration signs can be encoded in the **@sign** attribute as well, with the values: "t" for ternaria, "q" for quaternaria, "si" and "i" for senaria imperfecta, "sp" and "p" for senaria perfecta, "oc" for octonaria, "n" for novenaria, and "d" for duodenaria. And the additional values for senaria gallica, "sg" and "g", and senaria ytalica, "sy" and "y".
