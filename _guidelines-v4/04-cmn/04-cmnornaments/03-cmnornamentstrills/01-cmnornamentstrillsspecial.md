@@ -26,7 +26,7 @@ Another situation that requires disambiguation of an ornament's name and its pot
 
 In the example below, the child elements of {% include link elem="choice" %}; that is, {% include link elem="orig" %} and {% include link elem="reg" %}, represent non-exclusive options; that is, both may be processed by applications that aim to support both visual and aural renditions.
 
-{% include figure img="modules/ExampleImages/ExplicationBach.png" caption="Trill transcribed from J. S. Bach's Klavierbüchlein für Wilhelm Friedemann Bach" %}
+{% include figure img="ExampleImages/ExplicationBach.png" caption="Trill transcribed from J. S. Bach's Klavierbüchlein für Wilhelm Friedemann Bach" %}
 {% include mei example="cmnOrnaments/cmnOrnaments-sample204.txt" valid="" %}
 
 Depending on the purpose of the encoding, it may be more convenient to encode the regularized text within the stream of events, along with a corresponding choice with regard to the existence of the trill marking, as in the following example:
