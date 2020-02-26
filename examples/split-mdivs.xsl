@@ -10,16 +10,31 @@
     <xsl:variable name="filename" select="substring-before((tokenize($document-uri,'/'))[last()],'.')" />
 
     <xsl:template match="/">
-        <xsl:for-each select="mei:mei/mei:music/mei:body/mei:mdiv">
-            <xsl:result-document method="xml" href="temp/{$filename}.{@n}.mei">
-                <mei meiversion="4.0.0">
-                    <music>
-                        <body>
-                            <xsl:copy-of select="." />
-                        </body>
-                    </music>
-                </mei>
-            </xsl:result-document>
-        </xsl:for-each>
+        <xsl:apply-templates select="mei:mei/mei:music/mei:body/mei:mdiv" />
     </xsl:template>
+
+    <xsl:template match="mei:mdiv[@n]">
+        <xsl:result-document method="xml" href="temp/{$filename}.{@n}.mei">
+            <mei meiversion="4.0.0">
+                <music>
+                    <body>
+                        <xsl:copy-of select="." />
+                    </body>
+                </music>
+            </mei>
+        </xsl:result-document>
+    </xsl:template>
+
+    <xsl:template match="mei:mdiv[not(@n)]">
+        <xsl:result-document method="xml" href="temp/{$filename}.mei">
+            <mei meiversion="4.0.0">
+                <music>
+                    <body>
+                        <xsl:copy-of select="." />
+                    </body>
+                </music>
+            </mei>
+        </xsl:result-document>
+    </xsl:template>
+
 </xsl:stylesheet>

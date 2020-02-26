@@ -19,7 +19,7 @@
         <body>
             <mdiv n="1" label="Boléro">
                 <score>
-                    <scoreDef>
+                    <scoreDef system.leftline="false">
                         <staffGrp>
                             <staffDef meter.count="3" meter.unit="4" n="1" lines="1" />
                         </staffGrp>
@@ -94,7 +94,7 @@
             </mdiv>
             <mdiv n="2" label="hierarchy-crossing">
                 <score>
-                    <scoreDef>
+                    <scoreDef system.leftline="false">
                         <staffGrp>
                             <staffDef clef.shape="G" clef.line="2" meter.count="2" meter.unit="4" n="1" lines="5" />
                         </staffGrp>

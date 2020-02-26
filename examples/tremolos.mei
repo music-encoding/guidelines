@@ -4,7 +4,7 @@
   <meiHead>
     <fileDesc>
       <titleStmt>
-        <title>Fingered tremolos</title>
+        <title>Tremolandi</title>
         <editor>
           <persName>Klaus Rettinghaus</persName>
         </editor>
@@ -17,9 +17,90 @@
   </meiHead>
   <music>
     <body>
-      <mdiv n="1">
+      <mdiv n="1" label="Bowed tremolos">
         <score>
-          <scoreDef>
+          <scoreDef system.leftline="false">
+            <staffGrp>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <bTrem unitdur="32">
+                    <note dur="1" oct="4" pname="b" stem.mod="3slash"/>
+                  </bTrem>
+                  <bTrem unitdur="32">
+                    <note dur="1" oct="4" pname="a" stem.mod="3slash"/>
+                  </bTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <bTrem unitdur="32">
+                    <note dur="2" oct="4" pname="b" stem.mod="3slash"/>
+                  </bTrem>
+                  <bTrem unitdur="32">
+                    <note dur="2" oct="4" pname="a" stem.mod="3slash"/>
+                  </bTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <bTrem unitdur="32">
+                    <note dur="4" oct="4" pname="b" stem.mod="3slash"/>
+                  </bTrem>
+                  <bTrem unitdur="32">
+                    <note dur="4" oct="4" pname="a" stem.mod="3slash"/>
+                  </bTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <bTrem unitdur="32">
+                    <note dur="8" oct="4" pname="b" stem.mod="2slash"/>
+                  </bTrem>
+                  <bTrem unitdur="32">
+                    <note dur="8" oct="4" pname="a" stem.mod="2slash"/>
+                  </bTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <beam>
+                    <bTrem unitdur="32">
+                      <note dots="1" dur="8" oct="4" pname="b" stem.mod="2slash"/>
+                    </bTrem>
+                    <bTrem unitdur="32">
+                      <note dots="1" dur="16" oct="4" pname="b" stem.mod="1slash"/>
+                    </bTrem>
+                  </beam>
+                  <beam>
+                    <bTrem unitdur="32">
+                      <note dots="1" dur="8" oct="4" pname="a" stem.mod="2slash"/>
+                    </bTrem>
+                    <bTrem unitdur="32">
+                      <note dots="1" dur="16" oct="4" pname="a" stem.mod="1slash"/>
+                    </bTrem>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv n="2" label="Fingered tremolos">
+        <score>
+          <scoreDef system.leftline="false">
             <staffGrp>
               <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
             </staffGrp>
@@ -54,9 +135,9 @@
           </section>
         </score>
       </mdiv>
-      <mdiv n="2">
+      <mdiv n="3" label="Floating beams">
         <score>
-          <scoreDef meter.count="2" meter.unit="4" key.sig="1f">
+          <scoreDef meter.count="2" meter.unit="4" key.sig="1f" system.leftline="false">
             <staffGrp>
               <staffDef n="1" clef.line="4" clef.shape="F" lines="5"/>
             </staffGrp>

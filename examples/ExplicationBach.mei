@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Bach's Explication</title>
+            </titleStmt>
+            <pubStmt>
+                <respStmt>
+                    <persName role="editor">Klaus Rettinghaus</persName>
+                </respStmt>
+                <pubPlace>Leipzig</pubPlace>
+                <date>2020</date>
+            </pubStmt>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <mdiv>
+                    <score>
+                        <scoreDef text.dist="6">
+                            <staffGrp>
+                                <staffGrp bar.thru="false" symbol="brace">
+                                    <staffDef n="1" clef.line="1" clef.shape="C" lines="5" />
+                                    <staffDef n="2" clef.line="1" clef.shape="C" lines="5" />
+                                </staffGrp>
+                            </staffGrp>
+                        </scoreDef>
+                        <section>
+                            <pb />
+                            <measure right="dbl">
+                                <staff n="1">
+                                    <layer>
+                                        <note dur="4" oct="5" pname="c" stem.dir="down" xml:id="ex-01"/>
+                                    </layer>
+                                </staff>
+                                <staff n="2">
+                                    <layer>
+                                        <beam place="below">
+                                            <note dur="32" oct="5" pname="d" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="c" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="d" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="c" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="d" stem.dir="down"/>
+                                            <note dur="16" dots="1" oct="5" pname="c" stem.dir="down"/>
+                                        </beam>
+                                    </layer>
+                                </staff>
+                                <trill startid="#ex-01" glyph.num="U+E56C" />
+                                <dir startid="#ex-01" place="below">
+                                    <rend fontstyle="italic">Trillo.</rend>
+                                </dir>
+                            </measure>
+                            <measure right="dbl">
+                                <staff n="1">
+                                    <layer>
+                                        <note dur="4" oct="5" pname="c" stem.dir="down" xml:id="ex-02"/>
+                                    </layer>
+                                </staff>
+                                <staff n="2">
+                                    <layer>
+                                        <beam place="below">
+                                            <note dur="32" oct="5" pname="c" stem.dir="down"/>
+                                            <note dur="32" oct="4" pname="b" stem.dir="down"/>
+                                            <note dur="8" dots="1" oct="5" pname="c" stem.dir="down"/>
+                                        </beam>
+                                    </layer>
+                                </staff>
+                                <mordent startid="#ex-02"/>
+                                <dir startid="#ex-02" place="below">
+                                    <rend fontstyle="italic">mordant.</rend>
+                                </dir>
+                            </measure>
+                            <measure right="dbl">
+                                <staff n="1">
+                                    <layer>
+                                        <note dur="4" oct="5" pname="c" stem.dir="down" xml:id="ex-03"/>
+                                    </layer>
+                                </staff>
+                                <staff n="2">
+                                    <layer>
+                                        <beam place="below">
+                                            <note dur="32" oct="5" pname="d" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="c" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="d" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="c" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="d" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="c" stem.dir="down"/>
+                                            <note dur="32" oct="4" pname="b" stem.dir="down"/>
+                                            <note dur="32" oct="5" pname="c" stem.dir="down"/>
+                                        </beam>
+                                    </layer>
+                                </staff>
+                                <ornam startid="#ex-03">
+                                    <symbol glyph.num="U+E5BD"/>
+                                </ornam>
+                                <dir startid="#ex-03" place="below">
+                                    <rend fontstyle="italic">trillo und mordant.</rend>
+                                </dir>
+                            </measure>
+                        </section>
+                    </score>
+                </mdiv>
+            </mdiv>
+        </body>
+    </music>
+</mei>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Measure space</title>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt/>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1">
+        <score>
+          <scoreDef system.leftline="false">
+            <staffGrp>
+              <staffDef n="1" lines="5" meter.sym="common" meter.count="4" meter.unit="4" key.sig="4s"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <pb/>
+            <measure>
+              <staff n="1">
+                <layer>
+                  <note dur="2" oct="5" pname="c" accid.ges="s"/>
+                  <note dur="4" oct="4" pname="b"/>
+                  <note dur="4" oct="4" pname="a"/>
+                </layer>
+              </staff>
+            </measure>
+            <measure>
+              <staff n="1">
+                <layer>
+                  <mSpace/>
+                </layer>
+              </staff>
+            </measure>
+            <measure>
+              <staff n="1">
+                <layer>
+                  <note dur="2" oct="4" pname="g" accid.ges="s"/>
+                  <note dur="2" oct="4" pname="a"/>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
