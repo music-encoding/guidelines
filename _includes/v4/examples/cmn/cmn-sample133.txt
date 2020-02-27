@@ -1,2 +1,2 @@
 <!-- tstamp attribute indicates starting point, dur attribute marks the end -->
-<dynam place="above" staff="2" tstamp="2.5" tstamp2="1m+1">cresc. poco a poco</dynam>
+<dynam place="above" staff="2" tstamp="3" dur="1">cresc. poco a poco</dynam>

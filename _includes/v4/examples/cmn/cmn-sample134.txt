@@ -1,2 +1,2 @@
 <!-- tstamp attribute indicates starting point, endid attribute marks the end -->
-<dynam endid="ID of last note" place="above" staff="2" tstamp="2.5">cresc. poco a poco</dynam>
+<dynam endid="#ID_of_last_note" place="above" staff="2" tstamp="3">cresc. poco a poco</dynam>
