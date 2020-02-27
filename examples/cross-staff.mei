@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Excerpts with cross-staff notation</title>
+                <editor>
+                    <persName>Klaus Rettinghaus</persName>
+                </editor>
+            </titleStmt>
+            <pubStmt/>
+            <seriesStmt>
+                <title>MEI guidelines examples</title>
+            </seriesStmt>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv n="1" label="Moszkowski">
+                <score>
+                    <scoreDef spacing.staff="30" pedal.style="altpedstar">
+                        <staffGrp symbol="brace">
+                            <staffDef n="1" clef.line="2" clef.shape="G" lines="5">
+                                <keySig sig="1s" />
+                            </staffDef>
+                            <staffDef n="2" clef.line="4" clef.shape="F" lines="5">
+                                <keySig sig="1s" />
+                            </staffDef>
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <measure n="35" right="single">
+                            <staff n="1">
+                                <layer>
+                                    <mSpace/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <beam place="above">
+                                        <note dur="16" oct="1" pname="b" xml:id="ex-35-01"/>
+                                        <note dur="16" oct="2" pname="f" accid.ges="s"/>
+                                        <note dur="16" oct="2" pname="b"/>
+                                        <note dur="16" oct="3" pname="d">
+                                            <accid accid="s"/>
+                                        </note>
+                                    </beam>
+                                    <beam place="below">
+                                        <note dur="16" oct="3" pname="f" accid.ges="s"/>
+                                        <note dur="16" oct="3" pname="b"/>
+                                        <note dur="16" oct="4" pname="d" staff="1">
+                                            <accid accid="s"/>
+                                        </note>
+                                        <note dur="16" oct="4" pname="f" accid.ges="s" staff="1"/>
+                                    </beam>
+                                    <beam place="mixed">
+                                        <note dur="16" oct="4" pname="b" staff="1"/>
+                                        <note dur="16" oct="4" pname="f" accid.ges="s" staff="1"/>
+                                        <note dur="16" oct="4" pname="d" accid.ges="s" staff="1"/>
+                                        <note dur="16" oct="3" pname="b" staff="2"/>
+                                    </beam>
+                                    <beam place="below">
+                                        <note dur="16" oct="4" pname="c" staff="2" xml:id="ex-35-13">
+                                            <accid accid="n"/>
+                                            <artic artic="acc"/>
+                                        </note>
+                                        <note dur="16" oct="3" pname="a" staff="2"/>
+                                        <note dur="16" oct="3" pname="e" staff="2"/>
+                                        <note dur="16" oct="3" pname="c" staff="2"/>
+                                    </beam>
+                                </layer>
+                            </staff>
+                            <pedal dir="down" startid="#ex-35-01" place="below" staff="2"/>
+                            <pedal dir="down" startid="#ex-35-13" place="below" staff="2"/>
+                        </measure>
+                        <measure n="36" right="single">
+                            <staff n="1">
+                                <layer>
+                                    <mSpace/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <beam place="above">
+                                        <note dur="16" oct="1" pname="b" xml:id="ex-36-01"/>
+                                        <note dur="16" oct="2" pname="f" accid.ges="s"/>
+                                        <note dur="16" oct="2" pname="b"/>
+                                        <note dur="16" oct="3" pname="d">
+                                            <accid accid="s"/>
+                                        </note>
+                                    </beam>
+                                    <beam place="below">
+                                        <note dur="16" oct="3" pname="f" accid.ges="s"/>
+                                        <note dur="16" oct="3" pname="b"/>
+                                        <note dur="16" oct="4" pname="d" staff="1">
+                                            <accid accid="s"/>
+                                        </note>
+                                        <note dur="16" oct="4" pname="f" accid.ges="s" staff="1"/>
+                                    </beam>
+                                    <beam place="mixed">
+                                        <note dur="16" oct="4" pname="b" staff="1"/>
+                                        <note dur="16" oct="4" pname="f" accid.ges="s" staff="1"/>
+                                        <note dur="16" oct="4" pname="d" accid.ges="s" staff="1"/>
+                                        <note dur="16" oct="3" pname="b" staff="2"/>
+                                    </beam>
+                                    <beam place="below">
+                                        <note dur="16" oct="4" pname="e" staff="2" xml:id="ex-36-13">
+                                            <artic artic="acc"/>
+                                        </note>
+                                        <note dur="16" oct="4" pname="c" staff="2"/>
+                                        <note dur="16" oct="3" pname="a" staff="2"/>
+                                        <note dur="16" oct="3" pname="f" accid.ges="s" staff="2"/>
+                                    </beam>
+                                </layer>
+                            </staff>
+                            <pedal dir="down" startid="#ex-36-01" place="below" staff="2"/>
+                            <pedal dir="down" startid="#ex-36-13" place="below" staff="2"/>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+            <mdiv n="2">
+                <score>
+                    <scoreDef>
+                        <staffGrp symbol="brace">
+                            <staffDef n="1" clef.line="4" clef.shape="F" lines="5">
+                                <keySig sig="2s" />
+                            </staffDef>
+                            <staffDef n="2" clef.line="4" clef.shape="F" lines="5">
+                                <keySig sig="2s" />
+                            </staffDef>
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <pb />
+                        <measure right="single">
+                            <staff n="1">
+                                <layer>
+                                    <tuplet num="8" numbase="6" num.visible="false" bracket.visible="false">
+                                        <rest dur="16" dur.ges="4" />
+                                        <beam place="mixed">
+                                            <note dur="32" dur.ges="16" oct="2" pname="b"/>
+                                            <note dur="32" dur.ges="16" oct="3" pname="c" accid.ges="s"/>
+                                            <note dur="32" dur.ges="16" oct="3" pname="e"/>
+                                            <note dur="32" dur.ges="16" oct="3" pname="g">
+                                                <accid accid="n"/>
+                                            </note>
+                                            <clef line="2" shape="G" staff="2"/>
+                                            <note dur="32" dur.ges="16" oct="3" pname="b" staff="2"/>
+                                            <note dur="32" dur.ges="16" oct="4" pname="c" accid.ges="s" staff="2"/>
+                                            <note dur="32" dur.ges="16" oct="4" pname="e" staff="2"/>
+                                            <note dur="32" dur.ges="16" oct="4" pname="g" staff="2"/>
+                                            <clef line="2" shape="G"/>
+                                            <note dur="32" dur.ges="16" oct="4" pname="b" staff="1"/>
+                                            <note dur="32" dur.ges="16" oct="5" pname="c" accid.ges="s" staff="1"/>
+                                            <note dur="32" dur.ges="16" oct="5" pname="e" staff="1"/>
+                                            <note dur="32" dur.ges="16" oct="5" pname="g" staff="1"/>
+                                        </beam>
+                                    </tuplet>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <chord dur="4" xml:id="ex-928346">
+                                        <note oct="2" pname="a"/>
+                                        <note oct="1" pname="a"/>
+                                    </chord>
+                                    <space dur="2"/>
+                                </layer>
+                            </staff>
+                            <dynam startid="#ex-928346" place="above" staff="2">mf</dynam>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>
