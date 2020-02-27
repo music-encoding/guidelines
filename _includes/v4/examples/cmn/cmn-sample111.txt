@@ -1,10 +1,12 @@
 <staff n="2">
   <layer>
+    <!-- … -->
     <beam>
-      <note dur="16" oct="3" pname="g"/>
-      <note pname="b"/>
-      <note oct="4" pname="d" staff="1"/>
-      <note pname="f" staff="1"/>
+      <note dur="16" oct="3" pname="f" accid.ges="s"/>
+      <note dur="16" oct="3" pname="b"/>
+      <note dur="16" oct="4" pname="d" accid="s" staff="1"/>
+      <note dur="16" oct="4" pname="f" accid.ges="s" staff="1"/>
     </beam>
+    <!-- … -->
   </layer>
 </staff>
