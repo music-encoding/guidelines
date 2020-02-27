@@ -8,13 +8,13 @@ This section of the Guidelines defines principles and criteria for designing, de
 
 ##### Definitions and Parameters
 
-A music notation document is one that contains music notation; that is, any one of a number of "visual analogues of musical sound, either as a record of sound heard or imagined, or as a set of visual instructions for performers." (Ian D. Bent, et al. "Notation." Grove Music Online. Oxford Music Online. 25 May 2010. [http://www.oxfordmusiconline.com/subscriber/article/grove/music/20114](http://www.oxfordmusiconline.com/subscriber/article/grove/music/20114){:target='\_blank'}.)
+A music notation document is one that contains music notation; that is, any one of a number of "visual analogues of musical sound, either as a record of sound heard or imagined, or as a set of visual instructions for performers." (Ian D. Bent, et al. "Notation." Grove Music Online. Oxford Music Online. 25 May 2010. [http://www.oxfordmusiconline.com/subscriber/article/grove/music/20114](http://www.oxfordmusiconline.com/subscriber/article/grove/music/20114){:target='\_blank'}.) However, MEI's understanding is more inclusive than this restrictive definition, i.e. Braille certainly qualifies as music notation documents. 
 
 The encoding scheme permits both the creation of new music notation documents and the conversion of existing ones from print and other electronic formats. However, conversion of existing documents may require revisions in content or rearrangement of information.
 
 ##### General Principles
 
-No prima facie distinction is made between a primary source of music notation, such as an autograph or published score, and a secondary source, such as a scholarly edition based on one or more primary sources. The tag set encompasses both, and the encoder must choose the elements and attributes most appropriate in each case.
+MEI may be used to encode both primary sources of music notation, such as an autograph or published score, and secondary sources, such as a scholarly edition based on one or more primary sources. The format encompasses both use cases, and the encoder must choose the elements and attributes most appropriate in each case. These Guidelines aim to provide guidance on that task.
 
 As an encoded representation of one or more music notation documents, an MEI file may be employed as a surrogate for the original materials.
 
