@@ -14,7 +14,7 @@ done
 
 find temp -type f -name "*.mei"|while read tempfile;
 do
-  saxonb-xslt -s:$tempfile -o:${tempfile%.mei}.ly -xsl:../mei2ly.xsl include=init-guidelines.ily
+  saxonb-xslt -s:$tempfile -o:${tempfile%.mei}.ly -xsl:mei2ly.xsl include=init-guidelines.ily
   lilypond -dresolution=120 -dno-print-pages -dpreview -fpng --loglevel=BASIC_PROGRESS ${tempfile%.mei}.ly
   file=$(basename "$tempfile")
   mv ${file%.mei}.preview.png ${file%.mei}.png
