@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <staff>
   <layer>
     <note dur="2" oct="4" pname="g" slur="i1"/>

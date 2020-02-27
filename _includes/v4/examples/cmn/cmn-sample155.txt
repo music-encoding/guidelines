@@ -1,4 +1,4 @@
 <measure>
   <!-- staves omitted -->
-  <harpPedal a="f" b="f" e="f" staff="2" tstamp="1"/>
+  <harpPedal tstamp="1" c="s" b="f" e="f"/>
 </measure>
