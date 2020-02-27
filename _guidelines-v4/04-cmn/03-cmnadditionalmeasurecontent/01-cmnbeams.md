@@ -44,7 +44,7 @@ The duration of notes, rests, or chords under a beam which carries the **@form**
 
 {% include figure img="modules/cmn/beamAcc-Rit.png" caption="Feathered beaming" %}
 {% include mei example="cmn/cmn-sample110.txt" valid="" %}
-{% include figure img="ExampleImages/beam-c-20100510.png" caption="Cross-staff beam" %}
+{% include figure img="ExampleImages/cross-staff.1.png" caption="Cross-staff beams" %}
 
 Beams that connect events on different staves may be encoded in two different ways. First, a single-layer approach may be taken that treats the events lying under the beam as logically belonging to the same layer as the initial event but visually ‘displaced’ to an adjacent staff. In the example below, the last two notes under the beam carry a **@staff** attribute value that contradicts the ‘normal’ staff placement indicated by the **@n** attribute on their ancestor {% include link elem="staff" %}.
 
