@@ -9,7 +9,13 @@
           <persName>Klaus Rettinghaus</persName>
         </editor>
       </titleStmt>
-      <pubStmt/>
+      <pubStmt>
+        <availability>
+          <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
+            <p>Creative Commons Attribution 4.0 International License</p>
+          </useRestrict>
+        </availability>
+      </pubStmt>
       <seriesStmt>
         <title>MEI guidelines examples</title>
       </seriesStmt>
@@ -17,7 +23,77 @@
   </meiHead>
   <music>
     <body>
-      <mdiv n="1">
+      <mdiv n="1" label="Schulhoff's Violin Sonata" xml:id="Schulhoff">
+        <score>
+          <scoreDef system.leftline="false">
+            <staffGrp>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure right="single">
+              <staff n="1">
+                <layer>
+                  <beam>
+                    <note dur="8" oct="4" pname="a">
+                      <accid accid="n"/>
+                      <artic artic="stacc acc"/>
+                    </note>
+                    <note dur="8" oct="4" pname="b">
+                      <artic artic="stacc acc"/>
+                    </note>
+                    <note dur="8" oct="5" pname="c">
+                      <accid accid="n"/>
+                      <artic artic="stacc acc"/>
+                    </note>
+                    <note dur="8" oct="4" pname="d">
+                      <accid accid="s"/>
+                      <artic artic="stacc acc"/>
+                    </note>
+                  </beam>
+                  <note dur="8" oct="4" pname="e" xml:id="beamed-01">
+                    <artic artic="stacc acc"/>
+                  </note>
+                  <note dur="8" oct="4" pname="f" xml:id="beamed-02">
+                    <accid accid="s"/>
+                    <artic artic="stacc acc"/>
+                  </note>
+                </layer>
+              </staff>
+              <beamSpan startid="#beamed-01" endid="#beamed-04" plist="#beamed-01 #beamed-02 #beamed-03 #beamed-04"/>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="8" oct="4" pname="g" xml:id="beamed-03">
+                    <accid accid="n"/>
+                    <artic artic="stacc acc"/>
+                  </note>
+                  <note dur="8" oct="3" pname="a" xml:id="beamed-04">
+                    <accid accid="n"/>
+                    <artic artic="stacc acc"/>
+                  </note>
+                  <beam>
+                    <note dur="8" oct="3" pname="b">
+                      <accid accid="f"/>
+                      <artic artic="stacc acc"/>
+                    </note>
+                    <note dur="8" oct="4" pname="c">
+                      <accid accid="n"/>
+                      <artic artic="stacc acc"/>
+                    </note>
+                  </beam>
+                  <note dur="4" oct="4" pname="d">
+                    <accid accid="f"/>
+                    <artic artic="ten acc"/>
+                  </note>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv n="2">
         <score>
           <scoreDef system.leftline="false">
             <staffGrp>
