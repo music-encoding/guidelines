@@ -8,12 +8,12 @@ The function of the **@mimetype** attribute is similar to that of **@targettype*
 
 {% include mei example="ptrRef/ptrRef-sample347.txt" valid="feasible" %}
 
+As shown above, the {% include link elem="ptr" %} element can be used to ‘point to’ a digital image (`target="my.png"`). However, when the intention is to *display* a digital image as part of the rendering of an MEI file, the {% include link elem="graphic" %} element provides a convenient and recommended alternative:
+
+{% include mei example="ptrRef/ptrRef-sample350.txt" valid="" %}
 
 The **@mimetype** attribute is particularly useful for documenting the nature of the destination when the value of **@target** does not provide a filename extension or when the destination is a non-standard file type:
 
 {% include mei example="ptrRef/ptrRef-sample348.txt" valid="feasible" %}
 
-As shown above, the {% include link elem="ptr" %} element can be used to ‘point to’ a digital image. However, when the intention is to *display* a digital image as part of the rendering of an MEI file, the {% include link elem="graphic" %} element provides a convenient and recommended alternative:
-
-{% include mei example="ptrRef/ptrRef-sample350.txt" valid="" %}
 
