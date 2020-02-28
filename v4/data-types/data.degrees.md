@@ -26,6 +26,10 @@ title: "data.DEGREES"
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.DEGREES</span></div>
                   <div class="classContent"><span class="ident attclass" data-ident="att.soundLocation" data-module="MEI.gestural"><a class="classLink" title="Attributes that locate a sound source within 3-D space." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.soundlocation.html">att.soundLocation</a>/<span title="The lateral or left-to-right plane.">@azimuth</span></span><span class="ident attclass" data-ident="att.soundLocation" data-module="MEI.gestural"><a class="classLink" title="Attributes that locate a sound source within 3-D space." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.soundlocation.html">att.soundLocation</a>/<span title="The above-to-below axis.">@elevation</span></span></div>
                </div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.DEGREES</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.ROTATION" data-module="MEI" title="Rotation."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.rotation.html">data.ROTATION</a></span></div>
+               </div>
             </div>
          </div>
          <div class="facet declaration">

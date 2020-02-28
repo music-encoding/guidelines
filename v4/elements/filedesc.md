@@ -9,7 +9,7 @@ title: "fileDesc"
       <h3 id="fileDesc">&lt;fileDesc&gt;</h3>
       <div class="specs">
          <div class="desc">(file description) – Contains a full bibliographic description of the MEI file.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerEditionstmt">3.1.1.2 Edition Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.6 Minimal and Recommended Header Information</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#corpusCombiningHeaders">3.4.2 Combining Corpus and Text Headers</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink desc" href="/guidelines/v4/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerEditionstmt">3.1.1.2 Edition Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#headerMinimalRecommendedHeader">3.1.8 Minimal and Recommended Header Information</a>,<a class="chapterLink" href="/guidelines/v4/content/metadata.html#corpusCombiningHeaders">3.4.2 Combining Corpus and Text Headers</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -29,7 +29,7 @@ title: "fileDesc"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                         to
                         which this MEI element is comparable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -50,7 +50,7 @@ title: "fileDesc"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -90,7 +90,7 @@ title: "fileDesc"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -109,7 +109,7 @@ title: "fileDesc"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -122,7 +122,7 @@ title: "fileDesc"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -207,7 +207,7 @@ title: "fileDesc"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                      </div>
                   </div>
@@ -219,7 +219,7 @@ title: "fileDesc"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains a reference to a field or element in another descriptive encoding system to which this MEI element is comparable.">analog</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains a reference to a field or element in another descriptive encoding system
                               to
                               which this MEI element is comparable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                               bearing this attribute.</span><span class="attributeValues">
@@ -240,7 +240,7 @@ title: "fileDesc"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -280,7 +280,7 @@ title: "fileDesc"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -306,7 +306,8 @@ title: "fileDesc"
                   <div class="classBox" title="elements having fileDesc as direct children">
                      <div class="classHeading"><label class="classLabel">elements having fileDesc as direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(MEI header) – Supplies the descriptive and declarative metadata prefixed to every MEI-conformant text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/meihead.html">meiHead</a></span><span class="elementDesc desc">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
+                              MEI-conformant text.</span></div>
                      </div>
                   </div>
                </div>
@@ -334,13 +335,23 @@ title: "fileDesc"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Used to express size in terms other than physical dimensions, such as number of pages, records, bytes, physical components, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extent.html">extent</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(notes statement)– Collects any notes providing information about a text additional to that recorded in other parts of the bibliographic description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/notesstmt.html">notesStmt</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(series statement) – Groups information about the series, if any, to which a publication belongs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seriesstmt.html">seriesStmt</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(source description) – A container for the descriptions of the source(s) used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">(file description) – Contains a full bibliographic description of the MEI file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">(edition statement) – Container for meta-data pertaining to a particular edition of
+                              the
+                              material being described.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Used to express size in terms other than physical dimensions, such as number of pages, records, bytes, physical components, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/extent.html">extent</a></span><span class="elementDesc desc">Used to express size in terms other than physical dimensions, such as number of pages,
+                              records, bytes, physical components, etc.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(notes statement)– Collects any notes providing information about a text additional to that recorded in other parts of the bibliographic description."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/notesstmt.html">notesStmt</a></span><span class="elementDesc desc">(notes statement)– Collects any notes providing information about a text additional
+                              to
+                              that recorded in other parts of the bibliographic description.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(publication statement) – Container for information regarding the publication or distribution of a bibliographic item, including the publisher's name and address, the date of publication, and other relevant details."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pubstmt.html">pubStmt</a></span><span class="elementDesc desc">(publication statement) – Container for information regarding the publication or
+                              distribution of a bibliographic item, including the publisher's name and address,
+                              the date of
+                              publication, and other relevant details.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(series statement) – Groups information about the series, if any, to which a publication belongs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/seriesstmt.html">seriesStmt</a></span><span class="elementDesc desc">(series statement) – Groups information about the series, if any, to which a publication
+                              belongs.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(source description) – A container for the descriptions of the source(s) used in the creation of the electronic file."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sourcedesc.html">sourceDesc</a></span><span class="elementDesc desc">(source description) – A container for the descriptions of the source(s) used in the
+                              creation of the electronic file.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(title statement) – Container for title and responsibility meta-data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlestmt.html">titleStmt</a></span><span class="elementDesc desc">(title statement) – Container for title and responsibility meta-data.</span></div>
                      </div>
                   </div>
                </div>
@@ -455,12 +466,12 @@ title: "fileDesc"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>Extent in this context represents file size.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>Extent in this context represents file size.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>This element is modelled on elements in the Text Encoding Initiative (TEI) and Encoded
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>This element is modelled on elements in the Text Encoding Initiative (TEI) and Encoded
                               Archival Description (EAD) standards.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>

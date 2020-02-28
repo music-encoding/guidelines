@@ -27,7 +27,9 @@ title: "model.resourceLike"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.resourcelike.html">model.resourceLike</a></label><span class="classDesc">(MEI.shared) Groups non-text components that represent the content of the musical
                            text.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a></span><span class="elementDesc desc">Groups non-text components that represent the content of the musical text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains a single musical text of any kind, whether unitary or composite, for example, an etude, opera, song cycle, symphony, or anthology of piano solos."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/music.html">music</a></span><span class="elementDesc desc">Contains a single musical text of any kind, whether unitary or composite, for example,
+                              an
+                              etude, opera, song cycle, symphony, or anthology of piano solos.</span></div>
                      </div>
                   </div>
                </div>

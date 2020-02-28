@@ -30,9 +30,8 @@ title: "macro.availabilityPart"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/macro-groups/macro.availabilitypart.html">macro.availabilityPart</a></label><span class="classDesc">(MEI.header) Groups elements that may appear as part of a description of the availability
                            of and access to a bibliographic item.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Groups elements that describe the availability of and access to a bibliographic item, including an MEI-encoded document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a></span><span class="elementDesc desc">Groups elements that may appear as part of a description of the availability of and
-                              access
-                              to a bibliographic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Groups elements that describe the availability of and access to a bibliographic item, including an MEI-encoded document."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/availability.html">availability</a></span><span class="elementDesc desc">Groups elements that describe the availability of and access to a bibliographic item,
+                              including an MEI-encoded document.</span></div>
                      </div>
                   </div>
                </div>
@@ -69,46 +68,42 @@ title: "macro.availabilityPart"
                            textual content
                            
                         </div>
-                        <div class="elementDef def"><span class="ident element" title="(access restriction) – Describes the conditions that affect the accessibility of material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/accessrestrict.html">accessRestrict</a></span><span class="elementDesc desc">Groups elements that may appear as part of a description of the availability of and
-                              access
-                              to a bibliographic item.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Person or agency, other than a publisher, from which access (including electronic access) to a bibliographic entity may be obtained."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/distributor.html">distributor</a></span><span class="elementDesc desc">Groups elements that may appear as part of a description of the availability of and
-                              access
-                              to a bibliographic item.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="The cost of access to a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/price.html">price</a></span><span class="elementDesc desc">Groups elements that may appear as part of a description of the availability of and
-                              access
-                              to a bibliographic item.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(system requirements) – System requirements for using the electronic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sysreq.html">sysReq</a></span><span class="elementDesc desc">Groups elements that may appear as part of a description of the availability of and
-                              access
-                              to a bibliographic item.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(usage restrictions) – Container for information about the conditions that affect use of a bibliographic item after access has been granted."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/userestrict.html">useRestrict</a></span><span class="elementDesc desc">Groups elements that may appear as part of a description of the availability of and
-                              access
-                              to a bibliographic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(access restriction) – Describes the conditions that affect the accessibility of material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/accessrestrict.html">accessRestrict</a></span><span class="elementDesc desc">(access restriction) – Describes the conditions that affect the accessibility of
+                              material.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Person or agency, other than a publisher, from which access (including electronic access) to a bibliographic entity may be obtained."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/distributor.html">distributor</a></span><span class="elementDesc desc">Person or agency, other than a publisher, from which access (including electronic
+                              access)
+                              to a bibliographic entity may be obtained.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="The cost of access to a bibliographic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/price.html">price</a></span><span class="elementDesc desc">The cost of access to a bibliographic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(system requirements) – System requirements for using the electronic item."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sysreq.html">sysReq</a></span><span class="elementDesc desc">(system requirements) – System requirements for using the electronic item.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(usage restrictions) – Container for information about the conditions that affect use of a bibliographic item after access has been granted."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/userestrict.html">useRestrict</a></span><span class="elementDesc desc">(usage restrictions) – Container for information about the conditions that affect
+                              use of a
+                              bibliographic item after access has been granted.</span></div>
                         <div class="classBox" title="model.addressLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.addresslike.html">model.addressLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to represent a postal address.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Contains a postal address, for example of a publisher, an organization, or an individual."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/address.html">address</a></span><span class="elementDesc desc">Groups elements used to represent a postal address.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a postal address, for example of a publisher, an organization, or an individual."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/address.html">address</a></span><span class="elementDesc desc">Contains a postal address, for example of a publisher, an organization, or an
+                                    individual.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.dateLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.datelike.html">model.dateLike</a></label><span class="classDesc">(MEI.shared) Groups elements containing date expressions.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="A string identifying a point in time or the time period between two such points."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a></span><span class="elementDesc desc">Groups elements containing date expressions.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A string identifying a point in time or the time period between two such points."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/date.html">date</a></span><span class="elementDesc desc">A string identifying a point in time or the time period between two such points.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.headLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.headlike.html">model.headLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to provide a heading at the start of a text division
                                  or other markup component.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">Groups elements used to provide a heading at the start of a text division or other
-                                    markup
-                                    component.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(heading) – Contains any heading, for example, the title of a section of text, or the heading of a list."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/head.html">head</a></span><span class="elementDesc desc">(heading) – Contains any heading, for example, the title of a section of text, or
+                                    the
+                                    heading of a list.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.identifierLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.identifierlike.html">model.identifierLike</a></label><span class="classDesc">(MEI.shared) Groups identifier-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a></span><span class="elementDesc desc">Groups identifier-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An alpha-numeric string that establishes the identity of the described material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/identifier.html">identifier</a></span><span class="elementDesc desc">An alpha-numeric string that establishes the identity of the described material.</span></div>
                            </div>
                         </div>
                      </div>

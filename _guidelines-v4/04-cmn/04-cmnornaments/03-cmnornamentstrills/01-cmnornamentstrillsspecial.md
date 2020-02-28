@@ -22,11 +22,11 @@ However, when it is necessary to support multiple outputs, use of the {% include
 
 {% include mei example="cmnOrnaments/cmnOrnaments-sample203.txt" valid="" %}
 
-Another situation that requires disambiguation of an ornament's name and its potential rendition is due to the fact that the symbols for trills and mordents have been often used interchangeably in the past. The following example, taken from *Klavierbüchlein für Wilhelm Friedemann Bach* (1720), shows a trill (Trillo) identified by the symbol associated with a mordent in modern practice. Nonetheless, J.S. Bach's suggested resolution should be encoded with a variant of the procedure presented above.
+Another situation that requires disambiguation of an ornament's name and its potential rendition is due to the fact that the symbols for trills and mordents have been often used interchangeably in the past. The following example, taken from [*Klavierbüchlein für Wilhelm Friedemann Bach*](https://en.wikipedia.org/wiki/Klavierbüchlein_für_Wilhelm_Friedemann_Bach) (1720), shows a trill (*Trillo*) identified by the symbol associated with a mordent in modern practice. Nonetheless, J.S. Bach's suggested resolution should be encoded with a variant of the procedure presented above.
 
 In the example below, the child elements of {% include link elem="choice" %}; that is, {% include link elem="orig" %} and {% include link elem="reg" %}, represent non-exclusive options; that is, both may be processed by applications that aim to support both visual and aural renditions.
 
-{% include figure img="modules/cmnOrnaments/ex_tr_B.png" caption="Trill transcribed from J.S. Bach's Klavierbüchlein für Wilhelm Friedemann Bach (1720)" %}
+{% include figure img="ExampleImages/ExplicationBach.png" caption="Trill transcribed from J. S. Bach's Klavierbüchlein für Wilhelm Friedemann Bach" %}
 {% include mei example="cmnOrnaments/cmnOrnaments-sample204.txt" valid="" %}
 
 Depending on the purpose of the encoding, it may be more convenient to encode the regularized text within the stream of events, along with a corresponding choice with regard to the existence of the trill marking, as in the following example:

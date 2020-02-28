@@ -26,7 +26,7 @@ title: "model.partLike"
                   <div class="classBox" title="model.partLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.partlike.html">model.partLike</a></label><span class="classDesc">(MEI.shared) Groups elements that represent a separate performer part.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Provides a container for performers' parts."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a></span><span class="elementDesc desc">Groups elements that represent a separate performer part.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Provides a container for performers' parts."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/parts.html">parts</a></span><span class="elementDesc desc">Provides a container for performers' parts.</span></div>
                      </div>
                   </div>
                </div>

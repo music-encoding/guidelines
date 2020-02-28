@@ -1,0 +1,1 @@
+<tupletSpan num="3" numbase="2" startid="#note1" endid="#note3" plist="#note1 #note2 #note3" />

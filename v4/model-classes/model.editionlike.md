@@ -26,18 +26,24 @@ title: "model.editionLike"
                   <div class="classBox" title="model.editionLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editionlike.html">model.editionLike</a></label><span class="classDesc">(MEI.shared) Groups elements containing bibliographic edition information.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">Groups elements containing bibliographic edition information.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(monograph level) – Contains bibliographic elements describing an item, for example, a published book or journal, score, recording, or an unpublished manuscript."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/monogr.html">monogr</a></span><span class="elementDesc desc">Groups elements containing bibliographic edition information.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(edition statement) – Container for meta-data pertaining to a particular edition of the material being described."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/editionstmt.html">editionStmt</a></span><span class="elementDesc desc">(edition statement) – Container for meta-data pertaining to a particular edition of
+                              the
+                              material being described.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(monograph level) – Contains bibliographic elements describing an item, for example, a published book or journal, score, recording, or an unpublished manuscript."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/monogr.html">monogr</a></span><span class="elementDesc desc">(monograph level) – Contains bibliographic elements describing an item, for example,
+                              a
+                              published book or journal, score, recording, or an unpublished manuscript.</span></div>
                         <div class="classBox" title="model.biblPart">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.biblpart.html">model.biblPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a bibliographic description.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">Groups elements that may appear as part of a bibliographic description.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(bibliographic reference) – Provides a loosely-structured bibliographic citation in which the sub-components may or may not be explicitly marked."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bibl.html">bibl</a></span><span class="elementDesc desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+                                    which
+                                    the sub-components may or may not be explicitly marked.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.titlePagePart">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.titlepagepart.html">model.titlePagePart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a title page transcription.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Contains a transcription of the title page of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepage.html">titlePage</a></span><span class="elementDesc desc">Groups elements that may appear as part of a title page transcription.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Contains a transcription of the title page of a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/titlepage.html">titlePage</a></span><span class="elementDesc desc">Contains a transcription of the title page of a text.</span></div>
                            </div>
                         </div>
                      </div>

@@ -82,7 +82,7 @@ title: "att.note.anl"
                   <div class="attributeDef def" data-module="MEI.analytical"><span class="ident attribute" title="Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable Do system.">psolfa</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
                         Do
                         system.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="slur Indicates that this element participates in a slur. If visual information about the slur needs to be recorded, then a element should be employed.">slur</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that this element participates in a slur. If visual information about the
                         slur needs to be recorded, then a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/slur.html">slur</a> element should be
@@ -90,7 +90,7 @@ title: "att.note.anl"
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slur.html">data.SLUR</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds an associated sung text syllable.">syl</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds an associated sung text syllable.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="tie Indicates that this element participates in a tie. If visual information about the tie needs to be recorded, then a element should be employed.">tie</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that this element participates in a tie. If visual information about the
                         tie
@@ -224,7 +224,7 @@ title: "att.note.anl"
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.syltext.html">att.sylText</a></label><span class="classDesc">(MEI.shared) Attributes that hold associated sung text syllables.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds an associated sung text syllable.">syl</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds an associated sung text syllable.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -273,7 +273,7 @@ title: "att.note.anl"
                         <div class="attributeDef def" data-module="MEI.analytical"><span class="ident attribute" title="Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable Do system.">psolfa</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
                               Do
                               system.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -304,7 +304,7 @@ title: "att.note.anl"
                         <div class="attributeDef def" data-module="MEI.analytical"><span class="ident attribute" title="Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable Do system.">psolfa</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains sol-fa designation, e.g., do, re, mi, etc., in either a fixed or movable
                               Do
                               system.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -368,7 +368,7 @@ title: "att.note.anl"
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slur.html">data.SLUR</a>, separated by spaces.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds an associated sung text syllable.">syl</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds an associated sung text syllable.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="tie Indicates that this element participates in a tie. If visual information about the tie needs to be recorded, then a element should be employed.">tie</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates that this element participates in a tie. If visual information about the
                               tie

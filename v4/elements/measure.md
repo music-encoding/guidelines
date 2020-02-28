@@ -32,7 +32,8 @@ title: "measure"
                         is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                         for a
                         5-line staff.</span><span class="attributeValues">
-                        Value is a decimal number.
+                        Value of datatype <span style="font-weight: 500;">
+                           a decimal number larger than 0</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the method of barring.">bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -94,7 +95,7 @@ title: "measure"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value is plain text.
+                        Value of datatype <span style="font-weight: 500;">string</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Indicates the visual rendition of the left bar line. It is present here only for facilitation of translation from legacy encodings which use it. Usually, it can be safely ignored.">left</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the visual rendition of the left bar line. It is present here only for
                         facilitation of translation from legacy encodings which use it. Usually, it can be
@@ -144,7 +145,7 @@ title: "measure"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Characterization of target resource(s) using any convenient classification scheme or typology.">targettype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Characterization of target resource(s) using any convenient classification scheme
                         or
                         typology.</span><span class="attributeValues">
-                        Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                        Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp.ges</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part],
                         as expressed in the written time signature.</span><span class="attributeValues">
@@ -181,7 +182,7 @@ title: "measure"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                        Value of datatype <span style="font-weight: 500;">ID</span>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -200,7 +201,7 @@ title: "measure"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                                          Value of datatype <span style="font-weight: 500;">ID</span>.
                                           </span></div>
                                  </div>
                               </div>
@@ -213,7 +214,7 @@ title: "measure"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value is plain text.
+                                    Value of datatype <span style="font-weight: 500;">string</span>.
                                     </span></div>
                            </div>
                         </div>
@@ -334,7 +335,7 @@ title: "measure"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Characterization of target resource(s) using any convenient classification scheme or typology.">targettype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Characterization of target resource(s) using any convenient classification scheme
                               or
                               typology.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                      </div>
                   </div>
@@ -438,7 +439,8 @@ title: "measure"
                                     is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                                     for a
                                     5-line staff.</span><span class="attributeValues">
-                                    Value is a decimal number.
+                                    Value of datatype <span style="font-weight: 500;">
+                                       a decimal number larger than 0</span>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the method of barring.">bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                                     Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -525,7 +527,8 @@ title: "measure"
                               is typically equal to 2 times (the number of staff lines - 1); e.g., a value of '8'
                               for a
                               5-line staff.</span><span class="attributeValues">
-                              Value is a decimal number.
+                              Value of datatype <span style="font-weight: 500;">
+                                 a decimal number larger than 0</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the method of barring.">bar.method</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the method of barring.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.barmethod.html">data.BARMETHOD</a>.
@@ -583,7 +586,7 @@ title: "measure"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value is plain text.
+                              Value of datatype <span style="font-weight: 500;">string</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the relationship between the content of a measure and the prevailing meter.">metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a measure and the prevailing
                               meter.</span><span class="attributeValues">
@@ -624,7 +627,7 @@ title: "measure"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Characterization of target resource(s) using any convenient classification scheme or typology.">targettype</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Characterization of target resource(s) using any convenient classification scheme
                               or
                               typology.</span><span class="attributeValues">
-                              Value is a <a target="_blank" href="https://www.w3.org/TR/xmlschema11-2/#NMTOKEN">NMTOKEN</a>.
+                              Value of datatype <span style="font-weight: 500;">NMTOKEN</span>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Designation which characterizes the element in some sense, using any convenient
                               classification scheme or typology that employs single-token labels.</span><span class="attributeValues">
@@ -649,7 +652,7 @@ title: "measure"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              Value of datatype <span style="font-weight: 500;">ID</span>.
                               </span></div>
                      </div>
                   </div>
@@ -678,25 +681,36 @@ title: "measure"
                         <div class="classBox" title="model.sectionPart.cmn">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionpart.cmn.html">model.sectionPart.cmn</a></label><span class="classDesc">(MEI.cmn) Groups elements that may appear as part of a section.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ending.html">ending</a></span><span class="elementDesc desc">Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta,
+                                    etc.</span></div>
                               <div class="classBox" title="model.sectionPart">
                                  <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.sectionpart.html">model.sectionPart</a></label><span class="classDesc">(MEI.shared) Groups elements that may appear as part of a section.</span></div>
                                  <div class="classContent">
-                                    <div class="elementDef def"><span class="ident element" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/abbr.html">abbr</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(expansion) – Contains the expansion of an abbreviation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expan.html">expan</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(lemma) – Contains the lemma, or base text, of a textual variation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lem.html">lem</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(reading) – Contains a single reading within a textual variation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rdg.html">rdg</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Segment of music data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains apparently incorrect or inaccurate material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span><span class="elementDesc desc">Groups elements that may appear as part of a section.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/abbr.html">abbr</a></span><span class="elementDesc desc">(abbreviation) – A generic element for 1) a shortened form of a word, including an
+                                          acronym
+                                          or 2) a shorthand notation.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">(addition) – Marks an addition to the text.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a></span><span class="elementDesc desc">(correction) – Contains the correct form of an apparent erroneous passage.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Contains an area of damage to the physical medium.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+                                          as
+                                          superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(expansion) – Contains the expansion of an abbreviation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/expan.html">expan</a></span><span class="elementDesc desc">(expansion) – Contains the expansion of an abbreviation.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(lemma) – Contains the lemma, or base text, of a textual variation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lem.html">lem</a></span><span class="elementDesc desc">(lemma) – Contains the lemma, or base text, of a textual variation.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a></span><span class="elementDesc desc">(original) – Contains material which is marked as following the original, rather than
+                                          being normalized or corrected.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(reading) – Contains a single reading within a textual variation."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rdg.html">rdg</a></span><span class="elementDesc desc">(reading) – Contains a single reading within a textual variation.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a></span><span class="elementDesc desc">(regularization) – Contains material which has been regularized or normalized in some
+                                          sense.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                                          or
+                                          authorial marking or instruction.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Segment of music data."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/section.html">section</a></span><span class="elementDesc desc">Segment of music data.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains apparently incorrect or inaccurate material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a></span><span class="elementDesc desc">Contains apparently incorrect or inaccurate material.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a></span><span class="elementDesc desc">Contains material supplied by the transcriber or editor for any reason.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span><span class="elementDesc desc">Contains material that cannot be transcribed with certainty because it is illegible
+                                          or
+                                          inaudible in the source.</span></div>
                                  </div>
                               </div>
                            </div>
@@ -763,9 +777,9 @@ title: "measure"
                   <div class="classBox direct" title="direct children">
                      <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(measure number) – Designation, name, or label for a measure, often but not always consisting of digits. Use this element when the n attribute on measure does not adequately capture the appearance or placement of the measure number/label."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mnum.html">mNum</a></span><span class="elementDesc desc">Unit of musical time consisting of a fixed number of note values of a given type,
-                              as
-                              determined by the prevailing meter, and delimited in musical notation by bar lines.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(measure number) – Designation, name, or label for a measure, often but not always consisting of digits. Use this element when the n attribute on measure does not adequately capture the appearance or placement of the measure number/label."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mnum.html">mNum</a></span><span class="elementDesc desc">(measure number) – Designation, name, or label for a measure, often but not always
+                              consisting of digits. Use this element when the <span class="att">n</span> attribute on <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/measure.html">measure</a> does not adequately capture the appearance or placement of the measure
+                              number/label.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.measurePart">
@@ -774,27 +788,50 @@ title: "measure"
                         <div class="classBox" title="model.controlEventLike.cmn">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventlike.cmn.html">model.controlEventLike.cmn</a></label><span class="classDesc">(MEI.cmn) Groups control events that appear in CMN.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(arpeggiation) – Indicates that the notes of a chord are to be performed successively rather than simultaneously, usually from lowest to highest. Sometimes called a &#34;roll&#34;."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/arpeg.html">arpeg</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="An instruction to begin the next section or movement of a composition without pause."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/attacca.html">attacca</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(beam span) – Alternative element for explicitly encoding beams, particularly those which extend across bar lines."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/beamspan.html">beamSpan</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Marks a sequence of notational events grouped by a bracket."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bracketspan.html">bracketSpan</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(breath mark) – An indication of a point at which the performer on an instrument requiring breath (including the voice) may breathe."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/breath.html">breath</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="An indication placed over a note or rest to indicate that it should be held longer than its written value. May also occur over a bar line to indicate the end of a phrase or section. Sometimes called a 'hold' or 'pause'."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fermata.html">fermata</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g. < and &gt;."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hairpin.html">hairpin</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(harp pedal) – Harp pedal diagram."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harppedal.html">harpPedal</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="A &#34;tie-like&#34; indication that a note should ring beyond its written duration."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Piano pedal mark."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pedal.html">pedal</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating a convenient point from which to resume rehearsal after a break."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reh.html">reh</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/slur.html">slur</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="An indication that two notes of the same pitch form a single note with their combined rhythmic values."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tie.html">tie</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets that extend across bar lines."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tupletspan.html">tupletSpan</a></span><span class="elementDesc desc">Groups control events that appear in CMN.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(arpeggiation) – Indicates that the notes of a chord are to be performed successively rather than simultaneously, usually from lowest to highest. Sometimes called a &#34;roll&#34;."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/arpeg.html">arpeg</a></span><span class="elementDesc desc">(arpeggiation) – Indicates that the notes of a chord are to be performed successively
+                                    rather than simultaneously, usually from lowest to highest. Sometimes called a "roll".</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An instruction to begin the next section or movement of a composition without pause."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/attacca.html">attacca</a></span><span class="elementDesc desc">An instruction to begin the next section or movement of a composition without
+                                    pause.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(beam span) – Alternative element for explicitly encoding beams, particularly those which extend across bar lines."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/beamspan.html">beamSpan</a></span><span class="elementDesc desc">(beam span) – Alternative element for explicitly encoding beams, particularly those
+                                    which
+                                    extend across bar lines.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Marks a sequence of notational events grouped by a bracket."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bracketspan.html">bracketSpan</a></span><span class="elementDesc desc">Marks a sequence of notational events grouped by a bracket.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(breath mark) – An indication of a point at which the performer on an instrument requiring breath (including the voice) may breathe."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/breath.html">breath</a></span><span class="elementDesc desc">(breath mark) – An indication of a point at which the performer on an instrument requiring
+                                    breath (including the voice) may breathe.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An indication placed over a note or rest to indicate that it should be held longer than its written value. May also occur over a bar line to indicate the end of a phrase or section. Sometimes called a 'hold' or 'pause'."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fermata.html">fermata</a></span><span class="elementDesc desc">An indication placed over a note or rest to indicate that it should be held longer
+                                    than
+                                    its written value. May also occur over a bar line to indicate the end of a phrase
+                                    or section.
+                                    Sometimes called a 'hold' or 'pause'.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g. < and &gt;."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/hairpin.html">hairpin</a></span><span class="elementDesc desc">Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
+                                    &lt;
+                                    and &gt;.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(harp pedal) – Harp pedal diagram."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harppedal.html">harpPedal</a></span><span class="elementDesc desc">(harp pedal) – Harp pedal diagram.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A &#34;tie-like&#34; indication that a note should ring beyond its written duration."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a></span><span class="elementDesc desc">A "tie-like" indication that a note should ring beyond its written duration.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An indication that a passage should be performed one or more octaves above or below its written pitch."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/octave.html">octave</a></span><span class="elementDesc desc">An indication that a passage should be performed one or more octaves above or below
+                                    its
+                                    written pitch.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Piano pedal mark."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pedal.html">pedal</a></span><span class="elementDesc desc">Piano pedal mark.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating a convenient point from which to resume rehearsal after a break."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reh.html">reh</a></span><span class="elementDesc desc">(rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating
+                                    a
+                                    convenient point from which to resume rehearsal after a break.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/slur.html">slur</a></span><span class="elementDesc desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An indication that two notes of the same pitch form a single note with their combined rhythmic values."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tie.html">tie</a></span><span class="elementDesc desc">An indication that two notes of the same pitch form a single note with their combined
+                                    rhythmic values.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets that extend across bar lines."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tupletspan.html">tupletSpan</a></span><span class="elementDesc desc">(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
+                                    that extend across bar lines.</span></div>
                               <div class="classBox" title="model.ornamentLike.cmn">
                                  <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.ornamentlike.cmn.html">model.ornamentLike.cmn</a></label><span class="classDesc">(MEI.cmnOrnaments) Groups CMN ornament elements.</span></div>
                                  <div class="classContent">
-                                    <div class="elementDef def"><span class="ident element" title="An ornament indicating rapid alternation of the main note with a secondary note, usually a step below, but sometimes a step above."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mordent.html">mordent</a></span><span class="elementDesc desc">Groups CMN ornament elements.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="Rapid alternation of a note with another (usually at the interval of a second above)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/trill.html">trill</a></span><span class="elementDesc desc">Groups CMN ornament elements.</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="An ornament consisting of four notes — the upper neighbor of the written note, the written note, the lower neighbor, and the written note."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/turn.html">turn</a></span><span class="elementDesc desc">Groups CMN ornament elements.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="An ornament indicating rapid alternation of the main note with a secondary note, usually a step below, but sometimes a step above."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mordent.html">mordent</a></span><span class="elementDesc desc">An ornament indicating rapid alternation of the main note with a secondary note, usually
+                                          a
+                                          step below, but sometimes a step above. 
+                                          </span></div>
+                                    <div class="elementDef def"><span class="ident element" title="Rapid alternation of a note with another (usually at the interval of a second above)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/trill.html">trill</a></span><span class="elementDesc desc">Rapid alternation of a note with another (usually at the interval of a second
+                                          above).</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="An ornament consisting of four notes — the upper neighbor of the written note, the written note, the lower neighbor, and the written note."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/turn.html">turn</a></span><span class="elementDesc desc">An ornament consisting of four notes — the upper neighbor of the written note, the
+                                          written
+                                          note, the lower neighbor, and the written note.</span></div>
                                  </div>
                               </div>
                            </div>
@@ -802,57 +839,60 @@ title: "measure"
                         <div class="classBox" title="model.ossiaLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.ossialike.html">model.ossiaLike</a></label><span class="classDesc">(MEI.cmn) Groups elements that function like ossia.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Captures original notation and a differently notated version *present in the source being transcribed* ."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ossia.html">ossia</a></span><span class="elementDesc desc">Groups elements that function like ossia.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Captures original notation and a differently notated version *present in the source being transcribed* ."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ossia.html">ossia</a></span><span class="elementDesc desc">Captures original notation and a differently notated version *present in
+                                    the source being transcribed*.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.midiLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.midilike.html">model.midiLike</a></label><span class="classDesc">(MEI.midi) Groups elements which group MIDI-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a></span><span class="elementDesc desc">Groups elements which group MIDI-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a></span><span class="elementDesc desc">Container for elements that contain information useful when generating MIDI output.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="model.controlEventLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.controleventlike.html">model.controlEventLike</a></label><span class="classDesc">(MEI.shared) Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc.,
                                  which depend upon other events, such as notes or rests, for their existence.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="A variation in pitch (often micro-tonal) upwards or downwards during the course of a note."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bend.html">bend</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Break, pause, or interruption in the normal tempo of a composition. Typically indicated by &#34;railroad tracks&#34;, i.e., two diagonal slashes."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/caesura.html">caesura</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(copy/colla parte mark) – A verbal or graphical indication to copy musical material written elsewhere."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cpmark.html">cpMark</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam ."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dir.html">dir</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(dynamic) – Indication of the volume of a note, phrase, or section of music."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dynam.html">dynam</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(glissando) – A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gliss.html">gliss</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as <add&gt;, <del&gt;, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/metamark.html">metaMark</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="An element indicating an ornament that is not a mordent, turn, or trill."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ornam.html">ornam</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/phrase.html">phrase</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="(speech) – Contains an individual speech in a performance text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sp.html">sp</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
-                              <div class="elementDef def"><span class="ident element" title="Text and symbols descriptive of tempo, mood, or style, e.g., &#34;allarg.&#34;, &#34;a tempo&#34;, &#34;cantabile&#34;, &#34;Moderato&#34;, &#34;♩=60&#34;, &#34;Moderato ♩ =60&#34;)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a></span><span class="elementDesc desc">Groups elements, such as dynamics, ties, phrase marks, pedal marks, etc., which depend
-                                    upon other events, such as notes or rests, for their existence.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A variation in pitch (often micro-tonal) upwards or downwards during the course of a note."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bend.html">bend</a></span><span class="elementDesc desc">A variation in pitch (often micro-tonal) upwards or downwards during the course of
+                                    a
+                                    note.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Break, pause, or interruption in the normal tempo of a composition. Typically indicated by &#34;railroad tracks&#34;, i.e., two diagonal slashes."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/caesura.html">caesura</a></span><span class="elementDesc desc">Break, pause, or interruption in the normal tempo of a composition. Typically indicated
+                                    by
+                                    "railroad tracks", i.e., two diagonal slashes.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(copy/colla parte mark) – A verbal or graphical indication to copy musical material written elsewhere."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cpmark.html">cpMark</a></span><span class="elementDesc desc">(copy/colla parte mark) – A verbal or graphical indication to copy musical material
+                                    written elsewhere.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(directive) – An instruction expressed as a combination of text and symbols — such as segno and coda symbols, fermatas over a bar line, etc., typically above, below, or between staves, but not on the staff — that is not encoded elsewhere in more specific elements, like tempo or dynam ."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dir.html">dir</a></span><span class="elementDesc desc">(directive) – An instruction expressed as a combination of text and symbols — such
+                                    as
+                                    segno and coda symbols, fermatas over a bar line, etc., typically above, below, or
+                                    between
+                                    staves, but not on the staff — that is not encoded elsewhere in more specific elements,
+                                    like
+                                    <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a> or <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dynam.html">dynam</a>.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(dynamic) – Indication of the volume of a note, phrase, or section of music."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dynam.html">dynam</a></span><span class="elementDesc desc">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(glissando) – A continuous or sliding movement from one pitch to another, usually indicated by a straight or wavy line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gliss.html">gliss</a></span><span class="elementDesc desc">(glissando) – A continuous or sliding movement from one pitch to another, usually
+                                    indicated by a straight or wavy line.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A graphical or textual statement with additional / explanatory information about the musical text. The textual consequences of this intervention are encoded independently via other means; that is, with elements such as <add&gt;, <del&gt;, etc."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/metamark.html">metaMark</a></span><span class="elementDesc desc">A graphical or textual statement with additional / explanatory information about the
+                                    musical text. The textual consequences of this intervention are encoded independently
+                                    via
+                                    other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="An element indicating an ornament that is not a mordent, turn, or trill."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ornam.html">ornam</a></span><span class="elementDesc desc">An element indicating an ornament that is not a mordent, turn, or trill. </span></div>
+                              <div class="elementDef def"><span class="ident element" title="Indication of 1) a &#34;unified melodic idea&#34; or 2) performance technique."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/phrase.html">phrase</a></span><span class="elementDesc desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(speech) – Contains an individual speech in a performance text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sp.html">sp</a></span><span class="elementDesc desc">(speech) – Contains an individual speech in a performance text.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="Text and symbols descriptive of tempo, mood, or style, e.g., &#34;allarg.&#34;, &#34;a tempo&#34;, &#34;cantabile&#34;, &#34;Moderato&#34;, &#34;♩=60&#34;, &#34;Moderato ♩ =60&#34;)."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a></span><span class="elementDesc desc">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+                                    "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</span></div>
                               <div class="classBox" title="model.stageDirLike">
                                  <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.stagedirlike.html">model.stageDirLike</a></label><span class="classDesc">(MEI.drama) Groups elements containing stage directions in performance texts.</span></div>
                                  <div class="classContent">
-                                    <div class="elementDef def"><span class="ident element" title="(stage direction) – Contains any kind of stage direction within a dramatic text or fragment."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stagedir.html">stageDir</a></span><span class="elementDesc desc">Groups elements containing stage directions in performance texts.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(stage direction) – Contains any kind of stage direction within a dramatic text or fragment."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/stagedir.html">stageDir</a></span><span class="elementDesc desc">(stage direction) – Contains any kind of stage direction within a dramatic text or
+                                          fragment.</span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="model.fingeringLike">
                                  <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.fingeringlike.html">model.fingeringLike</a></label><span class="classDesc">(MEI.fingering) Groups elements that capture performance instructions regarding the
                                        use of the fingers of the hand (or a subset of them).</span></div>
                                  <div class="classContent">
-                                    <div class="elementDef def"><span class="ident element" title="finger – An individual finger in a fingering indication."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fing.html">fing</a></span><span class="elementDesc desc">Groups elements that capture performance instructions regarding the use of the fingers
-                                          of
-                                          the hand (or a subset of them).</span></div>
-                                    <div class="elementDef def"><span class="ident element" title="(finger group)– A group of individual fingers in a fingering indication."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/finggrp.html">fingGrp</a></span><span class="elementDesc desc">Groups elements that capture performance instructions regarding the use of the fingers
-                                          of
-                                          the hand (or a subset of them).</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="finger – An individual finger in a fingering indication."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fing.html">fing</a></span><span class="elementDesc desc">finger – An individual finger in a fingering indication.</span></div>
+                                    <div class="elementDef def"><span class="ident element" title="(finger group)– A group of individual fingers in a fingering indication."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/finggrp.html">fingGrp</a></span><span class="elementDesc desc">(finger group)– A group of individual fingers in a fingering indication.</span></div>
                                  </div>
                               </div>
                               <div class="classBox" title="model.controlEventLike.harmony">
@@ -862,7 +902,8 @@ title: "measure"
                                     <div class="classBox" title="model.harmLike">
                                        <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.harmlike.html">model.harmLike</a></label><span class="classDesc">(MEI.harmony) Groups elements that record indications of harmony.</span></div>
                                        <div class="classContent">
-                                          <div class="elementDef def"><span class="ident element" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a></span><span class="elementDesc desc">Groups elements that record indications of harmony.</span></div>
+                                          <div class="elementDef def"><span class="ident element" title="(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic analysis, figured bass."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/harm.html">harm</a></span><span class="elementDesc desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+                                                analysis, figured bass.</span></div>
                                        </div>
                                     </div>
                                  </div>
@@ -872,7 +913,11 @@ title: "measure"
                         <div class="classBox" title="model.staffLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.stafflike.html">model.staffLike</a></label><span class="classDesc">(MEI.shared) Groups elements that function like staves.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="A group of equidistant horizontal lines on which notes are placed in order to represent pitch or a grouping element for individual 'strands' of notes, rests, etc. that may or may not actually be rendered on staff lines; that is, both diastematic and non-diastematic signs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staff.html">staff</a></span><span class="elementDesc desc">Groups elements that function like staves.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="A group of equidistant horizontal lines on which notes are placed in order to represent pitch or a grouping element for individual 'strands' of notes, rests, etc. that may or may not actually be rendered on staff lines; that is, both diastematic and non-diastematic signs."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staff.html">staff</a></span><span class="elementDesc desc">A group of equidistant horizontal lines on which notes are placed in order to represent
+                                    pitch or a grouping element for individual 'strands' of notes, rests, etc. that may
+                                    or may not
+                                    actually be rendered on staff lines; that is, both diastematic and non-diastematic
+                                    signs.</span></div>
                            </div>
                         </div>
                      </div>
@@ -880,55 +925,71 @@ title: "measure"
                   <div class="classBox" title="model.appLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.applike.html">model.appLike</a></label><span class="classDesc">(MEI.critapp) Groups elements that contain a critical apparatus entry.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(apparatus) – Contains one or more alternative encodings."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/app.html">app</a></span><span class="elementDesc desc">Groups elements that contain a critical apparatus entry.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(apparatus) – Contains one or more alternative encodings."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/app.html">app</a></span><span class="elementDesc desc">(apparatus) – Contains one or more alternative encodings.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.editLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.editlike.html">model.editLike</a></label><span class="classDesc">(MEI.edittrans) Groups elements for editorial interventions that may be useful both
                            in transcribing and in authoring processes.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a></span><span class="elementDesc desc">Groups elements for editorial interventions that may be useful both in transcribing
-                              and in
-                              authoring processes.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(substitution) – Groups transcriptional elements when the combination is to be regarded as a single intervention in the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/subst.html">subst</a></span><span class="elementDesc desc">Groups elements for editorial interventions that may be useful both in transcribing
-                              and in
-                              authoring processes.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Groups a number of alternative encodings for the same point in a text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/choice.html">choice</a></span><span class="elementDesc desc">Groups a number of alternative encodings for the same point in a text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(substitution) – Groups transcriptional elements when the combination is to be regarded as a single intervention in the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/subst.html">subst</a></span><span class="elementDesc desc">(substitution) – Groups transcriptional elements when the combination is to be regarded
+                              as
+                              a single intervention in the text.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.transcriptionLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.transcriptionlike.html">model.transcriptionLike</a></label><span class="classDesc">(MEI.edittrans) Groups elements used for editorial transcription of pre-existing source
                            materials.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Marks the beginning of a passage written in a new hand, or of a change in the scribe, writing style, ink or character of the document hand."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/handshift.html">handShift</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains apparently incorrect or inaccurate material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span><span class="elementDesc desc">Groups elements used for editorial transcription of pre-existing source materials.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(addition) – Marks an addition to the text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/add.html">add</a></span><span class="elementDesc desc">(addition) – Marks an addition to the text.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(correction) – Contains the correct form of an apparent erroneous passage."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/corr.html">corr</a></span><span class="elementDesc desc">(correction) – Contains the correct form of an apparent erroneous passage.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains an area of damage to the physical medium."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/damage.html">damage</a></span><span class="elementDesc desc">Contains an area of damage to the physical medium.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(deletion) – Contains information deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/del.html">del</a></span><span class="elementDesc desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+                              as
+                              superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates a point where material has been omitted in a transcription, whether as part of sampling practice or for editorial reasons described in the MEI header."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/gap.html">gap</a></span><span class="elementDesc desc">Indicates a point where material has been omitted in a transcription, whether as part
+                              of
+                              sampling practice or for editorial reasons described in the MEI header.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Marks the beginning of a passage written in a new hand, or of a change in the scribe, writing style, ink or character of the document hand."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/handshift.html">handShift</a></span><span class="elementDesc desc">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
+                              writing style, ink or character of the document hand.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(original) – Contains material which is marked as following the original, rather than being normalized or corrected."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/orig.html">orig</a></span><span class="elementDesc desc">(original) – Contains material which is marked as following the original, rather than
+                              being normalized or corrected.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(regularization) – Contains material which has been regularized or normalized in some sense."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/reg.html">reg</a></span><span class="elementDesc desc">(regularization) – Contains material which has been regularized or normalized in some
+                              sense.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Indicates restoration of material to an earlier state by cancellation of an editorial or authorial marking or instruction."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/restore.html">restore</a></span><span class="elementDesc desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+                              or
+                              authorial marking or instruction.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains apparently incorrect or inaccurate material."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sic.html">sic</a></span><span class="elementDesc desc">Contains apparently incorrect or inaccurate material.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains material supplied by the transcriber or editor for any reason."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/supplied.html">supplied</a></span><span class="elementDesc desc">Contains material supplied by the transcriber or editor for any reason.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains material that cannot be transcribed with certainty because it is illegible or inaudible in the source."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/unclear.html">unclear</a></span><span class="elementDesc desc">Contains material that cannot be transcribed with certainty because it is illegible
+                              or
+                              inaudible in the source.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.annotLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.annotlike.html">model.annotLike</a></label><span class="classDesc">(MEI.shared) Groups annotation-like elements.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">Groups annotation-like elements.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(annotation) – Provides a statement explaining the text or indicating the basis for an assertion."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/annot.html">annot</a></span><span class="elementDesc desc">(annotation) – Provides a statement explaining the text or indicating the basis for
+                              an
+                              assertion.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.milestoneLike.music">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.milestonelike.music.html">model.milestoneLike.music</a></label><span class="classDesc">(MEI.shared) Groups milestone-style elements found in music notation.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(column beginning) – An empty formatting element that forces text to begin in a new column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cb.html">cb</a></span><span class="elementDesc desc">Groups milestone-style elements found in music notation.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(column layout) – An empty formatting element that signals the start of columnar layout."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/collayout.html">colLayout</a></span><span class="elementDesc desc">Groups milestone-style elements found in music notation.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(system beginning) – An empty formatting element that forces musical notation to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sb.html">sb</a></span><span class="elementDesc desc">Groups milestone-style elements found in music notation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(column beginning) – An empty formatting element that forces text to begin in a new column."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/cb.html">cb</a></span><span class="elementDesc desc">(column beginning) – An empty formatting element that forces text to begin in a new
+                              column.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(column layout) – An empty formatting element that signals the start of columnar layout."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/collayout.html">colLayout</a></span><span class="elementDesc desc">(column layout) – An empty formatting element that signals the start of columnar
+                              layout.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(system beginning) – An empty formatting element that forces musical notation to begin on a new line."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/sb.html">sb</a></span><span class="elementDesc desc">(system beginning) – An empty formatting element that forces musical notation to begin
+                              on
+                              a new line.</span></div>
                         <div class="classBox" title="model.pbLike">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.pblike.html">model.pbLike</a></label><span class="classDesc">(MEI.shared) Groups page beginning-like elements.</span></div>
                            <div class="classContent">
-                              <div class="elementDef def"><span class="ident element" title="(page beginning) – An empty formatting element that forces text to begin on a new page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a></span><span class="elementDesc desc">Groups page beginning-like elements.</span></div>
+                              <div class="elementDef def"><span class="ident element" title="(page beginning) – An empty formatting element that forces text to begin on a new page."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/pb.html">pb</a></span><span class="elementDesc desc">(page beginning) – An empty formatting element that forces text to begin on a new
+                                    page.</span></div>
                            </div>
                         </div>
                      </div>
@@ -936,22 +997,26 @@ title: "measure"
                   <div class="classBox" title="model.relationLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.relationlike.html">model.relationLike</a></label><span class="classDesc">(MEI.shared) Collects elements that express a relationship.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Describes a relationship or linkage amongst entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relation.html">relation</a></span><span class="elementDesc desc">Collects elements that express a relationship.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Gathers relation elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a></span><span class="elementDesc desc">Collects elements that express a relationship.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a relationship or linkage amongst entities."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relation.html">relation</a></span><span class="elementDesc desc">Describes a relationship or linkage amongst entities.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Gathers relation elements."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/relationlist.html">relationList</a></span><span class="elementDesc desc">Gathers relation elements.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.staffDefLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.staffdeflike.html">model.staffDefLike</a></label><span class="classDesc">(MEI.shared) Groups elements that permit declaration of staff properties.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">Groups elements that permit declaration of staff properties.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">(staff definition) – Container for staff meta-information.</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="model.graphicPrimitiveLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.graphicprimitivelike.html">model.graphicPrimitiveLike</a></label><span class="classDesc">(MEI.usersymbols) Groups elements that function as drawing primitives.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/anchoredtext.html">anchoredText</a></span><span class="elementDesc desc">Groups elements that function as drawing primitives.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A curved line that cannot be represented by a more specific element, such as a slur."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/curve.html">curve</a></span><span class="elementDesc desc">Groups elements that function as drawing primitives.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="A visual line that cannot be represented by a more specific; i.e., semantic, element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/line.html">line</a></span><span class="elementDesc desc">Groups elements that function as drawing primitives.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Container for text that is fixed to a particular page location, regardless of changes made to the layout of the measures around it."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/anchoredtext.html">anchoredText</a></span><span class="elementDesc desc">Container for text that is fixed to a particular page location, regardless of changes
+                              made
+                              to the layout of the measures around it.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A curved line that cannot be represented by a more specific element, such as a slur."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/curve.html">curve</a></span><span class="elementDesc desc">A curved line that cannot be represented by a more specific element, such as a
+                              slur.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="A visual line that cannot be represented by a more specific; i.e., semantic, element."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/line.html">line</a></span><span class="elementDesc desc">A visual line that cannot be represented by a more specific; i.e., semantic,
+                              element.</span></div>
                      </div>
                   </div>
                </div>
@@ -1262,11 +1327,11 @@ title: "measure"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>In MEI, the 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>In MEI, the 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>measure<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element is a grouping mechanism for events and
                               control events. Pointing attributes make it possible to connect this element to other
                               internal or external entities, such as media objects or annotations. The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>width<span data-indentation="4" class="element">&lt;/att&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>width<span data-indentation="4" class="element">&lt;/att&gt;</span></div>
                               attribute may be used to capture the width of the measure for interchange with music
                               printing systems that utilize this information for printing.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>

@@ -26,8 +26,8 @@ title: "model.paperModLike"
                   <div class="classBox" title="model.paperModLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.papermodlike.html">model.paperModLike</a></label><span class="classDesc">(MEI.header) Groups elements dealing with modifications of document pages.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Describes a folded sheet of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bifolium.html">bifolium</a></span><span class="elementDesc desc">Groups elements dealing with modifications of document pages.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="Describes a single leaf of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/folium.html">folium</a></span><span class="elementDesc desc">Groups elements dealing with modifications of document pages.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a folded sheet of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/bifolium.html">bifolium</a></span><span class="elementDesc desc">Describes a folded sheet of paper.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Describes a single leaf of paper."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/folium.html">folium</a></span><span class="elementDesc desc">Describes a single leaf of paper.</span></div>
                      </div>
                   </div>
                </div>
@@ -65,7 +65,7 @@ title: "model.paperModLike"
             <div class="label">Declaration</div>
             <div class="statement declaration">
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
-                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.paperModLike"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.header"</span>&gt;</span>
+                     <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"model.paperModLike"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.header"</span> <span class="attribute">type=</span><span class="attributevalue">"model"</span>&gt;</span>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Groups elements dealing with modifications of document pages.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>

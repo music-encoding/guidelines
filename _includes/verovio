@@ -1,0 +1,16 @@
+{% assign file =  'mei/' | append:page.version | append:'/' | append:include.example | downcase %}
+{% assign id = "now" | date: "%N" | prepend:'id_'  %}
+{% assign vrvId =  id | append:'_vrv' %}
+<div id="{{ vrvId }}"></div>
+{% if include.encoding != false %}
+<pre><code class="xml" id="{{ id }}"></code></pre>
+{% endif %}
+<script type="text/javascript">
+    $.get( "{{ site.baseurl }}/{{ file }}" , function( data ) {
+        {% if include.encoding != false %}
+        document.getElementById('{{ id }}').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('{{ id }}'));
+        {% endif %}
+        renderVerovio(data, '{{ vrvId }}');
+    });
+</script>

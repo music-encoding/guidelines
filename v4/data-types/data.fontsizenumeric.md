@@ -16,7 +16,11 @@ title: "data.FONTSIZENUMERIC"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
-               – <span class="emptyStatement">(<em>&lt;data.FONTSIZENUMERIC/&gt; is not used on any attribute</em>)</span></div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.FONTSIZENUMERIC</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.FONTSIZE" data-module="MEI" title="Font size expressions."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsize.html">data.FONTSIZE</a></span></div>
+               </div>
+            </div>
          </div>
          <div class="facet declaration">
             <div class="label">Declaration</div>
@@ -34,7 +38,6 @@ title: "data.FONTSIZENUMERIC"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:except&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="comment">&lt;!-- disallow no-value or all-zero patterns --&gt;</span></div>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:choice&gt;</span>
                                     

@@ -20,6 +20,10 @@ title: "data.STAFFREL"
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.STAFFREL</span></div>
                   <div class="classContent"><span class="ident attclass" data-ident="att.placement" data-module="MEI.shared"><a class="classLink" title="Attributes capturing placement information." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.placement.html">att.placement</a>/<span title="Captures the placement of the item with respect to the staff with which it is associated.">@place</span></span></div>
                </div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.STAFFREL</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.PLACEMENT" data-module="MEI" title="Location information."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.placement.html">data.PLACEMENT</a></span></div>
+               </div>
             </div>
          </div>
          <div class="facet constraints" id="constraints">

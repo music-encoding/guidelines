@@ -27,8 +27,8 @@ title: "model.mdivLike"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.mdivlike.html">model.mdivLike</a></label><span class="classDesc">(MEI.shared) Groups elements used to represent generic structural divisions of music
                            notation.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Groups elements used to represent generic structural divisions of music notation.</span></div>
-                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">Groups elements used to represent generic structural divisions of music notation.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="Contains the whole of a single musical text, excluding any front or back matter."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/body.html">body</a></span><span class="elementDesc desc">Contains the whole of a single musical text, excluding any front or back matter.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(musical division) – Contains a subdivision of the body of a musical text."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mdiv.html">mdiv</a></span><span class="elementDesc desc">(musical division) – Contains a subdivision of the body of a musical text.</span></div>
                      </div>
                   </div>
                </div>

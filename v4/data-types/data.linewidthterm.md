@@ -16,7 +16,11 @@ title: "data.LINEWIDTHTERM"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
-               – <span class="emptyStatement">(<em>&lt;data.LINEWIDTHTERM/&gt; is not used on any attribute</em>)</span></div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.LINEWIDTHTERM</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.LINEWIDTH" data-module="MEI" title="Datatype of line width measurements."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.linewidth.html">data.LINEWIDTH</a></span></div>
+               </div>
+            </div>
          </div>
          <div class="facet allowedValues" id="allowedValues">
             <div class="label">Allowed Values</div>

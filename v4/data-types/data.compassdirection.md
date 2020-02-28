@@ -32,7 +32,7 @@ title: "data.COMPASSDIRECTION"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;content&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;alternate&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;alternate <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.compassdirection.basic.html">data.COMPASSDIRECTION.basic</a>"</span></span>/&gt;</span></div>
                               

@@ -26,7 +26,7 @@ title: "model.layerDefLike"
                   <div class="classBox" title="model.layerDefLike">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerdeflike.html">model.layerDefLike</a></label><span class="classDesc">(MEI.shared) Groups elements that permit declaration of layer properties.</span></div>
                      <div class="classContent">
-                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">Groups elements that permit declaration of layer properties.</span></div>
+                        <div class="elementDef def"><span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span><span class="elementDesc desc">(staff definition) – Container for staff meta-information.</span></div>
                      </div>
                   </div>
                </div>
