@@ -49,7 +49,7 @@ The duration of notes, rests, or chords under a beam which carries the **@form**
 
 Beams that connect events on different staves may be encoded in two different ways. First, a single-layer approach may be taken that treats the events lying under the beam as logically belonging to the same layer as the initial event but visually ‘displaced’ to an adjacent staff. In the example above from [Moritz Moszkowski's](https://en.wikipedia.org/wiki/Moritz_Moszkowski) *12 Pianoforte Studies for the left hand*, Op.92 this method makes even from a semantic perspective perfect sense. It can be achieved with an additional **@staff** attribute value that contradicts the ‘normal’ staff placement indicated by the **@n** attribute of their ancestor {% include link elem="staff" %}.
 
-{% include mei example="cmn/cmn-sample111.txt" valid="true" %}
+{% include mei example="cmn/cmn-sample-moszkowski.txt" valid="true" %}
 
 In other contexts however, a staff-by-staff methodology may be employed in which the notes are encoded according to the staff on which they appear. This encoding style requires that each {% include link elem="beam" %} element account for the total time encompassed by the beam; that is, each {% include link elem="beam" %} must use one or more {% include link elem="space" %} elements to account for the time occupied by notes on the opposing staff. For example, the time used by the first two notes of the beam must be represented on staff number 1 and the time taken by the last two notes of the beam must be filled on staff number 2.
 
@@ -57,10 +57,10 @@ In other contexts however, a staff-by-staff methodology may be employed in which
 
 Downstream processing needs are the determining factor in the choice between the two alternative encoding methods.
 
-Due to the potential problem of overlapping hierarchies, the {% include link elem="beam" %} element only allows the encoding of beams that do not cross barlines. When beams cross barlines, the use of the {% include link elem="beamSpan" %} element is required. Unlike {% include link elem="beam" %}, the {% include link elem="beamSpan" %} element does not contain the beamed notes as its children. Instead, it references the **@xml:id** values of all affected notes in its **@plist** attribute and denotes the initial and terminal notes of the beam using **@startid** and **@endid** attributes. This configuration allows beams to cross measure boundaries. The following example demonstrates a typical example of such hierarchy-crossing beams:
+Due to the potential problem of overlapping hierarchies, the {% include link elem="beam" %} element only allows the encoding of beams that do not cross barlines. When beams cross barlines, the use of the {% include link elem="beamSpan" %} element is required. Unlike {% include link elem="beam" %}, the {% include link elem="beamSpan" %} element does not contain the beamed notes as its children. Instead, it references the **@xml:id** values of all affected notes in its **@plist** attribute and denotes the initial and terminal notes of the beam using **@startid** and **@endid** attributes. This configuration allows beams to cross measure boundaries. The following example from [Erwin Schulhoff's](https://en.wikipedia.org/wiki/Erwin_Schulhoff) *Violin Sonata* demonstrates a typical example of such hierarchy-crossing beams:
 
-{% include figure img="ExampleImages/beamspan.png" caption="Cross-measure beam" %}
-{% include mei example="cmn/cmn-sample113.txt" valid="false" %}
+{% include figure img="ExampleImages/beamspan.1.png" caption="Cross-measure beam in the third movement of Schulhoff's Sonata" %}
+{% include mei example="cmn/cmn-sample-schulhoff.txt" valid="true" %}
 
 In addition to the explicit encoding of beams accommodated by the {% include link elem="beam" %} and {% include link elem="beamSpan" %} elements and the **@beam** attribute, MEI allows for specification of default beaming behavior using the following attributes on {% include link elem="scoreDef" %}, {% include link elem="staffDef" %}, and {% include link elem="layerDef" %}:
 

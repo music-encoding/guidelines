@@ -1,1 +1,0 @@
-<beamSpan startid="#note1" endid="#note8" plist="#note1 #note2 […] #note7 #note8"/>
