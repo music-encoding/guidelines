@@ -4,7 +4,7 @@ title: "Define the mimetype of a link element's target"
 version: "v4"
 ---
 
-The function of the **@mimetype** attribute is similar to that of **@targettype** in that they both allow classification of the destination. Unlike **@targettype**, however, **@mimetype** explicitly defines the destination type using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail Extension) type defined by the Internet Engineering Task Force in RFC 2046, available at [http://www.ietf.org/rfc/rfc2046.txt](http://www.ietf.org/rfc/rfc2046.txt){:.link_ref}. The following are all valid mimetype values:
+The function of the **@mimetype** attribute is similar to that of **@targettype** in that they both allow classification of the destination. Unlike **@targettype**, however, **@mimetype** explicitly defines the destination type using a standard taxonomy. Its value should be a valid MIME (Multimedia Internet Mail Extension) type as defined by the Internet Engineering Task Force (IETF) in RFC 2046, available at [http://www.ietf.org/rfc/rfc2046.txt](http://www.ietf.org/rfc/rfc2046.txt){:.link_ref}. The following are all valid mimetype values:
 
 {% include mei example="ptrRef/ptrRef-sample347.txt" valid="feasible" %}
 

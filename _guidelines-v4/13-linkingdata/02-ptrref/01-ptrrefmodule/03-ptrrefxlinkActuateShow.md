@@ -4,7 +4,9 @@ title: "Determine the link element's behaviour"
 version: "v4"
 ---
 
-The **@xlink:actuate** and **@xlink:show** attributes are used in conjunction to determine the link's behavior. The attribute **@xlink:actuate** defines whether the resolution of a link occurs automatically or must be requested by the user.
+The **@xlink:actuate** and **@xlink:show** attributes are used in conjunction to determine the link's behavior.
+ 
+ The **@xlink:actuate** attribute defines whether the resolution of a link occurs automatically or must be requested by the user.
 
 The following values are allowed for the **@xlink:actuate** attribute:
 
@@ -22,7 +24,7 @@ The following values are allowed for the **@xlink:actuate** attribute:
 
 The value "none" may be used to indicate that the link is un-traversable; it may or may not render the link invisible to the user. When the value of **@xlink:actuate** is "other", an application must base a determination of appropriate behavior on factors other than the value of **@xlink:actuate**.
 
-The **@show** attribute defines how a remote resource is to be rendered. The following values are permitted:
+The **@xlink:show** attribute defines how a remote resource is to be rendered. The following values are permitted:
 
 {:.gloss}
 **'new'**: target of the link appears in a new window
