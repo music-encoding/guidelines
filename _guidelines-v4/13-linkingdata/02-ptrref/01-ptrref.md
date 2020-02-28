@@ -6,7 +6,7 @@ title: "Pointers and References"
 sectionid: "ptrRef"
 ---
 
-The link elements discussed in this section are the {% include link elem="ptr" %} and the {% include link elem="ref" %} elements which are declared in the MEI.ptrref module.
+The link elements discussed in this section are the {% include link elem="ptr" %} and the {% include link elem="ref" %} elements which are declared in the `MEI.ptrref` module.
 
 {% include desc elem="ptr" %}
 {% include desc elem="ref" %}
