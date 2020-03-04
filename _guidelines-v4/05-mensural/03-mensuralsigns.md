@@ -17,3 +17,9 @@ The mensuration signs themselves can be encoded in the **@sign** attribute with 
 {% include desc atts="att.mensur.log/dot att.mensur.log/sign att.slashCount/slash att.mensur.vis/orient" %}
 
 <!-- In the first two attributes, the 'att.mensur.log' has to be changed into 'att.mensur.vis' once the changes in the schema regarding the encoding of the mensuration signs in the visual domain gets accepted -->
+
+The following example illustrates a **change in mensuration**. As can be seen in the code snippet, the two mensuration signs are encoded in the stream of notes (i.e., the {% include link elem="mensur" %} elements encoding each mensuration sign are located in the stream of {% include link elem="note" %} and {% include link elem="rest" %} elements within the {% include link elem="layer" %}).
+{% include verovio example="Mensuration_changes.mei" encoding=true %}
+
+The next example shows the incipit of a four-voice piece, where only two of the voices (*Cantus* and *Tenor*) have a mensuration sign. The other two (*Altus* and *Bassus*) have **no mensuration signs**, and **the mensura is given by the context**. This is why only the *Cantus* and the *Tenor* have attributes for encoding the mensuration sign (**@sign** and **@slash**), but all four voices have attributes to encode the relation between the different note levels (the mensura is encoded using **@tempus** and **@prolatio**).
+{% include verovio example="implicitMensuration.mei" encoding=true %}
