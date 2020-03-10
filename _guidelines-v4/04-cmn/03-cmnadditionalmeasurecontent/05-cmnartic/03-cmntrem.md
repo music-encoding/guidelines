@@ -8,18 +8,16 @@ CMN has two slightly different concepts which are both called tremolo. The first
 
 For the repetition of a single note or chord, MEI offers the {% include link elem="bTrem" %} (bowed tremolo) element, which is a member of the {% include link model="eventLike.cmn" %} class, meaning it is encoded following the normal course of musical events within a {% include link elem="layer" %}. It holds exactly one {% include link elem="note" %} or {% include link elem="chord" %} element that is to be repeated.
 
-{% include figure img="ExampleImages/tremolos.1.png" caption="Bowed tremolandi" %}
-{% include mei example="cmn/cmn-sample147.txt" valid="true" %}
-
-The **@unitdur** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The stem modifier must also be explicity set on the child {% include link elem="note" %} or {% include link elem="chord" %} element for a complete visual representation.
-
+{% include figure img="ExampleImages/SchubertD887.png" caption="Bowed tremolandi in Schubert's last string quartet" %}
 {% include mei example="cmn/cmn-sample148.txt" valid="true" %}
 
-The number of slashes present on the note may disagree with the number of slashes that should be present according to the **@unitdur** attribute, especially in music manuscripts.
+The **@unitdur** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The **@stem.mod** attribute must also be explicity set on the child {% include link elem="note" %} or {% include link elem="chord" %} element for a complete visual representation. The example above shows a short excerpt from the second movement of the [String Quartet in G major, D. 887](https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert)) by [Franz Schubert's](https://en.wikipedia.org/wiki/Franz_Schubert).
+
+However, the number of slashes present on the note may disagree with the number of slashes that should be present according to the **@unitdur** attribute, especially in music manuscripts.
 
 {% include mei example="cmn/cmn-sample148a.txt" valid="true" %}
 
-However, within beams the number of slashes should be adjusted anyway.
+Note that within beams the number of slashes should be adjusted anyway.
 
 {% include mei example="cmn/cmn-sample148b.txt" valid="true" %}
 
