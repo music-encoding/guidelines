@@ -18,8 +18,8 @@
   <music>
     <body>
       <mdiv label="Second movement">
-        <score xml:id="ex-1889186466">
-          <scoreDef system.leftline="true">
+        <score>
+          <scoreDef system.leftline="true" key.pname="g" key.mode="major">
             <staffGrp symbol="bracket" bar.thru="true">
               <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
                 <keySig sig="1s" />
