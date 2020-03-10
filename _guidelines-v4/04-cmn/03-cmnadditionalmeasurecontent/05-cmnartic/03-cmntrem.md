@@ -11,7 +11,7 @@ For the repetition of a single note or chord, MEI offers the {% include link ele
 {% include figure img="ExampleImages/SchubertD887.png" caption="Bowed tremolandi in Schubert's last string quartet" %}
 {% include mei example="cmn/cmn-sample148.txt" valid="true" %}
 
-The **@unitdur** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The **@stem.mod** attribute must also be explicity set on the child {% include link elem="note" %} or {% include link elem="chord" %} element for a complete visual representation. The example above shows a short excerpt from the second movement of the [String Quartet in G major, D. 887](https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert)) by [Franz Schubert's](https://en.wikipedia.org/wiki/Franz_Schubert).
+The **@unitdur** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., quarters, 8ths, and so on. The **@stem.mod** attribute must also be explicity set on the child {% include link elem="note" %} or {% include link elem="chord" %} element for a complete visual representation. The example above shows a short excerpt from the second movement of [Franz Schubert's](https://en.wikipedia.org/wiki/Franz_Schubert) [String Quartet in G major, D. 887](https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert)).
 
 However, the number of slashes present on the note may disagree with the number of slashes that should be present according to the **@unitdur** attribute, especially in music manuscripts.
 
