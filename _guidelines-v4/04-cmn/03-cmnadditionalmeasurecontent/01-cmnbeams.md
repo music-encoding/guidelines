@@ -47,7 +47,7 @@ The duration of notes, rests, or chords under a beam which carries the **@form**
 
 {% include figure img="ExampleImages/cross-staff.1.png" caption="Two measures from No. 4 of Moszkowski's 12 Pianoforte Studies for the left hand" %}
 
-Beams that connect events on different staves may be encoded in two different ways. First, a single-layer approach may be taken that treats the events lying under the beam as logically belonging to the same layer as the initial event but visually ‘displaced’ to an adjacent staff. In the example above from [Moritz Moszkowski's](https://en.wikipedia.org/wiki/Moritz_Moszkowski) *12 Pianoforte Studies for the left hand*, Op.92 this method makes even from a semantic perspective perfect sense. It can be achieved with an additional **@staff** attribute value that contradicts the ‘normal’ staff placement indicated by the **@n** attribute of their ancestor {% include link elem="staff" %}.
+Beams that connect events on different staves may be encoded in two different ways. First, a single-layer approach may be taken that treats the events lying under the beam as logically belonging to the same layer as the initial event but visually ‘displaced’ to an adjacent staff. In the example above from [Moritz Moszkowski's](https://en.wikipedia.org/wiki/Moritz_Moszkowski) *12 Pianoforte Studies for the left hand*, Op. 92, MoszWV 117 this method makes even from a semantic perspective perfect sense. It can be achieved with an additional **@staff** attribute value that contradicts the ‘normal’ staff placement indicated by the **@n** attribute of their ancestor {% include link elem="staff" %}.
 
 {% include mei example="cmn/cmn-sample-moszkowski.txt" valid="true" %}
 
