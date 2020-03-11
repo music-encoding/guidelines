@@ -224,13 +224,13 @@
                             <dir place="above" staff="1" tstamp="1">
                                 <rend fontstyle="italic">m. d.</rend>
                             </dir>
-                            <dir xml:id="dir-0000001864303546" place="below" staff="1" tstamp="1.500000">
-                                <rend xml:id="rend-0000001563287892" fontstyle="italic">pesante</rend>
+                            <dir place="below" staff="1" startid="#ex-0534831456" vo="-2">
+                                <rend fontstyle="italic">pesante</rend>
                             </dir>
                             <dir place="above" staff="3" tstamp="1">
                                 <rend fontstyle="italic">m. g.</rend>
                             </dir>
-                            <dir place="below" staff="3" tstamp="1.500000">
+                            <dir place="below" staff="3" startid="#ex-2141141483" vo="-2">
                                 <rend fontstyle="italic">pesante</rend>
                             </dir>
                             <tempo place="above" staff="1" tstamp="1" midi.bpm="59">Tempo primo.</tempo>
@@ -756,11 +756,11 @@
                             </staff>
                             <staff n="2">
                                 <layer>
-                                    <chord xml:id="ex-1522895273" dur="1" cue="false">
-                                        <note oct="3" pname="g" accid.ges="s" />
-                                        <note oct="3" pname="b" />
-                                        <note oct="4" pname="d" accid.ges="s" />
-                                        <note oct="4" pname="g" accid.ges="s" />
+                                    <chord xml:id="ex-1522895273" dur="1">
+                                        <note xml:id="ex-1537683061" oct="3" pname="g" accid.ges="s" />
+                                        <note xml:id="ex-1683849052" oct="3" pname="b" />
+                                        <note xml:id="ex-1861969935" oct="4" pname="d" accid.ges="s" />
+                                        <note xml:id="ex-1402607631" oct="4" pname="g" accid.ges="s" />
                                     </chord>
                                 </layer>
                             </staff>
@@ -824,24 +824,24 @@
                             </staff>
                             <staff n="4">
                                 <layer>
-                                    <chord xml:id="ex-0821795125" dur="1" cue="false">
-                                        <note oct="1" pname="g" accid.ges="s" />
-                                        <note oct="1" pname="b" />
-                                        <note oct="2" pname="d" accid.ges="s" />
-                                        <note oct="2" pname="g" accid.ges="s" />
+                                    <chord xml:id="ex-0821795125" dur="1">
+                                        <note xml:id="ex-1674051035" oct="1" pname="g" accid.ges="s" />
+                                        <note xml:id="ex-0105950014" oct="1" pname="b" />
+                                        <note xml:id="ex-1063643276" oct="2" pname="d" accid.ges="s" />
+                                        <note xml:id="ex-0563844708" oct="2" pname="g" accid.ges="s" />
                                     </chord>
                                 </layer>
                             </staff>
-                            <dynam place="below" staff="1" tstamp="1">sffff</dynam>
-                            <tie xml:id="tie-0000001590748365" startid="#note-0000001537683061" endid="#note-0000000208051155" />
-                            <tie xml:id="tie-0000000911516798" startid="#note-0000001683849052" endid="#note-0000000635995714" />
-                            <tie xml:id="tie-0000001801685133" startid="#note-0000001861969935" endid="#note-0000000841019460" />
-                            <tie xml:id="tie-0000000890059584" startid="#note-0000001402607631" endid="#note-0000001189190707" />
-                            <dynam place="below" staff="3" tstamp="1">sffff</dynam>
-                            <tie xml:id="tie-0000001443332018" startid="#note-0000001674051035" endid="#note-0000000455442843" />
-                            <tie xml:id="tie-0000000437941935" startid="#note-0000000105950014" endid="#note-0000000271521247" />
-                            <tie xml:id="tie-0000001929280623" startid="#note-0000001063643276" endid="#note-0000000054848454" />
-                            <tie xml:id="tie-0000001603202697" startid="#note-0000000563844708" endid="#note-0000000691988378" />
+                            <dynam place="above" staff="2" startid="#ex-1522895273">sffff</dynam>
+                            <tie startid="#ex-1537683061" endid="#ex-0208051155" />
+                            <tie startid="#ex-1683849052" endid="#ex-0635995714" />
+                            <tie startid="#ex-1861969935" endid="#ex-0841019460" />
+                            <tie startid="#ex-1402607631" endid="#ex-1189190707" />
+                            <dynam place="above" staff="4" startid="#ex-0821795125">sffff</dynam>
+                            <tie startid="#ex-1674051035" endid="#ex-0455442843" />
+                            <tie startid="#ex-0105950014" endid="#ex-0271521247" />
+                            <tie startid="#ex-1063643276" endid="#ex-0054848454" />
+                            <tie startid="#ex-0563844708" endid="#ex-0691988378" />
                         </measure>
                         <measure left="single" right="single" n="50">
                             <staff n="1">
@@ -915,10 +915,10 @@
                             <staff n="2">
                                 <layer>
                                     <chord xml:id="ex-0295080498" dur="8" stem.dir="up">
-                                        <note oct="3" pname="g" accid.ges="s" />
-                                        <note oct="3" pname="b" />
-                                        <note oct="4" pname="d" accid.ges="s" />
-                                        <note oct="4" pname="g" accid.ges="s" />
+                                        <note xml:id="ex-0208051155" oct="3" pname="g" accid.ges="s" />
+                                        <note xml:id="ex-0635995714" oct="3" pname="b" />
+                                        <note xml:id="ex-0841019460" oct="4" pname="d" accid.ges="s" />
+                                        <note xml:id="ex-1189190707" oct="4" pname="g" accid.ges="s" />
                                     </chord>
                                     <rest xml:id="ex-1596369961" dur="8" />
                                     <rest xml:id="ex-1676732556" dur="4" />
@@ -995,10 +995,10 @@
                             <staff n="4">
                                 <layer>
                                     <chord xml:id="ex-0416301139" dur="8" stem.dir="up">
-                                        <note oct="1" pname="g" accid.ges="s" />
-                                        <note oct="1" pname="b" />
-                                        <note oct="2" pname="d" accid.ges="s" />
-                                        <note oct="2" pname="g" accid.ges="s" />
+                                        <note xml:id="ex-0455442843" oct="1" pname="g" accid.ges="s" />
+                                        <note xml:id="ex-0271521247" oct="1" pname="b" />
+                                        <note xml:id="ex-0054848454" oct="2" pname="d" accid.ges="s" />
+                                        <note xml:id="ex-0691988378" oct="2" pname="g" accid.ges="s" />
                                     </chord>
                                     <rest xml:id="ex-1423560982" dur="8" />
                                     <rest xml:id="ex-0674113247" dur="4" />
