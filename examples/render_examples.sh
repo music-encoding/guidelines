@@ -1,5 +1,5 @@
 #--simple rendering script--#
-#--        v0.0.2         --#
+#--        v0.0.3         --#
 #--                       --#
 #--     programmed by     --#
 #--   Klaus Rettinghaus   --#
@@ -18,7 +18,6 @@ do
   lilypond -dresolution=120 -dno-print-pages -dpreview -fpng --loglevel=BASIC_PROGRESS ${tempfile%.mei}.ly
   file=$(basename "$tempfile")
   mv ${file%.mei}.preview.png ${file%.mei}.png
-  #wrm ${file%.mei}.ly
 done
 
 rm temp/*
