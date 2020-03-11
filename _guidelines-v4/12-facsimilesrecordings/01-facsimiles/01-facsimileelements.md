@@ -36,6 +36,11 @@ Because the coordinate space of a zone is defined relative to that of a surface,
 
 {% include mei example="facsimiles/facsimiles-sample249.xml" valid="" %}
 
+Additionally, the area represented by a {% include link elem="zone" %} element may not be normally oriented to its parent surface. The amount by which the area has been rotated clockwise in degrees is expressed by the **@rotate** attribute. By default this amount is 0&deg;.
+For a zone where its contents are oriented 90&deg; clockwise:
+
+{% include mei example="facsimiles/facsimiles-sample-rotate.xml" valid="" %}
+
 A {% include link elem="zone" %} element may contain {% include link elem="figDesc" %} or {% include link elem="graphic" %} elements that provide detailed descriptive information about the zone and additional images, e.g., at a different/higher resolution, of the rectangle defined by the zone. The data objects contained within the zone may also be specified through the use of the **@data** attribute, which contains ID references to one more elements in the content tree of the MEI file, such as a {% include link elem="note" %}, {% include link elem="measure" %}, etc.
 
 {% include mei example="facsimiles/facsimiles-sample250.xml" valid="feasible" %}
