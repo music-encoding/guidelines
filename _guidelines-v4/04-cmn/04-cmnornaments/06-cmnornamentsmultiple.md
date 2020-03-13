@@ -10,6 +10,6 @@ The following example from [Carl Philipp Emanuel Bach's](https://en.wikipedia.or
 
 {% include figure img="ExampleImages/CPEB_Dorinde.png" caption="Combined ornaments in C.P.E. Bach's song Dorinde" %}
 
-When encoding the example above, both ornaments will be positioned above the same note. The encoded order of the elements, moreover, may correspond to the performed sequence, which in this example is top to bottom: first the turn, then the mordent. As every renderer deals differently with such combined ornaments it is best to encode the performed sequence additionally with **@next** and **@prev** attributes. The visual order can be given globally with **@aboveorder** in the {% include link elem="scoreDef" %}.
+When encoding the example above, both ornaments will be positioned above the same note. The encoded order of the elements, moreover, may correspond to the performed sequence, which in this example is top to bottom: first the turn, then the mordent. As every renderer deals differently with such combined ornaments it is best practice to encode the performed sequence additionally with **@next** and **@prev** attributes. The visual order can be specified globally with **@aboveorder** in the preceding {% include link elem="scoreDef" %}.
 
 {% include mei example="cmnOrnaments/cmnOrnaments-sample209.txt" valid="true" %}
