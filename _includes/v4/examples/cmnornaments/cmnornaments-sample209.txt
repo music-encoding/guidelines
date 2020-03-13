@@ -13,8 +13,8 @@
       <note dur="4" oct="5" pname="c" stem.dir="down" xml:id="ex_m3_n2"/>
     </layer>
   </staff>
-  <turn form="upper" staff="1" startid="#ex_m3_n1"/>
-  <mordent form="upper" staff="1" startid="#ex_m3_n1"/>
-  <turn form="upper" staff="1" startid="#ex_m3_n2"/>
-  <mordent form="upper" staff="1" startid="#ex_m3_n2"/>
+  <mordent xml:id="or_1" form="upper" staff="1" startid="#co_1_m_n1" prev="#or_2" />
+  <turn xml:id="or_2" form="upper" staff="1" startid="#co_m_1_n1" next="#or_1" />
+  <mordent xml:id="or_3" form="upper" staff="1" startid="#co_m_1_n2" prev="#or_4" />
+  <turn xml:id="or_4" form="upper" staff="1" startid="#co_m_1_n2" next="#or_3" />
 </measure>
