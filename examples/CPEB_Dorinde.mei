@@ -162,6 +162,18 @@
                                 </layer>
                             </staff>
                         </measure>
+                        <measure n="5">
+                            <staff n="1">
+                                <layer n="1">
+                                    <rest xml:id="ex-142" dur="4"/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer n="1">
+                                    <note xml:id="ex-145" dur="4" oct="3" pname="c" stem.dir="up"/>
+                                </layer>
+                            </staff>
+                        </measure>
                     </section>
                 </score>
             </mdiv>
