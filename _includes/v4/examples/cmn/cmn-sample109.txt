@@ -1,6 +1,6 @@
 <layer>
   <!-- … -->
-  <beam rend="acc">
+  <beam form="acc">
     <note dur="8"/>
     <note/>
     <note/>

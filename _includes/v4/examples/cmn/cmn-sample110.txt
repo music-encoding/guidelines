@@ -1,6 +1,6 @@
 <layer>
   <!-- … -->
-  <beam rend="mixed">
+  <beam form="mixed">
     <note dur="8"/>
     <note dur="8"/>
     <note/>
@@ -8,7 +8,7 @@
     <note/>
     <note dur="32"/>
   </beam>
-  <beam rend="mixed">
+  <beam form="mixed">
     <note dur="32"/>
     <note/>
     <note/>
