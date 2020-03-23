@@ -26,7 +26,7 @@ When the mensural module is included, **@dur** on {% include link elem="note" %}
 
 {% include verovio example="notes_rests.mei" encoding=true %}
 
-The value of the **@dur** attribute is the medieval latin name for the note. Additionally, the **@dur** attribute can take on two other values when used within {% include link elem="rest" %} elements:
+The value of the **@dur** attribute is the medieval Latin name for the note. Additionally, the **@dur** attribute can take on two other values when used within {% include link elem="rest" %} elements:
 
 {:.gloss}
 **2B:** Two-breve rest

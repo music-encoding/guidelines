@@ -4,7 +4,7 @@ title: "Mensuration Encoding"
 version: "v4"
 ---
 
-Using the mensural module, mensuration can be indicated with the attributes available on the {% include link elem="mensur" %} element. The {% include link elem="mensur" %} element must be located within the {% include link elem="layer" %} element, preceeding the stream of notes to be affected by the mensuration defined by it.
+When using the mensural module, mensuration can be indicated with the attributes available on the {% include link elem="mensur" %} element. The {% include link elem="mensur" %} element must be located within the {% include link elem="layer" %} element, preceding the stream of notes to be affected by the mensuration defined by it.
 
 {% include desc elem="mensur" %}
 
