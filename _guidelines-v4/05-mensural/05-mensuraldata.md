@@ -4,7 +4,7 @@ title: "Music Data Organization"
 version: "v4"
 ---
 
-The data organization based on {% include link elem="measure" %} elements that usually prevails in MEI is not appropriate for mensural notation because most music until 1600 was written in a non-measured manner. Even though it is not defined by the mensural module, a more suitable alternate data organization without measures is available: {% include link elem="staff" %} elements may occur directly within the {% include link elem="section" %} element without being organized into measures first. The organization of events (notes, rests, etc.) within the {% include link elem="staff" %} and {% include link elem="layer" %} elements remains unchanged.
+The data organization based on {% include link elem="measure" %} elements that usually prevails in MEI is not appropriate for mensural notation because most music until 1600 does not have measures (bars) as we understand them today. Even though it is not defined by the mensural module, a more suitable alternate data organization without measures is available: {% include link elem="staff" %} elements may occur directly within the {% include link elem="section" %} element without being organized into measures first. The organization of events (notes, rests, etc.) within the {% include link elem="staff" %} and {% include link elem="layer" %} elements remains unchanged.
 
 {% include mei example="mensural/mensural-sample168.xml" valid="" %}
 
