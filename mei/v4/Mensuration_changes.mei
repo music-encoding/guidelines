@@ -18,7 +18,7 @@
                 <score>
                     <scoreDef>
                         <staffGrp>
-                            <staffDef n="1" notationtype="mensural" lines="5"/>
+                            <staffDef n="1" notationtype="mensural" lines="5" clef.shape="G" clef.line="2"/>
                         </staffGrp>
                     </scoreDef>
                     <?edit-start?>

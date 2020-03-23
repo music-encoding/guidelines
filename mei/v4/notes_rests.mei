@@ -21,8 +21,8 @@
                 <score>
                     <scoreDef>
                         <staffGrp>
-                            <staffDef n="1" label="notes" notationtype="mensural.white" lines="5"/>
-                            <staffDef n="2" label="rests" notationtype="mensural.white" lines="5"/>
+                            <staffDef n="1" label="notes" notationtype="mensural.white" lines="5" clef.shape="G" clef.line="2"/>
+                            <staffDef n="2" label="rests" notationtype="mensural.white" lines="5" clef.shape="G" clef.line="2"/>
                         </staffGrp>
                     </scoreDef>
                     <section>
