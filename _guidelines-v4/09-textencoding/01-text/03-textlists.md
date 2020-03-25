@@ -7,7 +7,6 @@ version: "v4"
 When a text contains lists, they can be encoded with the following elements:
 
 {% include desc elem="list" %}
-{% include desc atts="list/type" %}
 {% include desc elem="head" %}
 {% include desc elem="item" %}
 

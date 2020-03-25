@@ -23,7 +23,7 @@ The {% include link elem="name" %} element contains the name of an entity that i
 {:.gloss}
 **'process'**: the name of a process or mechanical agent
 
-The date sub-element is available within {% include link elem="name" %} in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the authority attribute.
+The date sub-element is available within {% include link elem="name" %} in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the **@auth** attribute.
 
 Examples of the use of the {% include link elem="name" %} element:
 
@@ -33,28 +33,9 @@ The element {% include link elem="date" %} contains a date in any format, includ
 
 {% include mei example="namesDates/namesDates-sample294.xml" valid="" %}
 
-To be more specific about the date, the attributes in the {% include link att="datable" %} class can be used:
+To be more specific about the date, the attributes in the {% include link att="datable" %} and {% include link att="calendared" %} classes can be used:
 
-{:.gloss}
-**startdate**: contains the starting point of a date range in standard ISO form
-
-{:.gloss}
-**enddate**: contains the end point of a date range in standard ISO form
-
-{:.gloss}
-**notbefore**: contains a lower boundary for an uncertain date
-
-{:.gloss}
-**notafter**: contains an upper boundary for an uncertain date
-
-{:.gloss}
-**isodate**: gives the value of a textual date in standard ISO form
-
-{:.gloss}
-**calendar**: indicates the system or calendar to which a date belongs, for example, Gregorian, Julian, Roman, Mosaic, Revolutionary, Islamic, etc.
-
-{:.gloss}
-**cert**: signifies the degree of certainty or precision associated with a feature (high, medium, low, unknown)
+{% include desc atts="att.datable/startdate att.datable/enddate att.datable/notbefore att.datable/notafter att.datable/isodate att.calendared/calendar" %}
 
 In the following example, the ambiguous date text "5/3/05" is resolved using the **@isodate** attribute:
 

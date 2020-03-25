@@ -37,7 +37,7 @@ Personal names often consist of several components, such as given names, surname
 {:.gloss}
 **'genname' (generational name)**: contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named.
 
-However, the recommended practice is to employ the following sub-elements provided the namesDates module:
+However, the recommended practice is to employ the following sub-elements provided by the namesDates module:
 
 {% include desc elem="addName" %}
 {% include desc elem="famName" %}
@@ -50,19 +50,17 @@ For example,
 
 {% include mei example="namesDates/namesDates-sample314.xml" valid="" %}
 
-In the case of individuals with more than one forename, it is often sufficient to place all given names within a single foreName element:
+In the case of individuals with more than one forename, it is often sufficient to place all given names within a single {% include link elem="foreName" %} element:
 
 {% include mei example="namesDates/namesDates-sample315.xml" valid="" %}
 
-However, the advantage of marking names with specific name part elements instead of nested persName elements, is that it becomes possible to use the **@type** attribute to distinguish between multiple instances of the same generic name component. The following example indicates the function of each of the given names of Wolfgang Mozart:
+However, the advantage of marking names with specific name part elements instead of nested {% include link elem="persName" %} elements, is that it becomes possible to use the **@type** attribute to distinguish between multiple instances of the same generic name component. The following example indicates the function of each of the given names of Wolfgang Mozart:
 
 {% include mei example="namesDates/namesDates-sample316.xml" valid="" %}
 
 The use of a controlled list, such as the Gemeinsame Normdatei (GND) or the Library of Congress Name Authorities, is recommended for names, especially those occurring within the metadata header. When a controlled value is used, information about the the value should be recorded. The following attributes are provided for this purpose:
 
-- **@authority**: records the list from which a controlled value is taken,
-- **@authURI** (authority URI): indicates the web-accessible location of the controlled vocabulary from which the value is taken,
-- **@codedval** (coded value): holds a value which serves as a primary key in an external database.
+{% include desc atts="att.authorized/auth att.authorized/auth.uri att.canonical/codedval" %}
 
 For maximal machine-processability, these three attributes may be used in combination. For example:
 

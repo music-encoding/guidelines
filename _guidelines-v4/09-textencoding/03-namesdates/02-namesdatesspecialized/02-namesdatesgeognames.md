@@ -40,19 +40,11 @@ They may also be used to identify place name components within textual content:
 
 To enable localization of an organization, or to specify names of places with identical names, the use of controlled vocabulary is recommend for names of administrative divisions, such as cities, states, and countries. In this case, the following attributes are particularly relevant:
 
-{:.gloss}
-**authority**: records the list from which a controlled value is taken, e.g., the Thesaurus of Geographic Names (TGN),
-
-{:.gloss}
-**authURI (authority URI)**: records the web-accessible location of the controlled vocabulary from which the value is taken,
-
-{:.gloss}
-**codedval (coded value)**: records a value which serves as a primary key in an external database.
+{% include desc atts="att.authorized/auth att.authorized/auth.uri att.canonical/codedval" %}
 
 The encoder may use these attributes in combination. In case of the German city of Frankfurt, for example, a clarification whether Frankfurt am Main or Frankfurt an der Oder is meant can be achieved by referring to the ID of the TGN entry:
 
 {% include mei example="namesDates/namesDates-sample305.xml" valid="" %}
-{% include mei example="namesDates/namesDates-sample306.xml" valid="" %}
 
 The names of places given within addresses can be marked with {% include link elem="geogName" %} elements, for example:
 
