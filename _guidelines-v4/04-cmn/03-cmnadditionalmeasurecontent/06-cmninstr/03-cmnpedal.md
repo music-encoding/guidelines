@@ -21,3 +21,17 @@ The meaning of the mark is captured using the **@dir** attribute, which provides
 **half**: depress the pedal half way
 
 {% include mei example="cmn/cmn-sample156.txt" valid="" %}
+
+To specify the pedal, that has to be used, the **@func** attribute allows the following values:
+
+{:.gloss}
+**sustain**: The sustain pedal, also referred to as the "damper" pedal, allows the piano strings to vibrate sympathetically with the struck strings. It is the right-most and the most frequently used pedal on modern pianos. (Often marked with: {% include smufl code="E650" %})
+
+{:.gloss}
+**soft**: The soft pedal, sometimes called the "una corda", "piano", or "half-blow" pedal, reduces the volume and modifies the timbre of the piano. On the modern piano, it is the left-most pedal.
+
+{:.gloss}
+**sostenuto**: The sostenuto or tone-sustaining pedal allows notes already undamped to continue to ring while other notes are damped normally; that is, on their release by the fingers. This is usually the center pedal of the modern piano. (Often marked with: {% include smufl code="E659" %})
+
+{:.gloss}
+**silent** The silent or practice pedal mutes the volume of the piano so that one may practice quietly. It is sometimes a replacement for the sostenuto pedal, especially on an upright or vertical instrument.
