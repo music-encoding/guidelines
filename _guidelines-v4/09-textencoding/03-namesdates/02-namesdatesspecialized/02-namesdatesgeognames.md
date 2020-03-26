@@ -6,7 +6,7 @@ version: "v4"
 
 {% include desc elem="geogName" %}
 
-Geographic names are proper noun designations for places (e.g.,. Baltimore, Maryland), natural features (e.g.,. Black Forest) or political jurisdictions (e.g.,. Quartier Latin, Paris).
+Geographic names are proper noun designations for places (e.g., Baltimore, Maryland), natural features (e.g., Black Forest) or political jurisdictions (e.g., Quartier Latin, Paris).
 
 The element can be used, e.g., to label geographical names in titles:
 
