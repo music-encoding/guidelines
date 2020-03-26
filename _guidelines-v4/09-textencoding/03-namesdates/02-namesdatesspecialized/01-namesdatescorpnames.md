@@ -6,7 +6,7 @@ version: "v4"
 
 {% include desc elem="corpName" %}
 
-Corporate names are non-personal names which refer to structured bodies of one or more persons that act as a single entity. Typical examples include associations, businesses, projects or institutions (e.g.,. 'the Royal College of Music' or 'the BBC'), but political factions or other groupings where these are regarded as forming a single agency. Organization names typically include some type of indicator or pattern or words that help identify them as non-personal names.
+Corporate names are non-personal names which refer to structured bodies of one or more persons that act as a single entity. Typical examples include associations, businesses, projects or institutions (e.g., 'the Royal College of Music' or 'the BBC'), but political factions or other groupings where these are regarded as forming a single agency. Organization names typically include some type of indicator or pattern or words that help identify them as non-personal names.
 
 The {% include link elem="corpName" %} element is frequently used within the {% include link id="header" %} of an MEI document. It is typically found in the {% include link elem="respStmt" %} element:
 
