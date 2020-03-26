@@ -25,7 +25,7 @@ The {% include link elem="name" %} element contains the name of an entity that i
 
 The date sub-element is available within {% include link elem="name" %} in order to record any dates associated with the name, for example, creation and dissolution in the case of a corporate entity or place or birth and death dates in the case of an individual. The name of the list from which a controlled value is taken, such as the Library of Congress Name Authority File (LCNAF), may be recorded using the **@auth** attribute.
 
-Examples of the use of the {% include link elem="name" %} element:
+Examples of the use of the **@type** attribute within the {% include link elem="name" %} element:
 
 {% include mei example="namesDates/namesDates-sample293.xml" valid="" %}
 
