@@ -24,6 +24,6 @@ Having said that {% include link elem="div" %} identifies any structural organiz
 
 {% include desc atts="div/type" %}
 
-**@type** may contain any number of space-separated *tags* describing the nature of the {% include link elem="div" %} (or, in fact, any other element). The following example shows the use of **@type** to indicate three prefaces in English, German and Italian are columns on the same page.
+**@type** may contain any number of space-separated *tags* describing the nature of the {% include link elem="div" %} (or, in fact, any other element). The following example shows the use of **@type** (in combination with **@n**) to indicate three prefaces in English, German and Italian are columns on the same page.
 
 {% include mei example="text/text-sample360.xml" valid="" %}
