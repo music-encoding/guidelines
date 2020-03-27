@@ -88,7 +88,7 @@
                                     <rest xml:id="ex-0559253695" dur="8" />
                                 </layer>
                             </staff>
-                            <tempo xml:id="ex-0484835033" place="above" staff="1" tstamp="1" midi.bpm="120">
+                            <tempo xml:id="ex-0484835033" place="above" staff="1" tstamp="1">
                                 <rend xml:id="ex-1069442913" fontweight="bold">Allegro</rend>
                             </tempo>
                             <dynam xml:id="ex-0283570703" place="below" staff="1" startid="#ex-0731379794">ff</dynam>
