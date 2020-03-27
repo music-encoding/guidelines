@@ -21,9 +21,10 @@ Note that within beams the number of slashes should be adjusted anyway.
 
 {% include mei example="cmn/cmn-sample148b.txt" valid="true" %}
 
-The {% include link elem="bTrem" %} element can be used as shorthand for a tuplet consisting of repetitions of a single note or chord. This kind of markup may be the result of an optical music recognition process in which complete semantics cannot be determined *a priori*. When used this way, the **@num** attribute on {% include link elem="bTrem" %} can record a number to be rendered along with the pseudo-tuplet. In spite of this capability, the {% include link elem="tuplet" %} element is preferred.
+The {% include link elem="bTrem" %} element can be used as shorthand for a tuplet consisting of repetitions of a single note or chord. This kind of markup may be the result of an optical music recognition process in which complete semantics cannot be determined *a priori*. When used this way, the **@num** attribute on {% include link elem="bTrem" %} can record a number to be rendered along with the pseudo-tuplet. In spite of this capability, the {% include link elem="tuplet" %} element is preferred. This makes the following examples' visual appearance equal, but not necessarily their semantics.
 
 {% include mei example="cmn/cmn-sample149.txt" valid="true" %}
+{% include mei example="cmn/cmn-sample149a.txt" valid="true" %}
 
 In the case of alternating pitches, MEI offers the {% include link elem="fTrem" %} (fingered tremolo) element. While it mostly behaves the same as {% include link elem="bTrem" %}, a fingered tremolo requires exactly two child elements, either being a {% include link elem="note" %} or {% include link elem="chord" %}. The **@unitdur** attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., 4ths, 8ths, 16ths, etc. The number of beams present in the source is captured by the **@beams** attribute.
 
