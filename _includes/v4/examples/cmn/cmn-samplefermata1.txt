@@ -1,1 +1,1 @@
-<mRest fermata="above"/>
+<mRest fermata="above" />

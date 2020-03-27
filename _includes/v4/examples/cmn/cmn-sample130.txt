@@ -4,8 +4,8 @@
   </staff>
   <staff n="2">
     <layer n="1">
-      <note dur="2" oct="4" pname="c" stem.mod="2slash"/>
-      <note dur="2" oct="4" pname="e" stem.mod="2slash"/>
+      <note dur="2" oct="4" pname="c" stem.mod="2slash" />
+      <note dur="2" oct="4" pname="e" stem.mod="2slash" />
     </layer>
     <layer n="2">
       <!-- content omitted -->

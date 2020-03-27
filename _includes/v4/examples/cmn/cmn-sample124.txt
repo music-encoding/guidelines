@@ -1,1 +1,1 @@
-<slur layer="1" staff="1" tstamp="1" tstamp2="0m+4"/>
+<slur layer="1" staff="1" tstamp="1" tstamp2="0m+4" />

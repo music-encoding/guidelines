@@ -1,3 +1,3 @@
 <bTrem>
-  <note dur="1" oct="4" pname="b"/>
+  <note dur="1" oct="4" pname="b" />
 </bTrem>

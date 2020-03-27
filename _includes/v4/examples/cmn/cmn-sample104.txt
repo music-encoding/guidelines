@@ -1,5 +1,5 @@
 <staff>
   <layer>
-    <multiRest num="9"/>
+    <multiRest num="9" />
   </layer>
 </staff>
