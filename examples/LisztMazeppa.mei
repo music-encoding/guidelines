@@ -143,7 +143,7 @@
                             <staff xml:id="ex-0494553260" n="2">
                                 <layer xml:id="ex-2122650757" n="5">
                                     <rest xml:id="ex-1392928935" dur="4" />
-                                    <clef xml:id="ex-1237374598" shape="F" line="4" />
+                                    <clef xml:id="ex-1237374598" shape="F" line="4" ho="-4" />
                                     <chord xml:id="ex-1713132997" dur="8" stem.dir="down">
                                         <artic xml:id="ex-1313025250" artic="stacciss" />
                                         <note xml:id="ex-0323231038" oct="3" pname="e">
