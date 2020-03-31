@@ -1,6 +1,6 @@
 ---
 sectionid: italianMensur
-title: "Italian Trecento Notation"
+title: "Italian Divisiones"
 version: "v4"
 ---
 

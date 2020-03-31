@@ -1,6 +1,6 @@
 ---
 sectionid: mensuralSigns
-title: "Mensuration Encoding"
+title: "Mensuration"
 version: "v4"
 ---
 

@@ -1,6 +1,6 @@
 ---
 sectionid: mensuralRules
-title: "Actual Duration with Alterations and Imperfections"
+title: "Alteration and Imperfection"
 version: "v4"
 ---
 

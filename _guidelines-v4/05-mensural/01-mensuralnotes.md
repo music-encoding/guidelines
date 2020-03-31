@@ -1,6 +1,6 @@
 ---
 sectionid: mensuralNotes
-title: "Note and Rest Values"
+title: "Durations"
 version: "v4"
 ---
 
