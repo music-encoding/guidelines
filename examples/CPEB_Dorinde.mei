@@ -48,7 +48,6 @@
                                 </layer>
                                 <layer n="2">
                                     <note xml:id="ex-44" dur="4" oct="4" pname="e" stem.dir="down"/>
-                                    <note xml:id="ex-60" dur="4" grace="acc" oct="4" pname="d" stem.dir="down"/>
                                     <note xml:id="ex-47" dur="2" oct="4" pname="f" stem.dir="down"/>
                                 </layer>
                             </staff>
