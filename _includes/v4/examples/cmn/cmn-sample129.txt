@@ -1,1 +1,1 @@
-<dynam place="above" staff="1">p</dynam>
+<dynam place="above" staff="1" tstamp="1">p</dynam>

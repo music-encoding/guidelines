@@ -14,6 +14,6 @@ For example, Johann Sebastian Bach used non-standard ornaments in the *Klavierb√
 
 The ornament for (5) doppelt-cadence could be encoded in the following way, by adopting the Unicode code-points defined by the SMuFL standard:
 
-{% include mei example="cmnOrnaments/cmnOrnaments-sample208.txt" valid="" %}
+{% include mei example="cmnOrnaments/cmnOrnaments-sample208.txt" valid="true" %}
 
 A resolution, or expansion of the ornament can be provided as discussed in {% include link id="cmnOrnamentsTrillsSpecial" %} below.

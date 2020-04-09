@@ -1,1 +1,1 @@
-<fermata form="inv" place="above" shape="square" staff="2" tstamp="4"/>
+<fermata form="inv" place="above" shape="square" staff="2" tstamp="4" />

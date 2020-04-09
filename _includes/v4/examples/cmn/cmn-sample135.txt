@@ -1,2 +1,2 @@
 <!-- startid attribute indicates starting point, tstamp2 attribute marks the end -->
-<dynam place="above" staff="2" startid="ID_of_starting_note" tstamp2="1m+1">cresc. poco a poco</dynam>
+<dynam place="above" staff="2" startid="#ID_of_first_note" tstamp2="1m+3">cresc. poco a poco</dynam>

@@ -8,7 +8,7 @@ Tuplets indicate a localized change of meter; that is, a given duration in the r
 
 The relation of the tuplet to the underlying meter is specified using the **@num** and **@numbase** attributes, where **@num** specifies the number of replacing notes and **@numbase** specifies the number of notes *of the same duration* to be replaced. For example, when three eighth notes replace one quarter note in common time, **@num** takes a value of "3", whereas **@numbase** reads "2", because a quarter note in common time is normally divided into two eighths. When three quarters replace two in the same meter, **@numbase** also reads "2". The combination of these attributes may be read as "3 in the time of 2" in either case.
 
-{% include figure img="ExampleImages/tuplets.1.png" caption="Tuplet rhythms" %}
+{% include figure img="ExampleImages/tuplets.1.png" caption="Tuplet rhythms from Maurice Ravel's Boléro" %}
 {% include mei example="cmn/cmn-tuplets01.txt" valid="" %}
 
 The duration of the entire tuplet may be encoded using the usual ‘power of 2’ values, e.g., 1, 2, 4, etc., in the **@dur** attribute if necessary.
@@ -17,7 +17,9 @@ The duration of the entire tuplet may be encoded using the usual ‘power of 2�
 
 Tuplets are often highlighted using brackets above or below the affected notes. The presence and position of these brackets can be encoded using the **@bracket.place** (above / below) and **@bracket.visible** (true / false) attributes.
 
-Usually, however, tuplets are rendered with a bracket (**@bracket.visible**="true") and a single number (**@num.format**="count" and **@num.visible**="true"). However, the number-to-numbase ratio may be provided in addition to, or in some cases as a replacement for, the bracket. The **@num.format** attribute indicates whether a plain number (the value of **@num**) or a ratio (comprised of **@num** and **@numbase**, e.g., "3:2") should be displayed and **@num.visible** indicates the general presence of such a number.
+Usually, however, tuplets are rendered with a bracket (**@bracket.visible**="true") and a single number (**@num.format**="count" and **@num.visible**="true"), as seen in the example above. However, the number-to-numbase ratio may be provided in addition to, or in some cases as a replacement for, the bracket. The **@num.format** attribute indicates whether a plain number (the value of **@num**) or a ratio (comprised of **@num** and **@numbase**, e.g., "3:2") should be displayed and **@num.visible** indicates the general presence of such a number.
+
+Further visual control comes with the **@num.place** and **@bracket.place** attributes, that allow specific placement of the number and the bracket "above" or "below" the staff.
 
 In addition to {% include link elem="note" %} elements, {% include link elem="tuplet" %} may contain other elements, such as {% include link elem="rest" %} or {% include link elem="space" %}, to match the content of a source document or an intended rendering. In particular, the {% include link elem="beam" %} element is allowed so that custom beaming may be indicated, e.g., a septuplet may be divided into a group of three plus a group of four notes.
 

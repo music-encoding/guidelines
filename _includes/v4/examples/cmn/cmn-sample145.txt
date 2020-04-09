@@ -1,2 +1,2 @@
 <!-- default rendition with (redundant) arrow added to the top of the visual symbol -->
-<arpeg arrow="true" staff="2" tstamp="3"></arpeg>
+<arpeg arrow="true" staff="2" tstamp="3" />

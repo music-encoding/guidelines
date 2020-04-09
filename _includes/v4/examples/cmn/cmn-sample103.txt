@@ -1,5 +1,5 @@
 <staff>
   <layer>
-    <mRest cutout="cutout"/>
+    <mRest cutout="cutout" />
   </layer>
 </staff>
