@@ -1,0 +1,2 @@
+Records a timestamp adjustment of a feature's programmatically-determined end
+          point.

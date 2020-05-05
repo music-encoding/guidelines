@@ -1,0 +1,1 @@
+Marks a sequence of notational events grouped by a bracket.

@@ -1,0 +1,2 @@
+Describes the visual appearance of the fermata; that is, whether it has a curved,
+          square, or angular shape.

@@ -1,0 +1,1 @@
+Indicates the pedal setting for the harp's B strings.

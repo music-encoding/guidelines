@@ -1,0 +1,1 @@
+Attributes that form the basis of the att.common class.

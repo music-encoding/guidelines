@@ -1,0 +1,1 @@
+Attributes that locate a sound source within 3-D space.

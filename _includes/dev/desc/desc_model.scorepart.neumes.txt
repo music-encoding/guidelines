@@ -1,0 +1,1 @@
+Groups elements that may appear as part of a score in the neume repertoire.

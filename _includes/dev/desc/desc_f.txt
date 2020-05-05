@@ -1,0 +1,1 @@
+(figure) – Single element of a figured bass indication.

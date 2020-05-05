@@ -1,0 +1,2 @@
+Regularizes the naming of an element and thus facilitates building links between it
+          and other resources. Each id attribute within a document must have a unique value.

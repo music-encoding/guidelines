@@ -1,0 +1,2 @@
+points to one or more events in a user-defined collection that are known to be
+          predecessors of the current element.

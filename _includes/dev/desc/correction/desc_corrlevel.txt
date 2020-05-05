@@ -1,0 +1,1 @@
+Indicates the degree of correction applied to the text.

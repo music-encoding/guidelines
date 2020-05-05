@@ -1,0 +1,1 @@
+Provides a description of the leaf or quire signatures found within a codex.

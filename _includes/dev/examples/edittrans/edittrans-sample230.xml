@@ -1,0 +1,18 @@
+
+<!-- within the header for this document: --><respStmt>
+   <name role="editor" xml:id="editTrans.JK">Johannes Kepper</name>
+</respStmt>
+<!-- … -->
+<chord>
+   <note dur="4" oct="4" pname="c"></note>
+   <note dur="4" oct="4" pname="e"></note>
+   <choice>
+      <sic>
+         <note dur="2" oct="4" pname="g"></note>
+      </sic>
+      <corr resp="#JK">
+         <note dur="4" oct="4" pname="g"></note>
+      </corr>
+   </choice>
+   <note dur="4" oct="4" pname="a"></note>
+</chord>

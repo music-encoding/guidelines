@@ -1,0 +1,1 @@
+Records the track configuration in numeric form.

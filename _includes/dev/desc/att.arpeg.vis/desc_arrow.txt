@@ -1,0 +1,1 @@
+Indicates if an arrowhead is to be drawn as part of the arpeggiation symbol.

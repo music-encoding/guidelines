@@ -1,0 +1,1 @@
+Location of a beam relative to the events it affects.
