@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v4"
 title: "graphic"
 ---
 <div class="specPage">

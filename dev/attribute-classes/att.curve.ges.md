@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v4"
 title: "att.curve.ges"
 ---
 <div class="specPage">

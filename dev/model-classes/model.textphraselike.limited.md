@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev"
+version: "v4"
 title: "model.textPhraseLike.limited"
 ---
 <div class="specPage">

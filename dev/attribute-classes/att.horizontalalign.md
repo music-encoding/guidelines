@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev""
+version: "v4"
 title: "att.horizontalAlign"
 ---
 <div class="specPage">

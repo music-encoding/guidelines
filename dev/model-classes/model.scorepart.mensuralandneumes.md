@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev""
+version: "v4"
 title: "model.scorePart.mensuralAndNeumes"
 ---
 <div class="specPage">

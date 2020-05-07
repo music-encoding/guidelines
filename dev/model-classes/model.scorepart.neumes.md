@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "dev""
+version: "v4"
 title: "model.scorePart.neumes"
 ---
 <div class="specPage">

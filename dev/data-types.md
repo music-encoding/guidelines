@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 title: "Data Types"
-version: "dev""
+version: "v4"
 ---
 <div class="specPage overview">
    <h3>Data Types</h3>
