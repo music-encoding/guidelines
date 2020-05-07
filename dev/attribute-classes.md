@@ -2,7 +2,7 @@
 layout: sidebar
 sidebar: s1
 title: "Attribute Classes"
-version: "v4"
+version: "dev"
 ---
 <div class="specPage overview">
    <h3>Attribute Classes</h3>
