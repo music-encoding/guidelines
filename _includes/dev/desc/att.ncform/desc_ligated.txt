@@ -1,0 +1,1 @@
+Indicates participation in a ligature.

@@ -1,0 +1,1 @@
+<staffDef clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" />

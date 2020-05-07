@@ -1,0 +1,1 @@
+Points to the genetic state that results from this modification.

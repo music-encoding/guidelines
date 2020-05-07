@@ -1,0 +1,1 @@
+Captures the number of "floating" beams, i.e., those not attached to stems.

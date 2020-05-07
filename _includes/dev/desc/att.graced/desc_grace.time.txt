@@ -1,0 +1,1 @@
+Records the amount of time to be "stolen" from a non-grace note/chord.

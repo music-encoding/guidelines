@@ -1,0 +1,1 @@
+Captures staff location in terms of written pitch name.

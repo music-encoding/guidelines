@@ -1,0 +1,2 @@
+signifies the staff on which referenced notation occurs. Defaults to the same value as
+          the local staff. Mandatory when applicable.

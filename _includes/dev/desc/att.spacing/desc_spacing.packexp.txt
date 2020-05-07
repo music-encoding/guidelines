@@ -1,0 +1,1 @@
+Describes a note's spacing relative to its time value.

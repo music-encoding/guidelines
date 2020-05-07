@@ -1,0 +1,2 @@
+Specifies the intended meaning when a participant in a relationship is itself a
+          pointer.

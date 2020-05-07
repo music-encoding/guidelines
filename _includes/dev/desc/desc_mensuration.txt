@@ -1,0 +1,1 @@
+Captures information about mensuration within bibliographic descriptions.

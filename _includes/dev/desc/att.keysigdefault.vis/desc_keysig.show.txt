@@ -1,0 +1,1 @@
+Indicates whether the key signature should be displayed.

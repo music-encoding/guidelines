@@ -1,0 +1,1 @@
+(syllable) – Individual lyric syllable.

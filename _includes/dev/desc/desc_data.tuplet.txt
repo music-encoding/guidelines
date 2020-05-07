@@ -1,0 +1,1 @@
+Tuplet attribute values: initial, medial, terminal.

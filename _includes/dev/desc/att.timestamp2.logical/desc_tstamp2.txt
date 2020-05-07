@@ -1,0 +1,2 @@
+Encodes the ending point of an event, i.e., a count of measures plus a beat location
+          in the ending measure.

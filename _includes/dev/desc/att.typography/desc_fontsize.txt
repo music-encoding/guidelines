@@ -1,0 +1,3 @@
+Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch,
+          relative terms, e.g., "small", "larger", etc., or percentage values relative to "normal"
+          size, e.g., "125%". 

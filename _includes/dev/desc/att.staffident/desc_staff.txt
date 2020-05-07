@@ -1,0 +1,2 @@
+Signifies the staff on which a notated event occurs or to which a control event
+          applies. Mandatory when applicable.

@@ -1,0 +1,1 @@
+Meter.sym attribute values for CMN.

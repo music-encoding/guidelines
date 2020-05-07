@@ -1,0 +1,1 @@
+MIDI text meta-event.

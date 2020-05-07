@@ -1,0 +1,1 @@
+(accidental) – Records a temporary alteration to the pitch of a note.

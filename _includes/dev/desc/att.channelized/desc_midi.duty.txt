@@ -1,0 +1,1 @@
+Specifies the 'on' part of the duty cycle as a percentage of a note's duration.
