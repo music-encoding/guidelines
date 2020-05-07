@@ -13,7 +13,7 @@ title: "staff"
             or may not
             actually be rendered on staff lines; that is, both diastematic and non-diastematic
             signs.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedStavesAndLayers">2.2.2 Staves and Layers</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsPositioning">2.4.3.3 Positioning</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnMeasures">4.2.1 The Role of the Measure Element</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnBeams">4.3.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDynam">4.3.3 Dynamics in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnHarp">4.3.6.2 Harp Pedals</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOssia">4.3.7 Ossia</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDir">4.3.8 Directions and Rehearsal marks</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a>,<a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralData">5.6 Music Data Organization</a>,<a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#analysisDescribingRelationships">10.1.1 General Relationships Between Elements</a>,<a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#analysisMetricalConformance">10.1.3 Metrical Conformance</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#critAppInDefs">11.1.3 Variants in Score Definitions</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedStavesAndLayers">2.2.2 Staves and Layers</a>,<a class="chapterLink" href="/guidelines/dev/content/shared.html#usersymbolsPositioning">2.4.3.3 Positioning</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnMeasures">4.2.1 The Role of the Measure Element</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnBeams">4.3.1 Beams</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnDynam">4.3.3 Dynamics in CMN</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnHarp">4.3.6.2 Harp Pedals</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnOssia">4.3.7 Ossia</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTempo">4.3.8.1 Tempo changes and other directives</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnOrnamentsAll">4.4.1 Encoding Common To All Ornaments</a>,<a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralData">5.6 Music Data Organization</a>,<a class="chapterLink" href="/guidelines/dev/content/analysisharm.html#analysisDescribingRelationships">10.1.1 General Relationships Between Elements</a>,<a class="chapterLink" href="/guidelines/dev/content/analysisharm.html#analysisMetricalConformance">10.1.3 Metrical Conformance</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#critAppInDefs">11.1.3 Variants in Score Definitions</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -62,7 +62,7 @@ title: "staff"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a staff or layer and the prevailing
                         meter.</span><span class="attributeValues">
@@ -71,7 +71,7 @@ title: "staff"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                         of
                         similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                        Value is a positive integer, including 0.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
@@ -111,7 +111,7 @@ title: "staff"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">ID</span>.
+                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -127,7 +127,7 @@ title: "staff"
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                     and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">ID</span>.
+                                    Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                                     </span></div>
                            </div>
                         </div>
@@ -150,7 +150,7 @@ title: "staff"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                      </div>
                   </div>
@@ -206,7 +206,7 @@ title: "staff"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                               of
                               similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                              Value is a positive integer, including 0.
                               </span></div>
                      </div>
                   </div>
@@ -322,7 +322,7 @@ title: "staff"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a staff or layer and the prevailing
                               meter.</span><span class="attributeValues">
@@ -331,7 +331,7 @@ title: "staff"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                               of
                               similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                              Value is a positive integer, including 0.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
@@ -371,7 +371,7 @@ title: "staff"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">ID</span>.
+                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                               </span></div>
                      </div>
                   </div>
@@ -986,6 +986,16 @@ title: "staff"
                               <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
                         
+                        <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!--
+                              &lt;constraintSpec ident="staffOrganization" scheme="isoschematron"&gt;
+                              &lt;constraint&gt;
+                              &lt;sch:rule context="mei:staff"&gt;
+                              &lt;sch:assert test="not(descendant::mei:staff)"&gt;A staff cannot have staff
+                              descendants.&lt;/sch:assert&gt;
+                              &lt;/sch:rule&gt;
+                              &lt;/constraint&gt;
+                              &lt;/constraintSpec&gt;
+                              --&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"checkStaff_n"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
                            
@@ -1005,16 +1015,16 @@ title: "staff"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to create a connection with a 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to create a connection with a 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>staffDef<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element where logical and visual information about the staff is recorded.
                               Alternatively, the 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used as a reference to a 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used as a reference to a 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>staffDef<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element with the same value in its 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute or the staff may
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute or the staff may
                               contain a staffDef element that defines it. If neither 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> nor 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> nor 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div>
                               attributes are present, then the encoding order of the staves is presumed to match
                               the
                               encoding order of the staff definitions.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>

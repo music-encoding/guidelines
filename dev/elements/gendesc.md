@@ -51,7 +51,7 @@ title: "genDesc"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -60,7 +60,7 @@ title: "genDesc"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="When set to &#34;true&#34; the child elements are known to be in chronological order. When set to &#34;false&#34; or when not provided, the order of child elements is unknown.">ordered</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When set to "true" the child elements are known to be in chronological order. When
+                  <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="When set to &#34;true&#34; the child elements are known to be in chronological order. When set to &#34;false&#34; or when not provided, the order of child elements is unknown.">ordered</span><span class="attributeDesc desc">When set to "true" the child elements are known to be in chronological order. When
                         set
                         to "false" or when not provided, the order of child elements is unknown.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
@@ -96,14 +96,14 @@ title: "genDesc"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">ID</span>.
+                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="When set to &#34;true&#34; the child elements are known to be in chronological order. When set to &#34;false&#34; or when not provided, the order of child elements is unknown.">ordered</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When set to "true" the child elements are known to be in chronological order. When
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="When set to &#34;true&#34; the child elements are known to be in chronological order. When set to &#34;false&#34; or when not provided, the order of child elements is unknown.">ordered</span><span class="attributeDesc desc">When set to "true" the child elements are known to be in chronological order. When
                               set
                               to "false" or when not provided, the order of child elements is unknown.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
@@ -125,7 +125,7 @@ title: "genDesc"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value of datatype <span style="font-weight: 500;">ID</span>.
+                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                                           </span></div>
                                  </div>
                               </div>
@@ -138,7 +138,7 @@ title: "genDesc"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">string</span>.
+                                    Value is plain text.
                                     </span></div>
                            </div>
                         </div>
@@ -234,7 +234,7 @@ title: "genDesc"
                   <div class="classBox" title="MEI.genetic">
                      <div class="classHeading"><label class="classLabel">MEI.genetic</label><span class="classDesc">Genetic encoding component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="When set to &#34;true&#34; the child elements are known to be in chronological order. When set to &#34;false&#34; or when not provided, the order of child elements is unknown.">ordered</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When set to "true" the child elements are known to be in chronological order. When
+                        <div class="attributeDef def" data-module="MEI.genetic"><span class="ident attribute" title="When set to &#34;true&#34; the child elements are known to be in chronological order. When set to &#34;false&#34; or when not provided, the order of child elements is unknown.">ordered</span><span class="attributeDesc desc">When set to "true" the child elements are known to be in chronological order. When
                               set
                               to "false" or when not provided, the order of child elements is unknown.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
@@ -269,7 +269,7 @@ title: "genDesc"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -309,7 +309,7 @@ title: "genDesc"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">ID</span>.
+                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                               </span></div>
                      </div>
                   </div>
@@ -450,15 +450,15 @@ title: "genDesc"
                               <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"ordered"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"ordered"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>When set to "true" the child elements are known to be in chronological order. When
                                  set
                                  to "false" or when not provided, the order of child elements is unknown.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -470,16 +470,16 @@ title: "genDesc"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The development of a work can be traced in one or more sources.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The development of a work can be traced in one or more sources.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>When the 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>When the 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>genDesc<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element is nested, the inner element describes a
                               group of processes with unknown chronological order inside a larger set of processes
                               with
                               known order, or vice versa.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>decls<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to link the genetic description with a
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>decls<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to link the genetic description with a
                               particular work described in the header.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>

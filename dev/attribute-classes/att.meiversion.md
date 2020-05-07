@@ -9,7 +9,7 @@ title: "att.meiVersion"
       <h3 id="att.meiVersion">att.meiVersion</h3>
       <div class="specs">
          <div class="desc">Attributes that record the version of MEI in use.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -117,7 +117,7 @@ title: "att.meiVersion"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that record the version of MEI in use.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"meiversion"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               

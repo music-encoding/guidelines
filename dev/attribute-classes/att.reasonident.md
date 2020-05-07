@@ -9,7 +9,7 @@ title: "att.reasonIdent"
       <h3 id="att.reasonIdent">att.reasonIdent</h3>
       <div class="specs">
          <div class="desc">Attributes that identify the reason why an editorial feature is used.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/scholarlyediting.html#edittransAddDelOmissions">11.2.4 Additions, Deletions, and Omissions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -28,7 +28,7 @@ title: "att.reasonIdent"
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.edittrans"><span class="ident attribute" title="Holds a short phrase describing the reason for missing textual material (gap), why material is supplied (supplied), or why transcription is difficult (unclear).">reason</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a short phrase describing the reason for missing textual material (gap), why
                         material is supplied (supplied), or why transcription is difficult (unclear).</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -37,7 +37,7 @@ title: "att.reasonIdent"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.edittrans"><span class="ident attribute" title="Holds a short phrase describing the reason for missing textual material (gap), why material is supplied (supplied), or why transcription is difficult (unclear).">reason</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a short phrase describing the reason for missing textual material (gap), why
                               material is supplied (supplied), or why transcription is difficult (unclear).</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                      </div>
                   </div>
@@ -48,7 +48,7 @@ title: "att.reasonIdent"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.edittrans"><span class="ident attribute" title="Holds a short phrase describing the reason for missing textual material (gap), why material is supplied (supplied), or why transcription is difficult (unclear).">reason</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds a short phrase describing the reason for missing textual material (gap), why
                               material is supplied (supplied), or why transcription is difficult (unclear).</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                      </div>
                   </div>
@@ -102,14 +102,14 @@ title: "att.reasonIdent"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that identify the reason why an editorial feature is used.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"reason"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Holds a short phrase describing the reason for missing textual material (gap), why
                                  material is supplied (supplied), or why transcription is difficult (unclear).<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"string"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>

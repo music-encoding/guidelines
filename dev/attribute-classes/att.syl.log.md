@@ -30,7 +30,7 @@ title: "att.syl.log"
                         "<span style="font-weight: 500;">s</span>" <i>(Space (word separator).)</i>,  "<span style="font-weight: 500;">d</span>" <i>(Dash (syllable separator).)</i>,  "<span style="font-weight: 500;">u</span>" <i>(Underscore (syllable extension).)</i>,  "<span style="font-weight: 500;">t</span>" <i>(Tilde (syllable elision).)</i>,  "<span style="font-weight: 500;">c</span>" <i>(Circumflex [angled line above] (syllable elision).)</i>,  "<span style="font-weight: 500;">v</span>" <i>(Caron [angled line below] (syllable elision).)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Inverted breve [curved line above] (syllable elision).)</i>,  "<span style="font-weight: 500;">b</span>" <i>(Breve [curved line below] (syllable elision).)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the position of a syllable within a word.">wordpos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the position of a syllable within a word.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">i</span>" <i>((initial) first syllable.)</i>,  "<span style="font-weight: 500;">m</span>" <i>((medial) neither first nor last syllable.)</i>,  "<span style="font-weight: 500;">t</span>" <i>((terminal) last syllable.)</i></span></div>
+                        "<span style="font-weight: 500;">i</span>" <i>((initial) first syllable.)</i>,  "<span style="font-weight: 500;">m</span>" <i>((medial) neither first nor last syllable.)</i>,  "<span style="font-weight: 500;">s</span>" <i>((single) single syllable.)</i>,  "<span style="font-weight: 500;">t</span>" <i>((terminal) last syllable.)</i></span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox direct" title="direct childs">
@@ -42,7 +42,7 @@ title: "att.syl.log"
                               "<span style="font-weight: 500;">s</span>" <i>(Space (word separator).)</i>,  "<span style="font-weight: 500;">d</span>" <i>(Dash (syllable separator).)</i>,  "<span style="font-weight: 500;">u</span>" <i>(Underscore (syllable extension).)</i>,  "<span style="font-weight: 500;">t</span>" <i>(Tilde (syllable elision).)</i>,  "<span style="font-weight: 500;">c</span>" <i>(Circumflex [angled line above] (syllable elision).)</i>,  "<span style="font-weight: 500;">v</span>" <i>(Caron [angled line below] (syllable elision).)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Inverted breve [curved line above] (syllable elision).)</i>,  "<span style="font-weight: 500;">b</span>" <i>(Breve [curved line below] (syllable elision).)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the position of a syllable within a word.">wordpos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the position of a syllable within a word.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">i</span>" <i>((initial) first syllable.)</i>,  "<span style="font-weight: 500;">m</span>" <i>((medial) neither first nor last syllable.)</i>,  "<span style="font-weight: 500;">t</span>" <i>((terminal) last syllable.)</i></span></div>
+                              "<span style="font-weight: 500;">i</span>" <i>((initial) first syllable.)</i>,  "<span style="font-weight: 500;">m</span>" <i>((medial) neither first nor last syllable.)</i>,  "<span style="font-weight: 500;">s</span>" <i>((single) single syllable.)</i>,  "<span style="font-weight: 500;">t</span>" <i>((terminal) last syllable.)</i></span></div>
                      </div>
                   </div>
                </div>
@@ -56,7 +56,7 @@ title: "att.syl.log"
                               "<span style="font-weight: 500;">s</span>" <i>(Space (word separator).)</i>,  "<span style="font-weight: 500;">d</span>" <i>(Dash (syllable separator).)</i>,  "<span style="font-weight: 500;">u</span>" <i>(Underscore (syllable extension).)</i>,  "<span style="font-weight: 500;">t</span>" <i>(Tilde (syllable elision).)</i>,  "<span style="font-weight: 500;">c</span>" <i>(Circumflex [angled line above] (syllable elision).)</i>,  "<span style="font-weight: 500;">v</span>" <i>(Caron [angled line below] (syllable elision).)</i>,  "<span style="font-weight: 500;">i</span>" <i>(Inverted breve [curved line above] (syllable elision).)</i>,  "<span style="font-weight: 500;">b</span>" <i>(Breve [curved line below] (syllable elision).)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the position of a syllable within a word.">wordpos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the position of a syllable within a word.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">i</span>" <i>((initial) first syllable.)</i>,  "<span style="font-weight: 500;">m</span>" <i>((medial) neither first nor last syllable.)</i>,  "<span style="font-weight: 500;">t</span>" <i>((terminal) last syllable.)</i></span></div>
+                              "<span style="font-weight: 500;">i</span>" <i>((initial) first syllable.)</i>,  "<span style="font-weight: 500;">m</span>" <i>((medial) neither first nor last syllable.)</i>,  "<span style="font-weight: 500;">s</span>" <i>((single) single syllable.)</i>,  "<span style="font-weight: 500;">t</span>" <i>((terminal) last syllable.)</i></span></div>
                      </div>
                   </div>
                </div>
@@ -97,7 +97,7 @@ title: "att.syl.log"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Logical domain attributes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"con"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -162,6 +162,11 @@ title: "att.syl.log"
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"m"</span>&gt;</span>
                                     
                                     <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>(medial) neither first nor last syllable.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
+                                    <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"s"</span>&gt;</span>
+                                    
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>(single) single syllable.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                     <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"t"</span>&gt;</span>

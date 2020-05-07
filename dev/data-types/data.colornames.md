@@ -8,9 +8,7 @@ title: "data.COLORNAMES"
    <div class="datatypeSpec">
       <h3 id="data.COLORNAMES">data.COLORNAMES</h3>
       <div class="specs">
-         <div class="desc">List of SVG-recognized color keyword names described at
-            https://www.w3.org/TR/SVG/types.html#ColorKeywords.
-         </div>
+         <div class="desc">List of named colors from CSS Color Module Level 4.</div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI</div>
@@ -146,6 +144,7 @@ title: "data.COLORNAMES"
                <div class="dataValueBox" id="plum"><span class="dataValue ident">plum</span><span class="dataValue desc">Hex: #dda0dd / RGB: 221,160,221</span></div>
                <div class="dataValueBox" id="powderblue"><span class="dataValue ident">powderblue</span><span class="dataValue desc">Hex: #b0e0e6 / RGB: 176,224,230</span></div>
                <div class="dataValueBox" id="purple"><span class="dataValue ident">purple</span><span class="dataValue desc">Hex: #800080 / RGB: 128,0,128</span></div>
+               <div class="dataValueBox" id="rebeccapurple"><span class="dataValue ident">rebeccapurple</span><span class="dataValue desc">Hex: #663399 / RGB: 102,51,153</span></div>
                <div class="dataValueBox" id="red"><span class="dataValue ident">red</span><span class="dataValue desc">Hex: #ff0000 / RGB: 255,0,0</span></div>
                <div class="dataValueBox" id="rosybrown"><span class="dataValue ident">rosybrown</span><span class="dataValue desc">Hex: #bc8f8f / RGB: 188,143,143</span></div>
                <div class="dataValueBox" id="royalblue"><span class="dataValue ident">royalblue</span><span class="dataValue desc">Hex: #4169e1 / RGB: 65,105,225</span></div>
@@ -176,14 +175,19 @@ title: "data.COLORNAMES"
                <div class="dataValueBox" id="yellowgreen"><span class="dataValue ident">yellowgreen</span><span class="dataValue desc">Hex: #9acd32 / RGB: 154,205,50</span></div>
             </div>
          </div>
+         <div class="facet remarks">
+            <div class="label">Remarks</div>
+            <div class="statement remarks">
+               <p>Color names are taken from the list at https://www.w3.org/TR/css-color-4/. All of these keywords are case-insensitive.</p>
+            </div>
+         </div>
          <div class="facet declaration">
             <div class="label">Declaration</div>
             <div class="statement declaration">
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
                      <div class="indent1 indent"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">ident=</span><span class="attributevalue">"data.COLORNAMES"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>List of SVG-recognized color keyword names described at
-                           https://www.w3.org/TR/SVG/types.html#ColorKeywords.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>List of named colors from CSS Color Module Level 4.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;content&gt;</span>
                            
@@ -784,6 +788,11 @@ title: "data.COLORNAMES"
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Hex: #800080 / RGB: 128,0,128<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"rebeccapurple"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Hex: #663399 / RGB: 102,51,153<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                              
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"red"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Hex: #ff0000 / RGB: 255,0,0<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
@@ -925,6 +934,14 @@ title: "data.COLORNAMES"
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>Color names are taken from the list at 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;ref <span class="attribute">target=</span><span class="attributevalue">"https://www.w3.org/TR/css-color-4/"</span>&gt;</span>https://www.w3.org/TR/css-color-4/<span data-indentation="4" class="element">&lt;/ref&gt;</span></div>. <span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>All of these keywords are case-insensitive.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/macroSpec&gt;</span></div></code></div>
             </div>
          </div>

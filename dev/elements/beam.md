@@ -11,7 +11,7 @@ title: "beam"
          <div class="desc">A container for a series of explicitly beamed events that begins and ends entirely
             within
             a measure.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnBeams">4.3.1 Beams</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/cmn.html#cmnBeams">4.3.1 Beams</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -60,15 +60,15 @@ title: "beam"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                           toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                        "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                           toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                            toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                            the beam.)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it's attached,
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -105,7 +105,7 @@ title: "beam"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">decimal</span>.
+                        Value is a decimal number.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                         applies. Mandatory when applicable.</span><span class="attributeValues">
@@ -140,7 +140,7 @@ title: "beam"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">ID</span>.
+                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -159,7 +159,7 @@ title: "beam"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value of datatype <span style="font-weight: 500;">ID</span>.
+                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                                           </span></div>
                                  </div>
                               </div>
@@ -172,7 +172,7 @@ title: "beam"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">string</span>.
+                                    Value is plain text.
                                     </span></div>
                            </div>
                         </div>
@@ -355,8 +355,8 @@ title: "beam"
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                                     Allowed values are:
-                                    "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                                       toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                                    "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                                       toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                                        toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                                        the beam.)</i></span></div>
                               <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -366,7 +366,7 @@ title: "beam"
                                     Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                                     </span></div>
                               <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">decimal</span>.
+                                    Value is a decimal number.
                                     </span></div>
                            </div>
                         </div>
@@ -391,8 +391,8 @@ title: "beam"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                                  toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                                  the beam.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -402,7 +402,7 @@ title: "beam"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">decimal</span>.
+                              Value is a decimal number.
                               </span></div>
                      </div>
                   </div>
@@ -466,7 +466,7 @@ title: "beam"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -517,7 +517,7 @@ title: "beam"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">ID</span>.
+                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                               </span></div>
                      </div>
                   </div>
@@ -962,16 +962,16 @@ title: "beam"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>For beams that cross the bar line, use the 
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>For beams that cross the bar line, use the 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>beamSpan<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element.
                               Secondary beams may be broken explicitly using the 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>breaksec<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute on the
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>breaksec<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute on the
                               notes or chords under the beam. Automated beaming, as opposed to explicitly marked
                               beams,
                               may be indicated for an entire score, part or section by using the 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> and
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>beam.group<span data-indentation="4" class="element">&lt;/att&gt;</span></div> and
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>beam.rests<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attributes on these elements.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>beam.rests<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attributes on these elements.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/elementSpec&gt;</span></div></code></div>
             </div>

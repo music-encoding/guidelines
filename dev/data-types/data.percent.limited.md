@@ -20,6 +20,10 @@ title: "data.PERCENT.LIMITED"
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.PERCENT.LIMITED</span></div>
                   <div class="classContent"><span class="ident attclass" data-ident="att.channelized" data-module="MEI.midi"><a class="classLink" title="Attributes that record MIDI channel information." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.channelized.html">att.channelized</a>/<span title="Specifies the 'on' part of the duty cycle as a percentage of a note's duration.">@midi.duty</span></span></div>
                </div>
+               <div class="classBox dtBox" title="Data Types">
+                  <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.PERCENT.LIMITED</span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.MIDIVALUE_PERCENT" data-module="MEI" title="data.MIDIVALUE or data.PERCENT.LIMITED values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a></span></div>
+               </div>
             </div>
          </div>
          <div class="facet declaration">

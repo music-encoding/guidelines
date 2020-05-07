@@ -222,6 +222,7 @@ title: "att.hispanTick.log"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                            
+                           <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- att.controlEvent class expanded here in order to disallow att.timestamp.* --&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.alignment.html">att.alignment</a>"</span></span>/&gt;</span></div>

@@ -26,8 +26,8 @@ title: "att.beamRend"
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                           toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                        "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                           toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                            toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                            the beam.)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -37,7 +37,7 @@ title: "att.beamRend"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">decimal</span>.
+                        Value is a decimal number.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -46,8 +46,8 @@ title: "att.beamRend"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                                  toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                                  the beam.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -57,7 +57,7 @@ title: "att.beamRend"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">decimal</span>.
+                              Value is a decimal number.
                               </span></div>
                      </div>
                   </div>
@@ -68,8 +68,8 @@ title: "att.beamRend"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                                  toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                                  the beam.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -79,7 +79,7 @@ title: "att.beamRend"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">decimal</span>.
+                              Value is a decimal number.
                               </span></div>
                      </div>
                   </div>
@@ -182,7 +182,7 @@ title: "att.beamRend"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Attributes that record the visual rendition of beams.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
@@ -192,7 +192,7 @@ title: "att.beamRend"
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"acc"</span>&gt;</span>
                                     
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>(accelerando) indicates that the secondary beams get progressively closer together
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>(accelerando) means that the secondary beams become progressively more distant
                                        toward the end of the beam.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                     <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                  
@@ -203,7 +203,7 @@ title: "att.beamRend"
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"rit"</span>&gt;</span>
                                     
-                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>(ritardando) means that the secondary beams become progressively more distant
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;desc&gt;</span>(ritardando) indicates that the secondary beams get progressively closer together
                                        toward the end of the beam.<span data-indentation="6" class="element">&lt;/desc&gt;</span></div>
                                     <span data-indentation="5" class="element">&lt;/valItem&gt;</span></div>
                                  
@@ -219,7 +219,7 @@ title: "att.beamRend"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Records the placement of the beam relative to the events it affects.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -260,7 +260,7 @@ title: "att.beamRend"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates presence of slash through the beam.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
@@ -273,7 +273,7 @@ title: "att.beamRend"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Records the slope of the beam.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"decimal"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>

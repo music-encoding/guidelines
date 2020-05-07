@@ -33,8 +33,8 @@ title: "att.beam.vis"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                         Allowed values are:
-                        "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                           toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                        "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                           toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                            toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                            the beam.)</i></span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -44,7 +44,7 @@ title: "att.beam.vis"
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">decimal</span>.
+                        Value is a decimal number.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -70,8 +70,8 @@ title: "att.beam.vis"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                                  toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                                  the beam.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -81,7 +81,7 @@ title: "att.beam.vis"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">decimal</span>.
+                              Value is a decimal number.
                               </span></div>
                      </div>
                   </div>
@@ -92,8 +92,8 @@ title: "att.beam.vis"
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Captures whether a beam is &#34;feathered&#34; and in which direction.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures whether a beam is "feathered" and in which direction.</span><span class="attributeValues">
                               Allowed values are:
-                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) indicates that the secondary beams get progressively closer together
-                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) means that the secondary beams become progressively more distant
+                              "<span style="font-weight: 500;">acc</span>" <i>((accelerando) means that the secondary beams become progressively more distant
+                                 toward the end of the beam.)</i>,  "<span style="font-weight: 500;">mixed</span>" <i>((mixed acc and rit) for beams that are "feathered" in both directions.)</i>,  "<span style="font-weight: 500;">rit</span>" <i>((ritardando) indicates that the secondary beams get progressively closer together
                                  toward the end of the beam.)</i>,  "<span style="font-weight: 500;">norm</span>" <i>((normal) indicates that the secondary beams are equidistant along the course of
                                  the beam.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the placement of the beam relative to the events it affects.">place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the placement of the beam relative to the events it affects.</span><span class="attributeValues">
@@ -103,7 +103,7 @@ title: "att.beam.vis"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records the slope of the beam.">slope</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the slope of the beam.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">decimal</span>.
+                              Value is a decimal number.
                               </span></div>
                      </div>
                   </div>

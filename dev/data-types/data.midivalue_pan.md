@@ -8,7 +8,7 @@ title: "data.MIDIVALUE_PAN"
    <div class="datatypeSpec">
       <h3 id="data.MIDIVALUE_PAN">data.MIDIVALUE_PAN</h3>
       <div class="specs">
-         <div class="desc">data.MIDIVALUE or data.PERCENT.LIMITED values.</div>
+         <div class="desc">data.MIDIVALUE or data.PERCENT.LIMITED.SIGNED values.</div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI</div>
@@ -28,7 +28,7 @@ title: "data.MIDIVALUE_PAN"
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
                      <div class="indent1 indent"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">ident=</span><span class="attributevalue">"data.MIDIVALUE_PAN"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>data.MIDIVALUE or data.PERCENT.LIMITED values.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>data.MIDIVALUE or data.PERCENT.LIMITED.SIGNED values.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;content&gt;</span>
                            

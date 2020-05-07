@@ -10,7 +10,7 @@ title: "fTrem"
       <div class="specs">
          <div class="desc">(fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
             between a note and a chord) that are (usually) farther apart than a major second.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -28,11 +28,10 @@ title: "fTrem"
                <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates the number of beams present.">beams</span>, <span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span>, <span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span>, <span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span>, <span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span>, <span class="ident attribute" title="Records the number of augmentation dots required by a written dotted duration.">dots</span>, <span class="ident attribute" title="Records the duration of a feature using the relative durational values provided by the data.DURATION datatype.">dur</span>, <span class="ident attribute" title="Permits the current element to reference a facsimile surface or image zone which corresponds to it.">facs</span>, <span class="ident attribute" title="Records the amount of separation between floating beams and stems.">float.gap</span>, <span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span>, <span class="ident attribute" title="Describes the style of the tremolo.">form</span>, <span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span>, <span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span>, <span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span>, <span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span>, <span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span>, <span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span>, <span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span>, <span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span>, <span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span>, <span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span>, <span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp</span>, <span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp.ges</span>, <span class="ident attribute" title="Records the onset time in terms of ISO time.">tstamp.real</span>, <span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span>, <span class="ident attribute" title="The performed duration of an individual note in a measured tremolo.">unitdur</span>, <span class="ident attribute" title="when Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a element elsewhere in the document.">when</span>, <span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span>, <span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number of beams present.">beams</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of beams present.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">
-                           a positive integer between 1 and 6</span>.
+                        Value is a positive integer.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of "floating" beams, i.e., those not attached to stems.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                        Value is a positive integer, including 0.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -71,7 +70,7 @@ title: "fTrem"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -137,7 +136,7 @@ title: "fTrem"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">ID</span>.
+                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -156,7 +155,7 @@ title: "fTrem"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value of datatype <span style="font-weight: 500;">ID</span>.
+                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                                           </span></div>
                                  </div>
                               </div>
@@ -169,7 +168,7 @@ title: "fTrem"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">string</span>.
+                                    Value is plain text.
                                     </span></div>
                            </div>
                         </div>
@@ -343,11 +342,10 @@ title: "fTrem"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ftrem.vis.html">att.fTrem.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number of beams present.">beams</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of beams present.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">
-                                 a positive integer between 1 and 6</span>.
+                              Value is a positive integer.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of "floating" beams, i.e., those not attached to stems.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                              Value is a positive integer, including 0.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the amount of separation between floating beams and stems.">float.gap</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of separation between floating beams and stems.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
@@ -445,7 +443,7 @@ title: "fTrem"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -496,7 +494,7 @@ title: "fTrem"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">ID</span>.
+                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                               </span></div>
                      </div>
                   </div>
@@ -504,11 +502,10 @@ title: "fTrem"
                      <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number of beams present.">beams</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of beams present.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">
-                                 a positive integer between 1 and 6</span>.
+                              Value is a positive integer.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Captures the number of &#34;floating&#34; beams, i.e., those not attached to stems.">beams.float</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures the number of "floating" beams, i.e., those not attached to stems.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                              Value is a positive integer, including 0.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the amount of separation between floating beams and stems.">float.gap</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the amount of separation between floating beams and stems.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.

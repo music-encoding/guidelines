@@ -18,7 +18,7 @@ title: "data.PERCENT.LIMITED.SIGNED"
             <div class="statement list">
                <div class="classBox dtBox" title="Data Types">
                   <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.PERCENT.LIMITED.SIGNED</span></div>
-                  <div class="classContent"><span class="ident datatype" data-ident="data.MIDIVALUE_PAN" data-module="MEI" title="data.MIDIVALUE or data.PERCENT.LIMITED values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a></span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.MIDIVALUE_PAN" data-module="MEI" title="data.MIDIVALUE or data.PERCENT.LIMITED.SIGNED values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a></span></div>
                </div>
             </div>
          </div>

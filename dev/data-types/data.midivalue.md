@@ -22,7 +22,7 @@ title: "data.MIDIVALUE"
                </div>
                <div class="classBox dtBox" title="Data Types">
                   <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.MIDIVALUE</span></div>
-                  <div class="classContent"><span class="ident datatype" data-ident="data.MIDIVALUE_NAME" data-module="MEI" title="data.MIDIVALUE or data.NCName values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a></span><span class="ident datatype" data-ident="data.MIDIVALUE_PAN" data-module="MEI" title="data.MIDIVALUE or data.PERCENT.LIMITED values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a></span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.MIDIVALUE_NAME" data-module="MEI" title="data.MIDIVALUE or data.NCName values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_name.html">data.MIDIVALUE_NAME</a></span><span class="ident datatype" data-ident="data.MIDIVALUE_PAN" data-module="MEI" title="data.MIDIVALUE or data.PERCENT.LIMITED.SIGNED values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_pan.html">data.MIDIVALUE_PAN</a></span><span class="ident datatype" data-ident="data.MIDIVALUE_PERCENT" data-module="MEI" title="data.MIDIVALUE or data.PERCENT.LIMITED values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.midivalue_percent.html">data.MIDIVALUE_PERCENT</a></span></div>
                </div>
             </div>
          </div>

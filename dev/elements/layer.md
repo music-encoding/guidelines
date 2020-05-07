@@ -9,7 +9,7 @@ title: "layer"
       <h3 id="layer">&lt;layer&gt;</h3>
       <div class="specs">
          <div class="desc">An independent stream of events on a staff.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/v4/content/shared.html#sharedStavesAndLayers">2.2.2 Staves and Layers</a>,<a class="chapterLink" href="/guidelines/v4/content/shared.html#usersymbolsPositioning">2.4.3.3 Positioning</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnMeasures">4.2.1 The Role of the Measure Element</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnNotesBasic">4.2.4.1.1 Basic Usage of Notes in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRestsMRest">4.2.4.2.1 Measure Rests</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnHarp">4.3.6.2 Harp Pedals</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOssia">4.3.7 Ossia</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnRepSym">4.3.9.2 Measure-Level Repetition Symbols</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnOrnamentsTrills">4.4.3 Trills</a>,<a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralData">5.6 Music Data Organization</a>,<a class="chapterLink" href="/guidelines/v4/content/neumes.html#neumesNotation">6.3 Neume Notation</a>,<a class="chapterLink" href="/guidelines/v4/content/lyricsperfdir.html#&#34;lyricsDesc&#34;">8.2 Vocal Text</a>,<a class="chapterLink" href="/guidelines/v4/content/analysisharm.html#analysisMetricalConformance">10.1.3 Metrical Conformance</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#critAppInDefs">11.1.3 Variants in Score Definitions</a>,<a class="chapterLink" href="/guidelines/v4/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a>,<a class="chapterLink" href="/guidelines/v4/content/integration.html#midiData">14.5.3 Recording MIDI Event Data</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedStavesAndLayers">2.2.2 Staves and Layers</a>,<a class="chapterLink" href="/guidelines/dev/content/shared.html#usersymbolsPositioning">2.4.3.3 Positioning</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnMeasures">4.2.1 The Role of the Measure Element</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnNotesBasic">4.2.4.1.1 Basic Usage of Notes in CMN</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnRestsMRest">4.2.4.3.1 Measure Rests</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnSlurTies">4.3.2 Ties, Slurs and Phrase Marks</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnHarp">4.3.6.2 Harp Pedals</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnOssia">4.3.7 Ossia</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnRepSym">4.3.9.2 Measure-Level Repetition Symbols</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnOrnamentsTrills">4.4.3 Trills</a>,<a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralData">5.6 Music Data Organization</a>,<a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesNotation">6.3 Neume Notation</a>,<a class="chapterLink" href="/guidelines/dev/content/lyricsperfdir.html#&#34;lyricsDesc&#34;">8.2 Vocal Text</a>,<a class="chapterLink" href="/guidelines/dev/content/analysisharm.html#analysisMetricalConformance">10.1.3 Metrical Conformance</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#critAppInDefs">11.1.3 Variants in Score Definitions</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#edittransSubst">11.2.4.3 Substitutions, Restorations, and Handshifts</a>,<a class="chapterLink" href="/guidelines/dev/content/integration.html#midiData">14.5.3 Recording MIDI Event Data</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -58,7 +58,7 @@ title: "layer"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a staff or layer and the prevailing
                         meter.</span><span class="attributeValues">
@@ -67,7 +67,7 @@ title: "layer"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                         of
                         similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                        Value is a positive integer, including 0.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
@@ -107,7 +107,7 @@ title: "layer"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">ID</span>.
+                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -123,7 +123,7 @@ title: "layer"
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                     and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">ID</span>.
+                                    Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                                     </span></div>
                            </div>
                         </div>
@@ -146,7 +146,7 @@ title: "layer"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                      </div>
                   </div>
@@ -202,7 +202,7 @@ title: "layer"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                               of
                               similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                              Value is a positive integer, including 0.
                               </span></div>
                      </div>
                   </div>
@@ -318,7 +318,7 @@ title: "layer"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the relationship between the content of a staff or layer and the prevailing meter.">metcon</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the relationship between the content of a staff or layer and the prevailing
                               meter.</span><span class="attributeValues">
@@ -327,7 +327,7 @@ title: "layer"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a numeric designation that indicates an element's position in a sequence
                               of
                               similar elements. Its value must be a non-negative integer.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">nonNegativeInteger</span>.
+                              Value is a positive integer, including 0.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to point to the next event(s) in a user-defined collection.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
@@ -367,7 +367,7 @@ title: "layer"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">ID</span>.
+                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                               </span></div>
                      </div>
                   </div>
@@ -996,20 +996,20 @@ title: "layer"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The term 'layer' is used instead of 'voice' in order to avoid confusion between 'voice'
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The term 'layer' is used instead of 'voice' in order to avoid confusion between 'voice'
                               and
                               'voice leading' and 'voicing'. The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to create a
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be used to create a
                               connection with a 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>layerDef<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element where logical and visual
                               information about the layer is recorded. Alternatively, the 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute may be
                               used as a reference to a 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>layerDef<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element with the same value in its
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute. If neither 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> nor 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attributes are present,
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute. If neither 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>def<span data-indentation="4" class="element">&lt;/att&gt;</span></div> nor 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>n<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attributes are present,
                               then encoding order of the layers is presumed to match the encoding order of the layer
                               definitions.<span data-indentation="3" class="element">&lt;/p&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/remarks&gt;</span></div>

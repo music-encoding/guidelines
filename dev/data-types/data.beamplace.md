@@ -25,9 +25,9 @@ title: "data.BEAMPLACE"
          <div class="facet allowedValues" id="allowedValues">
             <div class="label">Allowed Values</div>
             <div class="statement list">
-               <div class="dataValueBox" id="above"><span class="dataValue ident">above</span><span class="dataValue desc">The beam is above the material it affects.</span></div>
-               <div class="dataValueBox" id="below"><span class="dataValue ident">below</span><span class="dataValue desc">The beam is below the material it affects.</span></div>
-               <div class="dataValueBox" id="mixed"><span class="dataValue ident">mixed</span><span class="dataValue desc">The below is above and below the material it affects.</span></div>
+               <div class="dataValueBox" id="above"><span class="dataValue ident">above</span><span class="dataValue desc">The beam is above the events it affects.</span></div>
+               <div class="dataValueBox" id="below"><span class="dataValue ident">below</span><span class="dataValue desc">The beam is below the events it affects.</span></div>
+               <div class="dataValueBox" id="mixed"><span class="dataValue ident">mixed</span><span class="dataValue desc">The beam is above and below the events it affects.</span></div>
             </div>
          </div>
          <div class="facet declaration">
@@ -44,17 +44,17 @@ title: "data.BEAMPLACE"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"above"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>The beam is above the material it affects.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>The beam is above the events it affects.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"below"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>The beam is below the material it affects.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>The beam is below the events it affects.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"mixed"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>The below is above and below the material it affects.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>The beam is above and below the events it affects.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>

@@ -9,7 +9,7 @@ title: "bTrem"
       <h3 id="bTrem">&lt;bTrem&gt;</h3>
       <div class="specs">
          <div class="desc">(bowed tremolo) – A rapid alternation on a single pitch or chord.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/v4/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/v4/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/cmn.html#cmnArtic">4.3.5 Articulation and Performance Instructions in CMN</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTrem">4.3.5.3 Tremolandi</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -60,7 +60,7 @@ title: "bTrem"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -73,7 +73,7 @@ title: "bTrem"
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records a number or count accompanying a notational feature.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a number or count accompanying a notational feature.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                        Value is a positive integer.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="States where the tuplet number will be placed in relation to the note heads.">num.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States where the tuplet number will be placed in relation to the note heads.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
@@ -135,7 +135,7 @@ title: "bTrem"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">ID</span>.
+                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -154,7 +154,7 @@ title: "bTrem"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value of datatype <span style="font-weight: 500;">ID</span>.
+                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                                           </span></div>
                                  </div>
                               </div>
@@ -167,7 +167,7 @@ title: "bTrem"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">string</span>.
+                                    Value is plain text.
                                     </span></div>
                            </div>
                         </div>
@@ -339,7 +339,7 @@ title: "bTrem"
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.numbered.html">att.numbered</a></label><span class="classDesc">(MEI.cmn) Attributes that record numbers to be displayed with a feature.</span></div>
                            <div class="classContent">
                               <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records a number or count accompanying a notational feature.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a number or count accompanying a notational feature.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                                    Value is a positive integer.
                                     </span></div>
                            </div>
                         </div>
@@ -388,7 +388,7 @@ title: "bTrem"
                               Allowed values are:
                               "<span style="font-weight: 500;">meas</span>" <i>(Measured tremolo.)</i>,  "<span style="font-weight: 500;">unmeas</span>" <i>(Unmeasured tremolo.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records a number or count accompanying a notational feature.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a number or count accompanying a notational feature.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                              Value is a positive integer.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="States where the tuplet number will be placed in relation to the note heads.">num.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States where the tuplet number will be placed in relation to the note heads.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
@@ -462,7 +462,7 @@ title: "bTrem"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Identifies the layer to which a feature applies.</span><span class="attributeValues">
                               One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
@@ -513,7 +513,7 @@ title: "bTrem"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">ID</span>.
+                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                               </span></div>
                      </div>
                   </div>

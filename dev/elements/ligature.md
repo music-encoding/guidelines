@@ -9,7 +9,7 @@ title: "ligature"
       <h3 id="ligature">&lt;ligature&gt;</h3>
       <div class="specs">
          <div class="desc">A mensural notation symbol that combines two or more notes into a single sign.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/v4/content/mensural.html#mensuralLigatures">5.5 Ligatures</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralLigatures">5.5 Ligatures</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -56,7 +56,7 @@ title: "ligature"
                         a
                         "tool tip" or prefatory text, for example. Should not be used to record document
                         content.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">string</span>.
+                        Value is plain text.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                         of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -96,7 +96,7 @@ title: "ligature"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                         and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">ID</span>.
+                        Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -115,7 +115,7 @@ title: "ligature"
                                  <div class="classContent">
                                     <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                                           and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                                          Value of datatype <span style="font-weight: 500;">ID</span>.
+                                          Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                                           </span></div>
                                  </div>
                               </div>
@@ -128,7 +128,7 @@ title: "ligature"
                                     a
                                     "tool tip" or prefatory text, for example. Should not be used to record document
                                     content.</span><span class="attributeValues">
-                                    Value of datatype <span style="font-weight: 500;">string</span>.
+                                    Value is plain text.
                                     </span></div>
                            </div>
                         </div>
@@ -292,7 +292,7 @@ title: "ligature"
                               a
                               "tool tip" or prefatory text, for example. Should not be used to record document
                               content.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">string</span>.
+                              Value is plain text.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a number-like designation that indicates an element's position in a sequence
                               of similar elements. May not contain space characters.</span><span class="attributeValues">
@@ -332,7 +332,7 @@ title: "ligature"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">ID</span>.
+                              Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
                               </span></div>
                      </div>
                   </div>
@@ -746,14 +746,14 @@ title: "ligature"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p <span class="attribute">part=</span><span class="attributevalue">"N"</span>&gt;</span>The rhythmic meaning of the components of a ligature is typically contextual, not
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;p&gt;</span>The rhythmic meaning of the components of a ligature is typically contextual, not
                               absolute;
                               therefore, an interpretative duration may be encoded on each of the components using
                               either
                               the 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>dur.ges<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute or the 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>num<span data-indentation="4" class="element">&lt;/att&gt;</span></div> and 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att <span class="attribute">scheme=</span><span class="attributevalue">"TEI"</span>&gt;</span>numbase<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>dur.ges<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute or the 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>num<span data-indentation="4" class="element">&lt;/att&gt;</span></div> and 
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>numbase<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute
                               pair. The 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>ligature<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element should 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;hi <span class="attribute">rend=</span><span class="attributevalue">"bold"</span>&gt;</span>not<span data-indentation="4" class="element">&lt;/hi&gt;</span></div> be used for

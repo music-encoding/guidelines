@@ -154,6 +154,7 @@ title: "model.noteModifierLike"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                            
+                           <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!--&lt;memberOf key="model.layerPart.mensuralAndNeumes"/&gt;--&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerpart.mensural.html">model.layerPart.mensural</a>"</span></span>/&gt;</span></div>

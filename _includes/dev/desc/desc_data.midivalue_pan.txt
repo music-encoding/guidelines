@@ -1,1 +1,1 @@
-data.MIDIVALUE or data.PERCENT.LIMITED values.
+data.MIDIVALUE or data.PERCENT.LIMITED.SIGNED values.

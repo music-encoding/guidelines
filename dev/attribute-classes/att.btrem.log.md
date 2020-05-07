@@ -39,7 +39,7 @@ title: "att.bTrem.log"
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records a number or count accompanying a notational feature.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a number or count accompanying a notational feature.</span><span class="attributeValues">
-                        Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                        Value is a positive integer.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Signifies the staff on which a notated event occurs or to which a control event
                         applies. Mandatory when applicable.</span><span class="attributeValues">
@@ -148,7 +148,7 @@ title: "att.bTrem.log"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.numbered.html">att.numbered</a></label><span class="classDesc">(MEI.cmn) Attributes that record numbers to be displayed with a feature.</span></div>
                      <div class="classContent">
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records a number or count accompanying a notational feature.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a number or count accompanying a notational feature.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                              Value is a positive integer.
                               </span></div>
                      </div>
                   </div>
@@ -161,7 +161,7 @@ title: "att.bTrem.log"
                               Allowed values are:
                               "<span style="font-weight: 500;">meas</span>" <i>(Measured tremolo.)</i>,  "<span style="font-weight: 500;">unmeas</span>" <i>(Unmeasured tremolo.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Records a number or count accompanying a notational feature.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records a number or count accompanying a notational feature.</span><span class="attributeValues">
-                              Value of datatype <span style="font-weight: 500;">positiveInteger</span>.
+                              Value is a positive integer.
                               </span></div>
                      </div>
                   </div>
@@ -264,7 +264,7 @@ title: "att.bTrem.log"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.numbered.html">att.numbered</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               

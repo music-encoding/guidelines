@@ -31,7 +31,7 @@ title: "att.tempo.log"
                            be taken, and so on, until an element is found which is not a pointer.)</i>,  "<span style="font-weight: 500;">one</span>" <i>(If an element pointed to is itself a pointer, then its target (whether a pointer
                            or not) is taken as the target of this pointer.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(No further evaluation of targets is carried out beyond that needed to find the
                            element(s) specified in plist or target attribute.)</i></span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the function of a tempo indication.">func</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the function of a tempo indication.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the function of a tempo indication.">func</span><span class="attributeDesc desc">Records the function of a tempo indication.</span><span class="attributeValues">
                         Allowed values are:
                         "<span style="font-weight: 500;">continuous</span>" <i>(Marks a gradual change of tempo, such as "accel." or "rit.")</i>,  "<span style="font-weight: 500;">instantaneous</span>" <i>(Represents a static tempo instruction, such as a textual term like "Adagio", a
                            metronome marking like "♩=70", or a combination of text and metronome
@@ -105,7 +105,7 @@ title: "att.tempo.log"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the function of a tempo indication.">func</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the function of a tempo indication.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the function of a tempo indication.">func</span><span class="attributeDesc desc">Records the function of a tempo indication.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">continuous</span>" <i>(Marks a gradual change of tempo, such as "accel." or "rit.")</i>,  "<span style="font-weight: 500;">instantaneous</span>" <i>(Represents a static tempo instruction, such as a textual term like "Adagio", a
                                  metronome marking like "♩=70", or a combination of text and metronome
@@ -275,7 +275,7 @@ title: "att.tempo.log"
                                  be taken, and so on, until an element is found which is not a pointer.)</i>,  "<span style="font-weight: 500;">one</span>" <i>(If an element pointed to is itself a pointer, then its target (whether a pointer
                                  or not) is taken as the target of this pointer.)</i>,  "<span style="font-weight: 500;">none</span>" <i>(No further evaluation of targets is carried out beyond that needed to find the
                                  element(s) specified in plist or target attribute.)</i></span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the function of a tempo indication.">func</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the function of a tempo indication.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the function of a tempo indication.">func</span><span class="attributeDesc desc">Records the function of a tempo indication.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">continuous</span>" <i>(Marks a gradual change of tempo, such as "accel." or "rit.")</i>,  "<span style="font-weight: 500;">instantaneous</span>" <i>(Represents a static tempo instruction, such as a textual term like "Adagio", a
                                  metronome marking like "♩=70", or a combination of text and metronome
@@ -386,9 +386,9 @@ title: "att.tempo.log"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.startid.html">att.startId</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList <span class="attribute">org=</span><span class="attributevalue">"group"</span>&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"func"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"func"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Records the function of a tempo indication.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
