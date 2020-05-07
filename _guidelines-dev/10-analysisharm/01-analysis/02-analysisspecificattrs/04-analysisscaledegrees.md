@@ -1,7 +1,7 @@
 ---
 sectionid: analysisScaleDegrees
 title: "Scale Degrees"
-version: "v4"
+version: "dev"
 ---
 
 {% include desc atts="att.harmonicFunction/deg" %}

@@ -1,7 +1,7 @@
 ---
 sectionid: facsimileElements
 title: "Elements of the Facsimile Module"
-version: "v4"
+version: "dev"
 ---
 
 This module makes available the following elements for encoding facsimiles:

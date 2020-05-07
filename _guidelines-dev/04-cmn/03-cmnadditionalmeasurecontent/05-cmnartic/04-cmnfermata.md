@@ -1,7 +1,7 @@
 ---
 sectionid: cmnFermata
 title: "Fermata"
-version: "v4"
+version: "dev"
 ---
 
 A very common feature of music notation from the CMN period is the so-called ‘fermata’ (or ‘corona’ in Italian). It is usually written as a dot above or below an arc. It may stand above or below the staff it affects with its ‘open’ side usually facing towards the staff. A fermata indicates that a related note or rest should be held longer than its written duration would normally require. Sometimes, a fermata occurs over or under a barline to indicate a pause or even the end of a phrase or section.

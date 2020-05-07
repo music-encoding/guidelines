@@ -1,7 +1,7 @@
 ---
 sectionid: headerClassDeclarations
 title: "Class Declarations"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="classDecls" %} element allows the declaration of generic taxonomies for the classification of entities according to one or both of the following two methods:

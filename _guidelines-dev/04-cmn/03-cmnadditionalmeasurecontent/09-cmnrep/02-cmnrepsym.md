@@ -1,7 +1,7 @@
 ---
 sectionid: cmnRepSym
 title: "Measure-Level Repetition Symbols"
-version: "v4"
+version: "dev"
 ---
 
 In addition to repetition at the section level, CMN includes a number of different symbols for measure-level repetitions. Many of these symbols are found in manuscripts and may be regarded as personal conventions of their respective authors. Some signs, however, have been widely adopted. For example, it is common to indicate the repetition of a single beat or an entire measure with one or more diagonal lines, sometimes with dots at the upper left and lower right, much like a percent sign. The illustration below contains the most common signs:

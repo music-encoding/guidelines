@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkClass
 title: "Classification"
-version: "v4"
+version: "dev"
 ---
 
 Within {% include link elem="work" %}, the {% include link elem="classification" %} element is used to classify the work according to some classification scheme. More generally, {% include link elem="classification" %} may be used to classifiy any FRBR entity ({% include link elem="work" %}, {% include link elem="expression" %}, {% include link elem="manifestation" %}, or {% include link elem="item" %}).

@@ -1,7 +1,7 @@
 ---
 sectionid: sharedAddresses
 title: "Addresses"
-version: "v4"
+version: "dev"
 ---
 
 Addresses may be encoded using the {% include link elem="address" %} element, which itself may hold an arbitrary number of {% include link elem="addrLine" %} elements.

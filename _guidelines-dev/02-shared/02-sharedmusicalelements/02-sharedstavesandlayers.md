@@ -1,7 +1,7 @@
 ---
 sectionid: sharedStavesAndLayers
 title: "Staves and Layers"
-version: "v4"
+version: "dev"
 ---
 
 The elements below are used to capture the logical organization of musical notation:

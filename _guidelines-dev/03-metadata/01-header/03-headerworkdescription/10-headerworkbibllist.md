@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkBiblList
 title: "Bibliographic Evidence"
-version: "v4"
+version: "dev"
 ---
 
 {% include desc elem="biblList" %}

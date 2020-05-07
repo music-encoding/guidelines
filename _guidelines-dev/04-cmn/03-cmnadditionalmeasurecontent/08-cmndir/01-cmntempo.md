@@ -1,7 +1,7 @@
 ---
 sectionid: cmnTempo
 title: "Tempo changes and other directives"
-version: "v4"
+version: "dev"
 ---
 
 A tempo or character indication is often provided above the topmost staff of the first measure of a score, movement, or section. This indication, such as "Allegro moderato" or "Andante maestoso", may be regarded as a label. Though it is possible to label the movement, etc. using a **@label** attribute attached to the enclosing structural entity (that is, on {% include link elem="mdiv" %} or {% include link elem="section" %}), it is often required to capture the exact position, spelling, or other features of the label as found in the underlying source material. In these cases, an element is necessary.

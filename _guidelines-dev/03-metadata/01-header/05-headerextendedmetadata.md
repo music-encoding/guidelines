@@ -1,7 +1,7 @@
 ---
 sectionid: headerExtendedMetadata
 title: "Other Metadata"
-version: "v4"
+version: "dev"
 ---
 
 The following element is provided to accommodate non-MEI metadata:

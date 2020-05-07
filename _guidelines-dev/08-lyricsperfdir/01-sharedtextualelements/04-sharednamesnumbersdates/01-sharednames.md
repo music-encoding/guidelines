@@ -1,7 +1,7 @@
 ---
 sectionid: sharedNames
 title: "Names and Dates"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="name" %} and {% include link elem="date" %} elements may be used to mark up portions of a text that function as names or dates.

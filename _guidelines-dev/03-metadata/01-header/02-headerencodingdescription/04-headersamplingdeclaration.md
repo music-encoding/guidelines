@@ -1,7 +1,7 @@
 ---
 sectionid: headerSamplingDeclaration
 title: "Sampling Declaration"
-version: "v4"
+version: "dev"
 ---
 
 The samplingDecl element holds a prose description of the rationale and methods used in selecting texts, or parts of text, for inclusion in the resource.

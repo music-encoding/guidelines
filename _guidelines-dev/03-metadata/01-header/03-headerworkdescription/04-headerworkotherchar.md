@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkOtherChar
 title: "Other Identifying Characteristics"
-version: "v4"
+version: "dev"
 ---
 
 Additional information that aids the identification of the work may be encoded using {% include link elem="otherChar" %}.

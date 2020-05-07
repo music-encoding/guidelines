@@ -1,7 +1,7 @@
 ---
 sectionid: tablatureOverview
 title: "Overview of the Tablature Module"
-version: "v4"
+version: "dev"
 ---
 
 The tablature module is used to record basic tablature notation. It is designed primarily for guitar and similar plucked-string instruments.

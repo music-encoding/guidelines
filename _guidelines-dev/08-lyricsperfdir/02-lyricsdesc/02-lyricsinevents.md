@@ -1,7 +1,7 @@
 ---
 sectionid: lyricsInEvents
 title: "Vocally Performed Text Encoded Within Notes"
-version: "v4"
+version: "dev"
 ---
 
 Each lyric syllable can be encoded directly within an associated note, either by using the **@syl** attribute on {% include link elem="note" %} or the {% include link elem="verse" %} element.

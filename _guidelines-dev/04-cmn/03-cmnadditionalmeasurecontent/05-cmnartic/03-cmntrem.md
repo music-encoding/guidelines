@@ -1,7 +1,7 @@
 ---
 sectionid: cmnTrem
 title: "Tremolandi"
-version: "v4"
+version: "dev"
 ---
 
 CMN has two slightly different concepts which are both called tremolo. The first is a rapid repetition of a single pitch or chord, whereas the second is a rapid alternation between two different notes or chords. In addition, either species of tremolo may be measured or unmeasured. A measured tremolo is an abbreviation for written-out notation; that is, the tremolo is intended to be perceived as notes with distinct rhythmic values. On the other hand, in an unmeasured tremolo no specific number of alternations is intended.

@@ -1,7 +1,7 @@
 ---
 sectionid: figTableVectorGraphicFormats
 title: "Vector Graphic Formats"
-version: "v4"
+version: "dev"
 ---
 
 {:.gloss}

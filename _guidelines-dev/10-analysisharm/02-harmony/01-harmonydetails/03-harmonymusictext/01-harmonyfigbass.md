@@ -1,7 +1,7 @@
 ---
 sectionid: harmonyFigbass
 title: "Figured Bass"
-version: "v4"
+version: "dev"
 ---
 
 Figured bass is a specialized form of harmonic indication. In order to support the capture of the semantics of figured bass, and not just its visual representation, MEI provides the following elements:

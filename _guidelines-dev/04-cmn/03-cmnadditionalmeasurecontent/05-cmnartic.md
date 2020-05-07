@@ -1,7 +1,7 @@
 ---
 sectionid: cmnArtic
 title: "Articulation and Performance Instructions in CMN"
-version: "v4"
+version: "dev"
 ---
 
 This section introduces elements and attributes which may hold CMN-specific performance instructions. The functionality described herein is related to the **@artic** attribute and {% include link elem="artic" %} element introduced in {% include link id="shared" %}. The following elements are relevant in this context:

@@ -1,7 +1,7 @@
 ---
 sectionid: cmnDynam
 title: "Dynamics in CMN"
-version: "v4"
+version: "dev"
 ---
 
 Common Music Notation provides two different methodologies for expressing the volume of a note, phrase, section, etc. The first is a verbal instruction providing such information in human language, possibly in an abbreviated form. An example is the word *piano*, indicating a quiet volume, often abbreviated as *p*. In MEI, verbal instructions like this are encoded using the {% include link elem="dynam" %} element from the Shared module (see chapter {% include link id="shared" %}):

@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsLineRendition
 title: "Line Rendition"
-version: "v4"
+version: "dev"
 ---
 
 The **@form** attribute of lines may take the following values:

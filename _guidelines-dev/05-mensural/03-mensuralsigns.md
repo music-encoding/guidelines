@@ -1,7 +1,7 @@
 ---
 sectionid: mensuralSigns
 title: "Mensuration Signs"
-version: "v4"
+version: "dev"
 ---
 
 Using the mensural module, mensuration signs can be indicated with the attributes available on the {% include link elem="scoreDef" %} and {% include link elem="staffDef" %} elements. Mensuration signs encoded using attributes on {% include link elem="scoreDef" %} are regarded as default values which may be overridden by values attached to individual {% include link elem="staffDef" %} elements.

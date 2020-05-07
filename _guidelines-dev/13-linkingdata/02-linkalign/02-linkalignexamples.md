@@ -1,7 +1,7 @@
 ---
 sectionid: linkalignExamples
 title: "Linking and Alignment Examples"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="when" %} element specifies timestamped locations on the referenced media file. These may be defined using either an absolute time stamp (specified in ISO 24-hour time format, HH:MM:SS.ss), or using a combination of the **@interval**, **@inttype**, and **@since** attributes.

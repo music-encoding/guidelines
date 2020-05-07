@@ -1,7 +1,7 @@
 ---
 sectionid: headerProjectDescription
 title: "Project Description"
-version: "v4"
+version: "dev"
 ---
 
 {% include desc elem="projectDesc" %}

@@ -1,7 +1,7 @@
 ---
 sectionid: cmnArpegGliss
 title: "Arpeggio and Glissando"
-version: "v4"
+version: "dev"
 ---
 
 In CMN, the notes of a chord are sometimes performed successively rather than simultaneously. This behavior, called arpeggiation, is normally indicated using a vertical wavy line preceding the chord. MEI offers the {% include link elem="arpeg" %} element to describe arpeggios. This element is a member of the {% include link model="controlEventLike.cmn" %} class and, like other members of this class, uses the **@staff**, **@layer** and **@tstamp** or the **@startid** and **@plist** attributes to connect it to the affected chord.

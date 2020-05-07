@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsModuleUses
 title: "Uses of the Usersymbols Module"
-version: "v4"
+version: "dev"
 ---
 
 The elements provided by the usersymbols module may be used in two ways: 

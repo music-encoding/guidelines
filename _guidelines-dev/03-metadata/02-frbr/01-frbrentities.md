@@ -1,7 +1,7 @@
 ---
 sectionid: FRBRentities
 title: "FRBR Entities in MEI"
-version: "v4"
+version: "dev"
 ---
 
 With the FRBR module, MEI offers four elements corresponding to the FRBR "Group 1" entities:

@@ -1,7 +1,7 @@
 ---
 sectionid: sharedGroupedTexts
 title: "Grouped Texts"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="group" %} element may be used to represent a collection of independent musical texts which is to be regarded as a single unit for processing or other purposes. It is provided to simplify the encoding of collections, anthologies, and cyclic works. It can also be used to record the potentially complex internal structure of corpora, covered more fully in chapter {% include link id="corpus" %}.

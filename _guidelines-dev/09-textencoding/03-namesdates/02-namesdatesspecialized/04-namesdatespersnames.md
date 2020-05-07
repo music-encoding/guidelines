@@ -1,7 +1,7 @@
 ---
 sectionid: namesdatesPersNames
 title: "Personal Names"
-version: "v4"
+version: "dev"
 ---
 
 {% include desc elem="persName" %}

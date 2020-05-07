@@ -1,7 +1,7 @@
 ---
 sectionid: cmnDefs
 title: "Defining Score Parameters for CMN"
-version: "v4"
+version: "dev"
 ---
 
 When encoding a score in CMN, MEI relies on the following elements from the {% include link id="shared" %} module:

@@ -1,7 +1,7 @@
 ---
 sectionid: edittransErrors
 title: "Apparent Errors"
-version: "v4"
+version: "dev"
 ---
 
 When the source material to be encoded is manifestly faulty, an encoder or transcriber may elect simply to correct it without comment, although for scholarly purposes it will often be more generally useful to record both the correction and the original state of the text. The elements described here enable all three approaches, and allows the last to be done is such a way as make it easy for software to present either the original or the correction.

@@ -1,7 +1,7 @@
 ---
 sectionid: namesdatesBasic
 title: "Basic Elements for Names and Dates"
-version: "v4"
+version: "dev"
 ---
 
 The basic elements for capturing names and dates are defined in the shared module:

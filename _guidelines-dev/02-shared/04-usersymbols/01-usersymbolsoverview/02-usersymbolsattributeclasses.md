@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsAttributeClasses
 title: "Attribute Classes"
-version: "v4"
+version: "dev"
 ---
 
 No attribute classes are defined in this module.

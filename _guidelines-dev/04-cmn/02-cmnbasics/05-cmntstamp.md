@@ -1,7 +1,7 @@
 ---
 sectionid: cmnTstamp
 title: "Timestamps and Durations"
-version: "v4"
+version: "dev"
 ---
 
 MEI offers multiple ways of defining onsets and offsets of timed musical events such as notes and slurs. The most common and most musician-friendly approach to this is through the use of a combination of the attributes **@tstamp** and **@dur**, which are made available by the attribute classes {% include link att="timestamp.logical" %} (inherited by {% include link att="controlEvent" %}) and {% include link att="timestamp2.logical" %}, both from the shared module.

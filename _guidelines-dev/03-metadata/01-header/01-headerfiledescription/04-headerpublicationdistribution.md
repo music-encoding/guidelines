@@ -1,7 +1,7 @@
 ---
 sectionid: headerPublicationDistribution
 title: "Publication, Distribution, etc."
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="pubStmt" %} element is the fourth component of the {% include link elem="fileDesc" %} element and is mandatory.

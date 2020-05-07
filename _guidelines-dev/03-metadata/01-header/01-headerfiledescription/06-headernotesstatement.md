@@ -1,7 +1,7 @@
 ---
 sectionid: headerNotesStatement
 title: "Notes Statement"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="notesStmt" %} element is the sixth component of the {% include link elem="fileDesc" %} element and is optional. If used, it contains one or more {% include link elem="annot" %} elements, each containing a single piece of descriptive information of the kind treated as ‘general notes’ in traditional bibliographic descriptions.

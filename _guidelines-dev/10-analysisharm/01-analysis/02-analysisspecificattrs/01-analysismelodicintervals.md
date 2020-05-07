@@ -1,7 +1,7 @@
 ---
 sectionid: analysisMelodicIntervals
 title: "Melodic Intervals"
-version: "v4"
+version: "dev"
 ---
 
 The**@intm** attribute offers several methods for encoding the melodic interval from a preceding pitch. First, Parsons Code allows for description of the contour of the melody in very general terms; that is, as up, down, or same note. Parsons Code is helpful for identifying musical works with clearly defined melodies and analyzing the relationship between successive notes of monophonic tunes. For more information about the Parsons Code, please see the "The Directory of Tunes and Musical Themes" by Denys Parsons (2002). The next example shows interval relationships indicated by the Parsons Code:

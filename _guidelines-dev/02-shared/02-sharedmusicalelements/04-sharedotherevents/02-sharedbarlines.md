@@ -1,7 +1,7 @@
 ---
 sectionid: sharedBarlines
 title: "Bar Lines and Custos Signs"
-version: "v4"
+version: "dev"
 ---
 
 Measure separators, i.e., bar lines, and custos signs are also considered to be events.

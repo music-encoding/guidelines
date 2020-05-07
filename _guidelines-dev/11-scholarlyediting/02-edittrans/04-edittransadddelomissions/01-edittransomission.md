@@ -1,7 +1,7 @@
 ---
 sectionid: edittransOmission
 title: "Omissions, Unclear Readings, Damage, and Supplied Readings"
-version: "v4"
+version: "dev"
 ---
 
 Encoders may choose to omit parts of the source for reasons ranging from illegibility, (making transcription difficult or impossible), to editorial policy, e.g., systematic exclusion of poetry or prose from an encoding. The full details of the policy decisions concerned should be documented in the MEI header (see section {% include link id="headerEncodingDescription" %}). Each place in the text at which omission has taken place should be marked with a {% include link elem="gap" %} element, optionally with further information about the reason for the omission, its extent, and the person or agency responsible for it, as in the following examples:

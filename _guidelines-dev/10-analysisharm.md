@@ -1,7 +1,7 @@
 ---
 layout: sidebar
 sidebar: s1
-version: "v4"
+version: "dev"
 title: "Analysis Markup and Harmonies"
 sectionid: "analysisharm"
 ---

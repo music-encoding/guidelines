@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkMedium
 title: "Performance Medium"
-version: "v4"
+version: "dev"
 ---
 
 The following elements are available for description of a composition's performing forces:

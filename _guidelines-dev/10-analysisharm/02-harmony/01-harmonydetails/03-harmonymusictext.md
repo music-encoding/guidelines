@@ -1,7 +1,7 @@
 ---
 sectionid: harmonyMusicText
 title: "Indications of Harmony in the Music Text"
-version: "v4"
+version: "dev"
 ---
 
 With regard to indications of harmony, MEI attempts to strike a balance between very precise (interpreted) and very loose (uninterpreted) markup needs. Therefore, various kinds of harmonic labels are accommodated by the {% include link elem="harm" %} element. While some are more structured than others, in the final analyis they all function as *labels*. Therefore, MEI provides only a single element for the capture of harmonic indications of all kinds:

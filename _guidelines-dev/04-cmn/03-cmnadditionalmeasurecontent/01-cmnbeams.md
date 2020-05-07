@@ -1,7 +1,7 @@
 ---
 sectionid: cmnBeams
 title: "Beams"
-version: "v4"
+version: "dev"
 ---
 
 A very common feature of music from the CMN repertoire is the beaming of eighth or shorter notes. MEI provides two elements for the explicit encoding of features joined by beams.

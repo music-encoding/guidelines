@@ -1,7 +1,7 @@
 ---
 sectionid: cmnReh
 title: "Rehearsal marks"
-version: "v4"
+version: "dev"
 ---
 
 Rehearsal marks are another specialized kind of directive. Consisting of letters, numbers, or a combination of both, rehearsal marks are used in scores and corresponding performer parts to identify convenient points to restart rehearsal after breaks or interruptions. For this reason, they are often visually emphasized by placing them within a square or circle. In MEI, they are encoded using the {% include link elem="reh" %} element, which holds the textual content of the rehearsal mark. It is a member of the {% include link model="controlEventLike.cmn" %} class. The visual rendition of the rehearsal mark, including the surrounding shape, may be captured using the {% include link elem="rend" %} element described in chapter {% include link id="sharedTextRendition" %}.

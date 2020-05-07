@@ -1,7 +1,7 @@
 ---
 sectionid: textTitlePages
 title: "Title Pages"
-version: "v4"
+version: "dev"
 ---
 
 Detailed analysis of the title page and other preliminaries of older printed books and manuscripts is of major importance in descriptive bibliography and the cataloging of printed books; such analysis, however, requires a more detailed approach than the general one described here. The following elements are suggested as a means of encoding the major features of most title pages for faithful rendition:

@@ -1,7 +1,7 @@
 ---
 sectionid: sharedOrnaments
 title: "Ornaments"
-version: "v4"
+version: "dev"
 ---
 
 Ornaments are formulae of embellishment that can be realized by adding supplementary notes to one or more notes of the melody.

@@ -1,7 +1,7 @@
 ---
 sectionid: headerEncodingDescription
 title: "Encoding Description"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="encodingDesc" %} element is the second major subdivision of the MEI header. It specifies the methods and editorial principles which governed the transcription or encoding of the source material. Though not formally required, its use is highly recommended.

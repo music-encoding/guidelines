@@ -1,7 +1,7 @@
 ---
 sectionid: analysisSpecificAttrs
 title: "Event-Specific Analytical Information"
-version: "v4"
+version: "dev"
 ---
 
 In addition to the common analytical attributes, the analysis module also offers other, more specific attributes on certain musical elements:

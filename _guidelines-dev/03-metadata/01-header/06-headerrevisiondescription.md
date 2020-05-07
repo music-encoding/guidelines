@@ -1,7 +1,7 @@
 ---
 sectionid: headerRevisionDescription
 title: "Revision Description"
-version: "v4"
+version: "dev"
 ---
 
 The final sub-element of the MEI header, the {% include link elem="revisionDesc" %} element, provides a detailed change log in which each change made to a text may be recorded. Its use is optional but highly recommended. It provides essential information for the administration of large numbers of files which are being updated, corrected, or otherwise modified as well as extremely useful documentation for files being passed from researcher to researcher or system to system. Without change logs, it is easy to confuse different versions of a file, or to remain unaware of small but important changes made in the file by some earlier link in the chain of distribution. No change should be made in any MEI-conformant file without corresponding entries being made in the change log.

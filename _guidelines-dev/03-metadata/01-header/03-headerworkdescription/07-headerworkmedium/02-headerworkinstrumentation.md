@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkInstrumentation
 title: "Instrumentation"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="perfResList" %} element is used to capture the solo and ensemble instrumental and vocal resources of a composition. For example, a work for a standard ensemble may be indicated thus:

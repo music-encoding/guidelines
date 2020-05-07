@@ -1,7 +1,7 @@
 ---
 sectionid: cmnNotesGrace
 title: "Grace Notes"
-version: "v4"
+version: "dev"
 ---
 
 The CMN module adds two optional attributes, **@grace** and **@grace.time**, to {% include link elem="note" %} and {% include link elem="chord" %}. The presence of the **@grace** attribute indicates a grace note or chord.

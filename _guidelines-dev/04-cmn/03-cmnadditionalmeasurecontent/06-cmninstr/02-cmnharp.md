@@ -1,7 +1,7 @@
 ---
 sectionid: cmnHarp
 title: "Harp Pedals"
-version: "v4"
+version: "dev"
 ---
 
 Modern harps have seven pedals which allow adjustment of their strings to different pitches. The settings for these pedals occur at the beginning of the harp notation and/or whenever it is necessary to change the harp's tuning. These settings may be rendered using letter pitches (in the order of the pedals from left to right) or in a diagrammatic fashion, such as the form invented by [Carlos Salzedo](https://en.wikipedia.org/wiki/Carlos_Salzedo).

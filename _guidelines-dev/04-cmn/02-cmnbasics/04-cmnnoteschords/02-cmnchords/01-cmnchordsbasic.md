@@ -1,7 +1,7 @@
 ---
 sectionid: cmnChordsBasic
 title: "Chords in CMN"
-version: "v4"
+version: "dev"
 ---
 
 A chord is any set of pitches consisting of multiple notes that are to be played simultaneously and are usually grouped together visually with a single stem. In MEI the {% include link elem="chord" %} element functions as a container for all participating notes. Also it features many attributes that are allowed for notes, e.g. usually all notes in a chord have a common duration, so it can be applied to the whole chord within it's **@dur** attribute.

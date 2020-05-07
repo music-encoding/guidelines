@@ -1,5 +1,5 @@
 ---
-version: "v4"
+version: "dev"
 title: "Sample Encodings and Tools for MEI"
 sectionid: "samplesTools"
 ---

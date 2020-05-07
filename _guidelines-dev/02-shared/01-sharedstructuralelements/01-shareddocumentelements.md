@@ -1,7 +1,7 @@
 ---
 sectionid: sharedDocumentElements
 title: "Document Elements"
-version: "v4"
+version: "dev"
 ---
 
 Typically, the following elements are available for the representation of the outermost structure of an MEI document:

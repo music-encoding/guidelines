@@ -1,7 +1,7 @@
 ---
 sectionid: headerApplicationInformation
 title: "Application Information"
-version: "v4"
+version: "dev"
 ---
 
 It is sometimes convenient to store information relating to the processing of an encoded resource within its header. Typical uses for such information might be:

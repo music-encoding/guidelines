@@ -1,7 +1,7 @@
 ---
 sectionid: corpusCombiningHeaders
 title: "Combining Corpus and Text Headers"
-version: "v4"
+version: "dev"
 ---
 
 An MEI-conformant document may have more than one header only in the case of a TEI corpus, which must have a header in its own right, as well as the obligatory header for each text. Every element specified in a corpus-header is understood as if it appeared within every text header in the corpus. An element specified in a text header but not in the corpus header supplements the specification for that text alone. If any element is specified in both corpus and text headers, the corpus header element is over-ridden for that text alone.

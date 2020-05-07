@@ -1,7 +1,7 @@
 ---
 sectionid: figTableRasterGraphicFormats
 title: "Raster Graphic Formats"
-version: "v4"
+version: "dev"
 ---
 
 {:.gloss}

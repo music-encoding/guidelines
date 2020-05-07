@@ -1,7 +1,7 @@
 ---
 sectionid: analysisHarmonicIntervals
 title: "Harmonic Intervals"
-version: "v4"
+version: "dev"
 ---
 
 {% include desc atts="att.intervalHarmonic/inth" %}

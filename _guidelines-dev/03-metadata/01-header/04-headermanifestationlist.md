@@ -1,7 +1,7 @@
 ---
 sectionid: headerManifestationList
 title: "Manifestations"
-version: "v4"
+version: "dev"
 ---
 
 

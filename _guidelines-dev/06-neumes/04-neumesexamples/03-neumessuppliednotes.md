@@ -1,7 +1,7 @@
 ---
 sectionid: neumesSuppliedNotes
 title: "Supplied Notes"
-version: "v4"
+version: "dev"
 ---
 
 In the case of neume notation where no absolute pitch is indicated, you may use the {% include link elem="supplied" %} element to indicate an editorially-added pitch. This element's **@source** attribute may be used to supply a reference to a source with the absolute pitch provided.

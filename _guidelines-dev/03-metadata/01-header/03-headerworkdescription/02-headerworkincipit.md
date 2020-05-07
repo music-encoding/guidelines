@@ -1,7 +1,7 @@
 ---
 sectionid: headerWorkIncipit
 title: "Incipits"
-version: "v4"
+version: "dev"
 ---
 
 {% include desc elem="incip" %}

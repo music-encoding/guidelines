@@ -1,7 +1,7 @@
 ---
 sectionid: textFront
 title: "Front Matter"
-version: "v4"
+version: "dev"
 ---
 
 By ‘front matter’ these Guidelines mean distinct sections of a text (usually, but not necessarily, a printed one), prefixed to it by way of introduction or identification as a part of its production. Features such as title pages or prefaces are clear examples; a less definite case might be the prologue attached to a dramatic work. The front matter of an encoded text should not be confused with the MEI header described in chapter {% include link id="header" %}, which provides metadata for the entire file.

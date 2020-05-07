@@ -1,7 +1,7 @@
 ---
 sectionid: cmnChordsStems
 title: "Stem Modifications"
-version: "v4"
+version: "dev"
 ---
 
 The **@stem.mod** attribute accommodates various stem modifiers found in the CMN repertoire. These symbols are placed on a note or chord's stem and generally indicate different types of tremolo and Sprechstimme. The following values are allowed:

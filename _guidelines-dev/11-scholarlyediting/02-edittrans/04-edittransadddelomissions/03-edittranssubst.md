@@ -1,7 +1,7 @@
 ---
 sectionid: edittransSubst
 title: "Substitutions, Restorations, and Handshifts"
-version: "v4"
+version: "dev"
 ---
 
 When several interventions to the musical text are to be regarded as a single action, they may be grouped using the {% include link elem="subst" %} element. The most common combination is a replacement of portions of the musical text using both the {% include link elem="add" %} and {% include link elem="del" %} element, as seen in the following example:

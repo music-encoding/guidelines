@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOrnamentsTrillsSpecial
 title: "Special Cases"
-version: "v4"
+version: "dev"
 ---
 
 Symbols and abbreviations for trills have changed and evolved considerably throughout history. Strategies to clarify the encoding and interpretation of ornaments have been discussed in section {% include link id="cmnOrnamentsOverride" %} above. However, in order to aid the encoder in making educated choices in the encoding of non-standard trills, this section shows two examples diverging from modern standard use.

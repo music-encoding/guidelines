@@ -1,7 +1,7 @@
 ---
 sectionid: sharedKeySignaturesAndClefs
 title: "Key Signatures and Clefs"
-version: "v4"
+version: "dev"
 ---
 
 Key signatures and clefs as well as intra-staff changes to these musical parameters are treated as events.

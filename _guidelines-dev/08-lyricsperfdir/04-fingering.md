@@ -1,7 +1,7 @@
 ---
 sectionid: fingering
 title: "Fingering"
-version: "v4"
+version: "dev"
 ---
 
 This section is supposed to explain the encoding of fingering information with MEI. 

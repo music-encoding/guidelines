@@ -1,7 +1,7 @@
 ---
 sectionid: headerEditorialPrinciples
 title: "Declaration of Editorial Principles"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="editorialDecl" %} element is used to provide details of the editorial practices applied during the encoding of a musical text.

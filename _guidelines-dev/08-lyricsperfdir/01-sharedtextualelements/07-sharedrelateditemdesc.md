@@ -1,7 +1,7 @@
 ---
 sectionid: sharedRelatedItemDesc
 title: "Related Items"
-version: "v4"
+version: "dev"
 ---
 
 In some situations it is necessary to provide references from one bibliographic item to another. For these situations, MEI offers the {% include link elem="relatedItem" %} element. A {% include link elem="relatedItem" %} may be used inside of {% include link elem="bibl" %}, and may either point to a different entity using its **@target** attribute, or may hold the related item as a child.

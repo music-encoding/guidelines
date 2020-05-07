@@ -1,7 +1,7 @@
 ---
 sectionid: figTableTables
 title: "Tables"
-version: "v4"
+version: "dev"
 ---
 
 The element {% include link elem="table" %} contains text displayed in tabular form, i.e., in rows and columns. A table is the least ‘graphic’ of the elements discussed in this chapter. Almost any text structure can be presented as a series of rows and columns: one might, for example, choose to show a glossary or other form of list in tabular form, without necessarily regarding it as a table. When tabular presentation is regarded as of less intrinsic importance, it is correspondingly simpler to encode descriptive or functional information about the contents of the table, for example to identify one cell as containing a name and another as containing a date, though the two methods may be combined.

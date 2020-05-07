@@ -1,7 +1,7 @@
 ---
 sectionid: sharedAccidentalsArticulations
 title: "Accidentals, Articulation Symbols, Augmentation Dots, and Custos Signs"
-version: "v4"
+version: "dev"
 ---
 
 The following elements are regarded as events primarily because they sometimes occur independently of any associated notes, rests, or chords, especially in mensural and neume repertoires.

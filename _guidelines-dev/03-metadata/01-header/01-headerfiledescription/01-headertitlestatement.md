@@ -1,7 +1,7 @@
 ---
 sectionid: headerTitleStatement
 title: "Title Statement"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="titleStmt" %} element is the first component of the {% include link elem="fileDesc" %} element, and is mandatory:

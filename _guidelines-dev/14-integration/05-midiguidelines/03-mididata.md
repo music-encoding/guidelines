@@ -1,7 +1,7 @@
 ---
 sectionid: midiData
 title: "Recording MIDI Event Data"
-version: "v4"
+version: "dev"
 ---
 
 MIDI messages are encapsulated in the {% include link elem="midi" %} element, which is typically used in contexts like {% include link elem="layer" %} and {% include link elem="measure" %}. In earlier versions of MEI, the {% include link elem="noteOn" %} and {% include link elem="noteOff" %} elements were used to record MIDI note on/off events. The use of these elements is now discouraged in favor of using the {% include link elem="note" %} element directly. MIDI duration should be recorded using the **@dur.ges** attribute, and MIDI pitch information should be recorded using the **@pnum** attribute.  

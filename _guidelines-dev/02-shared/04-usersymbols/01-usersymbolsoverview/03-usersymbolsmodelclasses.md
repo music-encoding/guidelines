@@ -1,7 +1,7 @@
 ---
 sectionid: usersymbolsModelClasses
 title: "Model Classes"
-version: "v4"
+version: "dev"
 ---
 
 The usersymbols module defines the following model classes:

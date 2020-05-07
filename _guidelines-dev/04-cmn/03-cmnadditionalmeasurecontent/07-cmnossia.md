@@ -1,7 +1,7 @@
 ---
 sectionid: cmnOssia
 title: "Ossia"
-version: "v4"
+version: "dev"
 ---
 
 The term ossia, Italian for "or", denotes an alternative for a certain passage which is provided by the composer *without any preference* of one alternative over another. An ossia often provides a simpler (easier to perform) version of the original content. Another frequent use case for ossia is the provision of indications about performance practice, such as an alternative version with ornamentation written out in full. In all cases, it is up to the performer to choose between the alternatives.

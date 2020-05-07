@@ -1,7 +1,7 @@
 ---
 sectionid: textLists
 title: "Lists"
-version: "v4"
+version: "dev"
 ---
 
 When a text contains lists, they can be encoded with the following elements:

@@ -1,7 +1,7 @@
 ---
 sectionid: headerBiblAnalog
 title: "Header Elements and their Relationship to Other Bibliographic Standards"
-version: "v4"
+version: "dev"
 ---
 
 Mapping elements from the MEI metadata header to another descriptive system may help a repository harvest selected data from the MEI file to build a basic catalog record. For this purpose, the following attribute is provided on most elements occurring within {% include link elem="meiHead" %}:

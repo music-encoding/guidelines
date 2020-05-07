@@ -1,7 +1,7 @@
 ---
 sectionid: sharedNoteSpacing
 title: "Event Spacing"
-version: "v4"
+version: "dev"
 ---
 
 The following elements provide control over the horizontal spacing of notational events, such as notes, chords, rests, etc.:

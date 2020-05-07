@@ -1,7 +1,7 @@
 ---
 sectionid: perfElements
 title: "Overview"
-version: "v4"
+version: "dev"
 ---
 
 The following elements are available to encode information about a recorded performance:

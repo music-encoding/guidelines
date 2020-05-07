@@ -1,7 +1,7 @@
 ---
 sectionid: edittransReg
 title: "Regularization and Normalization"
-version: "v4"
+version: "dev"
 ---
 
 When the musical source makes extensive use of unusual symbol shapes or non-standard notation features, it may be desirable for a number of reasons to regularize it; that is, provide ‘standard’ or ‘regularized’ forms that are equivalent to the non-standard forms.

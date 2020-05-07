@@ -1,7 +1,7 @@
 ---
 sectionid: sharedNumbers
 title: "Numbers"
-version: "v4"
+version: "dev"
 ---
 
 The {% include link elem="num" %} element may be used to identify any numeric information in a text. The **@unit** may be used to specify the unit of measurement.

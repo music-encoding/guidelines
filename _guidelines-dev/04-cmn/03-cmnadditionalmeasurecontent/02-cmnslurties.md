@@ -1,7 +1,7 @@
 ---
 sectionid: cmnSlurTies
 title: "Ties, Slurs and Phrase Marks"
-version: "v4"
+version: "dev"
 ---
 
 One of the most specific features of CMN is the use of ‘curved lines’ which connect notes. These lines are used to indicate various musical features, depending on their context.
