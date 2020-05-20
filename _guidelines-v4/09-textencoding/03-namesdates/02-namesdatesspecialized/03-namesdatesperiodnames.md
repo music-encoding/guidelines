@@ -20,11 +20,4 @@ Recording start and end points of a certain period using the **@startdate** and 
 
 If a controlled value is used, the list from which it is taken should be recorded. In this case the following attributes are relevant:
 
-{:.gloss}
-**authority**: to record the list from which a controlled value is taken,
-
-{:.gloss}
-**authURI (authority URI)**: to record the web-accessible location of the controlled vocabulary from which the value is taken,
-
-{:.gloss}
-**codedval (coded value)**: to record a value which serves as a primary key in an external database.
+{% include desc atts="att.authorized/auth att.authorized/auth.uri att.canonical/codedval" %}

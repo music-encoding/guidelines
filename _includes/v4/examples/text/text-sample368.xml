@@ -1,4 +1,4 @@
-<front xmlns="http://www.music-encoding.org/ns/mei" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+<front>
    <titlePage>
       <!-- transcription of title page -->
    </titlePage>
@@ -9,7 +9,7 @@
    </div>
    <div type="preface">
       <head>
-         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Preface
+         Preface
       </head>
       <p>
          <!-- paragraph 1 -->

@@ -7,7 +7,6 @@ version: "v4"
 Text can be organized in different parts, for example in chapters or sections. The {% include link elem="div" %} element is used to encode such structural divisions.
 
 {% include desc elem="div" %}
-{% include desc atts="div/type" %}
 
 For example, printed scores, before the actual notation, can have text that can be organized in multiple sections (e.g. a preface, a critical report, performance instructions, etc. for which see the following sections); each of these sections should be identified by a different {% include link elem="div" %} element. Text might also occur in between music sections (see {% include link id="sharedMdivContent" %}), for example in a collection of romantic piano works, a few pieces might be preceded or followed by poetry. Such text should be encoded with the {% include link elem="div" %} element, as demonstrated in the following example:
 
@@ -21,8 +20,10 @@ The following example shows the encoding of a preface translated into three diff
 
 {% include mei example="text/text-sample359.xml" valid="" %}
 
-Having said that {% include link elem="div" %} identifies any structural organization of text, it is often helpful to distinguish the typology of division. The attributes **@type** and **@subtype** can be used for this purpose. It is required that **@type** be present when **@subtype** is used, though their values can be freely set by the encoder.
+Having said that {% include link elem="div" %} identifies any structural organization of text, it is often helpful to distinguish the typology of division. The **@type** attribute can be used for this purpose.
 
-The following example shows the use of **@type** to indicate three prefaces in English, German and Italian are columns on the same page.
+{% include desc atts="div/type" %}
+
+**@type** may contain any number of space-separated *tags* describing the nature of the {% include link elem="div" %} (or, in fact, any other element). The following example shows the use of **@type** (in combination with **@n**) to indicate three prefaces in English, German and Italian are columns on the same page.
 
 {% include mei example="text/text-sample360.xml" valid="" %}
