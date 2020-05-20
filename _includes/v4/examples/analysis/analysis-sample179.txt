@@ -2,12 +2,12 @@
   <staff n="1">
     <layer>
       <note dur="4" oct="4" pname="c"/>
-      <note dur="4" intm="u" oct="4" pname="d"/>
-      <note dur="4" intm="u" oct="4" pname="e"/>
-      <note dur="4" intm="u" oct="4" pname="f"/>
-      <note dur="2" intm="u" oct="4" pname="g"/>
-      <note dur="2" intm="s" oct="4" pname="g"/>
-      <note dur="4" intm="d" oct="4" pname="f"/>
+      <note dur="4" oct="4" pname="d" intm="u" />
+      <note dur="4" oct="4" pname="e" intm="u"/>
+      <note dur="4" oct="4" pname="f" intm="u"/>
+      <note dur="2" oct="4" pname="g" intm="u"/>
+      <note dur="2" oct="4" pname="g" intm="s"/>
+      <note dur="4" oct="4" pname="f" intm="d"/>
     </layer>
   </staff>
 </measure>
