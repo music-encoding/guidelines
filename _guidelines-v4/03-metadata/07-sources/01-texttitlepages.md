@@ -4,7 +4,13 @@ title: "Title Pages"
 version: "v4"
 ---
 
-Detailed analysis of the title page and other preliminaries of older printed books and manuscripts is of major importance in descriptive bibliography and the cataloging of printed books; such analysis, however, requires a more detailed approach than the general one described here. The following elements are suggested as a means of encoding the major features of most title pages for faithful rendition:
+A specialized element is furnished for the capture of titlepage information.
+
+{% include desc elem="titlePage" %}
+
+The {% include link elem="titlePage" %} element, modelled after a similar element in Encoded Archival Description (EAD), may occur within the textual matter preceding or following the musical content of the encoding. Since a diplomatic transcription of the titlepage is often necessary to accurately identify musical material contained within a source, {% include link elem="titlePage" %} may also be used within the metadata header as a child of the {% include link elem="physDesc" %} element.
+
+Detailed analysis of the title page and other preliminaries of older printed books and manuscripts is of major importance in descriptive bibliography and the cataloging of printed books. The following elements are suggested as a means of encoding the major features of most title pages for faithful rendition:
 
 {% include desc elem="titlePage" %}
 {% include desc elem="p" %}

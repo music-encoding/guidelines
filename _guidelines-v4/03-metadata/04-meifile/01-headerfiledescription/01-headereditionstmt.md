@@ -4,7 +4,7 @@ title: "Edition Statement"
 version: "v4"
 ---
 
-The {% include link elem="editionStmt" %} element is the second component of the {% include link elem="fileDesc" %} element. It is optional but recommended when applicable.
+The {% include link elem="editionStmt" %} element is the second component of the {% include link elem="fileDesc" %} element, following the mandatory {% include link elem="titleStmt" %}. It is optional but recommended when applicable.
 
 {% include desc elem="editionStmt" %}
 

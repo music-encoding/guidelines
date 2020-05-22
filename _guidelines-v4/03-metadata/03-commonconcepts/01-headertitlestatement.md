@@ -4,7 +4,7 @@ title: "Title Statement"
 version: "v4"
 ---
 
-The {% include link elem="titleStmt" %} element is the first component of the {% include link elem="fileDesc" %} element, and is mandatory:
+The {% include link elem="titleStmt" %} element is to capture the title of an MEI file (within a {% include link elem="fileDesc" %} element) and the title of any of the relevant {% include link elem="manifestation"%}s (sources) of the encoded work.  
 
 {% include desc elem="titleStmt" %}
 
@@ -35,3 +35,7 @@ The **@type** attribute is provided for convenience in analyzing titles and proc
 The electronic work will also have an external name (its ‘filename’ or ‘data set name’) or reference number on the computer system where it resides at any time. This name is likely to change frequently, as new copies of the file are made on the computer system. Its form is entirely dependent on the particular computer system in use and thus cannot always easily be transferred from one system to another. Moreover, a given work may be composed of many files. For these reasons, these Guidelines strongly recommend that such names should not be used as the title for any electronic work.
 
 Helpful guidance on the formulation of useful descriptive titles in difficult cases may be found in the Anglo-American Cataloguing Rules (Gorman and Winkler, 1978, chapter 25) or in equivalent national-level bibliographical documentation.
+
+It is important to keep in mind that the {% include link elem="titleStmt" %} element provides *structured* metadata. Preserving the exact rendition of a titlepage is possible using the {% include link elem="titlePage" %} element (see {% include link id="textTitlePages"%}).
+
+The title of a {% include link elem="work"%} is given by using the {% include link elem="title"%} element directly, as many other child elements of {% include link elem="titleStmt"%} are available on work directly.
