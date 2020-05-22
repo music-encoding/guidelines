@@ -39,11 +39,11 @@ The {% include link elem="bibl" %} element may contain a mix of text and more sp
 {% include desc elem="textLang" %}
 {% include desc elem="title" %}
 
-These elements fall into the following categories: 
+These elements fall into the following categories:
 - identification of the bibliographic entity and those responsible for its intellectual content
 - publication and distribution data for the bibliographic entity
 - description of the physical characteristics of the item
-- annotation of the bibliographic citation and additional details regarding the item's intellectual content 
+- annotation of the bibliographic citation and additional details regarding the item's intellectual content
 
 The elements {% include link elem="title" %}, {% include link elem="edition" %}, {% include link elem="series" %}, and {% include link elem="identifier" %} fall into the first category as do the elements {% include link elem="arranger" %}, {% include link elem="author" %}, {% include link elem="composer" %}, {% include link elem="librettist" %}, {% include link elem="lyricist" %}, {% include link elem="funder" %}, {% include link elem="sponsor" %}, and {% include link elem="respStmt" %}. The respStmt element is provided for marking responsibility roles that cannot be recorded using more specific elements. The {% include link elem="biblScope" %} element also carries information of an identifying nature.
 
@@ -61,4 +61,4 @@ When supplied with a **@target** attribute, {% include link elem="bibl" %} may f
 
 {% include mei example="shared/shared-sample012.xml" valid="" %}
 
-Please consult {% include link id="sharedNamesNumbersDates" %} and {% include link id="namesDates" %} for more information about recording the names and dates frequently found in bibliographic citations.
+Please consult {% include link id="sharedNames" %} and {% include link id="dates" %} for more information about recording the names and dates frequently found in bibliographic citations.

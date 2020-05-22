@@ -1,6 +1,6 @@
 ---
-sectionid: namesdatesSpecialized
-title: "Specialized Name and Date Elements"
+sectionid: namesspecialized
+title: "Specialized Name Elements"
 version: "v4"
 ---
 
