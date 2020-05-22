@@ -1,10 +1,10 @@
 ---
-sectionid: textProse
+sectionid: sharedParagraphs
 title: "Paragraphs"
 version: "v4"
 ---
 
-Paragraphs are fundamental to prose text and typically group one or more sentences that form a logical passage. A paragraph is usually typographically distinct: The text begins on a new line and the first letter of the content is often indented, enlarged, or both.
+Paragraphs are fundamental to prose text and typically group one or more sentences that form a logical passage. Usually, it is typographically distinct; that is, it usually begins on a new line and the first letter of the content is often indented, enlarged, or both. This element has a similar meaning as the corresponding elements in Encoded Archival Description (EAD), Text Encoding Initiative (TEI), and HTML.
 
 A paragraph is encoded with the {% include link elem="p" %} element:
 

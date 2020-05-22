@@ -5,5 +5,3 @@ version: "v4"
 title: "Metadata in MEI"
 sectionid: "metadata"
 ---
-
-{% include version-warning %}
