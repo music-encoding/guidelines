@@ -48,8 +48,6 @@ The content of the {% include link elem="item" %} is quite similar to {% include
 
 Many of these elements are already described in chapter 3.1 {% include link id="header" %}, especially in 3.1.3 {% include link id="headerWorkDescription" %}.
 
-[To do: Add description of the contents of availability, physDesc, and physLoc]
-
 The {% include link elem="manifestationList" %} is available to create lists of physical sources representing a work, for instance for use in a thematic catalog or a critical edition. The {% include link elem="manifestation" %} child element corresponds to the {% include link id="FRBR" %} level of the same name, that is, it describes embodiments of certain expressions of a work. The list below reflects the order in which the optional components of manifestation must occur.
 {% include desc elem="locus" %}
 {% include desc elem="locusGrp" %}
