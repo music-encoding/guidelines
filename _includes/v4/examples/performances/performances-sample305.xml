@@ -1,10 +1,10 @@
 <performance>
    <recording begin="00:00:00.00" betype="time" end="00:05:21.00">
-      <avFile mimetype="audio/aiff" target="BeethovenOp14N2-Mov1.aiff"></avFile>
+      <avFile mimetype="audio/aiff" target="BeethovenOp14N2-Mov1.aiff"/>
       <!-- Exposition -->
-      <clip begin="00:00:0.00" betype="time" end="00:01:41.00" startid="#performance.m1"></clip>
+      <clip begin="00:00:0.00" betype="time" end="00:01:41.00" startid="#performance.m1"/>
       <!-- Exposition's "codetta" -->
-      <clip begin="00:01:31.00" betype="time" end="00:01:41.00" startid="#performance.m48"></clip>
+      <clip begin="00:01:31.00" betype="time" end="00:01:41.00" startid="#performance.m48"/>
    </recording>
 </performance>
 <!-- ... -->
