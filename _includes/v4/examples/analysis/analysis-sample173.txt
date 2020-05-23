@@ -20,9 +20,4 @@
       <tuplet copyof="#analysis.tup1" xml:id="analysis.tup4"/>
     </layer>
   </staff>
-  <staff n="2">
-    <layer>
-      <mRest/>
-    </layer>
-  </staff>
 </measure>
