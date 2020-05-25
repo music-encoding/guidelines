@@ -233,7 +233,7 @@
                             <dir place="below" staff="3" startid="#ex-2141141483" vo="-2">
                                 <rend fontstyle="italic">pesante</rend>
                             </dir>
-                            <tempo place="above" staff="1" tstamp="1" midi.bpm="59">Tempo primo.</tempo>
+                            <tempo place="above" staff="1" tstamp="1">Tempo primo.</tempo>
                             <dynam place="above" staff="2" startid="#ex-1877520550" ho="2">fff</dynam>
                             <dynam place="above" staff="4" startid="#ex-1875064426" ho="2">fff</dynam>
                         </measure>
