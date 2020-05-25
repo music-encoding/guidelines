@@ -9,11 +9,11 @@
 </list>
 <!-- Later in the document -->
 <mdiv type="song">
-   <pb xml:id="song1-p1"></pb>
+   <pb xml:id="song1-p1"/>
    <!-- .... -->
 </mdiv>
 <mdiv type="song">
-   <pb xml:id="song2-p15"></pb>
+   <pb xml:id="song2-p15"/>
    <!-- .... -->
 </mdiv>
 <!-- .... -->
