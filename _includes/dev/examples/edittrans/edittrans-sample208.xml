@@ -1,4 +1,5 @@
 <abbr>
    <bTrem measperf="16">
-      <note dur="4" oct="5" pname="c" stem.mod="2slash"></note>
-   </bTrem></abbr>
+      <note dur="4" oct="5" pname="c" stem.mod="2slash"/>
+   </bTrem>
+</abbr>

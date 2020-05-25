@@ -18,6 +18,8 @@ It is possible to have more than one {% include link elem="facsimile" %} element
 
 {% include mei example="facsimiles/facsimiles-sample245.xml" valid="feasible" %}
 
+When using the FRBR model (see {% include link id="FRBR" %}), it is equally possible to reference a {% include link elem="manifestation" %} element instead of {% include link elem="source" %}.
+
 Within a {% include link elem="facsimile" %} element, each page of the source is represented by a {% include link elem="surface" %} element. Each surface may be assigned an identifying string utilizing the **@label** attribute. In addition, it may encapsulate more detailed metadata about itself in a {% include link elem="figDesc" %} element. The coordinate space of the surface may be recorded in abstract terms in the **@ulx**, **@uly**, **@lrx**, and **@lry** attributes. For navigation purposes, {% include link elem="surface" %} has a **@startid** attribute that accommodates pointing to the first object appearing on this particular writing surface.
 
 {% include mei example="facsimiles/facsimiles-sample246.xml" valid="" %}
@@ -45,3 +47,5 @@ Conversely, an element in the content may refer to the {% include link elem="fac
 {% include mei example="facsimiles/facsimiles-sample251.xml" valid="feasible" %}
 
 The {% include link elem="pb" %} element defined in the {% include link id="shared" %} makes special use of the **@facs** attribute, in that it does not point to a {% include link elem="zone" %}, but a {% include link elem="surface" %} element instead. A {% include link elem="pb" %} marks the beginning of a page, so it can be concluded that all elements in the content tree which are encoded between any two {% include link elem="pb" %} elements encode musical symbols written on the page ({% include link elem="surface" %}) referenced by the first of these two {% include link elem="pb" %} element's **@facs** attribute.
+
+The encoding of {% include link elem="facsimile"%} elements is intended to support sequential display of page images. If an encoder wants to describe the physical setup of a source document, the {% include link elem="foliaDesc" %} element is more appropriate. The difference of both approaches, and how to combine them, is described in chapter {% include link id="foliadesc"%}. 

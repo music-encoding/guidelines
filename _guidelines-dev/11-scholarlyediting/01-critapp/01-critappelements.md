@@ -23,6 +23,8 @@ The **@seq** attribute may be used on {% include link elem="lem" %} or {% includ
 
 {% include mei example="critApp/critApp-sample215.xml" valid="" %}
 
+If interested in modeling such dependencies between witnesses, using markup from {% include link id="FRBR" %} is generally recommendable. 
+
 If a source has additional content that is not found in other sources, an empty {% include link elem="rdg" %} element may be used to indicate the lack of material in the other sources. In the following example, source 1 includes material that is not found in sources 2 and 3:
 
 {% include mei example="critApp/critApp-sample216.xml" valid="" %}

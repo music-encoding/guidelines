@@ -16,10 +16,12 @@ The following example demonstrates the encoding of simple trills:
 {% include figure img="modules/cmnOrnaments/ex_tr.png" caption="Example of simple trills." %}
 {% include mei example="cmnOrnaments/cmnOrnaments-sample197.txt" valid="" %}
 
-It has been specified earlier that it is a semantic error not to encode a starting event or time stamp for an ornament. This starting point of a trill can be expressed with the **@startid** attribute and/or with the **@tstamp** attribute. Specifying the end point is not required, although the **@tstamp2** attribute can be used to indicate the use of a wavy line extender as shown in this example:
+It has been specified earlier that it is a semantic error not to encode a starting event or time stamp for an ornament. This starting point of a trill can be expressed with the **@startid** attribute and/or with the **@tstamp** attribute. Specifying the end point is not required, although the **@tstamp2** or **@endid** attribute may be used to imply the use of a wavy line extender as shown in this example:
 
 {% include figure img="modules/cmnOrnaments/ex_trill_wavy.png" caption="Example of trills followed by wavy lines." %}
 {% include mei example="cmnOrnaments/cmnOrnaments-sample198.txt" valid="" %}
+
+When giving an end point to trills, the **@extender** attribute should also be added, to indicate the presence or absence of a line extender. Notice, that the note referenced in **@endid** is not part of the trill itself, just like in [glissandos](#cmnArpegGliss).
 
 Chromatic alterations of auxiliary notes are occasionally expressed on the staff using small notes enclosed in parentheses, as shown in the example below. However, the attribute **@accidupper** is still to be used to encode the alteration. Display of the auxiliary note in this ‘cautionary’ manner is left to down-stream rendering processes.
 

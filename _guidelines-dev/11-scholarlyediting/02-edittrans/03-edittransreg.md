@@ -14,6 +14,8 @@ As with other such changes to the source text, the changes may be made silently 
 
 Consider this traditional soprano clef appearing somewhere in the course of a musical piece:  
 
+{% include figure img="modules/edittrans/schütz_sopranoclef.png" caption="Soprano clef from the begin of Heinrich Schütz' St. Matthew's Passion." %}
+
 An encoder may choose to preserve this original clef, but flag it as nonstandard from the perspective of current practice by using the {% include link elem="orig" %} element with no attributes specified, as follows:
 
 {% include mei example="editTrans/editTrans-sample232.xml" valid="" %}

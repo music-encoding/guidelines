@@ -1,7 +1,7 @@
 <facsimile>
    <surface>
-      <graphic height="2000" target="image1.jpg" unit="px" width="3000"></graphic>
-      <graphic height="1000" target="image1smaller.jpg" unit="px" width="1500"></graphic>
-      <graphic height="200" target="image1smallest.png" unit="px" width="300"></graphic>
+      <graphic height="2000px" target="image1.jpg" width="3000px"/>
+      <graphic height="1000px" target="image1smaller.jpg" width="1500px"/>
+      <graphic height="200px" target="image1smallest.png" width="300px"/>
    </surface>
 </facsimile>

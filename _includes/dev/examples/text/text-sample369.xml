@@ -1,25 +1,25 @@
 <div type="contents">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>Contents
+      Contents
    </head>
    <list form="ordered">
       <li>On Wenlock Edge
-         <ptr target="#song1"></ptr>
+         <ptr target="#song1"/>
       </li>
       <li>From Far, From Eve and Morning
-         <ptr target="#song2"></ptr>
+         <ptr target="#song2"/>
       </li>
       <li>Is My Team Ploughing?
-         <ptr target="#song3"></ptr>
+         <ptr target="#song3"/>
       </li>
       <li>Oh, When I Was In Love With You
-         <ptr target="#song4"></ptr>
+         <ptr target="#song4"/>
       </li>
       <li>Bredon Hill
-         <ptr target="#song5"></ptr>
+         <ptr target="#song5"/>
       </li>
       <li>Clun
-         <ptr target="#song6"></ptr>
+         <ptr target="#song6"/>
       </li>
    </list>
 </div>

@@ -10,7 +10,7 @@ When several interventions to the musical text are to be regarded as a single ac
 
 An intervention closely related to substitution is the restoration of a previously deleted section. For this purpose MEI offers the {% include link elem="restore" %} element, which may contain a {% include link elem="del" %} or other content directly.
 
-The following example illustrates an instance where a lyric which was cancelled and later restored by overwriting it:
+The following example illustrates an instance where a lyric was cancelled and later restored by overwriting it:
 
 {% include mei example="editTrans/editTrans-sample242.xml" valid="" %}
 

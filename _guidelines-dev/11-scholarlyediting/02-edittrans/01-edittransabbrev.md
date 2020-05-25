@@ -12,7 +12,7 @@ or abbreviations in the music itself, as in the following example:
 
 {% include mei example="editTrans/editTrans-sample222.xml" valid="" %}
 
-The type attribute may be used to classify the abbreviation according to a convenient typology. Sample values include:
+The generic **@type** attribute may be used to classify the abbreviation according to a convenient typology. Sample values include:
 
 {:.gloss}
 **suspension**: the abbreviation provides the first letter(s) of the word or phrase, omitting the remainder;

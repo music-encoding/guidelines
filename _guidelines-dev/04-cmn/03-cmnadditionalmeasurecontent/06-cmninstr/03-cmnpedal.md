@@ -20,7 +20,7 @@ The meaning of the mark is captured using the **@dir** attribute, which provides
 {:.gloss}
 **half**: depress the pedal half way
 
-{% include mei example="cmn/cmn-sample156.txt" valid="" %}
+{% include mei example="cmn/cmn-sample156.txt" valid="true" %}
 
 To specify the pedal, that has to be used, the **@func** attribute allows the following values:
 

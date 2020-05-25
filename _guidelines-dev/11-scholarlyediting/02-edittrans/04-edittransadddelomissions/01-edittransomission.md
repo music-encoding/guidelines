@@ -9,11 +9,11 @@ Encoders may choose to omit parts of the source for reasons ranging from illegib
 {% include mei example="editTrans/editTrans-sample235.xml" valid="" %}
 {% include mei example="editTrans/editTrans-sample236.xml" valid="" %}
 
-Note that the extent of the gap may be marked precisely using attributes **@unit** and **@quantity**, or more descriptively using the **@extent** attribute.
+Note that the extent of the gap may be marked precisely using attributes **@unit** and **@extent**.
 
 Unlike TEI, MEI does not offer a *desc* element for further description of the reason for a gap. Instead, an {% include link elem="annot" %} may refer to the gap via its **@startid**, **@endid**, or **@plist** attributes and provide additional information.
 
-The {% include link elem="unclear" %} element is used to mark passages in the original which cannot be read with confidence, or about which the transcriber is uncertain for other reasons, as for example when transcribing a illegible source. Its **@reason** and **@resp** attributes are used, as with the {% include link elem="gap" %} element, to indicate the cause of uncertainty and the person responsible for the conjectured reading.
+The {% include link elem="unclear" %} element is used to mark passages in the original which cannot be read with confidence, or about which the transcriber is uncertain for other reasons, as for example when transcribing an illegible source. Its **@reason** and **@resp** attributes are used, as with the {% include link elem="gap" %} element, to indicate the cause of uncertainty and the person responsible for the conjectured reading.
 
 {% include mei example="editTrans/editTrans-sample237.xml" valid="" %}
 

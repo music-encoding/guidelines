@@ -2,7 +2,7 @@
   <measure n="1">
     <staff n="1">
       <layer>
-        <note dur="4" oct="4" pname="g" xml:id="analysis.note1_1"/>
+        <note xml:id="analysis.note1_1" dur="4" oct="4" pname="g"/>
       </layer>
     </staff>
   </measure>

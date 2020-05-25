@@ -6,28 +6,30 @@ version: "dev"
 
 The relationships between event elements, such as note, chord, and rest, are the basic material of musical analysis; the attributes described below ensure a closed network of these relations and provide the opportunity to record data useful for common analytical tasks. In the context of a formal analysis, for instance, the attributes presented here can be useful in the capture information about the structure of a musical work.
 
-The shared module offers several attributes in the {% include link att="linking" %} class for the description of basic relationships:
+MEI offers several attributes in the {% include link att="linking" %} class for the description of basic relationships:
 
 {% include desc atts="att.linking/copyof
+att.linking/sameas
 att.linking/corresp
 att.linking/next
 att.linking/prev
-att.linking/sameas
+att.linking/precedes
+att.linking/follows
 att.linking/synch" %}
 
 The {% include link att="alignment" %} class also contains an attribute for describing temporal relationships:
 
 {% include desc atts="att.alignment/when" %}
 
-These attributes accommodate the encoding of linkages between the element carrying the attribute and one or more other elements. All of them use URIs to establish the connection. While the examples below illustrate relationships between musical events, their use is not restricted to musical events. On the contrary, these attributes can be used to capture information about relations between any elements.
+These attributes accommodate the encoding of linkages between the element carrying the attribute and one or more other elements. All of them use URIs to establish the connection. While the examples below illustrate relationships between musical events, the use of the aforementioned attributes is not restricted to musical events. On the contrary, these attributes can be used to capture information about relations between any elements. Further information on this can be found in {% include link id="linkingdata" %}.
 
-Using these attributes makes it possible to create relationships between events, which are often widely-spaced in both encoded order and time. The attributes allow a large number of connections, enhancing the informational content, and therefore the potential usefulness, of the encoding.
+Using the attributes above makes it possible to create relationships between events, which are often widely-spaced in both encoded order and time. The attributes allow a large number of connections, enhancing the informational content, and therefore the potential usefulness, of the encoding.
 
-The **@copyof** attribute points to an element of which the current element is a copy. It can be used to repeat a note, for example, without encoding the whole {% include link elem="note" %} element again. The copy is a ‘deep’one; that is, the **@copyof** attribute copies all attributes and child elements which belong to the copied element, such as the **@dur** and **@oct** attributes of a copied {% include link elem="note" %}. The value of the **@copyof** attribute must be a URI, which usually refers to an element in the current document. The following example demonstrates use of the **@copyof** attribute:
+The **@copyof** attribute points to an element of which the current element is a copy. It can be used to repeat a note, for example, without encoding the whole {% include link elem="note" %} element again. The copy is a ‘deep’ one; that is, the **@copyof** attribute copies all attributes and child elements which belong to the copied element, such as the **@dur** and **@oct** attributes of a copied {% include link elem="note" %}. The value of the **@copyof** attribute must be a URI, which usually refers to an element in the current document. The following example demonstrates use of the **@copyof** attribute:
 
 {% include mei example="analysis/analysis-sample172.txt" valid="" %}
 
-In this example. the {% include link elem="note" %} in the second measure has exactly the same characteristics as the {% include link elem="note" %} in the first {% include link elem="measure" %}.
+In this example, the {% include link elem="note" %} in the second measure has exactly the same characteristics as the {% include link elem="note" %} in the first {% include link elem="measure" %}.
 
 Using **@copyof** is not limited to copying events. The **@copyof** attribute can also be used to copy an entire {% include link elem="measure" %} or {% include link elem="staff" %}. When there are many repeated features, the use of the **@copyof** greatly reduces encoding effort. The image and the following encoding of the beginning of Schubert's *Erlkönig* illustrates the benefit of using the **@copyof** attribute.
 
