@@ -1,11 +1,6 @@
 <measure>
   <staff n="1">
     <layer>
-      <mRest/>
-    </layer>
-  </staff>
-  <staff n="2">
-    <layer>
       <tuplet num="3" num.visible="true" xml:id="analysis.tup1">
         <chord dur="8">
           <note oct="3" pname="g"/>
@@ -23,11 +18,6 @@
       <tuplet copyof="#analysis.tup1" xml:id="analysis.tup2"/>
       <tuplet copyof="#analysis.tup1" xml:id="analysis.tup3"/>
       <tuplet copyof="#analysis.tup1" xml:id="analysis.tup4"/>
-    </layer>
-  </staff>
-  <staff n="3">
-    <layer>
-      <mRest/>
     </layer>
   </staff>
 </measure>

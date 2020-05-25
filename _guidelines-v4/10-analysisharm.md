@@ -6,6 +6,4 @@ title: "Analysis Markup and Harmonies"
 sectionid: "analysisharm"
 ---
 
-{% include version-warning %}
-
-This is a placeholder that needs to be filled.
+This chapter of the MEI Guidelines describes how the results of a musical analysis or harmonic information may be stored in MEI. 
