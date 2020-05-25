@@ -72,7 +72,7 @@
                                 </layer>
                             </staff>
                             <pedal dir="down" startid="#ex-35-01" place="below" staff="2"/>
-                            <pedal dir="down" startid="#ex-35-13" place="below" staff="2" vo="-5.5"/>
+                            <pedal dir="bounce" startid="#ex-35-13" place="below" staff="2" vo="-5.5"/>
                         </measure>
                         <measure n="36" right="single">
                             <staff n="1">
@@ -114,8 +114,8 @@
                                     </beam>
                                 </layer>
                             </staff>
-                            <pedal dir="down" startid="#ex-36-01" place="below" staff="2"/>
-                            <pedal dir="down" startid="#ex-36-13" place="below" staff="2" vo="-5.5"/>
+                            <pedal dir="bounce" startid="#ex-36-01" place="below" staff="2"/>
+                            <pedal dir="bounce" startid="#ex-36-13" place="below" staff="2" vo="-5.5"/>
                         </measure>
                     </section>
                 </score>
