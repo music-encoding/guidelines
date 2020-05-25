@@ -1,0 +1,2 @@
+Indicates whether bar lines go across the space between staves (true) or are only
+          drawn across the lines of each staff (false).

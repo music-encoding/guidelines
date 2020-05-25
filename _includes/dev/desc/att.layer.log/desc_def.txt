@@ -1,0 +1,1 @@
+Provides a mechanism for linking the layer to a layerDef element.

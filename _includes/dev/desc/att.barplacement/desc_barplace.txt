@@ -1,0 +1,1 @@
+Records the location of a bar line.

@@ -1,0 +1,1 @@
+Groups milestone-style elements found in music notation.

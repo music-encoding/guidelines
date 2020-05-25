@@ -1,0 +1,2 @@
+Attributes that record a time stamp for the end of an event in terms of musical
+      time.

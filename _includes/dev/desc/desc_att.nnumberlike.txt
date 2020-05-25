@@ -1,0 +1,1 @@
+Attributes used to supply a number-like designation for an element.

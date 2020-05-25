@@ -1,0 +1,1 @@
+Indicates how the page should be scaled when rendered.

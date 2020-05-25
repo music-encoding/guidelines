@@ -1,0 +1,1 @@
+Describes the position of the cutout on the parent folium / bifolium.

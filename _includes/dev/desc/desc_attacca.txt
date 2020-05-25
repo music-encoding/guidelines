@@ -1,0 +1,2 @@
+An instruction to begin the next section or movement of a composition without
+      pause.

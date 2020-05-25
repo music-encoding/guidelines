@@ -1,0 +1,1 @@
+Denotes the staff location of the bar line if its length is non-standard.

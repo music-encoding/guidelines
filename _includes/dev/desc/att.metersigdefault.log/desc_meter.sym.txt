@@ -1,0 +1,2 @@
+Indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C'
+          for common time or 'C' with a slash for cut time.

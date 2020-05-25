@@ -1,0 +1,2 @@
+Records the horizontal adjustment of a feature's programmatically-determined end
+          point.

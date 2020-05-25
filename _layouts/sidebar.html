@@ -1,24 +1,40 @@
 ---
 layout: default
 ---
-<div class="columns">
+<div class="columns specsLayout">
 
-    <div class="column col-8">
+    <div class="top-navigation column col-md-12 show-md">
+      <div class="top-navigation-header columns">
+        <div class="buttonbox">
+          <button class="btn btn-action btn-sm btn-primary" id="topNavigationShow"><i class="icon icon-menu"></i></button>
+        </div>
+
+        <div class="searchbox">
+          <form action="{{ page.url | relative_url }}">
+            <div class="tipue_search_group">
+              <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column col-8 col-md-12">
 
         <div id="tipue_search_content"></div>
 
         {{ content }}
 
     </div>
-    <div class="column col-4">
+
+    <div class="column col-4 hide-md">
 
         <form action="{{ page.url | relative_url }}">
           <div class="tipue_search_group">
             <input name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="" type="text"><button type="submit" class="tipue_search_button"><span class="tipue_search_icon">⚲</span></button>
           </div>
         </form>
-
-        <div class="divider"></div>
 
         {% for sb in site.sidebar %}
             {% if page.sidebar == sb.id %}
@@ -39,6 +55,39 @@ layout: default
 
         {% include sectionToc.html version=page.version section=page.section %}
     </div>
+
+</div>
+
+<div class="modal" id="toc-modal">
+  <a href="#close" id="toc-modal-outer-close" class="modal-overlay" aria-label="Close"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" id="toc-modal-inner-close" class="btn btn-clear float-right" aria-label="Close"></a>
+      <div class="modal-title h5">Table of Contents</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        {% for sb in site.sidebar %}
+            {% if page.sidebar == sb.id %}
+
+                {% for s in sb.content %}
+
+                    {% if forloop.first %} <ul class="nav"> {% endif %}
+                    <li class="nav-item">
+                        <a href="{{ site.baseurl }}/{{ page.version }}/{{ s.url }}">{{s.label}}</a>
+                    </li>
+
+                    {% if forloop.last %} </ul> {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+
+        <div class="divider"></div>
+
+        {% include sectionToc.html version=page.version section=page.section %}
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -47,5 +96,17 @@ $(document).ready(function() {
         showURL: false,
         descriptiveWords: 25
     });
+    document.getElementById('topNavigationShow').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-outer-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
+    document.getElementById('toc-modal-inner-close').addEventListener('click',function(e) {
+      var elem = document.getElementById('toc-modal');
+      elem.classList.toggle('active');
+    })
 });
 </script>

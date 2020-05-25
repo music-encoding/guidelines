@@ -1,0 +1,1 @@
+Records the output x coordinate of the stem's attachment point.

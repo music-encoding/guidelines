@@ -1,0 +1,1 @@
+Describes a physical writing surface attached to the original document.

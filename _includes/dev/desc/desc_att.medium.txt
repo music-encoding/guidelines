@@ -1,0 +1,1 @@
+Attributes describing a writing medium, such as pencil or ink.
