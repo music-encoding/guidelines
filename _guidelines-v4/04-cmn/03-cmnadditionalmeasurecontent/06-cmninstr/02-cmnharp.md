@@ -11,6 +11,6 @@ In MEI, harp pedal settings are encoded using the {% include link elem="harpPeda
 The musical intention of the element is described using the **@c**, **@d**, **@e**, **@f**, **@g**, **@a** and **@b** attributes, which affect the corresponding strings of the harp. All of these attributes may take the values "*f*" (flat), "*s*" (sharp) or "*n*" (natural), where "n" is the default value, which is assumed when one of these attributes is not specified.
 
 {% include figure img="ExampleImages/harppedal.1.png" caption="Harp pedal diagrams" %}
-{% include mei example="cmn/cmn-sample155.txt" valid="" %}
+{% include mei example="cmn/cmn-sample155.txt" valid="true" %}
 
 In the first diagram of the preceding example, the B, and E pedals are in the flat position, while the C pedal is in sharp position. The other, non-specified pedals are in the natural position.
