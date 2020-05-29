@@ -22,10 +22,10 @@ title: "att.mensur.log"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span>, <span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span>, <span class="ident attribute" title="Describes the long-breve relationship.">modusminor</span>, <span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">num</span>, <span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">numbase</span>, <span class="ident attribute" title="Describes the semibreve-minim relationship.">prolatio</span>, <span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span>, <span class="ident attribute" title="Indicates the number of slashes present.">slash</span>, <span class="ident attribute" title="Describes the breve-semibreve relationship.">tempus</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span>, <span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span>, <span class="ident attribute" title="Describes the long-breve relationship.">modusminor</span>, <span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">num</span>, <span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">numbase</span>, <span class="ident attribute" title="Describes the semibreve-minim relationship.">prolatio</span>, <span class="ident attribute" title="Describes the breve-semibreve relationship.">tempus</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                  <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the divisions of the breve in use in 14th-century Italy.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.divisio.html">data.DIVISIO</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the maxima-long relationship.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.modusmaior.html">data.MODUSMAIOR</a>.
@@ -44,28 +44,11 @@ title: "att.mensur.log"
                   <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the semibreve-minim relationship.">prolatio</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the semibreve-minim relationship.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.prolatio.html">data.PROLATIO</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
-                        </span></div>
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the number of slashes present.">slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of slashes present.</span><span class="attributeValues">
-                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slash.html">data.SLASH</a>.
-                        </span></div>
                   <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the breve-semibreve relationship.">tempus</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the breve-semibreve relationship.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tempus.html">data.TEMPUS</a>.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
-                  <div class="classBox direct" title="direct childs">
-                     <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
-                     <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
-                              </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
-                              </span></div>
-                     </div>
-                  </div>
                   <div class="classBox" title="att.duration.ratio">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.ratio.html">att.duration.ratio</a></label><span class="classDesc">(MEI.shared) Attributes that describe duration as a ratio.</span></div>
                      <div class="classContent">
@@ -94,13 +77,8 @@ title: "att.mensur.log"
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the breve-semibreve relationship.">tempus</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the breve-semibreve relationship.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tempus.html">data.TEMPUS</a>.
                               </span></div>
-                     </div>
-                  </div>
-                  <div class="classBox" title="att.slashCount">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashCount</a></label><span class="classDesc">(MEI.shared) Attributes for recording the number of slashes that accompany a feature.</span></div>
-                     <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the number of slashes present.">slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of slashes present.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slash.html">data.SLASH</a>.
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the divisions of the breve in use in 14th-century Italy.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.divisio.html">data.DIVISIO</a>.
                               </span></div>
                      </div>
                   </div>
@@ -109,6 +87,9 @@ title: "att.mensur.log"
                   <div class="classBox" title="MEI.mensural">
                      <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
                      <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the divisions of the breve in use in 14th-century Italy.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.divisio.html">data.DIVISIO</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the maxima-long relationship.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.modusmaior.html">data.MODUSMAIOR</a>.
                               </span></div>
@@ -126,9 +107,6 @@ title: "att.mensur.log"
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
-                              </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with numbase, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">num</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with numbase, describes duration as a ratio. num is the first value in the
                               ratio, while numbase is the second.</span><span class="attributeValues">
                               Value is a positive integer.
@@ -136,12 +114,6 @@ title: "att.mensur.log"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Along with num, describes duration as a ratio. num is the first value in the ratio, while numbase is the second.">numbase</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Along with num, describes duration as a ratio. num is the first value in the ratio,
                               while numbase is the second.</span><span class="attributeValues">
                               Value is a positive integer.
-                              </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
-                              </span></div>
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the number of slashes present.">slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of slashes present.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slash.html">data.SLASH</a>.
                               </span></div>
                      </div>
                   </div>
@@ -201,39 +173,7 @@ title: "att.mensur.log"
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.shared.html">att.mensural.shared</a>"</span></span>/&gt;</span></div>
-                           
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
-                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashCount</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
-                        
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
-                           
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dot"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Specifies whether a dot is to be added to the base symbol.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
-                                       
-                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>"</span></span>
-                                       /&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
-                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
-                           
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"sign"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>The base symbol in the mensuration sign/time signature of mensural notation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
-                                       
-                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>"</span></span>
-                                       /&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
-                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
-                           <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
             </div>
          </div>
