@@ -1,0 +1,1 @@
+Describes a folded sheet of paper.

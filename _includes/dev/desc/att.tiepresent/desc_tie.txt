@@ -1,0 +1,2 @@
+Indicates that this element participates in a tie. If visual information about the tie
+          needs to be recorded, then a tie element should be employed.

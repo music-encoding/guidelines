@@ -12,11 +12,11 @@ The following elements are available to encode information about a recorded perf
 {% include desc elem="clip" %}
 {% include desc elem="when" %}
 
-The {% include link elem="performance" %} element begins a subtree of the {% include link elem="music" %} element and appears alongside with, or instead of, {% include link elem="body" %} (described in {% include link id="sharedMusicElement" %} and {% include link elem="facsimile" %} (described in {% include link id="facsimiles" %}). A {% include link elem="performance" %} element represents one recorded performance event. As a performance may be recorded in multiple formats or by different personnel or or using different equipment, the {% include link elem="performance" %} element may group one or more recordings of the event.
+The {% include link elem="performance" %} element begins a subtree of the {% include link elem="music" %} element and appears alongside with, or instead of, {% include link elem="body" %} (described in {% include link id="sharedMusicElement" %}) and {% include link elem="facsimile" %} (described in {% include link id="facsimiles" %}). A {% include link elem="performance" %} element represents one recorded performance event. As a performance may be recorded in multiple formats or by different personnel or using different equipment, the {% include link elem="performance" %} element may group one or more recordings of the event.
 
-The **@decls** attribute can be used to point to performance medium metadata for the performed work. See {% include link id="headerWorkMedium" %} for more details.
+The **@decls** attribute can be used to point to performance medium metadata for the performed work. See {% include link id="headerWorkMedium" %} and {% include link id="FRBR" %} for more details.
 
-The {% include link elem="recording" %} element identifies a single recording event taking place within an absolute temporal space. The class att.mediaBounds contains attributes that can be used to define this space:
+The {% include link elem="recording" %} element identifies a single recording event taking place within an absolute temporal space. The class {% include link atts="mediaBounds" %} contains attributes that can be used to define this space:
 
 {% include desc atts="att.mediaBounds/begin att.mediaBounds/end att.mediaBounds/betype" %}
 
@@ -54,7 +54,7 @@ If an encoding of the notated text with which the media files are associated is 
 
 {% include mei example="performances/performances-sample328.xml" valid="feasible" %}
 
-Clips can also be aligned with components of the musical text encoded in the {% include link elem="body" %}. The **@startid** attribute can be used to specify the starting element in the sequence of events to which the clip corresponds. The following example shows the use of of clip elements to identify the exposition of the first movement from Beethoven's piano sonata Op. 14, no. 2 and its concluding ‘codetta’.
+Clips can also be aligned with components of the musical text encoded in the {% include link elem="body" %}. The **@startid** attribute can be used to specify the starting element in the sequence of events to which the clip corresponds. The following example shows the use of clip elements to identify the exposition of the first movement from Beethoven's piano sonata Op. 14, no. 2 and its concluding ‘codetta’.
 
 {% include mei example="performances/performances-sample329.xml" valid="feasible" %}
 
@@ -82,7 +82,7 @@ Having identified a point of interest, another feature of the encoding may be as
 
 One use of the association created between the annotation and the time point is to display the text of the annotation as the recording or clip is played.
 
-The **@when** attributes allows only a single value, so only one-to-one relationships can be created using this mechanism. However, one-to-many relationships are accommodated in the opposite direction; that is, from a time point to other features of the markup. For example, 
+The **@when** attributes allows only a single value, so only one-to-one relationships can be created using this mechanism. However, one-to-many relationships are accommodated in the opposite direction; that is, from a time point to other features of the markup. For example,
 
 {% include mei example="performances/performances-sample335.xml" valid="" %}
 

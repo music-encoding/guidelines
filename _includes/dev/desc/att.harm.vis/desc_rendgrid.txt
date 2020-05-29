@@ -1,0 +1,1 @@
+Describes how the harmonic indication should be rendered.

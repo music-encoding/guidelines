@@ -1,0 +1,1 @@
+Tie attribute values: initial, medial, terminal.

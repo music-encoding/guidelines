@@ -1,0 +1,1 @@
+Indicates to what degree the harmonic label is supported by the notation.

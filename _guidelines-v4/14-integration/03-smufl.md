@@ -6,4 +6,4 @@ title: "SMuFL"
 sectionid: "smufl"
 ---
 
-This chapter will explain how to use SMuFL in MEI.
+This section describes how to use MEI with the Standard Music Font Layout (SMuFL [https://www.smufl.org/](https://www.smufl.org/)) specification.

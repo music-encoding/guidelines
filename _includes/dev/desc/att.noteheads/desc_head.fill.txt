@@ -1,0 +1,1 @@
+Describes how/if the notehead is filled.

@@ -1,0 +1,1 @@
+Contains the end point of a date range in standard ISO form.

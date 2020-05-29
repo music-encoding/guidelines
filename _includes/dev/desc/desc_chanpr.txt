@@ -1,0 +1,1 @@
+(channel pressure) – MIDI channel pressure/after touch.

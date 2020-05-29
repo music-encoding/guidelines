@@ -1,0 +1,1 @@
+Indicates that this event is "under a beam".

@@ -10,7 +10,7 @@ The CMN module adds two optional attributes, **@grace** and **@grace.time**, to 
 
 The encoding of the left-most example would look like this:
 
-{% include mei example="cmn/cmn-sample100.txt" valid="" %}
+{% include mei example="cmn/cmn-sample100.txt" valid="true" %}
 
 Grace notes are not counted when determining the measure's conformance to the current time signature. Therefore, the **@dur** attribute records only the *written* rhythmic value of the grace note. The time necessary for the performance of grace notes can be unspecified, calculated based on taking time from other non-grace notes, or specified precisely using the **@dur.ges** attribute.
 
@@ -18,6 +18,6 @@ The values of **@grace** indicate from which note time is ‘borrowed’ to perf
 
 The **@grace.time** attribute is only to be used in combination with the **@grace** attribute. It records the amount of time (as a percentage of the written duration) that the grace note should ‘steal’ from the preceding note (when **@grace**='unacc') or the following note (when **@grace**='acc').
 
-Multiple grace notes can be grouped within a {% include link elem="graceGrp" %} element, which itself allows all values for **@grace** as explained above. The optional **@attach** attribute is used to record whether the grace note group is attached to the following event or to the preceding one. 
+Multiple grace notes can be grouped within a {% include link elem="graceGrp" %} element, which itself allows all values for **@grace** as explained above. The optional **@attach** attribute is used to record whether the grace note group is attached to the following event or to the preceding one.
 
 More information about grace notes in the context of other CMN ornaments is available in chapter {% include link id="cmnOrnaments" %}.

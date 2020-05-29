@@ -1,0 +1,1 @@
+Attributes that establish the boundaries of a media object.

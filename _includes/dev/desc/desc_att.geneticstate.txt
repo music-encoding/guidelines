@@ -1,0 +1,1 @@
+Attributes that pertain to a genetic state.

@@ -1,0 +1,1 @@
+Describes vertical order of items printed between staves, from top to bottom.

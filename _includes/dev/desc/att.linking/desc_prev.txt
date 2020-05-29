@@ -1,0 +1,1 @@
+Points to the previous event(s) in a user-defined collection.

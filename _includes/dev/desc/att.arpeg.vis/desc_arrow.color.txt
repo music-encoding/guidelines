@@ -1,0 +1,1 @@
+Captures the overall color of the arrow.

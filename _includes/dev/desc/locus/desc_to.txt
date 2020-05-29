@@ -1,0 +1,1 @@
+Specifies the end-point of the location in a normalized form.
