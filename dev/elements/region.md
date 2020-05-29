@@ -11,7 +11,7 @@ title: "region"
          <div class="desc">Contains the name of an administrative unit such as a state, province, or county,
             larger
             than a settlement, but smaller than a country.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesGeogNames">9.3.2.2 Geographic Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesGeogNames">9.2.8.3.2 Geographic Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

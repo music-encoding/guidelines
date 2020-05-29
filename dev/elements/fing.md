@@ -8,7 +8,9 @@ title: "fing"
    <div class="elementSpec">
       <h3 id="fing">&lt;fing&gt;</h3>
       <div class="specs">
-         <div class="desc">finger – An individual finger in a fingering indication.</div>
+         <div class="desc">finger – An individual finger in a fingering indication.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnFing">4.3.6.4 Fingering</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.fingering</div>

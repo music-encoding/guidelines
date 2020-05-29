@@ -8,7 +8,9 @@ title: "strophicus"
    <div class="elementSpec">
       <h3 id="strophicus">&lt;strophicus&gt;</h3>
       <div class="specs">
-         <div class="desc">Strophicus.</div>
+         <div class="desc">Strophicus.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.neumes</div>

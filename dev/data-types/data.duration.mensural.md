@@ -8,7 +8,9 @@ title: "data.DURATION.mensural"
    <div class="datatypeSpec">
       <h3 id="data.DURATION.mensural">data.DURATION.mensural</h3>
       <div class="specs">
-         <div class="desc">Logical, that is, written, duration attribute values for the mensural repertoire.</div>
+         <div class="desc">Logical, that is, written, note-shape (or note symbol) attribute values for the mensural
+            repertoire.
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.mensural</div>
@@ -18,7 +20,7 @@ title: "data.DURATION.mensural"
             <div class="statement list">
                <div class="classBox dtBox" title="Data Types">
                   <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.DURATION.mensural</span></div>
-                  <div class="classContent"><span class="ident datatype" data-ident="data.DURATION" data-module="MEI" title="Logical, that is, written, duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a></span><span class="ident datatype" data-ident="data.DURATION.gestural" data-module="MEI" title="Performed duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a></span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.DURATION" data-module="MEI" title="Logical, that is, written, duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a></span><span class="ident datatype" data-ident="data.DURATION.gestural" data-module="MEI" title="Performed duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a></span><span class="ident datatype" data-ident="data.DURATIONRESTS.mensural" data-module="MEI.mensural" title="Logical, that is, written, duration attribute values for mensural rests."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.durationrests.mensural.html">data.DURATIONRESTS.mensural</a></span></div>
                </div>
             </div>
          </div>
@@ -27,12 +29,12 @@ title: "data.DURATION.mensural"
             <div class="statement list">
                <div class="dataValueBox" id="maxima"><span class="dataValue ident">maxima</span><span class="dataValue desc">Two or three times as long as a longa.</span></div>
                <div class="dataValueBox" id="longa"><span class="dataValue ident">longa</span><span class="dataValue desc">Two or three times as long as a brevis.</span></div>
-               <div class="dataValueBox" id="brevis"><span class="dataValue ident">brevis</span><span class="dataValue desc">Two times as long as a semibreve.</span></div>
+               <div class="dataValueBox" id="brevis"><span class="dataValue ident">brevis</span><span class="dataValue desc">Two or three times as long as a semibreve.</span></div>
                <div class="dataValueBox" id="semibrevis"><span class="dataValue ident">semibrevis</span><span class="dataValue desc">Half or one-third as long as a breve/brevis.</span></div>
                <div class="dataValueBox" id="minima"><span class="dataValue ident">minima</span><span class="dataValue desc">Half or one-third as long as a semibreve/semibrevis.</span></div>
-               <div class="dataValueBox" id="semiminima"><span class="dataValue ident">semiminima</span><span class="dataValue desc">Half or one-third as long as a minima.</span></div>
-               <div class="dataValueBox" id="fusa"><span class="dataValue ident">fusa</span><span class="dataValue desc">Half or one-third as long as a semiminima.</span></div>
-               <div class="dataValueBox" id="semifusa"><span class="dataValue ident">semifusa</span><span class="dataValue desc">Half or one-third as long as a fusa.</span></div>
+               <div class="dataValueBox" id="semiminima"><span class="dataValue ident">semiminima</span><span class="dataValue desc">Half as long as a minima.</span></div>
+               <div class="dataValueBox" id="fusa"><span class="dataValue ident">fusa</span><span class="dataValue desc">Half as long as a semiminima.</span></div>
+               <div class="dataValueBox" id="semifusa"><span class="dataValue ident">semifusa</span><span class="dataValue desc">Half as long as a fusa.</span></div>
             </div>
          </div>
          <div class="facet declaration">
@@ -41,7 +43,8 @@ title: "data.DURATION.mensural"
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
                      <div class="indent1 indent"><span data-indentation="1" class="element">&lt;macroSpec <span class="attribute">ident=</span><span class="attributevalue">"data.DURATION.mensural"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.mensural"</span> <span class="attribute">type=</span><span class="attributevalue">"dt"</span>&gt;</span>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Logical, that is, written, duration attribute values for the mensural repertoire.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Logical, that is, written, note-shape (or note symbol) attribute values for the mensural
+                           repertoire.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;content&gt;</span>
                            
@@ -59,7 +62,7 @@ title: "data.DURATION.mensural"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"brevis"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Two times as long as a semibreve.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Two or three times as long as a semibreve.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"semibrevis"</span>&gt;</span>
@@ -74,17 +77,17 @@ title: "data.DURATION.mensural"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"semiminima"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Half or one-third as long as a minima.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Half as long as a minima.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fusa"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Half or one-third as long as a semiminima.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Half as long as a semiminima.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"semifusa"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Half or one-third as long as a fusa.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Half as long as a fusa.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>

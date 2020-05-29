@@ -11,7 +11,7 @@ title: "editionStmt"
          <div class="desc">(edition statement) – Container for meta-data pertaining to a particular edition of
             the
             material being described.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEditionstmt">3.1.1.2 Edition Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerFileDescription">3.4.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEditionstmt">3.4.1.1 Edition Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

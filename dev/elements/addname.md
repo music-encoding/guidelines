@@ -11,7 +11,7 @@ title: "addName"
          <div class="desc">(additional name) – Contains an additional name component, such as a nickname, epithet,
             or
             alias, or any other descriptive phrase used within a personal name.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesPersNames">9.3.2.4 Personal Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesPersNames">9.2.8.3.4 Personal Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

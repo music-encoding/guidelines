@@ -9,7 +9,7 @@ title: "manifestation"
       <h3 id="manifestation">&lt;manifestation&gt;</h3>
       <div class="specs">
          <div class="desc">A bibliographic description of a physical embodiment of an expression of a work.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkClass">3.1.3.12 Classification</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRentities">3.5.1 FRBR Entities in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkClass">3.6.12 Classification</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerExtendedMetadata">3.8.2 Including non-MEI Metadata in MEI files</a>,<a class="chapterLink" href="/guidelines/dev/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

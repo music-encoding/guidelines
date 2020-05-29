@@ -11,6 +11,7 @@ title: "analytic"
          <div class="desc">(analytic level) – Contains bibliographic elements describing an item (e.g. an article
             or
             poem) published within a monograph or journal and not as an independent publication.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

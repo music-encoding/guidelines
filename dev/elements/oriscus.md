@@ -8,7 +8,9 @@ title: "oriscus"
    <div class="elementSpec">
       <h3 id="oriscus">&lt;oriscus&gt;</h3>
       <div class="specs">
-         <div class="desc">Oriscus.</div>
+         <div class="desc">Oriscus.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.neumes</div>

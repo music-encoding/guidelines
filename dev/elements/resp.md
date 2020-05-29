@@ -9,7 +9,7 @@ title: "resp"
       <h3 id="resp">&lt;resp&gt;</h3>
       <div class="specs">
          <div class="desc">(responsibility) – A phrase describing the nature of intellectual responsibility.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

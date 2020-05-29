@@ -8,7 +8,9 @@ title: "att.signifLet.vis"
    <div class="attClassSpec">
       <h3 id="att.signifLet.vis">att.signifLet.vis</h3>
       <div class="specs">
-         <div class="desc">Visual domain attributes.</div>
+         <div class="desc">Visual domain attributes.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.visual</div>

@@ -9,7 +9,7 @@ title: "li"
       <h3 id="li">&lt;li&gt;</h3>
       <div class="specs">
          <div class="desc">(list item) – Single item in a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/list.html">list</a>.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textLists">9.1.3 Lists</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textLists">9.2.4 Lists</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

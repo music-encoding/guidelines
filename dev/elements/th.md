@@ -11,7 +11,7 @@ title: "th"
          <div class="desc">(table header) – Designates a table cell containing column or row heading information
             as
             opposed to one containing data.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/textencoding.html#&#34;figTable&#34;">9.2 Figures and Tables</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableTableRows">9.2.2.1 Rows</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableTableCells">9.2.2.2 Cells</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableTableRows">9.2.5.1 Rows</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableTableCells">9.2.5.2 Cells</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

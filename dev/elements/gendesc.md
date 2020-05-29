@@ -10,6 +10,7 @@ title: "genDesc"
       <div class="specs">
          <div class="desc">(genetic description) - Bundles information about the textual development of a
             work.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/scholarlyediting.html#geneticStates">11.3.1 Encoding Genetic States</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#geneticReferences">11.3.2 Referencing Genetic States</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

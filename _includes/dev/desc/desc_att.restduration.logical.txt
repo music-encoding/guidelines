@@ -1,0 +1,1 @@
+Attributes that express duration of rests in musical terms.

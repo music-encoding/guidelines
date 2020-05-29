@@ -8,7 +8,9 @@ title: "genState"
    <div class="elementSpec">
       <h3 id="genState">&lt;genState&gt;</h3>
       <div class="specs">
-         <div class="desc">Describes a distinctive state in the textual development of a work.</div>
+         <div class="desc">Describes a distinctive state in the textual development of a work.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a>,<a class="chapterLink desc" href="/guidelines/dev/content/scholarlyediting.html#geneticStates">11.3.1 Encoding Genetic States</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#geneticReferences">11.3.2 Referencing Genetic States</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#geneticPageChanges">11.3.4 Genetic Changes at the Page Level</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.genetic</div>

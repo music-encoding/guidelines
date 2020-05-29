@@ -9,7 +9,7 @@ title: "p"
       <h3 id="p">&lt;p&gt;</h3>
       <div class="specs">
          <div class="desc">(paragraph) – One or more text phrases that form a logical prose passage.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/lyricsperfdir.html#sharedParagraphs">8.1.1 Paragraphs</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#textProse">9.1.2 Paragraphs</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#textTitlePages">9.1.6.2 Title Pages</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableCaptionsDescriptions">9.2.1.1 Figure Captions and Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#textTitlePages">3.7.1 Title Pages</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#sharedParagraphs">9.2.1 Paragraphs</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableCaptionsDescriptions">9.2.3.1 Figure Captions and Descriptions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

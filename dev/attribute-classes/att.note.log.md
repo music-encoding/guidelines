@@ -22,7 +22,7 @@ title: "att.note.log"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates this feature is 'colored'; that is, it is a participant in a change in rhythmic values. In mensural notation, coloration is indicated by colored notes (red, black, etc.) where void notes would otherwise occur. In CMN, coloration is indicated by an inverse color; that is, the note head is void when it would otherwise be filled and vice versa.">colored</span>, <span class="ident attribute" title="">cue</span>, <span class="ident attribute" title="Records the number of augmentation dots required by a written dotted duration.">dots</span>, <span class="ident attribute" title="Records the duration of a feature using the relative durational values provided by the data.DURATION datatype.">dur</span>, <span class="ident attribute" title="Marks a note or chord as a &#34;grace&#34; (without a definite performed duration) and records from which other note/chord it should &#34;steal&#34; time.">grace</span>, <span class="ident attribute" title="Records the amount of time to be &#34;stolen&#34; from a non-grace note/chord.">grace.time</span>, <span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span>, <span class="ident attribute" title="Captures written octave information.">oct</span>, <span class="ident attribute" title="Contains a written pitch name.">pname</span>, <span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span>, <span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp</span>, <span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp.ges</span>, <span class="ident attribute" title="Records the onset time in terms of ISO time.">tstamp.real</span>, <span class="ident attribute" title="when Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a element elsewhere in the document.">when</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates this feature is 'colored'; that is, it is a participant in a change in rhythmic values. In mensural notation, coloration is indicated by colored notes (red, black, etc.) where void notes would otherwise occur. In CMN, coloration is indicated by an inverse color; that is, the note head is void when it would otherwise be filled and vice versa.">colored</span>, <span class="ident attribute" title="">cue</span>, <span class="ident attribute" title="Records the number of augmentation dots required by a written dotted duration.">dots</span>, <span class="ident attribute" title="Records the duration of a feature using the relative durational values provided by the data.DURATION datatype.">dur</span>, <span class="ident attribute" title="Encodes the durational quality of a mensural note using the values provided by the data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major / minor / duplex quality of a note).">dur.quality</span>, <span class="ident attribute" title="Marks a note or chord as a &#34;grace&#34; (without a definite performed duration) and records from which other note/chord it should &#34;steal&#34; time.">grace</span>, <span class="ident attribute" title="Records the amount of time to be &#34;stolen&#34; from a non-grace note/chord.">grace.time</span>, <span class="ident attribute" title="Identifies the layer to which a feature applies.">layer</span>, <span class="ident attribute" title="Captures written octave information.">oct</span>, <span class="ident attribute" title="Contains a written pitch name.">pname</span>, <span class="ident attribute" title="Signifies the staff on which a notated event occurs or to which a control event applies. Mandatory when applicable.">staff</span>, <span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp</span>, <span class="ident attribute" title="Encodes the onset time in terms of musical time, i.e., beats[.fractional beat part], as expressed in the written time signature.">tstamp.ges</span>, <span class="ident attribute" title="Records the onset time in terms of ISO time.">tstamp.real</span>, <span class="ident attribute" title="when Indicates the point of occurrence of this feature along a time line. Its value must be the ID of a element elsewhere in the document.">when</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates this feature is 'colored'; that is, it is a participant in a change in rhythmic values. In mensural notation, coloration is indicated by colored notes (red, black, etc.) where void notes would otherwise occur. In CMN, coloration is indicated by an inverse color; that is, the note head is void when it would otherwise be filled and vice versa.">colored</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this feature is 'colored'; that is, it is a participant in a change in
                         rhythmic values. In mensural notation, coloration is indicated by colored notes (red,
@@ -43,6 +43,11 @@ title: "att.note.log"
                         the
                         data.DURATION datatype.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Encodes the durational quality of a mensural note using the values provided by the data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major / minor / duplex quality of a note).">dur.quality</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Encodes the durational quality of a mensural note using the values provided by the
+                        data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major
+                        / minor / duplex quality of a note).</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.durquality.mensural.html">data.DURQUALITY.mensural</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Marks a note or chord as a &#34;grace&#34; (without a definite performed duration) and records from which other note/chord it should &#34;steal&#34; time.">grace</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Marks a note or chord as a "grace" (without a definite performed duration) and records
                         from which other note/chord it should "steal" time.</span><span class="attributeValues">
@@ -220,6 +225,16 @@ title: "att.note.log"
                         </div>
                      </div>
                   </div>
+                  <div class="classBox" title="att.duration.quality">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.quality.html">att.duration.quality</a></label><span class="classDesc">(MEI.mensural) Attribute that expresses duration for a given mensural note symbol.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Encodes the durational quality of a mensural note using the values provided by the data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major / minor / duplex quality of a note).">dur.quality</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Encodes the durational quality of a mensural note using the values provided by the
+                              data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major
+                              / minor / duplex quality of a note).</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.durquality.mensural.html">data.DURQUALITY.mensural</a>.
+                              </span></div>
+                     </div>
+                  </div>
                </div>
                <div id="attributes_tabbedContent_module" class="facetTabbedContent module">
                   <div class="classBox" title="MEI.cmn">
@@ -243,6 +258,16 @@ title: "att.note.log"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.gestural"><span class="ident attribute" title="Records the onset time in terms of ISO time.">tstamp.real</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the onset time in terms of ISO time.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.isotime.html">data.ISOTIME</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="MEI.mensural">
+                     <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Encodes the durational quality of a mensural note using the values provided by the data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major / minor / duplex quality of a note).">dur.quality</span><span class="attributeUsage">(recommended)</span><span class="attributeDesc desc">Encodes the durational quality of a mensural note using the values provided by the
+                              data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major
+                              / minor / duplex quality of a note).</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.durquality.mensural.html">data.DURQUALITY.mensural</a>.
                               </span></div>
                      </div>
                   </div>
@@ -361,6 +386,9 @@ title: "att.note.log"
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitched.html">att.pitched</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.quality.html">att.duration.quality</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
             </div>

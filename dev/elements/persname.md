@@ -10,7 +10,7 @@ title: "persName"
       <div class="specs">
          <div class="desc">(personal name) – Designation for an individual, including any or all of that individual's
             forenames, surnames, honorific titles, and added names.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink" href="/guidelines/dev/content/lyricsperfdir.html#sharedNames">8.1.4.1 Names and Dates</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#&#34;namesDates&#34;">9.3 Names and Dates</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#namesdatesBasic">9.3.1 Basic Elements for Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesPersNames">9.3.2.4 Personal Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#&#34;namesDates&#34;">9.2.8.1 Names and Dates</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#namesBasic">9.2.8.2 Basic Elements for Names</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesPersNames">9.2.8.3.4 Personal Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

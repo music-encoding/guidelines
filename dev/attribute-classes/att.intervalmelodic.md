@@ -9,7 +9,7 @@ title: "att.intervalMelodic"
       <h3 id="att.intervalMelodic">att.intervalMelodic</h3>
       <div class="specs">
          <div class="desc">Attributes that provide for description of intervallic content.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/analysisharm.html#analysisSpecificAttrs">10.1.2 Event-Specific Analytical Information</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink desc" href="/guidelines/dev/content/analysisharm.html#analysisSpecificAttrs">10.1.2 Event-Specific Analytical Information</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "relationList"
       <h3 id="relationList">&lt;relationList&gt;</h3>
       <div class="specs">
          <div class="desc">Gathers relation elements.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkRelationships">3.1.3.13 Work Relationships</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRrelations">3.2.3 FRBR Relationships</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRrelations">3.5.3 FRBR Relationships</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkRelationships">3.6.13 Work Relationships</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

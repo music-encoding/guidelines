@@ -9,7 +9,7 @@ title: "clefGrp"
       <h3 id="clefGrp">&lt;clefGrp&gt;</h3>
       <div class="specs">
          <div class="desc">(clef group) – A set of simultaneously-occurring clefs.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedKeySignaturesAndClefs">2.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedKeySignaturesAndClefs">2.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.6.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

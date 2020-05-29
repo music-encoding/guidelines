@@ -9,7 +9,7 @@ title: "front"
       <h3 id="front">&lt;front&gt;</h3>
       <div class="specs">
          <div class="desc">(front matter) – Bundles prefatory text found before the start of the musical text.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedMusicElement">2.1.2 Music Element</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textBack">9.1.7 Back Matter</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedMusicElement">2.1.2 Music Element</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textBack">9.1.2.7 Back Matter</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

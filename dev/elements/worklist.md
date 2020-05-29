@@ -11,7 +11,7 @@ title: "workList"
          <div class="desc">(work list) – Grouping mechanism for information describing non-bibliographic aspects
             of a
             text.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkLanguage">3.1.3.6 Language Usage</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;headerstructure&#34;">3.2 Structure of the MEI Header</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerNotesStatement">3.4.1.5 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkLanguage">3.6.6 Language Usage</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

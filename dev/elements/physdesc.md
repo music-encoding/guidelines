@@ -13,7 +13,7 @@ title: "physDesc"
             handling of physical materials, such as their dimension, quantity, color, style, and
             technique
             of creation.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a>,<a class="chapterLink" href="/guidelines/dev/content/lyricsperfdir.html#sharedTitlePages">8.1.3 Transcription of Titlepages</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#textTitlePages">3.7.1 Title Pages</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;foliadesc&#34;">3.7.2 Description of folia</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

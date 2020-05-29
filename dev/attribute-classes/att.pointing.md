@@ -8,7 +8,9 @@ title: "att.pointing"
    <div class="attClassSpec">
       <h3 id="att.pointing">att.pointing</h3>
       <div class="specs">
-         <div class="desc">Attributes common to all pointing/linking elements.</div>
+         <div class="desc">Attributes common to all pointing/linking elements.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2 Specifying Link Elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2 Specifying Link Elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2 Specifying Link Elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2 Specifying Link Elements</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.shared</div>

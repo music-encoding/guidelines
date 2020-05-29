@@ -9,7 +9,7 @@ title: "ligature"
       <h3 id="ligature">&lt;ligature&gt;</h3>
       <div class="specs">
          <div class="desc">A mensural notation symbol that combines two or more notes into a single sign.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralLigatures">5.5 Ligatures</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralLigatures">5.4 Ligatures</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

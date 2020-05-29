@@ -9,7 +9,7 @@ title: "proport"
       <h3 id="proport">&lt;proport&gt;</h3>
       <div class="specs">
          <div class="desc">(proportion) – Description of note duration as arithmetic ratio.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralProportions">5.4 Proportions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/mensural.html#mensuralProportions">5.3 Proportions</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "graphic"
       <h3 id="graphic">&lt;graphic&gt;</h3>
       <div class="specs">
          <div class="desc">Indicates the location of an inline graphic.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableFigures">9.2.1 Figures</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableImages">9.2.1.2 Images</a>,<a class="chapterLink" href="/guidelines/dev/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/dev/content/linkingdata.html#ptrRefDifference">13.1.1.1 Difference between Pointers and References</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.6.2 Incipits</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;foliumdimensions&#34;">3.7.2.2 Specifying page dimensions</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableFigures">9.2.3 Figures</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#figTableImages">9.2.3.2 Images</a>,<a class="chapterLink" href="/guidelines/dev/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/dev/content/linkingdata.html#ptrRefMimetype">13.2.2.3 Define the mimetype of a link element's target</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

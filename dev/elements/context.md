@@ -14,7 +14,7 @@ title: "context"
             the
             aesthetic movement of the late 19th century, etc.) or the historical, social, intellectual,
             artistic, or other context within which the expression was realized.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkAudience">3.1.3.8 Audience and Context</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkAudience">3.6.8 Audience and Context</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -8,7 +8,9 @@ title: "patch"
    <div class="elementSpec">
       <h3 id="patch">&lt;patch&gt;</h3>
       <div class="specs">
-         <div class="desc">Describes a physical writing surface attached to the original document.</div>
+         <div class="desc">Describes a physical writing surface attached to the original document.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;patches&#34;">3.7.2.3 Patches</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;patches&#34;">3.7.2.3 Patches</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.header</div>

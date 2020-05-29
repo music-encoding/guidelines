@@ -8,7 +8,9 @@ title: "episema"
    <div class="elementSpec">
       <h3 id="episema">&lt;episema&gt;</h3>
       <div class="specs">
-         <div class="desc">Episema.</div>
+         <div class="desc">Episema.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.neumes</div>

@@ -9,7 +9,7 @@ title: "expressionList"
       <h3 id="expressionList">&lt;expressionList&gt;</h3>
       <div class="specs">
          <div class="desc">Gathers bibliographic expression entities.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkRelationships">3.1.3.13 Work Relationships</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRentities">3.5.1 FRBR Entities in MEI</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkRelationships">3.6.13 Work Relationships</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

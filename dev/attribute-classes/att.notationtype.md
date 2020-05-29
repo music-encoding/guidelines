@@ -8,7 +8,9 @@ title: "att.notationType"
    <div class="attClassSpec">
       <h3 id="att.notationType">att.notationType</h3>
       <div class="specs">
-         <div class="desc">Attributes that provide for classification of notation.</div>
+         <div class="desc">Attributes that provide for classification of notation.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/mensural.html#notationtype">5.6.1 Notation Type</a>,<a class="chapterLink desc" href="/guidelines/dev/content/mensural.html#notationtype">5.6.1 Notation Type</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI</div>

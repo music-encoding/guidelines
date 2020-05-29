@@ -11,6 +11,7 @@ title: "att.timestamp.logical"
          <div class="desc">Attributes that record a time stamp in terms of musical time, i.e., beats[.fractional
             beat
             part].
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/introduction.html#&#34;eventsControlevents&#34;">1.2.2 Events and Controlevents</a>,<a class="chapterLink desc" href="/guidelines/dev/content/introduction.html#&#34;timestamps&#34;">1.2.3 Timestamps in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

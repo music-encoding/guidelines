@@ -11,7 +11,7 @@ title: "otherChar"
          <div class="desc">(other distinguishing characteristic) – Any characteristic that serves to differentiate
             a
             work or expression from another.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkOtherChar">3.1.3.4 Other Identifying Characteristics</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkOtherChar">3.6.4 Other Identifying Characteristics</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

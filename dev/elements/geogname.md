@@ -10,7 +10,7 @@ title: "geogName"
       <div class="specs">
          <div class="desc">(geographic name) – The proper noun designation for a place, natural feature, or political
             jurisdiction.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkHistory">3.1.3.5 Work History</a>,<a class="chapterLink" href="/guidelines/dev/content/lyricsperfdir.html#sharedNames">8.1.4.1 Names and Dates</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#&#34;namesDates&#34;">9.3 Names and Dates</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#namesdatesBasic">9.3.1 Basic Elements for Names and Dates</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesGeogNames">9.3.2.2 Geographic Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkHistory">3.6.5 Work History</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#&#34;namesDates&#34;">9.2.8.1 Names and Dates</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#namesBasic">9.2.8.2 Basic Elements for Names</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesGeogNames">9.2.8.3.2 Geographic Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

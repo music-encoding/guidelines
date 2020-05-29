@@ -11,6 +11,7 @@ title: "monogr"
          <div class="desc">(monograph level) – Contains bibliographic elements describing an item, for example,
             a
             published book or journal, score, recording, or an unpublished manuscript.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

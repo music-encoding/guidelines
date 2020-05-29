@@ -10,6 +10,7 @@ title: "att.timestamp2.logical"
       <div class="specs">
          <div class="desc">Attributes that record a time stamp for the end of an event in terms of musical
             time.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/introduction.html#&#34;eventsControlevents&#34;">1.2.2 Events and Controlevents</a>,<a class="chapterLink desc" href="/guidelines/dev/content/introduction.html#&#34;timestamps&#34;">1.2.3 Timestamps in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "event"
       <h3 id="event">&lt;event&gt;</h3>
       <div class="specs">
          <div class="desc">Contains a free-text event description.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkHistory">3.1.3.5 Work History</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkHistory">3.6.5 Work History</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

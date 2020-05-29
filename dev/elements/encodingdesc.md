@@ -12,7 +12,7 @@ title: "encodingDesc"
             the
             source or sources from which it was derived as well as applications used in the
             encoding/editing process.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnOrnamentsOverride">4.4.1.1 Overriding Default Resolutions</a>,<a class="chapterLink" href="/guidelines/dev/content/analysisharm.html#&#34;analysis&#34;">10.1 Analytical Information</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;headerstructure&#34;">3.2 Structure of the MEI Header</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnOrnamentsOverride">4.4.1.1 Overriding Default Resolutions</a>,<a class="chapterLink" href="/guidelines/dev/content/analysisharm.html#&#34;analysis&#34;">10.1 Analytical Information</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

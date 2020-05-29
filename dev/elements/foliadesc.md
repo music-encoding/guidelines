@@ -11,6 +11,7 @@ title: "foliaDesc"
          <div class="desc">Describes the order of folia and bifolia making up the text block of a manuscript
             or
             print.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;foliadesc&#34;">3.7.2 Description of folia</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;linkingsurfaces&#34;">3.7.2.1 Linking surface elements</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;foliumdimensions&#34;">3.7.2.2 Specifying page dimensions</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;patches&#34;">3.7.2.3 Patches</a>,<a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#geneticPageChanges">11.3.4 Genetic Changes at the Page Level</a>,<a class="chapterLink" href="/guidelines/dev/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "meter"
       <h3 id="meter">&lt;meter&gt;</h3>
       <div class="specs">
          <div class="desc">Captures information about the time signature within bibliographic descriptions.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkKeyTempoMeter">3.1.3.3 Key, Tempo, and Meter</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.6.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

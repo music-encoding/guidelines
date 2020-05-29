@@ -8,7 +8,9 @@ title: "cutout"
    <div class="elementSpec">
       <h3 id="cutout">&lt;cutout&gt;</h3>
       <div class="specs">
-         <div class="desc">A cutout is a section of a document sheet that has been removed and is now missing.</div>
+         <div class="desc">A cutout is a section of a document sheet that has been removed and is now missing.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;cutouts&#34;">3.7.2.4 Cutouts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;cutouts&#34;">3.7.2.4 Cutouts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;cutouts&#34;">3.7.2.4 Cutouts</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.header</div>

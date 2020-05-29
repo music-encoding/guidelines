@@ -9,7 +9,7 @@ title: "sysReq"
       <h3 id="sysReq">&lt;sysReq&gt;</h3>
       <div class="specs">
          <div class="desc">(system requirements) – System requirements for using the electronic item.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerPublicationDistribution">3.4.1.3 Publication, Distribution, etc.</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
