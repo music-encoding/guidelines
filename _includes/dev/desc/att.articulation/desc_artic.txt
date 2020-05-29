@@ -1,0 +1,4 @@
+Encodes the written articulation(s). Articulations are normally encoded in order from
+          the note head outward; that is, away from the stem. See additional notes at att.vis.note.
+          Only articulations should be encoded in the artic attribute; for example, fingerings
+          should be encoded using the fing element.

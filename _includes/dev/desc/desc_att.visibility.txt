@@ -1,0 +1,1 @@
+Attributes describing whether a feature should be displayed.

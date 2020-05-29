@@ -1,0 +1,1 @@
+Records the position of a syllable within a word.

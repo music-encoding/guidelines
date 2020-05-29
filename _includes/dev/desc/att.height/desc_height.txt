@@ -1,0 +1,1 @@
+Measurement of the vertical dimension of an entity.

@@ -1,0 +1,1 @@
+(score definition) – Container for score meta-information.

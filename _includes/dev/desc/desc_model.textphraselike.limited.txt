@@ -1,0 +1,2 @@
+Groups textual elements that occur at the level of individual words or phrases. This class
+      is equivalent to the model.textPhraseLike class without the pb element.

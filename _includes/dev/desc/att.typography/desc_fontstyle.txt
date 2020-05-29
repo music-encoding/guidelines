@@ -1,0 +1,1 @@
+Records the style of a font, i.e, italic, oblique, or normal.

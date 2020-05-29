@@ -1,0 +1,10 @@
+<measure>
+  <staff>
+    <layer>
+      <note dur="4" oct="4" pname="c"/>
+      <note dur="4" intm="1.1" oct="4" pname="d"/>
+      <note dur="4" intm="7.9" oct="5" pname="d"/>
+      <note dur="4" intm="-2.334" oct="5" pname="c"/>
+    </layer>
+  </staff>
+</measure>

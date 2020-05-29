@@ -1,0 +1,2 @@
+Numeric value capturing a cost. Can only be interpreted in combination with the
+          currency attribute.

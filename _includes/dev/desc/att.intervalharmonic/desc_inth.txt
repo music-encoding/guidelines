@@ -1,0 +1,1 @@
+Encodes the harmonic interval between pitches occurring at the same time.

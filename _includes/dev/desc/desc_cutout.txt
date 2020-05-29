@@ -1,0 +1,1 @@
+A cutout is a section of a document sheet that has been removed and is now missing.

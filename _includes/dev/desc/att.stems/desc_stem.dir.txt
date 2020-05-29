@@ -1,0 +1,1 @@
+Describes the direction of a stem.

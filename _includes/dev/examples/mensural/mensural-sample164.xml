@@ -1,0 +1,7 @@
+<layer>
+    <mensur modusminor="3"/>
+    <note dur="longa"/>
+    <note dur="brevis"/>
+    <note dur="brevis" dur.quality="altera"/>
+    <note dur="longa"/>
+</layer>

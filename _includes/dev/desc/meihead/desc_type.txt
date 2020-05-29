@@ -1,0 +1,2 @@
+Specifies the kind of document to which the header is attached, for example whether it
+          is a corpus or individual text.

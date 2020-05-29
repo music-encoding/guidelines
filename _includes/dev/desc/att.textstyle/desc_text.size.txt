@@ -1,0 +1,2 @@
+Provides a default value for the font size of text (other than lyrics) when this
+          information is not provided on the individual elements.

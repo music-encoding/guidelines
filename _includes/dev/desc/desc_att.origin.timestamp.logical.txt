@@ -1,0 +1,1 @@
+Attributes that identify a musical range in terms of musical time.

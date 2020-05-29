@@ -1,0 +1,2 @@
+In string tablature, the fret number. The value '0' (zero) indicates the open
+      string.

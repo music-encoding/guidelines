@@ -1,0 +1,1 @@
+Bibliographic relationship values based on MODS version 3.4.

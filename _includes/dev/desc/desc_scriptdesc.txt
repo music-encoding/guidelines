@@ -1,0 +1,2 @@
+(script description) – Contains a description of the letters or characters used in an
+      autographic item.

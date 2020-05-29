@@ -1,0 +1,2 @@
+Indicates that the performance of the next section should begin immediately following
+          this one.

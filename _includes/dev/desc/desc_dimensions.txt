@@ -1,0 +1,1 @@
+Information about the physical size of an entity; usually includes numerical data.

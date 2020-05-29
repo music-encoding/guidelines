@@ -1,0 +1,1 @@
+Groups elements containing stage directions in performance texts.
