@@ -94,38 +94,11 @@ title: "att.mensural.shared"
                   <li class="tab-item"><a data-display="class" id="availableAt_class_tab" href="#availableAt" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="availableAt_module_tab" href="#availableAt" class="displayTab">by module</a></li>
                </ul>
-               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(mensuration) – Collects information about the metrical relationship between a note value and the next smaller value; that is, either triple or duple."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a></span>, <span class="ident element" title="Captures information about mensuration within bibliographic descriptions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a></span>, <span class="ident element" title="(score definition) – Container for score meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a></span>, <span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span></div>
+               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(mensuration) – Collects information about the metrical relationship between a note value and the next smaller value; that is, either triple or duple."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a></span>, <span class="ident element" title="Captures information about mensuration within bibliographic descriptions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a></span></div>
                <div id="availableAt_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox" title="att.mensural.shared">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.shared.html">att.mensural.shared</a></label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="classBox" title="att.mensural.log">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.log.html">att.mensural.log</a></label><span class="classDesc"></span></div>
-                           <div class="classContent">
-                              <div class="classBox" title="att.scoreDef.log.mensural">
-                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.scoredef.log.mensural.html">att.scoreDef.log.mensural</a></label><span class="classDesc"></span></div>
-                                 <div class="classContent">
-                                    <div class="classBox" title="att.scoreDef.log">
-                                       <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.scoredef.log.html">att.scoreDef.log</a></label><span class="classDesc"></span></div>
-                                       <div class="classContent">
-                                          <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a><span class="elementDesc">(score definition) – Container for score meta-information.</span></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="classBox" title="att.staffDef.log.mensural">
-                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffdef.log.mensural.html">att.staffDef.log.mensural</a></label><span class="classDesc"></span></div>
-                                 <div class="classContent">
-                                    <div class="classBox" title="att.staffDef.log">
-                                       <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffdef.log.html">att.staffDef.log</a></label><span class="classDesc"></span></div>
-                                       <div class="classContent">
-                                          <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a><span class="elementDesc">(staff definition) – Container for staff meta-information.</span></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
                         <div class="classBox" title="att.mensur.log">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensur.log.html">att.mensur.log</a></label><span class="classDesc"></span></div>
                            <div class="classContent">
@@ -151,13 +124,6 @@ title: "att.mensural.shared"
                         <div class="elementRef" data-module="MEI.mensural"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a><span class="elementDesc">(mensuration) – Collects information about the metrical relationship between a note
                               value
                               and the next smaller value; that is, either triple or duple.</span></div>
-                     </div>
-                  </div>
-                  <div class="classBox" title="MEI.shared">
-                     <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
-                     <div class="classContent">
-                        <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a><span class="elementDesc">(score definition) – Container for score meta-information.</span></div>
-                        <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a><span class="elementDesc">(staff definition) – Container for staff meta-information.</span></div>
                      </div>
                   </div>
                </div>
