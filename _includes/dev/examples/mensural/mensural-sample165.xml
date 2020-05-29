@@ -1,7 +1,12 @@
 <layer>
-   <note dur="longa" num="6" numbase="1"></note>
-   <note dur="brevis" num="3" numbase="1"></note>
-   <dot form="div"></dot>
-   <note dur="brevis" num="3" numbase="1"></note>
-   <note dur="longa" num="6" numbase="1"></note>
+    <mensur modusminor="3" tempus="3"/>
+    <note dur="longa"/>
+    <note dur="semibrevis"/>
+    <note dur="semibrevis"/>
+    <note dur="semibrevis"/>
+    <dot form="div"/>
+    <note dur="semibrevis"/>
+    <note dur="semibrevis" dur.quality="maior"/>
+    <note dur="brevis"/>
+    <note dur="longa" dur.quality="duplex"/>
 </layer>
