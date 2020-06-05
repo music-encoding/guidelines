@@ -36,12 +36,13 @@ title: "att.lv.anl"
                   <li class="tab-item"><a data-display="class" id="availableAt_class_tab" href="#availableAt" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="availableAt_module_tab" href="#availableAt" class="displayTab">by module</a></li>
                </ul>
-               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="A &#34;tie-like&#34; indication that a note should ring beyond its written duration."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a></span></div>
+               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(laissez vibrer) – A &#34;tie-like&#34; indication that a note should ring beyond its written duration."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a></span></div>
                <div id="availableAt_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox" title="att.lv.anl">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.lv.anl.html">att.lv.anl</a></label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a><span class="elementDesc">A "tie-like" indication that a note should ring beyond its written duration.</span></div>
+                        <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a><span class="elementDesc">(laissez vibrer) – A "tie-like" indication that a note should ring beyond its written
+                              duration.</span></div>
                      </div>
                   </div>
                </div>
@@ -49,7 +50,8 @@ title: "att.lv.anl"
                   <div class="classBox" title="MEI.cmn">
                      <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a><span class="elementDesc">A "tie-like" indication that a note should ring beyond its written duration.</span></div>
+                        <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/lv.html">lv</a><span class="elementDesc">(laissez vibrer) – A "tie-like" indication that a note should ring beyond its written
+                              duration.</span></div>
                      </div>
                   </div>
                </div>
