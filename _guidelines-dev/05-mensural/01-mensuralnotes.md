@@ -38,6 +38,6 @@ The example below illustrates this case in a passage in *perfect modus* from the
 
 {% include figure img="modules/mensural/Motet_Fauvel_Fol22r_Triplum_Staves4-5.png" caption="Inflammatis invidia / Sicut de ligno / Victimae paschali detail from F-Pn 146, fol. 22r (https://gallica.bnf.fr/ark:/12148/btv1b8454675g/f55.image). " %}
 
-<!--{% include verovio example="Motet_Fauvel_Fol22r_Triplum.mei" encoding=true %}-->
+<!--{% include verovio example="motet_fauvel_fol22r_triplum.mei" encoding=true %}-->
 
 {% include mei example="mensural/mensural-sample153.xml" valid="" %}

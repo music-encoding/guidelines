@@ -24,7 +24,7 @@ The last three values are to be used exclusively in *Ars antiqua* mensural notat
 
 
 The following example illustrates an **alteration** (the second *brevis*) in *modus minor perfectus*. Notice that the second *brevis* has doubled its regular value, it has been altered, unlike the first one.
-{% include verovio example="Alteration.mei" encoding=true %}
+{% include verovio example="alteration.mei" encoding=true %}
 
 It is possible to omit the **@dur.quality** attribute in a note when the performed duration of the note is the default value provided by the mensuration. In this case, the *longas* are perfect, just as the mensuration (*perfect modus minor*) indicates. Therefore, the **@dur.quality** attribute can be omitted for the two *longas*.
 {% include mei example="mensural/mensural-sample164.xml" valid="" %}
@@ -32,15 +32,15 @@ The same applies to the examples that follow.
 
 
 The following example illustrates an **imperfection** (the two *longae*) in *modus minor perfectus* with the same *longa*-*brevis*-*brevis*-*longa* sequence but with an additional *dot of division* between the two *breves*. Notice that here the *longae* have been imperfected, unlike the previous example in which they kept the perfect value indicated by the mensuration.
-{% include verovio example="Imperfection.mei" encoding=true %}
+{% include verovio example="imperfection.mei" encoding=true %}
 
 
 The following example in *modus minor imperfectus* illustrates the use of a dot of augmentation following the *longa*. Notice that the *longa*, which is supposed to be imperfect according to the mensuration, has a perfect value due to the augmentation dot.
-{% include verovio example="Augmentation.mei" encoding=true %}
+{% include verovio example="augmentation.mei" encoding=true %}
 
 
 Finally, the following example illustrates the **@dur.quality** values related to the *Ars antiqua* style, for *perfect modus*, with the breve equivalents notated in the lower staff for reference (as in the previous examples).
-{% include verovio example="Ars_antiqua.mei" encoding=true %}
+{% include verovio example="ars_antiqua.mei" encoding=true %}
 
 **Note:** In *Ars Antiqua*, only the *longa* could be "perfecta" / "imperfecta" and the *brevis* could have a regular value ("recta") or be "altera". In the *Ars nova*, principles of imperfection and alteration were extended into the other note levels (*brevis*-*semibrevis* and *semibrevis*-*minima*). This means that the *breves* in *Ars antiqua* do not have a "perfecta" / "imperfecta" quality, and this is why there is no **@dur.quality** attribute for the *breves* in the previous example. However, the *brevis* can have a ternary division (indicated by *tempus=”3”*), being divided either into three (equal) *minor semibreves* or into a *minor*-*maior* pair of *semibreves*.
 The encoding also allows for the possibility of encoding a binary division of the breve in *Ars antiqua* notations: the  indication *tempus=”2”* indicates the breve is divided into two equal *semibreves*. This is why in this example with *tempus="3"*, the *semibreves* do have a **@dur.quality** attribute (with values "minor" or "maior").
