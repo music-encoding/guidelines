@@ -9,7 +9,7 @@ title: "incip"
       <h3 id="incip">&lt;incip&gt;</h3>
       <div class="specs">
          <div class="desc">(incipit) – The opening music and/or words of a musical or textual work.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.6.2 Incipits</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
@@ -490,7 +490,7 @@ title: "incip"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.inciplike.html">model.incipLike</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- Can XSLT be used within content to "select" an incipit from the 
+                        <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- Can XSLT be used within content to "select" an incipit from the
                               already-encoded MEI transcription in the music element?
                               &lt;rng:ref name="macro.XSLT"/&gt; --&gt;</span></div>
                         

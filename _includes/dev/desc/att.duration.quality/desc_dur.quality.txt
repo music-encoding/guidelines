@@ -1,0 +1,1 @@
+Encodes the durational quality of a mensural note using the values provided by the data.DURQUALITY.mensural datatype (i.e., the perfect / imperfect / altered / major / minor / duplex quality of a note).

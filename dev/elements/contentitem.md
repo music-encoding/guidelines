@@ -9,7 +9,7 @@ title: "contentItem"
       <h3 id="contentItem">&lt;contentItem&gt;</h3>
       <div class="specs">
          <div class="desc">Contains a single entry within a content description element.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkContents">3.1.3.9 Work Contents</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerSeriesStatement">3.4.1.4 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkContents">3.6.9 Work Contents</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

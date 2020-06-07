@@ -8,7 +8,9 @@ title: "att.staffLoc"
    <div class="attClassSpec">
       <h3 id="att.staffLoc">att.staffLoc</h3>
       <div class="specs">
-         <div class="desc">Attributes that identify location on a staff in terms of lines and spaces.</div>
+         <div class="desc">Attributes that identify location on a staff in terms of lines and spaces.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.shared</div>

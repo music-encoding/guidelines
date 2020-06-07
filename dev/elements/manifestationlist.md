@@ -10,7 +10,7 @@ title: "manifestationList"
       <div class="specs">
          <div class="desc">A container for the descriptions of physical embodiments of an expression of a
             work.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;header&#34;">3.1 The MEI Header</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;headerstructure&#34;">3.2 Structure of the MEI Header</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

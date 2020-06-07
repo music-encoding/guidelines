@@ -13,7 +13,7 @@ title: "group"
             (or groups of such musical texts) which are regarded as a unit for some purpose, for
             example,
             the collected works of a composer.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedMusicElement">2.1.2 Music Element</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedGroupedTexts">2.1.2.1 Grouped Texts</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#corpusModuleOverview">3.4.1 Corpus Module Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedMusicElement">2.1.2 Music Element</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedGroupedTexts">2.1.2.1 Grouped Texts</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#corpusModuleOverview">3.8.5.1 Corpus Module Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

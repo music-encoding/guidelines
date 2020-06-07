@@ -1288,7 +1288,7 @@ title: "symbol"
                   element using the <span class="att">startid</span> attribute. Attributes in the att.visualOffset class may
                   be used to record horizontal, vertical, or time offsets from the absolute coordinates
                   or
-                  from the location of the referenced element. The <span class="att">ref</span> attribute must contain the
+                  from the location of the referenced element. The <span class="att">altsym</span> attribute must contain the
                   id of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element. The <span class="att">scale</span> attribute indicates
                   that the printed output must be scaled by the specified percentage.
                </p>
@@ -1389,7 +1389,7 @@ title: "symbol"
                               be used to record horizontal, vertical, or time offsets from the absolute coordinates
                               or
                               from the location of the referenced element. The 
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>ref<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute must contain the
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>altsym<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute must contain the
                               id of a 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;gi <span class="attribute">scheme=</span><span class="attributevalue">"MEI"</span>&gt;</span>symbolDef<span data-indentation="4" class="element">&lt;/gi&gt;</span></div> element. The 
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;att&gt;</span>scale<span data-indentation="4" class="element">&lt;/att&gt;</span></div> attribute indicates

@@ -9,7 +9,7 @@ title: "mdiv"
       <h3 id="mdiv">&lt;mdiv&gt;</h3>
       <div class="specs">
          <div class="desc">(musical division) – Contains a subdivision of the body of a musical text.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedDivisionsBody">2.1.2.2 Divisions of the Body</a>,<a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTempo">4.3.8.1 Tempo changes and other directives</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textFront">9.1.6.1 Front Matter</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedDivisionsBody">2.1.2.2 Divisions of the Body</a>,<a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedMdivContent">2.1.2.3 Content of Musical Divisions</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTempo">4.3.8.1 Tempo changes and other directives</a>,<a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textFront">9.1.2.1 Front Matter</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

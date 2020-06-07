@@ -11,7 +11,7 @@ title: "street"
          <div class="desc">full street address including any name or number identifying a building as well as
             the
             name of the street or route on which it is located.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesGeogNames">9.3.2.2 Geographic Names</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#namesdatesGeogNames">9.2.8.3.2 Geographic Names</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

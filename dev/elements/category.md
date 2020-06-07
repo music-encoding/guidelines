@@ -10,7 +10,7 @@ title: "category"
       <div class="specs">
          <div class="desc">Contains an individual descriptive category in a user-defined taxonomy, possibly nested
             within a superordinate category.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerClassDeclarations">3.1.2.5 Class Declarations</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerClassDeclarations">3.4.2.5 Class Declarations</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

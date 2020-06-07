@@ -11,7 +11,7 @@ title: "meiCorpus"
          <div class="desc">(MEI corpus) – A group of related MEI documents, consisting of a header for the group,
             and
             one or more <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mei.html">mei</a> elements, each with its own complete header.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#corpusModuleOverview">3.4.1 Corpus Module Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedDocumentElements">2.1.1 Document Elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#corpusModuleOverview">3.8.5.1 Corpus Module Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

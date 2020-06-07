@@ -10,7 +10,7 @@ title: "perfRes"
       <div class="specs">
          <div class="desc">(performance resource) – Name of an instrument on which a performer plays, a performer's
             voice range, or a standard performing ensemble designation.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkCast">3.1.3.7.1 Cast Lists</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkInstrumentation">3.1.3.7.2 Instrumentation</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.6.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkCast">3.6.7.1 Cast Lists</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkInstrumentation">3.6.7.2 Instrumentation</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

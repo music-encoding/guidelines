@@ -8,7 +8,9 @@ title: "att.width"
    <div class="attClassSpec">
       <h3 id="att.width">att.width</h3>
       <div class="specs">
-         <div class="desc">Attributes that describe horizontal size.</div>
+         <div class="desc">Attributes that describe horizontal size.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;foliumdimensions&#34;">3.7.2.2 Specifying page dimensions</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.shared</div>

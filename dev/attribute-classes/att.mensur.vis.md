@@ -24,7 +24,7 @@ title: "att.mensur.vis"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span>, <span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span>, <span class="ident attribute" title="Contains the name of a font-family.">fontfam</span>, <span class="ident attribute" title="Holds the name of a font.">fontname</span>, <span class="ident attribute" title="Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch, relative terms, e.g., &#34;small&#34;, &#34;larger&#34;, etc., or percentage values relative to &#34;normal&#34; size, e.g., &#34;125%&#34;.">fontsize</span>, <span class="ident attribute" title="Records the style of a font, i.e, italic, oblique, or normal.">fontstyle</span>, <span class="ident attribute" title="Used to indicate bold type.">fontweight</span>, <span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">form</span>, <span class="ident attribute" title="glyph.name glyph.num A name or label associated with the controlled vocabulary from which the value of or is taken.">glyph.auth</span>, <span class="ident attribute" title="Glyph name.">glyph.name</span>, <span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">glyph.num</span>, <span class="ident attribute" title="glyph.name glyph.num The web-accessible location of the controlled vocabulary from which the value of or is taken.">glyph.uri</span>, <span class="ident attribute" title="Holds the staff location of the feature.">loc</span>, <span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">orient</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span>, <span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span>, <span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span>, <span class="ident attribute" title="Contains the name of a font-family.">fontfam</span>, <span class="ident attribute" title="Holds the name of a font.">fontname</span>, <span class="ident attribute" title="Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch, relative terms, e.g., &#34;small&#34;, &#34;larger&#34;, etc., or percentage values relative to &#34;normal&#34; size, e.g., &#34;125%&#34;.">fontsize</span>, <span class="ident attribute" title="Records the style of a font, i.e, italic, oblique, or normal.">fontstyle</span>, <span class="ident attribute" title="Used to indicate bold type.">fontweight</span>, <span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">form</span>, <span class="ident attribute" title="glyph.name glyph.num A name or label associated with the controlled vocabulary from which the value of or is taken.">glyph.auth</span>, <span class="ident attribute" title="Glyph name.">glyph.name</span>, <span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">glyph.num</span>, <span class="ident attribute" title="glyph.name glyph.num The web-accessible location of the controlled vocabulary from which the value of or is taken.">glyph.uri</span>, <span class="ident attribute" title="Holds the staff location of the feature.">loc</span>, <span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">orient</span>, <span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span>, <span class="ident attribute" title="Indicates the number of slashes present.">slash</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
                         an
@@ -34,6 +34,9 @@ title: "att.mensur.vis"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
                         as used in pre-CMN notation.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains the name of a font-family.">fontfam</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains the name of a font-family.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontfamily.html">data.FONTFAMILY</a>.
@@ -76,6 +79,12 @@ title: "att.mensur.vis"
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the rotation or reflection of the base symbol.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>.
                         </span></div>
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the number of slashes present.">slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of slashes present.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slash.html">data.SLASH</a>.
+                        </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox direct" title="direct childs">
@@ -86,6 +95,12 @@ title: "att.mensur.vis"
                               "<span style="font-weight: 500;">horizontal</span>" <i>(Horizontally oriented.)</i>,  "<span style="font-weight: 500;">vertical</span>" <i>(Vertically oriented.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the rotation or reflection of the base symbol.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
                               </span></div>
                      </div>
                   </div>
@@ -159,6 +174,14 @@ title: "att.mensur.vis"
                               </span></div>
                      </div>
                   </div>
+                  <div class="classBox" title="att.slashCount">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashCount</a></label><span class="classDesc">(MEI.shared) Attributes for recording the number of slashes that accompany a feature.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the number of slashes present.">slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of slashes present.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slash.html">data.SLASH</a>.
+                              </span></div>
+                     </div>
+                  </div>
                </div>
                <div id="attributes_tabbedContent_module" class="facetTabbedContent module">
                   <div class="classBox" title="MEI.externalsymbols">
@@ -208,6 +231,9 @@ title: "att.mensur.vis"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the staff location of the feature.">loc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the staff location of the feature.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffloc.html">data.STAFFLOC</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the number of slashes present.">slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number of slashes present.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.slash.html">data.SLASH</a>.
+                              </span></div>
                      </div>
                   </div>
                   <div class="classBox" title="MEI.usersymbols">
@@ -223,11 +249,17 @@ title: "att.mensur.vis"
                   <div class="classBox" title="MEI.visual">
                      <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
                      <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the base symbol is written vertically or horizontally.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">horizontal</span>" <i>(Horizontally oriented.)</i>,  "<span style="font-weight: 500;">vertical</span>" <i>(Vertically oriented.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the rotation or reflection of the base symbol.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
                               </span></div>
                      </div>
                   </div>
@@ -290,6 +322,9 @@ title: "att.mensur.vis"
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.slashcount.html">att.slashCount</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
@@ -321,6 +356,32 @@ title: "att.mensur.vis"
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"dot"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Specifies whether a dot is to be added to the base symbol.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"sign"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>The base symbol in the mensuration sign/time signature of mensural notation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>"</span></span>
                                        /&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>

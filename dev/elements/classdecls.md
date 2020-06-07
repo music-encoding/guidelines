@@ -9,7 +9,7 @@ title: "classDecls"
       <h3 id="classDecls">&lt;classDecls&gt;</h3>
       <div class="specs">
          <div class="desc">Groups information which describes the nature or topic of an entity.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerClassDeclarations">3.1.2.5 Class Declarations</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkClass">3.1.3.12 Classification</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerClassDeclarations">3.4.2.5 Class Declarations</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkClass">3.6.12 Classification</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

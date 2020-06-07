@@ -8,7 +8,9 @@ title: "att.internetMedia"
    <div class="attClassSpec">
       <h3 id="att.internetMedia">att.internetMedia</h3>
       <div class="specs">
-         <div class="desc">Attributes which record the type of an electronic resource.</div>
+         <div class="desc">Attributes which record the type of an electronic resource.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2 Specifying Link Elements</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.shared</div>

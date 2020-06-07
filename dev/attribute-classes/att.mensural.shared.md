@@ -22,8 +22,11 @@ title: "att.mensural.shared"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span>, <span class="ident attribute" title="Describes the long-breve relationship.">modusminor</span>, <span class="ident attribute" title="Describes the semibreve-minim relationship.">prolatio</span>, <span class="ident attribute" title="Describes the breve-semibreve relationship.">tempus</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span>, <span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span>, <span class="ident attribute" title="Describes the long-breve relationship.">modusminor</span>, <span class="ident attribute" title="Describes the semibreve-minim relationship.">prolatio</span>, <span class="ident attribute" title="Describes the breve-semibreve relationship.">tempus</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
+                  <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the divisions of the breve in use in 14th-century Italy.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.divisio.html">data.DIVISIO</a>.
+                        </span></div>
                   <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the maxima-long relationship.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.modusmaior.html">data.MODUSMAIOR</a>.
                         </span></div>
@@ -53,6 +56,9 @@ title: "att.mensural.shared"
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the breve-semibreve relationship.">tempus</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the breve-semibreve relationship.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tempus.html">data.TEMPUS</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the divisions of the breve in use in 14th-century Italy.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.divisio.html">data.DIVISIO</a>.
+                              </span></div>
                      </div>
                   </div>
                </div>
@@ -60,6 +66,9 @@ title: "att.mensural.shared"
                   <div class="classBox" title="MEI.mensural">
                      <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
                      <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the divisions of the breve in use in 14th-century Italy.">divisio</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the divisions of the breve in use in 14th-century Italy.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.divisio.html">data.DIVISIO</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Describes the maxima-long relationship.">modusmaior</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the maxima-long relationship.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.modusmaior.html">data.MODUSMAIOR</a>.
                               </span></div>
@@ -85,38 +94,11 @@ title: "att.mensural.shared"
                   <li class="tab-item"><a data-display="class" id="availableAt_class_tab" href="#availableAt" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="availableAt_module_tab" href="#availableAt" class="displayTab">by module</a></li>
                </ul>
-               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(mensuration) – Collects information about the metrical relationship between a note value and the next smaller value; that is, either triple or duple."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a></span>, <span class="ident element" title="Captures information about mensuration within bibliographic descriptions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a></span>, <span class="ident element" title="(score definition) – Container for score meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a></span>, <span class="ident element" title="(staff definition) – Container for staff meta-information."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a></span></div>
+               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(mensuration) – Collects information about the metrical relationship between a note value and the next smaller value; that is, either triple or duple."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensur.html">mensur</a></span>, <span class="ident element" title="Captures information about mensuration within bibliographic descriptions."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/mensuration.html">mensuration</a></span></div>
                <div id="availableAt_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox" title="att.mensural.shared">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.shared.html">att.mensural.shared</a></label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="classBox" title="att.mensural.log">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensural.log.html">att.mensural.log</a></label><span class="classDesc"></span></div>
-                           <div class="classContent">
-                              <div class="classBox" title="att.scoreDef.log.mensural">
-                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.scoredef.log.mensural.html">att.scoreDef.log.mensural</a></label><span class="classDesc"></span></div>
-                                 <div class="classContent">
-                                    <div class="classBox" title="att.scoreDef.log">
-                                       <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.scoredef.log.html">att.scoreDef.log</a></label><span class="classDesc"></span></div>
-                                       <div class="classContent">
-                                          <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a><span class="elementDesc">(score definition) – Container for score meta-information.</span></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="classBox" title="att.staffDef.log.mensural">
-                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffdef.log.mensural.html">att.staffDef.log.mensural</a></label><span class="classDesc"></span></div>
-                                 <div class="classContent">
-                                    <div class="classBox" title="att.staffDef.log">
-                                       <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffdef.log.html">att.staffDef.log</a></label><span class="classDesc"></span></div>
-                                       <div class="classContent">
-                                          <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a><span class="elementDesc">(staff definition) – Container for staff meta-information.</span></div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
                         <div class="classBox" title="att.mensur.log">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensur.log.html">att.mensur.log</a></label><span class="classDesc"></span></div>
                            <div class="classContent">
@@ -144,12 +126,33 @@ title: "att.mensural.shared"
                               and the next smaller value; that is, either triple or duple.</span></div>
                      </div>
                   </div>
-                  <div class="classBox" title="MEI.shared">
-                     <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc"></span></div>
-                     <div class="classContent">
-                        <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/scoredef.html">scoreDef</a><span class="elementDesc">(score definition) – Container for score meta-information.</span></div>
-                        <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/staffdef.html">staffDef</a><span class="elementDesc">(staff definition) – Container for staff meta-information.</span></div>
+               </div>
+            </div>
+         </div>
+         <div class="facet constraints" id="constraints">
+            <div class="label">Constraints</div>
+            <div class="statement classes list">
+               <ul class="tab">
+                  <li class="tab-item"><a data-display="text" id="constraints_text_tab" href="#constraints" class="displayTab active">text</a></li>
+                  <li class="tab-item"><a data-display="schematron" id="constraints_schematron_tab" href="#constraints" class="displayTab">schematron</a></li>
+               </ul>
+               <div id="constraints_tabbedContent_text" class="facetTabbedContent text active">
+                  <div class="constraint">
+                     <div class="schematronText">When the @divisio attribute is used, the @tempus and @prolatio attributes are not
+                        allowed.
                      </div>
+                  </div>
+               </div>
+               <div id="constraints_tabbedContent_schematron" class="facetTabbedContent schematron">
+                  <div class="constraint">
+                     <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                           <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:mensur[@divisio]"</span>&gt;</span>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not(@tempus) and not(@prolatio)"</span>&gt;</span>
+                                 When the @divisio attribute is used, the @tempus and @prolatio attributes are not
+                                 allowed.
+                                 <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                              <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
                   </div>
                </div>
             </div>
@@ -161,6 +164,20 @@ title: "att.mensural.shared"
                      <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"att.mensural.shared"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.mensural"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Shared attributes in the mensural repertoire.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"mensuration_conflicting_attributes"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:mensur[@divisio]"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not(@tempus) and not(@prolatio)"</span>&gt;</span>
+                                    When the @divisio attribute is used, the @tempus and @prolatio attributes are not
+                                    allowed.
+                                    <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
@@ -212,6 +229,19 @@ title: "att.mensural.shared"
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.tempus.html">data.TEMPUS</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"divisio"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Describes the divisions of the breve in use in 14th-century Italy.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.divisio.html">data.DIVISIO</a>"</span></span>
                                        /&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>

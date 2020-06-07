@@ -11,6 +11,7 @@ title: "desc"
          <div class="desc">(description) – Container for text that briefly describes the feature to which it
             is
             attached, including its intended usage, purpose, or application as appropriate.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/scholarlyediting.html#geneticStates">11.3.1 Encoding Genetic States</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -444,8 +444,8 @@ title: "att.line.vis"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- @length not necessary: 
-                                 @length implies we know the direction of the vector which we 
+                           <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- @length not necessary:
+                                 @length implies we know the direction of the vector which we
                                  can't know without establishing an end point, which in turn makes
                                  @length redundant.
                                  --&gt;</span></div>

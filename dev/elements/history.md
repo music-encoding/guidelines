@@ -10,7 +10,7 @@ title: "history"
       <div class="specs">
          <div class="desc">Provides a container for information about the history of a resource other than the
             circumstances of its creation.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkHistory">3.1.3.5 Work History</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkAudience">3.1.3.8 Audience and Context</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkHistory">3.6.5 Work History</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkAudience">3.6.8 Audience and Context</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

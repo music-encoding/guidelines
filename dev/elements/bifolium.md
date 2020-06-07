@@ -8,7 +8,9 @@ title: "bifolium"
    <div class="elementSpec">
       <h3 id="bifolium">&lt;bifolium&gt;</h3>
       <div class="specs">
-         <div class="desc">Describes a folded sheet of paper.</div>
+         <div class="desc">Describes a folded sheet of paper.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;foliadesc&#34;">3.7.2 Description of folia</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;linkingsurfaces&#34;">3.7.2.1 Linking surface elements</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;foliumdimensions&#34;">3.7.2.2 Specifying page dimensions</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;patches&#34;">3.7.2.3 Patches</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;cutouts&#34;">3.7.2.4 Cutouts</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.header</div>

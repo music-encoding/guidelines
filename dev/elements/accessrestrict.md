@@ -10,7 +10,7 @@ title: "accessRestrict"
       <div class="specs">
          <div class="desc">(access restriction) – Describes the conditions that affect the accessibility of
             material.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerPublicationDistribution">3.1.1.4 Publication, Distribution, etc.</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerPublicationDistribution">3.4.1.3 Publication, Distribution, etc.</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -8,7 +8,9 @@ title: "att.pitch"
    <div class="attClassSpec">
       <h3 id="att.pitch">att.pitch</h3>
       <div class="specs">
-         <div class="desc">Attributes that record written pitch name.</div>
+         <div class="desc">Attributes that record written pitch name.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.shared</div>

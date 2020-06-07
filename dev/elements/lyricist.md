@@ -9,7 +9,7 @@ title: "lyricist"
       <h3 id="lyricist">&lt;lyricist&gt;</h3>
       <div class="specs">
          <div class="desc">Person or organization who is a writer of the text of a song.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerTitleStatement">3.1.1.1 Title Statement</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIdentification">3.1.3.1 Work Identification</a>,<a class="chapterLink desc" href="/guidelines/dev/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerTitleStatement">3.3.1 Title Statement</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIdentification">3.6.1 Work Identification</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#sharedBibliographicCitations">9.2.12 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

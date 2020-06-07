@@ -9,7 +9,7 @@ title: "neume"
       <h3 id="neume">&lt;neume&gt;</h3>
       <div class="specs">
          <div class="desc">Sign representing one or more musical pitches.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesOverview">6.1 Overview of the Neumes Module</a>,<a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesNotation">6.3 Neume Notation</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesRepertoire">6.1 Overview of the Neumes Module</a>,<a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

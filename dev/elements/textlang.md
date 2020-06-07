@@ -10,7 +10,7 @@ title: "textLang"
       <div class="specs">
          <div class="desc">(text language) – Identifies the languages and writing systems within the work described
             by a bibliographic description, not the language of the description.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#sharedBibliographicCitations">9.2.12 Bibliographic Citations and References</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

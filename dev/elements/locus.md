@@ -10,7 +10,7 @@ title: "locus"
       <div class="specs">
          <div class="desc">Defines a location within a manuscript or manuscript component, usually as a (possibly
             discontinuous) sequence of folio references.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.4.1.6 Source Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

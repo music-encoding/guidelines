@@ -24,10 +24,13 @@ title: "att.stems"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes the direction of a stem.">stem.dir</span>, <span class="ident attribute" title="Encodes the stem length.">stem.len</span>, <span class="ident attribute" title="Encodes any stem &#34;modifiers&#34;; that is, symbols rendered on the stem, such as tremolo or Sprechstimme indicators.">stem.mod</span>, <span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">stem.pos</span>, <span class="ident attribute" title="Determines whether a stem should be displayed.">stem.visible</span>, <span class="ident attribute" title="Contains an indication of which staff a note or chord that logically belongs to the current staff should be visually placed on; that is, the one above or the one below.">stem.with</span>, <span class="ident attribute" title="Records the output x coordinate of the stem's attachment point.">stem.x</span>, <span class="ident attribute" title="Records the output y coordinate of the stem's attachment point.">stem.y</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes the direction of a stem.">stem.dir</span>, <span class="ident attribute" title="Records the form of the stem.">stem.form</span>, <span class="ident attribute" title="Encodes the stem length.">stem.len</span>, <span class="ident attribute" title="Encodes any stem &#34;modifiers&#34;; that is, symbols rendered on the stem, such as tremolo or Sprechstimme indicators.">stem.mod</span>, <span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">stem.pos</span>, <span class="ident attribute" title="Determines whether a stem should be displayed.">stem.visible</span>, <span class="ident attribute" title="Contains an indication of which staff a note or chord that logically belongs to the current staff should be visually placed on; that is, the one above or the one below.">stem.with</span>, <span class="ident attribute" title="Records the output x coordinate of the stem's attachment point.">stem.x</span>, <span class="ident attribute" title="Records the output y coordinate of the stem's attachment point.">stem.y</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the direction of a stem.">stem.dir</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the direction of a stem.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemdirection.html">data.STEMDIRECTION</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Records the form of the stem.">stem.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the form of the stem.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemform.mensural.html">data.STEMFORM.mensural</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes the stem length.">stem.len</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the stem length.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
@@ -93,6 +96,15 @@ title: "att.stems"
                               </span></div>
                      </div>
                   </div>
+                  <div class="classBox" title="att.stems.mensural">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.mensural.html">att.stems.mensural</a></label><span class="classDesc">(MEI.mensural) Attributes that describe the properties of stemmed features specific
+                           to mensural repertoires.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Records the form of the stem.">stem.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the form of the stem.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemform.mensural.html">data.STEMFORM.mensural</a>.
+                              </span></div>
+                     </div>
+                  </div>
                </div>
                <div id="attributes_tabbedContent_module" class="facetTabbedContent module">
                   <div class="classBox" title="MEI.cmn">
@@ -102,6 +114,14 @@ title: "att.stems"
                               current staff should be visually placed on; that is, the one above or the one
                               below.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.otherstaff.html">data.OTHERSTAFF</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="MEI.mensural">
+                     <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Records the form of the stem.">stem.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the form of the stem.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemform.mensural.html">data.STEMFORM.mensural</a>.
                               </span></div>
                      </div>
                   </div>
@@ -196,6 +216,9 @@ title: "att.stems"
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.cmn.html">att.stems.cmn</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.mensural.html">att.stems.mensural</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>

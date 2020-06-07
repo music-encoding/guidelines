@@ -9,7 +9,7 @@ title: "language"
       <h3 id="language">&lt;language&gt;</h3>
       <div class="specs">
          <div class="desc">Description of a language used in the document.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkLanguage">3.1.3.6 Language Usage</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkLanguage">3.6.6 Language Usage</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -9,7 +9,7 @@ title: "role"
       <h3 id="role">&lt;role&gt;</h3>
       <div class="specs">
          <div class="desc">Name of a dramatic role, as given in a cast list.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.1.3.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkCast">3.1.3.7.1 Cast Lists</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkIncipit">3.6.2 Incipits</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerWorkCast">3.6.7.1 Cast Lists</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

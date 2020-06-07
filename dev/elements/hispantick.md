@@ -8,7 +8,9 @@ title: "hispanTick"
    <div class="elementSpec">
       <h3 id="hispanTick">&lt;hispanTick&gt;</h3>
       <div class="specs">
-         <div class="desc">Hispanic tick.</div>
+         <div class="desc">Hispanic tick.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.neumes</div>

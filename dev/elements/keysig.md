@@ -9,7 +9,7 @@ title: "keySig"
       <h3 id="keySig">&lt;keySig&gt;</h3>
       <div class="specs">
          <div class="desc">(key signature) – Written key signature.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedKeySignaturesAndClefs">2.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkKeyTempoMeter">3.1.3.3 Key, Tempo, and Meter</a>,<a class="chapterLink desc" href="/guidelines/dev/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedScoreAndParts">2.2.1 Score and Parts</a>,<a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedKeySignaturesAndClefs">2.2.4.1 Key Signatures and Clefs</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkKeyTempoMeter">3.6.3 Key, Tempo, and Meter</a>,<a class="chapterLink desc" href="/guidelines/dev/content/cmn.html#cmnDefs">4.2.2 Defining Score Parameters for CMN</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -10,7 +10,7 @@ title: "source"
       <div class="specs">
          <div class="desc">A bibliographic description of a source used in the creation of the electronic
             file.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerMinimalRecommendedHeader">3.1.8 Minimal and Recommended Header Information</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;headerstructure&#34;">3.2 Structure of the MEI Header</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.4.1.6 Source Description</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#FRBRentities">3.5.1 FRBR Entities in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a>,<a class="chapterLink" href="/guidelines/dev/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

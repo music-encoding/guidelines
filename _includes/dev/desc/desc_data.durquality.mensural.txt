@@ -1,0 +1,1 @@
+Duration attribute values of a given note symbol for the mensural repertoire.

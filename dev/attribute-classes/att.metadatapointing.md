@@ -10,6 +10,7 @@ title: "att.metadataPointing"
       <div class="specs">
          <div class="desc">Provides attributes for elements which may be associated with particular contextual
             elements within the header.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2 Specifying Link Elements</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

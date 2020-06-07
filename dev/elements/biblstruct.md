@@ -10,7 +10,7 @@ title: "biblStruct"
       <div class="specs">
          <div class="desc">(structured bibliographic citation) – Contains a bibliographic citation in which
             bibliographic sub-elements must appear in a specified order.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.4.1.6 Source Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

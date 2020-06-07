@@ -9,7 +9,7 @@ title: "itemList"
       <h3 id="itemList">&lt;itemList&gt;</h3>
       <div class="specs">
          <div class="desc">Gathers bibliographic item entities.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRentities">3.2.1 FRBR Entities in MEI</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#FRBRentities">3.5.1 FRBR Entities in MEI</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

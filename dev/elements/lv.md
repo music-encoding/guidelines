@@ -8,7 +8,9 @@ title: "lv"
    <div class="elementSpec">
       <h3 id="lv">&lt;lv&gt;</h3>
       <div class="specs">
-         <div class="desc">A "tie-like" indication that a note should ring beyond its written duration.</div>
+         <div class="desc">(laissez vibrer) – A "tie-like" indication that a note should ring beyond its written
+            duration.
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.cmn</div>
@@ -1137,7 +1139,8 @@ title: "lv"
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
                      <div class="indent1 indent"><span data-indentation="1" class="element">&lt;elementSpec <span class="attribute">ident=</span><span class="attributevalue">"lv"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.cmn"</span>&gt;</span>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>A "tie-like" indication that a note should ring beyond its written duration.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>(laissez vibrer) – A "tie-like" indication that a note should ring beyond its written
+                           duration.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                            

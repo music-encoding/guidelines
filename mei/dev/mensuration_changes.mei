@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Example of 'mensuration changes'</title>
+            </titleStmt>
+            <pubStmt>
+                <date>2020-03-03</date>
+            </pubStmt>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef>
+                        <staffGrp>
+                            <staffDef n="1" notationtype="mensural" lines="5" clef.shape="G" clef.line="2"/>
+                        </staffGrp>
+                    </scoreDef>
+                    <?edit-start?>
+                    <section>
+                        <staff n="1">
+                            <layer>
+                                <mensur sign="O" dot="true" slash="1" color="red"/>
+                                <note/>
+                                <note/>
+                                <note/>
+                                <mensur loc="3" sign="C"/>
+                                <note/>
+                                <note/>
+                                <note/>
+                            </layer>
+                        </staff>
+                    </section>
+                    <?edit-end?>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

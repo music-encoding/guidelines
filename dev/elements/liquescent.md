@@ -8,7 +8,9 @@ title: "liquescent"
    <div class="elementSpec">
       <h3 id="liquescent">&lt;liquescent&gt;</h3>
       <div class="specs">
-         <div class="desc">Liquescent.</div>
+         <div class="desc">Liquescent.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.neumes</div>

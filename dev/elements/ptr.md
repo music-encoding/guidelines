@@ -11,7 +11,7 @@ title: "ptr"
          <div class="desc">(pointer) – Defines a traversible pointer to another location, using only attributes
             to
             describe the destination.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerApplicationInformation">3.1.2.1 Application Information</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textFront">9.1.6.1 Front Matter</a>,<a class="chapterLink" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.1.1 Links</a>,<a class="chapterLink" href="/guidelines/dev/content/linkingdata.html#ptrRefDifference">13.1.1.1 Difference between Pointers and References</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerApplicationInformation">3.4.2.1 Application Information</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#textFront">9.1.2.1 Front Matter</a>,<a class="chapterLink desc" href="/guidelines/dev/content/linkingdata.html#&#34;ptrRef&#34;">13.2.1 Pointers and References</a>,<a class="chapterLink" href="/guidelines/dev/content/linkingdata.html#ptrrefModule">13.2.2 Specifying Link Elements</a>,<a class="chapterLink" href="/guidelines/dev/content/linkingdata.html#ptrRefMimetype">13.2.2.3 Define the mimetype of a link element's target</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

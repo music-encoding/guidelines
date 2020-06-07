@@ -9,7 +9,7 @@ title: "domainsDecl"
       <h3 id="domainsDecl">&lt;domainsDecl&gt;</h3>
       <div class="specs">
          <div class="desc">(domains declaration) – Indicates which domains are included in the encoding.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

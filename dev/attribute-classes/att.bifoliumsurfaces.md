@@ -10,6 +10,7 @@ title: "att.bifoliumSurfaces"
       <div class="specs">
          <div class="desc">Attributes that link a bifolium element with a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/surface.html">surface</a>
             element.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;linkingsurfaces&#34;">3.7.2.1 Linking surface elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;linkingsurfaces&#34;">3.7.2.1 Linking surface elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;linkingsurfaces&#34;">3.7.2.1 Linking surface elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;linkingsurfaces&#34;">3.7.2.1 Linking surface elements</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

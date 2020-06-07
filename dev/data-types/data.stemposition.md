@@ -18,7 +18,7 @@ title: "data.STEMPOSITION"
             <div class="statement list">
                <div class="classBox dtBox" title="Attribute Classes">
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.STEMPOSITION</span></div>
-                  <div class="classContent"><span class="ident attclass" data-ident="att.stems" data-module="MEI.shared"><a class="classLink" title="Attributes that describe the properties of stemmed features; that is, chords and notes." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a>/<span title="Records the position of the stem in relation to the note head(s).">@stem.pos</span></span></div>
+                  <div class="classContent"><span class="ident attclass" data-ident="att.STEMPROPERTIES.mensural" data-module="MEI.mensural"><a class="classLink" title="Attributes that describe the properties of stems in the mensural repertoire." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stemproperties.mensural.html">att.STEMPROPERTIES.mensural</a>/<span title="Records the position of the stem in relation to the note head(s).">@pos</span></span><span class="ident attclass" data-ident="att.stems" data-module="MEI.shared"><a class="classLink" title="Attributes that describe the properties of stemmed features; that is, chords and notes." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stems.html">att.stems</a>/<span title="Records the position of the stem in relation to the note head(s).">@stem.pos</span></span></div>
                </div>
             </div>
          </div>

@@ -22,10 +22,11 @@ title: "att.systems"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates whether the staves are joined at the left by a continuous line. The default value is &#34;true&#34;. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span>, <span class="ident attribute" title="Describes the amount of whitespace at the left system margin relative to page.leftmar.">system.leftmar</span>, <span class="ident attribute" title="Describes the amount of whitespace at the right system margin relative to page.rightmar.">system.rightmar</span>, <span class="ident attribute" title="Describes the distance from page's top edge to the first system; used for first page only.">system.topmar</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates whether the system starts with a continuous line connecting all staves, including single-staff systems. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span>, <span class="ident attribute" title="Describes the amount of whitespace at the left system margin relative to page.leftmar.">system.leftmar</span>, <span class="ident attribute" title="Describes the amount of whitespace at the right system margin relative to page.rightmar.">system.rightmar</span>, <span class="ident attribute" title="Describes the distance from page's top edge to the first system; used for first page only.">system.topmar</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates whether the staves are joined at the left by a continuous line. The default value is &#34;true&#34;. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the staves are joined at the left by a continuous line. The default
-                        value is "true". Do not confuse this with the heavy vertical line used as a grouping
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates whether the system starts with a continuous line connecting all staves, including single-staff systems. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the system starts with a continuous line connecting all staves,
+                        including single-staff systems. Do not confuse this with the heavy vertical line used
+                        as a grouping
                         symbol.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
@@ -46,8 +47,9 @@ title: "att.systems"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates whether the staves are joined at the left by a continuous line. The default value is &#34;true&#34;. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the staves are joined at the left by a continuous line. The default
-                              value is "true". Do not confuse this with the heavy vertical line used as a grouping
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates whether the system starts with a continuous line connecting all staves, including single-staff systems. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the system starts with a continuous line connecting all staves,
+                              including single-staff systems. Do not confuse this with the heavy vertical line used
+                              as a grouping
                               symbol.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
@@ -70,8 +72,9 @@ title: "att.systems"
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates whether the staves are joined at the left by a continuous line. The default value is &#34;true&#34;. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the staves are joined at the left by a continuous line. The default
-                              value is "true". Do not confuse this with the heavy vertical line used as a grouping
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates whether the system starts with a continuous line connecting all staves, including single-staff systems. Do not confuse this with the heavy vertical line used as a grouping symbol.">system.leftline</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the system starts with a continuous line connecting all staves,
+                              including single-staff systems. Do not confuse this with the heavy vertical line used
+                              as a grouping
                               symbol.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
@@ -136,8 +139,9 @@ title: "att.systems"
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"system.leftline"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates whether the staves are joined at the left by a continuous line. The default
-                                 value is "true". Do not confuse this with the heavy vertical line used as a grouping
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates whether the system starts with a continuous line connecting all staves,
+                                 including single-staff systems. Do not confuse this with the heavy vertical line used
+                                 as a grouping
                                  symbol.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>

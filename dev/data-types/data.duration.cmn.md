@@ -22,7 +22,7 @@ title: "data.DURATION.cmn"
                </div>
                <div class="classBox dtBox" title="Data Types">
                   <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.DURATION.cmn</span></div>
-                  <div class="classContent"><span class="ident datatype" data-ident="data.DURATION" data-module="MEI" title="Logical, that is, written, duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a></span><span class="ident datatype" data-ident="data.DURATION.gestural" data-module="MEI" title="Performed duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a></span></div>
+                  <div class="classContent"><span class="ident datatype" data-ident="data.DURATION" data-module="MEI" title="Logical, that is, written, duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.html">data.DURATION</a></span><span class="ident datatype" data-ident="data.DURATIONRESTS" data-module="MEI" title="Logical, that is, written, duration attribute values for rests."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.durationrests.html">data.DURATIONRESTS</a></span><span class="ident datatype" data-ident="data.DURATION.gestural" data-module="MEI" title="Performed duration attribute values."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.duration.gestural.html">data.DURATION.gestural</a></span></div>
                </div>
             </div>
          </div>

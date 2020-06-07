@@ -11,7 +11,7 @@ title: "notesStmt"
          <div class="desc">(notes statement)– Collects any notes providing information about a text additional
             to
             that recorded in other parts of the bibliographic description.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerNotesStatement">3.1.1.6 Notes Statement</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.1.3 Work Description</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkNotes">3.1.3.11 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerFileDescription">3.4.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerNotesStatement">3.4.1.5 Notes Statement</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkDescription">3.6 Work Description</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerWorkNotes">3.6.11 Notes Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

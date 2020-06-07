@@ -11,7 +11,7 @@ title: "bibl"
          <div class="desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
             which
             the sub-components may or may not be explicitly marked.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.1.1.7 Source Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/lyricsperfdir.html#sharedBibliographicCitations">8.1.6 Bibliographic Citations and References</a>,<a class="chapterLink" href="/guidelines/dev/content/lyricsperfdir.html#sharedRelatedItemDesc">8.1.7 Related Items</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSourceDescription">3.4.1.6 Source Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/textencoding.html#sharedBibliographicCitations">9.2.12 Bibliographic Citations and References</a>,<a class="chapterLink" href="/guidelines/dev/content/textencoding.html#sharedRelatedItemDesc">9.2.12.1 Related Items</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

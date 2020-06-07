@@ -11,7 +11,7 @@ title: "tagsDecl"
          <div class="desc">(tagging declaration) – Provides detailed information about the tagging applied to
             a
             document.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.1.2 Encoding Description</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerEncodingDescription">3.4.2 Encoding Description</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

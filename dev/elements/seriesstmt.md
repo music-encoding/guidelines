@@ -10,7 +10,7 @@ title: "seriesStmt"
       <div class="specs">
          <div class="desc">(series statement) – Groups information about the series, if any, to which a publication
             belongs.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerFileDescription">3.1.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSeriesStatement">3.1.1.5 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerManifestationList">3.1.4 Manifestations</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerMinimalRecommendedHeader">3.1.8 Minimal and Recommended Header Information</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.3 Manuscript Descriptions</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerrespstatement">3.3.2 Responsility Attribution</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerFileDescription">3.4.1 File Description</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#headerSeriesStatement">3.4.1.4 Series Statement</a>,<a class="chapterLink desc" href="/guidelines/dev/content/metadata.html#&#34;msdesc&#34;">3.7 Encoding Sources in MEI</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#headerMinimalRecommendedHeader">3.8.3 Minimal and Recommended Header Information</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

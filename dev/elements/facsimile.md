@@ -11,7 +11,7 @@ title: "facsimile"
          <div class="desc">Contains a representation of a written source in the form of a set of images rather
             than
             as transcribed or encoded text.
-            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedCommonAttributes">2.3 Common Attributes</a>,<a class="chapterLink desc" href="/guidelines/dev/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/dev/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/shared.html#sharedCommonAttributes">2.3 Common Attributes</a>,<a class="chapterLink" href="/guidelines/dev/content/metadata.html#&#34;linkingsurfaces&#34;">3.7.2.1 Linking surface elements</a>,<a class="chapterLink desc" href="/guidelines/dev/content/facsimilesrecordings.html#facsimileElements">12.1.1 Elements of the Facsimile Module</a>,<a class="chapterLink" href="/guidelines/dev/content/facsimilesrecordings.html#perfElements">12.2.1 Overview</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

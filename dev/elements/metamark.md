@@ -12,6 +12,7 @@ title: "metaMark"
             musical text. The textual consequences of this intervention are encoded independently
             via
             other means; that is, with elements such as &lt;add&gt;, &lt;del&gt;, etc.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/scholarlyediting.html#metatexts">11.3.3 Encoding Metatexts</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>

@@ -8,7 +8,9 @@ title: "ncGrp"
    <div class="elementSpec">
       <h3 id="ncGrp">&lt;ncGrp&gt;</h3>
       <div class="specs">
-         <div class="desc">Collection of one or more neume components.</div>
+         <div class="desc">Collection of one or more neume components.
+            <div class="chapterLinksBox"><a class="chapterLink" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.neumes</div>

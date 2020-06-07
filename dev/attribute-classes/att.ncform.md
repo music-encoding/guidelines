@@ -8,7 +8,9 @@ title: "att.ncForm"
    <div class="attClassSpec">
       <h3 id="att.ncForm">att.ncForm</h3>
       <div class="specs">
-         <div class="desc">Attributes that record visual details of neume notation.</div>
+         <div class="desc">Attributes that record visual details of neume notation.
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a>,<a class="chapterLink desc" href="/guidelines/dev/content/neumes.html#neumesExamples">6.4 Samples of MEI encodings</a></div>
+         </div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.neumes</div>
