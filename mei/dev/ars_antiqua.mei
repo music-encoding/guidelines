@@ -37,7 +37,7 @@
                                 <dot form="div"/>
                                 <barLine form="dashed"/>
                                 <note dur="semibrevis" dur.quality="minor"/>
-                                <note dur="semibrevis" dur.quality="maior" num="1" numbase="2"/>                                
+                                <note dur="semibrevis" dur.quality="maior" num="1" numbase="2"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>
                                 <barLine form="dashed"/>
@@ -51,8 +51,6 @@
                                 <mensur modusminor="3" tempus="3"/>
                                 <note dur="brevis"/>
                                 <note dur="brevis"/>
-                                <note dur="brevis"/>
-                                <barLine form="dashed"/>
                                 <note dur="brevis"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>
