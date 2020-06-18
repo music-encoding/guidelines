@@ -20,7 +20,7 @@ title: "data.DEGREES"
             <div class="statement list">
                <div class="classBox dtBox" title="Elements">
                   <div class="classHeading"><label class="classLabel">Elements</label><span class="classDesc">These local attributes use data.DEGREES</span></div>
-                  <div class="classContent"><span class="ident element" data-ident="rend" data-module="MEI.shared" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/elements/rend.html">&lt;rend&gt;</a></span></div>
+                  <div class="classContent"><span class="ident element" data-ident="zone" data-module="MEI.facsimile" title="Defines an area of interest within a surface or graphic file."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/elements/zone.html">&lt;zone&gt;</a></span><span class="ident element" data-ident="rend" data-module="MEI.shared" title="(render) – A formatting element indicating special visual rendering, e.g., bold or italicized, of a text word or phrase."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/elements/rend.html">&lt;rend&gt;</a></span></div>
                </div>
                <div class="classBox dtBox" title="Attribute Classes">
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.DEGREES</span></div>

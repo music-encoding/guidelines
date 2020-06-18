@@ -24,7 +24,7 @@ title: "zone"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span>, <span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span>, <span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span>, <span class="ident attribute" title="Used to link metadata elements to one or more data-containing elements.">data</span>, <span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span>, <span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span>, <span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span>, <span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span>, <span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span>, <span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span>, <span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span>, <span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span>, <span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span>, <span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span>, <span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span>, <span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span>, <span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span>, <span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span>, <span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span>, <span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span>, <span class="ident attribute" title="Points to an element of which the current element is a copy.">copyof</span>, <span class="ident attribute" title="Used to point to other elements that correspond to this one in a generic fashion.">corresp</span>, <span class="ident attribute" title="Used to link metadata elements to one or more data-containing elements.">data</span>, <span class="ident attribute" title="points to one or more events in a user-defined collection that are known to be predecessors of the current element.">follows</span>, <span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span>, <span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span>, <span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span>, <span class="ident attribute" title="Provides a number-like designation that indicates an element's position in a sequence of similar elements. May not contain space characters.">n</span>, <span class="ident attribute" title="Used to point to the next event(s) in a user-defined collection.">next</span>, <span class="ident attribute" title="Points to one or more events in a user-defined collection that are known to be successors of the current element.">precedes</span>, <span class="ident attribute" title="Points to the previous event(s) in a user-defined collection.">prev</span>, <span class="ident attribute" title="Indicates the agent(s) responsible for some aspect of the text's transcription, editing, or encoding. Its value must point to one or more identifiers declared in the document header.">resp</span>, <span class="ident attribute" title="Indicates the amount by which the contents of this zone have been rotated clockwise, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span>, <span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span>, <span class="ident attribute" title="Points to elements that are synchronous with the current element.">synch</span>, <span class="ident attribute" title="Designation which characterizes the element in some sense, using any convenient classification scheme or typology that employs single-token labels.">type</span>, <span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span>, <span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span>, <span class="ident attribute" title="Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.">xml:base</span>, <span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Contains one or more URIs which denote classification terms that apply to the entity bearing this attribute.">class</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Contains one or more URIs which denote classification terms that apply to the entity
                         bearing this attribute.</span><span class="attributeValues">
@@ -76,6 +76,14 @@ title: "zone"
                         document header.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
+                  <div class="attributeDef def" data-module="MEI.facsimile"><span class="ident attribute" title="Indicates the amount by which the contents of this zone have been rotated clockwise, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span><span class="attributeDesc desc">
+                        Indicates the amount by which the contents of this zone have been rotated clockwise,
+                        with respect
+                        to the normal orientation of the parent surface. The orientation is expressed in arc
+                        degrees.
+                        </span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
+                        </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to an element that is the same as the current element but is not a literal copy of the current element.">sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to an element that is the same as the current element but is not a literal
                         copy
                         of the current element.</span><span class="attributeValues">
@@ -104,6 +112,19 @@ title: "zone"
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
+                  <div class="classBox direct" title="direct childs">
+                     <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.facsimile"><span class="ident attribute" title="Indicates the amount by which the contents of this zone have been rotated clockwise, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span><span class="attributeDesc desc">
+                              Indicates the amount by which the contents of this zone have been rotated clockwise,
+                              with respect
+                              to the normal orientation of the parent surface. The orientation is expressed in arc
+                              degrees.
+                              </span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
+                              </span></div>
+                     </div>
+                  </div>
                   <div class="classBox" title="att.common">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.common.html">att.common</a></label><span class="classDesc">(MEI.shared) Attributes common to many elements.</span></div>
                      <div class="classContent">
@@ -239,6 +260,19 @@ title: "zone"
                   </div>
                </div>
                <div id="attributes_tabbedContent_module" class="facetTabbedContent module">
+                  <div class="classBox" title="MEI.facsimile">
+                     <div class="classHeading"><label class="classLabel">MEI.facsimile</label><span class="classDesc">Facsimile component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.facsimile"><span class="ident attribute" title="Indicates the amount by which the contents of this zone have been rotated clockwise, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span><span class="attributeDesc desc">
+                              Indicates the amount by which the contents of this zone have been rotated clockwise,
+                              with respect
+                              to the normal orientation of the parent surface. The orientation is expressed in arc
+                              degrees.
+                              </span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
+                              </span></div>
+                     </div>
+                  </div>
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
@@ -455,6 +489,29 @@ title: "zone"
                                     /&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"rotate"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>
+                                 Indicates the amount by which the contents of this zone have been rotated clockwise,
+                                 with respect
+                                 to the normal orientation of the parent surface. The orientation is expressed in arc
+                                 degrees.
+                                 <span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;defaultVal&gt;</span>0<span data-indentation="4" class="element">&lt;/defaultVal&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>
                            
