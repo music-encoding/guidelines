@@ -269,7 +269,7 @@ title: "att.annot.log"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- Some attributes defined in att.controlEvent (att.timestamp.logical, att.timestamp.gestural,
                               att.staffIdent, and att.layerIdent) are provided here directly instead of making annot
-                              a
+                              a 
                               member of att.controlEvent. --&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
