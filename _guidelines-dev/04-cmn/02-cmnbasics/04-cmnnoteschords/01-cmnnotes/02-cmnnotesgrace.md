@@ -18,6 +18,6 @@ The values of **@grace** indicate from which note time is ‘borrowed’ to perf
 
 The **@grace.time** attribute is only to be used in combination with the **@grace** attribute. It records the amount of time (as a percentage of the written duration) that the grace note should ‘steal’ from the preceding note (when **@grace**='unacc') or the following note (when **@grace**='acc').
 
-Multiple grace notes can be grouped within a {% include link elem="graceGrp" %} element, which itself allows all values for **@grace** as explained above. The optional **@attach** attribute is used to record whether the grace note group is attached to the following event or to the preceding one.
+Grace notes can be placed within a {% include link elem="graceGrp" %} element, which itself allows all values for **@grace** as explained above. The optional **@attach** attribute is used to record whether the grace note group is attached to the following event or to the preceding one. The {% include link elem="graceGrp" %}  element can be used with single or mutliple grace notes.
 
 More information about grace notes in the context of other CMN ornaments is available in chapter {% include link id="cmnOrnaments" %}.
