@@ -29,7 +29,7 @@
                             <?edit-start?>
                             <layer>
                                 <mensur modusminor="2" tempus="2"/>
-                                <note dur="longa" dur.quality="perfecta" num="2" numbase="3"/>
+                                <note dur="longa" dur.quality="perfecta"/>
                                 <dot form="aug"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>

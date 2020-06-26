@@ -34,7 +34,7 @@
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>
                                 <barLine form="dashed"/>
-                                <note dur="brevis" dur.quality="altera" num="1" numbase="2"/>
+                                <note dur="brevis" dur.quality="altera"/>
                                 <barLine form="dashed"/>
                                 <note dur="longa" dur.quality="perfecta"/>
                                 <barLine form="dashed"/>

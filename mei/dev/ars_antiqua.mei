@@ -37,11 +37,11 @@
                                 <dot form="div"/>
                                 <barLine form="dashed"/>
                                 <note dur="semibrevis" dur.quality="minor"/>
-                                <note dur="semibrevis" dur.quality="maior" num="1" numbase="2"/>
+                                <note dur="semibrevis" dur.quality="maior"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>
                                 <barLine form="dashed"/>
-                                <note dur="longa" dur.quality="duplex" num="1" numbase="2"/>
+                                <note dur="longa" dur.quality="duplex"/>
                                 <barLine form="dashed"/>
                             </layer>
                             <?edit-end?>

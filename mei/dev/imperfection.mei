@@ -30,14 +30,14 @@
                             <?edit-start?>
                             <layer>
                                 <mensur modusminor="3"/>
-                                <note dur="longa" dur.quality="imperfecta" num="3" numbase="2"/>
+                                <note dur="longa" dur.quality="imperfecta"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>
                                 <dot form="div"/>
                                 <barLine form="dashed"/>
                                 <note dur="brevis"/>
                                 <barLine form="dashed"/>
-                                <note dur="longa" dur.quality="imperfecta" num="3" numbase="2"/>
+                                <note dur="longa" dur.quality="imperfecta"/>
                                 <barLine form="dashed"/>
                             </layer>
                             <?edit-end?>
