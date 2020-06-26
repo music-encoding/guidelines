@@ -21,13 +21,12 @@
                 <score>
                     <scoreDef>
                         <staffGrp>
-                            <staffDef n="1" lines="5" label="Triplum" clef.shape="C" clef.line="3" notationtype="mensural.black"/>
+                            <staffDef n="1" lines="5" label="Triplum" clef.shape="C" clef.line="3" notationtype="mensural.black" modusminor="3" tempus="3"/>
                         </staffGrp>
                     </scoreDef>
                     <section>
                         <staff n="1">
                             <layer n="1">
-                                <mensur modusminor="3" tempus="3"/>
                                 <note dur="longa" oct="4" pname="c"/>
                                 <note dur="semibrevis" oct="4" pname="c"/>
                                 <note dur="semibrevis" oct="4" pname="d"/>
