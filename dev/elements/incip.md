@@ -490,7 +490,7 @@ title: "incip"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.inciplike.html">model.incipLike</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- Can XSLT be used within content to "select" an incipit from the 
+                        <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- Can XSLT be used within content to "select" an incipit from the
                               already-encoded MEI transcription in the music element?
                               &lt;rng:ref name="macro.XSLT"/&gt; --&gt;</span></div>
                         

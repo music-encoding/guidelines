@@ -323,7 +323,7 @@ title: "att.lineRend.base"
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="comment">&lt;!-- @llength not necessary:
-                                 @llength implies we know the direction of the vector which we 
+                                 @llength implies we know the direction of the vector which we
                                  can't know without establishing an end point, which in turn makes
                                  @llength redundant. --&gt;</span></div>
                            
