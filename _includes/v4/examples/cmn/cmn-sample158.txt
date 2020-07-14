@@ -7,9 +7,9 @@
       <layer n="1">
         <!-- original content in regular layer -->
       </layer>
-      <layer>
+      <oLayer>
         <!-- alternative content in separate layer -->
-      </layer>
+      </oLayer>
     </ossia>
   </staff>
   <staff n="3">
