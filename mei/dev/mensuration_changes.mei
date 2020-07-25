@@ -15,17 +15,16 @@
     <music>
         <body>
             <mdiv>
+                <?edit-start?>
                 <score>
                     <scoreDef>
                         <staffGrp>
-                            <staffDef n="1" notationtype="mensural" lines="5" clef.shape="G" clef.line="2"/>
+                            <staffDef n="1" notationtype="mensural" lines="5" clef.shape="G" clef.line="2" mensur.sign="O" mensur.dot="true" mensur.slash="1" mensur.color="red"/>
                         </staffGrp>
                     </scoreDef>
-                    <?edit-start?>
                     <section>
                         <staff n="1">
                             <layer>
-                                <mensur sign="O" dot="true" slash="1" color="red"/>
                                 <note/>
                                 <note/>
                                 <note/>
@@ -36,8 +35,8 @@
                             </layer>
                         </staff>
                     </section>
-                    <?edit-end?>
                 </score>
+                <?edit-end?>
             </mdiv>
         </body>
     </music>
