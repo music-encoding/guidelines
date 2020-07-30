@@ -24,11 +24,14 @@ title: "att.mensural.vis"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Records the color of the mensuration sign. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">mensur.color</span>, <span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">mensur.form</span>, <span class="ident attribute" title="Holds the staff location of the mensuration sign.">mensur.loc</span>, <span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">mensur.orient</span>, <span class="ident attribute" title="Describes the relative size of the mensuration sign.">mensur.size</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Records the color of the mensuration sign. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">mensur.color</span>, <span class="ident attribute" title="Determines if a dot is to be added to the base symbol.">mensur.dot</span>, <span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">mensur.form</span>, <span class="ident attribute" title="Holds the staff location of the mensuration sign.">mensur.loc</span>, <span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">mensur.orient</span>, <span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">mensur.sign</span>, <span class="ident attribute" title="Describes the relative size of the mensuration sign.">mensur.size</span>, <span class="ident attribute" title="Indicates the number lines added to the mensuration sign. For example, one slash is added for what we now call 'alla breve'.">mensur.slash</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Records the color of the mensuration sign. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">mensur.color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the color of the mensuration sign. Do not confuse this with the musical term
                         'color' as used in pre-CMN notation.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Determines if a dot is to be added to the base symbol.">mensur.dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if a dot is to be added to the base symbol.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">mensur.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the base symbol is written vertically or horizontally.</span><span class="attributeValues">
                         Allowed values are:
@@ -39,8 +42,15 @@ title: "att.mensural.vis"
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">mensur.orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the rotation or reflection of the base symbol.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>.
                         </span></div>
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">mensur.sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
+                        </span></div>
                   <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the relative size of the mensuration sign.">mensur.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the relative size of the mensuration sign.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsize.html">data.FONTSIZE</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number lines added to the mensuration sign. For example, one slash is added for what we now call 'alla breve'.">mensur.slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number lines added to the mensuration sign. For example, one slash is
+                        added for what we now call 'alla breve'.</span><span class="attributeValues">
+                        Value is a positive integer.
                         </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
@@ -51,6 +61,9 @@ title: "att.mensural.vis"
                               'color' as used in pre-CMN notation.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Determines if a dot is to be added to the base symbol.">mensur.dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if a dot is to be added to the base symbol.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">mensur.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the base symbol is written vertically or horizontally.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">horizontal</span>" <i>(Horizontally oriented.)</i>,  "<span style="font-weight: 500;">vertical</span>" <i>(Vertically oriented.)</i></span></div>
@@ -60,8 +73,15 @@ title: "att.mensural.vis"
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">mensur.orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the rotation or reflection of the base symbol.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">mensur.sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the relative size of the mensuration sign.">mensur.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the relative size of the mensuration sign.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsize.html">data.FONTSIZE</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number lines added to the mensuration sign. For example, one slash is added for what we now call 'alla breve'.">mensur.slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number lines added to the mensuration sign. For example, one slash is
+                              added for what we now call 'alla breve'.</span><span class="attributeValues">
+                              Value is a positive integer.
                               </span></div>
                      </div>
                   </div>
@@ -74,6 +94,9 @@ title: "att.mensural.vis"
                               'color' as used in pre-CMN notation.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Determines if a dot is to be added to the base symbol.">mensur.dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if a dot is to be added to the base symbol.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">mensur.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the base symbol is written vertically or horizontally.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">horizontal</span>" <i>(Horizontally oriented.)</i>,  "<span style="font-weight: 500;">vertical</span>" <i>(Vertically oriented.)</i></span></div>
@@ -83,8 +106,15 @@ title: "att.mensural.vis"
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">mensur.orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the rotation or reflection of the base symbol.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">mensur.sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the relative size of the mensuration sign.">mensur.size</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the relative size of the mensuration sign.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsize.html">data.FONTSIZE</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates the number lines added to the mensuration sign. For example, one slash is added for what we now call 'alla breve'.">mensur.slash</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the number lines added to the mensuration sign. For example, one slash is
+                              added for what we now call 'alla breve'.</span><span class="attributeValues">
+                              Value is a positive integer.
                               </span></div>
                      </div>
                   </div>
@@ -165,6 +195,19 @@ title: "att.mensural.vis"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"mensur.dot"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Determines if a dot is to be added to the base symbol.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"mensur.form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates whether the base symbol is written vertically or horizontally.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
@@ -209,6 +252,19 @@ title: "att.mensural.vis"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"mensur.sign"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>The base symbol in the mensuration sign/time signature of mensural notation.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"mensur.size"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Describes the relative size of the mensuration sign.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
@@ -219,6 +275,17 @@ title: "att.mensural.vis"
                                        
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.fontsize.html">data.FONTSIZE</a>"</span></span>
                                        /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"mensur.slash"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates the number lines added to the mensuration sign. For example, one slash is
+                                 added for what we now call 'alla breve'.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"positiveInteger"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>

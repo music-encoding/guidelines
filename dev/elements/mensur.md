@@ -336,14 +336,14 @@ title: "mensur"
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mensur.vis.html">att.mensur.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes. These attributes describe the physical appearance
                            of the mensuration sign/time signature of mensural notation.</span></div>
                      <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Indicates whether the base symbol is written vertically or horizontally.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates whether the base symbol is written vertically or horizontally.</span><span class="attributeValues">
                               Allowed values are:
                               "<span style="font-weight: 500;">horizontal</span>" <i>(Horizontally oriented.)</i>,  "<span style="font-weight: 500;">vertical</span>" <i>(Vertically oriented.)</i></span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Describes the rotation or reflection of the base symbol.">orient</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the rotation or reflection of the base symbol.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.orientation.html">data.ORIENTATION</a>.
-                              </span></div>
-                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Specifies whether a dot is to be added to the base symbol.">dot</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Specifies whether a dot is to be added to the base symbol.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The base symbol in the mensuration sign/time signature of mensural notation.">sign</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The base symbol in the mensuration sign/time signature of mensural notation.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.mensurationsign.html">data.MENSURATIONSIGN</a>.
