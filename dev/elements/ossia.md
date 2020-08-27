@@ -516,7 +516,7 @@ title: "ossia"
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;rng:choice&gt;</span>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:group&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:interleave&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:oneOrMore&gt;</span>
                                     
@@ -533,9 +533,9 @@ title: "ossia"
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.stafflike.html">model.staffLike</a>"</span></span>
                                           /&gt;</span></div>
                                     <span data-indentation="5" class="element">&lt;/rng:oneOrMore&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/rng:group&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/rng:interleave&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:group&gt;</span>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;rng:interleave&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:oneOrMore&gt;</span>
                                     
@@ -552,7 +552,7 @@ title: "ossia"
                                           <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/model-classes/model.layerlike.html">model.layerLike</a>"</span></span>
                                           /&gt;</span></div>
                                     <span data-indentation="5" class="element">&lt;/rng:oneOrMore&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/rng:group&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/rng:interleave&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/rng:choice&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
                         
