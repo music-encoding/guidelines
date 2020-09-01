@@ -1,6 +1,6 @@
 ---
 sectionid: sharedDocumentElements
-title: "Document Elements"
+title: "Document Root Elements"
 version: "dev"
 ---
 
