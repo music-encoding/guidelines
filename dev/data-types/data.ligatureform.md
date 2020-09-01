@@ -18,7 +18,7 @@ title: "data.LIGATUREFORM"
             <div class="statement list">
                <div class="classBox dtBox" title="Attribute Classes">
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.LIGATUREFORM</span></div>
-                  <div class="classContent"><span class="ident attclass" data-ident="att.ligature.log" data-module="MEI.mensural"><a class="classLink" title="Logical domain attributes." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ligature.log.html">att.ligature.log</a>/<span title="Provides an indication of the function of the ligature.">@form</span></span></div>
+                  <div class="classContent"><span class="ident attclass" data-ident="att.note.vis.mensural" data-module="MEI.mensural"><a class="classLink" title="Visual domain attributes in the Mensural repertoire." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.vis.mensural.html">att.note.vis.mensural</a>/<span title="Indicates this element's participation in a ligature.">@lig</span></span><span class="ident attclass" data-ident="att.ligature.vis" data-module="MEI.visual"><a class="classLink" title="Visual domain attributes." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ligature.vis.html">att.ligature.vis</a>/<span title="Provides an indication of the function of the ligature.">@form</span></span></div>
                </div>
             </div>
          </div>

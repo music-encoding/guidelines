@@ -290,7 +290,7 @@ title: "att.syl.vis"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- Is this constraint true in all cases? --&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!--
+                        <div class="indent2 indent"><span data-indentation="2" class="comment">&lt;!-- 
                               &lt;constraintSpec ident="check_sylAncestor" scheme="isoschematron"&gt;
                               &lt;constraint&gt;
                               &lt;sch:rule context="mei:syl[@place]"&gt;

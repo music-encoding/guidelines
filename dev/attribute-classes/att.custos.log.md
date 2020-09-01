@@ -22,8 +22,11 @@ title: "att.custos.log"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Captures written octave information.">oct</span>, <span class="ident attribute" title="Contains a written pitch name.">pname</span>, <span class="ident attribute" title="Encodes the target note when its pitch differs from the pitch at which the custos appears.">target</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Captures a written accidental.">accid</span>, <span class="ident attribute" title="Captures written octave information.">oct</span>, <span class="ident attribute" title="Contains a written pitch name.">pname</span>, <span class="ident attribute" title="Encodes the target note when its pitch differs from the pitch at which the custos appears.">target</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures a written accidental.">accid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures a written accidental.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.written.html">data.ACCIDENTAL.WRITTEN</a>.
+                        </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures written octave information.">oct</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures written octave information.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.octave.html">data.OCTAVE</a>.
                         </span></div>
@@ -42,6 +45,14 @@ title: "att.custos.log"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Encodes the target note when its pitch differs from the pitch at which the custos appears.">target</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Encodes the target note when its pitch differs from the pitch at which the custos
                               appears.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="att.accidental">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.html">att.accidental</a></label><span class="classDesc">(MEI.shared) Attributes for capturing momentary pitch inflection.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures a written accidental.">accid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures a written accidental.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.written.html">data.ACCIDENTAL.WRITTEN</a>.
                               </span></div>
                      </div>
                   </div>
@@ -71,6 +82,9 @@ title: "att.custos.log"
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures a written accidental.">accid</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures a written accidental.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.written.html">data.ACCIDENTAL.WRITTEN</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures written octave information.">oct</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures written octave information.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.octave.html">data.OCTAVE</a>.
                               </span></div>
@@ -154,6 +168,9 @@ title: "att.custos.log"
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Logical domain attributes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.accidental.html">att.accidental</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitched.html">att.pitched</a>"</span></span>/&gt;</span></div>

@@ -248,8 +248,8 @@ title: "note"
                         One or more values of datatype <span style="font-weight: 500;">positiveInteger</span>, separated by spaces.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this element's participation in a ligature.</span><span class="attributeValues">
-                        Allowed values are:
-                        "<span style="font-weight: 500;">recta</span>" ,  "<span style="font-weight: 500;">obliqua</span>" </span></div>
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
+                        </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the staff location of the feature.">loc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the staff location of the feature.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffloc.html">data.STAFFLOC</a>.
                         </span></div>
@@ -947,6 +947,14 @@ title: "note"
                               </div>
                            </div>
                         </div>
+                        <div class="classBox" title="att.note.vis.mensural">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.vis.mensural.html">att.note.vis.mensural</a></label><span class="classDesc">(MEI.mensural) Visual domain attributes in the Mensural repertoire.</span></div>
+                           <div class="classContent">
+                              <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this element's participation in a ligature.</span><span class="attributeValues">
+                                    Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
+                                    </span></div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                   <div class="classBox" title="att.note.ges">
@@ -1212,14 +1220,6 @@ title: "note"
                               </div>
                            </div>
                         </div>
-                        <div class="classBox" title="att.note.anl.mensural">
-                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.anl.mensural.html">att.note.anl.mensural</a></label><span class="classDesc">(MEI.mensural) Analytical domain attributes in the Mensural repertoire.</span></div>
-                           <div class="classContent">
-                              <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this element's participation in a ligature.</span><span class="attributeValues">
-                                    Allowed values are:
-                                    "<span style="font-weight: 500;">recta</span>" ,  "<span style="font-weight: 500;">obliqua</span>" </span></div>
-                           </div>
-                        </div>
                         <div class="classBox" title="att.pitchClass">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.pitchclass.html">att.pitchClass</a></label><span class="classDesc">(MEI.analytical) Attributes that describe pitch class.</span></div>
                            <div class="classContent">
@@ -1405,8 +1405,8 @@ title: "note"
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.durquality.mensural.html">data.DURQUALITY.mensural</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this element's participation in a ligature.</span><span class="attributeValues">
-                              Allowed values are:
-                              "<span style="font-weight: 500;">recta</span>" ,  "<span style="font-weight: 500;">obliqua</span>" </span></div>
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Records the form of the stem.">stem.form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the form of the stem.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemform.mensural.html">data.STEMFORM.mensural</a>.
                               </span></div>

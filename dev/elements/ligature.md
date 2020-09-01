@@ -49,7 +49,7 @@ title: "ligature"
                         predecessors of the current element.</span><span class="attributeValues">
                         One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures text to be used to generate a label for the element to which it's attached, a &#34;tool tip&#34; or prefatory text, for example. Should not be used to record document content.">label</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures text to be used to generate a label for the element to which it's attached,
@@ -219,15 +219,14 @@ title: "ligature"
                   </div>
                   <div class="classBox" title="att.ligature.log">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ligature.log.html">att.ligature.log</a></label><span class="classDesc">(MEI.mensural) Logical domain attributes.</span></div>
-                     <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
-                              </span></div>
-                     </div>
+                     <div class="classContent"></div>
                   </div>
                   <div class="classBox" title="att.ligature.vis">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.ligature.vis.html">att.ligature.vis</a></label><span class="classDesc">(MEI.visual) Visual domain attributes.</span></div>
                      <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
+                              </span></div>
                         <div class="classBox" title="att.color">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a></label><span class="classDesc">(MEI.shared) Visual color attributes.</span></div>
                            <div class="classContent">
@@ -255,14 +254,6 @@ title: "ligature"
                         <div class="attributeDef def" data-module="MEI.facsimile"><span class="ident attribute" title="Permits the current element to reference a facsimile surface or image zone which corresponds to it.">facs</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Permits the current element to reference a facsimile surface or image zone which
                               corresponds to it.</span><span class="attributeValues">
                               One or more values from <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>, separated by spaces.
-                              </span></div>
-                     </div>
-                  </div>
-                  <div class="classBox" title="MEI.mensural">
-                     <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
-                     <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
-                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
                               </span></div>
                      </div>
                   </div>
@@ -333,6 +324,14 @@ title: "ligature"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Regularizes the naming of an element and thus facilitates building links between it and other resources. Each id attribute within a document must have a unique value.">xml:id</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Regularizes the naming of an element and thus facilitates building links between it
                               and other resources. Each id attribute within a document must have a unique value.</span><span class="attributeValues">
                               Value is a valid <a target="_blank" href="https://www.w3.org/TR/xml-id/">xml:id</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="MEI.visual">
+                     <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
                               </span></div>
                      </div>
                   </div>

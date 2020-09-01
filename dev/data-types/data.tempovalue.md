@@ -18,7 +18,7 @@ title: "data.TEMPOVALUE"
             <div class="statement list">
                <div class="classBox dtBox" title="Attribute Classes">
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.TEMPOVALUE</span></div>
-                  <div class="classContent"><span class="ident attclass" data-ident="att.mmTempo" data-module="MEI.shared"><a class="classLink" title="Attributes that record tempo in terms of beats per minute." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a>/<span title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@mm</span></span></div>
+                  <div class="classContent"><span class="ident attclass" data-ident="att.mmTempo" data-module="MEI.shared"><a class="classLink" title="Attributes that record tempo in terms of beats per minute." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.mmtempo.html">att.mmTempo</a>/<span title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">@mm</span></span></div>
                </div>
             </div>
          </div>

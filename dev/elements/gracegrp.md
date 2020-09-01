@@ -805,7 +805,7 @@ title: "graceGrp"
                </ul>
                <div id="constraints_tabbedContent_text" class="facetTabbedContent text active">
                   <div class="constraint">
-                     <div class="schematronText">A graceGrp without a copyof attribute must have at least 2 note, rest, chord, or space
+                     <div class="schematronText">A graceGrp without a copyof attribute must have at least 1 note, rest, chord, or space
                         descendants.
                      </div>
                   </div>
@@ -819,7 +819,7 @@ title: "graceGrp"
                            <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:graceGrp[not(@copyof)]"</span>&gt;</span>
                               
                               <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(descendant::*[local-name()='note' or local-name()='rest' or               local-name()='chord'
-                                       or local-name()='space']) &gt; 1"</span>&gt;</span>A graceGrp without a copyof attribute must have at least 2 note, rest, chord, or space
+                                       or local-name()='space']) &gt; 0"</span>&gt;</span>A graceGrp without a copyof attribute must have at least 1 note, rest, chord, or space
                                  descendants.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
                               <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
                   </div>
@@ -907,7 +907,7 @@ title: "graceGrp"
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:graceGrp[not(@copyof)]"</span>&gt;</span>
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"count(descendant::*[local-name()='note' or local-name()='rest' or               local-name()='chord'
-                                          or local-name()='space']) &gt; 1"</span>&gt;</span>A graceGrp without a copyof attribute must have at least 2 note, rest, chord, or space
+                                          or local-name()='space']) &gt; 0"</span>&gt;</span>A graceGrp without a copyof attribute must have at least 1 note, rest, chord, or space
                                     descendants.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>

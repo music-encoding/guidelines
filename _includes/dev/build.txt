@@ -1,1 +1,1 @@
-<a href='https://github.com/music-encoding/music-encoding/commit/edb33454613d5c9bf1a5aaca2dad6dc8ee4d09b3'>Version edb3345</a>
+<a href='https://github.com/music-encoding/music-encoding/commit/e1cdaecc0de2a14d5320f8c2bbf3b2732685f660'>Version e1cdaec</a>

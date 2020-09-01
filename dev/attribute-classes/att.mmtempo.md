@@ -22,10 +22,10 @@ title: "att.mmTempo"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span>, <span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">mm.dots</span>, <span class="ident attribute" title="Captures the metronomic unit.">mm.unit</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span>, <span class="ident attribute" title="Records the number of augmentation dots required by a dotted metronome unit.">mm.dots</span>, <span class="ident attribute" title="Captures the metronomic unit.">mm.unit</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
-                        minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                        minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm
                         or
                         midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
                         of the
@@ -43,8 +43,8 @@ title: "att.mmTempo"
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
-                              minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                              minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm
                               or
                               midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
                               of the
@@ -64,8 +64,8 @@ title: "att.mmTempo"
                   <div class="classBox" title="MEI.shared">
                      <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
-                              minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to describe tempo in terms of beats (often the meter signature denominator) per minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm or midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator of the time signature or the metronomic indication*.">mm</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to describe tempo in terms of beats (often the meter signature denominator) per
+                              minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm
                               or
                               midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
                               of the
@@ -137,7 +137,7 @@ title: "att.mmTempo"
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"mm"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Used to describe tempo in terms of beats (often the meter signature denominator) per
-                                 minute, ala M.M. (Maezel's Metronome). Do not confuse this attribute with midi.bpm
+                                 minute, ala M.M. (Maelzel's Metronome). Do not confuse this attribute with midi.bpm
                                  or
                                  midi.mspb. In MIDI, a beat is always defined as a quarter note, *not the numerator
                                  of the

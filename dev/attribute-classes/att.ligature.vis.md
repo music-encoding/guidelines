@@ -22,14 +22,25 @@ title: "att.ligature.vis"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span>, <span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
                         as used in pre-CMN notation.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
                         </span></div>
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
+                        </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
+                  <div class="classBox direct" title="direct childs">
+                     <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
+                              </span></div>
+                     </div>
+                  </div>
                   <div class="classBox" title="att.color">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a></label><span class="classDesc">(MEI.shared) Visual color attributes.</span></div>
                      <div class="classContent">
@@ -47,6 +58,14 @@ title: "att.ligature.vis"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
                               as used in pre-CMN notation.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.color.html">data.COLOR</a>.
+                              </span></div>
+                     </div>
+                  </div>
+                  <div class="classBox" title="MEI.visual">
+                     <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="Provides an indication of the function of the ligature.">form</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides an indication of the function of the ligature.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>.
                               </span></div>
                      </div>
                   </div>
@@ -93,6 +112,22 @@ title: "att.ligature.vis"
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.color.html">att.color</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"form"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Provides an indication of the function of the ligature.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.ligatureform.html">data.LIGATUREFORM</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
             </div>
          </div>

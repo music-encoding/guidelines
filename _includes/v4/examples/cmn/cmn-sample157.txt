@@ -3,9 +3,9 @@
     <!-- first staff, without ossia -->
   </staff>
   <ossia>
-    <staff>
+    <oStaff>
       <!-- alternative content on reduced-size staff -->
-    </staff>
+    </oStaff>
     <staff n="2">
       <!-- original content on regular staff -->
     </staff>
