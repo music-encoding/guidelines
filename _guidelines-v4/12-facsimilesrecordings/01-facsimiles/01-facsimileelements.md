@@ -36,8 +36,9 @@ Because the coordinate space of a zone is defined relative to that of a surface,
 
 {% include mei example="facsimiles/facsimiles-sample249.xml" valid="" %}
 
-Additionally, the area represented by a {% include link elem="zone" %} element may not be normally oriented to its parent surface. The amount by which the area has been rotated clockwise in degrees is expressed by the **@rotate** attribute. By default this amount is 0&deg;.
-For a zone where its contents are oriented 90&deg; clockwise:
+The amount by which contents of an element have been rotated clockwise or, if applicable, how the orientation of the element itself should be interpreted, is indicated by the **@rotate** attribute.
+This amount is with respect to the normal orientation of the parent surface and is expressed in arc degrees. By default, this amount is 0&deg;, following the same orientation as the parent.
+For example, the following would encode a zone where its contents are oriented 90&deg; clockwise:
 
 {% include mei example="facsimiles/facsimiles-sample-rotate.xml" valid="" %}
 
