@@ -46,7 +46,8 @@ The value of **@xml:base** can be inherited from an ancestor. This is relevenat 
 
 {% include mei example="shared/shared-sample018.xml" valid="" %}
 
-In order to determine an absolute URI, the base URIs of the element and all its ancestors (including the document node) have to be taken into account. In the above case the relative URIs of **graphic/@target** would consequently resolve to: ``
+In order to determine an absolute URI, the base URIs of the element and all its ancestors (including the document node) have to be taken into account. In the above case the relative URIs of **graphic/@target** would consequently resolve to:
+
 ```
 http://www.mySite.org/images/myImage.jpg
 http://www.mySite.org/images/myImage.tif
