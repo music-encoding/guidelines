@@ -57,7 +57,7 @@ For more information on **xml:base** see: [https://www.w3.org/TR/xmlbase/](https
 
 Other attributes from the XML-Namespace encountered in MEI files are: {% include link atts="att.lang/xml---lang  att.whitespace/xml---space" %}
 
-The xml:id and xml:base attributes are especially important when it comes to linking document fragments to eachother or to external entities. Many of the linking attributes are globally available in MEI through the {% include link att="common" %} attribute class:
+The **@xml:id** and **@xml:base** attributes are especially important when it comes to linking document fragments to eachother or to external entities. Many of the linking attributes are globally available in MEI through the {% include link att="common" %} attribute class:
 
 
 {% include desc atts="att.linking/copyof
