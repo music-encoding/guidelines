@@ -6,7 +6,21 @@ version: "dev"
 
 The following attributes, provided by the {% include link att="common" %} attribute class, are available on nearly all elements in an MEI encoding. They provide the means to identify, label, and access elements in MEI-encoded files.
 
-{% include desc atts="att.id/xml---id att.labelled/label att.nNumberLike/n att.basic/xml---base" %}
+{% include desc atts="att.labelled/label att.nNumberLike/n" %}
+
+The **@label** and **@n** attributes both serve a labeling function; however, they differ in the values they allow. The **@n** attribute must be a single token, while **@label** may contain a string value that includes spaces. This makes **@label** useful for the capture of free-text labels, but a name or number specified with **@n** may be easier to process.
+
+{% include mei example="shared/shared-sample016.xml" valid="" %}
+
+{% include desc atts="att.typed/type" %}
+
+
+{% include desc atts="att.responsibility/resp" %}
+
+
+Two very common attributes encounterd in MEI files are from the XML-namespace (http://www.w3.org/XML/1998/namespace). 
+
+{% include desc atts="att.id/xml---id" %}
 
 The value of the **@xml:id** attribute serves as an identifier for an element and its content. Its value must be unique in the context of the current document and must conform to the definition of an XML Name provided by the W3C Recommendation at [http://www.w3.org/TR/xml/#NT-Name](http://www.w3.org/TR/xml/#NT-Name){:.link_ref}. Suggestions for constructing an ID value can be found at [http://www.w3.org/TR/xml/#sec-suggested-names](http://www.w3.org/TR/xml/#sec-suggested-names){:.link_ref}.
 
@@ -18,16 +32,41 @@ This is an example of an incorrectly-formulated **@xml:id** value:
 
 {% include mei example="shared/shared-sample015.xml" valid="false" %}
 
-The **@label** and **@n** attributes both serve a labeling function; however, they differ in the values they allow. The **@n** attribute must be a single token, while **@label** may contain a string value that includes spaces. This makes **@label** useful for the capture of free-text labels, but a name or number specified with **@n** may be easier to process.
+{% include desc atts="att.basic/xml---base" %}
 
-{% include mei example="shared/shared-sample016.xml" valid="" %}
-
-When a reference to an external entity is not a complete URI, the **@xml:base** attribute can record a value against which it can be resolved into a complete, or absolute, location.
+At many locations in an MEI file one can reference internal or external references. E.g. the following example defines a graphic and references an external image (entity) by means of the **@target** attribute:
 
 {% include mei example="shared/shared-sample017.xml" valid="" %}
 
-The value of **@xml:base** can be inherited from an ancestor. In the following example, the values of the graphic elements' **@target** attribute can be completed by the xml:base value specified for the {% include link elem="facsimile" %} element:
+When a reference to an external entity is not a complete URI it is resolved against the current base URI; if not defined by other means this would be the location of the current document; the **@xml:base** attribute may be used “to specify a base URI other than the base URI of the document or external entity.” (Marsch, Jonathan; Tobin, Richard: XML Base (Second Edition). W3C Recommendation 28 January 2009. online at: [http://www.w3.org/TR/2009/REC-xmlbase-20090128/](http://www.w3.org/TR/2009/REC-xmlbase-20090128/){:.link_ref} ).
+
+{% include mei example="shared/shared-sample0017.xml" valid="" %}
+
+The value of **@xml:base** can be inherited from an ancestor. This is relevenat for resolving relative links or URIs within the document. A comprehensible use case can be illustrated by the following example: the values of the graphic elements' **@target** attribute can be completed by the **@xml:base** value specified for the ancestor {% include link elem="facsimile" %} element:
 
 {% include mei example="shared/shared-sample018.xml" valid="" %}
 
-See [http://www.w3.org/TR/xmlbase/](http://www.w3.org/TR/xmlbase/){:.link_ref} for more details on xml:base.
+In order to determine an absolute URI, the base URIs of the element and all its ancestors (including the document node) have to be taken into account. In the above case the relative URIs of **graphic/@target** would consequently resolve to: ``
+```
+http://www.mySite.org/images/myImage.jpg
+http://www.mySite.org/images/myImage.tif
+```
+
+For more information on **xml:base** see: [https://www.w3.org/TR/xmlbase/](https://www.w3.org/TR/xmlbase/)
+
+Other attributes from the XML-Namespace encountered in MEI files are: {% include link atts="att.lang/xml---lang  att.whitespace/xml---space" %}
+
+The xml:id and xml:base attributes are especially important when it comes to linking document fragments to eachother or to external entities. Many of the linking attributes are globally available in MEI through the {% include link att="common" %} attribute class:
+
+
+{% include desc atts="att.linking/copyof
+att.linking/corresp
+att.linking/follows
+att.linking/next
+att.linking/precedes
+att.linking/prev
+att.linking/sameas
+att.linking/synch" %}
+
+For a detailed description of linking mechanisms used in MEI also see the section on {% include link id="linkingdata" %}.
+
