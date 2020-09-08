@@ -1,6 +1,6 @@
 ---
 sectionid: sharedMusicElement
-title: "Music Element"
+title: "General Music Structure Elements"
 version: "dev"
 ---
 
@@ -22,3 +22,4 @@ The overall structure of a single musical text is:
 The top-level structure of a composite musical text made up of two unitary musical texts is:
 
 {% include mei example="shared/shared-sample001.xml" valid="" %}
+
