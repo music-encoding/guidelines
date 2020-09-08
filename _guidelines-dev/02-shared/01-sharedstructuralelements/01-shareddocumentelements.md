@@ -26,7 +26,7 @@ The below example shows the basic structure of an MEI file with {% include link 
 
 {% include desc elem="meiCorpus" %}
 
-{% include link elem="meiCorpus" %} contains an {% include link elem="meiHead" %} element describing a collection of related MEI-encoded texts – known as a corpus – and an {% include link elem="mei" %} element for each text. Further information regarding the organization and encoding of music corpora is given in chapter {% include link id="corpus" %}.
+{% include link elem="meiCorpus" %} contains a {% include link elem="meiHead" %} element describing a collection of related MEI-encoded texts – known as a corpus – and an {% include link elem="mei" %} element for each text. Further information regarding the organization and encoding of music corpora is given in chapter {% include link id="corpus" %}.
 
 The below example shows the basic structure of an MEI file with {% include link elem="meiCorpus" %} as root element. Please be aware that this example still does not represent a valid MEI file:
 
