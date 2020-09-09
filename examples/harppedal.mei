@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
-    <meiHead>
-        <fileDesc>
-            <titleStmt>
-                <title>Harp pedals</title>
-                <editor>
-                    <persName>Klaus Rettinghaus</persName>
-                </editor>
-            </titleStmt>
-            <pubStmt/>
-            <seriesStmt>
-                <title>MEI guidelines examples</title>
-            </seriesStmt>
-        </fileDesc>
-    </meiHead>
-    <music>
-        <body>
-            <mdiv n="1">
-                <score>
-                    <scoreDef>
-                        <staffGrp>
-                            <staffDef n="1" clef.line="2" clef.shape="G" lines="5" key.sig="2f"/>
-                        </staffGrp>
-                    </scoreDef>
-                    <section>
-                        <measure right="single">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" oct="5" pname="c" xml:id="firstNote">
-                                        <accid accid="s"/>
-                                    </note>
-                                </layer>
-                            </staff>
-                            <harpPedal startid="#firstNote" c="s" b="f" e="f"/>
-                        </measure>
-                        <measure right="single">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" oct="5" pname="c" xml:id="secondtNote">
-                                        <accid accid="n"/>
-                                    </note>
-                                </layer>
-                            </staff>
-                            <harpPedal startid="#secondtNote" c="n" b="f" e="f" a="f"/>
-                        </measure>
-                        <measure right="single">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" oct="5" pname="e" xml:id="thirdNote">
-                                        <accid accid="n"/>
-                                    </note>
-                                </layer>
-                            </staff>
-                            <harpPedal startid="#thirdNote" c="n" b="f" e="n" a="f"/>
-                        </measure>
-                    </section>
-                </score>
-            </mdiv>
-        </body>
-    </music>
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Harp pedals</title>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt>
+        <date>2020</date>
+        <availability>
+          <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
+            <p>Creative Commons Attribution 4.0 International License</p>
+          </useRestrict>
+        </availability>
+      </pubStmt>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" key.sig="2f" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="1" oct="5" pname="c" xml:id="firstNote">
+                    <accid accid="s" />
+                  </note>
+                </layer>
+              </staff>
+              <harpPedal startid="#firstNote" c="s" b="f" e="f" />
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="1" oct="5" pname="c" xml:id="secondtNote">
+                    <accid accid="n" />
+                  </note>
+                </layer>
+              </staff>
+              <harpPedal startid="#secondtNote" c="n" b="f" e="f" a="f" />
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="1" oct="5" pname="e" xml:id="thirdNote">
+                    <accid accid="n" />
+                  </note>
+                </layer>
+              </staff>
+              <harpPedal startid="#thirdNote" c="n" b="f" e="n" a="f" />
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
 </mei>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
   <meiHead>
     <fileDesc>
@@ -10,6 +10,7 @@
         </editor>
       </titleStmt>
       <pubStmt>
+        <date>2020</date>
         <availability>
           <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
             <p>Creative Commons Attribution 4.0 International License</p>
@@ -27,7 +28,7 @@
         <score>
           <scoreDef system.leftline="false">
             <staffGrp>
-              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" />
             </staffGrp>
           </scoreDef>
           <section>
@@ -36,56 +37,56 @@
                 <layer>
                   <beam>
                     <note dur="8" oct="4" pname="a">
-                      <accid accid="n"/>
-                      <artic artic="stacc acc"/>
+                      <accid accid="n" />
+                      <artic artic="stacc acc" />
                     </note>
                     <note dur="8" oct="4" pname="b">
-                      <artic artic="stacc acc"/>
+                      <artic artic="stacc acc" />
                     </note>
                     <note dur="8" oct="5" pname="c">
-                      <accid accid="n"/>
-                      <artic artic="stacc acc"/>
+                      <accid accid="n" />
+                      <artic artic="stacc acc" />
                     </note>
                     <note dur="8" oct="4" pname="d">
-                      <accid accid="s"/>
-                      <artic artic="stacc acc"/>
+                      <accid accid="s" />
+                      <artic artic="stacc acc" />
                     </note>
                   </beam>
                   <note dur="8" oct="4" pname="e" xml:id="beamed-01">
-                    <artic artic="stacc acc"/>
+                    <artic artic="stacc acc" />
                   </note>
                   <note dur="8" oct="4" pname="f" xml:id="beamed-02">
-                    <accid accid="s"/>
-                    <artic artic="stacc acc"/>
+                    <accid accid="s" />
+                    <artic artic="stacc acc" />
                   </note>
                 </layer>
               </staff>
-              <beamSpan startid="#beamed-01" endid="#beamed-04" plist="#beamed-01 #beamed-02 #beamed-03 #beamed-04"/>
+              <beamSpan startid="#beamed-01" endid="#beamed-04" plist="#beamed-01 #beamed-02 #beamed-03 #beamed-04" />
             </measure>
             <measure right="single">
               <staff n="1">
                 <layer>
                   <note dur="8" oct="4" pname="g" xml:id="beamed-03">
-                    <accid accid="n"/>
-                    <artic artic="stacc acc"/>
+                    <accid accid="n" />
+                    <artic artic="stacc acc" />
                   </note>
                   <note dur="8" oct="3" pname="a" xml:id="beamed-04">
-                    <accid accid="n"/>
-                    <artic artic="stacc acc"/>
+                    <accid accid="n" />
+                    <artic artic="stacc acc" />
                   </note>
                   <beam>
                     <note dur="8" oct="3" pname="b">
-                      <accid accid="f"/>
-                      <artic artic="stacc acc"/>
+                      <accid accid="f" />
+                      <artic artic="stacc acc" />
                     </note>
                     <note dur="8" oct="4" pname="c">
-                      <accid accid="n"/>
-                      <artic artic="stacc acc"/>
+                      <accid accid="n" />
+                      <artic artic="stacc acc" />
                     </note>
                   </beam>
                   <note dur="4" oct="4" pname="d">
-                    <accid accid="f"/>
-                    <artic artic="ten acc"/>
+                    <accid accid="f" />
+                    <artic artic="ten acc" />
                   </note>
                 </layer>
               </staff>
@@ -97,7 +98,7 @@
         <score>
           <scoreDef system.leftline="false">
             <staffGrp>
-              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" />
             </staffGrp>
           </scoreDef>
           <section>
@@ -105,39 +106,39 @@
               <staff n="1">
                 <layer>
                   <beam>
-                    <note dur="16" oct="5" pname="d"/>
-                    <note dur="16" oct="4" pname="e"/>
-                    <note dur="16" oct="4" pname="b"/>
-                    <note dur="16" oct="5" pname="f"/>
-                    <note dur="16" oct="4" pname="c"/>
-                    <note dur="16" oct="4" pname="a"/>
-                    <note dur="16" oct="4" pname="g"/>
-                    <note dur="16" oct="5" pname="c"/>
+                    <note dur="16" oct="5" pname="d" />
+                    <note dur="16" oct="4" pname="e" />
+                    <note dur="16" oct="4" pname="b" />
+                    <note dur="16" oct="5" pname="f" />
+                    <note dur="16" oct="4" pname="c" />
+                    <note dur="16" oct="4" pname="a" />
+                    <note dur="16" oct="4" pname="g" />
+                    <note dur="16" oct="5" pname="c" />
                   </beam>
-                  <note dur="16" oct="5" pname="d" stem.dir="down" xml:id="beamedNote1"/>
-                  <note dur="16" oct="4" pname="e" stem.dir="down" xml:id="beamedNote2"/>
-                  <note dur="16" oct="4" pname="b" stem.dir="down" xml:id="beamedNote3"/>
-                  <note dur="16" oct="5" pname="f" stem.dir="down" xml:id="beamedNote4"/>
+                  <note dur="16" oct="5" pname="d" stem.dir="down" xml:id="beamedNote1" />
+                  <note dur="16" oct="4" pname="e" stem.dir="down" xml:id="beamedNote2" />
+                  <note dur="16" oct="4" pname="b" stem.dir="down" xml:id="beamedNote3" />
+                  <note dur="16" oct="5" pname="f" stem.dir="down" xml:id="beamedNote4" />
                 </layer>
               </staff>
-              <beamSpan startid="#beamedNote1" endid="#beamedNote8" plist="#beamedNote1 #beamedNote2 #beamedNote3 #beamedNote4 #beamedNote5 #beamedNote6 #beamedNote7 #beamedNote8"/>
+              <beamSpan startid="#beamedNote1" endid="#beamedNote8" plist="#beamedNote1 #beamedNote2 #beamedNote3 #beamedNote4 #beamedNote5 #beamedNote6 #beamedNote7 #beamedNote8" />
             </measure>
             <measure right="single">
               <staff n="1">
                 <layer>
-                  <note dur="16" oct="4" pname="c" stem.dir="down" xml:id="beamedNote5"/>
-                  <note dur="16" oct="4" pname="a" stem.dir="down" xml:id="beamedNote6"/>
-                  <note dur="16" oct="4" pname="g" stem.dir="down" xml:id="beamedNote7"/>
-                  <note dur="16" oct="5" pname="c" stem.dir="down" xml:id="beamedNote8"/>
+                  <note dur="16" oct="4" pname="c" stem.dir="down" xml:id="beamedNote5" />
+                  <note dur="16" oct="4" pname="a" stem.dir="down" xml:id="beamedNote6" />
+                  <note dur="16" oct="4" pname="g" stem.dir="down" xml:id="beamedNote7" />
+                  <note dur="16" oct="5" pname="c" stem.dir="down" xml:id="beamedNote8" />
                   <beam>
-                    <note dur="16" oct="5" pname="d"/>
-                    <note dur="16" oct="4" pname="e"/>
-                    <note dur="16" oct="4" pname="b"/>
-                    <note dur="16" oct="5" pname="f"/>
-                    <note dur="16" oct="4" pname="c"/>
-                    <note dur="16" oct="4" pname="a"/>
-                    <note dur="16" oct="4" pname="g"/>
-                    <note dur="16" oct="5" pname="c"/>
+                    <note dur="16" oct="5" pname="d" />
+                    <note dur="16" oct="4" pname="e" />
+                    <note dur="16" oct="4" pname="b" />
+                    <note dur="16" oct="5" pname="f" />
+                    <note dur="16" oct="4" pname="c" />
+                    <note dur="16" oct="4" pname="a" />
+                    <note dur="16" oct="4" pname="g" />
+                    <note dur="16" oct="5" pname="c" />
                   </beam>
                 </layer>
               </staff>

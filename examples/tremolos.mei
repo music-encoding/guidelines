@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
   <meiHead>
     <fileDesc>
@@ -9,7 +9,14 @@
           <persName>Klaus Rettinghaus</persName>
         </editor>
       </titleStmt>
-      <pubStmt/>
+      <pubStmt>
+        <date>2020</date>
+        <availability>
+          <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
+            <p>Creative Commons Attribution 4.0 International License</p>
+          </useRestrict>
+        </availability>
+      </pubStmt>
       <seriesStmt>
         <title>MEI guidelines examples</title>
       </seriesStmt>
@@ -21,7 +28,7 @@
         <score>
           <scoreDef system.leftline="false">
             <staffGrp>
-              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" />
             </staffGrp>
           </scoreDef>
           <section>
@@ -29,22 +36,10 @@
               <staff n="1">
                 <layer n="1">
                   <bTrem unitdur="32">
-                    <note dur="1" oct="4" pname="b" stem.mod="3slash"/>
+                    <note dur="1" oct="4" pname="b" stem.mod="3slash" />
                   </bTrem>
                   <bTrem unitdur="32">
-                    <note dur="1" oct="4" pname="a" stem.mod="3slash"/>
-                  </bTrem>
-                </layer>
-              </staff>
-            </measure>
-            <measure right="single">
-              <staff n="1">
-                <layer n="1">
-                  <bTrem unitdur="32">
-                    <note dur="2" oct="4" pname="b" stem.mod="3slash"/>
-                  </bTrem>
-                  <bTrem unitdur="32">
-                    <note dur="2" oct="4" pname="a" stem.mod="3slash"/>
+                    <note dur="1" oct="4" pname="a" stem.mod="3slash" />
                   </bTrem>
                 </layer>
               </staff>
@@ -53,10 +48,10 @@
               <staff n="1">
                 <layer n="1">
                   <bTrem unitdur="32">
-                    <note dur="4" oct="4" pname="b" stem.mod="3slash"/>
+                    <note dur="2" oct="4" pname="b" stem.mod="3slash" />
                   </bTrem>
                   <bTrem unitdur="32">
-                    <note dur="4" oct="4" pname="a" stem.mod="3slash"/>
+                    <note dur="2" oct="4" pname="a" stem.mod="3slash" />
                   </bTrem>
                 </layer>
               </staff>
@@ -65,10 +60,22 @@
               <staff n="1">
                 <layer n="1">
                   <bTrem unitdur="32">
-                    <note dur="8" oct="4" pname="b" stem.mod="2slash"/>
+                    <note dur="4" oct="4" pname="b" stem.mod="3slash" />
                   </bTrem>
                   <bTrem unitdur="32">
-                    <note dur="8" oct="4" pname="a" stem.mod="2slash"/>
+                    <note dur="4" oct="4" pname="a" stem.mod="3slash" />
+                  </bTrem>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="single">
+              <staff n="1">
+                <layer n="1">
+                  <bTrem unitdur="32">
+                    <note dur="8" oct="4" pname="b" stem.mod="2slash" />
+                  </bTrem>
+                  <bTrem unitdur="32">
+                    <note dur="8" oct="4" pname="a" stem.mod="2slash" />
                   </bTrem>
                 </layer>
               </staff>
@@ -78,18 +85,18 @@
                 <layer n="1">
                   <beam>
                     <bTrem unitdur="32">
-                      <note dots="1" dur="8" oct="4" pname="b" stem.mod="2slash"/>
+                      <note dots="1" dur="8" oct="4" pname="b" stem.mod="2slash" />
                     </bTrem>
                     <bTrem unitdur="32">
-                      <note dots="1" dur="16" oct="4" pname="b" stem.mod="1slash"/>
+                      <note dots="1" dur="16" oct="4" pname="b" stem.mod="1slash" />
                     </bTrem>
                   </beam>
                   <beam>
                     <bTrem unitdur="32">
-                      <note dots="1" dur="8" oct="4" pname="a" stem.mod="2slash"/>
+                      <note dots="1" dur="8" oct="4" pname="a" stem.mod="2slash" />
                     </bTrem>
                     <bTrem unitdur="32">
-                      <note dots="1" dur="16" oct="4" pname="a" stem.mod="1slash"/>
+                      <note dots="1" dur="16" oct="4" pname="a" stem.mod="1slash" />
                     </bTrem>
                   </beam>
                 </layer>
@@ -102,7 +109,7 @@
         <score>
           <scoreDef system.leftline="false">
             <staffGrp>
-              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"/>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" />
             </staffGrp>
           </scoreDef>
           <section>
@@ -110,24 +117,24 @@
               <staff n="1">
                 <layer n="1">
                   <fTrem unitdur="32">
-                    <note pname="f" oct="4" dur="1"/>
-                    <note pname="a" oct="4" dur="1"/>
+                    <note pname="f" oct="4" dur="1" />
+                    <note pname="a" oct="4" dur="1" />
                   </fTrem>
                   <fTrem unitdur="32">
-                    <note pname="f" oct="4" dur="2"/>
-                    <note pname="a" oct="4" dur="2"/>
+                    <note pname="f" oct="4" dur="2" />
+                    <note pname="a" oct="4" dur="2" />
                   </fTrem>
                   <fTrem unitdur="32">
-                    <note pname="f" oct="4" dur="4"/>
-                    <note pname="a" oct="4" dur="4"/>
+                    <note pname="f" oct="4" dur="4" />
+                    <note pname="a" oct="4" dur="4" />
                   </fTrem>
                   <fTrem unitdur="32">
-                    <note pname="f" oct="4" dur="8"/>
-                    <note pname="a" oct="4" dur="8"/>
+                    <note pname="f" oct="4" dur="8" />
+                    <note pname="a" oct="4" dur="8" />
                   </fTrem>
                   <fTrem unitdur="32">
-                    <note pname="f" oct="4" dur="16"/>
-                    <note pname="a" oct="4" dur="16"/>
+                    <note pname="f" oct="4" dur="16" />
+                    <note pname="a" oct="4" dur="16" />
                   </fTrem>
                 </layer>
               </staff>
@@ -139,7 +146,7 @@
         <score>
           <scoreDef meter.count="2" meter.unit="4" key.sig="1f" system.leftline="false">
             <staffGrp>
-              <staffDef n="1" clef.line="4" clef.shape="F" lines="5"/>
+              <staffDef n="1" clef.line="4" clef.shape="F" lines="5" />
             </staffGrp>
           </scoreDef>
           <section>
@@ -147,8 +154,8 @@
               <staff n="1">
                 <layer n="1">
                   <fTrem beams="3">
-                    <note pname="d" oct="3" dur="2"/>
-                    <note pname="d" oct="4" dur="2"/>
+                    <note pname="d" oct="3" dur="2" />
+                    <note pname="d" oct="4" dur="2" />
                   </fTrem>
                 </layer>
               </staff>
@@ -157,8 +164,8 @@
               <staff n="1">
                 <layer n="1">
                   <fTrem beams="3" beams.float="1">
-                    <note pname="d" oct="3" dur="2"/>
-                    <note pname="d" oct="4" dur="2"/>
+                    <note pname="d" oct="3" dur="2" />
+                    <note pname="d" oct="4" dur="2" />
                   </fTrem>
                 </layer>
               </staff>
@@ -167,8 +174,8 @@
               <staff n="1">
                 <layer n="1">
                   <fTrem beams="3" beams.float="2">
-                    <note pname="d" oct="3" dur="2"/>
-                    <note pname="d" oct="4" dur="2"/>
+                    <note pname="d" oct="3" dur="2" />
+                    <note pname="d" oct="4" dur="2" />
                   </fTrem>
                 </layer>
               </staff>
@@ -177,8 +184,8 @@
               <staff n="1">
                 <layer n="1">
                   <fTrem beams="3" beams.float="3" float.gap="1">
-                    <note pname="d" oct="3" dur="2"/>
-                    <note pname="d" oct="4" dur="2"/>
+                    <note pname="d" oct="3" dur="2" />
+                    <note pname="d" oct="4" dur="2" />
                   </fTrem>
                 </layer>
               </staff>

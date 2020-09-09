@@ -1,282 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-    <meiHead>
-        <fileDesc>
-            <titleStmt>
-                <title>Fingering example</title>
-                <editor>
-                    <persName>Klaus Rettinghaus</persName>
-                </editor>
-            </titleStmt>
-            <pubStmt/>
-            <seriesStmt>
-                <title>MEI guidelines examples</title>
-            </seriesStmt>
-        </fileDesc>
-    </meiHead>
-    <music>
-        <body>
-            <mdiv n="21">
-                <score>
-                    <scoreDef>
-                        <staffGrp>
-                            <staffGrp symbol="brace" bar.thru="true">
-                                <label>
-                                    <rend fontsize="x-large">21.</rend>
-                                </label>
-                                <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common" />
-                                <staffDef n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common" />
-                            </staffGrp>
-                        </staffGrp>
-                    </scoreDef>
-                    <section>
-                        <measure n="1">
-                            <staff n="1">
-                                <layer>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_1325804507" dur="16" oct="3" pname="c" />
-                                        <note xml:id="ex_0775286619" dur="16" oct="3" pname="d" />
-                                        <note xml:id="ex_0086444042" dur="16" oct="3" pname="e" />
-                                        <note xml:id="ex_0177886732" dur="16" oct="3" pname="d" breaksec="1" />
-                                        <note xml:id="ex_0574014199" dur="16" oct="3" pname="c" />
-                                        <note xml:id="ex_0213097525" dur="16" oct="3" pname="e" />
-                                        <note xml:id="ex_0208913806" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_2048292521" dur="16" oct="3" pname="g" />
-                                    </beam>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_0601041723" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_1772055421" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_1171339079" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_1325670574" dur="16" oct="3" pname="g" breaksec="1" />
-                                        <note xml:id="ex_0237171501" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_1400448691" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_0920378517" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_0477025878" dur="16" oct="3" pname="e" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer />
-                                <layer>
-                                    <beam place="below">
-                                        <note xml:id="ex_0518743170" dur="16" oct="2" pname="c" />
-                                        <note xml:id="ex_0421281467" dur="16" oct="2" pname="d" />
-                                        <note xml:id="ex_0762116779" dur="16" oct="2" pname="e" />
-                                        <note xml:id="ex_0894328686" dur="16" oct="2" pname="d" breaksec="1" />
-                                        <note xml:id="ex_0492684815" dur="16" oct="2" pname="c" />
-                                        <note xml:id="ex_1754118445" dur="16" oct="2" pname="e" />
-                                        <note xml:id="ex_0851327385" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_0447977378" dur="16" oct="2" pname="g" />
-                                    </beam>
-                                    <beam place="below">
-                                        <note xml:id="ex_0085418717" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_0215193050" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_1762615451" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_1656803860" dur="16" oct="2" pname="g" breaksec="1" />
-                                        <note xml:id="ex_0282308335" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_2062185604" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_0914867495" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_0195075945" dur="16" oct="2" pname="e" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                            <tempo place="above" staff="1" tstamp="1"></tempo>
-                            <fing startid="#ex_1325804507" place="above">1</fing>
-                            <fing startid="#ex_0775286619" place="above">2</fing>
-                            <fing startid="#ex_0086444042" place="above">3</fing>
-                            <fing startid="#ex_0177886732" place="above">2</fing>
-                            <fing startid="#ex_0574014199" place="above">1</fing>
-                            <fing startid="#ex_0213097525" place="above">2</fing>
-                            <fing startid="#ex_0208913806" place="above">3</fing>
-                            <fing startid="#ex_2048292521" place="above">4</fing>
-                            <fing startid="#ex_0601041723" place="above">5</fing>
-                            <fing startid="#ex_1772055421" place="above">4</fing>
-                            <fing startid="#ex_1171339079" place="above">3</fing>
-                            <fing startid="#ex_1325670574" place="above">4</fing>
-                            <fing startid="#ex_0237171501" place="above">5</fing>
-                            <fing startid="#ex_0518743170" place="below">5</fing>
-                            <fing startid="#ex_0421281467" place="below">4</fing>
-                            <fing startid="#ex_0762116779" place="below">3</fing>
-                            <fing startid="#ex_0894328686" place="below">4</fing>
-                            <fing startid="#ex_0492684815" place="below">5</fing>
-                            <fing startid="#ex_1754118445" place="below">4</fing>
-                            <fing startid="#ex_0851327385" place="below">3</fing>
-                            <fing startid="#ex_0447977378" place="below">2</fing>
-                            <fing startid="#ex_0085418717" place="below">1</fing>
-                            <fing startid="#ex_0215193050" place="below">2</fing>
-                            <fing startid="#ex_1762615451" place="below">3</fing>
-                            <fing startid="#ex_1656803860" place="below">2</fing>
-                            <fing startid="#ex_0282308335" place="below">1</fing>
-                        </measure>
-                        <measure n="2">
-                            <staff n="1">
-                                <layer>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_2099285249" dur="16" oct="3" pname="d" />
-                                        <note xml:id="ex_0719484315" dur="16" oct="3" pname="e" />
-                                        <note xml:id="ex_2039949595" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_0856418810" dur="16" oct="3" pname="e" breaksec="1" />
-                                        <note xml:id="ex_1395537476" dur="16" oct="3" pname="d" />
-                                        <note xml:id="ex_1855290460" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_1012575999" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_0505339222" dur="16" oct="3" pname="a" />
-                                    </beam>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_1411105971" dur="16" oct="3" pname="b" />
-                                        <note xml:id="ex_0560396353" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_1865712776" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_1625896385" dur="16" oct="3" pname="a" breaksec="1" />
-                                        <note xml:id="ex_1858618267" dur="16" oct="3" pname="b" />
-                                        <note xml:id="ex_0500084207" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_1811756338" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_1018141953" dur="16" oct="3" pname="f" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer />
-                                <layer>
-                                    <beam place="below">
-                                        <note xml:id="ex_0938118303" dur="16" oct="2" pname="d" />
-                                        <note xml:id="ex_1273974565" dur="16" oct="2" pname="e" />
-                                        <note xml:id="ex_1278553365" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_0925033673" dur="16" oct="2" pname="e" breaksec="1" />
-                                        <note xml:id="ex_1406821478" dur="16" oct="2" pname="d" />
-                                        <note xml:id="ex_1134773327" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_1025298692" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_0282955574" dur="16" oct="2" pname="a" />
-                                    </beam>
-                                    <beam place="below">
-                                        <note xml:id="ex_1415515063" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_1010078847" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_0536951994" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_0825878464" dur="16" oct="2" pname="a" breaksec="1" />
-                                        <note xml:id="ex_1352533887" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_0922635314" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_1899791058" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_1001448210" dur="16" oct="2" pname="f" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                            <fing startid="#ex_2099285249" place="above">1</fing>
-                            <fing startid="#ex_1395537476" place="above">1</fing>
-                            <fing startid="#ex_1855290460" place="above">2</fing>
-                            <fing startid="#ex_1012575999" place="above">3</fing>
-                            <fing startid="#ex_0505339222" place="above">4</fing>
-                            <fing startid="#ex_1411105971" place="above">5</fing>
-                            <fing startid="#ex_0938118303" place="below">5</fing>
-                            <fing startid="#ex_1406821478" place="below">5</fing>
-                            <fing startid="#ex_1134773327" place="below">4</fing>
-                            <fing startid="#ex_1025298692" place="below">3</fing>
-                            <fing startid="#ex_0282955574" place="below">2</fing>
-                            <fing startid="#ex_1415515063" place="below">1</fing>
-                        </measure>
-                        <measure n="3">
-                            <staff n="1">
-                                <layer>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_0970990060" dur="16" oct="3" pname="e" />
-                                        <note xml:id="ex_1720993992" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_0288782101" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_0247729287" dur="16" oct="3" pname="f" breaksec="1" />
-                                        <note xml:id="ex_1762818723" dur="16" oct="3" pname="e" />
-                                        <note xml:id="ex_1547865102" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_1849147501" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_0498223265" dur="16" oct="3" pname="b" />
-                                    </beam>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_1450381295" dur="16" oct="4" pname="c" />
-                                        <note xml:id="ex_1092040746" dur="16" oct="3" pname="b" />
-                                        <note xml:id="ex_1533570760" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_0625032026" dur="16" oct="3" pname="b" breaksec="1" />
-                                        <note xml:id="ex_1570743505" dur="16" oct="4" pname="c" />
-                                        <note xml:id="ex_0469615964" dur="16" oct="3" pname="b" />
-                                        <note xml:id="ex_0833104223" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_0389297521" dur="16" oct="3" pname="g" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer />
-                                <layer>
-                                    <beam place="below">
-                                        <note xml:id="ex_1685630167" dur="16" oct="2" pname="e" />
-                                        <note xml:id="ex_1706338822" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_0939959316" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_1006516680" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_0797153341" dur="16" oct="2" pname="e" />
-                                        <note xml:id="ex_0614341720" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_0027634583" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_1984443990" dur="16" oct="2" pname="b" />
-                                    </beam>
-                                    <beam place="below">
-                                        <note xml:id="ex_0949074590" dur="16" oct="3" pname="c" />
-                                        <note xml:id="ex_0754802626" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_0781832353" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_1951404525" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_0885594691" dur="16" oct="3" pname="c" />
-                                        <note xml:id="ex_2128297927" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_1815634657" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_1776539976" dur="16" oct="2" pname="g" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                        </measure>
-                        <measure n="4">
-                            <staff n="1">
-                                <layer>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_1801570355" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_1621017432" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_1462433782" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_1174234159" dur="16" oct="3" pname="g" />
-                                        <note xml:id="ex_2126278030" dur="16" oct="3" pname="f" />
-                                        <note xml:id="ex_0093649347" dur="16" oct="3" pname="a" />
-                                        <note xml:id="ex_2073249134" dur="16" oct="3" pname="b" />
-                                        <note xml:id="ex_0028538916" dur="16" oct="4" pname="c" />
-                                    </beam>
-                                    <beam place="above" staff="2">
-                                        <note xml:id="ex_1904052669" dur="16" oct="4" pname="d" />
-                                        <note xml:id="ex_1759383936" dur="16" oct="4" pname="c" />
-                                        <note xml:id="ex_1263476809" dur="16" oct="3" pname="b" />
-                                        <note xml:id="ex_0936427327" dur="16" oct="4" pname="c" />
-                                        <note xml:id="ex_1773919673" dur="16" oct="4" pname="d" />
-                                        <note xml:id="ex_0752472810" dur="16" oct="4" pname="c" />
-                                        <note xml:id="ex_0279320487" dur="16" oct="3" pname="b" />
-                                        <note xml:id="ex_0140172667" dur="16" oct="3" pname="a" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer />
-                                <layer>
-                                    <beam place="below">
-                                        <note xml:id="ex_0454132880" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_0454432722" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_1198909922" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_0239999253" dur="16" oct="2" pname="g" />
-                                        <note xml:id="ex_0693156105" dur="16" oct="2" pname="f" />
-                                        <note xml:id="ex_1910470805" dur="16" oct="2" pname="a" />
-                                        <note xml:id="ex_0003853157" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_0335500289" dur="16" oct="3" pname="c" />
-                                    </beam>
-                                    <beam place="below">
-                                        <note xml:id="ex_2011017606" dur="16" oct="3" pname="d" />
-                                        <note xml:id="ex_2075267556" dur="16" oct="3" pname="c" />
-                                        <note xml:id="ex_1739902765" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_0260950156" dur="16" oct="3" pname="c" />
-                                        <note xml:id="ex_0627664718" dur="16" oct="3" pname="d" />
-                                        <note xml:id="ex_0721241362" dur="16" oct="3" pname="c" />
-                                        <note xml:id="ex_1505867466" dur="16" oct="2" pname="b" />
-                                        <note xml:id="ex_1019721167" dur="16" oct="2" pname="a" />
-                                    </beam>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
-                </score>
-            </mdiv>
-        </body>
-    </music>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Fingering example</title>
+        <respStmt>
+          <persName role="composer" auth="LCNAF" auth.uri="https://lccn.loc.gov/" codedval="n88623797">Charles-Louis Hanon</persName>
+        </respStmt>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt>
+        <date>2020</date>
+        <availability>
+          <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
+            <p>Creative Commons Attribution 4.0 International License</p>
+          </useRestrict>
+        </availability>
+      </pubStmt>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="21">
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffGrp symbol="brace" bar.thru="true">
+                <label>
+                  <rend fontsize="x-large">21.</rend>
+                </label>
+                <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common" />
+                <staffDef n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common" />
+              </staffGrp>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1">
+              <staff n="1">
+                <layer>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_1325804507" dur="16" oct="3" pname="c" />
+                    <note xml:id="ex_0775286619" dur="16" oct="3" pname="d" />
+                    <note xml:id="ex_0086444042" dur="16" oct="3" pname="e" />
+                    <note xml:id="ex_0177886732" dur="16" oct="3" pname="d" breaksec="1" />
+                    <note xml:id="ex_0574014199" dur="16" oct="3" pname="c" />
+                    <note xml:id="ex_0213097525" dur="16" oct="3" pname="e" />
+                    <note xml:id="ex_0208913806" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_2048292521" dur="16" oct="3" pname="g" />
+                  </beam>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_0601041723" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_1772055421" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_1171339079" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_1325670574" dur="16" oct="3" pname="g" breaksec="1" />
+                    <note xml:id="ex_0237171501" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_1400448691" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_0920378517" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_0477025878" dur="16" oct="3" pname="e" />
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer />
+                <layer>
+                  <beam place="below">
+                    <note xml:id="ex_0518743170" dur="16" oct="2" pname="c" />
+                    <note xml:id="ex_0421281467" dur="16" oct="2" pname="d" />
+                    <note xml:id="ex_0762116779" dur="16" oct="2" pname="e" />
+                    <note xml:id="ex_0894328686" dur="16" oct="2" pname="d" breaksec="1" />
+                    <note xml:id="ex_0492684815" dur="16" oct="2" pname="c" />
+                    <note xml:id="ex_1754118445" dur="16" oct="2" pname="e" />
+                    <note xml:id="ex_0851327385" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_0447977378" dur="16" oct="2" pname="g" />
+                  </beam>
+                  <beam place="below">
+                    <note xml:id="ex_0085418717" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_0215193050" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_1762615451" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_1656803860" dur="16" oct="2" pname="g" breaksec="1" />
+                    <note xml:id="ex_0282308335" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_2062185604" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_0914867495" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_0195075945" dur="16" oct="2" pname="e" />
+                  </beam>
+                </layer>
+              </staff>
+              <tempo place="above" staff="1" tstamp="1"></tempo>
+              <fing startid="#ex_1325804507" place="above">1</fing>
+              <fing startid="#ex_0775286619" place="above">2</fing>
+              <fing startid="#ex_0086444042" place="above">3</fing>
+              <fing startid="#ex_0177886732" place="above">2</fing>
+              <fing startid="#ex_0574014199" place="above">1</fing>
+              <fing startid="#ex_0213097525" place="above">2</fing>
+              <fing startid="#ex_0208913806" place="above">3</fing>
+              <fing startid="#ex_2048292521" place="above">4</fing>
+              <fing startid="#ex_0601041723" place="above">5</fing>
+              <fing startid="#ex_1772055421" place="above">4</fing>
+              <fing startid="#ex_1171339079" place="above">3</fing>
+              <fing startid="#ex_1325670574" place="above">4</fing>
+              <fing startid="#ex_0237171501" place="above">5</fing>
+              <fing startid="#ex_0518743170" place="below">5</fing>
+              <fing startid="#ex_0421281467" place="below">4</fing>
+              <fing startid="#ex_0762116779" place="below">3</fing>
+              <fing startid="#ex_0894328686" place="below">4</fing>
+              <fing startid="#ex_0492684815" place="below">5</fing>
+              <fing startid="#ex_1754118445" place="below">4</fing>
+              <fing startid="#ex_0851327385" place="below">3</fing>
+              <fing startid="#ex_0447977378" place="below">2</fing>
+              <fing startid="#ex_0085418717" place="below">1</fing>
+              <fing startid="#ex_0215193050" place="below">2</fing>
+              <fing startid="#ex_1762615451" place="below">3</fing>
+              <fing startid="#ex_1656803860" place="below">2</fing>
+              <fing startid="#ex_0282308335" place="below">1</fing>
+            </measure>
+            <measure n="2">
+              <staff n="1">
+                <layer>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_2099285249" dur="16" oct="3" pname="d" />
+                    <note xml:id="ex_0719484315" dur="16" oct="3" pname="e" />
+                    <note xml:id="ex_2039949595" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_0856418810" dur="16" oct="3" pname="e" breaksec="1" />
+                    <note xml:id="ex_1395537476" dur="16" oct="3" pname="d" />
+                    <note xml:id="ex_1855290460" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_1012575999" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_0505339222" dur="16" oct="3" pname="a" />
+                  </beam>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_1411105971" dur="16" oct="3" pname="b" />
+                    <note xml:id="ex_0560396353" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_1865712776" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_1625896385" dur="16" oct="3" pname="a" breaksec="1" />
+                    <note xml:id="ex_1858618267" dur="16" oct="3" pname="b" />
+                    <note xml:id="ex_0500084207" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_1811756338" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_1018141953" dur="16" oct="3" pname="f" />
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer />
+                <layer>
+                  <beam place="below">
+                    <note xml:id="ex_0938118303" dur="16" oct="2" pname="d" />
+                    <note xml:id="ex_1273974565" dur="16" oct="2" pname="e" />
+                    <note xml:id="ex_1278553365" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_0925033673" dur="16" oct="2" pname="e" breaksec="1" />
+                    <note xml:id="ex_1406821478" dur="16" oct="2" pname="d" />
+                    <note xml:id="ex_1134773327" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_1025298692" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_0282955574" dur="16" oct="2" pname="a" />
+                  </beam>
+                  <beam place="below">
+                    <note xml:id="ex_1415515063" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_1010078847" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_0536951994" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_0825878464" dur="16" oct="2" pname="a" breaksec="1" />
+                    <note xml:id="ex_1352533887" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_0922635314" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_1899791058" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_1001448210" dur="16" oct="2" pname="f" />
+                  </beam>
+                </layer>
+              </staff>
+              <fing startid="#ex_2099285249" place="above">1</fing>
+              <fing startid="#ex_1395537476" place="above">1</fing>
+              <fing startid="#ex_1855290460" place="above">2</fing>
+              <fing startid="#ex_1012575999" place="above">3</fing>
+              <fing startid="#ex_0505339222" place="above">4</fing>
+              <fing startid="#ex_1411105971" place="above">5</fing>
+              <fing startid="#ex_0938118303" place="below">5</fing>
+              <fing startid="#ex_1406821478" place="below">5</fing>
+              <fing startid="#ex_1134773327" place="below">4</fing>
+              <fing startid="#ex_1025298692" place="below">3</fing>
+              <fing startid="#ex_0282955574" place="below">2</fing>
+              <fing startid="#ex_1415515063" place="below">1</fing>
+            </measure>
+            <measure n="3">
+              <staff n="1">
+                <layer>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_0970990060" dur="16" oct="3" pname="e" />
+                    <note xml:id="ex_1720993992" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_0288782101" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_0247729287" dur="16" oct="3" pname="f" breaksec="1" />
+                    <note xml:id="ex_1762818723" dur="16" oct="3" pname="e" />
+                    <note xml:id="ex_1547865102" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_1849147501" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_0498223265" dur="16" oct="3" pname="b" />
+                  </beam>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_1450381295" dur="16" oct="4" pname="c" />
+                    <note xml:id="ex_1092040746" dur="16" oct="3" pname="b" />
+                    <note xml:id="ex_1533570760" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_0625032026" dur="16" oct="3" pname="b" breaksec="1" />
+                    <note xml:id="ex_1570743505" dur="16" oct="4" pname="c" />
+                    <note xml:id="ex_0469615964" dur="16" oct="3" pname="b" />
+                    <note xml:id="ex_0833104223" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_0389297521" dur="16" oct="3" pname="g" />
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer />
+                <layer>
+                  <beam place="below">
+                    <note xml:id="ex_1685630167" dur="16" oct="2" pname="e" />
+                    <note xml:id="ex_1706338822" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_0939959316" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_1006516680" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_0797153341" dur="16" oct="2" pname="e" />
+                    <note xml:id="ex_0614341720" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_0027634583" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_1984443990" dur="16" oct="2" pname="b" />
+                  </beam>
+                  <beam place="below">
+                    <note xml:id="ex_0949074590" dur="16" oct="3" pname="c" />
+                    <note xml:id="ex_0754802626" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_0781832353" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_1951404525" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_0885594691" dur="16" oct="3" pname="c" />
+                    <note xml:id="ex_2128297927" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_1815634657" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_1776539976" dur="16" oct="2" pname="g" />
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="4">
+              <staff n="1">
+                <layer>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_1801570355" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_1621017432" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_1462433782" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_1174234159" dur="16" oct="3" pname="g" />
+                    <note xml:id="ex_2126278030" dur="16" oct="3" pname="f" />
+                    <note xml:id="ex_0093649347" dur="16" oct="3" pname="a" />
+                    <note xml:id="ex_2073249134" dur="16" oct="3" pname="b" />
+                    <note xml:id="ex_0028538916" dur="16" oct="4" pname="c" />
+                  </beam>
+                  <beam place="above" staff="2">
+                    <note xml:id="ex_1904052669" dur="16" oct="4" pname="d" />
+                    <note xml:id="ex_1759383936" dur="16" oct="4" pname="c" />
+                    <note xml:id="ex_1263476809" dur="16" oct="3" pname="b" />
+                    <note xml:id="ex_0936427327" dur="16" oct="4" pname="c" />
+                    <note xml:id="ex_1773919673" dur="16" oct="4" pname="d" />
+                    <note xml:id="ex_0752472810" dur="16" oct="4" pname="c" />
+                    <note xml:id="ex_0279320487" dur="16" oct="3" pname="b" />
+                    <note xml:id="ex_0140172667" dur="16" oct="3" pname="a" />
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer />
+                <layer>
+                  <beam place="below">
+                    <note xml:id="ex_0454132880" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_0454432722" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_1198909922" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_0239999253" dur="16" oct="2" pname="g" />
+                    <note xml:id="ex_0693156105" dur="16" oct="2" pname="f" />
+                    <note xml:id="ex_1910470805" dur="16" oct="2" pname="a" />
+                    <note xml:id="ex_0003853157" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_0335500289" dur="16" oct="3" pname="c" />
+                  </beam>
+                  <beam place="below">
+                    <note xml:id="ex_2011017606" dur="16" oct="3" pname="d" />
+                    <note xml:id="ex_2075267556" dur="16" oct="3" pname="c" />
+                    <note xml:id="ex_1739902765" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_0260950156" dur="16" oct="3" pname="c" />
+                    <note xml:id="ex_0627664718" dur="16" oct="3" pname="d" />
+                    <note xml:id="ex_0721241362" dur="16" oct="3" pname="c" />
+                    <note xml:id="ex_1505867466" dur="16" oct="2" pname="b" />
+                    <note xml:id="ex_1019721167" dur="16" oct="2" pname="a" />
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
 </mei>

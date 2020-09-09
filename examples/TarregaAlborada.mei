@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
   <meiHead>
-      <fileDesc>
-          <titleStmt>
-              <title>Tárrega Alborada (excerpt)</title>
-              <respStmt>
-                  <persName role="composer">Francisco Tárrega</persName>
-              </respStmt>
-              <editor>
-                  <persName>Klaus Rettinghaus</persName>
-              </editor>
-          </titleStmt>
-          <pubStmt/>
-          <seriesStmt>
-              <title>MEI guidelines examples</title>
-          </seriesStmt>
-      </fileDesc>
+    <fileDesc>
+      <titleStmt>
+        <title>Tárrega Alborada (excerpt)</title>
+        <respStmt>
+          <persName role="composer" auth="LCNAF" auth.uri="https://lccn.loc.gov/" codedval="n81118760">Francisco Tárrega</persName>
+        </respStmt>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt>
+        <date>2020</date>
+        <availability>
+          <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
+            <p>Creative Commons Attribution 4.0 International License</p>
+          </useRestrict>
+        </availability>
+      </pubStmt>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
   </meiHead>
   <music>
     <body>
@@ -24,7 +31,7 @@
         <score>
           <scoreDef system.leftline="true">
             <staffGrp>
-              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" key.sig="3s" meter.count="2" meter.unit="4"/>
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" key.sig="3s" meter.count="2" meter.unit="4" />
             </staffGrp>
           </scoreDef>
           <section>
@@ -32,10 +39,10 @@
               <staff n="1">
                 <layer n="1">
                   <beam>
-                    <note dur="16" oct="6" pname="e"/>
-                    <note dur="16" oct="6" pname="c" accid.ges="s"/>
-                    <note dur="16" oct="5" pname="a"/>
-                    <note dur="16" oct="5" pname="e"/>
+                    <note dur="16" oct="6" pname="e" />
+                    <note dur="16" oct="6" pname="c" accid.ges="s" />
+                    <note dur="16" oct="5" pname="a" />
+                    <note dur="16" oct="5" pname="e" />
                   </beam>
                 </layer>
               </staff>
@@ -43,52 +50,52 @@
             <measure left="rptstart" n="1">
               <staff n="1">
                 <layer n="1">
-                  <note dur="8" oct="5" pname="a" xml:id="startgliss" grace="unacc" stem.mod="1slash"/>
+                  <note dur="8" oct="5" pname="a" xml:id="startgliss" grace="unacc" stem.mod="1slash" />
                   <beam>
-                    <note dur="8" oct="5" pname="c" accid.ges="s" xml:id="endgliss"/>
-                    <note dur="8" oct="5" pname="c" accid.ges="s"/>
+                    <note dur="8" oct="5" pname="c" accid.ges="s" xml:id="endgliss" />
+                    <note dur="8" oct="5" pname="c" accid.ges="s" />
                   </beam>
                   <beam>
-                    <note dur="8" oct="5" pname="f" accid.ges="s"/>
+                    <note dur="8" oct="5" pname="f" accid.ges="s" />
                     <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
-                      <note dur="16" oct="5" pname="f" accid.ges="s"/>
-                      <note dur="16" oct="5" pname="g"/>
-                      <note dur="16" oct="5" pname="f" accid.ges="s"/>
+                      <note dur="16" oct="5" pname="f" accid.ges="s" />
+                      <note dur="16" oct="5" pname="g" />
+                      <note dur="16" oct="5" pname="f" accid.ges="s" />
                     </tuplet>
                   </beam>
                 </layer>
                 <layer n="2">
                   <beam>
-                    <note dur="8" oct="3" pname="a"/>
+                    <note dur="8" oct="3" pname="a" />
                     <chord dur="8">
-                      <note oct="4" pname="a"/>
-                      <note oct="4" pname="e"/>
+                      <note oct="4" pname="a" />
+                      <note oct="4" pname="e" />
                     </chord>
                   </beam>
                   <beam>
-                    <note dur="8" oct="3" pname="a"/>
+                    <note dur="8" oct="3" pname="a" />
                     <chord dur="8">
-                      <note oct="5" pname="d"/>
-                      <note oct="4" pname="a"/>
+                      <note oct="5" pname="d" />
+                      <note oct="4" pname="a" />
                     </chord>
                   </beam>
                 </layer>
               </staff>
-              <?edit-start?>
+              <?edit-start ?>
               <gliss startid="#startgliss" endid="#endgliss" />
-              <?edit-end?>
+              <?edit-end ?>
             </measure>
             <measure n="2">
               <staff n="1">
                 <layer n="1">
-                    <note dur="4" oct="5" pname="e"/>
+                  <note dur="4" oct="5" pname="e" />
                 </layer>
                 <layer n="2">
                   <beam>
-                    <note dur="8" oct="3" pname="a"/>
+                    <note dur="8" oct="3" pname="a" />
                     <chord dur="8">
-                      <note oct="5" pname="c" accid.ges="s"/>
-                      <note oct="4" pname="a"/>
+                      <note oct="5" pname="c" accid.ges="s" />
+                      <note oct="4" pname="a" />
                     </chord>
                   </beam>
                 </layer>

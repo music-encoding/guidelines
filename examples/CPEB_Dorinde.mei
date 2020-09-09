@@ -1,181 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<mei meiversion="4.0.0" xmlns="http://www.music-encoding.org/ns/mei">
-    <meiHead>
-        <fileDesc>
-            <titleStmt>
-                <title>Bach Dorinde (excerpt)</title>
-                <respStmt>
-                    <persName role="composer">Carl Philipp Emanuel Bach</persName>
-                </respStmt>
-                <editor>
-                    <persName>Klaus Rettinghaus</persName>
-                </editor>
-            </titleStmt>
-            <pubStmt/>
-            <seriesStmt>
-                <title>MEI guidelines examples</title>
-            </seriesStmt>
-        </fileDesc>
-    </meiHead>
-    <music>
-        <body>
-            <mdiv>
-                <score>
-                    <scoreDef meter.count="3" meter.unit="4">
-                        <staffGrp n="1" symbol="brace" bar.thru="false">
-                            <staffDef clef.line="1" clef.shape="C" label="" lines="5" n="1">
-                            </staffDef>
-                            <staffDef clef.line="4" clef.shape="F" label="" lines="5" n="2">
-                            </staffDef>
-                        </staffGrp>
-                    </scoreDef>
-                    <section>
-                        <measure n="1">
-                            <staff n="1">
-                                <layer n="1">
-                                    <note xml:id="ex-42" dur="4" oct="5" pname="c" stem.dir="up">
-                                        <verse xml:id="ex-48" n="1">
-                                            <syl con="d" wordpos="i">A</syl>
-                                        </verse>
-                                    </note>
-                                    <note xml:id="ex-45" dur="4" grace="acc" oct="4" pname="b" stem.dir="up"/>
-                                    <note xml:id="ex-46" dur="2" oct="4" pname="a" stem.dir="up">
-                                        <verse xml:id="ex-50" n="1">
-                                            <syl con="s" wordpos="t">mor</syl>
-                                        </verse>
-                                    </note>
-                                </layer>
-                                <layer n="2">
-                                    <note xml:id="ex-44" dur="4" oct="4" pname="e" stem.dir="down"/>
-                                    <note xml:id="ex-47" dur="2" oct="4" pname="f" stem.dir="down"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer n="1">
-                                    <note xml:id="ex-56" dots="1" dur="2" oct="3" pname="c" stem.dir="up"/>
-                                </layer>
-                            </staff>
-                            <tempo xml:id="ex-63" tstamp="1" staff="1">In mäßiger Bewegung</tempo>
-                            <mordent xml:id="ex-52" form="upper" layer="1" staff="1" startid="#ex-46"/>
-                            <turn xml:id="ex-53" form="upper" layer="1" staff="1" startid="#ex-46"/>
-                            <tie xml:id="ex-57" endid="#ex-82" startid="#ex-56"/>
-                        </measure>
-                        <measure n="2">
-                            <staff n="1">
-                                <layer n="1">
-                                    <note xml:id="ex-68" dur="4" oct="4" pname="g" stem.dir="up">
-                                        <verse xml:id="ex-74" n="1">
-                                            <syl con="d" wordpos="i">sag</syl>
-                                        </verse>
-                                    </note>
-                                    <note xml:id="ex-71" dur="4" grace="acc" oct="4" pname="f" stem.dir="up"/>
-                                    <note xml:id="ex-72" dur="2" oct="4" pname="e" stem.dir="up">
-                                        <verse xml:id="ex-76" n="1">
-                                            <syl con="s" wordpos="t">te</syl>
-                                        </verse>
-                                    </note>
-                                </layer>
-                                <layer n="2">
-                                    <note xml:id="ex-70" dur="4" oct="4" pname="e" stem.dir="down"/>
-                                    <note xml:id="ex-85" dur="4" grace="acc" oct="4" pname="d" stem.dir="down"/>
-                                    <note xml:id="ex-73" dur="2" oct="4" pname="c" stem.dir="down"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer n="1">
-                                    <note xml:id="ex-82" dur="2" oct="3" pname="c" stem.dir="up"/>
-                                    <note xml:id="ex-84" dur="4" oct="3" pname="a" stem.dir="down"/>
-                                </layer>
-                            </staff>
-                            <mordent xml:id="ex-79" form="upper" layer="1" staff="1" startid="#ex-72"/>
-                            <turn xml:id="ex-78" form="upper" layer="1" staff="1" startid="#ex-72"/>
-                        </measure>
-                        <measure n="3">
-                            <staff n="1">
-                                <layer n="1">
-                                    <note xml:id="ex-92" dur="4" oct="4" pname="f" stem.dir="up">
-                                        <verse xml:id="ex-98" n="1">
-                                            <syl>zu</syl>
-                                        </verse>
-                                    </note>
-                                    <note xml:id="ex-95" dur="4" grace="acc" oct="4" pname="e" stem.dir="up"/>
-                                    <note xml:id="ex-96" dur="2" oct="4" pname="d" stem.dir="up">
-                                        <verse xml:id="ex-125" n="1">
-                                            <syl con="d" wordpos="i">Cy</syl>
-                                        </verse>
-                                    </note>
-                                </layer>
-                                <layer n="2">
-                                    <note xml:id="ex-94" dur="4" oct="4" pname="d" stem.dir="down"/>
-                                    <note xml:id="ex-108" dur="4" grace="acc" oct="4" pname="c" stem.dir="down"/>
-                                    <note xml:id="ex-97" dur="2" oct="3" pname="b" stem.dir="down"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer n="1">
-                                    <note xml:id="ex-104" dur="4" oct="3" pname="f" stem.dir="down"/>
-                                    <note xml:id="ex-109" dur="4" oct="3" pname="g" stem.dir="down"/>
-                                    <note xml:id="ex-110" dur="4" oct="2" pname="g" stem.dir="up"/>
-                                </layer>
-                            </staff>
-                            <mordent xml:id="ex-101" form="upper" layer="1" staff="1" startid="#ex-96"/>
-                            <turn xml:id="ex-100" form="upper" layer="1" staff="1" startid="#ex-96"/>
-                        </measure>
-                        <measure n="4">
-                            <staff n="1">
-                                <layer n="1">
-                                    <graceGrp grace="acc">
-                                      <beam>
-                                        <note xml:id="ex-115" dur="16" oct="4" pname="d" stem.dir="up"/>
-                                        <note xml:id="ex-117" dur="16" oct="4" pname="f" stem.dir="up"/>
-                                      </beam>
-                                    </graceGrp>
-                                    <note xml:id="ex-118" dur="4" oct="4" pname="e" stem.dir="up">
-                                        <verse xml:id="ex-127" n="1">
-                                            <syl con="d" wordpos="m">the</syl>
-                                        </verse>
-                                    </note>
-                                    <note xml:id="ex-121" dur="4" oct="4" pname="d" stem.dir="up">
-                                        <verse xml:id="ex-129" n="1">
-                                            <syl con="s" wordpos="t">re</syl>
-                                        </verse>
-                                    </note>
-                                    <rest xml:id="ex-123" dur="4" sameas="#ex-126"/>
-                                </layer>
-                                <layer n="2">
-                                    <note xml:id="ex-120" dur="4" oct="4" pname="c" stem.dir="down"/>
-                                    <note xml:id="ex-122" dur="4" oct="3" pname="b" stem.dir="down"/>
-                                    <rest xml:id="ex-126" dur="4" sameas="#ex-123"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer n="1">
-                                    <note xml:id="ex-133" dur="4" oct="3" pname="c" stem.dir="up"/>
-                                    <beam xml:id="ex-135">
-                                        <note xml:id="ex-134" dur="8" oct="3" pname="g" stem.dir="down"/>
-                                        <note xml:id="ex-136" dur="8" oct="3" pname="f" stem.dir="down"/>
-                                        <note xml:id="ex-137" dur="8" oct="3" pname="e" stem.dir="down"/>
-                                        <note xml:id="ex-138" dur="8" oct="3" pname="d" stem.dir="down"/>
-                                    </beam>
-                                </layer>
-                            </staff>
-                        </measure>
-                        <measure n="5">
-                            <staff n="1">
-                                <layer n="1">
-                                    <rest xml:id="ex-142" dur="4"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer n="1">
-                                    <note xml:id="ex-145" dur="4" oct="3" pname="c" stem.dir="up"/>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
-                </score>
-            </mdiv>
-        </body>
-    </music>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Bach Dorinde (excerpt)</title>
+        <respStmt>
+          <persName role="composer">Carl Philipp Emanuel Bach</persName>
+        </respStmt>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt>
+        <date>2020</date>
+        <availability>
+          <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
+            <p>Creative Commons Attribution 4.0 International License</p>
+          </useRestrict>
+        </availability>
+      </pubStmt>
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef meter.count="3" meter.unit="4">
+            <staffGrp n="1" symbol="brace" bar.thru="false">
+              <staffDef clef.line="1" clef.shape="C" label="" lines="5" n="1" />
+              <staffDef clef.line="4" clef.shape="F" label="" lines="5" n="2" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <note xml:id="ex-42" dur="4" oct="5" pname="c" stem.dir="up">
+                    <verse xml:id="ex-48" n="1">
+                      <syl con="d" wordpos="i">A</syl>
+                    </verse>
+                  </note>
+                  <note xml:id="ex-45" dur="4" grace="acc" oct="4" pname="b" stem.dir="up" />
+                  <note xml:id="ex-46" dur="2" oct="4" pname="a" stem.dir="up">
+                    <verse xml:id="ex-50" n="1">
+                      <syl con="s" wordpos="t">mor</syl>
+                    </verse>
+                  </note>
+                </layer>
+                <layer n="2">
+                  <note xml:id="ex-44" dur="4" oct="4" pname="e" stem.dir="down" />
+                  <note xml:id="ex-47" dur="2" oct="4" pname="f" stem.dir="down" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note xml:id="ex-56" dots="1" dur="2" oct="3" pname="c" stem.dir="up" />
+                </layer>
+              </staff>
+              <tempo xml:id="ex-63" tstamp="1" staff="1">In mäßiger Bewegung</tempo>
+              <mordent xml:id="ex-52" form="upper" layer="1" staff="1" startid="#ex-46" />
+              <turn xml:id="ex-53" form="upper" layer="1" staff="1" startid="#ex-46" />
+              <tie xml:id="ex-57" endid="#ex-82" startid="#ex-56" />
+            </measure>
+            <measure n="2">
+              <staff n="1">
+                <layer n="1">
+                  <note xml:id="ex-68" dur="4" oct="4" pname="g" stem.dir="up">
+                    <verse xml:id="ex-74" n="1">
+                      <syl con="d" wordpos="i">sag</syl>
+                    </verse>
+                  </note>
+                  <note xml:id="ex-71" dur="4" grace="acc" oct="4" pname="f" stem.dir="up" />
+                  <note xml:id="ex-72" dur="2" oct="4" pname="e" stem.dir="up">
+                    <verse xml:id="ex-76" n="1">
+                      <syl con="s" wordpos="t">te</syl>
+                    </verse>
+                  </note>
+                </layer>
+                <layer n="2">
+                  <note xml:id="ex-70" dur="4" oct="4" pname="e" stem.dir="down" />
+                  <note xml:id="ex-85" dur="4" grace="acc" oct="4" pname="d" stem.dir="down" />
+                  <note xml:id="ex-73" dur="2" oct="4" pname="c" stem.dir="down" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note xml:id="ex-82" dur="2" oct="3" pname="c" stem.dir="up" />
+                  <note xml:id="ex-84" dur="4" oct="3" pname="a" stem.dir="down" />
+                </layer>
+              </staff>
+              <mordent xml:id="ex-79" form="upper" layer="1" staff="1" startid="#ex-72" />
+              <turn xml:id="ex-78" form="upper" layer="1" staff="1" startid="#ex-72" />
+            </measure>
+            <measure n="3">
+              <staff n="1">
+                <layer n="1">
+                  <note xml:id="ex-92" dur="4" oct="4" pname="f" stem.dir="up">
+                    <verse xml:id="ex-98" n="1">
+                      <syl>zu</syl>
+                    </verse>
+                  </note>
+                  <note xml:id="ex-95" dur="4" grace="acc" oct="4" pname="e" stem.dir="up" />
+                  <note xml:id="ex-96" dur="2" oct="4" pname="d" stem.dir="up">
+                    <verse xml:id="ex-125" n="1">
+                      <syl con="d" wordpos="i">Cy</syl>
+                    </verse>
+                  </note>
+                </layer>
+                <layer n="2">
+                  <note xml:id="ex-94" dur="4" oct="4" pname="d" stem.dir="down" />
+                  <note xml:id="ex-108" dur="4" grace="acc" oct="4" pname="c" stem.dir="down" />
+                  <note xml:id="ex-97" dur="2" oct="3" pname="b" stem.dir="down" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note xml:id="ex-104" dur="4" oct="3" pname="f" stem.dir="down" />
+                  <note xml:id="ex-109" dur="4" oct="3" pname="g" stem.dir="down" />
+                  <note xml:id="ex-110" dur="4" oct="2" pname="g" stem.dir="up" />
+                </layer>
+              </staff>
+              <mordent xml:id="ex-101" form="upper" layer="1" staff="1" startid="#ex-96" />
+              <turn xml:id="ex-100" form="upper" layer="1" staff="1" startid="#ex-96" />
+            </measure>
+            <measure n="4">
+              <staff n="1">
+                <layer n="1">
+                  <graceGrp grace="acc">
+                    <beam>
+                      <note xml:id="ex-115" dur="16" oct="4" pname="d" stem.dir="up" />
+                      <note xml:id="ex-117" dur="16" oct="4" pname="f" stem.dir="up" />
+                    </beam>
+                  </graceGrp>
+                  <note xml:id="ex-118" dur="4" oct="4" pname="e" stem.dir="up">
+                    <verse xml:id="ex-127" n="1">
+                      <syl con="d" wordpos="m">the</syl>
+                    </verse>
+                  </note>
+                  <note xml:id="ex-121" dur="4" oct="4" pname="d" stem.dir="up">
+                    <verse xml:id="ex-129" n="1">
+                      <syl con="s" wordpos="t">re</syl>
+                    </verse>
+                  </note>
+                  <rest xml:id="ex-123" dur="4" sameas="#ex-126" />
+                </layer>
+                <layer n="2">
+                  <note xml:id="ex-120" dur="4" oct="4" pname="c" stem.dir="down" />
+                  <note xml:id="ex-122" dur="4" oct="3" pname="b" stem.dir="down" />
+                  <rest xml:id="ex-126" dur="4" sameas="#ex-123" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note xml:id="ex-133" dur="4" oct="3" pname="c" stem.dir="up" />
+                  <beam xml:id="ex-135">
+                    <note xml:id="ex-134" dur="8" oct="3" pname="g" stem.dir="down" />
+                    <note xml:id="ex-136" dur="8" oct="3" pname="f" stem.dir="down" />
+                    <note xml:id="ex-137" dur="8" oct="3" pname="e" stem.dir="down" />
+                    <note xml:id="ex-138" dur="8" oct="3" pname="d" stem.dir="down" />
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="5">
+              <staff n="1">
+                <layer n="1">
+                  <rest xml:id="ex-142" dur="4" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note xml:id="ex-145" dur="4" oct="3" pname="c" stem.dir="up" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
 </mei>

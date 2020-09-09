@@ -1,140 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-    <meiHead>
-        <fileDesc>
-            <titleStmt>
-                <title>Excerpts with cross-staff notation</title>
-                <editor>
-                    <persName>Klaus Rettinghaus</persName>
-                </editor>
-            </titleStmt>
-            <pubStmt/>
-            <seriesStmt>
-                <title>MEI guidelines examples</title>
-            </seriesStmt>
-        </fileDesc>
-    </meiHead>
-    <music>
-        <body>
-            <mdiv n="1" label="Bartók in phrygian mode">
-                <score>
-                    <scoreDef key.mode="phrygian">
-                        <staffGrp symbol="brace" bar.thru="true">
-                            <staffDef n="1" clef.line="2" clef.shape="G" lines="5">
-                            </staffDef>
-                            <staffDef n="2" clef.line="4" clef.shape="F" lines="5">
-                            </staffDef>
-                        </staffGrp>
-                    </scoreDef>
-                    <section>
-                        <measure n="23" right="single">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" oct="4" pname="b" xml:id="ex-rh-01"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer>
-                                    <note dur="2" oct="3" pname="f" xml:id="ex-lh-01"/>
-                                    <note dur="2" oct="3" pname="b"/>
-                                </layer>
-                            </staff>
-                            <tie startid="#ex-rh-01" endid="#ex-rh-02" curvedir="below"/>
-                            <dynam startid="#ex-rh-01" place="above">sf</dynam>
-                            <dynam startid="#ex-lh-01" endid="#ex-lh-02" extender="true" place="above" vo="2">dim.</dynam>
-                        </measure>
-                        <measure n="24" right="single">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" oct="4" pname="b" xml:id="ex-rh-02"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer>
-                                    <note dur="2" oct="3" pname="g"/>
-                                    <note dur="2" oct="3" pname="a"/>
-                                </layer>
-                            </staff>
-                            <tie startid="#ex-rh-02" endid="#ex-rh-03" curvedir="below"/>
-                        </measure>
-                        <measure n="25" right="single">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" oct="4" pname="b" xml:id="ex-rh-03"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer>
-                                    <note dur="1" oct="3" pname="e" xml:id="ex-lh-02"/>
-                                </layer>
-                            </staff>
-                            <tie startid="#ex-rh-03" endid="#ex-rh-04" curvedir="below"/>
-                            <tie startid="#ex-lh-02" endid="#ex-lh-03" curvedir="above"/>
-                            <dynam startid="#ex-lh-02" place="above" vo="2">p</dynam>
-                        </measure>
-                        <measure n="26" right="end">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" oct="4" pname="b" xml:id="ex-rh-04"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer>
-                                    <note dur="1" oct="3" pname="e" xml:id="ex-lh-03"/>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
-                </score>
-            </mdiv>
-            <mdiv n="2" label="Bartók">
-                <score>
-                    <scoreDef>
-                        <staffGrp symbol="brace" bar.thru="true">
-                            <staffDef n="1" clef.line="2" clef.shape="G" lines="5">
-                            </staffDef>
-                            <staffDef n="2" clef.line="4" clef.shape="F" lines="5">
-                            </staffDef>
-                        </staffGrp>
-                    </scoreDef>
-                    <section>
-                        <measure n="14" right="single">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="4" oct="4" pname="b"/>
-                                    <note dur="4" oct="5" pname="c"/>
-                                    <note dur="4" oct="4" pname="b"/>
-                                    <note dur="4" oct="5" pname="d" xml:id="ex-first"/>
-                                    <note dur="4" oct="5" pname="c"/>
-                                    <note dur="4" oct="4" pname="b"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer>
-                                    <note dur="2" dots="1" oct="4" pname="d"/>
-                                    <note dur="2" dots="1" oct="4" pname="c">
-                                        <accid accid="s"/>
-                                    </note>
-                                </layer>
-                            </staff>
-                            <hairpin form="cres" startid="#ex-first" endid="#ex-last" place="below" staff="1"/>
-                        </measure>
-                        <measure n="15" right="end">
-                            <staff n="1">
-                                <layer>
-                                    <note dur="1" dots="1" oct="4" pname="a" xml:id="ex-last"/>
-                                </layer>
-                            </staff>
-                            <staff n="2">
-                                <layer>
-                                    <note dur="1" dots="1" oct="4" pname="d"/>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
-                </score>
-            </mdiv>
-        </body>
-    </music>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Excerpt with dynamic extender line</title>
+        <editor>
+          <persName>Klaus Rettinghaus</persName>
+        </editor>
+      </titleStmt>
+      <pubStmt />
+      <seriesStmt>
+        <title>MEI guidelines examples</title>
+      </seriesStmt>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" label="Bartók in phrygian mode">
+        <score>
+          <scoreDef key.mode="phrygian">
+            <staffGrp symbol="brace" bar.thru="true">
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5" />
+              <staffDef n="2" clef.line="4" clef.shape="F" lines="5" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="23" right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="1" oct="4" pname="b" xml:id="ex-rh-01" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer>
+                  <note dur="2" oct="3" pname="f" xml:id="ex-lh-01" />
+                  <note dur="2" oct="3" pname="b" />
+                </layer>
+              </staff>
+              <tie startid="#ex-rh-01" endid="#ex-rh-02" curvedir="below" />
+              <dynam startid="#ex-rh-01" place="above">sf</dynam>
+              <dynam startid="#ex-lh-01" endid="#ex-lh-02" extender="true" place="above" vo="2">dim.</dynam>
+            </measure>
+            <measure n="24" right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="1" oct="4" pname="b" xml:id="ex-rh-02" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer>
+                  <note dur="2" oct="3" pname="g" />
+                  <note dur="2" oct="3" pname="a" />
+                </layer>
+              </staff>
+              <tie startid="#ex-rh-02" endid="#ex-rh-03" curvedir="below" />
+            </measure>
+            <measure n="25" right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="1" oct="4" pname="b" xml:id="ex-rh-03" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer>
+                  <note dur="1" oct="3" pname="e" xml:id="ex-lh-02" />
+                </layer>
+              </staff>
+              <tie startid="#ex-rh-03" endid="#ex-rh-04" curvedir="below" />
+              <tie startid="#ex-lh-02" endid="#ex-lh-03" curvedir="above" />
+              <dynam startid="#ex-lh-02" place="above" vo="2">p</dynam>
+            </measure>
+            <measure n="26" right="end">
+              <staff n="1">
+                <layer>
+                  <note dur="1" oct="4" pname="b" xml:id="ex-rh-04" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer>
+                  <note dur="1" oct="3" pname="e" xml:id="ex-lh-03" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+      <mdiv n="2" label="Bartók">
+        <score>
+          <scoreDef>
+            <staffGrp symbol="brace" bar.thru="true">
+              <staffDef n="1" clef.line="2" clef.shape="G" lines="5"></staffDef>
+              <staffDef n="2" clef.line="4" clef.shape="F" lines="5"></staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="14" right="single">
+              <staff n="1">
+                <layer>
+                  <note dur="4" oct="4" pname="b" />
+                  <note dur="4" oct="5" pname="c" />
+                  <note dur="4" oct="4" pname="b" />
+                  <note dur="4" oct="5" pname="d" xml:id="ex-first" />
+                  <note dur="4" oct="5" pname="c" />
+                  <note dur="4" oct="4" pname="b" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer>
+                  <note dur="2" dots="1" oct="4" pname="d" />
+                  <note dur="2" dots="1" oct="4" pname="c">
+                    <accid accid="s" />
+                  </note>
+                </layer>
+              </staff>
+              <hairpin form="cres" startid="#ex-first" endid="#ex-last" place="below" staff="1" />
+            </measure>
+            <measure n="15" right="end">
+              <staff n="1">
+                <layer>
+                  <note dur="1" dots="1" oct="4" pname="a" xml:id="ex-last" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer>
+                  <note dur="1" dots="1" oct="4" pname="d" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
 </mei>
