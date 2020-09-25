@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
   <meiHead>
     <fileDesc>
       <titleStmt>
         <title>Oberthür Album-Blatt (excerpt)</title>
         <respStmt>
-          <persName role="composer">Charles Oberthür</persName>
+          <persName role="composer" auth="LCNAF" auth.uri="https://lccn.loc.gov/" codedval="n80089684">Charles Oberthür</persName>
         </respStmt>
         <editor>
           <persName>Klaus Rettinghaus</persName>
@@ -21,7 +22,7 @@
         </availability>
       </pubStmt>
       <seriesStmt>
-        <title>MEI guidelines examples</title>
+        <title>MEI Guidelines examples</title>
       </seriesStmt>
     </fileDesc>
   </meiHead>

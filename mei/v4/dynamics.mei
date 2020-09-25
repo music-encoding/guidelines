@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
   <meiHead>
     <fileDesc>
@@ -9,9 +10,16 @@
           <persName>Klaus Rettinghaus</persName>
         </editor>
       </titleStmt>
-      <pubStmt />
+      <pubStmt>
+        <date>2020</date>
+        <availability>
+          <useRestrict label="licence" auth="https://creativecommons.org/licenses/by/" codedval="4.0">
+            <p>Creative Commons Attribution 4.0 International License</p>
+          </useRestrict>
+        </availability>
+      </pubStmt>
       <seriesStmt>
-        <title>MEI guidelines examples</title>
+        <title>MEI Guidelines examples</title>
       </seriesStmt>
     </fileDesc>
   </meiHead>
@@ -86,7 +94,7 @@
           </section>
         </score>
       </mdiv>
-      <mdiv n="2" label="Bartók">
+      <mdiv n="2" label="Bartók dancing slow">
         <score>
           <scoreDef>
             <staffGrp symbol="brace" bar.thru="true">
