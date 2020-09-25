@@ -26,7 +26,7 @@
     <body>
       <mdiv n="1" label="Moszkowski">
         <score>
-          <scoreDef spacing.staff="26" pedal.style="altpedstar">
+          <scoreDef spacing.staff="16" pedal.style="altpedstar">
             <staffGrp symbol="brace">
               <staffDef n="1" clef.line="2" clef.shape="G" lines="5">
                 <keySig sig="1s" />
