@@ -4,7 +4,7 @@
 #--     programmed by     --#
 #--   Klaus Rettinghaus   --#
 #--                       --#
-echo rendering examples
+echo Rendering examples
 mkdir temp
 
 #-- split up examples --#
@@ -19,7 +19,7 @@ do
   saxon -s:$tempfile -o:${tempfile%.mei}.ly -xsl:mei2ly.xsl include=init-guidelines.ily
   lilypond -dresolution=120 -dno-print-pages -dpreview -fpng --loglevel=BASIC_PROGRESS ${tempfile%.mei}.ly
   file=$(basename "$tempfile")
-  mv ${file%.mei}.preview.png ${file%.mei}.png
+  mv ${file%.mei}.preview.png ../../images/v4/ExampleImages/${file%.mei}.png
 done
 
 #-- clean up --#

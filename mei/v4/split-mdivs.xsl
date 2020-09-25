@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet exclude-result-prefixes="mei" version="2.0" xmlns="http://www.music-encoding.org/ns/mei" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -10,6 +10,7 @@
     <xsl:variable name="filename" select="substring-before((tokenize($document-uri,'/'))[last()],'.')" />
 
     <xsl:template match="/">
+        <xsl:message select="concat('Extracting ', $filename, '.mei')" />
         <xsl:apply-templates select="mei:mei/mei:music/mei:body/mei:mdiv" />
     </xsl:template>
 
