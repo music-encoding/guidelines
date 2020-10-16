@@ -76,8 +76,8 @@
             </xsl:for-each>
         </xsl:variable>
         <xsl:variable name="content.compact" as="node()*">
-            <xsl:for-each select="$content.by.class/descendant-or-self::a[@class = 'link_odd_elementSpec']">
-                <xsl:sort select="lower-case(text())" data-type="text"/>
+            <xsl:for-each select="distinct-values($content.by.class/descendant-or-self::a[@class = 'link_odd_elementSpec']/text())">
+                <xsl:sort select="lower-case(.)" data-type="text"/>
                 <xsl:variable name="current.elem" select="." as="xs:string"/>
                 <xsl:variable name="elementSpec" select="$elements/self::tei:elementSpec[@ident = $current.elem]" as="node()"/>
                 <xsl:variable name="desc" select="normalize-space(string-join($elementSpec/tei:desc/text(),' '))" as="xs:string"/>
