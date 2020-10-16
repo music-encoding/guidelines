@@ -17,6 +17,9 @@ mei-Mensural
 mei-Neumes
 : This profile allows to encode medieval _Neume Notation_ with MEI. The specific rules for that notation are specified in chapter {% include link id="neumes" %}, even though other chapters of these Guidelines apply as well. Please note that the _mei-Neumes_ profile has undergone significant changes from MEI version 3 to version 4.
 
+mei-Basic
+: As an encoding framework, MEI offers multiple approaches to encode certain features at various levels of detail. While this flexibility is at the core of MEI and often required for research projects, it is an obstacle when developing software and converters for MEI. The _mei-Basic_ profile is a subset of MEI which restricts it to one way of encoding for every feature of music notation. It covers _Common Western Music Notation_ only, and excludes all editorial markup. In essence, it has the same functionality as most other music encoding formats like MusicXML or MNX. The purpose of _mei-Basic_ is to serve as common ground for data interchange, both between projects using different profiles of MEI, and other encoding schemes. 
+
 mei-all
 : This is the full definition of MEI. It includes all different repertoires, which has certain side effects and enables encoding options that are neither intended nor advocable. For example, in mensural notation music is organized by staves. In contrast, Common Music Notation utilizes measures, which in turn contain staves. These staves have a different meaning here, and are modeled differently in MEI. _mei-all_ mixes those models and thus invites encoding errors. In general, you should almost never use _mei-all_ except for testing purposes.
 
