@@ -22,16 +22,17 @@ title: "att.multiRest.vis"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span>, <span class="ident attribute" title="When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms (Read, p. 104) should be rendered instead of the modern form or an alternative symbol.">block</span>, <span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span>, <span class="ident attribute" title="Contains the name of a font-family.">fontfam</span>, <span class="ident attribute" title="Holds the name of a font.">fontname</span>, <span class="ident attribute" title="Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch, relative terms, e.g., &#34;small&#34;, &#34;larger&#34;, etc., or percentage values relative to &#34;normal&#34; size, e.g., &#34;125%&#34;.">fontsize</span>, <span class="ident attribute" title="Records the style of a font, i.e, italic, oblique, or normal.">fontstyle</span>, <span class="ident attribute" title="Used to indicate bold type.">fontweight</span>, <span class="ident attribute" title="glyph.name glyph.num A name or label associated with the controlled vocabulary from which the value of or is taken.">glyph.auth</span>, <span class="ident attribute" title="Glyph name.">glyph.name</span>, <span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">glyph.num</span>, <span class="ident attribute" title="glyph.name glyph.num The web-accessible location of the controlled vocabulary from which the value of or is taken.">glyph.uri</span>, <span class="ident attribute" title="Holds the staff location of the feature.">loc</span>, <span class="ident attribute" title="Records staff location in terms of written octave.">oloc</span>, <span class="ident attribute" title="Captures staff location in terms of written pitch name.">ploc</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span>, <span class="ident attribute" title="The block attribute controls whether the multimeasure rest should be rendered as a block rest or as church rests (&#34;Kirchenpausen&#34;), that are combinations of longa, breve and semibreve rests.">block</span>, <span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span>, <span class="ident attribute" title="Contains the name of a font-family.">fontfam</span>, <span class="ident attribute" title="Holds the name of a font.">fontname</span>, <span class="ident attribute" title="Indicates the size of a font expressed in printers' points, i.e., 1/72nd of an inch, relative terms, e.g., &#34;small&#34;, &#34;larger&#34;, etc., or percentage values relative to &#34;normal&#34; size, e.g., &#34;125%&#34;.">fontsize</span>, <span class="ident attribute" title="Records the style of a font, i.e, italic, oblique, or normal.">fontstyle</span>, <span class="ident attribute" title="Used to indicate bold type.">fontweight</span>, <span class="ident attribute" title="glyph.name glyph.num A name or label associated with the controlled vocabulary from which the value of or is taken.">glyph.auth</span>, <span class="ident attribute" title="Glyph name.">glyph.name</span>, <span class="ident attribute" title="Numeric glyph reference in hexadecimal notation, e.g. &#34;#xE000&#34; or &#34;U+E000&#34;. N.B. SMuFL version 1.18 uses the range U+E000 - U+ECBF.">glyph.num</span>, <span class="ident attribute" title="glyph.name glyph.num The web-accessible location of the controlled vocabulary from which the value of or is taken.">glyph.uri</span>, <span class="ident attribute" title="Holds the staff location of the feature.">loc</span>, <span class="ident attribute" title="States where the tuplet number will be placed in relation to the note heads.">num.place</span>, <span class="ident attribute" title="Determines if the tuplet number is visible.">num.visible</span>, <span class="ident attribute" title="Records staff location in terms of written octave.">oloc</span>, <span class="ident attribute" title="Captures staff location in terms of written pitch name.">ploc</span>, <span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">width</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.usersymbols"><span class="ident attribute" title="symbolDef Provides a way of pointing to a user-defined symbol. It must contain a reference to an ID of a element elsewhere in the document.">altsym</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Provides a way of pointing to a user-defined symbol. It must contain a reference to
                         an
                         ID of a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symboldef.html">symbolDef</a> element elsewhere in the document.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                         </span></div>
-                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms (Read, p. 104) should be rendered instead of the modern form or an alternative symbol.">block</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms
-                        (Read, p. 104) should be rendered instead of the modern form or an alternative
-                        symbol.</span><span class="attributeValues">
+                  <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The block attribute controls whether the multimeasure rest should be rendered as a block rest or as church rests (&#34;Kirchenpausen&#34;), that are combinations of longa, breve and semibreve rests.">block</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The block attribute controls whether the multimeasure rest should be rendered as a
+                        block rest 
+                        or as church rests ("Kirchenpausen"), that are combinations of longa, breve and semibreve
+                        rests.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Used to indicate visual appearance. Do not confuse this with the musical term 'color' as used in pre-CMN notation.">color</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Used to indicate visual appearance. Do not confuse this with the musical term 'color'
@@ -73,20 +74,30 @@ title: "att.multiRest.vis"
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Holds the staff location of the feature.">loc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Holds the staff location of the feature.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffloc.html">data.STAFFLOC</a>.
                         </span></div>
+                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="States where the tuplet number will be placed in relation to the note heads.">num.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States where the tuplet number will be placed in relation to the note heads.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Determines if the tuplet number is visible.">num.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if the tuplet number is visible.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                        </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records staff location in terms of written octave.">oloc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records staff location in terms of written octave.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.octave.html">data.OCTAVE</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures staff location in terms of written pitch name.">ploc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures staff location in terms of written pitch name.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.pitchname.html">data.PITCHNAME</a>.
                         </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
+                        </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox direct" title="direct childs">
                      <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms (Read, p. 104) should be rendered instead of the modern form or an alternative symbol.">block</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms
-                              (Read, p. 104) should be rendered instead of the modern form or an alternative
-                              symbol.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The block attribute controls whether the multimeasure rest should be rendered as a block rest or as church rests (&#34;Kirchenpausen&#34;), that are combinations of longa, breve and semibreve rests.">block</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The block attribute controls whether the multimeasure rest should be rendered as a
+                              block rest 
+                              or as church rests ("Kirchenpausen"), that are combinations of longa, breve and semibreve
+                              rests.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                      </div>
@@ -131,6 +142,18 @@ title: "att.multiRest.vis"
                               </span></div>
                      </div>
                   </div>
+                  <div class="classBox" title="att.numberPlacement">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.numberplacement.html">att.numberPlacement</a></label><span class="classDesc">(MEI.cmn) Attributes that record the placement and visibility of numbers that accompany
+                           a bowed tremolo or tuplet.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="States where the tuplet number will be placed in relation to the note heads.">num.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States where the tuplet number will be placed in relation to the note heads.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Determines if the tuplet number is visible.">num.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if the tuplet number is visible.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
+                     </div>
+                  </div>
                   <div class="classBox" title="att.staffLoc">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffloc.html">att.staffLoc</a></label><span class="classDesc">(MEI.shared) Attributes that identify location on a staff in terms of lines and spaces.</span></div>
                      <div class="classContent">
@@ -172,8 +195,27 @@ title: "att.multiRest.vis"
                               </span></div>
                      </div>
                   </div>
+                  <div class="classBox" title="att.width">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.width.html">att.width</a></label><span class="classDesc">(MEI.shared) Attributes that describe horizontal size.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
+                              </span></div>
+                     </div>
+                  </div>
                </div>
                <div id="attributes_tabbedContent_module" class="facetTabbedContent module">
+                  <div class="classBox" title="MEI.cmn">
+                     <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc">Common Music Notation (CMN) repertoire component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="States where the tuplet number will be placed in relation to the note heads.">num.place</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">States where the tuplet number will be placed in relation to the note heads.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.cmn"><span class="ident attribute" title="Determines if the tuplet number is visible.">num.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines if the tuplet number is visible.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
+                              </span></div>
+                     </div>
+                  </div>
                   <div class="classBox" title="MEI.externalsymbols">
                      <div class="classHeading"><label class="classLabel">MEI.externalsymbols</label><span class="classDesc">External symbols component declarations.</span></div>
                      <div class="classContent">
@@ -227,6 +269,9 @@ title: "att.multiRest.vis"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Captures staff location in terms of written pitch name.">ploc</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Captures staff location in terms of written pitch name.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.pitchname.html">data.PITCHNAME</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Measurement of the horizontal dimension of an entity.">width</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Measurement of the horizontal dimension of an entity.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.measurementabs.html">data.MEASUREMENTABS</a>.
+                              </span></div>
                      </div>
                   </div>
                   <div class="classBox" title="MEI.usersymbols">
@@ -242,9 +287,10 @@ title: "att.multiRest.vis"
                   <div class="classBox" title="MEI.visual">
                      <div class="classHeading"><label class="classLabel">MEI.visual</label><span class="classDesc">Visual component declarations.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms (Read, p. 104) should be rendered instead of the modern form or an alternative symbol.">block</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms
-                              (Read, p. 104) should be rendered instead of the modern form or an alternative
-                              symbol.</span><span class="attributeValues">
+                        <div class="attributeDef def" data-module="MEI.visual"><span class="ident attribute" title="The block attribute controls whether the multimeasure rest should be rendered as a block rest or as church rests (&#34;Kirchenpausen&#34;), that are combinations of longa, breve and semibreve rests.">block</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">The block attribute controls whether the multimeasure rest should be rendered as a
+                              block rest 
+                              or as church rests ("Kirchenpausen"), that are combinations of longa, breve and semibreve
+                              rests.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
                      </div>
@@ -301,6 +347,9 @@ title: "att.multiRest.vis"
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.extsym.html">att.extSym</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.numberplacement.html">att.numberPlacement</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.staffloc.html">att.staffLoc</a>"</span></span>/&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
@@ -308,15 +357,19 @@ title: "att.multiRest.vis"
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
                                  <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.typography.html">att.typography</a>"</span></span>/&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.width.html">att.width</a>"</span></span>/&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"block"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>When the block attribute is used, combinations of the 1, 2, and 4 measure rest forms
-                                 (Read, p. 104) should be rendered instead of the modern form or an alternative
-                                 symbol.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>The block attribute controls whether the multimeasure rest should be rendered as a
+                                 block rest 
+                                 or as church rests ("Kirchenpausen"), that are combinations of longa, breve and semibreve
+                                 rests.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype&gt;</span>
                                  

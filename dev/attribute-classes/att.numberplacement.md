@@ -69,7 +69,7 @@ title: "att.numberPlacement"
                   <li class="tab-item"><a data-display="class" id="availableAt_class_tab" href="#availableAt" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="availableAt_module_tab" href="#availableAt" class="displayTab">by module</a></li>
                </ul>
-               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(bowed tremolo) – A rapid alternation on a single pitch or chord."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/btrem.html">bTrem</a></span>, <span class="ident element" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tuplet.html">tuplet</a></span>, <span class="ident element" title="(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets that extend across bar lines."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tupletspan.html">tupletSpan</a></span></div>
+               <div id="availableAt_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="(bowed tremolo) – A rapid alternation on a single pitch or chord."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/btrem.html">bTrem</a></span>, <span class="ident element" title="(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently found in performer parts."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/multirest.html">multiRest</a></span>, <span class="ident element" title="A group of notes with &#34;irregular&#34; (sometimes called &#34;irrational&#34;) rhythmic values, for example, three notes in the time normally occupied by two or nine in the time of five."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tuplet.html">tuplet</a></span>, <span class="ident element" title="(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets that extend across bar lines."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tupletspan.html">tupletSpan</a></span></div>
                <div id="availableAt_tabbedContent_class" class="facetTabbedContent class">
                   <div class="classBox" title="att.numberPlacement">
                      <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.numberplacement.html">att.numberPlacement</a></label><span class="classDesc"></span></div>
@@ -78,6 +78,13 @@ title: "att.numberPlacement"
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.btrem.vis.html">att.bTrem.vis</a></label><span class="classDesc"></span></div>
                            <div class="classContent">
                               <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/btrem.html">bTrem</a><span class="elementDesc">(bowed tremolo) – A rapid alternation on a single pitch or chord.</span></div>
+                           </div>
+                        </div>
+                        <div class="classBox" title="att.multiRest.vis">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.multirest.vis.html">att.multiRest.vis</a></label><span class="classDesc"></span></div>
+                           <div class="classContent">
+                              <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/multirest.html">multiRest</a><span class="elementDesc">(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
+                                    found in performer parts.</span></div>
                            </div>
                         </div>
                         <div class="classBox" title="att.tuplet.vis">
@@ -103,6 +110,8 @@ title: "att.numberPlacement"
                      <div class="classHeading"><label class="classLabel">MEI.cmn</label><span class="classDesc"></span></div>
                      <div class="classContent">
                         <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/btrem.html">bTrem</a><span class="elementDesc">(bowed tremolo) – A rapid alternation on a single pitch or chord.</span></div>
+                        <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/multirest.html">multiRest</a><span class="elementDesc">(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
+                              found in performer parts.</span></div>
                         <div class="elementRef" data-module="MEI.cmn"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tuplet.html">tuplet</a><span class="elementDesc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
                               for
                               example, three notes in the time normally occupied by two or nine in the time of five.</span></div>
