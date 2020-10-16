@@ -24,13 +24,22 @@ title: "att.coordinated"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span>, <span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span>, <span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span>, <span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span>, <span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span>, <span class="ident attribute" title="Indicates the amount by which the contents of this element have been rotated clockwise or, if applicable, how the orientation of the element self should be interpreted, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span>, <span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span>, <span class="ident attribute" title="Indicates the upper-left corner y coordinate.">uly</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-right corner x coordinate.">lrx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-right corner x coordinate.</span><span class="attributeValues">
                         Value is a positive integer, including 0.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
                         Value is a positive integer, including 0.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the amount by which the contents of this element have been rotated clockwise or, if applicable, how the orientation of the element self should be interpreted, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span><span class="attributeDesc desc">
+                        Indicates the amount by which the contents of this element have been rotated clockwise
+                        or, if applicable, how the orientation of
+                        the element self should be interpreted, with respect to the normal orientation of
+                        the parent surface.
+                        The orientation is expressed in arc degrees.
+                        </span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
                         Value is a positive integer, including 0.
@@ -55,6 +64,15 @@ title: "att.coordinated"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
                               Value is a positive integer, including 0.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the amount by which the contents of this element have been rotated clockwise or, if applicable, how the orientation of the element self should be interpreted, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span><span class="attributeDesc desc">
+                              Indicates the amount by which the contents of this element have been rotated clockwise
+                              or, if applicable, how the orientation of
+                              the element self should be interpreted, with respect to the normal orientation of
+                              the parent surface.
+                              The orientation is expressed in arc degrees.
+                              </span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
+                              </span></div>
                      </div>
                   </div>
                </div>
@@ -67,6 +85,15 @@ title: "att.coordinated"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the lower-left corner x coordinate.">lry</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the lower-left corner x coordinate.</span><span class="attributeValues">
                               Value is a positive integer, including 0.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the amount by which the contents of this element have been rotated clockwise or, if applicable, how the orientation of the element self should be interpreted, with respect to the normal orientation of the parent surface. The orientation is expressed in arc degrees.">rotate</span><span class="attributeDesc desc">
+                              Indicates the amount by which the contents of this element have been rotated clockwise
+                              or, if applicable, how the orientation of
+                              the element self should be interpreted, with respect to the normal orientation of
+                              the parent surface.
+                              The orientation is expressed in arc degrees.
+                              </span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Indicates the upper-left corner x coordinate.">ulx</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the upper-left corner x coordinate.</span><span class="attributeValues">
                               Value is a positive integer, including 0.
@@ -170,6 +197,32 @@ title: "att.coordinated"
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:data <span class="attribute">type=</span><span class="attributevalue">"nonNegativeInteger"</span>/&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"rotate"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>
+                                 Indicates the amount by which the contents of this element have been rotated clockwise
+                                 or, if applicable, how the orientation of
+                                 the element self should be interpreted, with respect to the normal orientation of
+                                 the parent surface.
+                                 The orientation is expressed in arc degrees.
+                                 <span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">minOccurs=</span><span class="attributevalue">"1"</span> <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.degrees.html">data.DEGREES</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;defaultVal&gt;</span>0<span data-indentation="4" class="element">&lt;/defaultVal&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;remarks&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;p&gt;</span>This attribute is based on the TEI attribute of the same name.<span data-indentation="5" class="element">&lt;/p&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/remarks&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
