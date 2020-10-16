@@ -9,7 +9,7 @@ title: "rest"
       <h3 id="rest">&lt;rest&gt;</h3>
       <div class="specs">
          <div class="desc">A non-sounding event found in the source being transcribed.
-            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnRests">4.2.4.3 Rests</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnFermata">4.3.5.4 Fermata</a>,<a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralNotes">5.1 Durations</a>,<a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralSigns">5.2 Mensuration</a></div>
+            <div class="chapterLinksBox"><a class="chapterLink desc" href="/guidelines/dev/content/shared.html#sharedBasicEvents">2.2.3 Basic Music Events</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnRests">4.2.4.3 Rests</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnTuplets">4.3.4 Tuplets</a>,<a class="chapterLink" href="/guidelines/dev/content/cmn.html#cmnFermata">4.3.5.4 Fermata</a>,<a class="chapterLink" href="/guidelines/dev/content/mensural.html#mensuralNotes">5.1 Durations</a></div>
          </div>
          <div class="facet module">
             <div class="label">Module</div>
