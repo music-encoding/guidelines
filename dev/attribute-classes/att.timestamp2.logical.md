@@ -244,6 +244,13 @@ title: "att.timestamp2.logical"
                               <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/phrase.html">phrase</a><span class="elementDesc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></div>
                            </div>
                         </div>
+                        <div class="classBox" title="att.tempo.log">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.tempo.log.html">att.tempo.log</a></label><span class="classDesc"></span></div>
+                           <div class="classContent">
+                              <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a><span class="elementDesc">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+                                    "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</span></div>
+                           </div>
+                        </div>
                         <div class="classBox" title="att.line.log">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.line.log.html">att.line.log</a></label><span class="classDesc"></span></div>
                            <div class="classContent">
@@ -338,6 +345,8 @@ title: "att.timestamp2.logical"
                         <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/dynam.html">dynam</a><span class="elementDesc">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span></div>
                         <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/ornam.html">ornam</a><span class="elementDesc">An element indicating an ornament that is not a mordent, turn, or trill. </span></div>
                         <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/phrase.html">phrase</a><span class="elementDesc">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></div>
+                        <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/tempo.html">tempo</a><span class="elementDesc">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+                              "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</span></div>
                      </div>
                   </div>
                   <div class="classBox" title="MEI.usersymbols">
