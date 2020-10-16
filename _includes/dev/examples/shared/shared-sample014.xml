@@ -1,5 +1,6 @@
 
-<!-- The following are all valid IDs. --><note xml:id="n1"></note>
+<!-- The following are all valid IDs. -->
+<note xml:id="n1"></note>
 <note xml:id="_n1"></note>
 <note xml:id="thisIsMyFavoriteNote"></note>
 <note xml:id="shared.thisIsMyFavoriteNote"></note>
