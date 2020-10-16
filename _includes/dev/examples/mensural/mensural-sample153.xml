@@ -1,5 +1,5 @@
+<!--With @modusminor equal to "3" in the <staffDef> element-->
 <layer n="1">
-    <mensur modusminor="3" tempus="3"/>
     <!--First system in the image-->
     ...
     <rest dur="2B"/>
