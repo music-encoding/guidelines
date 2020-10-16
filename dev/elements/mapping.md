@@ -308,17 +308,33 @@ title: "mapping"
                   <li class="tab-item"><a data-display="class" id="mayContain_class_tab" href="#mayContain" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="mayContain_module_tab" href="#mayContain" class="displayTab">by module</a></li>
                </ul>
-               <div id="mayContain_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident textualContent" title="textual content">textual content</span></div>
+               <div id="mayContain_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident textualContent" title="textual content">textual content</span>, <span class="ident element" title="A reference to a previously defined symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbol.html">symbol</a></span></div>
                <div id="mayContain_tabbedContent_class" class="facetTabbedContent class">
                   <div class="textualContent" title="textual content">
                      textual content
                      
+                  </div>
+                  <div class="classBox direct" title="direct children">
+                     <div class="classHeading"><label class="classLabel">direct children</label><span class="classDesc"></span></div>
+                     <div class="classContent">
+                        <div class="textualContent" title="textual content">
+                           textual content
+                           
+                        </div>
+                        <div class="elementDef def"><span class="ident element" title="A reference to a previously defined symbol."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbol.html">symbol</a></span><span class="elementDesc desc">A reference to a previously defined symbol.</span></div>
+                     </div>
                   </div>
                </div>
                <div id="mayContain_tabbedContent_module" class="facetTabbedContent module">
                   <div class="textualContent" title="textual content">
                      textual content
                      
+                  </div>
+                  <div class="classBox" title="MEI.shared">
+                     <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
+                     <div class="classContent">
+                        <div class="elementRef" title="symbol"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/symbol.html">symbol</a><span class="elementDesc">A reference to a previously defined symbol.</span></div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -348,7 +364,7 @@ title: "mapping"
                                  
                                  <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
                                        
-                                       <span class="attribute">name=<span class="attributevalue">"mei_symbol"</span></span>
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/elements/symbol.html">symbol</a>"</span></span>
                                        /&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/rng:choice&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/rng:zeroOrMore&gt;</span></div>

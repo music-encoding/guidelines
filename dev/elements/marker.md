@@ -440,9 +440,23 @@ title: "marker"
                   <li class="tab-item"><a data-display="class" id="containedBy_class_tab" href="#containedBy" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="containedBy_module_tab" href="#containedBy" class="displayTab">by module</a></li>
                </ul>
-               <div id="containedBy_tabbedContent_compact" class="facetTabbedContent compact active"></div>
-               <div id="containedBy_tabbedContent_class" class="facetTabbedContent class"></div>
-               <div id="containedBy_tabbedContent_module" class="facetTabbedContent module"></div>
+               <div id="containedBy_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident element" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a></span></div>
+               <div id="containedBy_tabbedContent_class" class="facetTabbedContent class">
+                  <div class="classBox" title="elements having marker as direct children">
+                     <div class="classHeading"><label class="classLabel">elements having marker as direct children</label><span class="classDesc"></span></div>
+                     <div class="classContent">
+                        <div class="elementDef def"><span class="ident element" title="Container for elements that contain information useful when generating MIDI output."><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a></span><span class="elementDesc desc">Container for elements that contain information useful when generating MIDI output.</span></div>
+                     </div>
+                  </div>
+               </div>
+               <div id="containedBy_tabbedContent_module" class="facetTabbedContent module">
+                  <div class="classBox" title="MEI.midi">
+                     <div class="classHeading"><label class="classLabel">MEI.midi</label><span class="classDesc">MIDI component declarations.</span></div>
+                     <div class="classContent">
+                        <div class="elementRef"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/midi.html">midi</a><span class="elementDesc">Container for elements that contain information useful when generating MIDI output.</span></div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
          <div class="facet mayContain" id="mayContain">

@@ -88,6 +88,43 @@ title: "att.duration.quality"
                </div>
             </div>
          </div>
+         <div class="facet constraints" id="constraints">
+            <div class="label">Constraints</div>
+            <div class="statement classes list">
+               <ul class="tab">
+                  <li class="tab-item"><a data-display="text" id="constraints_text_tab" href="#constraints" class="displayTab active">text</a></li>
+                  <li class="tab-item"><a data-display="schematron" id="constraints_schematron_tab" href="#constraints" class="displayTab">schematron</a></li>
+               </ul>
+               <div id="constraints_tabbedContent_text" class="facetTabbedContent text active">
+                  <div class="constraint">
+                     <div class="schematronText">Duplex quality can only be used with longas (in Ars antiqua).</div>
+                  </div>
+                  <div class="constraint">
+                     <div class="schematronText">Maior / minor quality can only be used with semibreves (in Ars antiqua).</div>
+                  </div>
+               </div>
+               <div id="constraints_tabbedContent_schematron" class="facetTabbedContent schematron">
+                  <div class="constraint">
+                     <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                           <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:note[@dur.quality='duplex']"</span>&gt;</span>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@dur='longa'"</span>&gt;</span>
+                                 Duplex quality can only be used with longas (in Ars antiqua).
+                                 <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                              <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
+                  </div>
+                  <div class="constraint">
+                     <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                           <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:note[@dur.quality='maior' or @dur.quality='minor']"</span>&gt;</span>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@dur='semibrevis'"</span>&gt;</span>
+                                 Maior / minor quality can only be used with semibreves (in Ars antiqua).
+                                 <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                              <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
+                  </div>
+               </div>
+            </div>
+         </div>
          <div class="facet declaration">
             <div class="label">Declaration</div>
             <div class="statement declaration">
@@ -113,6 +150,32 @@ title: "att.duration.quality"
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_duplex_quality"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:note[@dur.quality='duplex']"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@dur='longa'"</span>&gt;</span>
+                                    Duplex quality can only be used with longas (in Ars antiqua).
+                                    <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
+                        
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_maiorminor_quality"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;constraint&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"mei:note[@dur.quality='maior' or @dur.quality='minor']"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"@dur='semibrevis'"</span>&gt;</span>
+                                    Maior / minor quality can only be used with semibreves (in Ars antiqua).
+                                    <span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/sch:rule&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/constraint&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/constraintSpec&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
             </div>
          </div>
