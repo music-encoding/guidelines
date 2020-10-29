@@ -16,6 +16,10 @@ title: "data.STEMDIRECTION.basic"
          <div class="facet usedBy" id="usedBy">
             <div class="label">Used by</div>
             <div class="statement list">
+               <div class="classBox dtBox" title="Attribute Classes">
+                  <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.STEMDIRECTION.basic</span></div>
+                  <div class="classContent"><span class="ident attclass" data-ident="att.plica.vis" data-module="MEI.mensural"><a class="classLink" title="Visual domain attributes that describe the properties of a plica stem in the mensural repertoire." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.plica.vis.html">att.plica.vis</a>/<span title="Describes the direction of a stem.">@dir</span></span></div>
+               </div>
                <div class="classBox dtBox" title="Data Types">
                   <div class="classHeading"><label class="classLabel">Data Types</label><span class="classDesc">These other Data Types reference data.STEMDIRECTION.basic</span></div>
                   <div class="classContent"><span class="ident datatype" data-ident="data.STEMDIRECTION" data-module="MEI" title="Stem direction."><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemdirection.html">data.STEMDIRECTION</a></span></div>

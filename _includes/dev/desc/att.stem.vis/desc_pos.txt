@@ -1,0 +1,1 @@
+Records the position of the stem in relation to the note head(s).

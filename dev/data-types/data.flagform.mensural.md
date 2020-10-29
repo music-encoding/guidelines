@@ -18,7 +18,7 @@ title: "data.FLAGFORM.mensural"
             <div class="statement list">
                <div class="classBox dtBox" title="Attribute Classes">
                   <div class="classHeading"><label class="classLabel">Attribute Classes</label><span class="classDesc">These class-based attributes use data.FLAGFORM.mensural</span></div>
-                  <div class="classContent"><span class="ident attclass" data-ident="att.STEMPROPERTIES.mensural" data-module="MEI.mensural"><a class="classLink" title="Attributes that describe the properties of stems in the mensural repertoire." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stemproperties.mensural.html">att.STEMPROPERTIES.mensural</a>/<span title="Encodes the form of the flag using the values provided by the data.FLAGFORM.mensural datatype.">@flag.form</span></span></div>
+                  <div class="classContent"><span class="ident attclass" data-ident="att.stem.vis" data-module="MEI.mensural"><a class="classLink" title="Visual domain attributes that describe the properties of a stem in the mensural repertoire." href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.stem.vis.html">att.stem.vis</a>/<span title="Encodes the form of the flag using the values provided by the data.FLAGFORM.mensural datatype.">@flag.form</span></span></div>
                </div>
             </div>
          </div>

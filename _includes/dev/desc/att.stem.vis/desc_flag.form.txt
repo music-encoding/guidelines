@@ -1,0 +1,1 @@
+Encodes the form of the flag using the values provided by the data.FLAGFORM.mensural datatype.

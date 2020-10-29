@@ -1,0 +1,2 @@
+Represents a division (divisio) in neume notation. Divisions indicate short, medium, or long pauses
+    similar to breath marks in modern notation.
