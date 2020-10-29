@@ -22,33 +22,6 @@ title: "data.ACCIDENTAL.WRITTEN"
                </div>
             </div>
          </div>
-         <div class="facet allowedValues" id="allowedValues">
-            <div class="label">Allowed Values</div>
-            <div class="statement list">
-               <div class="dataValueBox" id="s"><span class="dataValue ident">s</span><span class="dataValue desc">Sharp.</span></div>
-               <div class="dataValueBox" id="f"><span class="dataValue ident">f</span><span class="dataValue desc">Flat.</span></div>
-               <div class="dataValueBox" id="ss"><span class="dataValue ident">ss</span><span class="dataValue desc">Double sharp (written as 2 sharps).</span></div>
-               <div class="dataValueBox" id="x"><span class="dataValue ident">x</span><span class="dataValue desc">Double sharp (written using croix).</span></div>
-               <div class="dataValueBox" id="ff"><span class="dataValue ident">ff</span><span class="dataValue desc">Double flat.</span></div>
-               <div class="dataValueBox" id="xs"><span class="dataValue ident">xs</span><span class="dataValue desc">Triple sharp (written as a croix followed by a sharp).</span></div>
-               <div class="dataValueBox" id="sx"><span class="dataValue ident">sx</span><span class="dataValue desc">Triple sharp (written as a sharp followed by a croix).</span></div>
-               <div class="dataValueBox" id="ts"><span class="dataValue ident">ts</span><span class="dataValue desc">Triple sharp (written as 3 sharps).</span></div>
-               <div class="dataValueBox" id="tf"><span class="dataValue ident">tf</span><span class="dataValue desc">Triple flat.</span></div>
-               <div class="dataValueBox" id="n"><span class="dataValue ident">n</span><span class="dataValue desc">Natural.</span></div>
-               <div class="dataValueBox" id="nf"><span class="dataValue ident">nf</span><span class="dataValue desc">Natural + flat; used to cancel preceding double flat.</span></div>
-               <div class="dataValueBox" id="ns"><span class="dataValue ident">ns</span><span class="dataValue desc">Natural + sharp; used to cancel preceding double sharp.</span></div>
-               <div class="dataValueBox" id="su"><span class="dataValue ident">su</span><span class="dataValue desc">Sharp note raised by quarter tone (sharp modified by arrow).</span></div>
-               <div class="dataValueBox" id="sd"><span class="dataValue ident">sd</span><span class="dataValue desc">Sharp note lowered by quarter tone (sharp modified by arrow).</span></div>
-               <div class="dataValueBox" id="fu"><span class="dataValue ident">fu</span><span class="dataValue desc">Flat note raised by quarter tone (flat modified by arrow).</span></div>
-               <div class="dataValueBox" id="fd"><span class="dataValue ident">fd</span><span class="dataValue desc">Flat note lowered by quarter tone (flat modified by arrow).</span></div>
-               <div class="dataValueBox" id="nu"><span class="dataValue ident">nu</span><span class="dataValue desc">Natural note raised by quarter tone (natural modified by arrow).</span></div>
-               <div class="dataValueBox" id="nd"><span class="dataValue ident">nd</span><span class="dataValue desc">Natural note lowered by quarter tone (natural modified by arrow).</span></div>
-               <div class="dataValueBox" id="1qf"><span class="dataValue ident">1qf</span><span class="dataValue desc">1/4-tone flat accidental.</span></div>
-               <div class="dataValueBox" id="3qf"><span class="dataValue ident">3qf</span><span class="dataValue desc">3/4-tone flat accidental.</span></div>
-               <div class="dataValueBox" id="1qs"><span class="dataValue ident">1qs</span><span class="dataValue desc">1/4-tone sharp accidental.</span></div>
-               <div class="dataValueBox" id="3qs"><span class="dataValue ident">3qs</span><span class="dataValue desc">3/4-tone sharp accidental.</span></div>
-            </div>
-         </div>
          <div class="facet remarks">
             <div class="label">Remarks</div>
             <div class="statement remarks">
@@ -68,122 +41,14 @@ title: "data.ACCIDENTAL.WRITTEN"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;content&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;alternate&gt;</span>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"s"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Sharp.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.written.basic.html">data.ACCIDENTAL.WRITTEN.basic</a>"</span></span>/&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"f"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.written.extended.html">data.ACCIDENTAL.WRITTEN.extended</a>"</span></span>/&gt;</span></div>
                               
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ss"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Double sharp (written as 2 sharps).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"x"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Double sharp (written using croix).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ff"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Double flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"xs"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Triple sharp (written as a croix followed by a sharp).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"sx"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Triple sharp (written as a sharp followed by a croix).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ts"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Triple sharp (written as 3 sharps).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"tf"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Triple flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"n"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"nf"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural + flat; used to cancel preceding double flat.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"ns"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural + sharp; used to cancel preceding double sharp.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- su, sd, fu, fd are equivalent to usual symbols plus an arrow (Gould, p. 95)--&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"su"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Sharp note raised by quarter tone (sharp modified by arrow).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"sd"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Sharp note lowered by quarter tone (sharp modified by arrow).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fu"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Flat note raised by quarter tone (flat modified by arrow).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"fd"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Flat note lowered by quarter tone (flat modified by arrow).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"nu"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural note raised by quarter tone (natural modified by arrow).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"nd"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>Natural note lowered by quarter tone (natural modified by arrow).<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="comment">&lt;!-- 1qf, 3qf, 1qs, 3qs represent fixed symbols (Gould, p. 96) --&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"1qf"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>1/4-tone flat accidental.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"3qf"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>3/4-tone flat accidental.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"1qs"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>1/4-tone sharp accidental.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"3qs"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;desc&gt;</span>3/4-tone sharp accidental.<span data-indentation="5" class="element">&lt;/desc&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valItem&gt;</span></div>
-                              <span data-indentation="3" class="element">&lt;/valList&gt;</span></div>
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;macroRef <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.accidental.written.aeu.html">data.ACCIDENTAL.WRITTEN.aeu</a>"</span></span>/&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/alternate&gt;</span></div>
                            <span data-indentation="2" class="element">&lt;/content&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;remarks&gt;</span>

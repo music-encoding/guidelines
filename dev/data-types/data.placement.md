@@ -43,7 +43,7 @@ title: "data.PLACEMENT"
                      <div class="code" xml:space="preserve" data-lang="Schematron"><code>
                            <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@place"</span>&gt;</span>
                               
-                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not((some $token in tokenize(normalize-space(.),' ') satisfies              $token
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not((some $token in tokenize(normalize-space(.),' ') satisfies             $token
                                        =('below','above','between','within')) and count(tokenize(normalize-space(.),' '))
                                        gt 1)"</span>&gt;</span>Other values not permitted when 'above', 'below', 'between' or 'within' is
                                  present.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
@@ -87,7 +87,7 @@ title: "data.PLACEMENT"
                               
                               <div class="indent4 indent"><span data-indentation="4" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@place"</span>&gt;</span>
                                  
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not((some $token in tokenize(normalize-space(.),' ') satisfies              $token
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;sch:assert <span class="attribute">test=</span><span class="attributevalue">"not((some $token in tokenize(normalize-space(.),' ') satisfies             $token
                                           =('below','above','between','within')) and count(tokenize(normalize-space(.),' '))
                                           gt 1)"</span>&gt;</span>Other values not permitted when 'above', 'below', 'between' or 'within' is
                                     present.<span data-indentation="5" class="element">&lt;/sch:assert&gt;</span></div>
