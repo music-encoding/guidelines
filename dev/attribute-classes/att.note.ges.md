@@ -172,7 +172,7 @@ title: "att.note.ges"
                      </div>
                   </div>
                   <div class="classBox" title="att.note.ges.mensural">
-                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.mensural.html">att.note.ges.mensural</a></label><span class="classDesc">(MEI.mensural) Gestural domain attributes.</span></div>
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.ges.mensural.html">att.note.ges.mensural</a></label><span class="classDesc">(MEI.mensural) Gestural domain attributes in the Mensural repertoire.</span></div>
                      <div class="classContent">
                         <div class="classBox" title="att.duration.ratio">
                            <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.duration.ratio.html">att.duration.ratio</a></label><span class="classDesc">(MEI.shared) Attributes that describe duration as a ratio.</span></div>

@@ -130,6 +130,17 @@ title: "att.fermataPresent"
                               </div>
                            </div>
                         </div>
+                        <div class="classBox" title="att.note.anl.mensural">
+                           <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.anl.mensural.html">att.note.anl.mensural</a></label><span class="classDesc"></span></div>
+                           <div class="classContent">
+                              <div class="classBox" title="att.note.anl">
+                                 <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.note.anl.html">att.note.anl</a></label><span class="classDesc"></span></div>
+                                 <div class="classContent">
+                                    <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a><span class="elementDesc">A single pitched event.  </span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -150,6 +161,7 @@ title: "att.fermataPresent"
                         <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/rest.html">rest</a><span class="elementDesc">A non-sounding event found in the source being transcribed.</span></div>
                         <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/space.html">space</a><span class="elementDesc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
                               combined duration of the events equals the number of beats in the measure.</span></div>
+                        <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a><span class="elementDesc">A single pitched event.  </span></div>
                      </div>
                   </div>
                </div>

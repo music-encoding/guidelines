@@ -22,29 +22,38 @@ title: "att.note.anl.mensural"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="fermata Indicates the attachment of a fermata to this element. If visual information about the fermata needs to be recorded, then a element should be employed instead.">fermata</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
-                  <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this element's participation in a ligature.</span><span class="attributeValues">
-                        Allowed values are:
-                        "<span style="font-weight: 500;">recta</span>" ,  "<span style="font-weight: 500;">obliqua</span>" </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="fermata Indicates the attachment of a fermata to this element. If visual information about the fermata needs to be recorded, then a element should be employed instead.">fermata</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the attachment of a fermata to this element. If visual information about
+                        the
+                        fermata needs to be recorded, then a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fermata.html">fermata</a> element should be
+                        employed instead.</span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
+                        </span></div>
                </div>
                <div id="attributes_tabbedContent_class" class="facetTabbedContent class">
-                  <div class="classBox direct" title="direct childs">
-                     <div class="classHeading"><label class="classLabel">direct childs</label><span class="classDesc"></span></div>
+                  <div class="classBox" title="att.fermataPresent">
+                     <div class="classHeading"><label class="classLabel"><a class="classLink" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermataPresent</a></label><span class="classDesc">(MEI.shared) Attributes indicating the attachment of a fermata to the feature.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this element's participation in a ligature.</span><span class="attributeValues">
-                              Allowed values are:
-                              "<span style="font-weight: 500;">recta</span>" ,  "<span style="font-weight: 500;">obliqua</span>" </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="fermata Indicates the attachment of a fermata to this element. If visual information about the fermata needs to be recorded, then a element should be employed instead.">fermata</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the attachment of a fermata to this element. If visual information about
+                              the
+                              fermata needs to be recorded, then a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fermata.html">fermata</a> element should be
+                              employed instead.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
+                              </span></div>
                      </div>
                   </div>
                </div>
                <div id="attributes_tabbedContent_module" class="facetTabbedContent module">
-                  <div class="classBox" title="MEI.mensural">
-                     <div class="classHeading"><label class="classLabel">MEI.mensural</label><span class="classDesc">Mensural repertoire component declarations.</span></div>
+                  <div class="classBox" title="MEI.shared">
+                     <div class="classHeading"><label class="classLabel">MEI.shared</label><span class="classDesc">Component declarations that are shared between two or more modules.</span></div>
                      <div class="classContent">
-                        <div class="attributeDef def" data-module="MEI.mensural"><span class="ident attribute" title="Indicates this element's participation in a ligature.">lig</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates this element's participation in a ligature.</span><span class="attributeValues">
-                              Allowed values are:
-                              "<span style="font-weight: 500;">recta</span>" ,  "<span style="font-weight: 500;">obliqua</span>" </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="fermata Indicates the attachment of a fermata to this element. If visual information about the fermata needs to be recorded, then a element should be employed instead.">fermata</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Indicates the attachment of a fermata to this element. If visual information about
+                              the
+                              fermata needs to be recorded, then a <a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/fermata.html">fermata</a> element should be
+                              employed instead.</span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.staffrel.basic.html">data.STAFFREL.basic</a>.
+                              </span></div>
                      </div>
                   </div>
                </div>
@@ -90,20 +99,11 @@ title: "att.note.anl.mensural"
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Analytical domain attributes in the Mensural repertoire.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;attList&gt;</span>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                            
-                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"lig"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Indicates this element's participation in a ligature.<span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
-                              
-                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;valList <span class="attribute">type=</span><span class="attributevalue">"closed"</span>&gt;</span>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"recta"</span>/&gt;</span></div>
-                                 
-                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;valItem <span class="attribute">ident=</span><span class="attributevalue">"obliqua"</span>/&gt;</span></div>
-                                 <span data-indentation="4" class="element">&lt;/valList&gt;</span></div>
-                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
-                           <span data-indentation="2" class="element">&lt;/attList&gt;</span></div>
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;memberOf
+                                 <span class="attribute">key=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/attribute-classes/att.fermatapresent.html">att.fermataPresent</a>"</span></span>/&gt;</span></div>
+                           <span data-indentation="2" class="element">&lt;/classes&gt;</span></div>
                         <span data-indentation="1" class="element">&lt;/classSpec&gt;</span></div></code></div>
             </div>
          </div>

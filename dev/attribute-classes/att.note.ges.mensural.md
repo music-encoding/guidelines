@@ -8,7 +8,7 @@ title: "att.note.ges.mensural"
    <div class="attClassSpec">
       <h3 id="att.note.ges.mensural">att.note.ges.mensural</h3>
       <div class="specs">
-         <div class="desc">Gestural domain attributes.</div>
+         <div class="desc">Gestural domain attributes in the Mensural repertoire.</div>
          <div class="facet module">
             <div class="label">Module</div>
             <div class="statement text">MEI.mensural</div>
@@ -103,7 +103,7 @@ title: "att.note.ges.mensural"
                <div class="code" xml:space="preserve" data-lang="ODD"><code>
                      <div class="indent1 indent"><span data-indentation="1" class="element">&lt;classSpec <span class="attribute">ident=</span><span class="attributevalue">"att.note.ges.mensural"</span> <span class="attribute">module=</span><span class="attributevalue">"MEI.mensural"</span> <span class="attribute">type=</span><span class="attributevalue">"atts"</span>&gt;</span>
                         
-                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Gestural domain attributes.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
+                        <div class="indent2 indent"><span data-indentation="2" class="element">&lt;desc&gt;</span>Gestural domain attributes in the Mensural repertoire.<span data-indentation="2" class="element">&lt;/desc&gt;</span></div>
                         
                         <div class="indent2 indent"><span data-indentation="2" class="element">&lt;classes&gt;</span>
                            
