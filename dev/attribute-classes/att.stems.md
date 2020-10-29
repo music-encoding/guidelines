@@ -24,7 +24,7 @@ title: "att.stems"
                   <li class="tab-item"><a data-display="class" id="attributes_class_tab" href="#attributes" class="displayTab">by class</a></li>
                   <li class="tab-item"><a data-display="module" id="attributes_module_tab" href="#attributes" class="displayTab">by module</a></li>
                </ul>
-               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes the direction of a stem.">stem.dir</span>, <span class="ident attribute" title="Records the form of the stem.">stem.form</span>, <span class="ident attribute" title="Encodes the stem length.">stem.len</span>, <span class="ident attribute" title="Encodes any stem &#34;modifiers&#34;; that is, symbols rendered on the stem, such as tremolo or Sprechstimme indicators.">stem.mod</span>, <span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">stem.pos</span>, <span class="ident attribute" title="Determines whether a stem should be displayed.">stem.visible</span>, <span class="ident attribute" title="Contains an indication of which staff a note or chord that logically belongs to the current staff should be visually placed on; that is, the one above or the one below.">stem.with</span>, <span class="ident attribute" title="Records the output x coordinate of the stem's attachment point.">stem.x</span>, <span class="ident attribute" title="Records the output y coordinate of the stem's attachment point.">stem.y</span></div>
+               <div id="attributes_tabbedContent_compact" class="facetTabbedContent compact active"><span class="ident attribute" title="Describes the direction of a stem.">stem.dir</span>, <span class="ident attribute" title="Records the form of the stem.">stem.form</span>, <span class="ident attribute" title="Encodes the stem length.">stem.len</span>, <span class="ident attribute" title="Encodes any stem &#34;modifiers&#34;; that is, symbols rendered on the stem, such as tremolo or Sprechstimme indicators.">stem.mod</span>, <span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">stem.pos</span>, <span class="ident attribute" title="Points to a note element in a different layer whose stem is shared. The linked notes should be rendered like a chord though they are part of different layers.">stem.sameas</span>, <span class="ident attribute" title="Determines whether a stem should be displayed.">stem.visible</span>, <span class="ident attribute" title="Contains an indication of which staff a note or chord that logically belongs to the current staff should be visually placed on; that is, the one above or the one below.">stem.with</span>, <span class="ident attribute" title="Records the output x coordinate of the stem's attachment point.">stem.x</span>, <span class="ident attribute" title="Records the output y coordinate of the stem's attachment point.">stem.y</span></div>
                <div id="attributes_tabbedContent_full" class="facetTabbedContent full">
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Describes the direction of a stem.">stem.dir</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Describes the direction of a stem.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemdirection.html">data.STEMDIRECTION</a>.
@@ -41,6 +41,12 @@ title: "att.stems"
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">stem.pos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the position of the stem in relation to the note head(s).</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemposition.html">data.STEMPOSITION</a>.
+                        </span></div>
+                  <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to a note element in a different layer whose stem is shared. The linked notes should be rendered like a chord though they are part of different layers.">stem.sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to a note element in a different layer whose stem is shared. 
+                        The linked notes should be rendered like a chord though they are part of different
+                        layers.
+                        </span><span class="attributeValues">
+                        Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                         </span></div>
                   <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Determines whether a stem should be displayed.">stem.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether a stem should be displayed.</span><span class="attributeValues">
                         Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
@@ -73,6 +79,12 @@ title: "att.stems"
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">stem.pos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the position of the stem in relation to the note head(s).</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemposition.html">data.STEMPOSITION</a>.
+                              </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to a note element in a different layer whose stem is shared. The linked notes should be rendered like a chord though they are part of different layers.">stem.sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to a note element in a different layer whose stem is shared. 
+                              The linked notes should be rendered like a chord though they are part of different
+                              layers.
+                              </span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
                               </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Determines whether a stem should be displayed.">stem.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether a stem should be displayed.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
@@ -141,6 +153,12 @@ title: "att.stems"
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Records the position of the stem in relation to the note head(s).">stem.pos</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Records the position of the stem in relation to the note head(s).</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemposition.html">data.STEMPOSITION</a>.
                               </span></div>
+                        <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Points to a note element in a different layer whose stem is shared. The linked notes should be rendered like a chord though they are part of different layers.">stem.sameas</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Points to a note element in a different layer whose stem is shared. 
+                              The linked notes should be rendered like a chord though they are part of different
+                              layers.
+                              </span><span class="attributeValues">
+                              Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>.
+                              </span></div>
                         <div class="attributeDef def" data-module="MEI.shared"><span class="ident attribute" title="Determines whether a stem should be displayed.">stem.visible</span><span class="attributeUsage">(optional)</span><span class="attributeDesc desc">Determines whether a stem should be displayed.</span><span class="attributeValues">
                               Value conforms to <a class="link_odd_classSpec" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.boolean.html">data.BOOLEAN</a>.
                               </span></div>
@@ -199,6 +217,47 @@ title: "att.stems"
                               duration*.</span></div>
                         <div class="elementRef" data-module="MEI.shared"><a class="link_odd_elementSpec" href="{{ site.baseurl }}/{{ page.version }}/elements/note.html">note</a><span class="elementDesc">A single pitched event.  </span></div>
                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="facet constraints" id="constraints">
+            <div class="label">Constraints</div>
+            <div class="statement classes list">
+               <ul class="tab">
+                  <li class="tab-item"><a data-display="text" id="constraints_text_tab" href="#constraints" class="displayTab active">text</a></li>
+                  <li class="tab-item"><a data-display="schematron" id="constraints_schematron_tab" href="#constraints" class="displayTab">schematron</a></li>
+               </ul>
+               <div id="constraints_tabbedContent_text" class="facetTabbedContent text active">
+                  <div class="constraint">
+                     <div class="schematronText">@stem.sameas attribute should have content.</div>
+                     <div class="schematronText">The value in @stem.sameas should correspond to the @xml:id attribute of the linked
+                        note element of a different layer.
+                     </div>
+                     <div class="schematronText">The linked notes by @stem.sameas should have the same @dur values.</div>
+                  </div>
+               </div>
+               <div id="constraints_tabbedContent_schematron" class="facetTabbedContent schematron">
+                  <div class="constraint">
+                     <div class="code" xml:space="preserve" data-lang="Schematron"><code>
+                           <div class="indent1 indent"><span data-indentation="1" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@stem.sameas"</span>&gt;</span>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"layer.n"</span> <span class="attribute">value=</span><span class="attributevalue">"self::node()/ancestor::mei:layer/@n"</span>/&gt;</span></div>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"ref.id"</span> <span class="attribute">value=</span><span class="attributevalue">"substring(.,2)"</span>/&gt;</span></div>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(normalize-space(.) eq '')"</span>&gt;</span>@stem.sameas attribute
+                                 should have content.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"substring(.,2)=//mei:note[not(ancestor::mei:layer/@n=$layer.n)]/@xml:id"</span>&gt;</span>
+                                 The value in @stem.sameas should correspond to the @xml:id attribute of the linked
+                                 note
+                                 element of a different layer.<span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                              
+                              <div class="indent2 indent"><span data-indentation="2" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"../@dur=//mei:note[@xml:id=$ref.id]/@dur"</span>&gt;</span>
+                                 The linked notes by @stem.sameas should have the same @dur values.
+                                 <span data-indentation="2" class="element">&lt;/sch:assert&gt;</span></div>
+                              <span data-indentation="1" class="element">&lt;/sch:rule&gt;</span></div></code></div>
                   </div>
                </div>
             </div>
@@ -274,6 +333,47 @@ title: "att.stems"
                                        <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.stemposition.html">data.STEMPOSITION</a>"</span></span>
                                        /&gt;</span></div>
                                  <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
+                           
+                           <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"stem.sameas"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;desc&gt;</span>Points to a note element in a different layer whose stem is shared. 
+                                 The linked notes should be rendered like a chord though they are part of different
+                                 layers.
+                                 <span data-indentation="4" class="element">&lt;/desc&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;datatype <span class="attribute">maxOccurs=</span><span class="attributevalue">"1"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;rng:ref
+                                       
+                                       <span class="attribute">name=<span class="attributevalue">"<a class="link_odd" href="{{ site.baseurl }}/{{ page.version }}/data-types/data.uri.html">data.URI</a>"</span></span>
+                                       /&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/datatype&gt;</span></div>
+                              
+                              <div class="indent4 indent"><span data-indentation="4" class="element">&lt;constraintSpec <span class="attribute">ident=</span><span class="attributevalue">"check_stem.sameasTarget"</span> <span class="attribute">scheme=</span><span class="attributevalue">"isoschematron"</span>&gt;</span>
+                                 
+                                 <div class="indent5 indent"><span data-indentation="5" class="element">&lt;constraint&gt;</span>
+                                    
+                                    <div class="indent6 indent"><span data-indentation="6" class="element">&lt;sch:rule <span class="attribute">context=</span><span class="attributevalue">"@stem.sameas"</span>&gt;</span>
+                                       
+                                       <div class="indent7 indent"><span data-indentation="7" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"layer.n"</span> <span class="attribute">value=</span><span class="attributevalue">"self::node()/ancestor::mei:layer/@n"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent7 indent"><span data-indentation="7" class="element">&lt;sch:let <span class="attribute">name=</span><span class="attributevalue">"ref.id"</span> <span class="attribute">value=</span><span class="attributevalue">"substring(.,2)"</span>/&gt;</span></div>
+                                       
+                                       <div class="indent7 indent"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"not(normalize-space(.) eq '')"</span>&gt;</span>@stem.sameas attribute
+                                          should have content.<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
+                                       
+                                       <div class="indent7 indent"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"substring(.,2)=//mei:note[not(ancestor::mei:layer/@n=$layer.n)]/@xml:id"</span>&gt;</span>
+                                          The value in @stem.sameas should correspond to the @xml:id attribute of the linked
+                                          note
+                                          element of a different layer.<span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
+                                       
+                                       <div class="indent7 indent"><span data-indentation="7" class="element">&lt;sch:assert <span class="attribute">role=</span><span class="attributevalue">"warning"</span> <span class="attribute">test=</span><span class="attributevalue">"../@dur=//mei:note[@xml:id=$ref.id]/@dur"</span>&gt;</span>
+                                          The linked notes by @stem.sameas should have the same @dur values.
+                                          <span data-indentation="7" class="element">&lt;/sch:assert&gt;</span></div>
+                                       <span data-indentation="6" class="element">&lt;/sch:rule&gt;</span></div>
+                                    <span data-indentation="5" class="element">&lt;/constraint&gt;</span></div>
+                                 <span data-indentation="4" class="element">&lt;/constraintSpec&gt;</span></div>
                               <span data-indentation="3" class="element">&lt;/attDef&gt;</span></div>
                            
                            <div class="indent3 indent"><span data-indentation="3" class="element">&lt;attDef <span class="attribute">ident=</span><span class="attributevalue">"stem.visible"</span> <span class="attribute">usage=</span><span class="attributevalue">"opt"</span>&gt;</span>
