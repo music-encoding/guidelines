@@ -24,7 +24,9 @@ At many locations in an MEI file one can reference internal or external referenc
 
 {% include mei example="shared/shared-sample017.xml" valid="" %}
 
-When a reference to an external entity is not a complete URI it is resolved against the current base URI; if not defined by other means this would be the location of the current document; the **@xml:base** attribute may be used “to specify a base URI other than the base URI of the document or external entity.” (Marsch, Jonathan; Tobin, Richard: XML Base (Second Edition). W3C Recommendation 28 January 2009. online at: [http://www.w3.org/TR/2009/REC-xmlbase-20090128/](http://www.w3.org/TR/2009/REC-xmlbase-20090128/){:.link_ref} ).
+When a reference to an external entity is not a complete URI it is resolved against the current base URI; if not defined by other means this would be the location of the current document. The above example consequently would mean, that the file `myImage.jpg` referenced from {% include link elem="graphic" %} resides at the same location (in the same folder) as the MEI-file.
+
+The **@xml:base** attribute may be used “to specify a base URI other than the base URI of the document or external entity.” (Marsch, Jonathan; Tobin, Richard: XML Base (Second Edition). W3C Recommendation 28 January 2009. online at: [http://www.w3.org/TR/2009/REC-xmlbase-20090128/](http://www.w3.org/TR/2009/REC-xmlbase-20090128/){:.link_ref}).
 
 {% include mei example="shared/shared-sample0017.xml" valid="" %}
 
@@ -44,3 +46,7 @@ For more information on **xml:base** see: [https://www.w3.org/TR/xmlbase/](https
 Other attributes from the XML-Namespace encountered in MEI files are: {% include link atts="att.lang/xml---lang  att.whitespace/xml---space" %}
 
 The **@xml:id** and **@xml:base** attributes are especially important when it comes to linking document fragments to eachother or to external entities. Many of the linking attributes are globally available in MEI through the {% include link att="common" %} attribute class.
+
+{% include desc atts="att.basic/xml---lang" %}
+
+The **@xml:lang** attributes may be used to encode the language of an element's contents.
