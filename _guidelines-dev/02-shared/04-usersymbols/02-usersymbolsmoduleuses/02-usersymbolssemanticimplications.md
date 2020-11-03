@@ -10,4 +10,5 @@ An example usage for {% include link elem="line" %} is the visualization of voic
 
 {% include figure img="modules/usersymbols/mignon.png" caption="Voice leading visualization as found in an Edition Peters print of Album für die Jugend by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number is 10478.)" %}
 
-{% include figure img="" caption="Encoding of the Schumann example" %}
+The following code snippet shows the encoding of the above example:
+{% include mei example="usersymbols/usersymbols-sample347.xml" caption="Encoding of the Schumann example" valid="feasible" %}
