@@ -4,6 +4,8 @@ title: "General Music Structure Elements"
 version: "dev"
 ---
 
+{% include desc elem="music" %}
+
 As indicated above, the general place for encoding the musical text is the {% include link elem="music" %} element. MEI.shared offers two possible child elements:
 
 {% include desc elem="body" %}
