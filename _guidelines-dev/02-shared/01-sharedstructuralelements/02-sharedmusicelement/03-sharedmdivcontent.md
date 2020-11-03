@@ -4,7 +4,7 @@ title: "Content of Musical Divisions"
 version: "dev"
 ---
 
-The {% include link elem="mdiv" %} element may contain one or both of two possible views: score and parts.
+The contents of {% include link elem="mdiv" %} can be organised according to the two encoding paradigms provided by the {% include link elem="score" %} and {% include link elem="parts" %} elements. 
 
 {% include desc elem="score" %}
 {% include desc elem="parts" %}
