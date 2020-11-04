@@ -30,7 +30,7 @@ In order to force a system break in the musical text {% include link elem="sb" %
 
 {% include desc elem="sb" %}
 
-Moreover a music text might be accompanied by front and back matter. MEI provides the corresponding elements in the MEI.text module (for more details on text encoding in MEI see {% include link id="text" %})
+Critical editions and collections of works often contain extensive text, such as a title page, table of contents, an introductory essay, commentary, biographical sketch, index, etc. These textual items may appear in either the {% include link elem="front" %} or {% include link elem="back" %} elements. The front and back elements, available only when the MEI.text module is activated, are described more fully in chapter {% include link id="text" %}.
 
 {% include desc elem="front" %}
 {% include desc elem="back" %}  
