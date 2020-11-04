@@ -3,7 +3,7 @@
       <mdiv>
          <score>
             <section>
-               <expansion plist="#shared.A #shared.B #shared.A"></expansion>
+               <expansion plist="#shared.A #shared.B #shared.A"/>
                <section xml:id="shared.A">
                   <!-- "A" section -->
                </section>
