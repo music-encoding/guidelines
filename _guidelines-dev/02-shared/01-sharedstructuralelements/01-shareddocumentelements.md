@@ -34,7 +34,7 @@ The below example shows the basic structure of an MEI file with {% include link 
 
 {% include desc elem="meiHead" %}
 
-A document with {% include link elem="meiHead" %} as root element only contains metadata and is also known as an independent or stand-alone header. Stand-alone headers are more fully described in chapter {% include link id="headerIndependentHeader" %}.
+The {% include link elem="meiHead" %} element, formally declared in the MEI.header module, is described in chapter {% include link id="headerstructure" %}. A document with {% include link elem="meiHead" %} as root element only contains metadata and is also known as an independent or stand-alone header. Stand-alone headers are more fully described in chapter {% include link id="headerIndependentHeader" %}.
 
 The below example shows the basic structure of an MEI file with {% include link elem="meiHead" %} as root element. Please be aware that this example still does not represent a valid MEI file:
 
