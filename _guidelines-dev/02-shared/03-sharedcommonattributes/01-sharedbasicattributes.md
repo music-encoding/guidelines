@@ -47,6 +47,6 @@ Other attributes from the XML-Namespace encountered in MEI files are: {% include
 
 The **@xml:id** and **@xml:base** attributes are especially important when it comes to linking document fragments to eachother or to external entities. Many of the linking attributes are globally available in MEI through the {% include link att="common" %} attribute class.
 
-{% include desc atts="att.basic/xml---lang" %}
+{% include desc atts="att.lang/xml---lang" %}
 
 The **@xml:lang** attributes may be used to encode the language of an element's contents.
