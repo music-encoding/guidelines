@@ -4,7 +4,7 @@ title: "Document Root Elements"
 version: "dev"
 ---
 
-MEI defines four elements qualifying as root elements (i.e. the element containing everything else) of an MEI document; the most common of these are define in the MEI.shared module:
+MEI defines four elements qualifying as root elements (i.e. the element containing everything else) of an MEI document; the most common of these are defined in the MEI.shared module:
 
 {% include desc elem="mei" %}
 
@@ -18,7 +18,7 @@ The other potential root elements serve different usecases or purposes.
 
 {% include desc elem="music" %}
 
-A document with {% include link elem="music" %} as root element provides music notation markup without metadata, and could serve ebedding MEI within other kinds of markup, e.g. TEI (see {% include link id ="tei" %}).
+A document with {% include link elem="music" %} as root element provides music notation markup without metadata, and could serve embedding MEI within other kinds of markup, e.g. TEI (see {% include link id ="tei" %}).
 
 The below example shows the basic structure of an MEI file with {% include link elem="music" %} as root element. Basically this already represents a valid MEI file, although without any contents:
 
@@ -26,7 +26,7 @@ The below example shows the basic structure of an MEI file with {% include link 
 
 {% include desc elem="meiCorpus" %}
 
-{% include link elem="meiCorpus" %} contains a {% include link elem="meiHead" %} element describing a collection of related MEI-encoded texts – known as a corpus – and an {% include link elem="mei" %} element for each text. Further information regarding the organization and encoding of music corpora is given in chapter {% include link id="corpus" %}.
+{% include link elem="meiCorpus" %} contains an {% include link elem="meiHead" %} element describing a collection of related MEI-encoded texts – known as a corpus – and an {% include link elem="mei" %} element for each text. Further information regarding the organization and encoding of music corpora is given in chapter {% include link id="corpus" %}.
 
 The below example shows the basic structure of an MEI file with {% include link elem="meiCorpus" %} as root element. Please be aware that this example still does not represent a valid MEI file:
 
@@ -40,9 +40,9 @@ The below example shows the basic structure of an MEI file with {% include link 
 
 {% include mei example="shared/shared-sample0002.xml" valid="no" %}
 
-The above examples all carry two attributes on their root elements. While the @xmlns is a general feature of XML and not defined in MEI it is crucial for stating the fact, that is is an MEI file you are dealing with. The second attribute is {% include link att="meiversion" %}. 
+The above examples all carry two attributes on their root elements. While the @xmlns is a general feature of XML and not defined in MEI it is crucial for stating the fact that it is an MEI file you are dealing with. The second attribute is {% include link att="meiversion" %}. 
 
 {% include desc atts="att.meiVersion/meiversion" %}
 
-Although not required the {% include link att="meiversion" %} attribute is important for defining a stable referece to a specific MEI-version used in the enclosed encoding, and thus is highly recommended on your root element.
+Although not required the {% include link att="meiversion" %} attribute is important for defining a stable reference to a specific MEI-version used in the enclosed encoding, and thus is highly recommended on your root element.
 

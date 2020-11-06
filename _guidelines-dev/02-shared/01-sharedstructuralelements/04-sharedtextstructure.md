@@ -5,7 +5,7 @@ version: "v4"
 ---
 
 
-The shared module provides basic text structure element.
+The MEI.shared module provides basic text structure elements.
 
 {% include desc elem="div" %}
 {% include desc elem="head" %}

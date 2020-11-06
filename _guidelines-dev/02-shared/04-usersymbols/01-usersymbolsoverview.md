@@ -1,6 +1,6 @@
 ---
 sectionid: usersymbolsOverview
-title: "Overview of the User Symbols Module"
+title: "Overview of the Usersymbols Module"
 version: "dev"
 ---
 

@@ -4,7 +4,7 @@ title: "Positioning"
 version: "dev"
 ---
 
-An element may be positioned using either absolute or relative coordinates. If absolute start point coordinates are specified using **@x**/**@y** coordinates (or their relatives **@x2**/**@y2** for endpoints) they take precedence over relative positions specified by **@ho**/**@vo**/**@to** (or **@startho**/**@startvo**/**@startto**). Analogously, **@x2**/**@y2** override **@endho****@endvo**/**@endto**.
+An element may be positioned using either absolute or relative coordinates. If absolute start point coordinates are specified using **@x**/**@y** coordinates (or their relatives **@x2**/**@y2** for endpoints) they take precedence over relative positions specified by **@ho**/**@vo**/**@to** (or **@startho**/**@startvo**/**@startto**). Analogously, **@x2**/**@y2** override **@endho**/**@endvo**/**@endto**.
 
 If **@to**/**@startto**/**@endto** attributes are used, the start or end point is x-aligned with the indicated timestamp.
 
@@ -21,7 +21,7 @@ Analogously, the endpoint is determined using end coordinates (**@endho**/**@end
 Examples of origins are:
 
 - {% include link elem="staff" %} and {% include link elem="layer" %}: The horizontal origin is the starting point of the measure, the vertical one is the bottom staff line;
-- {% include link elem="note" %}: The horizontal origin is the left end of the notehead, the vertical one the center of the notehead;
+- {% include link elem="note" %}: The horizontal origin is the left end of the notehead, the vertical one is the center of the notehead;
 - {% include link elem="clef" %}: The horizontal origin is the left end of the clef, the vertical one the line specified by {% include link elem="clef" %}/**@line** (or **@clef.line**);
 - For elements containing text: The left end of the baseline;
 - {% include link elem="symbolDef" %}: As symbol definitions aren't rendered directly, their coordinate system and origin are considered virtual.
