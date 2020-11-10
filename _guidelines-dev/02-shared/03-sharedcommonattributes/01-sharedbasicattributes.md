@@ -43,10 +43,10 @@ http://www.mySite.org/images/myImage.tif
 
 For more information on **@xml:base** see: [https://www.w3.org/TR/xmlbase/](https://www.w3.org/TR/xmlbase/)
 
-Other attributes from the XML-Namespace encountered in MEI files are: {% include link atts="att.lang/xml---lang  att.whitespace/xml---space" %}
-
 The **@xml:id** and **@xml:base** attributes are especially important when it comes to linking document fragments to eachother or to external entities. Many of the linking attributes are globally available in MEI through the {% include link att="common" %} attribute class.
 
-{% include desc atts="att.lang/xml---lang" %}
+Yet there are other attributes from the XML-Namespace encountered in MEI files.
 
-The **@xml:lang** attributes may be used to encode the language of an element's contents.
+{% include desc atts="att.lang/xml---lang att.whitespace/xml---space" %}
+
+While **@xml:lang** attribute may be used to encode the language of an element's contents, the **@xml:space** attribute lets you define the handling of whitespace, i.e. whietspace being important content (**@xml:space="preserve"**) of negligible (**@xml:space="default"**). With the latter also being the default value if no **xml:space** attribute is present.   
