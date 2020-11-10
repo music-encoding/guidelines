@@ -15,7 +15,7 @@ While {% include link elem="body" %} holds the contents of a single musical text
 
 There are several more possible child elements of the {% include link elem="music" %} element defined in other modules of MEI, such as {% include link elem="front" %} and {% include link elem="back" %} elements (defined in MEI.text module, cf. {% include link id="text" %}), {% include link elem="performance" %} (defined in MEI.performance module, cf. {% include link id="performances" %}), {% include link elem="genDesc" %} (defined in MEI.genetic module, cf. {% include link id="genetic" %}), {% include link elem="facsimile" %} (defined in MEI.facsimile module, cf. {% include link id="facsimiles" %}).
 
-Please be aware that the following examples still do not reflect valid MEI files as they are missing some requred elements not defined in the MEI.shared.
+Please be aware that the following examples still do not reflect valid MEI files as they are missing some required elements not defined in the MEI.shared module.
 
 The basic structure of a unitary musical text:
 

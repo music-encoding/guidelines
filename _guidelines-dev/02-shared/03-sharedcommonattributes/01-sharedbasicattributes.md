@@ -30,7 +30,7 @@ The **@xml:base** attribute may be used “to specify a base URI other than the 
 
 {% include mei example="shared/shared-sample0017.xml" valid="" %}
 
-The value of **@xml:base** can be inherited from an ancestor. This is relevenat for resolving relative links or URIs within the document. A comprehensible use case can be illustrated by the following example: the values of the graphic elements' **@target** attribute can be completed by the **@xml:base** value specified for the ancestor {% include link elem="facsimile" %} element:
+The value of **@xml:base** can be inherited from an ancestor. This is relevant for resolving relative links or URIs within the document. A comprehensible use case can be illustrated by the following example: the values of the graphic elements' **@target** attribute can be completed by the **@xml:base** value specified for the ancestor {% include link elem="facsimile" %} element:
 
 {% include mei example="shared/shared-sample018.xml" valid="" %}
 
@@ -41,7 +41,7 @@ http://www.mySite.org/images/myImage.jpg
 http://www.mySite.org/images/myImage.tif
 ```
 
-For more information on **xml:base** see: [https://www.w3.org/TR/xmlbase/](https://www.w3.org/TR/xmlbase/)
+For more information on **@xml:base** see: [https://www.w3.org/TR/xmlbase/](https://www.w3.org/TR/xmlbase/)
 
 Other attributes from the XML-Namespace encountered in MEI files are: {% include link atts="att.lang/xml---lang  att.whitespace/xml---space" %}
 
