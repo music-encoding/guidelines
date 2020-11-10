@@ -16,4 +16,6 @@ The {% include link elem="space" %} element may also be used to align material t
 
 While ‘space’ is meaningful, ‘padding’ is non-essential whitespace that is used to shift the position of the events which follow.
 
+{% include desc elem="pad" %}
+
 The {% include link elem="pad" %} element is provided in order to capture software-dependent placement information when it is desirable to do so. Unless the MEI file will be used as an intermediate file format, this is usually not necessary.

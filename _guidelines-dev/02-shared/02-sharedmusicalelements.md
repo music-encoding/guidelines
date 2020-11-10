@@ -1,6 +1,6 @@
 ---
 sectionid: sharedMusicalElements
-title: "Shared Musical Elements"
+title: "General Music Elements"
 version: "dev"
 ---
 

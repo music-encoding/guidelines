@@ -4,7 +4,7 @@ title: "Content of Musical Divisions"
 version: "dev"
 ---
 
-The {% include link elem="mdiv" %} element may contain one or both of two possible views: score and parts.
+The contents of {% include link elem="mdiv" %} can be organised according to the two encoding paradigms provided by the {% include link elem="score" %} and {% include link elem="parts" %} elements. 
 
 {% include desc elem="score" %}
 {% include desc elem="parts" %}
@@ -19,9 +19,9 @@ Within the collective {% include link elem="parts" %} element, notation for a si
 
 {% include desc elem="part" %}
 
-A {% include link elem="part" %} is effectively a small-scale score, allowing all the encoding features of a full score, such as multiple staves, performance directives, and so on. A group of {% include link elem="part" %} element is useful for encoding performing parts when there is no score, such as in early music part books; when the parts have non-aligning bar lines; when different layout features, such as page turns, are needed for the score and parts; or for accommodating software that requires part-by-part encoding.
+A {% include link elem="part" %} is effectively a small-scale score, allowing all the encoding features of a full score, such as multiple staves, performance directives, and so on. A group of {% include link elem="part" %} elements is useful for encoding performing parts when there is no score, such as in early music part books; when the parts have non-aligning bar lines; when different layout features, such as page turns, are needed for the score and parts; or for accommodating software that requires part-by-part encoding.
 
-Please note that {% include link elem="part" %} elements in MEI are not an indication of voice leading or staff grouping. Voice leading can be encoded using the **@next** attribute, available on all the members of the {% include link model="model.eventLike" %} class. The {% include link elem="staffGrp" %} element handles grouping of staves in the score context.
+Please note that {% include link elem="part" %} elements in MEI are not an indication of voice leading or staff grouping. Voice leading can be encoded using the **@next** attribute, available on all the members of the {% include link model="eventLike" %} class. The {% include link elem="staffGrp" %} element handles grouping of staves in the score context.
 {% include mei example="shared/shared-sample007.xml" valid="" %}
 
 In both score and part views, the {% include link elem="scoreDef" %} element is used to describe logical characteristics of the encoded music, such as key signature, the sounding key (as opposed to the notated key signature), meter, etc., and visual features, such as page size, staff groupings and display labels, etc. The {% include link elem="staffGrp" %} elements within {% include link elem="scoreDef" %} and the order of {% include link elem="staffDef" %} elements inside {% include link elem="staffGrp" %} should follow the score order of the source for the encoding.
@@ -46,14 +46,12 @@ However, staff-by-staff organization is more appropriate for music without measu
 
 It must be noted that, when both the MEI.cmn and MEI.mensural modules are available, it is possible to encode CMN notation without using {% include link elem="measure" %} elements; that is, staff-by-staff organization may be used and the ends of measures marked using {% include link elem="barLine" %} elements.
 
-In certain circumstances, this approach may be preferable for reproduction of the visual layout of the music. However, the simultaneous use of the 
-
-{% include link elem="measure" %} and {% include link elem="barLine" %} elements may lead to confusion and should be avoided.
+In certain circumstances, this approach may be preferable for reproduction of the visual layout of the music. However, the simultaneous use of the {% include link elem="measure" %} and {% include link elem="barLine" %} elements may lead to confusion and should be avoided.
 
 Typically, MEI follows the order of sections as they appear in the document being encoded. When performance requires a different order, for instance in the case of D.C. and D.S. directives, the following element may be used to define the performance order.
 
 {% include desc elem="expansion" %}
 
-In the following example, {% include link elem="expansion" %} is used to indicate how the notated sections should be ordered in a "through-composed" rendition, for example for machine performance or analysis. The plist attribute contains an ordered list of identifiers of descendant {% include link elem="section" %}, {% include link elem="ending" %}, {% include link elem="lem" %}, or {% include link elem="rdg" %} elements. The sequence of values in the plist attribute indicates that the section labelled 'A' comes first, then the section labelled 'B', followed by the 'A' section again. This mechanism must be specified independently of any textual directives, such as "Da capo" or "D.S. al Fine", that may be present in the document.
+In the following example, {% include link elem="expansion" %} is used to indicate how the notated sections should be ordered in a "through-composed" rendition, for example for machine performance or analysis. The **@plist** attribute contains an ordered list of identifiers of descendant {% include link elem="section" %}, {% include link elem="ending" %}, {% include link elem="lem" %}, or {% include link elem="rdg" %} elements. The sequence of values in the **@plist** attribute indicates that the section labelled 'A' comes first, then the section labelled 'B', followed by the 'A' section again. This mechanism must be specified independently of any textual directives, such as "Da capo" or "D.S. al Fine", that may be present in the document.
 
 {% include mei example="shared/shared-sample009.xml" valid="" %}
