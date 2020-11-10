@@ -1,5 +1,5 @@
 ---
-sectionid: mensuralSigns
+sectionid: "mensuralSigns"
 title: "Mensuration"
 version: "dev"
 ---
@@ -14,12 +14,3 @@ The mensur signs themselves can be encoded in the **@mensur.sign** attribute wit
 
 {% include desc elem="mensur" %}
 
-##### Change in mensuration
-
-The following example illustrates a **change in mensuration**. In this case, the element {% include link elem="mensur" %} is used within the {% include link elem="layer" %} element,  preceding the stream of notes affected by the new mensuration defined by it.
-{% include verovio example="mensuration_changes.mei" encoding=true %}
-
-##### Implicit mensuration
-
-It is common in *Ars antiqua* and some *Ars nova* pieces to have no mensuration signs. In this case, the mensuration—the division levels corresponding to *modus maior*, *modus minor*, *tempus*, and *prolatio*—is given by the context. The next example shows the incipit of a four-voice piece, Josquin's *Tu solus qui facis mirabilia*, where only two of the voices (*Cantus* and *Tenor*) have a mensuration sign. The other two (*Altus* and *Bassus*) have **no mensuration signs**, and the **mensura is given by the context**. Therefore, while only the *Cantus* and the *Tenor* have attributes for encoding the mensuration sign (in this case, **@mensur.sign** and **@mensur.slash**), all four voices include attributes to encode the *mensura* (**@tempus** and **@prolatio**).
-{% include verovio example="implicit-mensuration.mei" encoding=true %}
