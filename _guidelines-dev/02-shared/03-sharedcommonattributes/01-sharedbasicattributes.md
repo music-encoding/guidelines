@@ -4,11 +4,11 @@ title: "Attributes from the XML-namespace"
 version: "dev"
 ---
 
-The most general attributes that are very frequently encountered in MEI files are not even native MEI attributes but are coming from the basic definition of XML in the XML-namespace (http://www.w3.org/XML/1998/namespace). MEI redefines some of them in the att.basic class.
+The most general attributes that are very frequently encountered in MEI files are not even native MEI attributes but are coming from the basic definition of XML in the XML-namespace [http://www.w3.org/XML/1998/namespace](http://www.w3.org/XML/1998/namespace). MEI redefines some of them in the {% include link att="basic" %} att.basic class.
 
 {% include desc atts="att.id/xml---id" %}
 
-The value of the **@xml:id** attribute serves as an identifier for an element and its content. Its value must be unique in the context of the current document and must conform to the definition of an XML Name provided by the W3C Recommendation at [http://www.w3.org/TR/xml/#NT-Name](http://www.w3.org/TR/xml/#NT-Name){:.link_ref}. Suggestions for constructing an **@xml:id** value can be found at [http://www.w3.org/TR/xml/#sec-suggested-names](http://www.w3.org/TR/xml/#sec-suggested-names){:.link_ref}.
+The value of the **@xml:id** attribute serves as an identifier for an element and its content. Its value must be unique in the context of the current document and must conform to the definition of an XML Name provided by the W3C Recommendation at [http://www.w3.org/TR/xml/#NT-Name](http://www.w3.org/TR/xml/#NT-Name){:.link_ref}. Suggestions for constructing an **@xml:id** value can be found at [http://www.w3.org/TR/xml/#sec-suggested-names](http://www.w3.org/TR/xml/#sec-suggested-names).
 
 The **@xml:id** attribute may take values similar to the following:
 
