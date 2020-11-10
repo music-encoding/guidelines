@@ -4,7 +4,7 @@ title: "Attributes from the XML-namespace"
 version: "dev"
 ---
 
-The most general attributes that are very frequently encountered in MEI files are not even native MEI attributes but are coming from the basic definition of XML in the XML-namespace [http://www.w3.org/XML/1998/namespace](http://www.w3.org/XML/1998/namespace). MEI redefines some of them in the {% include link att="basic" %} att.basic class.
+The most general attributes that are very frequently encountered in MEI files are not even native MEI attributes but are coming from the basic definition of XML in the XML-namespace [http://www.w3.org/XML/1998/namespace](http://www.w3.org/XML/1998/namespace). MEI redefines some of them in the {% include link att="basic" %} class.
 
 {% include desc atts="att.id/xml---id" %}
 
