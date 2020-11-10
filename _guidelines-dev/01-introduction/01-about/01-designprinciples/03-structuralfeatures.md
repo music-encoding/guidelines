@@ -1,0 +1,13 @@
+---
+version: "dev"
+title: "Structural Features"
+sectionid: "structuralfeatures"
+---
+
+The encoding scheme is based on eXtensible Markup Language (XML), a text-based format for representing structured information. It is expressed as a One Document Does-it-all (ODD) document. For more information on ODD, please refer to TEI Guidelines chapter 22: [Documentation Elements](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html){:target='\_blank'}, chapter 23: [Using the TEI](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/USE.html){:target='\_blank'}, and to the TEI's "[Getting Started with P5 ODDs](https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/){:target='\_blank'}" document.
+
+Related or complementary standards, such as the [Text Encoding Initiative (TEI) Guidelines for Electronic Text Encoding and Interchange](http://www.tei-c.org/Guidelines/P5/){:target='\_blank'}, [the Encoded Archival Description (EAD)](http://www.loc.gov/ead/){:target='\_blank'}, [MARC 21 Format for Bibliographic Data](http://www.loc.gov/marc/bibliographic/ecbdhome.html){:target='\_blank'}, existing notation encoding schemes, etc. have been consulted and employed as appropriate. For example, the data model includes a header that is comparable to the TEI header, and TEI and EAD naming conventions and tag structures have been used whenever feasible. However, while some feature names are similar, or even the same, it is important to recognize that MEI and TEI have different semantic scope. Obviously, a note element in MEI does not carry the same meaning as the element of the same name in TEI. Perhaps less obviously, a phrase in music notation is unrelated to a textual phrase.
+
+With respect to metadata, MEI recognizes the close relationship between the metadata content found in the MEI header and that of catalog records, authority records, and finding aids. Therefore MEI provides ways of indicating in the encoding the corresponding fields of other metadata standards.
+
+To ensure broad international and multi-repertoire application of MEI, existing musical terminology was used in building the data model where practical. When appropriate, a more neutral terminology was used to facilitate sharing of concepts and thus stressing the commonalities between different repertoires. Finally, extensive use of attributes and clearly-defined classification mechanisms in the schema permits the refinement of element meanings within specific musical, geographic, or temporal contexts.
