@@ -9,11 +9,11 @@ This section introduces the elements that can be used to represent document layo
 {% include desc elem="pb" %}
 {% include desc atts="att.nnumberlike/n" %}
 
-The {% include link elem="pb" %} element can be used to mark page beginnings. When transcribing an existing document the **@n** attribute should be used to record the page number displayed in the source. t need not be an integer, e.g., 'iv', or 'p17-3'. The logical page number can be calculated by counting previous pb ancestor elements. When used in a score context, a page beginning implies an accompanying system beginning. This element is modelled on an element in the Text Encoding Initiative (TEI) standard.
+The {% include link elem="pb" %} element can be used to mark page beginnings. When transcribing an existing document the **@n** attribute should be used to record the page number displayed in the source. t need not be an integer, e.g., 'iv', or 'p17-3'. The logical page number can be calculated by counting previous {% include link elem="pb" %} ancestor elements. When used in a score context, a page beginning implies an accompanying system beginning. This element is modelled on an element in the Text Encoding Initiative (TEI) standard.
 
 {% include desc elem="pgDesc" %}
 
-Additional information can be provided on page beginnings. Ranging from a prose description of the page layour in {% include link elem="pgDesc" %} to defined headers and footers.
+Additional information can be provided on page beginnings. Ranging from a prose description of the page layout in {% include link elem="pgDesc" %} to defined headers and footers.
 
 {% include desc elem="pgHead" %}
 {% include desc elem="pgHead2" %}

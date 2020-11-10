@@ -17,7 +17,7 @@ A number of elements can point to an internally-defined symbol for rendering usi
 
 {% include mei example="usersymbols/usersymbols-sample349.xml" caption="Defining two staffs, each using its own treble clef shape" valid="feasible" %}
 
-Externally-defined symbols may be referenced using a **@glyph.name** or **@glyph.num** attribute from the {% include link att="extSym" %} attribute class. Both attributes refer to Standard Music Font Layout (SMuFL) characters, if not specified differently by the **@glyph.auth** and **glyph.uri** attributes.
+Externally-defined symbols may be referenced using a **@glyph.name** or **@glyph.num** attribute from the {% include link att="extSym" %} attribute class. Both attributes refer to Standard Music Font Layout (SMuFL) characters, if not specified differently by the **@glyph.auth** and **@glyph.uri** attributes.
 
 {% include mei example="cmnornaments/cmnornaments-sample208.txt" caption="Use of glyph.auth and glyph.name and glyph.num attributes to refer to a SMUFL symbol" valid="feasible" %}
 
