@@ -23,7 +23,6 @@ The basic structure of a unitary musical text:
 
 Examples of composite texts which may be represented using the {% include link elem="group" %} element include anthologies and other collections. The presence of common front matter referring to the whole collection, possibly in addition to front matter relating to each individual musical text, is a good indication that a given musical text might usefully be encoded in this way.
 
-
 For example, the overall structure of a collection of songs might be encoded as follows:
 
 {% include mei example="shared/shared-sample002.xml" valid="" %}
