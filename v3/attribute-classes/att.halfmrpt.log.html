@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>att.halfmRpt.log</title>
-    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
-    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/guidelines/v3/css/main.css">
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+    <link rel="stylesheet" href="/guidelines/v3/css/syntax.css" />
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,12 +18,6 @@
     <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
     <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
     <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
-
-    <!-- verovio -->
-    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
-
-    <!-- script for handling verovio examples -->
-    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
     <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
@@ -33,69 +27,9 @@
 
   <body>
 
-    <header class="navbar">
-  <div class="navbar-section">
-    <a class="navbar-brand" href="https://music-encoding.github.io/">
-      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
-    </a>
-    
-    <div class="dropdown dropdownCustomMenuToggle">
-        
-            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
-                Guidelines versions <i class="icon icon-caret"></i>
-            </a>
-
-            
-             <ul class="menu"> 
-                <li class="menu-item">
-                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
-                        development version
-                    </a>
-                </li>
-                
-            
-            
-                <li class="menu-item">
-                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
-                        4.0.1
-                    </a>
-                </li>
-                
-            
-            
-                <li class="menu-item">
-                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
-                        3.0.0
-                    </a>
-                </li>
-                 </ul> 
-            
-
-        
+    <div class="headerBar">
+      
     </div>
-
-
-  </div>
-  
-  <div class="navbar-section">
-    <div class="fixed toast toast-warning text-center guidelines-warning">
-        Guidelines for an older version of MEI (3.0.0)
-    </div>
-  </div>
-  
-  <div class="navbar-section">
-    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
-      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
-    </a>
-    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
-      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
-    </a>
-    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
-      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
-    </a>
-  </div>
-</header>
-
 
     <div class="container-fluid content">
         <div class="columns specsLayout">
@@ -3651,25 +3585,30 @@ $(document).ready(function() {
 
     </div>
 
-    <footer>
+    
 
-  <div class="container">
-    <div class="columns institutions">
-      <div class="column col-12 text-center">
-        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
-          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="text-center">
-    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
-    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/86dbcafe8b664660732d056d4e37451f2f641390'>Version 86dbcaf</a>
-</small>
-  </div>
-
-</footer>
-
+    <script>
+      window.addEventListener("load", function(event) {          
+          function getMenu() {
+              const version = 'v3';              
+              const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+              
+              fetch(url)
+                  .then(function(response) { return response.text()})
+                  .then(function(doc) {
+                      let headerBar = document.querySelector('.headerBar');
+                      const parser = new DOMParser();
+                      const htmlDoc = parser.parseFromString(doc, 'text/html');
+                      const menu = htmlDoc.querySelector('.headerBar')
+                      console.log('replacing menu ...')
+                      headerBar.parentNode.replaceChild(menu, headerBar)
+                      console.log('menu repladced');
+                  });
+          };
+          getMenu();
+              
+      });
+      </script>
 
   </body>
 

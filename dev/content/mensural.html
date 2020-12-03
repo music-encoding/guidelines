@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Repertoire: Mensural Notation</title>
-    <meta name="description" content=":scroll: The Music Encoding Initiative Guidelines">
-    <link rel="stylesheet" href="https://music-encoding.github.io/css/main.css">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/guidelines/dev/css/main.css">
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="https://music-encoding.github.io/css/syntax.css" />
+    <link rel="stylesheet" href="/guidelines/dev/css/syntax.css" />
 
     <!-- search -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,12 +18,6 @@
     <link rel="stylesheet" href="/guidelines/js/tipuesearch/tipuesearch.css">
     <script src="/guidelines/js/tipuesearch/tipuesearch_set.js"></script>
     <script src="/guidelines/js/tipuesearch/tipuesearch.min.js"></script>
-
-    <!-- verovio -->
-    <script src="https://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
-
-    <!-- script for handling verovio examples -->
-    <script src="/guidelines/js/verovio-examples.js"></script>
 
     <!-- xml highlighting -->
     <link rel="stylesheet" href="/guidelines/js/highlight/styles/default.css">
@@ -33,69 +27,9 @@
 
   <body>
 
-    <header class="navbar">
-  <div class="navbar-section">
-    <a class="navbar-brand" href="https://music-encoding.github.io/">
-      <img src="https://music-encoding.github.io/pix/meilogo-inverted.png" alt="MEI logo"/>
-    </a>
-    
-    <div class="dropdown dropdownCustomMenuToggle">
-        
-            <a class="btn btn-link dropdown-toggle top-menu-link" tabindex="0">
-                Guidelines versions <i class="icon icon-caret"></i>
-            </a>
-
-            
-             <ul class="menu"> 
-                <li class="menu-item">
-                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
-                        development version
-                    </a>
-                </li>
-                
-            
-            
-                <li class="menu-item">
-                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
-                        4.0.1
-                    </a>
-                </li>
-                
-            
-            
-                <li class="menu-item">
-                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
-                        3.0.0
-                    </a>
-                </li>
-                 </ul> 
-            
-
-        
+    <div class="headerBar">
+      
     </div>
-
-
-  </div>
-  
-  <div class="navbar-section">
-    <div class="fixed toast toast-warning text-center guidelines-warning">
-        Guidelines for the development version of MEI
-    </div>
-  </div>
-  
-  <div class="navbar-section">
-    <a class="twitterLink hide-sm" target="_blank" href="https://twitter.com/MusicEncoding">
-      <img src="https://music-encoding.github.io/pix/twitter.png" alt="Twitter" class="logo"/>
-    </a>
-    <a class="githubLink hide-xs" target="_blank" href="https://github.com/music-encoding">
-      <img src="https://music-encoding.github.io/pix/github.png" alt="GitHub" class="logo"/>
-    </a>
-    <a class="slackLink hide-sm" target="_blank" href="https://music-encoding.slack.com/">
-      <img src="https://music-encoding.github.io/pix/slack.png" alt="Slack" class="logo"/>
-    </a>
-  </div>
-</header>
-
 
     <div class="container-fluid content">
         <div class="columns specsLayout">
@@ -155,17 +89,17 @@
 <p class="gloss"><strong>fusa:</strong> Half as long as a semiminima</p>
 <p class="gloss"><strong>semifusa:</strong> Half as long as a fusa</p>
 
-<div id="id_290697000_vrv"></div>
+<div id="id_143099000_vrv"></div>
 
-<pre><code class="xml" id="id_290697000"></code></pre>
+<pre><code class="xml" id="id_143099000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/notes_rests.mei" , function( data ) {
         
-        document.getElementById('id_290697000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_290697000'));
+        document.getElementById('id_143099000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_143099000'));
         
-        renderVerovio(data, 'id_290697000_vrv');
+        renderVerovio(data, 'id_143099000_vrv');
     });
 </script>
 
@@ -185,17 +119,17 @@
 <!--
 
 
-<div id="id_291220000_vrv"></div>
+<div id="id_143735000_vrv"></div>
 
-<pre><code class="xml" id="id_291220000"></code></pre>
+<pre><code class="xml" id="id_143735000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/motet_fauvel_fol22r_triplum.mei" , function( data ) {
         
-        document.getElementById('id_291220000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_291220000'));
+        document.getElementById('id_143735000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_143735000'));
         
-        renderVerovio(data, 'id_291220000_vrv');
+        renderVerovio(data, 'id_143735000_vrv');
     });
 </script>-->
 
@@ -275,17 +209,17 @@
 
 <p>The following example illustrates an <strong>alteration</strong> (the second <em>brevis</em>) in <em>modus minor perfectus</em>. Notice that the second <em>brevis</em> has doubled its regular value, it has been altered, unlike the first one.</p>
 
-<div id="id_302878000_vrv"></div>
+<div id="id_176116000_vrv"></div>
 
-<pre><code class="xml" id="id_302878000"></code></pre>
+<pre><code class="xml" id="id_176116000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/alteration.mei" , function( data ) {
         
-        document.getElementById('id_302878000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_302878000'));
+        document.getElementById('id_176116000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_176116000'));
         
-        renderVerovio(data, 'id_302878000_vrv');
+        renderVerovio(data, 'id_176116000_vrv');
     });
 </script>
 
@@ -306,49 +240,49 @@
 
 <p>The following example illustrates an <strong>imperfection</strong> (the two <em>longae</em>) in <em>modus minor perfectus</em> with the same <em>longa</em>-<em>brevis</em>-<em>brevis</em>-<em>longa</em> sequence but with an additional <em>dot of division</em> between the two <em>breves</em>. Notice that here the <em>longae</em> have been imperfected, unlike the previous example in which they kept the perfect value indicated by the mensuration.</p>
 
-<div id="id_304481000_vrv"></div>
+<div id="id_178369000_vrv"></div>
 
-<pre><code class="xml" id="id_304481000"></code></pre>
+<pre><code class="xml" id="id_178369000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/imperfection.mei" , function( data ) {
         
-        document.getElementById('id_304481000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_304481000'));
+        document.getElementById('id_178369000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_178369000'));
         
-        renderVerovio(data, 'id_304481000_vrv');
+        renderVerovio(data, 'id_178369000_vrv');
     });
 </script>
 
 <p>The following example in <em>modus minor imperfectus</em> illustrates the use of a dot of augmentation following the <em>longa</em>. Notice that the <em>longa</em>, which is supposed to be imperfect according to the mensuration, has a perfect value due to the augmentation dot.</p>
 
-<div id="id_304747000_vrv"></div>
+<div id="id_178732000_vrv"></div>
 
-<pre><code class="xml" id="id_304747000"></code></pre>
+<pre><code class="xml" id="id_178732000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/augmentation.mei" , function( data ) {
         
-        document.getElementById('id_304747000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_304747000'));
+        document.getElementById('id_178732000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_178732000'));
         
-        renderVerovio(data, 'id_304747000_vrv');
+        renderVerovio(data, 'id_178732000_vrv');
     });
 </script>
 
 <p>Finally, the following example illustrates the <strong>@dur.quality</strong> values related to the <em>Ars antiqua</em> style, for <em>perfect modus</em>, with the breve equivalents notated in the lower staff for reference (as in the previous examples).</p>
 
-<div id="id_304975000_vrv"></div>
+<div id="id_179228000_vrv"></div>
 
-<pre><code class="xml" id="id_304975000"></code></pre>
+<pre><code class="xml" id="id_179228000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/ars_antiqua.mei" , function( data ) {
         
-        document.getElementById('id_304975000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_304975000'));
+        document.getElementById('id_179228000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_179228000'));
         
-        renderVerovio(data, 'id_304975000_vrv');
+        renderVerovio(data, 'id_179228000_vrv');
     });
 </script>
 
@@ -384,65 +318,65 @@ The encoding also allows for the possibility of encoding a binary division of th
 
 <p>In opposition to regular imperfection, which is caused by a note of the next smaller degree (e.g., a perfect <em>brevis</em> imperfected by a following/preceding <em>semibrevis</em>), partial imperfection is caused by a note of two or even three orders apart. As an example, consider an imperfect <em>longa</em> made up of two perfect <em>breves</em>. This <em>longa</em> can be “partially imperfected” by a following/preceding <em>semibrevis</em>. This <em>semibrevis</em> causes part of the <em>longa</em>—one of its perfect <em>breves</em>—to be imperfected, taking away one-third of one of its two halves. In this case, the <em>longa</em>’s value changes from 6 <em>semibreves</em> (two perfect <em>breves</em>) into 5 <em>semibreves</em>. Partial imperfection is not supported by the <strong>@dur.quality</strong> attribute—because there can be many cases of partial imperfection, as will be seen in the following examples. To encode a partial imperfection, the <strong>@num</strong> and <strong>@numbase</strong> pair of attributes are used instead. Given the change in the <em>longa</em>’s value from 6 <em>semibreves</em> to 5 <em>semibreves</em>, the corresponding attributes to encode this particular case of partial imperfection would be <em>num=”6”</em> and <em>numbase=”5”</em> as shown below in the code snippet and its rendering.</p>
 
-<div id="id_313687000_vrv"></div>
+<div id="id_191528000_vrv"></div>
 
-<pre><code class="xml" id="id_313687000"></code></pre>
+<pre><code class="xml" id="id_191528000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/partial-imp-01-propinquam.mei" , function( data ) {
         
-        document.getElementById('id_313687000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_313687000'));
+        document.getElementById('id_191528000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_191528000'));
         
-        renderVerovio(data, 'id_313687000_vrv');
+        renderVerovio(data, 'id_191528000_vrv');
     });
 </script>
 
 <p>Partial imperfection can also happen from both sides of a note at once, as shown below:</p>
 
-<div id="id_313879000_vrv"></div>
+<div id="id_191893000_vrv"></div>
 
-<pre><code class="xml" id="id_313879000"></code></pre>
+<pre><code class="xml" id="id_191893000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/partial-imp-02-bilateral.mei" , function( data ) {
         
-        document.getElementById('id_313879000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_313879000'));
+        document.getElementById('id_191893000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_191893000'));
         
-        renderVerovio(data, 'id_313879000_vrv');
+        renderVerovio(data, 'id_191893000_vrv');
     });
 </script>
 
 <p>An example of partial imperfection caused by a note three orders apart is given next. Here the <em>longa</em> is partially imperfected by a <em>minima</em> (instead of by a <em>semibrevis</em>).</p>
 
-<div id="id_314133000_vrv"></div>
+<div id="id_192214000_vrv"></div>
 
-<pre><code class="xml" id="id_314133000"></code></pre>
+<pre><code class="xml" id="id_192214000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/partial-imp-03-remotam.mei" , function( data ) {
         
-        document.getElementById('id_314133000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_314133000'));
+        document.getElementById('id_192214000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_192214000'));
         
-        renderVerovio(data, 'id_314133000_vrv');
+        renderVerovio(data, 'id_192214000_vrv');
     });
 </script>
 
 <p>In the next example, the <em>longa</em> is also imperfected by a <em>minima</em>. However, the <strong>@num</strong> and <strong>@numbase</strong> ratio is different from the example above because the default value of the <em>longa</em> here (18 <em>minimas</em>) is different from that of the previous example (12 <em>minimas</em>).</p>
 
-<div id="id_314437000_vrv"></div>
+<div id="id_192532000_vrv"></div>
 
-<pre><code class="xml" id="id_314437000"></code></pre>
+<pre><code class="xml" id="id_192532000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/partial-imp-04-remotam.mei" , function( data ) {
         
-        document.getElementById('id_314437000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_314437000'));
+        document.getElementById('id_192532000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_192532000'));
         
-        renderVerovio(data, 'id_314437000_vrv');
+        renderVerovio(data, 'id_192532000_vrv');
     });
 </script>
 
@@ -499,17 +433,17 @@ The encoding also allows for the possibility of encoding a binary division of th
   <a href="/guidelines/dev/elements/mensur.html" class="link_odd_elementSpec">mensur</a> is used within the 
   <a href="/guidelines/dev/elements/layer.html" class="link_odd_elementSpec">layer</a> element,  preceding the stream of notes affected by the new mensuration defined by it.</p>
 
-<div id="id_325736000_vrv"></div>
+<div id="id_211800000_vrv"></div>
 
-<pre><code class="xml" id="id_325736000"></code></pre>
+<pre><code class="xml" id="id_211800000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/mensuration_changes.mei" , function( data ) {
         
-        document.getElementById('id_325736000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_325736000'));
+        document.getElementById('id_211800000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_211800000'));
         
-        renderVerovio(data, 'id_325736000_vrv');
+        renderVerovio(data, 'id_211800000_vrv');
     });
 </script>
 
@@ -521,17 +455,17 @@ The encoding also allows for the possibility of encoding a binary division of th
 
 <p>It is common in <em>Ars antiqua</em> and some <em>Ars nova</em> pieces to have no mensuration signs. In this case, the mensuration—the division levels corresponding to <em>modus maior</em>, <em>modus minor</em>, <em>tempus</em>, and <em>prolatio</em>—is given by the context. The next example shows the incipit of a four-voice piece, Josquin’s <em>Tu solus qui facis mirabilia</em>, where only two of the voices (<em>Cantus</em> and <em>Tenor</em>) have a mensuration sign. The other two (<em>Altus</em> and <em>Bassus</em>) have <strong>no mensuration signs</strong>, and the <strong>mensura is given by the context</strong>. Therefore, while only the <em>Cantus</em> and the <em>Tenor</em> have attributes for encoding the mensuration sign (in this case, <strong>@mensur.sign</strong> and <strong>@mensur.slash</strong>), all four voices include attributes to encode the <em>mensura</em> (<strong>@tempus</strong> and <strong>@prolatio</strong>).</p>
 
-<div id="id_328346000_vrv"></div>
+<div id="id_214359000_vrv"></div>
 
-<pre><code class="xml" id="id_328346000"></code></pre>
+<pre><code class="xml" id="id_214359000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/dev/implicit-mensuration.mei" , function( data ) {
         
-        document.getElementById('id_328346000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_328346000'));
+        document.getElementById('id_214359000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_214359000'));
         
-        renderVerovio(data, 'id_328346000_vrv');
+        renderVerovio(data, 'id_214359000_vrv');
     });
 </script>
 
@@ -5465,25 +5399,30 @@ $(document).ready(function() {
 
     </div>
 
-    <footer>
+    
 
-  <div class="container">
-    <div class="columns institutions">
-      <div class="column col-12 text-center">
-        <a class="institutionsLink" target="_blank" href="http://www.adwmainz.de">
-          <img src="https://music-encoding.github.io/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="text-center">
-    <a class="footerLinks" href="https://music-encoding.github.io/">Home</a> | <a class="footerLinks" href="mailto:info@music-encoding.org">Contact</a><br/>
-    <small>© MEI Guidelines 2020</small><small> | <a href='https://github.com/music-encoding/music-encoding/commit/d976b37fa4253672d82d263df8484000d8ddd7cd'>Version d976b37</a>
-</small>
-  </div>
-
-</footer>
-
+    <script>
+      window.addEventListener("load", function(event) {          
+          function getMenu() {
+              const version = 'dev';              
+              const url = 'https://music-encoding.org/menus/' + version + '/menu.html';
+              
+              fetch(url)
+                  .then(function(response) { return response.text()})
+                  .then(function(doc) {
+                      let headerBar = document.querySelector('.headerBar');
+                      const parser = new DOMParser();
+                      const htmlDoc = parser.parseFromString(doc, 'text/html');
+                      const menu = htmlDoc.querySelector('.headerBar')
+                      console.log('replacing menu ...')
+                      headerBar.parentNode.replaceChild(menu, headerBar)
+                      console.log('menu repladced');
+                  });
+          };
+          getMenu();
+              
+      });
+      </script>
 
   </body>
 
