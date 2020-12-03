@@ -1136,7 +1136,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/chord.html" class="link_odd_elementSpec">chord</a>. The presence of the <strong>@grace</strong> attribute indicates a grace note or chord.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmn/grace-300.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmn/grace-300.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Grace notes</figcaption>
 </figure>
 
@@ -1187,7 +1187,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/chord.html" class="link_odd_elementSpec">chord</a> elements. In the follwing example from Sergei Rachmaninoff’s <em>Prelude in C-sharp minor</em>, Op. 3, No. 2 all chords carry an accent.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/RachmaninoffPrelude.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/RachmaninoffPrelude.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Chords in Rachmaninoff's Prelude in C-sharp minor, Op. 3, No. 2</figcaption>
 </figure>
 
@@ -1251,7 +1251,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/chord.html" class="link_odd_elementSpec">chord</a>. The attribute <strong>@stem.with</strong> allows for the indication of a stem that joins notes on adjacent staves.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmn/xchord-300.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmn/xchord-300.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Cross-staff chord</figcaption>
 </figure>
 
@@ -1413,7 +1413,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/multirest.html" class="link_odd_elementSpec">multiRest</a>, but may be created by rendering software. You may force modern block rests by using the <strong>@block</strong> attribute.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/multirest.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/multirest.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Forms of multiple measure rests</figcaption>
 </figure>
 
@@ -1438,7 +1438,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/mrest.html" class="link_odd_elementSpec">mRest</a> elements. It is used to explicitly indicate that a layer has no content but that no information is missing from the encoding.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/mspace.1.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/mspace.1.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Empty measure</figcaption>
 </figure>
 
@@ -1565,7 +1565,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/chord.html" class="link_odd_elementSpec">chord</a>s under the beam may be used to encode the breaking of secondary beams <em>after</em> the note or chord bearing the attribute. The value of <strong>@breaksec</strong> indicates the number of continuous beams. For example:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/beam-a-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/beam-a-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Primary and secondary beams</figcaption>
 </figure>
 
@@ -1623,7 +1623,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The duration of notes, rests, or chords under a beam which carries the <strong>@form</strong> attribute with a value of ‘acc’, ‘rit’, or ‘mixed’ must be treated specially. The first and last contained elements must specify a duration which matches the number of beams displayed at the point of these events. In the case of a ‘mixed’ beam, each event at the point of change in the number of secondary beams must carry a <strong>@dur</strong> attribute. Beams like this may be encoded thusly:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmn/beamAcc-Rit.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmn/beamAcc-Rit.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Feathered beaming</figcaption>
 </figure>
 
@@ -1655,7 +1655,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 </div>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/cross-staff.1.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/cross-staff.1.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Two measures from No. 4 of Moszkowski's 12 Pianoforte Studies for the left hand</figcaption>
 </figure>
 
@@ -1720,7 +1720,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/beamspan.html" class="link_odd_elementSpec">beamSpan</a> element does not contain the beamed notes as its children. Instead, it references the <strong>@xml:id</strong> values of all affected notes in its <strong>@plist</strong> attribute and denotes the initial and terminal notes of the beam using <strong>@startid</strong> and <strong>@endid</strong> attributes. This configuration allows beams to cross measure boundaries. The following example from <a href="https://en.wikipedia.org/wiki/Erwin_Schulhoff">Erwin Schulhoff’s</a> <em>Violin Sonata</em> demonstrates a typical example of such hierarchy-crossing beams:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/beamspan.1.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/beamspan.1.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Cross-measure beam in the third movement of Schulhoff's Sonata</figcaption>
 </figure>
 
@@ -1784,7 +1784,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/layer.html" class="link_odd_elementSpec">layer</a>; that is, a tie started in one layer may only be ended by a subsequent musical event with a <strong>@tie</strong> attribute with an <em>m</em> or <em>t</em> value in the same layer. The tie-terminating event may lie in the following measure.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmn/finger-300.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmn/finger-300.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Ties across barlines</figcaption>
 </figure>
 
@@ -1878,7 +1878,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>A slur is a curved line that connects a group of notes of different pitch. It normally indicates that an instrument-specific performance technique should be applied to the affected notes. For example, in notation for winds, the notes should be played in one breath, while a single bow is indicated for string instruments.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/slur-300-20100514.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/slur-300-20100514.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Slurs</figcaption>
 </figure>
 
@@ -2207,7 +2207,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example from <a href="https://en.wikipedia.org/wiki/B%C3%A9la_Bart%C3%B3k">Béla Bartók’s</a> <em>Mikrokosmos</em>, Sz.107 shows a <em>diminuendo</em> between two staves that begins on the first beat (in the current measure) and ends on the first one in the penultimate measure. The duration is highlighted with a dashed line, which can be indicated with the <strong>@extender</strong> attribute.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/dynamics.1.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/dynamics.1.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">A diminuendo in Bartók's In Phrygian Mode</figcaption>
 </figure>
 
@@ -2227,7 +2227,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The relation of the tuplet to the underlying meter is specified using the <strong>@num</strong> and <strong>@numbase</strong> attributes, where <strong>@num</strong> specifies the number of replacing notes and <strong>@numbase</strong> specifies the number of notes <em>of the same duration</em> to be replaced. For example, when three eighth notes replace one quarter note in common time, <strong>@num</strong> takes a value of “3”, whereas <strong>@numbase</strong> reads “2”, because a quarter note in common time is normally divided into two eighths. When three quarters replace two in the same meter, <strong>@numbase</strong> also reads “2”. The combination of these attributes may be read as “3 in the time of 2” in either case.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/tuplets.1.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/tuplets.1.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Tuplet rhythms from Maurice Ravel's Boléro</figcaption>
 </figure>
 
@@ -2283,7 +2283,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/tuplet.html" class="link_odd_elementSpec">tuplet</a> to describe tuplets, but instead of nesting all affected notes inside itself, it references the <strong>@xml:id</strong> values of all affected notes in its <strong>@plist</strong> attribute and the initial and terminal notes of the tuplet using <strong>@startid</strong> and <strong>@endid</strong> attributes. This configuration allows tuplets to cross beams or measure boundaries. The following example demonstrates a typical example of such hierarchy-crossing tuplets:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/tuplets.2.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/tuplets.2.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Hierarchy-crossing tuplets</figcaption>
 </figure>
 
@@ -2477,7 +2477,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/note.html" class="link_odd_elementSpec">note</a> elements’ <strong>@xml:id</strong> attributes. Therefore, the use of the <strong>@plist</strong> attribute is sufficient in many cases, so that other attributes from above may be omitted.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/LisztMazeppa.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/LisztMazeppa.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Spanning arpeggios in Liszt's Mazeppa study</figcaption>
 </figure>
 
@@ -2529,7 +2529,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/gliss.html" class="link_odd_elementSpec">gliss</a>, is normally a line connecting two notes in the glissando.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/TarregaAlborada.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/TarregaAlborada.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">A simple glissando in Tárrega's Alborada from a leading grace note</figcaption>
 </figure>
 
@@ -2566,7 +2566,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/chord.html" class="link_odd_elementSpec">chord</a> element that is to be repeated.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/SchubertD887.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/SchubertD887.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Bowed tremolandi in Schubert's last string quartet</figcaption>
 </figure>
 
@@ -2661,7 +2661,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/chord.html" class="link_odd_elementSpec">chord</a>. The <strong>@unitdur</strong> attribute value indicates the exact note values in an aural rendition of a measured tremolo, i.e., 4ths, 8ths, 16ths, etc. The number of beams present in the source is captured by the <strong>@beams</strong> attribute.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/tremolos.2.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/tremolos.2.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Fingered tremolos</figcaption>
 </figure>
 
@@ -2679,7 +2679,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/btrem.html" class="link_odd_elementSpec">bTrem</a>, here the number of beams present may disagree with the rhythmic value indicated by the <strong>@unitdur</strong> attribute, especially in manuscript sources. The number of so-called “floating” beams, which are not attached to stems, may be encoded in the <strong>@beams.float</strong> attribute.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/tremolos.3.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/tremolos.3.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Tremolos with floating beams</figcaption>
 </figure>
 
@@ -2690,7 +2690,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>A very common feature of music notation from the CMN period is the so-called ‘fermata’ (or ‘corona’ in Italian). It is usually written as a dot above or below an arc. It may stand above or below the staff it affects with its ‘open’ side usually facing towards the staff. A fermata indicates that a related note or rest should be held longer than its written duration would normally require. Sometimes, a fermata occurs over or under a barline to indicate a pause or even the end of a phrase or section.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/Beethoven.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/Beethoven.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">The probably most famous fermatas in history from Beethoven's fifth symphony</figcaption>
 </figure>
 
@@ -2700,7 +2700,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/rest.html" class="link_odd_elementSpec">rest</a>. This attribute allows placement of a fermata above or below the element to which it’s attached.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/MozartK428.4.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/MozartK428.4.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Fermatas in Mozart's String quartet K. 428 indicating general pauses</figcaption>
 </figure>
 
@@ -2738,17 +2738,17 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>An indication that a passage should be performed one or more octaves above or below its written pitch is represented by the 
   <a href="/guidelines/v4/elements/octave.html" class="link_odd_elementSpec">octave</a> element.</p>
 
-<div id="id_323285000_vrv"></div>
+<div id="id_773660000_vrv"></div>
 
-<pre><code class="xml" id="id_323285000"></code></pre>
+<pre><code class="xml" id="id_773660000"></code></pre>
 
 <script type="text/javascript">
     $.get( "/guidelines/mei/v4/octave-shift-01.mei" , function( data ) {
         
-        document.getElementById('id_323285000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
-        hljs.highlightBlock(document.getElementById('id_323285000'));
+        document.getElementById('id_773660000').innerHTML = escapeXml(prettifyXml(getFilePart(data, 'center')));
+        hljs.highlightBlock(document.getElementById('id_773660000'));
         
-        renderVerovio(data, 'id_323285000_vrv');
+        renderVerovio(data, 'id_773660000_vrv');
     });
 </script>
 
@@ -2805,7 +2805,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The musical intention of the element is described using the <strong>@c</strong>, <strong>@d</strong>, <strong>@e</strong>, <strong>@f</strong>, <strong>@g</strong>, <strong>@a</strong> and <strong>@b</strong> attributes, which affect the corresponding strings of the harp. All of these attributes may take the values “<em>f</em>” (flat), “<em>s</em>” (sharp) or “<em>n</em>” (natural), where “n” is the default value, which is assumed when one of these attributes is not specified.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/harppedal.1.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/harppedal.1.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Harp pedal diagrams</figcaption>
 </figure>
 
@@ -2876,7 +2876,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example, taken from <a href="https://en.wikipedia.org/wiki/Charles-Louis_Hanon">Charles-Louis Hanon’s</a> <em>Le Pianiste virtuose</em>, shows typical fingering:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/Hanon.21.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/Hanon.21.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Fingering in Hanon's exercise no. 21</figcaption>
 </figure>
 
@@ -3012,7 +3012,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following detail from an edition of Hector Berlioz’ <em>Symphonie Fantastique</em> shows a typical example:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmn/reh_berlioz.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmn/reh_berlioz.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Rehearsal mark</figcaption>
 </figure>
 
@@ -3072,7 +3072,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>In addition to repetition at the section level, CMN includes a number of different symbols for measure-level repetitions. Many of these symbols are found in manuscripts and may be regarded as personal conventions of their respective authors. Some signs, however, have been widely adopted. For example, it is common to indicate the repetition of a single beat or an entire measure with one or more diagonal lines, sometimes with dots at the upper left and lower right, much like a percent sign. The illustration below contains the most common signs:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/beatrpt-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/beatrpt-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Beat repeat signs</figcaption>
 </figure>
 
@@ -3189,7 +3189,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/staffdef.html" class="link_odd_elementSpec">staffDef</a> elements.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/mrpt-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/mrpt-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Measure repetition</figcaption>
 </figure>
 
@@ -3243,7 +3243,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/halfmrpt.html" class="link_odd_elementSpec">halfmRpt</a> element represents the incorrect, but frequently found, use of the measure repeat (or similar) sign to indicate repetition of half of a measure. This practice mostly occurs in hand-written notation and usually involves the repetition of the second half of a measure in duple time. This element is necessary because the function of the symbol, not the visual symbol itself, is of primary importance. The following example from the beginning of Beethoven’s <em>Waldstein</em> sonata illustrates such usage:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmn/halfmRpt_beethoven.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmn/halfmRpt_beethoven.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Half-measure repeat</figcaption>
 </figure>
 
@@ -3296,12 +3296,12 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/multirest.html" class="link_odd_elementSpec">multiRest</a> element) never occur in scores, only in performer parts, where it is often necessary to abbreviate the notation due to page size limitations.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/mrpt2-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/mrpt2-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Two-measure repetition</figcaption>
 </figure>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/multirpt-20100510.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/multirpt-20100510.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Multi-measure repetition</figcaption>
 </figure>
 
@@ -3519,7 +3519,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example demonstrates the encoding of simple mordents:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_mordent.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_mordent.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of simple mordent</figcaption>
 </figure>
 
@@ -3543,7 +3543,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>Occasionally, mordents can be longer, employing five notes instead of three. The <strong>@long</strong> attribute can be used to identify mordents of this type. The following example shows the encoding of a long mordent:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_mordent_l.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of a long mordent</figcaption>
 </figure>
 
@@ -3633,7 +3633,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example demonstrates the encoding of simple trills:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_tr.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_tr.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of simple trills.</figcaption>
 </figure>
 
@@ -3661,7 +3661,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>It has been specified earlier that it is a semantic error not to encode a starting event or time stamp for an ornament. This starting point of a trill can be expressed with the <strong>@startid</strong> attribute and/or with the <strong>@tstamp</strong> attribute. Specifying the end point is not required, although the <strong>@tstamp2</strong> or <strong>@endid</strong> attribute may be used to imply the use of a wavy line extender as shown in this example:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_trill_wavy.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of trills followed by wavy lines.</figcaption>
 </figure>
 
@@ -3699,7 +3699,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>Chromatic alterations of auxiliary notes are occasionally expressed on the staff using small notes enclosed in parentheses, as shown in the example below. However, the attribute <strong>@accidupper</strong> is still to be used to encode the alteration. Display of the auxiliary note in this ‘cautionary’ manner is left to down-stream rendering processes.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_tr_accid.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example alterations expressed on the staff.</figcaption>
 </figure>
 
@@ -3724,7 +3724,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example, from a keyboard sonata by Joseph Haydn, shows a trill with concluding grace notes (called <em>Nachschlag</em>):</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_tr_grace.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
 </figure>
 
@@ -3759,7 +3759,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The abbreviation “tr” followed by a wavy line spanning multiple notes is sometimes used to indicate multiple trills:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_tr_multi.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of multiple trills.</figcaption>
 </figure>
 
@@ -3836,7 +3836,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
   <a href="/guidelines/v4/elements/reg.html" class="link_odd_elementSpec">reg</a>, represent non-exclusive options; that is, both may be processed by applications that aim to support both visual and aural renditions.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/ExplicationBach.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/ExplicationBach.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Trill transcribed from J. S. Bach's Klavierbüchlein für Wilhelm Friedemann Bach</figcaption>
 </figure>
 
@@ -4004,7 +4004,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example shows the encoding of a simple turn:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_turn.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_turn.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Example of a simple turn.</figcaption>
 </figure>
 
@@ -4030,7 +4030,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example from Beethoven’s piano sonata no. 1 in F minor, op. 2, no. 1, mvmt. 2 demonstrates the encoding of turns with the <strong>@delayed</strong> attribute. Note that the <strong>@tstamp</strong> attribute indicates the actual starting point in time, while <strong>@startid</strong> points to the principal note.</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/ex_turn_d.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Delayed turn.</figcaption>
 </figure>
 
@@ -4065,7 +4065,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>For example, Johann Sebastian Bach used non-standard ornaments in the <em>Klavierbüchlein für Wilhelm Friedemann Bach</em>:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein für Wilhelm Friedemann Bach</figcaption>
 </figure>
 
@@ -4093,7 +4093,7 @@ A typical note, in this case a quarter note C4, is therefore encoded like so:</l
 <p>The following example from <a href="https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach">Carl Philipp Emanuel Bach’s</a> song <em>Dorinde</em> Wq 199/7 shows a turn followed by a inverted mordent:</p>
 
 <figure class="figure">
-  <img src="/guidelines/images/v4/ExampleImages/CPEB_Dorinde.png" class="img-responsive" alt="musical example" />
+  <img src="/guidelines/v4/images/ExampleImages/CPEB_Dorinde.png" class="img-responsive" alt="musical example" />
   <figcaption class="figure-caption">Combined ornaments in C.P.E. Bach's song Dorinde</figcaption>
 </figure>
 
